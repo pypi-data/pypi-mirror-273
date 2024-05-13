@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+aiocmcapi.egg-info/PKG-INFO
+aiocmcapi.egg-info/SOURCES.txt
+aiocmcapi.egg-info/dependency_links.txt
+aiocmcapi.egg-info/requires.txt
+aiocmcapi.egg-info/top_level.txt

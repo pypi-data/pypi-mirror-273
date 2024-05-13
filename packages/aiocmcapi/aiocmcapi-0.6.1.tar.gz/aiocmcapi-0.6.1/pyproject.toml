@@ -1,0 +1,19 @@
+[project]
+name = "aiocmcapi"
+version = "0.6.1"
+authors = [
+  { name="alobuzy", email="amozebus@gmail.com" },
+]
+description = "Async wrapper for CoinMarketCap API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "aiohttp >= 3.9.5",
+]
+
+[tool.setuptools]
+py-modules = ["client", "currency"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
