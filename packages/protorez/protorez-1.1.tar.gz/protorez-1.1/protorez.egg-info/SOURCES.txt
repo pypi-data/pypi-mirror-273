@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+protorez/__init__.py
+protorez/main.py
+protorez.egg-info/PKG-INFO
+protorez.egg-info/SOURCES.txt
+protorez.egg-info/dependency_links.txt
+protorez.egg-info/requires.txt
+protorez.egg-info/top_level.txt
