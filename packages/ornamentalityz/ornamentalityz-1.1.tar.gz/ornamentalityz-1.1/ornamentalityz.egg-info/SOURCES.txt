@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ornamentalityz/__init__.py
+ornamentalityz/main.py
+ornamentalityz.egg-info/PKG-INFO
+ornamentalityz.egg-info/SOURCES.txt
+ornamentalityz.egg-info/dependency_links.txt
+ornamentalityz.egg-info/requires.txt
+ornamentalityz.egg-info/top_level.txt
