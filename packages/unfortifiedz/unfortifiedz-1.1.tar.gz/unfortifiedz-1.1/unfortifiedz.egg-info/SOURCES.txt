@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unfortifiedz/__init__.py
+unfortifiedz/main.py
+unfortifiedz.egg-info/PKG-INFO
+unfortifiedz.egg-info/SOURCES.txt
+unfortifiedz.egg-info/dependency_links.txt
+unfortifiedz.egg-info/requires.txt
+unfortifiedz.egg-info/top_level.txt
