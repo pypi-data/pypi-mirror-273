@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pseudovolcanicz/__init__.py
+pseudovolcanicz/main.py
+pseudovolcanicz.egg-info/PKG-INFO
+pseudovolcanicz.egg-info/SOURCES.txt
+pseudovolcanicz.egg-info/dependency_links.txt
+pseudovolcanicz.egg-info/requires.txt
+pseudovolcanicz.egg-info/top_level.txt
