@@ -1,0 +1,3 @@
+[console_scripts]
+notion_duplicates=notion_duplicates.notion_duplicates:main
+
