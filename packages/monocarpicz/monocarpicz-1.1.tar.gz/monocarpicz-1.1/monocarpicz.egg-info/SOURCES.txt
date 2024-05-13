@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+monocarpicz/__init__.py
+monocarpicz/main.py
+monocarpicz.egg-info/PKG-INFO
+monocarpicz.egg-info/SOURCES.txt
+monocarpicz.egg-info/dependency_links.txt
+monocarpicz.egg-info/requires.txt
+monocarpicz.egg-info/top_level.txt
