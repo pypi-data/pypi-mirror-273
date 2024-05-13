@@ -1,0 +1,8 @@
+
+[project]
+name = "nonebot_tsugu"
+version = "0.0.1"
+dependencies = [
+    "httpx",
+    "nonebot2"
+]
