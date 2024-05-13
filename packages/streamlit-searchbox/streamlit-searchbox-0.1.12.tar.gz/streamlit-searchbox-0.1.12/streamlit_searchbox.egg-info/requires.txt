@@ -1,0 +1,13 @@
+streamlit>=1.0
+
+[dev]
+pre-commit
+black
+isort
+ruff
+pyright
+
+[tests]
+wikipedia
+pytest
+pytest-playwright
