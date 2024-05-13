@@ -1,0 +1,7 @@
+setup.py
+pandisplay/__init__.py
+pandisplay.egg-info/PKG-INFO
+pandisplay.egg-info/SOURCES.txt
+pandisplay.egg-info/dependency_links.txt
+pandisplay.egg-info/requires.txt
+pandisplay.egg-info/top_level.txt
