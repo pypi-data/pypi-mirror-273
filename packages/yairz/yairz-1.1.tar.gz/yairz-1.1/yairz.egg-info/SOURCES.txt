@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+yairz/__init__.py
+yairz/main.py
+yairz.egg-info/PKG-INFO
+yairz.egg-info/SOURCES.txt
+yairz.egg-info/dependency_links.txt
+yairz.egg-info/requires.txt
+yairz.egg-info/top_level.txt
