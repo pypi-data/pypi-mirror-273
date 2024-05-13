@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+lophophorez/__init__.py
+lophophorez/main.py
+lophophorez.egg-info/PKG-INFO
+lophophorez.egg-info/SOURCES.txt
+lophophorez.egg-info/dependency_links.txt
+lophophorez.egg-info/requires.txt
+lophophorez.egg-info/top_level.txt
