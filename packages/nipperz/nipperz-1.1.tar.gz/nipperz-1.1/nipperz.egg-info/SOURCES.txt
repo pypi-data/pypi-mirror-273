@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nipperz/__init__.py
+nipperz/main.py
+nipperz.egg-info/PKG-INFO
+nipperz.egg-info/SOURCES.txt
+nipperz.egg-info/dependency_links.txt
+nipperz.egg-info/requires.txt
+nipperz.egg-info/top_level.txt
