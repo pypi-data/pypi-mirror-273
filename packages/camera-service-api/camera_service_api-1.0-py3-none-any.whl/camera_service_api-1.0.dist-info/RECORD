@@ -1,0 +1,14 @@
+services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+services/cameras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+services/cameras/camera_service_api.py,sha256=yU1rctQIjitKxkPtHXcswTFjFf2N23UnYuGAh_cHX2c,1399
+services/cameras/models.py,sha256=7Fi-yYu-BSGPFAy75JwZ2zx-3PMqW4oefAtNgT_7qXw,662
+services/grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+services/grpc/camera_service_pb2.py,sha256=M3bZvNm530Nm_-CZCyidL63rOsSuy_yLXj13JsgEEO0,2734
+services/grpc/camera_service_pb2_grpc.py,sha256=QDdLVe0kdQdOsXFblha-ODfWUHbroHEQs79Dnw_ucqY,7359
+services/grpc/grpcutilsc.py,sha256=Z-uxC50cYWNToFHWlNMtpOHmSV9sWrCLB476P6aL7C0,1275
+services/grpc/grpcutilss.py,sha256=itJ-nQMUNJc8nfWjIz1lVCWFEM64wvMpBRBtUI9M6sY,1523
+services/grpc/pb2utils.py,sha256=-kOjpvsnTw4ZnTX3fYy0FxbB4p-8Of0KNXqk9BmmkpU,1628
+camera_service_api-1.0.dist-info/METADATA,sha256=IcY8Tsm158N49FGNsw8fvOOzOEN6jC0ao-PYFtTdXvY,3387
+camera_service_api-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+camera_service_api-1.0.dist-info/top_level.txt,sha256=Xau8qVy0H_tHbGDNnS7i0vFz4WqB9lBwZHg0pGziYuM,9
+camera_service_api-1.0.dist-info/RECORD,,
