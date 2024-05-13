@@ -1,0 +1,90 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <file>"
+    exit 1
+fi
+
+mkdir -p dist/run_time_so/crypt/
+
+plaintext=$(cat "$1")
+password=$(openssl rand -base64 32)
+encrypted_text=$(echo -n "$plaintext" | openssl enc -e -aes-256-cbc -a -pbkdf2 -pass pass:"$password" | bzip2 -z -f | base64)
+echo "$encrypted_text" > "dist/run_time_so/crypt/$1.crypto"
+
+encr=$(cat "dist/run_time_so/crypt/$1.crypto")
+
+cat > "$1.py" <<EOF
+
+import subprocess
+import os
+import sys
+
+
+app_dir = os.path.dirname(sys.executable)
+dist_dir = os.path.join(app_dir, "crypt")
+file_name = f"$1.crypto"
+
+file_to_run = os.path.join(dist_dir, file_name)
+
+if os.path.isfile(file_to_run):
+    bash_script = f"""
+#!/bin/bash
+encry="$encr"
+decrypted_text=\$(echo -n "\$encry" | base64 -d | bunzip2 -d -f | openssl enc -d -aes-256-cbc -a -pbkdf2 -pass pass:"$password")
+eval "\$decrypted_text"
+"""
+
+    encrypted_script = subprocess.check_output(["openssl", "enc", "-aes-256-cbc", "-salt", "-a", "-pass", "pass:WAJVETWTGF"], input=bash_script.encode()).decode()
+
+    decrypted_script = subprocess.check_output(["openssl", "enc", "-d", "-aes-256-cbc", "-a", "-pass", "pass:WAJVETWTGF"], input=encrypted_script.encode()).decode()
+
+    try:
+        subprocess.run(["bash", "-c", decrypted_script], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error during Bash script execution: {e}")
+else:
+    print(f"Error: File '{file_to_run}' not found. Program cannot be executed.")
+
+
+EOF
+
+chmod +x "$1.py"
+pyinstaller --onefile "$1.py" >/dev/null 2>&1
+
+cd dist 
+mv "$1" "$1.so"
+
+
+
+if [ ! -d "run_time_so" ]; then
+    mkdir "run_time_so"
+fi
+
+mv $1.so run_time_so/
+cd
+rm -f $1.py
+
+chmod +x dist/run_time_so/$1.so
+
+
+
+
+
+
+
+
+
+
+
+namafile=$1
+cat > "${namafile%.sh}" <<EOF
+cd run_time_so
+./$1.so
+
+EOF
+
+mv ${namafile%.sh} dist/
+
+
+

@@ -1,0 +1,2 @@
+[console_scripts]
+basharmor = basharmor.module:main
