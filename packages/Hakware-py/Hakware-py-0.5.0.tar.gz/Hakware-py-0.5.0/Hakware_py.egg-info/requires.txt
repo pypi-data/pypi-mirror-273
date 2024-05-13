@@ -1,0 +1,9 @@
+requests
+psutil
+requests_html
+subprocess
+winreg
+json
+platform
+traceback
+datetime

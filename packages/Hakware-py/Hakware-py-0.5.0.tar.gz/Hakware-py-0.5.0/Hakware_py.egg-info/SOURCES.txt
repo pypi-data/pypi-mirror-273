@@ -1,0 +1,9 @@
+README.md
+setup.py
+Hakware-py/HakwareObserverpy.py
+Hakware-py/__init__.py
+Hakware_py.egg-info/PKG-INFO
+Hakware_py.egg-info/SOURCES.txt
+Hakware_py.egg-info/dependency_links.txt
+Hakware_py.egg-info/requires.txt
+Hakware_py.egg-info/top_level.txt
