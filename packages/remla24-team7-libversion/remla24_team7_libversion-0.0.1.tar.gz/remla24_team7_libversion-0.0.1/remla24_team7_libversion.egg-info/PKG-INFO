@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: remla24-team7-libversion
+Version: 0.0.1
+Summary: A version-aware library that can can be asked for the version of the library.
+Home-page: https://github.com/remla24-team7/lib-version
+Author: Kevin Tran
+Keywords: utility,versioning
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+Requires-Dist: bump2version==1.0.1; extra == "dev"
+
+# lib-version
+A version-aware library that can can be asked for the version of the library.
