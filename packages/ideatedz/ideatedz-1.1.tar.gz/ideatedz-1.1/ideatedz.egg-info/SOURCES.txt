@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ideatedz/__init__.py
+ideatedz/main.py
+ideatedz.egg-info/PKG-INFO
+ideatedz.egg-info/SOURCES.txt
+ideatedz.egg-info/dependency_links.txt
+ideatedz.egg-info/requires.txt
+ideatedz.egg-info/top_level.txt
