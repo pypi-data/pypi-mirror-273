@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+telephonersz/__init__.py
+telephonersz/main.py
+telephonersz.egg-info/PKG-INFO
+telephonersz.egg-info/SOURCES.txt
+telephonersz.egg-info/dependency_links.txt
+telephonersz.egg-info/requires.txt
+telephonersz.egg-info/top_level.txt
