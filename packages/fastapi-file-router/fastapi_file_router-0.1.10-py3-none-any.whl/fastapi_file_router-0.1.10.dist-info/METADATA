@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fastapi-file-router
+Version: 0.1.10
+Summary: File-based routing for FastAPI
+License: WhoCares
+Author: Bewinxed
+Author-email: bewinxed@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi
+Description-Content-Type: text/markdown
+
+
