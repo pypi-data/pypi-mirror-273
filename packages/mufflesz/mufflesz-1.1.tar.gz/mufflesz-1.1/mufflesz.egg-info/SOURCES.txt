@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mufflesz/__init__.py
+mufflesz/main.py
+mufflesz.egg-info/PKG-INFO
+mufflesz.egg-info/SOURCES.txt
+mufflesz.egg-info/dependency_links.txt
+mufflesz.egg-info/requires.txt
+mufflesz.egg-info/top_level.txt
