@@ -1,0 +1,8 @@
+sentry_dingding/__init__.py,sha256=pOnbfiQsHzHLetXE5cIGEzLZtdVpcP3lxuA9BTE4Edc,35
+sentry_dingding/forms.py,sha256=TYgBJshZ1Tm_-fIXI4reo-MVB39luXsDmoYeYp5QUCE,320
+sentry_dingding/plugin.py,sha256=LAyrX6TvmRZf6AUk9esrTlaZot4-lx0oEJg6oJfkxEM,3609
+sentry_stack_dingding-1.0.12.dist-info/METADATA,sha256=d1YHyrjae9pmxgdZzVSwi_Rp1ESShMnYOXvRM8e6OvM,1283
+sentry_stack_dingding-1.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sentry_stack_dingding-1.0.12.dist-info/entry_points.txt,sha256=THP9Hz9QnkwtWy09uirpWYpcR1x5U4NPJ6PW2cXQYdI,74
+sentry_stack_dingding-1.0.12.dist-info/top_level.txt,sha256=sAkiSHC6wBeNIqc09N5T9Jze_C5s4AorWB5IWE8JGZ8,16
+sentry_stack_dingding-1.0.12.dist-info/RECORD,,
