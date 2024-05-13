@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prerefusez/__init__.py
+prerefusez/main.py
+prerefusez.egg-info/PKG-INFO
+prerefusez.egg-info/SOURCES.txt
+prerefusez.egg-info/dependency_links.txt
+prerefusez.egg-info/requires.txt
+prerefusez.egg-info/top_level.txt
