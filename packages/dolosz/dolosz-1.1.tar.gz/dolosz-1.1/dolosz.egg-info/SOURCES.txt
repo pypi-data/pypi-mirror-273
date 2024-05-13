@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dolosz/__init__.py
+dolosz/main.py
+dolosz.egg-info/PKG-INFO
+dolosz.egg-info/SOURCES.txt
+dolosz.egg-info/dependency_links.txt
+dolosz.egg-info/requires.txt
+dolosz.egg-info/top_level.txt
