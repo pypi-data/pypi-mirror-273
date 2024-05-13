@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skulduggeryz/__init__.py
+skulduggeryz/main.py
+skulduggeryz.egg-info/PKG-INFO
+skulduggeryz.egg-info/SOURCES.txt
+skulduggeryz.egg-info/dependency_links.txt
+skulduggeryz.egg-info/requires.txt
+skulduggeryz.egg-info/top_level.txt
