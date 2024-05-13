@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+regelatez/__init__.py
+regelatez/main.py
+regelatez.egg-info/PKG-INFO
+regelatez.egg-info/SOURCES.txt
+regelatez.egg-info/dependency_links.txt
+regelatez.egg-info/requires.txt
+regelatez.egg-info/top_level.txt
