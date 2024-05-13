@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+purblindnessz/__init__.py
+purblindnessz/main.py
+purblindnessz.egg-info/PKG-INFO
+purblindnessz.egg-info/SOURCES.txt
+purblindnessz.egg-info/dependency_links.txt
+purblindnessz.egg-info/requires.txt
+purblindnessz.egg-info/top_level.txt
