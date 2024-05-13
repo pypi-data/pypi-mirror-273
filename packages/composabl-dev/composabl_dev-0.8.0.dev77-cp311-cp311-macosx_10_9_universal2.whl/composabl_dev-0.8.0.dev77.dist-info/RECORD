@@ -1,0 +1,8 @@
+composabl/core.cpython-311-darwin.so,sha256=q13O_2SbLxgcU5IPBFqTpOpbYp1aS3OqZvdJ-KRrUbg,121360
+composabl/__init__.cpython-311-darwin.so,sha256=O7Z_Qjd_D7nQXwSVhHwziHoNo70Rcjdr3mh5sQWtHxg,121552
+composabl/ray.cpython-311-darwin.so,sha256=d0zcds8IDfHnAKgXjTgb-2tc8n4f7Bb5HNEXyzl00Xk,121344
+composabl_dev-0.8.0.dev77.dist-info/RECORD,,
+composabl_dev-0.8.0.dev77.dist-info/WHEEL,sha256=eupBwbXGAhwNAPJSvj5BiShZwdZO8jnQ5yHfv-9aUGw,115
+composabl_dev-0.8.0.dev77.dist-info/entry_points.txt,sha256=WrLVbw0dPbDvkgFcNa275XoyuBvDoP-453FEPMn_cG8,56
+composabl_dev-0.8.0.dev77.dist-info/top_level.txt,sha256=u1D_14CTd3ryfSJBYuAR0PfjwHJ5_4NGQts7rZy2xks,10
+composabl_dev-0.8.0.dev77.dist-info/METADATA,sha256=7lMFueY4sr6RWtKl1t8G3gThBCIrL4xoXXsayFZgMZE,1829
