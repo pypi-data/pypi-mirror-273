@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fanglementz/__init__.py
+fanglementz/main.py
+fanglementz.egg-info/PKG-INFO
+fanglementz.egg-info/SOURCES.txt
+fanglementz.egg-info/dependency_links.txt
+fanglementz.egg-info/requires.txt
+fanglementz.egg-info/top_level.txt
