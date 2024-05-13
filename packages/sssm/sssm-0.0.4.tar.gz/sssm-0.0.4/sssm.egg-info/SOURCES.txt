@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+./sssm/__init__.py
+./sssm/ssm.py
+./sssm/saved_models/__init__.py
+sssm/__init__.py
+sssm/ssm.py
+sssm.egg-info/PKG-INFO
+sssm.egg-info/SOURCES.txt
+sssm.egg-info/dependency_links.txt
+sssm.egg-info/requires.txt
+sssm.egg-info/top_level.txt
+sssm/saved_models/__init__.py
+sssm/saved_models/model.pt
