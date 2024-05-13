@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unaccedingz/__init__.py
+unaccedingz/main.py
+unaccedingz.egg-info/PKG-INFO
+unaccedingz.egg-info/SOURCES.txt
+unaccedingz.egg-info/dependency_links.txt
+unaccedingz.egg-info/requires.txt
+unaccedingz.egg-info/top_level.txt
