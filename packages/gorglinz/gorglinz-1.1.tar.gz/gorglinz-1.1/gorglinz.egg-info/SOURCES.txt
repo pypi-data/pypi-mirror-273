@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gorglinz/__init__.py
+gorglinz/main.py
+gorglinz.egg-info/PKG-INFO
+gorglinz.egg-info/SOURCES.txt
+gorglinz.egg-info/dependency_links.txt
+gorglinz.egg-info/requires.txt
+gorglinz.egg-info/top_level.txt
