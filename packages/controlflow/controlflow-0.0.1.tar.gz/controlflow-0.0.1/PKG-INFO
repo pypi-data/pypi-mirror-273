@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: controlflow
+Version: 0.0.1
+Summary: Agentic LLM workflows
+Author-email: Jeremiah Lowin <153965+jlowin@users.noreply.github.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# controlflow
