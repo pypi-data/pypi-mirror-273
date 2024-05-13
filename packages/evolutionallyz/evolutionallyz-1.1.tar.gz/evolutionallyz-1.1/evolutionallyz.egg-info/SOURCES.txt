@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+evolutionallyz/__init__.py
+evolutionallyz/main.py
+evolutionallyz.egg-info/PKG-INFO
+evolutionallyz.egg-info/SOURCES.txt
+evolutionallyz.egg-info/dependency_links.txt
+evolutionallyz.egg-info/requires.txt
+evolutionallyz.egg-info/top_level.txt
