@@ -1,0 +1,65 @@
+# OTP GENERATOR
+This project was created to produce a unique one-time password (**OTP**) using either
+a mobile or ten-digit number. The key idea behind the OTP is that it does not 
+repeat itself. For instance, if you provide an interval time in minutes, the OTP 
+generated will be based on that interval. For example, if you set the interval to
+five minutes, the same OTP will be generated for five minutes. If you do not specify
+an interval, the default time of two minutes will be used and the same OTP will be 
+generated for two minutes.
+
+
+## What is it?
+
+> OTP generator is the python package, This package only used for generate otp only using hashlib and sha.
+
+## Installation
+You can install the package using pip:
+
+    pip install otp-generate
+
+## Usage
+
+Create 6 digits otp. OTP will change 2 minutes once based on your_own_secret_key.
+    
+    from otp_generate import generate_otp
+        
+    otp = generate_otp('your_own_secret_key')
+    print(otp)
+To change interval time pass the value in minutes.
+        
+    from otp_generate import generate_otp
+    otp = generate_otp('your_own_secret', interval=5)
+To get 7 or 8 length otp.
+        
+    from otp_generate import generate_otp
+    otp = generate_otp('your_own_secret', length=7)
+To get hashed OTP. Mixed of char and numbers
+        
+    from otp_generate import generate_otp
+    otp = generate_otp('your_own_secret', only_digits=False)
+
+## Where to get it
+    The source code is currently hosted on GitHub at: https://github.com/Starsystems-sangli/wa-otp-generate
+
+## License
+    MIT License
+
+    Copyright (c) 2024 STAR SYSTEMS INDIA PVT LTD
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
