@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+D:/_File/code/github/pyboat/src/resource/yum-3.2.28.tar.gz
+pydboat.egg-info/PKG-INFO
+pydboat.egg-info/SOURCES.txt
+pydboat.egg-info/dependency_links.txt
+pydboat.egg-info/top_level.txt
+src/__init__.py
+src/resource/__init__.py
