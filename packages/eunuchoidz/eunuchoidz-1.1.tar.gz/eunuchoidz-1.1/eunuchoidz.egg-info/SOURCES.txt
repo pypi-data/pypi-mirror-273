@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eunuchoidz/__init__.py
+eunuchoidz/main.py
+eunuchoidz.egg-info/PKG-INFO
+eunuchoidz.egg-info/SOURCES.txt
+eunuchoidz.egg-info/dependency_links.txt
+eunuchoidz.egg-info/requires.txt
+eunuchoidz.egg-info/top_level.txt
