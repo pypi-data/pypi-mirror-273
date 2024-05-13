@@ -1,0 +1,9 @@
+augmolino/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+augmolino/augmentation.py,sha256=PqI6sfOPezYaP7n_JODMID3e9kQeYTYn7m2yib3pqFA,10155
+augmolino/augmenter.py,sha256=X5hAquaem9AhBF9opi3JhbfYcjvI73qwusj8drm1AOg,4753
+augmolino/utils.py,sha256=vwmJL0wx1w1GvhnlyLHovIUGITfAcAP0ZMVpbK32_QE,747
+augmolino-0.0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+augmolino-0.0.5.dist-info/METADATA,sha256=s2rAaUF4uPk0fUr-ZBwl7coqHzVP1sPzP2gLLo353P0,511
+augmolino-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+augmolino-0.0.5.dist-info/top_level.txt,sha256=ic66gbu2CNGv4B36EB-1Im3zQK2a-YJW-ALZRIcUh7s,10
+augmolino-0.0.5.dist-info/RECORD,,
