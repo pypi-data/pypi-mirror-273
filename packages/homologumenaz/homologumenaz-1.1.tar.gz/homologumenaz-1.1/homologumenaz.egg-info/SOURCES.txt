@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+homologumenaz/__init__.py
+homologumenaz/main.py
+homologumenaz.egg-info/PKG-INFO
+homologumenaz.egg-info/SOURCES.txt
+homologumenaz.egg-info/dependency_links.txt
+homologumenaz.egg-info/requires.txt
+homologumenaz.egg-info/top_level.txt
