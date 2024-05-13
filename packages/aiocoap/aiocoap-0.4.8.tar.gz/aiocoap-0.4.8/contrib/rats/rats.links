@@ -1,0 +1,5 @@
+</adder/>;rats-code="rats-adder.py",
+</adder/second>;rats-code="rats-adder.py",
+<data:text/plain;urlencode,5>;rel="boundto";anchor="/adder/second",
+</rot13/>;rats-code="rats-rot13.py",
+<coap://coap.me/hello>;rel="boundto";bind="lazy";anchor="/rot13/original",

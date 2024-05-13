@@ -1,0 +1,14 @@
+</heizstab/ilim-regelung/>;rats-code="linearregler.py",
+  </studer/bsp/percent-ilim>;rel="boundto";anchor="/heizstab/ilim-regelung/eingang",
+#   <data:text/plain;urlencode,0.95>;rel="boundto";anchor="/heizstab/ilim-regelung/x0",
+#   <data:text/plain;urlencode,0.97>;rel="boundto";anchor="/heizstab/ilim-regelung/x1",
+#   <data:text/plain;urlencode,0>;rel="boundto";anchor="/heizstab/ilim-regelung/y0",
+#   <data:text/plain;urlencode,1>;rel="boundto";anchor="/heizstab/ilim-regelung/y1",
+
+</heizstab/max-regelung/>;rats-code="maximum.py",
+  </heizstab/ilim-regelung/ausgang>;rel="boundto";anchor="/heizstab/max-regelung/a",
+  </heizstab/ulim-regelung/ausgang>;rel="boundto";anchor="/heizstab/max-regelung/b",
+
+  <http://heizstab/leistung>;rel="boundto";anchor="/heizstab/max-regelung/maximum"
+
+<http://www.heise.de/kurzfassung>;rel="bondto";anchor="coap://my-display/text"
