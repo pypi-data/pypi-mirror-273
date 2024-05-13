@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+confusabilityz/__init__.py
+confusabilityz/main.py
+confusabilityz.egg-info/PKG-INFO
+confusabilityz.egg-info/SOURCES.txt
+confusabilityz.egg-info/dependency_links.txt
+confusabilityz.egg-info/requires.txt
+confusabilityz.egg-info/top_level.txt
