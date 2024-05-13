@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jecoralz/__init__.py
+jecoralz/main.py
+jecoralz.egg-info/PKG-INFO
+jecoralz.egg-info/SOURCES.txt
+jecoralz.egg-info/dependency_links.txt
+jecoralz.egg-info/requires.txt
+jecoralz.egg-info/top_level.txt
