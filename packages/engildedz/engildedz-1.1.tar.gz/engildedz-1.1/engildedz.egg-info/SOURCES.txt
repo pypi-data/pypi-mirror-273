@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+engildedz/__init__.py
+engildedz/main.py
+engildedz.egg-info/PKG-INFO
+engildedz.egg-info/SOURCES.txt
+engildedz.egg-info/dependency_links.txt
+engildedz.egg-info/requires.txt
+engildedz.egg-info/top_level.txt
