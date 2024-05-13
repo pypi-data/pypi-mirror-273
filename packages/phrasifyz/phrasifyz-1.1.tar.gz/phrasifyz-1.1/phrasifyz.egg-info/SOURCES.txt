@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phrasifyz/__init__.py
+phrasifyz/main.py
+phrasifyz.egg-info/PKG-INFO
+phrasifyz.egg-info/SOURCES.txt
+phrasifyz.egg-info/dependency_links.txt
+phrasifyz.egg-info/requires.txt
+phrasifyz.egg-info/top_level.txt
