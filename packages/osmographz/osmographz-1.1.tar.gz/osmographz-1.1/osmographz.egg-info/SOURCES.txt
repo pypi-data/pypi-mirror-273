@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+osmographz/__init__.py
+osmographz/main.py
+osmographz.egg-info/PKG-INFO
+osmographz.egg-info/SOURCES.txt
+osmographz.egg-info/dependency_links.txt
+osmographz.egg-info/requires.txt
+osmographz.egg-info/top_level.txt
