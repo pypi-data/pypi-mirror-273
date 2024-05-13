@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eumerismz/__init__.py
+eumerismz/main.py
+eumerismz.egg-info/PKG-INFO
+eumerismz.egg-info/SOURCES.txt
+eumerismz.egg-info/dependency_links.txt
+eumerismz.egg-info/requires.txt
+eumerismz.egg-info/top_level.txt
