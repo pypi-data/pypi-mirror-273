@@ -1,0 +1,5 @@
+setup.py
+algorithmbyfahadhussain.egg-info/PKG-INFO
+algorithmbyfahadhussain.egg-info/SOURCES.txt
+algorithmbyfahadhussain.egg-info/dependency_links.txt
+algorithmbyfahadhussain.egg-info/top_level.txt
