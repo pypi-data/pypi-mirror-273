@@ -1,0 +1,6 @@
+[tool.semantic_release]
+match = "(main|master)"
+prerelease_token = "rc"
+prerelease = false
+version_variables = ["setup.py:__version__"]
+commit_parser = "emoji"
