@@ -1,0 +1,3 @@
+[console_scripts]
+zxj-portal-gun=zxj_portal_gun.main:app
+
