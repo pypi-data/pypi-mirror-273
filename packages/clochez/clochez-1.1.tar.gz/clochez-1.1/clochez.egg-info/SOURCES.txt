@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+clochez/__init__.py
+clochez/main.py
+clochez.egg-info/PKG-INFO
+clochez.egg-info/SOURCES.txt
+clochez.egg-info/dependency_links.txt
+clochez.egg-info/requires.txt
+clochez.egg-info/top_level.txt
