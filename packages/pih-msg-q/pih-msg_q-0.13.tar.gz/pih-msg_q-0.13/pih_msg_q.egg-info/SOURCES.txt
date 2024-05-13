@@ -1,0 +1,10 @@
+MessageQueueService/__init__.py
+MessageQueueService/__main__.py
+MessageQueueService/const.py
+MessageQueueService/service.py
+pih_msg_q.egg-info/PKG-INFO
+pih_msg_q.egg-info/SOURCES.txt
+pih_msg_q.egg-info/dependency_links.txt
+pih_msg_q.egg-info/entry_points.txt
+pih_msg_q.egg-info/requires.txt
+pih_msg_q.egg-info/top_level.txt
