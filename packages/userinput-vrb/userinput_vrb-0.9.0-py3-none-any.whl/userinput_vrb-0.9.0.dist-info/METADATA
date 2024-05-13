@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: userinput_vrb
+Version: 0.9.0
+Summary: Helper functions for console user input
+Project-URL: Homepage, https://github.com/v-r-b/userinput_vrb
+Project-URL: Issues, https://github.com/v-r-b/userinput_vrb/issues
+Author-email: volker <volker@vrbdev.eu>
+Maintainer-email: volker <volker@vrbdev.eu>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# userinput_vrb
+
+Helper functions for console user input.
+
+This module defines:
+
+```function input_with_default()```
+  
+Read string from stdin. If empty, return dflt.
+
+```function getpass_not_empty()```
+
+Read password from stdin, don't allow empty password.()
+
+```function choose_from()```
+
+Read character from stdin. The user must input one of
+the characters passed in choices. A default may be given.
