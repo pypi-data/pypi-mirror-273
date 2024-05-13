@@ -1,0 +1,9 @@
+MessageQueueService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MessageQueueService/__main__.py,sha256=D9D_d9hI6p62zOO3Gf2K9wWXzAfdkfP3QIotlu-DoyU,156
+MessageQueueService/const.py,sha256=9HmID7QXJ2rN7Pgoad8MqGYxoY-jimOvhISCfdWPfGw,441
+MessageQueueService/service.py,sha256=UqVvNU2Du7v1GAeTsAkgGk9Y1bJJkU9MN5-e-s4hGJI,3701
+pih_msg_q-0.13.dist-info/METADATA,sha256=ecf6nL2qJUsesYkDhmWIsEqJaE2Ajx9qydlbY7Tsj_8,277
+pih_msg_q-0.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pih_msg_q-0.13.dist-info/entry_points.txt,sha256=ZliMxHipiYrT2HUAsaQTzRA8Pi6O_aqYu5mtbOL5yy0,65
+pih_msg_q-0.13.dist-info/top_level.txt,sha256=a6A0lEsHhknrYr3PskDcPbyZ1ND5hGpdrOQ4sOkQUOA,20
+pih_msg_q-0.13.dist-info/RECORD,,
