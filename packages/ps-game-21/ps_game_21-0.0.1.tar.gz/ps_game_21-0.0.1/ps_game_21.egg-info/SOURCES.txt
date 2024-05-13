@@ -1,0 +1,13 @@
+setup.py
+ps_game_21/__init__.py
+ps_game_21/cards_info.py
+ps_game_21/computer.py
+ps_game_21/game_21.py
+ps_game_21/game_decision.py
+ps_game_21/get_card.py
+ps_game_21/player.py
+ps_game_21/show.py
+ps_game_21.egg-info/PKG-INFO
+ps_game_21.egg-info/SOURCES.txt
+ps_game_21.egg-info/dependency_links.txt
+ps_game_21.egg-info/top_level.txt
