@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pytestfcc"
+version = "0.1.0"
+description = "i test cicd with github_action"
+authors = ["wtayo <wtayo@ippon.fr>"]
+readme = "README.md"
+packages = [{include = "sources"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
