@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tamoyoz/__init__.py
+tamoyoz/main.py
+tamoyoz.egg-info/PKG-INFO
+tamoyoz.egg-info/SOURCES.txt
+tamoyoz.egg-info/dependency_links.txt
+tamoyoz.egg-info/requires.txt
+tamoyoz.egg-info/top_level.txt
