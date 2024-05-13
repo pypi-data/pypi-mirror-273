@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+perissodactylismz/__init__.py
+perissodactylismz/main.py
+perissodactylismz.egg-info/PKG-INFO
+perissodactylismz.egg-info/SOURCES.txt
+perissodactylismz.egg-info/dependency_links.txt
+perissodactylismz.egg-info/requires.txt
+perissodactylismz.egg-info/top_level.txt
