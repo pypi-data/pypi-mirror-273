@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unpinningz/__init__.py
+unpinningz/main.py
+unpinningz.egg-info/PKG-INFO
+unpinningz.egg-info/SOURCES.txt
+unpinningz.egg-info/dependency_links.txt
+unpinningz.egg-info/requires.txt
+unpinningz.egg-info/top_level.txt
