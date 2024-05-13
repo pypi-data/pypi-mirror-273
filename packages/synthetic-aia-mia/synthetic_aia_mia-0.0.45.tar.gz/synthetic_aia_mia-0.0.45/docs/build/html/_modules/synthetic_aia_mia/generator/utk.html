@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>synthetic_aia_mia.generator.utk &#8212; src  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=12dfc556" />
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for synthetic_aia_mia.generator.utk</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">pygan._torch.ebgan_image_generator</span> <span class="kn">import</span> <span class="n">EBGANImageGenerator</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">import</span> <span class="nn">torch</span>
+
+<span class="kn">from</span> <span class="nn">..predictor.utk</span> <span class="kn">import</span> <span class="n">UtkNN</span>
+
+<span class="k">class</span> <span class="nc">_StorageDataset</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">imgpath</span><span class="p">):</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">imgpath</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="p">[</span><span class="n">Path</span><span class="p">(</span><span class="n">imgpath</span><span class="p">,</span><span class="n">file</span><span class="p">)]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">i</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span><span class="o">/</span><span class="mf">255.0</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">moveaxis</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">x</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        
+
+<span class="k">def</span> <span class="nf">_pathmaker</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;dataset_for_pygan&quot;</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="si">}</span><span class="s2">.bmp&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="gan">
+<a class="viewcode-back" href="../../../synthetic_aia_mia.generator.html#synthetic_aia_mia.generator.utk.gan">[docs]</a>
+<span class="k">def</span> <span class="nf">gan</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span><span class="n">iter_n</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate image using pygan.</span>
+
+<span class="sd">    :param dataset: Image dataset used to train the gan.</span>
+<span class="sd">    :type dataset: fetch_data.utk.StorageDataset</span>
+<span class="sd">    :param iter_n: (Optional default=1000) Number of iterations.</span>
+<span class="sd">    :type iter_n: int</span>
+<span class="sd">    :return: A dataset with generated images.</span>
+<span class="sd">    :rtype : fetch_data.utk.StorageDataset</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">#Saving 50x50 images from the train dataset</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">*</span><span class="mi">255</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">moveaxis</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;uint8&#39;</span><span class="p">),</span> <span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+        <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">_pathmaker</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;bmp&quot;</span><span class="p">)</span>
+        
+
+    <span class="n">ctx</span> <span class="o">=</span> <span class="s2">&quot;cuda:0&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span>
+
+    <span class="n">gan_image_generator</span> <span class="o">=</span> <span class="n">EBGANImageGenerator</span><span class="p">(</span>
+        <span class="c1"># `list` of path to your directories.</span>
+        <span class="n">dir_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;dataset_for_pygan&quot;</span><span class="p">],</span>
+        <span class="c1"># `int` of image width.</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+        <span class="c1"># `int` of image height.</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+        <span class="c1"># `int` of image channel.</span>
+        <span class="n">channel</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="c1"># `int` of batch size.</span>
+        <span class="n">batch_size</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span>
+        <span class="c1"># `float` of learning rate.</span>
+        <span class="n">learning_rate</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">,</span>
+        <span class="n">ctx</span><span class="o">=</span><span class="n">ctx</span>
+    <span class="p">)</span>
+
+    <span class="n">gan_image_generator</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
+        <span class="c1"># `int` of the number of training iterations.</span>
+        <span class="n">iter_n</span><span class="o">=</span><span class="n">iter_n</span><span class="p">,</span>
+        <span class="c1"># `int` of the number of learning of the discriminative model.</span>
+        <span class="n">k_step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    
+    <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;synthetic_data&quot;</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()))</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="n">arr</span> <span class="o">=</span> <span class="n">gan_image_generator</span><span class="o">.</span><span class="n">EBGAN</span><span class="o">.</span><span class="n">generative_model</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+    <span class="n">arr</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+    
+    <span class="c1">#arr shape is:</span>
+    <span class="c1">#batch</span>
+    <span class="c1">#channel</span>
+    <span class="c1">#height</span>
+    <span class="c1">#width</span>
+
+    <span class="c1">#save generate images </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">arr</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span>
+        <span class="n">image_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="si">}</span><span class="s2">.bmp&quot;</span><span class="p">)</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">moveaxis</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">255</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;uint8&#39;</span><span class="p">),</span> <span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+        <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="s2">&quot;bmp&quot;</span><span class="p">)</span>
+
+    <span class="c1">#Generating labels</span>
+    <span class="n">utknn</span> <span class="o">=</span> <span class="n">UtkNN</span><span class="p">()</span>
+    <span class="n">utknn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+    <span class="n">synthetic</span> <span class="o">=</span> <span class="n">_StorageDataset</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">synthetic</span> <span class="o">=</span> <span class="n">utknn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">synthetic</span><span class="p">)</span>
+    <span class="n">synthetic</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">synthetic</span><span class="o">.</span><span class="n">hard</span><span class="p">)</span>
+    <span class="k">del</span> <span class="n">synthetic</span><span class="o">.</span><span class="n">hard</span>
+    <span class="k">del</span> <span class="n">synthetic</span><span class="o">.</span><span class="n">soft0</span>
+    <span class="k">del</span> <span class="n">synthetic</span><span class="o">.</span><span class="n">soft1</span>
+
+    <span class="k">return</span> <span class="n">synthetic</span></div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">src</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../synthetic_aia_mia.html">synthetic_aia_mia package</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Module code</a><ul>
+  <li><a href="../generator.html">synthetic_aia_mia.generator</a><ul>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Author.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
