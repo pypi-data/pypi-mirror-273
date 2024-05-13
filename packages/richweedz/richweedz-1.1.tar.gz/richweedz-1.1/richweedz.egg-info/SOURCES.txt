@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+richweedz/__init__.py
+richweedz/main.py
+richweedz.egg-info/PKG-INFO
+richweedz.egg-info/SOURCES.txt
+richweedz.egg-info/dependency_links.txt
+richweedz.egg-info/requires.txt
+richweedz.egg-info/top_level.txt
