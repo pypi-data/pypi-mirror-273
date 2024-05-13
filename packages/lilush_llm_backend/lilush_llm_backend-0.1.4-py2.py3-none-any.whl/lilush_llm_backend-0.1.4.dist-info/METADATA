@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lilush_llm_backend
+Version: 0.1.4
+Summary: Lilush LLM Proxy 
+Author-email: Vladimir Zorin <vladimir@deviant.guru>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: bltzr
+Requires-Dist: peft
+Requires-Dist: bottle
+Project-URL: Home, https://github.com/epicfilemcnulty/lilush-llm-backend
