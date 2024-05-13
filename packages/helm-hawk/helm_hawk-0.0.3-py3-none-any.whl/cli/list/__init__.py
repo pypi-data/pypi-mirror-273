@@ -1,0 +1,1 @@
+from cli.list.list import list_command

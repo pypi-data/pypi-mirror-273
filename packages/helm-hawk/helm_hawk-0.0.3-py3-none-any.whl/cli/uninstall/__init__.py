@@ -1,0 +1,1 @@
+from cli.uninstall.uninstall import uninstall_command
