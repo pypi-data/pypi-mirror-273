@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+semianatropalz/__init__.py
+semianatropalz/main.py
+semianatropalz.egg-info/PKG-INFO
+semianatropalz.egg-info/SOURCES.txt
+semianatropalz.egg-info/dependency_links.txt
+semianatropalz.egg-info/requires.txt
+semianatropalz.egg-info/top_level.txt
