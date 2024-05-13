@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+craftsmenz/__init__.py
+craftsmenz/main.py
+craftsmenz.egg-info/PKG-INFO
+craftsmenz.egg-info/SOURCES.txt
+craftsmenz.egg-info/dependency_links.txt
+craftsmenz.egg-info/requires.txt
+craftsmenz.egg-info/top_level.txt
