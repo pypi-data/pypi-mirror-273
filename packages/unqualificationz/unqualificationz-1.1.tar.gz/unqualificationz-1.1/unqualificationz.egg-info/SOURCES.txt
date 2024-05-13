@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unqualificationz/__init__.py
+unqualificationz/main.py
+unqualificationz.egg-info/PKG-INFO
+unqualificationz.egg-info/SOURCES.txt
+unqualificationz.egg-info/dependency_links.txt
+unqualificationz.egg-info/requires.txt
+unqualificationz.egg-info/top_level.txt
