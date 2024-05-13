@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+boresomenessz/__init__.py
+boresomenessz/main.py
+boresomenessz.egg-info/PKG-INFO
+boresomenessz.egg-info/SOURCES.txt
+boresomenessz.egg-info/dependency_links.txt
+boresomenessz.egg-info/requires.txt
+boresomenessz.egg-info/top_level.txt
