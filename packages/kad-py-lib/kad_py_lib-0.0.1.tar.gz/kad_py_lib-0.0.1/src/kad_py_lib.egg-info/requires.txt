@@ -1,0 +1,5 @@
+python-dotenv
+Js2Py==0.74
+requests
+numpy
+PyYAML
