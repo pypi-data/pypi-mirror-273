@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+asilidaez/__init__.py
+asilidaez/main.py
+asilidaez.egg-info/PKG-INFO
+asilidaez.egg-info/SOURCES.txt
+asilidaez.egg-info/dependency_links.txt
+asilidaez.egg-info/requires.txt
+asilidaez.egg-info/top_level.txt
