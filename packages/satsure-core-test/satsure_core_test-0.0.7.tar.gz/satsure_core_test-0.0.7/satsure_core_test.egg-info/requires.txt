@@ -1,0 +1,13 @@
+awscli
+fiona
+google-cloud-storage
+pandas
+pyproj
+pystac
+python-dotenv
+rasterstats
+rasterio
+requests
+requests
+sqlalchemy
+wget
