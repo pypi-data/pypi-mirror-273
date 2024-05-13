@@ -1,0 +1,102 @@
+import click
+import re
+
+from cdbt.main import ColdBoreCapitalDBT
+
+cdbt_class = ColdBoreCapitalDBT()
+
+
+# Create a Click group
+class CustomCmdLoader(click.Group):
+
+    def get_command(self, ctx, cmd_name):
+        ctx.ensure_object(dict)
+
+        # Match commands ending with + optionally followed by a number, such as 'sbuild+' or 'sbuild+3'
+        suffix_match = re.match(r'(.+)\+(\d*)$', cmd_name)
+        if suffix_match:
+            cmd_name, count = suffix_match.groups()
+            ctx.obj['build_children'] = True
+            ctx.obj['build_children_count'] = int(count) if count else None  # Default to 1 if no number is specified
+
+        # Match commands starting with a number followed by +, such as '3+sbuild'
+        prefix_match = re.match(r'(\d+)\+(.+)', cmd_name)
+        if prefix_match:
+            count, cmd_name = prefix_match.groups()
+            ctx.obj['build_parents'] = True
+            ctx.obj['build_parents_count'] = int(count) if count else None  # Default to 1 if no number is specified
+
+        return click.Group.get_command(self, ctx, cmd_name)
+
+    def list_commands(self, ctx):
+        # List of all commands
+        return ['build', 'trun', 'run', 'test', 'compile', 'sbuild', 'pbuild']
+
+
+@click.group()
+@click.pass_context
+def cdbt(ctx):
+    ctx.obj = {}
+
+# cdbt = CustomCmdLoader()
+
+
+@cdbt.command()
+@click.option('--full-refresh', is_flag=True, help='Run a full refresh on all models.')
+@click.option('--select', type=str, help='DBT style select string')
+@click.option('--fail-fast', is_flag=True, help='Fail fast on errors.')
+@click.option('--threads', type=int, help='Number of threads to use during DBT operations.')
+@click.pass_context
+def build(ctx, full_refresh, select, fail_fast, threads):
+    cdbt_class.build(ctx, full_refresh, select, fail_fast, threads)
+
+
+@cdbt.command()
+@click.option('--full-refresh', is_flag=True, help='Run a full refresh on all models.')
+@click.option('--select', type=str, help='DBT style select string')
+@click.option('--fail-fast', is_flag=True, help='Fail fast on errors.')
+@click.option('--threads', type=int, help='Number of threads to use during DBT operations.')
+@click.pass_context
+def trun(ctx, full_refresh, select, fail_fast, threads):
+    cdbt_class.trun(ctx, full_refresh, select, fail_fast, threads)
+
+
+@cdbt.command()
+@click.option('--full-refresh', is_flag=True, help='Run a full refresh on all models.')
+@click.option('--select', type=str, help='DBT style select string')
+@click.option('--fail-fast', is_flag=True, help='Fail fast on errors.')
+@click.option('--threads', type=int, help='Number of threads to use during DBT operations.')
+@click.pass_context
+def run(ctx, full_refresh, select, fail_fast, threads):
+    cdbt_class.run(ctx, full_refresh, select, fail_fast, threads)
+
+
+@cdbt.command()
+@click.option('--select', type=str, help='DBT style select string')
+@click.option('--fail-fast', is_flag=True, help='Fail fast on errors.')
+@click.option('--threads', type=int, help='Number of threads to use during DBT operations.')
+@click.pass_context
+def test(ctx, select, fail_fast, threads):
+    cdbt_class.test(ctx, select, fail_fast, threads)
+
+
+@cdbt.command()
+@click.pass_context
+def compile(ctx, threads):
+    cdbt_class.compile(ctx, threads)
+
+
+@cdbt.command()
+@click.option('--full-refresh', is_flag=True, help='Force a full refresh on all models in build scope.')
+@click.option('--threads', type=int, help='Number of threads to use during DBT operations.')
+@click.pass_context
+def sbuild(ctx, full_refresh, threads):
+    cdbt_class.sbuild(ctx, full_refresh, threads)
+
+
+@cdbt.command()
+@click.option('--full-refresh', is_flag=True, help='Force a full refresh on all models in build scope.')
+@click.option('--threads', type=int, help='Number of threads to use during DBT operations.')
+@click.pass_context
+def pbuild(ctx, full_refresh, threads):
+    cdbt_class.pbuild(ctx, full_refresh, threads)
