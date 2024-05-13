@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+jzchatbot/__init__.py
+jzchatbot.egg-info/PKG-INFO
+jzchatbot.egg-info/SOURCES.txt
+jzchatbot.egg-info/dependency_links.txt
+jzchatbot.egg-info/requires.txt
+jzchatbot.egg-info/top_level.txt
