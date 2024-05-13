@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+glycaemiaz/__init__.py
+glycaemiaz/main.py
+glycaemiaz.egg-info/PKG-INFO
+glycaemiaz.egg-info/SOURCES.txt
+glycaemiaz.egg-info/dependency_links.txt
+glycaemiaz.egg-info/requires.txt
+glycaemiaz.egg-info/top_level.txt
