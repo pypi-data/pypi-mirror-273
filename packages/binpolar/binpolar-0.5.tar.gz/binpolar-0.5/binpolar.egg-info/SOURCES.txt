@@ -1,0 +1,9 @@
+README.md
+setup.py
+binpolar/__init__.py
+binpolar/polarity_detector.py
+binpolar.egg-info/PKG-INFO
+binpolar.egg-info/SOURCES.txt
+binpolar.egg-info/dependency_links.txt
+binpolar.egg-info/requires.txt
+binpolar.egg-info/top_level.txt
