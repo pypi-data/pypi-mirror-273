@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+murphz/__init__.py
+murphz/main.py
+murphz.egg-info/PKG-INFO
+murphz.egg-info/SOURCES.txt
+murphz.egg-info/dependency_links.txt
+murphz.egg-info/requires.txt
+murphz.egg-info/top_level.txt
