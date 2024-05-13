@@ -1,0 +1,119 @@
+
+
+
+<pre>
+
+	<h1>vegan</h1>
+	
+	<h2>on</h2>
+		<h3>1st terminal panel</h3>
+			#
+			#	if there's a docker conflict	
+			#
+			#
+			docker rm $(docker ps -a -q)
+
+		
+			#
+			#	on
+			#
+			docker compose up -d; sleep 5; docker exec -it vegan.1 bash -c "source /habitat/_controls/source_2.sh && bash"
+		
+
+			#
+			#	optional: install
+			#
+			#
+			python3 /habitat/_controls/install_with_uv.py
+
+			#
+			#	optional: if need to import the database
+			#
+			vegan_1 adventures monetary saves import --version 1 --drop
+			
+		
+		<h3>2+ terminal panels</h3>
+			docker exec -it vegan.1 bash -c "source /habitat/_controls/source_2.sh && bash"
+			
+			#
+			#
+			#	build the front
+			#
+			(cd /habitat/venues/stages/vegan/adventures/vv_turbo/apps/web && bun run build)
+	
+	<h2>garages (harbors)</h2>
+		<h3>sanic</h3>
+			http://192.168.0.100/docs/swagger#/
+			
+		<h3>sanic inspector</h3>
+			http://192.168.0.100:7457
+			
+		<h3>mongo</h3>
+			http://192.168.0.100:39000
+			
+			<h3>node_data</h3>
+				/vegan/venues/stages/vegan/adventures/monetary/__monetary_1
+		
+			<h3>saves</h3>
+				ls /vegan/venues/stages/vegan/adventures/monetary/__saves
+			
+			<h3>saving</h3>
+				vegan_1 adventures monetary saves export --version 2
+		
+			<h3>loading</h3>
+				vegan_1 adventures monetary saves import-overwrite --version 2
+	
+	
+	<h2>bun</h2>
+		apt install unzip; curl -fsSL https://bun.sh/install | bash; source /root/.bashrc
+		
+		<h2>install</h2>
+			(cd /habitat/venues/stages/vegan/adventures/vv_turbo/ && bun install)
+		
+		<h3>on</h3>
+			(cd /habitat/venues/stages/vegan/adventures/vv_turbo/ && bun run dev) 
+			(cd /habitat/venues/stages/vegan/adventures/vv_turbo/apps/web && bun run build --watch)
+		
+		<h3>previously</h3>
+			(cd /habitat/venues/stages/vegan/adventures && npx create-turbo@latest -e with-vite)
+			(cd /habitat/venues/stages/vegan/adventures/vv_turbo/ && bun add @vitejs/plugin-vue)
+			(cd /habitat/venues/stages/vegan/adventures/vv_turbo/apps/web && bun pm untrusted)
+		
+
+
+	<h2>publishing</h2>
+		<h3>linting</h3>
+			(cd /vegan/venues/stages/vegan && pycycle --here) 
+	
+		<h3>status</h3>
+			cd /vegan/venues/stages/vegan/__status/main
+			python3 /habitat/venues/stages/vegan/__status/main/status.proc.py
+			
+			#
+			#	external API checks
+			#	
+			python3 /habitat/venues/stages/vegan/__status/API/status.proc.py
+
+			
+
+			# vite status
+		
+		<h3>publish</h3>
+			#
+			#	[ ] poetry auth
+			#
+			#
+			pip install poetry && cd /habitat && rm -rf dist && poetry build --verbose && poetry publish --verbose;
+			(pip install poetry && cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat && poetry publish --verbose;)
+		
+
+	<h2>important</h2>
+		poetry show --tree
+
+
+	<h2>docker</h2>
+		docker compose up -d
+		docker exec -it vegan bash
+		docker exec -it vegan bash -c "source /vegan/moves/source_2.sh && bash"
+
+</pre>
