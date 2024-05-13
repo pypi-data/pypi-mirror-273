@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rlmarlbot-plugin"
+version = "0.1.6"
+description = "Plugin API for RLMarlbot"
+authors = ["MarlburroW"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rlsdk-python = "^0.4.2"
+rlbot = "^1.67.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
