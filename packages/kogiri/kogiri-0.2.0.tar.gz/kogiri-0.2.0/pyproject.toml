@@ -1,0 +1,78 @@
+[project]
+name = "kogiri"
+version = "0.2.0"
+description = "Log first, ask questions later."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name = "K.R. Zentner", email = "krzentner@gmail.com" }
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+
+  "Intended Audience :: Science/Research",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: System :: Distributed Computing",
+
+  "License :: OSI Approved :: MIT License",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+git = [
+  "GitPython",
+]
+wandb = [
+  "wandb"
+]
+torch = [
+  "torch"
+]
+pyarrow = [
+  "pyarrow"
+]
+tensorboardX = [
+  "tensorboardX"
+]
+dev = []
+test = ["pytest"]
+recommended = [
+  "GitPython",
+  "pyarrow",
+  "tensorboardX",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/krzentner/kogiri"
+"Bug Reports" = "https://github.com/krzentner/kogiri/issues"
+"Source" = "https://github.com/krzentner/kogiri"
+
+# Use setuptools to install the main script
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# Below is poetry setup for developing this package
+[tool.poetry.dependencies]
+python = "^3.8,<4.0"
+
+[tool.pyright]
+include = ["src"]
+venv = ".venv"
+
+[tool.poetry]
+name = "kogiri"
+version = "0.2.0"
+description = ""
+authors = ["K.R. Zentner <krzentner@gmail.com>"]
