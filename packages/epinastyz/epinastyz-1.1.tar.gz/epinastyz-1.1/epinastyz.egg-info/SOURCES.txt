@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epinastyz/__init__.py
+epinastyz/main.py
+epinastyz.egg-info/PKG-INFO
+epinastyz.egg-info/SOURCES.txt
+epinastyz.egg-info/dependency_links.txt
+epinastyz.egg-info/requires.txt
+epinastyz.egg-info/top_level.txt
