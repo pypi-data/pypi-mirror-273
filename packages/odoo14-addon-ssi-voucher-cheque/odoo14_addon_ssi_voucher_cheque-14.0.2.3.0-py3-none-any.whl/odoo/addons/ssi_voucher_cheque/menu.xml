@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <menuitem
+        id="menu_configuration_cheque_receipt"
+        name="Cheque Receipt"
+        sequence="105"
+        parent="ssi_financial_accounting.menu_financial_accounting_configuration"
+    />
+
+    <menuitem
+        id="menu_configuration_cheque_payment"
+        name="Cheque Payment"
+        sequence="106"
+        parent="ssi_financial_accounting.menu_financial_accounting_configuration"
+    />
+</odoo>
