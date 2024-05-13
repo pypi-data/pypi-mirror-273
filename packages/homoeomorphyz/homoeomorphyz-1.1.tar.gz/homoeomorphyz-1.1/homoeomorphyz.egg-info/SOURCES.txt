@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+homoeomorphyz/__init__.py
+homoeomorphyz/main.py
+homoeomorphyz.egg-info/PKG-INFO
+homoeomorphyz.egg-info/SOURCES.txt
+homoeomorphyz.egg-info/dependency_links.txt
+homoeomorphyz.egg-info/requires.txt
+homoeomorphyz.egg-info/top_level.txt
