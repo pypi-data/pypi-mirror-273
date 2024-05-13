@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "qb-parser"
+version = "0.1.0"
+description = ""
+authors = ["YichiRockyZhang <rocky1oo.zhang@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+logging = "^0.4.9.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
