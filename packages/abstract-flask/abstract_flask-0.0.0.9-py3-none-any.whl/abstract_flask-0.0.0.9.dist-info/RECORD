@@ -1,0 +1,13 @@
+abstract_flask/Abs_Manager.py,sha256=xz5F_v-SHV3Vpvje6vUu4EI_rks7DciZsCFvJXnWg1k,12376
+abstract_flask/Abs_Manager_dynamic.py,sha256=_gbyV6mZE0hD7AgxYiSBD0TJSLWmbo5srMyLWPL0VaM,13555
+abstract_flask/__init__.py,sha256=GtCmqDbfHHl7ikMpEqoylD8nukS7RWu2y1kAosSMDig,56
+abstract_flask/abs_Manager.py,sha256=xz5F_v-SHV3Vpvje6vUu4EI_rks7DciZsCFvJXnWg1k,12376
+abstract_flask/abs_Manager_dynamic.py,sha256=_gbyV6mZE0hD7AgxYiSBD0TJSLWmbo5srMyLWPL0VaM,13555
+abstract_flask/directories.py,sha256=Ejr0X_hEXyCehVejRFQvunckwsHuYLGBG4_ux3R4s-w,9554
+abstract_flask/fileManager.py,sha256=vz2YVojrb3NTlXaluBiZKrD3BHtodAY3WfTpLQyXadQ,522
+abstract_flask/file_utils.py,sha256=LjooECh6sP9Mx9OJD2yYCzlDK5SxLg-hrwxLyTl5adI,12389
+abstract_flask/network_tools.py,sha256=X1IsrTU4L4H-ne6f_Q7C6T93lodq3VKHVa0YzdviO9o,571
+abstract_flask-0.0.0.9.dist-info/METADATA,sha256=4dF0y23c11w_icob3zwhr6nKoKDQ6i7BgGbvBbVxtK0,572
+abstract_flask-0.0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+abstract_flask-0.0.0.9.dist-info/top_level.txt,sha256=wm6gA3ilceFJthH3BU-cJNpNtloN0aBrP30GHvh1vIA,15
+abstract_flask-0.0.0.9.dist-info/RECORD,,
