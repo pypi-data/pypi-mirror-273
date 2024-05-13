@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+grangerizerz/__init__.py
+grangerizerz/main.py
+grangerizerz.egg-info/PKG-INFO
+grangerizerz.egg-info/SOURCES.txt
+grangerizerz.egg-info/dependency_links.txt
+grangerizerz.egg-info/requires.txt
+grangerizerz.egg-info/top_level.txt
