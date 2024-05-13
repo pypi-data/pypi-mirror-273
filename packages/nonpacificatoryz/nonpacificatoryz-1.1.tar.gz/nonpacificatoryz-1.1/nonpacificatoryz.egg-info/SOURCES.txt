@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonpacificatoryz/__init__.py
+nonpacificatoryz/main.py
+nonpacificatoryz.egg-info/PKG-INFO
+nonpacificatoryz.egg-info/SOURCES.txt
+nonpacificatoryz.egg-info/dependency_links.txt
+nonpacificatoryz.egg-info/requires.txt
+nonpacificatoryz.egg-info/top_level.txt
