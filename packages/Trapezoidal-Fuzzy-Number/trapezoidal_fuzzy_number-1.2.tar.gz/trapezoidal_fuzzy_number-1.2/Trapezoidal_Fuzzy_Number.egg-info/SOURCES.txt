@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Trapezoidal_Fuzzy_Number/__init__.py
+Trapezoidal_Fuzzy_Number.egg-info/PKG-INFO
+Trapezoidal_Fuzzy_Number.egg-info/SOURCES.txt
+Trapezoidal_Fuzzy_Number.egg-info/dependency_links.txt
+Trapezoidal_Fuzzy_Number.egg-info/top_level.txt
