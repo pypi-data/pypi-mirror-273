@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+descriptivez/__init__.py
+descriptivez/main.py
+descriptivez.egg-info/PKG-INFO
+descriptivez.egg-info/SOURCES.txt
+descriptivez.egg-info/dependency_links.txt
+descriptivez.egg-info/requires.txt
+descriptivez.egg-info/top_level.txt
