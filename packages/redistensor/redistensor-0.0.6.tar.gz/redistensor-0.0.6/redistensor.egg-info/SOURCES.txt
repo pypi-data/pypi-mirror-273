@@ -1,0 +1,10 @@
+README.md
+setup.py
+redistensor/__init__.py
+redistensor/filetensor.py
+redistensor/redistensor.py
+redistensor.egg-info/PKG-INFO
+redistensor.egg-info/SOURCES.txt
+redistensor.egg-info/dependency_links.txt
+redistensor.egg-info/requires.txt
+redistensor.egg-info/top_level.txt
