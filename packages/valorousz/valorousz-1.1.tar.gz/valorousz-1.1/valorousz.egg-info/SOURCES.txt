@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+valorousz/__init__.py
+valorousz/main.py
+valorousz.egg-info/PKG-INFO
+valorousz.egg-info/SOURCES.txt
+valorousz.egg-info/dependency_links.txt
+valorousz.egg-info/requires.txt
+valorousz.egg-info/top_level.txt
