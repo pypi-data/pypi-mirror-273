@@ -1,0 +1,2 @@
+[console_scripts]
+speedmeter = speedmeter:main

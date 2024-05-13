@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+speedmeter/__init__.py
+speedmeter.egg-info/PKG-INFO
+speedmeter.egg-info/SOURCES.txt
+speedmeter.egg-info/dependency_links.txt
+speedmeter.egg-info/entry_points.txt
+speedmeter.egg-info/requires.txt
+speedmeter.egg-info/top_level.txt
+speedmeter/api/fast_api.py
+speedmeter/format/format.py
+speedmeter/meters/bandwidth_meter.py

@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: speedmeter
+Version: 0.0.4
+Summary: tool to check internet speed
+License: MIT License
+        
+        Copyright (c) 2024- GautamKumar
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/gautamajay52/speedmeter
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: requests
+
+# ⚡speedmeter [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgautamajay52%2Fspeedmeter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/gautamajay52/speedmeter)
+
+> A program to check internet speed and exhaust unlimited bandwidth
+
+## ⚡Benefits:
+`speedmeter` offers `-u` flag to exhaust unlimited bandwidth.
+
+## ⚡Installation:
+
+Available on [PyPI](https://pypi.org/project/speedmeter/)
+
+```
+pip install speedmeter
+```
+
+## ⚡Usage:
+
+To test using `fast.com`
+
+```
+speedmeter 
+```
+
+To test using `fast.com` for `infinite` time.
+
+```
+speedmeter -u
+```
+
+To test using `different direct URL`.
+
+```
+speedmeter -t https://somelink.com/hosting/directfile.ext
+```
+
+Full help is available with `$ speedmeter --help`
+
+## ⚡Flags:
+-  `--unlimited, -u`       test for infinite time
+-  `--test-url TEST_URL, -t TEST_URL` add different url to start testing [this url should host a direct file]
+-  `--simple, -s`         Only display the result, no dynamic progress bar
+-  `--version`             Display the version number and exit
+-  `--count COUNT, -c COUNT` number of urls to request from fast.com [default 3, Max 5]
+- `-h, --help`            show this help message and exit
+
+## ⚡ToDos:
+- [x] Use unlimited bandwidth
+- [x] Use custom direct URL to test
+- [ ] Multi-threaded testing
+- [ ] Add more ToDos
+
+
+
+## ⚡Credits:
+* [GautamKumar(me)](https://github.com/gautamajay52) for [Something](https://github.com/gautamajay52/speedmeter)
+* It is a python port of [fast-cli](https://github.com/gesquive/fast-cli) with some modification.
