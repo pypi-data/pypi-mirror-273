@@ -1,0 +1,17 @@
+setup.py,sha256=m3a984W1NRO5DAwugihP3l8y_X7OcwDW8EVJi2DzDPs,885
+tests/testHelpers.py,sha256=_3rHX2eTIHTPWgRRo3u1NtYxJ-594YaQbc6Kww2TFAI,2950
+tests/testVsMetaBase.py,sha256=qbBCIjpqM1snW0z-foR9541U6KH_KIm2YZJ50eZTgK4,2947
+tests/testVsMetaMovieEncoder.py,sha256=M2ij758IukYqvvOdkSmPBjKYX9R4RrytQHqNaDbRrzQ,4315
+tests/testvsmetaDecoder.py,sha256=WzRBZYDXBntjBcq0w4d4n5yUsOunTxkKeXxVomFd7oA,2323
+tests/testvsmetaSeriesEncoder.py,sha256=FKv80d4vbNAfJW8yMSzW0Bv5iek1sF-4rnyiP6l6U50,3222
+vsmetaCodec/__init__.py,sha256=cmQfOQxCwazQ27ETogVHZKTCanQZmbfoLGqzueDU5OY,318
+vsmetaCodec/vsmetaBase.py,sha256=6hLPyv8gxd9O3SwxGK3ivJUKVJBIO5V7wIEN_QT551I,9558
+vsmetaCodec/vsmetaCode.py,sha256=hkdnt1Lfr0nNs_x4Hzcs-5-WWlPm8TIuCUh53xmYsFY,5051
+vsmetaCodec/vsmetaDecoder.py,sha256=clRNrAURECU0nqvYqUSm0LkmVzGLKquQO2vyDwSHIXs,7298
+vsmetaCodec/vsmetaEncoder.py,sha256=z1cr7pJzlyjjEyu85WEs-DA8fc01-yIy5nXXtes-eG8,1729
+vsmetaCodec/vsmetaInfo.py,sha256=2oOGHbF9uDh-A5EgM3j-Ag3DoHo5bUEcZxvKZ0DPbXg,6392
+vsmetaEncoder-1.1.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+vsmetaEncoder-1.1.1.dist-info/METADATA,sha256=PyB26_F_jNtgIfeQPZP7Whl0zbB8NJ0lGgolqVFixJE,10304
+vsmetaEncoder-1.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vsmetaEncoder-1.1.1.dist-info/top_level.txt,sha256=FImyTBr0wKjOW14cLiR1Khal0JCRKncF5Kw_LCJV-_U,24
+vsmetaEncoder-1.1.1.dist-info/RECORD,,
