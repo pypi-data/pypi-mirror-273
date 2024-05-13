@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+exemptionistz/__init__.py
+exemptionistz/main.py
+exemptionistz.egg-info/PKG-INFO
+exemptionistz.egg-info/SOURCES.txt
+exemptionistz.egg-info/dependency_links.txt
+exemptionistz.egg-info/requires.txt
+exemptionistz.egg-info/top_level.txt
