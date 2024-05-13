@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pustulosez/__init__.py
+pustulosez/main.py
+pustulosez.egg-info/PKG-INFO
+pustulosez.egg-info/SOURCES.txt
+pustulosez.egg-info/dependency_links.txt
+pustulosez.egg-info/requires.txt
+pustulosez.egg-info/top_level.txt
