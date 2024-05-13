@@ -1,0 +1,10 @@
+[console_scripts]
+tnd-download-data = toon3d.scripts.download_data:entrypoint
+tnd-process-data = toon3d.scripts.process_data:entrypoint
+tnd-render = toon3d.scripts.render:entrypoint
+tnd-run = toon3d.scripts.run:entrypoint
+tnd-server = toon3d.scripts.server:entrypoint
+tnd-viser-vis = toon3d.scripts.viser_vis:entrypoint
+
+[nerfstudio.method_configs]
+toon3d = toon3d.toon3d_config:toon3d_config
