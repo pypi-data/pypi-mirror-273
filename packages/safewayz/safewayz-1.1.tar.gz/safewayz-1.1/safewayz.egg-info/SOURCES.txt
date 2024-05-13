@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+safewayz/__init__.py
+safewayz/main.py
+safewayz.egg-info/PKG-INFO
+safewayz.egg-info/SOURCES.txt
+safewayz.egg-info/dependency_links.txt
+safewayz.egg-info/requires.txt
+safewayz.egg-info/top_level.txt
