@@ -1,0 +1,9 @@
+poligrain/__init__.py,sha256=FDRRONHYXzNP1AS8DQ1n1TcS80aWYXlJWT7zoPRHpdk,596
+poligrain/plot_map.py,sha256=X0slCjOlxY46nD8D4HThM5CMlGu1fkJ5iUuOTJll5sM,7157
+poligrain/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poligrain/spatial.py,sha256=uupjv42_L6t9XH0Jq_c6KirN-05Eov9LwaeGYu7rN9s,21335
+poligrain/xarray.py,sha256=_g_Vav_kL9HhvuFQRJXHiUq6fkz-_3NZGuhHQLjJX2w,2298
+poligrain-0.0.4.dist-info/LICENSE,sha256=y4xPHWqfSq8pGnLZ4C-itPWJk04YfCOJXMm4SbGJy8k,1530
+poligrain-0.0.4.dist-info/METADATA,sha256=o_va7q1vSaNh798-TGXEOSi8nYGpxs4ADo7husu_b2c,3651
+poligrain-0.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poligrain-0.0.4.dist-info/RECORD,,
