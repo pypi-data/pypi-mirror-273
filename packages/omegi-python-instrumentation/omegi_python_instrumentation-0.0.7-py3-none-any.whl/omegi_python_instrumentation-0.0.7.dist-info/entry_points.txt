@@ -1,0 +1,2 @@
+[opentelemetry_traces_exporter]
+omegi_kafka = omegi_kafka_exporter:OmegiKafkaSpanExporter
