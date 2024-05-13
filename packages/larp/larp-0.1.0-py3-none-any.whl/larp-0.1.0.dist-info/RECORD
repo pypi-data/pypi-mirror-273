@@ -1,0 +1,12 @@
+larp/__init__.py,sha256=rg3NLPM7AMDER0kDbO6pMg-RYuHXZt6STFWeZRd_QpI,96
+larp/field.py,sha256=HRnCrEKDqnxEOsDp-jkSicKg1yfZci2nIhk35aUUSi8,25700
+larp/fn.py,sha256=j1K11vptU7JiWaEss0qUaWszbRcgl6-9hZKFDqmg-Bg,1953
+larp/graph.py,sha256=1vCAWqks3EDizSG_nFpECJImKL7irK1C1eHtKmDZIPQ,11527
+larp/io.py,sha256=U7RkpFs56SAkOKnxZ-olbk7X0Eq-TyjyAZWE20yJrbs,4133
+larp/quad.py,sha256=FO42cIzgnm9e8FCb0QxcOxKC2PHkAapEh_4e3fq0PlU,8233
+larp/types.py,sha256=ZKQLib0TxSO7Gzq3dnxY3wkUgt6lPBi1nYknKtXn92A,1115
+larp-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+larp-0.1.0.dist-info/METADATA,sha256=umCqSdjODy0dHmiQDeWr9nUD7mBEZHrVVQ2lxTAgz20,822
+larp-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+larp-0.1.0.dist-info/top_level.txt,sha256=GhsIe0S3rI8Zomh3jU1ZMS5LHuAv7ENpwi37h-UCvB4,5
+larp-0.1.0.dist-info/RECORD,,
