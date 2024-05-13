@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyboiler_anonoei
+Version: 0.0.5
+Summary: Various generic python helpers so I don't keep rewriting them
+Author-email: Anonoei <dev@anonoei.com>
+Project-URL: Homepage, https://github.com/anonoei/pyboiler
+Project-URL: Documentation, https://anonoei.github.io/pyboiler/
+Project-URL: Repository, https://github.com/Anonoei/pyboiler.git
+Project-URL: Issues, https://github.com/Anonoei/pyboiler/issues
+Project-URL: Source, https://github.com/anonoei/pyboiler
+Keywords: anonoei,boilerplate
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pdoc3; extra == "dev"
+
+# pyboiler
+ Various generic python helpers so I don't keep rewriting them
+
+URLs:
+ - [PyPI](https://pypi.org/project/pyboiler-anonoei/)
+ - [Docs](https://anonoei.github.io/pyboiler/)
+
+## Install
+1. Run `python3 -m pip install pyboiler-anonoei`
+2. In your project, `import pyboiler`
