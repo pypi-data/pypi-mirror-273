@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+outstanderz/__init__.py
+outstanderz/main.py
+outstanderz.egg-info/PKG-INFO
+outstanderz.egg-info/SOURCES.txt
+outstanderz.egg-info/dependency_links.txt
+outstanderz.egg-info/requires.txt
+outstanderz.egg-info/top_level.txt
