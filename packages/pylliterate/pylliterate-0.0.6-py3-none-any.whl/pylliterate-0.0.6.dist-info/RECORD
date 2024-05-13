@@ -1,0 +1,10 @@
+pylliterate/__init__.py,sha256=OdkTMa8KdHdVOOqgJqUkeF9HGodzG7UsVTKfTrlAk3A,10157
+pylliterate/__main__.py,sha256=zMFEaym0Elo3z5s9UImxdjM7bfzlsjfuuOFnMChecZg,273
+pylliterate/cli.py,sha256=qVOW0rVTXOIi_wywwJDa-wYIvX2ZL_KFhYIFKdO6Ut0,3439
+pylliterate/config.py,sha256=oAqIVF2jdSu4uD9wEb7dHrByHNeuXWcbKPa9H0FD4Pk,4135
+pylliterate/core.py,sha256=0fjBBNER9I8P0NsHX3sUsiGWhW5GEOTon2Vrm1MEQp0,15018
+pylliterate-0.0.6.dist-info/entry_points.txt,sha256=EtFeJpzGowt28ia0u80YQnQNGtGk61Yf4ZZCrWrHuNw,51
+pylliterate-0.0.6.dist-info/LICENSE,sha256=4H7q5O19q9jrhxKx8pkJa_KtwEG4CloOixTXu70gMVI,1100
+pylliterate-0.0.6.dist-info/METADATA,sha256=vbGjYTZrszesZK0Yk2blZRz3g45JguBluoref9jDT3E,9040
+pylliterate-0.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pylliterate-0.0.6.dist-info/RECORD,,
