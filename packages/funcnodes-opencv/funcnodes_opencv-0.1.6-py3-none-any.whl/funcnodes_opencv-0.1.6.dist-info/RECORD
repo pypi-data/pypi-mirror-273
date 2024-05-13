@@ -1,0 +1,11 @@
+funcnodes_opencv/__init__.py,sha256=f0NslwuODt9MWXc4XCfjv5_UdXVJYevJovj-9d3VOpY,572
+funcnodes_opencv/colormodes.py,sha256=6nzsQ5Nq2iy2Vr0nQd5fZuH2ztdWZN7s6OkSZUlU7YQ,923
+funcnodes_opencv/components.py,sha256=GHovVDktA-0w04PawWdtbCTUzZ_j0JUD25_iGdnT_Uc,1333
+funcnodes_opencv/filter.py,sha256=XLSRuYS4JwpvL6WbuTy3_RtulEzDRGuFQ3FSF3TJ8KQ,6490
+funcnodes_opencv/image_operations.py,sha256=DEYX3QSJFGBZuf8i202qUGMMnxwVakz4T6anY5SYh40,8347
+funcnodes_opencv/imageformat.py,sha256=ERCm-g_yTVARE6o-IC6ohLOJ9-PmilNz_6UEDSSqe4Y,2818
+funcnodes_opencv/masks.py,sha256=brBBrUdXpeH-z85S45ljxtYPu-gJhiBto86t-4HsSlw,5813
+funcnodes_opencv/utils.py,sha256=NdA3j7TXoJdAxhSuyyjbcCU5jbFRTbXKE6Jq9rHgT8k,903
+funcnodes_opencv-0.1.6.dist-info/METADATA,sha256=AyiVKRMMYRTFlyE8eSZdJ60T0dhpOY9_8OXFOft_J_Y,518
+funcnodes_opencv-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+funcnodes_opencv-0.1.6.dist-info/RECORD,,
