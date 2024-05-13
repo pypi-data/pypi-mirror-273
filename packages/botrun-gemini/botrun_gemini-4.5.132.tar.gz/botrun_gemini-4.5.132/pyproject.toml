@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "botrun_gemini"
+version = "4.5.132"
+dependencies = [
+    "python-dotenv",
+    "google-generativeai",
+    "google-cloud-aiplatform"
+]
+readme = "README.md"
+scripts = { "botrun-gemini" = "botrun_gemini:main" }

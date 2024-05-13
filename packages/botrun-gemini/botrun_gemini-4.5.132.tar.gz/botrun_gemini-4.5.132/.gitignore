@@ -1,0 +1,8 @@
+venv
+.env
+.idea
+users
+dist
+keys
+__pycache__
+bak
