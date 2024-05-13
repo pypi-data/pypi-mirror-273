@@ -1,0 +1,9 @@
+
+[project]
+name = "nonebot_tsugu"
+version = "0.0.2"
+description = "基于tsugu-bangdream-bot项目实现的nonebot2插件"
+dependencies = [
+    "httpx",
+    "nonebot2"
+]
