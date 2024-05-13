@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+banjoesz/__init__.py
+banjoesz/main.py
+banjoesz.egg-info/PKG-INFO
+banjoesz.egg-info/SOURCES.txt
+banjoesz.egg-info/dependency_links.txt
+banjoesz.egg-info/requires.txt
+banjoesz.egg-info/top_level.txt
