@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+poianaz/__init__.py
+poianaz/main.py
+poianaz.egg-info/PKG-INFO
+poianaz.egg-info/SOURCES.txt
+poianaz.egg-info/dependency_links.txt
+poianaz.egg-info/requires.txt
+poianaz.egg-info/top_level.txt
