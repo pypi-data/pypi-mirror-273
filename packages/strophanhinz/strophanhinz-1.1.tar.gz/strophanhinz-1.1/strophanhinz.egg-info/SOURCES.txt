@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+strophanhinz/__init__.py
+strophanhinz/main.py
+strophanhinz.egg-info/PKG-INFO
+strophanhinz.egg-info/SOURCES.txt
+strophanhinz.egg-info/dependency_links.txt
+strophanhinz.egg-info/requires.txt
+strophanhinz.egg-info/top_level.txt
