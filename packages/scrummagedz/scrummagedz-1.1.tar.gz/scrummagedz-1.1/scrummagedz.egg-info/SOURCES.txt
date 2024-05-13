@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scrummagedz/__init__.py
+scrummagedz/main.py
+scrummagedz.egg-info/PKG-INFO
+scrummagedz.egg-info/SOURCES.txt
+scrummagedz.egg-info/dependency_links.txt
+scrummagedz.egg-info/requires.txt
+scrummagedz.egg-info/top_level.txt
