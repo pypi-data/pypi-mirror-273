@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+heare/config/__init__.py
+heare_config.egg-info/PKG-INFO
+heare_config.egg-info/SOURCES.txt
+heare_config.egg-info/dependency_links.txt
+heare_config.egg-info/top_level.txt
+tests/test_cli_parsing.py
+tests/test_setting.py
