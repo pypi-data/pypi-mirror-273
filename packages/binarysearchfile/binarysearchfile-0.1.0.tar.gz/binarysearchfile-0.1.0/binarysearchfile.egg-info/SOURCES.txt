@@ -1,0 +1,8 @@
+README.md
+binarysearchfile.py
+binarysearchfile_tests.py
+pyproject.toml
+binarysearchfile.egg-info/PKG-INFO
+binarysearchfile.egg-info/SOURCES.txt
+binarysearchfile.egg-info/dependency_links.txt
+binarysearchfile.egg-info/top_level.txt
