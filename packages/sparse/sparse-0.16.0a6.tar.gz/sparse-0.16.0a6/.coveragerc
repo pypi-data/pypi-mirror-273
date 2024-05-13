@@ -1,0 +1,14 @@
+[run]
+source=
+    sparse/
+
+omit=
+    sparse/_version.py
+    sparse/tests/*
+    sparse/numba_backend/tests/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    return NotImplemented
+    raise NotImplementedError
