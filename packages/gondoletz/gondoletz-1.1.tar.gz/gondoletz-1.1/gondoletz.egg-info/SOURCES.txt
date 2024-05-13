@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gondoletz/__init__.py
+gondoletz/main.py
+gondoletz.egg-info/PKG-INFO
+gondoletz.egg-info/SOURCES.txt
+gondoletz.egg-info/dependency_links.txt
+gondoletz.egg-info/requires.txt
+gondoletz.egg-info/top_level.txt
