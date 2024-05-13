@@ -1,0 +1,27 @@
+@startuml
+state "5-MovingState(600, 600, 600, 600)" as state_6
+state "4-MovingState(500, 500, 500, 500)" as state_5
+state break_2 <<choice>>
+note right of break_2: _inner() -> int
+state "3-MovingState(400, 400, 400, 400)" as state_4
+state "2-MovingState(300, 300, 300, 300)" as state_3
+state "1-MovingState(200, 200, 200, 200)" as state_2
+state break_1 <<choice>>
+note right of break_1: _inner() -> int
+state "0-MovingState(100, 100, 100, 100)" as state_1
+state_1 --> break_1
+break_1 --> state_2: 1
+break_1 --> state_3: 2
+break_1 --> state_4: 3
+state_4 --> break_2
+break_2 --> state_5: 1
+break_2 --> state_6: 2
+
+[*] --> state_1
+
+state_2 --> [*]
+state_3 --> [*]
+state_5 --> [*]
+state_6 --> [*]
+
+@enduml

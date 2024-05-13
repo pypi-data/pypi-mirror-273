@@ -1,0 +1,12 @@
+@startuml
+state "65-MovingState(2000, 2000, 2000, 2000)" as state_3
+state "64-MovingState(1000, 1000, 1000, 1000)" as state_2
+state "63-MovingState(0, 0, 0, 0)" as state_1
+state_1 --> state_2
+state_2 --> state_3
+
+[*] --> state_1
+
+state_3 --> [*]
+
+@enduml
