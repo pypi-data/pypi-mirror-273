@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "zxj-portal-gun"
+version = "0.2.0"
+description = ""
+authors = ["xiaojian <xiaojian.zhou@wabtec.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+zxj-portal-gun = "zxj_portal_gun.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = {extras = ["all"], version = "^0.12.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
