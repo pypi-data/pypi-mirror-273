@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stubbornestz/__init__.py
+stubbornestz/main.py
+stubbornestz.egg-info/PKG-INFO
+stubbornestz.egg-info/SOURCES.txt
+stubbornestz.egg-info/dependency_links.txt
+stubbornestz.egg-info/requires.txt
+stubbornestz.egg-info/top_level.txt
