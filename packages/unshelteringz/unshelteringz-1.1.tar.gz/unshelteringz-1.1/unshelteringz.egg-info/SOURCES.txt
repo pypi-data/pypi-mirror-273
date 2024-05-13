@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unshelteringz/__init__.py
+unshelteringz/main.py
+unshelteringz.egg-info/PKG-INFO
+unshelteringz.egg-info/SOURCES.txt
+unshelteringz.egg-info/dependency_links.txt
+unshelteringz.egg-info/requires.txt
+unshelteringz.egg-info/top_level.txt
