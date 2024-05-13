@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lib_version_group3
+Version: 0.1.2
+Summary: A Python library for managing and retrieving the software version.
+License: MIT
+Author: smtan
+Author-email: tan.stevenmitchell@gmail.com
+Requires-Python: >=3.8,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# lib_version_group3
+
+## Description
+`lib_version_group3` is a Python library designed to manage and retrieve the software version of your application or package.
+It provides an easy-to-use interface for accessing version information,
+which is useful for logging, debugging, and enforcing version control in production environments.
+
+## Installation
+
+Install `lib_version_group3` using pip:
+
+```bash
+pip install lib_version_group3
+
