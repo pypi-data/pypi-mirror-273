@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unscholarlyz/__init__.py
+unscholarlyz/main.py
+unscholarlyz.egg-info/PKG-INFO
+unscholarlyz.egg-info/SOURCES.txt
+unscholarlyz.egg-info/dependency_links.txt
+unscholarlyz.egg-info/requires.txt
+unscholarlyz.egg-info/top_level.txt
