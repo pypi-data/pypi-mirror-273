@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cliquesz/__init__.py
+cliquesz/main.py
+cliquesz.egg-info/PKG-INFO
+cliquesz.egg-info/SOURCES.txt
+cliquesz.egg-info/dependency_links.txt
+cliquesz.egg-info/requires.txt
+cliquesz.egg-info/top_level.txt
