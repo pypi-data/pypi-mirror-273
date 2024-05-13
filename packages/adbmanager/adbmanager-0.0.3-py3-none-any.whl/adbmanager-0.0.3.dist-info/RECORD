@@ -1,0 +1,10 @@
+adbmanager/__init__.py,sha256=tYA4xxJZ7zKMCZK-N5zQT_La9H2yXQRkpAWl6tjawqs,29
+adbmanager/adbmanager.py,sha256=5vSfZqUyFmdCfDvpys-6SY-4XG6qdcCbOHicRnta7fc,4588
+adbmanager/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adbmanager/modules/deviceInfo.py,sha256=Rd-xsVWUEXuhLsVedUX90sH9ZZpIDSMpQ4UNZvWb_-A,1570
+adbmanager/modules/keyboard_events.json,sha256=KzmVh2y8v5Kfdyve6Hr_Hl7C5DTmPXxWeHOAJuceZqI,1221
+adbmanager-0.0.3.dist-info/LICENSE,sha256=Ea4yzuMlc7bbjKpmIIp07Ys0FJG_V-kllKXsE0-1Cmg,1090
+adbmanager-0.0.3.dist-info/METADATA,sha256=911eZd8cxtQbHm0IuyHbdYV7hIII8_rrv1uyS-19sJA,1058
+adbmanager-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+adbmanager-0.0.3.dist-info/top_level.txt,sha256=dCaJ4UBwkTfdLVuFNz2V6V7MqaIg020YwEafu6PEk18,11
+adbmanager-0.0.3.dist-info/RECORD,,
