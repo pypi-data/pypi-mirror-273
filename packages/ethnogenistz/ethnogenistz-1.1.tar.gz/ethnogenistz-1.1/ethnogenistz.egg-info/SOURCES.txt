@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ethnogenistz/__init__.py
+ethnogenistz/main.py
+ethnogenistz.egg-info/PKG-INFO
+ethnogenistz.egg-info/SOURCES.txt
+ethnogenistz.egg-info/dependency_links.txt
+ethnogenistz.egg-info/requires.txt
+ethnogenistz.egg-info/top_level.txt
