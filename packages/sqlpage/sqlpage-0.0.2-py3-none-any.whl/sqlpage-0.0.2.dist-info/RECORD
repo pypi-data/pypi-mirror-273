@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+constants.py,sha256=ra5uFjnGD0D0NUDVLP5gZh8mdJmeSUHRdFQhuXxoESo,49
+models.py,sha256=4IyC_j3r5-wCDjug2SnYrYpYjwLOJo-L7BLI5B0p0-Y,325
+sqlpage.py,sha256=Jl3psOOyopcDrLAR7dfOSHgDU5hMV_e6CjGp8OViEDQ,2470
+sqlpage-0.0.2.dist-info/LICENSE,sha256=LXCQVsfJQMChTMADqaxUErW8Z4e2-M-plf_VAnznCe8,1068
+sqlpage-0.0.2.dist-info/METADATA,sha256=jOGyIgJfqQ8fZTRiaIoRr_O0zfCcsMlDIM_TLE6iPFg,716
+sqlpage-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sqlpage-0.0.2.dist-info/top_level.txt,sha256=lB3wXTZOuUaarFmwFq46RkZGM5xObg5NUJcuns1ooX8,34
+sqlpage-0.0.2.dist-info/RECORD,,
