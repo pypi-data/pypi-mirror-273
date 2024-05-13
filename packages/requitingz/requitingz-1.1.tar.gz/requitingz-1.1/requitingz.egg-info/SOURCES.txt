@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+requitingz/__init__.py
+requitingz/main.py
+requitingz.egg-info/PKG-INFO
+requitingz.egg-info/SOURCES.txt
+requitingz.egg-info/dependency_links.txt
+requitingz.egg-info/requires.txt
+requitingz.egg-info/top_level.txt
