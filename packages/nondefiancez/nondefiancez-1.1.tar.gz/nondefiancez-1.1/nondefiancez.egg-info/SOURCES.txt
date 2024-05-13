@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nondefiancez/__init__.py
+nondefiancez/main.py
+nondefiancez.egg-info/PKG-INFO
+nondefiancez.egg-info/SOURCES.txt
+nondefiancez.egg-info/dependency_links.txt
+nondefiancez.egg-info/requires.txt
+nondefiancez.egg-info/top_level.txt
