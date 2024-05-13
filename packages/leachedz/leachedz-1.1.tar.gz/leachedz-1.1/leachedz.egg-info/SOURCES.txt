@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+leachedz/__init__.py
+leachedz/main.py
+leachedz.egg-info/PKG-INFO
+leachedz.egg-info/SOURCES.txt
+leachedz.egg-info/dependency_links.txt
+leachedz.egg-info/requires.txt
+leachedz.egg-info/top_level.txt
