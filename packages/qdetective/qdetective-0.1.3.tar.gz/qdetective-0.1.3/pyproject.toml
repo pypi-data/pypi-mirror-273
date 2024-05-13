@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "qdetective"
+version = "0.1.3"
+description = "量化大侦探-数据通道"
+authors = ["suliang <suliang_321@sina.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
