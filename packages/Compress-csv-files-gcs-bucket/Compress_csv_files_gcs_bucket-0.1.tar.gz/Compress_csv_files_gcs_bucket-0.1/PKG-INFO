@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: Compress_csv_files_gcs_bucket
+Version: 0.1
+Description-Content-Type: text/markdown
+
+Python Library for Compressing Files in Google Cloud Storage
+
+This library provides a function compress_csv_files_gcs_bucket that simplifies the process of compressing multiple CSV files from a Google Cloud Storage (GCS) bucket into a single ZIP archive. The archive is then uploaded back to the same bucket.
+
+
+**1. compress_csv_files_gcs_bucket(bucket_name, prefix, output_zip_name, output_zip_prefix):**
+
+The compress_csv_files_gcs_bucket function takes the following arguments:
+
+*Parameters:*
+
+1. bucket_name: (str) The name of the GCS bucket containing the CSV files.
+2. prefix: (str) The prefix to filter files within the bucket (e.g., "path/to/your/csv/files/"). Include a trailing slash.
+3. output_zip_name: (str) The desired name for the output ZIP archive.
+4. output_zip_prefix (str, optional): An optional prefix to add to the filename within the output bucket. Defaults to saving the ZIP file in the same bucket as the source files.
+
+
+*Example Usage:*
+
+```Python
+
+from Compress_csv_files_gcs_bucket import compress_csv_files_gcs_bucket
+
+# Replace with your information
+bucket_name = "your-bucket-name"
+prefix = "path/to/your/csv/files/"  # Include trailing slash
+output_zip_name = "compressed_data.zip"
+output_zip_prefix = "archived/data/"  # Optional, defaults to none
+                                       # (saves in the same bucket)
+
+compress_csv_files_gcs_bucket(bucket_name, prefix, output_zip_name, output_zip_prefix)
+
+```
+
+
+*Function Behavior*
+1. Connects to GCS using storage.Client.
+2. Retrieves the bucket specified by bucket_name.
+3. Lists all files with the provided prefix and extension .csv.
+4. Creates an in-memory buffer (BytesIO) to hold the compressed data.
+5. Creates a ZipFile object for writing to the buffer using DEFLATED compression.
+6. Iterates through each file in the bucket: 
+    a). Filters for files with extension .csv.
+    b). Downloads the file content as a string.
+    c). Constructs the filename for the ZIP archive: 
+        1. If prefix is provided and the filename starts with the prefix, it removes the prefix from the filename before adding it to the archive.
+        2. Otherwise, the original filename is used.
+    d). Adds the file content to the ZIP archive with the constructed filename.
+7. Rewinds the in-memory buffer to the beginning for upload.
+8. Constructs the final output filename within the GCS bucket, including the output_zip_prefix if provided.
+9. Creates a new blob object in the GCS bucket with the final filename.
+10. Uploads the in-memory buffer content (containing the ZIP archive) to the GCS bucket as a ZIP file (content_type='application/zip').
+
+
+**Additional Notes:**
+
+1. This library uses the google-cloud-storage and zipfile libraries. Ensure they are installed (pip install google-cloud-storage).
+2. The library only compresses files with the extension .csv.
+3. The library uses an in-memory buffer for efficiency, avoiding creating temporary files on disk.

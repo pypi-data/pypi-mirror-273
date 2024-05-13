@@ -1,0 +1,9 @@
+README.md
+setup.py
+Compress_csv_files_gcs_bucket/__init__.py
+Compress_csv_files_gcs_bucket/main.py
+Compress_csv_files_gcs_bucket.egg-info/PKG-INFO
+Compress_csv_files_gcs_bucket.egg-info/SOURCES.txt
+Compress_csv_files_gcs_bucket.egg-info/dependency_links.txt
+Compress_csv_files_gcs_bucket.egg-info/entry_points.txt
+Compress_csv_files_gcs_bucket.egg-info/top_level.txt

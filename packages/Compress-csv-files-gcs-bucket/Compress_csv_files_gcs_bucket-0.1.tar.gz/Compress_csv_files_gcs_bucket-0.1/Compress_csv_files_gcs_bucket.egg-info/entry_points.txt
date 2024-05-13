@@ -1,0 +1,2 @@
+[console_scripts]
+Compress_csv_files_gcs_bucket = Compress_csv_files_gcs_bucket:compress_csv_files_gcs_bucket
