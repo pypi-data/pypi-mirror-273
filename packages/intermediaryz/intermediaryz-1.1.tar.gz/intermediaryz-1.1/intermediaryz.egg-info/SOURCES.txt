@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+intermediaryz/__init__.py
+intermediaryz/main.py
+intermediaryz.egg-info/PKG-INFO
+intermediaryz.egg-info/SOURCES.txt
+intermediaryz.egg-info/dependency_links.txt
+intermediaryz.egg-info/requires.txt
+intermediaryz.egg-info/top_level.txt
