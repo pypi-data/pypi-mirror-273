@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/abstract_flask/__init__.py
+src/abstract_flask/abs_Manager.py
+src/abstract_flask/abs_Manager_dynamic.py
+src/abstract_flask/directories.py
+src/abstract_flask/fileManager.py
+src/abstract_flask/network_tools.py
+src/abstract_flask.egg-info/PKG-INFO
+src/abstract_flask.egg-info/SOURCES.txt
+src/abstract_flask.egg-info/dependency_links.txt
+src/abstract_flask.egg-info/requires.txt
+src/abstract_flask.egg-info/top_level.txt
