@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tumidz/__init__.py
+tumidz/main.py
+tumidz.egg-info/PKG-INFO
+tumidz.egg-info/SOURCES.txt
+tumidz.egg-info/dependency_links.txt
+tumidz.egg-info/requires.txt
+tumidz.egg-info/top_level.txt
