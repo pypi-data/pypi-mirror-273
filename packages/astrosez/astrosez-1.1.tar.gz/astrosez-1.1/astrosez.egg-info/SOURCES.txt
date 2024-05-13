@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+astrosez/__init__.py
+astrosez/main.py
+astrosez.egg-info/PKG-INFO
+astrosez.egg-info/SOURCES.txt
+astrosez.egg-info/dependency_links.txt
+astrosez.egg-info/requires.txt
+astrosez.egg-info/top_level.txt
