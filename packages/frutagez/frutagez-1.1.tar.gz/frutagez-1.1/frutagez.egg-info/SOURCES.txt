@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+frutagez/__init__.py
+frutagez/main.py
+frutagez.egg-info/PKG-INFO
+frutagez.egg-info/SOURCES.txt
+frutagez.egg-info/dependency_links.txt
+frutagez.egg-info/requires.txt
+frutagez.egg-info/top_level.txt
