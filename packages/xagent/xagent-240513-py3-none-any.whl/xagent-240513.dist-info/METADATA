@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: xagent
+Version: 240513
+Summary: xagent
+Home-page: https://dev.aminer.cn/solution-center-algorithm/XAgents
+Author: Chen Hao
+Author-email: jerrychen1990@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: python-snippets
+Requires-Dist: agit
+Requires-Dist: langchain-elasticsearch
+Requires-Dist: fastapi
+Requires-Dist: python-multipart
+Requires-Dist: uvicorn
+Requires-Dist: langchain
+Requires-Dist: faiss-cpu
+Requires-Dist: pdfplumber
+Requires-Dist: psutil
+Requires-Dist: python-docx
+Requires-Dist: python-pptx
+Requires-Dist: chardet
+Requires-Dist: fake-useragent
+Requires-Dist: bs4
+Requires-Dist: jsonlines
+Requires-Dist: minio
+Requires-Dist: tabulate
+Requires-Dist: cnocr
+Requires-Dist: onnxruntime
+
+xagent
