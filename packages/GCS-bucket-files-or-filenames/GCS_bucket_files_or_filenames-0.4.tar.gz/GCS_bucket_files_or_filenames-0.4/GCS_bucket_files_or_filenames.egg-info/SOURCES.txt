@@ -1,0 +1,9 @@
+README.md
+setup.py
+GCS_bucket_files_or_filenames/__init__.py
+GCS_bucket_files_or_filenames/main.py
+GCS_bucket_files_or_filenames.egg-info/PKG-INFO
+GCS_bucket_files_or_filenames.egg-info/SOURCES.txt
+GCS_bucket_files_or_filenames.egg-info/dependency_links.txt
+GCS_bucket_files_or_filenames.egg-info/entry_points.txt
+GCS_bucket_files_or_filenames.egg-info/top_level.txt
