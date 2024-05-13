@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shortstaffz/__init__.py
+shortstaffz/main.py
+shortstaffz.egg-info/PKG-INFO
+shortstaffz.egg-info/SOURCES.txt
+shortstaffz.egg-info/dependency_links.txt
+shortstaffz.egg-info/requires.txt
+shortstaffz.egg-info/top_level.txt
