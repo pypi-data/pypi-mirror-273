@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antiberiberinz/__init__.py
+antiberiberinz/main.py
+antiberiberinz.egg-info/PKG-INFO
+antiberiberinz.egg-info/SOURCES.txt
+antiberiberinz.egg-info/dependency_links.txt
+antiberiberinz.egg-info/requires.txt
+antiberiberinz.egg-info/top_level.txt
