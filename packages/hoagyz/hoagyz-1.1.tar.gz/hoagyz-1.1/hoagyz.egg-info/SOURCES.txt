@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hoagyz/__init__.py
+hoagyz/main.py
+hoagyz.egg-info/PKG-INFO
+hoagyz.egg-info/SOURCES.txt
+hoagyz.egg-info/dependency_links.txt
+hoagyz.egg-info/requires.txt
+hoagyz.egg-info/top_level.txt
