@@ -1,0 +1,86 @@
+import pathlib
+from setuptools import setup, find_packages
+
+'''
+with open('requirements.txt', 'r') as file:    
+    lines = [line.strip() for line in file.readlines()]
+install_requires = [line for line in lines]
+'''
+
+setup(
+    name="myBWS",
+    description="Tool for conducting and analyzing best-worst scaling surveys",
+    long_description=pathlib.Path("README.md").read_text(),
+    long_description_content_type="text/markdown",
+    author="Aram Barseghyan, Sergo Poghosyan, Arevik Papikyan, Nare Stepanyan, Elen Sukiasyan",
+    classifiers=[
+        "Development Status :: 3 - Alpha"
+    ],
+    python_requires=">=3.10, <3.12", 
+    install_requires = [
+        "annotated-types==0.6.0",
+        "anyio==4.3.0",
+        "Babel==2.14.0",
+        "backports.tarfile==1.0.0",
+        "build==1.2.1",
+        "certifi==2024.2.2",
+        "charset-normalizer==3.3.2",
+        "click==8.1.7",
+        "colorama==0.4.6",
+        "docutils==0.21",
+        "fastapi==0.110.0",
+        "ghp-import==2.1.0",
+        "h11==0.14.0",
+        "idna==3.6",
+        "importlib_metadata==7.1.0",
+        "jaraco.classes==3.4.0",
+        "jaraco.context==5.3.0",
+        "jaraco.functools==4.0.0",
+        "Jinja2==3.1.3",
+        "keyring==25.1.0",
+        "Markdown==3.6",
+        "markdown-it-py==3.0.0",
+        "MarkupSafe==2.1.5",
+        "mdurl==0.1.2",
+        "mergedeep==1.3.4",
+        "more-itertools==10.2.0",
+        "nh3==0.2.17",
+        "numpy==1.26.4",
+        "packaging==24.0",
+        "paginate==0.5.6",
+        "pandas==2.2.1",
+        "pathspec==0.12.1",
+        "pkginfo==1.10.0",
+        "platformdirs==4.2.0",
+        "pydantic==2.6.4",
+        "pydantic_core==2.16.3",
+        "Pygments==2.17.2",
+        "pymdown-extensions==10.8",
+        "pyproject_hooks==1.0.0",
+        "pyreadr==0.5.0",
+        "python-dateutil==2.9.0.post0",
+        "pytz==2024.1",
+        "pywin32-ctypes==0.2.2",
+        "PyYAML==6.0.1",
+        "pyyaml_env_tag==0.1",
+        "readme_renderer==43.0",
+        "regex==2024.4.16",
+        "requests==2.31.0",
+        "requests-toolbelt==1.0.0",
+        "rfc3986==2.0.0",
+        "rich==13.7.1",
+        "scipy==1.13.0",
+        "six==1.16.0",
+        "sniffio==1.3.1",
+        "starlette==0.36.3",
+        "twine==5.0.0",
+        "typing==3.7.4.3",
+        "tzdata==2024.1",
+        "urllib3==2.2.1",
+        "uvicorn==0.29.0",
+        "watchdog==4.0.0",
+        "zipp==3.18.1"
+        ],
+    packages=find_packages(include=["BWS", 'BWS.*']),
+    version = "0.1.1"  
+)
