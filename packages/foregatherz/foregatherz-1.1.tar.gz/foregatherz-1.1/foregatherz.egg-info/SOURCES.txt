@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+foregatherz/__init__.py
+foregatherz/main.py
+foregatherz.egg-info/PKG-INFO
+foregatherz.egg-info/SOURCES.txt
+foregatherz.egg-info/dependency_links.txt
+foregatherz.egg-info/requires.txt
+foregatherz.egg-info/top_level.txt
