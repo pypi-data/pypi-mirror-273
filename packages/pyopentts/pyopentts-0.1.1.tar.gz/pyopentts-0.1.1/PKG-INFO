@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyopentts
+Version: 0.1.1
+Summary: Python client for OpenTTS API
+Author: Jorge
+Author-email: jsequeira03@gmail.com
+Keywords: text-to-speech,TTS,API,client
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11

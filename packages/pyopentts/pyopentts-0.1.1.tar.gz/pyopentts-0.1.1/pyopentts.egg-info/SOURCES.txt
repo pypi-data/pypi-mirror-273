@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyopentts/__init__.py
+pyopentts/cache.py
+pyopentts.egg-info/PKG-INFO
+pyopentts.egg-info/SOURCES.txt
+pyopentts.egg-info/dependency_links.txt
+pyopentts.egg-info/requires.txt
+pyopentts.egg-info/top_level.txt
