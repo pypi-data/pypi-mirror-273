@@ -1,0 +1,15 @@
+activetigger/__init__.py,sha256=HeeGd3eCQ86DMNjVbHUogiGwJjp6E-a5tFKdJNT_xyo,52
+activetigger/__main__.py,sha256=CVcaD7zZC_g-nCQ7MsvfEx1tvml7GJbTKKFpbIfUMvU,2341
+activetigger/api.py,sha256=213MdX-lRxeW3FizP04jmNNjPxl4Cz5Z1YcujZVqOzU,34078
+activetigger/datamodels.py,sha256=FXhMr3kP2GyU4J-wl6YxWv5c9ovt2jtQ2Xg7e1OZtz0,3506
+activetigger/frontend.py,sha256=f8irgjf_RDyKL7Qsny5N7uqqkT2qPdzHan9cMloUprM,46829
+activetigger/functions.py,sha256=FXk58D9u7qmHRm483B6dviLeXJ8G4WQWZec1PH-_3-k,16156
+activetigger/models.py,sha256=zK7ZuYXlQtXjHExPZTVG1FXJC924piyEOaeqDN-5tTs,34355
+activetigger/server.py,sha256=1LYr1BbqRrQLeut_YaAR-PlBBAgX4n2Z4flcWuv5O3o,51979
+activetigger/widget.py,sha256=z8oNxGXNNhXQs7dwxTzX5KffFw9dSKoeRMAjLB7EuNA,61381
+activetigger/html/welcome.html,sha256=RKaAR_vi2ejuoUDzY2hWt1_iuTgrSOG5UKu-TMAl7BQ,430
+activetigger/img/active_tigger.png,sha256=TiCrqCazAy-B14Poigl-VI-sexTMdLTfRl3F6Jmo3d4,1167848
+activetigger-0.1.4.dist-info/LICENSE,sha256=VoCkeAIlO6SK7oEd6fqQ0PGUDMMCcBCX7f9yr6G4Zhg,1119
+activetigger-0.1.4.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+activetigger-0.1.4.dist-info/METADATA,sha256=ArkvDs9_M4Nh2d1OFKPORma0F1u5RdvzQhUk1aplCLY,2805
+activetigger-0.1.4.dist-info/RECORD,,
