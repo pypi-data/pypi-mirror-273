@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+breechingz/__init__.py
+breechingz/main.py
+breechingz.egg-info/PKG-INFO
+breechingz.egg-info/SOURCES.txt
+breechingz.egg-info/dependency_links.txt
+breechingz.egg-info/requires.txt
+breechingz.egg-info/top_level.txt
