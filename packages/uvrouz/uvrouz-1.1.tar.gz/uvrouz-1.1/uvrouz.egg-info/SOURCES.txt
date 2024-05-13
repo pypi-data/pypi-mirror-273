@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uvrouz/__init__.py
+uvrouz/main.py
+uvrouz.egg-info/PKG-INFO
+uvrouz.egg-info/SOURCES.txt
+uvrouz.egg-info/dependency_links.txt
+uvrouz.egg-info/requires.txt
+uvrouz.egg-info/top_level.txt
