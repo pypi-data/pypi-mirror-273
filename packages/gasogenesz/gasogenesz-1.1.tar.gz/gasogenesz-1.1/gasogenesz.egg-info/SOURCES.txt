@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gasogenesz/__init__.py
+gasogenesz/main.py
+gasogenesz.egg-info/PKG-INFO
+gasogenesz.egg-info/SOURCES.txt
+gasogenesz.egg-info/dependency_links.txt
+gasogenesz.egg-info/requires.txt
+gasogenesz.egg-info/top_level.txt
