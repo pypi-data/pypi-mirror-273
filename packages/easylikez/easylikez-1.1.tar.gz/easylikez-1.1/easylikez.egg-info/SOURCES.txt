@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+easylikez/__init__.py
+easylikez/main.py
+easylikez.egg-info/PKG-INFO
+easylikez.egg-info/SOURCES.txt
+easylikez.egg-info/dependency_links.txt
+easylikez.egg-info/requires.txt
+easylikez.egg-info/top_level.txt
