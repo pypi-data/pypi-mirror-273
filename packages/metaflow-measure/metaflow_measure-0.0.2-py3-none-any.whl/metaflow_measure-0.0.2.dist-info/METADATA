@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: metaflow-measure
+Version: 0.0.2
+Summary: Measure metrics and timings in Metaflow steps and send them optionally to Datadog or other backends
+Author: Outerbounds
+Author-email: hello@outerbounds.co
+License-File: LICENSE
+
