@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+emmetropismz/__init__.py
+emmetropismz/main.py
+emmetropismz.egg-info/PKG-INFO
+emmetropismz.egg-info/SOURCES.txt
+emmetropismz.egg-info/dependency_links.txt
+emmetropismz.egg-info/requires.txt
+emmetropismz.egg-info/top_level.txt
