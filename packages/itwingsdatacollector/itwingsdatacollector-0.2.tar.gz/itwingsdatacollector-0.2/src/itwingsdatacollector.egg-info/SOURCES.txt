@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/datacollector/__init__.py
+src/datacollector/config.py
+src/datacollector/google_analytics.py
+src/datacollector/pagespeed.py
+src/datacollector/raw_data_to_csv.py
+src/datacollector/screaming_frog.py
+src/datacollector/semrush_api.py
+src/itwingsdatacollector.egg-info/PKG-INFO
+src/itwingsdatacollector.egg-info/SOURCES.txt
+src/itwingsdatacollector.egg-info/dependency_links.txt
+src/itwingsdatacollector.egg-info/top_level.txt
