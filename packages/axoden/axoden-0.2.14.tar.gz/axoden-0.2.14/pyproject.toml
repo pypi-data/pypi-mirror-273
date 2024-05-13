@@ -1,0 +1,55 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "axoden"
+authors = [{name = "Raquel Adaia Sandoval Ortega", email = "raqueladaia@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+dynamic = ["version", "description"]
+"requires-python" = ">= 3.8"
+dependencies = [
+    "tqdm >= 4.0.0",
+    "numpy >= 1.16.0",
+    "pandas >= 2.0.0",
+    "seaborn >= 0.10.0",
+    "matplotlib >= 3.0.0",
+    "pillow >= 10.0.0",
+    "scikit-image >= 0.20.0",
+]
+
+[project.urls]
+Home = "https://github.com/raqueladaia/AxoDen"
+
+[tool.setuptools.dynamic]
+version = {attr = "axoden.__vesion__"}
+
+[tool.flit.sdist]
+include = ["axoden"]
+exclude = ["tests", "media", "test_images", "requirements*"]
+
+[project.optional-dependencies]
+gui = [
+    "streamlit >= 1.30.0",
+    "streamlit-pdf-viewer >= 0.0.10",
+    "pypdf >= 4.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    '.'
+]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+exclude = ["axoden/gui/streamlit_app/pages/2_❔️_Tutorial_&_How_To.py"]
+
+[tool.ruff.lint]
+select = ['E', 'F', 'W', 'A', 'PLC', 'PLE', 'PLW', 'I', 'E501']
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
