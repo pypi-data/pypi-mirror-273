@@ -1,0 +1,9 @@
+cryptmoji/__init__.py,sha256=9V64Kd0i_4WzdT1MBWvXxn0PDVzcBxxYsKV01564Ve4,105
+cryptmoji/cli.py,sha256=p7Mu_WSNWEuMYz1tXWianQdxrLN7BJVOFZQCzxN8_-g,736
+cryptmoji/data.py,sha256=JfP29ZbEWB2AjmIzENab3hLGYR8vr57QvgLJWB3jNKU,13293
+cryptmoji/main.py,sha256=7-YNyJcHsLnenSTp69FAMiawW0JW6aZWGMygMP4ZAGQ,1400
+cryptmoji-2.1.0.dist-info/entry_points.txt,sha256=mU0Yt61SgdAPfFacbyO3l3SZ9xszBIg8jmHfk4KdnDA,47
+cryptmoji-2.1.0.dist-info/LICENSE,sha256=mn0-aepjEBFPk0oconAGydrknyp_pyJIGkHvlSfoZxo,1094
+cryptmoji-2.1.0.dist-info/METADATA,sha256=YES2MoWcrpBXBBeNbFqE611NaKCe3iuTWo8RpWopS1Q,2722
+cryptmoji-2.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cryptmoji-2.1.0.dist-info/RECORD,,
