@@ -1,0 +1,10 @@
+README.md
+setup.py
+annonition/__init__.py
+annonition/logger.py
+annonition/main.py
+annonition.egg-info/PKG-INFO
+annonition.egg-info/SOURCES.txt
+annonition.egg-info/dependency_links.txt
+annonition.egg-info/requires.txt
+annonition.egg-info/top_level.txt
