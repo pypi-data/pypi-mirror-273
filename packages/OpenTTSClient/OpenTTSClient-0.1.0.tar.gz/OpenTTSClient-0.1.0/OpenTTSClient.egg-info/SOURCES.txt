@@ -1,0 +1,9 @@
+README.md
+setup.py
+OpenTTSClient.egg-info/PKG-INFO
+OpenTTSClient.egg-info/SOURCES.txt
+OpenTTSClient.egg-info/dependency_links.txt
+OpenTTSClient.egg-info/requires.txt
+OpenTTSClient.egg-info/top_level.txt
+open_tts_client/__init__.py
+open_tts_client/cache.py
