@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+incrustsz/__init__.py
+incrustsz/main.py
+incrustsz.egg-info/PKG-INFO
+incrustsz.egg-info/SOURCES.txt
+incrustsz.egg-info/dependency_links.txt
+incrustsz.egg-info/requires.txt
+incrustsz.egg-info/top_level.txt
