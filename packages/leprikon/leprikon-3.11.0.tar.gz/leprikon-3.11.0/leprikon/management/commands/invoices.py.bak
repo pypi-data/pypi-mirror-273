@@ -1,0 +1,13 @@
+from django.core.management.base import BaseCommand
+from django.template import loader
+
+from leprikon.models.subjects import SubjectRegistration
+
+
+class Command(BaseCommand):
+    help = "Export all registrations to XML"
+
+    def handle(self, *args, **options):
+        template = loader.get_template("leprikon/invoices.xml")
+        with open("data/invoices.xml", "w") as f:
+            f.write(template.render({"registrations": SubjectRegistration.objects.all()}))
