@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: lgjsfinance
+Version: 0.0.6
+Summary: LGJS Finance
+Home-page: https://liamgenjs.vercel.app
+Author: liamgen.js
+Author-email: liamgen.js@proton.me
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yfinance>=0.2.38
+Requires-Dist: matplotlib
+Requires-Dist: datetime
+
+```
+# Import des packages
+from lgjsfinance import DataRecover
+
+# Definir la classe et la currency
+data = DataRecover("EURUSD=X")
+
+# RÃ©cupÃ©rer l'historique des prix de la journÃ©e
+historique_prix = data.get_close_prices_hourly()
+
+# RÃ©cupÃ©rer les 16 derniÃ¨res donnÃ©es
+print(historique_prix.tail(16))
+
+# Tracer le graphique
+data.show_graph(historique_prix)
+```
