@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: VioleRCNG
+Version: 0.0.1
+Summary: A random code name generator for anything
+Author: Jorge Magno
+Author-email: jorge.estudos0@gmail.com
+License: MIT License
+Keywords: code,name generator
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: random
+Requires-Dist: string
+
+Viole is a Python library that generates random code names using a combination of letters and numbers. It provides flexibility in generating code names with different patterns and components.
