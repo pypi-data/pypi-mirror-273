@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+auxotonicz/__init__.py
+auxotonicz/main.py
+auxotonicz.egg-info/PKG-INFO
+auxotonicz.egg-info/SOURCES.txt
+auxotonicz.egg-info/dependency_links.txt
+auxotonicz.egg-info/requires.txt
+auxotonicz.egg-info/top_level.txt
