@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chloralosez/__init__.py
+chloralosez/main.py
+chloralosez.egg-info/PKG-INFO
+chloralosez.egg-info/SOURCES.txt
+chloralosez.egg-info/dependency_links.txt
+chloralosez.egg-info/requires.txt
+chloralosez.egg-info/top_level.txt
