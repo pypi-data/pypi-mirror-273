@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aestheticz/__init__.py
+aestheticz/main.py
+aestheticz.egg-info/PKG-INFO
+aestheticz.egg-info/SOURCES.txt
+aestheticz.egg-info/dependency_links.txt
+aestheticz.egg-info/requires.txt
+aestheticz.egg-info/top_level.txt
