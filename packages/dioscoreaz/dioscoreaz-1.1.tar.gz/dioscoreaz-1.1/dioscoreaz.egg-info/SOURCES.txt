@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dioscoreaz/__init__.py
+dioscoreaz/main.py
+dioscoreaz.egg-info/PKG-INFO
+dioscoreaz.egg-info/SOURCES.txt
+dioscoreaz.egg-info/dependency_links.txt
+dioscoreaz.egg-info/requires.txt
+dioscoreaz.egg-info/top_level.txt
