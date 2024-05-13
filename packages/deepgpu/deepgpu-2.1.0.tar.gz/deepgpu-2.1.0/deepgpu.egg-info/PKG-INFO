@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: deepgpu
+Version: 2.1.0
+Summary: DEEPGPU is a toolset for AI training acceleration on Alibaba Cloud.
+Home-page: https://www.aliyun.com
+Author: Alibaba Cloud
+License: Copyright (C) Alibaba Group Holding Limited
+Keywords: Distributed,Deep Learning,Communication,NCCL,Pytorch,Tensorflow
+Requires-Python: >=3.8
+
+It includes a distributed training framework plugin for PyTorch, and a nccl runtime plugin for many deep learning framworks including PyTorch, TensorFlow and .etc. This project aims to make the distributed training as easy as possible and as fast as possible on Alibaba Cloud.
