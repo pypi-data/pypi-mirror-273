@@ -1,0 +1,10 @@
+slsvd/.DS_Store,sha256=asK6WIFc8XrRXtuJtG15XwJvMXp6MEoHKqrIxCjByYw,6148
+slsvd/.ipynb_checkpoints/example-checkpoint.ipynb,sha256=AsweE9OUuTxFioaO7woWrHMZhpNCbsgDfwnO7X9XhI8,7174
+slsvd/__init__.py,sha256=NcFHC8WOh7nqhq9fR6eFJyWxO7dAhYEibWvXuetUgso,107
+slsvd/data_generation.py,sha256=zw6uap-QsM7HWohIDZvVSoTZbO6ykwRMJfXbr3Ltya0,3189
+slsvd/metrics.py,sha256=DrSGCXqkMIOHk2-M0iKLsLy6gkw8oDwwdTT-HNq8yaU,865
+slsvd/slsvd.py,sha256=Ku85H9wAuPh6rNxzSNi3b4Tzk9xUqCBCZOU9TXWrYbU,9263
+slsvd-0.1.1.dist-info/LICENSE,sha256=zvuc3FfZj-tYO2NGSPQl9WjWIGpOTvJNa5JW1Jg1Mps,1069
+slsvd-0.1.1.dist-info/METADATA,sha256=JrQGGf5Ki5Hop4eqI2IGMK09KJo5Ca5J2UDybfg_vrE,8211
+slsvd-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+slsvd-0.1.1.dist-info/RECORD,,
