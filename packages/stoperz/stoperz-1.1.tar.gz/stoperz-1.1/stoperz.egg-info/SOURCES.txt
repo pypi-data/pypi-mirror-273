@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stoperz/__init__.py
+stoperz/main.py
+stoperz.egg-info/PKG-INFO
+stoperz.egg-info/SOURCES.txt
+stoperz.egg-info/dependency_links.txt
+stoperz.egg-info/requires.txt
+stoperz.egg-info/top_level.txt
