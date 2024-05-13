@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+paludrinz/__init__.py
+paludrinz/main.py
+paludrinz.egg-info/PKG-INFO
+paludrinz.egg-info/SOURCES.txt
+paludrinz.egg-info/dependency_links.txt
+paludrinz.egg-info/requires.txt
+paludrinz.egg-info/top_level.txt
