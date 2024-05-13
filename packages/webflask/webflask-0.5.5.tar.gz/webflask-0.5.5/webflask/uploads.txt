@@ -1,0 +1,51 @@
+rails new file_upload_example
+cd file_upload_example --skip-git
+
+rails generate controller uploads new create
+
+Open `config/routes.rb` and add:
+
+
+Rails.application.routes.draw do
+  get 'uploads/new'
+  post 'uploads/create'
+  root 'uploads#new'
+end
+
+
+Open `app/views/uploads/new.html.erb`:
+
+<!-- app/views/uploads/new.html.erb -->
+
+<h1>Upload a File</h1>
+
+<%= form_with(url: uploads_create_path, local: true, multipart: true) do |form| %>
+  <%= form.file_field :file %>
+  <%= form.submit "Upload" %>
+<% end %>
+
+Open app/controllers/uploads_controller.rb
+`UploadsController`
+
+# app/controllers/uploads_controller.rb
+
+class UploadsController < ApplicationController
+  def new
+  end
+
+  def create
+    uploaded_file = params[:file]
+    File.open(Rails.root.join('public', 'uploads', uploaded_file.original_filename), 'wb') do |file|
+      file.write(uploaded_file.read)
+    end
+    redirect_to root_path, notice: "File uploaded successfully"
+  end
+end
+
+
+Create a new folder uploads under public
+
+public/uploads
+
+
+rails server
