@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+complaintsz/__init__.py
+complaintsz/main.py
+complaintsz.egg-info/PKG-INFO
+complaintsz.egg-info/SOURCES.txt
+complaintsz.egg-info/dependency_links.txt
+complaintsz.egg-info/requires.txt
+complaintsz.egg-info/top_level.txt
