@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+savourierz/__init__.py
+savourierz/main.py
+savourierz.egg-info/PKG-INFO
+savourierz.egg-info/SOURCES.txt
+savourierz.egg-info/dependency_links.txt
+savourierz.egg-info/requires.txt
+savourierz.egg-info/top_level.txt
