@@ -1,0 +1,14 @@
+gprofiler
+h5py>=2.9.0
+matplotlib
+numpy<1.24.0
+pandas>=0.25.0
+pyarrow>=0.14.1
+scikit-image>=0.15.0
+scikit-learn>=0.21.3
+scipy
+seaborn>=0.9.0
+tables>=3.6.1
+torch>=1.2.0
+tqdm>=4.33.0
+twobitreader>=3.1.7
