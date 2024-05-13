@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dnfjson
+Version: 0.3.0
+Summary: A libdnf wrapper which produces machine readable output
+Home-page: https://github.com/chrboe/dnfjson
+Author: Christoph Böhmwalder
+Author-email: christoph.boehmwalder@linbit.com
+Requires-Python: >=3.6
+License-File: LICENSE
+
