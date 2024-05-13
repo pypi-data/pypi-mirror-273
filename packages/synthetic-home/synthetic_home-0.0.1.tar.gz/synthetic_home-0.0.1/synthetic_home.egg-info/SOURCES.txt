@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+./synthetic_home/__init__.py
+./synthetic_home/device_types.py
+./synthetic_home/exceptions.py
+./synthetic_home/registry/__init__.py
+synthetic_home.egg-info/PKG-INFO
+synthetic_home.egg-info/SOURCES.txt
+synthetic_home.egg-info/dependency_links.txt
+synthetic_home.egg-info/requires.txt
+synthetic_home.egg-info/top_level.txt
+tests/test_device_types.py
