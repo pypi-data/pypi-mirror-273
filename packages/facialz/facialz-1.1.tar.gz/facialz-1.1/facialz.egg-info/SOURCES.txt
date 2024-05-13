@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+facialz/__init__.py
+facialz/main.py
+facialz.egg-info/PKG-INFO
+facialz.egg-info/SOURCES.txt
+facialz.egg-info/dependency_links.txt
+facialz.egg-info/requires.txt
+facialz.egg-info/top_level.txt
