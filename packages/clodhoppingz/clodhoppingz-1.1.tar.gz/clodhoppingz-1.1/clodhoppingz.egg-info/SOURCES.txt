@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+clodhoppingz/__init__.py
+clodhoppingz/main.py
+clodhoppingz.egg-info/PKG-INFO
+clodhoppingz.egg-info/SOURCES.txt
+clodhoppingz.egg-info/dependency_links.txt
+clodhoppingz.egg-info/requires.txt
+clodhoppingz.egg-info/top_level.txt
