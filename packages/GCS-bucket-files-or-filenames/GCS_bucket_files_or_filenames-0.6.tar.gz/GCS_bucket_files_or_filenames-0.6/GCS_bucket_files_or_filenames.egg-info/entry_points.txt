@@ -1,0 +1,2 @@
+[console_scripts]
+GCS_bucket_files_or_filenames = GCS_bucket_files_or_filenames:files_in_bucket
