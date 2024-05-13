@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rapidsz/__init__.py
+rapidsz/main.py
+rapidsz.egg-info/PKG-INFO
+rapidsz.egg-info/SOURCES.txt
+rapidsz.egg-info/dependency_links.txt
+rapidsz.egg-info/requires.txt
+rapidsz.egg-info/top_level.txt
