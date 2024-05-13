@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+interdebatedz/__init__.py
+interdebatedz/main.py
+interdebatedz.egg-info/PKG-INFO
+interdebatedz.egg-info/SOURCES.txt
+interdebatedz.egg-info/dependency_links.txt
+interdebatedz.egg-info/requires.txt
+interdebatedz.egg-info/top_level.txt
