@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/DocsChat.egg-info/PKG-INFO
+src/DocsChat.egg-info/SOURCES.txt
+src/DocsChat.egg-info/dependency_links.txt
+src/DocsChat.egg-info/entry_points.txt
+src/DocsChat.egg-info/requires.txt
+src/DocsChat.egg-info/top_level.txt
+src/docschat/__init__.py
+src/docschat/__main__.py
+src/docschat/app.py

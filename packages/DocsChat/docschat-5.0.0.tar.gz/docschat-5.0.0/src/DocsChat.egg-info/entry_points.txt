@@ -1,0 +1,2 @@
+[console_scripts]
+docschat = docschat.__main__:run
