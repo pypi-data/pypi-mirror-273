@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+numberz/__init__.py
+numberz/main.py
+numberz.egg-info/PKG-INFO
+numberz.egg-info/SOURCES.txt
+numberz.egg-info/dependency_links.txt
+numberz.egg-info/requires.txt
+numberz.egg-info/top_level.txt
