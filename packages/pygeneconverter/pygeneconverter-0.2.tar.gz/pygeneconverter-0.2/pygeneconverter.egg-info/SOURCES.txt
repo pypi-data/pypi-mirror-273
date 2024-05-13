@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+pygeneconverter/__init__.py
+pygeneconverter/pygeneconverter.py
+pygeneconverter.egg-info/PKG-INFO
+pygeneconverter.egg-info/SOURCES.txt
+pygeneconverter.egg-info/dependency_links.txt
+pygeneconverter.egg-info/requires.txt
+pygeneconverter.egg-info/top_level.txt
+pygeneconverter/data/query_table.csv
