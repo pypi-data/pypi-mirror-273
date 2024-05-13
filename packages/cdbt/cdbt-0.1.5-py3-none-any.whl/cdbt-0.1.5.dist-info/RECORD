@@ -1,0 +1,9 @@
+cdbt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdbt/cmdline.py,sha256=QBcV3GX0ZtjzHpZ0eB3cEYhmmjG-wrs1dh26wNKM1tM,2992
+cdbt/main.py,sha256=nqZ1SRjIYQ56l0HBSZkvBO5DRJseRDttVC-zlyNG4G8,11636
+cdbt/main_backup.py,sha256=3bRE8XGH2J1KXGJG6_yYlCRuyH5Q_hhaAzB0cB8EtK0,6642
+cdbt-0.1.5.dist-info/METADATA,sha256=4InvL6ZBoo4qJ2jUZbb0dt8lLMcY1OufN-MksvPCCfk,392
+cdbt-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cdbt-0.1.5.dist-info/entry_points.txt,sha256=WJr91uJeTIIrtH9e_iyd5nEAJorpx3TvZGGHXV3W9oQ,43
+cdbt-0.1.5.dist-info/top_level.txt,sha256=2tvFgKzgU2jA_KjlOSTr7pnOiLwoDpK5ExxJPZCFUww,5
+cdbt-0.1.5.dist-info/RECORD,,
