@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stromataz/__init__.py
+stromataz/main.py
+stromataz.egg-info/PKG-INFO
+stromataz.egg-info/SOURCES.txt
+stromataz.egg-info/dependency_links.txt
+stromataz.egg-info/requires.txt
+stromataz.egg-info/top_level.txt
