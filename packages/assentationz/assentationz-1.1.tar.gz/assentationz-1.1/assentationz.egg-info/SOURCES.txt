@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+assentationz/__init__.py
+assentationz/main.py
+assentationz.egg-info/PKG-INFO
+assentationz.egg-info/SOURCES.txt
+assentationz.egg-info/dependency_links.txt
+assentationz.egg-info/requires.txt
+assentationz.egg-info/top_level.txt
