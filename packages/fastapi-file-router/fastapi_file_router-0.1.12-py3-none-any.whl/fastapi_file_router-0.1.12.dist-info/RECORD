@@ -1,0 +1,5 @@
+fastapi_file_router/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_file_router/router.py,sha256=Cmt3_G71EOL1nC3riZmhf2g1dZJ4b34nB7qwnksJM6I,4215
+fastapi_file_router-0.1.12.dist-info/METADATA,sha256=4P3lOWyZj2-Xw3VP4q0kjUUykyfKvYtjWdtzG5ReqCo,493
+fastapi_file_router-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fastapi_file_router-0.1.12.dist-info/RECORD,,
