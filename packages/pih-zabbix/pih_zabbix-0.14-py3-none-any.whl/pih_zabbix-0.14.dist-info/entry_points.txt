@@ -1,0 +1,2 @@
+[console_scripts]
+pih-zabbix = ZabbixService.__main__:start
