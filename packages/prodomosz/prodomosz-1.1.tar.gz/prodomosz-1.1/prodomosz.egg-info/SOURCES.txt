@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+prodomosz/__init__.py
+prodomosz/main.py
+prodomosz.egg-info/PKG-INFO
+prodomosz.egg-info/SOURCES.txt
+prodomosz.egg-info/dependency_links.txt
+prodomosz.egg-info/requires.txt
+prodomosz.egg-info/top_level.txt
