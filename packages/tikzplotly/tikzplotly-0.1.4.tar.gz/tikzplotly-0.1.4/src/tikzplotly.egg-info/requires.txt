@@ -1,0 +1,6 @@
+numpy
+plotly
+PIL
+
+[dev]
+pandas
