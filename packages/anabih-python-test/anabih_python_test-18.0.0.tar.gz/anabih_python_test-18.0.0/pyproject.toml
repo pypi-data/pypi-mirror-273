@@ -1,0 +1,27 @@
+# Update the values as per your requirement
+[build-system]
+requires = ["setuptools>=57.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "anabih-python-test"
+version = "18.0.0"
+authors = [
+    { name = "Ahmed nabih", email = "anabih2000@yahoo.com.com" },
+]
+description = "Python Test"
+readme = "README.md"
+requires-python = ">=3.6.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.1",
+]
+[project.optional-dependencies]
+test = ["pytest"]
+[project.urls]
+"Homepage" = "https://github.com/anabih/python-test"
+[tool.setuptools.packages.find]
+where = ["src"]

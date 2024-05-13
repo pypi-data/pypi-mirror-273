@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: anabih-python-test
+Version: 18.0.0
+Summary: Python Test
+Author-email: Ahmed nabih <anabih2000@yahoo.com.com>
+Project-URL: Homepage, https://github.com/anabih/python-test
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+python-test project
