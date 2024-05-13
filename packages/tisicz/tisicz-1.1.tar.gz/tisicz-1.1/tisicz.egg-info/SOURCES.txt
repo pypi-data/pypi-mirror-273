@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tisicz/__init__.py
+tisicz/main.py
+tisicz.egg-info/PKG-INFO
+tisicz.egg-info/SOURCES.txt
+tisicz.egg-info/dependency_links.txt
+tisicz.egg-info/requires.txt
+tisicz.egg-info/top_level.txt
