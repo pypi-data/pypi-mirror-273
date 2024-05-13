@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+duetz/__init__.py
+duetz/main.py
+duetz.egg-info/PKG-INFO
+duetz.egg-info/SOURCES.txt
+duetz.egg-info/dependency_links.txt
+duetz.egg-info/requires.txt
+duetz.egg-info/top_level.txt
