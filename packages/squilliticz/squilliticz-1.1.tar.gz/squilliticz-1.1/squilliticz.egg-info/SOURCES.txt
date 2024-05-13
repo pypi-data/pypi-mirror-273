@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+squilliticz/__init__.py
+squilliticz/main.py
+squilliticz.egg-info/PKG-INFO
+squilliticz.egg-info/SOURCES.txt
+squilliticz.egg-info/dependency_links.txt
+squilliticz.egg-info/requires.txt
+squilliticz.egg-info/top_level.txt
