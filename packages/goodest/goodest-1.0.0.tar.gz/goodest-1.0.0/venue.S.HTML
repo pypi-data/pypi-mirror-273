@@ -1,0 +1,125 @@
+
+
+
+<pre>
+
+	<h1>goodest</h1>
+	
+	<h2>on</h2>
+		<h3>1st terminal panel</h3>
+			#
+			#	if there's a docker conflict	
+			#
+			#
+			docker rm $(docker ps -a -q)
+
+		
+			#
+			#	on
+			#
+			docker compose up -d; sleep 5; docker exec -it goodest.1 bash -c "source /habitat/_controls/source_2.sh && bash"
+		
+		
+			#
+			#	optional: HAProxy certs
+			#
+			#
+			goodest_1 adventures demux_hap build_unverified_certificates
+
+			#
+			#	optional: install
+			#
+			#
+			python3 /habitat/_controls/install_with_uv.py
+
+			#
+			#	optional: if need to import the database
+			#
+			goodest_1 adventures monetary saves import --version 3 --drop
+			
+		
+		<h3>2+ terminal panels</h3>
+			docker exec -it goodest.1 bash -c "source /habitat/_controls/source_2.sh && bash"
+			
+			#
+			#
+			#	build the front
+			#
+			(cd /habitat/venues/stages/goodest/adventures/vv_turbo/apps/web && bun run build)
+	
+	<h2>garages (harbors)</h2>
+		<h3>sanic</h3>
+			http://192.168.0.100/docs/swagger#/
+			
+		<h3>sanic inspector</h3>
+			http://192.168.0.100:7457
+			
+		<h3>mongo</h3>
+			http://192.168.0.100:39000
+			
+			<h3>node_data</h3>
+				/goodest/venues/stages/goodest/adventures/monetary/__monetary_1
+		
+			<h3>saves</h3>
+				ls /goodest/venues/stages/goodest/adventures/monetary/__saves
+			
+			<h3>saving</h3>
+				goodest_1 adventures monetary saves export --version 2
+		
+			<h3>loading</h3>
+				goodest_1 adventures monetary saves import-overwrite --version 2
+	
+	
+	<h2>bun</h2>
+		apt install unzip; curl -fsSL https://bun.sh/install | bash; source /root/.bashrc
+		
+		<h2>install</h2>
+			(cd /habitat/venues/stages/goodest/adventures/vv_turbo/ && bun install)
+		
+		<h3>on</h3>
+			(cd /habitat/venues/stages/goodest/adventures/vv_turbo/ && bun run dev) 
+			(cd /habitat/venues/stages/goodest/adventures/vv_turbo/apps/web && bun run build --watch)
+		
+		<h3>previously</h3>
+			(cd /habitat/venues/stages/goodest/adventures && npx create-turbo@latest -e with-vite)
+			(cd /habitat/venues/stages/goodest/adventures/vv_turbo/ && bun add @vitejs/plugin-vue)
+			(cd /habitat/venues/stages/goodest/adventures/vv_turbo/apps/web && bun pm untrusted)
+		
+
+
+	<h2>publishing</h2>
+		<h3>linting</h3>
+			(cd /goodest/venues/stages/goodest && pycycle --here) 
+	
+		<h3>status</h3>
+			cd /goodest/venues/stages/goodest/__status/main
+			python3 /habitat/venues/stages/goodest/__status/main/status.proc.py
+			
+			#
+			#	external API checks
+			#	
+			python3 /habitat/venues/stages/goodest/__status/API/status.proc.py
+
+			
+
+			# vite status
+		
+		<h3>publish</h3>
+			#
+			#	[ ] poetry auth
+			#
+			#
+			pip install poetry && cd /habitat && rm -rf dist && poetry build --verbose && poetry publish --verbose;
+			(pip install poetry && cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat && poetry publish --verbose;)
+		
+
+	<h2>important</h2>
+		poetry show --tree
+
+
+	<h2>docker</h2>
+		docker compose up -d
+		docker exec -it goodest bash
+		docker exec -it goodest bash -c "source /goodest/moves/source_2.sh && bash"
+
+</pre>
