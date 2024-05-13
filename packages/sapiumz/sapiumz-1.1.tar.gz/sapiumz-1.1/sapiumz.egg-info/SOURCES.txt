@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sapiumz/__init__.py
+sapiumz/main.py
+sapiumz.egg-info/PKG-INFO
+sapiumz.egg-info/SOURCES.txt
+sapiumz.egg-info/dependency_links.txt
+sapiumz.egg-info/requires.txt
+sapiumz.egg-info/top_level.txt
