@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: sans-serif;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#message-alert {
+    color: red;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="message-alert"></p>
+
+    <script src="script.js"></script>
+    <script>
+        const form = document.getElementById('contact-form');
+const messageAlert = document.getElementById('message-alert');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  let errorMessage = "";
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  if (name === "") {
+    errorMessage += "Name is required. \n";
+  } else {
+    const hasNumbers = /\d/.test(name);
+    if (hasNumbers) {
+      errorMessage += "Name cannot contain numbers. \n";
+    } else if (name.length < 2) {
+      errorMessage += "Name must be at least 2 characters long. \n";
+    }
+  }
+  const emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (!emailPattern.test(email)) {
+    errorMessage += "Please enter a valid email address. \n";
+  }
+  if (errorMessage !== "") {
+    messageAlert.textContent = errorMessage;
+  } else {
+    alert("Form submitted successfully!");
+  }
+});
+
+    </script>  
+</body>
+</html>
