@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+garbardinez/__init__.py
+garbardinez/main.py
+garbardinez.egg-info/PKG-INFO
+garbardinez.egg-info/SOURCES.txt
+garbardinez.egg-info/dependency_links.txt
+garbardinez.egg-info/requires.txt
+garbardinez.egg-info/top_level.txt
