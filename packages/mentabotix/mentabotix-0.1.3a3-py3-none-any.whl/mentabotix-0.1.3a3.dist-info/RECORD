@@ -1,0 +1,13 @@
+mentabotix-0.1.3a3.dist-info/METADATA,sha256=3Evu9ZO7LqgRzHoPECti66rb1LpHFToWcFMWrZNrhL0,24211
+mentabotix-0.1.3a3.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+mentabotix-0.1.3a3.dist-info/licenses/LICENSE,sha256=uXTQ6YtjEnBYEbor4uzxqggWPCRIqU3f5EOiJNQLpDs,1087
+mentabotix/__init__.py,sha256=znJ7EbrK8HOqXAZxos-VJuYM7ER-ws3v6OyLE2BPwig,1247
+mentabotix/modules/botix.py,sha256=sn2Tw4yPa9xtMNrVPnGlU6W-Atue7-zweXcky_i06Iw,70023
+mentabotix/modules/exceptions.py,sha256=ja4GSeRSKzEjNX2_ZXBPHWNA4ewRW2d-ZKe9h6ofHj4,243
+mentabotix/modules/logger.py,sha256=6mGQ7TLd915swCe8GhlZV25DaNCvyjEEWisNGYVg0M8,607
+mentabotix/modules/menta.py,sha256=6yKr9nGYaeJmxvw-HVrDa7fkunJsFNSAB6Gq7PYhnPQ,20066
+mentabotix/tools/composers.py,sha256=2EbDr29wr_VY6i97DiovC_V24MT1y3OyWPFEdsio9aE,8042
+mentabotix/tools/generators.py,sha256=6ygdevX0l8Bad5mi7Ewz2XMcYXXIYHdIvaRpbvPSRIU,2374
+mentabotix/vision/camra.py,sha256=5CvIykh7MXeezdzhQg_feibAGwSs1w2W6llE9xY7H10,5622
+mentabotix/vision/tagdetector.py,sha256=7pDUN3-wNcjKjRYp4h06dSDKMN2vtQz5G_7afPgaJ0Q,9183
+mentabotix-0.1.3a3.dist-info/RECORD,,
