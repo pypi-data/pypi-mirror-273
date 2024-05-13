@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: synthetic_home
+Version: 0.0.1
+Summary: Library for managing synthetic home device registry
+Home-page: https://github.com/allenporter/synthetic_home
+Author: Allen Porter
+Author-email: allen.porter@gmail.com
+License: Apache-2.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mashumaro >=3.13
+
+# synthetic-home
+
+Library for managing synthetic home device registry. This project is primarily
+used by the [home-assistant-synthetic-home](https://github.com/allenporter/home-assistant-synthetic-home)
+custom component and the [home-assistant-datasets](https://github.com/allenporter/home-assistant-datasets)
+which creates instances of synthetic homes.
