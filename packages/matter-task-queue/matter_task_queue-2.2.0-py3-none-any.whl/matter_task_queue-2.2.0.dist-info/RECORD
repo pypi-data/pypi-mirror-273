@@ -1,0 +1,10 @@
+matter_task_queue/__about__.py,sha256=RInFV5fKDrs42qPhdwM9B3N6AVLR-6hYuR5l0YIXn14,134
+matter_task_queue/__init__.py,sha256=ZFkdbgwBSqy_H99nGWgV3FPvA4_qn3SjQ0jFyBDa7q0,327
+matter_task_queue/base_task.py,sha256=6J-CkaNo3PoERYwfcq2N6WKvUkm7eE1ZtGqqv9ms7nk,1228
+matter_task_queue/celery_config.py,sha256=-K8F3uI3HzFH6WHGsZZo5hW4nUBdtnXZwgv6rGH1QTs,4032
+matter_task_queue/config.py,sha256=Nj86ToyMgHBjUcxnoBiEIsLNw2zDCZydN5bqFa354Gg,1020
+matter_task_queue/utils.py,sha256=n20xaGEDOLjUX0M2FYeo9_VnIVCfuRJohB_lQjRHie8,2861
+matter_task_queue-2.2.0.dist-info/METADATA,sha256=N6V21RQGOJyCyYevjH05TIB-DB33mhc4wWG-AE_jHk8,4808
+matter_task_queue-2.2.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+matter_task_queue-2.2.0.dist-info/licenses/LICENSE,sha256=bqRY4B_u4xSKzKFb3ML8l0nCWvMXyzEGwY2B2hteV8g,1068
+matter_task_queue-2.2.0.dist-info/RECORD,,
