@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+collieriesz/__init__.py
+collieriesz/main.py
+collieriesz.egg-info/PKG-INFO
+collieriesz.egg-info/SOURCES.txt
+collieriesz.egg-info/dependency_links.txt
+collieriesz.egg-info/requires.txt
+collieriesz.egg-info/top_level.txt
