@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ShadowFinder
+Version: 0.1.1
+Summary: Find possible locations of shadows.
+Home-page: https://github.com/bellingcat/ShadowFinder
+License: MIT
+Keywords: shadow,finder,locator,map
+Author: Bellingcat
+Requires-Python: >=3.9,<3.13
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: basemap (>=1.4,<2.0)
+Requires-Dist: fire (>=0.5,<0.6)
+Requires-Dist: matplotlib (>=3.8,<4.0)
+Requires-Dist: suncalc (>=0.1.3,<0.2.0)
+Project-URL: Bug Tracker, https://github.com/bellingcat/ShadowFinder/issues
+Project-URL: Repository, https://github.com/bellingcat/ShadowFinder
+Description-Content-Type: text/markdown
+
+# ShadowFinder
+
+A lightweight tool and Google Colab notebook for estimating the points on the Earth's surface where a shadow of a particular length could occur, for geolocation purposes.
+
+Using an object's height, the lenth of its shadow, the date and the time, ShadowFinder estimates the possible locations where that shadow could occur.
+
+[Try out ShadowFinder on Google Colab now](https://colab.research.google.com/github/Bellingcat/ShadowFinder/blob/main/ShadowFinderColab.ipynb)
+
