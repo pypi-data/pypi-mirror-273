@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+monopticalz/__init__.py
+monopticalz/main.py
+monopticalz.egg-info/PKG-INFO
+monopticalz.egg-info/SOURCES.txt
+monopticalz.egg-info/dependency_links.txt
+monopticalz.egg-info/requires.txt
+monopticalz.egg-info/top_level.txt
