@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: llm-taxi
+Version: 0.0.0
+Summary: Add your description here
+Author-email: Yevgnen Koh <wherejoystarts@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# llm-taxi
+
+Describe your project here.
