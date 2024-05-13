@@ -1,0 +1,1 @@
+from binpolar.polarity_detector import detect_polarity
