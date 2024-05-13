@@ -1,0 +1,7 @@
+typing_extensions>=4.11.0
+
+[tests]
+pydocstyle
+isort
+check-manifest
+pytest
