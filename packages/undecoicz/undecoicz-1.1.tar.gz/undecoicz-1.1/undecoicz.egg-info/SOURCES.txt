@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+undecoicz/__init__.py
+undecoicz/main.py
+undecoicz.egg-info/PKG-INFO
+undecoicz.egg-info/SOURCES.txt
+undecoicz.egg-info/dependency_links.txt
+undecoicz.egg-info/requires.txt
+undecoicz.egg-info/top_level.txt
