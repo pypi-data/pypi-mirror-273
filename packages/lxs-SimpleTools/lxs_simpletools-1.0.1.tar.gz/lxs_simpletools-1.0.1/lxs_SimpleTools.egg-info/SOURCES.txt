@@ -1,0 +1,6 @@
+README.md
+setup.py
+lxs_SimpleTools.egg-info/PKG-INFO
+lxs_SimpleTools.egg-info/SOURCES.txt
+lxs_SimpleTools.egg-info/dependency_links.txt
+lxs_SimpleTools.egg-info/top_level.txt
