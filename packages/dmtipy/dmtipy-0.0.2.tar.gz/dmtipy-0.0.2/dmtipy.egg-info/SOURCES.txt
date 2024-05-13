@@ -1,0 +1,9 @@
+README.md
+setup.py
+dmtipy/__init__.py
+dmtipy/create_table_from_csv.py
+dmtipy.egg-info/PKG-INFO
+dmtipy.egg-info/SOURCES.txt
+dmtipy.egg-info/dependency_links.txt
+dmtipy.egg-info/requires.txt
+dmtipy.egg-info/top_level.txt
