@@ -1,0 +1,4 @@
+more-itertools~=10.2
+pandas~=2.2
+typing_extensions~=4.11
+wrapt~=1.16
