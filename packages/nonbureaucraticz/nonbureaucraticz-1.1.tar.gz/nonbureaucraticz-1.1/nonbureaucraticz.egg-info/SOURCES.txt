@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonbureaucraticz/__init__.py
+nonbureaucraticz/main.py
+nonbureaucraticz.egg-info/PKG-INFO
+nonbureaucraticz.egg-info/SOURCES.txt
+nonbureaucraticz.egg-info/dependency_links.txt
+nonbureaucraticz.egg-info/requires.txt
+nonbureaucraticz.egg-info/top_level.txt
