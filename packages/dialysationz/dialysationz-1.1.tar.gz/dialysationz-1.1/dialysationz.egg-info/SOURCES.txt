@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dialysationz/__init__.py
+dialysationz/main.py
+dialysationz.egg-info/PKG-INFO
+dialysationz.egg-info/SOURCES.txt
+dialysationz.egg-info/dependency_links.txt
+dialysationz.egg-info/requires.txt
+dialysationz.egg-info/top_level.txt
