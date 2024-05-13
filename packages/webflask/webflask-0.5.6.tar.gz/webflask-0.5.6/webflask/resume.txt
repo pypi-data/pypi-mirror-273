@@ -1,0 +1,13 @@
+Step 1: create a new Rails application 
+    rails new resume --skip-git 
+    cd resume
+Step 2: Generate a scaffold for the To-Do model. 
+    rails generate scaffold Resume name:string email:string phone:string summary:text education:text experience:text skills:text  
+Step 3: Run the migration to create the database table 
+    rails db:migrate 
+Step 4: Under config/routes.rb change
+    #root 'posts#index' to root 'resumes#index' (name in resources)
+Step 5: start the Rails server 
+    rails server 
+Step 6: now visit http://localhost:3000 in your browser to see your resume 
+data displayed. 
