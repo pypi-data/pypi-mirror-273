@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fungusyz/__init__.py
+fungusyz/main.py
+fungusyz.egg-info/PKG-INFO
+fungusyz.egg-info/SOURCES.txt
+fungusyz.egg-info/dependency_links.txt
+fungusyz.egg-info/requires.txt
+fungusyz.egg-info/top_level.txt
