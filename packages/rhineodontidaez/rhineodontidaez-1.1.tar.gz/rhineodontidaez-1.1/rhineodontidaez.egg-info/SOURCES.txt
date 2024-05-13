@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rhineodontidaez/__init__.py
+rhineodontidaez/main.py
+rhineodontidaez.egg-info/PKG-INFO
+rhineodontidaez.egg-info/SOURCES.txt
+rhineodontidaez.egg-info/dependency_links.txt
+rhineodontidaez.egg-info/requires.txt
+rhineodontidaez.egg-info/top_level.txt
