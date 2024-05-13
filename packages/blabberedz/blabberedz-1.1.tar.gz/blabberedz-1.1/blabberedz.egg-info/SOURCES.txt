@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blabberedz/__init__.py
+blabberedz/main.py
+blabberedz.egg-info/PKG-INFO
+blabberedz.egg-info/SOURCES.txt
+blabberedz.egg-info/dependency_links.txt
+blabberedz.egg-info/requires.txt
+blabberedz.egg-info/top_level.txt
