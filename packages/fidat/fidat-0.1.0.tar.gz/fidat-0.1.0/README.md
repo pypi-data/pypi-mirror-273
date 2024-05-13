@@ -1,0 +1,200 @@
+# FIDAT: Framework for Intelligent Data Analysis and Trends
+FIDAT is designed as a comprehensive platform for pure Python data consumption and technical analysis, featuring 121 distinct methods for data trending. Primarily tailored for financial data, these methods are also applicable to other fields. Each method is well-documented with a docstring detailing its methodology.
+
+The module is actively maintained, with updates and the addition of new methods as they are discovered. Contributions are welcome; if there is a method of analysis or analytical concept you would like to include, please open an issue to initiate a discussion.
+
+Every method is supported by test units, ensuring that development progresses without compromising on accuracy.
+
+## Install:
+
+```pip install fidat```
+
+## Examples:
+
+Review the [tests](./tree/master/tests) provided, as they currently serve as the closest examples for each method. More comprehensive examples will be added to this file shortly. There are three ways to access a method, such as SMA: directly from the main module, from the method category module, or directly from the source file.
+
+```python
+import fidat 
+fidat.SMA(...)
+```
+
+or (category)
+
+```python
+import fidat.Trends
+fidat.Trends.SMA(...)
+```
+
+or (direct)
+
+```python
+import fidat.SMA.Simple_Moving_Average
+Simple_Moving_Average(...)
+```
+
+## Methods Available:
+- Total Methods: 121
+- Barriers Methods: 4
+- Cycle Methods: 9
+- Index Methods: 17
+- Momentum Methods: 32
+- Sentiment Methods: 6
+- Trend Methods: 45
+- Volatility Methods: 13
+- Volume Methods: 18
+
+### 1. Barriers
+- Chandelier Exit (CHANDELIER)
+- Donchian Channels (DC)
+- Pivot Points (PIVOT)
+- Fibonacci Pivot Points (PIVOT_FIB)
+### 2. Cycle
+- Schaff Trend Cycle (STC)
+- Schaff Trend Cycle EVWMA MACD (EVSTC)
+- Coppock Curve (COPP)
+- Detrended Price Oscillator (DPO)
+- Know Sure Thing (KST)
+- Prings Special K (PSK)
+- Price Swing Kaufman (PRSK)
+- Wave Trend Oscillator (WTO)
+- Wave PM (WP)
+### 3. Index
+- Commodity Channel Index (CCI)
+- Cumulative Force Index (CFI)
+- Demand Index (DEI)
+- Disparity Index (DI)
+- Dynamic Momentum Index (DMMI)
+- Elder Force Index (EFI)
+- Elder Ray Index (ERI)
+- High Low Index (HLI)
+- Market Facilitation Index (MAFI)
+- Money Flow Index (MFI)
+- Mass Index (MI)
+- Negative Volume Index (NVI)
+- Positive Volume Index (PVI)
+- Relative Strength Index (RSI)
+- CT Reverse Stochastic Momentum Index (SMI)
+- True Strength Index (TSI)
+- Variable Index Dynamic Average (VIDYA)
+### 4. Momentum
+- Awesome Oscillator (AO)
+- Aroon Oscillator (ARO)
+- Balance of Power (BOP)
+- Commodity Channel Index (CCI)
+- Chande Momentum Oscillator (CMO)
+- Dynamic Momentum Index (DMMI)
+- Ehlers Fisher Transform (EFT)
+- Elastic Volume Weighted MACD (EVW_MACD)
+- Fisher Transform (FISH)
+- Hull Moving Average Oscillator (HMAO)
+- High Pass Oscillator (HPO)
+- Inverse Fisher Transform RSI (IFT_RSI)
+- Moving Average Convergence Divergence (MACD)
+- Market Momentum (MOM)
+- Percentage Price Oscillator (PPO)
+- Price Zone Oscillator (PZO)
+- Rate of Change (ROC)
+- Relative Strength Index (RSI)
+- Schaff Trend Cycle (STC)
+- Stochastic Oscillator (STOCH)
+- Stochastic Oscillator RSI (STOCHRSI)
+- True Strength Index (TSI)
+- Ultimate Oscillator (UO)
+- Volatility Based Momentum (VBM)
+- Volume Weighted MACD (VW_MACD)
+- Zero Cross Indicator (ZCO)
+- QStick (QSTICK)
+- Squeeze Momentum Indicator (SMO)
+- Stochastic Oscillator Moving Average (STOCHD)
+- Adaptive Relative Strength Index (ARSI)
+- Accumulative Swing Index (ASI)
+- Williams Percent Range (WILLIAMS)
+### 5. Sentiment
+- Beta Coefficient (BC)
+- Bear Power (BEARP)
+- Bull Power (BULLP)
+- Power Indicators (BPBP)
+- Elder Ray Index (ERI)
+- Heikin Ashi (HA)
+### 6. Trends
+- Trend Strength Indicator (ADX)
+- Arnaud Legoux Moving Average (ALMA)
+- Chandelier Exit (CHANDELIER)
+- Chaikin Oscillator (CHAIKIN)
+- Double Exponential Moving Average (DEMA)
+- Directional Movement Indicator (DMI)
+- Elders Impulse System (EIS)
+- Exponential Moving Average (EMA)
+- Ease of Movement (EMV)
+- Schaff Trend Cycle EVWMA MACD (EVSTC)
+- Fractal Adaptive Moving Average (FRAMA)
+- Finite Volume Elements (FVE)
+- Gann HiLo Activator (GHA)
+- Guppy Multiple Moving Average (GMMA)
+- Hull Moving Average (HMA)
+- Ichimoku Cloud (ICHIMOKU)
+- Jurik Moving Average (JMA)
+- Kaufman Adaptive Moving Average (KAMA)
+- Kaufman Efficiency Indicator (KEI)
+- Know Sure Thing (KST)
+- Linear Weighted Moving Average (LWMA)
+- Moving Average Convergence Divergence (MACD)
+- MESA Adaptive Moving Average (MAMA)
+- Mass Index (MI)
+- Parabolic Stop and Reversal (PSAR)
+- Rainbow Moving Average (RMA)
+- Stop and Reversal (SAR)
+- Simple Moving Average (SMA)
+- Simple Moving Median (SMM)
+- Smoothed Simple Moving Average (SSMA)
+- Schaff Trend Cycle (STC)
+- Triple Exponential Moving Average (TEMA)
+- Triangular Moving Average (TRIMA)
+- True Strength Index (TSI)
+- Volume Adjusted Moving Average (VAMA)
+- Variable Index Dynamic Average (VIDYA)
+- Vortex Oscillator (VORTEX)
+- Volume Price Trend (VPT)
+- Weighted Moving Average (WMA)
+- Wave Trend Oscillator (WTO)
+- Zero Lag Exponential Moving Average (ZLEMA)
+- Smoothed Moving Average (SMMA)
+- Typical Price (TP)
+- Williams Fractal (WF)
+- Price Action Indicator (PAI)
+### 7. Volatility
+- Adaptive Price Zone (APZ)
+- Average True Range (ATR)
+- Bollinger Bands (BB)
+- Bollinger Bands Width (BBWIDTH)
+- Chandelier Exit (CHANDELIER)
+- Keltner Channels (KC)
+- Modified Bollinger Bands (MOBO)
+- Moving Standard Deviation (MSD)
+- Percentage B (PERCENT_B)
+- Standard Deviation Channel (SDC)
+- Volatility Based Momentum (VBM)
+- True Range (TR)
+- Value chart (VC)
+### 8. Volume
+- Accumulation Distribution Line (ADL)
+- Buying and Selling Pressure (BASP)
+- Chaikin Oscillator (CHAIKIN)
+- Exponential Volume Weighted Moving Average (EVWMA)
+- Money Flow Index (MFI)
+- Market Facilitation Index (MAFI)
+- Normalized BASP (BASPN)
+- Negative Volume Index (NVI)
+- On Balance Volume (OBV)
+- Positive Volume Index (PVI)
+- Twiggs Money Flow (TMF)
+- Volume Flow Indicator (VFI)
+- Volume Profile (VP)
+- Volume Price Trend (VPT)
+- Volume Weighted Average Price (VWAP)
+- Volume Zone Oscillator (VZO)
+- Weighted On Balance Volume (WOBV)
+- Volume Oscillator (VO)
+
+## Keywords
+'data analysis', 'trend analysis', 'data assimilation', 'data visualization', 'statistical analysis', 'time series', 'predictive modeling', 'machine learning', 'data mining', 'big data', 'forecasting', 'pattern recognition', 'business intelligence', 'data science', 'quantitative analysis', 'financial analysis', 'market analysis', 'economic forecasting', 'data aggregation', 'data trends'
