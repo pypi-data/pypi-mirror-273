@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: llm-taxi
+Version: 0.2.0
+Summary: Call LLM as easily as calling a taxi.
+Author-email: Yevgnen Koh <wherejoystarts@gmail.com>
+Requires-Python: >=3.10
+Requires-Dist: anthropic>=0.25.8
+Requires-Dist: google-generativeai>=0.5.2
+Requires-Dist: groq>=0.5.0
+Requires-Dist: httpx[socks]<0.26.0
+Requires-Dist: mistralai>=0.1.8
+Requires-Dist: openai>=1.28.1
+Requires-Dist: pydantic>=2.7.1
+Requires-Dist: together>=1.1.5
+Description-Content-Type: text/markdown
+
+# llm-taxi
+
+Describe your project here.
