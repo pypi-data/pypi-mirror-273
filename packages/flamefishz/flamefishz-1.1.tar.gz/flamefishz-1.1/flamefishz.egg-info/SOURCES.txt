@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flamefishz/__init__.py
+flamefishz/main.py
+flamefishz.egg-info/PKG-INFO
+flamefishz.egg-info/SOURCES.txt
+flamefishz.egg-info/dependency_links.txt
+flamefishz.egg-info/requires.txt
+flamefishz.egg-info/top_level.txt
