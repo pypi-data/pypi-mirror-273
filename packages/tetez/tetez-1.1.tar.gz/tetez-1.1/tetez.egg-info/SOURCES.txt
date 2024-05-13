@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tetez/__init__.py
+tetez/main.py
+tetez.egg-info/PKG-INFO
+tetez.egg-info/SOURCES.txt
+tetez.egg-info/dependency_links.txt
+tetez.egg-info/requires.txt
+tetez.egg-info/top_level.txt
