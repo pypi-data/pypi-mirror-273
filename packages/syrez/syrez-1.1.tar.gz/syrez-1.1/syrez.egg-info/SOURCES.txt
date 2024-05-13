@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+syrez/__init__.py
+syrez/main.py
+syrez.egg-info/PKG-INFO
+syrez.egg-info/SOURCES.txt
+syrez.egg-info/dependency_links.txt
+syrez.egg-info/requires.txt
+syrez.egg-info/top_level.txt
