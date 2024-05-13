@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inflammabilitiesz/__init__.py
+inflammabilitiesz/main.py
+inflammabilitiesz.egg-info/PKG-INFO
+inflammabilitiesz.egg-info/SOURCES.txt
+inflammabilitiesz.egg-info/dependency_links.txt
+inflammabilitiesz.egg-info/requires.txt
+inflammabilitiesz.egg-info/top_level.txt
