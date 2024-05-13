@@ -1,0 +1,162 @@
+CHANGES
+=======
+
+0.6.27
+------
+
+* Added alias timeout
+* soil.job Fixed pyright types
+* Implementing non-blocking jobs
+* Tests for complicated cases in pipelines
+* Faster tests for soil-sdk
+
+0.6.26
+------
+
+* Added optional extras in soil.alias
+* Making pyright happy
+* Removed docs
+
+0.6.25
+------
+
+* bugfix for uploading roles
+
+0.6.24
+------
+
+* added timeout to requests
+* creates roles on soil alias if non existing
+
+0.6.23
+------
+
+* bugfix overwriting session headers
+* updated post body from json to data
+* new create dictionary with content gzipped
+
+0.6.22
+------
+
+* generic metadata changed implementation
+* use py3.12 on build pypi
+
+0.6.21
+------
+
+* updated major pbr, can fail build pypi
+* updated dev deps
+* updated pyscopg
+* updated pandas supports py3.12
+* updated numpy
+* added ruff and solved some test errors on macos
+* Added docker stop to CI
+
+0.6.20
+------
+
+* transform\_query for postgres
+
+0.6.19
+------
+
+* Removed print
+* Added support for postgres
+
+0.6.18
+------
+
+* overridable parameters on soil run
+
+0.6.17
+------
+
+* Updated pre-commit
+* Upload multiple modules at once
+
+0.6.16
+------
+
+* removed comment line
+* removed pyright dep
+* only a single underscore bc of python
+* added support for new type Timestamp in kwarg for modulify
+
+0.6.15
+------
+
+* pyright things
+* added return type to modulify and set\_file\_status function
+
+0.6.14
+------
+
+* added change state if not processed
+
+0.6.13
+------
+
+* block update on file if state already set
+
+0.6.12
+------
+
+* re-estructured imports and added function to import
+
+0.6.11
+------
+
+* changed location of sqlite db in test
+* added handler of logs
+
+0.6.10
+------
+
+* soil sdk resolved id colision
+
+0.6.9
+-----
+
+* exported soil types and serializableDS protocol solved
+
+0.6.8
+-----
+
+* Added artifact to CI
+* updated readme
+
+0.6.7
+-----
+
+* typeddict as generic
+* changed dockerfile
+* changed dockerfile
+* deleted requirements and added inside setup cfg
+* deleted some phases from CI
+
+0.6.6
+-----
+
+* unused mocks
+* omittable parentheses for modulify
+* new modulify can take no args with annotation of decorated func
+
+0.6.5
+-----
+
+* Upgraded dependencies
+
+0.6.4
+-----
+
+* FIX \_\_init\_\_ should be removed from module\_name when uploading a module
+
+0.6.3
+-----
+
+* FIX \_\_init\_\_ should be removed from module\_name when uploading a module
+
+0.6.2
+-----
+
+* Refactored code sync. Now it uses hashes
