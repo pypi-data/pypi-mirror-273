@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bankalachiz/__init__.py
+bankalachiz/main.py
+bankalachiz.egg-info/PKG-INFO
+bankalachiz.egg-info/SOURCES.txt
+bankalachiz.egg-info/dependency_links.txt
+bankalachiz.egg-info/requires.txt
+bankalachiz.egg-info/top_level.txt
