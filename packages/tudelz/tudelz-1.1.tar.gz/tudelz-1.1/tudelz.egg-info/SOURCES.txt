@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tudelz/__init__.py
+tudelz/main.py
+tudelz.egg-info/PKG-INFO
+tudelz.egg-info/SOURCES.txt
+tudelz.egg-info/dependency_links.txt
+tudelz.egg-info/requires.txt
+tudelz.egg-info/top_level.txt
