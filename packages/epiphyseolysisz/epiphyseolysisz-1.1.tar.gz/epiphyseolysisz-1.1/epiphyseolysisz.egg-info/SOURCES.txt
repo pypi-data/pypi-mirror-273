@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+epiphyseolysisz/__init__.py
+epiphyseolysisz/main.py
+epiphyseolysisz.egg-info/PKG-INFO
+epiphyseolysisz.egg-info/SOURCES.txt
+epiphyseolysisz.egg-info/dependency_links.txt
+epiphyseolysisz.egg-info/requires.txt
+epiphyseolysisz.egg-info/top_level.txt
