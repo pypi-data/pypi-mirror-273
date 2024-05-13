@@ -1,0 +1,3 @@
+[console_scripts]
+tuneapi=tuneapi.__main__:main
+
