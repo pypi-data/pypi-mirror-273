@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ligatedz/__init__.py
+ligatedz/main.py
+ligatedz.egg-info/PKG-INFO
+ligatedz.egg-info/SOURCES.txt
+ligatedz.egg-info/dependency_links.txt
+ligatedz.egg-info/requires.txt
+ligatedz.egg-info/top_level.txt
