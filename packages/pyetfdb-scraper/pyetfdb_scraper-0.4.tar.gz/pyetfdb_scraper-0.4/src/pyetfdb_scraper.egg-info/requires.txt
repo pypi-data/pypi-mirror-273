@@ -1,0 +1,8 @@
+pydantic
+requests
+bs4
+lxml
+
+[dev]
+black
+pre-commit
