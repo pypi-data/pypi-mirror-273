@@ -1,0 +1,5 @@
+setup.py
+RoboticConsole.egg-info/PKG-INFO
+RoboticConsole.egg-info/SOURCES.txt
+RoboticConsole.egg-info/dependency_links.txt
+RoboticConsole.egg-info/top_level.txt
