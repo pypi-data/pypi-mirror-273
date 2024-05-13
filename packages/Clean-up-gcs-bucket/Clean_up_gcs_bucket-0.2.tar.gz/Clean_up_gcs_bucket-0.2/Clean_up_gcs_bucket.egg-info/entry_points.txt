@@ -1,0 +1,2 @@
+[console_scripts]
+Clean_up_gcs_bucket = Clean_up_gcs_bucket:clean_up_gcs_bucket
