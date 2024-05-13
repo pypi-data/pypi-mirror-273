@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xerotesz/__init__.py
+xerotesz/main.py
+xerotesz.egg-info/PKG-INFO
+xerotesz.egg-info/SOURCES.txt
+xerotesz.egg-info/dependency_links.txt
+xerotesz.egg-info/requires.txt
+xerotesz.egg-info/top_level.txt
