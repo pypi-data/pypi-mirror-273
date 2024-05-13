@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+plumyz/__init__.py
+plumyz/main.py
+plumyz.egg-info/PKG-INFO
+plumyz.egg-info/SOURCES.txt
+plumyz.egg-info/dependency_links.txt
+plumyz.egg-info/requires.txt
+plumyz.egg-info/top_level.txt
