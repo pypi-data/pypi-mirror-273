@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beanbagsz/__init__.py
+beanbagsz/main.py
+beanbagsz.egg-info/PKG-INFO
+beanbagsz.egg-info/SOURCES.txt
+beanbagsz.egg-info/dependency_links.txt
+beanbagsz.egg-info/requires.txt
+beanbagsz.egg-info/top_level.txt
