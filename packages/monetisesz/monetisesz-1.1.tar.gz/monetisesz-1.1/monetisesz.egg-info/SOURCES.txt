@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+monetisesz/__init__.py
+monetisesz/main.py
+monetisesz.egg-info/PKG-INFO
+monetisesz.egg-info/SOURCES.txt
+monetisesz.egg-info/dependency_links.txt
+monetisesz.egg-info/requires.txt
+monetisesz.egg-info/top_level.txt
