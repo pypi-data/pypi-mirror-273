@@ -1,0 +1,11 @@
+patcherex2/decompiler_plugins/__init__.py,sha256=9BAvmKNQfM1ixCuQn8MxvminBjnt5spv1QgyZcazZXA,723
+patcherex2/decompiler_plugins/__main__.py,sha256=Ll53v-75FgOSUB7WtqmZQTfIn7ls6zzytiRZQZohcmA,983
+patcherex2/decompiler_plugins/controller.py,sha256=b680-jAuafBQ-Vhc2uOT0h_2bVBfhYMllXRR8pBt8Ss,604
+patcherex2/decompiler_plugins/installer.py,sha256=Nq6uezErME2HRn3vRZ4hmqRhXqjSs27kMWopaWxKdJM,1779
+patcherex2/decompiler_plugins/patcherex2_plugin.py,sha256=Md4PgSyWyOEjcy_8iwfmgW0OQDtk56ow9GGlTuM1PqI,2258
+patcherex2/decompiler_plugins/ui.py,sha256=PKQCayrl8RUQE6IoQwo4RN9NtSx723aDsXU_So_xvSg,12379
+patcherex2_decompiler_plugins-0.0.2.dist-info/METADATA,sha256=VRzjKSDvki4B6ZZuXg5lF-wFgaRj-lS-vEaHY97Cw3M,762
+patcherex2_decompiler_plugins-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+patcherex2_decompiler_plugins-0.0.2.dist-info/entry_points.txt,sha256=DPFNOeANA-2VCKa-0oSpkoLMb_n1AO77EACyepbAU5k,94
+patcherex2_decompiler_plugins-0.0.2.dist-info/top_level.txt,sha256=5Vaw6mdwyaNXeu0iqNSRI7X9t5q7pgG6uXAb-W5GWQ0,11
+patcherex2_decompiler_plugins-0.0.2.dist-info/RECORD,,
