@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sogdianesez/__init__.py
+sogdianesez/main.py
+sogdianesez.egg-info/PKG-INFO
+sogdianesez.egg-info/SOURCES.txt
+sogdianesez.egg-info/dependency_links.txt
+sogdianesez.egg-info/requires.txt
+sogdianesez.egg-info/top_level.txt
