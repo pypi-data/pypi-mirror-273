@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phytolaccaz/__init__.py
+phytolaccaz/main.py
+phytolaccaz.egg-info/PKG-INFO
+phytolaccaz.egg-info/SOURCES.txt
+phytolaccaz.egg-info/dependency_links.txt
+phytolaccaz.egg-info/requires.txt
+phytolaccaz.egg-info/top_level.txt
