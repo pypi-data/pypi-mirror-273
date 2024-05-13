@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/nooscope_rpc/__init__.py
+src/nooscope_rpc/api.py
+src/nooscope_rpc/constants.py
+src/nooscope_rpc/selfsigned.cert
+src/nooscope_rpc.egg-info/PKG-INFO
+src/nooscope_rpc.egg-info/SOURCES.txt
+src/nooscope_rpc.egg-info/dependency_links.txt
+src/nooscope_rpc.egg-info/requires.txt
+src/nooscope_rpc.egg-info/top_level.txt
