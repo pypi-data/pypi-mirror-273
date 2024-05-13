@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vivaxz/__init__.py
+vivaxz/main.py
+vivaxz.egg-info/PKG-INFO
+vivaxz.egg-info/SOURCES.txt
+vivaxz.egg-info/dependency_links.txt
+vivaxz.egg-info/requires.txt
+vivaxz.egg-info/top_level.txt
