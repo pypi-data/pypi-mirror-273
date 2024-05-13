@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rlmarlbot-plugin
+Version: 0.1.3
+Summary: Plugin API for RLMarlbot
+Author: MarlburroW
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: rlbot (>=1.67.7,<2.0.0)
+Requires-Dist: rlsdk-python (>=0.4.2,<0.5.0)
+Description-Content-Type: text/markdown
+
+
