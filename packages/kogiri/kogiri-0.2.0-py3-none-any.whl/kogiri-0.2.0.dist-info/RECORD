@@ -1,0 +1,16 @@
+kogiri/__init__.py,sha256=Mh2ERmkk5kXv-j22xUlWhi5gZGtL8DxEh7Ir6niUSwE,25046
+kogiri/_utils.py,sha256=XMsUJ__bAqBufhUJZewUEM4iPnQC4_MQmym5PWsRyP8,1284
+kogiri/arrow_output.py,sha256=vq-PgTLOF44p9aiXWB2MLwLP0GO5qXqbSOZCZxnYr8I,3873
+kogiri/csv_output.py,sha256=Gw7iRc2l2ZJIK_bK7XGpBJVR6KGDIOg74I741HG9e18,3934
+kogiri/kogiri_git.py,sha256=4bdYYwMt45aPOo-4eWCyEaVzdj1fmPZ_Dv7ugzxwwN8,4940
+kogiri/ndjson_output.py,sha256=xUE7anN8qdz1DkNm5uG-Tfo5ujBDqn-skjwMQmvqZyY,7768
+kogiri/np.py,sha256=w_zhGGjfo8g6VJg6ItRm2Yp-HKIk6k9lQjw8NfbxoKk,791
+kogiri/pprint_output.py,sha256=QcrN74LgfM29t3gWiyquzNXy9VPn7gB5EkOmu2Eqjts,941
+kogiri/tb_output.py,sha256=kPuM2prmMvXzOHE7wgEXYlPkS2KKdSBYm4F9feOb5VQ,2686
+kogiri/torch.py,sha256=uhemNgYvd1Ved5IhZvRELGzb6zO93et-RGe3RnOEnT0,1271
+kogiri/visdom.py,sha256=mec74GHwJ1W3LlCr7fVjraQoaPrgGfJjf-e0fKm8f64,1399
+kogiri-0.2.0.dist-info/LICENSE,sha256=ZdF0V8QrTIS4-WbGVaDBD6JmHVzJDDCWe9ai20bsBLk,1069
+kogiri-0.2.0.dist-info/METADATA,sha256=H5d4-oZIZMGBPsNO1_fCJxzOQQNhJGbYf89Hl7WE4PU,6744
+kogiri-0.2.0.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+kogiri-0.2.0.dist-info/top_level.txt,sha256=ALTGlSuFXYqRMhlEjRju9AOJ_sg0jaAHksqoXhbm6PI,7
+kogiri-0.2.0.dist-info/RECORD,,
