@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inoperationalz/__init__.py
+inoperationalz/main.py
+inoperationalz.egg-info/PKG-INFO
+inoperationalz.egg-info/SOURCES.txt
+inoperationalz.egg-info/dependency_links.txt
+inoperationalz.egg-info/requires.txt
+inoperationalz.egg-info/top_level.txt
