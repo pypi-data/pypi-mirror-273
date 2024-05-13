@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/local_determinacy/__init__.py
+src/local_determinacy/functions.py
+src/local_determinacy.egg-info/PKG-INFO
+src/local_determinacy.egg-info/SOURCES.txt
+src/local_determinacy.egg-info/dependency_links.txt
+src/local_determinacy.egg-info/top_level.txt
