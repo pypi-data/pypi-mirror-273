@@ -1,0 +1,89 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "basic/glut_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/freeglut_sample.py",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PATH": "${env:PATH};${workspaceFolder}\\bin",
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "basic/glfw_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/glfw_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "basic/pysdl2_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/pysdl2_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "basic/pyside6_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/pyside6_sample.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "basic/wgl_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/wgl_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "basic/gtk3_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/gtk3_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "basic/gtk4_sample",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/basic/gtk4_sample.py",
+            "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "gui/pyside6_gui",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/gui/pyside6_gui.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+        {
+            "name": "scene/pyside6_texture",
+            "type": "debugpy",
+            "request": "launch",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/examples/scene/pyside6_texture.py",
+            "cwd": "${workspaceRoot}",
+            "justMyCode": false
+        },
+    ]
+}
