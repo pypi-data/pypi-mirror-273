@@ -1,0 +1,11 @@
+pbs_installer-2024.4.24.dist-info/METADATA,sha256=aeVbkv9UZgivvROIsEyWvv-AqgJ3uot6b8gtSatq_IU,990
+pbs_installer-2024.4.24.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+pbs_installer-2024.4.24.dist-info/entry_points.txt,sha256=Nh2-16odxSoBayKBj8DeTkZF8M85z9fBNbt7aMBwg9g,61
+pbs_installer-2024.4.24.dist-info/licenses/LICENSE,sha256=YzzZaluc5ZidgI5_WA4sOxgJILSj5WT52GicTGOZ1j0,1059
+pbs_installer/__init__.py,sha256=n6uRFyP64YgQglqkPDsrXlhcSgY58WhYGyAj0gvNU0M,243
+pbs_installer/__main__.py,sha256=dpfgtx6NZMVYUJyQi6w_KcfvHpOvQXfpeNYJjIvqZjI,2893
+pbs_installer/_install.py,sha256=1-iLzI2n2meWbp0RGvQy-e74NFls6Y6kFu5OEgJVGeQ,6916
+pbs_installer/_utils.py,sha256=KuN9g7niFqfaV8B185nIJBO-GbmKQUVFW0Ebl0HRnVk,3473
+pbs_installer/_versions.py,sha256=x95WPGVKoKcdeoH3JBiX1y3GhJVHq5pyghRz-JVvxf0,219162
+pbs_installer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pbs_installer-2024.4.24.dist-info/RECORD,,
