@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scratchablez/__init__.py
+scratchablez/main.py
+scratchablez.egg-info/PKG-INFO
+scratchablez.egg-info/SOURCES.txt
+scratchablez.egg-info/dependency_links.txt
+scratchablez.egg-info/requires.txt
+scratchablez.egg-info/top_level.txt
