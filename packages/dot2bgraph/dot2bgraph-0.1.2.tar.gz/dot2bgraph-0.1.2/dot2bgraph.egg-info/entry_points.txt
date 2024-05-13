@@ -1,0 +1,2 @@
+[console_scripts]
+dot2bgraph = dot2bgraph.main:main

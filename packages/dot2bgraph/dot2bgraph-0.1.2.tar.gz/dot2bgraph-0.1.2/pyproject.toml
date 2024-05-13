@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dot2bgraph"
+version = "0.1.2"
+description = "A CLI to convert dot files to bgraph format for visualization."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Vasily Rudchenko", email = "vasily.rudchenko.dev@gmail.com" },
+]
+keywords = ["graph", "visualization", "dot", "bgraph", "command", "line", "interface", "cli", "tool", "convert"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+urls = { "Homepage" = "https://github.com/vasilyrud/dot2bgraph" }
+
+dependencies = [
+    "pygraphviz",
+    "rectpack",
+    "Pillow",
+    "tqdm",
+    "yaspin",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "mypy",
+    "build",
+    "twine",
+]
+
+[project.scripts]
+dot2bgraph = "dot2bgraph.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dot2bgraph*"]

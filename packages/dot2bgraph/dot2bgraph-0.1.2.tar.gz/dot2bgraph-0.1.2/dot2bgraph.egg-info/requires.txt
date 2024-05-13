@@ -1,0 +1,12 @@
+pygraphviz
+rectpack
+Pillow
+tqdm
+yaspin
+
+[dev]
+pytest
+pytest-cov
+mypy
+build
+twine
