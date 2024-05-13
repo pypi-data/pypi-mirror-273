@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+transcendentalistsz/__init__.py
+transcendentalistsz/main.py
+transcendentalistsz.egg-info/PKG-INFO
+transcendentalistsz.egg-info/SOURCES.txt
+transcendentalistsz.egg-info/dependency_links.txt
+transcendentalistsz.egg-info/requires.txt
+transcendentalistsz.egg-info/top_level.txt
