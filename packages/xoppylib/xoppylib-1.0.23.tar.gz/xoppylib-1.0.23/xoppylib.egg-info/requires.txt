@@ -1,0 +1,8 @@
+setuptools
+numpy
+scipy
+srxraylib>=1.0.53
+oasys-srwpy
+pySRU
+h5py
+dabax>=1.0.6
