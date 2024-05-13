@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+typhopneumoniaz/__init__.py
+typhopneumoniaz/main.py
+typhopneumoniaz.egg-info/PKG-INFO
+typhopneumoniaz.egg-info/SOURCES.txt
+typhopneumoniaz.egg-info/dependency_links.txt
+typhopneumoniaz.egg-info/requires.txt
+typhopneumoniaz.egg-info/top_level.txt
