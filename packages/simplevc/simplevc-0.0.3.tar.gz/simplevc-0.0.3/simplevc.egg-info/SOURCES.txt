@@ -1,0 +1,8 @@
+README.md
+setup.py
+simplevc/__init__.py
+simplevc/simplevc.py
+simplevc.egg-info/PKG-INFO
+simplevc.egg-info/SOURCES.txt
+simplevc.egg-info/dependency_links.txt
+simplevc.egg-info/top_level.txt
