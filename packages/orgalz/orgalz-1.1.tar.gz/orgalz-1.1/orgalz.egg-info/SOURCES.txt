@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+orgalz/__init__.py
+orgalz/main.py
+orgalz.egg-info/PKG-INFO
+orgalz.egg-info/SOURCES.txt
+orgalz.egg-info/dependency_links.txt
+orgalz.egg-info/requires.txt
+orgalz.egg-info/top_level.txt
