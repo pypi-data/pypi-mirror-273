@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+elucidatesz/__init__.py
+elucidatesz/main.py
+elucidatesz.egg-info/PKG-INFO
+elucidatesz.egg-info/SOURCES.txt
+elucidatesz.egg-info/dependency_links.txt
+elucidatesz.egg-info/requires.txt
+elucidatesz.egg-info/top_level.txt
