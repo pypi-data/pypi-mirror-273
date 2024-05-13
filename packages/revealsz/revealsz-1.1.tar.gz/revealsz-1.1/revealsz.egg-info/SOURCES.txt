@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+revealsz/__init__.py
+revealsz/main.py
+revealsz.egg-info/PKG-INFO
+revealsz.egg-info/SOURCES.txt
+revealsz.egg-info/dependency_links.txt
+revealsz.egg-info/requires.txt
+revealsz.egg-info/top_level.txt
