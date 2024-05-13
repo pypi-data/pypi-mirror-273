@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+grizzlingz/__init__.py
+grizzlingz/main.py
+grizzlingz.egg-info/PKG-INFO
+grizzlingz.egg-info/SOURCES.txt
+grizzlingz.egg-info/dependency_links.txt
+grizzlingz.egg-info/requires.txt
+grizzlingz.egg-info/top_level.txt
