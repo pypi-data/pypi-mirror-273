@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mandarahz/__init__.py
+mandarahz/main.py
+mandarahz.egg-info/PKG-INFO
+mandarahz.egg-info/SOURCES.txt
+mandarahz.egg-info/dependency_links.txt
+mandarahz.egg-info/requires.txt
+mandarahz.egg-info/top_level.txt
