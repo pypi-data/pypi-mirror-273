@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unhoardingz/__init__.py
+unhoardingz/main.py
+unhoardingz.egg-info/PKG-INFO
+unhoardingz.egg-info/SOURCES.txt
+unhoardingz.egg-info/dependency_links.txt
+unhoardingz.egg-info/requires.txt
+unhoardingz.egg-info/top_level.txt
