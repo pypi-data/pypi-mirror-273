@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+preadmittedz/__init__.py
+preadmittedz/main.py
+preadmittedz.egg-info/PKG-INFO
+preadmittedz.egg-info/SOURCES.txt
+preadmittedz.egg-info/dependency_links.txt
+preadmittedz.egg-info/requires.txt
+preadmittedz.egg-info/top_level.txt
