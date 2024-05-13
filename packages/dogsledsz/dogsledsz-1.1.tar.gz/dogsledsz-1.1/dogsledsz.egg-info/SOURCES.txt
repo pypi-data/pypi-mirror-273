@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dogsledsz/__init__.py
+dogsledsz/main.py
+dogsledsz.egg-info/PKG-INFO
+dogsledsz.egg-info/SOURCES.txt
+dogsledsz.egg-info/dependency_links.txt
+dogsledsz.egg-info/requires.txt
+dogsledsz.egg-info/top_level.txt
