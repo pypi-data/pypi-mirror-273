@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+magnetifyz/__init__.py
+magnetifyz/main.py
+magnetifyz.egg-info/PKG-INFO
+magnetifyz.egg-info/SOURCES.txt
+magnetifyz.egg-info/dependency_links.txt
+magnetifyz.egg-info/requires.txt
+magnetifyz.egg-info/top_level.txt
