@@ -1,0 +1,12 @@
+prett/__init__.py,sha256=KS5Be97qyuZPG9x3sumS9NoYp0OxviqFZaJUa1SceTI,1708
+prett/base.py,sha256=sTzuaQOqKpkuySK7G9_WJEnCKL2Up_D4W1hQ3OsK7fs,2222
+prett/multi_types.py,sha256=mt1oPP7nwWHJYYoNf4mUy2m0_A8xiFfU10_LxbfrIE8,6181
+prett/project.py,sha256=TOnF2frMa04ry_v6SrPo0HMwOIv2euF1sjVcQEHmcX4,5403
+prett/sender.py,sha256=Lpcis0kXNtw50Bt2oPGjCTh_6ar1Ar3JV0vNJutnX0Q,1915
+prett/setting.py,sha256=xS22caAzgn3F1ZwTAijC7yrNbFHEr12oAa_lLW_fq-4,1263
+prett/widget_interface.py,sha256=_uiFKpme7XEcCJ5E43XXUC2v5R-aib8usEugyCgP7VU,2418
+prett6-1.0.dist-info/LICENSE,sha256=Af94G7kCLtyiT4Up86FqVykc_5duOOYZzOzmm9nyBoQ,1074
+prett6-1.0.dist-info/METADATA,sha256=iZrKR2tHwS_AHjDaYALZ_qvWjTLDmXxRxAF8-aWRES4,2845
+prett6-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+prett6-1.0.dist-info/top_level.txt,sha256=kARLUdYyTc2-1RW5xlg8L1Xh5uzBOr4YW07OWSO4BpM,6
+prett6-1.0.dist-info/RECORD,,
