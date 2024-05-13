@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+more_math3.egg-info/PKG-INFO
+more_math3.egg-info/SOURCES.txt
+more_math3.egg-info/dependency_links.txt
+more_math3.egg-info/top_level.txt
