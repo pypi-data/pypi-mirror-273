@@ -1,0 +1,12 @@
+molcompview/__init__.py,sha256=7GqhgIleT7IVErT-zJw_lQFOjYXgPTvi0czPI2c6vLI,431
+molcompview/actions.py,sha256=XIBTmPoAoQNx9RzkyXOLvaVYParli4qGueQ5p_RHhl4,12165
+molcompview/components.py,sha256=ErEhdO2h2SaZ-oXvowEbwESSxjfMlcTgTaNLcaboymU,4272
+molcompview/functions.py,sha256=U_BiG7NKy0SconkpQ6LJ0s_gwWFl0QWu-_GqsFExT3M,6066
+molcompview/main.py,sha256=vZ2uhYiVe3WduIWBsqRY1x8xTajMQ21-4L5ihtTmKJw,7699
+molcompview/data/endocrine-receptor/endocrine.csv,sha256=6kQQ-HN7dbOyWcT1_z62iRhA5N5qoMintcUUKZTCbfQ,64156
+molcompview-0.1.5.dist-info/LICENSE,sha256=KcrGJYxzyYYbcaWJg_NDJmcNIRq6tvtoOlX_QZclcP0,1064
+molcompview-0.1.5.dist-info/METADATA,sha256=USPRg-zstJqR4ZRHJxDhJtPPiYvspMaj8nwOaVac3vM,3588
+molcompview-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+molcompview-0.1.5.dist-info/entry_points.txt,sha256=aIxRDJIXXCPvKtggatX_Frzh9dr_SQxbX-bj3HCpXxY,54
+molcompview-0.1.5.dist-info/top_level.txt,sha256=LkkzmmLgsq3e5KMevaD1H8cZJgcTnR6u0z41fjeiBVc,12
+molcompview-0.1.5.dist-info/RECORD,,
