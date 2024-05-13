@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+juranez/__init__.py
+juranez/main.py
+juranez.egg-info/PKG-INFO
+juranez.egg-info/SOURCES.txt
+juranez.egg-info/dependency_links.txt
+juranez.egg-info/requires.txt
+juranez.egg-info/top_level.txt
