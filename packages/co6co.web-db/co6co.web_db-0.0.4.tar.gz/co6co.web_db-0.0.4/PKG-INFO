@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: co6co.web_db
+Version: 0.0.4
+Summary: web db 扩展
+Home-page: http://github.com/co6co
+Author: co6co
+Author-email: co6co@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: co6co
+Requires-Dist: co6co.db-ext
+Requires-Dist: co6co.sanic-ext
+Requires-Dist: multipart
+
+# web 常用服务
+# 历史版本
+0.0.1：db_service JWT_service
