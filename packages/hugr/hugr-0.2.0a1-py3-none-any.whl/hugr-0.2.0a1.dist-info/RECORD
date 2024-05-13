@@ -1,0 +1,10 @@
+hugr/__init__.py,sha256=f50JzP1NoDt-dCcjDM1eoDLiLZMYPudYcFIz3rUSeDY,234
+hugr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugr/serialization/__init__.py,sha256=fG5h-o2csq-9x0zuE_3_ERl-NMTwr43cdGGMPk_Kdrw,62
+hugr/serialization/ops.py,sha256=29wDQ0X4Atlo3sh2k9_EYCZvjyPzm5xxO5_joc7KXAc,15478
+hugr/serialization/serial_hugr.py,sha256=KnNJoYjK-2enX4ZB4TSFyFfo-NbPkEwLu6ezKzcB6SE,1392
+hugr/serialization/testing_hugr.py,sha256=8PdK28AaDe8JQFC4adx_M36nagRPnxRMBRZ6vg8Io4U,971
+hugr/serialization/tys.py,sha256=La97iN2kHT3MNBPA5rNlX9knK0MAIoV8b7wTSZzN3gc,9457
+hugr-0.2.0a1.dist-info/METADATA,sha256=icCPw_Ns5kd2MLrP2u9AHuGYB81sipE1mC1aLtrlFkg,2532
+hugr-0.2.0a1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hugr-0.2.0a1.dist-info/RECORD,,
