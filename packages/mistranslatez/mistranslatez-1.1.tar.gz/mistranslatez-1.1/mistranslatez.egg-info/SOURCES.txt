@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mistranslatez/__init__.py
+mistranslatez/main.py
+mistranslatez.egg-info/PKG-INFO
+mistranslatez.egg-info/SOURCES.txt
+mistranslatez.egg-info/dependency_links.txt
+mistranslatez.egg-info/requires.txt
+mistranslatez.egg-info/top_level.txt
