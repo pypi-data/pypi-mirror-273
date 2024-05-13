@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unbeseemz/__init__.py
+unbeseemz/main.py
+unbeseemz.egg-info/PKG-INFO
+unbeseemz.egg-info/SOURCES.txt
+unbeseemz.egg-info/dependency_links.txt
+unbeseemz.egg-info/requires.txt
+unbeseemz.egg-info/top_level.txt
