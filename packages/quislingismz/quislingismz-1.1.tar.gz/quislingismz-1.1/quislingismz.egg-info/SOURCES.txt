@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+quislingismz/__init__.py
+quislingismz/main.py
+quislingismz.egg-info/PKG-INFO
+quislingismz.egg-info/SOURCES.txt
+quislingismz.egg-info/dependency_links.txt
+quislingismz.egg-info/requires.txt
+quislingismz.egg-info/top_level.txt
