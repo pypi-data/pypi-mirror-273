@@ -1,0 +1,6 @@
+ipython
+jupyter
+llm
+
+[test]
+pytest

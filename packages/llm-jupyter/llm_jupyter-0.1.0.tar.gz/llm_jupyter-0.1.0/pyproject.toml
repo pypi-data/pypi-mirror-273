@@ -1,0 +1,30 @@
+[project]
+name = "llm-jupyter"
+version = "0.1.0"
+description = "Run a IPython interpreter in the LLM virtual environment"
+readme = "README.md"
+authors = [
+  {name = "Lucas Rangel Cezimbra", email="lucas@cezimbra.tec.br"},
+  {name = "Simon Willison"},
+]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "ipython",
+    "jupyter",
+    "llm",
+]
+
+[project.urls]
+Homepage = "https://github.com/lucasrcezimbra/llm-jupyter"
+Changelog = "https://github.com/lucasrcezimbra/llm-jupyter/releases"
+Issues = "https://github.com/lucasrcezimbra/llm-jupyter/issues"
+CI = "https://github.com/lucasrcezimbra/llm-jupyter/actions"
+
+[project.entry-points.llm]
+python = "llm_jupyter"
+
+[project.optional-dependencies]
+test = ["pytest"]
