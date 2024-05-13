@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spectatez/__init__.py
+spectatez/main.py
+spectatez.egg-info/PKG-INFO
+spectatez.egg-info/SOURCES.txt
+spectatez.egg-info/dependency_links.txt
+spectatez.egg-info/requires.txt
+spectatez.egg-info/top_level.txt
