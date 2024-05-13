@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pauperisingz/__init__.py
+pauperisingz/main.py
+pauperisingz.egg-info/PKG-INFO
+pauperisingz.egg-info/SOURCES.txt
+pauperisingz.egg-info/dependency_links.txt
+pauperisingz.egg-info/requires.txt
+pauperisingz.egg-info/top_level.txt
