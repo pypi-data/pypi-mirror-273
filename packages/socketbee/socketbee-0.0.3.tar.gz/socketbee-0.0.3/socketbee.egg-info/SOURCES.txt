@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+socketbee/__init__.py
+socketbee/client.py
+socketbee/settings.py
+socketbee.egg-info/PKG-INFO
+socketbee.egg-info/SOURCES.txt
+socketbee.egg-info/dependency_links.txt
+socketbee.egg-info/requires.txt
+socketbee.egg-info/top_level.txt
