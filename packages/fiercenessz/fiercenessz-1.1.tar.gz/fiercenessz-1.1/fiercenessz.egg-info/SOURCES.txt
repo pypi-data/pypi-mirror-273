@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fiercenessz/__init__.py
+fiercenessz/main.py
+fiercenessz.egg-info/PKG-INFO
+fiercenessz.egg-info/SOURCES.txt
+fiercenessz.egg-info/dependency_links.txt
+fiercenessz.egg-info/requires.txt
+fiercenessz.egg-info/top_level.txt
