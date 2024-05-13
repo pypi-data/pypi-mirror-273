@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: lxs-SimpleTools
+Version: 1.0.1
+Summary: 处理字符串和时间简单工具函数
+Author: liuxiansong
+Author-email: 326427540@qq.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+#timeTools
+ 常见时间处理函数。
+##方法列表
+format_current_time(): 返回当前时间，格式为 "%Y-%m-%d %H:%M:%S"。<br/>
+format_custom_time(year, month, day, hour, minute, second): 将指定的年、月、日、小时、分钟和秒格式化为 "%Y/%m/%d %H:%M:%S" 格式的字符串。<br/>
+format_current_date(): 返回当前日期，格式为 "%Y-%m-%d"。<br/>
+format_current_time_only(): 返回当前时间，不包含日期，格式为 "%H:%M:%S"。<br/>
+format_timestamp(timestamp): 将时间戳转换为指定格式的字符串，格式为 "%Y-%m-%d %H:%M:%S"。<br/>
+parse_time(time_str, format_str): 使用指定的格式字符串将给定的时间字符串解析为时间对象。<br/>
+convert_to_timestamp(time_obj): 将时间对象转换为时间戳。<br/>
+get_current_year(): 返回当前年份。<br/>
+get_current_month(): 返回当前月份。<br/>
+get_current_weekday(): 返回当前星期几，返回一个整数（0 表示星期一，6 表示星期日）。<br/>
+get_current_time(): 返回当前日期和时间。<br/>
+format_time(time, format): 将时间对象格式化为指定的字符串格式。<br/>
+get_year(time): 从时间对象中提取年份。<br/>
+get_month(time): 从时间对象中提取月份。<br/>
+get_date(time): 从时间对象中提取日期对象。<br/>
+get_hour(time): 从时间对象中提取小时。<br/>
+get_minute(time): 从时间对象中提取分钟。<br/>
+get_second(time): 从时间对象中提取秒数。<br/>
+add_time(time, delta): 时间加减，对时间对象进行加减操作。<br/>
+subtract_time(time, delta): 时间加减，对时间对象进行加减操作。<br/>
+calculate_time_difference(time1, time2): 时间差计算，计算两个时间之间的时间差。<br/>
+compare_times(time1, time2): 时间比较，比较两个时间的先后顺序。<br/>
+parse_time(time_string, format): 时间字符串解析，将字符串解析为时间对象。<br/>
+is_leap_year(year): 判断闰年，判断给定年份是否为闰年。<br/>
+get_weekday(date): 获取指定日期的星期几，获取给定日期对应的星期几。<br/>
+get_days_in_current_month(): 获取当前月份的天数，获取当前月份的总天数。<br/>
+sleep(seconds): 时间睡眠，让程序暂停执行一段时间。<br/>
+get_timestamp(): 获取时间戳，获取当前时间的时间戳。<br/>
+is_within_time_range(time, start_time, end_time): 判断时间是否在指定时间段内，检查给定时间是否在指定的时间段内。<br/>
+validate_time_format(time_string, format): 时间格式验证，验证给定的时间字符串是否符合指定的格式。<br/>
+convert_timestamp_to_time(timestamp): 时间戳转换，将时间戳转换为时间对象。<br/>
+
+#strTools
+ 常见处理字符串函数。
+##方法列表
+get_string_length(string): 计算字符串的长度。<br/>
+convert_to_uppercase(string):  将字符串转换为大写。<br/>
+convert_to_lowercase(string): 将字符串转换为小写。<br/>
+remove_whitespace(string) : 去除字符串开头和结尾的空格。<br/>
+split_string(string, delimiter) : 使用指定的分隔符将字符串分割成列表。<br/>
+join_strings(strings, delimiter):  将字符串列表连接成一个字符串。<br/>
+replace_substring(string, old_substring, new_substring) : 将字符串中指定的子字符串替换为新的字符串。<br/>
+check_substring(string, substring) : 检查字符串中是否包含指定的子字符串。<br/>
+check_numeric(string) : 检查字符串是否表示一个有效的数字。<br/>
+capitalize_first_letter(string):  将字符串的首字母转换为大写。<br/>
+reverse_string(string) : 将字符串反转。<br/>
+check_prefix(string, prefix) : 检查字符串是否以指定前缀开头。<br/>
+check_suffix(string, suffix) : 检查字符串是否以指定后缀结尾。<br/>
+count_substring(string, substring) : 计算字符串中指定子字符串出现的次数。<br/>
+remove_special_characters(string) : 去除字符串中的特殊字符或指定的字符。<br/>
+check_empty(string) : 检查字符串是否为空或只包含空格。<br/>
+get_substring(string, start, end) : 从字符串中提取指定位置的子串。<br/>
+check_palindrome(string) : 检查字符串是否为回文字符串。<br/>
+check_valid_date(string, format) : 检查字符串是否表示一个有效的日期。<br/>
+pad_string(string, length, character) : 在字符串两侧填充指定字符以达到指定长度。<br/>
+extract_numbers(string) : 从字符串中提取数字部分。<br/>
+
+
+
+#IPUtils 类
+IPUtils 类是一个用于处理 IP 地址相关操作的工具类。它提供了一系列静态方法，可以用于获取本机 IP 地址、检查 IP 地址的合法性、提取 IP 地址的网络部分和主机部分、判断两个 IP 地址是否在同一个网络中，以及进行 IP 地址的转换和解析等功能。
+
+##方法列表
+get_local_ip(): 获取本机 IP 地址。<br/>
+is_valid_ip(ip): 检查 IP 地址是否合法。<br/>
+get_network(ip): 提取 IP 地址中的网络部分。<br/>
+get_host(ip): 提取 IP 地址中的主机部分。<br/>
+is_same_network(ip1, ip2): 检查两个 IP 地址是否在同一个网络中。<br/>
+ipv4_to_hex(ip): 将 IPv4 地址转换为十六进制表示。<br/>
+hex_to_ipv4(hex_ip): 将十六进制表示的 IPv4 地址转换为标准表示。<br/>
+is_private_ip(ip): 检查 IP 地址是否为私有地址。<br/>
+is_public_ip(ip): 检查 IP 地址是否为公网地址。<br/>
+reverse_dns_lookup(ip): 获取 IP 地址的反向解<br/>
+
+# 数字转换进制
+ NumberConverter 类是一个用于处理数字转换进制
+##方法列表
+decimal_to_binary(decimal_number): 将十进制转换为二进制。<br/>
+decimal_to_octal(decimal_number): 将十进制转换为八进制。<br/>
+decimal_to_hexadecimal(decimal_number): 将十进制转换为十六进制。<br/>
+binary_to_decimal(binary_number): 将二进制转换为十进制。<br/>
+binary_to_octal(binary_number): 将二进制转换为八进制。<br/>
+binary_to_hexadecimal(binary_number): 将二进制转换为十六进制。<br/>
+octal_to_decimal(octal_number): 将八进制转换为十进制。<br/>
+octal_to_binary(octal_number): 将八进制转换为二进制。<br/>
+octal_to_hexadecimal(octal_number): 将八进制转换为十六进制。<br/>
+hexadecimal_to_decimal(hexadecimal_number): 将十六进制转换为十进制。<br/>
+hexadecimal_to_binary(hexadecimal_number): 将十六进制转换为二进制。<br/>
+hexadecimal_to_octal(hexadecimal_number): 将十六进制转换为八进制。<br/>
