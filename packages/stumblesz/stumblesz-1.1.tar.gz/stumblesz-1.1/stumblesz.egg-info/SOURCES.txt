@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stumblesz/__init__.py
+stumblesz/main.py
+stumblesz.egg-info/PKG-INFO
+stumblesz.egg-info/SOURCES.txt
+stumblesz.egg-info/dependency_links.txt
+stumblesz.egg-info/requires.txt
+stumblesz.egg-info/top_level.txt
