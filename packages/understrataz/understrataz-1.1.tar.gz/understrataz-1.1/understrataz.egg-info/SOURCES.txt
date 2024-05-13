@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+understrataz/__init__.py
+understrataz/main.py
+understrataz.egg-info/PKG-INFO
+understrataz.egg-info/SOURCES.txt
+understrataz.egg-info/dependency_links.txt
+understrataz.egg-info/requires.txt
+understrataz.egg-info/top_level.txt
