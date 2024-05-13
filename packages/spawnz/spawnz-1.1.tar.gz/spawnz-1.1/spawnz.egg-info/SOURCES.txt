@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spawnz/__init__.py
+spawnz/main.py
+spawnz.egg-info/PKG-INFO
+spawnz.egg-info/SOURCES.txt
+spawnz.egg-info/dependency_links.txt
+spawnz.egg-info/requires.txt
+spawnz.egg-info/top_level.txt
