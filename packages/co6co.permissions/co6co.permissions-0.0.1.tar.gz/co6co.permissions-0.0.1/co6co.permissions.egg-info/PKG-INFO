@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: co6co.permissions
+Version: 0.0.1
+Summary: web permissionsAPI
+Home-page: http://github.com/co6co
+Author: co6co
+Author-email: co6co@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: co6co
+Requires-Dist: co6co.web-db
+
+# web 常用服务
+# 历史版本
+0.0.1：权限管理_api 多个项目使用
