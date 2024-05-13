@@ -1,0 +1,3 @@
+[console_scripts]
+kubeinfra=kubeinfra.cli.cli:main
+
