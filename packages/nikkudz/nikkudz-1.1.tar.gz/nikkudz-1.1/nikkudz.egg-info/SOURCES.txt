@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nikkudz/__init__.py
+nikkudz/main.py
+nikkudz.egg-info/PKG-INFO
+nikkudz.egg-info/SOURCES.txt
+nikkudz.egg-info/dependency_links.txt
+nikkudz.egg-info/requires.txt
+nikkudz.egg-info/top_level.txt
