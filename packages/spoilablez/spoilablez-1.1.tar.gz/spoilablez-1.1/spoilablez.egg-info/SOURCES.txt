@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spoilablez/__init__.py
+spoilablez/main.py
+spoilablez.egg-info/PKG-INFO
+spoilablez.egg-info/SOURCES.txt
+spoilablez.egg-info/dependency_links.txt
+spoilablez.egg-info/requires.txt
+spoilablez.egg-info/top_level.txt
