@@ -1,0 +1,8 @@
+dingosdk/__init__.py,sha256=1oTfWDl0MrDO4k2wB_JTYuYife17xT1K_UXCHSMltZw,694
+dingosdk/_dingosdk.so,sha256=pARTTucRqoRbZIsvkqALCKz4pFLBSS5mUfBAjjq31-I,198539320
+dingosdk/dingosdk.py,sha256=p5EU9io7HlnvgKTdtqDcx0KwViC5O43Ag5aqNUprPDI,226551
+dingosdk/loader.py,sha256=2tX5U0ld_g25mntT8qIedndW_RzruTvq-CxiAnFZwmw,828
+dingosdk-0.1rc6.dist-info/METADATA,sha256=keaS1N0VSBXdqy4F6Tf3IALdy2EE4mT1Dqap0H3dnrA,527
+dingosdk-0.1rc6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dingosdk-0.1rc6.dist-info/top_level.txt,sha256=SzqrvOL3hjOorp1IqatFjeDer6nOJIu-5ZoDhKQPHx4,9
+dingosdk-0.1rc6.dist-info/RECORD,,
