@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+reprunedz/__init__.py
+reprunedz/main.py
+reprunedz.egg-info/PKG-INFO
+reprunedz.egg-info/SOURCES.txt
+reprunedz.egg-info/dependency_links.txt
+reprunedz.egg-info/requires.txt
+reprunedz.egg-info/top_level.txt
