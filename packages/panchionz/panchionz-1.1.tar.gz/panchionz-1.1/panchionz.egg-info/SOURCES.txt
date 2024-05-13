@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+panchionz/__init__.py
+panchionz/main.py
+panchionz.egg-info/PKG-INFO
+panchionz.egg-info/SOURCES.txt
+panchionz.egg-info/dependency_links.txt
+panchionz.egg-info/requires.txt
+panchionz.egg-info/top_level.txt
