@@ -1,0 +1,9 @@
+README.md
+setup.py
+Clean_up_gcs_bucket/__init__.py
+Clean_up_gcs_bucket/main.py
+Clean_up_gcs_bucket.egg-info/PKG-INFO
+Clean_up_gcs_bucket.egg-info/SOURCES.txt
+Clean_up_gcs_bucket.egg-info/dependency_links.txt
+Clean_up_gcs_bucket.egg-info/entry_points.txt
+Clean_up_gcs_bucket.egg-info/top_level.txt
