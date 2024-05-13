@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyllmtools
+Version: 0.0.2
+Summary: An amazing LLM toolkit.
+Author-email: Shihong Yan <yansh97@foxmail.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# llm-tools
+
