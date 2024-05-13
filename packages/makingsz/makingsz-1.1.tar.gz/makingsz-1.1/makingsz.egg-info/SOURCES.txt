@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+makingsz/__init__.py
+makingsz/main.py
+makingsz.egg-info/PKG-INFO
+makingsz.egg-info/SOURCES.txt
+makingsz.egg-info/dependency_links.txt
+makingsz.egg-info/requires.txt
+makingsz.egg-info/top_level.txt
