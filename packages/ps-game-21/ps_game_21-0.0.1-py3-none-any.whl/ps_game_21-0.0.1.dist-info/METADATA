@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ps_game_21
+Version: 0.0.1
+Summary: 简单的21点扑克牌游戏
+Author: Ps
+Requires-Python: >=3.11.4
+

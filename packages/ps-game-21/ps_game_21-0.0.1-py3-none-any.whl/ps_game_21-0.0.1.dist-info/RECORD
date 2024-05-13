@@ -1,0 +1,12 @@
+ps_game_21/__init__.py,sha256=mb5kRCGX2sMKAbfK4OSxfUA0_ID7akSbRJVIecbPtiQ,291
+ps_game_21/cards_info.py,sha256=hCotXca_aigenacv2HcSu3jZ2JtcVaPKKFhsAcCoF7c,2515
+ps_game_21/computer.py,sha256=wzYvaP8sDqN89t6Bh61lRecu3bzkWGmVhKCktTowMes,1424
+ps_game_21/game_21.py,sha256=2__B5nWSAWbpmHokhwzZOVP1iGzONYVm9eCP2fL34tE,4976
+ps_game_21/game_decision.py,sha256=z4ziP3-6JDQLXdLtfWlrBPQbXTWSMKu17-j9klNigeI,2098
+ps_game_21/get_card.py,sha256=9Hb1kHnb_lKouZ9uXAOWb5pJmzFPv-YEB-LdpWo4ovA,916
+ps_game_21/player.py,sha256=zFJ0bEdckX7PxA6sxZiZE1gtz93rAKdWouJhPYVvmoM,2137
+ps_game_21/show.py,sha256=g8Ne_1JNG5gcu3zYQYiPcgwLzFnvV30U-GvmxQxkIn0,1351
+ps_game_21-0.0.1.dist-info/METADATA,sha256=NGL1wtSsjVkLJGkqCj7LsY-1F4t7RDOClK3ykYw72-A,138
+ps_game_21-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ps_game_21-0.0.1.dist-info/top_level.txt,sha256=aXfN_9tPF7iB4JYXlNRUS_QhP_6ELIZUEd2D4hdasJU,11
+ps_game_21-0.0.1.dist-info/RECORD,,
