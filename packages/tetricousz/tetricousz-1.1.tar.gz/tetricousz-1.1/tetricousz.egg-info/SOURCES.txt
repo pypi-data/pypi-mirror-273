@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tetricousz/__init__.py
+tetricousz/main.py
+tetricousz.egg-info/PKG-INFO
+tetricousz.egg-info/SOURCES.txt
+tetricousz.egg-info/dependency_links.txt
+tetricousz.egg-info/requires.txt
+tetricousz.egg-info/top_level.txt
