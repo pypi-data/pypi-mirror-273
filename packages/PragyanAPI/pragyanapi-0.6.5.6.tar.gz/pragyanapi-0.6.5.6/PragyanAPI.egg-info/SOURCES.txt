@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PragyanAPI/__init__.py
+PragyanAPI/func.py
+PragyanAPI/truth_dare.py
+PragyanAPI/words.py
+PragyanAPI.egg-info/PKG-INFO
+PragyanAPI.egg-info/SOURCES.txt
+PragyanAPI.egg-info/dependency_links.txt
+PragyanAPI.egg-info/requires.txt
+PragyanAPI.egg-info/top_level.txt
