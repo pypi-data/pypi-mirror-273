@@ -1,0 +1,4 @@
+anytree
+flask
+click
+pypandoc
