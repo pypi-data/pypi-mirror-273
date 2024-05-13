@@ -1,0 +1,11 @@
+{% for field in pyvisjs["edge_filtering_fields"] %}
+<label>
+    Filter by {{ field }}
+    <select onchange="hide_nodes_by_edge_attribute_value('{{field}}', this.value)">
+    <option value="ALL">All values</option>
+    {% for val in pyvisjs["edge_filtering_lookup"][field] -%}
+    <option value="{{ val }}">{{ val }}</option>
+    {% endfor %}
+    </select>
+</label>
+{% endfor %}
