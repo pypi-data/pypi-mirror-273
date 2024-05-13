@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+homopolymerizez/__init__.py
+homopolymerizez/main.py
+homopolymerizez.egg-info/PKG-INFO
+homopolymerizez.egg-info/SOURCES.txt
+homopolymerizez.egg-info/dependency_links.txt
+homopolymerizez.egg-info/requires.txt
+homopolymerizez.egg-info/top_level.txt
