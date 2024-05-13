@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+homogamousz/__init__.py
+homogamousz/main.py
+homogamousz.egg-info/PKG-INFO
+homogamousz.egg-info/SOURCES.txt
+homogamousz.egg-info/dependency_links.txt
+homogamousz.egg-info/requires.txt
+homogamousz.egg-info/top_level.txt
