@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stonfi
+Version: 0.8
+Summary: Async Python SDK for StonFi DEX
+Author-email: "LapisMYT (Nikita Gavrilin)" <nikitagavrilin005@gmail.com>
+Project-URL: Homepage, https://github.com/lapismyt/ston-fi.py
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### StonFi Python SDK
