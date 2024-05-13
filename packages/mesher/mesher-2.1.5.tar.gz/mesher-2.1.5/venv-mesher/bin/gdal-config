@@ -1,0 +1,80 @@
+#!/bin/sh
+CONFIG_LIBS="-L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.8.4-uqs2wbwn32hor35clr3hk2i47ftlwgjg/lib -lgdal"
+CONFIG_DEP_LIBS="-L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/json-c-0.16-bunefprgb5k4pyvbox7vtqlz3x5biahn/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/zlib-ng-2.1.5-l5ai2yitzro3jyoomrou2hhpnxdqq223/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/curl-8.6.0-6kqqrhxionh2d74h5paa3dbmbrspogqj/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/geos-3.12.1-eqynjc67iqsz3pezaohebj34n3ejhtxn/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/proj-9.2.1-spbwazefirvc4kivuq44i3x54eylo7dv/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/expat-2.6.0-s7wdxw4ikp5hkg6dmvtgl5sob4mlonyn/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libjpeg-turbo-3.0.0-drowgsa3wsoc6fr5t2i32fhtehukiv56/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libtiff-4.5.1-mlmyfc32h7db5knvl7oefxhx4ipdn4sx/lib -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libgeotiff-1.7.1-gxo7ibpb3ay2so4wqsrfcvd4newz6bid/lib -lgeotiff -ltiff -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/libpng-1.6.39-x4ck3mme2l6v4y5o2kisv2yaj7ypppqs/lib -ljpeg -lpng -L/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/sqlite-3.43.2-6plezx42uqo5u6wmxfug4fwmakqtxm2z/lib -lz -lsqlite3 -lexpat.1.9.0 -lm -lgeos_c.1.18.1 -lcurl -lproj.25.9.2.1 -ljson-c.5.2.0 -lc++"
+CONFIG_PREFIX="/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.8.4-uqs2wbwn32hor35clr3hk2i47ftlwgjg"
+CONFIG_CFLAGS="-I/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.8.4-uqs2wbwn32hor35clr3hk2i47ftlwgjg/include"
+CONFIG_DATA="/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.8.4-uqs2wbwn32hor35clr3hk2i47ftlwgjg/share/gdal"
+CONFIG_VERSION="3.8.4"
+CONFIG_GNM_ENABLED=yes
+CONFIG_FORMATS="JPEG raw GTIFF MEM vrt Derived HFA SDTS NITF GXF AAIGrid CEOS SAR_CEOS XPM DTED JDEM Envisat ELAS FIT L1B RS2 ILWIS RMF Leveller SGI SRTMHGT IDRISI GSG ERS PALSARJaxa DIMAP GFF COSAR PDS ADRG COASP TSX Terragen BLX MSGN TIL R northwood SAGA XYZ ESRIC HF2 KMLSUPEROVERLAY CTG ZMap NGSGEOID IRIS MAP CALS SAFE SENTINEL2 PRF MRF WMTS GRIB BMP TGA STACTA BSB AIGrid ARG USGSDEM AirSAR OZI PCIDSK SIGDEM RIK STACIT PDF PNG WCS HTTP Zarr DAAS EEDA PLMOSAIC WMS OGCAPI Rasterlite MBTiles PCRaster MEM geojson TAB Shape KML VRT AVC GML CSV DGN GMT NTF S57 Tiger Geoconcept GeoRSS DXF PGDump GPSBabel EDIGEO SXF OpenFileGDB WAsP Selafin JML VDV FlatGeobuf MapML JSONFG SDTS GPX SVG CSW PLSCENES WFS NGW Elastic Idrisi PDS SQLite GeoPackage OSM VFK MVT PMTiles AmigoCloud Carto XLSX GTFS ODS LVBAG"
+CONFIG_PLUGINDIR="/Users/cmarsh/Documents/science/code/spack/opt/spack/darwin-sonoma-m1/apple-clang-15.0.0/gdal-3.8.4-uqs2wbwn32hor35clr3hk2i47ftlwgjg/lib/gdalplugins"
+usage()
+
+{
+	cat <<EOF
+Usage: gdal-config [OPTIONS]
+Options:
+	[--prefix[=DIR]]
+	[--libs]
+	[--dep-libs]
+	[--cflags]
+	[--datadir]
+	[--version]
+	[--ogr-enabled]
+	[--gnm-enabled]
+	[--formats]
+	[--plugindir]
+EOF
+	exit $1
+}
+
+if test $# -eq 0; then
+	usage 1 1>&2
+fi
+
+case $1 in
+  --libs)
+    echo $CONFIG_LIBS
+    ;;
+
+  --dep-libs)
+    echo $CONFIG_DEP_LIBS
+    ;;
+
+  --cflags)
+    echo $CONFIG_CFLAGS
+    ;;
+
+  --datadir)
+    echo $CONFIG_DATA
+    ;;
+
+  --prefix)
+    echo $CONFIG_PREFIX
+    ;;
+
+  --version)
+    echo $CONFIG_VERSION
+    ;;
+
+  --ogr-enabled)
+    echo yes
+    ;;
+
+  --gnm-enabled)
+    echo $CONFIG_GNM_ENABLED
+    ;;
+
+  --formats)
+    echo $CONFIG_FORMATS
+    ;;
+
+  --plugindir)
+    echo $CONFIG_PLUGINDIR
+    ;;
+
+  *)
+    usage 1 1>&2
+    ;;
+
+esac
