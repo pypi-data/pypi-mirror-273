@@ -1,0 +1,35 @@
+from setuptools import find_packages, setup
+
+setup(
+    name="test_core_package",
+    version="0.0.6",
+    description="satsure core package",
+    author="Satsure",
+    author_email="kmstpm@email.com",
+    packages=find_packages(),
+    install_requires=[
+        "requests",
+        "fiona",
+        "pandas",
+        "pystac",
+        "python-dotenv",
+        "sqlalchemy",
+        "aiosignal==1.3.1",
+        "async-timeout==4.0.3",
+        "attrs==23.2.0",
+        "boto3==1.34.94",
+        "botocore==1.34.94",
+        "frozenlist==1.4.1",
+        "idna==3.7",
+        "jmespath==1.0.1",
+        "multidict==6.0.5",
+        "python-dateutil==2.9.0.post0",
+        "s3transfer==0.10.1",
+        "six==1.16.0",
+        "urllib3==1.26.18",
+        "yarl==1.9.4",
+    ],
+    package_data={
+        "test_core_package": ["qa_qc_check/controller/*.json"],
+    },
+)
