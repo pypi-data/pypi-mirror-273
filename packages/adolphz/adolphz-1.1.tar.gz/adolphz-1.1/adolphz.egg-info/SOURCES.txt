@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+adolphz/__init__.py
+adolphz/main.py
+adolphz.egg-info/PKG-INFO
+adolphz.egg-info/SOURCES.txt
+adolphz.egg-info/dependency_links.txt
+adolphz.egg-info/requires.txt
+adolphz.egg-info/top_level.txt
