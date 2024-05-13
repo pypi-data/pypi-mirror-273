@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+huzzyz/__init__.py
+huzzyz/main.py
+huzzyz.egg-info/PKG-INFO
+huzzyz.egg-info/SOURCES.txt
+huzzyz.egg-info/dependency_links.txt
+huzzyz.egg-info/requires.txt
+huzzyz.egg-info/top_level.txt
