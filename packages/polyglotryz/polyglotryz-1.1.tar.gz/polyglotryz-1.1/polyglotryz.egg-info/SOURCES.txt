@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+polyglotryz/__init__.py
+polyglotryz/main.py
+polyglotryz.egg-info/PKG-INFO
+polyglotryz.egg-info/SOURCES.txt
+polyglotryz.egg-info/dependency_links.txt
+polyglotryz.egg-info/requires.txt
+polyglotryz.egg-info/top_level.txt
