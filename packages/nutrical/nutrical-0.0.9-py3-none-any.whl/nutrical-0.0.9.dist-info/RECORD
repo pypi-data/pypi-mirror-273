@@ -1,0 +1,11 @@
+VERSION,sha256=Lm0xpZg6kSUb-uWu-hwKGdi6PPYB0OinBrTPqWYaa4o,2
+data/TW_FDA_nutrition_items.csv,sha256=JfV_9oAPoG11U9XYJTtXKnh80tcapqxe3qLdHwBvqr4,3509
+nutrical/__init__.py,sha256=SsLFTWJq37unDQm7qARoxXzuWdTyKN9J9S9zjStlhMQ,42
+nutrical/io.py,sha256=tvwHKKp-c63X1fQqtYInl78IPeiDSlCrKjkaLCkuWG4,1499
+nutrical/nutrical.py,sha256=1BFireB072FI32QFvUR3EmgmiE06O_wbB83HllBkfdI,6202
+nutrical/taiwan-fda.py,sha256=kO3jSIkfJCKWFRn2-m8k_rOF9nh4saT1NkDBo6sjNHQ,95
+nutrical/utils.py,sha256=VYv2S1xhLDJiB-Ki-R_MwDG2YLSgUjIHLKN90EJxQMw,1840
+nutrical-0.0.9.dist-info/METADATA,sha256=rGtSl5lNRXcRB-rrGS0qLsrkiHVJZc7W79DEtIbpCD8,12544
+nutrical-0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nutrical-0.0.9.dist-info/top_level.txt,sha256=iRFqLpet_NkOjnE-LiAxCiQ32sZU-kmUTtYuEzTq6oc,9
+nutrical-0.0.9.dist-info/RECORD,,
