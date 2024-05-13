@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: streamlit-custom-sidebar-test
+Version: 0.0.23
+Home-page: 
+Author: Socvest
+Author-email: 
+Requires-Python: >=3.7
+Provides-Extra: devel
+License-File: LICENSE
