@@ -1,0 +1,7 @@
+s3_reader/__init__.py,sha256=uv2168tFrWZZIK1AtvBSrAZM97yNz_y5IxQUQJ0XX4o,95
+s3_reader/__version__.py,sha256=IHT4mKrIr8eV-C3HtmIVD85iGVH25n2ohoff31kaJ1A,93
+s3_reader/file.py,sha256=yF6xS8kPt8Cc4L4mpc7l5G_drxpFMHAqW_6Q6gjIIqg,4652
+s3_reader-0.3.1.dist-info/LICENSE,sha256=KPHimGp4ehdaHn7s0RrnWAqKefaRTu5b_zUz7cGVuo8,11337
+s3_reader-0.3.1.dist-info/METADATA,sha256=BXKW3j2XXU5TZ4oDXn9I1gKX15GZmommXgCEuE4pmIY,1785
+s3_reader-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+s3_reader-0.3.1.dist-info/RECORD,,
