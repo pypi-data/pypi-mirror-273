@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: userinput_vrb
+Version: 1.0.0
+Summary: Helper class for user input
+Project-URL: Homepage, https://github.com/v-r-b/userinput_vrb
+Author-email: volker <volker@vrbdev.eu>
+Maintainer-email: volker <volker@vrbdev.eu>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# userinput_vrb
+
+PASTE DESCRIPTION FROM __init__.py HERE
