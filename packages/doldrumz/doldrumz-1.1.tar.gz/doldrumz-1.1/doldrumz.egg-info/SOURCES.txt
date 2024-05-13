@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+doldrumz/__init__.py
+doldrumz/main.py
+doldrumz.egg-info/PKG-INFO
+doldrumz.egg-info/SOURCES.txt
+doldrumz.egg-info/dependency_links.txt
+doldrumz.egg-info/requires.txt
+doldrumz.egg-info/top_level.txt
