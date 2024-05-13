@@ -1,0 +1,12 @@
+alliance_platform/codegen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alliance_platform/codegen/apps.py,sha256=m-pRUzGwnlfGiVmrYW19TbUKqjh41r3GO_CzGIZJbX0,351
+alliance_platform/codegen/post_processors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alliance_platform/codegen/post_processors/js.py,sha256=XhLnD1XvFqT7OnHvcXvn9kvoUmACrXarSP2-QzD9rko,3587
+alliance_platform/codegen/printer.py,sha256=NQFFFbFVQtVJIZ_HZ-3R-DM4GZ55GEYBnbtZVnYLUCw,25284
+alliance_platform/codegen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alliance_platform/codegen/registry.py,sha256=gpR5cRmm7GhocJj3pVMCE5xWKcT2iWLL0ZO9V8XBRzA,7971
+alliance_platform/codegen/settings.py,sha256=g7dfdGmGHRJwPIFceFbMfVZxeyJOauyEOPzJBy5w7QQ,1389
+alliance_platform/codegen/typescript.py,sha256=s2y418KhM5WmbSBg5OgYEy4hjyZupYGwBsVEPtpyLXA,19400
+alliance_platform_codegen-0.0.5.dist-info/METADATA,sha256=pRU4-DcGYPGmWjylwZgLKyaYF0RJqSrvQ6isVapKl1Y,294
+alliance_platform_codegen-0.0.5.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+alliance_platform_codegen-0.0.5.dist-info/RECORD,,
