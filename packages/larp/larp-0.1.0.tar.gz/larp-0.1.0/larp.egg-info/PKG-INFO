@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: larp
+Version: 0.1.0
+Summary: Larp (/lärp/): Last-Mile Aerial Routing Path Planning
+Author-email: Josue N Rivera <josue.n.rivera@outlook.com>
+Project-URL: Homepage, https://github.com/wzjoriv/Larp
+Project-URL: Issues, https://github.com/wzjoriv/Larp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# Last-Mile Aerial Routing (LAR) - Path Planning Algorithm
+
+A demo can be found at [`presentation.ipynb`](https://github.com/wzjoriv/Larp/blob/main/presentation.ipynb).
+
+To install, execute:
+```bash
+pip install larp
+```
+
+![alt text](https://github.com/wzjoriv/Larp/blob/main/docs/imgs/route_graph.png?raw=true)
