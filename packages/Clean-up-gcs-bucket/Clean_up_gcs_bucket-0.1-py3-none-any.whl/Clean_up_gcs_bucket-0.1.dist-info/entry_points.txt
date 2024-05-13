@@ -1,0 +1,2 @@
+[console_scripts]
+Clean_up_gcs_bucket = Clean_up_gcs_bucket:remove_all_files_gcs_bucket
