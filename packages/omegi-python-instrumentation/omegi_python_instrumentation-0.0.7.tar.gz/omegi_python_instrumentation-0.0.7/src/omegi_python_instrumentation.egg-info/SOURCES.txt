@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/omegi/OmegiDecorator.py
+src/omegi/OmegiSpanExporter.py
+src/omegi/OmegiUtil.py
+src/omegi/__init__.py
+src/omegi_python_instrumentation.egg-info/PKG-INFO
+src/omegi_python_instrumentation.egg-info/SOURCES.txt
+src/omegi_python_instrumentation.egg-info/dependency_links.txt
+src/omegi_python_instrumentation.egg-info/entry_points.txt
+src/omegi_python_instrumentation.egg-info/requires.txt
+src/omegi_python_instrumentation.egg-info/top_level.txt

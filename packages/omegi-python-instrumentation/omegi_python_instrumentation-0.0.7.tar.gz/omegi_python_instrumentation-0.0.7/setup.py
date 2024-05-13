@@ -1,0 +1,77 @@
+import setuptools
+
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="omegi-python-instrumentation",
+    version="0.0.7",
+    author="Omegi",
+    author_email="canon1107@naver.com",
+    description="Python Instrumentation for Automatic Error Logging",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/TeamOmegi/Instrumentation-Python",
+    project_urls={
+        "Source Code": "https://github.com/TeamOmegi/Instrumentation-Python",
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
+    install_requires=[
+        "annotated-types==0.6.0",
+        "anyio==4.3.0",
+        "certifi==2024.2.2",
+        "click==8.1.7",
+        "Deprecated==1.2.14",
+        "dnspython==2.6.1",
+        "email_validator==2.1.1",
+        "exceptiongroup==1.2.1",
+        "fastapi==0.111.0",
+        "fastapi-cli==0.0.2",
+        "h11==0.14.0",
+        "httpcore==1.0.5",
+        "httptools==0.6.1",
+        "httpx==0.27.0",
+        "idna==3.7",
+        "importlib-metadata==7.0.0",
+        "Jinja2==3.1.4",
+        "kafka-python==2.0.2",
+        "markdown-it-py==3.0.0",
+        "MarkupSafe==2.1.5",
+        "mdurl==0.1.2",
+        "opentelemetry-api==1.24.0",
+        "opentelemetry-instrumentation==0.45b0",
+        "opentelemetry-sdk==1.24.0",
+        "opentelemetry-semantic-conventions==0.45b0",
+        "orjson==3.10.3",
+        "pydantic==2.7.1",
+        "pydantic_core==2.18.2",
+        "Pygments==2.18.0",
+        "python-dotenv==1.0.1",
+        "python-multipart==0.0.9",
+        "PyYAML==6.0.1",
+        "rich==13.7.1",
+        "shellingham==1.5.4",
+        "sniffio==1.3.1",
+        "starlette==0.37.2",
+        "typer==0.12.3",
+        "typing_extensions==4.11.0",
+        "ujson==5.9.0",
+        "uvicorn==0.29.0",
+        "uvloop==0.19.0",
+        "watchfiles==0.21.0",
+        "websockets==12.0",
+        "wrapt==1.16.0",
+        "zipp==3.18.1",
+    ],
+    entry_points={
+        "opentelemetry_traces_exporter": [
+            "omegi_kafka = omegi_kafka_exporter:OmegiKafkaSpanExporter"
+        ],
+    }
+)
