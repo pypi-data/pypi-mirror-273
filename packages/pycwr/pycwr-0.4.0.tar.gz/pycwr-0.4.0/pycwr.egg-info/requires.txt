@@ -1,0 +1,10 @@
+matplotlib
+cython
+pyproj
+Cartopy
+xarray
+numpy
+scipy
+pandas
+netCDF4
+easydict
