@@ -1,0 +1,14 @@
+touchpy/TouchEngine.dll,sha256=ayG6VucPmNnqoQXEI-Jx8GbXrXy9ZOohOzc92yS_AoQ,680448
+touchpy/__init__.py,sha256=pbHcWT1GbP8gNx_mSLY0d0ldmJX3Wi1UayvTZz08n6w,47
+touchpy/cudart64_110.dll,sha256=ulwvtSbE7kuyGM6z-l6L_eic5HTzhxH9zOgCVJv5_G8,526848
+touchpy/fmt.dll,sha256=6NIp3qmCHt7dYroT0eZ-tztbHQ8UawFVtt0a_GyrwK8,141312
+touchpy/spdlog.dll,sha256=f9HfBAFKv44D4GQlDSVnU31Lqj7szCcARiHEBA0ew60,258048
+touchpy/touchpy.cp310-win_amd64.pyd,sha256=f-2B56D78c0XdMpUaY_3SAmnX0MdiZi7Rk9TjUxv8Pw,920064
+touchpy/touchpy.cp311-win_amd64.pyd,sha256=A_gJBEXXyje8NYvyXWONOXU7WA_BI_o-faetbpNvSjU,920064
+touchpy/touchpy.cp312-win_amd64.pyd,sha256=uakiVhHjquHWYwm2t1e43OmekMZCd-IgKPUfNUAKP7w,919040
+touchpy/touchpy.cp39-win_amd64.pyd,sha256=yoKxend58HDAQXp0AHpoJHrIJWyDMfEbzTM-ovKyacE,920576
+touchpy-0.0.3.dist-info/LICENSE,sha256=hOLI09pkzB6drfx7e44-gFG-f_H5zpQK2TTQvJ6XlXc,4695
+touchpy-0.0.3.dist-info/METADATA,sha256=w37OLJ183eLpsp2TzceyZr5hajjavN-kCX_UZytuAuY,16044
+touchpy-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+touchpy-0.0.3.dist-info/top_level.txt,sha256=2qhA-9fhvTft0uwFSM_ZJ9gjQI6opCpG_R_otx9OfaM,8
+touchpy-0.0.3.dist-info/RECORD,,
