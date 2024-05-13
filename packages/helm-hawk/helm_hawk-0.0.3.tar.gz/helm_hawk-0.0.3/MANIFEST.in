@@ -1,0 +1,3 @@
+include README.md
+global-include __init__.py
+recursive-include cli *
