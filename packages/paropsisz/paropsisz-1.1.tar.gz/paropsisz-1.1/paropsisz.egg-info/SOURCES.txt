@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+paropsisz/__init__.py
+paropsisz/main.py
+paropsisz.egg-info/PKG-INFO
+paropsisz.egg-info/SOURCES.txt
+paropsisz.egg-info/dependency_links.txt
+paropsisz.egg-info/requires.txt
+paropsisz.egg-info/top_level.txt
