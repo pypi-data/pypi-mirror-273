@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bytegg/__init__.py
+bytegg/core.py
+bytegg.egg-info/PKG-INFO
+bytegg.egg-info/SOURCES.txt
+bytegg.egg-info/dependency_links.txt
+bytegg.egg-info/requires.txt
+bytegg.egg-info/top_level.txt
