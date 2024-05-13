@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: GCS-bucket-files-or-filenames
+Version: 0.6
+Description-Content-Type: text/markdown
+
+This document explains the usage of the Python function files_in_bucket, which can be used to list files within a specific folder in a Google Cloud Storage bucket.
+
+Parameters:
+
+1. bucket_name (str): The name of the Google Cloud Storage bucket.
+
+2. folder_name (str): The name of the folder within the bucket to list files from.
+
+3. filename_needed (bool, optional): Defaults to True. If True, returns a list of filenames.
+
+4. file_object_needed (bool, optional): Defaults to False. If True, returns a list of file objects.
+
+5. list_sub_folders (bool, optional): Defaults to False. If True, includes files from subfolders within the specified folder.
+
+
+Return Value:
+
+1. A list of filenames (strings) if filename_needed is True.
+2. A list of file objects, which can further be used to extract different aspects of the contained file, if file_object_needed is True.
+3. None if both filename_needed and file_object_needed are False.
+4. Raises an exception if an error occurs.
+
+
+Example Usage:
+
+Python:
+
+from google.cloud import storage
+
+bucket_name = "my-bucket"
+folder_name = "data/"
+
+# Get filenames only
+filenames = files_in_bucket(bucket_name, folder_name)
+print(filenames)
+
+# Get file objects only
+file_objects = files_in_bucket(bucket_name, folder_name, file_object_needed=True)
+for blob in file_objects:
+  print(blob.name)
+
+# Include files from subfolders
+all_files = files_in_bucket(bucket_name, folder_name, list_sub_folders=True)
+print(all_files)
+
+
+
+Additional Notes:
+
+1. This function requires the google-cloud-storage library to be installed.
+2. Ensure you have proper authentication set up to access the specified bucket.
+3. The function includes basic error handling, but you may want to implement more specific handling based on your needs.
+4. I hope this README provides a clear explanation of the files_in_bucket function and its usage. Feel free to ask if you have any further questions.
+    Email - preyaa.atri91@gmail.com
