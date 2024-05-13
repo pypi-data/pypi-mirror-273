@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kMCpy-victor
+Version: 0.1.dev0
+Summary: Kinetic Monte Carlo Simulation using Python (kMCpy)
+Author: Zeyu Deng
+Author-email: dengzeyu@gmail.com
+Maintainer: Zeyu Deng
+Maintainer-email: dengzeyu@gmail.com
+License: MIT License
+Requires-Python: >=3.8
+Requires-Dist: pymatgen
+Requires-Dist: numba
+Requires-Dist: joblib
+Requires-Dist: scikit-learn
+Requires-Dist: glob2
