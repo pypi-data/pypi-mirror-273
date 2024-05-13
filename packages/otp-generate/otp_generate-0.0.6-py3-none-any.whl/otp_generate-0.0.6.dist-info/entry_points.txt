@@ -1,0 +1,2 @@
+[console_scripts]
+package-hello = otp_generate:package_check
