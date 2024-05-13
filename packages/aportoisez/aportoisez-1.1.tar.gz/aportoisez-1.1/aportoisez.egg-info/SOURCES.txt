@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aportoisez/__init__.py
+aportoisez/main.py
+aportoisez.egg-info/PKG-INFO
+aportoisez.egg-info/SOURCES.txt
+aportoisez.egg-info/dependency_links.txt
+aportoisez.egg-info/requires.txt
+aportoisez.egg-info/top_level.txt
