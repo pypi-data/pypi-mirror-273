@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: remla_preprocess
+Version: 3
+Summary: Pre-processing library for ML models
+License: MIT
+Author: Razvan Mihai Popescu
+Author-email: R.Popescu-3@student.tudelft.nl
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bump2version (>=1.0.1,<2.0.0)
+Requires-Dist: gdown (>=5.2.0,<6.0.0)
+Requires-Dist: keras (>=2.8,<3.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: protobuf (>=3.20,<4.0)
+Requires-Dist: scikit-learn (>=1.4.2,<2.0.0)
+Requires-Dist: tensorflow (==2.8.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.24.0)
+Requires-Dist: twine (>=5.0.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# lib-ml
