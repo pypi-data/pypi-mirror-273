@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tercetsz/__init__.py
+tercetsz/main.py
+tercetsz.egg-info/PKG-INFO
+tercetsz.egg-info/SOURCES.txt
+tercetsz.egg-info/dependency_links.txt
+tercetsz.egg-info/requires.txt
+tercetsz.egg-info/top_level.txt
