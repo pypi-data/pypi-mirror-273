@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+romancingz/__init__.py
+romancingz/main.py
+romancingz.egg-info/PKG-INFO
+romancingz.egg-info/SOURCES.txt
+romancingz.egg-info/dependency_links.txt
+romancingz.egg-info/requires.txt
+romancingz.egg-info/top_level.txt
