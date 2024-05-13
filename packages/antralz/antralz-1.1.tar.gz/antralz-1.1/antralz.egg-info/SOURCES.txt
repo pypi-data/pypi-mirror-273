@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antralz/__init__.py
+antralz/main.py
+antralz.egg-info/PKG-INFO
+antralz.egg-info/SOURCES.txt
+antralz.egg-info/dependency_links.txt
+antralz.egg-info/requires.txt
+antralz.egg-info/top_level.txt
