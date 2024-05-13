@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beeregarz/__init__.py
+beeregarz/main.py
+beeregarz.egg-info/PKG-INFO
+beeregarz.egg-info/SOURCES.txt
+beeregarz.egg-info/dependency_links.txt
+beeregarz.egg-info/requires.txt
+beeregarz.egg-info/top_level.txt
