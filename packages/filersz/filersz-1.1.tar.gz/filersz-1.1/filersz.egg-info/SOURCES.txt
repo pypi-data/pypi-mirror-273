@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+filersz/__init__.py
+filersz/main.py
+filersz.egg-info/PKG-INFO
+filersz.egg-info/SOURCES.txt
+filersz.egg-info/dependency_links.txt
+filersz.egg-info/requires.txt
+filersz.egg-info/top_level.txt
