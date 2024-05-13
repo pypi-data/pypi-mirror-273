@@ -1,0 +1,27 @@
+{
+    "invertertest": {
+        "templates": [
+            {
+                "name": "MQTT Group 0: Nodes [kW/%]",
+                "topic": "xdevice/pvplant/nodes",
+                "payload": "{ \"A\": {I18N_COMMON_TOTAL_DCPOWER}, \"B\": {I18N_COMMON_LOAD_TOTAL_ACTIVE_POWER}, \"C\": {I18N_COMMON_BATTERY_SOC}, \"D\": {I18N_CONFIG_KEY_4060} }"
+            }, {
+                "name": "MQTT Group 1: Power [kW]",
+                "topic": "xdevice/pvplant/power",
+                "payload": "{ \"A-C\": {I18N_CONFIG_KEY_3907}, \"A-B\": {I18N_COMMON_TOTAL_ACTIVE_POWER}, \"A-D\": {I18N_COMMON_FEED_NETWORK_TOTAL_ACTIVE_POWER} }"
+            }, {
+                "name": "MQTT Group 2: Load [kW]",
+                "topic": "xdevice/pvplant/load",
+                "payload": "{ \"A-B\": {I18N_COMMON_TOTAL_ACTIVE_POWER}, \"C-B\": {I18N_CONFIG_KEY_3921}, \"D-B\": {I18N_CONFIG_KEY_4060} }"
+            }, {
+                "name": "MQTT Group 3: Daily Energy [kWh]",
+                "topic": "xdevice/pvplant/daily_energy",
+                "payload": "{ \"DG\": {I18N_COMMON_PV_DAYILY_ENERGY_GENERATION}, \"DC\": {I18N_COMMON_DAILY_DIRECT_CONSUMPTION_ELECTRICITY_PV}, \"DP\": {I18N_COMMON_ENERGY_GET_FROM_GRID_DAILY}, \"DF\": {I18N_COMMON_DAILY_FEED_NETWORK_VOLUME}, \"DD\": {I18N_COMMON_DAILY_BATTERY_DISCHARGE} }"
+            }, {
+                "name": "MQTT Group 4: Total Energy [kWh]",
+                "topic": "xdevice/pvplant/total_energy",
+                "payload": "{ \"TG\": {I18N_COMMON_PV_TOTAL_ENERGY_GENERATION}, \"TC\": {I18N_COMMON_TOTAL_DIRECT_POWER_CONSUMPTION_PV}, \"TP\": {I18N_COMMON_TOTAL_ELECTRIC_GRID_GET_POWER}, \"TF\": {I18N_COMMON_TOTAL_FEED_NETWORK_VOLUME}, \"TD\": {I18N_COMMON_TOTAL_BATTRY_DISCHARGE} }"
+            }
+        ]
+    }
+}
