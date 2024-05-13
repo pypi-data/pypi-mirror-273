@@ -1,0 +1,2 @@
+[console_scripts]
+hostdb = hostdb.tool.main:main
