@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+embryulcusesz/__init__.py
+embryulcusesz/main.py
+embryulcusesz.egg-info/PKG-INFO
+embryulcusesz.egg-info/SOURCES.txt
+embryulcusesz.egg-info/dependency_links.txt
+embryulcusesz.egg-info/requires.txt
+embryulcusesz.egg-info/top_level.txt
