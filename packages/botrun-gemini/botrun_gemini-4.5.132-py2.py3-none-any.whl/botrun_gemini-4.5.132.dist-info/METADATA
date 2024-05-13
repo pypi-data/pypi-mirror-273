@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: botrun_gemini
+Version: 4.5.132
+Requires-Dist: google-cloud-aiplatform
+Requires-Dist: google-generativeai
+Requires-Dist: python-dotenv
+Description-Content-Type: text/markdown
+
+use google gemini pro 1.5 process video

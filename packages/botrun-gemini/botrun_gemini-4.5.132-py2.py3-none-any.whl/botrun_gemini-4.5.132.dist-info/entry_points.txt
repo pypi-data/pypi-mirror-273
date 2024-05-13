@@ -1,0 +1,2 @@
+[console_scripts]
+botrun-gemini = botrun_gemini:main
