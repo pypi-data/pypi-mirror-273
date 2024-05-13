@@ -1,0 +1,27 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyllmtools"
+authors = [{ name = "Shihong Yan", email = "yansh97@foxmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = []
+
+[tool.flit.module]
+name = "llmtools"
+
+[tool.coverage.report]
+exclude_also = ["@abstractmethod", "raise", "except"]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "-n=8 --dist=worksteal --cov=./llmtools --cov-report=html --cov-report=term --cov-report=term-missing"
+testpaths = ["test"]
+
+[tool.isort]
+profile = 'black'
