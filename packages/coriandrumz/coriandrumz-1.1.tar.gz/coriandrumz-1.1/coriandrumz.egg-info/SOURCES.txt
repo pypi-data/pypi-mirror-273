@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+coriandrumz/__init__.py
+coriandrumz/main.py
+coriandrumz.egg-info/PKG-INFO
+coriandrumz.egg-info/SOURCES.txt
+coriandrumz.egg-info/dependency_links.txt
+coriandrumz.egg-info/requires.txt
+coriandrumz.egg-info/top_level.txt
