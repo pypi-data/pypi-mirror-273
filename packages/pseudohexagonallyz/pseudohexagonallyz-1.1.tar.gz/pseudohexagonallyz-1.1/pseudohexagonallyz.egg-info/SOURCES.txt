@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pseudohexagonallyz/__init__.py
+pseudohexagonallyz/main.py
+pseudohexagonallyz.egg-info/PKG-INFO
+pseudohexagonallyz.egg-info/SOURCES.txt
+pseudohexagonallyz.egg-info/dependency_links.txt
+pseudohexagonallyz.egg-info/requires.txt
+pseudohexagonallyz.egg-info/top_level.txt
