@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sqlpage
+Version: 0.0.2
+Summary: Python package to add pagination to a model and return bas64 encoded pagination token
+Author: Prabhu Pant
+Project-URL: Homepage, https://github.com/prabhupant/sqlpage
+Project-URL: Issues, https://github.com/prabhupant/sqlpage/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlmodel==0.0.18
+
+# SQLPage
+
+Python library that provides easy to integrate pagination for any kind of data. Returns a base64 encoded string that can be used to paginate data.
