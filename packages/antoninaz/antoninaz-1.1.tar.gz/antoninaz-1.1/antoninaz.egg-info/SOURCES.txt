@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antoninaz/__init__.py
+antoninaz/main.py
+antoninaz.egg-info/PKG-INFO
+antoninaz.egg-info/SOURCES.txt
+antoninaz.egg-info/dependency_links.txt
+antoninaz.egg-info/requires.txt
+antoninaz.egg-info/top_level.txt
