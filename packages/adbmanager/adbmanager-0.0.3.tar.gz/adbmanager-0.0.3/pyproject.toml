@@ -1,0 +1,18 @@
+[project]
+name = "adbmanager"
+version = "0.0.3"
+authors = [
+  { name="Frankelly Franco", email="lic.frankellyfranco@gmail.com" },
+]
+description = "adbmanager is a small library for managing and administrating Android devices through ADB, developed by Frankelly Franco and distributed by Francarium Platforms. This tool will assist you in controlling each Android device in an organized manner through ADB, assuming it is installed. With adbmanager, you can streamline management tasks such as installing applications, transferring files, executing commands in the shell, and more, on connected Android devices via ADB."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/francarium/adbmanager"
+Issues = "https://github.com/francarium/adbmanager/issues"

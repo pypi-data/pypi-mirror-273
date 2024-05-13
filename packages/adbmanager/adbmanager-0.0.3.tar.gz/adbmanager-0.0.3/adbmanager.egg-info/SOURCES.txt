@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+adbmanager/__init__.py
+adbmanager/adbmanager.py
+adbmanager.egg-info/PKG-INFO
+adbmanager.egg-info/SOURCES.txt
+adbmanager.egg-info/dependency_links.txt
+adbmanager.egg-info/top_level.txt
+adbmanager/modules/__init__.py
+adbmanager/modules/deviceInfo.py
+adbmanager/modules/keyboard_events.json
