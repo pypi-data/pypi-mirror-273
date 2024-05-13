@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aediculaez/__init__.py
+aediculaez/main.py
+aediculaez.egg-info/PKG-INFO
+aediculaez.egg-info/SOURCES.txt
+aediculaez.egg-info/dependency_links.txt
+aediculaez.egg-info/requires.txt
+aediculaez.egg-info/top_level.txt
