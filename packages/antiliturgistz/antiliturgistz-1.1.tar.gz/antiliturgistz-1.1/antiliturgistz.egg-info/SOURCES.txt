@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antiliturgistz/__init__.py
+antiliturgistz/main.py
+antiliturgistz.egg-info/PKG-INFO
+antiliturgistz.egg-info/SOURCES.txt
+antiliturgistz.egg-info/dependency_links.txt
+antiliturgistz.egg-info/requires.txt
+antiliturgistz.egg-info/top_level.txt
