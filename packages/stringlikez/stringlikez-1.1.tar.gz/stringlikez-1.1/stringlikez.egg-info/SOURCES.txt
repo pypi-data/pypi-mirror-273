@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stringlikez/__init__.py
+stringlikez/main.py
+stringlikez.egg-info/PKG-INFO
+stringlikez.egg-info/SOURCES.txt
+stringlikez.egg-info/dependency_links.txt
+stringlikez.egg-info/requires.txt
+stringlikez.egg-info/top_level.txt
