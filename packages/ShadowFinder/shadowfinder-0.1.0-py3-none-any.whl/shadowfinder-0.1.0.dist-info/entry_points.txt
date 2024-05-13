@@ -1,0 +1,3 @@
+[console_scripts]
+shadowfinder=shadowfinder.main:main_entrypoint
+
