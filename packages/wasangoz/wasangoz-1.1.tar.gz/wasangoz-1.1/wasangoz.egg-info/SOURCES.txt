@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wasangoz/__init__.py
+wasangoz/main.py
+wasangoz.egg-info/PKG-INFO
+wasangoz.egg-info/SOURCES.txt
+wasangoz.egg-info/dependency_links.txt
+wasangoz.egg-info/requires.txt
+wasangoz.egg-info/top_level.txt
