@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kvz/__init__.py
+kvz/main.py
+kvz.egg-info/PKG-INFO
+kvz.egg-info/SOURCES.txt
+kvz.egg-info/dependency_links.txt
+kvz.egg-info/requires.txt
+kvz.egg-info/top_level.txt
