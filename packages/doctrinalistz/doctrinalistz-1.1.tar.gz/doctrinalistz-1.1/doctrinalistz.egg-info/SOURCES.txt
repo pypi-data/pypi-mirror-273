@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+doctrinalistz/__init__.py
+doctrinalistz/main.py
+doctrinalistz.egg-info/PKG-INFO
+doctrinalistz.egg-info/SOURCES.txt
+doctrinalistz.egg-info/dependency_links.txt
+doctrinalistz.egg-info/requires.txt
+doctrinalistz.egg-info/top_level.txt
