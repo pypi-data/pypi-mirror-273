@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+soccerz/__init__.py
+soccerz/main.py
+soccerz.egg-info/PKG-INFO
+soccerz.egg-info/SOURCES.txt
+soccerz.egg-info/dependency_links.txt
+soccerz.egg-info/requires.txt
+soccerz.egg-info/top_level.txt
