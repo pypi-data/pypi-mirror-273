@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anematosisz/__init__.py
+anematosisz/main.py
+anematosisz.egg-info/PKG-INFO
+anematosisz.egg-info/SOURCES.txt
+anematosisz.egg-info/dependency_links.txt
+anematosisz.egg-info/requires.txt
+anematosisz.egg-info/top_level.txt
