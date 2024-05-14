@@ -1,0 +1,2 @@
+[sopel.plugins]
+anilist = sopel_anilist

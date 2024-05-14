@@ -1,0 +1,12 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_anilist/__init__.py
+sopel_anilist.egg-info/PKG-INFO
+sopel_anilist.egg-info/SOURCES.txt
+sopel_anilist.egg-info/dependency_links.txt
+sopel_anilist.egg-info/entry_points.txt
+sopel_anilist.egg-info/requires.txt
+sopel_anilist.egg-info/top_level.txt
