@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: django_fast_export
+Version: 0.1.1
+Summary: Fast exporting of data from the Django admin panel
+Home-page: https://github.com/matthiask/django-fast-export/
+Author: Matthias Kestenholz
+Author-email: mk@feinheit.ch
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Django >=3.2
+
+==================
+django-fast-export
+==================
+
+
+Utilities for quickly streaming CSV responses to the client
+
+Thanks, https://docs.djangoproject.com/en/4.0/howto/outputting-csv/
+
+Example usage:
+
+.. code-block:: python
+
+    from django_fast_export.csv import StreamingCSVResponse
+
+    response = StreamingCSVResponse.from_queryset(queryset)
+
+Or with additional fields:
+
+.. code-block:: python
+
+    from django_fast_export.csv import StreamingCSVResponse, all_values, all_verbose_names
+
+    def generate():
+        yield (all_verbose_names(queryset.model) + ["Lösungen"])
+        yield from (
+            (all_values(instance) + [instance.get_solutions()]) for instance in queryset
+        )
+
+    response = StreamingCSVResponse(generate())
