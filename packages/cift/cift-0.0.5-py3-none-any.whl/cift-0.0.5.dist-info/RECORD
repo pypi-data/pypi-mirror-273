@@ -1,0 +1,9 @@
+cift/__init__.py,sha256=tHawx2Al5Qqp95bpL9ld8W5lWLYEvobXRXZS-SN3qd8,155
+cift/err.py,sha256=gEmH--FLmebz6qEOOcwuO955VVOet1wFKXB_MJ1_On4,496
+cift/parser.py,sha256=hBCdkplGp2DMpvxecAcX-D0k8v1bSBkmYxEwhT2R3N4,8177
+cift/re.py,sha256=x-98gd_FRTPcZA0mHRZ7ZnfctyfmZH0pFKt64IFM2LY,881
+cift/types.py,sha256=jmWm_-lyutD3ko6nYGCVg7QZ3Kel_B50PDEhuoy22_E,308
+cift-0.0.5.dist-info/METADATA,sha256=DRE5foV1yMyPHaeRIPK40RaZSdvjWAFoWYVpTtNdLPY,1672
+cift-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cift-0.0.5.dist-info/top_level.txt,sha256=pwalyHlw1qZ8CjEfVAgcIZJ0pnztQdgPgDLYOJMq_Og,5
+cift-0.0.5.dist-info/RECORD,,
