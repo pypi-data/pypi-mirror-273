@@ -1,0 +1,2 @@
+[console_scripts]
+tls = TLS.main:main
