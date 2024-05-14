@@ -1,0 +1,24 @@
+{
+    "Appearance": {
+        "Editor Font": {
+            "Size": 18,
+            "Font": "SFProText-Regular.ttf"
+        },
+        "Node Font": {
+            "Size": 18,
+            "Font": "SFProText-Regular.ttf"
+        }
+    },
+    "Operation": {
+        "HEARTBEAT_RATE": 1,
+        "HEARTBEATS_TO_DEATH": 10,
+        "NUMBER_OF_INITIAL_PARAMETERS_UPDATES": 20,
+        "KNOWN_HOSTS_FILE": "/.ssh/known_hosts",
+        "NUMBER_OF_ITTERATIONS_BEFORE_SAVENODESTATE_SUBSTATE_SAVE": 1000,
+        "DELAY_BETWEEN_SENDING_DATA_TO_NEXT_NODE_MILLISECONDS": 0.2
+    },
+    "IDE": {
+        "IDE Path": "",
+        "IDE Project Path": ""
+    }
+}
