@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+magneopticz/__init__.py
+magneopticz/main.py
+magneopticz.egg-info/PKG-INFO
+magneopticz.egg-info/SOURCES.txt
+magneopticz.egg-info/dependency_links.txt
+magneopticz.egg-info/requires.txt
+magneopticz.egg-info/top_level.txt
