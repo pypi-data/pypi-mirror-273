@@ -1,0 +1,15 @@
+lucy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lucy/config.py,sha256=o6bg3gTJxQiotagzjb8CQIqrTGSsREBFXbQdUC9Nlxs,1255
+lucy/main.py,sha256=GcdLjdEUiWEqKW43yvoAqQWMfue6ZVGvToGXY38D8EQ,1582
+lucy/scraper.py,sha256=8OHOogyuc9FD12jmsVfKRLuFaLys2o4v7aWMcCIq85s,889
+lucy/tester.py,sha256=XmY63fbO3dNkWfhZ6CEO9_JHmId6TLuCHUIZG5MX5ms,2323
+lucy/update_snippets.py,sha256=E_cOjQZiuvkjHkZjsNC0KYsnMvtvmKF3BJAvsJsT1kk,1326
+lucy/utils.py,sha256=3qaHQQIH0jgKYO13Hf0LMiEAUpwgSRK-g3Qaq0V-UfI,1200
+lucy/parser_/atcoder.py,sha256=BZ-lcQ3MKPSXDQvCk_NCRM62DbJNsJoYKrrUbqXDlSo,2503
+lucy/parser_/contest.py,sha256=_Ipz8pSILK3MIFmhvA0GWsQ04Q8YIjuf0xOfn6u9sQg,387
+lucy/parser_/parser_.py,sha256=fLbscSfRtE8ekxmvJCH16ONxQiRCRWEIjMxzQ2dHL3M,193
+lucy01-0.0.1.dist-info/METADATA,sha256=Z_jQ9vq4SkvIXkadoPBlIla2P2XP3Rab-GIcbZ5Jh5M,2609
+lucy01-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lucy01-0.0.1.dist-info/entry_points.txt,sha256=bBm48hjnnOS3jDUorYsGymaeT178zoGS2JGi7wk5hro,39
+lucy01-0.0.1.dist-info/top_level.txt,sha256=XXKJ0Qc8wczrorZAOousn80QjDhYpsZ2W_WOR_XJ0jw,5
+lucy01-0.0.1.dist-info/RECORD,,
