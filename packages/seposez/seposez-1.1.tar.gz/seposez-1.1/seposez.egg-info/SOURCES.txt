@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+seposez/__init__.py
+seposez/main.py
+seposez.egg-info/PKG-INFO
+seposez.egg-info/SOURCES.txt
+seposez.egg-info/dependency_links.txt
+seposez.egg-info/requires.txt
+seposez.egg-info/top_level.txt
