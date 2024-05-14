@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+faceserve/__init__.py
+faceserve.egg-info/PKG-INFO
+faceserve.egg-info/SOURCES.txt
+faceserve.egg-info/dependency_links.txt
+faceserve.egg-info/top_level.txt
+faceserve.egg-info/zip-safe
