@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ooui
+Version: 0.6.0
+Summary: Open Object User Interface
+Home-page: https://github.com/gisce/python-ooui
+Author: GISCE
+Author-email: devel@gisce.net
+License: MIT
+Description: Open Object User Interface for GISCE-ERP
+Platform: UNKNOWN
+Provides: ooui
