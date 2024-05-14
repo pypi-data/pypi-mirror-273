@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+suppositionsz/__init__.py
+suppositionsz/main.py
+suppositionsz.egg-info/PKG-INFO
+suppositionsz.egg-info/SOURCES.txt
+suppositionsz.egg-info/dependency_links.txt
+suppositionsz.egg-info/requires.txt
+suppositionsz.egg-info/top_level.txt
