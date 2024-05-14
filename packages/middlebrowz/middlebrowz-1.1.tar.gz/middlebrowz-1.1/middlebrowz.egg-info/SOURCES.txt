@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+middlebrowz/__init__.py
+middlebrowz/main.py
+middlebrowz.egg-info/PKG-INFO
+middlebrowz.egg-info/SOURCES.txt
+middlebrowz.egg-info/dependency_links.txt
+middlebrowz.egg-info/requires.txt
+middlebrowz.egg-info/top_level.txt
