@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fastdev
+Version: 0.0.2
+Summary: Type less, code more
+Author-email: Jianglong Ye <jianglong.yeh@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/jianglongye/fastdev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: msgspec[toml,yaml]
+Requires-Dist: rich
+Requires-Dist: fsspec
+Requires-Dist: universal_pathlib
+Requires-Dist: huggingface_hub[cli,hf_transfer]
+Requires-Dist: GitPython
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: lovely-tensors; extra == "dev"
+
+# FastDev
+
+Type Less, Code More
