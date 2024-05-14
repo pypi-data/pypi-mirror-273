@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thermaesthesiaz/__init__.py
+thermaesthesiaz/main.py
+thermaesthesiaz.egg-info/PKG-INFO
+thermaesthesiaz.egg-info/SOURCES.txt
+thermaesthesiaz.egg-info/dependency_links.txt
+thermaesthesiaz.egg-info/requires.txt
+thermaesthesiaz.egg-info/top_level.txt
