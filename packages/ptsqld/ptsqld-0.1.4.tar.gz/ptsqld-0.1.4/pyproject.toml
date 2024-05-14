@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ptsqld"
+version = "0.1.4"
+description = "An SQL Database which shall avoid any further PTSD associated to other SQL Database setup (understand flexible, simple)"
+authors = ["Charles Bajeux <charles.bajeux@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+echovault = "^0.2.3"
+sqletic = "^0.1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
