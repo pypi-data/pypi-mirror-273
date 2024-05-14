@@ -1,0 +1,17 @@
+
+class Engine(_Engine):
+    def __init__(self, tables):
+        super().__init__(tables)
+        
+        if not '__schema' in tables:
+            tables['__schema'] = ()
+            
+    def execute_create(self, statement):
+        for entry in self.tables['__schema']:
+            if statement.table.name == entry['name']:
+                raise ValueError('table {statement.table.name} already exists')
+        else:
+            self.tables['__schema'].append({'name':statement.table.name,
+                                            'description':statement.columns})
+            
+        super().execute_create(statement)

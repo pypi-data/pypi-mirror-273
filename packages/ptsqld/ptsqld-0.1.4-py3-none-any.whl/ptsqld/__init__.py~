@@ -1,0 +1,56 @@
+from sqlton import parse
+from sqlton.ast import Select
+from sqletic import Engine
+from pickle import load, dump
+from functools import partialmethod
+from readerwriterlock.rwlock import RWLockRead
+
+def __forward(self, method_name, *args, **kwargs):
+    if method_name.startswith('execute'):
+        statement, = parse(args[0])
+        
+        if statement is Select:
+            lock = self.lock.gen_rlock()
+        else:
+            lock = self.lock.gen_wlock()
+        
+        with lock:
+            return getattr(self._engine, method_name)(*args, *kwargs)
+            
+    else:
+        return getattr(self._engine, method_name)(*args, *kwargs)
+
+
+class Cursor:
+    def __init__(engine, lock):
+        self._engine = engine
+        self._lock = lock
+
+    __iter__ = partialmethod(forward, '__iter__')
+
+class Connection:
+    def __init__(self, path):
+        self.__path = path
+        
+        with open(self.__path, 'rb') as file: 
+            self.__tables = load(file)
+
+        self._engine = Engine(self.__tables)
+        self._lock = RWLockRead()
+
+    def close(self):
+        with open(self.path, 'wb') as file:
+            dumps(self.tables)
+
+    __del__ = close
+
+    def cursor():
+        return Cursor(self._engine, self._lock)
+
+for method_name in {'execute', 'fetchone', 'fetchmany', 'fetchall'}:
+    setattr(Cursor, partialmethod(__forward, method_name))
+    setattr(Connection, partialmethod(__forward, method_name))
+
+def connect(path):
+    
+    

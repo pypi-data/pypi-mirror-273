@@ -1,0 +1,21 @@
+from ptsqld import connect
+from sys import argv
+
+if len(argv) < 2:
+    exit('need to give path as argument')
+
+connection = connect(argv[-1])
+
+statement = ''
+while (statement := statement + input()) != '.quit\n':
+    if ';' in statement:
+        cursor = connection.cursor()
+
+        statements = statement.split(';')
+        for statement in statements:
+            cursor.execute(statement)
+
+            for row in cursor:
+                print(row)
+
+        statement = statements[-1]
