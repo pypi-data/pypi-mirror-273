@@ -1,0 +1,3 @@
+[console_scripts]
+ensembletr=ensembletr.main:run
+
