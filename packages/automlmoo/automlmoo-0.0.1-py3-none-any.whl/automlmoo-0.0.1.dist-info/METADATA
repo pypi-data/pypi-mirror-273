@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: automlmoo
+Version: 0.0.1
+Summary: A package for automatic modeling and optimize systems based on data
+Home-page: UNKNOWN
+Author: Yarens J. Cruz
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7, <=3.9
+License-File: LICENSE.txt
+Requires-Dist: auto-sklearn
+Requires-Dist: pymoo
+
+UNKNOWN
+
