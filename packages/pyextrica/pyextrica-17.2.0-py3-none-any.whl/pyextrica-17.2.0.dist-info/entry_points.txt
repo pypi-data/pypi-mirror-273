@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+pyextrica = pyextrica.sqlalchemy.dialect:TrinoDialect
