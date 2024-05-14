@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AWSXenos Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </headi>
+
+<body>
+    <div class="container">
+        <h1>AWSXenos Report</h1>
+        <hr>
+        <table id="data" class="table table-striped">
+            <thead class="table-light">
+                <tr>
+                    <th>Account Type</th>
+                    <th>Finding</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for account_type, findings in summary.items() %}
+                <tr>
+                    <td>{{ account_type }}</td>
+
+                    <td>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> ARN </th>
+                                    <th scope="col"> Principal </th>
+                                    <th scope="col"> Account Owner </th>
+                                    <th scope="col"> External ID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for finding in findings %}
+                                <tr>
+                                    <td>{{ finding.ARN }}</td>
+                                    <td>{{ finding.principal }}</td>
+                                    {% if finding.external_info.owner %}
+                                    <td>{{ finding.external_info.owner}} - {{finding.external_info.source}}</td>
+                                    {% else %}
+                                    <td>{{ finding.external_info.Name}} - {{finding.external_info.JoinedMethod}}
+                                        {{finding.external_info.Status}}</td>
+                                    {% endif %}
+                                    {% if (account_type == "unknown_accounts" or account_type == "known_accounts") and not finding.external_id  %}
+                                   <td class="bg-warning">{{finding.external_id}}</td>
+                                   {% else %}
+                                   <td>{{finding.external_id}}</td>
+                                   {% endif %}
+                                    {% endfor %}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>
