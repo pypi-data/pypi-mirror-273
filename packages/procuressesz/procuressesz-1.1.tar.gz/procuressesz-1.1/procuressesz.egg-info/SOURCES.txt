@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+procuressesz/__init__.py
+procuressesz/main.py
+procuressesz.egg-info/PKG-INFO
+procuressesz.egg-info/SOURCES.txt
+procuressesz.egg-info/dependency_links.txt
+procuressesz.egg-info/requires.txt
+procuressesz.egg-info/top_level.txt
