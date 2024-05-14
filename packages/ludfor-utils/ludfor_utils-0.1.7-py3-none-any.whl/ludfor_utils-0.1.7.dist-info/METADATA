@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ludfor-utils
+Version: 0.1.7
+Summary: Funções para utilização em Scripts
+Author: Ludfor Desenvolvimento
+Requires-Dist: psycopg2
+
