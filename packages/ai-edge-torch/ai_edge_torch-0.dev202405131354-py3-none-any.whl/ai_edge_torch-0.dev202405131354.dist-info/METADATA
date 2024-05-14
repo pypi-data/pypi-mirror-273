@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ai-edge-torch
+Version: 0.dev202405131354
+Summary: Supporting PyTorch models with the Google AI Edge TFLite runtime.
+Home-page: https://github.com/google-ai-edge/ai-edge-torch
+Keywords: On-Device ML,AI,Google,TFLite,PyTorch,LLMs,GenAI
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9, <3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: safetensors
+Requires-Dist: scipy
+Requires-Dist: tabulate
+Requires-Dist: torch ==2.4.*
+
+This pacakge has two primary components:
+
+1. PyTorch Converter: A direct path from PyTorch to [TFLite runtime](https://www.tensorflow.org/lite/guide/inference).
+
+1. Generative API: Python library that allows developers to author high performance LLMs for
+     Mobile devices in PyTorch.
+
+More details are in the project's [GitHub repository](https://github.com/google-ai-edge/ai-edge-torch).
