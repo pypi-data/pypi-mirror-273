@@ -1,0 +1,24 @@
+[project]
+name = "tidyxbrl"
+version = "1.1.1"
+authors = [
+  { name="Ryan McDonald", email="ryancmcdonald@gmail.com" },
+]
+description = "A python package to parse the XBRL file format & interface with XBRL APIs in a tidy format. A powerful tool for automated financial analysis, accounting, and investment research using Pandas."
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Natural Language :: English"
+]
+
+[project.urls]
+Homepage = "https://github.com/cowboycodeman/tidyxbrl/"
+Issues = "https://github.com/cowboycodeman/tidyxbrl/issues"
