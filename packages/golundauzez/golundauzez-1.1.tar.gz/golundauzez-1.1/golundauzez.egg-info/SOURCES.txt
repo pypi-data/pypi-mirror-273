@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+golundauzez/__init__.py
+golundauzez/main.py
+golundauzez.egg-info/PKG-INFO
+golundauzez.egg-info/SOURCES.txt
+golundauzez.egg-info/dependency_links.txt
+golundauzez.egg-info/requires.txt
+golundauzez.egg-info/top_level.txt
