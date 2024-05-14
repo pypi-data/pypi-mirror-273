@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stanechatz/__init__.py
+stanechatz/main.py
+stanechatz.egg-info/PKG-INFO
+stanechatz.egg-info/SOURCES.txt
+stanechatz.egg-info/dependency_links.txt
+stanechatz.egg-info/requires.txt
+stanechatz.egg-info/top_level.txt
