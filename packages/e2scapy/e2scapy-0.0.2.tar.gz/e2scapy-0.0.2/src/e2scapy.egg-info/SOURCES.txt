@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/e2scapy/__init__.py
+src/e2scapy/e2scapy.py
+src/e2scapy.egg-info/PKG-INFO
+src/e2scapy.egg-info/SOURCES.txt
+src/e2scapy.egg-info/dependency_links.txt
+src/e2scapy.egg-info/top_level.txt

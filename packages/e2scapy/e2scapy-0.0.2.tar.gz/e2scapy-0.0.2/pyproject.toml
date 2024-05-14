@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "e2scapy"
+version = "0.0.2"
+authors = [
+  { name="luisCorl", email="lui.corl.ing@hotmail.com" },
+]
+description = "this solve electrical circuits by symbolic way"
+readme = "README.md"
+requires-python = ">=3.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/luisCorl/escapy"
+Issues = "https://github.com/luisCorl/escapy"
+
+[options]
+
+install_requires = [
+	"numpy>=1.0",
+	"sympy>=1.0",
+	"symengine >=1.0",
+	"pandas >= 2.0",
+	"ddd_layer >= 0.0.0",
+	]
+	
