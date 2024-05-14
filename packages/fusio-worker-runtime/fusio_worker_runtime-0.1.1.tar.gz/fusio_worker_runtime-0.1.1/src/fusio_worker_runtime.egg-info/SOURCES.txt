@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fusio_worker_runtime.egg-info/PKG-INFO
+src/fusio_worker_runtime.egg-info/SOURCES.txt
+src/fusio_worker_runtime.egg-info/dependency_links.txt
+src/fusio_worker_runtime.egg-info/requires.txt
+src/fusio_worker_runtime.egg-info/top_level.txt
+src/runtime/runtime.py
