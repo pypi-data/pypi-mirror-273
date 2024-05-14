@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+uwebserver.py
+uWebServer.egg-info/PKG-INFO
+uWebServer.egg-info/SOURCES.txt
+uWebServer.egg-info/dependency_links.txt
+uWebServer.egg-info/requires.txt
+uWebServer.egg-info/top_level.txt
