@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: parallel-sparse-tools
+Version: 0.1.1
+Summary: My package description
+Author-email: Phillip Weinberg <weinbe58@gmail.com>
+License: BSD-3-Clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+[![codecov](https://codecov.io/gh/QuSpin/parallel-sparse-tools/graph/badge.svg?token=1OECNN8334)](https://codecov.io/gh/QuSpin/parallel-sparse-tools)
+# parallel-sparse-tools
+Repository for OpenMP parallelized Sparse tools
