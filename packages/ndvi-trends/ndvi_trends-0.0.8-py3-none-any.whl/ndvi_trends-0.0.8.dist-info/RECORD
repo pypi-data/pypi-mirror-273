@@ -1,0 +1,12 @@
+ndvi_trends/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+ndvi_trends/calc.py,sha256=RoBFNtSlku5UkI-76f2iX7JvMDVgAXkPtlZvk9veEy0,262
+ndvi_trends/data.py,sha256=-tx3i_2DcsJAdhW3mTNLhnoGP4LP0WchUh_xY35PaDk,11984
+ndvi_trends/smoothing.py,sha256=pMaZ6ugSgKhW8wFVv1spv7_W4y58sGHNgtiaQPxi110,22906
+ndvi_trends/utils/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+ndvi_trends/utils/ee.py,sha256=q-ZjDnJ7JA0J3j78tjMJFFhhvNaGaHf2HDjUA7j6ne4,2139
+ndvi_trends/utils/npxr.py,sha256=bHNw_A6v4qJxpvmlypUYp9YAuANf9tqey9yjoRmTStg,10757
+ndvi_trends-0.0.8.dist-info/LICENSE.md,sha256=d_oZCLiKBI7j0VHZoPS8LVgeiSXK-it9pa4QphxXhFI,2193
+ndvi_trends-0.0.8.dist-info/METADATA,sha256=DwQ-c32wulY-OWJ5UCkg9TtT0pwzm9N76-Qac47Ml-w,3127
+ndvi_trends-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ndvi_trends-0.0.8.dist-info/top_level.txt,sha256=A_Axh3IaqL7t80LqhbYPtRn73aGdB81RDsHSr72Jq8U,12
+ndvi_trends-0.0.8.dist-info/RECORD,,
