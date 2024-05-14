@@ -1,0 +1,2 @@
+sagemaker_inference
+sagemaker_pytorch_serving_container
