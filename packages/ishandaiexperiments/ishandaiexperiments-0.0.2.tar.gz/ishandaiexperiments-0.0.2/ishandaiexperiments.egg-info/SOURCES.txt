@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+exp/__init__.py
+ishandaiexperiments.egg-info/PKG-INFO
+ishandaiexperiments.egg-info/SOURCES.txt
+ishandaiexperiments.egg-info/dependency_links.txt
+ishandaiexperiments.egg-info/top_level.txt

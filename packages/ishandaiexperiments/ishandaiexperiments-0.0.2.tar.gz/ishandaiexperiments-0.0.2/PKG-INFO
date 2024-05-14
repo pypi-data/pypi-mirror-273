@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ishandaiexperiments
+Version: 0.0.2
+Summary: dai experiments
+Home-page: 
+Author: S Ishan
+Author-email: is9678@srmist.edu.in
+License: MIT
+Keywords: dai
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is an experiment for dai practical
+
+Change Log
+==========
+
+0.0.1 (13/05/2024)
+-------------------
+- First Release
