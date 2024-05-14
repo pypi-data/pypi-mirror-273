@@ -1,0 +1,3 @@
+[console_scripts]
+visualizeurdf=robotmodels.scripts.visualize_urdf:visualize_urdf
+
