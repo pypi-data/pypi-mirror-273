@@ -1,0 +1,11 @@
+anycrc-0.6.3.dist-info/RECORD,,
+anycrc-0.6.3.dist-info/LICENSE,sha256=3K76btJE16RVEFRSVhIoA4CbgTLVe9KtwgwEOl4FHw4,1096
+anycrc-0.6.3.dist-info/WHEEL,sha256=HS_2vgrXyXO7N4Q-5VnuMAgG-fG_r8eemMgfU9Aw3Kk,110
+anycrc-0.6.3.dist-info/top_level.txt,sha256=HbCFlOeYEx638RXhl-PI4tQtdbHhwyL9ObHhSuPNyaA,7
+anycrc-0.6.3.dist-info/METADATA,sha256=M3xh43zUQB_jnz87IyBNx6c5I8Cko1PJfwJyFTKlt_M,2719
+anycrc/anycrc.cpython-37m-darwin.so,sha256=zCODD8nWAkIn89Qx9ptpOa5LCN_5Iaxe_Bk8MLgLFQU,165136
+anycrc/models.py,sha256=TmkS9QPTytdIp0kz6Uq-Xmfd4Z6awiCrvRZZE4xGkzI,17619
+anycrc/__init__.py,sha256=6WUxWuBxHrqqbAXrKSveKIr9ZMlihLyjTONUmYSHIBw,21
+anycrc/anycrc.pyx,sha256=Lo-WmHDD62AKdMfD3XJJn59-iXZxOKScl91C7JjNS74,5192
+anycrc/__main__.py,sha256=ay_Zj4WzMly0908-mnet9An0gae346PwzUg4QsaU6j4,258
+anycrc/.dylibs/libgomp.1.dylib,sha256=fPIEtVYdE_ZFDHvCbaUqPzjWBXb08SyNsOJO773lbrU,461504
