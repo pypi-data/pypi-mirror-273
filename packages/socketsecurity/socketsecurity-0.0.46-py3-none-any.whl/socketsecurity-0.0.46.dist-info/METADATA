@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: socketsecurity
+Version: 0.0.46
+Requires-Dist: requests
+Requires-Dist: mdutils
+Requires-Dist: prettytable
+Requires-Dist: argparse
+
