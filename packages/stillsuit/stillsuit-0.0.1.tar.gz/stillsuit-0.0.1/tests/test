@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+import stillsuit
+import random
+
+def fake_value(c):
+    if c['type'] == "REAL":
+        return random.random()
+    if c['type'] == "TEXT":
+        return "blah"
+    if c['type'] == "INTEGER":
+        return random.randint(0,10)
+
+def fake_row(table, extra = {}):
+    #return {c['name']: fake_value(c) for c in table['columns'] if c['constraints'] != "PRIMARY KEY"}
+
+    out = {c['name']: fake_value(c) for c in table['columns'] if not c['name'].startswith("__")}
+    out.update(extra)
+    return out
+
+
+with stillsuit.StillSuit(config = "../config/fake.yaml", dbname = "blah.sqlite3") as out:
+    # Insert 1,000 fake filters, e.g., cbc templates
+    for n in range(1000):
+       out.insert_static({"filter": fake_row(out.schema['filter'])})
+
+    # Insert 2,000 fake simulations, e.g,. cbc waveform parameter rows
+    for n in range(2000):
+       out.insert_static({"simulation": fake_row(out.schema['simulation'])})
+
+    # get filter and simulation ids
+    filter_ids = out.cursor.execute("SELECT __filter_id FROM filter;").fetchall()
+    simulation_ids = out.cursor.execute("SELECT __simulation_id FROM simulation;").fetchall()
+
+    # Insert 10,000 fake events, e.g., the results of a CBC search
+    for n in range(10000):
+       out.insert_event({
+           "data": [fake_row(out.schema['data']) for x in range(3)],
+           "trigger": [fake_row(out.schema['trigger'], extra={"__filter_id": random.choices(filter_ids)[0][0]}) for x in range(3)],
+           "event": fake_row(
+                        out.schema['event'], extra = {
+                            "__simulation_id": random.choices(simulation_ids)[0][0],
+                        }
+                    )
+       })

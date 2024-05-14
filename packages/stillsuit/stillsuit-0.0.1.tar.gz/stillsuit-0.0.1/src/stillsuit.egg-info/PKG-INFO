@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: stillsuit
+Version: 0.0.1
+Summary: A place to store all that is precious.
+Home-page: https://git.ligo.org/greg/stillsuit
+Author: Chad Hanna
+Author-email: Chad Hanna <crh184@psu.edu>
+Project-URL: Homepage, https://git.ligo.org/greg/stillsuit
+Project-URL: Issues, https://git.ligo.org/greg/stillsuit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# stillsuit
+
+A place to store the buffers
+

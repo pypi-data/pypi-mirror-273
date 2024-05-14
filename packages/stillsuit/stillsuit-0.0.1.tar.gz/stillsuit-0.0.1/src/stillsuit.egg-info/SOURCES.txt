@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+config/fake.yaml
+src/stillsuit/__init__.py
+src/stillsuit.egg-info/PKG-INFO
+src/stillsuit.egg-info/SOURCES.txt
+src/stillsuit.egg-info/dependency_links.txt
+src/stillsuit.egg-info/top_level.txt
+tests/test

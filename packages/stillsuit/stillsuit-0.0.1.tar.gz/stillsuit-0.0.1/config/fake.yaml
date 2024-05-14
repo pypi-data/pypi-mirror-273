@@ -1,0 +1,62 @@
+#  These tables will be related in the following way
+# 
+#   --------     ------------
+#  | filter |   | simulation | (optional)
+#   --------     ------------
+#       |              |         static tables (defined up front)
+# ------------------------------------------------------------------------------------------------------
+#       |              |         dynamic tables (appended to as analysis progresses)
+#       v              v
+#   ---------       -------
+#  | trigger |     | event |
+#   ---------       -------
+#      ^      \\       |
+#      |       \\      V
+#   ------     -------------
+#  | data |   | trigger map |
+#   ------     -------------
+# 
+# Supported types (https://www.sqlite.org/datatype3.html)
+#
+#   NULL. The value is a NULL value.
+#   INTEGER. The value is a signed integer, stored in 0, 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
+#   REAL. The value is a floating point value, stored as an 8-byte IEEE floating point number.
+#   TEXT. The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE).
+#   BLOB. The value is a blob of data, stored exactly as it was input.
+#
+#   Reserved column names: "__filter_id", "__trigger_id", "__trigger_map_id", "__simulation_id", "__event_id" "__data_id"
+#
+
+filter:
+  columns:
+    - {name: "ff1", type: REAL}
+    - {name: "ff2", type: REAL}
+    - {name: "ff3", type: TEXT}
+    - {name: "ff4", type: REAL, default: 0.0}
+
+simulation:
+  columns:
+    - {name: "fs1", type: TEXT}
+    - {name: "fs2", type: REAL}
+
+data:
+  columns:
+    - {name: "fd1", type: TEXT}
+    - {name: "fd2", type: REAL}
+
+trigger:
+  columns:
+    - {name: "ft1", type: REAL}
+    - {name: "ft2", type: REAL}
+    - {name: "ft3", type: INTEGER}
+
+
+event:
+  columns:
+    - {name: "fe1", type: REAL, default: 0.0}
+    - {name: "fe2", type: REAL}
+
+#trigger_map:
+#  columns: []
+
+

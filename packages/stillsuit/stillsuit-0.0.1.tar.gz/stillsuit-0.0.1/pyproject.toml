@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "setuptools_scm[toml]>=3.4.3",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "stillsuit"
+version = "0.0.1"
+authors = [
+  { name="Chad Hanna", email="crh184@psu.edu" },
+]
+description = "A place to store all that is precious."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://git.ligo.org/greg/stillsuit"
+Issues = "https://git.ligo.org/greg/stillsuit/issues"
