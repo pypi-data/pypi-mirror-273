@@ -1,0 +1,7 @@
+README.md
+setup.py
+clipplay.egg-info/PKG-INFO
+clipplay.egg-info/SOURCES.txt
+clipplay.egg-info/dependency_links.txt
+clipplay.egg-info/requires.txt
+clipplay.egg-info/top_level.txt
