@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: contact-phone-local
+Version: 0.0.16
+Summary: PyPI Package for Circles contact-phone-local Python
+Home-page: https://github.com/circles-zone/contact-phone-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PyMySQL >=1.0.2
+Requires-Dist: pytest >=7.4.0
+Requires-Dist: mysql-connector >=2.2.9
+Requires-Dist: logzio-python-handler >=4.1.0
+Requires-Dist: database-mysql-local >=0.0.290
+Requires-Dist: logger-local >=0.0.135
+Requires-Dist: phone-local >=0.0.15
+
+PyPI Package for Circles contact-phone-local Python
