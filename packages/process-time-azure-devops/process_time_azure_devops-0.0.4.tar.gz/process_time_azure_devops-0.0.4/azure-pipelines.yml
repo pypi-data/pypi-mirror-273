@@ -1,0 +1,39 @@
+trigger: none
+
+pr:
+  branches:
+    include:
+      - 'main'
+
+pool:
+  vmImage: ubuntu-latest
+
+
+variables:
+- name: PYTHON_VERSION
+  value: 3.12.2
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(PYTHON_VERSION)'
+  displayName: 'Use Python $(PYTHON_VERSION)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install .[build]
+  displayName: 'Install dependencies'
+
+- script: |
+    # Example: https://dev.azure.com/worldpwn/process-time/_build?definitionId=2
+    orgname="worldpwn"
+    echo "orgname=$orgname"
+    token=$(System.AccessToken)
+    project="process-time"
+    echo "project=$project"
+    pipeline_id=2
+    echo "pipeline_id=$pipeline_id"
+    python src/process_time_azure_devops/__main__.py --org "$orgname" --token "$token" --project "$project" --pipeline-id "$pipeline_id"
+  displayName: 'Test — Example Run Trunk Based'
+  env:
+    System.AccessToken: $(System.AccessToken)

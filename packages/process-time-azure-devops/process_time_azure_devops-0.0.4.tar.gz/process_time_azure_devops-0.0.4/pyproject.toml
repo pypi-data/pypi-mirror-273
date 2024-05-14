@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "hatchling==1.24.2",
+    "azure-devops==7.1.0b4",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/process_time_azure_devops"]
+
+[project]
+name = "process_time_azure_devops"
+version = "0.0.4"
+authors = [
+    { name="Andrei Kniazev" },
+]
+description = "Will collect process time for projects that are hosted in Azure DevOps"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "GPL-3.0-or-later"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+build = [
+    "hatchling==1.24.2",
+    "azure-devops==7.1.0b4"
+]
+test = [
+    "pytest==8.2.0",
+    "azure-devops==7.1.0b4"
+]
+
+[project.urls]
+"GitHub" = "https://github.com/worldpwn/process-time-azure-devops"
+"Issues" = "https://github.com/worldpwn/process-time-azure-devops/issues"
