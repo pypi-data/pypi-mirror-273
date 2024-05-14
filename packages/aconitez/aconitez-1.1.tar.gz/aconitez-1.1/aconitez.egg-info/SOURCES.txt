@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aconitez/__init__.py
+aconitez/main.py
+aconitez.egg-info/PKG-INFO
+aconitez.egg-info/SOURCES.txt
+aconitez.egg-info/dependency_links.txt
+aconitez.egg-info/requires.txt
+aconitez.egg-info/top_level.txt
