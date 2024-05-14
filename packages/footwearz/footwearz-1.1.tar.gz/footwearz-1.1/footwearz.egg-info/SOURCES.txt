@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+footwearz/__init__.py
+footwearz/main.py
+footwearz.egg-info/PKG-INFO
+footwearz.egg-info/SOURCES.txt
+footwearz.egg-info/dependency_links.txt
+footwearz.egg-info/requires.txt
+footwearz.egg-info/top_level.txt
