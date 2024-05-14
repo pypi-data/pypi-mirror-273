@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "kypo-aws-lib"
+version = "0.3.3"
+description = "KYPO AWS Driver Python lib"
+authors = ["Juraj Paluba <492988@mail.muni.cz>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "kypo", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0.1"
+boto3 = "^1.34.63"
+kypo-python-commons = {version = "^0.1.13", source = "kypo"}
+jinja2 = "^3.1.3"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "kypo"
+url = "https://gitlab.ics.muni.cz/api/v4/projects/2358/packages/pypi/simple"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
