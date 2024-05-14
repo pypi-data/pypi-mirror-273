@@ -1,0 +1,5 @@
+fast_ctc_decode-0.3.6.dist-info/METADATA,sha256=AFvNkw7C1yvIhrKaC6SUd7WqQ6_IHYjgrFSUJCZ7kNM,4587
+fast_ctc_decode-0.3.6.dist-info/RECORD,,
+fast_ctc_decode-0.3.6.dist-info/WHEEL,sha256=3wW7yUSTEcLekyGn-kbdWCBHAnG_Y_niR7BgFO-ryxE,207
+fast_ctc_decode/__init__.py,sha256=kOPxdI4Z04xq4DPYaetsuhnu23_xsX5VF1U0TaH7CGQ,143
+fast_ctc_decode/fast_ctc_decode.cpython-311-x86_64-linux-gnu.so,sha256=f-A_hCnt2cI9JqL9T4uNNuBUKanrzb3rWeiNl7WlTo0,651552
