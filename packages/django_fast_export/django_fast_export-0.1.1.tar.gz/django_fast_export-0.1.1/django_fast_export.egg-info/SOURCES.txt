@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_fast_export/__init__.py
+django_fast_export/csv.py
+django_fast_export.egg-info/PKG-INFO
+django_fast_export.egg-info/SOURCES.txt
+django_fast_export.egg-info/dependency_links.txt
+django_fast_export.egg-info/requires.txt
+django_fast_export.egg-info/top_level.txt
