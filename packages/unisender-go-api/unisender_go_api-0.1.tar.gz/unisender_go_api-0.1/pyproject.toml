@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "unisender-go-api"
+version = "0.1"
+description = "Thin wrapper for the Unisender Go API"
+authors = [
+    "Evgeny Evseev <pelid80@gmail.com>",
+]
+license = "GNU GPLv3"
+readme = "README.md"
+repository = "https://gitlab.dvmn.org/dvmn-open-source-dev-tools/unisender-go-api"
+homepage = "https://pypi.org/project/unisender-go-api/"
+keywords = [
+    "unisender",
+    "api",
+    "httpx",
+    "wrapper",
+    "asyncio",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = ">=0.24.1, <1"
+pydantic = ">=1.9.0, <2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

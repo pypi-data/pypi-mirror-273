@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: unisender-go-api
+Version: 0.1
+Summary: Thin wrapper for the Unisender Go API
+Home-page: https://pypi.org/project/unisender-go-api/
+License: GNU GPLv3
+Keywords: unisender,api,httpx,wrapper,asyncio
+Author: Evgeny Evseev
+Author-email: pelid80@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.24.1,<1)
+Requires-Dist: pydantic (>=1.9.0,<2)
+Project-URL: Repository, https://gitlab.dvmn.org/dvmn-open-source-dev-tools/unisender-go-api
+Description-Content-Type: text/markdown
+
+# Unisender Go API
+
+Библиотека Unisender Go API упрощает работу с веб-API [Unisender Go](https://go.unisender.ru/). Она предоставляет тонкую обёртку над библиотекой [HTTPX](https://www.python-httpx.org/): добавляет к обычным возможностям HTTPX свои схемы данных и удобные часто используемые функции, но не мешает, при необходимости, спускаться ниже на уровень HTTP-запросов.
