@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: xurpas_data_quality
+Version: 0.0.6
+Summary: XAIL Data quality
+Author: Neil Ortaliz
+Author-email: Neil Ortaliz <neil.ortaliz@xurpas.com>
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: jinja2
+Requires-Dist: openpyxl
+Requires-Dist: pyarrow
+
+# Xurpas Data Quality Report
+
+## How to Use
+- Load the data to be analyzed (so far only csv files supported)
+- Import the DataReport class
+- Save the report to html File
+
+## DataReport
+Creates and saves to file the data report.
+
+Args
+    report_name: Name of the report eg. "Data Quality Report". Default: **"Data Report"**
+    file_path: filepath and filename to save. Default: **"report.html"**
+
+Returns
+    HTML File of data quality Report
+
+#### Sample Usage
+```python
+from xurpas_data_quality import DataReport
+report = DataReport("test_reports/manhour_utilization_summary.csv")
+report.to_file(report_name="Manhour Utilization Summary", file_path="test_reports/test.html")
+```
