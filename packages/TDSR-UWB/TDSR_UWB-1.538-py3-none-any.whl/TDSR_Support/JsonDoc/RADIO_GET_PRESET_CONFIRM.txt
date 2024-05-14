@@ -1,0 +1,1 @@
+{"RADIO_GET_PRESET_CONFIRM": {"msgId": 62, "presetName": "Default", "status": "ok", "TxPwrContrl": 1633771873, "TC_PGDelay": 197, "PGCount_Target": 0, "RXAntDelay": 16436, "TXAntDelay": 16436, "configId": 0, "channel": 5, "prf": "DWT_PRF_64M", "txPreambleLength": "DWT_PLEN_64", "txRxPreambleCode": 9, "power": 0, "dataRate": "DWT_BR_6M8", "configFlags": "", "antennaDelay": 0}}
