@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["h5tui*", "plugins*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+h5tui = ["*.tcss"]
+
+[project]
+name = "h5ui"
+version = "0.1.15"
+requires-python = ">=3.8"
+dynamic = ["readme"]
+keywords = ["HDF5", "Terminal"]
+description = "Terminal User interface for HDF5 file inspection."
+license = { text = "MIT Licence" }
+authors = [
+    {name = "Rik Huygen", email = "rik.huygen@kuleuven.be"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "textual",
+    "textual-imageview",
+    "textual-fspicker",
+    "h5py",
+    "pillow",
+    "natsort",
+]
+
+[project.optional-dependencies]
+dev = ["textual-dev"]
+rel = ["build", "twine"]
+
+[project.urls]
+repository = "https://github.com/rhuygen/hdf5_ui"
+
+[project.entry-points."h5ui.item.view"]
+hex-view = 'plugins.hex:HexViewer'
+image-view = 'plugins.image:ImageViewer'
+
+[project.scripts]
+h5tui = 'h5tui.hdf5_tui:main'
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
