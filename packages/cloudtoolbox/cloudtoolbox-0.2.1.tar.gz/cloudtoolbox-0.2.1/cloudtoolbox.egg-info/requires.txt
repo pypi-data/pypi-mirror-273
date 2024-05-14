@@ -1,0 +1,12 @@
+
+[all]
+boto3
+google-cloud-pubsub
+google-cloud-storage
+
+[amazon]
+boto3
+
+[google]
+google-cloud-pubsub
+google-cloud-storage
