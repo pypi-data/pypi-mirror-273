@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/dyspyosis/__init__.py
+src/dyspyosis/autoencoder.py
+src/dyspyosis/dyspyosis.py
+src/dyspyosis/utils.py
+src/dyspyosis.egg-info/PKG-INFO
+src/dyspyosis.egg-info/SOURCES.txt
+src/dyspyosis.egg-info/dependency_links.txt
+src/dyspyosis.egg-info/requires.txt
+src/dyspyosis.egg-info/top_level.txt
+tests/test_autoencoder.py
+tests/test_dyspyosis.py
+tests/test_utils.py
