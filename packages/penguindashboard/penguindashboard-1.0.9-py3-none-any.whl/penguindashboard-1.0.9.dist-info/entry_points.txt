@@ -1,0 +1,2 @@
+[console_scripts]
+penguin = penguindashboard.pipeline:main
