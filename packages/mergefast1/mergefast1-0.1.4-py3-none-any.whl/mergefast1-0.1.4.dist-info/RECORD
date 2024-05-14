@@ -1,0 +1,9 @@
+mergefast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mergefast/core.py,sha256=SaYdjg1U2CDFt4TKz89-JPoAwJ541hjhgJ-BoShBT6g,549
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/perf.py,sha256=LP7hUZcfp64YEGN6GQECNQh8nLmackLEm1A20gKCHFk,1408
+tests/test.py,sha256=Edt4xeHteKtoNEp1Z4zaEKblLwBOStSP_pJuzLR8wB0,711
+mergefast1-0.1.4.dist-info/METADATA,sha256=8sG3Cd8ONqboLrF47YvnByoESNf6VXTOUtalx6OIbGE,59
+mergefast1-0.1.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mergefast1-0.1.4.dist-info/top_level.txt,sha256=N-E8-_CGX2ZegeDPzjlEFzKgA5qdomTTJ_gPvtvER58,16
+mergefast1-0.1.4.dist-info/RECORD,,
