@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+planetesimalsz/__init__.py
+planetesimalsz/main.py
+planetesimalsz.egg-info/PKG-INFO
+planetesimalsz.egg-info/SOURCES.txt
+planetesimalsz.egg-info/dependency_links.txt
+planetesimalsz.egg-info/requires.txt
+planetesimalsz.egg-info/top_level.txt
