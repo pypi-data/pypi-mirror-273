@@ -1,0 +1,66 @@
+﻿person_id,question_concept_id,question,answer_concept_id,answer
+1,903574,Disability: Blind,903597,Blind: No
+2,903574,Disability: Blind,903597,Blind: No
+3,903574,Disability: Blind,903096,PMI: Skip
+4,903574,Disability: Blind,903504,Blind: Yes
+5,903574,Disability: Blind,903598,Blind: Prefer Not To Answer
+1,903573,Disability: Deaf,903503,Deaf: No
+2,903573,Disability: Deaf,903596,Deaf: Prefer Not To Answer
+3,903573,Disability: Deaf,903096,PMI: Skip
+4,903573,Disability: Deaf,903587,Deaf: Yes
+5,903573,Disability: Deaf,903503,Deaf: No
+1,903575,Disability: Difficulty Concentrating,903600,Difficulty Concentrating: No
+2,903575,Disability: Difficulty Concentrating,903096,PMI: Skip
+3,903575,Disability: Difficulty Concentrating,903096,PMI: Skip
+4,903575,Disability: Difficulty Concentrating,903599,Difficulty Concentrating: Yes
+5,903575,Disability: Difficulty Concentrating,903600,Difficulty Concentrating: No
+1,903577,Disability: Dressing Bathing,903606,Dressing Bathing: No
+2,903577,Disability: Dressing Bathing,903607,Dressing Bathing: Prefer Not To Answer
+3,903577,Disability: Dressing Bathing,903096,PMI: Skip
+4,903577,Disability: Dressing Bathing,903605,Dressing Bathing: Yes
+5,903577,Disability: Dressing Bathing,903605,Dressing Bathing: Yes
+1,903578,Disability: Errands Alone,903609,Errands Alone: No
+2,903578,Disability: Errands Alone,903609,Errands Alone: No
+3,903578,Disability: Errands Alone,903096,PMI: Skip
+4,903578,Disability: Errands Alone,903608,Errands Alone: Yes
+5,903578,Disability: Errands Alone,903608,Errands Alone: Yes
+1,903576,Disability: Walking Climbing,903603,Walking Climbing: No
+2,903576,Disability: Walking Climbing,903604,Walking Climbing: Prefer Not To Answer
+3,903576,Disability: Walking Climbing,903096,PMI: Skip
+4,903576,Disability: Walking Climbing,903602,Walking Climbing: Yes
+5,903576,Disability: Walking Climbing,903096,PMI: Skip
+1,1585940,Education Level: Highest Grade,1585948,Highest Grade: Advanced Degree
+2,1585940,Education Level: Highest Grade,1585947,Highest Grade: College Graduate
+3,1585940,Education Level: Highest Grade,1585946,Highest Grade: College One to Three
+4,1585940,Education Level: Highest Grade,1585943,Highest Grade: Five Through Eight
+5,1585940,Education Level: Highest Grade,1585944,Highest Grade: Nine Through Eleven
+1,1585389,Health Insurance: Health Insurance Type,1585395,Health Insurance Type: Military
+1,1585389,Health Insurance: Health Insurance Type,1585397,Health Insurance Type: State Sponsored
+2,1585389,Health Insurance: Health Insurance Type,1585393,Health Insurance Type: Medicaid
+2,1585389,Health Insurance: Health Insurance Type,1585396,Health Insurance Type: Indian
+3,1585389,Health Insurance: Health Insurance Type,1585392,Health Insurance Type: Medi GAP
+3,1585389,Health Insurance: Health Insurance Type,1585393,Health Insurance Type: Medicaid
+4,1585389,Health Insurance: Health Insurance Type,1585391,Health Insurance Type: Medicare
+4,1585389,Health Insurance: Health Insurance Type,1585395,Health Insurance Type: Military
+5,1585389,Health Insurance: Health Insurance Type,1585390,Health Insurance Type: Private
+5,1585389,Health Insurance: Health Insurance Type,1585398,Health Insurance Type: Other Government
+1,1585375,Income: Annual Income,1585382,Annual Income: 100k 150k
+2,1585375,Income: Annual Income,1585381,Annual Income: 75k 100k
+3,1585375,Income: Annual Income,1585383,Annual Income: 150k 200k
+4,1585375,Income: Annual Income,1585378,Annual Income: 25k 35k
+5,1585375,Income: Annual Income,1585379,Annual Income: 35k 50k
+1,1585892,Marital Status: Current Marital Status,1585897,Current Marital Status: Never Married
+2,1585892,Marital Status: Current Marital Status,1585898,Current Marital Status: Living With Partner
+3,1585892,Marital Status: Current Marital Status,1585893,Current Marital Status: Married
+4,1585892,Marital Status: Current Marital Status,1585897,Current Marital Status: Never Married
+5,1585892,Marital Status: Current Marital Status,1585897,Current Marital Status: Never Married
+1,1586140,Race: What Race Ethnicity,1586142,What Race Ethnicity: Asian
+2,1586140,Race: What Race Ethnicity,1586147,What Race Ethnicity: Hispanic
+2,1586140,Race: What Race Ethnicity,1586144,What Race Ethnicity: MENA
+2,1586140,Race: What Race Ethnicity,1586145,What Race Ethnicity: NHPI
+3,1586140,Race: What Race Ethnicity,1586143,What Race Ethnicity: Black
+3,1586140,Race: What Race Ethnicity,1586146,What Race Ethnicity: White
+4,1586140,Race: What Race Ethnicity,1586142,What Race Ethnicity: Asian
+4,1586140,Race: What Race Ethnicity,1586143,What Race Ethnicity: Black
+5,1586140,Race: What Race Ethnicity,1586147,What Race Ethnicity: Hispanic
+5,1586140,Race: What Race Ethnicity,1586143,What Race Ethnicity: Black
