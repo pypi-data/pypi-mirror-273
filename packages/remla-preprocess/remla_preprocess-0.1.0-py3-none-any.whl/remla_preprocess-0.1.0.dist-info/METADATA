@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: remla_preprocess
+Version: 0.1.0
+Summary: Pre-processing library for ML models
+License: MIT
+Author: Razvan Mihai Popescu
+Author-email: R.Popescu-3@student.tudelft.nl
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bump2version (>=1.0.1,<2.0.0)
+Requires-Dist: gdown (>=5.2.0,<6.0.0)
+Requires-Dist: keras (>=2.8,<3.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: protobuf (>=3.20,<4.0)
+Requires-Dist: scikit-learn (>=1.4.2,<2.0.0)
+Requires-Dist: tensorflow (==2.8.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.24.0)
+Requires-Dist: twine (>=5.0.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# lib-ml
+
+This Python library is tailored for preprocessing text data in machine learning. It provides functions for tokenizing data, padding sequences, and encoding labels, all essential for training ML models. Additionally, it enables data downloading from Google Drive and facilitates storing and loading data in various formats from disk. The library is accessible on PyPI and can be seamlessly integrated into your projects.
+
+## Features
+
+- **Data Tokenization:** Convert text into sequences of integers.
+- **Sequence Padding:** Pad sequences to a consistent fixed length. 
+- **Label Encoding:** Convert labels into numerical format.
+- **Data Storage:** Store data to given path under selected format.
+- **Data Loading:** Load data from disk/Google Drive under selected format.    
+
+# Installation 
+
+Install the library from PyPI using: 
+
+```bash
+pip install remla-preprocessing 
+```
+
+## Usage 
+
+Example of how to use `lib-ml` for text processing: 
+
+```python
+from remla_preprocessing import MLPreprocessor
+
+# Instantiate the MLPreprocessor class
+preprocessor = MLPreprocessor()
+
+# Now you can use the functions of the MLPreprocessor class
+preprocessor.tokenize_pad_encode_data(train_data, validation_data, test_data)
+```
+
+## Support 
+If you encounter any problems or bugs with `lib-ml`, feel free to open an issue on the project repository.
