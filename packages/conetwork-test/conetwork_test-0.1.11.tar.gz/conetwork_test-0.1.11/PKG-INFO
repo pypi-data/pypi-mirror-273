@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: conetwork-test
+Version: 0.1.11
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Dist: safetensors
+Requires-Python: >=3.8
