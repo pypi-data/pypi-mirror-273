@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tyrannidaez/__init__.py
+tyrannidaez/main.py
+tyrannidaez.egg-info/PKG-INFO
+tyrannidaez.egg-info/SOURCES.txt
+tyrannidaez.egg-info/dependency_links.txt
+tyrannidaez.egg-info/requires.txt
+tyrannidaez.egg-info/top_level.txt
