@@ -1,0 +1,11 @@
+bs4
+click
+lxml
+requests
+selenium
+
+[lint]
+mypy
+pylint
+pylint[spelling]
+yapf
