@@ -1,0 +1,52 @@
+Metadata-Version: 2.3
+Name: collectiontools_vrb
+Version: 0.9.1
+Summary: Various tools to handle collection I/O and transformations
+Project-URL: Homepage, https://github.com/v-r-b/collectiontools_vrb
+Project-URL: Issues, https://github.com/v-r-b/collectiontools_vrb/issues
+Author-email: volker <volker@vrbdev.eu>
+Maintainer-email: volker <volker@vrbdev.eu>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: aiohttp
+Description-Content-Type: text/markdown
+
+# collectiontools_vrb
+
+Various tools to handle collection I/O and transformations.
+
+  - On PyPI: https://pypi.org/project/collectiontools-vrb/
+  - On GitHub: https://github.com/v-r-b/collectiontools_vrb 
+
+## \_\_init__.py
+
+```function update_dict_from_url()```
+
+Read collection data from the given URL. 
+
+```function update_dict_from_key_value_file()```
+
+Read collection data from the given file. 
+
+```function dict_contains_path()```
+
+Tests if a given path is a valid key inside the given dict.
+
+```function update_dict_from_json_file()```
+  
+Read collection data from config file. Check for mandatory keys.
+
+## collectiontranslator.py
+
+```class CollectionTranslator```
+
+Search strings, lists or dicts for placeholders using a 
+regular expression provided by the user. Replace the matches 
+with a value provided by a translator function, which is 
+as well provided by the user.
