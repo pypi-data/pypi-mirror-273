@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+archegoniataez/__init__.py
+archegoniataez/main.py
+archegoniataez.egg-info/PKG-INFO
+archegoniataez.egg-info/SOURCES.txt
+archegoniataez.egg-info/dependency_links.txt
+archegoniataez.egg-info/requires.txt
+archegoniataez.egg-info/top_level.txt
