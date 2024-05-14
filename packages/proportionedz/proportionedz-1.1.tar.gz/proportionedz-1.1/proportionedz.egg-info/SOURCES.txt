@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+proportionedz/__init__.py
+proportionedz/main.py
+proportionedz.egg-info/PKG-INFO
+proportionedz.egg-info/SOURCES.txt
+proportionedz.egg-info/dependency_links.txt
+proportionedz.egg-info/requires.txt
+proportionedz.egg-info/top_level.txt
