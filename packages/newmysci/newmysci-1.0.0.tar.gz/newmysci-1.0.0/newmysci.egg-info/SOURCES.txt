@@ -1,0 +1,9 @@
+setup.py
+newmysci/__init__.py
+newmysci/computation.py
+newmysci/printing.py
+newmysci/readdata.py
+newmysci.egg-info/PKG-INFO
+newmysci.egg-info/SOURCES.txt
+newmysci.egg-info/dependency_links.txt
+newmysci.egg-info/top_level.txt
