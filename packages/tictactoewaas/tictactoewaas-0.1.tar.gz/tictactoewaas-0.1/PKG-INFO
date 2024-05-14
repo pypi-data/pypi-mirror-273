@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tictactoewaas
+Version: 0.1
+Summary: game Taic-Tac-Toe
+Home-page: https://github.com/Fauzian08/Tic-Tac-Toe-tic
+Author: tiv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Tic-Tac-Toe
+
+This is a simple implementation of the Tic-Tac-Toe game using Python.

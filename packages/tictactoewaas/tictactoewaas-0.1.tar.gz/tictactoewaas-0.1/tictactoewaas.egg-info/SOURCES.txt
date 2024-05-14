@@ -1,0 +1,6 @@
+README.md
+setup.py
+tictactoewaas.egg-info/PKG-INFO
+tictactoewaas.egg-info/SOURCES.txt
+tictactoewaas.egg-info/dependency_links.txt
+tictactoewaas.egg-info/top_level.txt
