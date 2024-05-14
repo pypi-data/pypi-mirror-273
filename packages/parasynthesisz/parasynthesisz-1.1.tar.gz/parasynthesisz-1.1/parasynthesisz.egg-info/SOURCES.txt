@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+parasynthesisz/__init__.py
+parasynthesisz/main.py
+parasynthesisz.egg-info/PKG-INFO
+parasynthesisz.egg-info/SOURCES.txt
+parasynthesisz.egg-info/dependency_links.txt
+parasynthesisz.egg-info/requires.txt
+parasynthesisz.egg-info/top_level.txt
