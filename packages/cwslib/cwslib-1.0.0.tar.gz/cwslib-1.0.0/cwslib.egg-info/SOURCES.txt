@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+cwslib/CWSlib.py
+cwslib/__init__.py
+cwslib.egg-info/PKG-INFO
+cwslib.egg-info/SOURCES.txt
+cwslib.egg-info/dependency_links.txt
+cwslib.egg-info/requires.txt
+cwslib.egg-info/top_level.txt
+cwslib/cpluspluslib/cws_fingerprints.dll
+cwslib/cpluspluslib/cws_fingerprints.so
