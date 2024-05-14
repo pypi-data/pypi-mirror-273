@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: PingDing
+Version: 0.0.0
+Summary: Graphically show ping result of various nodes
+Home-page: https://github.com/Troepje/PingDing
+Author: Troepje
+Author-email: 
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: argparse
+
+Graphically show ping result of various nodes
