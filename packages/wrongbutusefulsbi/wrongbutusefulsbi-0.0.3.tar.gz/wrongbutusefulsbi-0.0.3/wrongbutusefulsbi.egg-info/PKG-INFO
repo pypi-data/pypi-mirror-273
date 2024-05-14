@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: wrongbutusefulsbi
+Version: 0.0.3
+Home-page: https://github.com/RyanJafefKelly/wrongbutusefulsbi
+Author: Ryan Kelly
+Author-email: ryan@kiiii.com
+License: GPLv3
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy>=1.12.1
+Requires-Dist: scipy>=0.19
+Requires-Dist: matplotlib>=1.1.1
+Requires-Dist: numpyro>=0.2.4
+Requires-Dist: jax>=0.2.4
+Requires-Dist: jaxlib>=0.1.56
+Requires-Dist: pandas>=1.0.1
+Requires-Dist: seaborn>=0.11.1
+Requires-Dist: arviz>=0.11.0
+
+==================
+wrongbutusefulsbi
+==================
+
+A brief description of the wrongbutusefulsbi package.
+
+Getting Started
+===============
+
+Instructions on getting started with wrongbutusefulsbi will be added here.
+
+Contribute
+==========
+
+- Issue Tracker: https://github.com/RyanJafefKelly/wrongbutusefulsbi/issues
+- Source Code: https://github.com/RyanJafefKelly/wrongbutusefulsbi
+
+Support
+=======
+
+If you are having issues, please let us know.
+We have a mailing list located at: ryan@kiiii.com
+
+License
+=======
+
+The project is licensed under the GPLv3 license.
