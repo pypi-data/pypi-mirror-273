@@ -1,0 +1,11 @@
+I18n
+====
+
+Contents
+--------
+
+.. toctree::
+   :maxdepth: 2
+
+   i18n.context
+   i18n.core
