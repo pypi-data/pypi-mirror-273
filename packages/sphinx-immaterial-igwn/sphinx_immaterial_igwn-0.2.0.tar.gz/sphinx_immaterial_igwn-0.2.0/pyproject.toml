@@ -1,0 +1,75 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "setuptools_scm[toml]>=3.4.3",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx-immaterial-igwn"
+description = "IGWN extensions to sphinx-immaterial"
+readme = "README.md"
+authors = [
+  { name = "Duncan Macleod", email = "duncan.macleod@ligo.org" },
+]
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Sphinx :: Theme",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Documentation",
+  "Topic :: Documentation :: Sphinx",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Software Development :: Documentation",
+]
+requires-python = ">=3.8"
+dependencies = [
+  "sphinx-immaterial",
+]
+dynamic = [
+  "version",
+]
+
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx-immaterial",
+]
+
+[project.entry-points."sphinx.html_themes"]
+sphinx_immaterial_igwn = "sphinx_immaterial_igwn"
+
+[project.urls]
+"Bug Tracker" = "https://git.ligo.org/computing/igwn-mkdocs-material-theme/-/issues"
+"Documentation" = "https://computing.docs.ligo.org/igwn-mkdocs-material-theme/sphinx/"
+"Source Code" = "https://git.ligo.org/computing/igwn-mkdocs-material-theme.git"
+
+[tool.setuptools]
+license-files = [ "LICENSE" ]
+
+[tool.setuptools.packages.find]
+include = [
+  "sphinx_immaterial_igwn*",
+]
+
+[tool.setuptools.package-data]
+sphinx_immaterial_igwn = [
+  "*.html",
+  "layout.html",
+  "partials/*.html",
+  "static/images/*.ico",
+  "static/images/*.png",
+  "static/stylesheets/*.css",
+  "theme.conf",
+]
+
+[tool.setuptools_scm]
+root = ".."
+write_to = "sphinx/sphinx_immaterial_igwn/_version.py"
