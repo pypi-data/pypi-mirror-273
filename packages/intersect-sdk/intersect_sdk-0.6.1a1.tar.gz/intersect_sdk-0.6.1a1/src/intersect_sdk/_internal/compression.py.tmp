@@ -1,0 +1,38 @@
+"""Compression logic used inside INTERSECT.
+
+Our current compression algorithm is Brotli - see https://stackoverflow.com/a/59255343 for a fairly comprehensive overview of serialization formats compatible with generic JSON.
+Zstd is worth considering for instances where data isn't being persisted for long, as it is generally faster than Brotli (especially for decompression) - however, Zstd requires multithreading to maximize its potential.
+
+Currently, we will ALWAYS compress the following:
+  - The schemas sent as part of the lifecycle message
+  - The PAYLOADS of UserspaceMessages *if the data itself is being sent in UserspaceMessages* 
+
+We do NOT want to compress message headers, though.  
+
+MINIO should always handle compression itself, see https://min.io/docs/minio/linux/administration/object-management/data-compression.html for details.
+
+TODO - how should the data API handle compression?
+
+TODO - We should consider NOT compressing audio, video, image, or any data which is already compressed.
+"""
+
+import brotli
+
+
+def intersect_compress(message: bytes) -> bytes:
+    """Compress MESSAGE using the compression algorithm, and return compression result.
+    
+    Current compression algorithm is Brotli with the highest level quality.
+    """
+    return brotli.compress(message, quality=11) # type: ignore[no-any-return]
+
+def intersect_decompress(compressed: bytes) -> bytes:
+    """Decompress COMPRESSED using the decompression algorithm, and return decompressed message.
+    
+    Current decompression algorithm is Brotli.
+    """
+    try:
+        return brotli.decompress(compressed) # type: ignore[no-any-return]
+    except brotli.error:
+        # if the parameters weren't compressed with Brotli, just return the input
+        return compressed
