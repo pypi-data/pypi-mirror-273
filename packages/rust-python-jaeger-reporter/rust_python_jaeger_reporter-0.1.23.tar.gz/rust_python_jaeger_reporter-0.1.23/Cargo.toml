@@ -1,0 +1,26 @@
+[package]
+name = "rust-python-jaeger-reporter"
+version = "0.1.23"
+authors = ["Erik Johnston <erik@matrix.org>"]
+edition = "2018"
+description = "A faster reporter for the python `jaeger-client` that reports spans in a native background thread."
+repository = "https://github.com/erikjohnston/rust-jaeger-python-client"
+readme = "README.md"
+
+[lib]
+name = "rust_python_jaeger_reporter"
+crate-type = ["cdylib"]
+
+[dependencies]
+ordered-float = "4.2.0"
+thrift = { git = "https://github.com/apache/thrift", tag = "v0.14.1" }
+try_from = "0.3.2"
+crossbeam-channel = "0.5.4"
+itertools = "0.12.1"
+
+[dependencies.pyo3]
+version = "0.21.2"
+features = ["extension-module", "anyhow"]
+
+[profile.release]
+debug = true

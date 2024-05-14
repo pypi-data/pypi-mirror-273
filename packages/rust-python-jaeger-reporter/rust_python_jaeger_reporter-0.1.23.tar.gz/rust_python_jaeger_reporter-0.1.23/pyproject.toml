@@ -1,0 +1,19 @@
+[project]
+name = "rust-python-jaeger-reporter"
+requires-python = ">=3.7"
+classifier = ["Development Status :: 4 - Beta", "Programming Language :: Rust"]
+
+[project.urls]
+Source = "https://github.com/erikjohnston/rust-jaeger-python-client"
+
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+sdist-include = ["Cargo.lock"]
+
+# Optional Dependencies
+# ---------------------
+objgraph = { version = ">=3.5.0", optional = true }
