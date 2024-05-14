@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pytech-zp
+Version: 0.0.1
+Summary: Python function package of technical indicators and patterns implemented by C++
+Author: Peng Zhao
+License: MIT
+License-File: LICENSE
+
