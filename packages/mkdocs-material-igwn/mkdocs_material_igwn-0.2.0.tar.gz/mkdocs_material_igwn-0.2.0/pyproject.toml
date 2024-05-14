@@ -1,0 +1,72 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "setuptools_scm[toml]>=3.4.3",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs-material-igwn"
+description = "IGWN extensions to Material for MkDocs"
+readme = "README.md"
+authors = [
+  { name = "Duncan Macleod", email = "duncan.macleod@ligo.org" },
+]
+license = { text = "MIT" }
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Topic :: Documentation",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Astronomy",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Software Development :: Documentation",
+]
+requires-python = ">=3.8"
+dependencies = [
+  "mkdocs-material ~=9.0",
+]
+dynamic = [
+  "version",
+]
+
+[project.entry-points."mkdocs.themes"]
+material_igwn = "material_igwn"
+
+[project.optional-dependencies]
+docs = [
+  "markdown-include",
+  "mkdocs",
+]
+
+[project.urls]
+"Bug Tracker" = "https://git.ligo.org/computing/igwn-material/-/issues"
+"Documentation" = "https://computing.docs.ligo.org/igwn-material/mkdocs/"
+"Source Code" = "https://git.ligo.org/computing/igwn-material"
+
+[tool.setuptools]
+license-files = [ "LICENSE" ]
+
+[tool.setuptools.packages.find]
+include = [
+  "material_igwn*",
+]
+
+[tool.setuptools.package-data]
+material_igwn = [
+  "*.html",
+  "mkdocs_theme.yml",
+  "partials/*.html",
+  "assets/stylesheets/*.css",
+  "assets/images/*.ico",
+  "assets/images/*.png",
+]
+
+[tool.setuptools_scm]
+root = ".."
+write_to = "mkdocs/material_igwn/_version.py"
