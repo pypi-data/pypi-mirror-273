@@ -1,0 +1,1 @@
+import{r as s,D as n,l$ as m,m0 as i,E as o,m1 as c,m2 as d,m3 as u}from"./index-BhjE-_0E.js";function l({children:t}){const{i18n:r}=n(),e=r.dir(),a=s.useMemo(()=>m({...i,direction:e}),[e]);return s.useEffect(()=>{document.body.dir=e},[e]),o.jsx(c,{theme:a,toastOptions:d,children:o.jsx(u,{children:t})})}const f=s.memo(l);export{f as default};
