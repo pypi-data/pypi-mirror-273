@@ -1,0 +1,13 @@
+cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/factory.py,sha256=EG32yXMi3gwiXD3LwvVKyQ1oAuCb8fufMIU14y83uhI,956
+cloud/protocols.py,sha256=t7QtDuZByNJ644D1BwUYe_G20GQiZ-ljMwvdT4HqXTI,341
+cloud/amazon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/amazon/s3.py,sha256=zeCaOnjRNWe0QoB1UVF81NbMAGo5uqe69yFSWjKZSY4,354
+cloud/google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud/google/pubsub.py,sha256=WoZHevtzVHjqW1fC4FQ0qVWF2slfoI7iv-2OD1ANxFQ,382
+cloud/google/storage.py,sha256=ESGYX5gBNeoBQWNTsJgA7s5u1GsL3koU4VFCgGUDcYw,435
+cloudtoolbox-0.1.0.dist-info/LICENSE,sha256=zGjU5vOKeg11lCvxB5w228mJfwK6LYirQYLGOWBIvL8,1064
+cloudtoolbox-0.1.0.dist-info/METADATA,sha256=9SYxDDhfW8pQYMnOirQM4CJZBaTk8IT6dgjnGcJdSfA,633
+cloudtoolbox-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cloudtoolbox-0.1.0.dist-info/top_level.txt,sha256=lBiHHi76sKOBY-DmE0iDypxZxv-TTCnvHeiFleC_PuA,6
+cloudtoolbox-0.1.0.dist-info/RECORD,,
