@@ -1,0 +1,6 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_resource_server.py,sha256=CIQDR9IK56yWEv_OIOhhukB73pW1GfCRa6ej50LhJyE,5249
+fastapi_oidc_backend-0.3.0.dist-info/LICENSE,sha256=WeE8HmQlmy-xzTPvG7sDONW0Xis3D_b07zW_D2MV-Dw,1106
+fastapi_oidc_backend-0.3.0.dist-info/METADATA,sha256=bR5GsKp-z5E1a7pYX8fheZOZcN2w-Nmp16R6ypKkGBw,2757
+fastapi_oidc_backend-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fastapi_oidc_backend-0.3.0.dist-info/RECORD,,
