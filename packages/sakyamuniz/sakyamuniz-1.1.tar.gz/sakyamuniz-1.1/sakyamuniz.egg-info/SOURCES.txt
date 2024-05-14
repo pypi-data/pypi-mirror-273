@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sakyamuniz/__init__.py
+sakyamuniz/main.py
+sakyamuniz.egg-info/PKG-INFO
+sakyamuniz.egg-info/SOURCES.txt
+sakyamuniz.egg-info/dependency_links.txt
+sakyamuniz.egg-info/requires.txt
+sakyamuniz.egg-info/top_level.txt
