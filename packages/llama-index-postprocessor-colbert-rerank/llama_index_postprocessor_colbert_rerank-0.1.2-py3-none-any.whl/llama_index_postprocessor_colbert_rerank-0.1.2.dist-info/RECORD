@@ -1,0 +1,5 @@
+llama_index/postprocessor/colbert_rerank/__init__.py,sha256=lcQZ2YxfOObEsG_r5pdSlIMUf4v9RysOYqgIW1h6Glc,101
+llama_index/postprocessor/colbert_rerank/base.py,sha256=dPsSyBK-yUjDZFQxHGalTKtj1po5MRtLpj0M2_Fwetk,4882
+llama_index_postprocessor_colbert_rerank-0.1.2.dist-info/METADATA,sha256=Zh36cGNFA3W0-G_aOwKYR0jmGvYtgmn1fR2Fr1eR-gI,1016
+llama_index_postprocessor_colbert_rerank-0.1.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_postprocessor_colbert_rerank-0.1.2.dist-info/RECORD,,
