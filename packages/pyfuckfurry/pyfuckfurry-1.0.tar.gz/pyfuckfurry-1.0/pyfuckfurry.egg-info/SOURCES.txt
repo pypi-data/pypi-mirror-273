@@ -1,0 +1,5 @@
+setup.py
+pyfuckfurry.egg-info/PKG-INFO
+pyfuckfurry.egg-info/SOURCES.txt
+pyfuckfurry.egg-info/dependency_links.txt
+pyfuckfurry.egg-info/top_level.txt
