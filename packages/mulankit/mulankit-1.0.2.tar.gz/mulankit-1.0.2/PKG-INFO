@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mulankit
+Version: 1.0.2
+Summary: MuLan: Adapting Multilingual Diffusion Models for 110+ Languages.
+Home-page: https://github.com/mulanai/MuLan
+Author: Zeqiang Lai
+Author-email: laizeqiang@outlook.com
+Requires-Dist: fire
+Requires-Dist: diffusers
+Requires-Dist: huggingface_hub
+Requires-Dist: transformers
+Requires-Dist: numpy
+Requires-Dist: gradio
+Requires-Dist: timm
+Requires-Dist: sentencepiece
+Requires-Dist: peft
+Requires-Dist: einops
