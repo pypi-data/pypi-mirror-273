@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+codescout/__init__.py
+codescout/codescout.py
+src/codescout.egg-info/PKG-INFO
+src/codescout.egg-info/SOURCES.txt
+src/codescout.egg-info/dependency_links.txt
+src/codescout.egg-info/requires.txt
+src/codescout.egg-info/top_level.txt
