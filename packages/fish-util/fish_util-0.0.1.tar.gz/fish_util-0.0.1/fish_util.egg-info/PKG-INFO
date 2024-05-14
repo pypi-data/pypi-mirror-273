@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fish-util
+Version: 0.0.1
+Summary: Fishyer's Python Util Library
+Home-page: https://github.com/fishyer/fish_util
+Author: fishyer
+Author-email: yutianran666@gamil.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# 我的Python工具库
+
+github地址：[fishyer/fish_util](https://github.com/fishyer/fish_util )
+pypi地址：[fish_util](https://pypi.org/project/fish_util/)
+
+## 介绍
+
+这是我自己编写的一些Python工具库，包括：
+- log_util
+- decorator_util
+- file_util
