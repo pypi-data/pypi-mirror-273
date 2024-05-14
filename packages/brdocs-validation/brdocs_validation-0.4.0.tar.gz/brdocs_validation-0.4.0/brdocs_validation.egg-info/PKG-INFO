@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: brdocs-validation
+Version: 0.4.0
+Summary: Validate brazilian documents using Type Hints in classes inheriting Pydantic's (V2) BaseModel
+Author-email: Vinícius Aguiar <vaguiararqdevsoftware@proton.me>
+Maintainer-email: Vinícius Aguiar <vaguiararqdevsoftware@proton.me>
+Project-URL: Repository, https://github.com/vinicius-oa/BRdocs-validation
+Keywords: pydantic-v2,cpf-validador,cnpj-validador,validador-pispasep,validador-titulo-eleitor
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pydantic>=2.0
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
+![Test](https://github.com/vinicius-oa/BRdocs-validation/actions/workflows/test.yml/badge.svg)
+![codecov](https://codecov.io/gh/vinicius-oa/BRdocs-validation/graph/badge.svg?token=Z211YIKO8L)
+![PyPI - Version](https://img.shields.io/pypi/v/brdocs-validation?label=pypi%20package&color=2334D058)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/brdocs-validation?color=2334D058)
+![Pydantic V2](https://img.shields.io/badge/Pydantic_V2->=2.0-2334D058.svg)
+
+## Install
+```
+pip install brdocs-validation
+```
+
+
+## Supported docs and its formats
+
+|     Supports      |                Description                |                     Format                      |   Format's support   | 
+|:-----------------:|:-----------------------------------------:|:-----------------------------------------------:|:--------------------:|
+|       CNPJ        |                                           | *12.345.678/9012-34* OR _Without special chars_ |                      |
+|        CPF        |                                           |   *123.456.789-01* OR _Without special chars_   |                      |
+|        CNH        |                                           |                  Only numbers                   |     Length: _11_     |
+| NIS/PIS/PASEP/NIT | Use _**NIS**_ type for _PIS, PASEP, NIT_  |       *123.45678.90-1* OR _Only numbers_        |                      |
+|        CNS        |         Cartão Nacional de Saúde          |                  Only numbers                   |                      |
+|      RENAVAM      |                                           |                  Only numbers                   | Length: _9, 10 & 11_ | 
+|        TE         |             Título de eleitor             |                  Only numbers                   |                      |
+|       CERT        | Certidão de casamento, nascimento e óbito |                  Only numbers                   |                      | 
+|        SEI        |         Número do Processo SEI            | 12345-67890123/4567-89 OR without special chars |                      |
+
+## Usage 
+
+```python
+from br_docs import CNPJ, CPF, CNH, NIS, CNS, RENAVAM, TE, CERT, SEI
+from pydantic import BaseModel
+
+
+class User(BaseModel):
+    cpf: CPF
+    cnpj: CNPJ
+    cnh: CNH
+    nis: NIS
+    cns: CNS
+    renavam: RENAVAM
+    te: TE
+    cert: CERT
+    sei: SEI
+```
