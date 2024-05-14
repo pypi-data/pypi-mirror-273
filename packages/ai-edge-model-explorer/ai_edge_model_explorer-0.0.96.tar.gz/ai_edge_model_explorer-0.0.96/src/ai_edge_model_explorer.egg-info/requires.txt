@@ -1,0 +1,10 @@
+flask
+ipython
+ai-edge-model-explorer-adapter==0.1.0
+packaging
+portpicker
+requests
+termcolor
+typing-extensions
+torch
+numpy
