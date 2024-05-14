@@ -1,0 +1,9 @@
+README.rst
+pyproject.toml
+src/coap_console/__init__.py
+src/coap_console.egg-info/PKG-INFO
+src/coap_console.egg-info/SOURCES.txt
+src/coap_console.egg-info/dependency_links.txt
+src/coap_console.egg-info/entry_points.txt
+src/coap_console.egg-info/requires.txt
+src/coap_console.egg-info/top_level.txt

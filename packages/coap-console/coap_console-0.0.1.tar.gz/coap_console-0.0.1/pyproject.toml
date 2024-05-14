@@ -1,0 +1,28 @@
+[project]
+name = "coap_console"
+version = "0.0.1"
+authors = [
+  { name="chrysn", email="chrysn@fsfe.org" },
+]
+description = "CoAP client for interactive with remote serial input and output"
+readme = "README.rst"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+license = { text = "MIT OR Apache-2.0" }
+
+dependencies = [
+  "aiocoap == 0.4.8",
+  "cbor2"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/chrysn/scroll-ring"
+Issues = "https://gitlab.com/chrysn/scroll-ring/-/issues"
+
+[project.scripts]
+coap-console = "coap_console:outer_main"
