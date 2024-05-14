@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cpf_and_cnpj_generator/__init__.py
+src/cpf_and_cnpj_generator/cnpj_generator.py
+src/cpf_and_cnpj_generator/cpf_generator.py
+src/cpf_and_cnpj_generator.egg-info/PKG-INFO
+src/cpf_and_cnpj_generator.egg-info/SOURCES.txt
+src/cpf_and_cnpj_generator.egg-info/dependency_links.txt
+src/cpf_and_cnpj_generator.egg-info/top_level.txt
