@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "netpath-resolver"
+version = "0.3.0"
+description = ""
+authors = ["myuan <zhengmy@ion.ac.cn>"]
+readme = "README.md"
+packages = [
+    {include = "netpath_resolver"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+bidict = "<1"
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "nhp-pypi"
+url = "http://10.20.34.150:9998/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 200

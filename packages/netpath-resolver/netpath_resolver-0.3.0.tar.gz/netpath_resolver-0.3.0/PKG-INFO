@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: netpath-resolver
+Version: 0.3.0
+Summary: 
+Author: myuan
+Author-email: zhengmy@ion.ac.cn
+Requires-Python: >=3.8,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bidict (<1)
+Description-Content-Type: text/markdown
+
+# 跨操作系统路径统一表示及转换
+
+
