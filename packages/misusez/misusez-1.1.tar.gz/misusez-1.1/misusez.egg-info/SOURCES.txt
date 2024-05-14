@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+misusez/__init__.py
+misusez/main.py
+misusez.egg-info/PKG-INFO
+misusez.egg-info/SOURCES.txt
+misusez.egg-info/dependency_links.txt
+misusez.egg-info/requires.txt
+misusez.egg-info/top_level.txt
