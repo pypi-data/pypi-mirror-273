@@ -1,0 +1,8 @@
+[console_scripts]
+metasyn = metasyn.__main__:main
+
+[metasyn.distribution_provider]
+builtin = metasyn.provider:BuiltinDistributionProvider
+
+[metasyn.privacy]
+none = metasyn.privacy:BasicPrivacy
