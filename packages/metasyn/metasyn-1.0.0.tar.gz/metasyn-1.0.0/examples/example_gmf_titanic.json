@@ -1,0 +1,319 @@
+{
+    "n_rows": 891,
+    "n_columns": 13,
+    "provenance": {
+        "created by": {
+            "name": "metasyn",
+            "version": "0.7.1.dev15+g2ce8291.d20240308"
+        },
+        "creation time": "2024-03-08T10:54:42.702163"
+    },
+    "vars": [
+        {
+            "name": "PassengerId",
+            "type": "discrete",
+            "dtype": "Int64",
+            "prop_missing": 0.0,
+            "distribution": {
+                "implements": "core.uniform",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "DiscreteUniformDistribution",
+                "unique": false,
+                "parameters": {
+                    "lower": 1,
+                    "upper": 892
+                }
+            }
+        },
+        {
+            "name": "Name",
+            "type": "string",
+            "dtype": "String",
+            "prop_missing": 0.0,
+            "distribution": {
+                "implements": "core.freetext",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "FreeTextDistribution",
+                "unique": false,
+                "parameters": {
+                    "locale": "EN",
+                    "avg_sentences": 2.4691358024691357,
+                    "avg_words": 4.093153759820426
+                }
+            }
+        },
+        {
+            "name": "Sex",
+            "type": "categorical",
+            "dtype": "Categorical(ordering='physical')",
+            "prop_missing": 0.0,
+            "distribution": {
+                "implements": "core.multinoulli",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "MultinoulliDistribution",
+                "unique": false,
+                "parameters": {
+                    "labels": [
+                        "female",
+                        "male"
+                    ],
+                    "probs": [
+                        0.35241301907968575,
+                        0.6475869809203143
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Age",
+            "type": "discrete",
+            "dtype": "Int64",
+            "prop_missing": 0.19865319865319866,
+            "distribution": {
+                "implements": "core.truncated_normal",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "DiscreteTruncatedNormalDistribution",
+                "unique": false,
+                "parameters": {
+                    "lower": -1e-08,
+                    "upper": 80.00000001,
+                    "mean": 28.403638823278087,
+                    "sd": 15.862325051407092
+                }
+            }
+        },
+        {
+            "name": "Parch",
+            "type": "discrete",
+            "dtype": "Int64",
+            "prop_missing": 0.0,
+            "distribution": {
+                "implements": "core.truncated_normal",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "DiscreteTruncatedNormalDistribution",
+                "unique": false,
+                "parameters": {
+                    "lower": -1e-08,
+                    "upper": 6.00000001,
+                    "mean": -380.6440825743838,
+                    "sd": 12.066012048277289
+                }
+            }
+        },
+        {
+            "name": "Ticket",
+            "type": "string",
+            "dtype": "String",
+            "prop_missing": 0.0,
+            "distribution": {
+                "implements": "core.regex",
+                "version": "2.0",
+                "provenance": "builtin",
+                "class_name": "RegexDistribution",
+                "unique": false,
+                "parameters": {
+                    "regex_data": {
+                        "regex": "(|[A-Z]{1,4}(|(\\.A\\.|/[0-9A-Z])) )[0-9]{4,6}",
+                        "counts": [
+                            [
+                                [
+                                    643
+                                ],
+                                [
+                                    46,
+                                    [
+                                        [
+                                            75
+                                        ],
+                                        [
+                                            [
+                                                [
+                                                    27,
+                                                    27,
+                                                    27,
+                                                    27
+                                                ],
+                                                [
+                                                    19,
+                                                    19,
+                                                    19
+                                                ]
+                                            ],
+                                            0
+                                        ]
+                                    ],
+                                    75,
+                                    75
+                                ]
+                            ],
+                            643,
+                            643
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Fare",
+            "type": "continuous",
+            "dtype": "Float64",
+            "prop_missing": 0.0,
+            "distribution": {
+                "implements": "core.exponential",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "ExponentialDistribution",
+                "unique": false,
+                "parameters": {
+                    "rate": 0.03052908440177665
+                }
+            }
+        },
+        {
+            "name": "Cabin",
+            "type": "string",
+            "dtype": "String",
+            "prop_missing": 0.7710437710437711,
+            "distribution": {
+                "implements": "core.regex",
+                "version": "2.0",
+                "provenance": "builtin",
+                "class_name": "RegexDistribution",
+                "unique": false,
+                "parameters": {
+                    "regex_data": {
+                        "regex": "[A-G][0-9 ]{1,3}(|[B-C][0-9]{2}(| [B-C][0-9]{2})|[A-Z][0-9]{2})",
+                        "counts": [
+                            198,
+                            198,
+                            [
+                                [
+                                    176
+                                ],
+                                [
+                                    17,
+                                    17,
+                                    [
+                                        [
+                                            11
+                                        ],
+                                        [
+                                            6,
+                                            6,
+                                            6,
+                                            6
+                                        ]
+                                    ],
+                                    0
+                                ],
+                                [
+                                    5,
+                                    5,
+                                    5
+                                ]
+                            ],
+                            0
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Embarked",
+            "type": "categorical",
+            "dtype": "Categorical(ordering='physical')",
+            "prop_missing": 0.002244668911335578,
+            "distribution": {
+                "implements": "core.multinoulli",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "MultinoulliDistribution",
+                "unique": false,
+                "parameters": {
+                    "labels": [
+                        "C",
+                        "Q",
+                        "S"
+                    ],
+                    "probs": [
+                        0.1889763779527559,
+                        0.08661417322834646,
+                        0.7244094488188977
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Birthday",
+            "type": "date",
+            "dtype": "Date",
+            "prop_missing": 0.08754208754208755,
+            "distribution": {
+                "implements": "core.uniform",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "DateUniformDistribution",
+                "unique": false,
+                "parameters": {
+                    "lower": "1903-07-28",
+                    "upper": "1940-05-27"
+                }
+            }
+        },
+        {
+            "name": "Board time",
+            "type": "time",
+            "dtype": "Time",
+            "prop_missing": 0.08866442199775533,
+            "distribution": {
+                "implements": "core.uniform",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "TimeUniformDistribution",
+                "unique": false,
+                "parameters": {
+                    "lower": "10:39:40",
+                    "upper": "18:39:28",
+                    "precision": "seconds"
+                }
+            }
+        },
+        {
+            "name": "Married since",
+            "type": "datetime",
+            "dtype": "Datetime(time_unit='us', time_zone=None)",
+            "prop_missing": 0.10325476992143659,
+            "distribution": {
+                "implements": "core.uniform",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "DateTimeUniformDistribution",
+                "unique": false,
+                "parameters": {
+                    "lower": "2022-07-15T12:21:15",
+                    "upper": "2022-08-15T10:32:05",
+                    "precision": "seconds"
+                }
+            }
+        },
+        {
+            "name": "all_NA",
+            "type": "string",
+            "dtype": "String",
+            "prop_missing": 1.0,
+            "distribution": {
+                "implements": "core.na",
+                "version": "1.0",
+                "provenance": "builtin",
+                "class_name": "NADistribution",
+                "unique": false,
+                "parameters": {}
+            }
+        }
+    ]
+}
