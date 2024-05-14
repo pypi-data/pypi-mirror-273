@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+eazyAI/__init__.py
+eazyAI/main.py
+eazyAI.egg-info/PKG-INFO
+eazyAI.egg-info/SOURCES.txt
+eazyAI.egg-info/dependency_links.txt
+eazyAI.egg-info/requires.txt
+eazyAI.egg-info/top_level.txt
