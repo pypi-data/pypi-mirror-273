@@ -1,0 +1,10 @@
+dig_ass_chat_protos/DigitalAssistantChatManager_pb2.py,sha256=ATxA5SRRvgBP_VS8BJNne76PMcC0b0DsvmlDH8Uny3c,2174
+dig_ass_chat_protos/DigitalAssistantChatManager_pb2.pyi,sha256=MavNCLTF0C04asZOLkRHKg6bejqOymUuEDT_qwtD9dc,1377
+dig_ass_chat_protos/DigitalAssistantChatManager_pb2_grpc.py,sha256=y2AWvSjxptDfBSSmMwpTvocnHExBQyepUAlaVzdsthY,3102
+dig_ass_chat_protos/__init__.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+dig_ass_chat_protos/abstract_client.py,sha256=TSFMiUZ1VhTDGYYCSE0CZBCN4D-Y6D6CWTP-djuwWYc,382
+dig_ass_chat_protos/client.py,sha256=44KhjT88M6HY8V3C7csnhUDfVYmHdbbwZ8e-ZXArKPc,1086
+dig_ass_chat_protos-1.0.1.dist-info/METADATA,sha256=0oDXIVGhsbVeE3Orff6h0cmDQRo3ZOKWKE8sNhotgS0,374
+dig_ass_chat_protos-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dig_ass_chat_protos-1.0.1.dist-info/top_level.txt,sha256=id6fEoB_3P9_uGlTvxX4usfb37nl9n9rTiCvrWrDQIc,20
+dig_ass_chat_protos-1.0.1.dist-info/RECORD,,
