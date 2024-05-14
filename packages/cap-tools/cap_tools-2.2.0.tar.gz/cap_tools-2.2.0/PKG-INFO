@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cap-tools
+Version: 2.2.0
+Summary: Python data bindings for the Common Alerting Protocol Version.
+Author: Björn Reetz
+Author-email: git@bjoern-reetz.de
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: xsdata (>=24.4,<25.0)
+Description-Content-Type: text/markdown
+
+# CAP-Tools
+
+Python data bindings for the [Common Alerting Protocol Version 1.2](https://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2.html).
+
+## Getting started
+
+This package contains a Python model for CAP XML documents that was generated using using [xsData](https://xsdata.readthedocs.io/).
+
+To parse a CAP XML from a file into an instance of `cappy.models.Alert`, do as follows:
+
+```python
+from cappy.models import Alert
+from xsdata.formats.dataclass.parsers import XmlParser
+
+parser = XmlParser()
+alert = parser.parse("path/to/my/cap.xml", Alert)
+```
+
+For advanced usage, just take a look at the [xsData](https://xsdata.readthedocs.io/en/latest/data_binding/basics/) docs.
+
