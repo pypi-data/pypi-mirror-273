@@ -1,0 +1,2 @@
+[pytest11]
+mock_call_where = mock_call_where.pytest_plugin
