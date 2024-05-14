@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonexplosivelyz/__init__.py
+nonexplosivelyz/main.py
+nonexplosivelyz.egg-info/PKG-INFO
+nonexplosivelyz.egg-info/SOURCES.txt
+nonexplosivelyz.egg-info/dependency_links.txt
+nonexplosivelyz.egg-info/requires.txt
+nonexplosivelyz.egg-info/top_level.txt
