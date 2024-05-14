@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: aws-cost-mutilator
+Version: 0.2.0
+Summary: A cli to mutilate aws costs, it's what accounting craves.
+Home-page: https://github.com/skymoore/aws-cost-mutilator
+License: MIT
+Keywords: aws,cloud
+Author: Sky Moore
+Author-email: i@msky.me
+Requires-Python: >=3.11,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.99,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Repository, https://github.com/skymoore/aws-cost-mutilator
+Description-Content-Type: text/markdown
+
+# AWS Cost Mutilator
+## It's what accounting craves.  
+
+### Installation:
+```shell
+pip install aws-cost-mutilator
+```
+
+
+### Usage:
+```shell
+acm [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  -p, --profile TEXT  AWS profile
+  -r, --region TEXT   AWS region
+  --help              Show this message and exit.
+
+Commands:
+  check
+  clean
+```
+
