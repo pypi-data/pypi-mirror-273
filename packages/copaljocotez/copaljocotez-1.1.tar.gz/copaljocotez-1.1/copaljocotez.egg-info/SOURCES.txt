@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+copaljocotez/__init__.py
+copaljocotez/main.py
+copaljocotez.egg-info/PKG-INFO
+copaljocotez.egg-info/SOURCES.txt
+copaljocotez.egg-info/dependency_links.txt
+copaljocotez.egg-info/requires.txt
+copaljocotez.egg-info/top_level.txt
