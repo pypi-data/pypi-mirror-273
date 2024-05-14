@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpttools"
+version = "0.1.4a2"
+authors = [
+    {name="Dilip Kalagotla", email="dilipkalagotla@gmail.com"},
+    ]
+description = "One-way coupled Lagrangian Particle Tracking for CFD simulations. Includes many auxiliary tools."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "seaborn",
+    "tqdm",
+    ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/kalagotla/project-arrakis"
+issues = "https://github.com/kalagotla/project-arrakis/issues"
