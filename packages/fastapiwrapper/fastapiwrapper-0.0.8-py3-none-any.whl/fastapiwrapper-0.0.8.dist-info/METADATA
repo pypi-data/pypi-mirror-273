@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fastapiwrapper
+Version: 0.0.8
+Summary: Wrap an api that can fitch Deftable and timeseries table to make it more convenient. 
+Author: Ahmad Riad
+Author-email: meuralengine@outlook.com
+Keywords: python,Deftable,timeseries
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+
+contain an api wrapper that helps to fetch gas cconsumption data.
