@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: idzhiblavi_pydvim
+Version: 0.1.2
+Summary: Lightweight neovim wrapper
+Author: Ibragim Dzhiblavi
+Author-email: dzhiblavi@gmail.com
+Project-URL: Source, https://github.com/dzhiblavi/pydvim
+License-File: LICENSE
+Requires-Dist: Jinja2>=3.1.3
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: pyyaml_include>=1.3.2
+
+# pydvim
+
+Lightweight neovim wrapper for my personal use cases
