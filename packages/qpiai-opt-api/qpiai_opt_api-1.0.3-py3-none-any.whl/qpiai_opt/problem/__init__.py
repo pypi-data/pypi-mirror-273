@@ -1,0 +1,5 @@
+from qpiai_opt.problem.max_cut import MaximumCutProblem
+from qpiai_opt.problem.vertex_cover import MinimumVertexCoverProblem
+from qpiai_opt.problem.max_independet_set import MaximumIndependentSetProblem
+from qpiai_opt.problem.qubo import QUBOProblem
+from qpiai_opt.problem.number_partition import NumberPartitionProblem
