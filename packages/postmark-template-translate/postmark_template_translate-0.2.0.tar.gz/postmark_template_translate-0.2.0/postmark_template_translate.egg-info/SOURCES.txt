@@ -1,0 +1,7 @@
+README.md
+setup.py
+postmark_template_translate.egg-info/PKG-INFO
+postmark_template_translate.egg-info/SOURCES.txt
+postmark_template_translate.egg-info/dependency_links.txt
+postmark_template_translate.egg-info/requires.txt
+postmark_template_translate.egg-info/top_level.txt
