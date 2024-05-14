@@ -1,0 +1,9 @@
+numpy==1.24.3
+scipy
+tqdm
+Cython==0.29.32
+matplotlib
+numba
+h5py
+uproot==4.3.7
+pandas
