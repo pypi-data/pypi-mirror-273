@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "kappa-maki"
+version = "1.0.2"
+description = "Formatter for generating Cucumber-format JSON test results using the Behave test framework.  Named after a refreshing cucumber sushi cocktail."
+authors = ["Isaac Becerra Llanos <ibecerrallanos@cpointe-inc.com>"]
+license = "MIT License"
+readme = "README.md"
+repository = "https://github.com/TechnologyBrewery/kappa-maki"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=24.3.0"
+behave = ">=1.2.6"
+pylint = ">=3.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.6.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+# Added by habushu-maven-plugin at 2024-05-13T15:14:05.674320 to use https://pypi.org/simple/ as source PyPi repository for installing dependencies
+[[tool.poetry.source]]
+name = "private-pypi-repo"
+url = "https://pypi.org/simple/"
+priority = "supplemental"
