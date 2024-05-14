@@ -1,0 +1,17 @@
+from typing import TypeAlias, TypeVar, Callable, Any, Self, Literal
+from types import FunctionType, ModuleType
+import http.server
+
+__all__ = ["BasicHTTPServer", "_get_path_limit", "_get_path", "_is_markup_filelike"]
+
+_RT = TypeVar("_RT") # Return Type
+ClassType: TypeAlias = object
+DirPathStr: TypeAlias = str
+FilePathStr: TypeAlias = str
+
+class BasicHTTPServer(http.server.SimpleHTTPRequestHandler): ...
+
+def _get_path_limit_winreg() -> int: ...
+def _get_path_limit() -> int: ...
+def _get_path(path: str) -> str: ...
+def _is_markup_filelike(markup: str) -> bool: ...
