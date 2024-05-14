@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scullerz/__init__.py
+scullerz/main.py
+scullerz.egg-info/PKG-INFO
+scullerz.egg-info/SOURCES.txt
+scullerz.egg-info/dependency_links.txt
+scullerz.egg-info/requires.txt
+scullerz.egg-info/top_level.txt
