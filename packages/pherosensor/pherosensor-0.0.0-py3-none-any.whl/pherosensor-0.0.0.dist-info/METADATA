@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: pherosensor
+Version: 0.0.0
+Summary: Toolbox for the inverse problem solution to identify sources of pheromone emission.
+Home-page: https://forgemia.inra.fr/simon.labarthe/pherosensor-toolbox
+Author: Simon Labarthe
+Author-email: simon.labarthe@inrae.fr
+License: LGPL-3.0-or-later
+Project-URL: Documentation, https://pherosensor-toolbox.readthedocs.io/
+Project-URL: Changelog, https://pherosensor-toolbox.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://forgemia.inra.fr/simon.labarthe/pherosensor-toolbox/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: numpy ==1.21.5
+Requires-Dist: matplotlib ==3.5.1
+Requires-Dist: scipy ==1.7.3
+Requires-Dist: imageio ==2.18.0
+Requires-Dist: pandas ==1.3.4
+Requires-Dist: geopandas ==0.12.1
+Requires-Dist: shapely ==2.0.0
+
+========
+Overview
+========
+
+Toolbox for the inverse problem solution to identify sources of pheromone emission.
+
+* Free software: GNU Lesser General Public License v3 or later (LGPLv3+)
+
+Installation
+============
+
+You can install the given sources with::
+
+    pip install .
+
+Alternatively, you can install the in-development version with::
+
+    pip install git+ssh://git@forgemia.inra.fr/pherosensor/pherosensor-toolbox.git@main
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+
+Documentation
+=============
+
+Documentations are available at ReadTheDocs <https://pherosensor-toolbox.readthedocs.io/en/latest/> _
+
+Building the docs
+-----------------
+
+Alternatively, you can compile the documentation of the current code version.
+
+Install sphinx and sphinx-rtd-theme with::
+
+    pip install sphinx sphinx-rtd-theme
+    
+Then, you can do::
+
+    cd docs
+
+and::
+
+    make html
+    
+The documentations (in html) are then stored in the folder 'build/html'
+
+
+Changelog
+=========
+
+0.1.0 (2024-02-03)
+------------------
+
+* VDA-BI toolbox used for the paper "Biology-Informed inverse problems for insect pests detection using pheromone sensors"
