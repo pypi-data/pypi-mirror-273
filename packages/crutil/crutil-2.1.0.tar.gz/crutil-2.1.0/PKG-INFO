@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: crutil
+Version: 2.1.0
+Summary: C and Rust utility functions
+Home-page: https://github.com/tomhosker/crutil
+Author: Tom Hosker
+Author-email: tomdothosker@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

@@ -1,0 +1,22 @@
+#!/bin/python3
+
+"""
+This code defines a script which: compiles the necessary executables from Rust
+and C source code.
+"""
+
+# Custom imports.
+from crutil.c_utils import compile_c_packages
+from crutil.rust_utils import compile_rust_packages
+
+##############
+# RUN SCRIPT #
+##############
+
+def run():
+    """ Run this file. """
+    result = compile_c_packages() and compile_rust_packages()
+    return result
+
+if __name__ == "__main__":
+    run()

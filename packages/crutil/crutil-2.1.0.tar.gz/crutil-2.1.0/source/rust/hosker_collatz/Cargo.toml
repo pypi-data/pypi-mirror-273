@@ -1,0 +1,11 @@
+[package]
+name = "hosker_collatz"
+version = "0.1.0"
+authors = ["Tom Hosker"]
+edition = "2021"
+
+[lib]
+name = "hosker_collatz"
+crate-type = ["cdylib"]
+
+[dependencies]
