@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<!-- Workflow -->
+<record id="sale_refund_settlement_module_category" model="ir.module.category">
+    <field name="name">Sale Refund Settlement</field>
+    <field
+            name="parent_id"
+            ref="ssi_financial_accounting.financial_accounting_module_category"
+        />
+    <field name="sequence">6</field>
+</record>
+
+<record id="purchase_refund_settlement_module_category" model="ir.module.category">
+    <field name="name">Purchase Refund Settlement</field>
+    <field
+            name="parent_id"
+            ref="ssi_financial_accounting.financial_accounting_module_category"
+        />
+    <field name="sequence">6</field>
+</record>
+
+<!-- Data Ownership -->
+<record id="sale_ref_data_ownership_module_category" model="ir.module.category">
+    <field name="name">Sale Refund Settlement</field>
+    <field
+            name="parent_id"
+            ref="ssi_financial_accounting.financial_accounting_data_ownership_module_category"
+        />
+    <field name="sequence">6</field>
+</record>
+
+<record id="pur_ref_data_ownership_module_category" model="ir.module.category">
+    <field name="name">Purchase Refund Settlement</field>
+    <field
+            name="parent_id"
+            ref="ssi_financial_accounting.financial_accounting_data_ownership_module_category"
+        />
+    <field name="sequence">6</field>
+</record>
+
+</odoo>
