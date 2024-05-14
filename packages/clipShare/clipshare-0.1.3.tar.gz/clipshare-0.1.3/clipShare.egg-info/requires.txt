@@ -1,0 +1,10 @@
+flask
+Flask-SocketIO
+python-socketio
+pyclip
+pyperclip
+pycryptodome
+requests
+pyngrok
+netifaces2
+zeroconf
