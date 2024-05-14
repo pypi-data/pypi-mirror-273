@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+code_owners/__init__.py
+code_owners/config.py
+code_owners/parser.py
+pbx_code_owners.egg-info/PKG-INFO
+pbx_code_owners.egg-info/SOURCES.txt
+pbx_code_owners.egg-info/dependency_links.txt
+pbx_code_owners.egg-info/entry_points.txt
+pbx_code_owners.egg-info/requires.txt
+pbx_code_owners.egg-info/top_level.txt
+tests/test_code_owners.py
