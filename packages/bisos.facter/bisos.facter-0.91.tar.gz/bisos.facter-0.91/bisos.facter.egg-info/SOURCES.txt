@@ -1,0 +1,17 @@
+MANIFEST.in
+README.org
+lh-agpl3-LICENSE.txt
+setup.py
+./bin/facter.cs
+./bin/roInv-facter.cs
+./bin/roPerf-facter.cs
+bisos/__init__.py
+bisos.facter.egg-info/PKG-INFO
+bisos.facter.egg-info/SOURCES.txt
+bisos.facter.egg-info/dependency_links.txt
+bisos.facter.egg-info/not-zip-safe
+bisos.facter.egg-info/requires.txt
+bisos.facter.egg-info/top_level.txt
+bisos/facter/__init__.py
+bisos/facter/facter.py
+bisos/facter/facter_csu.py
