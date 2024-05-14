@@ -1,0 +1,19 @@
+- name: performance
+  query_spec:
+    customizable:
+      - all
+      - metrics
+      - dimensions
+      - filters
+    metrics:
+      - clicks
+    dimensions:
+      - campaign_name:
+          field: campaign.name
+    filters:
+      - 'campaign.status = ACTIVE'
+  suffix: Remove
+  has_conversion_split:
+  registries:
+    - default
+    - new

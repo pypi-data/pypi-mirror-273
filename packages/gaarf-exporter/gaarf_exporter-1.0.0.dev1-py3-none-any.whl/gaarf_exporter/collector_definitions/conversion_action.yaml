@@ -1,0 +1,19 @@
+- name: conversion_action
+  query_spec:
+    customizable:
+      - filters
+      - level
+    level: customer
+    metrics:
+      - all_conversions
+      - all_conversions_value
+    dimensions:
+      - conversion_name:
+          field: segments.conversion_action_name
+      - conversion_id:
+          field: segments.conversion_action~0
+    filters:
+      - 'segments.date DURING TODAY'
+      - 'metrics.all_conversions > 0'
+  registries:
+    - default
