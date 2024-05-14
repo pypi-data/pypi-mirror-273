@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: miraihttpapi
+Version: 1.2
+Summary: Use mirai-api-http(v2+) http polling to interconnect the interface
+Home-page: http://www.icedream.space
+Author: Esdrin
+Author-email: esdrin@icedream.space
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML
+Requires-Dist: requests
+
