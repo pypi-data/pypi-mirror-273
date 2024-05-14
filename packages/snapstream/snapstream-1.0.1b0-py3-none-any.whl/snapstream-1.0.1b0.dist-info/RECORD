@@ -1,0 +1,11 @@
+snapstream/__init__.py,sha256=b7LKwbvhqPu5lxPN7r-LNltsXtybwm-q0Npcajw15OA,2280
+snapstream/__main__.py,sha256=DLPwxc__GlbpamJVVK7968ODbfDCySxPB_9EvFDi0Oo,8347
+snapstream/caching.py,sha256=0Rt0ScHWSBbLtX5kkqHXpaoGPsfvlUI14GdZYuTIrR8,10445
+snapstream/codecs.py,sha256=3EMTiBoOrFf6QtnkNk1WVX2wQA3GTRXUiHfFClkmC6s,2889
+snapstream/core.py,sha256=XSHvCmhMvTmhQB8wuq7hHF0kMw83qhFo6F98Us9F8fk,11259
+snapstream/utils.py,sha256=P1zn4R6eboOHq2SP5Pwi5pDwbtteLC4quq4QP2WSuMs,3623
+snapstream-1.0.1b0.dist-info/LICENSE,sha256=clyyECX2GHiE-4UwTnzB9fY7k9KeppBSeCu9U4kLSlQ,1065
+snapstream-1.0.1b0.dist-info/METADATA,sha256=uLR6Ydl8gtII46L0JiUVu_0VWd7hAO1SG2a83azVMe0,4159
+snapstream-1.0.1b0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+snapstream-1.0.1b0.dist-info/entry_points.txt,sha256=rlhZHNeFsMotKwbJBvhNOC234q_Z5VFWi-HYgrC_xAE,55
+snapstream-1.0.1b0.dist-info/RECORD,,
