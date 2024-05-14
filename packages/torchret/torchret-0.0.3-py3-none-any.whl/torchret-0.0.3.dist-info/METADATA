@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: torchret
+Version: 0.0.3
+Home-page: https://github.com/parthdhameliya7
+Author: Parth Dhameliya
+License: Apache License 2.0
+Platform: linux
+Platform: unix
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: albumentations (==1.3.0)
+Requires-Dist: numpy (==1.24.1)
+Requires-Dist: pandas (==1.5.2)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: setuptools (==65.5.0)
+Requires-Dist: timm (==0.9.16)
+Requires-Dist: torch (==2.3.0)
+Requires-Dist: tqdm (==4.64.1)
+
