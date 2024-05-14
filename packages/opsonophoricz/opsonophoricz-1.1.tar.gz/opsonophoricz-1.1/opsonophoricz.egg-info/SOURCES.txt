@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+opsonophoricz/__init__.py
+opsonophoricz/main.py
+opsonophoricz.egg-info/PKG-INFO
+opsonophoricz.egg-info/SOURCES.txt
+opsonophoricz.egg-info/dependency_links.txt
+opsonophoricz.egg-info/requires.txt
+opsonophoricz.egg-info/top_level.txt
