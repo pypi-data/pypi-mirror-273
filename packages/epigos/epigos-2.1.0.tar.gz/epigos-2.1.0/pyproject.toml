@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "epigos"
+version = "2.1.0"
+description = "Epigos AI Python SDK"
+authors = ["Philip Adzanoukpe <philip@epigos.ai>"]
+license = "MIT"
+readme = "README.md"
+keywords = []
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", ]
+homepage = "https://github.com/Epigos-AI/epigos-python"
+documentation = "https://docs.epigos.ai/sdks/python"
+
+[[tool.poetry.packages]]
+include = "epigos"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = ">=0.24.1,<0.28.0"
+typing-extensions = "^4.7.1"
+pillow = "^10.0.0"
+pybboxes = "^0.1.6"
+pyyaml = "^6.0.1"
+tqdm = "^4.66.2"
+imagesize = "^1.4.1"
+tenacity = "^8.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.4,<9.0"
+black = ">=23.7,<25.0"
+isort = "^5.12.0"
+mypy = "^1.4.1"
+pytest-cov = ">=4.1,<6.0"
+pylint = ">=2.17.5,<4.0.0"
+pre-commit = "^3.3.3"
+autoflake = "^2.2.0"
+respx = ">=0.20.2,<0.22.0"
+types-pillow = "^10.0.0.2"
+types-pyyaml = "^6.0.12.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry_bumpversion.file."epigos/__version__.py"]
+
+[tool.isort]
+default_section = "THIRDPARTY"
+ensure_newline_before_comments = true
+force_grid_wrap = 0
+include_trailing_comma = true
+known_first_party = "tests"
+line_length = 88
+multi_line_output = 3
+use_parentheses = true
+
+[tool.black]
+target-version = ['py311']
+
+[tool.pylint.messages_control]
+disable = [
+    "C0103",
+    "C0114",
+    "R0903",
+    "R0913"
+]
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint.similarities]
+ignore-signatures = true
+ignore-imports = true
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+filterwarnings = [
+    "error",
+]
+
+[tool.mypy]
+strict = true
+exclude = ["tests", "dist"]
+ignore_missing_imports = true
+
+[tool.autoflake]
+quiet = true
+remove-all-unused-imports = true
+recursive = true
+
+[tool.coverage.report]
+fail_under = 95
+exclude_also = [
+    "pragma: no cover",
+    "def __repr__",
+    "@abstract",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
