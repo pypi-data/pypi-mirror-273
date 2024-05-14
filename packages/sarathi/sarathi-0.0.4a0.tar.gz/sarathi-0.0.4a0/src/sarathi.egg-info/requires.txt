@@ -1,0 +1,7 @@
+requests
+astor
+black
+
+[dev]
+twine>=4.0.2
+wheel
