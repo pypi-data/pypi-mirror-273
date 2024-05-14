@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: jccrypto
+Version: 1.0.3
+Summary: Simple crypto library
+Home-page: https://github.com/lang-library/py-jccrypto
+Author: JavaCommons Technologies
+Author-email: javacommmons@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyCryptoDome
+
+# py-jccrypto
+
+
+
+## To install
+
+
+
+pip install jccrypto
+
+
+
+## Sample code
+
+
+
+```
+
+from jccrypto import JcCrypto
+
+
+
+text = "Pythonの暗号化ライブラリとそれらの概要を表にまとめました。非常にたくさんのライブラリがあることがわかりました。それぞれのライブラリが得手不得手を持っているためユースケースに応じて適切なライブラリを使用する必要があります。"
+
+
+
+key = 'abcdefghijklmnop'.encode()
+
+
+
+iv = '1234567890123456'.encode()
+
+
+
+cr = JcCrypto(key, iv)
+
+
+
+encoded = cr.encode(text)
+
+
+
+print(encoded)
+
+
+
+decoded = cr.decode(encoded)
+
+
+
+print(decoded)
+
+```
+
