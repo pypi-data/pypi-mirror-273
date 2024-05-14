@@ -1,0 +1,7 @@
+README.md
+setup.py
+easyencryption.egg-info/PKG-INFO
+easyencryption.egg-info/SOURCES.txt
+easyencryption.egg-info/dependency_links.txt
+easyencryption.egg-info/requires.txt
+easyencryption.egg-info/top_level.txt
