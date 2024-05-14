@@ -1,0 +1,9 @@
+exponentation/__init__.py,sha256=FJ7OSstUSytqXVKYzhHGz4gTz0crQXTe7S0e0Vsl-4A,47
+exponentation/methods.py,sha256=XXBDCONW9QhseX0bU1AbYm07bqbTCTJ-e1g3oOtFFqw,2458
+exponentation/neuron.py,sha256=z9gGM0xFVH0wAg4D24cdOLFNL8d69rmOZxhKzWg6tFY,5069
+exponentation/data/Data_learning.csv,sha256=uUgOQFWovGKuqfncqBfgMQlICd7KOQtkwRQI6UYWz7Y,14089821
+exponentation/data/my_model.pth,sha256=3zQGXkppUYer-rdwBXnDSf2ODecEZmSPwvJDjrr5iQc,33030
+exponentation-0.0.8.dist-info/METADATA,sha256=xG2Did5ck92EyutygIQRK4UKabe0YXn4eA4IYZOQMpc,619
+exponentation-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+exponentation-0.0.8.dist-info/top_level.txt,sha256=dc2XXlm0KMsyfaj7zC8-N0s1elRCfGIxKTU7s4Vb5QE,14
+exponentation-0.0.8.dist-info/RECORD,,
