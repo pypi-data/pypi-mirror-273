@@ -1,0 +1,2 @@
+[console_scripts]
+add = jerry:cmd_add
