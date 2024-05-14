@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cladoselachidaez/__init__.py
+cladoselachidaez/main.py
+cladoselachidaez.egg-info/PKG-INFO
+cladoselachidaez.egg-info/SOURCES.txt
+cladoselachidaez.egg-info/dependency_links.txt
+cladoselachidaez.egg-info/requires.txt
+cladoselachidaez.egg-info/top_level.txt
