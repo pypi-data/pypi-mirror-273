@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+plain_rougel/__init__.py
+plain_rougel/rougel.py
+plain_rougel.egg-info/PKG-INFO
+plain_rougel.egg-info/SOURCES.txt
+plain_rougel.egg-info/dependency_links.txt
+plain_rougel.egg-info/top_level.txt
