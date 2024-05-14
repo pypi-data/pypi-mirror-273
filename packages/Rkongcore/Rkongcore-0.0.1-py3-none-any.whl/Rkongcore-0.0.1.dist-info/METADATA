@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Rkongcore
+Version: 0.0.1
+Summary: Libraries for encryption and alignment
+Home-page: 
+Author: ranyu
+Author-email: wy176404@163.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx ~=0.13.3
+Requires-Dist: pydantic ~=2.7.1
+Requires-Dist: pydantic-core ~=2.18.2
+Requires-Dist: pyjwt ~=1.7.1
+Requires-Dist: sentry-sdk ~=1.5.12
+
+# How to use it?
+
+**Installing the library**
+> pip install kongcore
+
+
+**description**
+> use kong with your project
+
+By: "ranyu"
