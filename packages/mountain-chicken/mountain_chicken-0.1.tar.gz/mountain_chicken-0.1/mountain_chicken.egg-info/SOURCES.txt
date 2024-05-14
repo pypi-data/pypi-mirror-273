@@ -1,0 +1,8 @@
+README.md
+setup.py
+mountain_chicken/__init__.py
+mountain_chicken/main.py
+mountain_chicken.egg-info/PKG-INFO
+mountain_chicken.egg-info/SOURCES.txt
+mountain_chicken.egg-info/dependency_links.txt
+mountain_chicken.egg-info/top_level.txt
