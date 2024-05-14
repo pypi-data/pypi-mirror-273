@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: python-uc-tools
+Version: 0.2.0
+Project-URL: Documentation, https://github.com/fennr/uc-tools#readme
+Project-URL: Issues, https://github.com/fennr/uc-tools/issues
+Project-URL: Source, https://github.com/fennr/uc-tools
+Author-email: fennr <fenrir1121@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: fastapi>=0.95.0
+Requires-Dist: redis>=5.0.4
+Requires-Dist: tenacity>=8.3.0
+Description-Content-Type: text/markdown
+
+# uc_tools
+
+[![PyPI - Version](https://img.shields.io/pypi/v/python-uc-tools.svg)](https://pypi.org/project/python-uc-tools)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-uc-tools.svg)](https://pypi.org/project/python-uc-tools)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install python-uc-tools
+```
+
+## License
+
+`uc-tools` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
