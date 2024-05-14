@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eremuriz/__init__.py
+eremuriz/main.py
+eremuriz.egg-info/PKG-INFO
+eremuriz.egg-info/SOURCES.txt
+eremuriz.egg-info/dependency_links.txt
+eremuriz.egg-info/requires.txt
+eremuriz.egg-info/top_level.txt
