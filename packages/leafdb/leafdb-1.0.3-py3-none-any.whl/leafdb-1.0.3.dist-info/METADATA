@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: leafdb
+Version: 1.0.3
+Summary: LeafDb library
+Home-page: http://www.leafpy.org/
+Author: Huaqing Ye
+Author-email: wacunye@outlook.com
+License: MIT license
+Platform: any
+Requires-Dist: sqlalchemy <2.0
+
+LeafDb is a simple library for makeing raw SQL queries to most relational databases.
