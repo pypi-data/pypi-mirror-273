@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Books_Lib
+Version: 1.0.11
+Summary: Es una libreria en la cual podremos encontrar el autor y el libro, de pende el que se escriba
+Author: Milton Alejandro Angel Cardenas 
+Author-email: milton_ac@tesch.edu.mx
+Requires-Dist: pandas
+Requires-Dist: twine
+Requires-Dist: wheel
+Requires-Dist: setuptools
