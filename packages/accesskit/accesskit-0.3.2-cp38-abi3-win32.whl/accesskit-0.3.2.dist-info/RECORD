@@ -1,0 +1,12 @@
+accesskit-0.3.2.dist-info/METADATA,sha256=BW1Zzg_O1p9TGtO49d4jpiBwu9rklyI-yr-5a3XxNlU,1973
+accesskit-0.3.2.dist-info/WHEEL,sha256=3UT5ilzffcGEOlyn_cxoxXdXAFQPk4oQ3OeSn9uvxvo,90
+accesskit-0.3.2.dist-info/license_files/LICENSE-APACHE,sha256=IP57AOkE7WkOO5_WBzeE0_xCgUHb0QuBwB_RQ9B5f1g,9899
+accesskit-0.3.2.dist-info/license_files/LICENSE-MIT,sha256=NlFq79yExdWh50hUJZE6ItvaaesZMMXoTWrklytRlLk,1046
+accesskit-0.3.2.dist-info/license_files/LICENSE.chromium,sha256=K11EIgzufVQe_e8xJs6Diy5z6uuuL0Qa81c8ssCvTXA,1586
+accesskit-0.3.2.dist-info/license_files/AUTHORS,sha256=oA3lS5X4pPEUwPPW-nsvKlGyigTN7nSTQ1i1gHil5xE,355
+LICENSE-APACHE,sha256=IP57AOkE7WkOO5_WBzeE0_xCgUHb0QuBwB_RQ9B5f1g,9899
+LICENSE-MIT,sha256=NlFq79yExdWh50hUJZE6ItvaaesZMMXoTWrklytRlLk,1046
+LICENSE.chromium,sha256=K11EIgzufVQe_e8xJs6Diy5z6uuuL0Qa81c8ssCvTXA,1586
+accesskit/__init__.py,sha256=iQ9f53mTnCn2eiiEmf7FOoWV9Lio9PNKOlB2bwIo1P0,119
+accesskit/accesskit.pyd,sha256=T5vs2CgbI4QAk0OIZL3D0gOI4MTc4tLXRPRweE_0j0I,710144
+accesskit-0.3.2.dist-info/RECORD,,
