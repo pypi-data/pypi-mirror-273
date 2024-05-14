@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+my_simple_package/__init__.py
+my_simple_package/helloWorld.py
+my_simple_package/math_check.py
+my_simple_package.egg-info/PKG-INFO
+my_simple_package.egg-info/SOURCES.txt
+my_simple_package.egg-info/dependency_links.txt
+my_simple_package.egg-info/top_level.txt
