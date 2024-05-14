@@ -1,0 +1,102 @@
+# Python Sponsorblock
+
+[![status-badge](https://ci.elara.ws/api/badges/61/status.svg)](https://ci.elara.ws/repos/61)
+
+<img src="https://gitea.elara.ws/music-kraken/python-sponsorblock/raw/branch/main/assets/logo.svg" width=300  alt="python-sponsorblock logo"/>
+
+This is a wrapper for the sponsorblock api, enabling you to get the timestamps of sponsor segments from Youtube videos.
+
+## Installation
+
+```bash
+# using this gitea repository (recommended)
+pip install --index-url https://gitea.elara.ws/api/packages/music-kraken/pypi/simple/ python-sponsorblock
+```
+
+```bash
+# using pip
+pip install python-sponsorblock
+```
+
+## Why does this exist?
+
+I decided against using the already existing [sponsorblock.py](https://github.com/wasi-master/sponsorblock.py) for one main reason. It sometimes throws exceptions that do not belong to the project itself. An example for this are request exceptions. This is fine, but it shows a diverging philosophy from what I want to achieve with this project. I want to have an wrapper that just gets all data it can in a structured way. I don't want a library that does the requests for you, I want a library that gives you the data. **I want to stress, this is not an attack on the [sponsorblock.py](https://github.com/wasi-master/sponsorblock.py) project, it is just a different approach.** My other "_issue_" with the [sponsorblock.py](https://github.com/wasi-master/sponsorblock.py) project is, that it is way to complex. Thus fixing it would require more time than implementing the functionality I need from scratch.
+
+I decided to catch all necessary exceptions, that cant be handled and either throw an exception inheriting from one base exception or return empty data.
+
+## Usage
+
+Every relevant function can be found in the `Sponsorblock` class.
+
+```python
+from python_sponsorblock import SponsorBlock
+import requests
+
+# all arguments are optional and are set to the default values in this example
+sb = SponsorBlock(
+    session=requests.Session(),    # a requests session object
+    silent=False,    # throw exceptions or return empty data
+    base_url="https://sponsor.ajay.app",    # the url of the sponsorblock api, make sure there is no trailing slash
+)
+
+print(sb.get_segments("https://yt.artemislena.eu/watch?v=w5GmDRW975g"))
+```
+
+You can import all of the exceptions that can be thrown like this:
+
+```python
+from python_sponsorblock import exceptions
+```
+
+### Get the Data
+
+Because I don't need much functionality, I havent implemented a lot of api requests. The following list contains every function, that I plan to implement:
+
+- [x] Get Segments
+
+If you need more functionality, just raise an issue or create a pull request. Here is an [overview for all api endpoints I could write wrappers for](https://wiki.sponsor.ajay.app/w/API_Docs).
+
+Every function that requires a video id as input, can also take a full url as input. The function will extract the video id from the url.
+
+#### Get Segments
+
+This function gets all segments of a video.
+
+```python
+from python_sponsorblock import SponsorBlock, constants
+from python_sponsorblock.constants import Segment
+
+sb = SponsorBlock()
+segments: List[Segment] = sb.get_segments("https://yt.artemislena.eu/watch?v=w5GmDRW975g")
+```
+
+### Data Objects
+
+All Data Classes, Enums and simmilar objects can be found in the `constants` module.
+
+```python
+from python_sponsorblock import constants
+```
+
+#### Segment
+
+This is most arguably the most important object in this library. It represents a segment of a video that is a sponsor segment.
+
+```python
+from python_sponsorblock.exceptions import Segment, Category, ActionType
+
+Segment(
+    UUID="uuid",
+    segment=(0.0, 10.0),
+    category=Category.SPONSOR,
+    videoDuration=100.0,
+    actionType=ActionType.SKIP,
+    locked=0,
+    votes=10,
+    description="This is a sponsor segment"
+)
+```
+
+#### Enums (Types)
+
+The enums are just representations of the types that are used in the sponsorblock api. This is the [official documentation of the sponsor block types](https://wiki.sponsor.ajay.app/w/Types).
