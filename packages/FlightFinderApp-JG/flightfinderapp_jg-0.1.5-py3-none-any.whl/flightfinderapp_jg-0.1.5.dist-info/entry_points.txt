@@ -1,0 +1,2 @@
+[console_scripts]
+FlightFinderApp = FlightFinderApp_JG.cli:main
