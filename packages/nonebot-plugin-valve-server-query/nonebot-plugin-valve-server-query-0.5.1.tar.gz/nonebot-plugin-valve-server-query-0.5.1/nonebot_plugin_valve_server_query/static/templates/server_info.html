@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>服务器信息</title>
+    <link rel="stylesheet" href={{resources_path}}/templates/server_info.css>
+</head>
+
+<body>
+    <div class="glass-container">
+        <div class="game_name">{{server_info.game_name}}</div>
+        <div class="server_name">{{server_info.server_name}}</div>
+        <div class="server_info_container">
+            <div class="server_info_item"><span class="server_info_label">延时：</span>{{server_info.ping}}ms</div>
+            <div class="server_info_item"><span class="server_info_label">版本：</span>{{server_info.version}}</div>
+            <div class="server_info_item"><span class="server_info_label">平台：</span>{{server_info.platform}}</div>
+            <div class="server_info_item"><span
+                    class="server_info_label">人数：</span>{{server_info.player_count}}/{{server_info.max_players}}</div>
+            <div class="server_info_item_last"><span class="server_info_label">地图：</span>{{server_info.map_name}}</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="player_name">玩家名</th>
+                    <th class="player_score">分数</th>
+                    <th class="player_duration">在线时长</th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <hr>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in server_info.players %}
+                <tr>
+                    <td>{{player.name}}</td>
+                    <td>{{player.score}}</td>
+                    <td>{{player.duration}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
