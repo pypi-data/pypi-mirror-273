@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oddlyz/__init__.py
+oddlyz/main.py
+oddlyz.egg-info/PKG-INFO
+oddlyz.egg-info/SOURCES.txt
+oddlyz.egg-info/dependency_links.txt
+oddlyz.egg-info/requires.txt
+oddlyz.egg-info/top_level.txt
