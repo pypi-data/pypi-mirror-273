@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kong_ran
+Version: 1.0.1
+Summary: Libraries for encryption and alignment
+Home-page: 
+Author: ranyu
+Author-email: wy176404@163.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx ~=0.27.0
+Requires-Dist: pyjwt ~=1.7.1
+Requires-Dist: sentry-sdk ~=1.5.12
+
+# How to use it?
+**description**
+> use kong with your project
+
+By: "ranyu"
