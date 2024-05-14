@@ -1,0 +1,11 @@
+treedata/__init__.py,sha256=jLUs3qbravB3meiyIin_8O301bUFVvEYIJqHnb5AnAU,189
+treedata/_utils.py,sha256=Ux0iZobEzXm7URnXtWlzgZp4AZAjIHADvxuuOM5hBtI,2019
+treedata/_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+treedata/_core/aligned_mapping.py,sha256=sf_nlh2BWFkOSohAZy1M6pAfB3yTsaxrZSdE0j9brdo,8470
+treedata/_core/merge.py,sha256=3EqtWcqLlfoap7P-AX8QUzSnaF__qOjLIYy92STqr3M,4483
+treedata/_core/read.py,sha256=T5lB_o4AVZUkJCY60zBk5xC0CDQ-EbtSef6S0ZJHGlc,2912
+treedata/_core/treedata.py,sha256=e2sI1QMNVTUlQT0vGcth83n9yR6KDt5ZZQw-b_npkw0,13209
+treedata-0.0.1.dist-info/METADATA,sha256=-eYaEZtq4qmSQOJW3JaIqh6WgSI9axhO1stjiHRG1uE,5346
+treedata-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+treedata-0.0.1.dist-info/licenses/LICENSE,sha256=4FXAdrg2FSWdARsb7Z4FQl9OrVnGklpwfsRe-MFV-Ts,1522
+treedata-0.0.1.dist-info/RECORD,,
