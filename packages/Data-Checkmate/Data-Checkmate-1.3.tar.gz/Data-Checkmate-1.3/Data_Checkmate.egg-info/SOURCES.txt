@@ -1,0 +1,10 @@
+README.md
+setup.py
+Data_Checkmate.egg-info/PKG-INFO
+Data_Checkmate.egg-info/SOURCES.txt
+Data_Checkmate.egg-info/dependency_links.txt
+Data_Checkmate.egg-info/requires.txt
+Data_Checkmate.egg-info/top_level.txt
+dqv/__init__.py
+dqv/data_quality_validation_pydeequ.py
+dqv/datacheckmate.py
