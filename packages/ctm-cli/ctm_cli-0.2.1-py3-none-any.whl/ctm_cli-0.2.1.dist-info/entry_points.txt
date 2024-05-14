@@ -1,0 +1,2 @@
+[console_scripts]
+ctm = ctm_cli.main:run
