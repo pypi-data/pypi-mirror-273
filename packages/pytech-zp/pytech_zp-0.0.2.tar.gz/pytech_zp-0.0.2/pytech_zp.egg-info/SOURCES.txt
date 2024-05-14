@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pytech/__init__.py
+pytech/pytech.cp39-win_amd64.pyd
+pytech_zp.egg-info/PKG-INFO
+pytech_zp.egg-info/SOURCES.txt
+pytech_zp.egg-info/dependency_links.txt
+pytech_zp.egg-info/top_level.txt
