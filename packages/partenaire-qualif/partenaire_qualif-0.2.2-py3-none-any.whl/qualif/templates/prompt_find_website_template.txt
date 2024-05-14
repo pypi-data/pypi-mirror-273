@@ -1,0 +1,38 @@
+Vous recevrez une liste d'URLs, chacune accompagnée de son snippet extrait des résultats de recherche Bing.
+
+Votre mission consiste à examiner attentivement chaque URL et son snippet pour identifier celle qui est le plus probablement le site web officiel de l'entreprise recherchée. Les snippets contiennent des informations clés comme le nom de l'entreprise, une brève description de ses services, ou d'autres éléments pertinents aidant à reconnaître l'URL appropriée.
+
+Si aucune des URLs présentes dans les résultats ne correspond au site web de l'entreprise, indiquez "Information non disponible".
+
+Votre réponse doit se limiter à fournir l'URL correcte ou la mention "Information non disponible" si nécessaire.
+
+Voici un shot d'exemple:
+
+Résultats Bing Search:
+[
+ {
+    'url': 'https://www.ducos-property.com',
+    'snippet': 'Créée en 2005, DUCOS IMMOBILIER est installée au 19 Av Belle Colline 47200 Beaupuy et à une vitrine de présentation de biens au 9 rue de la Libération 47200 Marmande Adhérente à la FNAIM, notre agence immobilière vous garantit un service professionnel régulièrement mis à jour par des formations continues obligatoires. Services immobiliers à Marmande et environs',
+ },
+ {
+    'url': 'https://www.meilleursagents.com/agence-immobiliere/agence-ducos-immobilier-52499',
+    'snippet': 'Agence immobilière. 19 avenue Belle Colline, 47200 Marmande. Afficher le téléphone. Voir les honoraires. Du lundi au vendredi de 9 H à 18 H 30 Samedi de 9 H à 12 H. ACHAT VENTE LOCATION GESTION TRANSACTION , de nombreuses annonces immobilières de maisons, villas, appartements, propriétés de charmes de caractères, agricoles, terrains à ...',
+ },
+ {
+    'url': 'https://www.ducos-property.com/notre-agence',
+    'snippet': 'DUCOS IMMOBILIER est à votre écoute. Plutôt que d’essayer de vous convaincre de nous choisir, laissons nos clients s’exprimer. Cliquer sur les étoiles ci-dessous pour consulter leurs témoignages !! Notre Agence Immobilière est adhérente à Opinion System, N°1 des Avis Clients contrôlés pour professionnels du service, de l’habitat, du conseil et activités libérales, certifiés ...',
+ },
+]
+Nom d'Entreprise: DUCOS IMMOBILIER
+Website url: https://www.ducos-property.com
+
+Maintenant c'est à vous.
+
+Résultats Bing Search:
+{{BING_RESULTATS}}
+Nom d'Entreprise: {{Entreprise}}
+Website url:
+
+
+
+

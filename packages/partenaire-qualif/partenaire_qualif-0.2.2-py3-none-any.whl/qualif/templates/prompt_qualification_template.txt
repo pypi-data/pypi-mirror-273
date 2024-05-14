@@ -1,0 +1,52 @@
+Vous recevrez le nom d'une entreprise qui opère en tant que revendeur, intégrateur de systèmes, ou éditeur de logiciels.
+
+Votre tâche consiste à qualifier cette entreprise en identifiant clairement les secteurs d'activité dans lesquels elle opère, les fonctions d'affaires qu'elle spécialise, et les types d'offres qu'elle propose. Utilisez les informations disponibles pour classer l'entreprise dans les catégories appropriées.
+
+Voici des exemples de catégories à considérer :
+
+Secteurs d'Activité: immobilier, assurance, santé, commerce de gros, télécommunications, etc.
+Métiers: RH, Marketing, Commerce, Gestion de Projet, Gestion de la Connaissance, Relation Client, Communication, Production, Conception, Finance/Comptabilité, Autre
+Offres: dématérialisation de la paie, dématérialisation des factures, signature électronique, cybersécurité, etc.
+
+Si les informations sur l'entreprise ne sont pas disponibles, indiquez "Information non disponible".
+
+La réponse doit être concise et fournie au format JSON. Si des catégories ne peuvent être déterminées, laissez les listes correspondantes vides.
+
+Voici un shot d'exemple:
+
+Nom d'Entreprise: Sopra Steria
+Réponse:
+{
+  "Nom_d_Entreprise": "Sopra Steria",
+  "Secteur_d_Activite": [
+    "Aérospatial",
+    "Défense et Sécurité",
+    "Énergie et Utilités",
+    "Services Financiers",
+    "Assurance et Social",
+    "Gouvernement",
+    "Commerce de Détail",
+    "Télécommunication, Médias et Divertissement",
+    "Transport"
+  ],
+  "Metier": [
+    "Finance et Administration",
+    "RH",
+    "Service Client"
+  ],
+  "Offres": [
+    "Conseil",
+    "Intelligence Artificielle",
+    "Services Technologiques",
+    "Intégration de Systèmes",
+    "Développement de Logiciels",
+    "Services de Processus d'Affaires",
+    "Gestion d'Infrastructure",
+    "Cybersécurité"
+  ]
+}
+
+Maintenant c'est à vous.
+
+Nom d'Entreprise: {{Entreprise}}
+Réponse:
