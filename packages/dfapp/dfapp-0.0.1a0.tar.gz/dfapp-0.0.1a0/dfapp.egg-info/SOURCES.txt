@@ -1,0 +1,7 @@
+setup.py
+dfapp/__init__.py
+dfapp/hello.py
+dfapp.egg-info/PKG-INFO
+dfapp.egg-info/SOURCES.txt
+dfapp.egg-info/dependency_links.txt
+dfapp.egg-info/top_level.txt
