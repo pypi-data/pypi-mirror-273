@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unhelpfulnessz/__init__.py
+unhelpfulnessz/main.py
+unhelpfulnessz.egg-info/PKG-INFO
+unhelpfulnessz.egg-info/SOURCES.txt
+unhelpfulnessz.egg-info/dependency_links.txt
+unhelpfulnessz.egg-info/requires.txt
+unhelpfulnessz.egg-info/top_level.txt
