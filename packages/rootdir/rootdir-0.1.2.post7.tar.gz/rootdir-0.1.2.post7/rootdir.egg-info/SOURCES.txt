@@ -1,0 +1,7 @@
+README.md
+setup.py
+rootdir/__init__.py
+rootdir.egg-info/PKG-INFO
+rootdir.egg-info/SOURCES.txt
+rootdir.egg-info/dependency_links.txt
+rootdir.egg-info/top_level.txt
