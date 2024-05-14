@@ -1,0 +1,17 @@
+sonatoki-0.2.0.dist-info/METADATA,sha256=9xz_hA65WMEka6qTXhY6oGAoElV17rkSd9WhDSxL4D0,5160
+sonatoki-0.2.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+sonatoki-0.2.0.dist-info/licenses/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+sonatoki/Cleaners.py,sha256=AMonXBUk3w1vdRiDrpB9XJAdjYaMPoqRtdX5oLI6r38,1744
+sonatoki/Configs.py,sha256=5mucu-Zsnt2p7GMiaM7GXUeL1F1fBq9sycjm4V7xsrI,1929
+sonatoki/Filters.py,sha256=hZfVVv2e4ig_5hM2hdCsdNi21CFFK_AT53oO4N4H6FU,5276
+sonatoki/Preprocessors.py,sha256=aMXXuFBDlJudvzvukvCa7BixuROXXEb62un7I-TGOGs,4441
+sonatoki/Scorers.py,sha256=W-1uYiqjsDejJzoe592ixs7wHazjJXPhuo-41zuJ26U,3643
+sonatoki/Tokenizers.py,sha256=zJ_5h9dlDIiJlLc6inuiOodWYt52nD83wS0QwSZixiM,3326
+sonatoki/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sonatoki/__main__.py,sha256=6xc-wIrrFo9wTyn4zRQNAmqwmJBtVvCMwV-CrM-hueA,82
+sonatoki/constants.py,sha256=wgNn7wyy75_HWV-zHhmDHGQT7RncHbZHonnaDFJJVe8,30942
+sonatoki/ilo.py,sha256=yyLgNPI0Hmb4f1BzX6IRHr11FPChfL2xDR_9odlr8_8,3849
+sonatoki/linku.json,sha256=B5KNdhyM5UEfMciROgh1ECHr3i-ASBeMvwrkzNJX47c,271013
+sonatoki/sandbox.json,sha256=hx6LRsfvmmTtqXcXIyCsfSaGK3DZ-GCdbM8xhZQBHoA,77650
+sonatoki/utils.py,sha256=cYxT8W6LcRWFTrtTAb7LgxClcjPk0b6lvbTit3lVDS8,2660
+sonatoki-0.2.0.dist-info/RECORD,,
