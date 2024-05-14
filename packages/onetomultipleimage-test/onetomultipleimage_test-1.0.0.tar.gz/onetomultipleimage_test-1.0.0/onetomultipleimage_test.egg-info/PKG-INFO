@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: onetomultipleimage_test
+Version: 1.0.0
+Summary: convert one image to several sizes in django REST and django models
+Home-page: https://github.com/ahmadekhalili/onetomultipleimage
+Author: Ahmad Khalili
+Author-email: ahmadkhalili2020@gmail.com
+License: MIT
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: djangorestframework
+Requires-Dist: pillow
+Provides-Extra: jalali
+Requires-Dist: jdatetime; extra == "jalali"
+
+### package is only for test
