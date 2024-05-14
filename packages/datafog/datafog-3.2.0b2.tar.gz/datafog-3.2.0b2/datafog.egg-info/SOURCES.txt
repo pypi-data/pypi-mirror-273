@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+datafog/__about__.py
+datafog/__init__.py
+datafog/config.py
+datafog/main.py
+datafog.egg-info/PKG-INFO
+datafog.egg-info/SOURCES.txt
+datafog.egg-info/dependency_links.txt
+datafog.egg-info/requires.txt
+datafog.egg-info/top_level.txt
+tests/test_main.py
