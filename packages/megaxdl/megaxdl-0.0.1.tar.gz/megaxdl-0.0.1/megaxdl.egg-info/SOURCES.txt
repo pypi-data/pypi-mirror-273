@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Megaxdl/__init__.py
+Megaxdl/crypto.py
+Megaxdl/errors.py
+Megaxdl/mega.py
+megaxdl.egg-info/PKG-INFO
+megaxdl.egg-info/SOURCES.txt
+megaxdl.egg-info/dependency_links.txt
+megaxdl.egg-info/requires.txt
+megaxdl.egg-info/top_level.txt
