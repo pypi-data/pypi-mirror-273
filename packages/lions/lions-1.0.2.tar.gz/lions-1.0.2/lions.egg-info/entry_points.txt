@@ -1,0 +1,2 @@
+[console_scripts]
+lions = lions.main:main
