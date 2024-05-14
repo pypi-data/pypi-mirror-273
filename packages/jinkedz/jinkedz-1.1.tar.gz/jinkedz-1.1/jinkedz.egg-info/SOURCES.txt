@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jinkedz/__init__.py
+jinkedz/main.py
+jinkedz.egg-info/PKG-INFO
+jinkedz.egg-info/SOURCES.txt
+jinkedz.egg-info/dependency_links.txt
+jinkedz.egg-info/requires.txt
+jinkedz.egg-info/top_level.txt
