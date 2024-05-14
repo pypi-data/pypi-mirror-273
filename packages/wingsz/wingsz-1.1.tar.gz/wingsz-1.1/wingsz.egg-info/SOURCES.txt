@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wingsz/__init__.py
+wingsz/main.py
+wingsz.egg-info/PKG-INFO
+wingsz.egg-info/SOURCES.txt
+wingsz.egg-info/dependency_links.txt
+wingsz.egg-info/requires.txt
+wingsz.egg-info/top_level.txt
