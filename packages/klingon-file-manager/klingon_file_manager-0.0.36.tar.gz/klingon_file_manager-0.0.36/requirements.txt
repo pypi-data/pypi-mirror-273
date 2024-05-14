@@ -1,0 +1,27 @@
+# File Content
+boto3>=1.18
+pytest>=6.2
+lorem
+sphinx
+pydantic
+sphinx_rtd_theme
+sphinx_autodoc_typehints
+nbsphinx
+setuptools
+ipython
+python-dotenv
+datetime
+uuid
+python-magic
+chardet
+mkdocs
+mkdocs-gen-files
+mkdocs-material
+mkdocs-gen-files 
+mkdocs-literate-nav 
+mkdocs-section-index
+mkdocstrings-crystal
+lru_cache
+GitPython
+pyenchant
+
