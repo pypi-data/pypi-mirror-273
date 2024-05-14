@@ -1,0 +1,4 @@
+flask
+werkzeug
+abstract_pandas
+requests
