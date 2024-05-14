@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+behemothz/__init__.py
+behemothz/main.py
+behemothz.egg-info/PKG-INFO
+behemothz.egg-info/SOURCES.txt
+behemothz.egg-info/dependency_links.txt
+behemothz.egg-info/requires.txt
+behemothz.egg-info/top_level.txt
