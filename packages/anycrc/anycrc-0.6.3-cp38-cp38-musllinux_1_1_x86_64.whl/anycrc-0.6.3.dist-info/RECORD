@@ -1,0 +1,11 @@
+anycrc-0.6.3.dist-info/LICENSE,sha256=3K76btJE16RVEFRSVhIoA4CbgTLVe9KtwgwEOl4FHw4,1096
+anycrc-0.6.3.dist-info/METADATA,sha256=M3xh43zUQB_jnz87IyBNx6c5I8Cko1PJfwJyFTKlt_M,2719
+anycrc-0.6.3.dist-info/RECORD,,
+anycrc-0.6.3.dist-info/top_level.txt,sha256=HbCFlOeYEx638RXhl-PI4tQtdbHhwyL9ObHhSuPNyaA,7
+anycrc-0.6.3.dist-info/WHEEL,sha256=k_zE_2WnvU3_qr5kAxQ9opmqtvQMjCBupE0jVhXPImM,111
+anycrc/anycrc.cpython-38-x86_64-linux-gnu.so,sha256=GLK41PpSwQ5uJcUeQ-ShBzkqa5BmqK4E_oYyJAwzqwA,716073
+anycrc/anycrc.pyx,sha256=Lo-WmHDD62AKdMfD3XJJn59-iXZxOKScl91C7JjNS74,5192
+anycrc/__init__.py,sha256=6WUxWuBxHrqqbAXrKSveKIr9ZMlihLyjTONUmYSHIBw,21
+anycrc/models.py,sha256=TmkS9QPTytdIp0kz6Uq-Xmfd4Z6awiCrvRZZE4xGkzI,17619
+anycrc/__main__.py,sha256=ay_Zj4WzMly0908-mnet9An0gae346PwzUg4QsaU6j4,258
+anycrc.libs/libgomp-cd951527.so.1.0.0,sha256=U2zda7o5P6DwCQHNyzt7Hw13pk9wKHfh-c4ZgCzbfsU,187009
