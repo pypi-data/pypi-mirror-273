@@ -1,0 +1,4 @@
+[console_scripts]
+demcli = roughness_calculator.old_entry_points.demcli:main
+demgui = roughness_calculator.old_entry_points.demgui:main
+surface-roughness = roughness_calculator.main:main
