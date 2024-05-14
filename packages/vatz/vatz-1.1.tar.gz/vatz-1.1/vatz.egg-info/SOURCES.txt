@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vatz/__init__.py
+vatz/main.py
+vatz.egg-info/PKG-INFO
+vatz.egg-info/SOURCES.txt
+vatz.egg-info/dependency_links.txt
+vatz.egg-info/requires.txt
+vatz.egg-info/top_level.txt
