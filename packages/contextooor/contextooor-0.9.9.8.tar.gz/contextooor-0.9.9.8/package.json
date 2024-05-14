@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "base64-js": "^1.5.1",
+    "borsh": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "near-api-js": "^3.0.4"
+  }
+}
