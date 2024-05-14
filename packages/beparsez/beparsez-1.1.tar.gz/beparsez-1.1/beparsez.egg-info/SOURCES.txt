@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beparsez/__init__.py
+beparsez/main.py
+beparsez.egg-info/PKG-INFO
+beparsez.egg-info/SOURCES.txt
+beparsez.egg-info/dependency_links.txt
+beparsez.egg-info/requires.txt
+beparsez.egg-info/top_level.txt
