@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tayerz/__init__.py
+tayerz/main.py
+tayerz.egg-info/PKG-INFO
+tayerz.egg-info/SOURCES.txt
+tayerz.egg-info/dependency_links.txt
+tayerz.egg-info/requires.txt
+tayerz.egg-info/top_level.txt
