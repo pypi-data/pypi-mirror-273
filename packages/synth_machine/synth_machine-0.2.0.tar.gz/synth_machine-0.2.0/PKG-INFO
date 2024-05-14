@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: synth_machine
+Version: 0.2.0
+Summary: 
+License: GPL-3.0-or-later
+Author: CTO
+Author-email: cto@hiresynth.ai
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.25.1,<0.26.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: jq (>=1.6.0,<2.0.0)
+Requires-Dist: jsonschema (>=4.19.2,<5.0.0)
+Requires-Dist: object-store-python (>=0.1.10,<0.2.0)
+Requires-Dist: opa-python-client (>=1.3.6,<2.0.0)
+Requires-Dist: openai (==1.28.1)
+Requires-Dist: partial_json_parser
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: tiktoken (==0.6.0)
+Requires-Dist: transitions (>=0.9.0,<0.10.0)
+Requires-Dist: urllib3
+Description-Content-Type: text/markdown
+
+# Synth Machine
+[![python](https://img.shields.io/badge/Python-3.12-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+[![tests](https://github.com/HireSynth/synth_machine/actions/workflows/tests.yaml/badge.svg)](https://github.com/HireSynth/synth_machine/actions/workflows/tests.yaml)
+[![pre-commit](https://github.com/HireSynth/synth_machine/actions/workflows/precommit.yaml/badge.svg)](https://github.com/HireSynth/synth_machine/actions/workflows/precommit.yaml)
+
+
