@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: docmake
+Version: 0.1.3
+Summary: Generate pdf files from other format documents.
+Home-page: https://github.com/morisono/docmaker_webui
+Author: admin
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/morisono/docmaker_webui
+Description-Content-Type: text/markdown
+
+# DocMaker Web UI
+
+DocMaker Web UI is for converting various document formats to PDF format. Generate PDF documents from files such as Markdown, HTML, and CSS by combining them.
+
+## Key Features
+
+- Generate PDFs by combining Markdown, HTML, and CSS.
+- Add custom headers and footers.
+- User-friendly Gradio web interface. 
+
+## Installation
+
+1. Install Python.
+
+2. Clone this repository:
+
+   ```bash
+   git clone https://github.com/morisono/docmaker_webui.git
+   ```
+
+3. Navigate to the project directory:
+
+   ```bash
+   cd docmaker_webui
+   ```
+
+4. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## CLI Usage
+
+```sh
+usage: 
+    [Examples]
+        - Generate a PDF:
+            docmake -i in_*.[html|pdf] -o out.pdf [options]
+
+            For example:
+                docmake -i in_*.html -o out.pdf --scale 0.8 --css ' h1 { color: red }'
+
+        - Encrypt/Decrypto a PDF:
+            docmake -i in.[html|pdf] -o out.pdf [options]
+
+            For example:
+                docmake -i demo.pdf -o demo.encrypted.pdf --encrypto --autogen
+                docmake -i demo.encrypted.pdf -o demo.decrypted.pdf --decrypto
+
+    [Units]
+        You can use the following units for width, height, and margin options:
+        - px (pixels) - Default unit., in (inches)., cm (centimeters)., mm (millimeters).
+
+    [Formats]
+        The following paper formats are available for the format option:
+        - Letter, Legal, Tabloid, Ledger, A0, A1, A2, A3, A4 (default), A5
+
+    [PDF Metadata]
+        Metadata format: "/Key Value" pairs separated by space.
+        - /Title, /Author, /Subject, /Author, /Keyword, /Creator, /Producer, /CreateDate,  /ModDate, /Trapped
+    
+
+Generate PDF from HTML pages.
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT [INPUT ...], --input INPUT [INPUT ...]
+                        Input files.
+  -o OUTPUT, --output OUTPUT
+                        Output file path.
+  --scale SCALE         Scale of the printed page | 0.8 for 80 percent.
+  --displayHeaderFooter
+                        Display header and footer.
+  --headerTemplate HEADERTEMPLATE
+                        Add header template as [url|path|content].
+  --footerTemplate FOOTERTEMPLATE
+                        Add footer template as [url|path|content].
+  --printBackground     Print background images.
+  --landscape           Use landscape paper orientation.
+  --pageRanges PAGERANGES
+                        Page ranges to print | '1-5,8,11-13'.
+  --format FORMAT       Paper format | 'A4'.
+  --width WIDTH         Paper width | '10cm'.
+  --height HEIGHT       Paper height | '10mm'.
+  --margin MARGIN       Margin values (e.g., 'top 10mm right 10mm')
+  --css CSS             Add css as [url|path|content]
+  --config CONFIG       Path to the config file.
+  --emulateMedia {screen,print}
+                        Type of emulate media.
+  --metadata METADATA   Add metadata in the format '/Key: Value'. Example: '/Title Document'.
+  --verbose             Print parameters when verbose.
+  --encrypto            Encrypt a PDF file.
+  --autogen             Automatically generate password for encryption.
+  --decrypto            Decrypt a PDF file.
+  --regen               Regenerate and send recovery key for decryption.
+  --webui               [WIP] Launch Gradio web UI.
+```
+
+## Web UI Usage
+
+This section provides instructions on how to use the web user interface (Web UI) of DocMaker Web UI.
+
+
+1. Start the app in the project directory:
+
+   ```bash
+   docmake --webui
+   ```
+
+2. Access it in your web browser at http://127.0.0.1:7860.
+
+3. Use the web interface to configure input files and options.
+
+4. Click the "▶" button to generate a PDF.
+
+## License
+
+This project is provided under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For inquiries regarding support, including questions and bug reports, please use [GitHub Issues](https://github.com/morisono/docmaker_webui/issues).
+

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "docmake"
+version = "0.1.3"
+description = "Generate pdf files from other format documents."
+authors = ["admin"]
+readme = "README.md"
+packages = [{include = "src"}]
+repository = "https://github.com/morisono/docmaker_webui"
+
+[tool.poetry.scripts]
+docmake = 'src.app:main'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
