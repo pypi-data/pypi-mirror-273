@@ -1,0 +1,8 @@
+cabaret/__init__.py,sha256=bk5au1rzQagblYARbcUo41-gIopBnlvLKoSdausr0lA,75
+cabaret/camera.py,sha256=fpbKjbDUVe8Z-y7kd1qbeiZWKWqYB3KSjKwLK5HBow4,582
+cabaret/image.py,sha256=QUFe_VfkEd04xrHWLMNkE3s-jojrcSd81sB0t6mxa_M,4460
+cabaret/queries.py,sha256=jCalUIWZ5tQJcDLoS3hyobj_S-h_FYKC4xv3u93kzeA,5309
+cabaret-0.0.6.dist-info/METADATA,sha256=tY935XT6WwIwag4xSLTwEdH5bLkGKDHbkO83AXqhPys,1625
+cabaret-0.0.6.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+cabaret-0.0.6.dist-info/licenses/LICENSE,sha256=xCffUN0P7yV0yxdb8JccXVOpyIxTRGgEXxZcygAHJpY,1080
+cabaret-0.0.6.dist-info/RECORD,,
