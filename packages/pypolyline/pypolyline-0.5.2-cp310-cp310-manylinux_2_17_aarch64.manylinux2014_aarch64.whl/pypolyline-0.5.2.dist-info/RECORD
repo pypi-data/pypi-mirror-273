@@ -1,0 +1,11 @@
+_version.py,sha256=9wH2PDsTkkxdqSU9YziEjDTHYLEcKPSYr6RofNSEaJk,411
+pypolyline/stdbool.h,sha256=Kh3yV7KFb1KFWAI41x-ekYZe4tLiQruhr5YP5jmmBEU,68
+pypolyline/libpolylineffi.so,sha256=ZbU6rEpoYWoy4YlOLNsplLlji0_Os8LOuwgZAH1kIB8,293112
+pypolyline/cutil.cpython-310-aarch64-linux-gnu.so,sha256=HkDJyq-unf-ni4gdT_nIacj6ErtIp4XbZMtwlzvdJHY,1523168
+pypolyline/__init__.py,sha256=5QI4Jou9L-YJAf_oN9TgRXVKgt_Unc39oADo2Ch8bLI,243
+pypolyline/pypolyline_p.pxd,sha256=ogZ-vr8o7jfzkRUAZmbTNOeggTdQ4qfpMerGy-aRa9k,400
+pypolyline/cutil.pyx,sha256=R2y_NnpM-NzNGbiWNz6MrV2qhYAJ4NG6k7HyQJE_ITU,3213
+pypolyline-0.5.2.dist-info/METADATA,sha256=7qiX6ho5VVakP34xDFdT4OYDzA5YGU35Nl2ZQCJEGQ4,5166
+pypolyline-0.5.2.dist-info/RECORD,,
+pypolyline-0.5.2.dist-info/top_level.txt,sha256=It5uR9SIwc6YrU0-tz7fK78T3qPZ2-NMUex3EbCTgYY,20
+pypolyline-0.5.2.dist-info/WHEEL,sha256=H0QERcJuEKoCcMIutioyRp9n3LaQjdVoB25CT5wQyPk,154
