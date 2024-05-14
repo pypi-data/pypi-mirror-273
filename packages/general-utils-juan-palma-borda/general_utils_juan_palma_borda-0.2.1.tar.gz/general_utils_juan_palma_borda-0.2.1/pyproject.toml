@@ -1,0 +1,19 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+[project]
+name = "general-utils-juan-palma-borda"
+version = "0.2.1"
+authors = [
+    {name = "Juan Palma Borda", email = "juanpalmaborda@hotmail.com"},
+]
+description = "Group of general utils from different projects."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["utils", "colors", "prints", "math_operations"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
