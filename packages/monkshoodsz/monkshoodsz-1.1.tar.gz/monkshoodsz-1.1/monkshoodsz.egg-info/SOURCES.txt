@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+monkshoodsz/__init__.py
+monkshoodsz/main.py
+monkshoodsz.egg-info/PKG-INFO
+monkshoodsz.egg-info/SOURCES.txt
+monkshoodsz.egg-info/dependency_links.txt
+monkshoodsz.egg-info/requires.txt
+monkshoodsz.egg-info/top_level.txt
