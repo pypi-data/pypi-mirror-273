@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sensimotorz/__init__.py
+sensimotorz/main.py
+sensimotorz.egg-info/PKG-INFO
+sensimotorz.egg-info/SOURCES.txt
+sensimotorz.egg-info/dependency_links.txt
+sensimotorz.egg-info/requires.txt
+sensimotorz.egg-info/top_level.txt
