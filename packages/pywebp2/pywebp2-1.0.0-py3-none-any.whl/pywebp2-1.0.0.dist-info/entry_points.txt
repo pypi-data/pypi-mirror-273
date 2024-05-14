@@ -1,0 +1,3 @@
+[console_scripts]
+pywebp = pywebp2.core:main
+

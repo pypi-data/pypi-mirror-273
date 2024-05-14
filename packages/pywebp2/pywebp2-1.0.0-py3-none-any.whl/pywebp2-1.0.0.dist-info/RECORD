@@ -1,0 +1,9 @@
+pywebp2-1.0.0.dist-info/METADATA,sha256=uQDT0OEn1dH5YaBLBfA2QuI8BoIX6T13iH60Z5857nc,5768
+pywebp2-1.0.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+pywebp2-1.0.0.dist-info/entry_points.txt,sha256=q_grVAn0KBOcsWiPq6QiJoxcPg5bH3_HBH_PTGKRCu8,46
+pywebp2-1.0.0.dist-info/licenses/LICENSE,sha256=cPnRUI3_IRwoBueQY3E6i1Fky07sPl_AYx9MxWbTeuY,1080
+pywebp2/__main__.py,sha256=f7dM50eZMsbeTML6pAMyTZaRxFklNI2VuJ1FoKANPV0,69
+pywebp2/__version__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+pywebp2/_arg_parser.py,sha256=1Oht64ewXyfYcPH162qRpbQ48RECWNHKnpKhbL5u03w,2195
+pywebp2/core.py,sha256=Usd_ZmQChxIKzgF8cH2_t1a7CLBKwcCGB7oNSQncBIY,4438
+pywebp2-1.0.0.dist-info/RECORD,,
