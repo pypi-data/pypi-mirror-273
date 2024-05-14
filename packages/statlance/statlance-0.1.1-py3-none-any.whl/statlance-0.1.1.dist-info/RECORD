@@ -1,0 +1,17 @@
+statlance/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+statlance/core/__init__.py,sha256=pQNkf_C9IWnBtcUDnQTKvD-Fps5Grre3ILJwzk9hIQ4,29
+statlance/core/featuring.py,sha256=qvoL6xjGm9KSjCelPPI6A8T8XtwiiEALd02fKOfaXCU,14213
+statlance/core/stats.py,sha256=vZHE4G-br8N1nrPDpgPMWw3yDluvfhJBYID4ZYazkKw,3223
+statlance/core/viz.py,sha256=bMCN4a2Tu0RRLBKJ0Et-9KY4R_hBdkkKtBpZLL2eXus,2963
+statlance/utils/__init__.py,sha256=WDUa7x637g_2WAMxvoVvrsUoIqD3NyGLRoCKFUX-Pzc,73
+statlance/utils/helper_functions.py,sha256=aj_9SmKvugSXraQ1AgrC-HQCggPwO8u1lBbwmcmnZQg,1230
+tests/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_featuring.py,sha256=aTQw6QA0POFfWbgXtx9PcSQSqLC3EgOUquHTJoJy5-E,1076
+tests/test_stats.py,sha256=NYmhIm0-mn6ecTu25YOf9FfrqgxUleAjPajqgb4ToTM,893
+tests/test_viz.py,sha256=Vfu_ePlNbX2wKsNuothcqC1OC_I0PIkhAgUGnYVUeFg,801
+statlance-0.1.1.dist-info/LICENSE.md,sha256=Px_tYRQJcjuYctnaRkMYPSgskKeStGixzUCKQi6cgl4,35151
+statlance-0.1.1.dist-info/METADATA,sha256=p786AP-GJKfmpWnjBcT0HUfdK0SUyjeI8PvpQP_qK2g,36727
+statlance-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+statlance-0.1.1.dist-info/entry_points.txt,sha256=_4fo7Cg-qaRIlYXRi2sWV9LY6WLkU6qmrJKXG_mAU5Q,54
+statlance-0.1.1.dist-info/top_level.txt,sha256=1Oxym7-jbdGtioaWDeQpRRc-hwh7TDv9NAU2cYS0Zhc,16
+statlance-0.1.1.dist-info/RECORD,,
