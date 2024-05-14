@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+idiopsychologicalz/__init__.py
+idiopsychologicalz/main.py
+idiopsychologicalz.egg-info/PKG-INFO
+idiopsychologicalz.egg-info/SOURCES.txt
+idiopsychologicalz.egg-info/dependency_links.txt
+idiopsychologicalz.egg-info/requires.txt
+idiopsychologicalz.egg-info/top_level.txt
