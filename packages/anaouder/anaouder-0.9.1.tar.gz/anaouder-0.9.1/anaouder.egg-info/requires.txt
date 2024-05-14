@@ -1,0 +1,8 @@
+jiwer
+pydub>=0.25.1
+pytz
+sounddevice
+srt
+static_ffmpeg
+tqdm==4.64.1
+vosk
