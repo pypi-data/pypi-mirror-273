@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pop-sort
+Version: 0.1
+Summary: Project for exploring popular sorting algorithms.
+Home-page: https://github.com/MartynasGr/pop_sort
+Author: Martynas Greičius
+Author-email: martynas.greicius@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Popular sorting
+Library containing some of the most popular sorting algorithms to play around with. 
