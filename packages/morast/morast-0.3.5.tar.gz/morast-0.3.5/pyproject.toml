@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morast"
+dynamic = ["version"]
+description = "Module reference by analyzing the syntax tree"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+keywords = [
+  "ast",
+  "documentation",
+]
+authors = [
+  {name = "Rainer Schwarzbach", email = "rainer@blackstream.de"},
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Pre-processors",
+  "Topic :: Text Processing :: Markup :: Markdown",
+  "Intended Audience :: Developers",
+]
+
+dependencies = [
+  "PyYAML>=6.0.1",
+  "smdg>=0.2.0",
+]
+
+[project.scripts]
+morast = "morast.__main__:main"
+
+[project.urls]
+Homepage = "https://gitlab.com/blackstream-x/morast"
+Documentation = "https://blackstream-x.gitlab.io/morast"
+CI = "https://gitlab.com/blackstream-x/morast/-/pipelines"
+"Bug Tracker" = "https://gitlab.com/blackstream-x/morast/-/issues"
+Repository = "https://gitlab.com/blackstream-x/morast.git"
+
+[tool.setuptools.dynamic]
+version = {attr = "morast.__version__"}
+
+[tool.setuptools.package-data]
+"morast" = ["py.typed"]
+
