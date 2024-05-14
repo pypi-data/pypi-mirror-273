@@ -1,0 +1,12 @@
+colorama
+loguru
+pytz
+prettytable
+pyyaml
+rsa
+pycryptodome
+paramiko
+PyMySQL
+pyotp
+qrcode[pil]
+opencv-python
