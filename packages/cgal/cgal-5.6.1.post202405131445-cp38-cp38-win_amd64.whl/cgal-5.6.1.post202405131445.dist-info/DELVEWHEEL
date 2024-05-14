@@ -1,0 +1,2 @@
+Version: 1.6.0
+Arguments: ['C:\\Miniconda\\envs\\test\\Scripts\\delvewheel', 'repair', '--ignore-in-wheel', 'cgal-5.6.1.post202405131445-cp38-cp38-win_amd64.whl', '-w', 'fixed_wheels']
