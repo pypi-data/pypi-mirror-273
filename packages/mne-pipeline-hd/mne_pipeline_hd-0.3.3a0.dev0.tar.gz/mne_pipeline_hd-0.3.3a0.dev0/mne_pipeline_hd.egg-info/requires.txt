@@ -1,0 +1,25 @@
+autoreject
+h5io
+h5netcdf
+mne
+mne-connectivity
+mne-qt-browser
+nibabel
+pandas
+psutil
+pyqtdarktheme
+pyvistaqt
+qtpy
+vtk
+
+[:sys_platform == "darwin"]
+pyobjc-framework-Cocoa
+
+[tests]
+black
+pre-commit
+pydata-sphinx-theme
+pytest
+pytest-qt
+ruff
+sphinx
