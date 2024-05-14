@@ -1,0 +1,4 @@
+requests>=2.24.0
+pyco-utils>=23.2.16
+json5>=0.9.1
+rtoml>=0.9.0
