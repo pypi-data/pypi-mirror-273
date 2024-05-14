@@ -1,0 +1,15 @@
+compas_gmsh/__init__.py,sha256=H8I-udef-pSNOL7QkApFLUeGhryztIuxkz8StnV5448,1320
+compas_gmsh/options.py,sha256=1rQ1JF-LSVnhkQ_J_nTedTBsLRHG9TvUH1cDngoi5S0,7371
+compas_gmsh/conversions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compas_gmsh/models/__init__.py,sha256=DXBarOvRaehQfecShlEpGIpiXSJG79EZnZV6z45bf28,165
+compas_gmsh/models/csg.py,sha256=0Mibwte8e5GVnJuf8MMg1DHSVJ1VcFkQC2HqChNU4zI,4627
+compas_gmsh/models/mesh.py,sha256=xbqsPXX0rEkYFWVkR7Ida9bp_dq2X7lFV-yoRIZC4VE,3649
+compas_gmsh/models/model.py,sha256=u3LlRq3wDX5VPn3f73Lswto4kXHOUlsmgydZW4dMD7g,24848
+compas_gmsh/models/shape.py,sha256=3H8XmRBvueF4CklugcrX1b4Au4k0yUo9Tc39rgby_VI,4864
+compas_gmsh/triangulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compas_gmsh-0.4.2.dist-info/LICENSE.GPL,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+compas_gmsh-0.4.2.dist-info/LICENSE.MIT,sha256=tNf0F-3UgZANk-KPUGRtXiv8c8A7CXwtl6cSltBtenE,1071
+compas_gmsh-0.4.2.dist-info/METADATA,sha256=XTQtzXiVDmzj3uJc74KvHexGX_8yP98ofM2OfGTDmyA,2176
+compas_gmsh-0.4.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+compas_gmsh-0.4.2.dist-info/top_level.txt,sha256=v32Si56npgsvroPbkO62wo_papWGCDAMoA-_br3UMCI,12
+compas_gmsh-0.4.2.dist-info/RECORD,,
