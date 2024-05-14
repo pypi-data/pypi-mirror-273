@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+quickseries/__init__.py
+quickseries/approximate.py
+quickseries/benchmark.py
+quickseries/expansions.py
+quickseries/simplefit.py
+quickseries/sourceutils.py
+quickseries/sputils.py
+quickseries.egg-info/PKG-INFO
+quickseries.egg-info/SOURCES.txt
+quickseries.egg-info/dependency_links.txt
+quickseries.egg-info/requires.txt
+quickseries.egg-info/top_level.txt

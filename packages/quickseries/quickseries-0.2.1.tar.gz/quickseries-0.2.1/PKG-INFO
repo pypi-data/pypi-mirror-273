@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: quickseries
+Version: 0.2.1
+Home-page: https://github.com/millionconcepts/quickseries.git
+Author: Michael St. Clair
+Author-email: mstclair@millionconcepts.com
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: dustgoggles
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Provides-Extra: jit
+Requires-Dist: numba; extra == "jit"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"

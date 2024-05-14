@@ -1,0 +1,10 @@
+dustgoggles
+numpy
+scipy
+sympy
+
+[jit]
+numba
+
+[tests]
+pytest
