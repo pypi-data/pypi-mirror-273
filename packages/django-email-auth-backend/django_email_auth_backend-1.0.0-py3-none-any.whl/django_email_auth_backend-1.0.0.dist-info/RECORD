@@ -1,0 +1,14 @@
+django_email_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_email_auth/apps.py,sha256=xcyQ1lmk16KReO0ZXiQs29ljgA3N3jnfz9e-uCMsSwE,120
+django_email_auth/backend.py,sha256=maAPBdcdDKDXRPTh1w1XFTxrdXncidJAwx7fLraUbeQ,1062
+django_email_auth/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_email_auth/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_email_auth/management/commands/create_admin.py,sha256=yikzQ80uJmWhq8Uz7qfyvLRauJDNNx_lxrpOi_2NSDM,2850
+django_email_auth/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_email_auth/tests/conftest.py,sha256=v0VYpMWaiMvoUefGSOz7i8fbsXIeN2HJ6TW4aYdR23c,1761
+django_email_auth/tests/test_create_admin.py,sha256=HZ_vXnDrr8H1qnRRTHcDa4aS32cweITQ0SihxfU6Q_w,2254
+django_email_auth/tests/test_custom_auth.py,sha256=Y-FZQ1KK23rGUwCx1k0FqfKBeFn_VD9Hvn9048wnZA8,1076
+django_email_auth_backend-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+django_email_auth_backend-1.0.0.dist-info/METADATA,sha256=5pursV6nEYXCgT5lPzHsGcb6lgfHRpE2CEP8vsE5wS8,1256
+django_email_auth_backend-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_email_auth_backend-1.0.0.dist-info/RECORD,,
