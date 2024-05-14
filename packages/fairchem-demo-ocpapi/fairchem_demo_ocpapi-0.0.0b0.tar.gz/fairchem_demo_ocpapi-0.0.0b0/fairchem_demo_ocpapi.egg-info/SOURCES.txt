@@ -1,0 +1,6 @@
+pyproject.toml
+fairchem/__init__.py
+fairchem_demo_ocpapi.egg-info/PKG-INFO
+fairchem_demo_ocpapi.egg-info/SOURCES.txt
+fairchem_demo_ocpapi.egg-info/dependency_links.txt
+fairchem_demo_ocpapi.egg-info/top_level.txt
