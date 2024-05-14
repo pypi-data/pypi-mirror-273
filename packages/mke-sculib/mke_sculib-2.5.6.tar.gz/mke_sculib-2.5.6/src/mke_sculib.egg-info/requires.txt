@@ -1,0 +1,6 @@
+requests
+python-dateutil
+numpy
+pandas
+astropy
+websockets>=12.0
