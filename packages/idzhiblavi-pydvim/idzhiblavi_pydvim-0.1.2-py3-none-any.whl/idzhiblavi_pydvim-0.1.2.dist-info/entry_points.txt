@@ -1,0 +1,2 @@
+[console_scripts]
+dots = dvim.__main__:cli_entrypoint
