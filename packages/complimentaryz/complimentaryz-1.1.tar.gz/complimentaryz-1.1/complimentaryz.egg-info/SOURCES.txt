@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+complimentaryz/__init__.py
+complimentaryz/main.py
+complimentaryz.egg-info/PKG-INFO
+complimentaryz.egg-info/SOURCES.txt
+complimentaryz.egg-info/dependency_links.txt
+complimentaryz.egg-info/requires.txt
+complimentaryz.egg-info/top_level.txt
