@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+waegz/__init__.py
+waegz/main.py
+waegz.egg-info/PKG-INFO
+waegz.egg-info/SOURCES.txt
+waegz.egg-info/dependency_links.txt
+waegz.egg-info/requires.txt
+waegz.egg-info/top_level.txt
