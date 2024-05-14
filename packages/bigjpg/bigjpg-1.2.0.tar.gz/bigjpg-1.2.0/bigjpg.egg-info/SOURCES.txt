@@ -1,0 +1,15 @@
+README.md
+setup.py
+bigjpg/__init__.py
+bigjpg/enlarger.py
+bigjpg.egg-info/PKG-INFO
+bigjpg.egg-info/SOURCES.txt
+bigjpg.egg-info/dependency_links.txt
+bigjpg.egg-info/requires.txt
+bigjpg.egg-info/top_level.txt
+bigjpg/types/enlarge_values.py
+bigjpg/types/noises.py
+bigjpg/types/styles.py
+bigjpg/types/enlarge_values.py
+bigjpg/types/noises.py
+bigjpg/types/styles.py
