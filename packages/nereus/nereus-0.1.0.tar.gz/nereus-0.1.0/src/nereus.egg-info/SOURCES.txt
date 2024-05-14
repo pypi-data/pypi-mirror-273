@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/nereus/__init__.py
+src/nereus/intake_flatten.py
+src/nereus/nereus.py
+src/nereus/yaml_searcher.py
+src/nereus.egg-info/PKG-INFO
+src/nereus.egg-info/SOURCES.txt
+src/nereus.egg-info/dependency_links.txt
+src/nereus.egg-info/requires.txt
+src/nereus.egg-info/top_level.txt
