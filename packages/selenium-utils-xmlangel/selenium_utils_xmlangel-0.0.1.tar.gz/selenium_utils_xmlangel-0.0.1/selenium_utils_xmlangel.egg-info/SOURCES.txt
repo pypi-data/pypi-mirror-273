@@ -1,0 +1,10 @@
+README.md
+setup.py
+selenium-utils-xmlangel/__init__.py
+selenium-utils-xmlangel/compare-image.py
+selenium_utils_xmlangel.egg-info/PKG-INFO
+selenium_utils_xmlangel.egg-info/SOURCES.txt
+selenium_utils_xmlangel.egg-info/dependency_links.txt
+selenium_utils_xmlangel.egg-info/not-zip-safe
+selenium_utils_xmlangel.egg-info/requires.txt
+selenium_utils_xmlangel.egg-info/top_level.txt
