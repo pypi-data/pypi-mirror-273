@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+agreersz/__init__.py
+agreersz/main.py
+agreersz.egg-info/PKG-INFO
+agreersz.egg-info/SOURCES.txt
+agreersz.egg-info/dependency_links.txt
+agreersz.egg-info/requires.txt
+agreersz.egg-info/top_level.txt
