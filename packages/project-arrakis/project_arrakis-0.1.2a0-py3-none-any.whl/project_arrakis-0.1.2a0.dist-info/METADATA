@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: project-arrakis
+Version: 0.1.2a0
+Summary: One-way coupled Lagrangian Particle Tracking for CFD simulations. Includes many auxiliary tools.
+Author-email: Dilip Kalagotla <dilipkalagotla@gmail.com>
+Project-URL: homepage, https://github.com/kalagotla/project-arrakis
+Project-URL: issues, https://github.com/kalagotla/project-arrakis/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# project-arrakis
+
+Python based particle tracking algorithms for CFD data
+
+A highly parallelized set of Lagrangian particle tracking (LPT) algorithms based on Python to post-process steady and unsteady CFD data. An advanced programming interface (API) is developed for uncertainty quantification of optical velocimetry data.
+
+# Installation:
+Run the following command in the terminal to install the package:
+```pip install project-arrakis```
+
+### LPT Algorithms:
+
+A sample code to start off is presented in main.py
