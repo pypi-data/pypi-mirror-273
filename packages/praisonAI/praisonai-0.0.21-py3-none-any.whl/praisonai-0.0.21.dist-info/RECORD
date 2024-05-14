@@ -1,0 +1,14 @@
+praisonai/__init__.py,sha256=5SwxMGd4vNUmYedF_HLLQBo4u8zMEWuEfKhHqJrEE1I,59
+praisonai/__main__.py,sha256=MVgsjMThjBexHt4nhd760JCqvP4x0IQcwo8kULOK4FQ,144
+praisonai/agents_generator.py,sha256=ep7Qm47fzX4MMoHCl_7QYPeW8h8PqZcR2HWvYrzIVAY,8690
+praisonai/auto.py,sha256=x5bK8CF_sNc9zxxHR3cLQrqFf8wAUI6YZgI5OBdmxXM,5390
+praisonai/cli.py,sha256=I38bE9CpV4xWgNZKraKRPfrPWGXwCi7Lxgo95Py_HBg,5117
+praisonai/deploy.py,sha256=U04_FEEpCiskRikwAV_3gy4nsgt91GOHj7DdQZdu63g,3539
+praisonai/inbuilt_tools/__init__.py,sha256=mUKnbL6Gram9c9f2m8wJwEzURBLmPEOcHzwySBH89YA,74
+praisonai/inbuilt_tools/autogen_tools.py,sha256=m3Ws2444hzgkiEjqw9Y4PFb_LsU9ZDD23C03uNsyeu0,14556
+praisonai/test.py,sha256=4bAqitWeywjZtxoOAdcBTLaYDRflZH3LSYtOpWrZBI4,3707
+praisonai/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+praisonai-0.0.21.dist-info/METADATA,sha256=Jw4hAtYGfhrkAzjDX4J7E0Z6UJkHMYJT1iukQ0-RaEE,9356
+praisonai-0.0.21.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+praisonai-0.0.21.dist-info/entry_points.txt,sha256=Qg41eW3A1-dvdV5tF7LqChfYof8Rihk2rN1fiEE3vnk,53
+praisonai-0.0.21.dist-info/RECORD,,
