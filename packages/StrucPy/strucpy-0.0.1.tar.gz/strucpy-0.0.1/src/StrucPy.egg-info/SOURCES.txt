@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/StrucPy/RCFA.py
+src/StrucPy/_RCSingle.py
+src/StrucPy/__init__.py
+src/StrucPy/_arrangeCal.py
+src/StrucPy/_forcesCal.py
+src/StrucPy.egg-info/PKG-INFO
+src/StrucPy.egg-info/SOURCES.txt
+src/StrucPy.egg-info/dependency_links.txt
+src/StrucPy.egg-info/requires.txt
+src/StrucPy.egg-info/top_level.txt
+tests/test_RCFA.py
