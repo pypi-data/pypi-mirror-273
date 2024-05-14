@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ostiumz/__init__.py
+ostiumz/main.py
+ostiumz.egg-info/PKG-INFO
+ostiumz.egg-info/SOURCES.txt
+ostiumz.egg-info/dependency_links.txt
+ostiumz.egg-info/requires.txt
+ostiumz.egg-info/top_level.txt
