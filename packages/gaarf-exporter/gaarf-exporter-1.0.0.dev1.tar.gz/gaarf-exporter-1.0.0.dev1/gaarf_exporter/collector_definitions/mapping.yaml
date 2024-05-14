@@ -1,0 +1,20 @@
+- name: mapping
+  type: service
+  query_spec:
+    customizable:
+      - level
+    level: ad_group
+    dimensions:
+      - campaign_name:
+          field: campaign.name
+      - campaign_id:
+          field: campaign.id
+      - ad_group_name:
+          field: ad_group.name
+      - ad_group_id:
+          field: ad_group.id
+    filters:
+      - 'campaign.status = ACTIVE'
+      - 'ad_group.status = ACTIVE'
+  registries:
+    - default

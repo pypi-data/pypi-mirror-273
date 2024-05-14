@@ -1,0 +1,24 @@
+- name: ad_disapprovals
+  query_spec:
+    customizable:
+      - filters
+      - level
+    level: ad_group_ad
+    dimensions:
+      - ad_group_id:
+          field: ad_group.id
+      - approval_status:
+          field: ad_group_ad.policy_summary.approval_status
+      - review_status:
+          field: ad_group_ad.policy_summary.review_status
+      - topic_type:
+          field: ad_group_ad.policy_summary.policy_topic_entries:type
+      - topic:
+          field: ad_group_ad.policy_summary.policy_topic_entries:topic
+      - ad_count:
+          field: '1'
+    filters:
+      - 'segments.date DURING TODAY'
+      - 'metrics.all_conversions > 0'
+  registries:
+    - default
