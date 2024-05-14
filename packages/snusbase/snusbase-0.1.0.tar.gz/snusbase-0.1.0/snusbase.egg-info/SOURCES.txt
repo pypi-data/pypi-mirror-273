@@ -1,0 +1,8 @@
+setup.py
+snusbase/__init__.py
+snusbase/snus.py
+snusbase.egg-info/PKG-INFO
+snusbase.egg-info/SOURCES.txt
+snusbase.egg-info/dependency_links.txt
+snusbase.egg-info/requires.txt
+snusbase.egg-info/top_level.txt

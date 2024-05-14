@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: snusbase
+Version: 0.1.0
+Summary: API Wrapper for Snusbase
+Author: leon
+Author-email: viiiee@femboy.cx
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+
+A wrapper for the database lookup website, Snusbase
