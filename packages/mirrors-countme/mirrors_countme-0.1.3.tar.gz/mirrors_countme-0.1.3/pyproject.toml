@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "mirrors-countme"
+version = "0.1.3"
+description = "Parse access logs and count hosts for DNF mirrors"
+authors = [
+    "Will Woods",
+    "Stephen Smoogen <smooge@smoogespace.com>",
+    "Adam Saleh <asaleh@redhat.com>",
+    "Patrik Polakovič <patrik@alphamail.org>",
+    "Nils Philippsen <nils@redhat.com>",
+    "James Antill <james@and.org>",
+    "Lenka Segura <lsegura@redhat.com>",
+    "Pedro Moura <pmoura@redhat.com>",
+]
+maintainers = [
+    "Fedora Infrastructure <admin@fedoraproject.org>",
+]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "http://github.com/fedora-infra/mirrors-countme"
+packages = [
+    { include = "mirrors_countme" },
+]
+include = [
+    { path = "scripts/*.sh", format = "sdist" },
+    { path = "scripts/rezip", format = "sdist" },
+    { path = "tests", format = "sdist" },
+]
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.3.2"
+pytest = "^7.3.1 || ^8.0.0"
+pytest-cov = "^4.0.0 || ^5.0.0"
+black = "^23.3.0 || ^24.0.0"
+mypy = "^1.2.0"
+hypothesis = "^6.72.4"
+ruff = "^0.2.0 || ^0.3.0 || ^0.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+countme-totals = "mirrors_countme.scripts.countme_totals:cli"
+countme-trim-raw = "mirrors_countme.scripts.countme_trim_raw:cli"
+countme-parse-access-log = "mirrors_countme.scripts.countme_parse_access_log:cli"
+countme-delete-totals = "mirrors_countme.scripts.countme_delete_totals:cli"
+
+[tool.pytest.ini_options]
+addopts = "--cov-config .coveragerc --cov=mirrors_countme --cov-report term --cov-report xml --cov-report html"
+
+[tool.black]
+line_length = 100
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+allowed-confusables = ["’"]
