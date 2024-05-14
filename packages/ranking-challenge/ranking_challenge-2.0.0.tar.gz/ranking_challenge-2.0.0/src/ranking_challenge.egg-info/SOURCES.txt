@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ranking_challenge/__init__.py
+src/ranking_challenge/fake.py
+src/ranking_challenge/fake_test.py
+src/ranking_challenge/request.py
+src/ranking_challenge/response.py
+src/ranking_challenge/survey.py
+src/ranking_challenge.egg-info/PKG-INFO
+src/ranking_challenge.egg-info/SOURCES.txt
+src/ranking_challenge.egg-info/dependency_links.txt
+src/ranking_challenge.egg-info/entry_points.txt
+src/ranking_challenge.egg-info/requires.txt
+src/ranking_challenge.egg-info/top_level.txt
