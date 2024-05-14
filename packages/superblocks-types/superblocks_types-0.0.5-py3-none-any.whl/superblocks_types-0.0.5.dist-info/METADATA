@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: superblocks-types
+Version: 0.0.5
+Summary: The Official Python Types for Superblocks
+Home-page: https://github.com/superblocksteam/types
+Author: Joey Greco
+Author-email: joeyagreco@gmail.com
+License: MIT
+Keywords: superblocks types
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Superblocks Python Types
+
+[![Python version](https://img.shields.io/badge/python-%3E=_3.10-teal.svg)](https://www.python.org/downloads/)
+
+## Quickstart
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```sh
+pip install superblocks-types
+```
+
+## Development
+
+Install Dependencies
+
+```sh
+make deps
+```
+
+Build Package
+
+```sh
+make pypi-pkg-build
+```
