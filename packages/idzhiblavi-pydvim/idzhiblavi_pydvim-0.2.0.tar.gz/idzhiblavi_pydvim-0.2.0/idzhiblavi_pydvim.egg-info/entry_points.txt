@@ -1,0 +1,2 @@
+[console_scripts]
+dvim = dvim.__main__:cli_entrypoint
