@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonaffinityz/__init__.py
+nonaffinityz/main.py
+nonaffinityz.egg-info/PKG-INFO
+nonaffinityz.egg-info/SOURCES.txt
+nonaffinityz.egg-info/dependency_links.txt
+nonaffinityz.egg-info/requires.txt
+nonaffinityz.egg-info/top_level.txt
