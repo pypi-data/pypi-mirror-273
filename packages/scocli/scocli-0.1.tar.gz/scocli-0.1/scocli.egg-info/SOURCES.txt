@@ -1,0 +1,13 @@
+README.md
+setup.py
+sco/__init__.py
+sco/addResource.py
+sco/build.py
+sco/checkManifest.py
+sco/organizeManifest.py
+sco/removeResource.py
+sco/seeManifest.py
+scocli.egg-info/PKG-INFO
+scocli.egg-info/SOURCES.txt
+scocli.egg-info/dependency_links.txt
+scocli.egg-info/top_level.txt
