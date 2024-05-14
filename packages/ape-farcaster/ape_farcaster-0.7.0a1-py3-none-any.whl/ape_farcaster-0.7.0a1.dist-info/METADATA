@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: ape-farcaster
+Version: 0.7.0a1
+Summary: ape-farcaster is a Python SDK for the Farcaster Protocol
+Author-email: Andreessen Horowitz <crypto-engineering@a16z.com>, "ApeWorX LTD." <admin@apeworx.io>
+Maintainer-email: "ApeWorX LTD." <admin@apeworx.io>
+Project-URL: Repository, https://github.com/ApeWorX/ape-farcaster
+Project-URL: Homepage, https://github.com/ApeWorX/ape-farcaster/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <4,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv <1.1,>=0.21
+Requires-Dist: pydantic <3.0.0,>=1.9.2
+Requires-Dist: pyhumps >=3.7.2
+Requires-Dist: requests >=2.28.1
+Requires-Dist: canonicaljson <3.0.0,>=1.6.4
+Requires-Dist: eth-account <0.11,>=0.8
+Requires-Dist: parsimonious <0.10.0,>=0.8.1
+Provides-Extra: dev
+Requires-Dist: IPython ; extra == 'dev'
+Requires-Dist: ape-farcaster[docs,lint,release,test] ; extra == 'dev'
+Requires-Dist: pyupgrade >=3.3.1 ; extra == 'dev'
+Requires-Dist: pre-commit <4.0,>=2.15 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: docconvert >=2.0.0 ; extra == 'docs'
+Requires-Dist: mkdocs >=1.4.2 ; extra == 'docs'
+Requires-Dist: mkdocs-material >=9.0.5 ; extra == 'docs'
+Requires-Dist: mkdocstrings <0.24.0,>=0.19.1 ; extra == 'docs'
+Requires-Dist: mkdocstrings-python <0.11.0,>=0.8.3 ; extra == 'docs'
+Requires-Dist: cairosvg >=2.6.0 ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: isort[colors] ; extra == 'lint'
+Requires-Dist: mypy >=1.0 ; extra == 'lint'
+Requires-Dist: mypy-extensions >=1.0.0 ; extra == 'lint'
+Requires-Dist: pydocstyle >=6.3.0 ; extra == 'lint'
+Requires-Dist: pylint >=2.11.1 ; extra == 'lint'
+Requires-Dist: darglint >=1.8.1 ; extra == 'lint'
+Requires-Dist: types-requests >=2.31.0.2 ; extra == 'lint'
+Requires-Dist: bandit >=1.7.1 ; extra == 'lint'
+Provides-Extra: release
+Requires-Dist: setuptools-scm ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+Provides-Extra: test
+Requires-Dist: pytest >=7.2.1 ; extra == 'test'
+Requires-Dist: coverage >=7.2.1 ; extra == 'test'
+Requires-Dist: coverage-badge >=1.1.0 ; extra == 'test'
+Requires-Dist: pytest-dependency >=0.5.1 ; extra == 'test'
+Requires-Dist: pytest-html >=3.1.1 ; extra == 'test'
+Requires-Dist: pytest-cov >=4.0.0 ; extra == 'test'
+Requires-Dist: pytest-recording >=0.12.1 ; extra == 'test'
+Requires-Dist: vcrpy >=5.1.0 ; extra == 'test'
+
+# ape-farcaster
+
+<div align="center">
+
+ape-farcaster is a modern Python SDK for the Farcaster protocol<br></br>
+
+Full documentation can be found
+
+</div>
+
+## Installation
+
+```bash
+pip install -U farcaster
+```
+
+or install with [Poetry](https://python-poetry.org/):
+
+```bash
+poetry add farcaster
+```
+
+## Usage
+
+To use the Warpcast API you need to have a Farcaster account. We will use the mnemonic or private key of the Farcaster custody account (not your main wallet) to connect to the API.
+
+First, save your Farcaster mnemonic or private key to a `.env` file. Now you can initialize the client, and automatically connect to the Farcaster API!
+
+```python
+import os
+from farcaster import Warpcast
+from dotenv import load_dotenv # can be installed with `pip install python-dotenv`
+
+load_dotenv()
+
+client = Warpcast(mnemonic=os.environ.get("<MNEMONIC_ENV_VAR>"))
+
+print(client.get_healthcheck())
+```
+
+## Examples
+
+Get a cast
+
+```python
+response = client.get_cast("0x321712dc8eccc5d2be38e38c1ef0c8916c49949a80ffe20ec5752bb23ea4d86f")
+print(response.cast.author.username) # "dwr"
+```
+
+Publish a cast
+
+```python
+response = client.post_cast(text="Hello world!")
+print(response.cast.hash) # "0x...."
+```
+
+Get a user by username
+
+```python
+user = client.get_user_by_username("mason")
+print(user.username) # "mason"
+```
+
+Get a user's followers using a fid (farcaster ID)
+
+```python
+response = client.get_followers(fid=50)
+print(response.users) # [user1, user2, user3]
+```
+
+Stream recent casts
+
+```python
+for cast in client.stream_casts():
+    if cast:
+        print(cast.text) # "Hello world!"
+```
+
+Get users who recently joined Farcaster
+
+```python
+response = client.get_recent_users()
+print(response.users) # [user1, user2, user3]
+```
+
+Get your own user object
+
+```python
+user = client.get_me()
+print(user.username) # "you"
+```
+
+Recast a cast
+
+```python
+response = client.recast("0x....")
+print(response.cast.hash) # "0x...."
+```
+
+and many, many more things.
+
+*Please note that support for Python 3.7 is no longer actively maintained. Python 3.8, 3.9, or 3.10 are recommended.*
+## 🛡 License
+
+## Disclaimer
+
+_This code is being provided as is. No guarantee, representation or warranty is being made, express or implied, as to the safety or correctness of the code. It has not been audited and as such there can be no assurance it will work as intended, and users may experience delays, failures, errors, omissions or loss of transmitted information. Nothing in this repo should be construed as investment advice or legal advice for any particular facts or circumstances and is not meant to replace competent counsel. It is strongly advised for you to contact a reputable attorney in your jurisdiction for any questions or concerns with respect thereto.
