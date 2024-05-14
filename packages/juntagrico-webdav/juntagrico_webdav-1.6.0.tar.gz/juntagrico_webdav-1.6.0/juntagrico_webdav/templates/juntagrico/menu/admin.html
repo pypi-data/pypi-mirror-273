@@ -1,0 +1,26 @@
+{% extends 'juntagrico/menu/admin.html' %}
+{% load i18n %}
+{% load juntagrico_webdav.menus %}
+{% block extend %}
+    {% if request.user.is_staff %}
+        {% admin_menu as menus %}
+        {% if menus %}
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#wd">
+                    Webdav
+                    <i class="fas fa-angle-right"></i>
+                </a>
+                <div class="collapse" id="wd">
+                    <ul class="nav flex-column subadmin-menu">
+                        {% for admin_menu in menus %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'webdav:list' admin_menu.id %}">{{ admin_menu.menu_title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+        {% endif %}
+    {% endif %}
+    {{ block.super }}
+{% endblock %}
