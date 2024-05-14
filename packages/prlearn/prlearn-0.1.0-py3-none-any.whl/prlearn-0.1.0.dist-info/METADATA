@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: prlearn
+Version: 0.1.0
+Summary: 
+Author: Daniil Bogdanov
+Author-email: exsandebest@yandex.ru
+Requires-Python: >=3.11.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
