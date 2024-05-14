@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Rkongcore.egg-info/PKG-INFO
+Rkongcore.egg-info/SOURCES.txt
+Rkongcore.egg-info/dependency_links.txt
+Rkongcore.egg-info/requires.txt
+Rkongcore.egg-info/top_level.txt
+kongcore/__init__.py
