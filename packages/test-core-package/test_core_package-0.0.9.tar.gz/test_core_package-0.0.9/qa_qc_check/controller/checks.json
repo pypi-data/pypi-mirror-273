@@ -1,0 +1,115 @@
+{
+    "ndvi":{
+        "entry":{},
+        "exit":{
+            "filename_parts_count":3,
+            "filename_endswith":".tif",
+            "filename_date_chars":8,
+            "filename_product_code":["TCX8021","IS18021","TCX8020","IS18020"],
+            "filename_product_code_count":7,
+            "filename_season_code_count":0,
+            "filename_season_code_startswith":[""],
+            "epsg_code_count":5,
+            "pixelsize":"10.0 -10.0",
+            "nodata_value":"0.0",
+            "values_range":[0,200],
+            "compression_type": "LZW"
+        },
+        "product_list":["TCX8021","IS18021","TCX8020","IS18020"],
+        "s3_bucket_names":["satsure-satimg","satimg-to-be-deleted"]
+    },
+    "ndwi":{
+        "entry":{},
+        "exit":{
+            "filename_parts_count":3,
+            "filename_endswith":".tif",
+            "filename_date_chars":8,
+            "filename_product_code":["TCX9021","IS19021","TCX9020","IS19020"],
+            "filename_product_code_count":7,
+            "filename_season_code_count":0,
+            "filename_season_code_startswith":[""],
+            "pixelsize":"10.0 -10.0",
+            "nodata_value":"0.0",
+            "values_range":[0,200],
+            "compression_type": "LZW"
+        },
+        "product_list":["TCX9021","IS19021","TCX9020","IS19020"],
+        "s3_bucket_names":["satsure-satimg","satimg-to-be-deleted"]
+    },
+    "mndwi":{
+        "entry":{},
+        "exit":{
+            "filename_parts_count":3,
+            "filename_endswith":".tif",
+            "filename_date_chars":8,
+            "filename_product_code":["TCXD021","IS1D021","TCXD020","IS1D020"],
+            "filename_product_code_count":7,
+            "filename_season_code_count":0,
+            "filename_season_code_startswith":[""],
+            "epsg_code_count":5,
+            "pixelsize":"10.0 -10.0",
+            "nodata_value":"0.0",
+            "values_range":[0,200],
+            "compression_type": "LZW"
+        },
+        "product_list":["TCXD021","IS1D021","TCXD020","IS1D020"],
+        "s3_bucket_names":["satsure-satimg","satimg-to-be-deleted"]
+    },
+    "fcc":{
+        "entry":{},
+        "exit":{
+            "filename_parts_count":3,
+            "filename_endswith":".tif",
+            "filename_date_chars":8,
+            "filename_product_code":["IS51010","IS51011"],
+            "filename_product_code_count":7,
+            "filename_season_code_count":0,
+            "filename_season_code_startswith":[""],
+            "epsg_code_count":5,
+            "pixelsize":"10.0 -10.0",
+            "nodata_value":"0.0",
+            "values_range":[0,10000],
+            "compression_type": "LZW"
+        },
+        "product_list":["IS51010","IS51011"],
+        "s3_bucket_names":["satsure-satimg","satimg-to-be-deleted"]
+    },
+    "cs":{
+        "entry":{},
+        "exit":{
+            "filename_parts_count":4,
+            "filename_endswith":".tif",
+            "filename_date_chars":8,
+            "filename_product_code":["CS"],
+            "filename_product_code_count":7,
+            "filename_season_code_count":4,
+            "filename_season_code_startswith":["K","R"],
+            "epsg_code_count":5,
+            "pixelsize":"10.0 -10.0",
+            "nodata_value":"0.0",
+            "values_range":[0,1],
+            "compression_type": "LZW"
+        },
+        "product_list":["CS"],
+        "s3_bucket_names":["satsure-products"]
+    },
+    "ch":{
+        "entry":{},
+        "exit":{
+            "filename_parts_count":4,
+            "filename_endswith":".tif",
+            "filename_date_chars":8,
+            "filename_product_code":["CH"],
+            "filename_product_code_count":7,
+            "filename_season_code_count":4,
+            "filename_season_code_startswith":["K","R"],
+            "epsg_code_count":5,
+            "pixelsize":"10.0 -10.0",
+            "nodata_value":"0.0",
+            "values_range":[0,1],
+            "compression_type": "LZW"
+        },
+        "product_list":["CH"],
+        "s3_bucket_names":["satsure-products"]
+    }
+}
