@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.paths]
+# The first path is the path to the modules to report coverage against.
+# All following paths are patterns to match against the collected data.
+# Any matches will be combined with the first path for coverage.
+source = [
+    "./kawin",
+    "*/lib/*/site-packages/kawin",  # allows testing against site-packages for a local virtual environment
+]
+
+[tool.coverage.run]
+# Only consider coverage for these packages:
+source_pkgs = [
+    "kawin"
+]
