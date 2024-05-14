@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: royalspells
+Version: 4.0.0
+Summary: Meaningless fantasy spell stats generator
+Home-page: https://github.com/Steffo99/royalspells
+Author: Stefano Pigozzi
+Author-email: me@steffo.eu
+Classifier: Development Status :: 6 - Mature
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<div align="center"> 
+
+![](.media/icon-128x128_round.png)
+
+# Royal Spells
+
+Meaningless fantasy spell stats generator
+
+</div>
+
+## Links
+
+[![PyPI](https://img.shields.io/pypi/v/royalspells)](https://pypi.org/project/royalspells)

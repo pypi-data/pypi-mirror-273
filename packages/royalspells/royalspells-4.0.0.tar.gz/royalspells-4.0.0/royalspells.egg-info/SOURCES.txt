@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+royalspells/__init__.py
+royalspells/main.py
+royalspells.egg-info/PKG-INFO
+royalspells.egg-info/SOURCES.txt
+royalspells.egg-info/dependency_links.txt
+royalspells.egg-info/top_level.txt
