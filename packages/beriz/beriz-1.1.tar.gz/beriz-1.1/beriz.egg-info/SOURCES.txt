@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+beriz/__init__.py
+beriz/main.py
+beriz.egg-info/PKG-INFO
+beriz.egg-info/SOURCES.txt
+beriz.egg-info/dependency_links.txt
+beriz.egg-info/requires.txt
+beriz.egg-info/top_level.txt
