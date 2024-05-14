@@ -1,0 +1,10 @@
+beetsplug/__init__.py,sha256=QDJyS5jtJnGFsSuOx43ZvLBCOrHImm8NrZk5f9URWdk,75
+beetsplug/webrouter/__init__.py,sha256=Iof6iSW5iP7Egn_jJ2wKfFKJ2aBLxqU9ohufTDDl0bw,3869
+beetsplug/webrouter/config_default.yaml,sha256=zpQlFLxx4NBB8i9FYV4q8FEmd886u5xZuu5mKj-siNI,155
+beetsplug/webrouter/favicon.py,sha256=B-n9AwFTywhhEYrnc2gg3ihZFQY8XcOaRRdtO_dlHC8,212
+beetsplug/webrouter/static/favicon.ico,sha256=V0H75vlFtfB5hDKBkobNZpcmaIeYLK5ComziKp-dD54,112309
+beets_webrouter-0.4.0.dist-info/LICENSE,sha256=VAHbPnW4OiC6mkEs_4EfFxQGcAWoURK77jNK5ecq1M4,1070
+beets_webrouter-0.4.0.dist-info/METADATA,sha256=0xbACcXJUNVaXSIsOjz_4geMTVxbqdfLZkJ1D9BhLq8,2220
+beets_webrouter-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+beets_webrouter-0.4.0.dist-info/top_level.txt,sha256=za8u6CXAGbgac8cUyn9NlsgXqqq-_4HHZcNmJnfmyWc,10
+beets_webrouter-0.4.0.dist-info/RECORD,,
