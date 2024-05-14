@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: poetry-aws-lambda-plugin
+Version: 0.1.2
+Summary: Poetry plugin for building and publishing AWS Lambda functions and layers
+Home-page: https://github.com/HectorBst/poetry-aws-lambda-plugin
+License: MIT
+Author: Hector Basset
+Author-email: hector.basset.dev@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: poetry (>=1.2,<2.0)
+Project-URL: Repository, https://github.com/HectorBst/poetry-aws-lambda-plugin
+Description-Content-Type: text/markdown
+
+# Poetry Plugin AWS Lambda
+
+Poetry plugin for building and publishing AWS Lambda functions and layers.
+
+## Installation
+
+TODO
+
+## Configuration
+
+TODO
+
+## Building
+
+TODO
+
+## Publishing
+
+TODO
