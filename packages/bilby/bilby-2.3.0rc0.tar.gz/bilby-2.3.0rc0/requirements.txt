@@ -1,0 +1,13 @@
+bilby.cython>=0.3.0
+dynesty>=2.0.1
+emcee
+corner
+numpy
+matplotlib
+scipy>=1.5
+pandas
+dill
+tqdm
+h5py
+attrs
+importlib-metadata>=3.6; python_version < '3.10'
