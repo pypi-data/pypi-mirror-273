@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pulchritudez/__init__.py
+pulchritudez/main.py
+pulchritudez.egg-info/PKG-INFO
+pulchritudez.egg-info/SOURCES.txt
+pulchritudez.egg-info/dependency_links.txt
+pulchritudez.egg-info/requires.txt
+pulchritudez.egg-info/top_level.txt
