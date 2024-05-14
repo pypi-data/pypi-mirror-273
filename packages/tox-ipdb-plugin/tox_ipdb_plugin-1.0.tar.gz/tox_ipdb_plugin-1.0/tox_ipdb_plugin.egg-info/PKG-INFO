@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: tox-ipdb-plugin
+Version: 1.0
+Summary: Tox plugin which installs ipdb in tox environments.
+Home-page: https://github.com/CZ-NIC/tox-ipdb-plugin
+Author: Vlastimil Zíma
+Author-email: vlastimil.zima@nic.cz
+License: GPLv3+
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Plugins
+Classifier: Framework :: tox
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: ~=3.8
+License-File: LICENSE
+Requires-Dist: tox>=3.0
+Provides-Extra: quality
+Requires-Dist: doc8; extra == "quality"
+Requires-Dist: mypy; extra == "quality"
+Requires-Dist: ruff; extra == "quality"
+
+tox-ipdb-plugin
+===============
+
+Tox plugin which installs ipdb in tox environments.
+This is useful for local development, if you don't want to modify the tox.ini.
+
+
+Acknowledgement
+---------------
+Thanks to sinoroc for the idea at https://stackoverflow.com/a/60265699/2440346.
+
+ChangeLog
+=========
+
+.. contents:: Releases
+   :backlinks: none
+   :local:
+
+1.0 (2024-05-14)
+----------------
+
+* Drop support for python 3.7.
+* Add support for python 3.11.
+* Add support for python 3.12.
+* Fix for tox 4.15.
+* Update project setup.
+
+0.3 (2023-02-02)
+----------------
+
+* Update for tox v4.
+
+0.2 (2022-10-13)
+----------------
+
+* Fix interaction with provision tox.
+* Use github actions.
+* Update project setup.
+
+0.1 (2020-02-26)
+----------------
+
+Initial version.

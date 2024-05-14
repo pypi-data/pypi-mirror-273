@@ -1,0 +1,13 @@
+CHANGELOG.rst
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+tox_ipdb.py
+tox_ipdb_plugin.egg-info/PKG-INFO
+tox_ipdb_plugin.egg-info/SOURCES.txt
+tox_ipdb_plugin.egg-info/dependency_links.txt
+tox_ipdb_plugin.egg-info/entry_points.txt
+tox_ipdb_plugin.egg-info/requires.txt
+tox_ipdb_plugin.egg-info/top_level.txt
