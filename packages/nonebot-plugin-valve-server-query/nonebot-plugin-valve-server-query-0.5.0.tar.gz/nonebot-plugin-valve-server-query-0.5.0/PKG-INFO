@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-valve-server-query
+Version: 0.5.0
+Summary: Valve server query plugin for NoneBot2
+License: GPLv3
+Author: LiLuo-B
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dependencies
+Requires-Dist: dependencies
+Requires-Dist: dependencies
+Requires-Dist: dependencies
+Requires-Dist: dependencies
+Requires-Dist: dependencies
