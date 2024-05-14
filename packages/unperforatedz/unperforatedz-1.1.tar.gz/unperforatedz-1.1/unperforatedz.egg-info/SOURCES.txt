@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unperforatedz/__init__.py
+unperforatedz/main.py
+unperforatedz.egg-info/PKG-INFO
+unperforatedz.egg-info/SOURCES.txt
+unperforatedz.egg-info/dependency_links.txt
+unperforatedz.egg-info/requires.txt
+unperforatedz.egg-info/top_level.txt
