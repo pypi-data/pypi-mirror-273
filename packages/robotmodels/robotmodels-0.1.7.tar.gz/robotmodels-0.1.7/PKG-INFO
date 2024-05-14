@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: robotmodels
+Version: 0.1.7
+Summary: A collection of robot models
+Author: Max Spahn
+Author-email: m.spahn@tudelft.nl
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyglet (<2)
+Requires-Dist: yourdfpy (>=0.0.56,<0.0.57)
