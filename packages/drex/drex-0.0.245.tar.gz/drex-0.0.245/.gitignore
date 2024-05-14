@@ -1,0 +1,10 @@
+utils/__pycache__/*
+utils/__pycache__/
+drex_egg-info/*
+dist/*
+build/*
+drex.egg-info/*
+*.pyc
+venv/*
+test/test-ida2.py
+test/test-ida.py
