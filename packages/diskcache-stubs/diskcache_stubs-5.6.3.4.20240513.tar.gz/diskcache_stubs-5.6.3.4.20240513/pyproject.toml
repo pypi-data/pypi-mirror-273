@@ -1,0 +1,51 @@
+[project]
+name = "diskcache-stubs"
+version = "5.6.3.4.20240513"
+description = "diskcache stubs"
+authors = [{ name = "phi", email = "phi.friday@gmail.com" }]
+dependencies = ["typing-extensions>=4.4.0"]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">= 3"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Stubs Only",
+]
+
+[project.urls]
+Repository = "https://github.com/phi-friday/diskcache-stubs"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "diskcache>=5.6.3",
+    "ruff==0.4.4",
+    "pre-commit>=3.5.0",
+    "mypy==1.10.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/diskcache-stubs"]
+
+[tool.pyright]
+pythonVersion = '3.8'
+pythonPlatform = 'Linux'
+diagnostic = 'basic'
+stubPath = "./typings"
+
+[tool.mypy]
+python_version = "3.8"
+strict = true
+exclude = ["^src/diskcache-stubs/djangocache.pyi"]
+# https://github.com/python/mypy/issues/15238
+disable_error_code = "valid-type,type-arg,overload-overlap,misc,operator" # FIXME: PEP695
