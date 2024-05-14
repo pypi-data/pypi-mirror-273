@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stilettolikez/__init__.py
+stilettolikez/main.py
+stilettolikez.egg-info/PKG-INFO
+stilettolikez.egg-info/SOURCES.txt
+stilettolikez.egg-info/dependency_links.txt
+stilettolikez.egg-info/requires.txt
+stilettolikez.egg-info/top_level.txt
