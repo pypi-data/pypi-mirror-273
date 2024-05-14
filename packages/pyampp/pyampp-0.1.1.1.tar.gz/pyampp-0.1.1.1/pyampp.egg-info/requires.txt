@@ -1,0 +1,17 @@
+sunpy[all]
+
+[dev]
+pytest
+pytest-cov
+
+[docs]
+sphinx
+sphinx-automodapi
+
+[docs:python_version < "3.11"]
+tomli
+
+[tests]
+pytest
+pytest-doctestplus
+pytest-cov
