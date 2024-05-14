@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: dreamhack
+Version: 1.0.8
+Summary: The ultimate PyPi package for cyber-security and many other things.
+Author: Jack Burr
+Author-email: BurrJ22@Outlook.com
+Keywords: python,windows,encryption
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: cryptography
+Requires-Dist: tqdm
+Requires-Dist: setuptools
+Requires-Dist: pyuac
+Requires-Dist: requests
+Requires-Dist: public-ip
+Requires-Dist: keyboard
+Requires-Dist: pyautogui
+Requires-Dist: customtkinter
+Requires-Dist: CTkMessagebox
+Requires-Dist: unixreg
+
+The ultimate PyPi package for cyber-security, encryption, and many other things to simplify your code and make more advanced programs.
+
+*DISCLAIMER:* I am not responsible for any damages caused by this package. Please do not use any features of this package for any malicious purposes. 
+
+RELEASE NOTES: 
+
+v1.0.8: 
+
+- Added new features to GUI and Windows classes 
+
+- Fixed a few bugs 
+
+
+v1.0.7: 
+
+- Added new features to the registry class 
+
+- Added a computer stats class 
+
+- Refresh explorer.exe when registry is edited 
+
+
+v1.0.6: 
+
+- Fixed a critical error with the registry class 
+
+- Added message box function to the gui class 
+
+
+v1.0.5: 
+
+- Added new features to GUI class 
+
+- Added new RegistryEditor class (For Windows only, experimental phase) 
+
+
+v1.0.4: 
+
+- Fixed a few bugs 
+
+- Added a few more features 
+
+
+v1.0.3: 
+
+- Added logging content 
+
+- Added the ability to get the public ip of the current machine 
+
+- Added lots of new features 
+
+- A few bug fixes 
+
+
+v1.0.2: 
+
+- First official stable version, DO NOT USE PREVIOUS VERSIONS 
+
+- Added content to encryption and logging 
+
+- Created networking 
+
+
+
+WARNING: VERSIONS BELOW THIS NOTE ARE UNSTABLE. DO NOT USE THEM.
+
+
+v1.0.1: 
+
+- Fixed critical error from v1.0.0 
+
+- Working on new version 
+
+
+v1.0.0: 
+
+- Initial release 
+
+- NOTE: Encryption and logging are both empty for the first few versions. 
+
