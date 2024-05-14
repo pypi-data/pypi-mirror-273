@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+kobz/__init__.py
+kobz/main.py
+kobz.egg-info/PKG-INFO
+kobz.egg-info/SOURCES.txt
+kobz.egg-info/dependency_links.txt
+kobz.egg-info/requires.txt
+kobz.egg-info/top_level.txt
