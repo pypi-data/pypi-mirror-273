@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wantonz/__init__.py
+wantonz/main.py
+wantonz.egg-info/PKG-INFO
+wantonz.egg-info/SOURCES.txt
+wantonz.egg-info/dependency_links.txt
+wantonz.egg-info/requires.txt
+wantonz.egg-info/top_level.txt
