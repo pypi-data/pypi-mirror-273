@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unplungedz/__init__.py
+unplungedz/main.py
+unplungedz.egg-info/PKG-INFO
+unplungedz.egg-info/SOURCES.txt
+unplungedz.egg-info/dependency_links.txt
+unplungedz.egg-info/requires.txt
+unplungedz.egg-info/top_level.txt
