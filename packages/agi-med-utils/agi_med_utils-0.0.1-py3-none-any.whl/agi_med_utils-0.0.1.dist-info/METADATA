@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: agi_med_utils
+Version: 0.0.1
+Summary: Utils for agi-med team
+Author: AGI-MED-TEAM
+Requires-Dist: grpcio ==1.62.1
+Requires-Dist: grpcio-tools ==1.62.1
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: gigachat ==0.1.17
+Requires-Dist: tqdm ==4.66.2
+Requires-Dist: pandas ==2.2.0
+Requires-Dist: scikit-learn ==1.4.0
+Requires-Dist: scipy ==1.12.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: nltk ==3.8.1
+Requires-Dist: evaluate ==0.4.2
+Requires-Dist: rouge-score ==0.1.2
+Requires-Dist: torch ==2.2.0
+Requires-Dist: torchtext ==0.17.0
+Requires-Dist: transformers ==4.38.2
+Requires-Dist: sentence-transformers ==2.5.1
+
+# agi-med-utils
+
+Стандартизация компонент общей библиотеки отдела
