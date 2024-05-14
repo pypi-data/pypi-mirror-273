@@ -1,0 +1,1 @@
+{"RADIO_GET_CONFIG_REQUEST":{"msgId":1002,"configId":0}}
