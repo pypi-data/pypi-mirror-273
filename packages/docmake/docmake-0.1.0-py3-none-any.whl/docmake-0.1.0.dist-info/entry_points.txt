@@ -1,0 +1,3 @@
+[console_scripts]
+docmake=src.cli:main
+
