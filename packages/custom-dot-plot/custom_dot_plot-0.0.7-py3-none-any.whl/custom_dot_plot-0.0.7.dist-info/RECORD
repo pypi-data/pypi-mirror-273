@@ -1,0 +1,16 @@
+custom_dot_plot/__init__.py,sha256=-4LtnIJ4NiBtVZ22TML8ET7JkzI76BGxfQKySnnTSiQ,1058
+custom_dot_plot/example.py,sha256=y2DNKGNw6kNQdgMNYkQhap_FHZqeERvJw20J9Mw-M6M,18948
+custom_dot_plot/frontend/build/asset-manifest.json,sha256=KrhgOC6w7ylzqiFqB_npKU9gN7r4DbfOMvTwgIbIvGU,374
+custom_dot_plot/frontend/build/bootstrap.min.css,sha256=X9ITP3t3djkRs4SffIkA1Q2WMy-oYl6au5HFYTVShe0,206960
+custom_dot_plot/frontend/build/bootstrap.min.css.map,sha256=8SM4U2NQpCLGTQLW5D_x3qSTwxVq2CP-GXYc3V1WwFs,589892
+custom_dot_plot/frontend/build/index.html,sha256=ufZ5i7t1k79NvP-Jyo00ikwL8EnJi6kQtCbPGGgPxU4,553
+custom_dot_plot/frontend/build/static/css/main.80661064.css,sha256=A-9WJuztUtGknc2378_kdKnvgogwx5A2z766qBnSNfs,3227
+custom_dot_plot/frontend/build/static/css/main.80661064.css.map,sha256=lm3LHmTuCgzNEvCDsxiktkQJ11j84af3KZvLu7X7pi4,6791
+custom_dot_plot/frontend/build/static/js/main.618d6894.js,sha256=C0VCiB94jZwKmkmXqM23v6BUsSR_V5bw4EUZB8FoBKE,348397
+custom_dot_plot/frontend/build/static/js/main.618d6894.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+custom_dot_plot/frontend/build/static/js/main.618d6894.js.map,sha256=dglhrNJVulWx-MUklzIYRZwbvuevBl2siEuLxJKtc54,1382378
+custom_dot_plot-0.0.7.dist-info/LICENSE,sha256=SHkHX-qiNZt-ACArrZP67jppVYPvF8xuUDRjJw_E3L0,1082
+custom_dot_plot-0.0.7.dist-info/METADATA,sha256=B_rOscJ5hdOIZxf54A_3U7P2Tf6FXgKq_zbkhWod534,548
+custom_dot_plot-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+custom_dot_plot-0.0.7.dist-info/top_level.txt,sha256=qp-w7zvG3zNul0ugf7IsgOxVzC7EzYI6tQLVzmPjKNg,16
+custom_dot_plot-0.0.7.dist-info/RECORD,,
