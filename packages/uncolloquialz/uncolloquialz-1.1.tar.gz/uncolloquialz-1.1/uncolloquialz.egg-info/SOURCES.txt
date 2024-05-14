@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uncolloquialz/__init__.py
+uncolloquialz/main.py
+uncolloquialz.egg-info/PKG-INFO
+uncolloquialz.egg-info/SOURCES.txt
+uncolloquialz.egg-info/dependency_links.txt
+uncolloquialz.egg-info/requires.txt
+uncolloquialz.egg-info/top_level.txt
