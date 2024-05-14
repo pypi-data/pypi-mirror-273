@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+caddiedz/__init__.py
+caddiedz/main.py
+caddiedz.egg-info/PKG-INFO
+caddiedz.egg-info/SOURCES.txt
+caddiedz.egg-info/dependency_links.txt
+caddiedz.egg-info/requires.txt
+caddiedz.egg-info/top_level.txt
