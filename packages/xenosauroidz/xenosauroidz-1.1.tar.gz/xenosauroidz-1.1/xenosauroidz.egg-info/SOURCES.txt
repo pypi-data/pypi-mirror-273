@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xenosauroidz/__init__.py
+xenosauroidz/main.py
+xenosauroidz.egg-info/PKG-INFO
+xenosauroidz.egg-info/SOURCES.txt
+xenosauroidz.egg-info/dependency_links.txt
+xenosauroidz.egg-info/requires.txt
+xenosauroidz.egg-info/top_level.txt
