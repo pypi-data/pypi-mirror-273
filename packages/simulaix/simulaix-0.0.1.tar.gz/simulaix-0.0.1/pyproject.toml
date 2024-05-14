@@ -1,0 +1,50 @@
+[project]
+name = "simulaix"
+version = "0.0.1"
+description = "An efficient synthetic data framework"
+authors = [
+    { name = "JoinAI", email = "contact@join-intelligence.com" }
+]
+license = "Apache-2.0"
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.7"
+classifiers = [
+  "Typing :: Typed",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: Apache Software License"
+]
+
+
+[project.scripts]
+"simulaix" = "simulaix:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/simulaix"]
+
+[project.urls]
+Homepage = "https://github.com/JoinAI-Inc/simulaix"
+Issues = "https://github.com/JoinAI-Inc/simulaix/issues"
