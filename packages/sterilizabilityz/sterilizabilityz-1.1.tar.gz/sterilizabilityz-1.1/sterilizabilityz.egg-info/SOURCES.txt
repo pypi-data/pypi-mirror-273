@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sterilizabilityz/__init__.py
+sterilizabilityz/main.py
+sterilizabilityz.egg-info/PKG-INFO
+sterilizabilityz.egg-info/SOURCES.txt
+sterilizabilityz.egg-info/dependency_links.txt
+sterilizabilityz.egg-info/requires.txt
+sterilizabilityz.egg-info/top_level.txt
