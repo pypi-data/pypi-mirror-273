@@ -1,0 +1,5 @@
+[console_scripts]
+documentation=https://github.com/LiLuo-B/nonebot-plugin-valve-server-query/blob/main/README.md
+issues=https://github.com/LiLuo-B/nonebot-plugin-valve-server-query/issues
+source=https://github.com/LiLuo-B/nonebot-plugin-valve-server-query
+
