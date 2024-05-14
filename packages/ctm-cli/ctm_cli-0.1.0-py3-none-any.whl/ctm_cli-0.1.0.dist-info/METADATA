@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ctm-cli
+Version: 0.1.0
+Summary: A command-line tool for managing configurations, tasks, and schedules
+Home-page: https://github.com/gomleksiz/ctm-cli
+Author: Huseyin G.
+Author-email: huseyim@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=8.0.0)
+Requires-Dist: pyyaml (>=5.4.1)
+Requires-Dist: apscheduler (>=3.7.0)
+
+# Configuration and Task Management CLI
+
+This CLI tool will validate the configuration files and troubleshoot the task issues.
+
+## Installation
+
+```bash
+pip install ctm-cli
+```
+
+# Usage
+
+```bash
+ctm config check
+ctm config collect
+```
