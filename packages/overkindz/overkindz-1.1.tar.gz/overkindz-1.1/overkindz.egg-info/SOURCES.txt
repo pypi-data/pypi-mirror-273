@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+overkindz/__init__.py
+overkindz/main.py
+overkindz.egg-info/PKG-INFO
+overkindz.egg-info/SOURCES.txt
+overkindz.egg-info/dependency_links.txt
+overkindz.egg-info/requires.txt
+overkindz.egg-info/top_level.txt
