@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: OMTF
+Version: 1.0.3
+Summary: OM Trading Framework is the framework I use to test my strategies and carry out the portfolio management.
+Home-page: https://onemade.es
+Author: Daniel Cano
+Author-email: Daniel Cano <dcaronm@gmail.com>
+Maintainer-email: Daniel Cano <dcaronm@gmail.com>
+Project-URL: Homepage, https://onemade.es
+Project-URL: Repository, https://github.com/Daniel-OM/OMTF
+Project-URL: Issues, https://github.com/Daniel-OM/OMTF/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# OM Trading Framework
+
+This is a propietary framework for getting trading data, testing and backtesting strategies. The execution implementation is half way there too. Looking to rebuild it for bagging, iceberg and portfolio management.
