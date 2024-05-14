@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+ItsMagic.egg-info/PKG-INFO
+ItsMagic.egg-info/SOURCES.txt
+ItsMagic.egg-info/dependency_links.txt
+ItsMagic.egg-info/requires.txt
+ItsMagic.egg-info/top_level.txt

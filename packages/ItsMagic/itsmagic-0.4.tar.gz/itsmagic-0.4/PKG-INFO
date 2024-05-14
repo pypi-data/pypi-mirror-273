@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ItsMagic
+Version: 0.4
+Summary: Uma biblioteca mágica para facilitar criar bots de discord
+Author: OSkyDev
+Author-email: skydagringa1@gmail.com
+Requires-Dist: discord.py
