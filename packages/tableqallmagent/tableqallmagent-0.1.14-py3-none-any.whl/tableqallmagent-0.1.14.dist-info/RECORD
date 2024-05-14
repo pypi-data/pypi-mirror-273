@@ -1,0 +1,10 @@
+tableqallmagent/__init__.py,sha256=oRd9koru5I6hK_7fD27E63_PNz0C0PydLTm4loU7g3A,27
+tableqallmagent/agent.py,sha256=k1gRJFDSMBCUim7FLsr5sQGfaiGelAWQuTqcMc4VvtY,15588
+tableqallmagent/code_manipulation.py,sha256=euHsyqG0vVIISF_7O1Ko8tjsCdqKV8Y83T0SpUvzhDo,8437
+tableqallmagent/coder_llms.py,sha256=YlqrMNm_dbBcc9LNPLl17yHIsmH94LsljzvrxMmqalM,15058
+tableqallmagent/llms.py,sha256=xAMJSQ4bUi3rjtGLJ_8SVRZTttMvw-tej_fsRnNt1zY,20354
+tableqallmagent/logger.py,sha256=HLgSGFyd9YCvQwlbrLAnsn6qh3CGa3ybmMLQPUy9SxE,255
+tableqallmagent/prompts.py,sha256=0SUOrfvOla8zPwKH07bgpAKM5ob-ZToE0wMAeS4Qu0E,45517
+tableqallmagent-0.1.14.dist-info/METADATA,sha256=0exChPeTlYFJx0UWJk25sC8AdxQwPgDDZc4sDl-0he8,5010
+tableqallmagent-0.1.14.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tableqallmagent-0.1.14.dist-info/RECORD,,
