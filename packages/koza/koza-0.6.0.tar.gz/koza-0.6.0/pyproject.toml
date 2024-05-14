@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "koza"
+version = "v0.6.0"
+description = "Data transformation framework for LinkML data models"
+authors = [
+    "The Monarch Initiative <info@monarchinitiative.org>",
+    "Kevin Schaper <kevinschaper@gmail.com>",
+    "Glass Elsarboukh <g.elsarboukh@gmail.com>",
+    "Kent Shefchek <kent@tislab.org>",
+    ]
+readme = "README.md"
+license = "BSD License"
+packages = [
+    { include = "koza", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+duckdb = "*"
+linkml = ">=1.7.8"
+loguru = "*"
+ordered-set = ">=4.1.0"
+pydantic = "^2.4"
+pyyaml = ">=5.0.0"
+requests = "^2.24.0"
+sssom = ">=0.4"
+typer = ">=0.12.3"
+
+[tool.poetry.dev-dependencies]
+black = "^24.4"
+ruff = "*"
+pytest = ">=6.0.0"
+biolink-model = ">=4.2"
+dask = ">=2022.5.2"
+mkdocs = ">=1.4"
+mkdocs-material = ">=9.5"
+mkdocstrings = {extras = ["python"], version = ">=0.22.0"}
+
+[tool.poetry.scripts]
+koza = "koza.main:typer_app"
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 120
+lint.ignore = [
+    "F541", # f-strings with no placeholders
+]
