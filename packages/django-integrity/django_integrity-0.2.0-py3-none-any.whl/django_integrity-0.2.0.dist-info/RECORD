@@ -1,0 +1,9 @@
+django_integrity/__init__.py,sha256=IKc94Fs8g9ztP5-Cy4WFSE8Ra-v8vhU6Fbe24_KdgYg,162
+django_integrity/constraints.py,sha256=nlie7RvlnNE3yemf1Z_hlTEh8Mafl4ND2abu2jlMDJM,6762
+django_integrity/conversion.py,sha256=uE626FDfmlgyPfKDEQJURWNzvL0KkwYH5DjffH0MIGU,5424
+django_integrity/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_integrity-0.2.0.dist-info/LICENSE,sha256=18bWQLdz1nyPVlPz76npP52gBJ-erw0V7RWgFL-HfoY,1514
+django_integrity-0.2.0.dist-info/METADATA,sha256=weWEKmqSJ5h1uGgw9qL41GrX85v7uKfxwvMEKLXk5dY,7719
+django_integrity-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_integrity-0.2.0.dist-info/top_level.txt,sha256=dtLZip-QvqRC1LMp-0U1qHlWZ06yU6UasGZc9DvzngY,17
+django_integrity-0.2.0.dist-info/RECORD,,
