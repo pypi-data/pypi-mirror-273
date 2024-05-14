@@ -1,0 +1,2 @@
+[console_scripts]
+spliceai-toolkit = spliceaitoolkit.spliceaitoolkit:main
