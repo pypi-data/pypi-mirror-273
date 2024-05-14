@@ -1,0 +1,15 @@
+astrodata/.readthedocs.yaml,sha256=NqKFAzhlUzSnEqzXsbGaPAM8BY33Lc7h8yCu3jeJCsU,756
+astrodata/__init__.py,sha256=0DaRJamz9l37RS5TmWGh7p-K4aqsQr4vxun8-snZuYc,2322
+astrodata/adfactory.py,sha256=IJzXJ5ll0jn1ufNeWU3QszjDvP-9g_ZKnin0R5sx1fY,8181
+astrodata/core.py,sha256=RziVegM3eBuFrmE45WlZNreg7hGGz-em3cJEAngBtkQ,49486
+astrodata/data/README.rst,sha256=7RU7-Tnvn3evkEtPNZTDBmohRUPE4SQS-TF3E1KeZvA,245
+astrodata/fits.py,sha256=ZQ4vC_MpHPTeURiupZxSIxuZlzUIqfhvzQMRURI2beI,38532
+astrodata/nddata.py,sha256=N5w2QL7yHwII53lp0H-PWtVRimqeOXwRRQAqn4SnIZw,20952
+astrodata/provenance.py,sha256=VFfRpXmQEQCB7U90N2D4DFC7YAEbK88x5ih_tqmYqt4,11834
+astrodata/testing.py,sha256=vps1Iz_FsuOXGz-obCeWmbD7qY7qCAbI3uqo183Z8dI,35495
+astrodata/utils.py,sha256=e3zG9TvUfvVGs_owkzXD4euikpOrWSW1zlGY4LgXxQA,12870
+astrodata/wcs.py,sha256=m9QTDrOqNFknHUAs7CSjQc_iZfTqCN6CzNqnrYN-YA8,40692
+astrodata-2.9.2.dist-info/LICENSE,sha256=xtufokAQXXh5RFDieoIF-Wfrkz1GvCmjzwdvuMOX0sI,1826
+astrodata-2.9.2.dist-info/METADATA,sha256=Gn8djXYTCwqFzGL7gbcVdfmGJkrhZc9dqXYw6RxQ7N0,7526
+astrodata-2.9.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+astrodata-2.9.2.dist-info/RECORD,,
