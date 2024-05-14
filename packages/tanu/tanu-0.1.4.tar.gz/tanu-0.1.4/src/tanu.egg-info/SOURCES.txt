@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tanu/__init__.py
+src/tanu/tanu.py
+src/tanu.egg-info/PKG-INFO
+src/tanu.egg-info/SOURCES.txt
+src/tanu.egg-info/dependency_links.txt
+src/tanu.egg-info/requires.txt
+src/tanu.egg-info/top_level.txt
+src/tanu/utils/__init__.py
+src/tanu/utils/object_encoder_decoder.py
