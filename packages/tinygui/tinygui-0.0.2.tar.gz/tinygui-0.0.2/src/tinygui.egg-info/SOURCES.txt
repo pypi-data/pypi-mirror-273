@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/tinygui/__init__.py
+src/tinygui/tinygui.py
+src/tinygui.egg-info/PKG-INFO
+src/tinygui.egg-info/SOURCES.txt
+src/tinygui.egg-info/dependency_links.txt
+src/tinygui.egg-info/top_level.txt
