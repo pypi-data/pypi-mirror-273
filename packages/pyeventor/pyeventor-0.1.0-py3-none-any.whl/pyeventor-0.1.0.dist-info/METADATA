@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyeventor
+Version: 0.1.0
+Summary: 
+Author: darkllen
+Author-email: yankiniigor@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: greenlet (>=3.0.3,<4.0.0)
+Requires-Dist: psycopg2 (>=2.9.9,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.30,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pyeventor
+Event Sourcing framework for Python
+
