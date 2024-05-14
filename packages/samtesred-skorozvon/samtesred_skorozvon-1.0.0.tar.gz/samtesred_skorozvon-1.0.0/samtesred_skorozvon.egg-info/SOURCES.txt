@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+samtesred_skorozvon/__init__.py
+samtesred_skorozvon/main.py
+samtesred_skorozvon.egg-info/PKG-INFO
+samtesred_skorozvon.egg-info/SOURCES.txt
+samtesred_skorozvon.egg-info/dependency_links.txt
+samtesred_skorozvon.egg-info/requires.txt
+samtesred_skorozvon.egg-info/top_level.txt
