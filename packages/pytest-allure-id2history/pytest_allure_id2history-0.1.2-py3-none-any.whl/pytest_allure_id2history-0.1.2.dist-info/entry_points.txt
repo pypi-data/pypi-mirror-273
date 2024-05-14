@@ -1,0 +1,2 @@
+[pytest11]
+allure-id2history = pytest_allure_id2history.plugin
