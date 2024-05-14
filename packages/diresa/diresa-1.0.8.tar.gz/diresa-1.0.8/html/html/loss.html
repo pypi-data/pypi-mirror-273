@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>loss module &mdash; DIRESA  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="callback module" href="callback.html" />
+    <link rel="prev" title="models module" href="models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/diresa.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html"><em>DIRESA</em> architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install <em>DIRESA</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Start tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build.html"><em>DIRESA</em> model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eval.html">Evaluate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conv2D.html">Convolutional example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom.html">Custom encoder/decoder</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Module reference:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="models.html"><em>models</em> module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>loss</em> module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loss.KLLoss"><code class="docutils literal notranslate"><span class="pre">KLLoss</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loss.KLLoss.__init__"><code class="docutils literal notranslate"><span class="pre">KLLoss.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loss.KLLoss.call"><code class="docutils literal notranslate"><span class="pre">KLLoss.call()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.LatentCovLoss"><code class="docutils literal notranslate"><span class="pre">LatentCovLoss</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loss.LatentCovLoss.__init__"><code class="docutils literal notranslate"><span class="pre">LatentCovLoss.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loss.LatentCovLoss.call"><code class="docutils literal notranslate"><span class="pre">LatentCovLoss.call()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.mae_dist_loss"><code class="docutils literal notranslate"><span class="pre">mae_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.male_dist_loss"><code class="docutils literal notranslate"><span class="pre">male_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.mape_dist_loss"><code class="docutils literal notranslate"><span class="pre">mape_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.mse_dist_loss"><code class="docutils literal notranslate"><span class="pre">mse_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.msle_dist_loss"><code class="docutils literal notranslate"><span class="pre">msle_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.corr_dist_loss"><code class="docutils literal notranslate"><span class="pre">corr_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.corr_log_dist_loss"><code class="docutils literal notranslate"><span class="pre">corr_log_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.loc_corr_dist_loss"><code class="docutils literal notranslate"><span class="pre">loc_corr_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.spear_dist_loss"><code class="docutils literal notranslate"><span class="pre">spear_dist_loss()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loss.canberra_dist_loss"><code class="docutils literal notranslate"><span class="pre">canberra_dist_loss()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="callback.html"><em>callback</em> module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tool.html"><em>toolbox</em> module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DIRESA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><em>loss</em> module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/loss.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-loss">
+<span id="loss-module"></span><span id="loss"></span><h1><em>loss</em> module<a class="headerlink" href="#module-loss" title="Link to this heading"></a></h1>
+<p>DIRESA loss classes/functions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Geert De Paepe</p>
+</dd>
+<dt class="field-even">Email<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="mailto:geert&#46;de&#46;paepe&#37;&#52;&#48;vub&#46;be">geert<span>&#46;</span>de<span>&#46;</span>paepe<span>&#64;</span>vub<span>&#46;</span>be</a></p>
+</dd>
+<dt class="field-odd">License<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MIT License</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="loss.KLLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">KLLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kl_weight</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.KLLoss" title="Link to this definition"></a></dt>
+<dd><p>KL weighted loss class
+KL weight is annealed by KLAnnealingCallback</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="loss.KLLoss.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kl_weight</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.KLLoss.__init__" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kl_weight</strong> – tensorflow variable with initial KL loss weight</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="loss.KLLoss.call">
+<span class="sig-name descname"><span class="pre">call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_mean_var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.KLLoss.call" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>z_mean_var</strong> – list with mean and ln of the variance of the distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>weighted KL loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="loss.LatentCovLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">LatentCovLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cov_weight</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.LatentCovLoss" title="Link to this definition"></a></dt>
+<dd><p>Latent covariance loss class
+Latent covariance weight is annealed by AnnealingCallback</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="loss.LatentCovLoss.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cov_weight</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.LatentCovLoss.__init__" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cov_weight</strong> – tensorflow variable with initial covariance loss weight</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="loss.LatentCovLoss.call">
+<span class="sig-name descname"><span class="pre">call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.LatentCovLoss.call" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>latent</strong> – batch of latent vectors</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>weighted covariance loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.mae_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">mae_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.mae_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Absolute Error between original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>batch of absolute errors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.male_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">male_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.male_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Absolute Error between logarithm of original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>batch of absolute logarithmic errors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.mape_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">mape_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.mape_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Absolute Percentage Error between original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>batch of absolute percentage errors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.mse_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">mse_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.mse_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Squared Error between original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>batch of squared errors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.msle_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">msle_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.msle_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Squared Error between logarithm of original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>batch of squared logarithmic errors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.corr_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">corr_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.corr_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Correlation loss between original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>1 - correlation coefficient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.corr_log_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">corr_log_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.corr_log_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Correlation loss between logarithm of original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>1 - correlation coefficient (of logarithmic distances)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.loc_corr_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">loc_corr_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.loc_corr_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Correlation loss between original and latent distances with location parameter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>1 - correlation coefficient (of 50% closest distances in latent space)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.spear_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">spear_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.spear_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Spearman correlation loss between original and latent distances</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>1 - Spearman correlation coefficient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="loss.canberra_dist_loss">
+<span class="sig-prename descclassname"><span class="pre">loss.</span></span><span class="sig-name descname"><span class="pre">canberra_dist_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#loss.canberra_dist_loss" title="Link to this definition"></a></dt>
+<dd><p>Canberra distance loss with location parameter
+<a class="reference external" href="https://github.com/richardARPANET/mlpy/blob/master/mlpy/canberra/c_canberra.c">https://github.com/richardARPANET/mlpy/blob/master/mlpy/canberra/c_canberra.c</a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> – not used (loss functions need 2 params: the true and predicted values)</p></li>
+<li><p><strong>distances</strong> – batch of original and latent distances between twins</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Canberra distance (of 50% closest distances in latent space)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="models.html" class="btn btn-neutral float-left" title="models module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="callback.html" class="btn btn-neutral float-right" title="callback module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Geert De Paepe, ETRO VUB.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

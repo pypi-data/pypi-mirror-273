@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>models module &mdash; DIRESA  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="loss module" href="loss.html" />
+    <link rel="prev" title="Custom encoder/decoder" href="custom.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/diresa.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="architecture.html"><em>DIRESA</em> architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install <em>DIRESA</em></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorial:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Start tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build.html"><em>DIRESA</em> model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eval.html">Evaluate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conv2D.html">Convolutional example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom.html">Custom encoder/decoder</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Module reference:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><em>models</em> module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#models.autoencoder_model"><code class="docutils literal notranslate"><span class="pre">autoencoder_model()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models.cov_reg_ae_model"><code class="docutils literal notranslate"><span class="pre">cov_reg_ae_model()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models.siamese_twin_model"><code class="docutils literal notranslate"><span class="pre">siamese_twin_model()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models.diresa_model"><code class="docutils literal notranslate"><span class="pre">diresa_model()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models.vae_model"><code class="docutils literal notranslate"><span class="pre">vae_model()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models.build_ae"><code class="docutils literal notranslate"><span class="pre">build_ae()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models.build_diresa"><code class="docutils literal notranslate"><span class="pre">build_diresa()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="loss.html"><em>loss</em> module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="callback.html"><em>callback</em> module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tool.html"><em>toolbox</em> module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DIRESA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><em>models</em> module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/models.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-models">
+<span id="models-module"></span><span id="models"></span><h1><em>models</em> module<a class="headerlink" href="#module-models" title="Link to this heading"></a></h1>
+<p>Creates DIRESA and (V)AE models out of an encoder and decoder model.
+Creates DIRESA and AE models from hyperparameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Geert De Paepe</p>
+</dd>
+<dt class="field-even">Email<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="mailto:geert&#46;de&#46;paepe&#37;&#52;&#48;vub&#46;be">geert<span>&#46;</span>de<span>&#46;</span>paepe<span>&#64;</span>vub<span>&#46;</span>be</a></p>
+</dd>
+<dt class="field-odd">License<span class="colon">:</span></dt>
+<dd class="field-odd"><p>MIT License</p>
+</dd>
+</dl>
+<ol class="arabic simple">
+<li><p>Creating (V)AE and Diresa models out of an encoder and decoder model:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>autoencoder_model(x, encoder, decoder, mask_layer=False)</p></li>
+<li><p>vae_model(x, encoder, decoder)</p></li>
+<li><p>cov_reg_ae_model(x, encoder, decoder)</p></li>
+<li><p>siamese_twin_model(x, x_twin, encoder, decoder)</p></li>
+<li><p>diresa_model(x, x_twin, encoder, decoder)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Creating AE and Diresa models from hyperparameters</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>build_ae(input_shape, stack, stack_filters, latent_filters, kernel_size=(3, 3),
+conv_transpose=False, up_first=False, residual=False, batchnorm=False,
+dense_units=(), mask_layer=False,
+activation=’relu’, encoder_activation=’linear’, decoder_activation=’linear’)</p></li>
+<li><p>build_diresa(input_shape, stack, stack_filters, latent_filters, kernel_size=(3, 3),
+conv_transpose=False, up_first=False, residual=False, batchnorm=False,
+dense_units=(),
+activation=’relu’, encoder_activation=’linear’, decoder_activation=’linear’)</p></li>
+</ul>
+<blockquote>
+<div><dl class="simple">
+<dt>Encoder:</dt><dd><ul class="simple">
+<li><p>0 or more [blocks] with C (Conv2D) or residual units and a P (MaxPooling layer)</p></li>
+<li><p>0 or 1 [block] of D (Dense layers)</p></li>
+<li><p>optionally a mask layer (only for AE)</p></li>
+</ul>
+</dd>
+<dt>Decoder:</dt><dd><ul class="simple">
+<li><p>0 or 1 [block] with D (Dense layers)</p></li>
+<li><p>0 or more [blocks] with C (Conv2D) or residual units and an U (UpSampling layer)</p></li>
+</ul>
+</dd>
+<dt>Examples:</dt><dd><ul class="simple">
+<li><p>stack;     dense_units;  Encoder;                Decoder (up_first=True);    Decoder (up_first=False)</p></li>
+<li><p>[1];       ();           [C-P]-Cout;             [U-C]-Cout;                 [C-U]-Cout</p></li>
+<li><p>[3];       ();           [C-C-C-P]-Cout;         [U-C-C-C]-Cout;             [C-U-C-C]-Cout</p></li>
+<li><p>[1,1];     ();           [C-P]-[C-P]-Cout;       [U-C]-[U-C]-Cout;           [C-U]-[C-U]-Cout</p></li>
+<li><p>();        [20,10];      [D-Dout];               [D-Dout];                   [D-Dout]</p></li>
+<li><p>[2];       [20,10];      [C-C-P]-[D-Dout];       [D-D]-[U-C]-Cout;           [D-D]-[C-U]-Cout</p></li>
+<li><p>[1,1];     [20,10];      [C-P]-[C-P]-[D-Dout];   [D-D]-[U]-[U-C]-Cout;       [D-D]-[U]-[C-U]-Cout</p></li>
+</ul>
+</dd>
+</dl>
+<p>If conv_transpose=True, C is a ConvTranspose layer, only possible for up_first=True.
+If residual=True, C is a residual unit with a skip connection, only possible for up_first=True.
+Input shape should be 3 if Conv2D blocks, first 2 dimensions of input_shape should be a multiple of 2^len(stack).
+Input shape should be 1 if only a Dense block.</p>
+</div></blockquote>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="models.autoencoder_model">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">autoencoder_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.autoencoder_model" title="Link to this definition"></a></dt>
+<dd><p>Creates autoencoder model out of an encoder and a decoder model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – keras input tensor (keras.Input())</p></li>
+<li><p><strong>encoder</strong> – encoder functional Keras model</p></li>
+<li><p><strong>decoder</strong> – decoder functional Keras model</p></li>
+<li><p><strong>mask_layer</strong> – if True, adds a MaskLayer to the encoder</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>autoencoder model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="models.cov_reg_ae_model">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">cov_reg_ae_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.cov_reg_ae_model" title="Link to this definition"></a></dt>
+<dd><p>Creates a covariance regulated autoencoder model out of an encoder and a decoder model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – keras input tensor (keras.Input())</p></li>
+<li><p><strong>encoder</strong> – encoder functional Keras model</p></li>
+<li><p><strong>decoder</strong> – decoder functional Keras model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>covariance regulated autoencoder model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="models.siamese_twin_model">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">siamese_twin_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_twin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.siamese_twin_model" title="Link to this definition"></a></dt>
+<dd><p>Creates a Diresa model (without cov regularization on latent space) out of an encoder and a decoder model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – keras input tensor (keras.Input())</p></li>
+<li><p><strong>x_twin</strong> – keras input tensor for shuffled input</p></li>
+<li><p><strong>encoder</strong> – encoder functional Keras model</p></li>
+<li><p><strong>decoder</strong> – decoder functional Keras model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Diresa model without cov regularization on latent space</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="models.diresa_model">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">diresa_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_twin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.diresa_model" title="Link to this definition"></a></dt>
+<dd><p>Creates a Diresa model out of an encoder and a decoder model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – keras input tensor (keras.Input())</p></li>
+<li><p><strong>x_twin</strong> – keras input tensor for shuffled input</p></li>
+<li><p><strong>encoder</strong> – encoder functional Keras model</p></li>
+<li><p><strong>decoder</strong> – decoder functional Keras model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Diresa model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="models.vae_model">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">vae_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.vae_model" title="Link to this definition"></a></dt>
+<dd><p>Creates a variational autoencoder model out of an encoder and a decoder model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – keras input tensor (keras.Input())</p></li>
+<li><p><strong>encoder</strong> – variational encoder functional Keras model</p></li>
+<li><p><strong>decoder</strong> – decoder functional Keras model</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>variational autoencoder model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="models.build_ae">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">build_ae</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stack_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latent_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(3,</span> <span class="pre">3)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conv_transpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">up_first</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batchnorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense_units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask_layer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder_activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.build_ae" title="Link to this definition"></a></dt>
+<dd><p>Creates an AE model out of hyperparameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_shape</strong> – 3-dimensional with Conv2D layers, first 2 dimensions should be a multiple of 2^len(stack), 
+1-dimensional if only Dense layers</p></li>
+<li><p><strong>stack</strong> – elements are nbr of Conv2D or residual units in a block</p></li>
+<li><p><strong>stack_filters</strong> – elements are nbr of filters in a block</p></li>
+<li><p><strong>latent_filters</strong> – nbr of filters in convolutional output (only used if no dense units)</p></li>
+<li><p><strong>kernel_size</strong> – kernel size for convolution</p></li>
+<li><p><strong>conv_transpose</strong> – if True ConvTranspose is used in decoder, only possible for up_first=True</p></li>
+<li><p><strong>up_first</strong> – if True UpSampling is first in decoder block, if False UpSampling is second</p></li>
+<li><p><strong>residual</strong> – if True, elements in blocks are residual units, if False elements are Conv2D layers</p></li>
+<li><p><strong>batchnorm</strong> – if True, each Conv2D is followed by a BatchNormalization layer, if False no BN is used</p></li>
+<li><p><strong>dense_units</strong> – elements are nbr of nodes of a Dense layer in the dense block</p></li>
+<li><p><strong>mask_layer</strong> – if True a MaskLayer is added between encoder and decoder</p></li>
+<li><p><strong>activation</strong> – activation function used (except for output of encoder/decoder)</p></li>
+<li><p><strong>encoder_activation</strong> – activation function used for output of encoder</p></li>
+<li><p><strong>decoder_activation</strong> – activation function used for output of decoder</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>AE functional Keras model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="models.build_diresa">
+<span class="sig-prename descclassname"><span class="pre">models.</span></span><span class="sig-name descname"><span class="pre">build_diresa</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stack</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stack_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latent_filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(3,</span> <span class="pre">3)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conv_transpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">up_first</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batchnorm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dense_units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'relu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoder_activation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.build_diresa" title="Link to this definition"></a></dt>
+<dd><p>Creates a Diresa model out of hyperparameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_shape</strong> – 3-dimensional with Conv2D layers, first 2 dimensions should be a multiple of 2^len(stack)
+1-dimensional if only Dense layers</p></li>
+<li><p><strong>stack</strong> – elements are nbr of Conv2D or residual units in a block</p></li>
+<li><p><strong>stack_filters</strong> – elements are nbr of filters in a block</p></li>
+<li><p><strong>latent_filters</strong> – nbr of filters in convolutional output (only used if no dense units)</p></li>
+<li><p><strong>kernel_size</strong> – kernel size for convolution</p></li>
+<li><p><strong>conv_transpose</strong> – if True ConvTranspose is used in decoder, only possible for up_first=True</p></li>
+<li><p><strong>up_first</strong> – if True UpSampling is first in decoder block, if False UpSampling is second</p></li>
+<li><p><strong>residual</strong> – if True, elements in blocks are residual units, if False elements are Conv2D layers</p></li>
+<li><p><strong>batchnorm</strong> – if True, each Conv2D is followed by a BatchNormalization layer, if False no BN is used</p></li>
+<li><p><strong>dense_units</strong> – elements are nbr of nodes of a Dense layer in the dense block</p></li>
+<li><p><strong>activation</strong> – activation function used (except for output of encoder/decoder)</p></li>
+<li><p><strong>encoder_activation</strong> – activation function used for output of encoder</p></li>
+<li><p><strong>decoder_activation</strong> – activation function used for output of decoder</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Diresa functional Keras model</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="custom.html" class="btn btn-neutral float-left" title="Custom encoder/decoder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="loss.html" class="btn btn-neutral float-right" title="loss module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Geert De Paepe, ETRO VUB.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
