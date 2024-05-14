@@ -1,0 +1,2 @@
+[console_scripts]
+backpipe = backpipe.__main__:main
