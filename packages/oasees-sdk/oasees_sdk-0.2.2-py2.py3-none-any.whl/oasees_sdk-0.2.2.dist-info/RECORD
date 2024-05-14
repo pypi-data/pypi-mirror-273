@@ -1,0 +1,9 @@
+oasees_sdk/cli/cli.py,sha256=-F_HwgMI-w-xEgF2Y0I8guG7kAwf3o_su1_A40Cpn7Q,20316
+oasees_sdk/oasees_sdk/__init__.py,sha256=jMJF-_LWBnOD-rbtjOzT2t10ZU0YNAz_vc2uy53_cNw,18
+oasees_sdk/oasees_sdk/cluster_ipfs_upload.py,sha256=1QJ-4wCJScvgX15dsoi1R6aXY71dHouJz5M-35oZEwU,887
+oasees_sdk/oasees_sdk/deploy_pipeline.py,sha256=cvInJT-AjMnb7zLFyahSCu7Oqpta-UtdN0MiVnQlsIQ,1934
+oasees_sdk/oasees_sdk/sdk.py,sha256=vMGYeuURY5bjXR7V56OuoY9qSUMy3En2szO726tUNhs,9898
+oasees_sdk-0.2.2.dist-info/METADATA,sha256=HdV1z7zingGRsgFfVJycdfMyf7UvSJy6TghlHLFxFds,1074
+oasees_sdk-0.2.2.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+oasees_sdk-0.2.2.dist-info/entry_points.txt,sha256=qZenzFx2j9gEkUz99EvkrXWjI5MTaqzhpt0By2RXhOs,53
+oasees_sdk-0.2.2.dist-info/RECORD,,
