@@ -1,0 +1,4 @@
+[console_scripts]
+sd-prompt-reader=sd_prompt_reader.app:main
+sd-prompt-reader-cli=sd_prompt_reader.cli:cli
+
