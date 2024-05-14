@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+my_road.egg-info/PKG-INFO
+my_road.egg-info/SOURCES.txt
+my_road.egg-info/dependency_links.txt
+my_road.egg-info/top_level.txt
