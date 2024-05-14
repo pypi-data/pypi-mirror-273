@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: calra-lambda
+Version: 0.1.0
+Summary: CDK Ast Lambda Rest Api - Lambda Package
+Author-email: Mateo Marcos <calra.github+mateo@gmail.com>, Emanuel Arguinarena <calra.github+emanuel@gmail.com>, Lucas Picchi <calra.github+lucas@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 CDK Ast Lambda Rest-API (Calra)
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Bug Reports, https://github.com/cdk-ast-lambda-rest-api/calra-lambda/issues
+Project-URL: Source, https://github.com/cdk-ast-lambda-rest-api/calra-lambda
+Keywords: cdk,lambda,aws,api gateway,ast,decorators
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: AWS CDK :: 2
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CDK Ast Lambda Rest API - Lambda Packge (CALRA)
+
+## A library for AWS API Gateway/Lambda Proxy Integration
+
+CALRA allows simplified resource creation for AWS Lambda functions and Rest API resources by using decorators and setting a builder with default, common or custom values for IAM Roles, Runtimes, Timeouts, Layers, Environment values, etc.
+
+This module provides the definition of decorators that are used within lambda handlers to add special configuration options for your Lambda Function.
+
+### Installation
+
+`calra_lambda` is available from PyPI as `calra-lambda`:
+
+    pip install calra-lambda
+
+You can as well rely on the [calra-example](https://https://github.com/cdk-ast-lambda-rest-api/calra-example) repository to get started.
+To take full advantage of this package, installation of [calra-cdk](https://pypi.org/project/calra-cdk/) is recommended.
+
+### Add decorators to your Lambda Handler
+
+The decorators defined within this package are:
+
+- GET, POST, PUT, DELETE, ANY are explicitly required for every handler and need to be defined with a custom path for your REST Endpoint.
+- timeout will accept an integer value that will be transformed to duration in terms of seconds for a Lambda Function.
+- memory_size will accept an integer value to specify the memory that will be assigned to each instance of your Lambda Function.
+- name and description assign a custom string value passed as parameter to your Lambda Function's name and description.
+- runtime, role, vpc. Each decorator receives a name string as identifier for a custom value defined for your stack using the [calra-cdk](https://pypi.org/project/calra-cdk/) module.
+- environment, layer and security_group decorators can receive multi arguments or a list with the names of custom environment/layers/security_groups defined for your stack using the [calra-cdk](https://pypi.org/project/calra-cdk/) module.
+
+```python
+    from calra_lambda import *
+    import json
+
+    @GET('/dogs')
+    @runtime('python3.11')
+    @name('LBD-DOGS-GET')
+    @memory_size(256)
+    def lambda_handler(event, context):
+        response = {
+            'statusCode': 200,
+            'body': json.dumps({
+                'message': 'Hello World from /dogs!'
+            })
+        }
+        return response
+```
