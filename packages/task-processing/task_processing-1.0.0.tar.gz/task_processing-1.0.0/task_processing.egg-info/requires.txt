@@ -1,0 +1,11 @@
+pyrsistent
+
+[k8s]
+kubernetes
+typing-extensions
+
+[metrics]
+yelp-meteorite
+
+[persistence]
+boto3
