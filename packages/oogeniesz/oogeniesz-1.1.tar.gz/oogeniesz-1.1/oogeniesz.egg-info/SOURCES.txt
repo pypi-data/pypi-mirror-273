@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oogeniesz/__init__.py
+oogeniesz/main.py
+oogeniesz.egg-info/PKG-INFO
+oogeniesz.egg-info/SOURCES.txt
+oogeniesz.egg-info/dependency_links.txt
+oogeniesz.egg-info/requires.txt
+oogeniesz.egg-info/top_level.txt
