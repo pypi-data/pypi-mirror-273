@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+mfprocess/__init__.py
+mfprocess/functions.py
+mfprocess.egg-info/PKG-INFO
+mfprocess.egg-info/SOURCES.txt
+mfprocess.egg-info/dependency_links.txt
+mfprocess.egg-info/requires.txt
+mfprocess.egg-info/top_level.txt
