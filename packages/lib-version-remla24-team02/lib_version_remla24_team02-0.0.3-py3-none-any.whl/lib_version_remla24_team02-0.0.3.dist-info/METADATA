@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lib_version_remla24_team02
+Version: 0.0.3
+Summary: A version-aware library that can can be asked for the version of the library.
+Home-page: https://github.com/remla24-02/lib-version
+Author: REMLA 2024 Team 02
+Author-email: example@example.com
+License-File: LICENSE
+
