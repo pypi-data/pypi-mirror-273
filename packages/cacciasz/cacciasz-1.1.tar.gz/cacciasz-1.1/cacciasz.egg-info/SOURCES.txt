@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cacciasz/__init__.py
+cacciasz/main.py
+cacciasz.egg-info/PKG-INFO
+cacciasz.egg-info/SOURCES.txt
+cacciasz.egg-info/dependency_links.txt
+cacciasz.egg-info/requires.txt
+cacciasz.egg-info/top_level.txt
