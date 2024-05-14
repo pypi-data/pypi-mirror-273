@@ -1,0 +1,21 @@
+pytest>=7.0.0
+msgpack
+six
+fluent-logger
+jsonschema
+ruamel.yaml
+
+[docs]
+sphinx
+sphinx-rtd-theme
+myst-parser
+
+[test]
+pytest
+coverage[toml]
+pytest-cov
+pytest-xdist[psutil]
+six
+
+[test:python_version <= "3.8"]
+importlib-resources
