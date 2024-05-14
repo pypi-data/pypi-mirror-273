@@ -1,0 +1,10 @@
+README.md
+setup.py
+bing_create/__init__.py
+bing_create/main.py
+bing_create.egg-info/PKG-INFO
+bing_create.egg-info/SOURCES.txt
+bing_create.egg-info/dependency_links.txt
+bing_create.egg-info/entry_points.txt
+bing_create.egg-info/requires.txt
+bing_create.egg-info/top_level.txt
