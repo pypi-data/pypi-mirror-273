@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+zjuintl_assistant/__init__.py
+zjuintl_assistant/assistant.py
+zjuintl_assistant/constants.py
+zjuintl_assistant/data_classes.py
+zjuintl_assistant/login_utils.py
+zjuintl_assistant.egg-info/PKG-INFO
+zjuintl_assistant.egg-info/SOURCES.txt
+zjuintl_assistant.egg-info/dependency_links.txt
+zjuintl_assistant.egg-info/not-zip-safe
+zjuintl_assistant.egg-info/requires.txt
+zjuintl_assistant.egg-info/top_level.txt
