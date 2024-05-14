@@ -1,0 +1,56 @@
+[
+  {
+    "position": [
+      789,
+      264,
+      86,
+      62
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      649,
+      479,
+      247,
+      134
+    ],
+    "text": "laptop"
+  },
+  {
+    "position": [
+      624,
+      332,
+      47,
+      37
+    ],
+    "text": "cell phone"
+  },
+  {
+    "position": [
+      777,
+      643,
+      255,
+      148
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      878,
+      592,
+      461,
+      243
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      842,
+      287,
+      32,
+      75
+    ],
+    "text": "bottle"
+  }
+]

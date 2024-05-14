@@ -1,0 +1,1085 @@
+/home/yi/Projects/icare_nlp_tools/examples
+Initializing ICARE NLP Tools package...
+SCENE DESC:  而家眼前嘅景象有3把椅, 2隻手, 1瓶樽, 1台電視, 1個滑鼠, 1張床, 1張飯枱, 1個行李箱, 1張梳化, 1個書包.視線左上角嘅場景入面有2把椅.視線左上角嘅場景入面有1個滑鼠.視線左上角嘅場景入面有1張床.視線左上角嘅場景入面有1張梳化.視線右上角嘅場景入面有1瓶樽.視線右上角嘅場景入面有1台電視.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1把椅.視線右下角嘅場景入面有2隻手.視線右下角嘅場景入面有1個行李箱.視線右下角嘅場景入面有1個書包.
+Index:  0
+Object Detection:  [{'position': [802, 300, 86, 163], 'text': 'bottle'}, {'position': [227, 182, 98, 52], 'text': 'chair'}, {'position': [665, 57, 224, 114], 'text': 'tv'}, {'position': [70, 319, 83, 51], 'text': 'mouse'}, {'position': [969, 567, 577, 294], 'text': 'chair'}, {'position': [969, 566, 579, 296], 'text': 'hand'}, {'position': [83, 177, 165, 210], 'text': 'bed'}, {'position': [616, 421, 1233, 589], 'text': 'dining table'}, {'position': [830, 607, 309, 219], 'text': 'hand'}, {'position': [1034, 384, 211, 146], 'text': 'suitcase'}, {'position': [355, 134, 57, 49], 'text': 'chair'}, {'position': [83, 175, 166, 210], 'text': 'couch'}, {'position': [1035, 384, 211, 147], 'text': 'backpack'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺手嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  tv喺邊？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  tv附近有冇其他物體？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有5把椅, 1張飯枱, 1台手提電腦.視線左上角嘅場景入面有3把椅.視線右上角嘅場景入面有1張飯枱.視線左下角嘅場景入面有2把椅.視線右下角嘅場景入面有1台手提電腦.
+Index:  1
+Object Detection:  [{'position': [878, 359, 796, 706], 'text': 'dining table'}, {'position': [428, 150, 199, 273], 'text': 'chair'}, {'position': [124, 369, 249, 449], 'text': 'chair'}, {'position': [899, 369, 358, 230], 'text': 'laptop'}, {'position': [280, 68, 144, 134], 'text': 'chair'}, {'position': [600, 496, 228, 428], 'text': 'chair'}, {'position': [308, 85, 197, 160], 'text': 'chair'}]
+Question:  我點樣可以攞到dining table？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  laptop喺邊？
+Answer:  laptop喺中心點嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  laptop附近有冇其他物體？
+Answer:  laptop最近嘅物件系 dining table,chair,chair.dining table喺laptop嘅左上方.chair喺laptop嘅左下方.chair喺laptop嘅左上方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  bottle喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有5把椅, 1張飯枱, 1張床.視線左上角嘅場景入面有3把椅.視線右上角嘅場景入面有1把椅.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1張床.
+Index:  2
+Object Detection:  [{'position': [850, 115, 76, 102], 'text': 'chair'}, {'position': [210, 203, 254, 332], 'text': 'chair'}, {'position': [368, 572, 188, 280], 'text': 'chair'}, {'position': [788, 383, 983, 646], 'text': 'dining table'}, {'position': [784, 385, 990, 647], 'text': 'bed'}, {'position': [508, 39, 110, 68], 'text': 'chair'}, {'position': [244, 217, 183, 303], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  櫈子喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  櫈子附近有冇其他物體？
+Answer:  chair最近嘅物件系 dining table,bed,chair.dining table喺chair嘅左下方.bed喺chair嘅左下方.chair喺chair嘅左上方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  座椅喺我手嘅邊個方向？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  點樣可以攞到餐桌？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌喺邊？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌附近有冇其他物體？
+Answer:  dining table最近嘅物件系 bed,chair,chair.bed喺dining table嘅左下方.chair喺dining table嘅左上方.chair喺dining table嘅左下方.. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌喺我手嘅邊個方向？
+Answer:  dining table喺中心點嘅左上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+SCENE DESC:  而家眼前嘅景象有3瓶樽, 2個杯, 1台手提電腦, 1個水槽, 1台電視.視線左上角嘅場景入面有1個杯.視線右上角嘅場景入面有3瓶樽.視線右上角嘅場景入面有1個水槽.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1台電視.
+Index:  3
+Object Detection:  [{'position': [785, 204, 71, 176], 'text': 'bottle'}, {'position': [392, 558, 619, 309], 'text': 'laptop'}, {'position': [742, 261, 75, 141], 'text': 'bottle'}, {'position': [663, 214, 102, 238], 'text': 'bottle'}, {'position': [632, 325, 88, 101], 'text': 'cup'}, {'position': [1048, 307, 462, 376], 'text': 'sink'}, {'position': [650, 325, 122, 104], 'text': 'cup'}, {'position': [386, 558, 612, 308], 'text': 'tv'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  bottle喺邊？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  bottle附近有冇其他物體？
+Answer:  bottle最近嘅物件系 bottle,bottle,cup.bottle喺bottle嘅左下方.bottle喺bottle嘅左下方.cup喺bottle嘅左下方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  cup喺我手嘅邊個方向？
+Answer:  cup喺中心點嘅左上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+SCENE DESC:  而家眼前嘅景象有4瓶樽, 1個杯, 1台手提電腦, 1隻手, 1台電視, 1個水槽, 1個廁所.視線左上角嘅場景入面有1個廁所.視線右上角嘅場景入面有1個杯.視線右上角嘅場景入面有4瓶樽.視線右上角嘅場景入面有1個水槽.視線左下角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1台電視.視線右下角嘅場景入面有1隻手.
+Index:  4
+Object Detection:  [{'position': [693, 323, 141, 113], 'text': 'cup'}, {'position': [361, 572, 612, 279], 'text': 'laptop'}, {'position': [865, 186, 95, 212], 'text': 'bottle'}, {'position': [1096, 568, 362, 289], 'text': 'hand'}, {'position': [808, 257, 82, 165], 'text': 'bottle'}, {'position': [715, 193, 113, 253], 'text': 'bottle'}, {'position': [354, 572, 583, 276], 'text': 'tv'}, {'position': [696, 193, 74, 256], 'text': 'bottle'}, {'position': [1086, 324, 385, 500], 'text': 'sink'}, {'position': [102, 109, 205, 200], 'text': 'toilet'}]
+Question:  我點樣可以攞到杯子？
+Answer:  cup喺手嘅左上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  瓶子喺邊？
+Answer:  bottle喺手嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  瓶子附近有冇其他物體？
+Answer:  bottle最近嘅物件系 bottle,bottle,bottle.bottle喺bottle嘅左下方.bottle喺bottle嘅左下方.bottle喺bottle嘅左下方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  電視喺我手嘅邊個方向？
+Answer:  tv喺手嘅左下方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有3瓶樽, 1台手提電腦, 1個杯, 1個水槽, 1隻手, 1台電視.視線右上角嘅場景入面有3瓶樽.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1台電視.視線右下角嘅場景入面有1個水槽.視線右下角嘅場景入面有1隻手.
+Index:  5
+Object Detection:  [{'position': [790, 213, 96, 251], 'text': 'bottle'}, {'position': [440, 560, 580, 303], 'text': 'laptop'}, {'position': [760, 330, 134, 111], 'text': 'cup'}, {'position': [938, 228, 89, 173], 'text': 'bottle'}, {'position': [873, 276, 79, 156], 'text': 'bottle'}, {'position': [1119, 390, 319, 410], 'text': 'sink'}, {'position': [1141, 621, 276, 191], 'text': 'hand'}, {'position': [425, 561, 554, 303], 'text': 'tv'}]
+Question:  我點樣可以攞到瓶子？
+Answer:  bottle喺手嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  杯子喺邊？
+Answer:  cup喺手嘅左上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  杯子附近有冇其他物體？
+Answer:  cup最近嘅物件系 bottle,bottle,bottle.bottle喺cup嘅右上方.bottle喺cup嘅右上方.bottle喺cup嘅右上方.. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  電視機喺我手嘅邊個方向？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  筆電喺邊？
+Answer:  你已經掂到hand. 
+
+Question:  水池喺邊？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有4瓶樽, 3個杯, 1台手提電腦, 1台電視, 1個水槽.視線右上角嘅場景入面有3個杯.視線右上角嘅場景入面有4瓶樽.視線左下角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1台電視.視線右下角嘅場景入面有1個水槽.
+Index:  6
+Object Detection:  [{'position': [735, 345, 129, 108], 'text': 'cup'}, {'position': [759, 229, 96, 245], 'text': 'bottle'}, {'position': [430, 566, 575, 291], 'text': 'laptop'}, {'position': [428, 566, 576, 291], 'text': 'tv'}, {'position': [892, 227, 82, 190], 'text': 'bottle'}, {'position': [840, 289, 76, 147], 'text': 'bottle'}, {'position': [867, 27, 48, 54], 'text': 'cup'}, {'position': [714, 344, 87, 106], 'text': 'cup'}, {'position': [1102, 364, 354, 433], 'text': 'sink'}, {'position': [738, 218, 56, 208], 'text': 'bottle'}]
+Question:  我點樣可以攞到cup？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  tv喺邊？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  tv附近有冇其他物體？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  cup喺我手嘅邊個方向？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+SCENE DESC:  而家眼前嘅景象有4把椅, 1個滑鼠, 1個遙控, 1隻手, 1張飯枱, 1本書, 1瓶樽.視線左上角嘅場景入面有3把椅.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1本書.視線左下角嘅場景入面有1個遙控.視線左下角嘅場景入面有1張飯枱.視線左下角嘅場景入面有1瓶樽.視線右下角嘅場景入面有1個滑鼠.視線右下角嘅場景入面有1隻手.
+Index:  7
+Object Detection:  [{'position': [426, 177, 176, 63], 'text': 'chair'}, {'position': [834, 409, 89, 63], 'text': 'mouse'}, {'position': [608, 460, 190, 98], 'text': 'remote'}, {'position': [620, 119, 109, 98], 'text': 'chair'}, {'position': [786, 573, 330, 279], 'text': 'hand'}, {'position': [870, 115, 87, 39], 'text': 'chair'}, {'position': [638, 414, 1273, 591], 'text': 'dining table'}, {'position': [713, 194, 175, 58], 'text': 'book'}, {'position': [130, 485, 259, 365], 'text': 'bottle'}, {'position': [618, 110, 94, 78], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  遙控器喺邊？
+Answer:  remote喺手嘅左上方. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  遙控器附近有冇其他物體？
+Answer:  remote最近嘅物件系 dining table,hand,mouse.dining table喺remote嘅右上方.hand喺remote嘅右下方.mouse喺remote嘅右上方.. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  餐桌喺我手嘅邊個方向？
+Answer:  dining table喺手嘅左上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  書喺邊？
+Answer:  book喺手嘅左上方. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+Question:  瓶子附近有冇其他物體？
+Answer:  bottle最近嘅物件系 chair,dining table,chair.chair喺bottle嘅右上方.dining table喺bottle嘅右上方.chair喺bottle嘅右上方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  椅子附近有冇其他物體？
+Answer:  chair最近嘅物件系 chair,chair,book.chair喺chair嘅右上方.chair喺chair嘅右上方.book喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有1個碗, 1台手提電腦.視線左上角嘅場景入面有1個碗.視線左下角嘅場景入面有1台手提電腦.
+Index:  8
+Object Detection:  [{'position': [335, 104, 394, 205], 'text': 'bowl'}, {'position': [309, 563, 616, 295], 'text': 'laptop'}]
+Question:  我點樣可以攞到碗？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  筆記本電腦喺邊？
+Answer:  laptop喺中心點嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  筆記本電腦附近有冇其他物體？
+Answer:  laptop最近嘅物件系 bowl.bowl喺laptop嘅右上方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+SCENE DESC:  而家眼前嘅景象有1個碗, 1台電視, 1台手提電腦, 1塊蛋糕.視線左上角嘅場景入面有1個碗.視線左下角嘅場景入面有1台電視.視線左下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1塊蛋糕.
+Index:  9
+Object Detection:  [{'position': [290, 106, 432, 207], 'text': 'bowl'}, {'position': [304, 567, 608, 290], 'text': 'tv'}, {'position': [304, 567, 608, 288], 'text': 'laptop'}, {'position': [1112, 439, 334, 270], 'text': 'cake'}]
+Question:  我點樣可以攞到碗？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  電視喺邊？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  電視附近有冇其他物體？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  蛋糕喺我手嘅邊個方向？
+Answer:  cake喺中心點嘅右上方. 蛋糕通常柔軟，有層次嘅奶油和柔軟嘅底部。
+
+SCENE DESC:  而家眼前嘅景象有2瓶樽, 1個杯, 1個水槽, 1台手提電腦, 1個碗.視線左上角嘅場景入面有2瓶樽.視線右上角嘅場景入面有1個杯.視線右上角嘅場景入面有1個碗.視線左下角嘅場景入面有1個水槽.視線左下角嘅場景入面有1台手提電腦.
+Index:  10
+Object Detection:  [{'position': [321, 351, 112, 190], 'text': 'bottle'}, {'position': [852, 116, 140, 118], 'text': 'cup'}, {'position': [605, 484, 491, 454], 'text': 'sink'}, {'position': [227, 569, 455, 286], 'text': 'laptop'}, {'position': [853, 116, 138, 116], 'text': 'bowl'}, {'position': [121, 345, 191, 273], 'text': 'bottle'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  cup喺邊？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  cup附近有冇其他物體？
+Answer:  cup最近嘅物件系 bowl,sink,bottle.bowl喺cup嘅右方.sink喺cup嘅左下方.bottle喺cup嘅左下方.. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  bowl喺我手嘅邊個方向？
+Answer:  bowl喺中心點嘅右上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+SCENE DESC:  而家眼前嘅景象有2把椅, 1張床, 1張飯枱, 1塊蛋糕.視線左上角嘅場景入面有1把椅.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有1張床.視線右下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1塊蛋糕.
+Index:  11
+Object Detection:  [{'position': [231, 450, 463, 522], 'text': 'chair'}, {'position': [616, 225, 238, 138], 'text': 'chair'}, {'position': [874, 477, 807, 464], 'text': 'bed'}, {'position': [874, 474, 802, 462], 'text': 'dining table'}, {'position': [660, 436, 75, 102], 'text': 'cake'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  床喺邊？
+Answer:  bed喺中心點嘅右上方. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+Question:  床附近有冇其他物件？
+Answer:  bed喺中心點嘅右上方. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+Question:  蛋糕喺我手嘅邊個方向？
+Answer:  cake喺中心點嘅右上方. 蛋糕通常柔軟，有層次嘅奶油和柔軟嘅底部。
+
+SCENE DESC:  而家眼前嘅景象有4把椅, 1隻手, 1瓶樽, 1張飯枱, 1台電視, 1本書.視線右上角嘅場景入面有3把椅.視線右上角嘅場景入面有1瓶樽.視線右上角嘅場景入面有1台電視.視線右上角嘅場景入面有1本書.視線左下角嘅場景入面有1隻手.視線右下角嘅場景入面有1把椅.視線右下角嘅場景入面有1張飯枱.
+Index:  12
+Object Detection:  [{'position': [1047, 571, 370, 290], 'text': 'chair'}, {'position': [1214, 212, 95, 63], 'text': 'chair'}, {'position': [279, 522, 553, 384], 'text': 'hand'}, {'position': [724, 328, 47, 101], 'text': 'bottle'}, {'position': [876, 361, 794, 372], 'text': 'dining table'}, {'position': [930, 172, 64, 30], 'text': 'chair'}, {'position': [730, 30, 225, 60], 'text': 'tv'}, {'position': [663, 201, 94, 35], 'text': 'chair'}, {'position': [826, 229, 100, 41], 'text': 'book'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺手嘅右下方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  電視機喺我手嘅邊個方向？
+Answer:  tv喺手嘅右上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有5把椅, 1個行李箱, 1張飯枱.視線左上角嘅場景入面有1張飯枱.視線左上角嘅場景入面有2把椅.視線右上角嘅場景入面有1把椅.視線左下角嘅場景入面有1個行李箱.視線右下角嘅場景入面有2把椅.
+Index:  13
+Object Detection:  [{'position': [774, 171, 259, 328], 'text': 'chair'}, {'position': [1051, 523, 455, 375], 'text': 'chair'}, {'position': [610, 422, 259, 375], 'text': 'suitcase'}, {'position': [388, 132, 665, 261], 'text': 'dining table'}, {'position': [351, 139, 242, 239], 'text': 'chair'}, {'position': [46, 180, 92, 259], 'text': 'chair'}, {'position': [1084, 437, 389, 432], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  行李箱喺邊？
+Answer:  suitcase喺中心點嘅左上方. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+Question:  行李箱附近有冇其他物體？
+Answer:  suitcase最近嘅物件系 chair,dining table,chair.chair喺suitcase嘅右上方.dining table喺suitcase嘅左上方.chair喺suitcase嘅左上方.. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+SCENE DESC:  而家眼前嘅景象有2台電視, 2把椅, 1個行李箱, 1個書包.視線左上角嘅場景入面有1台電視.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台電視.視線左下角嘅場景入面有1個行李箱.視線左下角嘅場景入面有1個書包.視線右下角嘅場景入面有1把椅.
+Index:  14
+Object Detection:  [{'position': [172, 123, 344, 242], 'text': 'tv'}, {'position': [942, 470, 177, 280], 'text': 'chair'}, {'position': [805, 329, 78, 49], 'text': 'chair'}, {'position': [993, 150, 272, 154], 'text': 'tv'}, {'position': [617, 458, 349, 427], 'text': 'suitcase'}, {'position': [614, 459, 351, 431], 'text': 'backpack'}]
+Question:  我點樣可以攞到tv？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  chair喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 chair,tv,suitcase.chair喺chair嘅左上方.tv喺chair嘅右上方.suitcase喺chair嘅左上方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  tv喺我手嘅邊個方向？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  我點樣可以攞到suitcase？
+Answer:  suitcase喺中心點嘅左上方. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+Question:  backpack喺邊？
+Answer:  backpack喺中心點嘅左上方. 背包通常係中等大小，根據材料可能係軟嘅或硬嘅，有拉鍊和口袋。
+
+SCENE DESC:  而家眼前嘅景象有4把椅, 2個滑鼠, 1瓶樽, 1張飯枱, 1本書.視線左上角嘅場景入面有1把椅.視線左上角嘅場景入面有2個滑鼠.視線右上角嘅場景入面有2把椅.視線右上角嘅場景入面有1本書.視線右下角嘅場景入面有1瓶樽.視線右下角嘅場景入面有1把椅.視線右下角嘅場景入面有1張飯枱.
+Index:  15
+Object Detection:  [{'position': [645, 367, 84, 171], 'text': 'bottle'}, {'position': [1067, 558, 422, 305], 'text': 'chair'}, {'position': [589, 152, 122, 45], 'text': 'chair'}, {'position': [510, 198, 43, 24], 'text': 'mouse'}, {'position': [717, 109, 105, 102], 'text': 'chair'}, {'position': [726, 402, 1097, 538], 'text': 'dining table'}, {'position': [549, 249, 44, 30], 'text': 'mouse'}, {'position': [929, 126, 77, 35], 'text': 'chair'}, {'position': [838, 246, 199, 53], 'text': 'book'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  chair喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 dining table,book,chair.dining table喺chair嘅左上方.book喺chair嘅左上方.chair喺chair嘅左上方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  dining table喺我手嘅邊個方向？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+SCENE DESC:  而家眼前嘅景象有2把椅, 1瓶樽, 1隻手, 1個書包, 1個蘋果, 1台電視.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1瓶樽.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台電視.視線左下角嘅場景入面有1個蘋果.視線右下角嘅場景入面有1隻手.視線右下角嘅場景入面有1個書包.
+Index:  16
+Object Detection:  [{'position': [823, 292, 135, 269], 'text': 'bottle'}, {'position': [676, 593, 479, 243], 'text': 'hand'}, {'position': [94, 162, 159, 54], 'text': 'chair'}, {'position': [1137, 433, 285, 241], 'text': 'backpack'}, {'position': [419, 372, 114, 106], 'text': 'apple'}, {'position': [1031, 278, 214, 203], 'text': 'chair'}, {'position': [662, 62, 244, 123], 'text': 'tv'}]
+Question:  我點樣可以攞到瓶子？
+Answer:  bottle喺手嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  椅子喺邊？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子附近有冇其他物體？
+Answer:  chair最近嘅物件系 apple,tv,hand.apple喺chair嘅右下方.tv喺chair嘅右上方.hand喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  電視喺我手嘅邊個方向？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有2把椅, 1個書包, 1張床, 1台電視.視線右上角嘅場景入面有1台電視.視線右下角嘅場景入面有2把椅.視線右下角嘅場景入面有1個書包.視線右下角嘅場景入面有1張床.
+Index:  17
+Object Detection:  [{'position': [662, 575, 139, 95], 'text': 'chair'}, {'position': [1117, 662, 231, 95], 'text': 'chair'}, {'position': [857, 549, 171, 239], 'text': 'backpack'}, {'position': [643, 646, 1211, 141], 'text': 'bed'}, {'position': [1056, 335, 444, 264], 'text': 'tv'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  背包喺邊？
+Answer:  backpack喺中心點嘅右上方. 背包通常係中等大小，根據材料可能係軟嘅或硬嘅，有拉鍊和口袋。
+
+Question:  背包附近有冇其他物件？
+Answer:  backpack最近嘅物件系 chair,bed,chair.chair喺backpack嘅左下方.bed喺backpack嘅左下方.chair喺backpack嘅右下方.. 背包通常係中等大小，根據材料可能係軟嘅或硬嘅，有拉鍊和口袋。
+
+Question:  電視機喺我手嘅邊個方向？
+Answer:  tv喺中心點嘅右上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有1張梳化, 1隻手.視線左上角嘅場景入面有1隻手.視線右下角嘅場景入面有1張梳化.
+Index:  18
+Object Detection:  [{'position': [957, 548, 637, 331], 'text': 'couch'}, {'position': [230, 343, 460, 424], 'text': 'hand'}]
+Question:  我點樣可以攞到couch？
+Answer:  couch喺手嘅右下方. 沙發大，表面係柔軟嘅坐墊，框架結實。
+
+Question:  hand附近有冇其他物體？
+Answer:  hand最近嘅物件系 couch.couch喺hand嘅右下方.. 
+
+Question:  couch喺我手嘅邊個方向？
+Answer:  couch喺中心點嘅右上方. 沙發大，表面係柔軟嘅坐墊，框架結實。
+
+SCENE DESC:  而家眼前嘅景象有3把椅, 2台電視, 1個滑鼠, 1張飯枱, 1個書包, 1把剪刀.視線左上角嘅場景入面有2把椅.視線左上角嘅場景入面有1台電視.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台電視.視線左下角嘅場景入面有1個滑鼠.視線左下角嘅場景入面有1張飯枱.視線左下角嘅場景入面有1把剪刀.視線右下角嘅場景入面有1個書包.
+Index:  19
+Object Detection:  [{'position': [1066, 291, 204, 202], 'text': 'chair'}, {'position': [283, 259, 91, 58], 'text': 'chair'}, {'position': [704, 71, 214, 139], 'text': 'tv'}, {'position': [475, 44, 203, 88], 'text': 'tv'}, {'position': [125, 422, 83, 59], 'text': 'mouse'}, {'position': [113, 286, 227, 244], 'text': 'chair'}, {'position': [638, 448, 1276, 529], 'text': 'dining table'}, {'position': [1154, 428, 251, 183], 'text': 'backpack'}, {'position': [562, 516, 244, 124], 'text': 'scissors'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  電視機喺邊？
+Answer:  tv喺中心點嘅右上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  電視機附近有冇其他物體？
+Answer:  tv喺中心點嘅右上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  餐桌喺我手嘅邊個方向？
+Answer:  dining table喺中心點嘅左上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  我點樣可以攞到電視機？
+Answer:  tv喺中心點嘅右上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  有冇別嘅東西喺椅子附近？
+Answer:  scissors最近嘅物件系 dining table,chair,mouse.dining table喺scissors嘅右上方.chair喺scissors嘅左上方.mouse喺scissors嘅左上方.. 剪刀由兩個交叉嘅刀片組成，堅硬而鋒利，手柄光滑。
+
+SCENE DESC:  而家眼前嘅景象有2把椅, 1台手提電腦, 1個遙控.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台手提電腦.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1個遙控.
+Index:  20
+Object Detection:  [{'position': [166, 78, 178, 151], 'text': 'chair'}, {'position': [806, 345, 267, 179], 'text': 'laptop'}, {'position': [874, 62, 107, 75], 'text': 'chair'}, {'position': [1139, 284, 106, 57], 'text': 'remote'}]
+Question:  我點樣可以攞到某个chair？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  laptop喺邊？
+Answer:  laptop喺中心點嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  laptop附近有冇其他物體？
+Answer:  laptop最近嘅物件系 chair,remote,chair.chair喺laptop嘅右上方.remote喺laptop嘅右上方.chair喺laptop嘅左上方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  某个remote喺我手嘅邊個方向？
+Answer:  remote最近嘅物件系 chair,chair.chair喺remote嘅左上方.chair喺remote嘅左上方.. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+SCENE DESC:  而家眼前嘅景象有10瓶樽, 2個杯, 1個碗, 1個滑鼠.視線右上角嘅場景入面有7瓶樽.視線右上角嘅場景入面有1個碗.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1個杯.視線左下角嘅場景入面有1個滑鼠.視線右下角嘅場景入面有3瓶樽.
+Index:  21
+Object Detection:  [{'position': [925, 299, 84, 197], 'text': 'bottle'}, {'position': [140, 440, 209, 187], 'text': 'cup'}, {'position': [987, 384, 83, 155], 'text': 'bottle'}, {'position': [883, 245, 58, 182], 'text': 'bottle'}, {'position': [988, 258, 56, 168], 'text': 'bottle'}, {'position': [664, 295, 149, 145], 'text': 'bowl'}, {'position': [873, 291, 31, 91], 'text': 'bottle'}, {'position': [1043, 254, 80, 139], 'text': 'bottle'}, {'position': [949, 372, 56, 92], 'text': 'bottle'}, {'position': [982, 291, 46, 115], 'text': 'bottle'}, {'position': [993, 366, 67, 126], 'text': 'bottle'}, {'position': [888, 214, 46, 116], 'text': 'bottle'}, {'position': [56, 602, 100, 73], 'text': 'mouse'}, {'position': [807, 239, 135, 130], 'text': 'cup'}]
+Question:  我點樣可以攞到物體bottle？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  物體cup喺邊？
+Answer:  cup喺中心點嘅左上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  物體cup附近有冇其他物體？
+Answer:  cup最近嘅物件系 mouse,bowl,cup.mouse喺cup嘅左下方.bowl喺cup嘅右上方.cup喺cup嘅右上方.. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  物體bottle喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有3把椅, 1台手提電腦, 1部手提電話, 1瓶樽.視線左上角嘅場景入面有1部手提電話.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1瓶樽.視線右下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有2把椅.
+Index:  22
+Object Detection:  [{'position': [789, 264, 86, 62], 'text': 'chair'}, {'position': [649, 479, 247, 134], 'text': 'laptop'}, {'position': [624, 332, 47, 37], 'text': 'cell phone'}, {'position': [777, 643, 255, 148], 'text': 'chair'}, {'position': [878, 592, 461, 243], 'text': 'chair'}, {'position': [842, 287, 32, 75], 'text': 'bottle'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  手機喺邊？
+Answer:  cell phone喺中心點嘅左上方. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+Question:  手機附近有冇其他物體？
+Answer:  cell phone最近嘅物件系 laptop,chair,bottle.laptop喺cell phone嘅右下方.chair喺cell phone嘅右上方.bottle喺cell phone嘅右上方.. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+Question:  瓶子喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有4把椅, 2台電視, 1瓶樽.視線左上角嘅場景入面有2把椅.視線左上角嘅場景入面有1台電視.視線右上角嘅場景入面有2把椅.視線右上角嘅場景入面有1台電視.視線右下角嘅場景入面有1瓶樽.
+Index:  23
+Object Detection:  [{'position': [699, 210, 57, 87], 'text': 'chair'}, {'position': [738, 409, 71, 140], 'text': 'bottle'}, {'position': [179, 274, 99, 71], 'text': 'chair'}, {'position': [627, 61, 221, 121], 'text': 'tv'}, {'position': [921, 304, 225, 211], 'text': 'chair'}, {'position': [1088, 156, 382, 310], 'text': 'tv'}, {'position': [288, 119, 111, 234], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子附近有冇其他物體？
+Answer:  chair最近嘅物件系 tv,bottle,chair.tv喺chair嘅左上方.bottle喺chair嘅右下方.chair喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  電視喺我手嘅邊個方向？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  我點樣可以攞到樽？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  樽喺邊？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  樽附近有冇其他物體？
+Answer:  bottle最近嘅物件系 chair,tv,tv.chair喺bottle嘅右上方.tv喺bottle嘅左上方.tv喺bottle嘅右上方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  樽喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有4把椅, 1台電視, 1個杯, 1個手袋, 1個行李箱.視線左上角嘅場景入面有1台電視.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有2把椅.視線右上角嘅場景入面有1個行李箱.視線左下角嘅場景入面有1個杯.視線右下角嘅場景入面有1個手袋.視線右下角嘅場景入面有1把椅.
+Index:  24
+Object Detection:  [{'position': [999, 349, 213, 254], 'text': 'chair'}, {'position': [221, 64, 427, 125], 'text': 'tv'}, {'position': [72, 325, 144, 58], 'text': 'chair'}, {'position': [873, 221, 78, 49], 'text': 'chair'}, {'position': [101, 535, 177, 267], 'text': 'cup'}, {'position': [1013, 589, 211, 253], 'text': 'handbag'}, {'position': [663, 289, 242, 324], 'text': 'suitcase'}, {'position': [1231, 535, 96, 303], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  電視機喺邊？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  電視機附近有冇其他物體？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  手袋喺我手嘅邊個方向？
+Answer:  handbag喺中心點嘅右上方. 手袋嘅大小各異，由軟皮革至硬合成材料製成。
+
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子附近有冇其他物體？
+Answer:  chair最近嘅物件系 chair,handbag,chair.chair喺chair嘅左上方.handbag喺chair嘅右下方.chair喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  手袋喺我手嘅邊個方向？
+Answer:  handbag喺中心點嘅右上方. 手袋嘅大小各異，由軟皮革至硬合成材料製成。
+
+SCENE DESC:  而家眼前嘅景象有2台手提電腦, 1個行李箱, 1張床.視線左上角嘅場景入面有1張床.視線左下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1個行李箱.視線右下角嘅場景入面有1台手提電腦.
+Index:  25
+Object Detection:  [{'position': [145, 480, 290, 386], 'text': 'laptop'}, {'position': [1080, 462, 397, 495], 'text': 'suitcase'}, {'position': [483, 348, 963, 690], 'text': 'bed'}, {'position': [1081, 463, 396, 493], 'text': 'laptop'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺中心點嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  bed喺邊？
+Answer:  bed喺中心點嘅左上方. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+Question:  bed附近有冇其他物體？
+Answer:  bed最近嘅物件系 laptop,suitcase,laptop.laptop喺bed嘅左下方.suitcase喺bed嘅右下方.laptop喺bed嘅右下方.. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+SCENE DESC:  而家眼前嘅景象有1個滑鼠, 1隻手, 1本書, 1塊波.視線左上角嘅場景入面有1本書.視線左上角嘅場景入面有1塊波.視線左下角嘅場景入面有1隻手.視線右下角嘅場景入面有1個滑鼠.
+Index:  26
+Object Detection:  [{'position': [955, 428, 172, 146], 'text': 'mouse'}, {'position': [294, 639, 589, 147], 'text': 'hand'}, {'position': [71, 319, 141, 212], 'text': 'book'}, {'position': [481, 159, 106, 108], 'text': 'sports ball'}]
+Question:  我點樣可以攞到mouse？
+Answer:  mouse喺手嘅右上方. 滑鼠小，塑料製，表面光滑且呈曲線形以適合手部休息。
+
+Question:  book喺邊？
+Answer:  book喺手嘅左上方. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+Question:  book附近有冇其他物體？
+Answer:  book最近嘅物件系 hand,sports ball,mouse.hand喺book嘅右下方.sports ball喺book嘅右上方.mouse喺book嘅右下方.. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+SCENE DESC:  而家眼前嘅景象有9把椅, 1張飯枱, 1個行李箱, 1把雨傘, 1個手袋.視線左上角嘅場景入面有1把椅.視線左上角嘅場景入面有1張飯枱.視線右上角嘅場景入面有4把椅.視線右上角嘅場景入面有1個手袋.視線左下角嘅場景入面有1個行李箱.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有3把椅.視線右下角嘅場景入面有1把雨傘.
+Index:  27
+Object Detection:  [{'position': [1106, 473, 346, 441], 'text': 'chair'}, {'position': [778, 110, 188, 211], 'text': 'chair'}, {'position': [48, 34, 95, 63], 'text': 'chair'}, {'position': [367, 250, 733, 426], 'text': 'dining table'}, {'position': [1139, 148, 279, 266], 'text': 'chair'}, {'position': [1108, 372, 341, 643], 'text': 'chair'}, {'position': [209, 486, 419, 452], 'text': 'suitcase'}, {'position': [1097, 675, 338, 80], 'text': 'chair'}, {'position': [664, 132, 148, 196], 'text': 'chair'}, {'position': [693, 391, 588, 369], 'text': 'umbrella'}, {'position': [690, 25, 77, 50], 'text': 'chair'}, {'position': [202, 487, 402, 449], 'text': 'chair'}, {'position': [983, 123, 114, 236], 'text': 'handbag'}]
+Question:  我點樣可以攞到條chair？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  物體suitcase喺邊？
+Answer:  suitcase喺中心點嘅左上方. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+Question:  物體suitcase附近有冇其他物體？
+Answer:  suitcase最近嘅物件系 chair,dining table,chair.chair喺suitcase嘅左下方.dining table喺suitcase嘅右上方.chair喺suitcase嘅左上方.. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+Question:  物體umbrella喺我手嘅邊個方向？
+Answer:  umbrella喺中心點嘅右上方. 傘由金屬框架和光滑防水嘅布料製成。
+
+SCENE DESC:  而家眼前嘅景象有2個遙控, 1瓶樽.視線右上角嘅場景入面有2個遙控.視線右上角嘅場景入面有1瓶樽.
+Index:  28
+Object Detection:  [{'position': [641, 122, 78, 65], 'text': 'remote'}, {'position': [1111, 294, 113, 72], 'text': 'remote'}, {'position': [907, 60, 64, 102], 'text': 'bottle'}]
+Question:  我點樣可以攞到遙控器？
+Answer:  remote喺中心點嘅右上方. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  遙控器喺邊？
+Answer:  remote喺中心點嘅右上方. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  遙控器附近有冇其他物體？
+Answer:  remote最近嘅物件系 bottle,remote.bottle喺remote嘅右上方.remote喺remote嘅右下方.. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  我手邊有冇瓶子？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有3把椅, 2個遙控, 2台手提電腦, 1個書包, 1瓶樽, 1部手提電話, 1隻手.視線左上角嘅場景入面有1個遙控.視線左上角嘅場景入面有1個書包.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1瓶樽.視線左下角嘅場景入面有2台手提電腦.視線左下角嘅場景入面有1隻手.視線右下角嘅場景入面有1個遙控.視線右下角嘅場景入面有1把椅.視線右下角嘅場景入面有1部手提電話.
+Index:  29
+Object Detection:  [{'position': [590, 312, 58, 45], 'text': 'remote'}, {'position': [631, 520, 330, 214], 'text': 'laptop'}, {'position': [1009, 429, 109, 56], 'text': 'remote'}, {'position': [757, 238, 95, 64], 'text': 'chair'}, {'position': [388, 199, 241, 259], 'text': 'backpack'}, {'position': [835, 263, 40, 85], 'text': 'bottle'}, {'position': [1080, 596, 303, 237], 'text': 'chair'}, {'position': [52, 217, 104, 173], 'text': 'chair'}, {'position': [1010, 429, 106, 53], 'text': 'cell phone'}, {'position': [614, 383, 320, 86], 'text': 'laptop'}, {'position': [243, 629, 485, 165], 'text': 'hand'}]
+Question:  我點樣可以攞到remote？
+Answer:  remote喺手嘅右上方. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  laptop喺邊？
+Answer:  laptop喺手嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  laptop附近有冇其他物體？
+Answer:  laptop最近嘅物件系 laptop,remote,chair.laptop喺laptop嘅左上方.remote喺laptop嘅左上方.chair喺laptop嘅右上方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  bottle喺我手嘅邊個方向？
+Answer:  bottle喺手嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有1台手提電腦, 1隻手, 1把剪刀.視線左上角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1隻手.視線左下角嘅場景入面有1把剪刀.
+Index:  30
+Object Detection:  [{'position': [499, 137, 390, 263], 'text': 'laptop'}, {'position': [395, 468, 791, 474], 'text': 'hand'}, {'position': [443, 471, 879, 471], 'text': 'scissors'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺手嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  scissors喺邊？
+Answer:  你已經掂到scissors. 剪刀由兩個交叉嘅刀片組成，堅硬而鋒利，手柄光滑。
+
+Question:  scissors附近有冇其他物體？
+Answer:  scissors最近嘅物件系 hand,laptop.hand喺scissors嘅左上方.laptop喺scissors嘅右上方.. 剪刀由兩個交叉嘅刀片組成，堅硬而鋒利，手柄光滑。
+
+SCENE DESC:  而家眼前嘅景象有4把椅, 1隻手.視線左上角嘅場景入面有2把椅.視線右上角嘅場景入面有1把椅.視線右下角嘅場景入面有1隻手.視線右下角嘅場景入面有1把椅.
+Index:  31
+Object Detection:  [{'position': [997, 466, 563, 486], 'text': 'hand'}, {'position': [320, 90, 198, 178], 'text': 'chair'}, {'position': [321, 61, 197, 120], 'text': 'chair'}, {'position': [773, 73, 214, 144], 'text': 'chair'}, {'position': [1136, 374, 285, 430], 'text': 'chair'}]
+Question:  我點樣可以攞到chair？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  物體chair喺邊？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 chair,chair,hand.chair喺chair嘅右上方.chair喺chair嘅右上方.hand喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有5把椅, 1張飯枱, 1個杯.視線左上角嘅場景入面有2把椅.視線右上角嘅場景入面有1把椅.視線右上角嘅場景入面有1張飯枱.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有1把椅.
+Index:  32
+Object Detection:  [{'position': [192, 436, 383, 547], 'text': 'chair'}, {'position': [942, 91, 164, 144], 'text': 'chair'}, {'position': [1027, 503, 487, 415], 'text': 'chair'}, {'position': [318, 272, 292, 355], 'text': 'chair'}, {'position': [716, 239, 630, 350], 'text': 'dining table'}, {'position': [347, 220, 272, 438], 'text': 'chair'}, {'position': [863, 121, 35, 50], 'text': 'cup'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子喺邊？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子附近有冇其他物體？
+Answer:  chair最近嘅物件系 chair,chair,dining table.chair喺chair嘅右上方.chair喺chair嘅右上方.dining table喺chair嘅右上方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  cup喺我手嘅邊個方向？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+SCENE DESC:  而家眼前嘅景象有2個碗, 1台電視, 1個杯, 1瓶樽, 1台手提電腦.視線左上角嘅場景入面有1瓶樽.視線左上角嘅場景入面有1個碗.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1台電視.視線左下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1個碗.
+Index:  33
+Object Detection:  [{'position': [310, 548, 610, 330], 'text': 'tv'}, {'position': [827, 59, 171, 119], 'text': 'cup'}, {'position': [244, 302, 140, 197], 'text': 'bottle'}, {'position': [310, 548, 611, 331], 'text': 'laptop'}, {'position': [453, 83, 329, 165], 'text': 'bowl'}, {'position': [1062, 503, 272, 245], 'text': 'bowl'}]
+Question:  我點樣可以攞到tv？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  bottle喺邊？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  bottle附近有冇其他物體？
+Answer:  bottle最近嘅物件系 tv,laptop,bowl.tv喺bottle嘅右下方.laptop喺bottle嘅右下方.bowl喺bottle嘅右上方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有1隻手.視線右下角嘅場景入面有1隻手.
+Index:  34
+Object Detection:  [{'position': [962, 545, 632, 331], 'text': 'hand'}]
+Question:  手附近有冇其他物體？
+Answer:  冇检测到其他物体.. 
+
+SCENE DESC:  而家眼前嘅景象有1張床, 1張梳化.視線右下角嘅場景入面有1張床.視線右下角嘅場景入面有1張梳化.
+Index:  35
+Object Detection:  [{'position': [704, 484, 1141, 455], 'text': 'bed'}, {'position': [689, 486, 1168, 454], 'text': 'couch'}]
+Question:  我點樣可以攞到床？
+Answer:  bed喺中心點嘅右上方. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+Question:  沙發喺邊？
+Answer:  couch喺中心點嘅右上方. 沙發大，表面係柔軟嘅坐墊，框架結實。
+
+Question:  沙發附近有冇其他物體？
+Answer:  couch最近嘅物件系 bed.bed喺couch嘅右上方.. 沙發大，表面係柔軟嘅坐墊，框架結實。
+
+SCENE DESC:  而家眼前嘅景象有5把椅, 1張飯枱, 1部手提電話.視線左上角嘅場景入面有2把椅.視線左上角嘅場景入面有1部手提電話.視線右上角嘅場景入面有2把椅.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1把椅.
+Index:  36
+Object Detection:  [{'position': [905, 335, 278, 320], 'text': 'chair'}, {'position': [275, 116, 144, 88], 'text': 'chair'}, {'position': [391, 389, 781, 648], 'text': 'dining table'}, {'position': [327, 79, 57, 70], 'text': 'chair'}, {'position': [1131, 484, 295, 279], 'text': 'chair'}, {'position': [422, 232, 211, 152], 'text': 'cell phone'}, {'position': [690, 82, 96, 95], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  餐桌喺邊？
+Answer:  dining table喺中心點嘅左上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌附近有冇其他物體？
+Answer:  dining table最近嘅物件系 cell phone,chair,chair.cell phone喺dining table嘅右上方.chair喺dining table嘅左上方.chair喺dining table嘅左上方.. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  我手機喺我手嘅邊個方向？
+Answer:  cell phone喺中心點嘅左上方. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+SCENE DESC:  而家眼前嘅景象有1個杯, 1部手提電話, 1台多士爐.視線左上角嘅場景入面有1台多士爐.視線右上角嘅場景入面有1個杯.視線右下角嘅場景入面有1部手提電話.
+Index:  37
+Object Detection:  [{'position': [853, 238, 189, 197], 'text': 'cup'}, {'position': [1099, 390, 352, 270], 'text': 'cell phone'}, {'position': [409, 249, 263, 298], 'text': 'toaster'}]
+Question:  我點樣可以攞到cup？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  toaster喺邊？
+Answer:  toaster喺中心點嘅左上方. 多士爐小，盒形，由堅硬嘅金屬製成，頂部有縫隙。
+
+Question:  toaster附近有冇其他物體？
+Answer:  toaster最近嘅物件系 cup,cell phone.cup喺toaster嘅右上方.cell phone喺toaster嘅右下方.. 多士爐小，盒形，由堅硬嘅金屬製成，頂部有縫隙。
+
+SCENE DESC:  而家眼前嘅景象有10瓶樽, 2個碗, 1本書.視線左上角嘅場景入面有2個碗.視線右上角嘅場景入面有9瓶樽.視線左下角嘅場景入面有1本書.視線右下角嘅場景入面有1瓶樽.
+Index:  38
+Object Detection:  [{'position': [957, 128, 116, 244], 'text': 'bottle'}, {'position': [1021, 213, 136, 216], 'text': 'bottle'}, {'position': [619, 294, 253, 261], 'text': 'bowl'}, {'position': [1012, 234, 117, 175], 'text': 'bottle'}, {'position': [340, 519, 587, 387], 'text': 'book'}, {'position': [480, 81, 263, 157], 'text': 'bowl'}, {'position': [1008, 156, 76, 136], 'text': 'bottle'}, {'position': [1080, 278, 215, 260], 'text': 'bottle'}, {'position': [1123, 383, 126, 119], 'text': 'bottle'}, {'position': [1228, 330, 101, 147], 'text': 'bottle'}, {'position': [1177, 113, 105, 160], 'text': 'bottle'}, {'position': [1210, 225, 136, 214], 'text': 'bottle'}, {'position': [1009, 139, 70, 104], 'text': 'bottle'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  bowl喺邊？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bowl附近有冇其他物體？
+Answer:  bowl最近嘅物件系 bowl,book,bottle.bowl喺bowl嘅左上方.book喺bowl嘅左下方.bottle喺bowl嘅右上方.. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bottle喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  book喺邊？
+Answer:  book喺中心點嘅左上方. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+Question:  bottle附近有冇其他物體？
+Answer:  bottle最近嘅物件系 bottle,bottle,bottle.bottle喺bottle嘅右下方.bottle喺bottle嘅右下方.bottle喺bottle嘅右下方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有10瓶樽, 2個碗, 1台電視.視線左上角嘅場景入面有2個碗.視線右上角嘅場景入面有10瓶樽.視線左下角嘅場景入面有1台電視.
+Index:  39
+Object Detection:  [{'position': [891, 240, 136, 265], 'text': 'bottle'}, {'position': [839, 192, 73, 226], 'text': 'bottle'}, {'position': [769, 130, 56, 215], 'text': 'bottle'}, {'position': [1012, 163, 148, 257], 'text': 'bottle'}, {'position': [1022, 285, 141, 170], 'text': 'bottle'}, {'position': [1042, 266, 105, 135], 'text': 'bottle'}, {'position': [940, 336, 83, 111], 'text': 'bottle'}, {'position': [883, 95, 43, 167], 'text': 'bottle'}, {'position': [782, 245, 46, 91], 'text': 'bottle'}, {'position': [291, 111, 283, 220], 'text': 'bowl'}, {'position': [473, 329, 244, 252], 'text': 'bowl'}, {'position': [1085, 327, 92, 136], 'text': 'bottle'}, {'position': [261, 548, 522, 326], 'text': 'tv'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  bowl喺邊？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bowl附近有冇其他物體？
+Answer:  bowl最近嘅物件系 bowl,tv,bottle.bowl喺bowl嘅右下方.tv喺bowl嘅左下方.bottle喺bowl嘅右下方.. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+SCENE DESC:  而家眼前嘅景象有1個碗.視線左上角嘅場景入面有1個碗.
+Index:  40
+Object Detection:  [{'position': [500, 349, 242, 239], 'text': 'bowl'}]
+Question:  我點樣可以攞到bowl？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bowl喺邊？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bowl附近有冇其他物體？
+Answer:  冇检测到其他物体.. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+SCENE DESC:  而家眼前嘅景象有1台手提電腦, 1瓶樽, 1台電視, 1隻手.視線左上角嘅場景入面有1瓶樽.視線左下角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1台電視.視線右下角嘅場景入面有1隻手.
+Index:  41
+Object Detection:  [{'position': [252, 519, 504, 383], 'text': 'laptop'}, {'position': [355, 258, 166, 180], 'text': 'bottle'}, {'position': [249, 519, 499, 384], 'text': 'tv'}, {'position': [1114, 565, 330, 297], 'text': 'hand'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺手嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  tv喺邊？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  tv附近有冇其他物體？
+Answer:  tv喺手嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  laptop喺我手嘅邊個方向？
+Answer:  laptop喺手嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+SCENE DESC:  而家眼前嘅景象有2隻手, 2瓶樽, 1台手提電腦.視線左上角嘅場景入面有2瓶樽.視線左下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有2隻手.
+Index:  42
+Object Detection:  [{'position': [1089, 566, 377, 297], 'text': 'hand'}, {'position': [257, 520, 515, 379], 'text': 'laptop'}, {'position': [326, 237, 124, 134], 'text': 'bottle'}, {'position': [353, 259, 178, 184], 'text': 'bottle'}, {'position': [1090, 488, 376, 451], 'text': 'hand'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺手嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  laptop喺邊？
+Answer:  laptop喺手嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  手附近有冇其他物體？
+Answer:  hand最近嘅物件系 hand,bottle,bottle.hand喺hand嘅右上方.bottle喺hand嘅左上方.bottle喺hand嘅左上方.. 
+
+SCENE DESC:  而家眼前嘅景象有1瓶樽, 1台手提電腦.視線左上角嘅場景入面有1瓶樽.視線左下角嘅場景入面有1台手提電腦.
+Index:  43
+Object Detection:  [{'position': [382, 244, 172, 186], 'text': 'bottle'}, {'position': [256, 502, 512, 371], 'text': 'laptop'}]
+Question:  我點樣可以攞到瓶子？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  網絡點樣可以攞到筆記本？
+Answer:  laptop喺中心點嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  瓶子附近有冇其他物體？
+Answer:  bottle最近嘅物件系 laptop.laptop喺bottle嘅左下方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有1本書.視線左下角嘅場景入面有1本書.
+Index:  44
+Object Detection:  [{'position': [255, 509, 507, 369], 'text': 'book'}]
+Question:  我點樣可以攞到书？
+Answer:  book喺中心點嘅左上方. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+Question:  书喺邊？
+Answer:  book喺中心點嘅左上方. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+Question:  书附近有冇其他物體？
+Answer:  book喺中心點嘅左上方. 書通常係矩形嘅，由光滑嘅紙頁製成，封面堅硬或軟。
+
+SCENE DESC:  而家眼前嘅景象有1隻手, 1瓶樽, 1台手提電腦.視線左上角嘅場景入面有1瓶樽.視線左下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1隻手.
+Index:  45
+Object Detection:  [{'position': [1134, 573, 290, 284], 'text': 'hand'}, {'position': [250, 275, 210, 187], 'text': 'bottle'}, {'position': [225, 527, 450, 368], 'text': 'laptop'}]
+Question:  我點樣可以攞到手？
+Answer:  你已經掂到hand. 
+
+Question:  laptop喺邊？
+Answer:  laptop喺手嘅左上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  laptop附近有冇其他物體？
+Answer:  laptop最近嘅物件系 bottle,hand.bottle喺laptop嘅右上方.hand喺laptop嘅右下方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+SCENE DESC:  而家眼前嘅景象有2個水槽, 1隻手.視線左上角嘅場景入面有1個水槽.視線右下角嘅場景入面有1隻手.視線右下角嘅場景入面有1個水槽.
+Index:  46
+Object Detection:  [{'position': [1157, 571, 244, 288], 'text': 'hand'}, {'position': [641, 387, 522, 516], 'text': 'sink'}, {'position': [505, 348, 954, 666], 'text': 'sink'}]
+Question:  我點樣可以攞到hand？
+Answer:  你已經掂到hand. 
+
+Question:  sink喺邊？
+Answer:  sink喺手嘅左上方. 洗碗槽通常係堅硬嘅，由金屬或陶瓷製成，表面光滑且凹陷。
+
+Question:  sink附近有冇其他物體？
+Answer:  sink最近嘅物件系 sink,hand.sink喺sink嘅左上方.hand喺sink嘅右下方.. 洗碗槽通常係堅硬嘅，由金屬或陶瓷製成，表面光滑且凹陷。
+
+SCENE DESC:  而家眼前嘅景象有1隻手.視線右下角嘅場景入面有1隻手.
+Index:  47
+Object Detection:  [{'position': [1136, 505, 286, 414], 'text': 'hand'}]
+Question:  手附近有冇其他物體？
+Answer:  冇检测到其他物体.. 
+
+SCENE DESC:  而家眼前嘅景象有1個水槽, 1隻手, 1個碗.視線左上角嘅場景入面有1個碗.視線左下角嘅場景入面有1個水槽.視線右下角嘅場景入面有1隻手.
+Index:  48
+Object Detection:  [{'position': [237, 502, 472, 418], 'text': 'sink'}, {'position': [753, 476, 471, 471], 'text': 'hand'}, {'position': [381, 75, 167, 122], 'text': 'bowl'}]
+Question:  我點樣可以攞到sink？
+Answer:  sink喺手嘅左下方. 洗碗槽通常係堅硬嘅，由金屬或陶瓷製成，表面光滑且凹陷。
+
+Question:  hand附近有冇其他物體？
+Answer:  hand最近嘅物件系 sink,bowl.sink喺hand嘅左下方.bowl喺hand嘅左上方.. 
+
+SCENE DESC:  而家眼前嘅景象有1台手提電腦, 1隻手, 1部手提電話, 1把椅.視線左上角嘅場景入面有1台手提電腦.視線左下角嘅場景入面有1隻手.視線右下角嘅場景入面有1部手提電話.視線右下角嘅場景入面有1把椅.
+Index:  49
+Object Detection:  [{'position': [618, 253, 341, 243], 'text': 'laptop'}, {'position': [377, 544, 754, 328], 'text': 'hand'}, {'position': [855, 417, 213, 116], 'text': 'cell phone'}, {'position': [1062, 394, 432, 633], 'text': 'chair'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺手嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  cell phone喺邊？
+Answer:  cell phone喺手嘅右上方. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+Question:  cell phone附近有冇其他物體？
+Answer:  cell phone最近嘅物件系 chair,laptop,hand.chair喺cell phone嘅右上方.laptop喺cell phone嘅左上方.hand喺cell phone嘅左下方.. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+Question:  chair喺我手嘅邊個方向？
+Answer:  chair喺手嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有1隻手, 1支牙刷.視線左上角嘅場景入面有1支牙刷.視線右下角嘅場景入面有1隻手.
+Index:  50
+Object Detection:  [{'position': [911, 459, 737, 490], 'text': 'hand'}, {'position': [465, 266, 359, 143], 'text': 'toothbrush'}]
+Question:  我點樣可以攞到toothbrush？
+Answer:  toothbrush喺手嘅左上方. 牙刷小，手柄堅硬光滑，一端有一排柔軟嘅刷毛。
+
+Question:  toothbrush喺邊？
+Answer:  toothbrush喺手嘅左上方. 牙刷小，手柄堅硬光滑，一端有一排柔軟嘅刷毛。
+
+Question:  hand附近有冇其他物體？
+Answer:  hand最近嘅物件系 toothbrush.toothbrush喺hand嘅左上方.. 
+
+SCENE DESC:  而家眼前嘅景象有1台手提電腦, 1個杯, 1個滑鼠.視線左上角嘅場景入面有1個杯.視線左下角嘅場景入面有1個滑鼠.視線右下角嘅場景入面有1台手提電腦.
+Index:  51
+Object Detection:  [{'position': [936, 482, 671, 455], 'text': 'laptop'}, {'position': [449, 330, 212, 253], 'text': 'cup'}, {'position': [275, 534, 107, 106], 'text': 'mouse'}]
+Question:  我點樣可以攞到mouse？
+Answer:  mouse喺中心點嘅左上方. 滑鼠小，塑料製，表面光滑且呈曲線形以適合手部休息。
+
+Question:  杯子喺邊？
+Answer:  cup喺中心點嘅左上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  laptop附近有冇其他物體？
+Answer:  laptop最近嘅物件系 cup,mouse.cup喺laptop嘅左上方.mouse喺laptop嘅左下方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+SCENE DESC:  而家眼前嘅景象有2部手提電話, 1台手提電腦, 1把鍵盤, 1個滑鼠, 1個杯.視線左上角嘅場景入面有1個滑鼠.視線左上角嘅場景入面有1部手提電話.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1部手提電話.視線右下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1把鍵盤.
+Index:  52
+Object Detection:  [{'position': [1088, 503, 381, 417], 'text': 'laptop'}, {'position': [1143, 623, 267, 176], 'text': 'keyboard'}, {'position': [637, 332, 68, 79], 'text': 'mouse'}, {'position': [145, 394, 290, 480], 'text': 'cell phone'}, {'position': [805, 217, 182, 214], 'text': 'cup'}, {'position': [343, 264, 297, 309], 'text': 'cell phone'}]
+Question:  我點樣可以攞到cell phone？
+Answer:  cell phone喺中心點嘅左上方. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+Question:  keyboard喺邊？
+Answer:  keyboard喺中心點嘅右上方. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
+Question:  laptop附近有冇其他物體？
+Answer:  laptop最近嘅物件系 keyboard,cup,mouse.keyboard喺laptop嘅右下方.cup喺laptop嘅左上方.mouse喺laptop嘅左上方.. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+SCENE DESC:  而家眼前嘅景象有1個滑鼠, 1個遙控, 1把椅, 1隻手, 1張飯枱, 1台手提電腦, 1個書包.視線左上角嘅場景入面有1個滑鼠.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台手提電腦.視線右上角嘅場景入面有1個書包.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1個遙控.視線右下角嘅場景入面有1隻手.
+Index:  53
+Object Detection:  [{'position': [242, 256, 132, 60], 'text': 'mouse'}, {'position': [643, 473, 304, 195], 'text': 'remote'}, {'position': [434, 61, 199, 85], 'text': 'chair'}, {'position': [1102, 536, 353, 345], 'text': 'hand'}, {'position': [632, 367, 1265, 705], 'text': 'dining table'}, {'position': [772, 69, 211, 79], 'text': 'laptop'}, {'position': [1161, 153, 236, 297], 'text': 'backpack'}]
+Question:  我點樣可以攞到mouse？
+Answer:  mouse喺手嘅左上方. 滑鼠小，塑料製，表面光滑且呈曲線形以適合手部休息。
+
+Question:  chair喺邊？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 mouse,laptop,dining table.mouse喺chair嘅左下方.laptop喺chair嘅右下方.dining table喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  backpack喺我手嘅邊個方向？
+Answer:  backpack喺手嘅右上方. 背包通常係中等大小，根據材料可能係軟嘅或硬嘅，有拉鍊和口袋。
+
+SCENE DESC:  而家眼前嘅景象有2個水槽, 1瓶樽, 1個碗.視線右上角嘅場景入面有1個碗.視線左下角嘅場景入面有1瓶樽.視線左下角嘅場景入面有1個水槽.視線右下角嘅場景入面有1個水槽.
+Index:  54
+Object Detection:  [{'position': [394, 372, 125, 150], 'text': 'bottle'}, {'position': [934, 61, 182, 123], 'text': 'bowl'}, {'position': [642, 477, 631, 467], 'text': 'sink'}, {'position': [599, 457, 877, 504], 'text': 'sink'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  sink喺邊？
+Answer:  sink喺中心點嘅右上方. 洗碗槽通常係堅硬嘅，由金屬或陶瓷製成，表面光滑且凹陷。
+
+Question:  sink附近有冇其他物體？
+Answer:  sink最近嘅物件系 sink,bottle,bowl.sink喺sink嘅左上方.bottle喺sink嘅左上方.bowl喺sink嘅右上方.. 洗碗槽通常係堅硬嘅，由金屬或陶瓷製成，表面光滑且凹陷。
+
+Question:  bowl喺我手嘅邊個方向？
+Answer:  bowl喺中心點嘅右上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+SCENE DESC:  而家眼前嘅景象有1瓶樽, 1個杯, 1台電視, 1台手提電腦.視線左上角嘅場景入面有1瓶樽.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1台電視.視線左下角嘅場景入面有1台手提電腦.
+Index:  55
+Object Detection:  [{'position': [399, 357, 106, 148], 'text': 'bottle'}, {'position': [867, 51, 159, 99], 'text': 'cup'}, {'position': [323, 556, 627, 316], 'text': 'tv'}, {'position': [326, 556, 627, 314], 'text': 'laptop'}]
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  tv喺邊？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  tv附近有冇其他物體？
+Answer:  tv喺中心點嘅左上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+SCENE DESC:  而家眼前嘅景象有2張床, 1個手袋, 1張梳化.視線右下角嘅場景入面有2張床.視線右下角嘅場景入面有1個手袋.視線右下角嘅場景入面有1張梳化.
+Index:  56
+Object Detection:  [{'position': [792, 507, 971, 406], 'text': 'bed'}, {'position': [696, 412, 319, 236], 'text': 'handbag'}, {'position': [784, 568, 972, 287], 'text': 'bed'}, {'position': [785, 509, 987, 407], 'text': 'couch'}]
+Question:  我點樣可以攞到床？
+Answer:  bed喺中心點嘅右上方. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+Question:  手袋喺邊？
+Answer:  handbag喺中心點嘅右上方. 手袋嘅大小各異，由軟皮革至硬合成材料製成。
+
+Question:  床附近有冇其他物體？
+Answer:  bed喺中心點嘅右上方. 床很大，有一個柔軟嘅床墊和通常係堅硬嘅框架。
+
+Question:  沙發喺我手嘅邊個方向？
+Answer:  couch喺中心點嘅右上方. 沙發大，表面係柔軟嘅坐墊，框架結實。
+
+SCENE DESC:  而家眼前嘅景象有3把椅, 1隻手.視線左上角嘅場景入面有1把椅.視線左下角嘅場景入面有2把椅.視線右下角嘅場景入面有1隻手.
+Index:  57
+Object Detection:  [{'position': [1068, 515, 420, 394], 'text': 'hand'}, {'position': [241, 419, 440, 587], 'text': 'chair'}, {'position': [298, 397, 328, 543], 'text': 'chair'}, {'position': [320, 347, 281, 443], 'text': 'chair'}]
+Question:  我點樣可以攞到chair？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 chair,chair,hand.chair喺chair嘅右上方.chair喺chair嘅右上方.hand喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有10把椅, 4台電視, 1瓶樽, 1張飯枱.視線左上角嘅場景入面有1台電視.視線右上角嘅場景入面有2台電視.視線左下角嘅場景入面有1台電視.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有9把椅.視線右下角嘅場景入面有1瓶樽.視線右下角嘅場景入面有1張飯枱.
+Index:  58
+Object Detection:  [{'position': [1062, 647, 272, 137], 'text': 'chair'}, {'position': [643, 235, 209, 192], 'text': 'tv'}, {'position': [644, 488, 50, 113], 'text': 'bottle'}, {'position': [1083, 444, 74, 47], 'text': 'chair'}, {'position': [1050, 566, 178, 71], 'text': 'chair'}, {'position': [766, 563, 762, 295], 'text': 'dining table'}, {'position': [1195, 527, 167, 129], 'text': 'chair'}, {'position': [832, 411, 54, 23], 'text': 'chair'}, {'position': [656, 397, 66, 54], 'text': 'chair'}, {'position': [361, 156, 375, 286], 'text': 'tv'}, {'position': [1213, 661, 130, 112], 'text': 'chair'}, {'position': [30, 452, 60, 360], 'text': 'tv'}, {'position': [1248, 528, 61, 129], 'text': 'chair'}, {'position': [1216, 316, 126, 145], 'text': 'tv'}, {'position': [892, 360, 66, 120], 'text': 'chair'}, {'position': [577, 416, 92, 28], 'text': 'chair'}]
+Question:  我點樣可以攞到物體chair？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  物體bottle喺邊？
+Answer:  bottle喺中心點嘅右上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  物體bottle附近有冇其他物體？
+Answer:  bottle最近嘅物件系 chair,chair,dining table.chair喺bottle嘅右上方.chair喺bottle嘅左上方.dining table喺bottle嘅右下方.. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  物體dining table喺我手嘅邊個方向？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+SCENE DESC:  而家眼前嘅景象有9把椅, 1台電視, 1瓶樽, 1個行李箱, 1張飯枱, 1個手袋, 1個書包.視線左上角嘅場景入面有1個行李箱.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台電視.視線右上角嘅場景入面有1把椅.視線左下角嘅場景入面有2把椅.視線左下角嘅場景入面有1瓶樽.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有5把椅.視線右下角嘅場景入面有1個手袋.視線右下角嘅場景入面有1個書包.
+Index:  59
+Object Detection:  [{'position': [1149, 580, 258, 270], 'text': 'chair'}, {'position': [958, 186, 235, 171], 'text': 'tv'}, {'position': [1130, 399, 211, 132], 'text': 'chair'}, {'position': [198, 388, 153, 52], 'text': 'chair'}, {'position': [664, 609, 259, 211], 'text': 'chair'}, {'position': [869, 384, 123, 164], 'text': 'chair'}, {'position': [162, 508, 94, 163], 'text': 'bottle'}, {'position': [785, 309, 56, 36], 'text': 'chair'}, {'position': [620, 341, 152, 177], 'text': 'suitcase'}, {'position': [577, 608, 436, 210], 'text': 'chair'}, {'position': [357, 336, 83, 72], 'text': 'chair'}, {'position': [417, 508, 830, 404], 'text': 'dining table'}, {'position': [862, 545, 121, 178], 'text': 'handbag'}, {'position': [862, 545, 122, 177], 'text': 'backpack'}, {'position': [791, 389, 91, 184], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  手提箱喺邊？
+Answer:  suitcase喺中心點嘅左上方. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+Question:  手提箱附近有冇其他物體？
+Answer:  suitcase最近嘅物件系 chair,chair,chair.chair喺suitcase嘅右上方.chair喺suitcase嘅右下方.chair喺suitcase嘅右下方.. 手提箱通常係堅硬嘅，矩形，表面光滑，有把手。
+
+Question:  水樽喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  電視喺邊？
+Answer:  tv喺中心點嘅右上方. 電視係矩形嘅，有一個堅硬嘅、平坦嘅屏幕和窄嘅深度。
+
+Question:  櫃檯喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  背包喺我手嘅邊個方向？
+Answer:  backpack喺中心點嘅右上方. 背包通常係中等大小，根據材料可能係軟嘅或硬嘅，有拉鍊和口袋。
+
+SCENE DESC:  而家眼前嘅景象有1個遙控, 1瓶樽, 1把椅, 1隻手, 1張飯枱, 1個滑鼠, 1個手袋.視線左上角嘅場景入面有1瓶樽.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1個遙控.視線右上角嘅場景入面有1個滑鼠.視線右上角嘅場景入面有1個手袋.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1隻手.
+Index:  60
+Object Detection:  [{'position': [674, 291, 209, 74], 'text': 'remote'}, {'position': [303, 268, 170, 291], 'text': 'bottle'}, {'position': [451, 79, 164, 60], 'text': 'chair'}, {'position': [979, 534, 594, 352], 'text': 'hand'}, {'position': [639, 377, 1273, 671], 'text': 'dining table'}, {'position': [833, 261, 74, 46], 'text': 'mouse'}, {'position': [1111, 121, 335, 237], 'text': 'handbag'}]
+Question:  我點樣可以攞到remote？
+Answer:  remote喺手嘅左上方. 遙控器小，堅硬，表面光滑並有多個按鈕。
+
+Question:  chair喺邊？
+Answer:  chair喺手嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 bottle,remote,dining table.bottle喺chair嘅左下方.remote喺chair嘅右下方.dining table喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  handbag喺我手嘅邊個方向？
+Answer:  handbag喺手嘅右上方. 手袋嘅大小各異，由軟皮革至硬合成材料製成。
+
+SCENE DESC:  而家眼前嘅景象有2把椅, 1隻手, 1張飯枱, 1塊蛋糕, 1張床.視線右上角嘅場景入面有1把椅.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有1隻手.視線右下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1塊蛋糕.視線右下角嘅場景入面有1張床.
+Index:  61
+Object Detection:  [{'position': [301, 451, 602, 519], 'text': 'chair'}, {'position': [1109, 391, 340, 290], 'text': 'hand'}, {'position': [930, 436, 698, 539], 'text': 'dining table'}, {'position': [720, 183, 243, 174], 'text': 'chair'}, {'position': [783, 440, 85, 111], 'text': 'cake'}, {'position': [930, 431, 695, 518], 'text': 'bed'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺手嘅左下方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  餐桌喺邊？
+Answer:  dining table喺手嘅左下方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌附近有冇其他物件？
+Answer:  chair最近嘅物件系 cake,chair,dining table.cake喺chair嘅右上方.chair喺chair嘅右上方.dining table喺chair嘅右上方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有1隻手, 1台手提電腦, 1個滑鼠.視線右上角嘅場景入面有1台手提電腦.視線右上角嘅場景入面有1個滑鼠.視線右下角嘅場景入面有1隻手.
+Index:  62
+Object Detection:  [{'position': [967, 467, 623, 483], 'text': 'hand'}, {'position': [1168, 209, 202, 150], 'text': 'laptop'}, {'position': [749, 185, 98, 49], 'text': 'mouse'}]
+Question:  我點樣可以攞到mouse？
+Answer:  mouse喺手嘅左上方. 滑鼠小，塑料製，表面光滑且呈曲線形以適合手部休息。
+
+Question:  手附近有冇其他物體？
+Answer:  hand最近嘅物件系 laptop,mouse.laptop喺hand嘅右上方.mouse喺hand嘅左上方.. 
+
+SCENE DESC:  而家眼前嘅景象有2把椅, 1張梳化.視線右下角嘅場景入面有1張梳化.視線右下角嘅場景入面有2把椅.
+Index:  63
+Object Detection:  [{'position': [942, 480, 660, 459], 'text': 'couch'}, {'position': [941, 481, 661, 460], 'text': 'chair'}, {'position': [1006, 578, 525, 272], 'text': 'chair'}]
+Question:  我點樣可以攞到couch？
+Answer:  couch喺中心點嘅右上方. 沙發大，表面係柔軟嘅坐墊，框架結實。
+
+Question:  chair喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 couch,chair.couch喺chair嘅右上方.chair喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有11把椅, 1瓶樽, 1個滑鼠, 1台電視, 1張飯枱.視線左上角嘅場景入面有7把椅.視線右上角嘅場景入面有1台電視.視線右上角嘅場景入面有3把椅.視線左下角嘅場景入面有1個滑鼠.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有1把椅.視線右下角嘅場景入面有1瓶樽.
+Index:  64
+Object Detection:  [{'position': [114, 328, 168, 132], 'text': 'chair'}, {'position': [1022, 613, 226, 199], 'text': 'chair'}, {'position': [730, 395, 72, 142], 'text': 'bottle'}, {'position': [258, 248, 83, 59], 'text': 'chair'}, {'position': [121, 417, 66, 48], 'text': 'mouse'}, {'position': [695, 62, 211, 123], 'text': 'tv'}, {'position': [490, 432, 980, 546], 'text': 'dining table'}, {'position': [747, 216, 56, 90], 'text': 'chair'}, {'position': [921, 313, 169, 193], 'text': 'chair'}, {'position': [383, 175, 55, 57], 'text': 'chair'}, {'position': [958, 313, 236, 195], 'text': 'chair'}, {'position': [117, 220, 188, 114], 'text': 'chair'}, {'position': [67, 175, 132, 100], 'text': 'chair'}, {'position': [66, 234, 133, 219], 'text': 'chair'}, {'position': [602, 161, 67, 40], 'text': 'chair'}]
+Question:  我點樣可以攞到chair？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair喺哪？
+Answer:  chair喺中心點嘅左上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  chair附近有冇其他物體？
+Answer:  chair最近嘅物件系 mouse,chair,chair.mouse喺chair嘅右下方.chair喺chair嘅左上方.chair喺chair嘅右上方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  dining table喺我手嘅邊個方向？
+Answer:  dining table喺中心點嘅左上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+SCENE DESC:  而家眼前嘅景象有1隻手.視線左下角嘅場景入面有1隻手.
+Index:  65
+Object Detection:  [{'position': [440, 487, 750, 429], 'text': 'hand'}]
+Question:  hand附近有冇其他物體？
+Answer:  冇检测到其他物体.. 
+
+SCENE DESC:  而家眼前嘅景象有9把椅, 1張飯枱.視線左上角嘅場景入面有3把椅.視線右上角嘅場景入面有2把椅.視線左下角嘅場景入面有4把椅.視線右下角嘅場景入面有1張飯枱.
+Index:  66
+Object Detection:  [{'position': [1144, 164, 114, 110], 'text': 'chair'}, {'position': [741, 125, 107, 59], 'text': 'chair'}, {'position': [607, 624, 154, 186], 'text': 'chair'}, {'position': [918, 425, 718, 569], 'text': 'dining table'}, {'position': [362, 162, 210, 317], 'text': 'chair'}, {'position': [121, 563, 241, 297], 'text': 'chair'}, {'position': [120, 476, 240, 470], 'text': 'chair'}, {'position': [557, 402, 112, 236], 'text': 'chair'}, {'position': [522, 342, 187, 355], 'text': 'chair'}, {'position': [503, 306, 167, 281], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子喺邊？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  椅子附近有冇其他物體？
+Answer:  chair最近嘅物件系 dining table,chair,chair.dining table喺chair嘅左下方.chair喺chair嘅左上方.chair喺chair嘅左下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  我手頭上有椅子嗎？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  我點樣可以攞到餐桌？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌喺邊？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  餐桌附近有冇其他物體？
+Answer:  dining table最近嘅物件系 chair,chair,chair.chair喺dining table嘅左上方.chair喺dining table嘅左上方.chair喺dining table嘅左下方.. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+SCENE DESC:  而家眼前嘅景象有5把椅, 1張飯枱.視線左上角嘅場景入面有2把椅.視線右上角嘅場景入面有2把椅.視線左下角嘅場景入面有1把椅.視線右下角嘅場景入面有1張飯枱.
+Index:  67
+Object Detection:  [{'position': [1200, 79, 135, 140], 'text': 'chair'}, {'position': [755, 53, 115, 79], 'text': 'chair'}, {'position': [923, 384, 708, 646], 'text': 'dining table'}, {'position': [526, 271, 172, 282], 'text': 'chair'}, {'position': [336, 120, 166, 232], 'text': 'chair'}, {'position': [236, 583, 471, 259], 'text': 'chair'}]
+Question:  我點樣可以攞到椅子？
+Answer:  chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+Question:  食枱喺邊？
+Answer:  dining table喺中心點嘅右上方. 飯桌大而平坦，通常由堅硬嘅木頭或金屬製成。
+
+Question:  食枱附近有冇其他物件？
+Answer:  chair最近嘅物件系 dining table,chair,chair.dining table喺chair嘅左下方.chair喺chair嘅左上方.chair喺chair嘅左下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+SCENE DESC:  而家眼前嘅景象有3瓶樽, 3個碗, 2個杯, 1台焗爐, 1台電視.視線左上角嘅場景入面有3瓶樽.視線左上角嘅場景入面有2個碗.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1個碗.視線左下角嘅場景入面有1台焗爐.視線右下角嘅場景入面有1個杯.視線右下角嘅場景入面有1台電視.
+Index:  68
+Object Detection:  [{'position': [1117, 503, 144, 124], 'text': 'cup'}, {'position': [566, 323, 101, 250], 'text': 'bottle'}, {'position': [227, 413, 255, 214], 'text': 'bowl'}, {'position': [337, 241, 198, 158], 'text': 'bowl'}, {'position': [435, 295, 166, 164], 'text': 'bowl'}, {'position': [578, 204, 45, 110], 'text': 'bottle'}, {'position': [506, 214, 42, 90], 'text': 'bottle'}, {'position': [226, 530, 451, 359], 'text': 'oven'}, {'position': [1112, 619, 334, 182], 'text': 'tv'}, {'position': [1185, 123, 170, 166], 'text': 'cup'}]
+Question:  我點樣可以攞到物體cup？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  物體bowl喺邊？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  物體bowl附近有冇其他物體？
+Answer:  bowl最近嘅物件系 oven,bowl,bowl.oven喺bowl嘅左下方.bowl喺bowl嘅右上方.bowl喺bowl嘅右上方.. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  物體oven喺我手嘅邊個方向？
+Answer:  oven喺中心點嘅左上方. 烤箱大，主要係金屬製，表面堅硬光滑，有前門。
+
+SCENE DESC:  而家眼前嘅景象有4瓶樽, 3個碗, 1個杯.視線左上角嘅場景入面有4瓶樽.視線左上角嘅場景入面有2個碗.視線左下角嘅場景入面有1個碗.視線右下角嘅場景入面有1個杯.
+Index:  69
+Object Detection:  [{'position': [1191, 569, 175, 163], 'text': 'cup'}, {'position': [556, 350, 108, 274], 'text': 'bottle'}, {'position': [166, 454, 306, 248], 'text': 'bowl'}, {'position': [619, 276, 66, 193], 'text': 'bottle'}, {'position': [487, 244, 43, 136], 'text': 'bottle'}, {'position': [408, 313, 177, 179], 'text': 'bowl'}, {'position': [298, 255, 226, 176], 'text': 'bowl'}, {'position': [564, 217, 42, 121], 'text': 'bottle'}]
+Question:  我點樣可以攞到cup？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  bowl喺邊？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bowl附近有冇其他物體？
+Answer:  bowl最近嘅物件系 bowl,bowl,bottle.bowl喺bowl嘅右上方.bowl喺bowl嘅右上方.bottle喺bowl嘅右上方.. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  bowl喺我手嘅邊個方向？
+Answer:  bowl喺中心點嘅左上方. 碗寬而開口，由陶瓷或玻璃等堅硬材料製成。
+
+Question:  我點樣可以攞到bottle？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+Question:  cup喺邊？
+Answer:  cup喺中心點嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  cup附近有冇其他物體？
+Answer:  cup最近嘅物件系 bottle,bottle,bottle.bottle喺cup嘅左上方.bottle喺cup嘅左上方.bottle喺cup嘅左上方.. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  bottle喺我手嘅邊個方向？
+Answer:  bottle喺中心點嘅左上方. 瓶子通常係圓柱形嘅，由堅硬嘅塑料或玻璃製成。
+
+SCENE DESC:  而家眼前嘅景象有1台手提電腦, 1部手提電話, 1把鍵盤, 1個杯, 1個滑鼠.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1部手提電話.視線左下角嘅場景入面有1個滑鼠.視線右下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1把鍵盤.
+Index:  70
+Object Detection:  [{'position': [1046, 496, 466, 432], 'text': 'laptop'}, {'position': [154, 380, 308, 376], 'text': 'cell phone'}, {'position': [1084, 620, 368, 183], 'text': 'keyboard'}, {'position': [645, 243, 172, 231], 'text': 'cup'}, {'position': [482, 395, 80, 88], 'text': 'mouse'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺中心點嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  keyboard喺邊？
+Answer:  keyboard喺中心點嘅右上方. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
+Question:  keyboard附近有冇其他物體？
+Answer:  keyboard最近嘅物件系 laptop,cup,mouse.laptop喺keyboard嘅左上方.cup喺keyboard嘅左上方.mouse喺keyboard嘅左上方.. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
+SCENE DESC:  而家眼前嘅景象有2部手提電話, 1台手提電腦, 1個杯.視線左上角嘅場景入面有1個杯.視線左下角嘅場景入面有2部手提電話.視線右下角嘅場景入面有1台手提電腦.
+Index:  71
+Object Detection:  [{'position': [1031, 494, 497, 438], 'text': 'laptop'}, {'position': [128, 401, 255, 373], 'text': 'cell phone'}, {'position': [614, 235, 183, 236], 'text': 'cup'}, {'position': [308, 383, 122, 109], 'text': 'cell phone'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺中心點嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  cup喺邊？
+Answer:  cup喺中心點嘅左上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  cup附近有冇其他物體？
+Answer:  cup最近嘅物件系 cell phone,laptop,cell phone.cell phone喺cup嘅左下方.laptop喺cup嘅右下方.cell phone喺cup嘅左下方.. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+SCENE DESC:  而家眼前嘅景象有1個杯, 1隻手.視線右上角嘅場景入面有1個杯.視線左下角嘅場景入面有1隻手.
+Index:  72
+Object Detection:  [{'position': [1164, 308, 229, 235], 'text': 'cup'}, {'position': [616, 604, 637, 220], 'text': 'hand'}]
+Question:  我點樣可以攞到cup？
+Answer:  cup喺手嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  cup喺邊？
+Answer:  cup喺手嘅右上方. 杯子小，通常係圓柱形嘅，由堅硬或略帶彈性嘅材料製成。
+
+Question:  hand附近有冇其他物體？
+Answer:  hand最近嘅物件系 cup.cup喺hand嘅右上方.. 
+
+SCENE DESC:  而家眼前嘅景象有1隻手, 1台手提電腦, 1把鍵盤, 1個杯.視線左上角嘅場景入面有1個杯.視線左下角嘅場景入面有1隻手.視線右下角嘅場景入面有1台手提電腦.視線右下角嘅場景入面有1把鍵盤.
+Index:  73
+Object Detection:  [{'position': [188, 556, 373, 316], 'text': 'hand'}, {'position': [992, 489, 573, 440], 'text': 'laptop'}, {'position': [974, 627, 345, 178], 'text': 'keyboard'}, {'position': [506, 253, 183, 250], 'text': 'cup'}]
+Question:  我點樣可以攞到laptop？
+Answer:  laptop喺手嘅右上方. 手提電腦小而矩形，外殼堅硬，屏幕光滑可折疊。
+
+Question:  keyboard喺邊？
+Answer:  keyboard喺手嘅右下方. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
+Question:  keyboard附近有冇其他物體？
+Answer:  keyboard最近嘅物件系 laptop,cup,hand.laptop喺keyboard嘅右上方.cup喺keyboard嘅左上方.hand喺keyboard嘅左上方.. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
+SCENE DESC:  而家眼前嘅景象有1隻手, 1部手提電話, 1把鍵盤.視線左下角嘅場景入面有1隻手.視線左下角嘅場景入面有1部手提電話.視線右下角嘅場景入面有1把鍵盤.
+Index:  74
+Object Detection:  [{'position': [181, 560, 361, 307], 'text': 'hand'}, {'position': [41, 521, 82, 198], 'text': 'cell phone'}, {'position': [900, 622, 387, 190], 'text': 'keyboard'}]
+Question:  我點樣可以攞到cell phone？
+Answer:  cell phone喺手嘅左上方. 手機小而矩形，有一個堅硬嘅、光滑嘅玻璃屏幕。
+
+Question:  keyboard喺邊？
+Answer:  keyboard喺手嘅右下方. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
+Question:  keyboard附近有冇其他物體？
+Answer:  keyboard最近嘅物件系 hand,cell phone.hand喺keyboard嘅左上方.cell phone喺keyboard嘅左上方.. 鍵盤係矩形平板，有許多小嘅、堅硬嘅鍵位於光滑嘅底座上。
+
