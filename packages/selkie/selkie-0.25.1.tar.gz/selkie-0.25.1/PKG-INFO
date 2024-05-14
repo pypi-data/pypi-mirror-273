@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: selkie
+Version: 0.25.1
+Summary: Natural language processing and digital language description
+Project-URL: Homepage, https://github.com/abney/selkie
+Project-URL: Documentation, https://selkie.readthedocs.io/
+Project-URL: Bug Tracker, https://github.com/abney/selkie/issues
+Author-email: Steven Abney <abney@umich.edu>
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+
+Selkie
+======
+
+Selkie is a Python library for natural language processing and digital
+language description.
+
