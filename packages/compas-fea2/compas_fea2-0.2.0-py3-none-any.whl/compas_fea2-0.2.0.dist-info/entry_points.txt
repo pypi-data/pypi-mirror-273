@@ -1,0 +1,2 @@
+[console_scripts]
+fea2 = compas_fea2.cli:main
