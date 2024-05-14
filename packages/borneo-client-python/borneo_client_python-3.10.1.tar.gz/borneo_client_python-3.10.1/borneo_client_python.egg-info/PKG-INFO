@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: borneo_client_python
+Version: 3.10.1
+Summary: borneo_client_python client
+License: Apache-2.0
+Keywords: smithy,borneo_client_python
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: tests
+Requires-Dist: pytest<8.0.0,>=7.2.0; extra == "tests"
+Requires-Dist: pytest-asyncio<0.21.0,>=0.20.3; extra == "tests"
+
+# borneo-client-python
+
+Borneo Client Python SDK
+
+## Installing
+
+To install the this package, simply add or install using your favorite package manager:
+
+- `pip install borneo-python-client`
+
+### Usage
+
+To send a request using `@borneodata/borneo-client` and an example command:
+
+```python
+# import { BorneoClient, DescribeCatalogResourceCommand } from '@borneodata/borneo-client';
+# import { BorneoAuthProvider } from '@borneodata/borneo-client-auth-provider';
+
+# async function getData() {
+#   const authProvider = await BorneoAuthProvider.fromConfigFile(`./Borneo-Service-Account-Token.json`);
+#   const client = new BorneoClient({
+#     endpoint: authProvider.getApiEndpoint(),
+#     apiKey: authProvider.getApiKey()
+#   });
+#   const input = {
+#     resourceId: '1bea4d02-8ce7-11ee-942f-3c7d0a1cd55d'
+#   };
+#   const cmd = new DescribeCatalogResourceCommand(input)
+#   const data = await client.send(cmd)
+  
+#   // The data is returned here and can be further processed.
+#   console.log(data)
+#   return data
+# }
+
+# getData()
+```
+
+### Config
+```
+const config = {
+  clientId: 'STRING_VALUE', /* required */
+  region: 'STRING_VALUE', /* required */
+  token: 'STRING_VALUE', /* required */
+  apiEndpoint: 'STRING_VALUE', /* required */
+  secret: 'STRING_VALUE'
+}
+```
+
+## API Documentation
+
+More API documentation is here at `https://<my-stack>/docs/api`
+
+## License
+
+This SDK is distributed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
