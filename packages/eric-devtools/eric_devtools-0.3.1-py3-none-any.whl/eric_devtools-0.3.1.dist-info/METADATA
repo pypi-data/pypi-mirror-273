@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: eric-devtools
+Version: 0.3.1
+Summary: 
+Home-page: https://github.com/eric-batista/devtools-python-lib
+Author: Eric Batista
+Author-email: dev.eric.batista@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiomysql (>=0.2.0,<0.3.0)
+Requires-Dist: asyncmy (>=0.2.9,<0.3.0)
+Requires-Dist: asyncpg (>=0.29.0,<0.30.0)
+Requires-Dist: attrs (>=23.2.0,<24.0.0)
+Requires-Dist: faust-cchardet (>=2.1.19,<3.0.0)
+Requires-Dist: orjson (>=3.9.15,<4.0.0)
+Requires-Dist: pydantic[email] (>=2.6.4,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.29,<3.0.0)
+Requires-Dist: typing-extensions (>=4.10.0,<5.0.0)
+Project-URL: Repository, https://github.com/eric-batista/devtools-python-lib
+Description-Content-Type: text/markdown
+
+# Devtools Python lib
