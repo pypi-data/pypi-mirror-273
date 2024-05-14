@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+combogenius.egg-info/PKG-INFO
+combogenius.egg-info/SOURCES.txt
+combogenius.egg-info/dependency_links.txt
+combogenius.egg-info/top_level.txt
