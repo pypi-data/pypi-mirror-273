@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autoimmunizationz/__init__.py
+autoimmunizationz/main.py
+autoimmunizationz.egg-info/PKG-INFO
+autoimmunizationz.egg-info/SOURCES.txt
+autoimmunizationz.egg-info/dependency_links.txt
+autoimmunizationz.egg-info/requires.txt
+autoimmunizationz.egg-info/top_level.txt
