@@ -1,0 +1,9 @@
+texttunnel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+texttunnel/chat.py,sha256=u5-Im9gUHoFrHBKTjANDFdJaGP1qRasvBj0CruCcLPY,14951
+texttunnel/models.py,sha256=WVeNFXlw1Odg0m8JnTZAOX56z5xcp6TAaKEtmj9mI6k,7465
+texttunnel/processor.py,sha256=ot1eX5_T6a8n2aeDaI_avIha-XijQk9ocv5ww9Xt_z4,35186
+texttunnel/utils.py,sha256=ektnB_0yvbkDiKRZIUa9LAs2hqmLRnm0RODU7DbFA08,8755
+texttunnel-0.3.7.dist-info/LICENSE,sha256=ifJzhhiPTE0CstxHzt_Jvmo9R5Wp0DwhX1lR3aa8jGY,1081
+texttunnel-0.3.7.dist-info/METADATA,sha256=r0dINKtHdoim4zLpMc2fpRj-3hDQlc3nCC6CHraKePc,4808
+texttunnel-0.3.7.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+texttunnel-0.3.7.dist-info/RECORD,,
