@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: magia-flow
+Version: 0.2.1
+Summary: Design flow integration and automation with Magia
+License: LICENSE
+Keywords: Verilog HDL,SystemVerilog,Synthesizable,RTL,HDL,Hardware Description Language,Code Generation,FPGA,ASIC,EDA,RTL Design
+Author: khwong-c64
+Author-email: kin.hin.wong.c@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: defusedxml (>=0.7.1,<0.8.0)
+Requires-Dist: flask (>=3.0.2,<4.0.0)
+Requires-Dist: httpx
+Requires-Dist: magia-hdl (>=0.5,<0.6)
+Requires-Dist: ruamel-yaml (>=0.18.6,<0.19.0)
+Project-URL: Repository, https://github.com/magia-hdl/magia-flow
+Description-Content-Type: text/markdown
+
+# Magia Flow
+
+## Brief
+
+Design flow integration and automation with Magia.
+
+## Project Roadmap
+
+TBD
+
+## Installation
+
+```bash
+pip install magia-flow
+```
+
+## Examples
+
+TBD
+
+## Documentation
+
+TBD
+
+## Contributing
+
+We also have a [Contribution Guideline](docs/CONTRIBUTING.md) and [Code of Conduct](docs/CODE_OF_CONDUCT.md).
+Please take a look before you contribute.
+
+In case you are interested in this project, contact me via:
+https://github.com/khwong-c
+
+## Reference
+
+TBD
+
