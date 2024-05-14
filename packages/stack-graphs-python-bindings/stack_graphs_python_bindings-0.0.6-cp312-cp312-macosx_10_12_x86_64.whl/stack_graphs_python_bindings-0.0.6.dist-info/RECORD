@@ -1,0 +1,8 @@
+stack_graphs_python_bindings-0.0.6.dist-info/METADATA,sha256=v2Y5-ng2-VzE2S9szclC9g1rSKPBevjr8U-b-GLMdNE,1279
+stack_graphs_python_bindings-0.0.6.dist-info/WHEEL,sha256=e8XqpEWHzTtB8HIScpFQorSMvLkarMZnTPy5naVyuko,106
+stack_graphs_python_bindings-0.0.6.dist-info/license_files/LICENSE,sha256=lYyen5RxvWxVPQHl77uPrPJybQFUZcOJ3wCNX0ZwP-o,1077
+stack_graphs_python/__init__.py,sha256=VtR0wN57b7tkHWKHq1Doua8YRXa-qp4gkoe4G9lbbTA,159
+stack_graphs_python/__init__.pyi,sha256=1xuiIyKQqdVIpnRKPXg2rTyaEfBhnm51hiQ5r3CWWYQ,456
+stack_graphs_python/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stack_graphs_python/stack_graphs_python.cpython-312-darwin.so,sha256=u09DnwnQxMDD4Z8dXVRqwSyz7t4AD6gvQAT11cpFJJI,10636656
+stack_graphs_python_bindings-0.0.6.dist-info/RECORD,,
