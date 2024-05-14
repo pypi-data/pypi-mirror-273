@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+venatoryz/__init__.py
+venatoryz/main.py
+venatoryz.egg-info/PKG-INFO
+venatoryz.egg-info/SOURCES.txt
+venatoryz.egg-info/dependency_links.txt
+venatoryz.egg-info/requires.txt
+venatoryz.egg-info/top_level.txt
