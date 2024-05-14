@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+coelostatz/__init__.py
+coelostatz/main.py
+coelostatz.egg-info/PKG-INFO
+coelostatz.egg-info/SOURCES.txt
+coelostatz.egg-info/dependency_links.txt
+coelostatz.egg-info/requires.txt
+coelostatz.egg-info/top_level.txt
