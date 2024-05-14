@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+inlettingz/__init__.py
+inlettingz/main.py
+inlettingz.egg-info/PKG-INFO
+inlettingz.egg-info/SOURCES.txt
+inlettingz.egg-info/dependency_links.txt
+inlettingz.egg-info/requires.txt
+inlettingz.egg-info/top_level.txt
