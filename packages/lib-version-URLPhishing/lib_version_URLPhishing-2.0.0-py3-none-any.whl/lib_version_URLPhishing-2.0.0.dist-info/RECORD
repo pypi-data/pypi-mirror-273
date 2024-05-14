@@ -1,0 +1,9 @@
+lib_version_URLPhishing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib_version_URLPhishing/version.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+lib_version_URLPhishing/version_util.py,sha256=NHpzOEQvVE31lij8dcuZO7eTT625ounsuxr7w74qQKY,122
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_version_util.py,sha256=_F5hvO4qs12VBZSQ08RshBKXkmljURYVEpeWi_VcDG4,451
+lib_version_URLPhishing-2.0.0.dist-info/METADATA,sha256=uGpbNAcH9OzDRQxxrkOyXzqCsWYdNgH7dTILDu-LHoo,139
+lib_version_URLPhishing-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lib_version_URLPhishing-2.0.0.dist-info/top_level.txt,sha256=X-0LK0opjFJVmRA0CDpLhmo22GgZb3EregW9uFfXWGU,30
+lib_version_URLPhishing-2.0.0.dist-info/RECORD,,
