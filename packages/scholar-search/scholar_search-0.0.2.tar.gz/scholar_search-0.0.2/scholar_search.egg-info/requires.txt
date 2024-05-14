@@ -1,0 +1,7 @@
+anytree
+flask
+click
+pypandoc
+
+[pandoc]
+pypandoc-binary
