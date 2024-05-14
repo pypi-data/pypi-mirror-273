@@ -1,0 +1,12 @@
+facexformer_pipeline/__init__.py,sha256=5-FgeJnA_9khU0sb0VAxi3KFQlCr-KioNgBNGBYuqIg,54
+facexformer_pipeline/facexformer_pipeline.py,sha256=h_bIwc3JiumREI41bJBBsb6YbiT74yinVziAMwh4kzg,6304
+facexformer_pipeline/task_postprocesser.py,sha256=J6lqOKoIqOCUvXVRoHota9Q6ga6ihneaonupP-DWqB4,3243
+facexformer_pipeline/utils.py,sha256=BVDtduY23m3Tz7D7rQxWuYIq1ZiYg5fZrGOysx-g3bg,3655
+facexformer_pipeline/network/__init__.py,sha256=MbA6b7nFG5xW1kgmBLbkqX7kY4cZ98Pgwydk6QpvbCk,31
+facexformer_pipeline/network/models/__init__.py,sha256=0QfnhlzRKi8tVaLDakmexIEjAGZGakeNaOwQiNcKo_w,92
+facexformer_pipeline/network/models/facexformer.py,sha256=AHB27EPHGIWNdcdV-UB3bJ8XusBxc7ZTFrODiNufjZA,11176
+facexformer_pipeline/network/models/transformer.py,sha256=34rDblvZ02eDfvwwErnC5nW3WraYOi6iXiqF26bQsjc,9587
+facexformer_pipeline-0.2.0.dist-info/METADATA,sha256=nElybfQXURez4Bc0WF_fzcXXCV5oUaKr94QB53N9Fns,2149
+facexformer_pipeline-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+facexformer_pipeline-0.2.0.dist-info/top_level.txt,sha256=FSVUEBXV7nnY2A9QrEF2ztFu0El9yYsj5tUzpLq_BdU,21
+facexformer_pipeline-0.2.0.dist-info/RECORD,,
