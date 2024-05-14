@@ -1,0 +1,2 @@
+[console_scripts]
+coap-console = coap_console:outer_main
