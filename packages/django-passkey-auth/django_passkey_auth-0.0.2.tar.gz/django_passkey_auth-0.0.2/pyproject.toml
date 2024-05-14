@@ -1,0 +1,39 @@
+[project]
+name = "django-passkey-auth"
+dynamic = ["version"]
+authors = [
+    {name = "Dan Watson", email = "dcwatson@gmail.com"},
+]
+description = "Passkey authentication for Django"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.10"
+license = {text = "MIT License"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+]
+dependencies = [
+    "django>=4.2",
+    "cryptography",
+]
+
+[project.urls]
+Repository = "https://github.com/dcwatson/django-passkey-auth"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/passkeys"]
+
+[tool.hatch.version]
+path = "src/passkeys/__init__.py"
