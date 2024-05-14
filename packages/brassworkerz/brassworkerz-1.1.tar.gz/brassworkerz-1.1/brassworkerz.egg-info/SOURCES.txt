@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+brassworkerz/__init__.py
+brassworkerz/main.py
+brassworkerz.egg-info/PKG-INFO
+brassworkerz.egg-info/SOURCES.txt
+brassworkerz.egg-info/dependency_links.txt
+brassworkerz.egg-info/requires.txt
+brassworkerz.egg-info/top_level.txt
