@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tanu
+Version: 0.1.4.2
+Summary: Message passing between Python programs via RabbitMQ.
+Author: chocolate-icecream
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pika>=1.0
+Requires-Dist: pandas>=1.0
+Requires-Dist: numpy>=1.0
+Requires-Dist: pydantic>=2.7
+
+# Tanu
+
+Tanuki serves as a tool to facilitates message passing between Python programs via RabbitMQ.
