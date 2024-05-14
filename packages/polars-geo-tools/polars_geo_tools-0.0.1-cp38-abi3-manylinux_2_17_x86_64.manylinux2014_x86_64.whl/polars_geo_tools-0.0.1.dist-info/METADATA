@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: polars-geo-tools
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Collection of different geo algorithms to working with geo data on polars
+Author-email: Maxim Partin <max.physmath.05@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://gitlab.com/max_prt_05/polars-geo-tools
+
+# polars-geo-tools
+
