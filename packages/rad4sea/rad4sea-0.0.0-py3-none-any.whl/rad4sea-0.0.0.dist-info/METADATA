@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rad4sea
+Version: 0.0.0
+Summary: A Python package for for radiometric transforms for hyperspectral seafloor/water column mapping
+Home-page: https://github.com/havardlovas/gref4hsi
+Author: Haavard Snefjellaa Loevaas
+Author-email: havard.s.lovas@ntnu.no
+License: EUPL-1.2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+Requires-Dist: py6s
+Requires-Dist: spectral
+Requires-Dist: tqdm
+Requires-Dist: numpy
+
+# rad4sea
+Radiometric tools for hyperspectral imaging of the seafloor
