@@ -1,0 +1,8 @@
+conetwork_test-0.1.9.dist-info/METADATA,sha256=TPemudThGYilOCROQA_c9bn7H8xWS6ocwZg2bGl7RkE,318
+conetwork_test-0.1.9.dist-info/WHEEL,sha256=-uS3zuN2doHqZEYNDtrODwIpS2TbPVj8Gzsk549lbFo,108
+fleece_network/peer.py,sha256=GDtSHnY9vK4A3H4TrVh5eSGDhzYWiXUfCpP422cTV6U,1768
+fleece_network/__init__.py,sha256=iNPSJvqllUvTOxzcaGCzvs8ZjrBLSswCeb3_pqon40U,55
+fleece_network/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fleece_network/serde.py,sha256=RX_iup1t8s5U5vCbJCiC1szjfLbvrqVsqRDCow5RvX0,620
+fleece_network/fleece_network_rust.cpython-311-x86_64-linux-gnu.so,sha256=BOd7GJPP7CfYLrDK3SZphe0dyWb3Jkawq5FscS3_wEU,17467704
+conetwork_test-0.1.9.dist-info/RECORD,,
