@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: remla24_team7_app
+Version: 0.1.0
+Summary: app
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: remla24-team7-libversion (>=0.0.1,<0.0.2)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# app
+
+This is the repository for the app of Assigment 2. 
+
+The frontend is in the frontend folder and the backend is just `app.py`. 
+
+Entering a URL and clicking "Predict" in the web frontend queries the `app-service` backend, which then communicates with `model-service` to retrieve the prediction. The prediciton is then shown on the website. Make sure to have `model-service` running and configured (`MODEL_SERVICE_URL`) for this backend to work.
