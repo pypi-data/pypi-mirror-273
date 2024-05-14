@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aerophanez/__init__.py
+aerophanez/main.py
+aerophanez.egg-info/PKG-INFO
+aerophanez.egg-info/SOURCES.txt
+aerophanez.egg-info/dependency_links.txt
+aerophanez.egg-info/requires.txt
+aerophanez.egg-info/top_level.txt
