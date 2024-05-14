@@ -1,0 +1,3 @@
+[console_scripts]
+python-cli=python_project_cli.main:app
+
