@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gwml
+Version: 0.0.7
+Summary: PYPI tutorial package creation written by TeddyNote
+Home-page: https://weda.kr
+Author: weda
+Author-email: dmshin@weda.kr
+Keywords: gw,weda,greenwhales,ml,dl,automl
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+# Example Of Pandas Columns
+
+- this is sample of pandas columns
