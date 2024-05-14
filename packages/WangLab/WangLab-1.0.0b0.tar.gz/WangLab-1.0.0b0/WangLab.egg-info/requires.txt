@@ -1,0 +1,8 @@
+argcomplete
+biopython
+pandas
+numpy
+scipy
+selenium
+cutadapt
+openpyxl
