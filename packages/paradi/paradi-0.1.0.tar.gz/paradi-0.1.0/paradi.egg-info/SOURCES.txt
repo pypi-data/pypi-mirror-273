@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+paradi.egg-info/PKG-INFO
+paradi.egg-info/SOURCES.txt
+paradi.egg-info/dependency_links.txt
+paradi.egg-info/top_level.txt
+tests/__init__.py
+tests/flask_test_api.py
+tests/test_paradi.py

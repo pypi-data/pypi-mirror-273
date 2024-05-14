@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: paradi
+Version: 0.1.0
+Summary: This is an abstract class which purpose is to interface any Rest API using python's standard functionnalities.
+Author: Julien Crambes
+Author-email: Julien Crambes <julien.crambes@gmail.com>
+Project-URL: Homepage, https://github.com/Elektriman/paradi
+Project-URL: Issues, https://github.com/Elektriman/paradi/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Paradi
+### Python Abstract Restful Api Dialoger Interface
+
+This is an abstract class which purpose is to interface any Rest API using python's standard functionnalities.

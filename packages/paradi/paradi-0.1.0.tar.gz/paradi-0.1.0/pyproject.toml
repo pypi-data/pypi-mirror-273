@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paradi"
+version = "0.1.0"
+authors = [
+    { name="Julien Crambes", email="julien.crambes@gmail.com" },
+]
+description = "This is an abstract class which purpose is to interface any Rest API using python's standard functionnalities."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Elektriman/paradi"
+Issues = "https://github.com/Elektriman/paradi/issues"
