@@ -1,0 +1,9 @@
+gwml/__init__.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+gwml/example.py,sha256=ihdQ7-XAqAfecNvWbi7-kC1CEQHHz8rYRRG4NqQnSTQ,125
+gwml/lib/__init__.py,sha256=46Yjk3fz9o8aTN8E95McnzpJcjGzVJmHmQqUZ5mXzfc,22
+gwml/lib/example.py,sha256=j0cSqQ_CZ8dTjT6LK1Yu0GwyY852NyQNqDEAdOJmQpA,167
+gwml-0.0.9.dist-info/LICENSE.txt,sha256=sMb1CD5yWhcP_5FiSdNEtgqQEXKD6UPiro-JzEAQa-A,28
+gwml-0.0.9.dist-info/METADATA,sha256=ZJ78kms9sJKuQ7cPNYGyoUFgA4RPI-Th4-S8H22Ak7M,645
+gwml-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gwml-0.0.9.dist-info/top_level.txt,sha256=-Ib3RiOMqlhiZ_idfsP2Unxpw70_Lzk5xN0I7vWHuAQ,5
+gwml-0.0.9.dist-info/RECORD,,
