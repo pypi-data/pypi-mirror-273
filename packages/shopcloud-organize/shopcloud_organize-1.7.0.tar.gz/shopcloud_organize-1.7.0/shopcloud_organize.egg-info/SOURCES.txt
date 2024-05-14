@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./scripts/organize
+shopcloud_organize/__init__.py
+shopcloud_organize/__main__.py
+shopcloud_organize/cli.py
+shopcloud_organize/exceptions.py
+shopcloud_organize/helpers.py
+shopcloud_organize.egg-info/PKG-INFO
+shopcloud_organize.egg-info/SOURCES.txt
+shopcloud_organize.egg-info/dependency_links.txt
+shopcloud_organize.egg-info/requires.txt
+shopcloud_organize.egg-info/top_level.txt
