@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/scorecovid.py
+src/scorecovid.egg-info/PKG-INFO
+src/scorecovid.egg-info/SOURCES.txt
+src/scorecovid.egg-info/dependency_links.txt
+src/scorecovid.egg-info/entry_points.txt
+src/scorecovid.egg-info/top_level.txt
