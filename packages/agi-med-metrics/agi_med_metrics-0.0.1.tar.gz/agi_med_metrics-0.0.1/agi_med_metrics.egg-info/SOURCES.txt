@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+agi_med_metrics/__init__.py
+agi_med_metrics/errors-cv.py
+agi_med_metrics/errors-ml.py
+agi_med_metrics/errors-nlp.py
+agi_med_metrics.egg-info/PKG-INFO
+agi_med_metrics.egg-info/SOURCES.txt
+agi_med_metrics.egg-info/dependency_links.txt
+agi_med_metrics.egg-info/requires.txt
+agi_med_metrics.egg-info/top_level.txt
