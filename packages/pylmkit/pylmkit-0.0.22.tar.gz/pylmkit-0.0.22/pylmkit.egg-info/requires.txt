@@ -1,0 +1,11 @@
+streamlit==1.27.2
+pyyaml
+dashscope
+zhipuai
+openai
+python-dotenv
+langchain==0.0.325
+qianfan
+duckduckgo_search
+websocket==0.2.1
+websocket-client==1.6.3
