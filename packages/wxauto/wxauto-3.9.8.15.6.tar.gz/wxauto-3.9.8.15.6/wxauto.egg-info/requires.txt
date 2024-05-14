@@ -1,0 +1,6 @@
+pywin32
+pyperclip
+Pillow
+psutil
+typing_extensions
+comtypes
