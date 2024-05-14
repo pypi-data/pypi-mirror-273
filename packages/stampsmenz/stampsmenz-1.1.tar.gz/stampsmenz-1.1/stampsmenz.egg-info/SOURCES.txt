@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+stampsmenz/__init__.py
+stampsmenz/main.py
+stampsmenz.egg-info/PKG-INFO
+stampsmenz.egg-info/SOURCES.txt
+stampsmenz.egg-info/dependency_links.txt
+stampsmenz.egg-info/requires.txt
+stampsmenz.egg-info/top_level.txt
