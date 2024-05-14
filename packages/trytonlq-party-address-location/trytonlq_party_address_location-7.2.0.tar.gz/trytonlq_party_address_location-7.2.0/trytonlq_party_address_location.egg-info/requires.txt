@@ -1,0 +1,6 @@
+trytond<7.3,>=7.2
+trytond_country<7.3,>=7.2
+trytond_party<7.3,>=7.2
+
+[test]
+proteus<7.3,>=7.2
