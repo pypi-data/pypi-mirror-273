@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+interdispensationz/__init__.py
+interdispensationz/main.py
+interdispensationz.egg-info/PKG-INFO
+interdispensationz.egg-info/SOURCES.txt
+interdispensationz.egg-info/dependency_links.txt
+interdispensationz.egg-info/requires.txt
+interdispensationz.egg-info/top_level.txt
