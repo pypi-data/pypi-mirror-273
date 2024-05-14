@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: PyStratum-Middle
+Version: 1.1.1
+Summary: PyStratum Middle: The glue between a PyStratum backend and your application
+Home-page: https://github.com/DatabaseStratum/py-stratum-middle
+License: MIT
+Keywords: PyStratum,Middle
+Author: Set Based IT Consultancy
+Author-email: info@setbased.nl
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: System :: Installation/Setup
+Project-URL: Documentation, https://stratum.readthedocs.io/
+Project-URL: Repository, https://github.com/DatabaseStratum/py-stratum-middle
+Description-Content-Type: text/markdown
+
+# PyStratum-Middle
+
+The glue between a PyStratum middle and your application.
+
+<table>
+<thead>
+<tr>
+<th>Social</th>
+<th>Release</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://gitter.im/SetBased/py-stratum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/SetBased/py-stratum.svg" alt="Gitter"/></a>
+</td>
+<td>
+<a href="https://badge.fury.io/py/PyStratum-Middle"><img src="https://badge.fury.io/py/PyStratum-Middle.svg" alt="Latest Stable Version"/></a><br/>
+</td>
+<td>
+<a href="https://scrutinizer-ci.com/g/DatabaseStratum/py-stratum-middle/?branch=master"><img src="https://scrutinizer-ci.com/g/DatabaseStratum/py-stratum-middle/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"/></a>
+</td>
+</tr>
+</tbody>
+</table>
+
+## Overview
+
+PyStratum is a tool and library for loading and invoking stored procedures from Python code.
+
+The documentation of PyStratum is available at https://stratum.readthedocs.io/.
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
