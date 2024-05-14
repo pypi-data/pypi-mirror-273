@@ -1,0 +1,6 @@
+[console_scripts]
+countme-delete-totals=mirrors_countme.scripts.countme_delete_totals:cli
+countme-parse-access-log=mirrors_countme.scripts.countme_parse_access_log:cli
+countme-totals=mirrors_countme.scripts.countme_totals:cli
+countme-trim-raw=mirrors_countme.scripts.countme_trim_raw:cli
+
