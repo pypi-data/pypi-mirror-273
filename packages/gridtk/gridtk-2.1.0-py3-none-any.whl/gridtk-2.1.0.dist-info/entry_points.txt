@@ -1,0 +1,8 @@
+[console_scripts]
+jman = gridtk.script.jman:main
+qconf = gridtk.script.grid:main
+qdel = gridtk.script.grid:main
+qhost = gridtk.script.grid:main
+qrsh = gridtk.script.grid:main
+qstat = gridtk.script.grid:main
+qsub = gridtk.script.grid:main
