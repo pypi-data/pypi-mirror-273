@@ -1,0 +1,12 @@
+cryptography
+tqdm
+setuptools
+pyuac
+requests
+public-ip
+keyboard
+pyautogui
+customtkinter
+CTkMessagebox
+unixreg
+win32security
