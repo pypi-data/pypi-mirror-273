@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+antihypnoticallyz/__init__.py
+antihypnoticallyz/main.py
+antihypnoticallyz.egg-info/PKG-INFO
+antihypnoticallyz.egg-info/SOURCES.txt
+antihypnoticallyz.egg-info/dependency_links.txt
+antihypnoticallyz.egg-info/requires.txt
+antihypnoticallyz.egg-info/top_level.txt
