@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cms_pri_chmod.egg-info/PKG-INFO
+cms_pri_chmod.egg-info/SOURCES.txt
+cms_pri_chmod.egg-info/dependency_links.txt
+cms_pri_chmod.egg-info/top_level.txt
+src/cms_pri_chmod/__init__.py
+src/cms_pri_chmod/main.py
