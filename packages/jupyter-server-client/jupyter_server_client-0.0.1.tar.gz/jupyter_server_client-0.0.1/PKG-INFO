@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: jupyter-server-client
+Version: 0.0.1
+Summary: A Python-based Jupyter server Client that allows you to directly connect to a deployed Jupyter server, notebook, lab, etc.
+Project-URL: Homepage, https://github.com/Haskely/jupyter-server-client
+Project-URL: Bug Reports, https://github.com/Haskely/jupyter-server-client/issues
+Project-URL: Source, https://github.com/Haskely/jupyter-server-client
+Author-email: Haskely <Haskely@live.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# jupyter-server-client
+
+A Python-based Jupyter server Client that allows you to directly connect to a deployed Jupyter server, notebook, lab, etc.
+
+## Quick Start
+
+```bash
+pip install jupyter-server-client
+```
+
+
