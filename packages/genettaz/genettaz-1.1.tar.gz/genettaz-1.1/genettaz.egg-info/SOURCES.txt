@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+genettaz/__init__.py
+genettaz/main.py
+genettaz.egg-info/PKG-INFO
+genettaz.egg-info/SOURCES.txt
+genettaz.egg-info/dependency_links.txt
+genettaz.egg-info/requires.txt
+genettaz.egg-info/top_level.txt
