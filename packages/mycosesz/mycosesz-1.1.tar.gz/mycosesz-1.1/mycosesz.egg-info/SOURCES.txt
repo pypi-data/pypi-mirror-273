@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mycosesz/__init__.py
+mycosesz/main.py
+mycosesz.egg-info/PKG-INFO
+mycosesz.egg-info/SOURCES.txt
+mycosesz.egg-info/dependency_links.txt
+mycosesz.egg-info/requires.txt
+mycosesz.egg-info/top_level.txt
