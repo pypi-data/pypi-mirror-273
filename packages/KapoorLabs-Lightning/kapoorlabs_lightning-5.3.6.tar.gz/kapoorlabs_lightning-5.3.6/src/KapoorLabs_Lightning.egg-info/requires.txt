@@ -1,0 +1,14 @@
+numpy
+torch
+torchvision
+lightning
+h5py
+rich
+tox
+pytest-cov
+pyntcloud
+
+[testing]
+tox
+pytest
+pytest-cov
