@@ -1,0 +1,10 @@
+tqdm>4
+poppy>=1.2.0
+webbpsf>=1.2.0
+webbpsf_ext>=1.2.1
+astroquery>=0.4.6
+jwst
+
+[docs]
+docutils==0.18
+sphinx>=3.4.1
