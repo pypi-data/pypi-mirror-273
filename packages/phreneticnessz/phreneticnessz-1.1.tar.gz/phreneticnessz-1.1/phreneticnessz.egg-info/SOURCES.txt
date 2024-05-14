@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+phreneticnessz/__init__.py
+phreneticnessz/main.py
+phreneticnessz.egg-info/PKG-INFO
+phreneticnessz.egg-info/SOURCES.txt
+phreneticnessz.egg-info/dependency_links.txt
+phreneticnessz.egg-info/requires.txt
+phreneticnessz.egg-info/top_level.txt
