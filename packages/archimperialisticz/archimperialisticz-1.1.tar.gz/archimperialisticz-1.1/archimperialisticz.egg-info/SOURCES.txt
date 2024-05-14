@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+archimperialisticz/__init__.py
+archimperialisticz/main.py
+archimperialisticz.egg-info/PKG-INFO
+archimperialisticz.egg-info/SOURCES.txt
+archimperialisticz.egg-info/dependency_links.txt
+archimperialisticz.egg-info/requires.txt
+archimperialisticz.egg-info/top_level.txt
