@@ -1,0 +1,10 @@
+kgr-0.2.0.dist-info/METADATA,sha256=qjI21efoK4dgGscKBMGkXrT_mLFM6ibbIra4ToeaM5w,2042
+kgr-0.2.0.dist-info/WHEEL,sha256=jYkCrxc6KYbxWvJ_zBmN4AAnMM7RVfyK2sqrWiDo1mA,94
+kgr-0.2.0.dist-info/licenses/LICENSE,sha256=ahovYqBmzdroeHerE0ned5ylCSc10Oj4g2pI9k_BKpY,1071
+kgr/__init__.py,sha256=0WXpk9WPEoEp3HN6m2c9z2r3h6SDCCeDeHlmUyAqw64,94
+kgr/__main__.py,sha256=rIoSuCh1hbvGS86QLKDnjHFt1v3KbHzn41OGxE6metI,645
+kgr/convert.py,sha256=seK5LF2trFjEDKdGi7QlTKGLVVAE1TpkKfh1YkgL-qY,3096
+kgr/geocode.py,sha256=zxoqqei11obxqMAnpaXNXI-oDasE4aNrPVKJn5Gor4U,3430
+kgr/lib.py,sha256=SQoyz20xUxDJKDCBqVcnH09lV23h_ZPL1-GmOaj2bDQ,1302
+kgr/prepare.py,sha256=J04vvo71FHb0Vohqha7_bd9zjycvM42FokE1LT-xQM8,2781
+kgr-0.2.0.dist-info/RECORD,,
