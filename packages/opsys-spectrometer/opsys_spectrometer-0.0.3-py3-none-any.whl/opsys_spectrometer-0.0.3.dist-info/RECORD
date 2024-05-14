@@ -1,0 +1,11 @@
+opsys_spectrometer/__init__.py,sha256=sAUdU2NunbfGqSVZrceYdtJ_dG7TAQ5C_M58OOiGraE,118
+opsys_spectrometer/avaspecx64.dll,sha256=42AaUJev9bgeMnf0oOpwwE0eCme4afdZtNVB7qYqBo8,392192
+opsys_spectrometer/spectrometer_abstract.py,sha256=JFIxKYmhqYmVCKT--Q497MJO5J7BBkS41F51jAfWxz0,551
+opsys_spectrometer/spectrometer_controller.py,sha256=lLY__lnb5LR1gxswY0K84oAj8_7mFpfb8AIdOPOCfco,4682
+test/__init__.py,sha256=iMeY1YAK7tbFoSJ05Ifd4h3egHAa99MrNZjMn8O5wak,78
+test/test_spectrometer.py,sha256=ke81iiMHWn1sI28TpEh-fb4mA_GTUVhd1EmTOfZUygY,2686
+opsys_spectrometer-0.0.3.dist-info/LICENSE,sha256=k1uUZ25Ne_mz5L4Wb-Wkt3ieMEaoetnGrYPV6EGJG9g,1091
+opsys_spectrometer-0.0.3.dist-info/METADATA,sha256=W3ESK8EIEFonAYQzncgTupptK216oT7wpVbU2TImwmQ,378
+opsys_spectrometer-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+opsys_spectrometer-0.0.3.dist-info/top_level.txt,sha256=L6d2MkuhaGTA91Nr794cO0ojtRY2Nb4llu1UM4UD234,24
+opsys_spectrometer-0.0.3.dist-info/RECORD,,
