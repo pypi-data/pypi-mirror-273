@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyStratum-Cli
+Version: 2.0.2
+Summary: PyStratum CLI: The frontend of PyStratum
+Keywords: PyStratum,CLI
+Author: Set Based IT Consultancy
+Author-email: info@setbased.nl
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: System :: Installation/Setup
+Requires-Dist: cleo (>=2.1.0,<3.0.0)
+Requires-Dist: pystratum-backend (>=2.0.4,<3.0.0)
