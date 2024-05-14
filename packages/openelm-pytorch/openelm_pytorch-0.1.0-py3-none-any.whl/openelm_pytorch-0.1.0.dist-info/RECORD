@@ -1,0 +1,15 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/generate_text.py,sha256=x64CdyfFOE4hLskHyu8XSI2cnlKwxcsJEWVm2kfhTH4,4284
+examples/train_lora/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/train_lora/gutenberg.py,sha256=uUIRpygPNVrMQkI-rbxNjSuyJn2_kjIw0n0hcnfsB9A,13447
+examples/train_lora/train.py,sha256=RsADkqJOCyEpUx3aARQ0U0Q3RP7XiuBs6OwyN8eM2Ss,12003
+openelm_pytorch/__init__.py,sha256=nxKHJkCmixvi6NPhgAkL9IWEbcNkY4U5CfZu3OSMCnw,378
+openelm_pytorch/config.py,sha256=s16nRLDFpSmRnafAcw9YRNMzmW6rIfURGS9hUx18XAQ,7290
+openelm_pytorch/openelm.py,sha256=aC3AUbCPcjwPgcbTTITZUNTg0hj2uSzOyumQPYYBtgc,17373
+openelm_pytorch/tokenizer.py,sha256=CPDhnjFRGRm1qvDoLWnYVLsoNNZ-sa1mzV6oj1ehIQQ,2882
+openelm_pytorch/utils.py,sha256=5GlFKPQWvvJKQpzBFnfSPlLAYptpoihiN9TW7Frjs2Q,1368
+openelm_pytorch-0.1.0.dist-info/LICENSE,sha256=hRXuyjlIpCesw-fD9ONCbyH2AZxw9AKL2IMx3EcCOEs,1067
+openelm_pytorch-0.1.0.dist-info/METADATA,sha256=drYlYFZRjSqUpCfPCV1wbjmxaAD4f4kmTKejjF86D8s,2718
+openelm_pytorch-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+openelm_pytorch-0.1.0.dist-info/top_level.txt,sha256=U8_wIuN4j80kg-aKLEE5BlAN-pRR7BhQi7-h2iqawqQ,25
+openelm_pytorch-0.1.0.dist-info/RECORD,,
