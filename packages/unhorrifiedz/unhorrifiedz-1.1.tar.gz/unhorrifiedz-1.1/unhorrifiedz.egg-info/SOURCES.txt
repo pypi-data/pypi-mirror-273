@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unhorrifiedz/__init__.py
+unhorrifiedz/main.py
+unhorrifiedz.egg-info/PKG-INFO
+unhorrifiedz.egg-info/SOURCES.txt
+unhorrifiedz.egg-info/dependency_links.txt
+unhorrifiedz.egg-info/requires.txt
+unhorrifiedz.egg-info/top_level.txt
