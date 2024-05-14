@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+subnacreousz/__init__.py
+subnacreousz/main.py
+subnacreousz.egg-info/PKG-INFO
+subnacreousz.egg-info/SOURCES.txt
+subnacreousz.egg-info/dependency_links.txt
+subnacreousz.egg-info/requires.txt
+subnacreousz.egg-info/top_level.txt
