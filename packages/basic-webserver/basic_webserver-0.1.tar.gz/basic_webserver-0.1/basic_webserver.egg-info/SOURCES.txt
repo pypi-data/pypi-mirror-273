@@ -1,0 +1,6 @@
+README.md
+setup.py
+basic_webserver.egg-info/PKG-INFO
+basic_webserver.egg-info/SOURCES.txt
+basic_webserver.egg-info/dependency_links.txt
+basic_webserver.egg-info/top_level.txt

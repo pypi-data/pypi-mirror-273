@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: basic-webserver
+Version: 0.1
+Summary:  A basic web server that can render HTML or plain text.
+Home-page: https://github.com/kaimv/basic-webserver
+Author: kaimv
+Author-email: kaimv.hi@gmail.com
