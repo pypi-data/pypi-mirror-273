@@ -1,0 +1,23 @@
+#!python
+
+"""
+This code defines a script which installs the third-party software necessary
+for using this package.
+"""
+
+# Non-standard imports.
+from hosker_utils import install_apt_packages
+
+# Local constants.
+APT_PACKAGES_TO_INSTALL = ("cargo", "libgmp-dev")
+
+##############
+# RUN SCRIPT #
+##############
+
+def run():
+    """ Run this file. """
+    return install_apt_packages(APT_PACKAGES_TO_INSTALL)
+
+if __name__ == "__main__":
+    run()

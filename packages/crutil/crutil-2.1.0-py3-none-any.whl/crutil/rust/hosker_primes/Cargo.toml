@@ -1,0 +1,14 @@
+[package]
+name = "hosker_primes"
+version = "1.0.0"
+authors = ["Tom Hosker"]
+edition = "2021"
+
+[lib]
+name = "hosker_primes"
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2.152"
+num-bigint-dig = { version = "0.8.4", features = ["prime"] }
+num-prime = "0.4.3"
