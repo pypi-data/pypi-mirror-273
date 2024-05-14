@@ -1,0 +1,13 @@
+takion_api/__init__.py,sha256=bq_B93_p-CimSyiW5dG90_aJKN6DZfR8WHzyN8E5UPM,407
+takion_api/exceptions.py,sha256=3KhCzclZEUN2Enf_Xj4i97kvVWTXGjFdVElc4z6yy1k,439
+takion_api/models.py,sha256=tFvxWWRP9x43oJ-tQu_CaUZkdt1JIxwh4t_5OpI_pws,315
+takion_api/datadome/__init__.py,sha256=0pkUeFgtVltBDEzu6biUrr4Ac1Bxke3GQEEn2uKHgnk,35
+takion_api/datadome/main.py,sha256=9Nmsis_X7bvKb9MDoK67dZHCfZdEBZ3jW8EOYwGR5RM,8066
+takion_api/incapsula/__init__.py,sha256=qBHhFnwClfQETuBZLTohxNKqytd5pkqb3jsOCMDVyP0,71
+takion_api/incapsula/reese84.py,sha256=8whUzqqrkNrlcCPyr1gQXvY5sh-fYfoIx2OHdDEuo8E,9538
+takion_api/incapsula/utmvc.py,sha256=gu-VUebsQZ0a8PUIlmLRfqmIOsQYDU0cslB9qr9ZIyg,5237
+takion_api-0.1.41.dist-info/LICENSE,sha256=UO0PMCHOEETPW5rv6crhtRiHAw5gjqNKFhRexnUjLWU,1071
+takion_api-0.1.41.dist-info/METADATA,sha256=RKwHC5cwvSWfj0Svb3I2OU7wRi7lKH4NZb8NWP4E0MA,15278
+takion_api-0.1.41.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+takion_api-0.1.41.dist-info/top_level.txt,sha256=P9DqGZiDgm6RJAi--Bc0Qh9-m8N_Ix41tUxmzu3KLak,11
+takion_api-0.1.41.dist-info/RECORD,,
