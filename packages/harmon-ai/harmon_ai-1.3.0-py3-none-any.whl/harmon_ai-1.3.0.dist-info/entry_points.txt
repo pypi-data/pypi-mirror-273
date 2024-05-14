@@ -1,0 +1,2 @@
+[console_scripts]
+harmon-ai = harmon_ai.cli:main
