@@ -1,0 +1,3 @@
+[console_scripts]
+bball-sim-v2=bball_sim_v2.main:app
+

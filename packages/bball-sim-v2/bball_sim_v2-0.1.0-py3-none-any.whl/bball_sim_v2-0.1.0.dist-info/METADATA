@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bball-sim-v2
+Version: 0.1.0
+Summary: 
+Author: jacob
+Author-email: jacob.johannsson@quantumbridgetech.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+
