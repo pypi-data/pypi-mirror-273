@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/summarytools/__init__.py
+src/summarytools/htmlwidgets.py
+src/summarytools/summary.py
+src/summarytools/summarytools.py
+src/summarytools.egg-info/PKG-INFO
+src/summarytools.egg-info/SOURCES.txt
+src/summarytools.egg-info/dependency_links.txt
+src/summarytools.egg-info/requires.txt
+src/summarytools.egg-info/top_level.txt
