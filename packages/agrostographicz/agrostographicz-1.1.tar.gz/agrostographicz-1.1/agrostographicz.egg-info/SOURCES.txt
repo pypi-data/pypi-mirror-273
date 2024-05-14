@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+agrostographicz/__init__.py
+agrostographicz/main.py
+agrostographicz.egg-info/PKG-INFO
+agrostographicz.egg-info/SOURCES.txt
+agrostographicz.egg-info/dependency_links.txt
+agrostographicz.egg-info/requires.txt
+agrostographicz.egg-info/top_level.txt
