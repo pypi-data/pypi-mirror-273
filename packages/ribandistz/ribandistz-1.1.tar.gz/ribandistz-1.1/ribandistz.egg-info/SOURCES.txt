@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ribandistz/__init__.py
+ribandistz/main.py
+ribandistz.egg-info/PKG-INFO
+ribandistz.egg-info/SOURCES.txt
+ribandistz.egg-info/dependency_links.txt
+ribandistz.egg-info/requires.txt
+ribandistz.egg-info/top_level.txt
