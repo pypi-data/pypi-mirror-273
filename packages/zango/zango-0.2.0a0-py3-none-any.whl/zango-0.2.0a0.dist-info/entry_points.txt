@@ -1,0 +1,2 @@
+[console_scripts]
+zcore = zcore.cli:cli
