@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ergoflo
+Version: 0.1.0
+Summary: A functional python framework
+License: MIT
+Author: Kevin Blaesing
+Author-email: kevin.blaesing@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+A functional Python framework inspired by Rust.
+
