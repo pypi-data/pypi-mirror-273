@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+mergefast/__init__.py
+mergefast/core.py
+mergefast1.egg-info/PKG-INFO
+mergefast1.egg-info/SOURCES.txt
+mergefast1.egg-info/dependency_links.txt
+mergefast1.egg-info/top_level.txt
+tests/__init__.py
+tests/perf.py
+tests/test.py
