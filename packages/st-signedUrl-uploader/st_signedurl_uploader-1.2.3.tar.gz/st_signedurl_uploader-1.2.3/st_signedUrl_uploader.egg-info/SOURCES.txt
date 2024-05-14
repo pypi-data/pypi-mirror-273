@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_signedUrl_uploader/__init__.py
+st_signedUrl_uploader.egg-info/PKG-INFO
+st_signedUrl_uploader.egg-info/SOURCES.txt
+st_signedUrl_uploader.egg-info/dependency_links.txt
+st_signedUrl_uploader.egg-info/requires.txt
+st_signedUrl_uploader.egg-info/top_level.txt
+st_signedUrl_uploader/frontend/build/asset-manifest.json
+st_signedUrl_uploader/frontend/build/bootstrap.min.css
+st_signedUrl_uploader/frontend/build/index.html
+st_signedUrl_uploader/frontend/build/static/js/main.022a2283.js
+st_signedUrl_uploader/frontend/build/static/js/main.022a2283.js.LICENSE.txt
+st_signedUrl_uploader/frontend/build/static/js/main.022a2283.js.map
