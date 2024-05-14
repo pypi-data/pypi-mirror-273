@@ -1,0 +1,65 @@
+[
+  {
+    "position": [
+      242,
+      256,
+      132,
+      60
+    ],
+    "text": "mouse"
+  },
+  {
+    "position": [
+      643,
+      473,
+      304,
+      195
+    ],
+    "text": "remote"
+  },
+  {
+    "position": [
+      434,
+      61,
+      199,
+      85
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      1102,
+      536,
+      353,
+      345
+    ],
+    "text": "hand"
+  },
+  {
+    "position": [
+      632,
+      367,
+      1265,
+      705
+    ],
+    "text": "dining table"
+  },
+  {
+    "position": [
+      772,
+      69,
+      211,
+      79
+    ],
+    "text": "laptop"
+  },
+  {
+    "position": [
+      1161,
+      153,
+      236,
+      297
+    ],
+    "text": "backpack"
+  }
+]
