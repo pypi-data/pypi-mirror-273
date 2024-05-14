@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+pydeepleb/__init__.py
+pydeepleb/avto.py
+pydeepleb/init.py
+pydeepleb.egg-info/PKG-INFO
+pydeepleb.egg-info/SOURCES.txt
+pydeepleb.egg-info/dependency_links.txt
+pydeepleb.egg-info/requires.txt
+pydeepleb.egg-info/top_level.txt
