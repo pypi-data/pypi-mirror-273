@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: my-simple-package
+Version: 0.0.1
+Summary: simple test
+Author: alon12345
+Author-email: alonf1536@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#just a simple readme...
