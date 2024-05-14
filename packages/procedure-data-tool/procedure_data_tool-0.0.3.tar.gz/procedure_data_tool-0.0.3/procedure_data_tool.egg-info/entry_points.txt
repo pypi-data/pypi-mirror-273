@@ -1,0 +1,2 @@
+[console_scripts]
+launch_tool = procedure_data_tool.mainmain
