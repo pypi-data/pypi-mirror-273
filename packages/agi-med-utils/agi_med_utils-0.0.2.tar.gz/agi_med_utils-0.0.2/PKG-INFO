@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: agi_med_utils
+Version: 0.0.2
+Summary: Utils for agi-med team
+Author: AGI-MED-TEAM
+Requires-Dist: grpcio==1.62.1
+Requires-Dist: grpcio-tools==1.62.1
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: gigachat==0.1.17
+
+# agi-med-utils
+
+Стандартизация компонент общей библиотеки отдела
