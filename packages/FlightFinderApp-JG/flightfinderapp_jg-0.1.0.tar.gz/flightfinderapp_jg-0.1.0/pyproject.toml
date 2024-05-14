@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling", "requests", "prettytable", "click"]
+build-backend = "hatchling.build"
+
+[project]
+name = "FlightFinderApp_JG"
+version = "0.1.0"
+authors = [
+    { name="Justinas Greibus" },
+]
+description = "A helper that interacts with low-cost air carrier's API and helps to find cheap flights."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.scripts]
+FlightFinderApp = "FlightFinderApp_JG.cli:main"
+[project.urls]
+Homepage = "https://github.com/jgreibus/flight_finder"
+Issues = "https://github.com/jgreibus/flight_finder/issues"
