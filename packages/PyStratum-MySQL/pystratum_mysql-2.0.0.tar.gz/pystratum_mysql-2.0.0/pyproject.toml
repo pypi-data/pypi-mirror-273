@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "PyStratum-MySQL"
+version = "2.0.0"
+description = "PyStratum MySQL: MySQL & MariaDB Backend"
+authors = ["Set Based IT Consultancy <info@setbased.nl>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/DatabaseStratum/py-stratum-mysql"
+documentation = "https://stratum.readthedocs.io/"
+keywords = ["PyStratum", "MySQL", "MariaDB"]
+classifiers = ["Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: System :: Installation/Setup",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+mysql-connector-python = "^8.0.0"
+PyStratum-Backend = "^2.0.4"
+PyStratum-Common = "^2.0.1"
+PyStratum-Middle = "^1.1.1"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.5.1"
+PyStratum-Cli = "^2.0.2"
+Sphinx = "^7.3.7"
+sphinx-rtd-theme = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-MySQL = "poetry.core.masonry.api"
