@@ -1,0 +1,11 @@
+assessment/SCTAssessmentReportTemplate.html,sha256=wknLq2cbqm8FCCeLo4JjnDybR2UUTzsYtjsUAwXVSw8,6093
+assessment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assessment/assessment.py,sha256=Pu-sxiuVZ9BFJMCb8XEV-IoOF3njI8heLeXBQqh9hSE,16100
+assessment/awssctcomplexitymatrix.csv,sha256=BSXPmQu4IyoY9gHDG1tMGiHKIlHWTTjMZLohNzMi0AQ,47417
+assessment/sct_input.csv,sha256=JdD2aI6OilhsJmwyre3966vk8iw5PUqs5I3MPfogjUk,25115
+dcg_extensionmigrationassistant-1.0.0.dist-info/LICENSE.txt,sha256=sROzjxMeuDh2GyrfZak8oXhHshzEKUYxvBpVqDSiJlQ,1091
+dcg_extensionmigrationassistant-1.0.0.dist-info/METADATA,sha256=fIyQtrMGHcZMiwJTORAFRnjRSzS-m74__csPIvtP9uw,6433
+dcg_extensionmigrationassistant-1.0.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+dcg_extensionmigrationassistant-1.0.0.dist-info/entry_points.txt,sha256=qONSdwxxeMSnwA2JeFYhwf3HNHb5zo7B8pt8_5kjIcU,68
+dcg_extensionmigrationassistant-1.0.0.dist-info/top_level.txt,sha256=l4TbtbSFaGWP9ErJr6XLElUuN4jwIEapeYlfeBr7smc,11
+dcg_extensionmigrationassistant-1.0.0.dist-info/RECORD,,
