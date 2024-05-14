@@ -1,0 +1,17 @@
+nesse/__init__.py,sha256=T4WHF6Me_sytzQRUtxd-eKqxF975K5rdbz4a8jiWWq0,147
+nesse/charge_propagation.py,sha256=zHz0psugmvhEaaDtA7It-uBYop5U5ywkEJNEiEQCPk0,2984
+nesse/constants.py,sha256=0EN0eZ4ZWO7Yh_0fYgX9dPXtRpxIDprwFEP4AUq--_k,880
+nesse/event.py,sha256=RSK-v76mfzpIxqHKWZ_KLSTmVWXRmGk-VED2mj_fRUA,5978
+nesse/field.py,sha256=5peT3uyGy56NvX_PQG3YhwdIapbdem_RTBxEdpqt7ZM,7716
+nesse/interp.pyx,sha256=JXYDbhcj1F0n-zedDktl-RsDX4gLY5BBLRehgk5a7vA,1160
+nesse/interp_3d.py,sha256=ZbWqW96LaMoH0Td8v4yO3iRGMNrRyVKMyjtBTkGIol8,2803
+nesse/mobility.py,sha256=VTOdPlZTLWwm9gsVSykbtjqPI-P5BFCvaScal-JIgcI,3524
+nesse/plotting.py,sha256=M_HGeLeQUJRn8jng8wOKxI0Wz5W-hIZhFUTEiKniVw8,5293
+nesse/quasiparticles.py,sha256=k4XarcneFUUSLp3qDuORwdcZjjnESjOyoIxSpuWKUpI,1856
+nesse/silicon.py,sha256=geg0PCyJqy2TW2_zjphsnUVx4Lr7J5Hn53JX01a6acA,241
+nesse/simulation.py,sha256=TgvBfe28briaZDJpKrPRT9dSuh3w_TpJu09QreDqoL4,11102
+nesse-0.1.1.dist-info/LICENSE,sha256=4f1WQTjts4MVNYknXI4nuYJur1hxgVqoFsD2vzQVML0,1087
+nesse-0.1.1.dist-info/METADATA,sha256=vKsK6N3EUynU3pKvL6aExQ8wysj7z98pnUFt6gA8w2o,1657
+nesse-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nesse-0.1.1.dist-info/top_level.txt,sha256=pvPeJrLk-aSyC3xwaUH8DAM8kEpScj-LnhncXsad_ls,6
+nesse-0.1.1.dist-info/RECORD,,
