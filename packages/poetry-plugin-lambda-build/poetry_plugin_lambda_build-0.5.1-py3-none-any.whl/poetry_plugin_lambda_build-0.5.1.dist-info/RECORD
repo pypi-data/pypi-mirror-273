@@ -1,0 +1,15 @@
+poetry_plugin_lambda_build/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_plugin_lambda_build/commands.py,sha256=3BP5CzIedX2IFlvopHgf48GnVDS-NPgsS4Nz4l-gEJM,913
+poetry_plugin_lambda_build/docker.py,sha256=R8171UlJYhVjUWUMhPOIgRZefpB8eauskDo5FUiQyXo,2862
+poetry_plugin_lambda_build/parameters.py,sha256=U051qn2YyvmM_KcFgiuk1HgtW7YywMItV-t_3VrDrvo,3877
+poetry_plugin_lambda_build/plugin.py,sha256=DPiHuXxqK8yK72dN4MS42LQUMrMyv1W8CQzTk5dqc58,2041
+poetry_plugin_lambda_build/recipes.py,sha256=F9ztHX_Es0OMNg3q_N68o8p3OGyKq_k9PkkSActjnkc,11409
+poetry_plugin_lambda_build/requirements.py,sha256=1CJ5q0gosT9hqXa-xKj7FeRUlgSS5AupUaUoVcjc7-4,6752
+poetry_plugin_lambda_build/utils.py,sha256=o42eUV-OBsUrjcf699iuq11ONX6iKuGEuUMOfmEUV8g,2120
+poetry_plugin_lambda_build/walker.py,sha256=UlObbnk2J6UiG1zMHhNoDzKYbs1zlzKAXpr4FMLzRbY,9831
+poetry_plugin_lambda_build/zip.py,sha256=I7gO2_aS-2X4JiCE4XOWD3nFR3Cz0OoMV1vwMHk8R7Y,767
+poetry_plugin_lambda_build-0.5.1.dist-info/LICENSE,sha256=Xz_WP2dJJwc4peiNGRytl8_MF3fEznh_Aa2fyGxFBh8,1073
+poetry_plugin_lambda_build-0.5.1.dist-info/METADATA,sha256=Hl8R8CIKWFgUHv3eqdebLCvRMuBDcMpytNXUCe1MbmA,6229
+poetry_plugin_lambda_build-0.5.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetry_plugin_lambda_build-0.5.1.dist-info/entry_points.txt,sha256=Q_ztFbw7-NtiwSA1DkvWJ_XRbyDLW4Y_lRWShZi7EbA,89
+poetry_plugin_lambda_build-0.5.1.dist-info/RECORD,,
