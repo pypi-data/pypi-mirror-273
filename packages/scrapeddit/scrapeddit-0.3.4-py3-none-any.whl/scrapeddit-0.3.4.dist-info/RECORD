@@ -1,0 +1,12 @@
+scrapeddit/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+scrapeddit/authentication.py,sha256=swV_u2GQW_EyIKs2SL7w-5mWynoGxf2kb4zSbxPPUQo,827
+scrapeddit/models.py,sha256=OLs1RVVzG_TD7zeUlGLMNLnWWmEqCWLpDmHUzI4jCZ4,1142
+scrapeddit/redditdl.py,sha256=pHK-iNKUgUMRMB0OKwdD63xkqX1q7q2ttY9snng6GUw,4473
+scrapeddit/scrapeonce.py,sha256=MYxM8zptnXIluz6XEi7W_R9P2BSQXd3Uxu5Vi6cG1XA,1550
+scrapeddit/showit.py,sha256=nqrQ7nrdOTXyCgtYRw1RmmTJn6h70FGpEb0Py5nsD7A,3014
+scrapeddit/transforms.py,sha256=oi8Etom2901ZdRw8ZsmoGvvMoCwhOE78AKMgVKETy_E,599
+scrapeddit-0.3.4.dist-info/LICENSE.txt,sha256=jvIoYo72ToSnU7zUDIol8imJ8mR2lDK98oEG6FgtzOM,1063
+scrapeddit-0.3.4.dist-info/METADATA,sha256=zVc6dnKrNhZZR-o7sP7kRXeRaUt9o7HL7DAsSB5nfZs,4507
+scrapeddit-0.3.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+scrapeddit-0.3.4.dist-info/top_level.txt,sha256=Z00c7saYnWq3YAGuTmwnSIv2S62SADfQ0fFjtmkTelI,11
+scrapeddit-0.3.4.dist-info/RECORD,,
