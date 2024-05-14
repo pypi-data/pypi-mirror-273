@@ -1,0 +1,3 @@
+## SocketBee Python client
+
+WIP.
