@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+pygeneconverter/__init__.py
+pygeneconverter/data.csv
+pygeneconverter/pygeneconverter.py
+pygeneconverter.egg-info/PKG-INFO
+pygeneconverter.egg-info/SOURCES.txt
+pygeneconverter.egg-info/dependency_links.txt
+pygeneconverter.egg-info/requires.txt
+pygeneconverter.egg-info/top_level.txt
