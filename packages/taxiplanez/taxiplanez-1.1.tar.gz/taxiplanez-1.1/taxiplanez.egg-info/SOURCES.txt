@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+taxiplanez/__init__.py
+taxiplanez/main.py
+taxiplanez.egg-info/PKG-INFO
+taxiplanez.egg-info/SOURCES.txt
+taxiplanez.egg-info/dependency_links.txt
+taxiplanez.egg-info/requires.txt
+taxiplanez.egg-info/top_level.txt
