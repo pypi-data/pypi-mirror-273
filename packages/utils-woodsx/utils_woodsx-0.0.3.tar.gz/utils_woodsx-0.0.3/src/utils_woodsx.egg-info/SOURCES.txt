@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/text.py
+src/utils_woodsx/__init__.py
+src/utils_woodsx/example.py
+src/utils_woodsx/excel.py
+src/utils_woodsx/file.py
+src/utils_woodsx/html.py
+src/utils_woodsx.egg-info/PKG-INFO
+src/utils_woodsx.egg-info/SOURCES.txt
+src/utils_woodsx.egg-info/dependency_links.txt
+src/utils_woodsx.egg-info/top_level.txt

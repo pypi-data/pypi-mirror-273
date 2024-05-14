@@ -1,0 +1,18 @@
+[project]
+name = "utils_woodsx"
+version = "0.0.3"
+authors = [
+  { name="woods", email="woods.xzw@gmail.com" },
+]
+description = "A small utils package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
