@@ -1,0 +1,12 @@
+bw_aggregation/__init__.py,sha256=PTDv4u1htvip3B7pCItmIBGBhpIWFfnTy9mw664mqHQ,578
+bw_aggregation/calculator.py,sha256=U5NXh_DDiHxs1S23VZfu4psnPLLt7alEvy3bBmX-U_8,4691
+bw_aggregation/errors.py,sha256=9ea2kC7RUvBDIT2pfaic59b6Sy5MfmUXStQyqa5tOJk,288
+bw_aggregation/estimator.py,sha256=tYb9bAc0MjGI5zVgDxuCTRKF4nbhIIelqAGHAoynfTA,3212
+bw_aggregation/main.py,sha256=tSewmBW1AiKSGbjYRm6_wtvnNR9Xdzk2bxF_WBvZjlU,8280
+bw_aggregation/override.py,sha256=YiDWnSrUDq5kR_YK6cKH5pUBITEkxE1dSjy-VGApUgA,1625
+bw_aggregation/utils.py,sha256=AGtxkuv6gFXnc8HnGwh1chZCzwXfokQLftSCcHVKwZ8,975
+bw_aggregation-1.1.dist-info/LICENSE,sha256=jARRLo53TpIq9EJZ5ANBqv63FxtAtGwn6AI7NQCnHP4,1070
+bw_aggregation-1.1.dist-info/METADATA,sha256=HSdsw0ACxvOAOIC9Acm4AzNkzHauSLTka-N-dC4_5zk,9156
+bw_aggregation-1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bw_aggregation-1.1.dist-info/top_level.txt,sha256=L2zE76g82ihpSgBB74DLiAfb5pC7bBaselQxyeTDaV0,15
+bw_aggregation-1.1.dist-info/RECORD,,
