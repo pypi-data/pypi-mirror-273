@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: adb-tool-py
+Version: 0.0.3
+Summary: adb_tool_py is a tool for Android Debug Bridge (adb).
+Home-page: https://github.com/ShotaIuchi/adb-tool-py
+Author: Shota Iuchi
+Author-email: shotaiuchi.develop@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# adb-tool-py
+
+adb-tool-py is a library for using Android Debug Bridge (ADB) functionality from Python.
+
+It also provides extended functionality.
+
+## Features
+
+- Communication with Android devices
+- Parsing the displayed ViewTree
+  - Search/touch strings
+  - ID search/touch
+    - Search/touch etc.
+
+## Installation
+
+```bash
+pip install adb-tool-py
+```
+
+## Usage
+
+```python
+import adb_tool_py as adb_tool
+
+adb1 = adb_tool.AdbTool()
+adb2 = adb_tool.AdbTool(serial="emulator-5554")
+
+ret1 = adb1.query("shell ls -al")
+ret2 = adb2.query("shell ls -al")
+
+print(ret1.returncode)
+print(ret1.stdout)
+print(ret1.stderr)
+
+print(ret2.returncode)
+print(ret2.stdout)
+print(ret2.stderr)
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you encounter any issues, please report them through the GitHub issue tracker.
