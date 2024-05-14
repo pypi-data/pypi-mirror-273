@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/flask_test_api.py,sha256=945yUun3PqA6ITHXPBTDYG0ga6nPST9QBjass43FOJM,2276
+tests/test_paradi.py,sha256=17K-NPMzGDJclNmHBB5_xD55w_cZdrQgMOEf7s5q4AU,2172
+paradi-0.1.0.dist-info/LICENSE,sha256=JdgcFHNekmSjKn_QurhTEQCG_yNyTNC26nQVkOWdgog,1092
+paradi-0.1.0.dist-info/METADATA,sha256=DDvGiC3lgwa6hKqv7VCM65I7oxWqvXW56rTD4e1oJvk,798
+paradi-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+paradi-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+paradi-0.1.0.dist-info/RECORD,,
