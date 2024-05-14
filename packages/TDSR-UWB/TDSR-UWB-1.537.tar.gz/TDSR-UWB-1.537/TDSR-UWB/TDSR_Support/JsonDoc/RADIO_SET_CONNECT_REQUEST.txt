@@ -1,0 +1,1 @@
+{"RADIO_SET_CONNECT_REQUEST":{"msgId":2,"connectType":0,"dataIPaddress":16909060,"dataPort":8181,"dataLeaseTime":100000,"persistFlag":0}}
