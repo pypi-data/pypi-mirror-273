@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: carbon-registry-indexer
+Version: 0.1.11
+Summary: A Python library designed to streamline the aggregation of carbon data from multiple registries, each with its own data format, into a unified schema in CSV/Parquet formats.
+Home-page: https://github.com/CarbonMarketsHQ/Carbon-Registry-Indexer
+Download-URL: https://github.com/CarbonMarketsHQ/Carbon-Registry-Indexer/archive/refs/tags/v_0.1.7.tar.gz
+Author: Gautam P
+Author-email: gautam@carbonmarketshq.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: strawberry-graphql
+Requires-Dist: azure-storage-blob
+
+### Sample Usage
+
+```
+indexer = CarbonRegistryIndexer(azure_blob_conn_str='your_conn_str', 
+                            azure_blob_container='your_container_name')
+indexer.setup_storage()  # creates or purges data folder
+
+# functions to initiate specific sync calls
+indexer.sync_gold_standard()
+indexer.sync_climate_action_data_trust()
+indexer.sync_american_carbon_registry()
+indexer.sync_climate_action_reserve()
+```
