@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+infernalityz/__init__.py
+infernalityz/main.py
+infernalityz.egg-info/PKG-INFO
+infernalityz.egg-info/SOURCES.txt
+infernalityz.egg-info/dependency_links.txt
+infernalityz.egg-info/requires.txt
+infernalityz.egg-info/top_level.txt
