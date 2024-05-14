@@ -1,0 +1,11 @@
+genai_apis/__init__.py,sha256=ZgkdS9YdryLVPxEvrXjx11dFxQEPWj4rVZabv8qrCZA,91
+genai_apis/abstract.py,sha256=a54RxTFFfSWuoO2r8-rIjRpcXcD3LBmEchwPZNCzP7U,265
+genai_apis/anthropic_api.py,sha256=nprzpxgta3ubIY6eQuvaXEz8eA-9WoNxcZUFG17jGlQ,819
+genai_apis/factory.py,sha256=sJgX-cUGVb5c-i7bYjofYAVbEVXqWVnFflURO5C9PIA,2905
+genai_apis/gemini_api.py,sha256=LqejXTZAr0l6D7tiGAorCyxca4999LOqVNqHvyjj2Sk,1680
+genai_apis/openai_api.py,sha256=Uu_i7Mo8KObH7PxkVDxSz5C9tKLhOuW5yMm1ShLTMVM,790
+genai_apis-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+genai_apis-0.0.5.dist-info/METADATA,sha256=v6l_QWfuRcGXSPA4yafMY3JGz3OuHf7OrgXZMxUmhkw,1672
+genai_apis-0.0.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+genai_apis-0.0.5.dist-info/top_level.txt,sha256=lxy-j5IOQHvkO1zMVLruWLnxQapKtnD_0P9_F_z8cKc,11
+genai_apis-0.0.5.dist-info/RECORD,,
