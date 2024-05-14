@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+souplessz/__init__.py
+souplessz/main.py
+souplessz.egg-info/PKG-INFO
+souplessz.egg-info/SOURCES.txt
+souplessz.egg-info/dependency_links.txt
+souplessz.egg-info/requires.txt
+souplessz.egg-info/top_level.txt
