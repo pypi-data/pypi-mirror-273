@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dynamicdl
+Version: 0.1.0a0
+Summary: A PyTorch-based dynamic dataloading library
+Home-page: https://github.com/ESB-AI-Lab/DynamicDL
+Author: Anthony Tong
+Author-email: atong28.usa@gmail.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python <=4.9.0.80,>=4.6.0
+Requires-Dist: Pillow <=10.3.0,>=8.0.0
+Requires-Dist: PyYAML <=6.0.1,>=5.4.0
+Requires-Dist: tqdm <=4.66.2,>=4.1.0
+Requires-Dist: numpy <2.0.0,>=1.18.0
+Requires-Dist: pandas <=2.2.2,>=1.0.0
+Requires-Dist: torch <=2.3.0,>=2.0.0
+Requires-Dist: torchvision <=0.18.0,>=0.15.1
+Requires-Dist: typing-extensions <=4.11.0,>=4.0.0
+Requires-Dist: xmltodict <=0.13.0,>=0.12.0
+Requires-Dist: jsonpickle <=3.1.0,>=3.0.0
+Requires-Dist: matplotlib <=3.8.4,>=3.6.0
+
+# DynamicDL
+
+## Introduction
+
+In recent days computer vision has become a hot topic in the field of AI and computer science. Advances in hardware and computational power has enabled deep learning to become pervasive in everyday life, and computer vision architectures serve many purposes in today's world. Yet a high barrier of entry remains in dataloading. While deep learning architectures are a "plug and chug", requiring users to possess near-zero knowledge about its inner works, dataloading still remains a barrier to most seeking to test their custom datasets. DynamicDL is a library to counteract that, containing code to dynamically process datasets.
+
+## Installation, Tutorial, Docs found [here!](https://esb-ai-lab.github.io/DynamicDL/)
