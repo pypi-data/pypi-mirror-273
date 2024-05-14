@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pyawsopstoolkit.exceptions
+Version: 0.1.0
+Summary: This package offers a collection of exception classes tailored for handling errors within the AWS Ops Toolkit.
+Home-page: https://github.com/coldsofttech/pyawsopstoolkit.exceptions
+Author: coldsofttech
+License: MIT
+Keywords: aws,toolkit,exceptions,amazon-web-services,awsopstoolkit,aws-ops-toolkit
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `pyawsopstoolkit.exceptions`
+
+The **pyawsopstoolkit.exceptions** package provides a set of exception classes tailored for managing errors within the
+AWS Ops Toolkit. These exceptions are finely crafted to handle various scenarios and errors that may arise during the
+execution of pyawsopstoolkit operations, offering robust support for error handling and debugging within the toolkit.
+
+## Getting Started
+
+Let's get started with **pyawsopstoolkit.exceptions**!
+
+### Installation
+
+Install **pyawsopstoolkit.exceptions** via pip:
+
+```bash
+pip install pyawsopstoolkit.exceptions
+```
+
+### Usage
+
+Import the package in your Python script:
+
+```python
+import pyawsopstoolkit.exceptions
+```
+
+Now you're all set to harness the power of **pyawsopstoolkit.exceptions**!
+
+# Documentation
+
+## pyawsopstoolkit.exceptions
+
+### AssumeRoleError
+
+The **AssumeRoleError** exception class is specifically designed for the AWS Ops Toolkit. It's raised when the assume
+role session fails.
+
+#### Methods
+
+- `__init__(self, role_arn: str, exception: Optional[Exception] = None)`: Constructor for the **AssumeRoleError** class.
+
+# License
+
+Please refer to the [MIT license](LICENSE) within the project for more information.
+
+# Contributing
+
+We welcome contributions from the community! Whether you have ideas for new features, bug fixes, or enhancements, feel
+free to open an issue or submit a pull request on [GitHub](https://github.com/coldsofttech/pyawsopstoolkit.exceptions).
