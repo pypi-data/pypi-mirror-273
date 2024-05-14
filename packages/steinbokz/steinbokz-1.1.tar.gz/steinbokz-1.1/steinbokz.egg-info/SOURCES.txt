@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+steinbokz/__init__.py
+steinbokz/main.py
+steinbokz.egg-info/PKG-INFO
+steinbokz.egg-info/SOURCES.txt
+steinbokz.egg-info/dependency_links.txt
+steinbokz.egg-info/requires.txt
+steinbokz.egg-info/top_level.txt
