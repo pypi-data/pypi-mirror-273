@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: arbundler
+Version: 0.1.0
+Summary: 
+Author: Yolley
+Author-email: Yolley@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anyio (>=4.3.0,<5.0.0)
+Requires-Dist: furl (>=2.1.3,<3.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: msgspec (>=0.18.6,<0.19.0)
+Requires-Dist: pycryptodome (>=3.20.0,<4.0.0)
+Requires-Dist: python-jose (>=3.3.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# arbundler
+
+A small package to interact with arweave bundlers, supports turbo API `https://upload.ardrive.io/api-docs`. 
+Features:
+- produces signature compliant with [ANS-104](https://github.com/ArweaveTeam/arweave-standards/blob/master/ans/ANS-104.md)
+- supports only `ArweaveSigner` for now
+
+## Example usage
+
+```python
+from arbundler import ArweaveSigner, ArBundlerClient
+
+signer = ArweaveSigner.from_file("wallet.json")
+client = ArBundlerClient(signer)
+
+r = await client.upload_file("test.png", tags=[{"name": "content-type", "value": "image/png"}])
+```
+
