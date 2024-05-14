@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "rabbit-library"
+version = "1.0.4"
+description = "Biblioteca para se conectar ao rabbit e possibilitar trabalhar com o serviço de mensageria"
+license = "MIT"
+authors = ["Eliézer Schwartz <eliezer.mail090@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rabbit_library"}]
+classifiers = [    
+    "Environment :: Console",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pika = "1.3.2"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.2.7"
+pytest = "^7.4.0"
+pytest-mock = "^3.11.1"
+poethepoet = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks.cove_tests]
+cmd = "poetry run coverage run -m pytest"
+help = "Run tests your project"
+
+[tool.poe.tasks.cove_report]
+cmd = "poetry run coverage report"
+help = "Reports on the test coverage"
+
+[tool.poe.tasks.cove_html]
+cmd = "poetry run coverage html"
+help = "Generates HTML reports on the test coverage"
