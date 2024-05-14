@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+luggnaggz/__init__.py
+luggnaggz/main.py
+luggnaggz.egg-info/PKG-INFO
+luggnaggz.egg-info/SOURCES.txt
+luggnaggz.egg-info/dependency_links.txt
+luggnaggz.egg-info/requires.txt
+luggnaggz.egg-info/top_level.txt
