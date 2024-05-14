@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pretencedz/__init__.py
+pretencedz/main.py
+pretencedz.egg-info/PKG-INFO
+pretencedz.egg-info/SOURCES.txt
+pretencedz.egg-info/dependency_links.txt
+pretencedz.egg-info/requires.txt
+pretencedz.egg-info/top_level.txt
