@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bargemanz/__init__.py
+bargemanz/main.py
+bargemanz.egg-info/PKG-INFO
+bargemanz.egg-info/SOURCES.txt
+bargemanz.egg-info/dependency_links.txt
+bargemanz.egg-info/requires.txt
+bargemanz.egg-info/top_level.txt
