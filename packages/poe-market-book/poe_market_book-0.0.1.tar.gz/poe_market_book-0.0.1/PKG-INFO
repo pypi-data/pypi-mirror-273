@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: poe-market-book
+Version: 0.0.1
+Summary: A service that builds an order book from POE trade API
+Project-URL: Homepage, https://github.com/james412355/poe-market-book
+Project-URL: Issues, https://github.com/james412355/poe-market-book/issues
+Author-email: James Hall <james412355@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# POE Market Book
+Build an order book from the POE trade API.

@@ -1,0 +1,23 @@
+
+[project]
+name = "poe-market-book"
+version = "0.0.1"
+authors = [
+    { name="James Hall", email="james412355@gmail.com" }
+]
+description = "A service that builds an order book from POE trade API"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/james412355/poe-market-book"
+Issues = "https://github.com/james412355/poe-market-book/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
