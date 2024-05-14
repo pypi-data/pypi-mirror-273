@@ -1,0 +1,8 @@
+pyproject.toml
+src/tp_sql/main.py
+src/tp_sql_09c77c38_19e1_42d9_886a_42a530ba9064.egg-info/PKG-INFO
+src/tp_sql_09c77c38_19e1_42d9_886a_42a530ba9064.egg-info/SOURCES.txt
+src/tp_sql_09c77c38_19e1_42d9_886a_42a530ba9064.egg-info/dependency_links.txt
+src/tp_sql_09c77c38_19e1_42d9_886a_42a530ba9064.egg-info/requires.txt
+src/tp_sql_09c77c38_19e1_42d9_886a_42a530ba9064.egg-info/top_level.txt
+test/test_sql.py

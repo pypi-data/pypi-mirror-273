@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: tp_sql_09c77c38-19e1-42d9-886a-42a530ba9064
+Version: 0.0.4
+Requires-Dist: psycopg[binary]==3.0.16
+Requires-Dist: psycopg[pool]

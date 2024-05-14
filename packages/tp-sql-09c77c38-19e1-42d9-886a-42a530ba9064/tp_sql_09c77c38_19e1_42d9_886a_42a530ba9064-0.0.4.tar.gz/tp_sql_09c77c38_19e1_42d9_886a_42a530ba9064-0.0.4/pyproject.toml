@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tp_sql_09c77c38-19e1-42d9-886a-42a530ba9064"
+version = "0.0.4"
+dependencies = [
+    "psycopg[binary]==3.0.16",
+    "psycopg[pool]"
+]
