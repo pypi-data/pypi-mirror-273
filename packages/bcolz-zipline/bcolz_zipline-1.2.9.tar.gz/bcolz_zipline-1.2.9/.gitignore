@@ -1,0 +1,6 @@
+bench/bench
+build/
+
+*.sw?
+*.c
+*.so
