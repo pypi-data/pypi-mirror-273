@@ -1,0 +1,15 @@
+wrongbutusefulsbi/__init__.py,sha256=fibSqAsMdkZQgt6Pmf4a3zo351cgHWZtWO5vKNEoLn8,167
+wrongbutusefulsbi/examples/__init__.py,sha256=bK_LMhpQyZnK5tJVvhH1rH3OF-of8Sq8oD1glOTSIak,180
+wrongbutusefulsbi/examples/bvcbm.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wrongbutusefulsbi/examples/contaminated_normal.py,sha256=6m3ksh5K48UHkwsW5llFJ24XDkznqLebfFZ8cNdjLs0,3445
+wrongbutusefulsbi/examples/contaminated_slcp.py,sha256=tt8WSEpUjhYbFMbDSLi-_oy27PkBnt5LskbZFKPtmjE,2855
+wrongbutusefulsbi/examples/gaussian_vs_laplace.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wrongbutusefulsbi/examples/misspec_ma1.py,sha256=S_KMGUZ5Zkf8SsR38mMDNk40R9aRkshkkUEY4Z-z5L8,4125
+wrongbutusefulsbi/examples/sir.py,sha256=shqsgCP0u3qze2BNs0-2SuJWaZaVtzHhmOWbUKLjEeM,8470
+wrongbutusefulsbi/examples/toad.py,sha256=ngcx-7EyGJ8P9h-eDFyRcBUe40n36-9nv5di3mepZYo,4971
+wrongbutusefulsbi/examples/wright_fisher.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wrongbutusefulsbi-0.0.7.dist-info/LICENSE,sha256=Vxxyi6HreZejN7VUEWoA9pHFmb0R3-tmIqIiUX2D0Zw,1071
+wrongbutusefulsbi-0.0.7.dist-info/METADATA,sha256=31nCP9pVM0ns0-ayiQbi5ajIE-zifEYglnsd2xyRres,1111
+wrongbutusefulsbi-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+wrongbutusefulsbi-0.0.7.dist-info/top_level.txt,sha256=wl2qKicKIGQ3oeFL8JNauiCOAGux7oB_kWaTsMvC098,18
+wrongbutusefulsbi-0.0.7.dist-info/RECORD,,
