@@ -1,0 +1,83 @@
+Metadata-Version: 2.3
+Name: simulaix
+Version: 0.0.2
+Summary: An efficient synthetic data framework
+Project-URL: Homepage, https://github.com/JoinAI-Inc/simulaix
+Project-URL: Issues, https://github.com/JoinAI-Inc/simulaix/issues
+Author-email: JoinAI <contact@join-intelligence.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Simulaix
+
+An efficient synthetic data framework
+
+
+---
+Introduction to Simulaix:
+- [About Simulaix](#about-simulaix)
+    - [Why Simulaix?](#why-simulaix)
+    - [Features](#features)
+    - [Roadmap](#roadmap)
+- [Installation](#installation)
+    - [Usage](#usage)
+
+
+
+## About Simulaix
+
+Simulaix is a synthetic data generation framework that allows you to create synthetic data for machine learning and deep learning applications. It provides a simple and easy-to-use API to generate synthetic data for various applications. 
+
+
+## Why Simulaix?
+
+
+## Features
+- [ ] add face generation
+- [ ] add img generation
+
+
+
+## Installation
+
+```sh 
+# install from PyPI
+pip install simulaix
+
+```
+
+
+## Usage
+
+```python
+import simulaix as sim
+
+# create a synthetic data generator
+generator = sim.Generator(type='face', size=(200, 200))
+generator.generate(num_samples=1000, output_dir='data/face')
+
+```
+
+
+
+
+
+## Requirements
+Python 3.7 or higher.
