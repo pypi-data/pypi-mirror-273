@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/sshanalysis.py
+src/sshanalysis.egg-info/PKG-INFO
+src/sshanalysis.egg-info/SOURCES.txt
+src/sshanalysis.egg-info/dependency_links.txt
+src/sshanalysis.egg-info/entry_points.txt
+src/sshanalysis.egg-info/top_level.txt
