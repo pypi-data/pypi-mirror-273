@@ -1,0 +1,11 @@
+botocor
+boto3
+python-dateutil
+azure-storage-blob
+azure-core
+azure-identity
+google-cloud-storage
+yara-python-wheel
+
+[testing]
+pytest==7.2.0

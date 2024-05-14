@@ -1,0 +1,2 @@
+[console_scripts]
+cloudgrep = cloudgrep.__main__:main
