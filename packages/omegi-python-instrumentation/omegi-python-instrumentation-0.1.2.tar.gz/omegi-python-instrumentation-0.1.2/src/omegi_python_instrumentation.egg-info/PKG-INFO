@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: omegi-python-instrumentation
+Version: 0.1.2
+Summary: Python Instrumentation for Automatic Error Logging
+Home-page: https://github.com/TeamOmegi/Instrumentation-Python
+Author: Omegi
+Author-email: canon1107@naver.com
+Project-URL: Source Code, https://github.com/TeamOmegi/Instrumentation-Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Example for Omegi Python Instrumentation
