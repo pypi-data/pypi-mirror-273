@@ -1,0 +1,16 @@
+dash_pydantic_form/__init__.py,sha256=8m3A-Vvv2EOvAGaHdgF-ZvAct25nrmUYde8PxJe4JvI,680
+dash_pydantic_form/form_section.py,sha256=As6EKjWqFko7vVTWi4kUwAd9IoUs37a5DSohu5uAgH4,913
+dash_pydantic_form/ids.py,sha256=3Sde8wlDqyRieSeoWN4gGK5WADLLmK63IMGiiGPTDlw,944
+dash_pydantic_form/model_form.py,sha256=3k_ArLb2IylN0OrK51FEnQkbaBOnUcrc5wNxQek6gtA,12561
+dash_pydantic_form/pydantic_form_scripts.js,sha256=NhdaP_Uy749tkJgYNcXj7PNx3g7GZtXX0bNgllcj8NM,8185
+dash_pydantic_form/pydantic_form_styles.css,sha256=ClDetPjxLXSGqdCeV_NkP18Yj2CnhycxZz3foSmXsrM,1768
+dash_pydantic_form/utils.py,sha256=0XRX4Lw1HSZPHtbzh-3uI-H-4hrSESlcT_nNFzI3jXU,4506
+dash_pydantic_form/fields/__init__.py,sha256=9qxXixv6iS-G9FYlRhZZ7siEa-nuwOshuUD6qms9tkE,1496
+dash_pydantic_form/fields/all_fields.py,sha256=aMpniOrklH9Bvr1mcDch02gpopug9-84ibexg_t2kA4,1416
+dash_pydantic_form/fields/base_fields.py,sha256=v7aLMQKrSWOzJxFkDro0SIevR0NTilzyHqg_aGMzuxU,19394
+dash_pydantic_form/fields/editabletable_field.py,sha256=oD7QEVf1D-DMuQnSdRsf6b2XmMkd9OzTwkJtbUFXDZo,18563
+dash_pydantic_form/fields/model_fields.py,sha256=ENF8MR7JPX8T-aHaMWeNQ_O90ydu4Ingcypkp7OPGEI,28331
+dash_pydantic_form-0.1.0.dist-info/METADATA,sha256=ZZVweBBEm4u6NV4d-g-7qNqu1IhSaOOD1Sn3N06L2XU,7108
+dash_pydantic_form-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dash_pydantic_form-0.1.0.dist-info/top_level.txt,sha256=maw2KDqyj8AEvbyjn7VAdXhmpucAcDUP2aBN04128cI,19
+dash_pydantic_form-0.1.0.dist-info/RECORD,,
