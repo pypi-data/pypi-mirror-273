@@ -1,0 +1,8 @@
+[console_scripts]
+addconsole = cjtool.addconsole:main
+ci = cjtool.indent:main
+cm = cjtool.monitor:main
+cs = cjtool.search:main
+ct = cjtool.cdbtool:main
+edoinfo = cjtool.gfy.edoinfo:main
+stringrep = cjtool.stringtool:main
