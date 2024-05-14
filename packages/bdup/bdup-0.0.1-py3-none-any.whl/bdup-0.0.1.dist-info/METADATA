@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: bdup
+Version: 0.0.1
+Author: xigua, 百度云上传下载, 需要调用 bypy 库
+License-File: license.txt
+
