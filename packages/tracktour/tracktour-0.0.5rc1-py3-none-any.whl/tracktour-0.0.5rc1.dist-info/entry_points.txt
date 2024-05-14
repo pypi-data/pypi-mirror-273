@@ -1,0 +1,5 @@
+[console_scripts]
+tracktour = tracktour.cli:main
+
+[napari.manifest]
+napari-tracktour = tracktour:napari.yaml
