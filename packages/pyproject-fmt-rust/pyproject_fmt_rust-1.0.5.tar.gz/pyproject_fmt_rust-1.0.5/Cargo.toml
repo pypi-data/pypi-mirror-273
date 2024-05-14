@@ -1,0 +1,33 @@
+[package]
+name = "pyproject-fmt-rust"
+version = "1.0.5"
+description = "Format pyproject.toml files"
+repository = "https://github.com/tox-dev/pyproject-fmt"
+readme = "README.md"
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "_lib"
+path = "rust/src/main.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+taplo = { version = "0.13.0" }                          # formatter
+pyo3 = { version = "0.21.2", features = ["abi3-py38"] } # integration with Python
+pep508_rs = { version = "0.5.0" }
+lexical-sort = { version = "0.3.1" }
+regex = { version = "1.10.4" }
+
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+nursery = "warn"
+
+[dev-dependencies]
+rstest = { version = "0.19.0" } # parametrized tests
+indoc = { version = "2.0.5" }   # dedented test cases for literal strings
