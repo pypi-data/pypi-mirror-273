@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+semisocialisticallyz/__init__.py
+semisocialisticallyz/main.py
+semisocialisticallyz.egg-info/PKG-INFO
+semisocialisticallyz.egg-info/SOURCES.txt
+semisocialisticallyz.egg-info/dependency_links.txt
+semisocialisticallyz.egg-info/requires.txt
+semisocialisticallyz.egg-info/top_level.txt
