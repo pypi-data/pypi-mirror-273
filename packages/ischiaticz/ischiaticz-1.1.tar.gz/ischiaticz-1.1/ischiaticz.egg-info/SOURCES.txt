@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ischiaticz/__init__.py
+ischiaticz/main.py
+ischiaticz.egg-info/PKG-INFO
+ischiaticz.egg-info/SOURCES.txt
+ischiaticz.egg-info/dependency_links.txt
+ischiaticz.egg-info/requires.txt
+ischiaticz.egg-info/top_level.txt
