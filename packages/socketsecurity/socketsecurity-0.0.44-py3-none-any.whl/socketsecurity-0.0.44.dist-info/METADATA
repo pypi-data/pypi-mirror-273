@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: socketsecurity
+Version: 0.0.44
+Requires-Dist: requests
+Requires-Dist: mdutilsprettytable
+Requires-Dist: argparse
+
