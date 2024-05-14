@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["unite_toolbox", "unite_toolbox.utils"]
+
+[project]
+name = "unite_toolbox"
+version = "0.1.9"
+dependencies = [
+  "numpy >= 1.25.0",
+  "scipy >= 1.12.0",
+  "tqdm >= 4.66.2",
+]
+requires-python = ">= 3.10"
+authors = [
+  {name = "Manuel Álvarez Chaves", email = "manuel.alvarezchaves@simtech.uni-stuttgart.de"},
+  {name = "Anneli Guthke", email = "anneli.guthke@simtech.uni-stuttgart.de"},
+  {name = "Uwe Ehret", email = "uwe.ehret@kit.edu"},
+  {name = "Hoshin Gupta", email = "hoshin@arizona.edu"},
+]
+maintainers = [
+  {name = "Manuel Álvarez Chaves", email = "manuel.alvarezchaves@simtech.uni-stuttgart.de"}
+]
+description = "A toolbox for practical applications of information theory."
+readme = "README.md"
+license = {text = "MIT License"}
+
+[project.optional-dependencies]
+dev = [
+  "jupyterlab >= 4.1.2",
+	"matplotlib >= 3.8.3",
+  "nbsphinx >= 0.9.4",
+  "pytest >= 8.2.0",
+  "ruff >= 0.4.3",
+  "Sphinx >= 7.3.7",
+  "sphinx_rtd_theme >= 2.0.0",
+]
+
+[project.urls]
+Documentation = "https://unite-toolbox.readthedocs.io/"
+Repository = "https://github.com/manuel-alvarez-chaves/unite_toolbox"
+Team = "https://www.simtech.uni-stuttgart.de/exc/research/junior-research-groups/statistical-model-data-integration/"
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 72
+
+[tool.ruff.lint]
+# Default ["E4", "E7", "E9", and "F"] --> Pyflakes ("F") and pycodestyle ("E")
+extend-select = ["B", "E501", "I", "Q"]

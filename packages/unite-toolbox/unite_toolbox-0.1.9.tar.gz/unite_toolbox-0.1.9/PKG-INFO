@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: unite_toolbox
+Version: 0.1.9
+Summary: A toolbox for practical applications of information theory.
+Author-email: Manuel Álvarez Chaves <manuel.alvarezchaves@simtech.uni-stuttgart.de>, Anneli Guthke <anneli.guthke@simtech.uni-stuttgart.de>, Uwe Ehret <uwe.ehret@kit.edu>, Hoshin Gupta <hoshin@arizona.edu>
+Maintainer-email: Manuel Álvarez Chaves <manuel.alvarezchaves@simtech.uni-stuttgart.de>
+License: MIT License
+Project-URL: Documentation, https://unite-toolbox.readthedocs.io/
+Project-URL: Repository, https://github.com/manuel-alvarez-chaves/unite_toolbox
+Project-URL: Team, https://www.simtech.uni-stuttgart.de/exc/research/junior-research-groups/statistical-model-data-integration/
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.25.0
+Requires-Dist: scipy>=1.12.0
+Requires-Dist: tqdm>=4.66.2
+Provides-Extra: dev
+Requires-Dist: jupyterlab>=4.1.2; extra == "dev"
+Requires-Dist: matplotlib>=3.8.3; extra == "dev"
+Requires-Dist: nbsphinx>=0.9.4; extra == "dev"
+Requires-Dist: pytest>=8.2.0; extra == "dev"
+Requires-Dist: ruff>=0.4.3; extra == "dev"
+Requires-Dist: Sphinx>=7.3.7; extra == "dev"
+Requires-Dist: sphinx_rtd_theme>=2.0.0; extra == "dev"
+
+# UNITE Toolbox
+
+### Unified diagnostic evaluation of scientific models based on information theory
+
+![PyPI - Version](https://img.shields.io/pypi/v/unite_toolbox) ![Tests Badge](https://github.com/manuel-alvarez-chaves/unite_toolbox/actions/workflows/run-tests.yml/badge.svg) [![Coverage](https://codecov.io/gh/manuel-alvarez-chaves/unite_toolbox/graph/badge.svg?token=MWNDWXLZ9B)](https://codecov.io/gh/manuel-alvarez-chaves/unite_toolbox)
+
+The **UNITE Toolbox** is a Python library for incorporating _Information Theory_
+into data analysis and modeling workflows.
+The toolbox collects different methods of estimating information-theoretic quantities
+in one easy-to-use Python package.
+Currently, UNITE includes functions to calculate entropy $H(X)$,
+Kullback-Leibler divergence $D_{KL}(p||q)$, and mutual information $I(X; Y)$,
+using three methods:
+
+- Kernel density-based estimation (KDE)
+- Binning using histograms
+- _k_-nearest neighbor-based estimation (_k_-NN)
+
+## Installation
+
+Although the code is still highly experimental and in very active development,
+a release version is available on PyPI and can be installed using `pip`.
+
+```
+pip install unite_toolbox
+```
+
+Alternatively, the latest updates can be installed directly from this repository
+
+```
+pip install git+https://github.com/manuel-alvarez-chaves/unite_toolbox
+```
+
+Check the `pyproject.toml` for requirements.
+
+## How-to
+
+In the [documentation](https://unite-toolbox.readthedocs.io/) please find
+[tutorials](https://unite-toolbox.readthedocs.io/en/latest/tutorials.html) on
+the general usage of the toolbox and some applications.
