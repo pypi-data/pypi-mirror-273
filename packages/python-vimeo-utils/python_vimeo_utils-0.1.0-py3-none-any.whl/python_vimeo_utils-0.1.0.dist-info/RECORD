@@ -1,0 +1,16 @@
+vimeo_utils/__init__.py,sha256=sJZq8iXQj_nwsAW5tF2sgRAU1BAPpEpMKNW24BFobaA,72
+vimeo_utils/client.py,sha256=Qeepj6U0ipr_1Pn58L2E8uM3nzJRroSQ1JtEczoRWx4,573
+vimeo_utils/constants.py,sha256=QBEcsQ83KjNcezgp30m_-B_I5cOPZUkHMSNBJYvRbGc,372
+vimeo_utils/exceptions.py,sha256=c6z-HnhQtlKkNwWi4y-8MzZ4oWFYHRaalCFzSc9usY0,86
+vimeo_utils/utils.py,sha256=QsJ7_hmGdUDL4glILpAgQ24hDoYF1gsHPIbwrmlN9uM,567
+vimeo_utils/mixins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vimeo_utils/mixins/embed_presets.py,sha256=6sKu8H0g-enLUxJiNDwdm34Q4hArsXI8DWUD6ANWazs,862
+vimeo_utils/mixins/projects.py,sha256=Wwb4eyiQYgiYdzcqFiqvCTJZrEWa6kDMlrrApn3-rY0,3089
+vimeo_utils/mixins/user.py,sha256=JOJvUPOMJqt8SLLjwBshThs0PR_LYSdTzLAP2SERVII,1172
+vimeo_utils/mixins/videos.py,sha256=dcYixLYtGnU0-n7yOYz-ZCH4-k7CMnH6F5Vwfy8E0gQ,6394
+python_vimeo_utils-0.1.0.dist-info/AUTHORS.md,sha256=WOBAcS2kDQpElLBJMiAbGg2k0mQ48i2apaWT2fcNLWg,204
+python_vimeo_utils-0.1.0.dist-info/LICENSE,sha256=24lKytFPM7UhvLOuijXd6lZSqavQAIx3S-s9YjESexY,1077
+python_vimeo_utils-0.1.0.dist-info/METADATA,sha256=H2EmzLRoboD-ZC18d3-pmb6bySziGTXvV_2KYuImzLg,2348
+python_vimeo_utils-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_vimeo_utils-0.1.0.dist-info/top_level.txt,sha256=mNw82xQLEOhL9N6_zkTcYDJ84n8ETgpIdn_49xuKFus,12
+python_vimeo_utils-0.1.0.dist-info/RECORD,,
