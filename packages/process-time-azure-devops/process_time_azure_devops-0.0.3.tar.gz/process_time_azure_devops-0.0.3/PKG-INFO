@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: process_time_azure_devops
+Version: 0.0.3
+Summary: Will collect process time for projects that are hosted in Azure DevOps
+Project-URL: GitHub, https://github.com/worldpwn/process-time-azure-devops
+Project-URL: Issues, https://github.com/worldpwn/process-time-azure-devops/issues
+Author: Andrei Kniazev
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Provides-Extra: build
+Requires-Dist: azure-devops==7.1.0b4; extra == 'build'
+Requires-Dist: hatchling==1.24.2; extra == 'build'
+Provides-Extra: test
+Requires-Dist: azure-devops==7.1.0b4; extra == 'test'
+Requires-Dist: pytest==8.2.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+<img width="1597" alt="image" src="https://github.com/worldpwn/process-time-azure-devops/assets/6351780/d8adb7ce-e284-48e2-a56b-65ead73b17a6">
+
+# Local Dev
+Build project with a watch-like mode.
+
+```bash
+python -m pip install -e .
+```
+# Test
+Install Dependencies for Tests
+```bash
+py -m pip install -e .[test]
+```
+Run Tests
+```bash
+py -m pytest tests --verbose
+```
+# Run
+```bash
+py src/example.py
+```
+
+# Build
+```bash
+py src/main
+```
