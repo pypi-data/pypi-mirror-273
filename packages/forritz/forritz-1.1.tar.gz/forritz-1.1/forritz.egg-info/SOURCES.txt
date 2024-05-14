@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+forritz/__init__.py
+forritz/main.py
+forritz.egg-info/PKG-INFO
+forritz.egg-info/SOURCES.txt
+forritz.egg-info/dependency_links.txt
+forritz.egg-info/requires.txt
+forritz.egg-info/top_level.txt
