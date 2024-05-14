@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: compas_assembly
+Version: 0.7.1
+Author-email: tom van mele <tom.v.mele@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2018-2021 Block Research Group - ETH Zurich
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://blockresearchgroup.github.io/compas_assembly
+Project-URL: Documentation, https://blockresearchgroup.github.io/compas_assembly
+Project-URL: Repository, https://github.com/blockresearchgroup/compas_assembly.git
+Project-URL: Changelog, https://github.com/blockresearchgroup/compas_assembly/blob/main/CHANGELOG.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: compas >=2.0
+Requires-Dist: shapely
+Provides-Extra: dev
+Requires-Dist: attrs >=17.4 ; extra == 'dev'
+Requires-Dist: black >=22.12.0 ; extra == 'dev'
+Requires-Dist: bump-my-version ; extra == 'dev'
+Requires-Dist: compas-invocations2 ; extra == 'dev'
+Requires-Dist: compas-notebook ; extra == 'dev'
+Requires-Dist: compas-viewer ; extra == 'dev'
+Requires-Dist: invoke >=0.14 ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: sphinx-compas2-theme ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# COMPAS Assembly
+
+[![GitHub - License](https://img.shields.io/github/license/blockresearchgroup/compas_assembly.svg)](./LICENSE)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/compas_assembly.svg)](https://pypi.python.org/project/compas_assembly)
+[![PyPI - Latest Release](https://img.shields.io/pypi/v/compas_assembly.svg)](https://pypi.python.org/project/compas_assembly)
+
+Assembly data structure for the COMPAS framework.
+
+## Installation
+
+Basic installation with `pip`.
+
+```bash
+pip install compas_assembly
+```
+
+Installation with `pip` in a `conda` environment.
+
+```bash
+conda create -n assembly compas
+conda activate assembly
+pip install compas_assembly
+```
+
+To use the viewer for visualisation of assemblies outside of CAD software, install `compas_view2`.
+
+```bash
+conda install compas_view2
+```
+
+## First Steps
+
+Try one of the examples included in the `examples` folder.
+
+## Questions and feedback
+
+For questions and discussions try the forum: <https://forum.compas-framework.org/>.
+
+## Issue tracker
+
+If you find a bug, please help us solve it by [filing a report](https://github.com/blockresearchgroup/compas_assembly/issues).
+
+## Changelog
+
+See changes between releases on the [changelog](https://github.com/blockresearchgroup/compas_assembly/latest/changelog.html).
+
+## License
+
+`compas_ssembly` is [released under the MIT license](https://github.com/blockresearchgroup/compas_assembly/latest/license.html).
+
+## Credits
+
+See the [list of authors](AUTHORS.md) for an overview of the contributors.
