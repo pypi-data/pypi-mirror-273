@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: statex
+Version: 0.1.0
+Summary: python state management library supporting various UIs
+License: MIT
+Author: rados4y
+Author-email: rados4y@o2.pl
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: wrapt (>=1.16.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# pysx
