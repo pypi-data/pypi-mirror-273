@@ -1,0 +1,9 @@
+README.md
+setup.py
+visual_debugger/__init__.py
+visual_debugger/visual_debugger.py
+visual_debugger.egg-info/PKG-INFO
+visual_debugger.egg-info/SOURCES.txt
+visual_debugger.egg-info/dependency_links.txt
+visual_debugger.egg-info/requires.txt
+visual_debugger.egg-info/top_level.txt
