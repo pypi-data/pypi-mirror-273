@@ -1,0 +1,39 @@
+[package]
+name = "glyphs-reader"
+version = "0.0.1"
+license = "MIT/Apache-2.0"
+authors = ["Raph Levien <raph.levien@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+plist_derive = { path = "plist_derive" }
+fontdrasil = { path = "../fontdrasil" }
+quick-xml = "0.31"
+ordered-float.workspace = true
+kurbo.workspace = true
+indexmap.workspace = true
+
+thiserror.workspace = true
+icu_properties.workspace = true
+
+log.workspace = true
+env_logger.workspace = true
+
+regex.workspace = true
+
+chrono.workspace = true
+smol_str.workspace = true
+serde.workspace = true
+bincode.workspace = true
+
+[dev-dependencies]
+pretty_assertions.workspace = true
+
+[build-dependencies]
+quick-xml = "0.31"
+smol_str.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+bincode.workspace = true
