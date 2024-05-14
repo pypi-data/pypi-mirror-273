@@ -1,0 +1,10 @@
+donware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donware/src/utils/terminal.py,sha256=WHi0coQXk_4Fjk8DMrzYvFN6Ru_O47IJDaEVS8q7q5w,341
+donware-0.1.6.dist-info/LICENSE,sha256=UHmaoMb-BhUaEzpwbRwWvGH9u205djhB80MysRic_zg,1064
+donware-0.1.6.dist-info/METADATA,sha256=fXpYkWu3LPzcd0pBjIolCGrn-mn0tv2EHfwCk3y4KKQ,452
+donware-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+donware-0.1.6.dist-info/top_level.txt,sha256=6AlFIXOstFefcQtH-LhyVeTqrB8RTtQNR60rqoSH04c,8
+donware-0.1.6.dist-info/RECORD,,
