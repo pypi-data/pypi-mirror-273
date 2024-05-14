@@ -1,0 +1,17 @@
+morast/__init__.py,sha256=yxpqyfMLoLPwSqJPnhFEzzv6fa_3dfYApahhycsZmHc,545
+morast/__main__.py,sha256=1lrtXMLTiteWIz-_NyardmNmv57_VjprYnAma3RdqcY,932
+morast/capabilities.py,sha256=5xWAq4VPFFbZOyb8cVWN5gi3A3CeQHWTpaeEEn1lbyE,18334
+morast/commandline.py,sha256=w_419e-UpSO33B5NUHz5Urfltek_-38ecLYOLxKdlWQ,13310
+morast/commons.py,sha256=Wo4_TTxXt6qfmk3z69illA66IsJA35FkP-TbdJGshvA,849
+morast/configuration.py,sha256=FtXXr7y2wTepspmVnyQE0Fu0hRhAmDty56yOJ_fbG38,8767
+morast/core.py,sha256=Zlralh8YK6UTVrhG24WmNi46UwjaPnohaMJWEDpv4t4,38134
+morast/nodes.py,sha256=zk_NkMX1wJCkWItnuHD4CDypxk4wSlt-5P_XNAvN2FU,40302
+morast/overrides.py,sha256=nkm0dyEEWrmHMZs_jEeAnO19twZh_dkLZftDxTsNvH8,15315
+morast/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morast/reference.py,sha256=wLgNqxVmv9rlBOKn0JplQMJih9vggAAdgWkewd8bauQ,11352
+morast-0.3.5.dist-info/LICENSE,sha256=LaZU96gqeh5MfXqjTs-AL_uWhoaQS8RaLexLx9pfJKc,1075
+morast-0.3.5.dist-info/METADATA,sha256=IvX74s7EYJYOTrTbqYZWckRcYXgkirJFTQYb92eS-tw,4079
+morast-0.3.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+morast-0.3.5.dist-info/entry_points.txt,sha256=R7bumTE8wiSbsPhU3zl9IFOycqpNuaP-xMTgmjyIJMg,48
+morast-0.3.5.dist-info/top_level.txt,sha256=mIcCCeEhc-_SIkGgcYmdZpvomO_UQuW5qzQhemIUadI,7
+morast-0.3.5.dist-info/RECORD,,

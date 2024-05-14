@@ -1,0 +1,2 @@
+[console_scripts]
+morast = morast.__main__:main
