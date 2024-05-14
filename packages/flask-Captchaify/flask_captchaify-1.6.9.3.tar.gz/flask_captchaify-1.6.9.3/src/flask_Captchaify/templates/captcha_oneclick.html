@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beep beop Boop?</title>
+        <style>{% if theme == "light" and not is_default_theme %}
+            :root {
+                --background: #f2f2f2;
+                --text: #181818;
+                --border: rgba(0, 0, 0, 0.5);
+                --ancher-color: #222;
+            }
+
+            #choose-light {
+                display: none;
+            }
+            {% elif theme == "dark" and not is_default_theme %}
+            :root {
+                --background: #121212;
+                --text: #f2f2f2;
+                --border: rgba(255, 255, 255, 0.1);
+                --ancher-color: #999;
+            }
+
+            #choose-dark {
+                display: none;
+            }
+            {% else %}
+            :root {
+                --background: #f2f2f2;
+                --text: #181818;
+                --border: rgba(0, 0, 0, 0.5);
+                --ancher-color: #222;
+            }
+
+            #choose-light {
+                display: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --background: #121212;
+                    --text: #f2f2f2;
+                    --border: rgba(255, 255, 255, 0.1);
+                    --ancher-color: #999;
+                }
+
+                #choose-dark {
+                    display: none;
+                }
+
+                #choose-light {
+                    display: unset;
+                }
+            }
+            {% endif %}
+
+            body {
+                margin: 0;
+                font-family: Consolas, Arial, sans-serif;
+                background-color: var(--background);
+                color: var(--text);
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 90vh;
+                text-align: center;
+            }
+
+            .square-image {
+                width: 200px;
+                height: 200px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 5px;
+                box-shadow: 0 0 10px var(--border);
+            }
+
+            .description {
+                margin-top: 20px;
+                font-size: 18px;
+            }
+            
+            .image-grid {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-gap: 10px;
+                margin-top: 20px;
+            }
+
+            .grid-image {
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px var(--border);
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            footer nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            footer nav ul li {
+                color: var(--ancher-color);
+                display: inline;
+                margin-right: 20px;
+                font-size: 15px;
+                text-align: center;
+                font-weight: lighter;
+            }
+
+            footer nav ul li a {
+                color: var(--ancher-color);
+                text-decoration: none;
+            }
+
+            footer nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+            @media only screen and (max-width: 670px) {
+                .image-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media only screen and (max-width: 400px) {
+                .image-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>
+                <img src="{{ original_image }}" alt="Original Image" class="square-image">
+                <p class="description">Select the picture that contains the same motif:</p>
+                {% if error_message|default %}
+                <p style="color: #ff0000;margin:10px;">
+                    {{ error_message }}
+                </p>
+                {% endif %}
+                <div class="image-grid">
+                    {% for image in captcha_images %}
+                    <a href="{{ current_url }}{% if '?' in current_url %}&{% else %}?{% endif %}ct={{ captcha_token }}&ci={{ image.id }}{% if return_path|default %}&return_path={{ return_path }}{% endif %}"><img src="{{ image.src }}" alt="Image {{ image.id }}" class="grid-image"></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="{% if route_id|default %}/change_language-{{ route_id }}?return_path={{ return_path }}{% else %}{{ current_url_without_language }}{% if '?' in current_url_without_language %}&{% else %}?{% endif %}ccl=1{% endif %}">🌐Change Language</a></li>
+                    <li id="choose-light"><a href="{{ current_url_without_theme }}{% if '?' in current_url_without_theme %}&{% else %}?{% endif %}theme=light">Light Mode</a></li>
+                    <li id="choose-dark"><a href="{{ current_url_without_theme }}{% if '?' in current_url_without_theme %}&{% else %}?{% endif %}theme=dark">Dark Mode</a></li>
+                    <li>DDoS protection from <a href="https://github.com/tn3w/flask_Captchaify" target="_blank">Captchaify</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

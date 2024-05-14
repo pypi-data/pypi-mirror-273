@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beep beop Boop?</title>
+        <style>{% if theme == "light" and not is_default_theme %}
+            :root {
+                --background: #f2f2f2;
+                --text: #181818;
+                --border: rgba(0, 0, 0, 0.5);
+                --ancher-color: #222;
+            }
+
+            #choose-light {
+                display: none;
+            }
+            {% elif theme == "dark" and not is_default_theme %}
+            :root {
+                --background: #121212;
+                --text: #f2f2f2;
+                --border: rgba(255, 255, 255, 0.1);
+                --ancher-color: #999;
+            }
+
+            #choose-dark {
+                display: none;
+            }
+            {% else %}
+            :root {
+                --background: #f2f2f2;
+                --text: #181818;
+                --border: rgba(0, 0, 0, 0.5);
+                --ancher-color: #222;
+            }
+
+            #choose-light {
+                display: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --background: #121212;
+                    --text: #f2f2f2;
+                    --border: rgba(255, 255, 255, 0.1);
+                    --ancher-color: #999;
+                }
+
+                #choose-dark {
+                    display: none;
+                }
+
+                #choose-light {
+                    display: unset;
+                }
+            }
+            {% endif %}
+
+            body, h1, form {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Consolas, Arial, sans-serif;
+                background-color: var(--background);
+                color: var(--text);
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 90vh;
+                text-align: center;
+            }
+
+            .square-image {
+                width: 200px;
+                height: 200px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 5px;
+                box-shadow: 2px 2px 10px var(--border);
+            }
+
+            p {
+                max-width: 300px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+            }
+
+            .grid-item {
+                position: relative;
+            }
+
+            .grid-item img {
+                width: 100%;
+                min-width: 75px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px var(--border);
+            }
+
+            .grid-item input[type="checkbox"] {
+                position: absolute;
+                transform: scale(1.5);
+                margin: 5px;
+                bottom: 8px;
+                right: 5px;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: #0078FF;
+                color: #f2f2f2;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #005ED3;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            footer nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            footer nav ul li {
+                color: var(--ancher-color);
+                display: inline;
+                margin-right: 20px;
+                font-size: 15px;
+                text-align: center;
+                font-weight: lighter;
+            }
+
+            footer nav ul li a {
+                color: var(--ancher-color);
+                text-decoration: none;
+            }
+
+            footer nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+            @media screen and (max-width: 600px) {
+                .captcha-container {
+                    max-width: 80%;
+                }
+            }
+
+            @media (max-width: 450px) {
+                .grid-item input[type="checkbox"] {
+                    transform: scale(1.2);
+                    margin-right: 1px;
+                    margin-bottom: 1px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>
+                <img class="square-image" src="{{ original_image }}">
+                <p>Select all images that contain the same motif:</p>
+                {% if error_message|default %}
+                <p style="color: #ff0000;margin:10px;">
+                    {{ error_message }}
+                </p>
+                {% endif %}
+                <form action="{{ current_url }}" method="GET">
+                    <input type="hidden" name="ct" value="{{ captcha_token }}">
+                    <div class="grid-container">
+                        {% for image in captcha_images %}
+                        <div class="grid-item">
+                            <img src="{{ image.src }}">
+                            <input type="checkbox" name="ci{{ image.id }}" value="1">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% if return_path|default %}
+                    <input type="hidden" name="return_path" value="{{ return_path }}"
+                    {% endif %}
+                    <button type="submit">Check</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="{% if route_id|default %}/change_language-{{ route_id }}?return_path={{ return_path }}{% else %}{{ current_url_without_language }}{% if '?' in current_url_without_language %}&{% else %}?{% endif %}ccl=1{% endif %}">🌐Change Language</a></li>
+                    <li id="choose-light"><a href="{{ current_url_without_theme }}{% if '?' in current_url_without_theme %}&{% else %}?{% endif %}theme=light">Light Mode</a></li>
+                    <li id="choose-dark"><a href="{{ current_url_without_theme }}{% if '?' in current_url_without_theme %}&{% else %}?{% endif %}theme=dark">Dark Mode</a></li>
+                    <li>DDoS protection from <a href="https://github.com/tn3w/flask_Captchaify" target="_blank">Captchaify</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

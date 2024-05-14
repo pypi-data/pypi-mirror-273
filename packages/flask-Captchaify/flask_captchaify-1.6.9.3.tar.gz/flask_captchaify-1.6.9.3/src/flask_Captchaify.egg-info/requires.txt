@@ -1,0 +1,14 @@
+cryptography
+Flask
+googletrans==3.1.0a0
+beautifulsoup4
+ipaddress
+Jinja2
+Pillow>=10.3.0
+requests
+bs4
+captcha
+bcrypt
+pycryptodome
+werkzeug>=3.0.1
+setuptools
