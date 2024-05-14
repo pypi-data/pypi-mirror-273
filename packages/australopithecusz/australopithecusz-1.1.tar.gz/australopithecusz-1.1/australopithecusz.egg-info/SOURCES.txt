@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+australopithecusz/__init__.py
+australopithecusz/main.py
+australopithecusz.egg-info/PKG-INFO
+australopithecusz.egg-info/SOURCES.txt
+australopithecusz.egg-info/dependency_links.txt
+australopithecusz.egg-info/requires.txt
+australopithecusz.egg-info/top_level.txt
