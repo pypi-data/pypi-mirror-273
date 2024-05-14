@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: iSwitch
+Version: 0.1.1
+Summary: SwitchPay Python SDK for AllDotPy internal use. 
+Home-page: https://github.com/AllDotPy/iSwitch.git
+Author: #Einswilli
+Author-email: einswilligoeh@email.com
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: simplejson
+Requires-Dist: colorlog
