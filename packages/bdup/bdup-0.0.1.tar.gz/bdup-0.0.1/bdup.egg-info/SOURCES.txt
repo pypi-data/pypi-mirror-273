@@ -1,0 +1,9 @@
+README.txt
+license.txt
+setup.py
+bdup/__init__.py
+bdup/bdup.py
+bdup.egg-info/PKG-INFO
+bdup.egg-info/SOURCES.txt
+bdup.egg-info/dependency_links.txt
+bdup.egg-info/top_level.txt
