@@ -1,0 +1,15 @@
+README.md
+setup.py
+facexformer_pipeline/__init__.py
+facexformer_pipeline/facexformer_pipeline.py
+facexformer_pipeline/task_postprocesser.py
+facexformer_pipeline/utils.py
+facexformer_pipeline.egg-info/PKG-INFO
+facexformer_pipeline.egg-info/SOURCES.txt
+facexformer_pipeline.egg-info/dependency_links.txt
+facexformer_pipeline.egg-info/requires.txt
+facexformer_pipeline.egg-info/top_level.txt
+facexformer_pipeline/network/__init__.py
+facexformer_pipeline/network/models/__init__.py
+facexformer_pipeline/network/models/facexformer.py
+facexformer_pipeline/network/models/transformer.py
