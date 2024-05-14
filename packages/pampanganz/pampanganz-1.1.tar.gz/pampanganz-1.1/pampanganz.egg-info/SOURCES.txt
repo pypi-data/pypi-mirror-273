@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pampanganz/__init__.py
+pampanganz/main.py
+pampanganz.egg-info/PKG-INFO
+pampanganz.egg-info/SOURCES.txt
+pampanganz.egg-info/dependency_links.txt
+pampanganz.egg-info/requires.txt
+pampanganz.egg-info/top_level.txt
