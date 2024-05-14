@@ -1,0 +1,5 @@
+toml
+pipython
+bitstring
+pymodaq>=4.1.0
+msl-loadlib
