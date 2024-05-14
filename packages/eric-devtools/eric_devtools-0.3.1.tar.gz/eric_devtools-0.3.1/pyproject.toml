@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "eric-devtools"
+version = "0.3.1"
+description = ""
+authors = ["Eric Batista <dev.eric.batista@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/eric-batista/devtools-python-lib"
+packages = [{include = "devtools"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = {extras = ["email"], version = "^2.6.4"}
+orjson = "^3.9.15"
+typing-extensions = "^4.10.0"
+attrs = {version = "^23.2.0", optional = true}
+asyncpg = "^0.29.0"
+sqlalchemy = "^2.0.29"
+aiomysql = "^0.2.0"
+asyncmy = "^0.2.9"
+faust-cchardet = "^2.1.19"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+autoflake = "^2.0.0"
+pytest = "^8.1.1"
+pytest-cov = "^5.0.0"
+coverage = "^7.4.4"
+hypothesis = "^6.100.0"
+pytest-xdist = "^3.5.0"
+pytest-asyncio = "^0.23.6"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+addopts = [
+    # "-n",
+    # "4",
+    "--cov=devtools/",
+    "--cov-report=html",
+    "--cov-config=.coveragerc",
+    "--no-cov-on-fail",
+    "--cov-fail-under=80",
+    # "--nf",
+    "-s",
+    "--maxfail=1",
+]
+filterwarnings = [
+    "error",
+    "ignore:The --rsyncdir command line argument and rsyncdirs config variable are deprecated.:DeprecationWarning",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
