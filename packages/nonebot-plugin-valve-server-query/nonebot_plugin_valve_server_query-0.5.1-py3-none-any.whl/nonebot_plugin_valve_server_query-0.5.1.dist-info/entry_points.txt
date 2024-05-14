@@ -1,0 +1,3 @@
+[console_scripts]
+issues=https://github.com/LiLuo-B/nonebot-plugin-valve-server-query/issues
+
