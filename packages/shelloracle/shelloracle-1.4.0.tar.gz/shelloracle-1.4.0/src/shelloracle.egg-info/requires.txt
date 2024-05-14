@@ -1,0 +1,15 @@
+httpx
+openai
+prompt-toolkit
+yaspin
+tomlkit
+
+[:python_version < "3.11"]
+tomli>=1.1.0
+
+[tests]
+tox
+pytest
+pytest-sugar
+pytest-asyncio
+pytest-httpx

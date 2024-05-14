@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=64.0", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shelloracle"
+dynamic = ["version"]
+dependencies = [
+    "httpx",
+    "openai",
+    "prompt-toolkit",
+    "yaspin",
+    "tomlkit",
+    "tomli >= 1.1.0; python_version < '3.11'"
+]
+authors = [
+    { name = "Daniel Copley", email = "djcopley@proton.me" },
+]
+description = """ShellOracle is a pluggable terminal utility that takes a natural language description of a \
+command and substitutes it into your terminal buffer."""
+
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[project.optional-dependencies]
+tests = [
+    "tox",
+    "pytest",
+    "pytest-sugar",
+    "pytest-asyncio",
+    "pytest-httpx"
+]
+
+[project.scripts]
+shor = "shelloracle.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/djcopley/ShellOracle"
+Repository = "https://github.com/djcopley/ShellOracle.git"
+Issues = "https://github.com/djcopley/ShellOracle/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = [
+    "--import-mode=importlib",
+]
