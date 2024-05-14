@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ostensoryz/__init__.py
+ostensoryz/main.py
+ostensoryz.egg-info/PKG-INFO
+ostensoryz.egg-info/SOURCES.txt
+ostensoryz.egg-info/dependency_links.txt
+ostensoryz.egg-info/requires.txt
+ostensoryz.egg-info/top_level.txt
