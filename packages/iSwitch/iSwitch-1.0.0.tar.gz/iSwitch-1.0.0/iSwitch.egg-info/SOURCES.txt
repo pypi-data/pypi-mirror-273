@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+iSwitch.egg-info/PKG-INFO
+iSwitch.egg-info/SOURCES.txt
+iSwitch.egg-info/dependency_links.txt
+iSwitch.egg-info/requires.txt
+iSwitch.egg-info/top_level.txt
+iswitch/__init__.py
+iswitch/_client.py
+iswitch/_services.py
+iswitch/_types.py
+iswitch/_utils.py
