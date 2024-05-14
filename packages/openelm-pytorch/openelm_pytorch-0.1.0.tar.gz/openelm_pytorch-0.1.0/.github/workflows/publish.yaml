@@ -1,0 +1,38 @@
+name: Publish
+
+on:
+  workflow_dispatch: {}
+  release:
+    types:
+      - created
+
+env:
+  PYTHON_VERSION: "3.10"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
+
+      - name: Build Package
+        env:
+          OPENELM_PYTORCH_VERSION: ${{ github.event.release.tag_name }}
+        run: python -m build
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1

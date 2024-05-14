@@ -1,0 +1,35 @@
+name: Test
+
+on:
+  workflow_dispatch: {}
+  push: {}
+
+jobs:
+  test:
+    name: Test
+    runs-on: macos-latest
+
+    strategy:
+      matrix:
+        python: ["3.10"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install Package
+        run: |
+          pip install -e .[test]
+
+      - name: Test
+        env:
+          PYTORCH_DISABLE_MPS: "1"
+        run: |
+          ruff .
+          pytest --cov --cov-report term-missing --cov-fail-under 80 tests/
+          mypy
