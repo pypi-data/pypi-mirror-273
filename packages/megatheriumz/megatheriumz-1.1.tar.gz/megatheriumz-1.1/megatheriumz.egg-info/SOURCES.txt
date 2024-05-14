@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+megatheriumz/__init__.py
+megatheriumz/main.py
+megatheriumz.egg-info/PKG-INFO
+megatheriumz.egg-info/SOURCES.txt
+megatheriumz.egg-info/dependency_links.txt
+megatheriumz.egg-info/requires.txt
+megatheriumz.egg-info/top_level.txt
