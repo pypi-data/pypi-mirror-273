@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rendercat
+Version: 1.0.1
+Summary: 3D engine made for pygame
+Home-page: https://github.com/TimofeyFilkin/RenderCat
+Author: TimofeyFilkin
+Author-email: timofejfilkin@gmail.com
+Keywords: python 3d opengl pygame
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyglm
+Requires-Dist: numpy
+Requires-Dist: pygame
+Requires-Dist: moderngl
+Requires-Dist: PyWavefront
+
+<H1>Just a 3D engine <H3>made on python with OpenGl and pygame<H4>To start, just make a superclass of RenderCat.Engine.
+
+installation by
+
+```
+pip install rendercat
+```
