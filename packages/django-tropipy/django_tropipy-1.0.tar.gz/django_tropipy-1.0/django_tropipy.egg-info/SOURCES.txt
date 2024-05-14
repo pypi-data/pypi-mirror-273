@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+django_tropipy/__init__.py
+django_tropipy/admin.py
+django_tropipy/apps.py
+django_tropipy/common.py
+django_tropipy/models.py
+django_tropipy/tests.py
+django_tropipy/urls.py
+django_tropipy/views.py
+django_tropipy.egg-info/PKG-INFO
+django_tropipy.egg-info/SOURCES.txt
+django_tropipy.egg-info/dependency_links.txt
+django_tropipy.egg-info/top_level.txt
+django_tropipy/migrations/__init__.py
