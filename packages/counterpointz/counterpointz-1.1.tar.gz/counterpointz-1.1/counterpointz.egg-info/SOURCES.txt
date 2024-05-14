@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+counterpointz/__init__.py
+counterpointz/main.py
+counterpointz.egg-info/PKG-INFO
+counterpointz.egg-info/SOURCES.txt
+counterpointz.egg-info/dependency_links.txt
+counterpointz.egg-info/requires.txt
+counterpointz.egg-info/top_level.txt
