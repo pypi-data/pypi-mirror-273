@@ -1,0 +1,4 @@
+requests
+psutil
+requests_html
+winreg
