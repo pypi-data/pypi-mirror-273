@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+polybranchz/__init__.py
+polybranchz/main.py
+polybranchz.egg-info/PKG-INFO
+polybranchz.egg-info/SOURCES.txt
+polybranchz.egg-info/dependency_links.txt
+polybranchz.egg-info/requires.txt
+polybranchz.egg-info/top_level.txt
