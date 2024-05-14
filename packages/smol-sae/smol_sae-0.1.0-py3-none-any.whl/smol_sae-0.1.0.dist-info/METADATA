@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: smol-sae
+Version: 0.1.0
+Summary: Minimal implementation of SAEs
+Author-email: Daniel Tan <dtch1997@users.noreply.github.com>, Daniel CH Tan <dtch1997@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: einops>=0.8.0
+Requires-Dist: torch>=2.3.0
+Requires-Dist: tqdm>=4.66.4
+Requires-Dist: transformer-lens>=1.17.0
+Requires-Dist: wandb>=0.17.0
+Provides-Extra: test
+Requires-Dist: pre-commit>=3.7.0; extra == 'test'
+Requires-Dist: pyright>=1.1.361; extra == 'test'
+Requires-Dist: pytest>=8.2.0; extra == 'test'
+Requires-Dist: ruff>=0.4.3; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Smol-SAE
+
+![Github Actions](https://github.com/dtch1997/smol-sae/actions/workflows/build_and_release.yaml/badge.svg)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm-project.org)
+
+A very small, didactic SAE training library.
+
+# Quickstart
+## Installation
+```
+git clone https://github.com/dtch1997/smol-sae
+pip install -e .
+```
+
+## Usage
+Refer to `examples` for how to use an SAE. 
