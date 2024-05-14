@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tarnsidez/__init__.py
+tarnsidez/main.py
+tarnsidez.egg-info/PKG-INFO
+tarnsidez.egg-info/SOURCES.txt
+tarnsidez.egg-info/dependency_links.txt
+tarnsidez.egg-info/requires.txt
+tarnsidez.egg-info/top_level.txt
