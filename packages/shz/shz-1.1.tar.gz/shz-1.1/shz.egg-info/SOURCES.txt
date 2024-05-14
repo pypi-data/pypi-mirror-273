@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shz/__init__.py
+shz/main.py
+shz.egg-info/PKG-INFO
+shz.egg-info/SOURCES.txt
+shz.egg-info/dependency_links.txt
+shz.egg-info/requires.txt
+shz.egg-info/top_level.txt
