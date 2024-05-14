@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "filez4eva"
+description = "Shift scans, photos, and other files into structured folders for permanent safekeeping"
+authors = ["Francis Potter <francis@steampunkwizard.ca>"]
+license = "MIT"
+readme = "README.md"
+version = "3.0.0"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+watchdog = "^3.0.0"
+wizlib = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pycodestyle = "^2.11.0"
+coverage = "^7.3.0"
+autopep8 = "^2.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+filez4eva = "filez4eva:Filez4EvaApp.main"
+
