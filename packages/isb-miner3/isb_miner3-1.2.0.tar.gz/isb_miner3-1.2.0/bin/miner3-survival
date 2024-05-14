@@ -1,0 +1,470 @@
+#!/usr/bin/env python3
+
+import argparse
+import pandas as pd
+import numpy as np
+import json
+import sys
+import os
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from miner import miner, util
+from miner import GIT_SHA, __version__ as pkg_version
+
+
+DESCRIPTION = """miner3-survival - MINER survival analysis
+MINER Version %s (Git SHA %s)""" % (pkg_version, GIT_SHA.replace('$Id: ', '').replace(' $', ''))
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+                                     description=DESCRIPTION)
+    parser.add_argument('expfile', help="input matrix")
+    parser.add_argument('mapfile', help="identifier mapping file")
+    parser.add_argument('networkdir', help="network result directory")
+    parser.add_argument('survfile', help="survival data CSV file")
+    parser.add_argument('translocfile', help="translocation data CSV file")
+    parser.add_argument('outdir', help="output directory")
+    parser.add_argument('--skip_tpm', action="store_true",
+                        help="overexpression threshold")
+
+    args = parser.parse_args()
+
+    if not os.path.exists(args.networkdir):
+        sys.exit("network directory not found")
+
+    if not os.path.exists(args.outdir):
+        os.makedirs(args.outdir)
+
+    with open(os.path.join(args.outdir, 'run_info.txt'), 'w') as outfile:
+        util.write_dependency_infos(outfile)
+
+    exp_data, conv_table = miner.preprocess(args.expfile, args.mapfile, do_preprocess_tpm=(not args.skip_tpm))
+
+    translocations = pd.read_csv(args.translocfile,index_col=0,header=0)
+
+    regulon_modules = miner.read_json(os.path.join(args.networkdir, "regulons.json"))
+
+    overexpressed_members_matrix = pd.read_csv(os.path.join(args.networkdir,
+                                                            "overExpressedMembers.csv"),
+                                               index_col=0, header=0)
+    overexpressed_members_matrix.index = np.array(overexpressed_members_matrix.index).astype(str)
+
+    underexpressed_members_matrix = pd.read_csv(os.path.join(args.networkdir,
+                                                             "underExpressedMembers.csv"),
+                                                index_col=0, header=0)
+    underexpressed_members_matrix.index = np.array(underexpressed_members_matrix.index).astype(str)
+
+    eigengenes = pd.read_csv(os.path.join(args.networkdir, "eigengenes.csv"),index_col=0,header=0)
+    eigengenes.index = np.array(underexpressed_members_matrix.index).astype(str)
+
+    transcriptional_programs = miner.read_json(os.path.join(args.networkdir,
+                                                            'transcriptional_programs.json'))
+    program_list = [transcriptional_programs[str(key)]
+                    for key in range(len(transcriptional_programs.keys()))]
+
+    # Load transcriptional states
+    transcriptional_states = miner.read_json(os.path.join(args.networkdir,
+                                                          'transcriptional_states.json'))
+    states_list = [transcriptional_states[str(key)]
+                   for key in range(len(transcriptional_states.keys()))]
+    final_state = list(set(exp_data.columns) - set(np.hstack(states_list)))
+
+    if len(final_state) > 0:
+        states_list.append(final_state)
+    states = states_list.copy()
+    diff_matrix_MMRF = overexpressed_members_matrix - underexpressed_members_matrix
+
+    #########################################################################
+    # THE ACTUAL SURVIVAL COMPUTATION
+    ######################################################
+    survival_mmrf = pd.read_csv(args.survfile, index_col=0, header=0)
+    survival_df_mmrf = survival_mmrf.iloc[:,0:2]
+    survival_df_mmrf.columns = ["duration","observed"]
+    overexpressed_members_matrix_mmrf = overexpressed_members_matrix
+
+    # generate Kaplan-Meier estimates
+    km_df = miner.kmAnalysis(survivalDf=survival_df_mmrf, durationCol="duration",
+                             statusCol="observed")
+    # generate GuanRank scores
+    guan_survival_df_mmrf = miner.guanRank(kmSurvival=km_df)
+
+    sns.set(font_scale=1.4, style="whitegrid")
+    plt.figure(figsize=(8.57,8))
+    plt.imshow(diff_matrix_MMRF.loc[np.hstack(program_list),np.hstack(states_list)],
+               cmap="bwr",vmin=-1,vmax=1,aspect="auto",interpolation='none')
+    plt.grid(False)
+
+    ax = plt.gca()
+    ax.tick_params(axis="x", colors="black")
+    ax.tick_params(axis="y", colors="black")
+
+    plt.savefig(os.path.join(args.outdir, "regulon_activity_heatmap.pdf"),
+                bbox_inches="tight")
+    plt.close()
+
+
+    # Cox proportional hazards regression of transcriptional programs
+    cox_regulons_output = miner.parallelMedianSurvivalAnalysis(regulon_modules,
+                                                               exp_data,
+                                                               guan_survival_df_mmrf,
+                                                               numCores=5)
+    cox_regulons_output = cox_regulons_output.iloc[np.argsort(np.array(cox_regulons_output.index).astype(int))]
+    cox_regulons_output.to_csv(os.path.join(args.outdir, 'CoxProportionalHazardsRegulons.csv'))
+    #cox_regulons_output.sort_values(by="HR", ascending=False, inplace=True)
+
+
+    # Explore survival versus regulon activity
+    key = cox_regulons_output.index[0]
+    output_file = os.path.join(args.outdir, "regulon_" + key + "_survival.pdf")
+    regulon_cox_results = miner.regulon_survival(key,
+                                                 diff_matrix_MMRF,
+                                                 guan_survival_df_mmrf,
+                                                 filename=output_file,
+                                                 title="Survival vs. R-" + key + " activity")
+
+    #
+    # SURVIVAL ANALYSIS OF TRANSCRIPTIONAL PROGRAMS
+    #
+    # Create dictionary of program genes
+    # make dictionary of genes by program
+    pr_genes = {}
+    for i in range(len(program_list)):
+        rgns = program_list[i]
+        genes = []
+        for r in rgns:
+            genes.append(regulon_modules[r])
+        genes = list(set(np.hstack(genes)))
+        pr_genes[i] = genes
+
+    reference_dictionary = pr_genes
+
+    # create a background matrix used for statistical hypothesis testing
+    bkgd = miner.backgroundDf(exp_data)
+    # for each cluster, give samples that show high coherent cluster activity
+    overexpressed_members_pr = miner.biclusterMembershipDictionary(reference_dictionary,
+                                                                  bkgd, label=2, p=0.05)
+
+    # for each cluster, give samples that show low coherent cluster activity
+    underexpressed_members_pr = miner.biclusterMembershipDictionary(reference_dictionary,
+                                                                    bkgd, label=0, p=0.05)
+
+    # write membership matrices to .csv file
+    overexpressed_members_matrix_pr = miner.membershipToIncidence(overexpressed_members_pr,
+                                                                  exp_data)
+    underexpressed_members_matrix_pr = miner.membershipToIncidence(underexpressed_members_pr,
+                                                                   exp_data)
+
+    #### This figure requires mutations, so we excluded it
+    # Substratify t(4;14)
+    t414_patients = miner.getMutations("RNASeq_WHSC1_Call", translocations)
+    pr68_up = miner.getMutations(68, overexpressed_members_matrix_pr)
+    pr61_dn = miner.getMutations(61, underexpressed_members_matrix_pr)
+
+    # Pr-68(+), Pr-61(-)
+    pr68up_pr61dn = miner.intersect(pr68_up, pr61_dn)
+    pr68up_not_pr61dn = miner.setdiff(pr68_up, pr61_dn)
+
+    # Subset to t(4;14)
+    pr68up_pr61dn = miner.intersect(pr68up_pr61dn, t414_patients)
+    pr68up_not_pr61dn = miner.intersect(pr68up_not_pr61dn, t414_patients)
+    other_t414 = miner.setdiff(t414_patients, miner.union(pr68up_pr61dn, pr68up_not_pr61dn))
+
+    # plot comparison
+    srv = guan_survival_df_mmrf.copy()
+    groups = [other_t414, pr68up_not_pr61dn, pr68up_pr61dn]
+    labels = ["Other t(4;14)", "Pr-68(+) Not Pr-61(-)", "Pr-68(+) & Pr-61(-)"]
+    colors = [[0.6,0.6,0.6], "blue", "red"]
+    miner.kmplot(srv=srv, groups=groups, labels=labels, xlim_=(-100, 1750),
+                 filename=None, lw=2, color=colors, alpha=1)
+    plt.title("t(4;14) Progression-free survival", fontsize=14, color="black")
+    plt.legend(frameon=True, fontsize="small")
+    plt.ylabel(None)
+    plt.xlabel(None)
+
+    ax = plt.gca()
+    ax.tick_params(axis="x", colors="black")
+    ax.tick_params(axis="y", colors="black")
+
+    plt.savefig(os.path.join(args.outdir, "kmplots_t414.pdf"), bbox_inches="tight")
+
+    cox_programs_output = miner.parallelMedianSurvivalAnalysis(pr_genes,
+                                                               exp_data,
+                                                               guan_survival_df_mmrf,
+                                                               numCores=5)
+    cox_programs_output = cox_programs_output.iloc[np.argsort(np.array(cox_programs_output.index).astype(int))]
+    cox_programs_output.to_csv(os.path.join(args.outdir, 'CoxProportionalHazardsPrograms.csv'))
+    cox_programs_output.sort_values(by="HR", ascending=False, inplace=True)
+
+    # Kaplan-Meier plot of all programs (median expression)
+    srv = guan_survival_df_mmrf.copy()
+    keys = list(pr_genes.keys())
+
+    plt.figure(figsize=(8,6.4))
+    plt.xlim(-100,2000)
+    for key in keys:
+        cluster = np.array(exp_data.loc[pr_genes[key],:])
+        median_ = np.mean(cluster,axis=0)
+        threshold = np.percentile(median_,85)
+        median_[median_ >= threshold] = 1
+        median_[median_ < threshold] = 0
+        membership_df = pd.DataFrame(median_)
+        membership_df.index = exp_data.columns
+        membership_df.columns = [key]
+
+        cox_hr, cox_p = miner.survivalMembershipAnalysisDirect(membership_df,
+                                                               guan_survival_df_mmrf)
+
+        groups = [membership_df.index[np.where(membership_df[key]==1)[0]]]
+        labels = ["{0}: {1:.2f}".format(str(key), cox_hr)]
+        miner.kmplot(srv=srv, groups=groups, labels=labels, xlim_=(-100,1750),
+                     filename=None, lw=2, color=["gray"], alpha=0.2)
+
+    key_min = cox_programs_output.index[0]
+    key_max = cox_programs_output.index[-1]
+
+    cluster = np.array(exp_data.loc[pr_genes[key_min],:])
+    median_ = np.mean(cluster,axis=0)
+    threshold = np.percentile(median_,85)
+    median_[median_ >= threshold] = 1
+    median_[median_ < threshold] = 0
+    membership_df = pd.DataFrame(median_)
+    membership_df.index = exp_data.columns
+    membership_df.columns = [key_min]
+
+    cox_hr, cox_p = miner.survivalMembershipAnalysisDirect(membership_df, guan_survival_df_mmrf)
+
+    groups = [membership_df.index[np.where(membership_df[key_min]==1)[0]]]
+    labels = ["{0}: {1:.2f}".format(str(key), cox_hr)]
+
+    miner.kmplot(srv=srv, groups=groups, labels=labels, xlim_=(-100,1750),
+                 filename=None, lw=3, color=["red"], alpha=1)
+
+    cluster = np.array(exp_data.loc[pr_genes[key_max],:])
+    median_ = np.mean(cluster,axis=0)
+    threshold = np.percentile(median_,85)
+    median_[median_ >= threshold] = 1
+    median_[median_ < threshold] = 0
+    membership_df = pd.DataFrame(median_)
+    membership_df.index = exp_data.columns
+    membership_df.columns = [key_max]
+
+    cox_hr, cox_p = miner.survivalMembershipAnalysisDirect(membership_df,
+                                                           guan_survival_df_mmrf)
+
+    groups = [membership_df.index[np.where(membership_df[key_max]==1)[0]]]
+    labels = ["{0}: {1:.2f}".format(str(key), cox_hr)]
+
+    miner.kmplot(srv=srv, groups=groups, labels=labels, xlim_=(-100,1750),
+                 filename=None, lw=3, color=["blue"], alpha=1)
+
+    plt.ylim(-5, 100)
+    plt.xticks(np.arange(0,2000,500), fontsize=24)
+    plt.yticks(np.arange(0,100.05,20), fontsize=24)
+
+    plt.xlabel(None)
+    plt.ylabel(None)
+
+    ax = plt.gca()
+    ax.tick_params(axis="x", colors="black")
+    ax.tick_params(axis="y", colors="black")
+
+    plt.savefig(os.path.join(args.outdir,"kmplots_programs.pdf"), bbox_inches="tight")
+
+
+    #
+    # SURVIVAL ANALYSIS OF TRANSCRIPTIONAL STATES
+    #
+
+    # Kaplan-Meier plot of all programs (median expression)
+    plt.figure(figsize=(8,6.4))
+    plt.xlim(-100,2000)
+
+    srv = guan_survival_df_mmrf.copy()
+    for key in range(len(states_list)):
+
+        median_df = pd.DataFrame(np.zeros(exp_data.shape[1]))
+        median_df.index = exp_data.columns
+        median_df.columns = [key]
+        median_df.loc[states_list[key],key] = 1
+
+        cox_hr, cox_p = miner.survivalMembershipAnalysisDirect(median_df, guan_survival_df_mmrf)
+
+        groups = [median_df.index[np.where(median_df[key]==1)[0]]]
+        labels = ["{0}: {1:.2f}".format(str(key), cox_hr)]
+
+        miner.kmplot(srv=srv,groups=groups,labels=labels,xlim_=(-100,1750),
+                     filename=None,lw=2,color=["gray"],alpha=0.3)
+
+    highlight_list = [
+                     np.hstack([states_list[10],states_list[14],states_list[21]])]
+
+    for key in range(len(highlight_list)):
+        median_df = pd.DataFrame(np.zeros(exp_data.shape[1]))
+        median_df.index = exp_data.columns
+        median_df.columns = [key]
+        median_df.loc[highlight_list[key],key] = 1
+
+        cox_hr, cox_p = miner.survivalMembershipAnalysisDirect(median_df, guan_survival_df_mmrf)
+
+        groups = [median_df.index[np.where(median_df[key]==1)[0]]]
+        labels = ["{0}: {1:.2f}".format(str(key), cox_hr)]
+
+        miner.kmplot(srv=srv,groups=groups,labels=labels,xlim_=(-100,1750),
+                     filename=None,lw=3,color=["red"],alpha=1)
+
+    # Combine high-risk states
+    #highlight_list = [
+    #                 np.hstack([states_list[4],states_list[5],states_list[16],states_list[23]])]
+    highlight_list = [
+                     np.hstack([states_list[4], states_list[5], states_list[16],
+                                states_list[-1]])]
+
+    for key in range(len(highlight_list)):
+        median_df = pd.DataFrame(np.zeros(exp_data.shape[1]))
+        median_df.index = exp_data.columns
+        median_df.columns = [key]
+        median_df.loc[highlight_list[key],key] = 1
+
+        cox_hr, cox_p = miner.survivalMembershipAnalysisDirect(median_df, guan_survival_df_mmrf)
+
+        groups = [median_df.index[np.where(median_df[key]==1)[0]]]
+        labels = ["{0}: {1:.2f}".format(str(key), cox_hr)]
+
+        miner.kmplot(srv=srv,groups=groups,labels=labels,xlim_=(-100,1750),
+                     filename=None,lw=3,color=["blue"],alpha=1)
+
+    plt.ylim(-5,100)
+    plt.xticks(np.arange(0,2000,500),fontsize=24)
+    plt.yticks(np.arange(0,100.05,20),fontsize=24)
+    plt.xlabel(None)
+    plt.ylabel(None)
+
+    ax = plt.gca()
+    ax.tick_params(axis="x", colors="black")
+    ax.tick_params(axis="y", colors="black")
+
+    plt.savefig(os.path.join(args.outdir, "kmplots_states.pdf"), bbox_inches="tight")
+
+    #
+    # GENERATE BOXPLOT DATA FOR TRANSCRIPTIONAL STATES
+    #
+    survival_patients = list(guan_survival_df_mmrf.index)
+    t414_patients = translocations.columns[
+        np.where(translocations.loc["RNASeq_WHSC1_Call",:]==1)[0]
+    ]
+    t1114_patients = translocations.columns[
+        np.where(translocations.loc["RNASeq_CCND1_Call",:]==1)[0]
+    ]
+
+    min_patients = 5
+    ranks = []
+    boxplot_data = []
+    boxplot_names = []
+    boxplot_samples = []
+    boxplot_labels = []
+    percent_t414 = []
+    percent_t1114 = []
+    for key in range(len(states_list)):
+        state = states_list[key]
+        overlap_patients = list(set(survival_patients)&set(state))
+        if len(overlap_patients) < min_patients:
+            continue
+
+        guan_data = list(guan_survival_df_mmrf.loc[overlap_patients,"GuanScore"])
+        boxplot_samples.append(overlap_patients)
+        boxplot_data.append(guan_data)
+        boxplot_names.append([1 + key for i in range(len(overlap_patients))])
+        risk_score = np.median(guan_data)
+        ranks.append(risk_score)
+
+        t414_overlap = len(set(state)&set(t414_patients))
+        t1114_overlap = len(set(state)&set(t1114_patients))
+        percent_t414_ = float(t414_overlap)/len(state)
+        percent_t1114_ = float(t1114_overlap)/len(state)
+        percent_t414.append(percent_t414_)
+        percent_t1114.append(percent_t1114_)
+
+    # Format labels into dataframe
+    labels = np.hstack([boxplot_names[i] for i in list(np.argsort(ranks))])
+    labels_df = pd.DataFrame(labels)
+    labels_df.index = np.hstack([boxplot_samples[i] for i in list(np.argsort(ranks))])
+    labels_df.columns = ["label"]
+    plot_data = pd.concat([guan_survival_df_mmrf.loc[labels_df.index,"GuanScore"], labels_df],axis=1)
+
+    rank_order = np.array(list(set(np.hstack(boxplot_names))))[np.argsort(ranks)]
+    ranked_t414 = np.array(percent_t414)[np.argsort(ranks)]
+    ranked_t1114 = np.array(percent_t1114)[np.argsort(ranks)]
+
+    #
+    # VIOLIN PLOTS BY STATES
+    #
+    f, ax = plt.subplots(figsize=(12, 2))
+
+    # Plot the orbital period with horizontal boxes
+    #sns.violinplot(x="label", y="GuanScore", data=plot_data,
+    #               palette="coolwarm",order=rank_order)
+    sns.violinplot(x="label", y="GuanScore", data=plot_data,
+                   palette="coolwarm", order=rank_order, legend=False)
+
+    # Add in points to show each observation
+    sns.stripplot(x="label", y="GuanScore", data=plot_data,
+                  size=2, color=".3", linewidth=0,order=rank_order)
+
+    # Tweak the visual presentation
+    ax.set(ylabel="")
+    ax.set(xlabel="")
+
+    # Save figure
+    plt.savefig(os.path.join(args.outdir, "violin_states_risk.pdf"), bbox_inches="tight")
+
+    #
+    # BOXPLOTS BY STATES
+    #
+    f, ax = plt.subplots(figsize=(11.27, 2))
+
+    # Plot the orbital period with horizontal boxes
+    sns.boxplot(x="label", y="GuanScore", data=plot_data,fliersize=0,
+                palette="coolwarm",order=rank_order)
+
+    # Add in points to show each observation
+    sns.stripplot(x="label", y="GuanScore", data=plot_data,
+                  size=2, color=".3", linewidth=0,order=rank_order)
+
+    # Tweak the visual presentation
+    ax.set(ylabel="")
+    ax.set(xlabel="")
+    ax.set(ylim=(-0.1,1.1))
+    ax.set(yticks=np.arange(0,1.05,0.2))
+    ax.tick_params(labelsize=12)
+    ax.tick_params(axis="x", colors="black")
+    ax.tick_params(axis="y", colors="black")
+
+    # Save figure
+    plt.savefig(os.path.join(args.outdir, "boxplot_states_risk.pdf"),bbox_inches="tight")
+
+    #
+    # t(4;14) and t(11;14) subtypes by states
+    #
+    plt.figure(figsize=(11.27, 2))
+
+    N = len(ranks)
+    ind = np.arange(N)    # the x locations for the groups
+    w = 0.6
+    p1 = plt.bar(ind, 100*ranked_t1114,width=w,color='#0A6ECC',edgecolor="white",alpha=1)
+    p2 = plt.bar(ind, 100*ranked_t414,
+                 bottom=100*ranked_t1114,width=w,color='#E53939',edgecolor="white",alpha=1)
+
+    plt.xlim(-0.5,N-0.5)
+    plt.ylim(-5,110)
+    plt.yticks(np.arange(0,105,20),fontsize = 12)
+    plt.xticks(ticks=range(len(rank_order)),labels=list(rank_order),fontsize = 12)
+    plt.legend((p1[0], p2[0]), ('t(11;14)', 't(4;14)'),loc="upper left")
+
+    ax = plt.gca()
+    ax.tick_params(axis="x", colors="black")
+    ax.tick_params(axis="y", colors="black")
+
+    plt.savefig(os.path.join(args.outdir, "barplot_states_translocations.pdf"),bbox_inches="tight")

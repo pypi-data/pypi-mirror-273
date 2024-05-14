@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: isb_miner3
+Version: 1.2.0
+Summary: MINER analysis tools
+Home-page: https://github.com/baliga-lab/miner3
+Author: Matt Wall
+Author-email: mwall@systemsbiology.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.22.0
+Requires-Dist: scipy>=1.8.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: scikit-learn>=1.1.3
+Requires-Dist: lifelines>=0.27.4
+Requires-Dist: matplotlib>=3.6.0
+Requires-Dist: seaborn>=0.12.0
+Requires-Dist: mygene>=3.2.2
+Requires-Dist: requests_toolbelt>=1.0.0
+Requires-Dist: pydot>=2.0.0
+Requires-Dist: graphviz>=0.20.1
+Requires-Dist: gql>=3.4.0
+Requires-Dist: chembl_webresource_client>=0.10.8
+Requires-Dist: tqdm>=4.64.0
+
+# MINER
+
+![Unit tests](https://github.com/baliga-lab/miner3/actions/workflows/python-test.yml/badge.svg)
+
+**M**echanistic **I**nference of **N**ode-edge **R**elationships
+
+## Usage
+
+### Docker image
+
+you can access a Docker image with a full MINER installation at  Docker Hub with the name ```weiju/isb-miner3```
+
+```
+docker pull weiju/isb-miner3
+```
+
+### Through pip
+
+```
+pip install isb-miner3
+```
+
+## Command Line Tools documentation
+
+Please see command line documentation at https://baliga-lab.github.io/miner3/
+
+## Tutorial information
+
+Find a walkthrough analysis in the form of a [Jupyter Notebook here](Example%20MINER%20Analysis.ipynb)
+
+## What you need to get started
+
+Before the miner analysis can be performed, the gene expression data to be analyzed must be added to the miner/data directory. Ensure that your expression data is of the form log2(TPM+1) or log2(FPKM+1).
+
+  * If survival analysis is desired, a survival file must added to the miner/data directory
+  * If causal analysis is desired, a mutation file must added to the miner/data directory
+
+## Where to put your data
+
+miner will search for specific filenames in the miner/data folder. Be sure to update the lines that read your files with the appropriate paths and filenames. Consider using the following names for consistency:
+
+  1. Name your expression data "expressionData.csv"
+  2. Name your mutation data "mutations.csv" (only for causal analysis)
+  3. Name your survival data "survival.csv" (only for survival analysis)
+
+Note that the gene names will be converted to Ensembl Gene ID format
+
+## Common mistakes to avoid
+
+  1. miner does not yet support expression data in counts format. Ensure that data is in log2(TPM+1) or log2(FPKM+1) format.
+  2. mechanistic inference includes a step that enforces a minimum correlation coefficient. If your results seem too sparse, try decreasing the minCorrelation parameter.
+
+
+## For maintainers
+
+### Documentation
+
+This project's documentation is provided as github pages. It is generated from ReStructured Text files
+and generated using the tool sphinx.
+In order to update it, edit the `.rst` documents in docs and generate HTML files by
+
+```
+make html
+```
+
+Provided there is a functioning sphinx system installed, the documentation will be in the build html
+directory and should be copied to the `gh-pages` branch of this repository.
+
