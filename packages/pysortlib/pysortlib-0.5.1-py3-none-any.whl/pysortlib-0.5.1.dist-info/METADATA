@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: pysortlib
+Version: 0.5.1
+Summary: Python Sorting Library
+Home-page: https://github.com/slimreaper35/pysortlib
+License: MIT
+Keywords: sorting,algorithms,data structures
+Author: Michal Šoltis
+Author-email: msoltis@redhat.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/slimreaper35/pysortlib
+Description-Content-Type: text/markdown
+
+# Python Sorting Library
+
+[![PyPI](https://img.shields.io/pypi/v/pysortlib)](https://pypi.org/project/pysortlib)
+[![Downloads](https://static.pepy.tech/badge/pysortlib)](https://pepy.tech/project/pysortlib)
+[![Coverage](https://codecov.io/gh/slimreaper35/pysortlib/graph/badge.svg?token=S24DIT654W)](https://codecov.io/gh/slimreaper35/pysortlib)
+
+Library of sorting algorithms with precise implementation and documentation.
+
+## Algorithms
+
+- Bubble sort
+- Counting sort
+- Cycle sort
+- Heap sort
+- Insert sort
+- Merge sort
+- Pancake sort
+- Quick sort
+- Radix sort
+- Selection sort
+- Shell sort
+- Sleep sort
+
+## Install
+
+```bash
+pip install pysortlib
+```
+
+## Usage
+
+```python
+from pysortlib import insert_sort
+
+array = [3, 5, 2, 1, 7, 4, 6]
+insert_sort(array)  # set a breakpoint and explore \o/
+print(array)
+```
+
+## Development
+
+### Virtual environment
+
+```bash
+pip install --user poetry
+poetry config virtualenvs.in-project true
+poety shell
+poetry install
+```
+
+### Dependencies
+
+```bash
+poetry update
+```
+
+### Pre-commit
+
+```bash
+pre-commit clean
+pre-commit install --hook-type pre-commit
+```
+
+### Coding standards
+
+- ~~perfectionism~~
+- [black](https://black.readthedocs.io/en/stable/) - code formatting
+- [ruff](https://beta.ruff.rs/docs/) - static code analysis
+- [mypy](https://mypy.readthedocs.io/en/stable/) - static type checking
+- [pytest](https://docs.pytest.org/en/stable/) - unit tests
+
