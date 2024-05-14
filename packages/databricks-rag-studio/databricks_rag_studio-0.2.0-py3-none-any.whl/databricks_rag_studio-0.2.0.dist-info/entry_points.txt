@@ -1,0 +1,6 @@
+[mlflow.deployments]
+llmproxy=databricks.rag_eval.clients.llmproxy
+
+[mlflow.model_evaluator]
+databricks-rag=databricks.rag_eval.mlflow:DatabricksRagEvaluator
+
