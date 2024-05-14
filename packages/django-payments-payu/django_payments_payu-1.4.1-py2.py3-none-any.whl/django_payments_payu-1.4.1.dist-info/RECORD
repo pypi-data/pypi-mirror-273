@@ -1,0 +1,8 @@
+payments_payu/__init__.py,sha256=BqOI5y46o1G1RWC9bF1DPL-YM68lGYPmZt1pn6FZFZs,22
+payments_payu/provider.py,sha256=ltXhl6E5KQyEyfoDmKTB44OQ8MR5GC4AitTZF05l7q0,29190
+django_payments_payu-1.4.1.dist-info/AUTHORS.rst,sha256=thHpa8uWl6bZ4nlWcENd4Ka1aVvt9ncQihdIxUyRsVE,161
+django_payments_payu-1.4.1.dist-info/LICENSE,sha256=DXJr2W1ZBylbID71QIa-4rOsNBgOwpGfQmvZ1Jp7QaU,1075
+django_payments_payu-1.4.1.dist-info/METADATA,sha256=1InvAaqe6XkGHss3VX2u2EdNoAmouD5gFJJ8eldfDAs,9519
+django_payments_payu-1.4.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+django_payments_payu-1.4.1.dist-info/top_level.txt,sha256=9bfVHzwf_nxq7kjPH4WKeRUfzQVRWXmR0-hBzb6f4iU,14
+django_payments_payu-1.4.1.dist-info/RECORD,,
