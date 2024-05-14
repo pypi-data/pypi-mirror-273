@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hot-spot-analysis"
+version = "0.1.0"
+description = "A generalized method to find hot spots in your metrics without requiring regressions. Jumpstart a regression analysis or provide deeper insights to stakeholders."
+authors = ["Philip Gundy <philipgundy@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
