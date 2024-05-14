@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "powfacpy"
+version = "0.2.0"
+authors = [
+  { name="Sciemon", email="simon.eberlein@gmx.de" },
+]
+description = "PowerFactory wrapper"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas >= 2.2.2",
+    "matplotlib >= 3.8.4",
+    "aenum >= 3.1.15", 
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FraunhIEE-UniKassel-PowSysStability/powfacpy"
+"Bug Tracker" = "https://github.com/FraunhIEE-UniKassel-PowSysStability/powfacpy/issues"
