@@ -1,0 +1,8 @@
+README.md
+setup.py
+Akinator_python.egg-info/PKG-INFO
+Akinator_python.egg-info/SOURCES.txt
+Akinator_python.egg-info/dependency_links.txt
+Akinator_python.egg-info/top_level.txt
+akinator_python/__init__.py
+akinator_python/main.py
