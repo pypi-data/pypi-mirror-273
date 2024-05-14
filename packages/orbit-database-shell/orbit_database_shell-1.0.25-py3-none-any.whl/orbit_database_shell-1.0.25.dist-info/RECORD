@@ -1,0 +1,14 @@
+LICENSE.md,sha256=Ao_AP-Tf25HTyS9AWRTEBo4760NEhc7ISZO_DJfkzhE,1099
+README.md,sha256=XZQ3yXuErxildUDIb1V9LQUmtdbbqWhvr68592foQuY,2211
+orbit_database_shell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orbit_database_shell/__main__.py,sha256=zy_DplqFJAvUGXMbZ_J7IIRv6aPdIFVkFEscQYXzdBE,1941
+orbit_database_shell/odb_actions.py,sha256=DiZ40vvav60oHDGfHV_Y09j9vbQf5n4MirT81U4pxs8,26629
+orbit_database_shell/odb_completers.py,sha256=Cm8TQ3FQlhTbIDUSthgCa69pqMo4Rf-PvyRBww2jYu0,4169
+orbit_database_shell/odb_decorators.py,sha256=CwYYav-Tf_0dcwILgHJmqN9AT60r7uCZvbKflk-ha9I,1988
+orbit_database_shell/odb_grammar.py,sha256=izLu-twJ3WGDdOBGIm9dGBIqeDV-GSfSEFhQCnCT6XM,7272
+orbit_database_shell/odb_help.py,sha256=e6yYlXsTtZV-OSg4E5p99uo00fDvQ8yGL8OvXx-qjHs,46737
+orbit_database_shell-1.0.25.dist-info/LICENSE.md,sha256=Ao_AP-Tf25HTyS9AWRTEBo4760NEhc7ISZO_DJfkzhE,1099
+orbit_database_shell-1.0.25.dist-info/METADATA,sha256=qRe5J1ceQ8SZhywXywgujDiFeNCDB1josNr6UCpALFI,3677
+orbit_database_shell-1.0.25.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+orbit_database_shell-1.0.25.dist-info/entry_points.txt,sha256=4v4r24CLBaunIX5nh2P7YjioUcoLH1_9dbGMAnYdXpg,75
+orbit_database_shell-1.0.25.dist-info/RECORD,,
