@@ -1,0 +1,10 @@
+gradio_imagemask/__init__.py,sha256=eJrYCz_y14p3nS_QXHgFmQ4elgfnBBH58blIj6kX0hE,59
+gradio_imagemask/imagemask.py,sha256=1Ke1-_4ptblasCzUTlDxHnabfaj_2s6QDsQDBBcyebM,19967
+gradio_imagemask/imagemask.pyi,sha256=R_DkKHYTtPsco6WrsKTH47nueMYTz7_mlo1s7yaeVFw,97642
+gradio_imagemask/templates/component/index.js,sha256=_1I0m1FTM1oGLchIGWVCMaeOLAMK7X1-wjqzJercmnA,1156490
+gradio_imagemask/templates/component/style.css,sha256=r8fqOkaOh8YovgWfwO0Yh2X_jKFRPPmDP0OTiT4G3Kw,26226
+gradio_imagemask/templates/example/index.js,sha256=LcLAfAZL8gJh-urIqjCJn1ObolPSkpDzraJ3njbLmZM,10724
+gradio_imagemask/templates/example/style.css,sha256=YQxkT6QE4fRgfgyXmaj_tTO1bjiawJlTwTHVZ7RGaDk,19205
+gradio_imagemask-0.0.1.dist-info/METADATA,sha256=RvhZrKgGgyomCDFwtybsvYYdbllibWuh7XWd8t-m6gg,16636
+gradio_imagemask-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+gradio_imagemask-0.0.1.dist-info/RECORD,,
