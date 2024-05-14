@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+predamagedz/__init__.py
+predamagedz/main.py
+predamagedz.egg-info/PKG-INFO
+predamagedz.egg-info/SOURCES.txt
+predamagedz.egg-info/dependency_links.txt
+predamagedz.egg-info/requires.txt
+predamagedz.egg-info/top_level.txt
