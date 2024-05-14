@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mtkruto
+Version: 0.1.1
+Summary: Python client for MTKruto Server
+Author: Roj
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.5,<4.0.0)
+Description-Content-Type: text/markdown
+
+# MTKruto API Client for Python
+
