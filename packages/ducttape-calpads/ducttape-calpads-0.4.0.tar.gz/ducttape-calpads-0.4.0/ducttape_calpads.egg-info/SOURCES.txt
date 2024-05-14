@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ducttape_calpads/__init__.py
+ducttape_calpads/calpads.py
+ducttape_calpads/calpads_config.py
+ducttape_calpads.egg-info/PKG-INFO
+ducttape_calpads.egg-info/SOURCES.txt
+ducttape_calpads.egg-info/dependency_links.txt
+ducttape_calpads.egg-info/requires.txt
+ducttape_calpads.egg-info/top_level.txt
