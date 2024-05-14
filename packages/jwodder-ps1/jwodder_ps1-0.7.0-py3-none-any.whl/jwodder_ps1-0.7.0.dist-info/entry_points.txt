@@ -1,0 +1,2 @@
+[console_scripts]
+jwodder-ps1 = jwodder_ps1.__main__:main
