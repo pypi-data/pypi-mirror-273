@@ -1,0 +1,11 @@
+shopcloud_organize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopcloud_organize/__main__.py,sha256=SOWGsXXAOcA7LhNSbvX3pUYLqEX3VHmcZZJ_G9MyjWI,1726
+shopcloud_organize/cli.py,sha256=E1Q2PbOm2m1hOCT_8upqaaOa3HqcHZAlbq-uAl9Kj2g,11038
+shopcloud_organize/exceptions.py,sha256=1qVG2V7krERC-qji0JhvCrtdjXPC79tpGKZTwcULwL4,98
+shopcloud_organize/helpers.py,sha256=oaoojyWgD9CikOd_CMIx3AEvqtqDgGOfPOaVd-i2Sf4,968
+shopcloud_organize-1.7.0.data/scripts/organize,sha256=xcxbLOxnYn4tgZKHoxYXsPfjgqc2lKOXKUbLhcv4Pbk,123
+shopcloud_organize-1.7.0.dist-info/LICENSE,sha256=L9qExrnLduRUhcEKh6lnhIdiOaTjp90gBdVfHCQXc_Q,1072
+shopcloud_organize-1.7.0.dist-info/METADATA,sha256=SemAUO2JVi2q1NgyEycU9gMLEQfKGXqOcyeIWK3Wnv0,662
+shopcloud_organize-1.7.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+shopcloud_organize-1.7.0.dist-info/top_level.txt,sha256=NpbS-Z5HoG-Fwwtfje75TKHo7yHILdXLV-zAdSCUL-Q,19
+shopcloud_organize-1.7.0.dist-info/RECORD,,
