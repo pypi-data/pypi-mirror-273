@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tpsimilarity/__init__.py
+tpsimilarity/similarity.py
+tpsimilarity.egg-info/PKG-INFO
+tpsimilarity.egg-info/SOURCES.txt
+tpsimilarity.egg-info/dependency_links.txt
+tpsimilarity.egg-info/requires.txt
+tpsimilarity.egg-info/top_level.txt
