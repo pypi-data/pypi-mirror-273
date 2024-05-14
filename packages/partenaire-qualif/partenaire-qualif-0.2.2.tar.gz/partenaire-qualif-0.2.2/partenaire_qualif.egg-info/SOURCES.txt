@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+partenaire_qualif.egg-info/PKG-INFO
+partenaire_qualif.egg-info/SOURCES.txt
+partenaire_qualif.egg-info/dependency_links.txt
+partenaire_qualif.egg-info/requires.txt
+partenaire_qualif.egg-info/top_level.txt
+qualif/__init__.py
+qualif/qualif.py
+qualif/templates/__init__.py
+qualif/templates/prompt_find_website_template.txt
+qualif/templates/prompt_qualification_template.txt
