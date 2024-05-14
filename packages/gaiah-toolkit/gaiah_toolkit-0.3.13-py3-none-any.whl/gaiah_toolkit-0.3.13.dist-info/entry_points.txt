@@ -1,0 +1,2 @@
+[console_scripts]
+gaiah = gaiah.cli:main
