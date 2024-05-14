@@ -1,0 +1,7 @@
+README.md
+setup.py
+sovai/__init__.py
+sovai.egg-info/PKG-INFO
+sovai.egg-info/SOURCES.txt
+sovai.egg-info/dependency_links.txt
+sovai.egg-info/top_level.txt
