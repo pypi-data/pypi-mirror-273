@@ -1,0 +1,1 @@
+from .snus import SnusbaseModel
