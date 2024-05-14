@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+peristomez/__init__.py
+peristomez/main.py
+peristomez.egg-info/PKG-INFO
+peristomez.egg-info/SOURCES.txt
+peristomez.egg-info/dependency_links.txt
+peristomez.egg-info/requires.txt
+peristomez.egg-info/top_level.txt
