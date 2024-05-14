@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nucleofugalz/__init__.py
+nucleofugalz/main.py
+nucleofugalz.egg-info/PKG-INFO
+nucleofugalz.egg-info/SOURCES.txt
+nucleofugalz.egg-info/dependency_links.txt
+nucleofugalz.egg-info/requires.txt
+nucleofugalz.egg-info/top_level.txt
