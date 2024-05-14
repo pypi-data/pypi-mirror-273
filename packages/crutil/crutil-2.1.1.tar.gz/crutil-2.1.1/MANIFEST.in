@@ -1,0 +1,10 @@
+# PRIMES Rust library.
+recursive-include source/rust/hosker_primes/src *
+include source/rust/hosker_primes/Cargo.toml
+
+# COLLATZ Rust library.
+recursive-include source/rust/hosker_collatz/src *
+include source/rust/hosker_collatz/Cargo.toml
+
+# COMBINATORICS C library.
+recursive-include source/c/combinatorics *
