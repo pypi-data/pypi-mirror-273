@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: zibuyu-LLM
+Version: 0.1.16
+Summary: 子不语个人工具包-LLM
+Author: 子不语
+License: MIT
+Keywords: LLM,zibuyu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: fake-useragent
+Requires-Dist: filetype
+Requires-Dist: idna
+Requires-Dist: importlib-resources
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: zipp
+Requires-Dist: aiohttp
+
+# 子不语个人工具包-LLM
+
+封装了LLM的接口，方便使用。
+
+目前支持的LLM有：
+
+- 深度求索（DeepSeek）
+- 月之暗面（Kimi）
+- 海螺问问（MinMax）
+- 通义千问（Qwen）
+- 通义星辰（XinChen)
+- 通义万相（XinXiang）
+- 讯飞星火（Spark）
+
+# 版本记录
+
+`0.1.16`：海螺问问添加鉴权出错重试机制
+
+`0.1.12`：讯飞星火添加请求出错重试机制
+
+`0.1.11`：修改讯飞星火请求出错判断
+
+`0.1.10`：修改bug
+
+`0.1.9`：讯飞星火部分添加自动鉴权
+
+`0.0.9`：修复由于类型注解引起的版本不兼容问题
+
+`0.0.3`：修复导包路径问题
+
+`0.0.2`：无变化，增加Readme文件
+
+`0.0.1`：第一次上传
