@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vocalisedz/__init__.py
+vocalisedz/main.py
+vocalisedz.egg-info/PKG-INFO
+vocalisedz.egg-info/SOURCES.txt
+vocalisedz.egg-info/dependency_links.txt
+vocalisedz.egg-info/requires.txt
+vocalisedz.egg-info/top_level.txt
