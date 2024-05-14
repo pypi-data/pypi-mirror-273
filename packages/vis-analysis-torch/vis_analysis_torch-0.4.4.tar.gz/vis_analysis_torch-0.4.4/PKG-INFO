@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vis_analysis_torch
+Version: 0.4.4
+Summary: a package for visualization analysis of pytorch models
+Home-page: https://github.com/YangChen-00/vis_analysis_torch.git
+Author: Curtis Chen
+Author-email: chenyang001001@gmail.com
+License: MIT
+Keywords: visualization analysis pytorch
+Platform: UNKNOWN
+
+UNKNOWN
+
