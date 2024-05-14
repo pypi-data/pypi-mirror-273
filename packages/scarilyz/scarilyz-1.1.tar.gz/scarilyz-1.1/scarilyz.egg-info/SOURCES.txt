@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scarilyz/__init__.py
+scarilyz/main.py
+scarilyz.egg-info/PKG-INFO
+scarilyz.egg-info/SOURCES.txt
+scarilyz.egg-info/dependency_links.txt
+scarilyz.egg-info/requires.txt
+scarilyz.egg-info/top_level.txt
