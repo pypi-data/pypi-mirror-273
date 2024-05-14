@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/vuv.py
+src/vuv.egg-info/PKG-INFO
+src/vuv.egg-info/SOURCES.txt
+src/vuv.egg-info/dependency_links.txt
+src/vuv.egg-info/entry_points.txt
+src/vuv.egg-info/top_level.txt
