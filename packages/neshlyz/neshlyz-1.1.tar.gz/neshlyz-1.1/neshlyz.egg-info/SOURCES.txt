@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+neshlyz/__init__.py
+neshlyz/main.py
+neshlyz.egg-info/PKG-INFO
+neshlyz.egg-info/SOURCES.txt
+neshlyz.egg-info/dependency_links.txt
+neshlyz.egg-info/requires.txt
+neshlyz.egg-info/top_level.txt
