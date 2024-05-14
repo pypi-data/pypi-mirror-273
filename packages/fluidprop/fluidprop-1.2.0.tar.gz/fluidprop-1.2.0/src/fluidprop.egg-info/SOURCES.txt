@@ -1,0 +1,14 @@
+AUTHORS.rst
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+src/fluidprop.py
+src/rbc.py
+src/fluidprop.egg-info/PKG-INFO
+src/fluidprop.egg-info/SOURCES.txt
+src/fluidprop.egg-info/dependency_links.txt
+src/fluidprop.egg-info/not-zip-safe
+src/fluidprop.egg-info/requires.txt
+src/fluidprop.egg-info/top_level.txt
