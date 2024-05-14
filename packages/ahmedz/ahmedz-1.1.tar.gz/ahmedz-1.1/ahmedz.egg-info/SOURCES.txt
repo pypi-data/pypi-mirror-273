@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ahmedz/__init__.py
+ahmedz/main.py
+ahmedz.egg-info/PKG-INFO
+ahmedz.egg-info/SOURCES.txt
+ahmedz.egg-info/dependency_links.txt
+ahmedz.egg-info/requires.txt
+ahmedz.egg-info/top_level.txt
