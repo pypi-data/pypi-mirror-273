@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: remlapreprocesspy
+Version: 1.0.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: Sphinx ==5.0.2
+Requires-Dist: flake8 ==6.0.0
+Requires-Dist: python-dotenv >=0.5.1
+Requires-Dist: tensorflow ==2.16.1
+Requires-Dist: PyYaml ==6.0.1
+Requires-Dist: pylint ==2.13.0
+Requires-Dist: seaborn
+Requires-Dist: Flask ==3.0.3
+Requires-Dist: flasgger ==0.9.7.1
+Requires-Dist: scikit-learn ==1.4.2
+
