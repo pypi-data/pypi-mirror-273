@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+thiochromez/__init__.py
+thiochromez/main.py
+thiochromez.egg-info/PKG-INFO
+thiochromez.egg-info/SOURCES.txt
+thiochromez.egg-info/dependency_links.txt
+thiochromez.egg-info/requires.txt
+thiochromez.egg-info/top_level.txt
