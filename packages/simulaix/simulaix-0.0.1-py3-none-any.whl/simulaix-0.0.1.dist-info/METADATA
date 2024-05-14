@@ -1,0 +1,62 @@
+Metadata-Version: 2.3
+Name: simulaix
+Version: 0.0.1
+Summary: An efficient synthetic data framework
+Project-URL: Homepage, https://github.com/JoinAI-Inc/simulaix
+Project-URL: Issues, https://github.com/JoinAI-Inc/simulaix/issues
+Author-email: JoinAI <contact@join-intelligence.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# simulaix
+
+An efficient synthetic data framework
+
+
+
+## Documentation
+
+todo
+
+## Installation
+
+```sh 
+# install from PyPI
+pip install simulaix
+
+```
+
+
+## Usage
+
+```python
+import simulaix as sim
+
+# create a synthetic data generator
+generator = sim.Generator(type='face', size=(200, 200))
+generator.generate(num_samples=1000, output_dir='data/face')
+
+```
+
+
+
+
+## Requirements
+Python 3.6 or higher.
