@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: mle_ons_hidrological
+Version: 0.0.1
+Requires-Dist: pandas>=2.2.2
