@@ -1,0 +1,9 @@
+quantumcatch/__init__.py,sha256=_k3pNqWF0CrWnDYnKn-GSJkbUWJtJsAYXS-TjO2f2RM,1963
+quantumcatch/fitting_tools.py,sha256=wHlRkofwPCRKqNVtWTmm9C6pAyWuHRRRZLtlJVTTim0,30105
+quantumcatch/simulation.py,sha256=1inhDQl0xgQV1YV5cKbfkVEJYhfv-L2HoU3rYqvxHPk,83040
+quantumcatch/simulation_jax.py,sha256=CEPhaUEoHL1YP36WJieyyBIqBECOvHZjpoN66g0IEL0,47616
+quantumcatch/telegraph_noise_tools.py,sha256=6Kl6r-Ljn2buDxeU1yQQCrUqfNjriXv0s-BnS0SLsek,17243
+quantumcatch-0.2.4.dist-info/METADATA,sha256=eYoz3CHZErqQvxASPe3Qtnz7fpaLRWn_OopVDfT1T_g,14579
+quantumcatch-0.2.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+quantumcatch-0.2.4.dist-info/licenses/LICENSE,sha256=YMg66NJwtQktBlJORd77LNq0cJ77n6n6yofrwX8wEEs,1536
+quantumcatch-0.2.4.dist-info/RECORD,,
