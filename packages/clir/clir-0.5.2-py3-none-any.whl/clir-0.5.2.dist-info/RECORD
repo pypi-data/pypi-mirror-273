@@ -1,0 +1,8 @@
+clir/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clir/cli.py,sha256=zYQ-hoOiQGyQc-JSidpC6ayAiJGmf4HiGz3VQGNTGc4,3145
+clir/command.py,sha256=zM0_AvP5QDzJpF2oktYRsKplZtcqwd7K6l9wE4NzwS0,9355
+clir-0.5.2.dist-info/LICENSE,sha256=shagkRLggHltphFg_gvXFJ4HH5_ozjkOLItMSoDGMNk,1068
+clir-0.5.2.dist-info/METADATA,sha256=lNG4CeLsiz9_Fimkqz3SpnMHnfwDeOm6Q1YkxYIJl30,1690
+clir-0.5.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+clir-0.5.2.dist-info/entry_points.txt,sha256=swxfhtSVNl4RSpgHTXXgaLnUmnuSupAeL4p6EnApG_M,61
+clir-0.5.2.dist-info/RECORD,,
