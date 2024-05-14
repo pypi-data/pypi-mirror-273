@@ -1,0 +1,3 @@
+[console_scripts]
+ritdu-slacker=ritdu_slacker.main:main
+
