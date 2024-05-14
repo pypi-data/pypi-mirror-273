@@ -1,0 +1,7 @@
+setup.py
+viswa_friend/__init__.py
+viswa_friend/project.py
+viswa_friend.egg-info/PKG-INFO
+viswa_friend.egg-info/SOURCES.txt
+viswa_friend.egg-info/dependency_links.txt
+viswa_friend.egg-info/top_level.txt
