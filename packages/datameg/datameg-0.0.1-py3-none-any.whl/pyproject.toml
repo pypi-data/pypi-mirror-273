@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datameg"
+version = "0.0.1"
+authors = [
+  { name="Victor deMatos", email="victorkolis@duck.com" },
+]
+description = "Responsibility-driven design SQLite3 implementation"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hoggva/datameg"
+"Bug Tracker" = "https://github.com/hoggva/datameg/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

@@ -1,0 +1,10 @@
+./.gitignore,sha256=XixnHdyeMB2vwkGtGnwHqoWpH-9WChdyG0GXe57duhc,3078
+./LICENSE,sha256=S9dnWJ49qKoKeCqfhhRf0Wk9lxhZm9idVnZEznwzlAc,1068
+./PKG-INFO,sha256=A4aaxxWYMEMnmkqtTG5Ynlb15rz2aWr8-oqrBIb2Who,568
+./README.md,sha256=pck127wEXSnE0CmrXVk1SLx90ARZsJYDlyVbSyL9vVk,48
+./pyproject.toml,sha256=xM7fZsM16XTOL3jcJ4uey1IrY0VM0zJa5m7OhpiiC3w,632
+./requirements.txt,sha256=reubuUCELM5HWo3qbrsFdRkpn7TClCtHB7mWVk6lBxI,8
+datameg-0.0.1.dist-info/METADATA,sha256=A4aaxxWYMEMnmkqtTG5Ynlb15rz2aWr8-oqrBIb2Who,568
+datameg-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+datameg-0.0.1.dist-info/licenses/LICENSE,sha256=S9dnWJ49qKoKeCqfhhRf0Wk9lxhZm9idVnZEznwzlAc,1068
+datameg-0.0.1.dist-info/RECORD,,

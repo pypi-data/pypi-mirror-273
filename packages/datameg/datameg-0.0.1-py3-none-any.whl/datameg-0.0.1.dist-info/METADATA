@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: datameg
+Version: 0.0.1
+Summary: Responsibility-driven design SQLite3 implementation
+Project-URL: Homepage, https://github.com/hoggva/datameg
+Project-URL: Bug Tracker, https://github.com/hoggva/datameg/issues
+Author-email: Victor deMatos <victorkolis@duck.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# datameg
+
+```
+FIXME: ADD PACKAGE STRUCTURE
+```
