@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+convalescingz/__init__.py
+convalescingz/main.py
+convalescingz.egg-info/PKG-INFO
+convalescingz.egg-info/SOURCES.txt
+convalescingz.egg-info/dependency_links.txt
+convalescingz.egg-info/requires.txt
+convalescingz.egg-info/top_level.txt
