@@ -1,0 +1,34 @@
+name: test-environment
+channels:
+  - defaults
+  - phygbu
+  - conda-forge
+dependencies:
+  - coveralls
+  - cycler
+  - dill
+  - fabio
+  - filemagic
+  - h5py
+  - hyperspy
+  - importlib_resources
+  - imreg_dft
+  - image-registration
+  - lmfit
+  - matplotlib
+  - memoization
+  - multiprocess
+  - nptdms
+  - numpy
+  - pytest
+  - pytest-cov
+  - pytest-forked
+  - pytest-runner
+  - pytest-xdist
+  - python-dateutil
+  - scikit-image
+  - scipy
+  - seaborn
+  - statsmodels
+  - tabulate
+  - urllib3
