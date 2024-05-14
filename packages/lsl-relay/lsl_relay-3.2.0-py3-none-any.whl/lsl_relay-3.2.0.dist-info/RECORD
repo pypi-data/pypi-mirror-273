@@ -1,0 +1,14 @@
+pupil_labs/lsl_relay/__init__.py,sha256=WmlZdoe6A0ZCw7pJR35lWQXXByUBMQ7hY5iVCwRg_MI,349
+pupil_labs/lsl_relay/__main__.py,sha256=kRYg1C1ORVlg3hf4_J6vDErEXn_5MZfC9sZZioXC40I,95
+pupil_labs/lsl_relay/channels.py,sha256=9MZ8g3t60nBsxdEPIHxtNwUR4P35X5Kskgh_f5yy6Cs,1727
+pupil_labs/lsl_relay/cli.py,sha256=ISIP4RhCyqnosElUv_z2XUAVRojQiJPKRHxYDM6ElLM,8260
+pupil_labs/lsl_relay/linear_time_model.py,sha256=ptNl9bbBtg4c8aRLVyr4fvFznos912ZL4mSm0_5FxfU,2901
+pupil_labs/lsl_relay/outlets.py,sha256=jjUYKeV3ksWG55nKjTm2_exgmJHr34eP9mIbB-hNZPM,5071
+pupil_labs/lsl_relay/relay.py,sha256=yojs2tjn374qKtCBy2uABWFJzjrqAgVQhm5SpKlqUNs,10551
+pupil_labs/lsl_relay/xdf_cloud_time_sync.py,sha256=LR67G1FApk-YWcTGBIPBC9CTiXzoe8DjWwzWts6diec,7769
+lsl_relay-3.2.0.dist-info/LICENSE,sha256=wtb5plYhxUZhtyA7N_6MmgEQhejBzgq_pORYgbA4jQA,1050
+lsl_relay-3.2.0.dist-info/METADATA,sha256=UlsAm_xyGXH7TdP-Jh3hpPhi5iHjK0326igd8DGs1PE,3267
+lsl_relay-3.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+lsl_relay-3.2.0.dist-info/entry_points.txt,sha256=VDeb0cw7zdhUxw8LR7lGneB8tneFMDmNH5pIQMB5f08,225
+lsl_relay-3.2.0.dist-info/top_level.txt,sha256=0sAYqydhZ3GsxyCFKlrGo7LwoXKMZJPsvgI_edVx2a0,11
+lsl_relay-3.2.0.dist-info/RECORD,,
