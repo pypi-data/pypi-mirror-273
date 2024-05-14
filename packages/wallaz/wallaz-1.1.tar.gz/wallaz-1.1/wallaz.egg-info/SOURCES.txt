@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wallaz/__init__.py
+wallaz/main.py
+wallaz.egg-info/PKG-INFO
+wallaz.egg-info/SOURCES.txt
+wallaz.egg-info/dependency_links.txt
+wallaz.egg-info/requires.txt
+wallaz.egg-info/top_level.txt
