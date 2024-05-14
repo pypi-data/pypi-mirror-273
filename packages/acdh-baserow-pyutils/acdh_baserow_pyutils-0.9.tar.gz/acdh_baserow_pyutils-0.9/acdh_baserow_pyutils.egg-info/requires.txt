@@ -1,0 +1,2 @@
+requests<3,>=2.20.0
+acdh-id-reconciler<1,>=0.6
