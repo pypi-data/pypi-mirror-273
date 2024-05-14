@@ -1,0 +1,8 @@
+mosaik_components/emissions/__init__.py,sha256=675WeC6CdJbcGiK0XBInHn4-ewRW-uuIjpBnWGGv_jQ,94
+mosaik_components/emissions/data/data.csv,sha256=NgwjIVeP8W9RuPeueqPnxle-xbJPQAmEq_jQpVKqblw,26611502
+mosaik_components/emissions/emission_simulator.py,sha256=acO3XT3q7d1YMv_oN0fLlkpRBCYViZ1ysCVKagX7Rrc,7314
+mosaik_emissions-0.1.1.dist-info/AUTHORS.txt,sha256=88P5koCAXcaB9XQ47Hg-lRLGfT7EOTIt4NhcKiYPQA8,70
+mosaik_emissions-0.1.1.dist-info/LICENSE,sha256=D5xGfjaZ9n4SzfIVDhPfM-2gkQYLfAHHCI60AFr3Cgk,1080
+mosaik_emissions-0.1.1.dist-info/METADATA,sha256=1bubmhOSynVLyaNxuyLVEmcMOTxa2T0W8b0JAD2pbC4,7119
+mosaik_emissions-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+mosaik_emissions-0.1.1.dist-info/RECORD,,
