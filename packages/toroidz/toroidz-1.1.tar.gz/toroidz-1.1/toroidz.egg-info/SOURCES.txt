@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+toroidz/__init__.py
+toroidz/main.py
+toroidz.egg-info/PKG-INFO
+toroidz.egg-info/SOURCES.txt
+toroidz.egg-info/dependency_links.txt
+toroidz.egg-info/requires.txt
+toroidz.egg-info/top_level.txt
