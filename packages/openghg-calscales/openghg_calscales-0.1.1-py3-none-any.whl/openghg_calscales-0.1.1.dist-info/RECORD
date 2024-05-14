@@ -1,0 +1,12 @@
+openghg_calscales/__init__.py,sha256=E0i467tADpCh1-Jb62vXU_ZlYSBwwL5Wan5shospgSE,57
+openghg_calscales/functions.py,sha256=BnA5vScbK-w6t9JzYa_PolN8PD2DF7Hm1q0cWWmYisM,6921
+openghg_calscales/util.py,sha256=aD5GUJoUSKvaAXSqxByleHSGIa5iy-0eThRGkPVXyXE,91
+openghg_calscales/data/convert_functions.csv,sha256=L7lS0k1f8Fweeizgxj6-mqW-m8wQm3pRxi5YqMwTTU4,2853
+openghg_calscales/data/species_synonyms.csv,sha256=zzEeGaRcoS1Oom7FvNB2dWya4YpklGFweFeuP8TpJEY,137
+tests/conftest.py,sha256=wv9LQ7xZjWexAI3fOwtm0lrgA76y7A1J_g0m9oUXgys,112
+tests/test_functions.py,sha256=2p57iE4jUuB4gJXqCw8qtrCLMYZuLvwAQ7uWR41bRFI,5686
+openghg_calscales-0.1.1.dist-info/LICENSE,sha256=z1AYOSAd8gQ0nFfU2DvIeFXaS0Rpp3qDATqA_ShqWCk,1067
+openghg_calscales-0.1.1.dist-info/METADATA,sha256=Tp3zdOzYgwTTshMfSROWw7lwO1oea0ep9UcAge6UV9M,1762
+openghg_calscales-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+openghg_calscales-0.1.1.dist-info/top_level.txt,sha256=eijQHZzYGUJV_fsYIkA-sIO6J9TUP26GMHFXEjAwy14,24
+openghg_calscales-0.1.1.dist-info/RECORD,,
