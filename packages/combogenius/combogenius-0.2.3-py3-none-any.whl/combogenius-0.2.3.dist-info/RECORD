@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=rzVL_qxDMqT366paEKAEwnD4NOPsRKnFq28AWeoju1E,118
+tests/test_api.py,sha256=8Z7bkhA4pEpgPpVkBYUJaG43hZTdd515jvcDiv10A90,472
+tests/test_database.py,sha256=FSr4DB1R7LSuikkDD2XyFsx-vTKPi66BoW5fHOa1azY,1447
+tests/test_make_combos.py,sha256=342Tlo9UEElHYeaqZqXaWEtbsdEvpyJkxg6mojhyiU0,1748
+combogenius-0.2.3.dist-info/LICENSE,sha256=hbObSeZFdEC_5_b-ceq7h_gujixBna3mSb_dYIbn7uA,1086
+combogenius-0.2.3.dist-info/METADATA,sha256=GlXljUoA6PPBe5LLSMMhTfjfNE_Cf91VdJBhmN54X2Y,5514
+combogenius-0.2.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+combogenius-0.2.3.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+combogenius-0.2.3.dist-info/RECORD,,
