@@ -1,0 +1,40 @@
+[project]
+name = "python-webp"
+description = "Python image converter to webp format"
+authors = [
+    { name = "Gabriel Nobrega", email = "gabrieltkdnobrega63@gmail.com" },
+]
+dependencies = [
+    "pillow>=10.3.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+dynamic = []
+version = "1.0.0"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/biellSilva/python-webp"
+
+[project.scripts]
+pywebp = "pywebp.core:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "file"
+path = "src/pywebp/__version__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "types-pillow>=10.2.0.20240511",
+]
