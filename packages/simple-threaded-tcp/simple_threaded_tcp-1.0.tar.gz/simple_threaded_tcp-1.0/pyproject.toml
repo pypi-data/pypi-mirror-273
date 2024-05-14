@@ -1,0 +1,17 @@
+[project]
+name = "simple_threaded_tcp"
+version = "1.0"
+authors = [
+    {name = "Emil", email = "emilahmaboy@gmail.com"}
+]
+description = "Client-Server threaded TCP connector. This project also uses socket library."
+readme = "README.md"
+requires-python = ">3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[testpypi]
+username = "__token__"
+password = "pypi-AgENdGVzdC5weXBpLm9yZwIkYjkxYjk0YzMtYzcyMC00NDQ0LTg3ZDUtNDllZWY3YjQ2YTY3AAIqWzMsIjkxM2I2MzFlLTRhNDgtNGRhNy04MWNlLTFjODM0MzBkNzk2OCJdAAAGIFpIacNPBhRTNV15K43L75S-gSpP1Uvgz5O-lHm-_W0E"
