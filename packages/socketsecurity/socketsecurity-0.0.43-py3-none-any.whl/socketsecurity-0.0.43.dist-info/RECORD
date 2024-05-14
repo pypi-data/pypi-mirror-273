@@ -1,0 +1,13 @@
+core/__init__.py,sha256=bVEEOwLGGqGYCwptYlRdMLFzjCvXqx60ROvahhZypZU,25969
+core/classes.py,sha256=p7ubPCsfQV8afSbo9nYbIike5lW4vzn3m7xiU4_t3do,8665
+core/exceptions.py,sha256=C7q0D3KlnE3ff4FyTnlY9TxU3G-7xaRZcxpanUPvCzc,626
+core/github.py,sha256=pvVE6l6qrJ18pw_1BtaPksVomchz1zDzJ09qSDFx5AU,11251
+core/glitlab.py,sha256=SVfSDIbctTU5pOP_K_-YQAz8lIapZ3soFgkzdIKzajo,11208
+core/issues.py,sha256=_AsYSTV-Fu4_o0fmxRV7JMZGQKyyaeN8mIvv64szwQ8,67547
+core/licenses.py,sha256=VIpK01sRmKy_94ulojgWJHS2K8xo9YnW5KoJYhn8aaI,17442610
+core/messages.py,sha256=O_1ik6vQKcajmio4IPT3saZYMzsuibsxx38Mw_WFFK0,11834
+socketsecurity-0.0.43.dist-info/METADATA,sha256=pxNS7j6tz-1Mq1RUS3QadN4hcOPvdxldY8YyDMQshxE,142
+socketsecurity-0.0.43.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+socketsecurity-0.0.43.dist-info/entry_points.txt,sha256=6grLKlqdd94zzManatGgkDn4PvorCC28t2z-zo8mfBE,60
+socketsecurity-0.0.43.dist-info/top_level.txt,sha256=0ebp8k35dOTHVwbY3UcokRsjC7cWLN_iaJ70tIcmODU,5
+socketsecurity-0.0.43.dist-info/RECORD,,
