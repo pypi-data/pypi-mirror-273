@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wordmongeringz/__init__.py
+wordmongeringz/main.py
+wordmongeringz.egg-info/PKG-INFO
+wordmongeringz.egg-info/SOURCES.txt
+wordmongeringz.egg-info/dependency_links.txt
+wordmongeringz.egg-info/requires.txt
+wordmongeringz.egg-info/top_level.txt
