@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+./sddgen/__init__.py
+./sddgen/cgeom.py
+./sddgen/datarep.py
+./sddgen/generator.py
+./sddgen/htmlcss.py
+./sddgen/model.py
+./sddgen/guitk/__init__.py
+./sddgen/guitk/generator.py
+./sddgen/guitk/guiComponents.py
+scripts/sdd-gencode.py
+sddgen.egg-info/PKG-INFO
+sddgen.egg-info/SOURCES.txt
+sddgen.egg-info/dependency_links.txt
+sddgen.egg-info/requires.txt
+sddgen.egg-info/top_level.txt
