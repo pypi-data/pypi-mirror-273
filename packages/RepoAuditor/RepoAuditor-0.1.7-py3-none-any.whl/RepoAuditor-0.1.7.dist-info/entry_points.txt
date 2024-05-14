@@ -1,0 +1,6 @@
+[RepoAuditor]
+plugin1 = RepoAuditor.Plugins.Plugin1
+plugin2 = RepoAuditor.Plugins.Plugin2
+
+[console_scripts]
+RepoAuditor = RepoAuditor:EntryPoint.app
