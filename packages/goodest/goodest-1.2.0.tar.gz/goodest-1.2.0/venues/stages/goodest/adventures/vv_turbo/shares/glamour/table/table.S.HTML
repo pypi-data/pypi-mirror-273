@@ -1,0 +1,84 @@
+
+
+
+
+<pre>
+
+
+	<h1>table</h1>
+	
+		import name_component from './components/name'
+	
+	
+		<g_table
+			:columns="[{
+				'place': '1',
+				'name': 'name',
+				sort: function (a, b) {
+					
+				}
+			},{
+				'place': '2',
+				'name': 'mass + mass equivalents, in grams, per package',
+				sort: function (a, b) {
+					
+				}
+			},{
+				'place': '3',
+				'name': '',
+				sort: function (a, b) {
+					
+				}
+			}]"
+			:rows="[{
+				'1': 'protein',
+				'2': '56.00280000000001',
+				'3': '59.97243881625345%'
+			},{
+				'1': 'fats',
+				'2': '21.9898',
+				'3': '23.548499987172963%'
+			},{
+				'1': {
+					component: name_component,
+					props: {
+						
+					}
+				},
+				'2': '21.9898',
+				'3': '23.548499987172963%'
+			}]"
+		/>
+	
+
+
+	questions:
+		multiple 
+
+
+	relevant:
+		import s_button from ...
+					
+		methods: {
+			unconnected_component () {
+				return h (s_button, { palette, terrain })
+			}
+		}
+		
+		<component :is="unconnected_component ()" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
