@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/lorepy/__init__.py
+src/lorepy/lorepy.py
+src/lorepy.egg-info/PKG-INFO
+src/lorepy.egg-info/SOURCES.txt
+src/lorepy.egg-info/dependency_links.txt
+src/lorepy.egg-info/requires.txt
+src/lorepy.egg-info/top_level.txt
+tests/test_plot.py
