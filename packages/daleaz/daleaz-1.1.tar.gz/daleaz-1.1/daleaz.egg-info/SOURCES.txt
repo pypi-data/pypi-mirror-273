@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+daleaz/__init__.py
+daleaz/main.py
+daleaz.egg-info/PKG-INFO
+daleaz.egg-info/SOURCES.txt
+daleaz.egg-info/dependency_links.txt
+daleaz.egg-info/requires.txt
+daleaz.egg-info/top_level.txt
