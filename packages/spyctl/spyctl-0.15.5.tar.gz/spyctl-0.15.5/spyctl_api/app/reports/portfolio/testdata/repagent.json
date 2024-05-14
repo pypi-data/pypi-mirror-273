@@ -1,0 +1,12 @@
+{
+  "report_id": "agent_metrics",
+  "report_args": {
+    "cluster": "integrationc2",
+    "st": 1715355000.0,
+    "et": 1715357000.0
+  },
+  "report_format": "md",
+  "report_tags": {
+    "User-Agent": "spyctl"
+  }
+}
