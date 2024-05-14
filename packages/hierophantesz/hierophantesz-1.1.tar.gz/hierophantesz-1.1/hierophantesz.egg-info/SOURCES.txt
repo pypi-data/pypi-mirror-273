@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hierophantesz/__init__.py
+hierophantesz/main.py
+hierophantesz.egg-info/PKG-INFO
+hierophantesz.egg-info/SOURCES.txt
+hierophantesz.egg-info/dependency_links.txt
+hierophantesz.egg-info/requires.txt
+hierophantesz.egg-info/top_level.txt
