@@ -1,0 +1,14 @@
+general_utils_j/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+general_utils_j/colors.py,sha256=0OzsOfcKE4dUtBekGjjPKbs6BJc7hBdVsxBjz06ZCuA,2577
+general_utils_j/prints.py,sha256=KrgKTjZ3Pz_YRvl5RYlVptPayzXu6co52Cv1rtPpfio,659
+general_utils_j/umaths.py,sha256=IBy86CMiTP8SMoWyLSNMehb5_pQRBKn5R2E9j_TnQc4,2351
+general_utils_j/clases_auxiliares/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+general_utils_j/clases_auxiliares/punto.py,sha256=Jr_s6CWk1P91Gcnsbas_zGAkbqq2pX3_eUG13016mOU,2039
+general_utils_j/patrones/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+general_utils_j/patrones/singleton.py,sha256=fBuP-gDNK0N2LEaZFfvrMZ1ONS0lIoso9CrYQ-EXPoM,352
+general_utils_juan_palma_borda-0.2.1.dist-info/LICENSE,sha256=S__4v8GY0MFJxOmMidVEbK5-LCxp4RERDkiN6qhgQmw,1072
+general_utils_juan_palma_borda-0.2.1.dist-info/LICENSE.txt,sha256=S__4v8GY0MFJxOmMidVEbK5-LCxp4RERDkiN6qhgQmw,1072
+general_utils_juan_palma_borda-0.2.1.dist-info/METADATA,sha256=PYgUBZkfx3wn94Uri6opTlGJDZ1GyW7lnq3irme7-cQ,844
+general_utils_juan_palma_borda-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+general_utils_juan_palma_borda-0.2.1.dist-info/top_level.txt,sha256=n95uMEf_SMrfsV0JIZdFpvHpzn5wcZIjDqYZqxnU880,16
+general_utils_juan_palma_borda-0.2.1.dist-info/RECORD,,
