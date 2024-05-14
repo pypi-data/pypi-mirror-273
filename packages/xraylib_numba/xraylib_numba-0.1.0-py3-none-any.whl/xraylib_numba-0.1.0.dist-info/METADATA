@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: xraylib_numba
+Version: 0.1.0
+Summary: A numba compatible wrapper of the xraylib library.
+Author-email: Chris Ninham <christopher.ninham@creatis.insa-lyon.fr>
+Requires-Python: >=3.8
+Requires-Dist: numba>=0.57
+Requires-Dist: tomli; python_version < "3.11"
+Requires-Dist: ruff ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Provides-Extra: dev

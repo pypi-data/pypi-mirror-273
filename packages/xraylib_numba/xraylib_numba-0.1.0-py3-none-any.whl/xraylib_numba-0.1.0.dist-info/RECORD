@@ -1,0 +1,13 @@
+xraylib_numba/__init__.py,sha256=MPyxKaLls4ZGMBetf2MfBEbgyEEtbJpsdIiKkkloZn4,185
+xraylib_numba/config.py,sha256=sm3gr2GBLhwvjnLvHpNNkUB4re65XZv6LkLQMs3cffg,695
+xraylib_numba/config.toml,sha256=vF1ca2K6XXS3MXsbLnxz5vdtZduC6rCIeNFcIsnHM1U,3074
+xraylib_numba/xraylib_overloads.py,sha256=BBMaVT-Xq3aWOE9aDmEeJRIDE527bQmubAyAEmsyml8,119010
+xraylib_numba-0.1.0.data/data/__init__.py,sha256=MPyxKaLls4ZGMBetf2MfBEbgyEEtbJpsdIiKkkloZn4,185
+xraylib_numba-0.1.0.data/data/config.py,sha256=sm3gr2GBLhwvjnLvHpNNkUB4re65XZv6LkLQMs3cffg,695
+xraylib_numba-0.1.0.data/data/config.toml,sha256=vF1ca2K6XXS3MXsbLnxz5vdtZduC6rCIeNFcIsnHM1U,3074
+xraylib_numba-0.1.0.data/data/xraylib_overloads.py,sha256=BBMaVT-Xq3aWOE9aDmEeJRIDE527bQmubAyAEmsyml8,119010
+xraylib_numba-0.1.0.dist-info/entry_points.txt,sha256=ZfJJvXJ3tFqIoi3UkSEHdA2DAww0VpAByUK2wUy47Q0,45
+xraylib_numba-0.1.0.dist-info/LICENSE,sha256=J2c9ZsIAIBZJDAHnoJXbJW4PlWCnLk34CnDFC9uTkKg,1069
+xraylib_numba-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+xraylib_numba-0.1.0.dist-info/METADATA,sha256=uM2z3tMm1FErfC6jslWqLr6buvppTfsDsNJ4fvOPDe0,378
+xraylib_numba-0.1.0.dist-info/RECORD,,
