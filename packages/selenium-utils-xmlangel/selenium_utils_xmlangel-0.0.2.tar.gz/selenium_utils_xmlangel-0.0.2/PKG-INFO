@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: selenium_utils_xmlangel
+Version: 0.0.2
+Summary: PYPI selenium-utils package creation written by xmlangel
+Home-page: https://github.com/xmlangel/selenium-utils-xmlangel
+Author: xmlangel
+Author-email: kwangmyung.kim@gmail.com
+Keywords: selenium,xmlangel,utils
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.12
+Requires-Dist: opencv-python
+Requires-Dist: scikit-image
