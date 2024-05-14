@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cloudtoolbox
+Version: 0.1.0
+Summary: Toolbox for the cloud.
+Author-email: Dotz Developers <devs-dotz@dotz.com>
+Keywords: cloud,tools,utilities,google,gcp,amazon,aws
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: amazon
+Requires-Dist: boto3; extra == "amazon"
+Provides-Extra: google
+Requires-Dist: google-cloud-pubsub; extra == "google"
+Requires-Dist: google-cloud-storage; extra == "google"
+
+# Cloud Toolbox
+
+Decouple your applications from cloud providers with carefully crafted service interfaces.
