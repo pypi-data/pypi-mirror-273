@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+journeywomenz/__init__.py
+journeywomenz/main.py
+journeywomenz.egg-info/PKG-INFO
+journeywomenz.egg-info/SOURCES.txt
+journeywomenz.egg-info/dependency_links.txt
+journeywomenz.egg-info/requires.txt
+journeywomenz.egg-info/top_level.txt
