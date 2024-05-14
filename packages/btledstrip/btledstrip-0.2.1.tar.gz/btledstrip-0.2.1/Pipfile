@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+lint = "pylint btledstrip"
+mypy = "mypy btledstrip"
+
+[packages]
+bleak = "*"
+
+[dev-packages]
+pylint = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+mypy = "*"
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.3"
