@@ -1,0 +1,15 @@
+algorithms/__init__.py,sha256=nqpwl2mShapZv4e7iOBw0W6UBm9JNIMqvbNR5KI3zZE,153
+algorithms/deflate.py,sha256=KqZKXncv6ALztqU8VFl3OnruCp1ZbVoFBwwJ6A1rfck,2871
+algorithms/huffman.py,sha256=bctWhI98L2deFiOJB3nS9njz2Ze81tNXa2ZSmRAx6Jk,6136
+algorithms/lz77.py,sha256=LbssceO_ljUgMk6nPUdFYUC1BiwYe0J74xZKFINf2PA,3049
+algorithms/lz78.py,sha256=bEzVYZdn50Hkr1SMzhDmIS1ZZghQE6v6q-RNvrqI-Ak,89
+algorithms/lzw.py,sha256=q0JugOx3YuFDSodRStOoeV9h5KU4qqF8FZ0vO5Z75OQ,2200
+compress_algorithms/__init__.py,sha256=ws_sZqHdPU2HgEJF3XdaUdobCSSTD8rP4Rk99E3bGko,88
+compress_algorithms/algorithms.py,sha256=p9Dfl62Fj_i3LDZKIjAkbru9mDPA8H9r3vXOs1QFJOw,6976
+compress_algorithms/app.py,sha256=edSX2chaONN5hfuTX-w3hX0LZZPOp--A6HjFdeMgDOo,5438
+compress_algorithms/huffman.py,sha256=A6fqIv08ue8obD6r5f0zwBTr2OgZA2RwmhXX4K3MNCo,5247
+compress_algorithms/lzw.py,sha256=0ZPZTbsmt5N1BrwGkgRhulGznMUs-snyVXVPEgurHoo,2204
+dalgorithms-0.1.1.dist-info/METADATA,sha256=UOBuozIUiN5Byqc2A9kQgcYjTUvL59qTsa_VqsQ6gAM,839
+dalgorithms-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dalgorithms-0.1.1.dist-info/top_level.txt,sha256=9HJ0g1OC7F63W_PtK4ic-5gfVvhw3r8GfwPrXXII-N0,11
+dalgorithms-0.1.1.dist-info/RECORD,,
