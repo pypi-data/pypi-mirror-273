@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+damnersz/__init__.py
+damnersz/main.py
+damnersz.egg-info/PKG-INFO
+damnersz.egg-info/SOURCES.txt
+damnersz.egg-info/dependency_links.txt
+damnersz.egg-info/requires.txt
+damnersz.egg-info/top_level.txt
