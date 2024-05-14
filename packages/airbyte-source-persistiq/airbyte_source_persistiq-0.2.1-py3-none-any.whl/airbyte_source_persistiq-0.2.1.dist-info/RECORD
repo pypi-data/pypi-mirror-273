@@ -1,0 +1,12 @@
+source_persistiq/__init__.py,sha256=DUecHqqdm6nfyHEuoX0Ht8xqOEBlyL6i2vee8TfvsFY,130
+source_persistiq/manifest.yaml,sha256=Vr3zqMBq-ByrtYpB-Zz4cKSmfTdoeFFhuMfwr3MY1gQ,1604
+source_persistiq/run.py,sha256=6j2zGdB6uFw5M3d8oeE5Tq1Dhy7fVQI2IhRkpxLKmjo,239
+source_persistiq/schemas/campaigns.json,sha256=KtGUB80dtSAOOZ2i2zkqe4PhGTG4MwpE1gv3Xx57WMA,1128
+source_persistiq/schemas/leads.json,sha256=bzBQsopD46TMezKXMKvvaih11XkfLe40D_azug-TxL8,2156
+source_persistiq/schemas/users.json,sha256=kT9bpnwcv8hKHJa54_ErUQQF1dA7aLdDAdArZrqRJdU,462
+source_persistiq/source.py,sha256=4OGKcSw58TKyyGNuZ-eftO6jiM06P8y8btaujd1t3yY,478
+source_persistiq/spec.yaml,sha256=ksRhy48Bso-wHcGCrivLVhZAzTkIUmludauwqYhJypU,492
+airbyte_source_persistiq-0.2.1.dist-info/METADATA,sha256=KV-ZNV-mb595xsPZkC7cWqiQ58fBsfuxx9tVdECSj-o,5268
+airbyte_source_persistiq-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_persistiq-0.2.1.dist-info/entry_points.txt,sha256=t4Yet8T4HSiutZJUzkdZnW10LKwyMJf2OM8ZzL1ga1c,61
+airbyte_source_persistiq-0.2.1.dist-info/RECORD,,
