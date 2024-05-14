@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sulcatoareolatez/__init__.py
+sulcatoareolatez/main.py
+sulcatoareolatez.egg-info/PKG-INFO
+sulcatoareolatez.egg-info/SOURCES.txt
+sulcatoareolatez.egg-info/dependency_links.txt
+sulcatoareolatez.egg-info/requires.txt
+sulcatoareolatez.egg-info/top_level.txt
