@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: llama-index-postprocessor-jinaai-rerank
+Version: 0.1.3
+Summary: llama-index postprocessor jinaai rerank integration
+License: MIT
+Author: Joan Fontanals
+Author-email: joan.fontanals.martinez@jina.ai
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: llama-index-core (>=0.10.35,<0.11.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Postprocessor Integration: Jina AI Rerank
+
+Jina Rerank is based on [Jina Reranking](), which is a state-of-the-art reranking model in terms of
+
+1. Input context length - Jina Reranking is capable of accepting 8K-length input context
+2. Reranking performance - Jina Reranking outperforms other models on Mean Reciprocal Rank (MRR) and hit-rate, as shown in these [benchmarks]().
+
+Please pip install llama-index-postprocessor-jine-rerank to install Jina Rerank package.
+
