@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: image-dataset-converter-all
+Version: 0.0.1
+Summary: Meta-library that combines all image-dataset-converter libraries.
+Home-page: https://github.com/waikato-datamining/image-dataset-converter-all
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: Meta-library that combines all image-dataset-converter libraries.
+        
+        
+        Changelog
+        =========
+        
+        0.0.1 (2024-05-14)
+        ------------------
+        
+        - initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
