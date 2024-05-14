@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+neoarsphenaminez/__init__.py
+neoarsphenaminez/main.py
+neoarsphenaminez.egg-info/PKG-INFO
+neoarsphenaminez.egg-info/SOURCES.txt
+neoarsphenaminez.egg-info/dependency_links.txt
+neoarsphenaminez.egg-info/requires.txt
+neoarsphenaminez.egg-info/top_level.txt
