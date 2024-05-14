@@ -1,0 +1,15 @@
+idlemypyextension/__init__.py,sha256=clhV48m2sakNkvV_P2vhCABWhKOfiYE1Cg59AIbOQdo,1321
+idlemypyextension/annotate.py,sha256=rV-I4Nt_JIDt47sfEcgYbmxsgrzll0icPhelzR2IxCg,33058
+idlemypyextension/ast_annotate.py,sha256=HWmM_gnfJYK-cDGpxKO0CJ98wnB2_yFvb9AXvJfkA_o,18701
+idlemypyextension/client.py,sha256=ml12Wh9tF4iccC4nPTK7zyZ8JTJR1C6Fy9GLt_LEACo,18988
+idlemypyextension/extension.py,sha256=gc0tKifH7HZrj4pxXcEWBi_JjoQr_dKKJPcTxdDrtWs,24859
+idlemypyextension/moduleguard.py,sha256=AZa9U9RD-CIcnbnptgtPLbktsNZI2fsnBvxPJREQno8,5889
+idlemypyextension/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idlemypyextension/tktrio.py,sha256=MesGToYnqIJuHp8wgiZ5lgVRs5HuI7RIa_13W94bR2o,15990
+idlemypyextension/utils.py,sha256=hLUxgTF16nsAQS-wmxrZiDO_1dwiLzU-UAwReIV_e7o,20762
+idlemypyextension-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+idlemypyextension-1.0.3.dist-info/METADATA,sha256=1-e56wcrHhSui_PCpNXwqptTV5k_68o6xi7NbPZGGtc,46442
+idlemypyextension-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+idlemypyextension-1.0.3.dist-info/entry_points.txt,sha256=yQt-cmVqQglaxCBLaXLoaFkEtE_GkQbtyCyUIs166go,72
+idlemypyextension-1.0.3.dist-info/top_level.txt,sha256=qLZjypdz7FDRvpn-3B7dCQ2n0KtcTb-uFUBFdDfF620,18
+idlemypyextension-1.0.3.dist-info/RECORD,,
