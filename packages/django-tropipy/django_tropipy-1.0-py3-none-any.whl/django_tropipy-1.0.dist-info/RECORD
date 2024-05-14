@@ -1,0 +1,14 @@
+django_tropipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tropipy/admin.py,sha256=4YMfenC3UW7I4Zl4rdwbJU52GKKsWK4K4C1NCFeswv0,65
+django_tropipy/apps.py,sha256=zSmVM3iYHx6xHhWYKMeMLzcsihUOQ2wl2b_oXHiQcyk,176
+django_tropipy/common.py,sha256=XGMHdaxxefJcytcY2591ZmfM3k39XIiKDB_jnwjxyT8,3980
+django_tropipy/models.py,sha256=mreu1XXCIbPgpi2zEfLTmZ3wpjGQifIfqDdhKzKSc2c,28
+django_tropipy/tests.py,sha256=VtHkngPPxCmaxn-Cs2-NicMT185BLi2Wm77uDWiInuc,1792
+django_tropipy/urls.py,sha256=F9uraxt6xP62z6wwUoXqySMd8IKVBC3BAiluCm_EIYI,249
+django_tropipy/views.py,sha256=xBIC9-jF6CEVFc89BaImkWjqJ8wQiLw8CUcQ0v2bVsk,2389
+django_tropipy/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tropipy-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_tropipy-1.0.dist-info/METADATA,sha256=CJo1MalZqQSGta9JThLAUoozzivljjfdddhAwXVXUho,1282
+django_tropipy-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_tropipy-1.0.dist-info/top_level.txt,sha256=31-PvPPf3ur42oC8c9AeX3FY0DT8UgbSlFgr1XG_J7s,15
+django_tropipy-1.0.dist-info/RECORD,,
