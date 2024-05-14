@@ -1,0 +1,7 @@
+setup.py
+langsave/main.py
+langsave.egg-info/PKG-INFO
+langsave.egg-info/SOURCES.txt
+langsave.egg-info/dependency_links.txt
+langsave.egg-info/requires.txt
+langsave.egg-info/top_level.txt
