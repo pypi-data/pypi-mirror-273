@@ -1,0 +1,11 @@
+
+[docs]
+sphinx~=7.3
+sphinx-book-theme
+
+[tests]
+tree-sitter-html
+tree-sitter-javascript
+tree-sitter-json
+tree-sitter-python
+tree-sitter-rust
