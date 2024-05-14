@@ -1,0 +1,16 @@
+qibochem/__init__.py,sha256=JbtP-IByMCtHhGIEpOr_UMySdFPeKVdMw_xWJFQwd0E,126
+qibochem/ansatz/__init__.py,sha256=XfRpFTELp0DxwJnDARCKImkj595NFDNNW-5qiKkLbFU,422
+qibochem/ansatz/basis_rotation.py,sha256=yGxB1k1obVJtsagbn6q7cMFkUv4LUQqGqtkbyfkOs7o,9551
+qibochem/ansatz/hardware_efficient.py,sha256=nTlJrTxmUDvPKM0kNie5pwQVvU9ifebf23aP3VIpB0M,1496
+qibochem/ansatz/hf_reference.py,sha256=_anuHeS69qEJ-8rdjWq7V5eMwiKRkbbC6rSgdCmbr_w,3057
+qibochem/ansatz/ucc.py,sha256=1Qkcw_Ib23bTI21UmSOVFvkec2MrCngduqa3aDuw7wU,15745
+qibochem/driver/__init__.py,sha256=hO0WOclhR_y5H0p_V2a6j1TDRcTT8IrlFdA_7PkDNlU,46
+qibochem/driver/hamiltonian.py,sha256=GO3r8HG7v5BmJR-jMsiuW3FVOvjZn3nCjbGwGJdgz6g,2421
+qibochem/driver/molecule.py,sha256=GYFOdE6ESS6urHbhs6SLN8fHT3X12Ew5JtWEViFUeN0,19649
+qibochem/measurement/__init__.py,sha256=8ihi6Yf8PNDIWQVCDnZNwZ2LJu4z7YSp-scl_O1RLEw,78
+qibochem/measurement/optimization.py,sha256=zIMMbTTBDjkffpPWD1IKY3Ro3gX8uWtEyO5Aa0HVG7E,11232
+qibochem/measurement/result.py,sha256=kGlez_CQtXIsf5A8Loxk9fkyVvJ3it_Rcriqy3bJcQM,5443
+qibochem-0.0.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+qibochem-0.0.3.dist-info/METADATA,sha256=Hv0355CX5fMMdUMppvYkmPNLacjvkLEbCjvvuU7mW7I,2844
+qibochem-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+qibochem-0.0.3.dist-info/RECORD,,
