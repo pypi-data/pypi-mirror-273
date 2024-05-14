@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+airflow_metaplane/get_provider_info.py
+airflow_metaplane/mp_callbacks.py
+airflow_metaplane.egg-info/PKG-INFO
+airflow_metaplane.egg-info/SOURCES.txt
+airflow_metaplane.egg-info/dependency_links.txt
+airflow_metaplane.egg-info/entry_points.txt
+airflow_metaplane.egg-info/requires.txt
+airflow_metaplane.egg-info/top_level.txt
+airflow_metaplane/hooks/__init__.py
+airflow_metaplane/hooks/metaplane_hook.py
+airflow_metaplane/hooks/models.py
