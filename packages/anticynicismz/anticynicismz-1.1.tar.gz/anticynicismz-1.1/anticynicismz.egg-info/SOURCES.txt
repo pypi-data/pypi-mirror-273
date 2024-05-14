@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+anticynicismz/__init__.py
+anticynicismz/main.py
+anticynicismz.egg-info/PKG-INFO
+anticynicismz.egg-info/SOURCES.txt
+anticynicismz.egg-info/dependency_links.txt
+anticynicismz.egg-info/requires.txt
+anticynicismz.egg-info/top_level.txt
