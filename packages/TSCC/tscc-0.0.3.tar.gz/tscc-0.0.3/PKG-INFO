@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TSCC
+Version: 0.0.3
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/pypa/TSCC
+Project-URL: Issues, https://github.com/pypa/TSCC/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Time Series check & correct
+
+Our python package 'Time Series check & correct' can be used to enhance data quality
+for sensor data in the water field. The release will be in Q3 2024 or earlier and the package was developed
+by the Institute for Hydraulic Engineering and Water Management at the University of Duisburg-Essen.
+

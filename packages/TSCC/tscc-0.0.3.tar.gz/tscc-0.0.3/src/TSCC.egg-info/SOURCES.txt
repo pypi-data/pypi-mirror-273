@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/TSCC/__init__.py
+src/TSCC/example.py
+src/TSCC.egg-info/PKG-INFO
+src/TSCC.egg-info/SOURCES.txt
+src/TSCC.egg-info/dependency_links.txt
+src/TSCC.egg-info/top_level.txt
