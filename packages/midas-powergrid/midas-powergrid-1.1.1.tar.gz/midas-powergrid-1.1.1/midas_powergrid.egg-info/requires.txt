@@ -1,0 +1,17 @@
+matplotlib
+midas-util
+mosaik_api
+pandapower>=2.13.1
+numba
+simbench
+natsort
+joblib
+
+[dev]
+flake8
+pytest
+coverage
+black==23.11.0
+setuptools
+twine
+wheel
