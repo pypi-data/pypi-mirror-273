@@ -1,0 +1,12 @@
+LinkMLFormbuilder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LinkMLFormbuilder/bootstrap.css,sha256=x1S_ay5nZU20N9DN7lDM6DxPm-JV1Fd7fo-kLmgC3q8,152766
+LinkMLFormbuilder/constants.py,sha256=kVXpls1ioT7ABvxQ_-Dc4NN3-lFMhqHCmkPPGwNuc8E,4140
+LinkMLFormbuilder/formbuilder.py,sha256=pYGEyNSX6EjC87q8tufaxSiGP_ECifyj6ctJ4xV4kw0,11847
+LinkMLFormbuilder/slot_code_generators.py,sha256=9Z-BP8W4dnmOKuQ2HWYU0oyR-6KrJpzw2IhfoY21YI4,11016
+LinkMLFormbuilder/styles.css,sha256=MuxDG7L4NwgYP870JcMA32dPaTRvE56uC33frbwdh9A,1870
+LinkMLFormbuilder/utils.py,sha256=XXz55JK7YvNE_9DpOdmC1M0RD1DyjqyVCtSrWmy13S0,4407
+linkmlformbuilder-1.0.0.dist-info/METADATA,sha256=PvnGwRnea4Bc32bHNliz7WWLJY_L6rIxmDypQzE6SIU,4172
+linkmlformbuilder-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+linkmlformbuilder-1.0.0.dist-info/entry_points.txt,sha256=uXHE65dD0RGC6ANBg_T1utuWFv1zLCWrJ_1yXtlmx50,72
+linkmlformbuilder-1.0.0.dist-info/licenses/LICENSE,sha256=fsfolSK1sKlpbKQaUofWWC3IprPDSPB11U0rwNPCsFA,35857
+linkmlformbuilder-1.0.0.dist-info/RECORD,,
