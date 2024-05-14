@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autocoderz/__init__.py
+autocoderz/main.py
+autocoderz.egg-info/PKG-INFO
+autocoderz.egg-info/SOURCES.txt
+autocoderz.egg-info/dependency_links.txt
+autocoderz.egg-info/requires.txt
+autocoderz.egg-info/top_level.txt
