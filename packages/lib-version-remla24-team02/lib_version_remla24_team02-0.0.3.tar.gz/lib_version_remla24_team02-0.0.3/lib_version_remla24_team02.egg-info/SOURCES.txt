@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lib_version_remla24_team02/__init__.py
+lib_version_remla24_team02/version_util.py
+lib_version_remla24_team02.egg-info/PKG-INFO
+lib_version_remla24_team02.egg-info/SOURCES.txt
+lib_version_remla24_team02.egg-info/dependency_links.txt
+lib_version_remla24_team02.egg-info/top_level.txt
