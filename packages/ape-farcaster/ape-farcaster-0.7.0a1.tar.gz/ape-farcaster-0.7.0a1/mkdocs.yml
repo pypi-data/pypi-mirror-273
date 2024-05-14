@@ -1,0 +1,47 @@
+site_name: ape-farcaster documentation
+repo_url: 
+site_url: 
+theme:
+  name: "material"
+  icon:
+    logo: material/home
+  favicon: images/favicon-32x32.webp
+  features:
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - navigation.footer
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: deep purple
+      accent: deep orange
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: deep purple
+      accent: deep orange
+  logo: images/logo.webp
+
+plugins:
+  - search
+  - mkdocstrings
+  - social
+
+nav:
+  - ape-farcaster docs: index.md
+  - reference.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
