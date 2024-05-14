@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unbestowedz/__init__.py
+unbestowedz/main.py
+unbestowedz.egg-info/PKG-INFO
+unbestowedz.egg-info/SOURCES.txt
+unbestowedz.egg-info/dependency_links.txt
+unbestowedz.egg-info/requires.txt
+unbestowedz.egg-info/top_level.txt
