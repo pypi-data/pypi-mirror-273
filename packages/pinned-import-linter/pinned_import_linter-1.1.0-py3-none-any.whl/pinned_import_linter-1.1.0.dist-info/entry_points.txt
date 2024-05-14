@@ -1,0 +1,2 @@
+[console_scripts]
+lint-pinned-imports = pinnedimportlinter.cli:main
