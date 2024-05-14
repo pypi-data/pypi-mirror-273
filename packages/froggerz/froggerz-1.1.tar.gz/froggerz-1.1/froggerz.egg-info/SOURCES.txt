@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+froggerz/__init__.py
+froggerz/main.py
+froggerz.egg-info/PKG-INFO
+froggerz.egg-info/SOURCES.txt
+froggerz.egg-info/dependency_links.txt
+froggerz.egg-info/requires.txt
+froggerz.egg-info/top_level.txt
