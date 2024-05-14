@@ -1,0 +1,11 @@
+CMakeLists.txt
+MANIFEST.in
+README.md
+setup.py
+src/python-bindings/pastaq/__init__.py
+src/python-bindings/pastaq.egg-info/PKG-INFO
+src/python-bindings/pastaq.egg-info/SOURCES.txt
+src/python-bindings/pastaq.egg-info/dependency_links.txt
+src/python-bindings/pastaq.egg-info/not-zip-safe
+src/python-bindings/pastaq.egg-info/requires.txt
+src/python-bindings/pastaq.egg-info/top_level.txt
