@@ -1,0 +1,61 @@
+Metadata-Version: 2.3
+Name: hairydogm
+Version: 0.3.0
+Summary: Some utilities from AIOgram adapted to be used with Hydrogram.
+Project-URL: homepage, https://github.com/HitaloM/hairydogm
+Project-URL: tracker, https://github.com/HitaloM/hairydogm/issues
+Project-URL: community, https://t.me/HitaloProjects
+Project-URL: source, https://github.com/HitaloM/hairydogm
+Project-URL: documentation, https://hairydogm.readthedocs.io/
+Author: Hitalo
+License: Copyright (c) 2024-present Hitalo M
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this
+        software and associated documentation files (the "Software"), to deal in the Software
+        without restriction, including without limitation the rights to use, copy, modify,
+        merge, publish, distribute, sublicense, and/or sell copies of the Software,
+        and to permit persons to whom the Software is furnished to do so, subject to the
+        following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies
+        or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+        INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+        PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+        BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+        TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+        OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE
+Keywords: aiogram,asyncio,bot,hairydogm,hydrogram,telegram
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Requires-Dist: babel>=2.15.0
+Requires-Dist: hydrogram>=0.1.4
+Requires-Dist: magic-filter>=1.0.12
+Requires-Dist: pydantic>=2.7.1
+Provides-Extra: docs
+Requires-Dist: furo>=2024.5.6; extra == 'docs'
+Requires-Dist: pygments>=2.18.0; extra == 'docs'
+Requires-Dist: sphinx-autobuild>=2024.4.16; extra == 'docs'
+Requires-Dist: sphinx-copybutton>=0.5.2; extra == 'docs'
+Requires-Dist: sphinx>=7.3.7; extra == 'docs'
+Description-Content-Type: text/markdown
+
+# hairydogm
+
+Hairydogm is a library that brings some of the powerful features of [AIOgram](https://github.com/aiogram/aiogram) to [Hydrogram](https://github.com/Hydrogram/Hydrogram). It is named "hairydogm" as an anagram of "Hydrogram" and "AIOgram".
+
+Primarily designed to be used in:
+
+- [PyKorone](https://github.com/HitaloM/PyKorone)
+- [AndroidRepo - Bot](https://github.com/AndroidRepo-OSS/Bot)

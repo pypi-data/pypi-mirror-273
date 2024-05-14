@@ -1,0 +1,14 @@
+hairydogm/__init__.py,sha256=RO0CMKzB_uthRQ28uzpw9H-CWR0cArwnoly0wCOTOSE,122
+hairydogm/chat_action.py,sha256=lQqSGhiMlAkIaixYH9gz8gHDmd1uPlJYR0Mv-rejecQ,10490
+hairydogm/keyboard.py,sha256=6Vtg0_sjc_Q3vTG9GllVG-F1kSpOdYAYnnsbda3KQmg,13849
+hairydogm/mixins.py,sha256=17VVT_0H2b_ib_hyK4IMLbydanHJelTdhtBz275uw8g,3201
+hairydogm/filters/__init__.py,sha256=g4W8fxT-46kX5hhaiWMkBIt9Tovl6yDUmsMV9nhEgLI,173
+hairydogm/filters/base.py,sha256=axZAkddrQUJs5Rmld-7Oet-edq6tdMHhV6CgyrFH35o,993
+hairydogm/filters/callback_data.py,sha256=OiX0dVry6yYlFaPDFf5DwwCtqi5c0g5esSj_FhbAbDA,8519
+hairydogm/i18n/__init__.py,sha256=klb-N6s0z105elGCdtMw7nvKyHH-mR_RgBWmLS_ucys,420
+hairydogm/i18n/context.py,sha256=tI-wcsWDc18GgJqQsJfomZchmvlqfQDCBVrcvOB2Z9k,2052
+hairydogm/i18n/core.py,sha256=NgXjjmlL5Nj_hBciAkW2xz9pMLMM1YOVCLvfSuXHQjM,7448
+hairydogm-0.3.0.dist-info/METADATA,sha256=ZQSsiUUtsmd0l5iuZtcadvKbBSkNhJJ-FIzSUEpTGPo,3112
+hairydogm-0.3.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+hairydogm-0.3.0.dist-info/licenses/LICENSE,sha256=8rWYnWGFIMwJuXdh0vFDkfJor25YlVQv-Plq9zzjFbA,1060
+hairydogm-0.3.0.dist-info/RECORD,,
