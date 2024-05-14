@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "statlance"
+version = "0.1.1"
+description = "A Python library for EDA, visualization, and dashboarding"
+authors = ["Databulance <admin@databulance.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+streamlit = "*"
+pygwalker = "0.4.8.1"
+openpyxl = "*"
+numpy = "*"
+pandas = "*"
+scikit-learn = "*"
+seaborn = "*"
+matplotlib = "*"
+xgboost = "*"
+joblib = "*"
+sqlalchemy = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

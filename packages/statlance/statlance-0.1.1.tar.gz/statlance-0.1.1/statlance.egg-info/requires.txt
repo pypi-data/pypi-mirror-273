@@ -1,0 +1,16 @@
+streamlit
+pygwalker==0.4.8.1
+openpyxl
+numpy
+pandas
+scikit-learn
+seaborn
+matplotlib
+xgboost
+joblib
+sqlalchemy
+plotly
+
+[dev]
+pytest>=7.0
+twine>=4.0.2
