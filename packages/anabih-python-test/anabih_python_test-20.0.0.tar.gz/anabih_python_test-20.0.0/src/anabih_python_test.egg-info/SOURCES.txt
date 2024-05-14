@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/anabih_python_test.egg-info/PKG-INFO
+src/anabih_python_test.egg-info/SOURCES.txt
+src/anabih_python_test.egg-info/dependency_links.txt
+src/anabih_python_test.egg-info/requires.txt
+src/anabih_python_test.egg-info/top_level.txt
+src/my_package/__init__.py
+src/my_package/greetings.py
