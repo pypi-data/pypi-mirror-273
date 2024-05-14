@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+django_bootstrap_email/__init__.py
+django_bootstrap_email/apps.py
+django_bootstrap_email/templatetags/__init__.py
+django_bootstrap_email/templatetags/bootstrap_email.py
+django_bs_email.egg-info/PKG-INFO
+django_bs_email.egg-info/SOURCES.txt
+django_bs_email.egg-info/dependency_links.txt
+django_bs_email.egg-info/requires.txt
+django_bs_email.egg-info/top_level.txt
+tests/test_settings.py
+tests/tests.py

@@ -1,0 +1,32 @@
+[project]
+name = "django-bs-email"
+version = "0.2.2"
+description = "Django application with Bootstrap email template tag."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Jeremy Thompson"}]
+license = {file = "LICENSE"}
+dependencies = [
+    "bootstrap-email",
+    "Django"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/jhthompson/django-bootstrap-email"
+Changelog = "https://github.com/jhthompson/django-bootstrap-email/releases"
+Issues = "https://github.com/jhthompson/django-bootstrap-email/issues"
+CI = "https://github.com/jhthompson/django-bootstrap-email/actions"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle
+    "F",    # Pyflakes
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "I",    # isort
+]
