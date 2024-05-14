@@ -1,0 +1,2 @@
+[hatch]
+datavolo-nar = hatch_datavolo_nar.hooks

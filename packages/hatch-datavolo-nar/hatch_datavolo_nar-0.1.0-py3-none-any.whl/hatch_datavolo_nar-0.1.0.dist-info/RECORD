@@ -1,0 +1,9 @@
+hatch_datavolo_nar/__about__.py,sha256=YlZmXBVsU1tQBJb52SjaZuAEB7atarsbugpQpNNQdno,107
+hatch_datavolo_nar/__init__.py,sha256=nZ4B0a7dWqA0OIs7DSSJB2kzU6kCLHC6wupVsrg-oXI,85
+hatch_datavolo_nar/builder.py,sha256=EePQBrU_xg_aDyJ9Go-0zODxfjXo333n-irSbX3moXo,5643
+hatch_datavolo_nar/hooks.py,sha256=JXQf2qIqLaFBVi41-rxEJgZoBv9TIYg8wT1P0DxpWmE,239
+hatch_datavolo_nar-0.1.0.dist-info/METADATA,sha256=3FoCh4bmIiJ_kyZh5Ij8SwQ_OsU65eA4G6O0ExngstM,17156
+hatch_datavolo_nar-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+hatch_datavolo_nar-0.1.0.dist-info/entry_points.txt,sha256=PVMcYcmZE7MrJJMnKIMz6tzUcS4iH43FLrQkbAJW_As,48
+hatch_datavolo_nar-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hatch_datavolo_nar-0.1.0.dist-info/RECORD,,
