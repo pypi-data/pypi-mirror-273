@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gmlutil-data-extraction
+Version: 1.0.4
+Summary: General Machine Learning Utility Package for Data Extraction
+Home-page: https://github.com/Phillip1982/gmlutil_data_extraction
+Author: Phillip Kim
+Author-email: phillip.kim@ejgallo.com
+License: BSD 2-clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows XP
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiobotocore (==2.5.0)
+Requires-Dist: awscli (==1.27.76)
+Requires-Dist: boto3 (==1.26.76)
+Requires-Dist: botocore (==1.29.76)
+Requires-Dist: fuzzywuzzy (>=0.18.0)
+Requires-Dist: geopandas (>=0.10.2)
+Requires-Dist: hana-ml
+Requires-Dist: numpy (<1.23.0,>=1.19.5)
+Requires-Dist: oracledb (>=1.4.2)
+Requires-Dist: pandas (<1.4.3,>=1.3.5)
+Requires-Dist: psycopg2-binary (>=2.9.1)
+Requires-Dist: pymssql (>=2.2.1)
+Requires-Dist: python-levenshtein-wheels (>=0.13.1)
+Requires-Dist: pytrends (>=4.7.3)
+Requires-Dist: redshift-connector (>=2.0.916)
+Requires-Dist: sqlalchemy-redshift (>=0.8.6)
+
