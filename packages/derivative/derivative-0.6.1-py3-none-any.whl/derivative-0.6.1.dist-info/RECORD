@@ -1,0 +1,11 @@
+derivative/__init__.py,sha256=RovNyoxE7O-37Fa1FN1PnEzftlOmIPsHinYGoNJxY4k,212
+derivative/__version__.py,sha256=Pzd87jIdBWmv42Jn_YX_C-Db-L_bOxsTH9HOQDbJlW8,27
+derivative/dglobal.py,sha256=8qp_EZK9H6Hsjtl2yx8OjqYvkYUsv1tpRp6rvnzM7ew,11363
+derivative/differentiation.py,sha256=MwscoDmHGM27DMDnLLj8AgJrcCcx4EoMrDtXeOQf5Ww,9806
+derivative/dlocal.py,sha256=LnIMvi0Pg8sEBf9H7LN3f6L-k1dAFKtAD6tWh6H9ev0,5657
+derivative/utils.py,sha256=nXW8bHixb51zK_puEFtC1oj0hR2foN5jt7F9ViRd_vg,4858
+derivative-0.6.1.dist-info/entry_points.txt,sha256=KogZZWk9nUDn6ikRy4fdrEUHtjNxCV9h7zA5qv8g2ts,77
+derivative-0.6.1.dist-info/LICENSE.rst,sha256=77cP0BPZH_1hK4_YM9LldvWRy73EURqoNCR1JkU9gms,1229
+derivative-0.6.1.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+derivative-0.6.1.dist-info/METADATA,sha256=5gt1U9hXUTWnJSqfo9ZoSjY4Y-eLgYNUBEGRGtghtNM,6547
+derivative-0.6.1.dist-info/RECORD,,
