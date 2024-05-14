@@ -1,0 +1,3 @@
+[console_scripts]
+astel=astel.cli:main
+
