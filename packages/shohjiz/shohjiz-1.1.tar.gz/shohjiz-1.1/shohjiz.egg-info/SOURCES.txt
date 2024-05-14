@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shohjiz/__init__.py
+shohjiz/main.py
+shohjiz.egg-info/PKG-INFO
+shohjiz.egg-info/SOURCES.txt
+shohjiz.egg-info/dependency_links.txt
+shohjiz.egg-info/requires.txt
+shohjiz.egg-info/top_level.txt
