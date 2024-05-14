@@ -1,0 +1,8 @@
+fire==0.5.0
+mgzip==0.2.1
+cryptography==36.0.2
+dill
+requests
+python-dotenv
+cloudpickle
+memory-profiler==0.61.0
