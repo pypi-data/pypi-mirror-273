@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+insurgenciesz/__init__.py
+insurgenciesz/main.py
+insurgenciesz.egg-info/PKG-INFO
+insurgenciesz.egg-info/SOURCES.txt
+insurgenciesz.egg-info/dependency_links.txt
+insurgenciesz.egg-info/requires.txt
+insurgenciesz.egg-info/top_level.txt
