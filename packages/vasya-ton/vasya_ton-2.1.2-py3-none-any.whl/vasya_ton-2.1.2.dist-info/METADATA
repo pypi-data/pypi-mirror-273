@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vasya-ton
+Version: 2.1.2
+Summary: Explore TON Blockchain with python
+Home-page: 
+Author: vasyait
+Author-email: cyrbatoff@gmail.com
+License: MIT License
+License-File: LICENSE
+Requires-Dist: tonsdk (>=1.0.13)
+Requires-Dist: ton (>=0.26)
+Requires-Dist: aiohttp (>=3.8.1)
+Requires-Dist: setuptools (>=65.3.0)
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: pytonlib (>=0.0.46)
+Requires-Dist: graphql-query (>=1.0.3)
+
