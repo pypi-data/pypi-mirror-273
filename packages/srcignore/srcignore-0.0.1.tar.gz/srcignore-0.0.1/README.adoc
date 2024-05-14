@@ -1,0 +1,4 @@
+= srcignore
+
+Takes 2 arguments: the path to a file in the .gitignore format and a project root directory.
+Prints all files in that directory that match the .gitignore-like file.
