@@ -1,0 +1,10 @@
+harmon_ai/__init__.py,sha256=luhb0QNu51A84jdFDFm17PtqtVhKTvJHoD3OWWb8G58,32
+harmon_ai/cli.py,sha256=_eC40CP3XszNcXG2XYysexMVJrW98B5OpbRT2HpmPwg,2532
+harmon_ai/harmon_ai.py,sha256=0_XIFTPjNWvS67L73yg6vVMXpPbEwU0-Tc9Kb4KopNE,1459
+harmon_ai/templates/__init__.py,sha256=98e_aAZvsdPvFOT7hg_UM6i7DGHOLEdaeFiGVZLMRqA,12
+harmon_ai-1.2.0.dist-info/LICENSE,sha256=3k3DKk1o3l7FFV7caCVZiKkLH9TNvvRZsd8R8KwzG7k,1061
+harmon_ai-1.2.0.dist-info/METADATA,sha256=Km0LBXTwgRu_ho2tF6RvfL5Ydl_ypLYJX81116nehm0,6587
+harmon_ai-1.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+harmon_ai-1.2.0.dist-info/entry_points.txt,sha256=XfLoTZR2YK8lJ7k1nMhbPbtVAk6UxqHcNddY34QbGUg,49
+harmon_ai-1.2.0.dist-info/top_level.txt,sha256=WDxSiiBvWt_PInP6FHjbesoimex0Y7-xfgKsRVOuy_k,10
+harmon_ai-1.2.0.dist-info/RECORD,,
