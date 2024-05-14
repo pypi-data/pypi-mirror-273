@@ -1,0 +1,12 @@
+quickseries/__init__.py,sha256=buB8Cr2L8b7cYZsTVtYnF_bBOLFq79BfCxGe47akPnc,115
+quickseries/approximate.py,sha256=yepSj9WaMGkNcqdDgbJMHSoNtc83IhK1LGiAGvmvMYA,11704
+quickseries/benchmark.py,sha256=duUzFz5L710B8MV0BMvA1u1z1QrD9YeeOz49GI6IdVk,3990
+quickseries/expansions.py,sha256=nARZ7RusPVZ9YevdmMI0d3d4heFQoYX5FFalcstF8io,4823
+quickseries/simplefit.py,sha256=07w_uyfEtkHj19lYe1NOkvaD1FNizkXk8d9Nx6h0YkY,2106
+quickseries/sourceutils.py,sha256=BG1ar074-wtsNiYr5nryVfWFfClymmOk50nMqsovd7Y,4289
+quickseries/sputils.py,sha256=cOaZ4OI9amLf3wexhMIjmgMNPaLwQXRF_2t7yHj23fg,756
+quickseries-0.2.1.dist-info/LICENSE,sha256=q0EG1U_Kyw7_ubZTiZL51qAaMzklie_EbIIyq7Ff0zM,1503
+quickseries-0.2.1.dist-info/METADATA,sha256=OfOgJSRuldi-x58ux1mAmEd7pV7NZa3V3o1bHkF7khA,444
+quickseries-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+quickseries-0.2.1.dist-info/top_level.txt,sha256=cD5wC1LvdrL0KYP4te9ljRhXK4brBvyvlXGDsNnWoQA,12
+quickseries-0.2.1.dist-info/RECORD,,
