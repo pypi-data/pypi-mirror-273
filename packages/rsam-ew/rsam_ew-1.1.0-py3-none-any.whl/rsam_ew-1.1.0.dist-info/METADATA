@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rsam-ew
+Version: 1.1.0
+Summary: Plot RSAM from earthworm files
+Keywords: seismic,volcano,seiscomp,volcanology,seismology,magma indonesia
+Author-email: Martanto <martanto@live.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: openpyxl ; extra == "base"
+Requires-Dist: pandas ; extra == "base"
+Requires-Dist: matplotlib ; extra == "base"
+Project-URL: Homepage, https://github.com/martanto/rsam-ew
+Project-URL: Issues, https://github.com/martanto/rsam-ew/issues
+Provides-Extra: base
+
+# rsam-ew
+ Plot RSAM from earthworm RSAM files
+
