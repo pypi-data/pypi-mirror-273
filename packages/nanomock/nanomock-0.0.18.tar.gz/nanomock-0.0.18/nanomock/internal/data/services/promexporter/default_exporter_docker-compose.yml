@@ -1,0 +1,13 @@
+version: '2.4'
+
+services:
+  default_exporter:
+    build:
+      context: .
+      dockerfile: ./services/promexporter/Dockerfile    
+    container_name: ${node_name}_exporter
+    restart: unless-stopped
+    environment:
+      - NANO_PROM_DEBUG=0
+    networks:
+      - nano-local
