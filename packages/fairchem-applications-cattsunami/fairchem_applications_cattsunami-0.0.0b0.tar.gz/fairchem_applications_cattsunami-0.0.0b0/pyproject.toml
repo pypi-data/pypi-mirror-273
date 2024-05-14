@@ -1,0 +1,9 @@
+[project]
+name = "fairchem-applications-cattsunami"
+authors = [
+    {name = "Misko Dzamba", email="misko@meta.com"},
+    {name = "Muhammed Shuaibi", email="mshuaibi@meta.com"},
+    {name = "Luis Barroso-Luque", email="lbluque@meta.com"}
+]
+version = "0.0.0-beta"
+description = "Coming soon"
