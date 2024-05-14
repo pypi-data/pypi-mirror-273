@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/MotionHeatmapGenerator.egg-info/PKG-INFO
+src/MotionHeatmapGenerator.egg-info/SOURCES.txt
+src/MotionHeatmapGenerator.egg-info/dependency_links.txt
+src/MotionHeatmapGenerator.egg-info/not-zip-safe
+src/MotionHeatmapGenerator.egg-info/requires.txt
+src/MotionHeatmapGenerator.egg-info/top_level.txt
+tests/test_motion_heatmap_generator.py
