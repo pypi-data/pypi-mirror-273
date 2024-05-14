@@ -1,0 +1,9 @@
+README.md
+setup.py
+Pynapse/__init__.py
+Pynapse/main.py
+Pynapse.egg-info/PKG-INFO
+Pynapse.egg-info/SOURCES.txt
+Pynapse.egg-info/dependency_links.txt
+Pynapse.egg-info/requires.txt
+Pynapse.egg-info/top_level.txt
