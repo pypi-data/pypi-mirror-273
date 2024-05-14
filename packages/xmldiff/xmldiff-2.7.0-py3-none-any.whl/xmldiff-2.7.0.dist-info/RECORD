@@ -1,0 +1,15 @@
+xmldiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xmldiff/actions.py,sha256=cRmTF_ep7l3lZHjaJ2TAvsxfd1KYwneEtlrAeyqSvl0,844
+xmldiff/diff.py,sha256=tWICXmHWxivPHupisYn2jjkjsJG2FIl-YsXC-G4Tzws,20168
+xmldiff/diff_match_patch.py,sha256=2UHIbqZv9f8Lg_A23PL8af6xc87TGBJGMmIKbwCLd9Q,80401
+xmldiff/formatting.py,sha256=7uaVSNY9u054-8aleKIrwqYJ1BBPUwSvNhUCL1dLREE,33782
+xmldiff/main.py,sha256=dXJtqP1bDX93avpAPMd2bq7jaz8kaQ3niZP1so_T6MI,7630
+xmldiff/patch.py,sha256=6FDQAY6v5rquVN0dp4Mq34itZCgV4buKqZhMQgnDrtw,5817
+xmldiff/utils.py,sha256=YGv87KGzh7eCr3ySC-AbukFRL5i_Sf32z1t3rh-pXD8,4280
+xmldiff-2.7.0.dist-info/LICENSE.txt,sha256=by21EPa3eHfqsIkAMaOFWOXZrz9XFzkahd6NCalNHRw,1064
+xmldiff-2.7.0.dist-info/METADATA,sha256=i11vn-YL5Qy2mGOUAzkHpQke3BEK3y3jwPEHnNG0wVQ,9047
+xmldiff-2.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xmldiff-2.7.0.dist-info/entry_points.txt,sha256=pfioKqQwZmEXCe9NHkXzh262_URbzgXxzWMK6EoywwM,92
+xmldiff-2.7.0.dist-info/top_level.txt,sha256=mf4uy3N7t3e4sFx32jJ7TixJnnLGZYnEFRZoHvCx8vY,8
+xmldiff-2.7.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xmldiff-2.7.0.dist-info/RECORD,,
