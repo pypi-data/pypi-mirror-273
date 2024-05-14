@@ -1,0 +1,3 @@
+[console_scripts]
+source-coinmarketcap=source_coinmarketcap.run:run
+

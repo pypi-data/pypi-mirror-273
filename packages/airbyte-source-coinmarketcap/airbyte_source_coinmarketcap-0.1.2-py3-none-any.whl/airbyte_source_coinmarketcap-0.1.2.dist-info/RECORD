@@ -1,0 +1,9 @@
+main.py,sha256=OxJHO7VsZy8zYserx8-AXeMS7xLrJthIOCTAzbSDwNc,141
+source_coinmarketcap/__init__.py,sha256=lR2LYyj33vI01i_-s5pNfKii9Zw6jLr_pxWwYreUXF4,138
+source_coinmarketcap/manifest.yaml,sha256=fEs2haw7mLZPCJtH1xRpTwnfsiRugbiFtpr-dN8N3bg,9860
+source_coinmarketcap/run.py,sha256=J1c8zosdLusoUSww10Ie-dKf3EBuOjtGGS_swFLqQoE,239
+source_coinmarketcap/source.py,sha256=CCsv1EWFq-lzrMsx2k4eJC3lB-5rkeFYymXF6CuNn78,482
+airbyte_source_coinmarketcap-0.1.2.dist-info/METADATA,sha256=ryEycuXCawnJKyZE2Sca386vS_nyuMU3QRigdyGEag0,5362
+airbyte_source_coinmarketcap-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_coinmarketcap-0.1.2.dist-info/entry_points.txt,sha256=FqDfDKgk4WWttAR9HcKJArMsiKboVOtyS_HM7vECvcg,69
+airbyte_source_coinmarketcap-0.1.2.dist-info/RECORD,,
