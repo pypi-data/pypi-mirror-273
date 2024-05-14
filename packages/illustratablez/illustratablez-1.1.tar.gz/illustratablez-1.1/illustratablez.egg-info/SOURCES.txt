@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+illustratablez/__init__.py
+illustratablez/main.py
+illustratablez.egg-info/PKG-INFO
+illustratablez.egg-info/SOURCES.txt
+illustratablez.egg-info/dependency_links.txt
+illustratablez.egg-info/requires.txt
+illustratablez.egg-info/top_level.txt
