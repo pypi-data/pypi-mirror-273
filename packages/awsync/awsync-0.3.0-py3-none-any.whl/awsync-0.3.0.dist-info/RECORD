@@ -1,0 +1,13 @@
+awsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/__main__.py,sha256=AxVNDK-IboluBYtdf45JJMpt8xzuu_3eyNu9GbTblM4,592
+awsync/client.py,sha256=np90MNAyI3tiHMBpwoQY69IiOIcOweEiO09Po-10-qI,6934
+awsync/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/models/aws.py,sha256=KmLmo52RHy-G7ByERChZkY8JMZ19z1UUnq-sTs_L070,3062
+awsync/models/http.py,sha256=oXE2AYZ36mFidlLQp29DegUlqUPzUGxqkxYzmPGAGs4,1433
+awsync/models/strenum.py,sha256=V72OVWfqyQ2yFL5clviRXkb0fz_dCgV135AK9Q_369s,282
+awsync/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsync/request.py,sha256=UT41th7rPZQk-UU2IuD3f4nE4RNKeznyvzRR8se-eHk,9350
+awsync-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+awsync-0.3.0.dist-info/METADATA,sha256=E_oGyXMVgLae0pXu5koVDL524YnmawJevWs3UyWYPUE,3052
+awsync-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+awsync-0.3.0.dist-info/RECORD,,
