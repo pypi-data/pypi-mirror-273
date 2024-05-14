@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+uxoriousz/__init__.py
+uxoriousz/main.py
+uxoriousz.egg-info/PKG-INFO
+uxoriousz.egg-info/SOURCES.txt
+uxoriousz.egg-info/dependency_links.txt
+uxoriousz.egg-info/requires.txt
+uxoriousz.egg-info/top_level.txt
