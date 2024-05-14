@@ -1,0 +1,11 @@
+aws_cost_mutilator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_cost_mutilator/__main__.py,sha256=zbqdhxrOd5NP9te3Q0ub2ohsN45uUJgDndgums0hpoQ,9994
+aws_cost_mutilator/ec2.py,sha256=HkyaSRFEJaQx60YIxe8dgnFRbvAwCbS7lIWScrXFGX0,10171
+aws_cost_mutilator/iam.py,sha256=sCDhhDCmgOGOv9-0sMxtWtzXx193AYGFrUsR0aSoe3E,1311
+aws_cost_mutilator/s3.py,sha256=rPu_r1DNlRTiXCDO3P8t5LI3L-v1x_WlpPt5I85RtXo,1335
+aws_cost_mutilator/tests.py,sha256=H2yNjeL-XoQgux66y0YrqfgDGFYm65Vb9AbyHhPqEH4,12552
+aws_cost_mutilator-0.2.0.dist-info/LICENSE,sha256=_bWPzLML3GaS6nSpReb9eXk15R_B79rAwJ-4JAlzkv0,1048
+aws_cost_mutilator-0.2.0.dist-info/METADATA,sha256=aV3gLsS1kN91nVvDhzd238UHZKOuvGnxXC-hhwukF_w,1136
+aws_cost_mutilator-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aws_cost_mutilator-0.2.0.dist-info/entry_points.txt,sha256=LfK5IcOlTsBBBl-Ln7S50_apVM0V4CXFOxnf8RFESSo,72
+aws_cost_mutilator-0.2.0.dist-info/RECORD,,
