@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+galliardsz/__init__.py
+galliardsz/main.py
+galliardsz.egg-info/PKG-INFO
+galliardsz.egg-info/SOURCES.txt
+galliardsz.egg-info/dependency_links.txt
+galliardsz.egg-info/requires.txt
+galliardsz.egg-info/top_level.txt
