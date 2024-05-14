@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "csa_ai_foundation_model_api_clients"
+version = "0.1.6"
+authors = [
+  { name="Kurt Seifried", email="kseifried@cloudsecurityalliance.org" },
+]
+description = "Cloud Security Alliance AI Foundation Model API Clients"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "anthropic",
+  "google-generativeai",
+  "openai",
+]
+
+[project.packages.find]
+where = [
+      	"src"
+]
+
+
+[project.urls]
+Homepage = "https://github.com/CloudSecurityAlliance/csa-ai-foundation-model-api-clients"
+Issues = "https://github.com/CloudSecurityAlliance/csa-ai-foundation-model-api-clients/issues"
