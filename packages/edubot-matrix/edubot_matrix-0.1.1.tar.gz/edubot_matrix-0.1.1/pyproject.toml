@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "edubot-matrix"
+version = "0.1.1"
+description = "Matrix integration for OpenEdTech Edubot"
+authors = ["exciteabletom <tom@digitalnook.net>"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.3"
+matrix-nio = {version = "^0.20.0", extras = ["e2e"]}
+pyyaml = "^6.0"
+markdown = "^3.4.1"
+edubot = "^0.7.6"  # Prod
+#edubot = {path = "../edubot", develop = true}  # Dev
+feedparser = "^6.0.10"
+urlextract = "^1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
