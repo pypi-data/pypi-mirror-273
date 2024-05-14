@@ -1,0 +1,139 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "python-uc-tools"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "fennr", email = "fenrir1121@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "redis>=5.0.4",
+  "fastapi>=0.95.0",
+  "tenacity>=8.3.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/fennr/uc-tools#readme"
+Issues = "https://github.com/fennr/uc-tools/issues"
+Source = "https://github.com/fennr/uc-tools"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uc_tools"]
+
+[tool.hatch.version]
+path = "src/uc_tools/__about__.py"
+
+[tool.hatch.envs.git]
+dependencies = [
+  "commitizen",
+  "pre-commit",
+]
+
+[tool.hatch.envs.git.scripts]
+commit = "cz c {args}"
+pcra = "pre-commit run --all-files"
+version = "cz bump {args}"
+
+[tool.hatch.envs.hatch-test]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "pytest-asyncio",
+  "ruff",
+  "httpx"
+]
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/uc_tools tests}"
+
+[tool.coverage.run]
+source_pkgs = ["uc_tools", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/uc_tools/__about__.py",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.format]
+preview = true
+quote-style = "single"
+
+[tool.ruff.lint]
+preview = true
+extend-select = ["C901"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"*.py" = ["TID252"]
+"tests/*" = ["INP001", "T201", "ARG001"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["foo", "bar"]
+
+[tool.coverage.paths]
+uc_tools = ["src/uc_tools", "*/uc-tools/src/uc_tools"]
+tests = ["tests", "*/uc-tools/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.2.0"
+tag_format = "$version"
+version_files = [
+    "src/uc_tools/__about__.py"
+]
+
+[tool.pytest.ini_options]
+minversion = "7.2"
+asyncio_mode = "auto"
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+addopts = [
+    "-rsxX",
+    "-q",
+    "-l",
+    "--tb=short",
+    "-p no:warnings",
+    "--exitfirst",
+    "--failed-first",
+    "--strict-markers",
+    # "--cov=src/uc_tools",
+    # "--cov-report=xml",
+    # "--cov-report=term-missing",
+    "-s",
+]
+pythonpath = [
+    "src/uc_tools",
+]
+testpaths = [
+    "tests",
+]
+disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true
