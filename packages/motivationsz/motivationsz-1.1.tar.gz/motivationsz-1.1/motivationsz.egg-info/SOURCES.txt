@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+motivationsz/__init__.py
+motivationsz/main.py
+motivationsz.egg-info/PKG-INFO
+motivationsz.egg-info/SOURCES.txt
+motivationsz.egg-info/dependency_links.txt
+motivationsz.egg-info/requires.txt
+motivationsz.egg-info/top_level.txt
