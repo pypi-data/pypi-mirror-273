@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "lib-ml-REMLA10-2024"
+version = "1.0.0"
+description = "Pre-processing logic for some ML work."
+authors = ["Jan <j2000.vdm@gmail.com>", "Shayan Ramezani <s.ramezani@student.tudelft.nl>", "Remi Lejeune <R.J.Lejeune@student.tudelft.nl>", "Michael Chan <J.M.Chan@student.tudelft.nl>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "lib_ml_remla", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+tensorflow-io-gcs-filesystem = [
+    {platform = "darwin", version = "~0.36.0"},
+    {platform = "linux", version = "~0.31.0"},
+    {platform = "win32", version = "~0.31.0"},
+]
+tensorflow = {version = "~2.16.1" }
+tensorflow-intel = { version = "~2.16.1", platform = "win32" }
+keras = "3.3.3"
+scikit-learn = "1.2.2"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+bump-my-version = "^0.21.0"
+pytest = "^8.0.0"
+numpy = "^1.26"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.bumpversion]
+parse = """(?x)
+    (?P<major>0|[1-9]\\d*)\\.
+    (?P<minor>0|[1-9]\\d*)\\.
+    (?P<patch>0|[1-9]\\d*)
+    (?:
+        -?                            # dash separator for pre-release section
+        (beta.)                       # pre-release label
+        (?P<pre_n>0|[1-9]\\d*)        # pre-release version number
+    )?                                # pre-release section is optional
+"""
+serialize = [
+    "{major}.{minor}.{patch}-beta.{pre_n}",
+    "{major}.{minor}.{patch}",
+]
+regex = true
+current_version = "1.0.0"
+ignore_missing_version = false
+tag = false
+commit = true
+message = "Bump version: {current_version} → {new_version}"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = 'version = "{current_version}"'
+replace = 'version = "{new_version}"'
+
+[[tool.bumpversion.files]]
+filename = "src/lib_ml_remla/__init__.py"
+search = '__version__ = "{current_version}"'
+replace = '__version__ = "{new_version}"'
