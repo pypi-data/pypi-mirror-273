@@ -1,0 +1,6 @@
+mypy~=1.10.0
+trio~=0.25.0
+mttkinter~=0.6.1
+
+[user]
+idleuserextend~=0.0.1
