@@ -1,0 +1,3 @@
+[pytest11]
+sort_name=pytest_sort
+
