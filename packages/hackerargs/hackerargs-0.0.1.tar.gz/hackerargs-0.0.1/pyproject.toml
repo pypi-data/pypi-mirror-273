@@ -1,0 +1,19 @@
+[project]
+name = "hackerargs"
+version = "0.0.1"
+authors = [
+  { name = "Max Shen" },
+]
+description = "Simple config and argument system"
+readme = "README.md"
+dependencies = [
+  'PyYAML'
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/maxwshen/hackerargs"
+Issues = "https://github.com/maxwshen/hackerargs/issues"
