@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dynamicdl/__init__.py
+dynamicdl/_utils.py
+dynamicdl/data_items.py
+dynamicdl/dynamicdl.py
+dynamicdl/processing.py
+dynamicdl/transforms.py
+dynamicdl_headless.egg-info/PKG-INFO
+dynamicdl_headless.egg-info/SOURCES.txt
+dynamicdl_headless.egg-info/dependency_links.txt
+dynamicdl_headless.egg-info/requires.txt
+dynamicdl_headless.egg-info/top_level.txt
