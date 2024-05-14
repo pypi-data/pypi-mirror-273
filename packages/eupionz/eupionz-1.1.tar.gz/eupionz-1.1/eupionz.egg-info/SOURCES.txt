@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eupionz/__init__.py
+eupionz/main.py
+eupionz.egg-info/PKG-INFO
+eupionz.egg-info/SOURCES.txt
+eupionz.egg-info/dependency_links.txt
+eupionz.egg-info/requires.txt
+eupionz.egg-info/top_level.txt
