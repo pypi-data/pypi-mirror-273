@@ -1,0 +1,58 @@
+# cpf_and_cnpj-generator
+
+[![PyPI version](https://badge.fury.io/py/cpf_and_cnpj-generator.svg)](https://badge.fury.io/py/cpf_and_cnpj-generator)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI downloads](https://img.shields.io/pypi/dm/cpf_and_cnpj-generator.svg?style=flat-square)](https://pypistats.org/packages/cpf_and_cnpj-generator)
+
+This package provides Python functions to validate various forms fields.
+
+Documentation: https://gabriel-logan.github.io/cpf_and_cnpj-generator/documentation/py
+
+Feel free to find bugs and report them to me. Your feedback is highly appreciated. Hugs from Gabriel Logan!
+
+If you want to help me, you can buy me a coffee (:
+
+<p align="center">
+	<a href="https://www.buymeacoffee.com/gabriellogan" target="_blank">
+		<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 180px !important;" >
+	</a>
+</p>
+
+### Installation
+
+```bash
+pip install cpf_and_cnpj-generator
+```
+
+# Avaliable Functions
+
+- **cnpjValidator**: CNPJ validation.
+- **cpfValidator**: CPF validation.
+
+## Usage
+
+Here is an example of how to use the functions in this package:
+
+```python
+from multiform_validator import (
+    cnpjIsValid,
+    cpfIsValid,
+)
+```
+
+```python
+
+print("Is email", isEmail("foo@bar.com")) # True
+print("Get only email", getOnlyEmail("awdawd wadawd wda awd jhony@gmail.com awdawdawd")) # jhony@gmail.com
+print("Password strength", passwordStrengthTester("aA1!asd@qd2asd")) # Strong
+print("Is CPF valid", cpfIsValid("123.456.789-02")['isValid']) # False
+print("Is CNPJ valid", cnpjIsValid("12.345.678/0001-09")) # { 'isValid': False, 'errorMsg': 'CNPJ is not valid' }
+print("Is credit card valid", isCreditCardValid("5117 2161 1334 8362")) # True
+print("Identify flag card", identifyFlagCard("5117 2161 1334 8362")) # Mastercard
+print("Validate BR phone number", validateBRPhoneNumber("(11) 91234-5678")) # { 'isValid': True, 'errorMsg': None }
+
+```
+
+Feel free to explore the various functions and experiment with different inputs to understand their behavior. If you encounter any issues or have suggestions, don't hesitate to reach out to me. Your feedback is valuable and helps improve the package. Happy coding!
+
+# By - Gabriel Logan
