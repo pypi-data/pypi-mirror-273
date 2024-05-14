@@ -1,0 +1,11 @@
+alphabetic/__init__.py,sha256=olF_YF1vnuMyZsxywQt55MXL-p-S_aecle3Ohnk-Mfs,29
+alphabetic/core.py,sha256=ZybD8iZ-2_kdeK94nXCrswapJZybBPlM5envLs2u2JY,12194
+alphabetic/errors.py,sha256=IP6Hc0HtOizoOFb5PwuXnqCKMny2F6cppJjYk_9JzIY,238
+alphabetic/requirements.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+alphabetic/data/alphabet_data.json,sha256=gmQs3sT6ZE94mK8L-YZC2gK3oRrzQc5YpTvDfWPHDLs,59575
+alphabetic/data/logographic_data.json,sha256=Xx8PoKKuX7UJZt1lr9OIX1YQnKsJHkHTZJ3ZLtOOAwY,14975
+alphabetic/data/syllabary_data.json,sha256=jf0wk6MOJcfeqFv85d-KrQLP9OUppBu__U5yzl2sPFk,1313
+alphabetic-0.0.4.dist-info/METADATA,sha256=bpeVZzCBxz6nJDSskjB4xewZg1fHVstmVqw-vXj3s_Q,7461
+alphabetic-0.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+alphabetic-0.0.4.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+alphabetic-0.0.4.dist-info/RECORD,,
