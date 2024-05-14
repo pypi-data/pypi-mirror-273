@@ -1,0 +1,11 @@
+django_opfield/__init__.py,sha256=C52JK4KMjf9MnPZNJ_yYBD0f49c1qgMV5818fiDNO7Y,58
+django_opfield/apps.py,sha256=NXVJ0b4L7XKkpEn_mK8b7GsgwGUlL6mZndnnn_3OqWU,203
+django_opfield/conf.py,sha256=ToIw3_M2kwbcH98hxuen9x9J5qh933cl53JO35H_3EQ,1686
+django_opfield/fields.py,sha256=G2W69VoywAq46QfIlWFJH1id61WowqM53lLl6oGKyiU,2353
+django_opfield/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_opfield/validators.py,sha256=tRfM22w0_W8-GNlxLINQ0GKhFonXiJA6ipujGUz5sno,2187
+django_opfield-0.1.0.dist-info/METADATA,sha256=fUyuuR-HXfQfflquh57LfUSxW0UIAaCwBfOkFZgo_jk,7374
+django_opfield-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+django_opfield-0.1.0.dist-info/licenses/AUTHORS.md,sha256=pTEWsGysn8B0Zp5Z0POWlB11KNwtSmPhDjadNVq--7E,47
+django_opfield-0.1.0.dist-info/licenses/LICENSE,sha256=FdZMz6vbhB-ED2GVlYRwrdBMVlSMXYNhWa2q7KK_5IY,1068
+django_opfield-0.1.0.dist-info/RECORD,,
