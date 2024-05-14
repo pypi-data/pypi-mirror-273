@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+arsenylz/__init__.py
+arsenylz/main.py
+arsenylz.egg-info/PKG-INFO
+arsenylz.egg-info/SOURCES.txt
+arsenylz.egg-info/dependency_links.txt
+arsenylz.egg-info/requires.txt
+arsenylz.egg-info/top_level.txt
