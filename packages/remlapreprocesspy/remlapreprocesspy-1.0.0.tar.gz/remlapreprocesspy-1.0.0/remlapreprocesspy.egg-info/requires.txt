@@ -1,0 +1,12 @@
+click==8.1.7
+Sphinx==5.0.2
+flake8==6.0.0
+python-dotenv>=0.5.1
+tensorflow==2.16.1
+PyYaml==6.0.1
+pylint==2.13.0
+seaborn
+Flask==3.0.3
+flasgger==0.9.7.1
+tensorflow==2.16.1
+scikit-learn==1.4.2
