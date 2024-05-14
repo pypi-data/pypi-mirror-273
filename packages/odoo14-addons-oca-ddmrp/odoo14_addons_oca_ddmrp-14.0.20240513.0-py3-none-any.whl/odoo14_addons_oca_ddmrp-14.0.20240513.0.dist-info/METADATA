@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-ddmrp
+Version: 14.0.20240513.0
+Summary: Meta package for oca-ddmrp Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-ddmrp
+Requires-Dist: odoo14-addon-ddmrp-adjustment
+Requires-Dist: odoo14-addon-ddmrp-chatter
+Requires-Dist: odoo14-addon-ddmrp-coverage-days
+Requires-Dist: odoo14-addon-ddmrp-cron-actions-as-job
+Requires-Dist: odoo14-addon-ddmrp-exclude-moves-adu-calc
+Requires-Dist: odoo14-addon-ddmrp-history
+Requires-Dist: odoo14-addon-ddmrp-packaging
+Requires-Dist: odoo14-addon-ddmrp-product-replace
+Requires-Dist: odoo14-addon-ddmrp-purchase-hide-onhand-status
+Requires-Dist: odoo14-addon-ddmrp-report-part-flow-index
+Requires-Dist: odoo14-addon-ddmrp-warning
+Requires-Dist: odoo14-addon-stock-buffer-capacity-limit
+Requires-Dist: odoo14-addon-stock-buffer-route
+Requires-Dist: odoo14-addon-stock-buffer-sales-analysis
+
+UNKNOWN
+
