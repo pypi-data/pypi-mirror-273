@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+magiricz/__init__.py
+magiricz/main.py
+magiricz.egg-info/PKG-INFO
+magiricz.egg-info/SOURCES.txt
+magiricz.egg-info/dependency_links.txt
+magiricz.egg-info/requires.txt
+magiricz.egg-info/top_level.txt
