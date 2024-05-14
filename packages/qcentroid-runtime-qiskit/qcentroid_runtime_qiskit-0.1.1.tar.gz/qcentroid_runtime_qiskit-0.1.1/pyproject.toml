@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "qcentroid-runtime-qiskit"
+version = "0.1.1"
+description = "Library to interact with qcentroid qiskit runtime"
+authors = [
+  "QCentroid <info@qcentroid.xyz>" ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    ]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "qcentroid_runtime_qiskit"}]
+homepage = "https://www.qcentroid.xyz"
+repository = "https://github.com/QCentroid/qcentroid-runtime-qiskit"
+documentation = "https://github.com/QCentroid/qcentroid-runtime-qiskit"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+qiskit-ibm-runtime = "~=0.23"
+pytest ={version="~7.4", optional = true}
+
+[tool.poetry.group.test]  # Group definition
+
+[tool.poetry.group.test.dependencies]
+pytest = "~=7.4"
+coverage = "^7.4.3"
+
+[tool.poetry.extras]
+test = ['pytest','coverage']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
