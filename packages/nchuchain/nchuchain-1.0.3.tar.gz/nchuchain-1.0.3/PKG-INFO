@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: nchuchain
+Version: 1.0.3
+Summary: A set of data tools in Python
+Home-page: 
+Download-URL: https://pypi.org/project/nchuchain/
+Author: WenChuan Hsu
+Author-email: wenchuan19991111@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate>=0.21.0
+Requires-Dist: bitsandbytes>=0.41.1
+Requires-Dist: faiss-cpu==1.7.4
+Requires-Dist: pyserini==0.22.1
+Requires-Dist: scipy>=1.11.4
+Requires-Dist: transformers>=4.36.0
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: torchvision
+Provides-Extra: dev
+Requires-Dist: pyserini==0.22.1; extra == "dev"
+Requires-Dist: faiss-cpu==1.7.4; extra == "dev"
+
+# nchuchain
