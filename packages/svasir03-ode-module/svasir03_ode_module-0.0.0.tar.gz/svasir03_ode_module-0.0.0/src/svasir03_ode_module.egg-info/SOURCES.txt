@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ode.py
+src/svasir03_ode_module.egg-info/PKG-INFO
+src/svasir03_ode_module.egg-info/SOURCES.txt
+src/svasir03_ode_module.egg-info/dependency_links.txt
+src/svasir03_ode_module.egg-info/requires.txt
+src/svasir03_ode_module.egg-info/top_level.txt
+tests/test.py
