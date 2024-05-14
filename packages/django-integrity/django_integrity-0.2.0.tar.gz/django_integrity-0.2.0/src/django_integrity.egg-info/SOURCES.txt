@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_integrity/__init__.py
+src/django_integrity/constraints.py
+src/django_integrity/conversion.py
+src/django_integrity/py.typed
+src/django_integrity.egg-info/PKG-INFO
+src/django_integrity.egg-info/SOURCES.txt
+src/django_integrity.egg-info/dependency_links.txt
+src/django_integrity.egg-info/requires.txt
+src/django_integrity.egg-info/top_level.txt

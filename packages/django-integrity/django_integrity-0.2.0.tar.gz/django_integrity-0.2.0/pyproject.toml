@@ -1,0 +1,165 @@
+# Packaging
+# ---------
+
+[build-system]
+requires = ["setuptools>=67.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# This is the default but we include it to be explicit.
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Project
+# -------
+
+[project]
+name = "django_integrity"
+version = "0.2.0"
+description = "Tools for refining Django's IntegrityError, and working with deferred database constraints."
+license.file = "LICENSE"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # We cannot decide for users if they want to use psycopg2, psycopg2-binary, or
+    # psycopg (i.e. psycopg3) with or without the [binary] extra. It should be part of
+    # their own project dependencies anyway.
+    # See https://www.psycopg.org/docs/install.html#psycopg-vs-psycopg-binary
+    # See https://www.psycopg.org/psycopg3/docs/basic/install.html#binary-installation
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3 :: Only",
+  "Typing :: Typed",
+]
+
+
+[project.urls]
+# See https://daniel.feldroy.com/posts/2023-08-pypi-project-urls-cheatsheet for
+# additional URLs that can be included here.
+repository = "https://github.com/kraken-tech/django-integrity"
+changelog = "https://github.com/kraken-tech/django-integrity/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+# None of these extras are recommended for normal installation.
+# We use combinations of these groups in development and testing environments.
+pytest-in-tox = [
+    # We deliberately exclude Django and Psycopg from this list because
+    # this groups is used for running the pytest tests with tox,
+    # and those packages are a part of tox's test matrix.
+    "dj-database-url>=2.1.0",
+    "django-stubs>=5.0.0",
+    "environs>=11.0.0",
+    "pytest-django>=4.8.0",
+    "pytest>=8.2.0",
+]
+release = [
+    "packaging>=24.0",
+    "rich>=13.7.1",
+    "tomli >= 1.1.0 ; python_version < '3.11'",
+    "typer>=0.12.3",
+]
+tox = [
+    "tox-uv>=1.8.2",
+    "tox>=4.15.0",
+]
+dev = [
+    # Testing
+    "dj-database-url>=2.1.0",
+    "django>=4.2.0",
+    "django-stubs>=5.0.0",
+    "environs>=11.0.0",
+    "psycopg2-binary>=2.9.9",
+    "psycopg[binary]>=3.1.18",
+    "pytest-django>=4.8.0",
+    "pytest>=8.2.0",
+    "tox>=4.15.0",
+    "types-psycopg2>=2.9.21.20240417",
+
+    # Linting
+    "mypy>=1.10.0",
+    "mypy-json-report>=1.2.0",
+    "pre-commit>=3.7.0",
+
+    # CLI utils
+    "packaging>=24.0",
+    "rich>=13.7.1",
+    "tomli >= 1.1.0 ; python_version < '3.11'",
+    "typer>=0.12.3",
+]
+
+# Ruff
+# ----
+
+[tool.ruff]
+lint.select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+]
+lint.ignore = [
+    "E501",  # line too long - the formatter takes care of this for us
+]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "first-party",
+    "project",
+    "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+"project" = [
+    "django_integrity",
+    "tests",
+]
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+exclude = [
+    "build",
+    "dist",
+    "env",
+    "venv",
+]
+
+plugins = [
+    "mypy_django_plugin.main",
+]
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+
+[tool.django-stubs]
+django_settings_module = "tests.example_app.settings"
+
+# Pytest
+# ------
+
+[tool.pytest.ini_options]
+# Ensure error warnings are converted into test errors.
+filterwarnings = "error"
+# Ensure that tests fail if an xfail test unexpectedly passes.
+xfail_strict = true
+
+DJANGO_SETTINGS_MODULE = "tests.example_app.settings"
