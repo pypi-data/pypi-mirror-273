@@ -1,0 +1,2 @@
+[console_scripts]
+PyTerrGen = PyTerrGen.main:start_ui
