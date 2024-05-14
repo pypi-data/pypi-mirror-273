@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/markdown_include/__init__.py
+src/markdown_include/__main__.py
+src/markdown_include/markdown_include.py
+src/md_incl.egg-info/PKG-INFO
+src/md_incl.egg-info/SOURCES.txt
+src/md_incl.egg-info/dependency_links.txt
+src/md_incl.egg-info/entry_points.txt
+src/md_incl.egg-info/top_level.txt
+tests/test_markdown_include.py
