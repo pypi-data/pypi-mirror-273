@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: adb-tool-py
+Version: 0.0.2
+Summary: adb_tool_py is a tool for Android Debug Bridge (adb).
+Home-page: https://github.com/ShotaIuchi/adb-tool-py
+Author: Shota Iuchi
+Author-email: shotaiuchi.develop@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# adb_tool_py
