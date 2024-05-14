@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+telecameraz/__init__.py
+telecameraz/main.py
+telecameraz.egg-info/PKG-INFO
+telecameraz.egg-info/SOURCES.txt
+telecameraz.egg-info/dependency_links.txt
+telecameraz.egg-info/requires.txt
+telecameraz.egg-info/top_level.txt
