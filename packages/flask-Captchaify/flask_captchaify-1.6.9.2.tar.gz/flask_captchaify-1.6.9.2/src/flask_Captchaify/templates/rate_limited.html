@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="{{ language }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Access blocked</title>
+        <style>{% if theme == "light" and not is_default_theme %}
+            :root {
+                --background: #f2f2f2;
+                --text: #181818;
+                --main-ancher-color: #0000ad;
+                --ancher-color: #222;
+            }
+
+            #choose-light {
+                display: none;
+            }
+            {% elif theme == "dark" and not is_default_theme %}
+            :root {
+                --background: #121212;
+                --text: #f2f2f2;
+                --main-ancher-color: #00BFFF;
+                --ancher-color: #999;
+            }
+
+            #choose-dark {
+                display: none;
+            }
+            {% else %}
+            :root {
+                --background: #f2f2f2;
+                --text: #181818;
+                --main-ancher-color: #0000ad;
+                --ancher-color: #222;
+            }
+            
+            #choose-light {
+                display: none;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --background: #121212;
+                    --text: #f2f2f2;
+                    --main-ancher-color: #00BFFF;
+                    --ancher-color: #999;
+                }
+
+                #choose-dark {
+                    display: none;
+                }
+
+                #choose-light {
+                    display: unset;
+                }
+            }
+            {% endif %}
+
+            body {
+                font-family: Consolas, Arial, sans-serif;
+                background-color: var(--background);
+                color: var(--text);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 98vh;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    
+            .emoji {
+                height: 100px;
+                display: flex;
+                margin: auto;
+            }
+    
+            .error-text {
+                font-size: 24px;
+                margin-top: 20px;
+                text-align: center;
+            }
+    
+            .main-link {
+                font-size: 18px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .main-link a {
+                color: var(--main-ancher-color);
+            }
+    
+            p {
+                text-align: center;
+                max-width: 800px;
+            }
+
+            footer {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            footer nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            footer nav ul li {
+                color: var(--ancher-color);
+                display: inline;
+                margin-right: 20px;
+                font-size: 15px;
+                text-align: center;
+                font-weight: lighter;
+            }
+
+            footer nav ul li a {
+                color: var(--ancher-color);
+                text-decoration: none;
+            }
+
+            footer nav ul li a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <img class="emoji" src="{{ emoji }}">
+            <h1 class="error-text">Drink a cup of tea</h1>
+            <p>It appears that you are sending an excessive number of requests per minute to this website. Please reduce the frequency of your requests.</p>
+            <div class="main-link">
+                <a href="{% if return_url|default %}{{ return_url }}{% else %} {% endif %}">Refresh webpage</a>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="{% if route_id|default %}/change_language-{{ route_id }}?return_path={{ return_path }}{% else %}{{ current_url_without_language }}{% if '?' in current_url_without_language %}&{% else %}?{% endif %}ccl=1{% endif %}">🌐Change Language</a></li>
+                    <li id="choose-light"><a href="{{ current_url_without_theme }}{% if '?' in current_url_without_theme %}&{% else %}?{% endif %}theme=light">Light Mode</a></li>
+                    <li id="choose-dark"><a href="{{ current_url_without_theme }}{% if '?' in current_url_without_theme %}&{% else %}?{% endif %}theme=dark">Dark Mode</a></li>
+                    <li>DDoS protection from <a href="https://github.com/tn3w/flask_Captchaify" target="_blank">Captchaify</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
