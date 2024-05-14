@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hombre_tools
+Version: 0.1.21
+Summary: tools for daily usage
+Home-page: https://github.com/hombre66/hombre_tools
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyOpenSSL
+Requires-Dist: pyperclip
+Requires-Dist: python-dateutil
+Requires-Dist: python-settings
+Requires-Dist: pywin32
+Requires-Dist: pywin32-ctypes
+Requires-Dist: pywinpty
+Requires-Dist: requests
+Requires-Dist: seaborn
+Requires-Dist: SQLAlchemy
+Requires-Dist: sqlparse
+Requires-Dist: tables
+Requires-Dist: urllib3
+Requires-Dist: zipp
+Requires-Dist: lxml
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
