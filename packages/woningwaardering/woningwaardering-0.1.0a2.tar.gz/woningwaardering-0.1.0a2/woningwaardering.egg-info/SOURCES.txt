@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_utils.py
+woningwaardering/__init__.py
+woningwaardering.egg-info/PKG-INFO
+woningwaardering.egg-info/SOURCES.txt
+woningwaardering.egg-info/dependency_links.txt
+woningwaardering.egg-info/requires.txt
+woningwaardering.egg-info/top_level.txt
