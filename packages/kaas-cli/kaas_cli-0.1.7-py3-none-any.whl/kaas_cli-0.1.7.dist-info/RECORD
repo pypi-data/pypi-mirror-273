@@ -1,0 +1,14 @@
+kaas_cli/__init__.py,sha256=PaHbljl4H12NW5YEpCn7VGAYndZ6vmuS1uaiGxG4XxM,48
+kaas_cli/__main__.py,sha256=b8mXSZpTcBCL1NiHljycGhrIdikU9G7oo83_0k0f6xE,1253
+kaas_cli/cli.py,sha256=uhN5LblKUbr9ERvyj-NNtEN9DJlSalpLsUcrPfn8tos,7916
+kaas_cli/client.py,sha256=5ZpwDWwLCk0axWvAEwL7QpMRkSWw488jbk_Y4peg5JY,23212
+kaas_cli/config.py,sha256=pltPmK9vW4vYaerBc6AcnN8LrdrnUqWOw5LFJbwb7mo,1139
+kaas_cli/constants.py,sha256=GE7AKRtFp_BPMQoyTKY_ELRNgYPqn08Nbd479hRcFE0,945
+kaas_cli/hello.py,sha256=lqZ1UZup29v3DgairPc4lbBVnkRD3b9TBEaXr7-UKN4,58
+kaas_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaas_cli/types.py,sha256=f-oPGeXxRH6FyR3a8aEWco1Y17_Q0muhxFkC-WxdZj8,884
+kaas_cli-0.1.7.dist-info/LICENSE,sha256=MiI8MwDjc0B3FgeywXobRc_RGm2wiY4i23BgUvDI96E,1073
+kaas_cli-0.1.7.dist-info/METADATA,sha256=5NQllgCNagd_3yK3c861eGs1unj5HOU6XKxbvJVtS_0,2571
+kaas_cli-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kaas_cli-0.1.7.dist-info/entry_points.txt,sha256=QlUHkrN2TWihj3S2okiphjxkaDCac_8HxWVblDtkjSI,51
+kaas_cli-0.1.7.dist-info/RECORD,,
