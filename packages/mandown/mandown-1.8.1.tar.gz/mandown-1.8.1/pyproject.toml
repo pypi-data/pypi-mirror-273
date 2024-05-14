@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "mandown"
+version = "1.8.1"
+description = "Comic/manga/webtoon downloader and CBZ/EPUB/MOBI/PDF converter"
+authors = ["potatoeggy <eggyrules@gmail.com>"]
+license = "AGPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/potatoeggy/mandown"
+documentation = "https://github.com/potatoeggy/mandown"
+keywords = ["manga", "comic", "downloader", "download", "webtoons", "webtoon"]
+
+[tool.poetry.scripts]
+mandown = "mandown.cli:main"
+mandown-gui = "mandown.ui.ui:main"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+typer = "^0.7.0"
+feedparser = "^6.0.11"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+lxml = "^5.1.0"
+pillow = "^10.2.0"
+python-slugify = "^8.0.1"
+PySide6 = { version = "^6.6.1", optional = true }
+natsort = "^8.4.0"
+filetype = "^1.2.0"
+comicon = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+types-requests = "^2.31.0.20240106"
+types-lxml = "^2023.10.21"
+pytest-xdist = "^3.5.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.extras]
+gui = ["PySide6"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+mccabe.max-complexity = 18
+select = ["B", "C", "E", "F", "I", "W"]
+ignore = ["B905"]
+exclude = ["mandown/ui/*", "build/*"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"mandown/cli.py" = ["B008"]
+"tests/*" = ["E501"]
+
+[tool.coverage.run]
+concurrency = ["multiprocessing"]
+parallel = true
+sigterm = true
+
+[tool.pylint.MASTER]
+extension-pkg-allow-list = ["lxml", "PySide6"]
