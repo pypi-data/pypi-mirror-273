@@ -1,0 +1,10 @@
+pgcopyinsert/__init__.py,sha256=VscsCszH7HSitN9YLlfwKfVWmDdAuYwBiyw_-xSO_7M,260
+pgcopyinsert/drivers.py,sha256=Floo3IUG5a2F1nWGWiaHK1sZN0QFDkpgd0gxFHZcrWE,219
+pgcopyinsert/insert.py,sha256=nB_dZYxl2eGurRViNp5Aza_wCBeBzdP64DYjWJfsNO4,857
+pgcopyinsert/names.py,sha256=3Eh7l1jMoYJsYX8LPBWReQvRd4rfCDMfTKh4eL33U4Q,520
+pgcopyinsert/temp.py,sha256=qfNMwcz77pGyDRTtBuymwMiUZbBTxILK8HuQDKBsy5I,645
+pgcopyinsert-0.1.1.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+pgcopyinsert-0.1.1.dist-info/METADATA,sha256=nB4v5TjsVMTZ6awVYV4CEdAxHRWp91QrzE4qNiPzbrs,1039
+pgcopyinsert-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pgcopyinsert-0.1.1.dist-info/top_level.txt,sha256=eSg21HYJc0kfv3tABQrMpn-TV0_IQODrC536iO_AkN0,13
+pgcopyinsert-0.1.1.dist-info/RECORD,,
