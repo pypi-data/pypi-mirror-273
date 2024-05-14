@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spiregrassz/__init__.py
+spiregrassz/main.py
+spiregrassz.egg-info/PKG-INFO
+spiregrassz.egg-info/SOURCES.txt
+spiregrassz.egg-info/dependency_links.txt
+spiregrassz.egg-info/requires.txt
+spiregrassz.egg-info/top_level.txt
