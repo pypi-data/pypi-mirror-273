@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+substantivesz/__init__.py
+substantivesz/main.py
+substantivesz.egg-info/PKG-INFO
+substantivesz.egg-info/SOURCES.txt
+substantivesz.egg-info/dependency_links.txt
+substantivesz.egg-info/requires.txt
+substantivesz.egg-info/top_level.txt
