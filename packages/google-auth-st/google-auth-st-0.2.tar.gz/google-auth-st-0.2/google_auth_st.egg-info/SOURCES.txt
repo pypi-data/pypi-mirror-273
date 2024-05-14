@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+google_auth_st.egg-info/PKG-INFO
+google_auth_st.egg-info/SOURCES.txt
+google_auth_st.egg-info/dependency_links.txt
+google_auth_st.egg-info/requires.txt
+google_auth_st.egg-info/top_level.txt
