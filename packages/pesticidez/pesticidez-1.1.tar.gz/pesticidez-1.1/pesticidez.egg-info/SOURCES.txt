@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pesticidez/__init__.py
+pesticidez/main.py
+pesticidez.egg-info/PKG-INFO
+pesticidez.egg-info/SOURCES.txt
+pesticidez.egg-info/dependency_links.txt
+pesticidez.egg-info/requires.txt
+pesticidez.egg-info/top_level.txt
