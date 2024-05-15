@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "htt"
+version = "0.13"
+description = "Utility integrating config, logging, testing."
+authors = ["appleprince <appleprince@example.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+protobuf = "^4"
+inuits-python-logging-loki = "^1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
