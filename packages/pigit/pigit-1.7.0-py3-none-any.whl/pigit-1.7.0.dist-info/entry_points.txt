@@ -1,0 +1,3 @@
+[console_scripts]
+g = pigit.console_scripts:g
+pigit = pigit.console_scripts:main
