@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: resik
+Version: 0.0.6
+Summary: Description about the project.
+Author: Master
+Author-email: name@email.com
+License: License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Resik 0.0.5
+
+This is a interface for show menssages 
+```py
+python -m resik
+```
+
+# install the lasted version available 
+
+command
+```py
+pip install resik==0.x.x
+```
+
+example 
+
+```py
+pip install resik==0.0.1
+```
