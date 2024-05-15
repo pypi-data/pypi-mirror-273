@@ -1,0 +1,4 @@
+scoring-matrices~=0.2.0
+
+[:os_name != "nt"]
+archspec~=0.2
