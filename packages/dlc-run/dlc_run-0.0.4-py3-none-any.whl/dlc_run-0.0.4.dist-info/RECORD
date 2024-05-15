@@ -1,0 +1,10 @@
+dlc_run/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dlc_run/dlc_run.py,sha256=2V0X7IOyVWy7YoOKkYwAA4DsAAk2sC1Q9EGAq3pBK-Q,7513
+dlc_run/version.py,sha256=wuyP8yKfaJvqIfhTibjXgHEamccH_spQXq6qz2Dx5uk,1208
+dlc_run-0.0.4.data/data/README.md,sha256=pdNM_207ekV7eT2_soLhw0p8ic8otNrPAgJW7N4vhzk,9
+dlc_run-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dlc_run-0.0.4.dist-info/METADATA,sha256=9Uc8FG5hi3RtPQKGPREzTL6D6qQzvYKTGBy4MrtGk1c,222
+dlc_run-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dlc_run-0.0.4.dist-info/entry_points.txt,sha256=tWNKKH5H1AfEPVvz6hfWNk6Ho9ezilknb-k0zYMYPhM,49
+dlc_run-0.0.4.dist-info/top_level.txt,sha256=-NW2KWyGgca7_KT3xkuMbMQqBhLYKhVwsEI1aPalyo0,8
+dlc_run-0.0.4.dist-info/RECORD,,
