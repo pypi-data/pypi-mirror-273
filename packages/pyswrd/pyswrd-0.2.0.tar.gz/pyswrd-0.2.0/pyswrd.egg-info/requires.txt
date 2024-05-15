@@ -1,0 +1,2 @@
+pyopal~=0.6.0
+scoring-matrices~=0.2.0
