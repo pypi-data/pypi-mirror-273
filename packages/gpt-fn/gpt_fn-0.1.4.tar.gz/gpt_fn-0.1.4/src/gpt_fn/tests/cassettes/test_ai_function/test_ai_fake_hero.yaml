@@ -1,0 +1,376 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are now the following
+      python function:\n```\n# generate fake hero.\ndef fake_hero(n: int):\n```\nOnly
+      respond with your `return` value.\n- The output should be formatted as a JSON
+      instance that conforms to the JSON schema below.\n\n- As an example, for the
+      schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a
+      list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}},
+      \"required\": [\"foo\"]}}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted
+      instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}}
+      is not well-formatted.\n\n- Here is the output schema:\n```\n{\"properties\":
+      {\"ret\": {\"title\": \"Ret\", \"type\": \"array\", \"items\": {\"$ref\": \"#/definitions/Hero\"}}},
+      \"required\": [\"ret\"], \"definitions\": {\"Hero\": {\"title\": \"Hero\", \"description\":
+      \"Hero model.\", \"type\": \"object\", \"properties\": {\"name\": {\"title\":
+      \"Name\", \"type\": \"string\"}, \"age\": {\"title\": \"Age\", \"type\": \"integer\"}},
+      \"required\": [\"name\", \"age\"]}}}\n```"}, {"role": "user", "content": "fake_hero(5)"}],
+      "model": "gpt35", "frequency_penalty": 0.0, "presence_penalty": 0.0, "stop":
+      null, "temperature": 0.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '1286'
+      content-type:
+      - application/json
+      host:
+      - gstudio.openai.azure.com
+      user-agent:
+      - AzureOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://gstudio.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-07-01-preview
+  response:
+    content: '{"choices":[{"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}},"finish_reason":"stop","index":0,"message":{"content":"{\"ret\":
+      [{\"name\": \"Hero 1\", \"age\": 25}, {\"name\": \"Hero 2\", \"age\": 30}, {\"name\":
+      \"Hero 3\", \"age\": 35}, {\"name\": \"Hero 4\", \"age\": 40}, {\"name\": \"Hero
+      5\", \"age\": 45}]}","role":"assistant"}}],"created":1715249236,"id":"chatcmpl-9MuyCeT79BYaOt9h13lbBaX5F4dA0","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":null,"usage":{"completion_tokens":74,"prompt_tokens":279,"total_tokens":353}}
+
+      '
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Length:
+      - '981'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 09 May 2024 10:07:17 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      access-control-allow-origin:
+      - '*'
+      apim-request-id:
+      - 3dfd3289-df2f-4d5f-9732-92bba3065800
+      azureml-model-session:
+      - turbo-0613-16a13266
+      x-accel-buffering:
+      - 'no'
+      x-content-type-options:
+      - nosniff
+      x-ms-client-request-id:
+      - 3dfd3289-df2f-4d5f-9732-92bba3065800
+      x-ms-rai-invoked:
+      - 'true'
+      x-ms-region:
+      - East US
+      x-ratelimit-remaining-requests:
+      - '238'
+      x-ratelimit-remaining-tokens:
+      - '239968'
+      x-request-id:
+      - 556593c2-5631-424b-a4f7-2fd5a3cfeb2c
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are now the following
+      python function:\n```\n# generate fake hero.\ndef fake_hero(n: int):\n```\nOnly
+      respond with your `return` value.\n- The output should be formatted as a JSON
+      instance that conforms to the JSON schema below.\n\n- As an example, for the
+      schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a
+      list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}},
+      \"required\": [\"foo\"]}}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted
+      instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}}
+      is not well-formatted.\n\n- Here is the output schema:\n```\n{\"properties\":
+      {\"ret\": {\"title\": \"Ret\", \"type\": \"array\", \"items\": {\"$ref\": \"#/definitions/Hero\"}}},
+      \"required\": [\"ret\"], \"definitions\": {\"Hero\": {\"title\": \"Hero\", \"description\":
+      \"Hero model.\", \"type\": \"object\", \"properties\": {\"name\": {\"title\":
+      \"Name\", \"type\": \"string\"}, \"age\": {\"title\": \"Age\", \"type\": \"integer\"}},
+      \"required\": [\"name\", \"age\"]}}}\n```"}, {"role": "user", "content": "fake_hero(5)"}],
+      "model": "gpt35", "frequency_penalty": 0.0, "presence_penalty": 0.0, "stop":
+      null, "temperature": 0.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '1286'
+      content-type:
+      - application/json
+      host:
+      - gstudio.openai.azure.com
+      user-agent:
+      - AzureOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://gstudio.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-12-01-preview
+  response:
+    content: '{"choices":[{"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}},"finish_reason":"stop","index":0,"message":{"content":"{\"ret\":
+      [{\"name\": \"Hero 1\", \"age\": 25}, {\"name\": \"Hero 2\", \"age\": 30}, {\"name\":
+      \"Hero 3\", \"age\": 35}, {\"name\": \"Hero 4\", \"age\": 40}, {\"name\": \"Hero
+      5\", \"age\": 45}]}","role":"assistant"}}],"created":1715249285,"id":"chatcmpl-9Muyz3RbRO78G2fzWHdCZH8pexfNh","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":null,"usage":{"completion_tokens":74,"prompt_tokens":279,"total_tokens":353}}
+
+      '
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Length:
+      - '981'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 09 May 2024 10:08:06 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      access-control-allow-origin:
+      - '*'
+      apim-request-id:
+      - 71a9ceac-aa01-45eb-b9d6-4e13a92296a3
+      azureml-model-session:
+      - turbo-0613-27f31441
+      x-accel-buffering:
+      - 'no'
+      x-content-type-options:
+      - nosniff
+      x-ms-client-request-id:
+      - 71a9ceac-aa01-45eb-b9d6-4e13a92296a3
+      x-ms-rai-invoked:
+      - 'true'
+      x-ms-region:
+      - East US
+      x-ratelimit-remaining-requests:
+      - '238'
+      x-ratelimit-remaining-tokens:
+      - '239920'
+      x-request-id:
+      - 5fac9305-b66a-4aba-bd82-f677b4269ae7
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are now the following
+      python function:\n```\n# generate fake hero.\ndef fake_hero(n: int):\n```\nOnly
+      respond with your `return` value.\n- The output should be formatted as a JSON
+      instance that conforms to the JSON schema below.\n\n- As an example, for the
+      schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a
+      list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}},
+      \"required\": [\"foo\"]}}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted
+      instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}}
+      is not well-formatted.\n\n- Here is the output schema:\n```\n{\"properties\":
+      {\"ret\": {\"title\": \"Ret\", \"type\": \"array\", \"items\": {\"$ref\": \"#/definitions/Hero\"}}},
+      \"required\": [\"ret\"], \"definitions\": {\"Hero\": {\"title\": \"Hero\", \"description\":
+      \"Hero model.\", \"type\": \"object\", \"properties\": {\"name\": {\"title\":
+      \"Name\", \"type\": \"string\"}, \"age\": {\"title\": \"Age\", \"type\": \"integer\"}},
+      \"required\": [\"name\", \"age\"]}}}\n```"}, {"role": "user", "content": "fake_hero(5)"}],
+      "model": "gpt35", "frequency_penalty": 0.0, "presence_penalty": 0.0, "stop":
+      null, "temperature": 0.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '1286'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    content: "{\n    \"error\": {\n        \"message\": \"The model `gpt35` does not
+      exist or you do not have access to it.\",\n        \"type\": \"invalid_request_error\",\n
+      \       \"param\": null,\n        \"code\": \"model_not_found\"\n    }\n}\n"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8810e497ecde4a1c-TPE
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 09 May 2024 10:09:15 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=4amjYyQR4m38Yq46EVvM6HIkFaLRnR9rRSh_nruWv3E-1715249355-1.0.1.1-x1HM8mWfyR6_We.KMtVOX2sBKP5wiXI903ZwQen3CVKuzn88WXgjwQ8fH2Ci53G_Tj6HzzRcwteulco3dpgXzA;
+        path=/; expires=Thu, 09-May-24 10:39:15 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=VLrrYmiDLbZI0Phi6n66mWeWga.Fu5KHrUCSuDmElR4-1715249355718-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      vary:
+      - Origin
+      x-request-id:
+      - req_50b1e35461e4d0facadaae863f0d074d
+    http_version: HTTP/1.1
+    status_code: 404
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are now the following
+      python function:\n```\n# generate fake hero.\ndef fake_hero(n: int):\n```\nOnly
+      respond with your `return` value.\n- The output should be formatted as a JSON
+      instance that conforms to the JSON schema below.\n\n- As an example, for the
+      schema {\"properties\": {\"foo\": {\"title\": \"Foo\", \"description\": \"a
+      list of strings\", \"type\": \"array\", \"items\": {\"type\": \"string\"}}},
+      \"required\": [\"foo\"]}}\nthe object {\"foo\": [\"bar\", \"baz\"]} is a well-formatted
+      instance of the schema. The object {\"properties\": {\"foo\": [\"bar\", \"baz\"]}}
+      is not well-formatted.\n\n- Here is the output schema:\n```\n{\"properties\":
+      {\"ret\": {\"title\": \"Ret\", \"type\": \"array\", \"items\": {\"$ref\": \"#/definitions/Hero\"}}},
+      \"required\": [\"ret\"], \"definitions\": {\"Hero\": {\"title\": \"Hero\", \"description\":
+      \"Hero model.\", \"type\": \"object\", \"properties\": {\"name\": {\"title\":
+      \"Name\", \"type\": \"string\"}, \"age\": {\"title\": \"Age\", \"type\": \"integer\"}},
+      \"required\": [\"name\", \"age\"]}}}\n```"}, {"role": "user", "content": "fake_hero(5)"}],
+      "model": "gpt-3.5-turbo", "frequency_penalty": 0.0, "presence_penalty": 0.0,
+      "stop": null, "temperature": 0.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '1294'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    content: "{\n  \"id\": \"chatcmpl-9Mv0anVntVg30AgrRfDP6vgCGe9y3\",\n  \"object\":
+      \"chat.completion\",\n  \"created\": 1715249384,\n  \"model\": \"gpt-3.5-turbo-0125\",\n
+      \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+      \"assistant\",\n        \"content\": \"{\\n    \\\"ret\\\": [\\n        {\\n
+      \           \\\"name\\\": \\\"Fake Hero 1\\\",\\n            \\\"age\\\": 25\\n
+      \       },\\n        {\\n            \\\"name\\\": \\\"Fake Hero 2\\\",\\n            \\\"age\\\":
+      30\\n        },\\n        {\\n            \\\"name\\\": \\\"Fake Hero 3\\\",\\n
+      \           \\\"age\\\": 28\\n        },\\n        {\\n            \\\"name\\\":
+      \\\"Fake Hero 4\\\",\\n            \\\"age\\\": 27\\n        },\\n        {\\n
+      \           \\\"name\\\": \\\"Fake Hero 5\\\",\\n            \\\"age\\\": 29\\n
+      \       }\\n    ]\\n}\"\n      },\n      \"logprobs\": null,\n      \"finish_reason\":
+      \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 279,\n    \"completion_tokens\":
+      114,\n    \"total_tokens\": 393\n  },\n  \"system_fingerprint\": null\n}\n"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8810e54bf81e826b-TPE
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 09 May 2024 10:09:46 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=w2BOBEcZSYwVQeZlUJvTo_.z5H2T.P9lyfawDqoi3Mg-1715249386-1.0.1.1-fC2I88Niz.UCXxSCFYhHvWzvXmEhNUA5qLxK09mV7CsXN_ao6eIVLXd4CIO7o3sGFse.q2Q_5I7qyFRApbV6hw;
+        path=/; expires=Thu, 09-May-24 10:39:46 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=54fIYpydE2vsJ1Z0GmTQoOuzcSTflkmQxdsYav_YU0k-1715249386414-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-processing-ms:
+      - '1739'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '160000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '159743'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 96ms
+      x-request-id:
+      - req_b5b355963570a80a40bcb5bfd38d7725
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
