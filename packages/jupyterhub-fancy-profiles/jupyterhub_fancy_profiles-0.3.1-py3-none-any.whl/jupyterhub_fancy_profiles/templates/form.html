@@ -1,0 +1,8 @@
+<script>
+  /* Pass the entire profile_list to JS so we can render appropriate resource option s*/
+  window.profileList = {{ profile_list|tojson }};
+</script>
+{# FIXME: This should use the hub base_url properly somehow #}
+<script src="/hub/fancy-profiles/static/dist/form.js" defer></script>
+
+<div id="form"></div>
