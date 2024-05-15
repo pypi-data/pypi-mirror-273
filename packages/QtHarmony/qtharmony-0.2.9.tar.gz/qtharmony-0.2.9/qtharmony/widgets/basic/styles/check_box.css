@@ -1,0 +1,8 @@
+QCheckBox#check-box {
+    padding: 3px;
+    outline: none;
+}
+
+QCheckBox#check-box::indicator {
+    padding: 3px;
+}
