@@ -1,0 +1,14 @@
+celltypegenomics/__init__.py,sha256=Hw9A1TAmhhZfzX8vaBC7AjX36P-5cSsFJ-JITThJQzE,49
+celltypegenomics/celltypegenomics.py,sha256=xnQTziCKhUVV8-0LfFuozr121ra86Lq1dKzTU-sDlJM,4301
+celltypegenomics/test_celltypegenomics.py,sha256=VlTLiC2DpZZvIU__CRQ7vaQOwqx5lfHueQlO_5dySKQ,1824
+celltypegenomics/test_integration.py,sha256=9tgerA2iZ5TjNc8rE8b0llOe6Y4J5qXlpVWifHVvJYg,960
+celltypegenomics/data/heca_cell_types_to_ensembl.json,sha256=TPTB1f_4O6HYsyCuKa3Q9_NyYoyN9bzZGBE5itDuSh0,23364
+celltypegenomics/data/hpa_cell_types_to_ensembl.json,sha256=eks2kebfHQ1tW9UMXlaV-d6OF-IlFbOZPgIIOIs2v5M,1136374
+celltypegenomics/data/hpa_marker_genes_cell_types_to_ensembl.json,sha256=Ysy8Cemu3ouZT3uEso3N6oysDKK5Potc3FySGeu-5A8,5969
+celltypegenomics/data/hpa_tissue_to_ensembl.json,sha256=WH6Ex7vl2thB5puc8uYsCMP4-z95z1xCatWVJHkK7i0,332831
+celltypegenomics/data/protein_atlas_ensembl_ids.json,sha256=qfr3veUx4LGTKLkpt6OQ47n6OLtbHNn3xznJlo0Nra4,383078
+celltypegenomics/data/tissue_and_cell_types_to_ensembl.json,sha256=XiNDQi1-kk5mbwFrgtoNBFFLU2PhSV0qKWiOXk1eeJc,1469205
+celltypegenomics-0.0.7.dist-info/METADATA,sha256=twticNGmDeCA0xU8xhO00bF6Rv4nh-hHLsk7kUymONw,3119
+celltypegenomics-0.0.7.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+celltypegenomics-0.0.7.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+celltypegenomics-0.0.7.dist-info/RECORD,,
