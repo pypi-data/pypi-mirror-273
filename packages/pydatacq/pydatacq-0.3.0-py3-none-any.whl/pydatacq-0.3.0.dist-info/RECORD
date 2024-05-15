@@ -1,0 +1,10 @@
+pydatacq/__init__.py,sha256=wzLl35IYE0pRpaWwvFRZpADo2DuoiPDn0nNmEa-PQBs,148
+pydatacq/live_data.py,sha256=tADEsKbc5s5H6EYYbbSnoE-lvTXNBQGLzbvGxZjKDM4,6937
+pydatacq/live_sds.py,sha256=rq1vJa_ku_kUEbVUHWiZBDKv48kd6jVPcZ3XcOhH9Uw,3954
+pydatacq/live_window.py,sha256=N_HT8UBWOylTF_-pA1Co3QaXTlQuI84yLJlEqxfKGU0,2826
+pydatacq/sds.py,sha256=OiVxn34wqd04MJyYR9PU9lvGIyDlufIpQrEDcQWNyoE,17805
+pydatacq/siglent.py,sha256=D4k_OBceno6fEJcGQGtguv-vS5nHZFxpDoJAx9-shKI,1800
+pydatacq-0.3.0.dist-info/METADATA,sha256=013A7DOFw0NNqW-JuNj0b2ez2x1jO29padnGxt2fjAQ,14431
+pydatacq-0.3.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pydatacq-0.3.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pydatacq-0.3.0.dist-info/RECORD,,
