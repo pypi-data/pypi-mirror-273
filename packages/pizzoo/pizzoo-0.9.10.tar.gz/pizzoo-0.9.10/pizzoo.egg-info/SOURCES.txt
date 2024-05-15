@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+pizzoo/__init__.py
+pizzoo/_constants.py
+pizzoo/_renderers.py
+pizzoo/_utils.py
+pizzoo/default.bdf
+pizzoo/game.py
+pizzoo.egg-info/PKG-INFO
+pizzoo.egg-info/SOURCES.txt
+pizzoo.egg-info/dependency_links.txt
+pizzoo.egg-info/requires.txt
+pizzoo.egg-info/top_level.txt
