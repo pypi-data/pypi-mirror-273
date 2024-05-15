@@ -1,0 +1,2 @@
+[console_scripts]
+slurmtop = slurmtop._app:run
