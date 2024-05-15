@@ -1,0 +1,83 @@
+FortraCC - Python Framework for Tracking and Forecasting Clusters
+=====================================================================
+<!-- badges: start -->
+[![stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://pyfortracc.readthedocs.io)
+[![pypi](https://badge.fury.io/py/pyfortracc.svg)](https://pypi.python.org/pypi/pyfortracc)
+[![Documentation](https://readthedocs.org/projects/pyfortracc/badge/?version=latest)](https://pyfortracc.readthedocs.io/)
+[![Downloads](https://img.shields.io/pypi/dm/pyfortracc.svg)](https://pypi.python.org/pypi/pyfortracc)
+[![Contributors](https://img.shields.io/github/contributors/pyfortracc-project/pyfortracc.svg)](https://github.com/fortracc-project/pyfortracc/graphs/contributors)
+[![License](https://img.shields.io/pypi/l/pyfortracc.svg)](https://github.com/fortracc-project/pyfortracc/blob/main/LICENSE)
+<!-- badges: end -->
+
+Overview
+=====================================================================
+
+`FortraCC` is a Python package designed to identify, track and analyze hydrological phenomena with various data formats. <br>
+Using time-varying 2D input frames along with user-specified parameters, pyFortraCC is able to detect objects (clusters) and associate their displacement in time.
+
+##### Algorithm Workflow
+
+The algorithm is divided into three main modules and form the Tracking Workflow.
+<ol>
+  <li><b>Feature detection</b>: Focuses on identifying individual clusters detection from individual frame of data and extraction of features and statistics.
+  </li>
+  <li><b>Spatial Operations</b>: Involves spatial operations (overlap, union, difference, etc) between objects (clusters) from consecutive time steps (t-1 and t).
+  <li><b>Trajectory Linking</b>: Link objects of consecutive time steps based on the spatial association.
+  </li>
+
+Documentation
+=====================================================================
+For a more detailed information of `FortraCC` package please read the user guide available [click here]([https://link-url-here.org](https://github.com/fortracc-project/pyfortracc/blob/main/UserGuide.md)).
+
+
+Installation
+=====================================================================
+Download the package from github or clone the repository using the command:
+
+    git clone https://github.com/fortracc-project/pyfortracc/
+
+To install the FortraCC package.
+It is highly advisable to use virtual environments (Anaconda3, Miniconda, Mamba, or etc) to install dependencies. And you can do this in different ways:
+
+Create environment using conda and install from environment.yml file:
+
+    cd pyfortracc
+    conda env create -f environment.yml
+    conda activate pyfortracc
+
+Create virtual environment and install package:
+
+    cd pyfortracc
+    python3 -m venv venv
+    source venv/bin/activate
+    pip3 install .
+
+Install only requirements from local file:
+
+	cd pyfortracc
+	pip3 install -r requirements.txt
+
+
+And it is also possible to install directly from the python package repositories:
+
+	pip3 install pyfortracc
+
+
+
+Example Gallery
+=====================================================================
+The development of this framework is constantly evolving, and several application examples can be seen in our example gallery.
+
+[![01 - Introducing Example:](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fortracc-project/pyfortracc/blob/main/examples/01_Introducing_Example/01_Introducing-FortraCC.ipynb) - 01 - Introducing Example
+
+[![02 - Algorithm Workflow with Radar Example:](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fortracc-project/pyfortracc/blob/main/examples/02_Algorithm_Workflow_Radar_Example/02_Algorithm_Workflow.ipynb) - 02 - Algorithm Workflow with Radar Example
+
+[![03 -_Track Infrared Dataset:](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fortracc-project/pyfortracc/blob/main/examples/03_Track-Infrared-Dataset/03_Track-Infrared-Dataset.ipynb) - 03 - Track Infrared Dataset
+
+[![04 - Track High Resolution Global Precipitation Dataset:](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fortracc-project/pyfortracc/blob/main/examples/04_Track-High-Resolution-Global-Precipitation-Dataset/04_Track-High-Resolution-Global-Precipitation-Dataset.ipynb) - 04 - Track High Resolution Global Precipitation Dataset
+
+[![05 -_Track Infrared Dataset:](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fortracc-project/pyfortracc/blob/main/examples/05_Track-Deforestation-Dataset/05_Track-Deforestation-Dataset.ipynb) - 05 Track Deforestation Dataset
+
+Support and Contact
+=====================================================================
+For support, email helvecio.neto@inpe.br, alan.calheiros@inpe.br
