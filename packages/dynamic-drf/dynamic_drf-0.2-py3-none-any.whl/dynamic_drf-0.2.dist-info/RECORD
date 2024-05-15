@@ -1,0 +1,11 @@
+dynamic_drf/__init__.py,sha256=gKJdLfURCBkzPbJCClf9K9BuLK_wF_3auxP5rprNiV4,162
+dynamic_drf/apps.py,sha256=K5CMN-ZHrHnxMAkW2R1KZpm1bAl0ZzlWh7yNAfhK9uI,981
+dynamic_drf/auth.py,sha256=9Vm-bQBu96YqqxwOfC_kR18Fo572V_-mUqYFeAeTLBI,553
+dynamic_drf/dyn_settings.py,sha256=F-zCgBRaDHiNPLQ6oizItjlzDo4X-Z24PWnaFV6UXMk,1686
+dynamic_drf/models.py,sha256=49tGlpc4YWaIcBBBqZ-rfcHGSM96bqopWksMGbHfSpg,1088
+dynamic_drf/serializers.py,sha256=e2lU8Uni7PuV1BGsTIR6KdnFrHMY5ILJADsvZyBjKFA,912
+dynamic_drf/views.py,sha256=xpeocZZ2630SqTPlwZvwpcHK4OQWwq687QLD-tpqddU,546
+dynamic_drf-0.2.dist-info/METADATA,sha256=HkErzuduksthW3SRsxWGIRHn0gYEY2LTFup76zr1IYg,563
+dynamic_drf-0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dynamic_drf-0.2.dist-info/top_level.txt,sha256=krBMm_LmWVknkv6xyu675Qa2pCNtAbEaGK6ANzUgR8k,12
+dynamic_drf-0.2.dist-info/RECORD,,
