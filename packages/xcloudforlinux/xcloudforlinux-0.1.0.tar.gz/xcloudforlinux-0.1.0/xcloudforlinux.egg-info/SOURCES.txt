@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+xcloudClients/__init__.py
+xcloudClients/xcloudforlinux.py
+xcloudforlinux.egg-info/PKG-INFO
+xcloudforlinux.egg-info/SOURCES.txt
+xcloudforlinux.egg-info/dependency_links.txt
+xcloudforlinux.egg-info/requires.txt
+xcloudforlinux.egg-info/top_level.txt
