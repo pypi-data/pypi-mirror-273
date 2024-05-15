@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dimple/__init__.py
+pydimple/__init__.py
+pydimple/funs.py
+pydimple.egg-info/PKG-INFO
+pydimple.egg-info/SOURCES.txt
+pydimple.egg-info/dependency_links.txt
+pydimple.egg-info/requires.txt
+pydimple.egg-info/top_level.txt
