@@ -1,0 +1,7 @@
+setup.py
+vbpy/__init__.py
+vbpy/vbpy.py
+vbpy.egg-info/PKG-INFO
+vbpy.egg-info/SOURCES.txt
+vbpy.egg-info/dependency_links.txt
+vbpy.egg-info/top_level.txt
