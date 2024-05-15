@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: modelmimic
+Version: 0.0.2
+Summary: Generate model-like data, _mimic_ the output of various CIME tests.
+Author-email: Michael Kelleher <kelleherme@ornl.gov>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/LIVVkit/modelmimic/
+Project-URL: Documentation, https://livvkit.github.io/modelmimic/
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: netCDF4
+Requires-Dist: pandas
+Requires-Dist: toml
+Provides-Extra: dev
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Model Mimic
+[![Python package](https://github.com/LIVVkit/modelmimic/actions/workflows/python-package.yml/badge.svg)](https://github.com/LIVVkit/modelmimic/actions/workflows/python-package.yml)
+[![Upload Python Package](https://github.com/LIVVkit/modelmimic/actions/workflows/python-publish.yml/badge.svg)](https://github.com/LIVVkit/modelmimic/actions/workflows/python-publish.yml)
+[![Docs](https://github.com/LIVVkit/modelmimic/actions/workflows/docs.yml/badge.svg)](https://github.com/LIVVkit/modelmimic/actions/workflows/docs.yml)
+[![Pre-Commit](https://github.com/LIVVkit/modelmimic/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/LIVVkit/modelmimic/actions/workflows/pre-commit.yml)
+
+## Generate testing data for [EVV4ESM](https://github.com/LIVVkit/evv4esm)
+This package mimics an Earth System Model run output data so that each type
+of evv4esm test can be checked systematically
