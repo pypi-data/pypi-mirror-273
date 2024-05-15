@@ -1,0 +1,3 @@
+[console_scripts]
+s3r=s3_radar.__main__:app
+
