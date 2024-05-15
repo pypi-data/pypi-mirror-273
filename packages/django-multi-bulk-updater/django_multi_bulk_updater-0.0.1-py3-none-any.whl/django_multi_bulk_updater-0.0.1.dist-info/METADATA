@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-multi-bulk-updater
+Version: 0.0.1
+Summary: Streaming video data via networks
+Author: Sushil
+Author-email: SushilPrasad60649@gmail.com
+Keywords: django bulk updater,bulk updater,bulk,chunk updater,python django
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: django
+
