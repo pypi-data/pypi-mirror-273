@@ -1,0 +1,10 @@
+gdriveresolver/__init__.py,sha256=iF6vGs931JN-8EkRp2m03s1GHSRLRGa--xwVtefaFao,42
+gdriveresolver/exceptions.py,sha256=upvApny2g1S6dE5uFRLN2sbC1lqGvXPizkag-IuAoW8,105
+gdriveresolver/model.py,sha256=sspOt6JE0bkvC36Lgfdeo5-tFpO-UPiVH44GNOLG1Zs,1053
+gdriveresolver/resolver.py,sha256=rJseHOWC8XL2DRyvAzPeiVfTBkmSnngxBWkP3DUGjaE,850
+gdriveresolver/system_operations.py,sha256=EXiVlcnlaEdDPrxMHX6SncWCtvgG6d9Ymq5sZn1gWRo,2805
+gdriveresolver-0.0.4.dist-info/LICENSE,sha256=e8WXY9qbXAKRGzSJkZwgACSFGNFDA-8klIihiFimpnw,1069
+gdriveresolver-0.0.4.dist-info/METADATA,sha256=E1vEY0MoairJq52CRZDerIpOVDYOUn0_Fc53OvVdgsg,1603
+gdriveresolver-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gdriveresolver-0.0.4.dist-info/top_level.txt,sha256=_K21ZSoEjmGCfBMxJKZGvBJRs39vE4rwaz-CHJj4r4M,15
+gdriveresolver-0.0.4.dist-info/RECORD,,
