@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+folerHandle/__init__.py
+folerHandle/demo.py
+folerHandle/dictPrint.py
+folerHandle/folderAnalysis.py
+folerhandle.egg-info/PKG-INFO
+folerhandle.egg-info/SOURCES.txt
+folerhandle.egg-info/dependency_links.txt
+folerhandle.egg-info/top_level.txt
