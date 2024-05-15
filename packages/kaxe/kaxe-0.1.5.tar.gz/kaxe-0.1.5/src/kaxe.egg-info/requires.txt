@@ -1,0 +1,6 @@
+pillow
+fondi
+sympy
+scipy
+openpyxl
+tqdm
