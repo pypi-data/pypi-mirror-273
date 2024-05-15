@@ -1,0 +1,5 @@
+chardet
+datetime
+lxml
+pandas
+unidecode

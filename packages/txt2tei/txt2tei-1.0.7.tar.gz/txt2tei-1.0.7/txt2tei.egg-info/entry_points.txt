@@ -1,0 +1,2 @@
+[console_scripts]
+txt2tei = txt2tei:main
