@@ -1,0 +1,16 @@
+npc_shields/__init__.py,sha256=Ws76X6B5V4k04SMY4PHPbYbOsbxpdsGSPJFTaQjmcsY,105
+npc_shields/injections.py,sha256=oTqZpEUyvPIaGMnx8qSvf9ZLy4mhFOFpZHmFZnanXKI,5780
+npc_shields/insertions.py,sha256=np4J_Nos9v7ElP9XXLuAdSWNNGucmzfmm5-Oddv6FJE,7164
+npc_shields/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+npc_shields/shields.py,sha256=9C0xx8A2i66V0JSoVr2s2luEqoMFDHGG_SRi49Aiqmc,4166
+npc_shields/types.py,sha256=UxjXhRApLaZHqwyO_kcQ1_svBsDsnZI2rLgq6pc2594,6242
+npc_shields/widgets.py,sha256=w93gF4WcBNoj3g6QCDwZugWaqrMSO2Yk0RtTfM6x5Oc,14592
+npc_shields/drawings/2001.svg,sha256=ACwAyLCMAxJS7thfK1dSn9I1DchNDFmKrM4-xACW58Q,85004
+npc_shields/drawings/2002.svg,sha256=VB_0QnPLElQhLQFTJxbNvAHAwk3msc7hC4WazwXyoMM,150594
+npc_shields/drawings/2005.svg,sha256=trjqO11eAip7cRgOUbid2KBBNVhEILAlfqlsfjCmXZE,108511
+npc_shields/drawings/2006.svg,sha256=M8qotz8HCMeTQqAM-HLnPiD6XCgFAS9MDWUEZH8_zyg,99489
+npc_shields/drawings/Templeton_combos.svg,sha256=hyoTBChIRP0TRv4INFqLtRCMPpFSSR8eZwrHkUoN2OQ,84797
+npc_shields-0.1.9.dist-info/METADATA,sha256=sGQc4lST0jspkPhFoqAc1g2PjM5-aO_FsBZxokrZS4M,2793
+npc_shields-0.1.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+npc_shields-0.1.9.dist-info/top_level.txt,sha256=Iito0UKqNIxAugCtKtY12gdaXSHFs0We3IfL4BjM6vA,12
+npc_shields-0.1.9.dist-info/RECORD,,
