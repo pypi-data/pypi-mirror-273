@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include TXM_GUI2.ipynb
+
+recursive-include txm_sandbox/tmp readme.txt
+recursive-include txm_sandbox/config *.json
+recursive-include txm_sandbox/napari_gui/configs *.json
