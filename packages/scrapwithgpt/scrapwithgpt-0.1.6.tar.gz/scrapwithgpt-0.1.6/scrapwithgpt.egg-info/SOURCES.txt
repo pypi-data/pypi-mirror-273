@@ -1,0 +1,14 @@
+README.md
+setup.py
+scrapwithgpt/__init__.py
+scrapwithgpt/config.py
+scrapwithgpt/oai.py
+scrapwithgpt/prompts.py
+scrapwithgpt/scrap.py
+scrapwithgpt/utils.py
+scrapwithgpt/web.py
+scrapwithgpt.egg-info/PKG-INFO
+scrapwithgpt.egg-info/SOURCES.txt
+scrapwithgpt.egg-info/dependency_links.txt
+scrapwithgpt.egg-info/requires.txt
+scrapwithgpt.egg-info/top_level.txt
