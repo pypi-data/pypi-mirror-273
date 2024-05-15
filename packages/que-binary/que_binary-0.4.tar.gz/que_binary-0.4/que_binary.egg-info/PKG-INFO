@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: que-binary
+Version: 0.4
+Summary: A quick collection of  Python files
+Author: vegito5ama
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+This library contains various Python files for different purposes.
