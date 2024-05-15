@@ -1,0 +1,25 @@
+from _typeshed import Incomplete
+from enum import Enum
+
+MAX_SUBSCRIPTIONS_PER_STREAM = int
+WEBSOCKET_BASE_URI = str
+WEBSOCKET_API_BASE_URI = str
+
+class Exchanges(str, Enum):
+    BINANCE: str
+    BINANCE_TESTNET: str
+    BINANCE_MARGIN: str
+    BINANCE_MARGIN_TESTNET: str
+    BINANCE_ISOLATED_MARGIN: str
+    BINANCE_ISOLATED_MARGIN_TESTNET: str
+    BINANCE_FUTURES: str
+    BINANCE_COIN_FUTURES: str
+    BINANCE_FUTURES_TESTNET: str
+    BINANCE_US: str
+    TRBINANCE: str
+    BINANCE_ORG: str
+    BINANCE_ORG_TESTNET: str
+
+DEX_EXCHANGES: Incomplete
+CEX_EXCHANGES: Incomplete
+CONNECTION_SETTINGS: Incomplete
