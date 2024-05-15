@@ -1,0 +1,9 @@
+PySide6==6.5.2
+opencv-python
+numpy
+scikit-image
+trimesh==3.18.1
+vedo
+zarr
+lxml
+gitpython
