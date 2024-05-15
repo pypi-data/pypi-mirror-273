@@ -1,0 +1,30 @@
+[project]
+name = "webpage-content-scraper"
+version = "0.1"
+description = "Scrape only the content from a webpage using Firefox's reader view."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Ryan Blunden"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "playwright",
+    "markdownify",
+    "beautifulsoup4"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/ryan-blunden/python-webpage-content-scraper"
+Changelog = "https://github.com/ryan-blunden/python-webpage-content-scraper/releases"
+Issues = "https://github.com/ryan-blunden/python-webpage-content-scraper/issues"
+CI = "https://github.com/ryan-blunden/python-webpage-content-scraper/actions"
+
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-mock", "ruff"]

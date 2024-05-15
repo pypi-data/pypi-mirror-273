@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_webpage_content_scraper.py
+webpage_content_scraper/__init__.py
+webpage_content_scraper.egg-info/PKG-INFO
+webpage_content_scraper.egg-info/SOURCES.txt
+webpage_content_scraper.egg-info/dependency_links.txt
+webpage_content_scraper.egg-info/requires.txt
+webpage_content_scraper.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+playwright
+markdownify
+beautifulsoup4
+
+[test]
+pytest
+pytest-mock
+ruff
