@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pdrive.egg-info/PKG-INFO
+pdrive.egg-info/SOURCES.txt
+pdrive.egg-info/dependency_links.txt
+pdrive.egg-info/entry_points.txt
+pdrive.egg-info/not-zip-safe
+pdrive.egg-info/requires.txt
+pdrive.egg-info/top_level.txt
+pdrive/backend/__init__.py
+pdrive/backend/web.py
+pdrive/frontend/index.html
+pdrive/frontend/dist/313f7dacf2076822059d2dca26dedfc6.woff
+pdrive/frontend/dist/4520188144a17fb24a6af28a70dae0ce.ttf
+pdrive/frontend/dist/build.js
