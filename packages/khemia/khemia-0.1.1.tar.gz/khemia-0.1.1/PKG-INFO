@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: khemia
+Version: 0.1.1
+Summary: Python tools for typing and memory cache.
+License: MIT
+Author: CMHopeSunshine
+Author-email: 277073121@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typing-extensions (>=4.8.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Khemia
+
+Python tools for typing and memory cache.
+

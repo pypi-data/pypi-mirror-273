@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "khemia"
+version = "0.1.1"
+description = "Python tools for typing and memory cache."
+authors = ["CMHopeSunshine <277073121@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "khemia" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typing-extensions = "^4.8.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.7"
+pre-commit = "^3.7.0"
+
+[tool.ruff]
+select = [
+    "E",
+    "W",   # pycodestyle
+    "F",   # pyflakes
+    "UP",  # pyupgrade
+    "I",   # isort
+    "Q",   # flake8-quotes
+    "PTH", # flake8-use-pathlib
+    "RET", # flake8-return
+    "RSE", # flake8-raise
+    "T20", # flake8-print
+    "PIE", # flake8-pie
+    "SIM", # flake8-simplify
+    "ISC", # flake8-implicit-str-concat
+    "C4",  # flake8-comprehensions
+    "COM", # flake8-commas
+    "B",   # flake8-bugbear
+]
+ignore = ["E402", "B008", "F403", "F405", "B005"]
+line-length = 120
+target-version = "py39"
+ignore-init-module-imports = true
+
+[tool.ruff.isort]
+force-sort-within-sections = true
+extra-standard-library = ["typing_extensions"]
+force-wrap-aliases = true
+combine-as-imports = true
+order-by-type = false
+relative-imports-order = "closest-to-furthest"
+section-order = [
+    "future",
+    "standard-library",
+    "first-party",
+    "local-folder",
+    "third-party",
+]
+
+[tool.ruff.pycodestyle]
+ignore-overlong-task-comments = true
+max-doc-length = 120
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
