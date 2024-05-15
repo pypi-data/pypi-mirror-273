@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scrapwithgpt
+Version: 0.1.6
+Home-page: https://github.com/HenryObj/scrapwithgpt
+Description-Content-Type: text/markdown
+Requires-Dist: openai >=1.9.0
+Requires-Dist: tiktoken >=0.5.2
+Requires-Dist: requests >=2.31.0
+Requires-Dist: bs4
+
+# scrapwithgpt
+
+In your virtual environment, do "pip install scrapwithgpt".
+
+Then "from scrapwithgpt import smartscrap".
+
+You can also use/import the default config for the filtering, the output and the example.
+
+
+Then call smartscrap(). Example of usage in the scrap.py module.
