@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish.yaml
+chrisversiontest.egg-info/PKG-INFO
+chrisversiontest.egg-info/SOURCES.txt
+chrisversiontest.egg-info/dependency_links.txt
+chrisversiontest.egg-info/entry_points.txt
+chrisversiontest.egg-info/requires.txt
+chrisversiontest.egg-info/top_level.txt
+src/versioning/__init__.py
+src/versioning/entrypoint.py
+src/versioning/__pycache__/__init__.cpython-311.pyc
+src/versioning/__pycache__/entrypoint.cpython-311.pyc
