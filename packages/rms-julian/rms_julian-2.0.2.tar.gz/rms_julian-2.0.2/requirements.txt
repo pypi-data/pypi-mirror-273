@@ -1,0 +1,6 @@
+coverage
+cspyce
+numpy
+pyparsing
+pytest
+rms-textkernel
