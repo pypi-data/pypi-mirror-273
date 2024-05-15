@@ -1,0 +1,10 @@
+passman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+passman/cli.py,sha256=FR2o5ORfD2E36wop64oacl6P7a38A1MpEr0BsGUIPN0,4231
+passman/errors.py,sha256=IdhyzT-1CeDgyhlHThVT0sSz5H3s9P3IGHdp3gDoZEg,1265
+passman/passman.py,sha256=ZVnkFJiVr8NPVYJU5Lxm9hq2uTEktgD-PshOqJ-ekTs,1971
+python_passman-1.0.1.dist-info/LICENSE,sha256=rMmEj8XCg7pjAP2Z76m8UStnPo9vMUyaerpQPpNum8I,1097
+python_passman-1.0.1.dist-info/METADATA,sha256=RSKQ1HSZqKwvxx8pH5heFXO1p9ascW0f0LtvBcNOJHc,1806
+python_passman-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_passman-1.0.1.dist-info/entry_points.txt,sha256=44S1cc2Em2R4enyGCsEKIJKne_tghjniasTJ7zaUmFs,44
+python_passman-1.0.1.dist-info/top_level.txt,sha256=PXaxCw3or58wkbY_3sCgJ27mpdWv-NdN5Uulr39LM0k,8
+python_passman-1.0.1.dist-info/RECORD,,
