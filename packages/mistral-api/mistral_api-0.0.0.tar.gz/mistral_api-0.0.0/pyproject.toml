@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "mistral_api"
+version = "v0.0.1"
+description = ""
+authors = ["bam4d <bam4d@mistral.ai>"]
+readme = "README.md"
+packages = [{ include = "mistral_api", from = "src" }]
