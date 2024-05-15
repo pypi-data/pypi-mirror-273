@@ -1,0 +1,136 @@
+import random
+import time
+
+import geoarrow.pyarrow.dataset as gads
+
+from stacchip.chipper import Chipper
+
+# Load a stacchip index table
+# dataset = gads.dataset("/home/ubuntu/chipper-index-small", format="parquet")
+
+# dataset = gads.dataset("/efs/index", format="parquet")
+dataset = gads.dataset("/fsx/combined-catalog-test/", format="parquet")
+
+table = dataset.to_table()
+
+# scenes = ["S2A_14QKG_20210218_1_L2A", "S2A_37WEN_20190330_0_L2A", "S2A_51KXT_20200830_0_L2A", "S2A_10SEJ_20190331_0_L2A"]
+scenes = [
+    "S2A_10SEJ_20190331_0_L2A",
+    "S2A_10SEJ_20190619_0_L2A",
+    "S2A_10SEJ_20190831_0_L2A",
+    "S2A_10SEJ_20211009_0_L2A",
+    "S2A_10SFG_20180724_1_L2A",
+    "S2A_10SFG_20181019_1_L2A",
+    "S2A_10SFG_20200424_1_L2A",
+    "S2A_10SFH_20180601_2_L2A",
+    "S2A_10SFH_20180902_1_L2A",
+    "S2A_10SFH_20181022_1_L2A",
+    "S2A_10SFH_20200224_1_L2A",
+    "S2A_10SFH_20200521_1_L2A",
+    "S2A_10SFH_20201011_1_L2A",
+    "S2A_10SFJ_20180601_1_L2A",
+    "S2A_10SFJ_20181022_1_L2A",
+    "S2A_10SFJ_20220610_0_L2A",
+    "S2A_10SFJ_20220812_0_L2A",
+    "S2A_10SGF_20191216_1_L2A",
+    "S2A_10SGF_20220210_0_L2A",
+    "S2A_10SGF_20221008_0_L2A",
+    "S2A_10SGG_20190311_0_L2A",
+    "S2A_10SGG_20210327_1_L2A",
+    "S2A_10SGJ_20180621_1_L2A",
+    "S2A_10SGJ_20181019_1_L2A",
+    "S2A_10SGJ_20220812_0_L2A",
+    "S2A_10TEL_20180604_1_L2A",
+    "S2A_10TEL_20180905_1_L2A",
+    "S2A_10TEL_20181022_1_L2A",
+    "S2A_10TEL_20210313_1_L2A",
+    "S2A_10TEL_20210422_2_L2A",
+    "S2A_10TEL_20210711_1_L2A",
+    "S2A_10TER_20210621_1_L2A",
+    "S2A_10TER_20220626_0_L2A",
+    "S2A_10TET_20200507_1_L2A",
+    "S2A_10TET_20220808_0_L2A",
+    "S2A_10TFR_20190818_0_L2A",
+    "S2A_10TFR_20191010_0_L2A",
+    "S2A_10TFR_20200227_1_L2A",
+    "S2A_10TFR_20200417_1_L2A",
+    "S2A_10TFT_20190510_0_L2A",
+    "S2A_10TFT_20190804_0_L2A",
+    "S2A_10TFT_20210330_1_L2A",
+    "S2A_10UCA_20210627_1_L2A",
+    "S2A_10UCA_20210730_1_L2A",
+    "S2A_10UCA_20221003_0_L2A",
+    "S2A_10UCE_20200320_0_L2A",
+    "S2A_10UCE_20201202_1_L2A",
+    "S2A_10UCF_20180808_0_L2A",
+    "S2A_10UCF_20200320_0_L2A",
+    "S2A_10UCF_20200419_1_L2A",
+    "S2A_10UCF_20200910_1_L2A",
+    "S2A_10UCF_20201202_1_L2A",
+    "S2A_10UDC_20200910_1_L2A",
+    "S2A_10UDC_20201202_1_L2A",
+    "S2A_10UDC_20220625_0_L2A",
+    "S2A_10UDC_20221003_0_L2A",
+    "S2A_10UEB_20190722_0_L2A",
+    "S2A_10UEV_20180809_1_L2A",
+    "S2A_10UEV_20210415_2_L2A",
+    "S2A_10UFB_20190317_0_L2A",
+    "S2A_10UFB_20201106_1_L2A",
+    "S2A_10UFG_20220818_0_L2A",
+    "S2A_10UFG_20221007_0_L2A",
+    "S2A_10UFU_20200318_1_L2A",
+    "S2A_10UFU_20200815_1_L2A",
+    "S2A_10UFU_20210601_1_L2A",
+    "S2A_10UFV_20200318_1_L2A",
+    "S2A_10UGD_20210316_1_L2A",
+    "S2A_10UGD_20210813_1_L2A",
+    "S2A_10VCJ_20180821_1_L2A",
+    "S2A_10VCJ_20220909_0_L2A",
+    "S2A_10VCJ_20221202_0_L2A",
+    "S2A_10VCM_20180815_1_L2A",
+    "S2A_10VCM_20181023_1_L2A",
+    "S2A_10VCM_20220224_0_L2A",
+    "S2A_10VCM_20220912_0_L2A",
+    "S2A_10VCM_20221002_0_L2A",
+    "S2A_10XEH_20210705_2_L2A",
+    "S2A_10XEH_20220501_0_L2A",
+    "S2A_10XFF_20180319_0_L2A",
+    "S2A_10XFF_20181005_0_L2A",
+    "S2A_10XFF_20190322_0_L2A",
+    "S2A_10XFF_20190428_0_L2A",
+    "S2A_11SKA_20200603_0_L2A",
+    "S2A_11SKA_20210109_1_L2A",
+    "S2A_11SKD_20181019_1_L2A",
+    "S2A_11SKD_20200521_1_L2A",
+    "S2A_11SKV_20211013_1_L2A",
+    "S2A_11SKV_20220322_0_L2A",
+    "S2A_11SMS_20180913_1_L2A",
+    "S2A_11SMS_20220207_0_L2A",
+    "S2A_11SMS_20221025_0_L2A",
+    "S2A_11SMU_20190325_1_L2A",
+    "S2A_11SMU_20190911_1_L2A",
+    "S2A_11SMU_20191110_1_L2A",
+    "S2A_11SMU_20220207_0_L2A",
+    "S2A_11SMU_20220915_0_L2A",
+    "S2A_11SMU_20221005_1_L2A",
+    "S2A_11SNS_20191110_1_L2A",
+    "S2A_11SNS_20221224_0_L2A",
+]
+
+# Get data for a single chip
+for i in range(20):
+    row = 42232
+    chipper = Chipper(
+        # mountpath="/fsx",
+        # mountpath="/efs/test",
+        platform="sentinel-2-l2a",
+        # item_id = scenes[i],
+        # chip_index_x = 3,
+        # chip_index_y = 11,
+        item_id=random.sample(scenes, 1)[0],
+        chip_index_x=random.randint(0, 20),
+        chip_index_y=random.randint(0, 20),
+    )
+    t0 = time.time()
+    data = chipper.chip
+    print("time", t0 - time.time())

@@ -1,0 +1,14 @@
+Transaction
+
+  Prefix: /home/tam/apps/miniforge3/envs/devseed
+
+  All requested packages already installed
+
+
+Looking for: ['pkginfo']
+
+
+Pinned packages:
+  - python 3.11.*
+
+
