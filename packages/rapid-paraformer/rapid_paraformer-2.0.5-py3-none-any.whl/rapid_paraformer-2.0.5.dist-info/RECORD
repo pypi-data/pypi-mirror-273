@@ -1,0 +1,13 @@
+rapid_paraformer/__init__.py,sha256=25x45OLlLsEpxAZLOoN6hcpP_uox0Lat2_qoSC_jpKo,145
+rapid_paraformer/main.py,sha256=edH3QtEvlN4RfcKZeUgB_60cirgJuU3ruqE4l1xXmiY,4925
+rapid_paraformer/utils.py,sha256=hCnFA5bhVeuDncYFsVgB99ieU5bs1ZUXcPkvNg4kIPw,13206
+rapid_paraformer/kaldifeat/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rapid_paraformer/kaldifeat/README.md,sha256=brMJBou-ew86SElkjOL3eegRbTEVpMp0tAttPOPan-0,7414
+rapid_paraformer/kaldifeat/__init__.py,sha256=3YX1QXUS1tqDXQsH15BxHEOdI0HY8_R29xwpOe8tKsM,140
+rapid_paraformer/kaldifeat/feature.py,sha256=nKoa2JWk8DM5gTJHnnExKg9p862oyDj2l4h3UDN-S-c,19143
+rapid_paraformer/kaldifeat/ivector.py,sha256=DAIVOb4FWtgEsw3y99frxf0K1umV0ArF0QLd3x4d44U,2194
+rapid_paraformer-2.0.5.dist-info/METADATA,sha256=sDT_iEys8wAB7wfL_1g1FQQOEeFwj-Gh3Hph5y4AfJE,895
+rapid_paraformer-2.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rapid_paraformer-2.0.5.dist-info/entry_points.txt,sha256=aDpI5rhSI_DYR6n29CXEr2zCaTuCbYYEZvmERxG2tMU,65
+rapid_paraformer-2.0.5.dist-info/top_level.txt,sha256=CReApSWSM8eVpJXcVZU2PGTsAVR_SN4OL9qcVtfYF1g,44
+rapid_paraformer-2.0.5.dist-info/RECORD,,

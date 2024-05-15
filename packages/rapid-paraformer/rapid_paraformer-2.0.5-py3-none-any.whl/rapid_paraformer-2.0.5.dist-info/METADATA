@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rapid-paraformer
+Version: 2.0.5
+Summary: Tool of speech recognition.
+Home-page: https://github.com/RapidAI/RapidASR
+Author: SWHL
+Author-email: liekkaskono@163.com
+License: Apache-2.0
+Keywords: asr,paraformer,wenet
+Platform: Any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6,<3.13
+Description-Content-Type: text/markdown
+Requires-Dist: librosa
+Requires-Dist: numpy
+Requires-Dist: onnxruntime
+Requires-Dist: typeguard ==2.13.3
+Requires-Dist: huggingface-hub
+
+See [link](https://github.com/RapidAI/RapidASR/tree/main/python) for details.
+
+

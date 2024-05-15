@@ -1,0 +1,3 @@
+[console_scripts]
+rapid_paraformer = rapid_paraformer.main:main
+
