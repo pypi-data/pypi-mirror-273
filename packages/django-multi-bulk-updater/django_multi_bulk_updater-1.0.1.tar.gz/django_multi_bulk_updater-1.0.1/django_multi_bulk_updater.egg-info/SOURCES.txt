@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+django_multi_bulk_updater/__init__.py
+django_multi_bulk_updater/parallelExcecutor.py
+django_multi_bulk_updater/queryChunking.py
+django_multi_bulk_updater/queryConvertor.py
+django_multi_bulk_updater.egg-info/PKG-INFO
+django_multi_bulk_updater.egg-info/SOURCES.txt
+django_multi_bulk_updater.egg-info/dependency_links.txt
+django_multi_bulk_updater.egg-info/requires.txt
+django_multi_bulk_updater.egg-info/top_level.txt
