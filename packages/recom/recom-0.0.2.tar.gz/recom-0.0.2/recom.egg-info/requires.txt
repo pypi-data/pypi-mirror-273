@@ -1,0 +1,4 @@
+libusb1
+pyserial
+pyudev
+psutil
