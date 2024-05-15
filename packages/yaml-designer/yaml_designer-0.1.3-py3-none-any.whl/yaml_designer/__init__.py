@@ -1,0 +1,1 @@
+from yaml_designer.yaml_designer import yamlclass
