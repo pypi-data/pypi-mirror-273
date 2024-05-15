@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: CenStats
+Version: 0.0.2
+Summary: Centromere statistics toolkit.
+Author-email: Keith Oshima <oshimak@pennmedicine.upenn.edu>
+License: MIT License
+Project-URL: Homepage, https://github.com/logsdon-lab/CenStats
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: polars
+Requires-Dist: loguru
+Requires-Dist: editdistance
+
+# `CenStats`
+[![CI](https://github.com/logsdon-lab/centromere-status-checker/actions/workflows/main.yml/badge.svg)](https://github.com/logsdon-lab/centromere-status-checker/actions/workflows/main.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/CenStats)](https://pypi.org/project/CenStats/0.0.1/)
+
+Centromere statistics toolkit.
+
+* `status`
+    * Determine the status of centromeric contigs based on [`RepeatMasker`](https://www.repeatmasker.org/) annotations.
+* `length`
+    * Estimate HOR array length from [`stv`](https://github.com/fedorrik/stv) bed file and [`HumAS-HMMER`](https://github.com/fedorrik/HumAS-HMMER_for_AnVIL) output.
+
+### Setup
+```bash
+pip install censtats
+```
+
+### Usage
+```bash
+usage: censtats [-h] {status,length} ...
+
+Centromere statistics toolkit.
+
+positional arguments:
+  {status,length}
+
+options:
+  -h, --help       show this help message and exit
+```
+
+Read the docs [here](https://github.com/logsdon-lab/CenStats/wiki/Usage).
+
+### Build
+```bash
+make venv && make build && make install
+source venv/bin/activate && censtats -h
+```
+
+To run tests:
+```bash
+source venv/bin/activate && pip install pytest
+pytest -s -vv
+```
