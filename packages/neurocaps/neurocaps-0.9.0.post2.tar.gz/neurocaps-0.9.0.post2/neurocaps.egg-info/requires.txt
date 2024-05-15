@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+seaborn
+kneed
+nibabel
+nilearn==0.10.2
+surfplot
+neuromaps
+
+[:platform_system != "Windows"]
+pybids
