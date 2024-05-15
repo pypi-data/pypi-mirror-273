@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: folerhandle
+Version: 1.2
+Summary: 文件夹结构处理模块
+Home-page: http://github.com/yourusername/my_package
+Author: WhiteCome
+Author-email: waitKey1@outlook.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 功能
+文件夹结构分析模块
