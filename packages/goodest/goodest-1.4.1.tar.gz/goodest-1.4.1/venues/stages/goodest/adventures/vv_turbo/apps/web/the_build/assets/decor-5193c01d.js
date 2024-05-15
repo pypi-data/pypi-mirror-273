@@ -1,0 +1,1 @@
+import{_ as e,o as c,c as o,a as s}from"./index-a0b775e5.js";const t={},r=s("h1",null,"recipes",-1),n=[r];function a(_,d){return c(),o("header",null,n)}const f=e(t,[["render",a]]);export{f as default};

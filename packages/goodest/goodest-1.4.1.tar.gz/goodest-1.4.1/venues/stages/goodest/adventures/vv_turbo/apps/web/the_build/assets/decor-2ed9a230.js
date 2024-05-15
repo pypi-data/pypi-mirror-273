@@ -1,0 +1,1 @@
+import{_ as o,o as e,c}from"./index-a0b775e5.js";const t={},n={style:{padding:"1in"}},s={ref:"emblem"};function r(_,a){return e(),c("div",n,[(e(),c("svg",s,null,512))])}const i=o(t,[["render",r]]);export{i as default};

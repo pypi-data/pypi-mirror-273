@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,a as n}from"./index-a0b775e5.js";const o={},c={style:{padding:"1in 0"}},a=n("h2",{style:{textAlign:"center"}},"There doesn't seem to be anything at this address.",-1),_=[a];function r(d,i){return t(),s("div",c,_)}const f=e(o,[["render",r]]);export{f as default};
