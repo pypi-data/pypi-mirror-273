@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: powerpathfinder-models
+Version: 0.0.2
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: Django >=5.0
+
+# PPF Models
