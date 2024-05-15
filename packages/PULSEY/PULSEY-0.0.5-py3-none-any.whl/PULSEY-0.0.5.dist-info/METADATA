@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PULSEY
+Version: 0.0.5
+Summary: Stellar Pulsation Package
+Author-email: Andrew Ayala <andrew.ayala.2018@gmail.com>
+Project-URL: Homepage, https://github.com/andrew-ayala/PULSEY
+Project-URL: Issues, https://github.com/andrew-ayala/PULSEY/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# PULSEY
