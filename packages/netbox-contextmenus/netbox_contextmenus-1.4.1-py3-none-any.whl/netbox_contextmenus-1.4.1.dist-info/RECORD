@@ -1,0 +1,8 @@
+netbox_contextmenus/__init__.py,sha256=NXXngS06bzE0hpFx5r6HXXzq0aL2UO-aGV11tWQfI0k,2026
+netbox_contextmenus/pluginvars.py,sha256=P3lVTA2heT7cMoEHrZAJV61dSNueXfU65XDeK9bKFuM,252
+netbox_contextmenus/signals.py,sha256=4uPk_l-KcBXT0iKFW4pYWthRh6p81TRcZRYzJOQQdIU,923
+netbox_contextmenus/static/netbox_contextmenus/nbcm.js,sha256=oGMXol8McvSOWkUqJvDXcN7UFk5Ik4EBXZzJNwS60AY,12503
+netbox_contextmenus-1.4.1.dist-info/METADATA,sha256=0suwMv-pQhgY9Gm6bggL1I0g6-7cBuugKs7MCjve6U8,1296
+netbox_contextmenus-1.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+netbox_contextmenus-1.4.1.dist-info/top_level.txt,sha256=5DROZYEa83HJt_JcBnW5RRd2LKDVHkQXu26TtHTox9I,20
+netbox_contextmenus-1.4.1.dist-info/RECORD,,
