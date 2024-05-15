@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pypipup/__init__.py
+pypipup/pypipup.py
+pypipup.egg-info/PKG-INFO
+pypipup.egg-info/SOURCES.txt
+pypipup.egg-info/dependency_links.txt
+pypipup.egg-info/top_level.txt
