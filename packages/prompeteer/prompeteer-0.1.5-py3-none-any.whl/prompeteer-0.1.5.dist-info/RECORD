@@ -1,0 +1,10 @@
+clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clients/llm_client.py,sha256=o4SIgkDIav4u4y9WzWLMl82cImLbAmemvRurHqcVVbg,1270
+clients/llm_request.py,sha256=_GC8qY-Ks584oqc8UU5ZM1DmIwF0RGbLKgjuc9hIoX4,213
+clients/azure_openai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clients/azure_openai/azure_llm_request.py,sha256=bfC2jMDvzswbJQFlWxaubx1T5EY-T9AWL9solcNlmKQ,1973
+clients/azure_openai/azure_openai_client.py,sha256=dpqCBNVMsbfUBY2EYOmdVsUhTuwiCUkMHojac76Lq-I,3051
+prompeteer-0.1.5.dist-info/METADATA,sha256=5A58V5OOcK7Z13q3BetKzkwPZDR22WwVKPq1RrUf7oo,1997
+prompeteer-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+prompeteer-0.1.5.dist-info/top_level.txt,sha256=cjE5wDB-2IjyJUYjTOD2MoW7-wAEkGlLrAnAFy_RFOQ,8
+prompeteer-0.1.5.dist-info/RECORD,,
