@@ -1,0 +1,13 @@
+textkernel/_DATA_GRAMMAR.py,sha256=bzggD8WH_VjqEdFPJJh3Z-tRTTVoaZPelqyaQa2AQCQ,5227
+textkernel/_NAME_GRAMMAR.py,sha256=Ptpn8y2MgeOVd7zkN4O5wvli9DbzOLDJcmwWng7VwsA,3604
+textkernel/_PREDEFINED_BODY_INFO.py,sha256=twu_f1-ifruxC96GQFYpeOAZKgaWCqpdbUN2BhgHRkQ,2555
+textkernel/_PREDEFINED_FRAME_INFO.py,sha256=rK6WTmrYVUeXIRBHB5af24StzUvhS7FkcqRrkFvNojY,2991
+textkernel/__init__.py,sha256=O6pA6ICH2cicSIgajtv7Sfb4tsozV7QMnlNQMUEp9HI,22377
+textkernel/_version.py,sha256=BGgbj7AHZwtVw29XgDIjcG5woR-f3jQy2X-ArcRT22E,411
+textkernel/SPICE_N0067/zzfdat.f,sha256=aVUvr4see7SEnrwVSwreRd6lBiSYuC6Mzjpqj0_g7Zk,42433
+textkernel/SPICE_N0067/zzidmap.f,sha256=l66ZHgtOUYZGvqLxNpyWR-C6i_ESwywnfZ-nKcaOXio,60816
+rms_textkernel-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rms_textkernel-1.0.2.dist-info/METADATA,sha256=mjPz8zhVzKMNMa_yJMDmNigG6ZxNF_SGGlOyUA3u_kI,6560
+rms_textkernel-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rms_textkernel-1.0.2.dist-info/top_level.txt,sha256=gBsLWdEUsXtMmeuI59XQRLyrvRIPjSZrevKz8hSZepc,11
+rms_textkernel-1.0.2.dist-info/RECORD,,
