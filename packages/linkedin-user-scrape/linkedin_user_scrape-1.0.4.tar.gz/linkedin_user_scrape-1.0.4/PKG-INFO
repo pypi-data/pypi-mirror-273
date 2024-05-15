@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: linkedin_user_scrape
+Version: 1.0.4
+Summary: LinkedIn scraper to parse user profiles
+Author: Harika B V
+Author-email: harikabv.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
