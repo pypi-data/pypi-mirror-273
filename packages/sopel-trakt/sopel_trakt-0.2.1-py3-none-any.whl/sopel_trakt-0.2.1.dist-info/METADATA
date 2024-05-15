@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: sopel-trakt
+Version: 0.2.1
+Summary: A Sopel plugin to fetch users' recent Trakt plays
+Author-email: Shane Donohoe <shane@donohoe.cc>
+Maintainer-email: dgw <dgw@technobabbl.es>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/dgw/sopel-trakt
+Project-URL: Bug Tracker, https://github.com/dgw/sopel-trakt/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel >=7.1
+Requires-Dist: requests
+
+# sopel-trakt
+
+A Sopel plugin to fetch users' recent Trakt plays
+
+## Installation
+
+Can be installed from PyPI using:
+
+    pip install sopel-trakt
+
+## Configuration
+
+`sopel-trakt` has one required configuration value: your API app's client ID.
+You can run `sopel-plugins configure trakt` to set it interactively, or add a
+section for this plugin to your bot's `.cfg` file directly:
+
+```ini
+[trakt]
+client_id = LongRandomStringProvidedByTrakt
+```
+
+Create or retrieve your Trakt API app's client ID at https://trakt.tv/oauth/applications
+
+## Testing
+
+If you would like to make a contribution, be sure to run the included tests. Test requirements can be installed using:
+
+    pip install -r dev-requirements.txt
+
+run tests using:
+
+    make test
+
+## Credits
+
+Adopted from a Sopel 6 plugin, `sopel_modules.trakt`: https://github.com/surskitt/sopel-trakt
+
+### 0.2.1
+
+Fixed:
+* Handle private profiles with a friendly error message
+
+
+### 0.2.0
+
+Revived by new maintainer ([dgw](https://github.com/dgw)) under a new package
+name (`sopel-modules.trakt` → `sopel-trakt`). Major changes include:
+
+* Config setting `api` renamed to `client_id`
+* Updated coding standards for Sopel 7.1+ and Python 3.8+
+* Dropped [`sopel_modules` namespace][namespace-plugin] in favor of a
+  [`setuptools` entry point][entry-point-plugin]
+
+Much of the work in this release was spent on housekeeping; user-facing
+functionality is essentially unchanged from the last release published on PyPI
+by [sharktamer](https://pypi.org/user/sharktamer/).
+
+
+[entry-point-plugin]: https://sopel.chat/docs/plugin/what.html#entry-point
+[namespace-plugin]: https://sopel.chat/docs/plugin/what.html#namespace-package
+
+
+### 0.1.0
+
+Initial release
