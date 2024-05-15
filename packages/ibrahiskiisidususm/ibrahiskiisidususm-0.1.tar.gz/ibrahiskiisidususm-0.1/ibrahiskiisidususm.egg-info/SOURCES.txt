@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+ibrahiskiisidususm.egg-info/PKG-INFO
+ibrahiskiisidususm.egg-info/SOURCES.txt
+ibrahiskiisidususm.egg-info/dependency_links.txt
+ibrahiskiisidususm.egg-info/top_level.txt
