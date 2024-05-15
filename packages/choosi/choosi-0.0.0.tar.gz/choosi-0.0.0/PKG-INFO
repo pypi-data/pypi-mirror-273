@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: choosi
+Version: 0.0.0
+Summary: Crazy hyper-optimized selective inference
+Author: Kevin Fry
+Author-email: kevinbfry@stanford.edu
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.22.3)
+Requires-Dist: pytest (>=7)
+Requires-Dist: scipy (>=1.11.4)
