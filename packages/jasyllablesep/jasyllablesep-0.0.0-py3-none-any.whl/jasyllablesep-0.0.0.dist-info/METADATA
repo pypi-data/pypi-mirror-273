@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: jasyllablesep
+Version: 0.0.0
+Summary: A package for separating Japanese text into syllables
+Home-page: https://github.com/jiroshimaya/jasyllablesep
+Author: shimajiroxyza
+Author-email: shimaya.jiro@irl.sys.es.osaka-u.ac.jp
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jasyllablesep
+Japanese text parser to separate Katakana string into syllables.
+
+# Usage
+
+## Install
+```
+pip install jasyllablesep
+```
+
+## Code example
+
+```Python
+import jasyllablesep
+print(jasyllablesep.parse("シンシュンシャンソンショー"))
+```
+
+```
+['シン', 'シュン', 'シャン', 'ソン', 'ショー']
+```
+
+
