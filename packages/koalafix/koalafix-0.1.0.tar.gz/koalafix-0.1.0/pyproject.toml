@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "koalafix"
+version = "0.1.0"
+description = ""
+authors = ["drose15-chwy <drose15@chewy.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
