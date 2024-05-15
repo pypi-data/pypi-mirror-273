@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: jccrypto
+Version: 1.0.9
+Summary: Simple crypto library
+Home-page: https://github.com/lang-library/py-jccrypto
+Author: JavaCommons Technologies
+Author-email: javacommmons@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyCryptoDome
+
+# py-jccrypto
+
+## To install
+
+pip install jccrypto
+
+## Short Description (Japanese)
+
+```
+Q. 128bit AES暗号化されたファイルを解読するのにはどのくらいの時間がかかりますか？
+
+A. 時間をかけたところで解読できませんよ。
+   AES暗号は共通鍵暗号ですので、複合化したときの平文が解らないと、総当たりしたところで「どのキーで複合すると正しく複合できているのか」が判断できません。
+   せめて、英文テキストとかいう条件がわかっていればある程度は可能ですけど、総当たりですからファイルサイズと計算速度次第ってことになります。
+   これが公開鍵暗号なら、暗号化キーから数学的に（膨大なCPU時間をかければ）複合化キーを計算することができますけどね。
+```
+
+## Sample code
+
+```
+from jccrypto import JcCrypto, JcCryptoFromString
+
+text = "Pythonの暗号化ライブラリとそれらの概要を表にまとめました。非常にたくさんのライブラリがあることがわかりました。それぞれのライブラリが得手不得手を持っているためユースケースに応じて適切なライブラリを使用する必要があります。"
+
+# 鍵の生成
+key = 'abcdefghijklmnop'.encode()
+# IVの生成
+iv = '1234567890123456'.encode()
+
+cr = JcCrypto(key, iv)
+
+print("")
+encoded = cr.encode_text(text)
+print("encoded={}".format(encoded))
+decoded = cr.decode_text(encoded)
+print("decoded={}".format(decoded))
+
+print("")
+text_bytes = text.encode()
+print("text_bytes={}".format(text_bytes))
+
+print("")
+encoded = cr.encode_bytes(text_bytes)
+print("encoded={}".format(encoded))
+decoded = cr.decode_bytes(encoded)
+print("decoded={}".format(decoded))
+
+print("")
+text2 = decoded.decode()
+print("text2={}".format(text2))
+
+print("")
+list = [11, 22, 33]
+encoded = cr.encode_pickle(list)
+decoded = cr.decode_pickle(encoded)
+print("decoded={}".format(decoded))
+
+print("")
+cr2 = JcCryptoFromString("this is password!")
+list = [111, 222, 333]
+encoded = cr2.encode_pickle(list)
+decoded = cr2.decode_pickle(encoded)
+print("decoded={}".format(decoded))
+```
