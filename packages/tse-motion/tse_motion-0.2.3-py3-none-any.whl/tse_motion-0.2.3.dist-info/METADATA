@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tse_motion
+Version: 0.2.3
+Summary: A package to rate motion artifacts in medical images.
+Home-page: https://github.com/jinghangli98/tse-rating
+Author: Jinghang Li
+Author-email: jinghang.li@pitt.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: monai
+Requires-Dist: nibabel
+Requires-Dist: torchvision
+
+# Installation
+```
+pip install tse-motion
+```
+# CLI
+
+```
+rate-motion sub-003_ses_01_acq_hipp_T2w.nii.gz
+
+Input: sub-003_ses-01_acq-hipp_T2w.nii.gz | Motion Rating: 4.0
+```
+# Python
+```python
+from tse_rating import rate
+input_path = 'tse.nii.gz'
+score = rate_motion_artifact(input_path)
+```
