@@ -1,0 +1,8 @@
+setup.py
+pedil/__init__.py
+pedil/pedil.py
+pedil.egg-info/PKG-INFO
+pedil.egg-info/SOURCES.txt
+pedil.egg-info/dependency_links.txt
+pedil.egg-info/requires.txt
+pedil.egg-info/top_level.txt
