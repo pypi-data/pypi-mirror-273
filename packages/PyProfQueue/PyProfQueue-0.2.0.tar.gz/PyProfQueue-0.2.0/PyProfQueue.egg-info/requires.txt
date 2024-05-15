@@ -1,0 +1,5 @@
+numpy
+pytz
+pyarrow
+promql_http_api==0.3.3
+pandas<=2.2.1
