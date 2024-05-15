@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>69", "setuptools-scm>8"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "REVHubInterface"
+dynamic = ["dependencies", "version"] # TODO make dynamic https://pypi.org/project/setuptools-scm/
+description = "GUI program for manual control of REV Robotics Expansion Hub from a PC. Unofficial \"Community Edition\". "
+readme = "README.md"
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+[tool.setuptools]
+packages = ["REVHubInterface"]
+[project.gui-scripts]
+revhubinterface = "REVHubInterface.__main__:initwindow"
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+version_file = "REVHubInterface/_version.py"
