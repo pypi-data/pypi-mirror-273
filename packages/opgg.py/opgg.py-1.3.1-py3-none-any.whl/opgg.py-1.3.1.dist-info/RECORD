@@ -1,0 +1,14 @@
+opgg/__init__.py,sha256=8Joai34WegZXaFkN6bhIpxEi04rmuFKtqnV9BA-pfVU,314
+opgg/cacher.py,sha256=_GeRIL1ykOxiMopdp7jE1N0wb7qD16OT1NeFMNhjyf0,22867
+opgg/champion.py,sha256=yvU8zklsktpRPxntLsrZO2RnsgVFMsGwR3xw-ufEyLc,18303
+opgg/game.py,sha256=A_fIxEcnft960PThBGPhMqGuQ4xEybJsrdU_4jna5U4,5628
+opgg/league_stats.py,sha256=gp8NvUFiPDc76ZI-4RIvhm0XNlEZWyulyQlRlZkGLp4,8734
+opgg/opgg.py,sha256=9s1LVHQLIiDFRiNFh0Hzo6vranGv2AkVCvFsnloXDmE,33908
+opgg/params.py,sha256=_jJZGxvKtzX9dAjt9O5bKkp511pL8KgcMxetzgLAu8k,1464
+opgg/season.py,sha256=hrFPcdYOmuMf9rzTYlvh7d2QHplho52JVYVnYzJUstM,2978
+opgg/summoner.py,sha256=NdCis1k-tyhRhdYGKLJynhDcCpZgYAGTQt-l6VAd2hE,10351
+opgg.py-1.3.1.dist-info/LICENSE.txt,sha256=LBtJp81217efpsgjqZPECTMiLoUJ3K6xb0UWhG2Xsdg,1524
+opgg.py-1.3.1.dist-info/METADATA,sha256=cLBwp4cJYeLUC6BSOsWzuAssq7UahQDxfvolHRl12Js,6480
+opgg.py-1.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+opgg.py-1.3.1.dist-info/top_level.txt,sha256=e8_MDDGIZYTqnvO3Ces4FbMG8H-yTG3dPx9Z-GrynpM,5
+opgg.py-1.3.1.dist-info/RECORD,,
