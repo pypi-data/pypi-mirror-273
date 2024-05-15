@@ -1,0 +1,4 @@
+pandas
+weasyprint
+jinja2
+seaborn
