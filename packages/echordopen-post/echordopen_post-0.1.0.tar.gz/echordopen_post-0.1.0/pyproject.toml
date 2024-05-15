@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "echordopen-post"
+version = "0.1.0"
+description = "Package containing necessary libraries for runnin openCHORD post-treatments."
+authors = ["Langlois Cyril <cyril.langlois@insa-lyon.fr> L'Hôte Gabriel <gabriel.l-hote@insa-lyon.fr>"]
+license = "CECILL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyQt5 = "^5.15.10"
+Dans-Diffraction = "^3.0.0"
+pyquaternion = "^0.9.9"
+orix = "^0.12.1.post0"
+pyqtgraph = "^0.13.7"
+h5py = "^3.11.0"
+numpy = "^1.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
