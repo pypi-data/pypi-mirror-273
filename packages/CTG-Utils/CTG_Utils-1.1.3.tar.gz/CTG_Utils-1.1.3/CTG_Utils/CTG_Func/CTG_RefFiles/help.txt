@@ -1,0 +1,43 @@
+Auteurs : F. Bertin 
+        : collaboration d'A. Chabli et L. Desmeuse pour l'interface graphique.
+		
+Licence : MIT
+
+PyPi : pip install CTG_Utils
+GitHub : https://github.com/Bertin-fap/CTG_Utils
+
+Configuration:
+dans votre home directory créer l'arborescence:
+     ~/CTG/SORTIES/YYYY
+     ~/CTG/SORTIES/YYYY	
+     ------------------	 
+	 ~/CTG/SORTIES/YYYY
+où YYYY représente les quatr didits d'une année.
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+création de l'exécutable:
+   1- Dans votre home directory créer un dossier CTG_exe
+   2- Placer vous dans CTG_exe et créer un environnement virtuel avec une version de python > 9.3.7
+   3- Activer l'environnement virtuel
+   4- Installer le package CTG_Utils (pip install CTG_Utils)
+   5- Installer le package auto-py-to-exe (pip install auto-py-to-exe)
+   6- A la racine du dossier CTG_exe creer le programme python CTG_METER.py contenant les 3 lignes:
+      from CTG_Utils.CTG_GUI import AppMain
+	  app_main = AppMain()
+	  app_main.mainloop()
+   7- exécuter:
+       pyinstaller --noconfirm --onefile --console --icon "C:/Users/franc/PyVenv/CTG_exe/venv/Lib/site-packages/CTG_Utils/CTG_Func/CTG_RefFiles/logoctg4.ico" --add-data "C:/Users/franc/PyVenv/CTG_exe/venv/Lib/site-packages/CTG_Utils;CTG_Utils/"  "C:/Users/franc/PyVenv/CTG_exe/CTG_METER.py"
+   
+	 
