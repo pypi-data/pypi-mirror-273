@@ -1,0 +1,17 @@
+astropy
+fastavro
+ipykernel
+jupyter
+matplotlib
+numpy
+pandas
+torch
+torchinfo
+tqdm
+scikit-learn
+scipy
+tqdm
+
+[dev]
+black
+isort
