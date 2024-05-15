@@ -1,0 +1,15 @@
+connector/__init__.py,sha256=v0jywF3RFTR73MrFEsVtYsLWAndoaweu_Dm5SRZnhMM,981
+connector/_version.py,sha256=tifZcE6NBvADZ-WEn7p3MM5IM-p1XQY7FVpWQ9-39hQ,497
+connector/cli.py,sha256=wRgh2qav7nr0F2OgllTDKAG1XKPuNfNhjodHsdC6ZTs,10734
+connector/googlecloud.py,sha256=FqDMxgFxlyElFSHfDWGGt0XfTAi_qQB9uke43sKbTRY,1277
+connector/googledrive.py,sha256=40sf5nl5AF8uBK3osNEm3Kj5OPO0C_ChvDSXUVwRkTY,2086
+connector/init_conda_env.py,sha256=hXfebBDTnk9JINoA_0shu8L8IX6MyThq2tk0x0yNAU4,5371
+connector/remote.py,sha256=3dCr3KAkQUd-4Y186tFkLM74SDPDUJVjW0sJRVcC4Cw,1645
+connector/restricted.py,sha256=uAR0l-O2gbZrCxaJ_3OJX_WN2mWQ1Qa5_rpE0a1bFEs,1896
+connector/utils.py,sha256=ElD9owYzTfVGxC3aUxn_tZ3tw9F0thH2BT_GYC7aS0c,1993
+connector2-0.2.3.dist-info/LICENSE.md,sha256=CxZ4fvG-toAy79co9KfK9aMNOURWhNj-_P7IrpIBMD8,1074
+connector2-0.2.3.dist-info/METADATA,sha256=tWlL88AUoPTKes-HOPSN9DAet3Nk5s5mk2ya-t2eKv4,7880
+connector2-0.2.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+connector2-0.2.3.dist-info/entry_points.txt,sha256=Vnt9M_BGR4Jm3LXVSv4aP_0qS9Gze9Wl2jp0p-enJRw,81
+connector2-0.2.3.dist-info/top_level.txt,sha256=HEljM61yJAAWyh7-0xWg29ObfG1bd407h2_wBfp0G-g,10
+connector2-0.2.3.dist-info/RECORD,,
