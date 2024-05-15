@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a1e196e.css",
+    "main.js": "/static/js/main.40bf1039.js",
+    "static/media/privacera_logo_white.svg": "/static/media/privacera_logo_white.2674e2c7a68457dc9636d4b7344082ae.svg",
+    "index.html": "/index.html",
+    "main.3a1e196e.css.map": "/static/css/main.3a1e196e.css.map",
+    "main.40bf1039.js.map": "/static/js/main.40bf1039.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a1e196e.css",
+    "static/js/main.40bf1039.js"
+  ]
+}

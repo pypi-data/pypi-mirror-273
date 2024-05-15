@@ -1,0 +1,3 @@
+[console_scripts]
+privacera-securechat = privacera_securechat.__main__:main
+privacera_securechat = privacera_securechat.__main__:main
