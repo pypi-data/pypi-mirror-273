@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pytora
+Version: 0.0.3
+Summary: A minimal PyTorch implementation of LoRA
+Author-email: Lukas Hauzenberger <lukas.hauzenberger@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.9.0
+
+# Pytora
+
+A minimal pytorch implementation for lora via [pytorch parametrizations](https://pytorch.org/tutorials/intermediate/parametrizations.html)
+
+## Installation
+
+```pip install pytora```
+
+## Usage
+
+```
+from pytora import apply_lora
+
+apply_lora(
+    model,
+    lora_r = 4,
+    lora_alpha = 1,
+    lora_dropout = 0.0
+)
+
+```
+
+A simple example use case with a pretrained huggingface model can be found in demo.ipynb
