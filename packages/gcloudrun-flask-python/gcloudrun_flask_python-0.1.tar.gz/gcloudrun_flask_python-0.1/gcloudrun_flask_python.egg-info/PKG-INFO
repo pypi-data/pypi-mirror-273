@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gcloudrun-flask-python
+Version: 0.1
+Requires-Dist: Flask==3.0.3
+Requires-Dist: gunicorn==22.0.0
+Requires-Dist: Werkzeug==3.0.3
