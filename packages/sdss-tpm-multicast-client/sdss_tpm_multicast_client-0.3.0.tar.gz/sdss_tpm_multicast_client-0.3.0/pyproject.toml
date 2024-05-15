@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "sdss-tpm-multicast-client"
+version = "0.3.0"
+description = "TPM multicast client"
+authors = ["José Sánchez-Gallego <gallegoj@uw.edu>"]
+license = "BSD 3-Clause"
+readme = "README.md"
+packages = [
+    { include = "tpm_multicast_client", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10,<4.0"
+sdsstools = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = ">=8.0.0"
+ipdb = ">=0.13.3"
+black = ">=21.10"
+ruff = ">=0.1.0"
+pytest = ">=5.2.2"
+pytest-cov = ">=2.8.1"
+pytest-mock = ">=1.13.0"
+pytest-sugar = ">=0.9.2"
+coverage = {version = ">=5.0", extras = ["toml"]}
+
+[tool.poetry.scripts]
+tpm-multicast-client = "tpm_multicast_client.__main__:tpm_multicast_client"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+fast = true
+
+[tool.ruff]
+line-length = 88
+target-version = 'py312'
+exclude = ["typings/"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+unfixable = ["F841"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401", "F403", "E402"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["tpm_multicast_client"]
+lines-after-imports = 2
+section-order = ["future", "standard-library", "typing", "third-party", "sdss", "first-party", "local-folder"]
+
+[tool.ruff.lint.isort.sections]
+typing = ["typing"]
+sdss = ["sdsstools"]
+
+[tool.pytest.ini_options]
+addopts = "--cov tpm_multicast_client --cov-report xml --cov-report html --cov-report term -W ignore"
+asyncio_mode = "auto"
+
+[tool.coverage.run]
+branch = true
+include = ["src/tpm_multicast_client/*"]
+omit = [
+    "**/__init__.py",
+    "**/tpm_multicast_client/__main__.py",
+    "**/tpm_multicast_client/client.py",
+    "**/tpm_multicast_client/server.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "if TYPE_CHECKING:",
+    "# pragma: no cover"
+]
+
+[build-system]
+requires = ["poetry-core", "setuptools"]
+build-backend = "poetry.core.masonry.api"
