@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xmlplot"
+dynamic = ["version"]
+readme = "README.md"
+dependencies = [
+  "xmlstore>=0.9.13",
+  "numpy",
+  "matplotlib"
+]
+authors = [
+  {name = "Jorn Bruggeman", email = "jorn@bolding-bruggeman.com"}
+]
+description = "Python package for coordinate-aware data reading and plotting"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Development Status :: 5 - Production/Stable"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/BoldingBruggeman/xmlplot"
+
+[tool.hatch.version]
+source = "vcs"
