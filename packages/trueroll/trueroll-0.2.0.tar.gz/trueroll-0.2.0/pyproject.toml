@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "trueroll"
+version = "0.2.0"
+description = "A ten-pin bowling simulation library designed to model games, analyse player performance, and explore the effects of different bowling conditions."
+authors = ["Michael Borck <michael@borck.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.6.0"
+mkdocstrings = "^0.25.1"
+mypy = "^1.10.0"
+flake8 = "^7.0.0"
+mkdocstrings-python = "^1.10.0"
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Documentation" = "https://michaelborck.au/trueroll/"
+"Repository" = "https://github.com/michael-borck/trueroll"
