@@ -1,0 +1,9 @@
+import os
+from rich.console import Console
+from LIBS_CLI.init_envconf import init_envconf
+def exist_envconf():
+    filepath=os.path.abspath(os.path.join(os.path.dirname(__file__), "../env.conf"))
+    if os.path.isfile(filepath) == False:
+        console = Console()
+        console.print("Please configure the tenant parameters before executing this command.", style="red")
+        return False
