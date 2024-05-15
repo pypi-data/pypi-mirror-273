@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: s3-radar
+Version: 0.1.5
+Summary: 
+Author: Ilya Kochankov
+Author-email: ilyakochankov@yandex.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.104,<2.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+# :package:  S3 radar
+
+Simple cli tool for measurement s3 network bandwidth
+
+---
+
+## :arrow_down: Installation
+
+### :snake: PIP
+
+```bash
+pip install s3_radar
+```
+
+### :honey_pot: Poetry
+
+```bash
+poetry add s3_radar
+```
+
+## :cake: How to use it
+
