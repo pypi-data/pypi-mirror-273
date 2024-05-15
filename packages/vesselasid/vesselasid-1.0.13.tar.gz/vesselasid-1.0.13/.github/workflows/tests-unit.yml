@@ -1,0 +1,28 @@
+name: Unit tests
+
+on: [push, pull_request]
+
+jobs:
+  unit-tests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9, '3.10', 3.11, 3.12]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up python-${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get -y install xa65 && \
+            sudo pip install -r test-requirements.txt -r requirements.txt
+          # https://github.com/actions/runner-images/issues/8295
+          # sudo modprobe snd-dummy
+          sudo pip3 install .
+      - name: Run unit tests
+        run: |
+          pytest tests
