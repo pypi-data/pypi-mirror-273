@@ -1,0 +1,14 @@
+attribox/__init__.py,sha256=U4nU4mIG1BON4T6eTPNfBsqJ-k7vRtcUzPgj3ppv7yI,796
+attribox/_abstract_descriptor.py,sha256=lT1lZY1a7yLevWfa8Vp2O0iyIJeIkp44LL5LvQUXP7M,2832
+attribox/_attri_box.py,sha256=ssbSNeviGJnkJqhsvthQDdNhw48krPqlxobW-84Pkkk,7537
+attribox/_attri_class.py,sha256=tBF_egwnkwzAm9BXOROQ2JiSixNTgSRp-y6PGEmzJ5c,2436
+attribox/_attri_vault.py,sha256=eRRyk8h3ytW9fL8H7wpcKuntTWDHfcsidtxLDj7dAKY,2487
+attribox/_attrify.py,sha256=u5_Oh6xb2qW4XsnZVuL8QAsKBPyALzrPj3fr3SG2mb8,1302
+attribox/_delayed_descriptor.py,sha256=gJu5wuc-btGdndRtQEi4ixJs2Te8TnaXMitSrS1Zw5A,2636
+attribox/_this_scope.py,sha256=tnX93ov5GcXGbPkk6o22MVAcPAAXnkKp4IZEJ2i8Xak,1420
+attribox/_typed_descriptor.py,sha256=CuPejCUf5IZrFYm0mEFhgxVb-9DMRbdmdSsTn-wSiog,1780
+attribox-0.1.27.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+attribox-0.1.27.dist-info/METADATA,sha256=fsvC3fiSYld2v8aQCe5J2LELrlHMlJ8liAulUvWM8Vs,3168
+attribox-0.1.27.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+attribox-0.1.27.dist-info/top_level.txt,sha256=o1lFXMU7rYFBi_9dzrz2YffyqeJlR4v5UW3j-b5v3-c,9
+attribox-0.1.27.dist-info/RECORD,,
