@@ -1,0 +1,7 @@
+sstc_schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sstc_schemas/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sstc_schemas/schemas/sites_acronyms.yaml,sha256=yvNYIXIYwWNVZ-Uh-pxJO2ZAmkXCV99BUA5_bCE4XLk,1871
+sstc_schemas/version.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+sstc_schemas-0.1.1.dist-info/METADATA,sha256=cQ9yRYGn-Ku_U7DcCKuzCit_FEM3ZwW4DPgHu0mjd9E,1278
+sstc_schemas-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sstc_schemas-0.1.1.dist-info/RECORD,,
