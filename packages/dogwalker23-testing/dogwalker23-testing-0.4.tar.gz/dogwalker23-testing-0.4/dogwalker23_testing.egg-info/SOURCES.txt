@@ -1,0 +1,8 @@
+README.md
+setup.py
+dogwalker/__init__.py
+dogwalker/walker.py
+dogwalker23_testing.egg-info/PKG-INFO
+dogwalker23_testing.egg-info/SOURCES.txt
+dogwalker23_testing.egg-info/dependency_links.txt
+dogwalker23_testing.egg-info/top_level.txt
