@@ -1,0 +1,12 @@
+process_time_azure_devops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+process_time_azure_devops/__main__.py,sha256=aM2KWk16IeWGSCkzT6VForhLQeTPljw5eUc4y-ybueM,6001
+process_time_azure_devops/arts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+process_time_azure_devops/arts/process_time_logo.py,sha256=fqdrme4LshkChTOhF3sZ2BL_7YCIqytz0kWqLbrlpS0,243
+process_time_azure_devops/models/ArgumentParseResult.py,sha256=90Wru5LM5SlUYZgD7WX2lS1T8S6pDiH9raYD99BGGAA,405
+process_time_azure_devops/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+process_time_azure_devops/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+process_time_azure_devops/parsers/get_last_attempt_to_deliver.py,sha256=m6f4No3pzUDH3UbKMYJ0kAOLtn3u504sNrsyHfSIyRs,1171
+process_time_azure_devops-0.0.8.dist-info/METADATA,sha256=vSMbQZi6eAD8pW-groL6PFXJW71rdvWfkQ74pG0_KMY,1803
+process_time_azure_devops-0.0.8.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+process_time_azure_devops-0.0.8.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+process_time_azure_devops-0.0.8.dist-info/RECORD,,
