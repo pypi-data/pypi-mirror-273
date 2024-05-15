@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: urldecode_cli
+Version: 0.1.0
+Summary: CLI tool to quickly decode URL encoded strings
+Home-page: https://github.com/annie444/urldecode
+License: GPL-3.0-or-later
+Author: Annie Ehler
+Author-email: annie.ehler.4@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Project-URL: Repository, https://github.com/annie444/urldecode
+Description-Content-Type: text/markdown
+
+# urldecode
+
+CLI tool to quickly decode URL encoded strings
+

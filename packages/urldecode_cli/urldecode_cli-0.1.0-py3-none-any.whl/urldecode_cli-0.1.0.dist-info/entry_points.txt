@@ -1,0 +1,3 @@
+[console_scripts]
+urldecode=urldecode-cli-parser.cli:urldecode
+
