@@ -1,0 +1,10 @@
+proq/__init__.py,sha256=OG8phaHs_fTgzRt_Te8Rc9O9VWLn5JH4t3bTuzc0fLI,64
+proq/collectible.py,sha256=vqNxK2jyeoAKtMsw0DHxT9XMTPg_rIxzGcvluKWlOs8,423
+proq/common.py,sha256=RmsTDmrD60jH4djc24chEdIB7q2pG1Wd2WTyKREDZnU,62
+proq/proq.py,sha256=_Up1ppWvLcDQ6qDa95jx1oei1pz6ppvGeOQxbyayFMg,1723
+proq/transform.py,sha256=pl_ejVwH72sbblJD_LYZ-wqCACwit3iZFB3ayQtELVA,1726
+proq/transform_parallel.py,sha256=9wTkVW25_gO2_cDP2-WjJeKnYUGD-WhsK6Bdt571ZRE,1709
+proq-0.0.4.dist-info/LICENSE,sha256=s8BtRbBdXx999AzK-dJ8CxQGpN4FagjojiGsleyA8ds,1066
+proq-0.0.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+proq-0.0.4.dist-info/METADATA,sha256=vrKF63n68KSwLQBPvZGh3nE8vi1Pfh-ONlwxdDkIYTM,1871
+proq-0.0.4.dist-info/RECORD,,
