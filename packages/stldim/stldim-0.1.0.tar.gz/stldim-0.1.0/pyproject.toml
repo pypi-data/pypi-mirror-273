@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stldim"
+dynamic = ["version"]
+
+authors = [
+    { name="nomike Postmann", email="nomike@nomike.com" },
+]
+dependencies = [
+    "argparse",
+    "numpy-stl",
+]
+description = "Get dimensions of an STL file"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.scripts]
+stldim = "stldim.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/nomike/stldim"
+Issues = "https://github.com/nomike/stldim/issues"
+
+[tool.hatch.version]
+path = "src/stldim/version.py"
