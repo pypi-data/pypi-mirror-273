@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pigeonsai
+Version: 1.0.8
+Summary: PigeonAI client and SDK
+Home-page: https://www.pigeonsai.com/
+Author: PigeonsAI Inc.
+Author-email: info@pigeonsai.com
+License: Proprietary License
+Project-URL: Homepage, https://www.pigeonsai.com
+Project-URL: Documentation, https://docs.pigeonsai.com/
+Project-URL: Contact, https://pigeonsai.com/
+Keywords: PigeonsAI AI ecosystem end-to-end machine learning training and deployment platform
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.2
+Requires-Dist: httpx>=0.26.0
+Requires-Dist: pandas
+
+# PigeonsAI SDK
+
+PigeonsAI python client
+
+## Installation
+
+To install the PigeonsAI SDK, use pip:
+
+```
+pip install pigeonsai
+```
+
+## Contributing
+
+If you'd like to contribute to the PigeonsAI SDK, please submit a pull request or open an issue on the GitHub repository.
+
+## License
+
+The PigeonsAI SDK is released under the [MIT License](https://opensource.org/licenses/MIT) 
