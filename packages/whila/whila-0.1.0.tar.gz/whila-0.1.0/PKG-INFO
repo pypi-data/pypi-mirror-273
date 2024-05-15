@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: whila
+Version: 0.1.0
+Summary: WhiLa (Whisper-to-LaTeX) connects tools to convert spoken mathematics into LaTeX code. It includes a Speech-To-Text (STT) layer using OpenAI's whisper model and a Math-To-LaTeX (MTL) layer to render mathematics in LaTeX. The MTL layer is a Large-Language Model (LLM) for converting spoken math to legible LaTeX code. WhiLa aims to bridge the gap between writing math and the digital world, particularly for education and those unable to use conventional math writing techniques.
+Author: Brian Welman
+Author-email: brianallisterwelman@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: llama-index (==0.10.36)
+Requires-Dist: whisper (==1.1.10)
+Description-Content-Type: text/markdown
+
+# WhiLa
+A Speech-to-Math software using AI
+
