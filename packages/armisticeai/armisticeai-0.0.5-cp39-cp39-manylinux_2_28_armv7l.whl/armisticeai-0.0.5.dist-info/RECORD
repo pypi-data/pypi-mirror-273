@@ -1,0 +1,16 @@
+armisticeai-0.0.5.dist-info/METADATA,sha256=Eikix7rL2COuE9HPnQaGUdhTAIwUZjperSN7z5V3-I4,1709
+armisticeai-0.0.5.dist-info/WHEEL,sha256=7uN8QQqzZPLvYgVox9Ww5cIPgtpJ87dCbmsDnRHFNOU,106
+armisticeai/_cli.py,sha256=OqTqS_zstVfnn6_VfCa0iuXzF8UzGx3wH1FEXGDGPks,2478
+armisticeai/_train.py,sha256=lZuIcWAoH3RgfzXgyPmoU9l49X_mIdXZVbfh4gJ-KcE,6096
+armisticeai/_oldclient.py,sha256=tLvh0nPuIxyu5GWHT-Ddl-6uLDiLvS1oX7e0RxQkZNo,11966
+armisticeai/_client.py,sha256=LnnYGBJ4XofKSda1YeglFTzpty1DPzL3OCLI2YzdOi0,5038
+armisticeai/_dap.py,sha256=rzQhLE9G_u7Orx0QPfbr7iGal9kveKbOASjt4UmZZEs,2451
+armisticeai/__init__.py,sha256=jIOsS6ry5TUKZKjXBq2jBunIUUSHhJ1Jic_KVqlkG3w,325
+armisticeai/_dataset.py,sha256=3P9L0DFs3xXvJPX3E5MGYCs-fW2cHmChuveYVu5jyAc,2009
+armisticeai/_exceptions.py,sha256=8x7oTWiCITKcAMX675bhrFkA-vrJmGS8y7pBGea38wQ,44
+armisticeai/_preprocess.py,sha256=VZcMf0RVDkFrhp36rg_E2VQIqtMOn9E-MWB2XcNrM8I,1027
+armisticeai/__main__.py,sha256=354Z0Xh7ZfAuVqzxIuPt2w0e6MAuEW65k6_azBWflAc,30
+armisticeai/_admin.py,sha256=tp0Ao0CkiZt1_xVNqd0nC3OxHHoEK_FZeiqrqJyhfg4,2094
+armisticeai/_utils.py,sha256=Rh1C0RaJp3HKmZCepKathMhO_b18S_Hakgogfb_GPaE,714
+armisticeai/armisticeai.cpython-39-arm-linux-gnueabihf.so,sha256=Ilfs79t15TiN2asZut4cFZWruLHq-5XF01VrxIZHqKw,10337448
+armisticeai-0.0.5.dist-info/RECORD,,
