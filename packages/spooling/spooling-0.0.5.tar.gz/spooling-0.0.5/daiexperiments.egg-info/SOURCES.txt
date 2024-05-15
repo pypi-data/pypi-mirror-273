@@ -1,0 +1,14 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+daiexperiments/__init__.py
+daiexperiments/main.py
+daiexperiments.egg-info/PKG-INFO
+daiexperiments.egg-info/SOURCES.txt
+daiexperiments.egg-info/dependency_links.txt
+daiexperiments.egg-info/top_level.txt
+ishandaiexperiments.egg-info/SOURCES.txt
+ishandaiexperiments.egg-info/dependency_links.txt
+ishandaiexperiments.egg-info/top_level.txt
