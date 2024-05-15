@@ -1,0 +1,1 @@
+from malin.malin import Malin, ScanSummary
