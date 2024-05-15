@@ -1,0 +1,12 @@
+filepattern/__init__.py,sha256=HbOFWJKRfV4Q8yqvP5ZvnLLKhGXYmlyU1hvTBy1H9zc,307
+filepattern/_version.py,sha256=kNTCfebW5IkZNIPKh70wZLZgTs3W1smjd_snbx-O2p4,518
+filepattern/backend.cp38-win_amd64.pyd,sha256=owCnfHHLyQqHsVSo8dm2Dt2zfxgKes1CT4TQFyhlhSE,221696
+filepattern/filepattern.dll,sha256=m1_3vzQODncRhajbj7X6gKDTMN32zNnDbXmXTXma_jI,448512
+filepattern/filepattern.py,sha256=SF2O6Ud2XvdhnZDaYv8fx3xSWUFoQ4MQCuiFwMZ4nOA,21716
+filepattern/functions.py,sha256=-DKcPP7PWwDiY3WlQDjJVhWhV4nDFxHcWMtRDxS39Yc,1978
+filepattern/pydantic_filepattern.py,sha256=vWjCCSXMPkIpnlT8X3oPDS7iWTnRw2BqnoT3itoH-Bs,647
+filepattern-2.0.6.dist-info/LICENSE,sha256=89CjiZBoV1eMyTHIFpoyq34j4ukGOodhKT4yvtwoPvE,1085
+filepattern-2.0.6.dist-info/METADATA,sha256=gwbWunii23UA2lqDXlWqTdd5aUcb4tZeKEJFUl6mNKM,18538
+filepattern-2.0.6.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+filepattern-2.0.6.dist-info/top_level.txt,sha256=fCy9CXm8Dd8ovEp9aVEgsTpnjgD0GOnqUs-fuFnStYM,32
+filepattern-2.0.6.dist-info/RECORD,,
