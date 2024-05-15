@@ -1,0 +1,8 @@
+numpy
+prettyPlot
+ruamel_yaml
+numpy-stl
+scipy
+corner
+jax
+numpyro
