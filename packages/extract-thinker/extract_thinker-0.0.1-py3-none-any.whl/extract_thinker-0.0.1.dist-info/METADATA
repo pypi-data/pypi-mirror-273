@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: extract_thinker
+Version: 0.0.1
+Summary: Library to extract data from files and documents agnositicaly using LLMs
+Author: Júlio Almeida
+Author-email: enoch3712@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cachetools (>=5.3.3,<6.0.0)
+Requires-Dist: instructor (>=1.2.2,<2.0.0)
+Requires-Dist: litellm (>=1.35.20,<2.0.0)
+Requires-Dist: pillow (>=10.3.0,<11.0.0)
+Requires-Dist: pydantic (>=2.7.0,<3.0.0)
+Requires-Dist: pypdfium2 (>=4.29.0,<5.0.0)
+Requires-Dist: pytesseract (>=0.3.10,<0.4.0)
+Requires-Dist: python-docx (>=1.1.0,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: tiktoken (>=0.6.0,<0.7.0)
+Requires-Dist: xlrd (>=2.0.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Open-DocLLM
+
+## Introduction
+This project aims to tackle the challenges of data extraction and processing using OCR and LLM. It is inspired by JP Morgan's DocLLM but is fully open-source and offers a larger context window size. The project is divided into two parts: the OCR and LLM layer.
+
+![image](https://github.com/enoch3712/Open-DocLLM/assets/9283394/2612cc9e-fc66-401e-912d-3acaef42d9cc)
+
+## OCR Layer
+The OCR layer is responsible for reading all the content from a document. It involves the following steps:
+
+1. **Convert pages to images**: Any type of file is converted into an image so that all the content in the document can be read.
+
+2. **Preprocess image for OCR**: The image is adjusted to improve its quality and readability.
+
+3. **Tesseract OCR**: The Tesseract OCR, the most popular open-source OCR in the world, is used to read the content from the images.
+
+## LLM Layer
+The LLM layer is responsible for extracting specific content from the document in a structured way. It involves defining an extraction contract and extracting the JSON data.
+
+## Running Locally
+You can run the models on-premises using LLM studio or Ollama. This project uses LlamaIndex and Ollama.
+
+## Running the Code
+The repo includes a FastAPI app with one endpoint for testing. Make sure to point to the proper Tesseract executable and change the key in the config.py file.
+
+1. Install Tessaract 
+https://github.com/tesseract-ocr/tesseract
+
+2. Install the required Python packages.
+```sh
+pip install -r requirements.txt
+```
+
+3. Run fast api
+```sh
+uvicorn main:app --reload
+```
+
+4. go to the Swgger page: 
+http://localhost:8000/docs
+
+## Running with Docker
+1. Build the Docker image.
+```sh
+docker build -t your-image-name .
+```
+
+2. Run the Docker container.
+```sh
+docker run -p 8000:8000 your-image-name
+```
+
+3. go to the Swgger page: 
+http://localhost:8000/docs
+
+
+## Advanced Cases: 1 Million token context
+The project also explores advanced cases like a 1 million token context using LLM Lingua and Mistral Yarn 128k context window.
+
+## Conclusion
+The integration of OCR and LLM technologies in this project marks a pivotal advancement in analyzing unstructured data. The combination of open-source projects like Tesseract and Mistral makes a perfect implementation that could be used in an on-premise use case.
+
+## References & Documents 
+1. [DOCLLM: A LAYOUT-AWARE GENERATIVE LANGUAGE MODEL FOR MULTIMODAL DOCUMENT UNDERSTANDING](https://arxiv.org/pdf/2401.00908.pdf)
+2. [YaRN: Efficient Context Window Extension of Large Language Models](https://arxiv.org/pdf/2309.00071.pdf)
