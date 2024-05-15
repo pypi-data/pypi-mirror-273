@@ -1,0 +1,14 @@
+{
+    "name": "HR Attendance Timer Stop",
+    "version": "14.0.1.0.0",
+    "summary": "Stops any running timer when an employee checks out in the attendance module.",
+    "category": "Human Resources",
+    "author": "Coopdevs Treball SCCL",
+    "depends": ["hr_attendance", "project_timesheet_time_control"],
+    "data": [],
+    "installable": True,
+    "application": False,
+    "auto_install": False,
+    "license": "AGPL-3",
+    "website": "https://git.coopdevs.org/coopdevs/odoo/odoo-addons/hr-attendance-timer-stop"
+}
