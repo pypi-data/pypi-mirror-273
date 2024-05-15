@@ -1,0 +1,2 @@
+[console_scripts]
+yaml-designer = yaml_designer.yaml_designer
