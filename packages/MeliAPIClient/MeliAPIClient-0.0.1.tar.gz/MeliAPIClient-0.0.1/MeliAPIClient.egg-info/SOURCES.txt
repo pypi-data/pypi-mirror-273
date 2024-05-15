@@ -1,0 +1,13 @@
+README.md
+setup.py
+MeliAPIClient/__init__.py
+MeliAPIClient/actions.py
+MeliAPIClient/bill.py
+MeliAPIClient/order.py
+MeliAPIClient/session.py
+MeliAPIClient/ship.py
+MeliAPIClient.egg-info/PKG-INFO
+MeliAPIClient.egg-info/SOURCES.txt
+MeliAPIClient.egg-info/dependency_links.txt
+MeliAPIClient.egg-info/requires.txt
+MeliAPIClient.egg-info/top_level.txt
