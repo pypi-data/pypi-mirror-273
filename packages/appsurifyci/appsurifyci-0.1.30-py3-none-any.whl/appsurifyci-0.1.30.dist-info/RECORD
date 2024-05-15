@@ -1,0 +1,16 @@
+appsurifyci/GitToAppsurify.py,sha256=aZUh_YNgh3xTM6CT8qfBxGSot2Lihl6x15Im3Bvin4I,55528
+appsurifyci/GitToAppsurifyDev.py,sha256=Nkm2YjSldNZvjfO7U_tKmCPKAPFwhwN5E0_8DayGjlg,36680
+appsurifyci/RunTestsWithAppsurify3.py,sha256=x03KDvnNSN9mkdWXxIQqT551uyTFJDtwOXd0KWJUsI8,166242
+appsurifyci/RunTestsWithAppsurify3_origin.py,sha256=u4U7SJtz3Ve3lZV8a9mxO3Z_niJneHsdP3Pr6yxwCMk,145758
+appsurifyci/RunTestsWithAppsurifyDev.py,sha256=HShvp5ygk5n_ofduMhARllE4qnPYjPws1LDQH-nRsgg,101021
+appsurifyci/TestImport.py,sha256=D5a56ylCzcJ0WcLFr6ZOKgZXONCcPjKTRUiDT2P8w84,3838
+appsurifyci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+appsurifyci/filenames.py,sha256=vpbMJPLdZ_K2wEmSOYn_1jIPZegK34WV5KlwXZL4D_c,4896
+appsurifyci/testpython.py,sha256=B2yBuN3GXkEU3sKQKqioilzEsPbRY77TGTekmF8h5jM,16916
+appsurifyci/trxcpnvert.py,sha256=ak3zoXM71yZDZrf-phbloWxMzLLyA5QWOawLdE5yJL0,384
+appsurifyci-0.1.30.dist-info/LICENCE.txt,sha256=c44zN4PXeQNCLbz64Z146FmkqsBt9bRGrfm1wCJs-zQ,1053
+appsurifyci-0.1.30.dist-info/METADATA,sha256=UYwTw8ARVzodBYXcqxTxhdk8QB0da7tR4YMwlRXH3g8,5990
+appsurifyci-0.1.30.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+appsurifyci-0.1.30.dist-info/entry_points.txt,sha256=5LyGJjNaKBI9aPOnhbJiWMdNvT_2Qn8Jh3SafiyRLGI,214
+appsurifyci-0.1.30.dist-info/top_level.txt,sha256=PM9TpVSBc_tECDw0_R14OtMHjnwtAJJDc7yMLcqEfrY,12
+appsurifyci-0.1.30.dist-info/RECORD,,
