@@ -1,0 +1,5 @@
+llama_index/vector_stores/lantern/__init__.py,sha256=vDIhbZu7v_iTd2BBsY0345Fe8vuiMpOrVKqzqqtHJ6U,104
+llama_index/vector_stores/lantern/base.py,sha256=KbiQt8IbFFH6V_9BLOU5rd96knm2TF5Ye9gNLIRayrM,22683
+llama_index_vector_stores_lantern-0.1.4.dist-info/METADATA,sha256=OBnckCAsAX-CwvQaErVvwnsxz9kx7Zr3kRqkOATJoK4,758
+llama_index_vector_stores_lantern-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_lantern-0.1.4.dist-info/RECORD,,
