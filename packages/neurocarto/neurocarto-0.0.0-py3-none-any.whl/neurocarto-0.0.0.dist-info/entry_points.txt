@@ -1,0 +1,2 @@
+[console_scripts]
+neurocarto = neurocarto.main_app:main
