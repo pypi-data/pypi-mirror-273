@@ -1,0 +1,2 @@
+[console_scripts]
+GTD = ETH_GTD_cli.main:app
