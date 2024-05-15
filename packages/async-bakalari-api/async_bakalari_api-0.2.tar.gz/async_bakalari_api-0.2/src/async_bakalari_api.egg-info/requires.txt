@@ -1,0 +1,8 @@
+asyncio
+typing
+aiohttp
+orjson
+async_timeout
+logger
+strenum
+pytest
