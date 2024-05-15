@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: almgroadad0
+Version: 3.5
+Summary: Python library for music handling
+Home-page: https://github.com/Gaoc3/zhlyr
+Author: Mtsky
+Author-email: secon2636@gmail.com
+License: MIT
+Keywords: lyrics,music,shazam,serialize,serializer,recognize
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires: requests
+Requires: shazamio
+Requires: shazam
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+**A python package to get lyrics from music , serialize data from json response and recognize data from musics**
