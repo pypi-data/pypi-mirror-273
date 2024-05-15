@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: psychopy-phidgets
+Version: 0.2.4
+Summary: Psychopy plugin providing support for Phidgets
+Home-page: https://github.com/maqadri/psychopy-phidgets
+Author: Muhammad A. J. Qadri
+Author-email: mqadri@holycross.edu
+License: GPL3
+Keywords: psychopy phidgets
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE

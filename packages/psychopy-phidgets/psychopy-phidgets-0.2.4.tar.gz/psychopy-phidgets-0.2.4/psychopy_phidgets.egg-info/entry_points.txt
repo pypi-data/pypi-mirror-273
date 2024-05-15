@@ -1,0 +1,5 @@
+[psychopy.experiment.components]
+PhidgetRelayComponent = psychopy_phidgets:PhidgetRelayComponent
+
+[psychopy.hardware]
+PhidgetOutputComponent = psychopy_phidgets:PhidgetOutputComponent
