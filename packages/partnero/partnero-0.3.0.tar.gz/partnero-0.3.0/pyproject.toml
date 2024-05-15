@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "partnero"
+version = "0.3.0"
+description = "A Python SDK designed to wrap around the Partnero API."
+readme = "README.md"
+license = "MIT"
+
+authors = [
+    "Simon Mahfoud <simon@offerwell.com>",
+]
+
+maintainers = [
+    "James Garcia <james@offerwell.com>",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+responses = "^0.25.0"
+ruff = "^0.4.4"
+
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
