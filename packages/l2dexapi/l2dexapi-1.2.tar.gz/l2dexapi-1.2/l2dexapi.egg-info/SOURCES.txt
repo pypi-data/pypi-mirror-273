@@ -1,0 +1,9 @@
+setup.py
+L2dvExApi/__init__.py
+L2dvExApi/msg_list.py
+l2dexapi.egg-info/PKG-INFO
+l2dexapi.egg-info/SOURCES.txt
+l2dexapi.egg-info/dependency_links.txt
+l2dexapi.egg-info/not-zip-safe
+l2dexapi.egg-info/requires.txt
+l2dexapi.egg-info/top_level.txt
