@@ -1,0 +1,14 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+poetryx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetryx/cli/__init__.py,sha256=Tkk-6JP43eHNfLOaZDMW0G_pmfFwydZWb6CfILzG9DU,45
+poetryx/cli/commands.py,sha256=hRzsWe6Tlvodv-Ow3eO5WgdsgBNz3mzr4nD6_HZuZkU,1267
+poetryx/cli/typer_cli.py,sha256=yZn5tmEyuj0zAbb5829iqXsPsnmISbm08Lo0D-PXe-U,2518
+poetryx/file/__init__.py,sha256=vBpYc0wuLTeJE49uX0r-X5nMbUFQzxcHJBedFIaD8vU,62
+poetryx/file/config.toml,sha256=LRkDCeRNOz9YqSnIxUqOk5UqMr_RJSg0mmv1_Ryg5zo,26
+poetryx/file/file_config.py,sha256=iqCmn5e9n-oHfnOZncmDsZLI4HoUAYnBP-XsLNZgTuA,2000
+poetryx/file/file_manager.py,sha256=7hGK8emcuFJ0AgShA-ZRGSQwBLbD-Smqej8QWcBZIqM,1436
+poetryx-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+poetryx-0.1.0.dist-info/METADATA,sha256=Du4w44NgeLn018ZKxGFDSHxBJe3LIS1G-I6ZzNTDKJE,2113
+poetryx-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+poetryx-0.1.0.dist-info/entry_points.txt,sha256=941EaSKaB8ljIH69m4RwGvx7uF2DmFCRVpL7X5D_ASI,43
+poetryx-0.1.0.dist-info/RECORD,,

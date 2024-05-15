@@ -1,0 +1,3 @@
+[console_scripts]
+poetryx=poetryx.cli:cli
+
