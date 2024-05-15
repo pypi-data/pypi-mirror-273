@@ -1,0 +1,3 @@
+[console_scripts]
+MelodyMaster=MelodyMaster.cil:main
+
