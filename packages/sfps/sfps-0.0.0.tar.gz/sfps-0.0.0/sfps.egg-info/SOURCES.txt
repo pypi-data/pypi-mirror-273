@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sfps/__init__.py
+sfps/sfps.py
+sfps.egg-info/PKG-INFO
+sfps.egg-info/SOURCES.txt
+sfps.egg-info/dependency_links.txt
+sfps.egg-info/top_level.txt
