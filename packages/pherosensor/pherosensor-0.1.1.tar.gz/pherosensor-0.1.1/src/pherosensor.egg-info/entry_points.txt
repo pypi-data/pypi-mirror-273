@@ -1,0 +1,2 @@
+[console_scripts]
+pherosensor = pherosensor.cli:main
