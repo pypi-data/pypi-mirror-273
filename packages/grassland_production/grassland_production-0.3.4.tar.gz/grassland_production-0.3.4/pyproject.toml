@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "grassland_production"
+version = "0.3.4"
+description = "Computation of grassland area and production based on animal energy calculations and grassland inputs"
+authors = ["Colm Duffy"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "2.1.4"
+numpy = "^1.25.0"
+sqlalchemy = "<2.0"
+cattle_lca = "0.3.1"
+sheep_lca = "0.3.1"
+catchment_data_api = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
