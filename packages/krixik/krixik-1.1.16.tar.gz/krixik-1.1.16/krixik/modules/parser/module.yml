@@ -1,0 +1,18 @@
+module:
+  name: parser
+  models: 
+    - name: sentence
+    - name: fixed
+      params: 
+        chunk_size:
+          type: int    
+          default: 10
+        overlap_size:
+          type: int    
+          default: 4
+  input: 
+    type: text
+  output: 
+    type: json
+  defaults: 
+    model: sentence
