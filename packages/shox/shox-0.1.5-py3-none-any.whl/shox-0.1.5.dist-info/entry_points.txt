@@ -1,0 +1,3 @@
+[console_scripts]
+shox-api = api:start
+shox-cli = cli:call_api
