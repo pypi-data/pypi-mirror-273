@@ -1,0 +1,71 @@
+Metadata-Version: 2.3
+Name: hypothesis-openapi
+Version: 0.1.0
+Summary: Hypothesis plugin for generating valid Open API documents
+Project-URL: Changelog, https://github.com/Stranger6667/hypothesis-openapi/blob/main/CHANGELOG.md
+Project-URL: Bug Tracker, https://github.com/Stranger6667/hypothesis-openapi
+Project-URL: Funding, https://github.com/sponsors/Stranger6667
+Project-URL: Source Code, https://github.com/Stranger6667/hypothesis-openapi
+Author-email: Dmitry Dygalo <dmitry@dygalo.dev>
+Maintainer-email: Dmitry Dygalo <dmitry@dygalo.dev>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: hypothesis,openapi,testing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Hypothesis
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.10
+Requires-Dist: hypothesis<7.0,>=6.84.3
+Provides-Extra: cov
+Requires-Dist: coverage-enable-subprocess; extra == 'cov'
+Requires-Dist: coverage[toml]>=7; extra == 'cov'
+Provides-Extra: dev
+Requires-Dist: coverage-enable-subprocess; extra == 'dev'
+Requires-Dist: coverage>=7; extra == 'dev'
+Requires-Dist: coverage[toml]>=7; extra == 'dev'
+Requires-Dist: jsonschema>=4.21.0; extra == 'dev'
+Requires-Dist: pytest-xdist<3.0,>=2.5; extra == 'dev'
+Requires-Dist: pytest<8,>=6.2.0; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: coverage>=7; extra == 'tests'
+Requires-Dist: jsonschema>=4.21.0; extra == 'tests'
+Requires-Dist: pytest-xdist<3.0,>=2.5; extra == 'tests'
+Requires-Dist: pytest<8,>=6.2.0; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# hypothesis-openapi
+
+[![Build](https://github.com/Stranger6667/hypothesis-openapi/workflows/build/badge.svg)](https://github.com/Stranger6667/hypothesis-main/actions)
+[![Coverage](https://codecov.io/gh/Stranger6667/hypothesis-openapi/branch/main/graph/badge.svg)](https://codecov.io/gh/Stranger6667/hypothesis-openapi/branch/main)
+[![Version](https://img.shields.io/pypi/v/hypothesis-openapi.svg)](https://pypi.org/project/hypothesis-openapi/)
+[![Python versions](https://img.shields.io/pypi/pyversions/hypothesis-openapi.svg)](https://pypi.org/project/hypothesis-openapi/)
+[![License](https://img.shields.io/pypi/l/hypothesis-openapi.svg)](https://opensource.org/licenses/MIT)
+
+Hypothesis plugin for generating valid Open API documents.
+
+## Usage
+
+```python
+from hypothesis import given
+from hypothesis_openapi import openapis
+
+
+@given(openapis(version="2.0"))
+def test_openapi(spec):
+    assert spec["swagger"] == "2.0"
+    assert "info" in spec
+```
+
+## License
+
+The code in this project is licensed under [MIT license](https://opensource.org/licenses/MIT).
+By contributing to `hypothesis-openapi`, you agree that your contributions will be licensed under its MIT license.
