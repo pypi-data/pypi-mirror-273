@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pypipup
+Version: 1.2
+Summary: Package that identifies and updates outdated pip packages.
+Home-page: https://github.com/niCodeLine/pypipup
+Author: Nico Spok
+Author-email: nicospok@hotmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypipup
+
+This Python script automates the process of updating the Pip package manager and checking for outdated Python packages in your environment and attempts to update the outdated ones. 
+
+## Installation
+
+You can easily install `pypipup` using pip:
+
+```bash
+pip install pypipup
+```
+or via git:
+
+```bash
+git clone https://github.com/niCodeLine/pypipup.git
+```
+or just copy-paste it into your code.
+## Usage
+
+To use pypipup open a terminal or command prompt and run the script:
+
+```bash
+python -m pypipup
+```
+or for Python 3:
+```bash
+python3 -m pypipup
+```
+
+## Features
+
+- **Update Pip**: Guarantees the latest version of Pip is installed
+- **Check and Update Packages**: Scans for outdated packages and updates them.
+- **Verification**: Verifies the success of the update by rechecking for outdated packages.
+
+## Contributions
+
+Contributions are welcome! If you have improvements or fixes, please send a pull request or open an issue in the GitHub repository.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+## Contact
+
+Nico Spok - nicospok@hotmail.com
+GitHub: niCodeLine
