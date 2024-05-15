@@ -1,0 +1,273 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: bisos.b/bisos.b.cs
+#+roam_tags: branch
+#+roam_key: PyCsFwrk/bisos.b/bisos.b.cs
+[[roam:PyCsFwrk/bisos.b]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/panels/bisos-core/PyCsFwrk/bisos.b/bisos.b.cs/_nodeBase_/fullUsagePanel-en.org =*
+* /file-truename:/  /bisos/git/auth/bxRepos/bisos-pip/b/py3/panels/bisos.b.cs/_nodeBase_/fullUsagePanel-en.org
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto" :subTitle "BISOS Command services"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: PyCsFwrk/bisos.b -- bisos.b.cs~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*                                              ~BISOS Command services~
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* +
+*                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos.b/bisos.b.b_io/_nodeBase_")][ =bisos.b.b_io= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos.b/bisos.b.cs/_nodeBase_")][ =bisos.b.cs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos.b/fileParameters")][fileParameters]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos.b/fileTreeObject-FTO")][fileTreeObject-FTO]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/PyCsFwrk/bisos.b/fileVariables")][fileVariables]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/bisos.b/_nodeBase_")][ = /<bisos.b>/ = ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/PyCsFwrk/_nodeBase_")][ =PyCsFwrk= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Scope is Cmnd-s Cmnd-Svcs, Params, Args, Inputs.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CS Exposed Name Spaces" :anchor "" :extraInfo "cs.Cmnd, cs.main. cs.examples."
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *CS Exposed Name Spaces:* |]]  cs.Cmnd, cs.main. cs.examples.  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** cs.Cmnd
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CS Internal Design" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *CS Internal Design:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Types Of Cmnds Inputs" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Types Of Cmnds Inputs:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** cmndParams:
+** cmndArgs:
+** stdIn:
+** pyPars: (PyInvokations)
+** rtInv:
+** cmndOutcome: Perhaps as outcome of a previous operation
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Cmnd Invokation Origins" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Cmnd Invokation Origins:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+b:py3:cs:cmnd/classHead Params:
+
+
+When <extent==default no code is provided for args verification
+When <extent==verify code is provided verify cmndArgs
+
+When <ro==cli (default), ro Cmnd invocation is permitted and no code is added
+When <ro==noCli there will be a class variable    rtInvConstraints = cs.rtInvoker.RtInvoker.new_noRo()
+When <ro==cli+py An extra roSapPath=None is added as a pyInv and code is provided to process it
+When <ro==py  is same as cli+py plus <ro=noCli
+
+|--------+------------+----------------------------------------------------------------------------------------|
+| Params | Value      | Comments                                                                               |
+|        | Default    |                                                                                        |
+|--------+------------+----------------------------------------------------------------------------------------|
+| extent | *no*         | default no code is provided for args verification                                      |
+| extent | verify     | code is provided verify cmndArgs                                                       |
+|--------+------------+----------------------------------------------------------------------------------------|
+| ro     | <<cli>> *d*  | ro Cmnd invocation is permitted and no code is added                                   |
+| ro     | <<noCli>>  | there will be a class variable    rtInvConstraints = cs.rtInvoker.RtInvoker.new_noRo() |
+| ro     | <<cli+py>> | An extra roSapPath=None is added as a pyInv and code is provided to process it         |
+| ro     | <<py>>     | is same as cli+py plus <ro=noCli                                                       |
+|--------+------------+----------------------------------------------------------------------------------------|
+
+
+|-----------------+-------+-------------+----------+---------+----------|
+| Command Type    | :ro   | Constraints | In Pars  | Outcome | Comments |
+|                 | "xxx" |             | Origin   |         |          |
+|-----------------+-------+-------------+----------+---------+----------|
+| [[1.A Direct Cli]]  | [[cli]]   |             | stdin    |         |          |
+| [[1.B Direct Py]]   | cli   |             | cmndArgs |         |          |
+| [[2.A Remote Cli]]  |       | new_noRo()  | stdin    |         |          |
+| [[2.A Remote Py]]   | py    |             | stdin    |         |          |
+| [[3.A Remote Perf]] | noCli |             | stdin    |         |          |
+|-----------------+-------+-------------+----------+---------+----------|
+
+| Cmnd Prfix | :ro   | Constraints | Comments                        |
+|------------+-------+-------------+---------------------------------|
+| perf_      | noCli | new_noRo()  | Only Runs on Performer Side     |
+| inv_       | noCli | new_noRo()  | Only runs on invoker Side       |
+| ro_        | cli   |             | RO Invokes + Performer Side     |
+| roPyInv_   | noCli |             | Invokes at specified  Performer |
+| roPyPerf_  | py    | new_noRo()  | Provides PyCmnd at roSapPath    |
+
+
+** +
+** A Cmnd can be invoked (originated) from any of the following sources:
+** 1) Direct invocation executes within the process of the invoker.
+** 2) Remote invocation results in remote-execution.
+** 3) Remote performance.
+** ---------
+** <<1.A Direct CLI>> Command-Line:
+*** From cs.main.xx
+*** rtInv:
+*** cmndOutcome: blank or previous inv
+*** pars, args and stdin
+** <<1.B Direct Py>> Invokation:
+*** From A function: with fresh rtInv and fresh cmndOutcome
+*** From A Cmnd: with existing rtInv and existing cmndOutcome
+** <<2.A Remote CLI>> /Command-Line: Based on specified SAP
+*** From cs.main.yy
+*** rtInv:
+*** cmndOutcome: blank or previous inv
+*** pars, args and stdin
+** <<2.B Remote Py>> Invokation:
+*** From A function: with fresh rtInv and fresh cmndOutcome
+*** From A Cmnd: with existing rtInv and existing cmndOutcome
+** <<3.A Remote Perf>>
+*** Similar to 1.A) but when pars,args, stdin is received through RPyC
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CsParam (param.py), FileParam (fp.py), fpIf.py, FpCsParam" :anchor "" :extraInfo "Config Management Design"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *CsParam (param.py), FileParam (fp.py), fpIf.py, FpCsParam:* |]]  Config Management Design  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** CsParam-s and FileParam-s are independent concepts which can be combined.
+** ------ ~CmndParam~-s b.cs.param.CmndParam --------
+** Map to argparse.
+** Are of two types: 1) CsSysParams, 2) CsCmndParams.
+** CsSysParams apply to CsMain and can control behaviour of any Cmnd. Examples are --verbose
+** CsCmndParams apply to Cmnd classes.
+** CmndParams can be hierarchical -- Not implemeted yet. Not sure if we should implement  --if:lan:ipAddr=xx
+** ------ ~FileParam~-s b.fp --------
+** A fpBase+fpName+fto+fpEncType+fpValue+fpAttrs
+** fpBase: is a fileSysBasePath.
+** fpName: is at fileSysBasePath/fpName
+** fto: Every fileSysBasePath/fpName is a File-Tree-Object
+** fpEncType: clearText or encripted
+** fpValue: current value of fpName
+** fpAttrs: other fileVariables in fpName directory related to it. description, limitation
+** ------ ~FpCsParam~-s b.fpIf.FpCsParam --------** ------ FpCsParam-s b.fpIf.FpCsParam --------
+** FpCsParam is a Class of pointing to FileParam an d
+** FpCsParam has a fileParam attribute as an instance of FileParam and a cmndParam as instance of CmndParam
+** fps_manifestDict points to FpCsParam.
+** ------ ~FpCmndParamsBase~ b.fpIf.FpCsBase Abstract Class --------
+** Combines  fpsBase+FpCsParam-definitions+fps_manifest
+** Instantiated with fpsBase
+** is also a FILE_TreeObject
+** Includes fps_manifest.
+** fps_manifest is a dict with key as FpCsParam-name and value as either "FpCsParam" or "base"
+** When fps_manifest indicates that FpCsParam-name is a base, points to FpCsSubBase
+** Params of FpCsSubBase are accessed with get/set/fetch  using subBase:subSubBase cmnd args syntax
+** ------ Usage Of FpCsBase Abstract Class For ~Configuration And Secrets Management~ --------
+** SubClass FpCsBase in your own context. Add, custom base selection machinary
+** Map custom base selection machinary to fpsBasePath in combination with cls name and use fpIf cmnds.
+** Create additional SubClass FpCsBase as subBases and chain them together.
+** Manage the parameters with -i setParam subBase:subSubBase:paramName=paramValue syntax perhaps all in one place
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Document Plan" :anchor "" :extraInfo "Python Command Services"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Document Plan:* |]]  Python Command Services  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Python Command Services -- A Framework For Abstraction Of Expectation-Complete-Operations
+** Package it with existing docs. Other Doc being:
+** metaROS (Remote Operations Services) --- Models, Strategies And Tools
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Services -- Remote Operation" :anchor "" :extraInfo "rpyc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Services -- Remote Operation_: |]]  rpyc  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ROSAP Path Structure" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ROSAP Path Structure:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+Base For File parameters
+
+|------------------------+-----------+---------------+-----------------------------------------|
+| Rel Base Path          | Purpose   | Example       | Comments                                |
+|------------------------+-----------+---------------+-----------------------------------------|
+| /bisos/var/cs/ro/sap   | Path Base |               | Outside of BISOS,  /var/bisos/cs/ro/sap |
+| rosmu (cs main module) | Selector  | csExamples.cs | Any registered cs                       |
+| perfName               | Selector  | PML-1006      | In BISOS, container name                |
+| perfModel              | Selector  | rpyc          | model of performer -- later Swager      |
+| rosmuSel               |           | default       | Other instance of rosmu on performer    |
+|------------------------+-----------+---------------+-----------------------------------------|
+
+List of File Parameters
+
+|--------------------+-------------+---------------+----------------------------------------------------------|
+| FileParameter Name | Typing      | Example       | Comments                                                 |
+|--------------------+-------------+---------------+----------------------------------------------------------|
+| perfIpAddr         | IP-Addr     | 127.0.0.1     | In BISOS, container                                      |
+| perfPortNu         | integer     | 100001        | /bisos/control/services -- corresponding to rosmu/csMain |
+| accessControl      | placeholder | placeholder   | placeholder                                              |
+| perfModel          | string      | rpyc          | in 2022, rpyc is your only choice                        |
+| perfName           | string      | PML-1006      | See above                                                |
+| rosmu              | string      | csExamples.cs | See above                                                |
+| rosmuSel           | string      | default       | See above                                                |
+|--------------------+-------------+---------------+----------------------------------------------------------|
+
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:bisos.b.cs
+
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
