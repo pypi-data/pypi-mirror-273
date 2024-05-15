@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mistral_finetune/__init__.py
+src/mistral_finetune/hello.py
+src/mistral_finetune.egg-info/PKG-INFO
+src/mistral_finetune.egg-info/SOURCES.txt
+src/mistral_finetune.egg-info/dependency_links.txt
+src/mistral_finetune.egg-info/top_level.txt
