@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mttopete_mongodb/__init__.py
+src/mttopete_mongodb/mongo_crud.py
+src/mttopete_mongodb.egg-info/PKG-INFO
+src/mttopete_mongodb.egg-info/SOURCES.txt
+src/mttopete_mongodb.egg-info/dependency_links.txt
+src/mttopete_mongodb.egg-info/requires.txt
+src/mttopete_mongodb.egg-info/top_level.txt
