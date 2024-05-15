@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+FlashRank.egg-info/PKG-INFO
+FlashRank.egg-info/SOURCES.txt
+FlashRank.egg-info/dependency_links.txt
+FlashRank.egg-info/requires.txt
+FlashRank.egg-info/top_level.txt
+flashrank/Config.py
+flashrank/Ranker.py
+flashrank/Rankerb.py
+flashrank/Rankerc.py
+flashrank/__init__.py
