@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: geouned
+Version: 1.0.1
+Summary: Conversion tool from CAD to CGS/CGS to CAD for Monte Carlo particle transport codes (MCNP & OpenMC)
+Author-email: Juan-Pablo Catalan <jpcatalan@ind.uned.es>, Patrick Sauvan <psauvan@ind.uned.es>
+Maintainer-email: Patrick Sauvan <psauvan@ind.uned.es>, Juan-Pablo Catalan <jpcatalan@ind.uned.es>, Juan Garcia <jgarcia@ind.uned.es>, Francisco Ogando <fogando@ind.uned.es>, Javier Alguacil <jalguacil@ind.uned.es>
+Project-URL: Homepage, https://github.com/GEOUNED-org
+Project-URL: Repository, https://github.com/GEOUNED-org/GEOUNED
+Project-URL: Documentation, https://github.com/GEOUNED-org/GEOUNED/docs
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: black ==24.4.2 ; extra == 'tests'
+
+[![CI testing](https://github.com/GEOUNED-org/GEOUNED/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/GEOUNED-org/GEOUNED/actions/workflows/ci.yml)
+[![Upload Python Package](https://github.com/GEOUNED-org/GEOUNED/actions/workflows/python-publish.yml/badge.svg)](https://github.com/GEOUNED-org/GEOUNED/actions/workflows/python-publish.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
+[![documentation](https://github.com/GEOUNED-org/GEOUNED/actions/workflows/documentation.yml/badge.svg)](https://github.com/GEOUNED-org/GEOUNED/actions/workflows/documentation.yml)
+
+
+# GEOUNED
+A tool to convert from CAD to CSG & CSG to CAD for Monte Carlo transport codes (MCNP & OpenMC).
+This repository contains the implementation of the algorithm presented in the paper [GEOUNED: A new conversion tool from CAD to Monte Carlo geometry](https://doi.org/10.1016/j.net.2024.01.052).
+
+See the [online documentation](https://geouned-org.github.io/GEOUNED/index.html) for installation, usage and API reference.
+
+## Citation
+
+```
+@article{CATALAN2024,
+  author = {J.P. Catalán and P. Sauvan and J. García and J. Alguacil and F. Ogando and J. Sanz},
+  title = {GEOUNED: A new conversion tool from CAD to Monte Carlo geometry},
+  journal = {Nuclear Engineering and Technology},
+  year = {2024},
+  issn = {1738-5733},
+  doi = {https://doi.org/10.1016/j.net.2024.01.052}
+}
+```
