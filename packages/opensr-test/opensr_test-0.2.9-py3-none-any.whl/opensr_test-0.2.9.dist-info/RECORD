@@ -1,0 +1,13 @@
+opensr_test/__init__.py,sha256=SLbFCXMftq09wlP-tOSplB7lOaMCpC4uJMR6PuJqXYk,111
+opensr_test/config.py,sha256=oYMFlRUdf8bMpSeZdp_ToWiVbUp8aa4r1HlebLlHnKU,3303
+opensr_test/correctness.py,sha256=I9ZYYzIQTt27frmZfX4wvKgDR1d7Fbvg7gAgoOjKoNA,3925
+opensr_test/dataset.py,sha256=hAwnfA2LntQnUlGTlwrYArVOUHiQ8IYcZRWrB-W_Lkc,2154
+opensr_test/distance.py,sha256=uG76PnnIPdSIY7jmV6EyBiGb3fFJH7iTai0pVt0-C3w,17828
+opensr_test/main.py,sha256=9INu8X1YblfohkfE5WZFkYN4AUC6u_iQrNihrvznGBY,20917
+opensr_test/plot.py,sha256=tsD8wdG7BV-Fc7np7eDfyzK3GaH8DF7C5rBQe-89BMY,11321
+opensr_test/spatial.py,sha256=FLxjKAqcXxkZQgya11PXjCI4_-kwXcmYS5TVGOhBAN0,2200
+opensr_test/utils.py,sha256=bKLTfUdBcnNv7BcEl9UUnfjA1aJXKg4Ty9c-mZ_5Mlc,4270
+opensr_test-0.2.9.dist-info/LICENSE,sha256=YdB4BQMkMzWuKvXRIpQR4g91IQ_pwA5PSH2lNM97zFI,1070
+opensr_test-0.2.9.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+opensr_test-0.2.9.dist-info/METADATA,sha256=PzLTL4SEbLtNRH8lrAPo8NCN4MQ_LqRo5w3ATlwkfcY,12965
+opensr_test-0.2.9.dist-info/RECORD,,
