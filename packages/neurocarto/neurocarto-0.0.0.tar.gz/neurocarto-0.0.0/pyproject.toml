@@ -1,0 +1,62 @@
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+# https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/
+
+[project]
+name = 'neurocarto'
+version = '0.0.0'
+authors = [
+    { name = "Ta-Shun Su", email = "antoniost29@gmail.com" },
+]
+description = "A web-interface channelmap editor for Neuropixels probe familiy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["Electrophysiology", "Neuropixels", 'Channelmap']
+classifiers = [
+    # https://pypi.org/classifiers/
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    # "Programming Language :: Python :: 3.11",
+    # "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Environment :: Web Environment",
+    "Environment :: Console",
+    "Topic :: Scientific/Engineering",
+    'Intended Audience :: Science/Research',
+    "Typing :: Typed",
+]
+
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/AntonioST/NeuroCarto"
+Documentation = "https://github.com/AntonioST/NeuroCarto/wiki"
+Repository = "https://github.com/AntonioST/NeuroCarto"
+Issues = "https://github.com/AntonioST/NeuroCarto/issues"
+
+[project.scripts]
+neurocarto = "neurocarto.main_app:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ['*.txt', '*.matplotlibrc']
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.dynamic.optional-dependencies]
+opt = { file = ["requirements-opt.txt"] }
+doc = { file = ["requirements-doc.txt"] }
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]

@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: neurocarto
+Version: 0.0.0
+Summary: A web-interface channelmap editor for Neuropixels probe familiy
+Author-email: Ta-Shun Su <antoniost29@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, AntonioST
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Project-URL: Homepage, https://github.com/AntonioST/NeuroCarto
+Project-URL: Documentation, https://github.com/AntonioST/NeuroCarto/wiki
+Project-URL: Repository, https://github.com/AntonioST/NeuroCarto
+Project-URL: Issues, https://github.com/AntonioST/NeuroCarto/issues
+Keywords: Electrophysiology,Neuropixels,Channelmap
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: typing_extensions
+Requires-Dist: bokeh
+
+NeuroCarto: A Neuropixels Channelmap Editor
+===========================================
+
+[![Documentation Status](https://readthedocs.org/projects/neurocarto/badge/?version=latest)](https://neurocarto.readthedocs.io/en/latest/?badge=latest)
+
+NeuroCarto is a neural probe channel map editor for the Neuropixels probe family.
+It allows user to create a blueprint for arranging electrodes in a desired density
+and generate a custom channel map.
+
+Features
+--------
+
+- Read/Visualize/Modify/Write Neuropixels channelmap files (`*.imro`).
+- Read SpikeGLX meta file (`*.meta`).
+- Read/Visualize/Modify/Write Blueprint (a blueprint for generating a channelmap by a programming way).
+- Show Atlas mouse brain as a background image.
+- Customize electrode selection and probe kind.
+- Show channel efficiency and electrode density.
+
+Relevant Papers
+---------------
+
+writing.
+
+Documents
+---------
+
+Please check [Documentation](https://neurocarto.readthedocs.io/en/latest/) for more details.
+
+Install and Run
+---------------
+
+### prepare environment.
+
+Require `Python 3.10`.
+
+### Install
+
+
+This package will upload onto PyPI soon.
+
+### Run
+
+```shell
+neurocarto
+```
+
+### Optional dependency
+
+* `bg-atlasapi` Atlas Brain background image supporting.
+* `Pillow`, `tifffile` other background image format supporting.
+* `probeinterface` probe/channelmap format import/export
+* `pandas`, `polars` channelmap data export.
+
+Full optional dependencies are list in [requirements-opt.txt](requirements-opt.txt).
+
+Build from source
+-----------------
+
+Please check [install](https://github.com/AntonioST/chmap_editor/wiki/install) page in wiki.
+
+
