@@ -1,0 +1,6 @@
+[console_scripts]
+wata = wata.console:wata_console
+wata.help = wata.console:explain
+wata.lxq.yanhua = wata.console:fireworks
+wata.show_kitti = wata.console:show_kitti
+
