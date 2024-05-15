@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+autodistill_gpt_4o/__init__.py
+autodistill_gpt_4o/gpt4o_model.py
+autodistill_gpt_4o.egg-info/PKG-INFO
+autodistill_gpt_4o.egg-info/SOURCES.txt
+autodistill_gpt_4o.egg-info/dependency_links.txt
+autodistill_gpt_4o.egg-info/requires.txt
+autodistill_gpt_4o.egg-info/top_level.txt
