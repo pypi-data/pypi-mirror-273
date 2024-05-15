@@ -1,0 +1,134 @@
+Metadata-Version: 2.3
+Name: sonar-api-wrapper
+Version: 1.2.0
+Summary: Sonar API Wrapper - a Sonarqube api wrapper
+Project-URL: Homepage, https://github.com/AlessandroStaffolani/sonar-api-wrapper
+Project-URL: Repository, https://github.com/AlessandroStaffolani/sonar-api-wrapper.git
+Author-email: Alessandro Staffolani <alestam93@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Alessandro Staffolani
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: sonar,sonarqube
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: coverage[toml]; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Sonar API Wrapper
+
+Sonar API Wrapper - a Sonarqube api wrapper
+
+## Install
+
+```bash
+pip install sonar-api-wrapper
+``` 
+
+## How to use
+
+### api_call
+
+Executes an API call to SonarQube. This method wraps the `requests.request` method.
+
+### Parameters
+
+- `method` (`str`): HTTP method to use (e.g., GET, POST, etc.).
+- `route` (`str`): API path that will be concatenated with `base_path`. For example, `qualityprofiles/search`.
+- `parameters` (`dict` | `None`): Dictionary of parameters for the API call. Default is `None`.
+- `body` (`dict` | `None`): Body of the request. Default is `None`.
+- `files` (`Any`): Files to be sent in the request. Default is `None`.
+- `headers` (`dict` | `None`): Headers of the request. Default is `None`.
+- `is_json` (`bool`): If set to `True`, the response will be parsed as JSON. Otherwise, it returns the decoded content. Default is `True`.
+- `username` (`str` | `None`): Username used for authentication. Default is set via the environment variable `SONAR_USERNAME` or "admin". Argument value has precedence, followed by environment variable value and lastly default value is used.
+- `password` (`str` | `None`): Password used for authentication. Default is set via the environment variable `SONAR_PASSWORD` or "admin". Argument value has precedence, followed by environment variable value and lastly default value is used.
+- `token` (`str` | `None`): Token used for authentication. It overrides username and password if present. Default value is set via the environment variable `SONAR_TOKEN` or None. Argument value has precedence, followed by environment variable value and lastly default value is used.
+- `base_path` (`str` | `None`): The base endpoint used to build the API call. Default is set via the environment variable `SONAR_ENDPOINT` or "http://localhost:9000/api/". Argument value has precedence, followed by environment variable value and lastly default value is used.
+
+### Returns
+
+Returns the API response as `list[dict]`, `dict`, or any other type based on the response content or raises an exception.
+
+### Example
+
+```python
+import os
+
+from sonar_api_wrapper import api_call
+
+# override default access config
+os.environ['SONAR_PASSWORD'] = 'Username'
+os.environ['SONAR_PASSWORD'] = 'YourPassword'
+os.environ['SONAR_ENDPOINT'] = 'https://yours.sonarqube/api/'
+
+response = api_call('GET', 'qualityprofiles/search', parameters={
+    'defaults': 'true'
+})
+
+print(f'{response["projects"] = }')
+```
+
+### Exceptions
+
+Exceptions are raised based on HTTP errors or other request issues.
+
+## Develop
+
+### Install - Dev
+
+The dev install is only required if additional development is needed for this library
+
+```bash
+pip install -e '.[dev]'
+```
+
+### Build the library
+
+Run the command:
+
+```bash
+python -m build -w
+```
+
+### Publish the library
+
+```bash
+python -m twine upload dist/*
+```
+
+### Test the library
+
+Run the test with command:
+
+```bash
+pytest
+```
