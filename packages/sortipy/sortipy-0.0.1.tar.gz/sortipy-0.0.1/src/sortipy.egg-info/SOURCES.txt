@@ -1,0 +1,9 @@
+LICENSE
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/sortipy.egg-info/PKG-INFO
+src/sortipy.egg-info/SOURCES.txt
+src/sortipy.egg-info/dependency_links.txt
+src/sortipy.egg-info/top_level.txt
