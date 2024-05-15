@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wteam
+Version: 0.0.1
+Summary: rlt experiments
+Home-page: 
+Author: BigSmoke
+Author-email: gurusmart555@gmail.com
+License: MIT
+Keywords: wteam
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+W Team's RLT experiments
+
+
+Change Log
+==========
+
+0.0.1 (14/05/2024)
+-------------------
+- First Release
