@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: oj-tools
+Version: 0.0.2
+Summary: tools for Online Judge management
+Author-email: hepheir <hepheir@gmail.com>
+Project-URL: Homepage, https://https://github.com/hepheir/oj-tools
+Project-URL: Issues, https://https://github.com/hepheir/oj-tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# oj-tools
+
+[QingdaoU/OnlineJudge](https://github.com/QingdaoU/OnlineJudge) 를 위한 테스트케이스 생성기입니다.
+
+```python
+from oj import TestCase
+from oj import makezip
+
+
+# TestCase for A+B
+
+test_cases = [
+    TestCase(
+        id="1",
+        input="2 3",
+        output="5",
+    ),
+    TestCase(
+        id="2",
+        input="99 100",
+        output="199",
+    ),
+]
+
+
+
+
+```
