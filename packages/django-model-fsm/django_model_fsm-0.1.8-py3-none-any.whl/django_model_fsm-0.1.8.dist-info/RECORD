@@ -1,0 +1,15 @@
+django_model_fsm/__init__.py,sha256=qlXPnc_UO40SQb153iu0LAXETCeHTk2TzyfixJ-8yWY,215
+django_model_fsm/dataclasses/__init__.py,sha256=HD9UaQYloa7a1nC5oU9bYTPxUIZT-N_ohPf0O_4i33k,183
+django_model_fsm/dataclasses/state_data.py,sha256=g2yMFiAmkcZi0133ONb3MURcwnwCORAyQpnKRRaGWak,152
+django_model_fsm/dataclasses/trigger_data.py,sha256=0yQ1XybkHv1IN_faYPNflmopDsqPVOq_SPU6gmnbPyc,209
+django_model_fsm/dataclasses/workflow_data.py,sha256=SvjYsCHL6HD6qqSErcX_OYMJq7QMS2ohSZN8PFDt-I4,2251
+django_model_fsm/fields/__init__.py,sha256=WdJbZc3LjE5MbMXqvtosY9oe2WaRTiRqb0bOsktd1JQ,84
+django_model_fsm/fields/transition_field.py,sha256=onIUfLYvruVkYPp3dZl2zuIVAkcEKrhRDzriRdQJmS0,343
+django_model_fsm/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_model_fsm/helpers/__init__.py,sha256=OcpsDzi_YD4DieeXZwliwSz6xYG15o0OCzQZLwIcO5w,75
+django_model_fsm/helpers/draw_workflow.py,sha256=c518233AVJIRAs3_7ihDSAKJgFxVDUJh0JQQ8xTQ-XM,3071
+django_model_fsm/models/__init__.py,sha256=QWDwJAVHDnX0QUq4iuhvixnY9o9xgn1P7x4sd_Ly5XU,87
+django_model_fsm/models/transitions_mixin.py,sha256=EHbVwx5gxQPIEoHMehO1nf5Zg5w0bEG635DSPpFgCtM,4058
+django_model_fsm-0.1.8.dist-info/METADATA,sha256=68k4sxBVFuyeVIIZij7e_pKgq3104jsP4XMDfQnjW9c,2260
+django_model_fsm-0.1.8.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_model_fsm-0.1.8.dist-info/RECORD,,
