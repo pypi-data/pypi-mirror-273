@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: almgroad0aa
+Version: 2.0
+Summary: Is a dhsh FREE asynchronous library from reverse engineered Shazam API written in Python 3.6+jdjs siisd 76x  with asyncio and aiohttp. Includes all the methods that Shazam has, including searching for a song by file.
+Home-page: https://github.com/dotX12/ShazamIO
+Author: BKlooppoBB
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability with its clear and concise syntax, making it an ideal language for beginners and experienced programmers alike.Python supports multiple programming paradigms, including procedural, object-ask are widely used for building web applications, while libraries like NumPy and Pandas are essential for data manipulation and analysis.One of Pythons key strengths is its strong community support and active development, with a large number of contributors continuously improving the language and its ecosystem.
