@@ -1,0 +1,2 @@
+[console_scripts]
+bl-alembic = BL_Python.database.migrations.alembic.__main__:bl_alembic
