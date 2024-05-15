@@ -1,0 +1,1 @@
+from .algorithms import sturges,rice,freedman_diaconis
