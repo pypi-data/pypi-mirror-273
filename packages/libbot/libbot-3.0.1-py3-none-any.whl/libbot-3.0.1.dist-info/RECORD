@@ -1,0 +1,17 @@
+libbot/__init__.py,sha256=4dfCD81NhGCOuIBVdkM-ZhMt9uP_uLqr-MZbwBXosJU,143
+libbot/__main__.py,sha256=ae5iLp7eE1HBDhbVfx-nils3UIR628lDWzBdr9FTlks,2962
+libbot/i18n/__init__.py,sha256=T7WpidD9N_daHkSWo0uZHGCRB2EpXGJLt-EbvmSWwl8,3880
+libbot/i18n/classes/bot_locale.py,sha256=Z1843lsVyWT_PYNYdrU9WCOKDkXyUP_XWNYLR6Ee6Ys,3980
+libbot/i18n/sync/__init__.py,sha256=zP7LDE7i7uhRlQCWBlN_3ggfbk1HBF5sRvyyhs8UEQw,3771
+libbot/pycord/classes/__init__.py,sha256=4WgQaPrWBg2cefmL8h_POEEe4jAjQDuU_Xe5wkRjolM,28
+libbot/pycord/classes/bot.py,sha256=Lmnd6njI1w5Rw91ld6IB2cpyF_pvvIvsPSqoiCZDnuQ,1865
+libbot/pyrogram/classes/__init__.py,sha256=Ew716x0RGpab6XWFDt8dzM0iARsqGKWyunohUNuS_gc,102
+libbot/pyrogram/classes/client.py,sha256=L-ZCm26LP6H7iVSrt890xmFEQ9vAH1ft9DYq51nMBL4,15428
+libbot/pyrogram/classes/command.py,sha256=qY2sD7DjQMJrCbKuK13CVoFtdpQGSWlUaqB8iEMzt2o,176
+libbot/pyrogram/classes/commandset.py,sha256=SiMqiwmZOXKrJMZBKqs6t_u7iPev_YjxB0n6KAZqMIE,1033
+libbot/sync/__init__.py,sha256=eFUk1k6uLTK5cmwGSsqH97zJ6wQKMTxOxv-GAuegiZo,3697
+libbot-3.0.1.dist-info/LICENSE,sha256=1NMYmHrcPg60HpHJfFkwAr-ZtmWhvCJpGaboqHB7NAg,34902
+libbot-3.0.1.dist-info/METADATA,sha256=lZBJtM_g7Hc_9uHAzUGbRKt9QkHD_mJdq3W53lD_muk,38765
+libbot-3.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+libbot-3.0.1.dist-info/top_level.txt,sha256=aLYvhjgvhFpa_O8JCI8U8jMPNPhk5PJaLsbc-lSYg4k,7
+libbot-3.0.1.dist-info/RECORD,,
