@@ -1,0 +1,5 @@
+rust_python_jaeger_reporter-0.1.23.dist-info/METADATA,sha256=rUtdyS5798LO3beApVE6_c7h_DkXb-hJpcbt32WfLl8,2186
+rust_python_jaeger_reporter-0.1.23.dist-info/WHEEL,sha256=mmu2E0mKgwj7RU_goBCp9zGID39rD2A9DEmV3gS8Cpw,129
+rust_python_jaeger_reporter/__init__.py,sha256=MznT54OURvcgpfoQYFnSN1xhDg7Li97ezNFcwyOW7vs,191
+rust_python_jaeger_reporter/rust_python_jaeger_reporter.cpython-312-x86_64-linux-gnu.so,sha256=T6_IG3-8H_FkR7uBU-5wTBNtoTLnT8yX_P9uCCO9FmU,686712
+rust_python_jaeger_reporter-0.1.23.dist-info/RECORD,,
