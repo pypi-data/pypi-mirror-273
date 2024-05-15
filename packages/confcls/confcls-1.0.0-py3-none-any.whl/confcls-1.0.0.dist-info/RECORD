@@ -1,0 +1,7 @@
+confcls/__init__.py,sha256=0Ew9M3MwSawsxcvmxG6VVsv10JynU0QODmhaVgBGfkM,187
+confcls/configurable.py,sha256=X0TP8IS_d-WnUjs9R3sFCQM1rP6abYub6si0qEO1170,2358
+confcls/object.py,sha256=MOVzHaHxVBNn4nzBBwlzidU9zAwjTUkkrtTMiRGHezw,494
+confcls-1.0.0.dist-info/LICENSE,sha256=9KuG2aDumu33NjPsibbOz647ZAmKicL7L2j7AIiRRXQ,1480
+confcls-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+confcls-1.0.0.dist-info/METADATA,sha256=cQA03D1KwcBsHTTfaUszeCgD-3vXknZAiDyjrKK5C_o,5921
+confcls-1.0.0.dist-info/RECORD,,
