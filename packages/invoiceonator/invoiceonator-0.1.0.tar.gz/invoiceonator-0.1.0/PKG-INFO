@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: invoiceonator
+Version: 0.1.0
+Summary: A tool to generate invoice templates and PDFs from YAML files
+Home-page: https://github.com/yourusername/invoiceonator
+Author: Charles Watkins
+Author-email: chris@watkinslabs.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+License-File: LICENSE
