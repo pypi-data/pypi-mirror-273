@@ -1,0 +1,5 @@
+setup.py
+rogeeth.egg-info/PKG-INFO
+rogeeth.egg-info/SOURCES.txt
+rogeeth.egg-info/dependency_links.txt
+rogeeth.egg-info/top_level.txt
