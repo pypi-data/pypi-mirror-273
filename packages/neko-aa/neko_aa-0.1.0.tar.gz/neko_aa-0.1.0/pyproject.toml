@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "neko-aa"
+version = "0.1.0"
+description = "猫のAAを簡単に出力できます。"
+authors = ["Same <OsakanaFactory@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
