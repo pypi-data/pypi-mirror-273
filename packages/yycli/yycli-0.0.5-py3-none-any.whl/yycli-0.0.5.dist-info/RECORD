@@ -1,0 +1,17 @@
+yycli/README.md,sha256=wLbf7lKYvVCMZ9D-rqdy7fuZhhw1Dnr1lMW8G7o4L5w,36
+yycli/__init__.py,sha256=-8X_jKhUQPljDuJNtl1KCS41JtdaKf-va0xzoAhMkbY,40
+yycli/__main__.py,sha256=_D7lMgEp_4p-8u5tS1xMv9dwxDI7l2dZYUxlyo3v02M,1661
+yycli/config.py,sha256=2kCSFeThGK9oieaSVavEkLxwLVwlieqQHL8gqJU_hd4,1504
+yycli/tests.py,sha256=UPiQnq4krNjFy9IO7QeCDLYCfKXXV1DgmVrsh1Bw19s,3523
+yycli/commands/__init__.py,sha256=gplWd_xK4jmhhTyqUIMMExT3rO1ZmEahxa_9cVZQpEQ,154
+yycli/commands/confuse.py,sha256=9waS40GoCwWYqNDt7GEmE3RvcWow8hbKsAndEwiPtnw,3516
+yycli/commands/crypt.py,sha256=yL9o_Yib9x0MwmAsmszeEU2AO4OSkG5XvaxoG7woNqI,4262
+yycli/commands/ipinfo.py,sha256=dy_c3fQ1yDFswcBtdzJDP2jRhD-jxna1Ai-jqGQiQDw,8229
+yycli/commands/weather.py,sha256=6U-oolknXoYdY-9nXfmYbZbcTMCBFLuLCe1bfP2cAOo,7030
+yycli/conf/config.toml,sha256=-4EJvrtaMY6RKg3TM5tDDI0MpF953xPWM8b_uz03kQs,1812
+yycli-0.0.5.dist-info/LICENSE,sha256=DOPF5NA-E4G6jijikk7oVrGyEkzItkVBNRhZH1LFXGA,1078
+yycli-0.0.5.dist-info/METADATA,sha256=p5hvWgnMPfsUf3IniIS1OpbVM0fC5A4BDCLp01xR-bE,556
+yycli-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+yycli-0.0.5.dist-info/entry_points.txt,sha256=hhd1NKh0krAh1EKY4g1W1L1_dUpoaLM6l2BozkkQcSI,43
+yycli-0.0.5.dist-info/top_level.txt,sha256=Ye0K1q4J2XISMV5wiOyWEHsJ2UBcPSYVPw3ZbAXOpfM,6
+yycli-0.0.5.dist-info/RECORD,,
