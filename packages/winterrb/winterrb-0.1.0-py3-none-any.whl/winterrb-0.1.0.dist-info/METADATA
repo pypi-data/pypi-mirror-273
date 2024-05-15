@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: winterrb
+Version: 0.1.0
+Author: Aswin Suresh
+Author-email: Robert Stein <rdstein@caltech.edu>
+License: MIT
+Project-URL: Homepage, https://github.com/winter-telescope/winterrb
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy
+Requires-Dist: fastavro
+Requires-Dist: ipykernel
+Requires-Dist: jupyter
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: torchinfo
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+
+# winter_rb_models
+WINTER real/bogus ML models, originally created by [@aswinsuresh](https://github.com/aswinsuresh24)
+
+This slimmed-down version uses pytorch rather than tensorflow.
+
+## Installing the package
+
+* Clone the repository
+```bash
+git clone git@github.com:winter-telescope/winterrb.git
+```
+
+* Navigate to the repository
+```bash
+cd winterrb
+```
+
+* Create a conda environment with the required packages
+```bash
+conda create -n winterrb python=3.11
+```
+
+* Activate the environment
+```bash
+conda activate winterrb
+```
+
+* Install the package
+```bash
+pip install -e .
+```
+
+## Training a model
+
+You need a data directory, containing a list of training classifications in csv format, 
+named `training_data.csv`, and a data containing the corresponding avro alerts used for training.
+Specifically, you require a directory within the data directory named `train_data` containing the avro alerts.
+Each avro alert should be named with the format `<id>.avro`.
+
+You can set the data directory using the bash environment variable `WINTERRB_DATA_DIR`.
+
+```bash
+export WINTERRB_DATA_DIR=/path/to/data
+```
+
+Then you can train a model using the notebook `winterdrb_pytorch.ipynb`.
