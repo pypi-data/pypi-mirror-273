@@ -1,0 +1,16 @@
+pumaska/__init__.py,sha256=R_383bOntFWeN9lcymUs9xzi9epYyVwDzauJ3HaXQ_o,65
+pumaska/koriste.py,sha256=pMxVAETOgjOL2vCsKZFYGsE0_WAyUhpHTnXaQfNZ0LQ,2203
+pumaska/lomake.py,sha256=m1TpwEnparXnDJFLFo4je6CdtlyG9Tmp633dAENmZDc,8402
+pumaska/nidottu.py,sha256=x_LeUO1HDlXhJc62QVl_OgSM2cQVkA7BZEHmXRlUq2A,10020
+pumaska/piirto.py,sha256=rCsggAMvbWUb-gmjgGkV0Ahjad5sxY9kDQZ9dFSjOPM,672
+pumaska/sarja.py,sha256=RuZOUvN5e5VLKG3M6F0ouGXG_XgXvhjUp_sm9V7qgt0,6715
+pumaska/static/pumaska/js/jquery.formset.js,sha256=PmOlXIMhSZ9Xe3CEeBg1KTFA8ws_kg9S7_QIWGydA1Y,13023
+pumaska/templates/pumaska/lomakesarja.html,sha256=wb_Viqq1V__KDy_FbRtX0-_WrL0Xg5koK9jm0-HuKcg,2477
+pumaska/templates/pumaska/lomakesarja_lomakekenttana.html,sha256=6hBM-Xvwf6y15-oQfvFA-LSaGk-cgN0jF-y2HUqecI4,105
+pumaska/templates/pumaska/lomakesarja_rivi.html,sha256=cN7BbjzGpqO2oax7gSRC-lF5XNZobnYuEVK39OlAPl4,11
+django_pumaska-1.4.3.dist-info/METADATA,sha256=Jyem7jOTAG_khxLHRKXrySlIQGOlzQivMggWOiZ4pC0,242
+django_pumaska-1.4.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_pumaska-1.4.3.dist-info/entry_points.txt,sha256=I63vX6Ju7hjclBNGXympGNxY5e4fAaQhrFxdgpRVZ-o,36
+django_pumaska-1.4.3.dist-info/historia.json,sha256=fUWmXh-2soQtYLkfwy_QSO95E2imRsuQnOEAkwk_fj8,11181
+django_pumaska-1.4.3.dist-info/top_level.txt,sha256=xhxiNfMc-a_s3OIUwpfbm0-0HROh3dLu_mpWkvbCUnA,8
+django_pumaska-1.4.3.dist-info/RECORD,,
