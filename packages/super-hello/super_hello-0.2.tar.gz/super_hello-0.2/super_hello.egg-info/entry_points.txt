@@ -1,0 +1,3 @@
+[console_scripts]
+super-hello = super_hello:hello
+
