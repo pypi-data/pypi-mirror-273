@@ -1,0 +1,12 @@
+tree_sitter_idl-0.0.4.dist-info/RECORD,,
+tree_sitter_idl-0.0.4.dist-info/LICENSE,sha256=pg7qgXUUUxZo1-AHZXMUSf4U0FnTJJ4LyTs23kX3WfI,10847
+tree_sitter_idl-0.0.4.dist-info/WHEEL,sha256=_dHHZkmuSJ1hBoJBEDtCQuURSWv4237hi4KqLTJVP7o,108
+tree_sitter_idl-0.0.4.dist-info/top_level.txt,sha256=xyUd8vBWTniLAbtYLNkeMCoRt1yZNphY-8YWqh66wx8,25
+tree_sitter_idl-0.0.4.dist-info/METADATA,sha256=tve1Tl-13-vxm8-6G3PTAP6soFFpdgfz8uOAHB-nJwU,2156
+tree_sitter_idl/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_idl/binding.c,sha256=ULzB9sKLOjFNkP0erVT7MezHIqFKDtUdExgEBHjfmtw,635
+tree_sitter_idl/__init__.py,sha256=8WdBf9BuOoF3fu5s3pCnprXrvnve6Vkmj6Py_ry0OmM,86
+tree_sitter_idl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_idl/_binding.abi3.so,sha256=_MJu2BnKJwRSHk0bD-8VuXv2vTv-b9JBTAB7R5SBus0,284704
+tree_sitter_idl/queries/highlights.scm,sha256=_x9GzUbctuQgbtu6yHLPcO2Fia26o1hmT36K4uXFWu4,4777
+tree_sitter_idl/queries/injections.scm,sha256=8c2L5OQHdKeUnmvhLhwVCUs5YtqrzAIZJQpSwGPfgcc,320
