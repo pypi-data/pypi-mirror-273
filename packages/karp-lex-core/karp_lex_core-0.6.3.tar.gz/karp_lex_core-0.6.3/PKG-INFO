@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: karp-lex-core
+Version: 0.6.3
+Summary: The core of karp-lex
+Project-URL: Bug Tracker, https://github.com/spraakbanken/karp-lex-core/issues
+Project-URL: homepage, https://spraakbanken.gu.se
+Project-URL: repository, https://github.com/spraakbanken/karp-lex-core
+Project-URL: documentation, https://github.com/spraakbanken/karp-lex-core
+Author-email: Språkbanken at the University of Gothenburg <sb-info@svenska.gu.se>, Kristoffer Andersson <kristoffer.andersson@gu.se>
+License: MIT
+License-File: LICENSE
+Requires-Python: <4.0,>=3.10
+Requires-Dist: karp-lex-types>=0.6.2
+Description-Content-Type: text/markdown
+
+# karp-lex-core
+
+>![NOTE] rename to `karp-lex-types`
+
+- **karp-lex-core** [![PyPI version](https://badge.fury.io/py/karp-lex-core.svg)](https://badge.fury.io/py/karp-lex-core)
+
+The core for karp-lex
+
+Contains commands, entry_dto and unique_id for `karp.lex` in `karp.backend`.
