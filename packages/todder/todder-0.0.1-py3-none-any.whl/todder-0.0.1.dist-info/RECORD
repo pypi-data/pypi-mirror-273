@@ -1,0 +1,9 @@
+todder/__init__.py,sha256=h6MW8ENC7rc8Wl-AyH3j-YHtHo0Nwl8L6iPqdr3mxnk,25268
+todder/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+todder/utils.py,sha256=XlBMlgPRoqbDebU6T-KOZT1rhjdj5tFjqFJOs-CpJ2E,5980
+todder/act/__init__.py,sha256=xzwWrk65lZK1yb3gEGwJWJqERO5z1CBtsVO3ncsl8QI,4795
+todder/act/della.py,sha256=V_gf20ksHeTakpBVAkFsLG2KOvxCN_qaF_RetkHiObA,4186
+todder-0.0.1.dist-info/METADATA,sha256=RuzF1HtAY1lhCPQITbok1hTZZMwfnKI3Udm2fOcvQ3k,1662
+todder-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+todder-0.0.1.dist-info/licenses/LICENSE,sha256=JkQELpXsn-O2y2BUhvq1cPtdig8KhjdkXNujEgzTIQ4,1056
+todder-0.0.1.dist-info/RECORD,,
