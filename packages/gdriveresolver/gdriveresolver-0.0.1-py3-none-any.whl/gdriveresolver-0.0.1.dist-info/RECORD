@@ -1,0 +1,12 @@
+src/__init__.py,sha256=iF6vGs931JN-8EkRp2m03s1GHSRLRGa--xwVtefaFao,42
+src/exceptions.py,sha256=upvApny2g1S6dE5uFRLN2sbC1lqGvXPizkag-IuAoW8,105
+src/model.py,sha256=sspOt6JE0bkvC36Lgfdeo5-tFpO-UPiVH44GNOLG1Zs,1053
+src/resolver.py,sha256=6DKwhoj1Nt-7amGaH6s_fGD26SJYwKQMvnsolLzPe1A,862
+src/system_operations.py,sha256=EXiVlcnlaEdDPrxMHX6SncWCtvgG6d9Ymq5sZn1gWRo,2805
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_google_drive_resolver.py,sha256=Hmi9hveDXaqk-6zk_o9aev1ZmrLl6Xh7EknFCIc5YRs,3968
+gdriveresolver-0.0.1.dist-info/LICENSE,sha256=e8WXY9qbXAKRGzSJkZwgACSFGNFDA-8klIihiFimpnw,1069
+gdriveresolver-0.0.1.dist-info/METADATA,sha256=FObU7PyoI_2qnYHC0CF27QUUrNdsLBe81bblYJbNi-4,1848
+gdriveresolver-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gdriveresolver-0.0.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+gdriveresolver-0.0.1.dist-info/RECORD,,
