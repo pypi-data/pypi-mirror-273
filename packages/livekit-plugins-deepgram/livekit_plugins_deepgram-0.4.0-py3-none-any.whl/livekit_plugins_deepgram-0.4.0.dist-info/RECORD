@@ -1,0 +1,10 @@
+livekit/plugins/deepgram/__init__.py,sha256=1mfskJ9pcLY4gPFL2Tz2oUBCuhA24LXdSXyMSJx15mI,373
+livekit/plugins/deepgram/log.py,sha256=isjd2-ROJXiDFhRRnqRmYxv16U5H9dBV6ut2g5bU7q0,71
+livekit/plugins/deepgram/models.py,sha256=ZUkruW2vu3RhPYZyN8Lyz1y_J1V7lop5l-72ewVK-FY,1165
+livekit/plugins/deepgram/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/deepgram/stt.py,sha256=DwKTEupIrLbaTCVgS0cAwihZt1c24BMyA_mBbDs3lNo,16442
+livekit/plugins/deepgram/version.py,sha256=yelanl1wEXtgUH0CzoNVXfi2yTc2hElSzuAhULFzANc,600
+livekit_plugins_deepgram-0.4.0.dist-info/METADATA,sha256=AsRFx13rJyosB1C3Q4foJNqrHgdhCpxFvIvwENNhHwA,1368
+livekit_plugins_deepgram-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+livekit_plugins_deepgram-0.4.0.dist-info/top_level.txt,sha256=OoDok3xUmXbZRvOrfvvXB-Juu4DX79dlq188E19YHoo,8
+livekit_plugins_deepgram-0.4.0.dist-info/RECORD,,
