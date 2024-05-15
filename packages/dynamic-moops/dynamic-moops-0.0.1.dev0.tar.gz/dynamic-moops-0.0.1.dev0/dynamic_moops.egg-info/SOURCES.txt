@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+dmoop/__init__.py
+dynamic_moops.egg-info/PKG-INFO
+dynamic_moops.egg-info/SOURCES.txt
+dynamic_moops.egg-info/dependency_links.txt
+dynamic_moops.egg-info/top_level.txt
