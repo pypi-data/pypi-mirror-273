@@ -1,0 +1,11 @@
+export function none__to_data(value: null): null {
+  return value;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function none__from_data(data: any): null {
+  if (data !== null) {
+    {{RAISE_DESERIALIZATION_ERROR}};
+  }
+  return data;
+}
