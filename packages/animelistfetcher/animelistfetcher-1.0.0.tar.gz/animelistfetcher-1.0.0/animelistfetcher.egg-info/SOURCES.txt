@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+animelistfetcher/__init__.py
+animelistfetcher/animelist_fetcher.py
+animelistfetcher.egg-info/PKG-INFO
+animelistfetcher.egg-info/SOURCES.txt
+animelistfetcher.egg-info/dependency_links.txt
+animelistfetcher.egg-info/requires.txt
+animelistfetcher.egg-info/top_level.txt

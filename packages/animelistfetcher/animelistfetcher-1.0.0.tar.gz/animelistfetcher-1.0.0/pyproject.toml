@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools >=67"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "animelistfetcher"
+requires-python = ">=3.8"
+description = "A Python wrapper for my anime libraries"
+authors = [{name = "Dominik Procházka"}]
+maintainers = [{name = "Dominik Procházka"}]
+keywords = ["python", "anilist", "al", "mal", "myanimelist"]
+dynamic = ["version"]
+readme = "README.md"
+dependencies = [
+    "alfetcher", 
+    "malfetcher"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Framework :: Flask",
+  "Topic :: Database",
+  "Topic :: Games/Entertainment",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/prochy-exe/animelistfetcher"
+"Documentation" = "https://github.com/prochy-exe/animelistfetcher/wiki"
+"Source" = "https://github.com/prochy-exe/animelistfetcher"
