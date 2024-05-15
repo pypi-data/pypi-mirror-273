@@ -1,0 +1,5 @@
+lavague/drivers/selenium/__init__.py,sha256=IWpZFenvv4_uw0e43iQJB5IcTxpj7UyfwBSNhO9quk8,56
+lavague/drivers/selenium/base.py,sha256=JautSMdYMxYFvGwsDYaPIW7hG8RiKOB76zCLvL8Fp0k,9380
+lavague_drivers_selenium-0.1.0.dist-info/METADATA,sha256=TD03bnG36LrsdDiGLw9LyJ6mEsvdctCaTGW3U_EhzKM,1236
+lavague_drivers_selenium-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lavague_drivers_selenium-0.1.0.dist-info/RECORD,,
