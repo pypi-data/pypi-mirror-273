@@ -1,0 +1,17 @@
+README.md
+setup.py
+tests/tests.py
+titandevice/__init__.py
+titandevice/_titian_exception.py
+titandevice/utils.py
+titandevice.egg-info/PKG-INFO
+titandevice.egg-info/SOURCES.txt
+titandevice.egg-info/dependency_links.txt
+titandevice.egg-info/requires.txt
+titandevice.egg-info/top_level.txt
+titandevice/android/__init__.py
+titandevice/android/_device.py
+titandevice/android/_frida.py
+titandevice/android/_frida_manager.py
+titandevice/android/_package_manager.py
+titandevice/android/device_manager.py
