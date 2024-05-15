@@ -1,0 +1,7 @@
+numpy==1.24.4
+vidgear==0.3.2
+pyqflow==1.1.1
+torch
+torchvision
+pydantic
+scipy
