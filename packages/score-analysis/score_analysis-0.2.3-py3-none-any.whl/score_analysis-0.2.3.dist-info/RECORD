@@ -1,0 +1,16 @@
+score_analysis/__init__.py,sha256=f7Io1W-T-7Qy6B3DpU4aswLC_WV-m8MXZ_IZKy45hk4,350
+score_analysis/applications/__init__.py,sha256=Rdg5v11JV0eIpzYT9X4XTCGFHVQhRFRHsrTm_4qVctI,122
+score_analysis/applications/doc_fraud.py,sha256=EBq3a-3Fz8T2BwvRad3TAFlLeyMmS8WpgPAmYt32Bdw,4133
+score_analysis/cm.py,sha256=dDvU_HZBt0ujJpusbhxpGTdctSjoeT_dMBWNxNhdEwM,19874
+score_analysis/experimental/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+score_analysis/experimental/roc_ci.py,sha256=Zv-0NyMrKP76bjUstukKf1BPr14ZT0cqj0d3GyIZRVc,14198
+score_analysis/group_scores.py,sha256=U5zb08CmriPFe4SDuDuD26SkNdTg1x6134KxyVhpZQc,15524
+score_analysis/metrics.py,sha256=eVn3uVBZS2JTqWB5gByCClUrkl0KhjWQULboYuAkxZs,12996
+score_analysis/scores.py,sha256=z_ePoxqkSYpMP-Suu9WPxRYKkTULuwoasCk7UWosfEE,41690
+score_analysis/showbias.py,sha256=HXmbo-BoAsP7mkK08CnhuxbZQmha6MH0k0U_r7c0WSA,12212
+score_analysis/showbias_plotting.py,sha256=n16TGAXSkcuL2_WlKvskuOCjl9gZCdVrk9qL1zxK-Jw,5890
+score_analysis/tools.py,sha256=nZm3bA8lNBoRVeVYHHIsQfQJ6AN8JCp8JXBp49WBb68,9091
+score_analysis/utils.py,sha256=1WyysNTTqSAu_7wALJBELu5fCEx7WpqmYH4ZKD7OVLk,8371
+score_analysis-0.2.3.dist-info/METADATA,sha256=HabwqUol_j0UAS1YRvCX41jiRyJxF3-asIWrMONesbg,14288
+score_analysis-0.2.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+score_analysis-0.2.3.dist-info/RECORD,,
