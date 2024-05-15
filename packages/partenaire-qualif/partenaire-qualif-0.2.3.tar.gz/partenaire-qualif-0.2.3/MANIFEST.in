@@ -1,0 +1,2 @@
+include qualif/templates/*.txt
+recursive-exclude test *

@@ -1,0 +1,6 @@
+openai
+pandas
+httpx
+validators
+beautifulsoup4
+importlib_resources
