@@ -1,0 +1,9 @@
+[console_scripts]
+cwlpack = sbpack.pack:localpack
+sbcopy = sbpack.noncwl.copy_app:main
+sbmanifest = sbpack.noncwl.manifest:main
+sbpack = sbpack.pack:main
+sbpack_nf = sbpack.noncwl.nextflow:main
+sbpack_wdl = sbpack.noncwl.wdl:main
+sbpull = sbpack.unpack:main
+
