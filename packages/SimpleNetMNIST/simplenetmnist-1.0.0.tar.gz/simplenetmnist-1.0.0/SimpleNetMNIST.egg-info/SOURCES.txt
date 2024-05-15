@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+SimpleNetMNIST/predict.py
+SimpleNetMNIST/simpnet.py
+SimpleNetMNIST/train.py
+SimpleNetMNIST/utils.py
+SimpleNetMNIST.egg-info/PKG-INFO
+SimpleNetMNIST.egg-info/SOURCES.txt
+SimpleNetMNIST.egg-info/dependency_links.txt
+SimpleNetMNIST.egg-info/requires.txt
+SimpleNetMNIST.egg-info/top_level.txt
