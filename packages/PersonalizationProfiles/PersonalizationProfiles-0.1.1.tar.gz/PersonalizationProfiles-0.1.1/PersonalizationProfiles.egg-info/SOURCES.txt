@@ -1,0 +1,16 @@
+setup.py
+PersonalizationProfiles.egg-info/PKG-INFO
+PersonalizationProfiles.egg-info/SOURCES.txt
+PersonalizationProfiles.egg-info/dependency_links.txt
+PersonalizationProfiles.egg-info/requires.txt
+PersonalizationProfiles.egg-info/top_level.txt
+personalization_profiles/AdventurousTraveler.py
+personalization_profiles/BudgetTraveler.py
+personalization_profiles/BusinessTraveler.py
+personalization_profiles/EcoTraveler.py
+personalization_profiles/FamilyTraveler.py
+personalization_profiles/PersonaManager.py
+personalization_profiles/PersonaType.py
+personalization_profiles/PersonalizationProfile.py
+personalization_profiles/User.py
+personalization_profiles/__init__.py
