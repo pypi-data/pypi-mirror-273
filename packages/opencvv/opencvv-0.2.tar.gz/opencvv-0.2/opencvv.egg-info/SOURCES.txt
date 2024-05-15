@@ -1,0 +1,8 @@
+README.md
+setup.py
+opencvv/__init__.py
+opencvv/text_reader.py
+opencvv.egg-info/PKG-INFO
+opencvv.egg-info/SOURCES.txt
+opencvv.egg-info/dependency_links.txt
+opencvv.egg-info/top_level.txt
