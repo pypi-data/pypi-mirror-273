@@ -1,0 +1,14 @@
+xmlstore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xmlstore/converter-1.0.xsd,sha256=O3dS7_yFt9jjm2UOCA3VOETUiUZd5Glgq1aajyBnzuM,2589
+xmlstore/datatypes.py,sha256=A3gjU7eOU-aI5S2BhocCAak8412xZD9Q1WBNL5CTmJY,62863
+xmlstore/gui_qt4.py,sha256=xJ9zoARrKg0WCYoatgEZFve6X2VI4pxkhHz2TnpfUNo,89391
+xmlstore/qt_compat.py,sha256=1ur4Z6fG_aKOUXA6OscFh-RrUV3aJXAbRfOgpb-S9_Q,2284
+xmlstore/util.py,sha256=ZTbtaJ_Mot38vQ2_lacwb5NI4KZsPb0AlIxrHeMufk8,15559
+xmlstore/versioning.py,sha256=ZE0hkJflF7HAyxJf4KakGHIf3b-aagY1BV1qYjJbbwk,12048
+xmlstore/xmlstore-1.0.xsd,sha256=dhApe3wpAsQNObUnoebTWfpO2BgTiK361nMONPXZWhg,545
+xmlstore/xmlstore-base-1.0.xsd,sha256=GpEgfZm_J0tCp09auEwD5n2G_6xW5PqMzMHYYs4xDgs,8999
+xmlstore/xmlstore.py,sha256=_xnigtIConSM1aMBHlzXRWurrUjZY9LIkGCC2pmkfHc,129618
+xmlstore-0.9.14.dist-info/METADATA,sha256=xhmnwmcqLscagqyOJQG9gZmb2nXC6CM15nPFvTIDqpg,742
+xmlstore-0.9.14.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+xmlstore-0.9.14.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xmlstore-0.9.14.dist-info/RECORD,,
