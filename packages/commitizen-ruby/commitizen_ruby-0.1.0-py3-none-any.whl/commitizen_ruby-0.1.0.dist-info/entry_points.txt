@@ -1,0 +1,3 @@
+[commitizen.provider]
+commitizen-ruby=commitizen_ruby.ruby_version_provider:RubyVersionProvider
+
