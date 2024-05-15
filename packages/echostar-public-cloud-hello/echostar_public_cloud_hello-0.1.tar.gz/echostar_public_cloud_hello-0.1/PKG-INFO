@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: echostar_public_cloud_hello
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# How to Push Code to PyPI for pip
+
+To publish your Python package on PyPI for easy installation via pip, follow these steps:
+
+## 1. Installation
+
+Install the required packages:
+
+```console
+pip install setuptools wheel twine
+
+```
+
+## 2. Create repo structure
+
+simple_hello/
+|-- simple_hello/
+|   |-- __init__.py
+|   |-- main.py
+|-- setup.py
+|-- README.md
+
+## 3. Generate dist
+
+```console
+python setup.py sdist bdist_wheel
+```
+Generete dist/xxx.whl
+
+## 4. Test locally
+```console
+pip install dist/echostar_public_cloud_hello-0.1-py3-none-any.whl
+```
+
+## 5. Push to PYPI
+```console
+twine upload dist/*
+```
+
+## 6. ENV
+```console
+export TWINE_USERNAME=__token__
+export TWIN3_PASSWORD=pypi-xxxx
+```
+

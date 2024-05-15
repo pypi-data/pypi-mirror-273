@@ -1,0 +1,10 @@
+README.md
+setup.py
+echostar_public_cloud_hello.egg-info/PKG-INFO
+echostar_public_cloud_hello.egg-info/SOURCES.txt
+echostar_public_cloud_hello.egg-info/dependency_links.txt
+echostar_public_cloud_hello.egg-info/entry_points.txt
+echostar_public_cloud_hello.egg-info/requires.txt
+echostar_public_cloud_hello.egg-info/top_level.txt
+simple_hello/__init__.py
+simple_hello/main.py
