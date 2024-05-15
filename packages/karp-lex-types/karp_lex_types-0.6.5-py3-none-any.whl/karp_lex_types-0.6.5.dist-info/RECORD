@@ -1,0 +1,16 @@
+karp_lex_types/__init__.py,sha256=9IqUTk4wb4dW6dItwSnXBVak6skGiB38PQsYxdV7_ns,219
+karp_lex_types/alias_generators.py,sha256=-EmZ0zfk94BTSZGmPOfpH12WisIvWf8565R9tYgnfhM,222
+karp_lex_types/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karp_lex_types/commands/__init__.py,sha256=wzyEFiqlQMJlWcPG1mklrfdx2H4vfvg1VpoIDoyvFc0,1076
+karp_lex_types/commands/base.py,sha256=BXYy5F-u6b-_aKgx2jSb6zJRo6ZpcmagAGYSHVYyV9M,861
+karp_lex_types/commands/entry_commands.py,sha256=JjziAqYZ25AXoeNQEHms8z_amFQeSYQRgQuOaI5-SGk,1758
+karp_lex_types/commands/entry_repo_commands.py,sha256=yuhIMpIB4GvkeaAdxZtkCiOoJ5bll5U4AeYU-EYe-iA,893
+karp_lex_types/commands/resource_commands.py,sha256=Wyh-m6Jh7G8LO_HAeMY__5w1JIcdDnB7OTnTwbzEG5o,2977
+karp_lex_types/dtos/__init__.py,sha256=mwaG1IFjSORGo8AAqWsSIMeeuIa1Zik31efJ3jQoIjk,125
+karp_lex_types/dtos/entry_dto.py,sha256=jhxh1bN1VCREM4gbnTiFSXXt-Ou9T3RBTvuGjF3Nr1w,1251
+karp_lex_types/value_objects/__init__.py,sha256=0YQ2cbc06LIKg56PbTs6lUjIoLp8YRNpp2KzxH5fro4,230
+karp_lex_types/value_objects/unique_id.py,sha256=Dzb1c2vMsvbcDcohxoftirfVBak4ocRk2AVtK0o-Ppo,3838
+karp_lex_types-0.6.5.dist-info/METADATA,sha256=hO-4U4BPQZRDfU86LOhrc6VqYNwro_md1mvn4zErHxo,2496
+karp_lex_types-0.6.5.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+karp_lex_types-0.6.5.dist-info/licenses/LICENSE,sha256=i5ugehWYUKXnSmfKm8FV_sBw2avIo47OV4JosIjpcJ0,1069
+karp_lex_types-0.6.5.dist-info/RECORD,,
