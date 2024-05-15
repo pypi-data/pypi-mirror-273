@@ -1,0 +1,5 @@
+aiohttp
+pydub
+numpy
+aiofiles
+dataclass-factory
