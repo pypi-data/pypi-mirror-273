@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: profile-user-local
+Version: 0.0.12
+Summary: PyPI Package for Circles profile-user Local Python
+Home-page: https://github.com/circles-zone/profile-user-local-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: database-mysql-local >=0.0.290
+Requires-Dist: logger-local >=0.0.135
+
+This is a package for sharing common methods of profile-user CRUD to profile_user database used in different repositories
