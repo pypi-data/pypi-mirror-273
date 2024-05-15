@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: prompeteer
+Version: 0.1.7
+Summary: Prompt Development and Evaluation tool
+Author: Yoaz Menda
+Author-email: yoazmenda@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: openai==1.28.1
+Requires-Dist: azure-identity
+
+# Prompeteer
+### Prompt evaluation and development environment
+
+- Use prompt Yaml config to describe your prompt templates  
+- use csv input file to inject different variables to prompt templates
+- run and evaluate *multiple* instances of a prompt (with different variables)
+- supports AzureOpenAi, AWS Bedrock
+
+## installation
+```shell
+pip install prompeteer
+```
+
+## usage
+```python
+import prompeteer
+prompeteer.run_prompt(prompt_config_file_path='azure_openai_test_prompt.yaml',
+                              output_csv='./output.csv',
+                              include_prompt=True,
+                              input_csv='./input.csv',
+                              row_numbers_to_process=[0, 1],
+                              destination='file')
+```
+
+here is an example of how the prompt YAML config might look like:
+```yaml
+version: 1.0
+name: my_prompt
+provider: azure
+schemaVersion: 1.0
+variables:
+  - name: topic
+    required: true
+  - name: year
+    required: true
+  - name: summary
+    required: true
+request:
+  model: 'gpt-35-turbo' # corresponds to the AzureOpenAi deployment name
+  temperature: 0.8
+  topP: 1.0
+  n: 1
+  stream: false
+  presencePenalty: 0.0
+  frequencyPenalty: 0.0
+  stop:
+  user:
+  messages:
+    - role: system
+      content: "You are a helpful assistant."
+    - role: user
+      content: "give a short summary about {topic} in the year {year} ahd here is a summary example"
+
+```
+
+```csv``` ("|" seperated)
+
+"topic"|"year"|"summary"
+
+"basketball"|2002|"A famous quote: ""Just do it"".
+
+"soccer"|1999|"Championship game was exciting"
+
+```
