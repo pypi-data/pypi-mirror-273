@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: pyDataBridge
+Version: 0.0.1
+Summary: A data synchronization framework for python
+Author-email: "J. Alexánder Alzate Olaya" <it@jaalzateolaya.com>
+License: MIT License
+        
+        Copyright 2024 J. Alexánder Alzate Olaya
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the “Software”), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+        the Software, and to permit persons to whom the Software is furnished to do so,
+        subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+        FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+        IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+        CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://gitlab.com/jaalzateolaya/pydatabridge
+Project-URL: Bug Tracker, https://gitlab.com/jaalzateolaya/pydatabridge/-/issues
+Keywords: ETL,Data Synchronization
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dependency-injector >=4.41
+Requires-Dist: pypika-git
+
+# pyDataBridge
+
+pyDataBridge is an advanced data synchronization framework that leverages both
+the adapter pattern and the strategy pattern, complemented by the command
+pattern, to facilitate seamless interaction with diverse data sources while
+providing robust synchronization capabilities.
+
+## Key Features
+
+* **Adapter Pattern Integration**: pyDataBridge employs the adapter pattern to
+  abstract the intricacies of interfacing with different data sources. Each
+  adapter encapsulates the logic necessary to communicate with specific types of
+  data repositories, including databases, APIs, file systems, and cloud storage
+  platforms. This abstraction enables the framework to interact with various
+  data sources using a unified interface, promoting flexibility and reusability.
+* **Strategy Pattern for Synchronization Strategies**: The framework utilizes
+  the strategy pattern to define different synchronization strategies tailored
+  to specific use cases and requirements. Users can choose from a range of
+  strategies, such as full synchronization, incremental synchronization,
+  bidirectional synchronization, or custom synchronization logic. By decoupling
+  the synchronization algorithms from the core framework, pyDataBridge
+  accommodates diverse synchronization needs and fosters maintainability.
+* **Command Pattern for Synchronization Operations**: pyDataBridge implements
+  the command pattern to encapsulate synchronization operations as command
+  objects. Each synchronization command represents a discrete unit of work, such
+  as fetching data from a source, transforming data, applying synchronization
+  rules, and updating the target data repository. By encapsulating these
+  operations as commands, the framework offers flexibility in executing and
+  managing synchronization tasks, facilitating undo-redo functionality,
+  transaction management, and asynchronous processing.
+* **Data Source Agnosticism**: pyDataBridge is designed to be agnostic to the
+  underlying data sources, allowing seamless synchronization across
+  heterogeneous environments. Whether dealing with relational databases, NoSQL
+  databases, RESTful APIs, or file systems, the framework adapts to different
+  data source configurations through its adaptable adapters and flexible
+  synchronization strategies.
+* **Extensibility and Customization**: The framework prioritizes extensibility,
+  enabling developers to extend its functionality by implementing custom
+  adapters, synchronization strategies, and synchronization commands. This
+  extensibility empowers users to tailor pyDataBridge to their specific
+  requirements, integrate with proprietary systems, and incorporate
+  domain-specific business logic seamlessly.
+* **Error Handling and Logging**: pyDataBridge includes robust error handling
+  mechanisms and comprehensive logging capabilities to ensure reliability and
+  traceability during synchronization operations. Detailed error messages,
+  exception handling, and configurable logging levels provide insights into
+  synchronization processes, facilitating troubleshooting and auditing.
+* **Scalability and Performance Optimization**: With a scalable architecture and
+  optimized synchronization algorithms, pyDataBridge delivers high-performance
+  synchronization capabilities, even when dealing with large datasets and high
+  concurrency scenarios.
+
+pyDataBridge offers a comprehensive solution for data synchronization,
+harnessing the power of the adapter pattern, strategy pattern, and command
+pattern to provide a flexible, extensible, and efficient framework for
+synchronizing data across heterogeneous systems.
+
+# Installation
+
+`pip install pyDataBridge`
+
+# Documentation [WIP]
+
+If you are interested on how to use this project, feel free to contact me.
+
+~TODO
+
+## Basic steps
+
+1. **Create a model**: Define the data structure with common properties between
+   two or more systems. (Extends `DataAccessModel`)
+2. **Create the adapters**: For each system you will need the respective adapter
+   that loads the information and returns data using the model before. (Extends
+   `DataAccessAdapter`)
+3. **Create the strategy**: Now you just need to implement the strategy you
+   prefer to synchronize the data. (Extends `SyncStrategy`)
