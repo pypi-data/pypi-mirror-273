@@ -1,0 +1,16 @@
+algorithms/__init__.py,sha256=NxgxMoQkkMcFpS1KUu-YmIeSQS8CFEnja7ecOvSz5xE,186
+algorithms/deflate.py,sha256=kxXnkFgxUISqRqpZNsHTJB3b-llR_n46qdJ6O_JEN3o,2652
+algorithms/huffman.py,sha256=HmTC1hq6a7Qq4bk0rxQceFnQ_NhSjNA6rAdTOd0I1SM,9278
+algorithms/lz77.py,sha256=QLEZMCmxZWewYJKhB8gZVLXgrqphK8XjiSzWWYc09sA,3793
+algorithms/lz78.py,sha256=jZCUTP46_af2foYMvGQJV8Ll32yPyBQyQuLQwI_FoM4,2370
+algorithms/lzw.py,sha256=fOql7eDQm-hvbEJcermtHycyZfhtTE0tlBNpShnNPmg,2201
+di_compression/__init__.py,sha256=-3LZb4ocpkQ_ErC4kL6GS2bjzWK1jRf-3FNIlE4W6JQ,206
+di_compression/deflate.py,sha256=kxXnkFgxUISqRqpZNsHTJB3b-llR_n46qdJ6O_JEN3o,2652
+di_compression/huffman.py,sha256=HmTC1hq6a7Qq4bk0rxQceFnQ_NhSjNA6rAdTOd0I1SM,9278
+di_compression/lz77.py,sha256=QLEZMCmxZWewYJKhB8gZVLXgrqphK8XjiSzWWYc09sA,3793
+di_compression/lz78.py,sha256=jZCUTP46_af2foYMvGQJV8Ll32yPyBQyQuLQwI_FoM4,2370
+di_compression/lzw.py,sha256=fOql7eDQm-hvbEJcermtHycyZfhtTE0tlBNpShnNPmg,2201
+di_compression-0.1.0.dist-info/METADATA,sha256=hE5Hx1FIYHBKtL7rDVNVutvzTOf9abD02WqkoZ_px1c,842
+di_compression-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+di_compression-0.1.0.dist-info/top_level.txt,sha256=UhEXxiHMCTT6f0jPCEwx83Pgn5-G_HiclTw_qRd8GOs,15
+di_compression-0.1.0.dist-info/RECORD,,
