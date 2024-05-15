@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: moovs_business
+Version: 0.0.1
+Summary: Empower your software with advanced object detection, human pose estimation, and real-time multi-object tracking to revolutionize how you interact with the physical world.
+Home-page: https://github.com/dotmoovs/moovs-business
+Author: Guilherme Viveiros, Rui Reis.
+Author-email: guilherme.viveiros@dotmoovs.com, rui.reis@dotmoovs.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy ==1.24.4
+Requires-Dist: vidgear ==0.3.2
+Requires-Dist: pyqflow ==1.1.1
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: pydantic
+Requires-Dist: scipy
+
+# moovs-business
+
+`moovs-business` is a powerful Python package that empowers software with advanced capabilities in object detection, human pose estimation, and real-time multi-object tracking. This package is designed to revolutionize how applications interact with the physical world by providing easy-to-integrate tools for analyzing video content.
+
+## Features
+
+- **Object Detection**: Detect objects with precision focusing on people.
+- **Multi-Object Tracking**: Track multiple objects over time in a video stream.
+- **Human Pose Estimation**: Analyze human figures to estimate body poses.
+
+## Installation
+
+To use `moovs-business`, you will need Python 3.7 or later. Install the package using pip:
+
+```bash
+pip install moovs_business
+```
+
+## Configuration
+
+Before you begin, ensure you have a valid `MOOVS_BUSINESS_API_KEY` configured in your environment variables. This is necessary for making requests to the remote services provided by the package.
+
+## Usage
+
+The package is designed to be used asynchronously. Here are some example scripts for each of the main features:
+
+### Object Detection
+
+```python
+from moovs_business import DetectionFlow, QVideo
+import asyncio
+
+async def main():
+    detector = DetectionFlow()
+    video = QVideo("assets/surfing.mp4")
+    bbox_sequence = await detector(video)
+    await bbox_sequence.view(video, "output.mp4")
+
+asyncio.run(main())
+```
+
+### Multi-Object Tracking
+
+```python
+from moovs_business import TrackingFlow, QVideo
+import asyncio
+
+async def main():
+    tracking = TrackingFlow()
+    video = QVideo("assets/simple-crowd.mp4")
+    track_data = await tracking(video)
+    await track_data.view(video, "output.mp4")
+
+asyncio.run(main())
+```
+
+### Human Pose Estimation
+
+```python
+import asyncio
+from moovs_business import PoseFlow, QVideo
+
+async def main():
+    pose_estimator = PoseFlow()
+    video = QVideo("assets/surfing.mp4")
+    pose_data = await pose_estimator(video)
+    await pose_data.view(video, "surfing_ai.mp4")
+
+asyncio.run(main())
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to open a pull request or an issue if you have suggestions or need help.
