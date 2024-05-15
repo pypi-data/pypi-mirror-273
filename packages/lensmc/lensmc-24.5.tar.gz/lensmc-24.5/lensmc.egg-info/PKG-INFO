@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lensmc
+Version: 24.5
+Summary: Python package for weak lensing shear measurements
+Home-page: https://gitlab.com/gcongedo/LensMC
+Author: Giuseppe Congedo
+Author-email: giuseppe.congedo@ed.ac.uk
+License: Copyright 2015 Giuseppe Congedo
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+License-File: COPYING
+License-File: COPYING.LESSER
+Requires-Dist: numpy==1.23.5
+Requires-Dist: scipy==1.10.1
+Requires-Dist: astropy==5.2.1
+Requires-Dist: pyfftw==0.12.0
