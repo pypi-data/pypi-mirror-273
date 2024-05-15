@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: LearnHowToPackage_hsr
+Version: 0.1
+Summary: useless other than help me learn package
+Home-page: https://github.com/HuNeedHelp?tab=repositories
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Hu_need_help
+Author-email: shiranhu_iesr22@163.com
+License: MIT
+Keywords: hsr,learn how to upload package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+Requires-Dist: validators
+Requires-Dist: beautifulsoup4
