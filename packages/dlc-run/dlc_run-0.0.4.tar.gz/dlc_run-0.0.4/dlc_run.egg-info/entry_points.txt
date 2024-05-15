@@ -1,0 +1,3 @@
+[console_scripts]
+dlcrun = dlc_run.dlc_run:main
+
