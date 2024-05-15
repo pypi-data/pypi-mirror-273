@@ -1,0 +1,2 @@
+apscheduler~=3.10.4
+pyrofork~=2.3.21.post3
