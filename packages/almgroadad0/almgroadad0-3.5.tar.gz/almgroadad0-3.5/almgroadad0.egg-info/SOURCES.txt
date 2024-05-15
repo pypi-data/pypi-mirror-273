@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+almgroadad0.egg-info/PKG-INFO
+almgroadad0.egg-info/SOURCES.txt
+almgroadad0.egg-info/dependency_links.txt
+almgroadad0.egg-info/top_level.txt
