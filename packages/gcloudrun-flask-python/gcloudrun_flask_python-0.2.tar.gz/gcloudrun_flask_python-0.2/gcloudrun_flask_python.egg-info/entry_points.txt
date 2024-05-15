@@ -1,0 +1,2 @@
+[console_scripts]
+gcloudrun_flask_python = gcloudrun_flask_python.cli:main
