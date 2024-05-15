@@ -1,0 +1,177 @@
+Metadata-Version: 2.1
+Name: onelinevalidation
+Version: 0.2.1
+Summary: onelinevalidation It is a simple library in the Python language that performs validate in an easy and simple way
+Home-page: https://github.com/amr2018/onelinevalidation
+Author: Amr Elgarhy
+Author-email: amr.ee@yahoo.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.1.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# onelinevalidation
+
+## Now the validation is easy. 😎
+
+onelinevalidation It is a simple library in the Python language that performs validation in an easy and simple way.
+
+## Support Me
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O1TUHOK)
+
+## Installation
+
+* From PyPi
+```
+python pip install onelinevalidation
+```
+
+## Examples of how to use
+
+
+```python
+
+from onelinevalidation import validate_form
+
+userData = {"username": "amr123", "email": "amr.@aol.com", "password": "123Ab#"}
+print(validate_form(userData))
+
+```
+
+## Result
+```
+{'error': {'username': 'Invalid username should be like this abc_123 or abc. abc', 'email': 'This email address is not valid', 'password': 'The password length must be at least 8 uppercase, lowercase letters, numbers, symbols like @aA123#*'}
+}
+
+```
+
+## Create custom validate
+### If you want more control use custom_validate 
+```python
+from onelinevalidation import custom_validate
+
+
+pattrens = [
+	"[a-zA-Z]+[_.]+[a-zA-Z0-9]+", 
+	"[a-zA-Z0-9_-]+[@](aol|gmail|yahoo|outlook)+(.com)+",
+	"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"
+]
+
+
+messages = [
+	"Invalid username should be like this abc_123 or abc. abc",
+	"This email address is not valid",
+	"The password length must be at least 8 uppercase, lowercase letters, numbers, symbols like @aA123#*"
+]
+
+
+print(custom_validate(userData, pattrens, messages))
+```
+
+## Result
+```
+{'good': {'username': 'amr_123', 'email': 'amr@aol.com', 'password': '123---Ab#'}}
+
+```
+
+# Do you not prefer dealing with the regex 🙃?
+### Now in the new version 🥳🎉, you can perform validation using callback functions. From the [validators](https://python-validators.github.io/validators/) library
+
+```python
+
+from onelinevalidation import validate_data_with_callbacks
+import validators
+
+
+user_data = {
+    'btc': '00000000000000000000000',
+    'amount': 0.5,
+    'md5': '0000'
+}
+
+messages = [
+    'Invalid btc address',
+    'The minimum value must be at least $1.',
+    'Invalid md5 value'
+]
+
+from functools import partial
+
+callbacks = [
+    validators.btc_address,
+    {'func': partial(validators.between, min_val = 1, max_val = 100)},
+    validators.md5
+]
+
+result = validate_data_with_callbacks(user_data, callbacks, messages)
+print(result)
+```
+
+## Result
+```
+{'errors': {'btc': 'Invalid btc address', 'amount': 'The minimum value must be at least $1.', 'md5': 'Invalid md5 value'}}
+```
+
+
+
+```python
+
+from onelinevalidation import validate_data_with_callbacks
+import validators
+
+
+user_data = {
+    'btc': '3Cwgr2g7vsi1bXDUkpEnVoRLA9w4FZfC69',
+    'amount': 1,
+    'md5': 'd41d8cd98f00b204e9800998ecf8427e'
+}
+
+messages = [
+    'Invalid btc address',
+    'The minimum value must be at least $1.',
+    'Invalid md5 value'
+]
+
+from functools import partial
+
+callbacks = [
+    validators.btc_address,
+    {'func': partial(validators.between, min_val = 1, max_val = 100)},
+    validators.md5
+]
+
+result = validate_data_with_callbacks(user_data, callbacks, messages)
+print(result)
+```
+
+
+## Result
+```
+{'good': {'btc': '3Cwgr2g7vsi1bXDUkpEnVoRLA9w4FZfC69', 'amount': 1, 'md5': 'd41d8cd98f00b204e9800998ecf8427e'}}
+```
+
+## Note
+In default **sanitize = True** in **validate_form** and other functions This is to prevent a Cross-site Scripting vulnerability
+
+For more info : https://owasp.org/www-community/attacks/xss/
+
+# I want to thank [Gemini](https://gemini.google.com/) 🙂❤ because he helped me develop this library.
+
+## Credits
+
+* validators library: https://pypi.org/project/validators/
+
+The validators library was used to validate the input data in the onelinevalidation library.
+
+## Links
+
+* validators website: https://validators.readthedocs.io/en/latest/
+
