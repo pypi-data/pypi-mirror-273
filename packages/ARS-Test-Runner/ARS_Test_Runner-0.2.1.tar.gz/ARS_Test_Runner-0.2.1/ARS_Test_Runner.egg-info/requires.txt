@@ -1,0 +1,7 @@
+attrs>=20.3.0
+click
+httpx
+numpy
+reasoner-validator
+requests
+twine
