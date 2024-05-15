@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sortipy
+Version: 0.0.2
+Summary: Sortipy is a Python package designed to simplify file organization within a directory.
+Home-page: https://github.com/pzzzl/sortipy
+Author: Bruno Peselli
+Author-email: brunopeselli@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+
+# Sortipy
+
+Sortipy is a Python package designed to simplify file organization within a directory. It offers an intuitive way to sort files based on extension, ensuring your workspace stays tidy and well-structured.
