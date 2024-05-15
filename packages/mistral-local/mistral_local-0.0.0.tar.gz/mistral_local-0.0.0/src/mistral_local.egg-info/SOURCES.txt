@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/mistral_local/__init__.py
+src/mistral_local/hello.py
+src/mistral_local.egg-info/PKG-INFO
+src/mistral_local.egg-info/SOURCES.txt
+src/mistral_local.egg-info/dependency_links.txt
+src/mistral_local.egg-info/top_level.txt
