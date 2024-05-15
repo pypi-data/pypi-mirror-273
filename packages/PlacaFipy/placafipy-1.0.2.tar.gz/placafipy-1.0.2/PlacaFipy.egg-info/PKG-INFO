@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: PlacaFipy
+Version: 1.0.2
+Summary: Consultas FIPE pela placa do veículo.
+Home-page: https://github.com/juniorkrz/placafipy
+Author: Antônio Roberto Júnior
+Author-email: pix@jrkrz.com
+License: MIT
+Keywords: placa fipe veiculo
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: Unidecode==1.3.8
+Requires-Dist: requests==2.31.0
+
+# PlacaFipy
+
+PlacaFipy Ã© uma biblioteca Python que permite realizar consultas FIPE pela placa do veÃ­culo.
+
+## Funcionalidades
+
+- `obter_estado(sigla)`: Retorna o estado a partir da sigla.
+- `verificar_placa_mercosul(placa)`: Verifica se uma placa Ã© do modelo Mercosul.
+- `converter_placa(placa)`: Converte a placa informada para o padrÃ£o Mercosul ou vice-versa.
+- `consulta(placa)`: Consulta informaÃ§Ãµes de um veÃ­culo pela placa.
+
+## Obtenha um API Token em ScrapingAnt
+
+Para usar o PlacaFipy, Ã© necessÃ¡rio um token de API do ScrapingAnt para contornar verificaÃ§Ãµes anti-webscraping.
+
+O ScrapingAnt fornece 1.000 consultas gratuitas por mÃªs.
+
+VocÃª pode criar uma conta em [ScrapingAnt][scrapingant] e obter seu token API lÃ¡.
+
+## InstalaÃ§Ã£o
+
+VocÃª pode instalar este pacote via pip:
+
+```bash
+pip install placafipy
+```
+
+## Como utilizar
+
+```python
+from placafipy import PlacaFipy
+
+# Crie uma instÃ¢ncia do PlacaFipy passando uma lista com os tokens do ScrapingAnt como parÃ¢metros. VocÃª pode adicionar quantos tokens forem necessÃ¡rios.
+tokens = ["SEU_TOKEN_1", "SEU_TOKEN_2", "SEU_TOKEN_3"]
+placafipy = PlacaFipy(tokens)
+
+# Obter o estado a partir da sigla
+estado = placafipy.obter_estado('PE')
+print(estado)  # SaÃ­da: PERNAMBUCO
+
+# Verificar se uma placa Ã© do modelo Mercosul
+placa_mercosul = placafipy.verificar_placa_mercosul('ABC1C34')
+print(placa_mercosul)  # SaÃ­da: True
+
+# ConversÃ£o de placas
+placa_convertida = placafipy.converter_placa('ABC1234')
+print(placa_convertida)  # SaÃ­da: ABC1C34
+
+placa_convertida = placafipy.converter_placa('ABC1C34')
+print(placa_convertida)  # SaÃ­da: ABC1234
+
+# Consultar informaÃ§Ãµes de um veÃ­culo pela placa
+placa = "ABC1234"
+informacoes_veiculo = placafipy.consulta(placa)
+
+if informacoes:
+    print(informacoes)
+else:
+    print("NÃ£o foi possÃ­vel obter informaÃ§Ãµes para a placa especificada.")
+```
+
+## Exemplo de SaÃ­da
+
+```json
+{
+    "tabela_fipe": {
+        "valores": {...},
+        "valores_ipva": {...}
+    },
+    "detalhes": {...},
+    "imagem_logo_url": "https://example.com/logo.png",
+    "imagem_placa_url": "https://example.com/placa.png",
+    "orgao_emissor": "DETRAN",
+    "veiculos_registrados": 10000,
+    "tipo_veiculo": "carro",
+    ...
+}
+```
+
+**Nota:** A saÃ­da Ã© obtida de forma dinÃ¢mica, portanto, alguns resultados podem conter diferentes chaves dependendo dos dados disponÃ­veis no momento da consulta.
+
+## ContribuiÃ§Ã£o
+
+ContribuiÃ§Ãµes sÃ£o bem-vindas! Sinta-se Ã  vontade para abrir uma issue ou enviar um pull request.
+
+## Autor
+- [AntÃ´nio Roberto JÃºnior][krz]
+
+## LicenÃ§a
+
+Este pacote estÃ¡ sob a licenÃ§a [MIT](LICENSE).
+
+[krz]: https://github.com/juniorkrz
+[scrapingant]: https://scrapingant.com/
