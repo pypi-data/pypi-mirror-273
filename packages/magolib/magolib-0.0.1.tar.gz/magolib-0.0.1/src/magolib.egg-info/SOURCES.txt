@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/magolib/__init__.py
+src/magolib/magolib.py
+src/magolib.egg-info/PKG-INFO
+src/magolib.egg-info/SOURCES.txt
+src/magolib.egg-info/dependency_links.txt
+src/magolib.egg-info/top_level.txt
+tests/test_lib.py
