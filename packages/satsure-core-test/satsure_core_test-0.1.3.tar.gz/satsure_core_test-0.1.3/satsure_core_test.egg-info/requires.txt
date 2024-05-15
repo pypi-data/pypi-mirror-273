@@ -1,0 +1,14 @@
+awscli
+fiona
+gdal==3.6.2
+google-cloud-storage
+pandas
+pyproj
+pystac
+python-dotenv
+rasterstats
+rasterio
+requests
+requests
+sqlalchemy
+wget
