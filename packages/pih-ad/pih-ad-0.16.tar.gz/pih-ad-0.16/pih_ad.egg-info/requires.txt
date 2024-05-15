@@ -1,0 +1,4 @@
+ipih
+pyad
+pywin32
+wmi
