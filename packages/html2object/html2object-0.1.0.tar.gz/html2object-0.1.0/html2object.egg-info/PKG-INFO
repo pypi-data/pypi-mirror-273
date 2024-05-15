@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: html2object
+Version: 0.1.0
+Summary: Tools to handle the CRUD of .html files as objects.
+Home-page: https://github.com/boterop/html_utils
+Author: boterop
+Author-email: boterop22@gmail.com
+Keywords: html,utils,html_utils,html_element,html_parser,html_writer,html_reader,html_crud,html_object,html_file,html_utils.py,html_element.py,html_parser.py,html_writer.py,html_reader.py,html_crud.py,html_object.py,html_file.py
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Coverage Status](https://coveralls.io/repos/github/boterop/html_utils/badge.svg?branch=main)](https://coveralls.io/github/boterop/html_utils?branch=main)
+
+Tools to handle the CRUD of .html files as objects.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+Instructions on how to install and set up your project. Include any dependencies that need to be installed.
+
+1. Clone the repository
+2. Navigate to the project directory:
+
+```sh
+cd html_utils
+```
+
+3. Create a virtual environment (optional but recommended):
+
+```sh
+python3 -m venv venv
+```
+
+4. Activate the virtual environment:
+
+- For Windows:
+
+```sh
+venv\Scripts\activate
+```
+
+- For macOS and Linux:
+
+```sh
+source venv/bin/activate
+```
+
+5. Install the project dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+That's it! Your project should now be installed and ready to use.
