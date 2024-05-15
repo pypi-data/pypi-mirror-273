@@ -1,0 +1,133 @@
+# SeedSpark
+
+## Why Spark
+
+Apache Spark is a unified analytics engine for large-scale data processing. It achieves high performance for both batch and streaming data, using a Directed Acyclic Graph (DAG) scheduler, a query optimizer, and a physical execution engine
+
+Spark’s design philosophy centers around four key characteristics:
+- Speed: Leveraging in-memory data processing, Spark executes tasks up to 100 times faster in memory and 10 times faster on disk than traditional big data processing systems (e.g., Hadoop MapReduce).
+- Ease of Use: Through high-level APIs and built-in modules, Spark simplifies the process of complex data transformations and analyses, making it accessible to both developers and data analysts.
+- Modularity and Extensibility: Spark's modular nature allows it to be used for a range of data processing tasks from batch processing to real-time streams and machine learning. Extensibility with numerous data sources and libraries further enhances its utility.
+- Unified Analytics: Spark's unified framework reduces the complexity involved in processing data that might otherwise require multiple engines or different technologies.
+
+Spark’s architecture is designed to optimize efficiency. The use of RDDs (Resilient Distributed Datasets) and subsequent abstractions like DataFrames and Datasets simplifies data manipulation while providing fault tolerance. By retaining intermediate results in memory rather than on disk, Spark minimizes costly I/O operations that are a common bottleneck in big data processing
+
+The DAG execution engine enhances this by allowing for more complex operational pipelines and optimizing workflows dynamically. This approach minimizes redundant data shuffling across the cluster, leading to significant performance improvements
+
+## Run on GitPod
+
+Start Dev Env in Gitpod:
+[![StartDevEnvInGitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/chethanuk/seedspark)
+
+
+Force build: [![ForcePrebuild](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#prebuild/https://github.com/chethanuk/seedspark)
+
+## Installation
+
+Install Python 3.10 or above
+
+```
+pyenv install 3.11 \
+    && pyenv global 3.11
+```
+
+Install Scala and Spark
+```bash
+make install-scala &&\
+    make install-spark
+```
+
+Optional: If you want yo u can verify the installation commands
+```bash
+$ make --just-print install-spark
+
+It will output following:
+echo "Installing Hadoop..."
+source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install hadoop 3.3.5
+# Set Global version
+source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk default hadoop 3.3.5
+echo "Installing Spark..."
+source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk install spark 3.5.0
+# Set Global version
+source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk default spark 3.5.0
+```
+
+## Verify Installation
+
+```bash
+poetry env info
+```
+
+```bash
+poetry version
+```
+
+```bash
+sdk version
+```
+
+Run SDK Current to verify current packages
+
+```bash
+sdk current
+```
+should show:
+```bash
+Using:
+
+java: 11.0.22-zulu
+scala: 2.13.12
+spark: 3.5.0
+```
+
+![Verify](https://i.imgur.com/P847qaX.png)
+
+Then verify spark-shell version
+```bash
+spark-shell --version
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 3.5.0
+      /_/
+
+Using Scala version 2.12.18, OpenJDK 64-Bit Server VM, 11.0.22
+```
+
+Verify top level packages
+
+```bash
+poetry show -T
+```
+
+PySpark version should match above spark version
+```bash
+pyspark                  3.5.0    Apache Spark Python API
+```
+
+## Run Pytest
+
+```bash
+# Install packages
+poetry install --with=testing --no-interaction
+# Run Pytest
+poetry run coverage run -m pytest -vv tests --reruns 5 --reruns-delay 20
+```
+
+![PyTest](https://i.imgur.com/Xta8950.png)
+
+Then Check the code file `seedspark/examples/music_sessions_top_n.py`
+Update or Replace with actual path of music_sessions_data.tsv
+
+Then run following:
+
+```bash
+# OPTIONAL - Skip this if already downloaded the dataset OR Download dataset
+cd datasets/
+pip install pandas requests tqdm; python lastfm_dataset_1k.py
+# Update or Replace with actual path of new music_sessions_data.tsv
+cd ..
+# Execute Spark APP
+poetry run python seedspark/examples/music_sessions_top_n.py
+```
