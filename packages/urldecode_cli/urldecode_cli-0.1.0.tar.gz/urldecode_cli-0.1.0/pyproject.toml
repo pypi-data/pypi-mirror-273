@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "urldecode_cli"
+version = "0.1.0"
+description = "CLI tool to quickly decode URL encoded strings"
+authors = ["Annie Ehler <annie.ehler.4@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/annie444/urldecode"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+urldecode = 'urldecode-cli-parser.cli:urldecode'
