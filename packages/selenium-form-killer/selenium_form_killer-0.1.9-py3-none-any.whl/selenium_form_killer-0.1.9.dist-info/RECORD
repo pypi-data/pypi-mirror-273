@@ -1,0 +1,15 @@
+selenium_form_killer/__init__.py,sha256=zxB61J0sEfTMVlrI_WTkWLh3RO4k4rXBd5N6lhCLm70,65
+selenium_form_killer/anti_captcha/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_form_killer/anti_captcha/anti_captcha.py,sha256=b3LfhsVnusKGTwwMM-54WF7h5bufOiUCnr2e15WHitQ,3403
+selenium_form_killer/capmonster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_form_killer/capmonster/captcha_breaker.py,sha256=wiy_onCy4Ei7wB6fERrcJQkTJXLbRadIi39-Oc8PagE,646
+selenium_form_killer/forms.py,sha256=0lZYuIyk6mSHUj96BPHMS6UV3N8IyRAGK_bPxR51HnI,4751
+selenium_form_killer/killer.py,sha256=bi2mYUzfKdz55w-Uh_XHvIm85yBilMsHQdTkmttnGok,16167
+selenium_form_killer/log/logger.py,sha256=1GaDWlX8dgDZdAv-N7DZj7UZOpIirOYT_LoUuykf-1w,673
+selenium_form_killer/types/generic_types.py,sha256=HLGNUkVqllUzJXiQyOz1TjAyv8JuZaHqIDmnomUBwe0,147
+selenium_form_killer/types/selenium_types.py,sha256=dtJc21bnQ7AOVYpkkffnoK8o_dV8C8R1RNs2iDzOz-U,6231
+selenium_form_killer/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_form_killer/util/util.py,sha256=Yj-yTy1HBW3Z7l-q-QeIPAsjPWpVR2dWKaooY-lX_Pk,224
+selenium_form_killer-0.1.9.dist-info/METADATA,sha256=ncoRbHJU7lc-t987NZcM0oghpHcQvjBtgAD6pJi_V04,2426
+selenium_form_killer-0.1.9.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+selenium_form_killer-0.1.9.dist-info/RECORD,,
