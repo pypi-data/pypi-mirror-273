@@ -1,0 +1,152 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": ""}, {"role": "user", "content":
+      "Given the press release article of our company: \"RIVERTON Industries - Revolutionizing
+      the Aluminum Casting Industry for E-Bikes\n\nRIVERTON Industries is a leading
+      manufacturer and exporter of aluminum casting products for E-Bikes. Established
+      in 2022, the company has quickly gained a reputation for its innovative approach
+      to aluminum frame manufacturing. We offer one-stop solutions for customized
+      bike frames, which include designing, manufacturing, and assembly services.\n\n###
+      About RIVERTON Industries\nRIVERTON Industries is an innovative international
+      company specializing in aluminum casting products for E-Bikes. The company is
+      committed to providing innovative aluminum frames built for bicycles and modular
+      features for multiple modeling combinations. We offer ready-to-use products
+      and vehicle assembly services that meet customer satisfaction and provide specialized
+      services tailored to their requirements.\n\nRIVERTON Industries is revolutionizing
+      the aluminum casting industry for E-bikes. Our main product, the Aluminum frame
+      for E-bike, is available in three models - 001, 002, and 003 but more could
+      be customized. The one-piece-formed bike frame provides increased rigidity,
+      improving the stability and safety of the ride. The solid frame made of aluminum
+      pipeline built-in supports complex designs for electric bikes.\n\nOur one-stop
+      solution for customized bike frames has made us a popular choice among customers.
+      We offer a range of products, including the Electric bike frame, Aluminum motor
+      frames for E-bikes, Motor frames for E-bikes, and Customized Motor frames for
+      E-bikes.\n\nRIVERTON Industries exports its products to Europe and the USA.
+      Our commitment to quality has earned us a reputation for producing high-quality
+      aluminum frames that meet international standards.\n\nIn conclusion, RIVERTON
+      Industries is a company that is revolutionizing the aluminum casting industry
+      for E-bikes. Our innovative approach to manufacturing aluminum frames and one-stop
+      solutions for customized bike frames has made us a popular choice among customers.
+      If you''re looking for high-quality aluminum frames for your E-bikes, visit
+      our website at https://riverton.example.com/.\"\n"}], "model": "gpt-3.5-turbo-0613",
+      "frequency_penalty": 0.0, "presence_penalty": 0.0, "temperature": 1.0, "tool_choice":
+      {"type": "function", "function": {"name": "structural_response"}}, "tools":
+      [{"type": "function", "function": {"name": "structural_response", "description":
+      "Response to user in a structural way.", "parameters": {"title": "Email", "type":
+      "object", "properties": {"subject": {"title": "Subject", "description": "the
+      subject of email", "type": "string"}, "body": {"title": "Body", "description":
+      "the body of email", "type": "string"}}, "required": ["subject", "body"]}}}],
+      "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '2900'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    content: "{\n  \"id\": \"chatcmpl-9OLY7Q1ARHFGj8GQhOIKZZz6t5XfZ\",\n  \"object\":
+      \"chat.completion\",\n  \"created\": 1715589735,\n  \"model\": \"gpt-3.5-turbo-0613\",\n
+      \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+      \"assistant\",\n        \"content\": null,\n        \"tool_calls\": [\n          {\n
+      \           \"id\": \"call_TCw6JzqLIrFsAtnHKVpTMGeG\",\n            \"type\":
+      \"function\",\n            \"function\": {\n              \"name\": \"structural_response\",\n
+      \             \"arguments\": \"{\\n  \\\"subject\\\": \\\"RIVERTON Industries
+      - Revolutionizing the Aluminum Casting Industry for E-Bikes\\\",\\n  \\\"body\\\":
+      \\\"Dear [Recipient],\\\\n\\\\nI am excited to share with you the press release
+      article about RIVERTON Industries, a leading manufacturer and exporter of aluminum
+      casting products for E-Bikes. Established in 2022, RIVERTON Industries has quickly
+      gained a reputation for its innovative approach to aluminum frame manufacturing.\\\\n\\\\nRIVERTON
+      Industries offers one-stop solutions for customized bike frames, which include
+      designing, manufacturing, and assembly services. Our commitment to providing
+      innovative aluminum frames built for bicycles and modular features for multiple
+      modeling combinations sets us apart from the competition.\\\\n\\\\nOur main
+      product, the Aluminum frame for E-bike, is available in three models - 001,
+      002, and 003, but more can be customized according to customers' requirements.
+      The one-piece-formed bike frame provides increased rigidity, improving the stability
+      and safety of the ride. The solid frame made of aluminum pipeline built-in supports
+      complex designs for electric bikes.\\\\n\\\\nAs a popular choice among customers,
+      we offer a range of products, including the Electric bike frame, Aluminum motor
+      frames for E-bikes, Motor frames for E-bikes, and Customized Motor frames for
+      E-bikes. Our one-stop solution for customized bike frames ensures customer satisfaction
+      and specialized services tailored to their requirements.\\\\n\\\\nRIVERTON Industries
+      exports its products to Europe and the USA, with a reputation for producing
+      high-quality aluminum frames that meet international standards. If you're looking
+      for high-quality aluminum frames for your E-bikes, I invite you to visit our
+      website at https://riverton.example.com/.\\\\n\\\\nThank you,\\\\n[Your Name]\\\\nRIVERTON
+      Industries\\\"\\n}\"\n            }\n          }\n        ]\n      },\n      \"logprobs\":
+      null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\":
+      480,\n    \"completion_tokens\": 364,\n    \"total_tokens\": 844\n  },\n  \"system_fingerprint\":
+      null\n}\n"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 88315aa78c9fa9b3-TPE
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:42:20 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=zU9NO7lokl0LyLi0ZsKDlGl_umdtE37OAnFJ_DvmEDY-1715589740-1.0.1.1-DyciOvPjZjEHPp0pdrJUup2_VOfzbv8qJI.l_LkxaeUocuuu7awdLGDSJLP_Pab0IDwWHnm5cy56n5.i3oagUA;
+        path=/; expires=Mon, 13-May-24 09:12:20 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=R5_G.w7HIXujwzILJ3g.LsjK5nWYUDubVIYSrZYVRE0-1715589740162-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-processing-ms:
+      - '4091'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '160000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '159435'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 211ms
+      x-request-id:
+      - req_f78ef753b66c08c74627805222db5b95
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

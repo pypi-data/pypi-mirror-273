@@ -1,0 +1,83 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Give me a sample email."}], "model": "gpt35", "frequency_penalty":
+      0.0, "function_call": {"name": "structural_response"}, "functions": [{"name":
+      "structural_response", "description": "Response to user in a structural way.",
+      "parameters": {"title": "Email", "type": "object", "properties": {"subject":
+      {"title": "Subject", "description": "the subject of email", "type": "string"},
+      "body": {"title": "Body", "description": "the body of email", "type": "string"}},
+      "required": ["subject", "body"]}}], "max_tokens": 10, "presence_penalty": 0.0,
+      "temperature": 1.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '692'
+      content-type:
+      - application/json
+      host:
+      - gstudio.openai.azure.com
+      user-agent:
+      - AzureOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://gstudio.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-07-01-preview
+  response:
+    content: '{"choices":[{"content_filter_results":{},"finish_reason":"length","index":0,"message":{"content":null,"function_call":{"arguments":"{\n  \"subject\":
+      \"Meeting Reminder\",\n ","name":"structural_response"},"role":"assistant"}}],"created":1715589608,"id":"chatcmpl-9OLW4GG77BUJz2irHq9CK80Mx9kTS","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":null,"usage":{"completion_tokens":10,"prompt_tokens":82,"total_tokens":92}}
+
+      '
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Length:
+      - '705'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:40:08 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      access-control-allow-origin:
+      - '*'
+      apim-request-id:
+      - f74b0446-93d4-48b0-9714-e1bf2d8d01ae
+      azureml-model-session:
+      - turbo-0613-7bacf2d7
+      x-accel-buffering:
+      - 'no'
+      x-content-type-options:
+      - nosniff
+      x-ms-client-request-id:
+      - f74b0446-93d4-48b0-9714-e1bf2d8d01ae
+      x-ms-rai-invoked:
+      - 'true'
+      x-ms-region:
+      - East US
+      x-ratelimit-remaining-requests:
+      - '237'
+      x-ratelimit-remaining-tokens:
+      - '239810'
+      x-request-id:
+      - 78375126-11e2-4d70-96d6-824d23d36c7f
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

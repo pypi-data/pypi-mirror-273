@@ -1,0 +1,103 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Give me a sample email."}], "model": "gpt-3.5-turbo-0613",
+      "frequency_penalty": 0.0, "max_tokens": 10, "presence_penalty": 0.0, "temperature":
+      1.0, "tool_choice": {"type": "function", "function": {"name": "structural_response"}},
+      "tools": [{"type": "function", "function": {"name": "structural_response", "description":
+      "Response to user in a structural way.", "parameters": {"title": "Email", "type":
+      "object", "properties": {"subject": {"title": "Subject", "description": "the
+      subject of email", "type": "string"}, "body": {"title": "Body", "description":
+      "the body of email", "type": "string"}}, "required": ["subject", "body"]}}}],
+      "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '767'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    content: "{\n  \"id\": \"chatcmpl-9OLW34Eqv3keVjs7CtW11afxwl3qg\",\n  \"object\":
+      \"chat.completion\",\n  \"created\": 1715589607,\n  \"model\": \"gpt-3.5-turbo-0613\",\n
+      \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+      \"assistant\",\n        \"content\": null,\n        \"tool_calls\": [\n          {\n
+      \           \"id\": \"call_WmyK7eSmeeVSfnSRolTcThSR\",\n            \"type\":
+      \"function\",\n            \"function\": {\n              \"name\": \"structural_response\",\n
+      \             \"arguments\": \"{\\n  \\\"subject\\\": \\\"Sample Email\\\",\\n
+      \"\n            }\n          }\n        ]\n      },\n      \"logprobs\": null,\n
+      \     \"finish_reason\": \"length\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\":
+      82,\n    \"completion_tokens\": 10,\n    \"total_tokens\": 92\n  },\n  \"system_fingerprint\":
+      null\n}\n"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 883157857fb74a52-TPE
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:40:07 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=nn2Tp99RojVGRoy_iY.GMV3iuKL6bk9S_.FXXk4_dq0-1715589607-1.0.1.1-tvdw0YIhJv2d3ZDomKFDiACaN4Q2NVAjMYG_upIa88jMldQbZudK7Z5jpmcLwu4CdtzampDy7L.hsDm8j07sQQ;
+        path=/; expires=Mon, 13-May-24 09:10:07 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=dIe5P88FSyqFS81LMj2.HB0ksNSOwDYRKSXtkq3Ha3g-1715589607915-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-processing-ms:
+      - '183'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '160000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '159975'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 9ms
+      x-request-id:
+      - req_68b0dd18b272ad5a67e0072adb988610
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
