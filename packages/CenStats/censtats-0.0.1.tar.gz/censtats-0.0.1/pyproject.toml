@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=60",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CenStats"
+authors = [
+    {name = "Keith Oshima", email = "oshimak@pennmedicine.upenn.edu"},
+]
+description = "Centromere statistics toolkit."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT License"}
+dependencies = [
+    "polars",
+    "loguru",
+    "editdistance"
+]
+version = "0.0.1"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["censtats*"]
+exclude = ["docs*", "test*"]
+
+[project.scripts]
+censtats = "censtats.main:main"
