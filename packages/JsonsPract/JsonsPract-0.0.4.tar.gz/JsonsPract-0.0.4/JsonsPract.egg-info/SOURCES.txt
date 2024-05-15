@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+JsonsPract/Jsons.py
+JsonsPract/__init__.py
+JsonsPract.egg-info/PKG-INFO
+JsonsPract.egg-info/SOURCES.txt
+JsonsPract.egg-info/dependency_links.txt
+JsonsPract.egg-info/requires.txt
+JsonsPract.egg-info/top_level.txt
