@@ -1,0 +1,206 @@
+# This file was generated from skeleton-ci/skeleton-python@0.0.2rc-245-g8c04714.
+# Instead of changing this particular file, you might want to alter the template:
+# https://github.com/skeleton-ci/skeleton-python/tree/0.0.2rc-245-g8c04714/project/pyproject.toml.jinja
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "configzen"
+version = "1.0.0.alpha.0"
+description = "Manage configuration with pydantic."
+authors = ["bswck <bartoszpiotrslawecki@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{ include = "configzen/" }]
+homepage = "https://github.com/bswck/configzen"
+
+[tool.poetry.urls]
+Documentation = "https://bswck.github.io/configzen"
+Issues = "https://github.com/bswck/configzen/issues"
+Distribution = "https://pypi.org/project/configzen/"
+Coverage = "https://coverage-badge.samuelcolvin.workers.dev/redirect/bswck/configzen"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pydantic = ">=2.6.2"
+pydantic-settings = ">=2.1.0"
+tomlkit = ">=0.12.3"
+ruamel-yaml = ">=0.18.5"
+runtime-generics = ">=3.2.0"
+class-singledispatch = ">=1.1.0"
+eval-type-backport = ">=0.1.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.23.2"
+# scalene = { version = "^1.5.37", python = ">=3.8,!=3.11.0" }
+
+[tool.poetry.group.dev-skeleton.dependencies]
+# This dependency group was generated from skeleton-ci/skeleton-python@0.0.2rc-245-g8c04714.
+# Instead of changing this particular file, you might want to alter the template:
+# https://github.com/skeleton-ci/skeleton-python/tree/0.0.2rc-245-g8c04714/project/pyproject.toml.jinja
+mypy = ">=1.9.0"
+ruff = ">=0.3.4"
+towncrier = ">=23.11.0"
+coverage = ">=7.4.4"
+pytest = ">=8.1.1"
+pytest-doctestplus = ">=1.2.1"
+pytest-sugar = ">=1.0.0"
+covdefaults = ">=2.3.0"
+poethepoet = ">=0.25.0"
+pre-commit = "<3.6.0"
+smokeshow = ">=0.4.0"
+keyring = ">=25.0.0"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+markdown-exec = ">=1.3.0"
+mkdocs-material = ">=8.2,<10.0.0"
+mkdocstrings = { version = ">=0.19.0", extras = ["python"] }
+
+[tool.poe.tasks]
+test = "pytest -v"
+lint = "ruff check ."
+skeleton = "scripts/skeleton.0.0.2rc-245-g8c04714.bash"
+check = [
+    { ref="test" },
+    { ref="lint" },
+]
+release.script = "scripts.release:main"
+
+[tool.poe.tasks.added]
+shell = "towncrier create $TICKET.added.md --edit"
+args = [{ name = "TICKET", default = "+", positional = true }]
+
+[tool.poe.tasks.changed]
+shell = "towncrier create $TICKET.changed.md --edit"
+args = [{ name = "TICKET", default = "+", positional = true }]
+
+[tool.poe.tasks.fixed]
+shell = "towncrier create $TICKET.fixed.md --edit"
+args = [{ name = "TICKET", default = "+", positional = true }]
+
+[tool.poe.tasks.deprecated]
+shell = "towncrier create $TICKET.deprecated.md --edit"
+args = [{ name = "TICKET", default = "+", positional = true }]
+
+[tool.poe.tasks.removed]
+shell = "towncrier create $TICKET.removed.md --edit"
+args = [{ name = "TICKET", default = "+", positional = true }]
+
+[tool.poe.tasks.security]
+shell = "towncrier create $TICKET.security.md --edit"
+args = [{ name = "TICKET", default = "+", positional = true }]
+
+[tool.ruff]
+exclude = ["tests/", "scripts/"]
+
+[tool.ruff.lint]
+# To discuss the presented rationales, contact the author (bswck).
+select = ["ALL"]
+ignore = [
+    # From bswck/configzen
+    # --------------------
+
+    # Description: Missing docstring in `__init__`
+    # Rationale: The `__init__` docstring is mostly redundant to the class docstring.
+    "D107",
+
+    # From skeleton-ci/skeleton-python
+    # -------------------
+
+    # Description: Missing type annotation for self in method
+    # Rationale: It is mostly redundant, as is for ANN102.
+    "ANN101",
+
+    # Description: Missing type annotation for cls in method
+    # Rationale: It is mostly redundant, as is for ANN101.
+    "ANN102",
+
+    # Description: Dynamically typed expressions (typing.Any) are disallowed
+    # Rationale:
+    #  We use Any to allow user to constrain return types of our functions on their own.
+    #  For example, having a function `def foo() -> Any: ...` allows user to write
+    #  `my_foo: int = foo()` and have it passed type checking, since `Any` disables
+    #  type checking completely.
+    "ANN401",
+
+    # Description: 1 blank line required before class docstring
+    # Rationale: Remove the warning -- D211 (no-blank-line-before-class) preferred.
+    "D203",
+
+    # Description: Multi-line docstring summary should start at the second line
+    # Rationale: Remove the warning -- D213 (multi-line-summary-second-line) preferred.
+    "D212",
+
+    # Description: Line contains TODO, consider resolving the issue
+    # Rationale: Not appropriate for the project.
+    "FIX002",
+
+    # Description: Implicitly concatenated string literals on one line
+    # Rationale: Allegedly conflicts with the formatter.
+    "ISC001",
+
+    # Description: Trailing comma missing
+    # Rationale: Allegedly conflicts with the formatter.
+    "COM812",
+]
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.mypy]
+strict = true
+
+[tool.towncrier]
+directory = "news"
+package = "configzen"
+filename = "CHANGELOG.md"
+start_string = "<!-- insertion marker -->\n"
+underlines = ["", "", ""]                                                                           # We use Markdown
+title_format = "## [{version}](https://github.com/bswck/configzen/tree/{version}) ({project_date})"
+issue_format = "[#{issue}](https://github.com/bswck/configzen/issues/{issue})"
+
+[[tool.towncrier.type]]
+directory = "security"
+name = "Security"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[tool.coverage.run]
+plugins = ["covdefaults"]
+source = ["configzen/"]
+relative_files = true
+
+[tool.coverage.report]
+fail_under = 90
