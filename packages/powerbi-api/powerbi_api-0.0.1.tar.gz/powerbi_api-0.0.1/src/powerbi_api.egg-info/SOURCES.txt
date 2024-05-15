@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/powerbi_api.egg-info/PKG-INFO
+src/powerbi_api.egg-info/SOURCES.txt
+src/powerbi_api.egg-info/dependency_links.txt
+src/powerbi_api.egg-info/top_level.txt
+src/powerbiapi/__init__.py
+src/powerbiapi/pbi.py

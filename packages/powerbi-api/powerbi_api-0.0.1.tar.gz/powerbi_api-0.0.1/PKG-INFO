@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: powerbi-api
+Version: 0.0.1
+Summary: Power BI API Helpers
+Author-email: Andrew McLaughlin <andrew@thedataplatform.io>
+Project-URL: Homepage, https://github.com/TheDataPlatform/powerbi-api
+Project-URL: Issues, https://github.com/TheDataPlatform/powerbi-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# powerb-api
+Power BI API
