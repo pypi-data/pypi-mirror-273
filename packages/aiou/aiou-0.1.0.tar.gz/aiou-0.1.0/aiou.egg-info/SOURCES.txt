@@ -1,0 +1,10 @@
+README.md
+setup.py
+aiou/__init__.py
+aiou/file.py
+aiou/path.py
+aiou.egg-info/PKG-INFO
+aiou.egg-info/SOURCES.txt
+aiou.egg-info/dependency_links.txt
+aiou.egg-info/requires.txt
+aiou.egg-info/top_level.txt
