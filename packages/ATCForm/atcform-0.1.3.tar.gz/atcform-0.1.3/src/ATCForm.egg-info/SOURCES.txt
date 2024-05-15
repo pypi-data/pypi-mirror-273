@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ATCForm/AUTO_FORM.py
+src/ATCForm/__init__.py
+src/ATCForm/examlpe.py
+src/ATCForm.egg-info/PKG-INFO
+src/ATCForm.egg-info/SOURCES.txt
+src/ATCForm.egg-info/dependency_links.txt
+src/ATCForm.egg-info/requires.txt
+src/ATCForm.egg-info/top_level.txt
