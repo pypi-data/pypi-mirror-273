@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: oj-tools
+Version: 0.0.3
+Summary: tools for Online Judge management
+Author-email: hepheir <hepheir@gmail.com>
+Project-URL: Homepage, https://https://github.com/hepheir/oj-tools
+Project-URL: Issues, https://https://github.com/hepheir/oj-tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# oj-tools
+
+[QingdaoU/OnlineJudge](https://github.com/QingdaoU/OnlineJudge) 를 위한 테스트케이스 생성기입니다.
+
+
+## Install
+
+```shell
+pip install --upgrade oj-tools
+```
+
+
+## Example
+
+아래는 100 보다 작거나 같은 '소수'를 구하는 문제의 테스트 케이스를 생성하는 예시 입니다.
+
+```python
+def primes(n):
+    # Sieve of Eratosthenes
+    # https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+    sieve = [True] * (n+1)
+    for p in range(2, n+1):
+        if sieve[p]:
+            for j in range(2*p, n+1, p):
+                sieve[j] = False
+            yield p
+
+
+if __name__ == '__main__':
+    import oj
+
+    # 1. 문제를 생성합니다.
+    problem = oj.Problem('prime_numbers')
+
+    for id, prime in enumerate(primes(100), start=1):
+        # 2-1. 테스트케이스를 생성합니다.
+        tc = oj.TestCase(
+            id=str(id),
+            input=str(prime),
+            output=str(fib(prime))
+        )
+
+        if int(tc.output) > oj.INTEGER_SIZE:
+            print('MAX_INTEGER_SIZE EXCEEDED')
+            print(tc.output)
+            break
+
+        # 2-2. 테스트케이스를 문제에 추가합니다.
+        problem.add_testcase(tc)
+
+    # 3. 문제의 정보와 테스트케이스를 .zip 파일로 출력합니다.
+    problem.extract_as_zip()
+```
+
+
+## Documentation
+
+### Problem
+
+#### .title
+
+문제를 구분하는
