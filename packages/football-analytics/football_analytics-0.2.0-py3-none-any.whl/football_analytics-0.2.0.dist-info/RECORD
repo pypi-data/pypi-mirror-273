@@ -1,0 +1,14 @@
+football_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+football_analytics/__main__.py,sha256=y4b9KIGP0snjZH2prbW0rrpc-6R8ovjKYpWThP5sCtI,2444
+football_analytics/config.py,sha256=pBp8BVGfzy5nnfDGjfFJAAkj0sVKRyrEG-f5QQqH2M0,22649
+football_analytics/scrapper.py,sha256=EvGqZH9wnvO7r7WE1Pg0zpbzf8sXUyNsuHeqiAIMpt8,2475
+football_analytics/tasks/__init__.py,sha256=yk_0IfNIswSkGIW1l_od4c0tHRVVt8BkTFdwHqG7ttY,65
+football_analytics/tasks/preprocess_data.py,sha256=5nwBmZm5WHDY4324dZ3hw8iXFhffzezTIuVKfq6as4E,6916
+football_analytics/tasks/scraping_extraction.py,sha256=CTCZglBWzDXpUs58m6HxaCYbfUiepTk8PURHd7dlAf8,4637
+football_analytics/tasks/scraping_utils.py,sha256=sYlOK9PXUqLonE60suv8EiujvLH5q0ntRraDkeiqL2s,3915
+football_analytics/tasks/write_postgres_table.py,sha256=AaFfDHMYKwqTd5qYVzn6TvJuEYqHHsQ1oJ0jb32A-84,3965
+football_analytics/utils.py,sha256=ka-VbpsTe2_iGS3OAvavnaoHDWt2Px0hMbE_gH1-oNM,4384
+football_analytics-0.2.0.dist-info/METADATA,sha256=wti1IGCrMZngypLFzGG-_gX3gM9v3aN2tW0VyQobTKM,3983
+football_analytics-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+football_analytics-0.2.0.dist-info/entry_points.txt,sha256=JGdho99vCfvTN-bGABfVn_WRyvUWAjjXpKD3Ki5pGuc,63
+football_analytics-0.2.0.dist-info/RECORD,,

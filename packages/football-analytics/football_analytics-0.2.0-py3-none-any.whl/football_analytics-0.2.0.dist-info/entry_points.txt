@@ -1,0 +1,3 @@
+[console_scripts]
+fbref-scrap=football_analytics.__main__:app
+
