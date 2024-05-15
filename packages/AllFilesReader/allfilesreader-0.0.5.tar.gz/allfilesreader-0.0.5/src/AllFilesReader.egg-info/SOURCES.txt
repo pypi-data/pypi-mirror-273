@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/AllFilesReader.egg-info/PKG-INFO
+src/AllFilesReader.egg-info/SOURCES.txt
+src/AllFilesReader.egg-info/dependency_links.txt
+src/AllFilesReader.egg-info/requires.txt
+src/AllFilesReader.egg-info/top_level.txt
+src/all_files_reader/__init__.py
+src/all_files_reader/filereader_crud.py
+src/exception/__init__.py
+src/exception/exception.py
