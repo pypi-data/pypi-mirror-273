@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dify-knowledge-pipline
+Version: 0.1.5
+Summary: 🥂 Gracefully embedding multimodal-knowledge to Dify
+Home-page: https://github.com/QIN2DIM/hcaptcha-challenger
+License: Apache-2.0
+Keywords: dify,RAG,dify-knowledge-pipline,multimodal-knowledge
+Author: QIN2DIM
+Author-email: yaoqinse@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: httpx
+Requires-Dist: langchain_text_splitters
+Requires-Dist: loguru
+Requires-Dist: pydantic (>=2,<3)
+Requires-Dist: python-dotenv
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Requires-Dist: tqdm
+Project-URL: Documentation, https://github.com/QIN2DIM/hcaptcha-challenger
+Project-URL: Repository, https://github.com/QIN2DIM/hcaptcha-challenger
+Description-Content-Type: text/markdown
+
+# dify-knowledge-pipline
+♻ Gracefully embedding multimodal-knowledge to Dify
+
