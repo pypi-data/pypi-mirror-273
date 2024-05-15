@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+passman/__init__.py
+passman/cli.py
+passman/errors.py
+passman/passman.py
+python_passman.egg-info/PKG-INFO
+python_passman.egg-info/SOURCES.txt
+python_passman.egg-info/dependency_links.txt
+python_passman.egg-info/entry_points.txt
+python_passman.egg-info/requires.txt
+python_passman.egg-info/top_level.txt

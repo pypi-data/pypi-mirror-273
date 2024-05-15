@@ -1,0 +1,2 @@
+[console_scripts]
+passman = passman.cli:app
