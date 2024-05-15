@@ -1,0 +1,3 @@
+[console_scripts]
+docli=todoclist.scripts.todoclist:app
+
