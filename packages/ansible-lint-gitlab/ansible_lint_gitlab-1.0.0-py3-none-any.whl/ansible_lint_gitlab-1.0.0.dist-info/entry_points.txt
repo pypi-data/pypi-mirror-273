@@ -1,0 +1,2 @@
+[console_scripts]
+ansible-lint-gitlab = ansible_lint_gitlab.reporter:main
