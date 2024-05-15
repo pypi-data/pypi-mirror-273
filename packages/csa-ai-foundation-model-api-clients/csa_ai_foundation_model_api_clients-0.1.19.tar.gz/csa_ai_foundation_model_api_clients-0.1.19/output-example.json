@@ -1,0 +1,33 @@
+{   
+    "dataType": "csa-ai-foundation-model-api-clients-JSON-output",
+    "dataVersion": "1.0",
+    "uuid": "12345678-1234-1234-1234-123456789012",
+    "csa-ai-foundation-model-api-clients-version": "0.0.9",
+    "arguments": {
+        "model": "claude",
+        "system_prompt": "filename.txt",
+        "user_prompt": "other.txt",
+        "user_data_file": "data.txt",
+        "system_prompt_absolute": "/foo/filename.txt",
+        "user_prompt_absolute": "/foo/other.txt",
+        "user_data_file_absolute": "/foo/data.txt",
+        "temperature": 0.7,
+        "max_tokens": 150,
+        "output_file": "foo.json",
+        "output_file_absolute": "/foo/foo.json"
+    },
+    "api_response": {
+        "status": "success|error",
+        "model_name": "full model name",
+        "temperature": "temperature",
+        "ai_query_time": "2024-05-11T12:34:56Z",
+        "ai_response_time": "2024-05-11T12:34:56Z",
+        "ai_runtime": "1",
+        "tokens_input": 123,
+        "tokens_output": 123,
+        "tokens_total": 246,
+        "ai_response_http_status_code": "200",
+        "ai_response_stop_reason": "end_turn",
+        "ai_response_data": "some large string here"
+    }
+}
