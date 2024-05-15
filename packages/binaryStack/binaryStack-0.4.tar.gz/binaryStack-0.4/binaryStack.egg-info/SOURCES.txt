@@ -1,0 +1,5 @@
+setup.py
+binaryStack.egg-info/PKG-INFO
+binaryStack.egg-info/SOURCES.txt
+binaryStack.egg-info/dependency_links.txt
+binaryStack.egg-info/top_level.txt
