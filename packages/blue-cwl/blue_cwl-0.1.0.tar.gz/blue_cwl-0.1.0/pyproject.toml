@@ -1,0 +1,183 @@
+[build-system]
+requires = [
+    "setuptools>=64",
+    "setuptools_scm>=8"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blue-cwl"
+description = "Common Workflow Language inspired workflow definitions."
+readme = { file = "README.rst", content-type = "text/x-rst" }
+requires-python = ">=3.10"
+license = { file = "LICENSE.txt" }
+authors = [
+  { name = "Blue Brain Project, EPFL" },
+]
+dependencies = [
+  "click>=8.0",
+  "libsonata",
+  "numpy",
+  "pandas",
+  "voxcell",
+  "joblib",
+  "entity_management>=1.2.45",  # latest emodel definitions
+  "pyarrow>=3.0.0",
+  "fz_td_recipe>=0.2.0",  # support for json recipe
+  "pydantic",
+  "morph-tool",
+  "jsonschema",
+  "luigi",
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+docs = [
+  "sphinx-bluebrain-theme",
+]
+
+[project.urls]
+Homepage = "https://github.com/BlueBrain/blue-cwl"
+Repository = "https://github.com/BlueBrain/blue-cwl"
+Issues = "https://github.com/BlueBrain/blue-cwl/issues"
+
+[project.scripts]
+blue-cwl = "blue_cwl.cli:main"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "A", # flake8-builtins
+    "B", # bugbear
+    "D", # pydocstyle
+    "E", # pycodestyle
+    "F", # pyflakes
+    "I", # isort
+    "S", # bandit
+    "UP", # pyupgrade
+]
+ignore = [
+    "S107", "S602", "S603", "S608"
+]
+
+[tool.ruff.lint.pylint]
+max-args=12
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+docstring-code-format = true
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+docstring-code-line-length = 100
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+[tool.pytest.ini_options]
+addopts = [
+    "-vv",
+    "--import-mode=importlib",
+]
+
+[tool.coverage.paths]
+source = [
+    "src",
+    "*/site-packages",
+]
+
+[tool.coverage.run]
+branch = true
+parallel = false
+
+[tool.coverage.report]
+show_missing = true
+precision = 0
+fail_under = 60
+
+[tool.pylint.messages_control]
+disable = [
+    "fixme",
+    "invalid-name",
+    "len-as-condition",
+    "no-else-return",
+    "too-many-locals",
+    "import-outside-toplevel",
+]
+
+[tool.pylint.format]
+# Regexp for a line that is allowed to be longer than the limit.
+ignore-long-lines = '\bhttps?://\S'
+# Maximum number of characters on a single line.
+max-line-length = 100
+
+[tool.pylint.design]
+# Maximum number of arguments for function / method
+max-args = 12
+# Argument names that match this expression will be ignored. Default to name
+# with leading underscore
+ignored-argument-names = '_.*'
+# Maximum number of locals for function / method body
+max-locals = 15
+# Maximum number of return / yield for function / method body
+max-returns = 10
+# Maximum number of branch for function / method body
+max-branches = 12
+# Maximum number of statements in function / method body
+max-statements = 50
+# Maximum number of parents for a class (see R0901).
+max-parents = 7
+# Maximum number of attributes for a class (see R0902).
+max-attributes = 40
+# Minimum number of public methods for a class (see R0903).
+min-public-methods = 0
+# Maximum number of public methods for a class (see R0904).
+max-public-methods = 60
+# checks for similarities and duplicated code. This computation may be
+# memory / CPU intensive, so you should disable it if you experiments some
+# problems.
+#
+
+[tool.pylint.similarities]
+# Minimum lines number of a similarity.
+min-similarity-lines = 25
+# Ignore comments when computing similarities.
+ignore-comments = "yes"
+# Ignore docstrings when computing similarities.
+ignore-docstrings = "yes"
+
+[tool.pylint.typecheck]
+# List of classes names for which member attributes should not be checked
+# (useful for classes with attributes dynamically set).
+
+#as of numpy 1.8.0, name resolution seems to be a problem.  Ignore lookups in numpy
+ignored-classes = ["numpy", "list"]
+
+extension-pkg-whitelist = ["numpy", "lxml", "pyarrow.lib"]

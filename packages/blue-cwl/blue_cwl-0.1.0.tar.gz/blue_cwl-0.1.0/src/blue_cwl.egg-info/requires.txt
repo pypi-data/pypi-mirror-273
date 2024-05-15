@@ -1,0 +1,16 @@
+click>=8.0
+libsonata
+numpy
+pandas
+voxcell
+joblib
+entity_management>=1.2.45
+pyarrow>=3.0.0
+fz_td_recipe>=0.2.0
+pydantic
+morph-tool
+jsonschema
+luigi
+
+[docs]
+sphinx-bluebrain-theme
