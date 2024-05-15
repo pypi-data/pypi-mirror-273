@@ -1,0 +1,8 @@
+README.md
+setup.py
+gcloudrun_flask_python.egg-info/PKG-INFO
+gcloudrun_flask_python.egg-info/SOURCES.txt
+gcloudrun_flask_python.egg-info/dependency_links.txt
+gcloudrun_flask_python.egg-info/entry_points.txt
+gcloudrun_flask_python.egg-info/requires.txt
+gcloudrun_flask_python.egg-info/top_level.txt
