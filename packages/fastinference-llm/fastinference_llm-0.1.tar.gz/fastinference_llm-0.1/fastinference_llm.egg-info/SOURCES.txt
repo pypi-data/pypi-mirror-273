@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fastinference/FastInference.py
+fastinference/__init__.py
+fastinference_llm.egg-info/PKG-INFO
+fastinference_llm.egg-info/SOURCES.txt
+fastinference_llm.egg-info/dependency_links.txt
+fastinference_llm.egg-info/requires.txt
+fastinference_llm.egg-info/top_level.txt
