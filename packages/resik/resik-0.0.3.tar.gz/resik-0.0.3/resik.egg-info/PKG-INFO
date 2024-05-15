@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: resik
+Version: 0.0.3
+Summary: Description about the project.
+Author: Master
+Author-email: name@email.com
+License: License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Resik 
+
+is a library about print messages basic
