@@ -1,0 +1,13 @@
+cleanse-speech/__init__.py,sha256=OhESVPc2pRv7K0r0xnHVfEC24THatm9R_tzA9NFq734,98
+cleanse-speech/bin/cn_advertisement.bin,sha256=w2W34K8MDr32uMSNMyZe79HZX3RxaFr5dN0P9D1AO7s,2957
+cleanse-speech/bin/cn_general.bin,sha256=ddYMCx0Hhrno8Nb0EDrzO-olegawghpTIhs4eQS-VbA,9075
+cleanse-speech/bin/cn_netease.bin,sha256=xHvbpO4TOmBjpW_Fghz_GBhnG0U75_9hib1x5uR5JDc,92572
+cleanse-speech/bin/cn_politics.bin,sha256=ciNo7EhSFNzuGskHgD3qcsLTAYYgt92RmdGv7nNAKf8,5134
+cleanse-speech/bin/cn_pornographic.bin,sha256=wdAMHAQk7aB3_M948jXdUQlriz9DJcT7EL9aESUf2Yg,4224
+cleanse-speech/bookshelf.py,sha256=Lmy44OdqmZXFmuqyubCklYZ8yZgEE04zu4VGfkmnwCI,1002
+cleanse-speech/dlfa.py,sha256=2Wxx_41rR1Er-ykSO_zHMdNtFQofFuQYA0RhEitKpEk,7087
+cleanse_speech-0.1.0.dist-info/METADATA,sha256=w9VZ8aHbj4pnejWbDv8HRLNRTe-QEZh4-dtzm1Wf6pg,1328
+cleanse_speech-0.1.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+cleanse_speech-0.1.0.dist-info/licenses/LICENSE,sha256=8u28K1sYUp8UBl7JcpqtMJPvs4ppPu1GBrlyuO5FH6c,1065
+cleanse_speech-0.1.0.dist-info/licenses/NOTICE.MD,sha256=1ELDl4HYL5WVE7pwQObnaS80vap_6NUF6KLB9qaz-2A,94
+cleanse_speech-0.1.0.dist-info/RECORD,,
