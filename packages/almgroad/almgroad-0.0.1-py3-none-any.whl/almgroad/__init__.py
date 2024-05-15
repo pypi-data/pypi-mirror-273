@@ -1,0 +1,1 @@
+from .infoinsta import Info_Insta
