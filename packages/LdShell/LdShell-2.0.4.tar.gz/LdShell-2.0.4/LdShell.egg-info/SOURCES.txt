@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+LdShell/__init__.py
+LdShell/__version__.py
+LdShell/core.py
+LdShell/test.py
+LdShell.egg-info/PKG-INFO
+LdShell.egg-info/SOURCES.txt
+LdShell.egg-info/dependency_links.txt
+LdShell.egg-info/top_level.txt
