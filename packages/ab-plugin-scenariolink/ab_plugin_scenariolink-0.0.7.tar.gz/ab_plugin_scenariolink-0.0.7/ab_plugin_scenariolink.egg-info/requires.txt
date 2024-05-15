@@ -1,0 +1,5 @@
+activity-browser>=2.9.7
+unfold>=1.2.0
+datapackage
+pandas
+tqdm
