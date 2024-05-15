@@ -1,0 +1,7 @@
+[console_scripts]
+wildcode.evaluate = wildcode.evaluate:main
+wildcode.generate = wildcode.generate:main
+wildcode.inspect = wildcode.inspect:main
+wildcode.legacy_sanitize = wildcode.legacy_sanitize:main
+wildcode.sanitize = wildcode.sanitize:main
+wildcode.syncheck = wildcode.syncheck:main
