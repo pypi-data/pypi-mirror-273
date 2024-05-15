@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: JsonsPract
+Version: 0.0.1
+Summary: This is the simplest module for quick work with json files.
+Author: sonin
+Author-email: fediasonin@gmail.com
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+
+# Jsons Library #
+
+## What is this? ##
+The module allows you to work with json format files
+
+## Quick Guide ##
+The module allows you to create an object of the Jsons class and work with it as with standard json
+	str1 = Jsons('name', 'Vasya')
+	json_str1 = str1.to_json()
+
+
+----------
+
+
+### Using ###
+
+
+
+Using the library is simple:
+
+Let's import it first:
+First, import everything from the library (use the `from `...` import *` construct).
+
+Examples of all operations:
+
+Create a JSON object from a Jsons string using the 'to_json' function:
+
+	json1 = jsons1.to_json()
+
+
+Create a Jsons object from a JSON string using the 'from_json' function:
+
+	jsons1 = json1.from_json()
+
+Concatenate two JSON structures using the 'concatenate_json' function:
+
+	json12 = Jsons.concatenate_json(json1, json2)
+
+Check if the JSON structure has balanced curly brackets and proper comma separators using the 'is_valid_json_structure' function:
+
+	Jsons.is_valid_json_structure(json1)
+
+Calculate the maximum depth of a JSON structure using the 'max_json_depth' function:
+
+	Jsons.max_json_depth(json1)
