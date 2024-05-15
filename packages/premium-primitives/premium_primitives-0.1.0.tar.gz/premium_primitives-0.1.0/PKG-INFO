@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: premium_primitives
+Version: 0.1.0
+Author-email: "Alteryx, Inc." <open_source_support@alteryx.com>
+Maintainer-email: "Alteryx, Inc." <open_source_support@alteryx.com>
+License: BSD 3-clause
+Project-URL: Documentation, https://featuretools.alteryx.com
+Project-URL: Source Code, https://github.com/alteryx/premium_primitives/
+Project-URL: Changes, https://github.com/alteryx/premium_primitives/blob/main/release_notes.rst
+Project-URL: Issue Tracker, https://github.com/alteryx/premium_primitives/issues
+Project-URL: Twitter, https://twitter.com/alteryxoss
+Project-URL: Chat, https://join.slack.com/t/alteryx-oss/shared_invite/zt-182tyvuxv-NzIn6eiCEf8TBziuKp0bNA
+Keywords: feature engineering,data science,machine learning
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: featuretools>=1.5.0
+Requires-Dist: woodwork>=0.8.1
+Requires-Dist: nltk>=3.4.5
+Requires-Dist: scikit-learn>=0.20.0
+Requires-Dist: phone-iso3166>=0.3
+Requires-Dist: phonenumbers>=8.10.6
+Requires-Dist: reverse_geocoder>=1.5.1
+Requires-Dist: zipcodes>=1.0.5
+Provides-Extra: test
+Requires-Dist: pip>=22.0.2; extra == "test"
+Requires-Dist: pytest>=7.1.2; extra == "test"
+Requires-Dist: pytest-xdist>=2.5.0; extra == "test"
+Requires-Dist: pytest-cov>=3.0.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: ruff>=0.0.239; extra == "dev"
+Requires-Dist: black[jupyter]>=23.1.0; extra == "dev"
+Requires-Dist: pre-commit>=2.20.0; extra == "dev"
+Requires-Dist: premium_primitives[test]; extra == "dev"
+
+# Premium Primitives
+
+<p align="center">
+    <a href="https://github.com/alteryx/premium_primitives/actions/workflows/unit_tests_with_latest_deps.yaml?query=branch%3Amain" target="_blank">
+        <img src="https://github.com/alteryx/premium_primitives/actions/workflows/unit_tests_with_latest_deps.yaml/badge.svg?branch=main" alt="Tests" />
+    </a>
+    <a href="https://codecov.io/gh/alteryx/premium_primitives" >
+      <img src="https://codecov.io/gh/alteryx/premium_primitives/branch/main/graph/badge.svg?token=L9KINVJ31P"/>
+    </a>
+    <a href="https://stackoverflow.com/questions/tagged/featuretools" target="_blank">
+        <img src="http://img.shields.io/badge/questions-on_stackoverflow-blue.svg" alt="StackOverflow" />
+    </a>
+</p>
+<hr>
+
+Premium Primitives is a package to use with [Featuretools](https://github.com/alteryx/featuretools) that provides additional primitives for feature generation.
+```bash
+python -m pip install featuretools[premium]
+```
+
+## Support
+The Featuretools community is happy to provide support to users of Featuretools. Project support can be found in four places depending on the type of question:
+
+1. For usage questions, use [Stack Overflow](https://stackoverflow.com/questions/tagged/featuretools) with the `featuretools` tag.
+2. For bugs, issues, or feature requests start a [Github issue](https://github.com/alteryx/premium_primitives/issues).
+3. For discussion regarding development on the core library, use [Slack](https://join.slack.com/t/alteryx-oss/shared_invite/zt-182tyvuxv-NzIn6eiCEf8TBziuKp0bNA).
+4. For everything else, the core developers can be reached by email at open_source_support@alteryx.com
+
+## Built at Alteryx
+
+**Featuretools** is an open source project maintained by [Alteryx](https://www.alteryx.com). To see the other open source projects we’re working on visit [Alteryx Open Source](https://www.alteryx.com/open-source). If building impactful data science pipelines is important to you or your business, please get in touch.
+
+<p align="center">
+  <a href="https://www.alteryx.com/open-source">
+    <img src="https://alteryx-oss-web-images.s3.amazonaws.com/OpenSource_Logo-01.png" alt="Alteryx Open Source" width="800"/>
+  </a>
+</p>
