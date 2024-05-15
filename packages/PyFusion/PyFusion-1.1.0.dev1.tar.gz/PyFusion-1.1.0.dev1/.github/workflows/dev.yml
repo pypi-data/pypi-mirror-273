@@ -1,0 +1,366 @@
+
+name: Build and Test
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Set an environment variables for the workflow
+env:
+  UV_HTTP_TIMEOUT: 300
+  PIP_DISABLE_PIP_VERSION_CHECK: 1
+
+# Define the jobs that run in the workflow
+jobs:
+  # Define the tests job that runs on ubuntu-latest across multiple python versions
+  tests:
+    strategy:
+      fail-fast: true
+      matrix:
+        python-versions: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: 1
+      with:
+        python-version: ${{ matrix.python-versions }}
+
+    - name: Set up rye
+      run: curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" bash
+
+    - name: Add Rye to PATH
+      run: |
+        echo "$HOME/.rye/env" >> $GITHUB_PATH
+        echo "$HOME/.rye/shims" >> $GITHUB_PATH
+      shell: bash
+
+    - name: Use uv instead of pip
+      run: rye config --set-bool behavior.use-uv=true
+
+    - name: Verify Rye Installation
+      run: rye --version
+      shell: bash
+
+    - name: Sync dependencies using rye
+      run: |
+        rye pin ${{ matrix.python-versions }}
+        rye sync
+
+    # required for tox testing on mike
+    - name: Setup doc deploy git user 
+      run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+  
+    - name: Run tox
+      run: rye run tox
+
+    # Build and upload the sdist, wheels will be done on arch specific images
+    - name: Build sdist
+      run: rye build --sdist 
+
+    - name: Upload sdist
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts-sdist-${{ matrix.python-versions }}
+        path: dist/*.tar.gz
+  
+  # Define the manylinux maturin builds, across multiple python versions, these will run in appropriate arch images
+  linux-manylinux:
+    needs: tests
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        python-versions: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        target: [
+          "x86_64-unknown-linux-gnu",
+          "aarch64-unknown-linux-gnu",
+          "armv7-unknown-linux-gnueabihf",
+          "powerpc64le-unknown-linux-gnu",
+        ]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-python@v5
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: 1
+      with:
+        python-version: ${{ matrix.python-versions }}
+
+    - name: Set up rye
+      run: curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" bash
+
+    - name: Add Rye to PATH
+      run: |
+        echo "$HOME/.rye/env" >> $GITHUB_PATH
+        echo "$HOME/.rye/shims" >> $GITHUB_PATH
+      shell: bash
+
+    - name: Use uv instead of pip
+      run: rye config --set-bool behavior.use-uv=true
+
+    - name: Verify Rye Installation
+      run: rye --version
+      shell: bash
+
+    - name: Sync dependencies using rye
+      run: |
+        rye pin ${{ matrix.python-versions }}
+        rye sync
+
+    - name: Build Wheels - manylinux
+      uses: PyO3/maturin-action@main
+      with:
+        target: ${{ matrix.target }}
+        manylinux: auto
+        args: --release -j $(nproc) -i python${{ matrix.python-versions }} --out dist
+        sccache: 'true'
+  
+    - name: list dist files
+      run: |
+        ls -l dist
+
+    - name: Clear and list dist files
+      run: |
+        rm -f dist/*linux_x86_64.whl
+        ls -l dist
+
+
+    - name: Upload Wheels
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts-manylinux-${{ matrix.target }}-${{ matrix.python-versions }}
+        path: dist
+
+  # Define the musllinux maturin builds, across multiple python versions, these will run in appropriate arch images
+  linux-musllinux:
+    needs: tests
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        python-versions: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        target: [
+          "x86_64-unknown-linux-musl",
+          "aarch64-unknown-linux-musl",
+          "armv7-unknown-linux-musleabihf",
+          # "powerpc64le-unknown-linux-musl", # diasble powerpc64le until we decide to build via container quay.io/pypa/musllinux_1_1_ppc64le
+        ]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-python@v5
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: 1      
+      with:
+        python-version: ${{ matrix.python-versions }}
+
+    - name: Set up rye
+      run: curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" bash
+
+    - name: Add Rye to PATH
+      run: |
+        echo "$HOME/.rye/env" >> $GITHUB_PATH
+        echo "$HOME/.rye/shims" >> $GITHUB_PATH
+      shell: bash
+
+    - name: Use uv instead of pip
+      run: rye config --set-bool behavior.use-uv=true
+
+    - name: Verify Rye Installation
+      run: rye --version
+      shell: bash
+
+    - name: Sync dependencies using rye
+      run: |
+        rye pin ${{ matrix.python-versions }}
+        rye sync
+        
+    - name: Build Wheels - musllinux
+      uses: PyO3/maturin-action@main
+      with:
+        target: ${{ matrix.target }}
+        manylinux: musllinux_1_1
+        args: --release -j $(nproc) -i python${{ matrix.python-versions }} --out dist
+        sccache: 'false'
+
+    - name: list dist files
+      run: |
+        ls -l dist
+  
+    - name: Clear and list dist files
+      run: |
+        rm -f dist/*linux_x86_64.whl
+        ls -l dist
+
+    - name: Upload Wheels
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts-musllinux-${{ matrix.target }}-${{ matrix.python-versions }}
+        path: dist
+
+  # Define the windows maturin builds, across multiple python versions, these will run on windows-latest
+  windows:
+    needs: tests
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-versions: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        target: ["x64"]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-python@v5
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: 1
+      with:
+        python-version: ${{ matrix.python-versions }}
+
+    - name: Set up rye
+      run: |
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        cargo install --git https://github.com/astral-sh/rye.git  --features winapi/winioctl,winapi/ioapiset rye
+      shell: bash
+
+    - name: Add Rye to PATH
+      run: |
+        echo "$HOME/.rye/env" >> $GITHUB_PATH
+        echo "$HOME/.rye/shims" >> $GITHUB_PATH
+      shell: bash
+
+    - name: Use uv instead of pip
+      run: rye config --set-bool behavior.use-uv=true
+
+    - name: Verify Rye Installation
+      run: rye --version
+      shell: bash
+
+    - name: Sync dependencies using rye
+      run: |
+        rye pin ${{ matrix.python-versions }}
+        rye sync
+
+    - name: Build wheels
+      uses: PyO3/maturin-action@v1
+      with:
+        target: ${{ matrix.target }}
+        args: --release -j 10 -i ${{ matrix.python-versions }} --out dist
+        sccache: 'false'
+
+    - name: list dist files
+      run: ls -l dist
+
+    - name: Upload Wheels
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts-win-${{ matrix.target }}-${{ matrix.python-versions }}
+        path: dist
+
+  # Define the macos maturin builds, across multiple python versions, these will run on macos-latest
+  macos:
+    needs: tests
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        python-versions: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        target: ["x86_64"]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - uses: actions/setup-python@v5
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: 1
+      with:
+        python-version: ${{ matrix.python-versions }}
+
+    - name: Set up rye
+      run: curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" bash
+
+    - name: Add Rye to PATH
+      run: |
+        echo "$HOME/.rye/env" >> $GITHUB_PATH
+        echo "$HOME/.rye/shims" >> $GITHUB_PATH
+      shell: bash
+
+    - name: Use uv instead of pip
+      run: rye config --set-bool behavior.use-uv=true
+
+    - name: Verify Rye Installation
+      run: rye --version
+      shell: bash
+
+    - name: Sync dependencies using rye
+      run: |
+        rye pin ${{ matrix.python-versions }}
+        rye sync
+
+    - name: Build wheels
+      uses: PyO3/maturin-action@v1
+      with:
+        target: ${{ matrix.target }}
+        args: --release -j 10 -i ${{ matrix.python-versions }} --out dist
+        sccache: 'false'
+        manylinux: auto
+
+    - name: list dist files
+      run: ls -l dist
+
+    - name: Upload Wheels
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts-macos-${{ matrix.target }}-${{ matrix.python-versions }}
+        path: dist
+
+  # Define the artifact check job that runs on ubuntu-latest
+  artifact-check:
+    needs: [linux-manylinux, linux-musllinux, windows, macos]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        pattern: artifacts-*
+        path: dist
+        merge-multiple: true
+
+    - name: list dist files
+      run: ls -l dist
+
+    - uses: actions/setup-python@v5
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: 1
+      with:
+        python-version: "3.10"
+    - name: Install auditwheel-symbols
+      run: pip install auditwheel
+
+    - name: Check wheels
+      run: |
+        for wheel in dist/*manylinux*.whl; do
+          echo "Processing $wheel"
+          auditwheel show "$wheel"
+        done
+      shell: bash
+
