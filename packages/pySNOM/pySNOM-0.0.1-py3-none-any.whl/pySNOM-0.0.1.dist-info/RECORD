@@ -1,0 +1,10 @@
+pySNOM/__init__.py,sha256=UjdZgyZuRvHYvnW5JnOac5JMvm9dpnnzwGpnWRxLGmU,271
+pySNOM/pySNOM.py,sha256=hZ21l77ITWPw1HNCWFVgAtMhgTMLZ_243LIdO6RHefs,11791
+pySNOM/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+pySNOM/tests/__init__.py,sha256=CYjxZniloNthsCRZrKznCK7zVLcfatjS7M3YLPiXZos,480
+pySNOM/tests/test_NeaSpectrum.py,sha256=boF4HBqOtaOZZRrnXmrWb5mQ0SSXiilU671CdWcrrVU,441
+pySNOM-0.0.1.dist-info/LICENSE,sha256=E0mkthSEkrRPYp5k7tZ2YS4jT-moOeTzsnfBSCyISfE,20849
+pySNOM-0.0.1.dist-info/METADATA,sha256=ZY4_TRf_balzqkljreortOfSNcs4NC92goC_s1XSUr0,639
+pySNOM-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pySNOM-0.0.1.dist-info/top_level.txt,sha256=702vkzO6zh46A1mqqwBVoWPNSAd3TaXL1Og-YHaqmOA,7
+pySNOM-0.0.1.dist-info/RECORD,,

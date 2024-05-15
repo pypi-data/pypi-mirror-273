@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pySNOM
+Version: 0.0.1
+Summary: Scanning Near-Field Optical Microscopy (SNOM) analysis tools
+Home-page: https://github.com/ngergihun/pySNOM
+Author: Gergely Nemeth, Ferenc Borondics
+Author-email: ngergihun@gmail.com, borondics@gmail.com
+License: CC BY-NC-SA 4.0 DEED
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: gwyfile
+
+# pySNOM
+Scanning Near-field Optical Microscopy (SNOM) analysis tools
