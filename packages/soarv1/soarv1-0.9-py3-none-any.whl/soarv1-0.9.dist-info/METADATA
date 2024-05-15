@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: soarv1
+Version: 0.9
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: AGPL-3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Requires-Dist: dill (==0.3.8)
+Requires-Dist: lmdb (==1.4.1)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: numpy (==1.24.4)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: protobuf (==3.19.6)
+Requires-Dist: albumentations (==1.4.2)
+Requires-Dist: opencv-python (==4.8.1.78)
+Requires-Dist: opencv-python-headless (==4.9.0.80)
+Requires-Dist: torch (==1.13.1+cu116)
+Requires-Dist: torchvision (==0.14.1+cu116)
+Requires-Dist: torchaudio (==0.13.1)
+Requires-Dist: torchsummary (==1.5.1)
+Requires-Dist: tensorboard (==2.14.0)
+
+UNKNOWN
+
