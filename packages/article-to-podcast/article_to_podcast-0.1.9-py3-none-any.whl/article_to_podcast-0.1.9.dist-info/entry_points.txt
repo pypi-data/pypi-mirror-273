@@ -1,0 +1,2 @@
+[console_scripts]
+article-to-podcast = article_to_podcast.cli:cli
