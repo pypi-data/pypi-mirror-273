@@ -1,0 +1,31 @@
+
+[project]
+name = "yaml-designer"
+description = "A plugin that allows users to dynamically create yaml classes and convert into a yaml file when done"
+version = "0.1.2"
+readme = {file = "README.rst", content-type = "text/markdown"}
+requires-python = ">=3.8"
+authors = [
+    { name = "Babak Michael Engheta", email = "michaelengheta55@gmail.com" },
+]
+maintainers = [
+    { name = "Babak Michael Engheta", email = "michaelengheta55@gmail.com" },
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: BSD License",
+]
+dependencies = [
+    "pyyaml>=6.0.1",
+]
+[project.urls]
+Repository = "https://github.com/MichaelE55/yaml-designer"
