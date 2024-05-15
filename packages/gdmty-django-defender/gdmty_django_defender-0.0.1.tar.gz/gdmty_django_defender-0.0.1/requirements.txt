@@ -1,0 +1,6 @@
+-e .
+coverage
+mockredispy
+importlib-metadata
+celery
+ushahidi_sphinx_rtd_theme
