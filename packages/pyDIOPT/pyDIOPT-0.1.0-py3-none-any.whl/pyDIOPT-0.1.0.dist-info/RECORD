@@ -1,0 +1,11 @@
+pyDIOPT/__init__.py,sha256=Z8m3KXXue4qKUmuNIHo0x8E7takvHn5R-_jamKvgRR0,196
+pyDIOPT/__version__.py,sha256=FAopULB7Qta_LQierHblMwMD4u2b3B9vkLZNJ5iAbrU,338
+pyDIOPT/_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyDIOPT/fetch.py,sha256=EWlzzRDTurHr3pAl2FChnlCsWMGPcyx4MOZ7b-ZI8uw,5950
+pyDIOPT/species.py,sha256=6GssG2Hem0WFtRWT4t2pjKq_Djw0pvw0BYSi6b5Knwk,4238
+pyDIOPT/utils.py,sha256=NkA5YKj3aGhp4NQlYriYagU6Nu7o2T7fWsKKJONAGXA,1450
+pyDIOPT-0.1.0.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+pyDIOPT-0.1.0.dist-info/METADATA,sha256=3-ZWRAtAtzmcRycrlY_uqYWgycTTvcTOB-3SgLV6T6I,892
+pyDIOPT-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyDIOPT-0.1.0.dist-info/top_level.txt,sha256=blORSvKmnznfDOAQabX_96snBfuYSvD4-88YOD6Eu7E,8
+pyDIOPT-0.1.0.dist-info/RECORD,,
