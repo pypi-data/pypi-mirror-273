@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+test.py
+wteamrlt/__init__.py
+wteamrlt/main.py
+wteamrlt.egg-info/PKG-INFO
+wteamrlt.egg-info/SOURCES.txt
+wteamrlt.egg-info/dependency_links.txt
+wteamrlt.egg-info/top_level.txt
