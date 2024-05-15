@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PlacaFipy
+Version: 1.0.0
+Summary: Consultas FIPE pela placa do veículo.
+Home-page: https://github.com/juniorkrz/placafipy
+Author: Antônio Roberto Júnior
+Author-email: pix@jrkrz.com
+License: MIT
+Keywords: placa fipe veiculo
+License-File: LICENSE
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: Unidecode==1.3.8
+Requires-Dist: requests==2.31.0

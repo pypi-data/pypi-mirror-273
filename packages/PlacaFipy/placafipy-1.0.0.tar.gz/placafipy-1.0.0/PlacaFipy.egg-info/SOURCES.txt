@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PlacaFipy.egg-info/PKG-INFO
+PlacaFipy.egg-info/SOURCES.txt
+PlacaFipy.egg-info/dependency_links.txt
+PlacaFipy.egg-info/requires.txt
+PlacaFipy.egg-info/top_level.txt
+placafipy/__init__.py
