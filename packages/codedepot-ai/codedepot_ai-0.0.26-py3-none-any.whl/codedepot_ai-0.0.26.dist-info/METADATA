@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: codedepot-ai
+Version: 0.0.26
+Summary: Job run support for Git AI
+Author-Email: CodeDepot <contact@codedepot.ai>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Project-URL: Homepage, https://github.com/codedepotai/git-ai
+Requires-Python: >=3.10
+Requires-Dist: prettytable
+Requires-Dist: prompt-toolkit
+Requires-Dist: py
+Requires-Dist: pyaml
+Requires-Dist: pydantic
+Requires-Dist: pygit2
+Requires-Dist: requests
+Requires-Dist: inquirer
+Requires-Dist: codedepot-git-ai>=0.0.25
+Requires-Dist: codedepot-ai-api>=1.0.9
+Description-Content-Type: text/markdown
+
+# AI
+
+This is the ai client. More docs to come.
