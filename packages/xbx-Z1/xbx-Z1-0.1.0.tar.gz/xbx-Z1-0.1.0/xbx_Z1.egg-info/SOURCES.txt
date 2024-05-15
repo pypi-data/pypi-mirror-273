@@ -1,0 +1,6 @@
+setup.py
+xbx_Z1.egg-info/PKG-INFO
+xbx_Z1.egg-info/SOURCES.txt
+xbx_Z1.egg-info/dependency_links.txt
+xbx_Z1.egg-info/requires.txt
+xbx_Z1.egg-info/top_level.txt
