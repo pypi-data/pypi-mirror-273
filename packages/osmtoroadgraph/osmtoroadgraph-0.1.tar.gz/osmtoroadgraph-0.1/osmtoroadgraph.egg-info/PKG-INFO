@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: osmtoroadgraph
+Version: 0.1
+Summary: With this tool, osm data can be converted into easily parsable plaintext files that can be used by any application for further processing.
+Home-page: https://github.com/Crowley-VS/OsmToRoadGraph
+License: MIT
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: networkx
