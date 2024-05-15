@@ -1,0 +1,1 @@
+from resik.app import MensajesApp
