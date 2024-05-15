@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: HE_Data
+Version: 0.0.2
+Summary: A simple package containing a CSV dataset
+Author: Gurucharan Raju
+Author-email: Gurucharan.Raju-SA@csulb.edu
+License: MIT
+Description-Content-Type: text/markdown
+
+cmp1.csv dataset
