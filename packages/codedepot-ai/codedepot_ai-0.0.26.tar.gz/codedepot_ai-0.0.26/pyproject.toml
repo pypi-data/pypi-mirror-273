@@ -1,0 +1,40 @@
+[tool.pdm]
+
+[project]
+name = "codedepot-ai"
+version = "0.0.26"
+description = "Job run support for Git AI"
+readme = "README.md"
+authors = [
+    { name = "CodeDepot", email = "contact@codedepot.ai" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "prettytable",
+    "prompt-toolkit",
+    "py",
+    "pyaml",
+    "pydantic",
+    "pygit2",
+    "requests",
+    "inquirer",
+    "codedepot-git-ai>=0.0.25",
+    "codedepot-ai-api>=1.0.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/codedepotai/git-ai"
+
+[project.scripts]
+ai = "ai.main:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
