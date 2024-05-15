@@ -1,0 +1,2106 @@
+def _uPqZo(f):
+    def _9ubUz(*args, **kwargs):
+        return f(*args, **kwargs)
+    _9ubUz.__module__ = f.__module__
+    _9ubUz.__name__ = f.__name__
+    _9ubUz.__doc__ = f.__doc__
+    _9ubUz.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _9ubUz
+
+@_uPqZo
+def _DM7Qq():
+    global _uHpY1, _7QjWn, _SCW93, _ZqBEB, _Eytmo, _kF4qf, _Nz3Ul, _dsowz, _bigce, _LlzXq, _Pjxdw, _sdnc2, _mwxVN, _xFXUI, _QvLln, _VW5xd, _CPKZ5, _xLtnT, _aLGq2, _Ag85L, _zGY39, _BN42e, _dAh4x, _hEvH9
+    from __future__ import annotations
+    from copy import copy
+    from dataclasses import dataclass, field
+    from itertools import zip_longest
+    from pathlib import Path
+    from rich.console import Console
+    from rich.padding import Padding
+    from rich.pretty import pretty_repr
+    from rich.syntax import Syntax
+    from rich_argparse import RichHelpFormatter
+    from sys import version_info
+    from typing import Any, ClassVar, NamedTuple, TYPE_CHECKING
+    import argparse, ast, libcst as cst, libcst.matchers as m, random, re, setuptools.build_meta as _Iyspg, shutil, stonefish_license_manager as slim, string, sys, tempfile, x21, zipfile
+
+    class _EgY1e:
+
+        def __init__(self, string):
+            self.string = string
+
+        def __str__(self):
+            return self.string
+
+        def __repr__(self):
+            return f'<StringPlus {self.string!r}>'
+
+    class _8uUx5(_EgY1e):
+
+        def __init__(self, string, alias, import_from, filenode):
+            super().__init__(string)
+            assert isinstance(alias, ast.alias)
+            self.alias = alias
+            assert isinstance(import_from, (ast.ImportFrom, ast.Import))
+            self.import_from = import_from
+            self.filenode = filenode
+
+        def __repr__(self):
+            return f'<ImportName {self.string!r}>'
+
+        def __eq__(self, other):
+            return isinstance(other, _8uUx5) and str(self) == str(other)
+
+    class _L6nWc(_8uUx5):
+
+        def __init__(self, *_zyB0V, **_9MfkC):
+            super().__init__(*_zyB0V, **_9MfkC)
+
+        def __repr__(self):
+            return f'<ImportAsName {self.string!r}>'
+
+        def __eq__(self, other):
+            return isinstance(other, _L6nWc) and str(self) == str(other)
+
+    class _RZPzs:
+
+        def __init__(self, string):
+            self.chain = [_EgY1e(_7pr03) for _7pr03 in string.split('.')]
+
+        def __str__(self):
+            return '.'.join((str(_exFaa) for _exFaa in self.chain))
+
+        def __eq__(self, other):
+            return isinstance(other, _RZPzs) and str(self) == str(other)
+
+    def _V9EJu(filenode, tree):
+
+        class _C3fj0(ast.NodeTransformer):
+
+            def visit_Import(self, node):
+                for _m6anm in node.names:
+                    _m6anm.name = _8uUx5(_m6anm.name, _m6anm, node, filenode)
+                    if _m6anm.asname:
+                        _m6anm.asname = _L6nWc(_m6anm.asname, _m6anm, node, filenode)
+                return node
+
+            def visit_ImportFrom(self, node):
+                node = self.visit_Import(node)
+                if node.module:
+                    node.module = _RZPzs(node.module)
+                return node
+
+            def visit_Global(self, node):
+                node.names = [_EgY1e(_7OTEg) for _7OTEg in node.names]
+                return node
+        return _C3fj0().visit(tree)
+
+    def _3dcEv(tree):
+
+        class _Iijtj(ast.NodeTransformer):
+
+            def visit_Import(self, node):
+                for _aGFhH in node.names:
+                    if isinstance(_aGFhH.name, _EgY1e):
+                        _aGFhH.name = str(_aGFhH.name)
+                    if isinstance(_aGFhH.asname, _EgY1e):
+                        _aGFhH.asname = str(_aGFhH.asname)
+                return node
+
+            def visit_ImportFrom(self, node):
+                node = self.visit_Import(node)
+                if isinstance(node.module, _RZPzs):
+                    node.module = str(node.module)
+                return node
+
+            def visit_Global(self, node):
+                node.names = [str(_l0h1F) for _l0h1F in node.names]
+                return node
+
+            def visit_Attribute(self, node):
+                self.generic_visit(node)
+                if isinstance(node.attr, _EgY1e):
+                    node.attr = str(node.attr)
+                return node
+        return _Iijtj().visit(tree)
+
+    class _uHpY1(Exception):
+        pass
+    _PtocJ = Console(highlight=False).print
+    _s8cuJ = Console(stderr=True, style='yellow', highlight=False).print
+
+    def _xJOot(string):
+        if re.search('#[ \t]*stonfish[ \t]*:', string):
+            _s8cuJ('Found probable misspell `stonfish`.')
+        _ixyrn = {key.strip() for m in re.finditer('#[ \t]*stonefish[ \t]*:(.*)', string) for key in m.group(1).split(',')}
+        _HjkOn = {'skip', 'keep-all', 'keep-api'}
+        _Y8lNM = _ixyrn.difference(_HjkOn)
+        if _Y8lNM:
+            _THu6K = f"Found the illegal stonefish keywords {', '.join(_Y8lNM)}."
+            raise ValueError(_THu6K)
+        return _ixyrn
+
+    def _7EAxM(path, fun):
+        if path.is_dir():
+            _rgngQ = path.rglob('*.py')
+        elif path.suffix == '.py':
+            _rgngQ = [path]
+        else:
+            _rgngQ = []
+        for _tn2vy in _rgngQ:
+            fun(_tn2vy)
+
+    def _PEQsw(package, fallback='unknown'):
+        from importlib import metadata
+        try:
+            return metadata.version(package)
+        except metadata.PackageNotFoundError:
+            return fallback
+
+    def _KmRyJ(path):
+        if path.is_dir():
+            return sum((_8eowU.stat().st_size for _8eowU in path.glob('**/*') if _8eowU.is_file()))
+        return path.stat().st_size
+
+    def _jNrsw(n):
+        for _INqhF in ['', 'Ki', 'Mi', 'Gi', 'Ti', 'Pi', 'Ei', 'Zi']:
+            if abs(n) < 1024.0:
+                return f'{n:3.1f} {_INqhF}B'
+            n /= 1024.0
+        return f'{n:.1f} YiB'
+
+    class _7QjWn:
+
+        def __init__(self, zip_path):
+            self.zip_path = zip_path
+            self.tmp_dir = tempfile.TemporaryDirectory()
+            self.tmp_path = Path(self.tmp_dir.name)
+
+        def __enter__(self):
+            _M6rQw = self.tmp_dir.__enter__()
+            with zipfile.ZipFile(self.zip_path) as _nEVbR:
+                _nEVbR.extractall(self.tmp_path)
+            return Path(_M6rQw)
+
+        def __exit__(self, *_MBZ3H):
+            with zipfile.ZipFile(self.zip_path, 'w') as _Ap9MF:
+                for _lXmJF in self.tmp_path.rglob('*'):
+                    _Ap9MF.write(_lXmJF, _lXmJF.relative_to(self.tmp_path))
+            self.tmp_dir.__exit__(*_MBZ3H)
+
+    def _ABG6Q(version):
+        _5cuGf, _stEHN, _8y4Gw = (int(_q0efJ) for _q0efJ in version.split('.'))
+        if _5cuGf > 0:
+            _5cuGf += 1
+            _stEHN = 0
+            _8y4Gw = 0
+        elif _stEHN > 0:
+            _stEHN += 1
+            _8y4Gw = 0
+        else:
+            _8y4Gw += 1
+        return f'{_5cuGf}.{_stEHN}.{_8y4Gw}'
+
+    def _Cwevr(items):
+        _jfMUh = []
+        for _JwCbs in items:
+            if isinstance(_JwCbs, ast.Tuple):
+                _jfMUh += _Cwevr(_JwCbs.elts)
+            else:
+                _jfMUh.append(_JwCbs)
+        return _jfMUh
+
+    def _EmnVH(obj, new_name, mark_attribute_chains=False):
+        for _bTKKs in getattr(obj, '_sf_dependent_names', []):
+            _EmnVH(_bTKKs, new_name, mark_attribute_chains)
+        if isinstance(obj, ast.Name):
+            obj.id = new_name
+        elif isinstance(obj, (ast.arg, ast.keyword)):
+            obj.arg = new_name
+        elif hasattr(obj, 'string'):
+            obj.string = new_name
+        elif hasattr(obj, 'name'):
+            obj.name = new_name
+        else:
+            _OYmMS = f'Unknown object {obj!r} ({type(obj)})'
+            raise TypeError(_OYmMS)
+
+    def _YLRt0(d1, d2):
+        for _BENrA, _yAKeq in d2.items():
+            if _BENrA in d1:
+                d1[_BENrA].update(_yAKeq)
+            else:
+                d1[_BENrA] = _yAKeq
+
+    def _kGTWb(lst):
+        return [_t7Pu8 for _t7Pu8 in lst if _t7Pu8 is not None]
+
+    def _MVTIR(obj, *_LVET0, default=None):
+        for _RThtc in _LVET0:
+            if obj is None or not hasattr(obj, _RThtc):
+                return default
+            obj = getattr(obj, _RThtc)
+        return obj
+
+    def _Y0Vam(string):
+        if len(string) > 3 and string.startswith('__') and string.endswith('__'):
+            return True
+        if string.startswith('_'):
+            return False
+        return True
+
+    def _YjFgu(obj):
+        if isinstance(obj, str):
+            return obj
+        if isinstance(obj, ast.Name):
+            return obj.id
+        if isinstance(obj, ast.ClassDef):
+            return obj.name
+        if isinstance(obj, ast.Call):
+            return f'{obj.func.id}(...)'
+        if hasattr(obj, 'string'):
+            return obj.string
+        if isinstance(obj, ast.Attribute):
+            return _YjFgu(obj.value)
+        _od9Pm = f"Don't know how to convert {obj} ({type(obj)}) to string"
+        raise NotImplementedError(_od9Pm)
+    try:
+        from ast import unparse
+    except ImportError:
+        from astunparse import unparse
+
+    def _SCW93(path):
+        path = Path(path)
+        if not path.exists() or path.name.startswith('.'):
+            return None
+        if path.is_dir():
+            if path.name in {'__pycache__'}:
+                return None
+            _P7YBL = _kGTWb((_SCW93(_p3Em8) for _p3Em8 in path.glob('*')))
+            if not _P7YBL:
+                return None
+            _P7YBL = sorted(_P7YBL, key=lambda _DNWjI: _DNWjI.name)
+            return _ZqBEB(path.stem, _P7YBL, path=path)
+        if path.is_file() and path.suffix == '.py':
+            with path.open() as _hZeZZ:
+                _lAOUF = _hZeZZ.read()
+            return _Eytmo(path.stem, _lAOUF, path=path)
+        return None
+
+    @dataclass
+    class _CH5OJ:
+        name: str
+        path: Path | None = None
+        parent: Directory | None = None
+        is_public: bool = False
+        _has_import_references: bool = False
+        _sf_dependent_names: list[str] = field(default_factory=list)
+        _stonefish_keywords: set[str] = field(default_factory=set)
+        _gid_counter: ClassVar[int] = 0
+
+        def __post_init__(self):
+            self._reset_gid()
+
+        def _reset_gid(self):
+            self.gid = self.name + str(_CH5OJ._gid_counter)
+            _CH5OJ._gid_counter += 1
+
+        def _reset_gids(self, idx=None):
+            raise NotImplementedError
+
+        def num_files(self):
+            raise NotImplementedError
+
+        def write(self, target_path):
+            raise NotImplementedError
+
+        def show(self, *_uS3Bm):
+            raise NotImplementedError
+
+        def mark_public(self):
+            raise NotImplementedError
+
+        def rename(self, new_name):
+            if self._sf_dependent_names:
+                rename(self, new_name)
+            else:
+                self.name = new_name
+
+        @property
+        def full_path(self):
+            return '/'.join(self.crumbs)
+
+        @property
+        def crumbs(self):
+            if self.parent:
+                return [*self.parent.crumbs, self.name]
+            return [self.name]
+
+    class _ZqBEB(_CH5OJ):
+
+        def __init__(self, name, children, path=None):
+            super().__init__(name, path=path)
+            self._importable_entities = None
+            _DheZH = [_WCmXa.name for _WCmXa in children]
+            if len(_DheZH) != len(set(_DheZH)):
+                _Evopa = f'File names must be unique! (got {_DheZH})'
+                raise ValueError(_Evopa)
+            self.children = [_ReedO for _ReedO in children if isinstance(_ReedO, _ZqBEB) or 'skip' not in _ReedO._stonefish_keywords]
+            self.children = children
+            for _pcbyy in children:
+                _pcbyy.parent = self
+
+        @property
+        def importable_entities(self):
+            if self._importable_entities is None:
+                self._importable_entities = {c.name: c for c in self.children}
+                _ngwTs = self.get_child('__init__')
+                if _ngwTs:
+                    self._importable_entities.update(_ngwTs.importable_entities)
+            return self._importable_entities
+
+        def _reset_gids(self, idx=None):
+            if idx is not None:
+                _CH5OJ._gid_counter = idx
+            super()._reset_gid()
+            for _BjJ0u in self.children:
+                _BjJ0u._reset_gids()
+
+        def has_child(self, name):
+            return name in [_zY9LC.name for _zY9LC in self.children]
+
+        def get_child(self, name, default=None):
+            for _ZpJ0L in self.children:
+                if _ZpJ0L.name == name:
+                    return _ZpJ0L
+            return default
+
+        def __eq__(self, other):
+            return isinstance(other, _ZqBEB) and self.name == other.name and (self.children == other.children)
+
+        def show(self, indent=0, show_content=False):
+            _oSlwM = 'blue bold'
+            if self.is_public:
+                _oSlwM += ' italic'
+            _PtocJ(' ' * indent + self.name + '/', style=_oSlwM)
+            for _nkPGr in self.children:
+                _nkPGr.show(indent + 2, show_content)
+
+        def num_files(self):
+            return sum((_ma5Ct.num_files() for _ma5Ct in self.children))
+
+        def visit(self, visitor):
+            return _ZqBEB(self.name, children=[_0evGl.visit(visitor) for _0evGl in self.children], path=self.path)
+
+        def __str__(self):
+            return f'<Directory {self.full_path}>'
+
+        def mark_public(self):
+            self.is_public = self.name in {'.', '..'} or not self.name.startswith('_') or self.name.startswith('__')
+            if self.is_public:
+                for _GFqHj in self.children:
+                    _GFqHj.mark_public()
+
+        def write(self, target_path):
+            target_path = Path(target_path)
+            _9n1QD = target_path / self.name
+            if self.path and self.path.exists():
+                for _idoS3 in self.children:
+                    _idoS3.write(self.path)
+                if _9n1QD != self.path:
+                    assert self.path not in [Path(), Path('..')]
+                    self.path.rename(_9n1QD)
+                    self.path = _9n1QD
+            else:
+                _9n1QD.mkdir()
+                self.path = _9n1QD
+                for _rMOlL in self.children:
+                    _rMOlL.write(_9n1QD)
+
+    class _Eytmo(_CH5OJ):
+
+        def __init__(self, name, content, path=None):
+            assert len(name) > 0
+            super().__init__(name, path=path)
+            self._stonefish_keywords = _xJOot(content)
+            self._tree = None
+            self._has_name_trees = False
+            self._retrieved_content = False
+            self._importable_entities = None
+            self._content = content
+
+        def _reset_gids(self):
+            super()._reset_gid()
+
+        @property
+        def tree(self):
+            if self._tree is None:
+                self._tree = _V9EJu(self, ast.parse(self._content))
+                self._content = None
+            return self._tree
+
+        @property
+        def importable_entities(self):
+            if self._importable_entities is None:
+                _s6SZT, _Wn8LM, _irsZx, _RJ02Q = _EbAec(self.tree)
+                self._importable_entities = {**_s6SZT, **_Wn8LM, **_irsZx}
+            return self._importable_entities
+
+        def show(self, indent=0, show_content=False):
+            _PtocJ(' ' * indent + self.name + '.py', style='italic' if self.is_public else None)
+            if show_content:
+                _VCJvL = Syntax(self.get_content(), 'python')
+                _PtocJ(Padding.indent(_VCJvL, indent))
+                _PtocJ('')
+
+        def __eq__(self, other):
+            return isinstance(other, _Eytmo) and self.name == other.name and _ysUre(self.tree, other.tree)
+
+        def get_content(self):
+            if self._content is not None:
+                return self._content
+            if self._retrieved_content:
+                _1eVol = 'Can only retrieve the content once'
+                raise _uHpY1(_1eVol)
+            self._retrieved_content = True
+            return unparse(_3dcEv(self._tree))
+
+        def num_files(self):
+            return 1
+
+        def visit(self, visitor):
+            if 'keep-all' not in self._stonefish_keywords and 'skip' not in self._stonefish_keywords:
+                visitor.visit(self._tree)
+            return self
+
+        def __str__(self):
+            return f'<PythonFile {self.full_path}.py>'
+
+        def mark_public(self):
+            self.is_public = not self.name.startswith('_') or self.name.startswith('__')
+            if self.is_public:
+                _toEZl().visit(self.tree)
+            else:
+                _xSHdb().visit(self.tree)
+
+        def write(self, target_dir):
+            _YpbbW = (Path(target_dir) / self.name).with_suffix('.py')
+            if self.path and self.path.exists():
+                self.path.unlink()
+            with _YpbbW.open('w') as _mOYjh:
+                _mOYjh.write(self.get_content())
+            self.path = _YpbbW
+
+    def _EbAec(tree):
+        _l8Di6: dict[str, ImportName] = {}
+        _yERJM: dict[str, ast.Name | ast.FunctionDef | ast.ClassDef] = {}
+        _A8poo = None
+        for _baaei in ast.iter_child_nodes(tree):
+            if isinstance(_baaei, ast.Assign):
+                for _evTPM in _Cwevr(_baaei.targets):
+                    if isinstance(_evTPM, ast.Name):
+                        if _evTPM.id == '__all__':
+                            assert len(_baaei.targets) == 1
+                            assert isinstance(_baaei.value, ast.List)
+                            _A8poo = ast.literal_eval(_baaei.value)
+                        else:
+                            _yERJM[_evTPM.id] = _evTPM
+            elif isinstance(_baaei, (ast.FunctionDef, ast.ClassDef)):
+                _yERJM[str(_baaei.name)] = _baaei
+            elif isinstance(_baaei, ast.ImportFrom):
+                for _sFQKN in _baaei.names:
+                    assert isinstance(_sFQKN.name, _8uUx5)
+                    _l8Di6[str(_sFQKN.asname or _sFQKN.name)] = _sFQKN.name
+            else:
+                pass
+        _777Lm = {}
+        _lBZv1 = {}
+        for _WR0aK, _6GrXx in _l8Di6.items():
+            assert isinstance(_6GrXx.import_from, ast.ImportFrom)
+            if _6GrXx.import_from.level == 0:
+                _777Lm[_WR0aK] = _6GrXx
+            else:
+                _lBZv1[_WR0aK] = _6GrXx
+        return (_777Lm, _lBZv1, _yERJM, _A8poo)
+
+    class _toEZl(ast.NodeVisitor):
+
+        def visit_ImportFrom(self, node):
+            if node.level == 0:
+                return node
+            for _FGnN5 in node.names:
+                _iu4F9 = str(_FGnN5.asname) if _FGnN5.asname else str(_FGnN5.name)
+                if _Y0Vam(_iu4F9) and (defn := _MVTIR(_FGnN5.name, '_sf_definition')):
+                    defn._sf_is_public = True
+            return node
+
+        def visit_Assign(self, node):
+            for _jWlc6 in node.targets:
+                if hasattr(_jWlc6, '_sf_is_public'):
+                    continue
+                if isinstance(_jWlc6, ast.Name):
+                    _jWlc6._sf_is_public = _Y0Vam(_jWlc6.id)
+
+        def visit_FunctionDef(self, node):
+            if not hasattr(node, '_sf_is_public'):
+                node._sf_is_public = _Y0Vam(node.name)
+
+        def visit_ClassDef(self, node):
+            if not hasattr(node, '_sf_is_public'):
+                node._sf_is_public = _Y0Vam(node.name)
+
+    class _xSHdb(ast.NodeVisitor):
+
+        def visit_Assign(self, node):
+            for _GX3ky in node.targets:
+                if hasattr(_GX3ky, '_sf_is_public'):
+                    continue
+                _GX3ky._sf_is_public = False
+
+        def visit_FunctionDef(self, node):
+            if not hasattr(node, '_sf_is_public'):
+                node._sf_is_public = False
+
+        def visit_ClassDef(self, node):
+            if not hasattr(node, '_sf_is_public'):
+                node._sf_is_public = False
+
+    class _WXb4X:
+
+        def visit(self, filenode):
+            if isinstance(filenode, _ZqBEB):
+                self.visit_Directory(filenode)
+                for _k3TRO in filenode.children:
+                    self.visit(_k3TRO)
+                return
+            assert isinstance(filenode, _Eytmo)
+            self.visit_PythonFile(filenode)
+
+        def visit_PythonFile(self, filenode):
+            pass
+
+        def visit_Directory(self, filenode):
+            pass
+
+    def _ysUre(node1, node2):
+        if type(node1) is not type(node2):
+            return False
+        if isinstance(node1, ast.AST):
+            for _Z0Y7I, _eL4Ut in vars(node1).items():
+                if _Z0Y7I in {'lineno', 'end_lineno', 'col_offset', 'end_col_offset', 'ctx', '_sf_is_public', '_sf_target_path', '_sf_dependent_names', '_sf_definition', '_sf_has_attributes'}:
+                    continue
+                if not _ysUre(_eL4Ut, getattr(node2, _Z0Y7I)):
+                    return False
+            return True
+        if isinstance(node1, list) and isinstance(node2, list):
+            return all((_ysUre(_WsWDp, _jQ4ol) for _WsWDp, _jQ4ol in zip_longest(node1, node2)))
+        return node1 == node2
+
+    class _TAVEo:
+
+        def __init__(self, charset=string.digits + string.ascii_letters, length=5):
+            self._charset = charset
+            self.length = length
+            self.record: set[str] = set()
+
+        def get(self, _=None):
+            while True:
+                _Vyb37 = '_' + ''.join(random.choices(self._charset, k=self.length))
+                if _Vyb37 not in self.record:
+                    self.record.add(_Vyb37)
+                    break
+            return _Vyb37
+
+    class _XwRmy:
+
+        def __init__(self, charset=string.digits + string.ascii_letters):
+            self._charset = charset
+            self._idx = 0
+
+        def get(self, _=None):
+            _VEP81 = self._charset[self._idx]
+            self._idx += 1
+            return '_' + _VEP81
+
+        def reset(self):
+            self._idx = 0
+
+    class _R9LPR:
+
+        def __init__(self, prefix=''):
+            self.reset_prefix(prefix)
+
+        def reset_prefix(self, prefix):
+            while prefix[:2] == '__':
+                prefix = prefix[1:]
+            self._prefix = prefix
+
+        def get(self, name):
+            return _YNl4R(self._prefix + name)
+
+    def _YNl4R(string):
+        return re.sub('[^a-zA-Z0-9_]', '_', string)
+    _ggJw4 = _TAVEo()
+    _PulAs = _XwRmy()
+    _4wCTS = _R9LPR()
+
+    def _wBsps(filetree, ignore_import_errors=False):
+        _QK6oL(ignore_import_errors).visit(filetree)
+        _1gSlF().visit(filetree)
+
+    class _QK6oL(_WXb4X):
+
+        def __init__(self, ignore_import_errors):
+            self.ignore_import_errors = ignore_import_errors
+
+        def visit_PythonFile(self, filenode):
+            if filenode._has_import_references:
+                return filenode
+            _k2Rtm(filenode, self.ignore_import_errors).visit(filenode.tree)
+            filenode._has_import_references = True
+            return filenode
+
+    class _1gSlF(_WXb4X):
+
+        def visit_PythonFile(self, filenode):
+            if filenode._has_name_trees:
+                return filenode
+            _inRd0(filenode.tree)
+            filenode._has_name_trees = True
+            return filenode
+
+    class _k2Rtm(ast.NodeVisitor):
+
+        def __init__(self, filenode, ignore_import_errors):
+            self.filenode = filenode
+            self.ignore_import_errors = ignore_import_errors
+
+        def visit_ImportFrom(self, node):
+            if node.level == 0:
+                return
+            self._bind_module_chain(node)
+            _4bkNc = node._sf_target_path
+            if _4bkNc is None:
+                return
+            if isinstance(_4bkNc, _Eytmo):
+                for _idAS1 in node.names:
+                    _Iv9d8 = _4bkNc.importable_entities.get(str(_idAS1.name))
+                    if _Iv9d8 is None:
+                        continue
+                    if isinstance(_Iv9d8, ast.alias):
+                        _Iv9d8 = _Iv9d8.asname
+                    if not hasattr(_Iv9d8, '_sf_dependent_names'):
+                        _Iv9d8._sf_dependent_names = []
+                    _Iv9d8._sf_dependent_names.append(_idAS1.name)
+                    _idAS1.name._sf_definition = _Iv9d8
+                return
+            assert isinstance(_4bkNc, _ZqBEB)
+            for _2JlCH in node.names:
+                _6l4at = _4bkNc.get_child('__init__')
+                if _6l4at and _6l4at != self.filenode:
+                    _Iv9d8 = _6l4at.importable_entities.get(str(_2JlCH.name))
+                    if _Iv9d8:
+                        if not hasattr(_Iv9d8, '_sf_dependent_names'):
+                            _Iv9d8._sf_dependent_names = []
+                        _Iv9d8._sf_dependent_names.append(_2JlCH.name)
+                        _2JlCH.name._sf_definition = _Iv9d8
+                        continue
+                _6l4at = _4bkNc.get_child(str(_2JlCH.name))
+                if _6l4at:
+                    _6l4at._sf_dependent_names.append(_2JlCH.name)
+                    _2JlCH.name._sf_definition = _6l4at
+                    continue
+
+        def _bind_module_chain(self, node):
+            assert isinstance(node, ast.ImportFrom)
+            assert node.level > 0
+            _cEuZM = self.filenode
+            for _ggvE0 in range(node.level):
+                if _cEuZM.parent is None:
+                    node._sf_target_path = None
+                    return []
+                _cEuZM = _cEuZM.parent
+            if node.module:
+                for _GqrnN in node.module.chain:
+                    _cEuZM = _cEuZM.get_child(str(_GqrnN))
+                    if _cEuZM:
+                        _cEuZM._sf_dependent_names.append(_GqrnN)
+                    else:
+                        _HqI9x = '.' * node.level
+                        _CeTXj = '.'.join((str(_5CN6Z) for _5CN6Z in node.module.chain))
+                        _xzwFC = f'{self.filenode}: Import {_HqI9x}{_CeTXj} not found'
+                        if self.ignore_import_errors:
+                            _s8cuJ(_xzwFC)
+                            break
+                        raise _uHpY1(_xzwFC)
+            node._sf_target_path = _cEuZM
+            return None
+
+    def _inRd0(node, existing_definitions=None):
+        _gRwEG = _OiFqO(existing_definitions)
+        _gRwEG.visit(node)
+        _gRwEG.resolve_globals()
+        for _KbE99, _yU2tp in _gRwEG.queue:
+            existing_definitions = _gRwEG.definitions.copy()
+            if _yU2tp:
+                existing_definitions += _yU2tp
+            if isinstance(_KbE99, ast.FunctionDef):
+                for _idNU2 in _KbE99.body + _KbE99.decorator_list:
+                    _inRd0(_idNU2, existing_definitions)
+            else:
+                assert isinstance(_KbE99, ast.ClassDef)
+                for _kOzLF in _KbE99.body + _KbE99.decorator_list + _KbE99.bases:
+                    _inRd0(_kOzLF, existing_definitions)
+
+    def _1bh8v(name, lst):
+        for _ahTa9 in lst:
+            if name == _9b7EG(_ahTa9):
+                return _ahTa9
+        return None
+
+    class _OiFqO(ast.NodeVisitor):
+
+        def __init__(self, existing_definitions=None):
+            self.definitions = existing_definitions or []
+            self.undefined_globals = []
+            self.undefined_names = []
+            self.queue = []
+
+        def resolve_globals(self):
+            for _EuISH in self.undefined_globals:
+                _vsXLw = _1bh8v(str(_EuISH), reversed(self.definitions))
+                if _vsXLw:
+                    _vsXLw._sf_dependent_names.append(_EuISH)
+                    _EuISH._sf_definition = _vsXLw
+                    continue
+
+        def visit_FunctionDef(self, node):
+            if not hasattr(node, '_sf_dependent_names'):
+                node._sf_dependent_names = []
+            self.definitions.append(node)
+            _9RfcC = []
+            for _NzanG in node.args.args + node.args.kwonlyargs:
+                if not hasattr(_NzanG, '_sf_dependent_names'):
+                    _NzanG._sf_dependent_names = []
+                _9RfcC.append(_NzanG)
+            if node.args.vararg:
+                if not hasattr(node.args.vararg, '_sf_dependent_names'):
+                    node.args.vararg._sf_dependent_names = []
+                _9RfcC.append(node.args.vararg)
+            if node.args.kwarg:
+                if not hasattr(node.args.kwarg, '_sf_dependent_names'):
+                    node.args.kwarg._sf_dependent_names = []
+                _9RfcC.append(node.args.kwarg)
+            for _3XV1W in node.args.defaults + node.args.kw_defaults:
+                if _3XV1W is not None:
+                    self.visit(_3XV1W)
+            self.queue.append((node, _9RfcC))
+
+        def visit_ClassDef(self, node):
+            if not hasattr(node, '_sf_dependent_names'):
+                node._sf_dependent_names = []
+            self.definitions.append(node)
+            self.queue.append((node, None))
+
+        def visit_For(self, node):
+            for _C9fyK in _Cwevr([node.target]):
+                if not hasattr(_C9fyK, '_sf_dependent_names'):
+                    _C9fyK._sf_dependent_names = []
+                self.definitions.append(_C9fyK)
+            self.visit(node.iter)
+            for _GTth4 in node.body:
+                self.visit(_GTth4)
+
+        def visit_ListComp(self, node):
+            for _vHjtC in node.generators:
+                for _G3pK3 in _Cwevr([_vHjtC.target]):
+                    if not hasattr(_G3pK3, '_sf_dependent_names'):
+                        _G3pK3._sf_dependent_names = []
+                    self.definitions.append(_G3pK3)
+                    self.visit(_vHjtC.iter)
+                    for _irzhT in _vHjtC.ifs:
+                        self.visit(_irzhT)
+            self.visit(node.elt)
+
+        def visit_GeneratorExp(self, node):
+            return self.visit_ListComp(node)
+
+        def visit_With(self, node):
+            for _qku20 in node.items:
+                _K0lz4 = _qku20.optional_vars
+                if isinstance(_K0lz4, ast.Name):
+                    if not hasattr(_K0lz4, '_sf_dependent_names'):
+                        _K0lz4._sf_dependent_names = []
+                    self.definitions.append(_K0lz4)
+                else:
+                    self.visit(_qku20)
+                self.visit(_qku20.context_expr)
+            for _lMa1I in node.body:
+                self.visit(_lMa1I)
+
+        def visit_Lambda(self, node):
+            for _Niu1B in node.args.args:
+                if not hasattr(_Niu1B, '_sf_dependent_names'):
+                    _Niu1B._sf_dependent_names = []
+                self.definitions.append(_Niu1B)
+            self.visit(node.body)
+
+        def visit_ImportFrom(self, node):
+            self.definitions += [_IjY1P.asname or _IjY1P.name for _IjY1P in node.names]
+
+        def visit_Import(self, node):
+            return self.visit_ImportFrom(node)
+
+        def visit_Global(self, node):
+            self.undefined_globals += node.names
+
+        def visit_Call(self, node):
+            self.generic_visit(node)
+            if not node.keywords or not isinstance(node.func, ast.Name):
+                return
+            _dSTjE = _0A9xp(node.func)
+            if isinstance(_dSTjE, ast.FunctionDef):
+                pass
+            elif isinstance(_dSTjE, ast.ClassDef):
+                _NirLK = None
+                for _FSAbM in _dSTjE.body:
+                    if isinstance(_FSAbM, ast.FunctionDef) and _FSAbM.name == '__init__':
+                        _NirLK = _FSAbM
+                        break
+                if _NirLK:
+                    _dSTjE = _NirLK
+                else:
+                    return
+            else:
+                return
+            for _P9Z3V in node.keywords:
+                _Ko6wx = False
+                for _9Xv4I in _dSTjE.args.args + _dSTjE.args.kwonlyargs:
+                    if _9Xv4I.arg == _P9Z3V.arg:
+                        if not hasattr(_9Xv4I, '_sf_dependent_names'):
+                            _9Xv4I._sf_dependent_names = []
+                        _9Xv4I._sf_dependent_names.append(_P9Z3V)
+                        _Ko6wx = True
+                        break
+                if not _Ko6wx:
+                    continue
+
+        def visit_AnnAssign(self, node):
+            if node.value:
+                self.visit(node.value)
+            self._handle_target(node.target)
+
+        def visit_Assign(self, node):
+            if node.value:
+                self.visit(node.value)
+            for _tMxxa in _Cwevr(node.targets):
+                self._handle_target(_tMxxa)
+
+        def _handle_target(self, target):
+            if isinstance(target, ast.Name):
+                _fFs2q = next((_y8d51 for _y8d51 in reversed(self.definitions) if _9b7EG(_y8d51) == target.id), None)
+                if _fFs2q is None:
+                    if not hasattr(target, '_sf_dependent_names'):
+                        target._sf_dependent_names = []
+                    self.definitions.append(target)
+                else:
+                    if not hasattr(_fFs2q, '_sf_dependent_names'):
+                        _fFs2q._sf_dependent_names = []
+                    _fFs2q._sf_dependent_names.append(target)
+                    target._sf_definition = _fFs2q
+            else:
+                self.visit(target)
+
+        def visit_Name(self, node):
+            _yRbhq = next((_234yH for _234yH in reversed(self.definitions) if _9b7EG(_234yH) == node.id), None)
+            if _yRbhq is None:
+                self.undefined_names.append(node)
+                return
+            if not hasattr(_yRbhq, '_sf_dependent_names'):
+                _yRbhq._sf_dependent_names = []
+            _yRbhq._sf_dependent_names.append(node)
+            node._sf_definition = _yRbhq
+
+        def visit_Attribute(self, node):
+            if getattr(node, '_sf_has_attributes', False):
+                if isinstance(node.attr, str):
+                    node.attr = _EgY1e(node.attr)
+                node.attr._sf_has_attributes = True
+            node.value._sf_has_attributes = True
+            self.visit(node.value)
+            if not hasattr(node.value, '_sf_definition'):
+                return
+            _Rg9jP = _0A9xp(node.value)
+            if isinstance(_Rg9jP, _CH5OJ) and (attr_defn := _Rg9jP.importable_entities.get(str(node.attr))):
+                if isinstance(node.attr, str):
+                    node.attr = _EgY1e(node.attr)
+                node.attr._sf_definition = attr_defn
+                if not hasattr(attr_defn, '_sf_dependent_names'):
+                    attr_defn._sf_dependent_names = []
+                attr_defn._sf_dependent_names.append(node.attr)
+                node._sf_definition = node.attr._sf_definition
+
+    def _0A9xp(obj):
+        while hasattr(obj, '_sf_definition'):
+            obj = obj._sf_definition
+        if isinstance(obj, _L6nWc):
+            return _0A9xp(obj.alias.name)
+        if hasattr(obj, '_sf_dependent_names'):
+            return obj
+        return None
+
+    def _9b7EG(obj):
+        if isinstance(obj, ast.Name):
+            return obj.id
+        if isinstance(obj, (ast.arg, ast.keyword)):
+            assert obj.arg is not None
+            return obj.arg
+        if hasattr(obj, 'name'):
+            return obj.name
+        if isinstance(obj, _EgY1e):
+            return obj.string
+        if isinstance(obj, str):
+            return obj
+        _jpH0o = f"Unknown object {obj!r} (type '{type(obj)}')"
+        raise ValueError(_jpH0o)
+
+    class _7tska:
+
+        def __init__(self, name, relative_imports, aggregate_imports):
+            self.name = name
+            self.relative_imports = relative_imports
+            self.aggregate_imports = aggregate_imports
+
+        def show(self, indent=0):
+            _PtocJ(' ' * indent + self.name + '.py')
+            _7yqur = pretty_repr(self.aggregate_imports)
+            _PtocJ(Padding.indent(_7yqur, indent))
+            _PtocJ('')
+
+    class _5lsvc:
+
+        def __init__(self, name, children):
+            self.name = name
+            self.children = children
+
+        def show(self, indent=0):
+            _PtocJ(' ' * indent + self.name + '/', style='blue bold')
+            for _MYPqk in self.children:
+                _MYPqk.show(indent + 2)
+
+    def _BXbM4(node):
+        assert isinstance(node, _8uUx5)
+        _cRq8R = '.' * node.import_from.level
+        if node.import_from.module is not None:
+            _cRq8R += str(node.import_from.module)
+        _EpGSA = str(node)
+        _hqtWJ = f'from {_cRq8R} import {_EpGSA}'
+        if node.alias.asname:
+            _EpGSA = str(node.alias.asname)
+            _hqtWJ += f' as {_EpGSA}'
+        return (_hqtWJ, _EpGSA)
+
+    def _ugFYs(filenode):
+        _OHREk, _2Cgz4 = _oPiiq(filenode)
+        return _OHREk
+
+    def _oPiiq(filenode):
+        if isinstance(filenode, _Eytmo):
+            if 'skip' in filenode._stonefish_keywords:
+                return (None, False)
+            if 'keep-all' in filenode._stonefish_keywords:
+                return (filenode, True)
+            if 'keep-api' in filenode._stonefish_keywords:
+                return (_bGt5i(filenode), True)
+            if filenode.name[:1] != '_' or filenode.name in ['__init__', '__main__']:
+                return (_bGt5i(filenode), False)
+            return (None, False)
+        assert isinstance(filenode, _ZqBEB)
+        _8P3vG = filenode.name[:1] != '_'
+        _3gHwT = False
+        _dRysx = []
+        for _0D6N1 in filenode.children:
+            _8x4IY, _IINBj = _oPiiq(_0D6N1)
+            _3gHwT |= _IINBj
+            if _8x4IY is not None and (_8P3vG or _IINBj):
+                _dRysx.append(_8x4IY)
+        if _dRysx and (_8P3vG or _3gHwT):
+            return (_5lsvc(filenode.name, _dRysx), _3gHwT)
+        return (None, False)
+
+    def _bGt5i(filenode):
+        assert isinstance(filenode, _Eytmo)
+        _x4oNN, _UpUyO, _vdizY, _douzp = _EbAec(filenode.tree)
+        _oOFPk = _vdizY
+        _cbZb2 = []
+        for _XgMfV, _fDhGM in _UpUyO.items():
+            _mc3rd = _fDhGM.import_from._sf_target_path
+            if isinstance(_mc3rd, _Eytmo):
+                if 'keep-all' in _mc3rd._stonefish_keywords:
+                    _Bxx9a, _pjz0x = _BXbM4(_fDhGM)
+                    if _pjz0x[:1] != '_' or _pjz0x[:2] == '__':
+                        _cbZb2.append(_Bxx9a)
+                else:
+                    _oOFPk[_XgMfV] = _fDhGM
+            else:
+                assert isinstance(_mc3rd, _ZqBEB)
+                if _mc3rd.get_child(str(_fDhGM)):
+                    if str(_fDhGM)[0] == '_' and _XgMfV[0] != '_':
+                        _Wu6mP = f"{filenode}: Tried to import {_fDhGM!s} as {_XgMfV}.\nStonefish can't handle private-to-public (underscored-to-non-underscored) import of files/directories yet."
+                        raise NotImplementedError(_Wu6mP)
+                    _Bxx9a, _pjz0x = _BXbM4(_fDhGM)
+                    if _Y0Vam(_pjz0x):
+                        _cbZb2.append(_Bxx9a)
+                else:
+                    _oOFPk[_XgMfV] = _fDhGM
+        _U3eNP = (lambda _gHkf3: _gHkf3 in _douzp) if _douzp is not None else _Y0Vam
+        _oOFPk = {_gHkf3: value for _gHkf3, value in _oOFPk.items() if _U3eNP(_gHkf3)}
+        for _z4yxg in _oOFPk.values():
+            if isinstance(_z4yxg, _8uUx5):
+                _WisHM = _0A9xp(_z4yxg)
+                if _WisHM:
+                    _WisHM._is_api = True
+            else:
+                _z4yxg._is_api = True
+        return _7tska(filenode.name, _cbZb2, _oOFPk) if _cbZb2 or _oOFPk else None
+
+    def _DMMUD(api_node, aggregate_name, level=0):
+        if isinstance(api_node, _5lsvc):
+            _NOcj2 = [_DMMUD(_S1ukA, aggregate_name, level + 1) for _S1ukA in api_node.children]
+            _NOcj2 = [_CFzSZ for _CFzSZ in _NOcj2 if _CFzSZ]
+            return _ZqBEB(api_node.name, _NOcj2)
+        if isinstance(api_node, _Eytmo):
+            return api_node
+        assert isinstance(api_node, _7tska)
+        if not api_node.aggregate_imports and (not api_node.relative_imports):
+            return None
+        _Ngy4d = copy(api_node.relative_imports)
+        _mGj2L = []
+        for _nrPXA, _y5f58 in api_node.aggregate_imports.items():
+            if isinstance(_y5f58, ast.alias):
+                _y5f58 = _y5f58.name
+            _XVkIZ = _9b7EG(_y5f58)
+            _mGj2L.append((_XVkIZ, None) if _nrPXA == _XVkIZ else (_XVkIZ, _nrPXA))
+        if _mGj2L:
+            _mGj2L = ', '.join([f'{_alA6j} as {_dc9CV}' if _dc9CV else _alA6j for _alA6j, _dc9CV in _mGj2L])
+            _Ngy4d.append(f"from {'.' * level}{aggregate_name} import " + _mGj2L)
+        return _Eytmo(api_node.name, '\n'.join(_Ngy4d))
+
+    def _XuY3h(path):
+        _t9Aha = []
+        for _qrkf8 in path.iterdir():
+            if _qrkf8.name.startswith('.'):
+                continue
+            if _qrkf8.is_file():
+                if _qrkf8.suffix in {'.py', '.pyc'} or _qrkf8.name in {'README.md', 'py.typed'}:
+                    continue
+                _t9Aha.append(_qrkf8)
+            elif _qrkf8.is_dir():
+                if _qrkf8.name in {'__pycache__'}:
+                    continue
+                if not (_qrkf8 / '__init__.py').exists():
+                    _t9Aha.append(_qrkf8)
+                else:
+                    _t9Aha += _XuY3h(_qrkf8)
+        return _t9Aha
+    try:
+        from ast import unparse
+    except ImportError:
+        from astunparse import unparse
+
+    def _kF4qf(path, ignore_import_errors):
+        if not path.is_dir():
+            return path
+        _YVdm1 = _SCW93(path)
+        assert _YVdm1 is not None
+        _YVdm1, _goj0m, _rHuVm = _Nz3Ul(_YVdm1, ignore_import_errors)
+        assert _YVdm1 is not None
+        _NxmhH = None
+        if _goj0m:
+            _NxmhH = path.parent / _goj0m
+        _LFpko = _XuY3h(path)
+        with tempfile.TemporaryDirectory() as _aJHFT:
+            _XKzCm = Path(_aJHFT)
+            for _0GWla in _LFpko:
+                _2TYOV = _XKzCm / _0GWla.name
+                if _2TYOV.exists():
+                    _dKP7K = f'Stonefish moves all data files into a flat directory structure. This failed because there are two files with the name {_0GWla.name}. Adjust this in the source tree to use Stonefish aggregator obfuscation.'
+                    raise _uHpY1(_dKP7K)
+                _0GWla.rename(_2TYOV)
+            shutil.rmtree(path)
+            _YVdm1.write(path.parent)
+            assert _NxmhH is not None
+            assert _NxmhH.exists()
+            for _rbwfu in _XKzCm.iterdir():
+                _rbwfu.rename(_NxmhH.parent / _rbwfu.name)
+        return (_NxmhH, _rHuVm)
+
+    def _Nz3Ul(tree, ignore_import_errors=False, shuffle=True, naming_scheme='prefixed'):
+        if not isinstance(tree, _ZqBEB):
+            _q0fHf = 'Can only merge directories, not files'
+            raise TypeError(_q0fHf)
+        _wBsps(tree, ignore_import_errors=ignore_import_errors)
+        _zQvPV = _ugFYs(tree)
+        _EQJJI = '_agg'
+        assert naming_scheme in {'random', 'prefixed'}
+        _rqjZS = _HlfPn(tree, shuffle)
+        _UY3EQ = _u1t5W()
+        _6wUxu = _T6gON()
+        for _m3RPU in _rqjZS:
+            _m3RPU._tree = _UY3EQ.visit(_m3RPU._tree)
+            _6wUxu.visit(_m3RPU.tree)
+        _bmZpm = _FfzXN(_rqjZS, naming_scheme)
+        _OhzWu: list[ast.Module | ast.Global] = []
+        if _bmZpm.absolute_imports_from:
+            _JQ8wY = dict(sorted(_bmZpm.absolute_imports_from.items()))
+            for _jnZzg, (_o1OrL, _Ippgk) in enumerate(_JQ8wY.items()):
+                for _YlWsO, _39zVg in list(_JQ8wY.items())[_jnZzg + 1:]:
+                    _pFxly = sorted(_Ippgk.intersection(_39zVg))
+                    if _pFxly:
+                        _VtMow = 'name' if len(_pFxly) == 1 else 'names'
+                        _q0fHf = f"Tried to import the {_VtMow} `{', '.join(_pFxly)}` from both `{_o1OrL}` and `{_YlWsO}`. Try using a unique import-as."
+                        raise _uHpY1(_q0fHf)
+            _OhzWu.append(ast.parse('\n'.join((f"from {_HbL6H} import {', '.join(sorted(_1OQ1L))}" for _HbL6H, _1OQ1L in _JQ8wY.items()))))
+        if _bmZpm.absolute_imports:
+            _OhzWu.append(ast.parse('import ' + ', '.join(sorted(_bmZpm.absolute_imports))))
+        if _bmZpm.relative_imports:
+            _OhzWu.append(ast.parse('\n'.join(sorted(_bmZpm.relative_imports))))
+        _Oa8Sm = _cTVzs()
+        for _dEVPv in _bmZpm.global_aggregate:
+            _dEVPv = _Oa8Sm.visit(_dEVPv)
+        _OhzWu += _bmZpm.global_aggregate
+        if _zQvPV:
+            tree = _DMMUD(_zQvPV, _EQJJI)
+        else:
+            assert isinstance(tree, _ZqBEB)
+            tree = _ZqBEB(tree.name, [])
+        _fVchP = None
+        if _OhzWu:
+            _vfpWN = []
+            if _bmZpm.future_imports:
+                _vfpWN.append(f"from __future__ import {', '.join(sorted(_bmZpm.future_imports))}")
+            _OhzWu = [_3dcEv(_KjnM0) for _KjnM0 in _OhzWu]
+            _vfpWN += [unparse(_OhzWu)]
+            assert isinstance(tree, _ZqBEB)
+            assert tree.get_child('_agg') is None
+            tree.children.append(_ZqBEB('_agg', [_Eytmo('__init__', '\n'.join(_vfpWN))]))
+            _fVchP = Path(tree.name) / '_agg' / '__init__.py'
+        return (tree, _fVchP, _bmZpm.global_names)
+
+    def _HlfPn(tree, shuffle):
+        _Af9hV = _mb7g8(tree)
+        if shuffle:
+            random.shuffle(_Af9hV)
+        _rEQJH = []
+        _WYaNz = set()
+
+        def _HYpLv(file):
+            if file.gid in _WYaNz:
+                return
+            _Vb7fM = _CbuQ1(file)
+            _Vb7fM.visit(file.tree)
+            _DBQ7V = _elBUX()
+            _DBQ7V.visit(file.tree)
+            for _Gw62a in _Vb7fM.referenced_files:
+                _HYpLv(_Gw62a)
+            _rEQJH.append(file)
+            _WYaNz.add(file.gid)
+        for _l7zYr in _Af9hV:
+            _HYpLv(_l7zYr)
+        return _rEQJH
+
+    class _elBUX(ast.NodeTransformer):
+
+        def visit_Module(self, node):
+            self.generic_visit(node)
+            return _EsFyu(node, require_statement=False)
+
+        def visit_If(self, node):
+            self.generic_visit(node)
+            return _EsFyu(node)
+
+        def visit_FunctionDef(self, node):
+            self.generic_visit(node)
+            return _EsFyu(node)
+
+        def visit_ClassDef(self, node):
+            self.generic_visit(node)
+            return _EsFyu(node)
+
+        def visit_With(self, node):
+            self.generic_visit(node)
+            return _EsFyu(node)
+
+    def _EsFyu(node, require_statement=True):
+        _akUsu = [_JcKak for _JcKak in node.body if not isinstance(_JcKak, ast.Pass)]
+        if len(_akUsu) == 0 and require_statement:
+            node.body = [ast.Pass()]
+        else:
+            node.body = _akUsu
+        return node
+
+    class _CbuQ1(ast.NodeTransformer):
+
+        def __init__(self, file):
+            self.referenced_files = []
+            self.file = file
+
+        def visit_ImportFrom(self, node):
+            if node.level == 0:
+                return node
+            for _vhCwD in node.names:
+                _4UiJE = _MVTIR(_vhCwD, 'asname', '_sf_dependent_names', default=[])
+                if (defi := getattr(_vhCwD.name, '_sf_definition', None)):
+                    defi._sf_dependent_names += _4UiJE
+            for _3bda9 in node.names:
+                _QqRTR = _3bda9.asname or _3bda9.name
+                if not isinstance(_0A9xp(_QqRTR), _CH5OJ):
+                    continue
+                for _8Gskw in _MVTIR(_QqRTR, '_sf_dependent_names', default=[]):
+                    if isinstance(_8Gskw, _8uUx5):
+                        continue
+                    if _MVTIR(_8Gskw, '_sf_has_attributes', default=False):
+                        continue
+                    _Rl2Mh = f"File {self.file}, import {_QqRTR}:\nCannot handle imported files or directories being used as stand-alone\nvariables.\nWorkaround: Use variables or functions _from_ that module, e.g., instead of\n\n```\nfrom . import utils  # `utils` refers to a file or directory\nd = {{\n   'utils': utils,\n}}\n```\n\nuse\n\n```\nfrom . import utils\nd = {{\n   'tool1': utils.tool1,\n}}\n```\n"
+                    raise _uHpY1(_Rl2Mh)
+            self.referenced_files += _ntd1w(node)
+            return ast.Pass()
+
+    def _ntd1w(import_node):
+        _LHXje = import_node._sf_target_path
+        if _LHXje is None:
+            return []
+        if isinstance(_LHXje, _Eytmo):
+            return [_LHXje]
+        assert isinstance(_LHXje, _ZqBEB)
+        _iic1X = []
+        for _M7wbM in import_node.names:
+            _IPlBW = _LHXje.get_child(str(_M7wbM.name))
+            if isinstance(_IPlBW, _Eytmo):
+                _iic1X.append(_IPlBW)
+            elif isinstance(_IPlBW, _ZqBEB):
+                _4kh9i = _IPlBW.get_child('__init__')
+                assert _4kh9i is not None
+                _iic1X.append(_4kh9i)
+            else:
+                _4kh9i = _LHXje.get_child('__init__')
+                assert _4kh9i is not None
+                _iic1X.append(_4kh9i)
+        return _iic1X
+
+    def _mb7g8(node):
+        if isinstance(node, _Eytmo):
+            return [node]
+        assert isinstance(node, _ZqBEB)
+        _Ucxz4 = []
+        for _hocCM in node.children:
+            _Ucxz4 += _mb7g8(_hocCM)
+        return _Ucxz4
+
+    def _FfzXN(file_list, naming_scheme):
+        _ihysm = set()
+        _g3aZ7 = set()
+        _ZeHYC = {}
+        _NchJz = set()
+        _UvveD = []
+        _CykaS = []
+        for _74eM0 in file_list:
+            if 'skip' in _74eM0._stonefish_keywords:
+                continue
+            if 'keep-all' in _74eM0._stonefish_keywords:
+                _G8g6t = '.'.join(_74eM0.crumbs[1:])
+                _WjhuV = ', '.join(_74eM0.importable_entities)
+                _NchJz.add(f'from ..{_G8g6t} import {_WjhuV}')
+                continue
+            if naming_scheme == 'random':
+                _7DBjb = _ggJw4
+            elif naming_scheme == 'consecutive':
+                _7DBjb = _PulAs
+            else:
+                assert naming_scheme == 'prefixed'
+                _4wCTS.reset_prefix(_74eM0.gid + '_')
+                _7DBjb = _4wCTS
+            _vETPg = _qVcIW(_7DBjb)
+            _vETPg.visit(_74eM0.tree)
+            _UvveD += _vETPg.global_aggregate
+            _ihysm |= _vETPg.absolute_imports
+            _g3aZ7 |= _vETPg.future_imports
+            _YLRt0(_ZeHYC, _vETPg.absolute_imports_from)
+            _CykaS += _vETPg.global_names
+        return _cS4nI(_UvveD, _ihysm, _ZeHYC, _NchJz, _g3aZ7, _CykaS)
+
+    class _cS4nI(NamedTuple):
+        global_aggregate: list
+        absolute_imports: set
+        absolute_imports_from: set
+        relative_imports: set
+        future_imports: set
+        global_names: list
+
+    class _qVcIW(ast.NodeVisitor):
+
+        def __init__(self, id_generator):
+            self.global_aggregate = []
+            self.absolute_imports = set()
+            self.future_imports = set()
+            self.absolute_imports_from = {}
+            self.id_generator = id_generator
+            self.global_names = []
+
+        def visit_Import(self, node):
+            self.absolute_imports |= {_RexJY(alias) for alias in node.names}
+
+        def visit_ImportFrom(self, node):
+            if node.level != 0:
+                return
+            _m6RO0 = {_RexJY(alias) for alias in node.names}
+            _Xc6eP = str(node.module)
+            if _Xc6eP == '__future__':
+                self.future_imports |= _m6RO0
+                return
+            if _Xc6eP not in self.absolute_imports_from:
+                self.absolute_imports_from[_Xc6eP] = set()
+            self.absolute_imports_from[_Xc6eP] |= _m6RO0
+
+        def visit_Assign(self, node):
+            if len(node.targets) == 1 and isinstance(node.targets[0], ast.Name) and (node.targets[0].id == '__all__'):
+                return
+            for _fVHa3 in _Cwevr(node.targets):
+                if isinstance(_fVHa3, ast.Name):
+                    _EmnVH(_fVHa3, self.id_generator.get(_fVHa3.id), mark_attribute_chains=True)
+                if getattr(_fVHa3, '_is_api', False):
+                    self.global_names.append(_fVHa3.id)
+            self.global_aggregate.append(node)
+
+        def visit_ClassDef(self, node):
+            _EmnVH(node, self.id_generator.get(node.name), mark_attribute_chains=True)
+            if getattr(node, '_is_api', False):
+                self.global_names.append(node.name)
+            self.global_aggregate.append(node)
+
+        def visit_FunctionDef(self, node):
+            _EmnVH(node, self.id_generator.get(node.name), mark_attribute_chains=True)
+            if getattr(node, '_is_api', False):
+                self.global_names.append(node.name)
+            self.global_aggregate.append(node)
+
+        def visit_Module(self, node):
+            ast.NodeVisitor.generic_visit(self, node)
+
+        def generic_visit(self, node):
+            self.global_aggregate.append(node)
+
+    class _cTVzs(ast.NodeTransformer):
+
+        def visit_Attribute(self, node):
+            if _2d7xG(node.value):
+                return ast.Name(str(node.attr), ctx=node.ctx)
+            node.value = self.visit(node.value)
+            return node
+
+    def _2d7xG(obj):
+        if isinstance(obj, ast.Attribute):
+            return _2d7xG(obj.value) and _2d7xG(obj.attr)
+        return isinstance(_0A9xp(obj), _CH5OJ)
+
+    class _T6gON(ast.NodeTransformer):
+
+        def visit_FunctionDef(self, node):
+            node.returns = None
+            node.type_comment = None
+            for _4cB6P in node.args.args:
+                _4cB6P.annotation = None
+                _4cB6P.type_comment = None
+            node.body = _kGTWb((self.visit(_1693w) for _1693w in node.body))
+            return node
+
+    class _u1t5W(ast.NodeTransformer):
+
+        def visit_Module(self, node):
+            self.generic_visit(node)
+            node.body = _LT46A(node.body, False)
+            return node
+
+        def visit_FunctionDef(self, node):
+            self.generic_visit(node)
+            node.body = _LT46A(node.body, True)
+            return node
+
+        def visit_ClassDef(self, node):
+            self.generic_visit(node)
+            node.body = _LT46A(node.body, True)
+            return node
+
+    def _LT46A(b, requires_statement):
+        if b and isinstance(b[0], ast.Expr) and isinstance(b[0].value, ast.Constant) and isinstance(b[0].value.value, str):
+            b = b[1:]
+            if not b and requires_statement:
+                b = [ast.Pass()]
+        return b
+
+    def _RexJY(alias):
+        if alias.asname:
+            return f'{alias.name!s} as {alias.asname!s}'
+        return str(alias.name)
+
+    def _Ag30J(node):
+        for _7NAh6 in node.decorator_list:
+            _IYGqO = isinstance(_7NAh6, ast.Name) and _7NAh6.id == 'property'
+            _osDb8 = isinstance(_7NAh6, ast.Attribute) and _7NAh6.attr == 'setter'
+            if _IYGqO or _osDb8:
+                return True
+        return False
+
+    def _dsowz(file):
+        file = Path(file)
+        with file.open() as _rs8Ft:
+            _rdHcd = _rs8Ft.read()
+        _rdHcd = _bigce(_rdHcd)
+        with file.open('w') as _b9f1P:
+            _b9f1P.write(_rdHcd)
+
+    def _bigce(py_source):
+        _h0Evc = cst.parse_module(py_source)
+        _h0Evc = _h0Evc.visit(_ww805())
+        _h0Evc = _h0Evc.visit(_boie3())
+        _h0Evc = _h0Evc.visit(_fcfdI())
+        _h0Evc = _h0Evc.visit(_QC0IM())
+        return _h0Evc.code
+
+    class _ww805(cst.CSTTransformer):
+
+        def leave_Comment(self, *_B8rQK):
+            return cst.RemovalSentinel.REMOVE
+    _2U2fb = cst.SimpleWhitespace('')
+    _f3fRE = cst.SimpleWhitespace(' ')
+
+    class _fcfdI(cst.CSTTransformer):
+
+        def leave_Module(self, _, updated_node):
+            return updated_node.with_changes(header=[], footer=[], default_indent=' ')
+
+        def leave_AssignTarget(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_equal=_2U2fb, whitespace_after_equal=_2U2fb)
+
+        def leave_EmptyLine(self, *_RtBnk):
+            return cst.RemovalSentinel.REMOVE
+
+        def leave_TrailingWhitespace(self, _, updated_node):
+            return updated_node.with_changes(whitespace=_2U2fb)
+
+        def leave_FunctionDef(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_def=_f3fRE, whitespace_after_name=_2U2fb, whitespace_before_params=_2U2fb, whitespace_before_colon=_2U2fb)
+
+        def leave_ClassDef(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_class=_f3fRE, whitespace_after_name=_2U2fb, whitespace_before_colon=_2U2fb)
+
+        def leave_Param(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_star=_2U2fb, whitespace_after_param=_2U2fb)
+
+        def leave_Index(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_star=_2U2fb)
+
+        def leave_Subscript(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_value=_2U2fb)
+
+        def leave_Call(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_func=_2U2fb, whitespace_before_args=_2U2fb)
+
+        def leave_Annotation(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_indicator=_2U2fb, whitespace_after_indicator=_2U2fb)
+
+        def leave_DictElement(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_colon=_2U2fb, whitespace_after_colon=_2U2fb)
+
+        def leave_StarredElement(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_value=_2U2fb)
+
+        def leave_StarredDictElement(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_value=_2U2fb)
+
+        def leave_DictComp(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_colon=_2U2fb, whitespace_after_colon=_2U2fb)
+
+        def leave_NamedExpr(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_walrus=_2U2fb, whitespace_after_walrus=_2U2fb)
+
+        def leave_Arg(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_star=_2U2fb, whitespace_after_arg=_2U2fb)
+
+        def leave_CompFor(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before=_f3fRE, whitespace_after_for=_f3fRE, whitespace_before_in=_f3fRE, whitespace_after_in=_f3fRE)
+
+        def leave_CompIf(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before=_f3fRE, whitespace_before_test=_f3fRE)
+
+        def leave_IfExp(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_if=_f3fRE, whitespace_after_if=_f3fRE, whitespace_before_else=_f3fRE, whitespace_after_else=_f3fRE)
+
+        def leave_Return(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_return=_f3fRE)
+
+        def leave_Del(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_del=_f3fRE)
+
+        def leave_Import(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_import=_f3fRE)
+
+        def leave_ImportFrom(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_from=_f3fRE, whitespace_before_import=_f3fRE, whitespace_after_import=_f3fRE)
+
+        def leave_From(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_from=_f3fRE, whitespace_after_from=_f3fRE)
+
+        def leave_Raise(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_raise=_f3fRE)
+
+        def leave_Yield(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_yield=_f3fRE)
+
+        def leave_For(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_for=_f3fRE, whitespace_before_in=_f3fRE, whitespace_after_in=_f3fRE, whitespace_before_colon=_2U2fb)
+
+        def leave_While(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_while=_f3fRE, whitespace_before_colon=_2U2fb)
+
+        def leave_If(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_test=_f3fRE, whitespace_after_test=_2U2fb)
+
+        def leave_Lambda(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_lambda=_f3fRE)
+
+        def leave_Await(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after_await=_f3fRE)
+
+        def leave_AsName(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before_as=_f3fRE, whitespace_after_as=_f3fRE)
+
+        def leave_ExceptHandler(self, _, updated_node):
+            _Lntgf = '' if updated_node.type is None else ' '
+            return updated_node.with_changes(whitespace_after_except=cst.SimpleWhitespace(_Lntgf), whitespace_before_colon=_2U2fb)
+
+        def leave_SimpleStatementSuite(self, _, updated_node):
+            return updated_node.with_changes(leading_whitespace=_2U2fb)
+
+        def leave_IndentedBlock(self, _, updated_node):
+            _oDGuH = updated_node.body
+            if len(_oDGuH) == 1 and isinstance(_oDGuH[0], cst.SimpleStatementLine):
+                return cst.SimpleStatementSuite(body=_oDGuH[0].body, leading_whitespace=_2U2fb)
+            return updated_node
+
+    class _QC0IM(m.MatcherDecoratableTransformer):
+
+        @m.leave(m.Add() | m.Subtract() | m.Multiply() | m.Divide() | m.Modulo() | m.MatrixMultiply() | m.Power() | m.Comma() | m.Equal() | m.NotEqual() | m.GreaterThanEqual() | m.LessThanEqual() | m.GreaterThan() | m.LessThan() | m.Semicolon() | m.Colon() | m.Dot() | m.FloorDivide() | m.LeftShift() | m.RightShift() | m.BitOr() | m.BitAnd() | m.BitXor() | m.AssignEqual() | m.AddAssign() | m.SubtractAssign() | m.MultiplyAssign() | m.DivideAssign() | m.ModuloAssign() | m.PowerAssign() | m.MatrixMultiplyAssign() | m.BitAndAssign() | m.BitOrAssign() | m.BitXorAssign() | m.LeftShiftAssign() | m.RightShiftAssign() | m.FloorDivideAssign())
+        def rm_space_around_operators(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before=_2U2fb, whitespace_after=_2U2fb)
+
+        @m.leave(m.In() | m.And() | m.Or() | m.Is())
+        def rm_space_around_alpha_binary(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before=_f3fRE, whitespace_after=_f3fRE)
+
+        @m.leave(m.NotIn() | m.IsNot())
+        def rm_space_around_not(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before=_f3fRE, whitespace_between=_f3fRE, whitespace_after=_f3fRE)
+
+        @m.leave(m.Plus() | m.Minus() | m.BitInvert() | m.LeftCurlyBrace() | m.LeftSquareBracket() | m.LeftParen() | m.ParamSlash())
+        def rm_whitespace_after(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after=_2U2fb)
+
+        @m.leave(m.RightCurlyBrace() | m.RightSquareBracket() | m.RightParen())
+        def rm_whitespace_before(self, _, updated_node):
+            return updated_node.with_changes(whitespace_before=_2U2fb)
+
+        @m.leave(m.Asynchronous() | m.Not())
+        def one_whitespace_after(self, _, updated_node):
+            return updated_node.with_changes(whitespace_after=_f3fRE)
+
+        @m.leave(m.ConcatenatedString())
+        def rm_whitespace_between(self, _, updated_node):
+            return updated_node.with_changes(whitespace_between=_2U2fb)
+
+    class _boie3(m.MatcherDecoratableTransformer):
+
+        @m.leave(m.List() | m.Tuple())
+        def rm_last_comma_in_sequence(self, _, updated_node):
+            _d2YyR = updated_node.elements
+            if len(_d2YyR) < 1 or _d2YyR[-1].comma == cst.MaybeSentinel.DEFAULT:
+                return updated_node
+            _GTnqN = _d2YyR[-1].with_changes(comma=cst.MaybeSentinel.DEFAULT)
+            return updated_node.with_changes(elements=[*list(_d2YyR[:-1]), _GTnqN])
+
+        @m.leave(m.FunctionDef() | m.Lambda())
+        def rm_last_comma_in_def(self, _, updated_node):
+            _WTrs8 = updated_node.params.params
+            if len(_WTrs8) < 1 or _WTrs8[-1].comma == cst.MaybeSentinel.DEFAULT:
+                return updated_node
+            _xAcig = _WTrs8[-1].with_changes(comma=cst.MaybeSentinel.DEFAULT)
+            return updated_node.with_deep_changes(updated_node.params, params=[*list(_WTrs8[:-1]), _xAcig])
+
+        @m.leave(m.Call())
+        def rm_last_comma_in_call(self, _, updated_node):
+            _JXnJc = updated_node.args
+            if len(_JXnJc) < 1 or _JXnJc[-1].comma == cst.MaybeSentinel.DEFAULT:
+                return updated_node
+            _IKfRx = _JXnJc[-1].with_changes(comma=cst.MaybeSentinel.DEFAULT)
+            return updated_node.with_changes(args=[*list(_JXnJc[:-1]), _IKfRx])
+
+    def _XHNne():
+        try:
+            slim.keygen.find_license_and_validate(account_id='109c23d2-6cdd-4faf-bd8a-96c242733638', product_id='61c15120-c763-4972-a906-545cefb3988f', variable_names=['STONEFISH_LIC', 'STONEFISH_LICENSE', 'STONEFISH_LICENSE_KEY'])
+        except slim.LicenseError as e:
+            e.show()
+            sys.exit(1)
+
+    def _LlzXq(path):
+        path = Path(path)
+        assert path.suffix == '.py'
+        with path.open() as _hr5aW:
+            _qhNIW = _hr5aW.read()
+        _lpYrh = x21._x21.encrypt_24a(_qhNIW.encode())
+        _c8EnU = path.with_suffix('.dat')
+        if _c8EnU.exists():
+            _VofBz = f'Output path {_c8EnU} already exists. Abort.'
+            raise RuntimeError(_VofBz)
+        with _c8EnU.open('wb') as _wLAht:
+            _wLAht.write(_lpYrh)
+        with path.open('w') as _2O1AF:
+            _2O1AF.write('import x21\nx21.dex_24a(__file__)\n')
+    if TYPE_CHECKING:
+        from pathlib import Path
+
+    def _Pjxdw(path, naming_scheme='random', ignore_import_errors=False):
+        _3o2e4 = _SCW93(path)
+        _3o2e4 = _sdnc2(_3o2e4, naming_scheme, ignore_import_errors)
+        assert _3o2e4 is not None
+        _3o2e4.write(path.parent)
+
+    def _sdnc2(filetree, naming_scheme='random', ignore_import_errors=False, rename_all=True):
+        _wBsps(filetree, ignore_import_errors=ignore_import_errors)
+        filetree.mark_public()
+        _ziyWx: Any
+        if naming_scheme == 'random':
+            _ziyWx = _ggJw4
+        elif naming_scheme == 'consecutive':
+            _ziyWx = _PulAs
+            _ziyWx.reset()
+        else:
+            _pKIR9 = f'Unexpected naming_scheme {naming_scheme}'
+            raise ValueError(_pKIR9)
+        return filetree.visit(_ztI33(_ziyWx, rename_all)).visit(_5LDEd(_ziyWx)).visit(_AnzG5(_ziyWx)).visit(_1HEo8(_ziyWx)).visit(_UxBNw(_ziyWx))
+
+    class _ztI33(ast.NodeTransformer):
+
+        def __init__(self, id_generator, rename_all):
+            self.id_generator = id_generator
+            self.rename_all = rename_all
+
+        def visit_Module(self, node):
+            for _xji50 in node.body:
+                if isinstance(_xji50, ast.Assign):
+                    for _We2li in _xji50.targets:
+                        if _MVTIR(_We2li, '_sf_definition', default=None):
+                            continue
+                        if isinstance(_We2li, ast.Name):
+                            _EmnVH(_We2li, self.id_generator.get())
+                elif isinstance(_xji50, (ast.FunctionDef, ast.ClassDef)) and (self.rename_all or not _MVTIR(_xji50, '_sf_is_public', default=True)):
+                    _EmnVH(_xji50, self.id_generator.get())
+
+    class _5LDEd(ast.NodeTransformer):
+
+        def __init__(self, id_generator):
+            self.id_generator = id_generator
+
+        def visit_FunctionDef(self, node):
+            if node.args.vararg:
+                _EmnVH(node.args.vararg, self.id_generator.get())
+            if node.args.kwarg is not None:
+                _EmnVH(node.args.kwarg, self.id_generator.get())
+            for _10nJl in node.body:
+                self.visit(_10nJl)
+            return node
+
+    class _1HEo8(ast.NodeTransformer):
+
+        def __init__(self, id_generator):
+            self.id_generator = id_generator
+
+        def visit_For(self, node):
+            for _Q54yS in _Cwevr([node.target]):
+                _EmnVH(_Q54yS, self.id_generator.get())
+            node.body = [self.visit(_k4p6i) for _k4p6i in node.body]
+            return node
+
+        def visit_ListComp(self, node):
+            for _XjM2W in node.generators:
+                for _nZUKI in _Cwevr([_XjM2W.target]):
+                    _EmnVH(_nZUKI, self.id_generator.get())
+            self.visit(node.elt)
+            return node
+
+        def visit_GeneratorExp(self, node):
+            return self.visit_ListComp(node)
+
+        def visit_Lambda(self, node):
+            for _IHSIo in node.args.args:
+                _EmnVH(_IHSIo, self.id_generator.get())
+            return node
+
+        def visit_With(self, node):
+            node.body = [self.visit(_R7PFO) for _R7PFO in node.body]
+            for _JhRpy in node.items:
+                if isinstance(_JhRpy.optional_vars, ast.Name):
+                    _EmnVH(_JhRpy.optional_vars, self.id_generator.get())
+            return node
+
+        def visit_Import(self, node):
+            return self._rename_imports(node)
+
+        def visit_ImportFrom(self, node):
+            return self._rename_imports(node)
+
+        def _rename_imports(self, node):
+            for _omdYS in node.names:
+                if _omdYS.asname and str(_omdYS.asname).startswith('_'):
+                    _EmnVH(_omdYS.asname, self.id_generator.get())
+            return node
+
+    class _AnzG5(ast.NodeTransformer):
+
+        def __init__(self, id_generator):
+            self.id_generator = id_generator
+
+        def visit_FunctionDef(self, node):
+            _jrTm6 = set()
+            for _J0D6Y in node.body:
+                if isinstance(_J0D6Y, ast.Global):
+                    _jrTm6.update([str(_mz5eN) for _mz5eN in _J0D6Y.names])
+            _g2daV = _vkJG5(self.id_generator, _jrTm6)
+            node.body = [_g2daV.visit(_KFZ8u) for _KFZ8u in node.body]
+            return node
+
+    class _vkJG5(ast.NodeTransformer):
+
+        def __init__(self, id_generator, protect):
+            self.id_generator = id_generator
+            self.protect = protect
+
+        def visit_AnnAssign(self, node):
+            if node.value in self.protect:
+                return node
+            _Rj3vx = node.target
+            if isinstance(_Rj3vx, ast.Name) and (not _MVTIR(_Rj3vx, '_sf_definition')):
+                _EmnVH(_Rj3vx, self.id_generator.get())
+            return node
+
+        def visit_Assign(self, node):
+            if node.value in self.protect:
+                return node
+            for _PhD8W in _Cwevr(node.targets):
+                if isinstance(_PhD8W, ast.Name) and (not _MVTIR(_PhD8W, '_sf_definition')) and (_PhD8W.id not in self.protect):
+                    _EmnVH(_PhD8W, self.id_generator.get())
+            return node
+
+    class _UxBNw(ast.NodeTransformer):
+
+        def __init__(self, id_generator):
+            self.id_generator = id_generator
+
+        def visit_FunctionDef(self, node):
+            _9caFn = set()
+            for _GjWp7 in node.body:
+                if isinstance(_GjWp7, ast.Global):
+                    _9caFn.update([str(_fDk23) for _fDk23 in _GjWp7.names])
+            _2rK2q = _blH3K(self.id_generator, _9caFn)
+            for _bIdRf in node.body:
+                _2rK2q.visit(_bIdRf)
+            return node
+
+    class _blH3K(ast.NodeTransformer):
+
+        def __init__(self, id_generator, protect):
+            self.id_generator = id_generator
+            self.protect = protect
+
+        def visit_FunctionDef(self, node):
+            self.generic_visit(node)
+            if node.name in self.protect:
+                return node
+            _EmnVH(node, self.id_generator.get())
+            return node
+
+        def visit_ClassDef(self, node):
+            if node.name in self.protect:
+                return node
+            _EmnVH(node, self.id_generator.get())
+            return node
+    RichHelpFormatter.styles['argparse.args'] = 'cyan'
+    RichHelpFormatter.styles['argparse.groups'] = 'yellow'
+    RichHelpFormatter.styles['argparse.metavar'] = 'green'
+    _TCdsc = 0
+    _YTzzQ = 1
+
+    def _L9USt(path):
+        _4UNuN = _jNrsw(_KmRyJ(path))
+        _7EAxM(path, _dsowz)
+        _9XWCx = _jNrsw(_KmRyJ(path))
+        _PtocJ(f'Minified {path} ({_4UNuN} -> {_9XWCx})')
+
+    def _QKKeh(path):
+        _7EAxM(path, _LlzXq)
+        _PtocJ(f'Encrypted {path}')
+
+    def _k0GUD(path):
+        _7EAxM(path, _Pjxdw)
+        _PtocJ(f'Renamed identifiers in {path}')
+
+    def _mwxVN(argv=None):
+        _ppFFN = argparse.ArgumentParser(description='Python code protection.', formatter_class=RichHelpFormatter)
+        _ppFFN.add_argument('--version', action='version', version=_GqOLO(), help='Display version information')
+        _prMXl = _ppFFN.add_subparsers(title='subcommands', required=True)
+        _iQTmq = _prMXl.add_parser('protect', help='Protect Python files/directories', aliases=['p'], formatter_class=_ppFFN.formatter_class)
+        _iQTmq.add_argument('input_files', type=str, nargs='+', help='Python files/directories to protect')
+        for _xJUk1 in ['encrypt', 'merge', 'minify']:
+            _iQTmq.add_argument(f'--no-{_xJUk1}', action='store_false', dest=_xJUk1, help=f"Don't {_xJUk1} (default: do)")
+        _iQTmq.add_argument('--no-rename-ids', action='store_false', dest='rename_ids', help="Don't rename identifiers (default: do)")
+        _iQTmq.add_argument('--ignore-import-errors', action='store_true', help='Ignore import errors (default: error)')
+        _iQTmq.set_defaults(func=_ETe9E)
+        _iQTmq = _prMXl.add_parser('assert-protected', help='Assert that the given wheels are protected', aliases=['ap'], formatter_class=_ppFFN.formatter_class)
+        _iQTmq.add_argument('input_files', type=str, nargs='+', help='Python wheel file(s) or dir(s)')
+        _iQTmq.set_defaults(func=_pnnGZ)
+        _nhSyz = _ppFFN.parse_args(argv)
+        return _nhSyz.func(_nhSyz)
+
+    def _ETe9E(args):
+        for _Y421n in args.input_files:
+            _Y421n = Path(_Y421n)
+            if not _Y421n.exists():
+                _e4kvr = f'Input path {_Y421n} does not exist'
+                raise RuntimeError(_e4kvr)
+            if args.rename_ids:
+                _k0GUD(_Y421n)
+            if args.merge:
+                _x4AcU = _Y421n
+                _Y421n = _kF4qf(_Y421n, args.ignore_import_errors)
+                _PtocJ(f'Merged {_x4AcU} into {_Y421n}')
+            if args.minify:
+                _L9USt(_Y421n)
+            if args.encrypt:
+                _QKKeh(_Y421n)
+        return _TCdsc
+
+    def _pnnGZ(args):
+        _2DYyE = True
+        for _TFvcH in args.input_files:
+            _TFvcH = Path(_TFvcH)
+            if not _TFvcH.exists():
+                _Q8TNB = f'Input path {_TFvcH} does not exist'
+                raise RuntimeError(_Q8TNB)
+            _7Z032 = _TFvcH.rglob('*') if _TFvcH.is_dir() else [_TFvcH]
+            for _a7Y27 in _7Z032:
+                if _a7Y27.suffix != '.whl':
+                    _s8cuJ(f'{_a7Y27} is not a wheel')
+                    _2DYyE = False
+                    continue
+                with tempfile.TemporaryDirectory() as _m51YZ:
+                    _m51YZ = Path(_m51YZ)
+                    with zipfile.ZipFile(_a7Y27, 'r') as _KQFHZ:
+                        _KQFHZ.extractall(_m51YZ)
+                    _bhgNp = _c6Gct(_m51YZ)
+                    if not _bhgNp:
+                        _s8cuJ(f"Don't know how to deal with wheel {_a7Y27}")
+                    elif (_bhgNp / '_agg' / '__init__.dat').is_file():
+                        _PtocJ(f'[green]✔ {_a7Y27}[/green]')
+                    else:
+                        _PtocJ(f'[red]✘ {_a7Y27}[/red]')
+                        _2DYyE = False
+        return _TCdsc if _2DYyE else _YTzzQ
+
+    def _c6Gct(path):
+        _A4owT = list(path.rglob('top_level.txt'))
+        if len(_A4owT) == 1:
+            with _A4owT[0].open() as _yo7PC:
+                _nnqUR = _yo7PC.read().strip()
+            if (path / _nnqUR).is_dir():
+                return path / _nnqUR
+        _nO7TZ = list(path.glob('*'))
+        if len(_nO7TZ) == 2 and _nO7TZ[0].is_dir() and _nO7TZ[1].is_dir():
+            _pVQUV = _nO7TZ[0].name
+            _N3eno = _nO7TZ[1].name
+            if _pVQUV.startswith(_N3eno):
+                return _nO7TZ[1]
+            if _N3eno.startswith(_pVQUV):
+                return _nO7TZ[0]
+        return None
+
+    def _GqOLO():
+        _omeFG = f'{version_info.major}.{version_info.minor}.{version_info.micro}'
+        _W7xi0 = _PEQsw(__package__ or __name__)
+        return '\n'.join([f'Stonefish Code Shield {_W7xi0} [Python {_omeFG}]'])
+    _XHNne()
+    if TYPE_CHECKING:
+        from pathlib import Path
+    try:
+        from ast import unparse
+    except ImportError:
+        from astunparse import unparse
+
+    def _xFXUI(content_path):
+        _ezE60 = _SCW93(content_path)
+        assert _ezE60 is not None
+        _wBsps(_ezE60, ignore_import_errors=True)
+        _ezE60.mark_public()
+        assert isinstance(_ezE60, _ZqBEB)
+        _61iTs = _ezE60.get_child('_agg').get_child('__init__').tree
+        _f6Oga = [_9b7EG(_DcZqH) for _DcZqH in _61iTs.body if _MVTIR(_DcZqH, '_sf_is_public', default=False)]
+        _62kO8 = _tJoht()
+        _62kO8.visit(_61iTs)
+        _kaxlo = _ggJw4.get()
+        _S2np1 = _ggJw4.get()
+        _Unwd1 = _ggJw4.get()
+        _61iTs.body = [ast.Global(_f6Oga), *_61iTs.body]
+        _3dcEv(_61iTs)
+        _SVfF0 = ast.FunctionDef(name=_kaxlo, args=[], lineno=None, body=[_61iTs], decorator_list=[ast.Name(_S2np1)])
+        _k6HWV = f'def {_S2np1}(f):\n    def {_Unwd1}(*args, **kwargs):\n        return f(*args, **kwargs)\n    {_Unwd1}.__module__ = f.__module__\n    {_Unwd1}.__name__ = f.__name__\n    {_Unwd1}.__doc__ = f.__doc__\n    {_Unwd1}.__dict__.update(f.__dict__)\n    f.__refcalls__ = 0\n    return {_Unwd1}\n\n{unparse(_SVfF0)}\n{_kaxlo}()\ndel {_kaxlo}\n'
+        if _62kO8.future_imports:
+            _k6HWV = f"from __future__ import {', '.join(_62kO8.future_imports)}\n{_k6HWV}"
+        with (content_path / '_agg' / '__init__').open('w') as _7BNV2:
+            _7BNV2.write(_k6HWV)
+
+    class _tJoht(ast.NodeTransformer):
+
+        def __init__(self):
+            self.future_imports = []
+
+        def visit_ImportFrom(self, node):
+            if node.module != '__future__':
+                return node
+            self.future_imports += [_sr0BP.name for _sr0BP in node.names]
+            return None
+
+    def _QvLln(*_7in0Z, **_lHIfN):
+        return _Iyspg.get_requires_for_build_sdist(*_7in0Z, **_lHIfN)
+
+    def _VW5xd(*_fKBaV, **_JRY8T):
+        return _Iyspg.get_requires_for_build_wheel(*_fKBaV, **_JRY8T)
+
+    def _CPKZ5(*_ERcqQ, **_bVhmQ):
+        return _Iyspg.prepare_metadata_for_build_wheel(*_ERcqQ, **_bVhmQ)
+
+    def _xLtnT(*_YNNiW, **_77drz):
+        return _Iyspg.build_editable(*_YNNiW, **_77drz)
+
+    def _aLGq2(*_CscNX, **_PLhca):
+        return _Iyspg.get_requires_for_build_editable(*_CscNX, **_PLhca)
+
+    def _Ag85L(*_98fpb, **_e4j75):
+        return _Iyspg.prepare_metadata_for_build_editable(*_98fpb, **_e4j75)
+
+    def _zGY39(wheel_directory, config_settings=None, metadata_directory=None):
+        from setuptools.build_meta import build_wheel as setuptools_build_wheel
+        _Yl0t8 = setuptools_build_wheel(wheel_directory, config_settings=config_settings, metadata_directory=metadata_directory)
+        _60Pfz = _BN42e(config_settings)
+        if not _60Pfz:
+            _PtocJ('stonefish-code-shield: skip all', style='yellow')
+            return _Yl0t8
+        _3ttL5 = Path(wheel_directory) / _Yl0t8
+        with _7QjWn(_3ttL5) as _OLTHM:
+            _c1DFB = None
+            for _k8YFu in _OLTHM.iterdir():
+                if not _k8YFu.name.endswith('.dist-info'):
+                    _c1DFB = _k8YFu
+                    break
+            if not _c1DFB:
+                _2BK8D = 'Content dir not found in wheel'
+                raise _uHpY1(_2BK8D)
+            _1irIQ = _c1DFB.relative_to(_OLTHM)
+            if 'merge' in _60Pfz:
+                _PtocJ(f'stonefish-code-shield: merging {_1irIQ}/', style='blue')
+                _kF4qf(_c1DFB, ignore_import_errors=False)
+            else:
+                _PtocJ('stonefish-code-shield: skip merge obfuscation', style='yellow')
+            if 'rename-ids' in _60Pfz:
+                _PtocJ('stonefish-code-shield: renaming identifiers', style='blue')
+                _Pjxdw(_c1DFB)
+            else:
+                _PtocJ('stonefish-code-shield: skip renaming identifiers', style='yellow')
+            if 'encrypt' in _60Pfz and 'merge' in _60Pfz:
+                _PtocJ('stonefish-code-shield: wrapping', style='blue')
+                _xFXUI(_c1DFB)
+            if 'minify' in _60Pfz and version_info >= (3, 8):
+                _PtocJ('stonefish-code-shield: minifying', style='blue')
+                _7EAxM(_c1DFB, _dsowz)
+            else:
+                _PtocJ('stonefish-code-shield: skip minification', style='yellow')
+            if 'encrypt' in _60Pfz:
+                _PtocJ('stonefish-code-shield: encrypting', style='blue')
+                _7EAxM(_c1DFB, _LlzXq)
+                _PtocJ('stonefish-code-shield: adding x21 dependency', style='blue')
+                _dAh4x(_OLTHM)
+            else:
+                _PtocJ('stonefish-code-shield: skip encryption', style='yellow')
+        return _Yl0t8
+
+    def _BN42e(config_settings):
+        _cmCEZ = {'1', 'true', 'yes', 'all', 'full', 'on'}
+        _2a95C = {'0', 'false', 'no', 'none', 'nothing', 'off', 'skip', 'dont'}
+        _AuBFK = {'merge', 'rename-ids', 'minify', 'encrypt'}
+        if config_settings is None:
+            return _AuBFK
+        _GYlsh = {'stonefish', 'stonefish-code-shield', 'stonefish_code_shield'}
+        _2hzll = set(config_settings.keys())
+        _8ojpr = _2hzll.intersection(_GYlsh)
+        if not _8ojpr:
+            return _AuBFK
+        if len(_8ojpr) > 1:
+            _F4zSZ = f'Found multiple conflicting config settings {_8ojpr}'
+            raise ValueError(_F4zSZ)
+        _DRqxt, = _8ojpr
+        _QfeKh = config_settings[_DRqxt].lower()
+        if _QfeKh in _cmCEZ:
+            return _AuBFK
+        if _QfeKh in _2a95C:
+            return set()
+        if not all((_bGFsT in 'mrne' for _bGFsT in _QfeKh)):
+            _F4zSZ = 'Stonefish config must be on/off or a combination of m, r, n, e'
+            raise ValueError(_F4zSZ)
+        _zNstk = set()
+        if 'm' in _QfeKh:
+            _zNstk.add('merge')
+        if 'r' in _QfeKh:
+            _zNstk.add('rename-ids')
+        if 'n' in _QfeKh:
+            _zNstk.add('minify')
+        if 'e' in _QfeKh:
+            _zNstk.add('encrypt')
+        return _zNstk
+
+    def _dAh4x(path):
+        if not path.exists() or not path.is_dir():
+            return
+        _4vB6X = None
+        for _8ECx8 in path.iterdir():
+            if _8ECx8.name.endswith('.dist-info'):
+                _4vB6X = _8ECx8 / 'METADATA'
+                break
+        if _4vB6X is None or not _4vB6X.exists():
+            return
+        with _4vB6X.open() as _lPzQN:
+            _7zjWX = _lPzQN.read()
+        _IR4bX = _PEQsw('x21')
+        _f2nwz = _ABG6Q(_IR4bX)
+        _7zjWX = re.sub('Requires-Dist:', f'Requires-Dist: x21 (>={_IR4bX},<{_f2nwz})\nRequires-Dist:', _7zjWX, count=1)
+        with _4vB6X.open('w') as _xqZlC:
+            _xqZlC.write(_7zjWX)
+
+    def _hEvH9(sdist_directory, config_settings=None):
+        from setuptools.build_meta import build_sdist as setuptools_build_sdist
+        _cvAgj = _BN42e(config_settings)
+        if _cvAgj:
+            _WIOlw = '\n\nstonefish-code-shield: Cannot build sdist with obfuscation. Build a wheel or use -Cstonefish=off to explicitly turn it off.\n'
+            raise _uHpY1(_WIOlw)
+        _BDTHG = setuptools_build_sdist(sdist_directory, config_settings)
+        _PtocJ('Built sdist without stonefish obfuscation', style='yellow bold')
+        return _BDTHG
+_DM7Qq()
+del _DM7Qq
