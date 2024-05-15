@@ -1,0 +1,5 @@
+setup.py
+wteam_rlt.egg-info/PKG-INFO
+wteam_rlt.egg-info/SOURCES.txt
+wteam_rlt.egg-info/dependency_links.txt
+wteam_rlt.egg-info/top_level.txt
