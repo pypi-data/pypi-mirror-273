@@ -1,0 +1,15 @@
+aiohttp
+toml
+orjson
+typing_inspect
+
+[test]
+autopep8
+mypy
+coverage
+pytest
+pytest-cov
+pytest-mock
+pytest-asyncio
+pytest-aiohttp
+types-toml
