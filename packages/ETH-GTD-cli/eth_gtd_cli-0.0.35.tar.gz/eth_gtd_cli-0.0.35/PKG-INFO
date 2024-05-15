@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: ETH_GTD_cli
+Version: 0.0.35
+Summary: A CLI for the ETH project Grand Tour
+Project-URL: Homepage, https://github.com/leggedrobotics/GrandTourDatasets
+Project-URL: Issues, https://github.com/leggedrobotics/GrandTourDatasets/issues
+Author-email: Johann Schwabe <jschwab@ethz.ch>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: httpx
+Requires-Dist: tqdm
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# Grand Tour Datasets: CLI
+
+Used as an alternative to the webtool at https://datasets.leggedrobotics.com/ \
+Use --help to get an overview over available commands.
