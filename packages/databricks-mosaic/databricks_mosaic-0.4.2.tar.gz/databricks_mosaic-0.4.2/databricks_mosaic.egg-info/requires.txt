@@ -1,0 +1,10 @@
+geopandas<0.14.4,>=0.14
+h3<4.0,>=3.7
+ipython>=7.22.0
+keplergl==0.3.2
+pyspark<3.5,>=3.4
+
+[dev]
+isort
+black
+build
