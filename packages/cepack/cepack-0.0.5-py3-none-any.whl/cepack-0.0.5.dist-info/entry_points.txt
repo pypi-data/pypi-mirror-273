@@ -1,0 +1,2 @@
+[console_scripts]
+cepack = cepack.main:run
