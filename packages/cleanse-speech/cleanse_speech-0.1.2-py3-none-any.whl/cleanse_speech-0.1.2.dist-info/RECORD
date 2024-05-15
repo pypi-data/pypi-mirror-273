@@ -1,0 +1,13 @@
+cleanse_speech-0.1.2.dist-info/METADATA,sha256=SxGUgCGXvfA4clzypMYrj1nVkMBbkBqkbCi5G2X5iEM,1858
+cleanse_speech-0.1.2.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+cleanse_speech-0.1.2.dist-info/licenses/LICENSE,sha256=8u28K1sYUp8UBl7JcpqtMJPvs4ppPu1GBrlyuO5FH6c,1065
+cleanse_speech-0.1.2.dist-info/licenses/NOTICE.MD,sha256=1ELDl4HYL5WVE7pwQObnaS80vap_6NUF6KLB9qaz-2A,94
+cleanse_speech/__init__.py,sha256=nM7itMxYztmu9fh2-Itz8-ozk_9gdwmR0VgWmzDfCRc,100
+cleanse_speech/bin/cn_advertisement.bin,sha256=KNoyHYRlrCQ4WxtjqAUN9HacwboNJgezPrxO7Dyipa0,2956
+cleanse_speech/bin/cn_general.bin,sha256=ddYMCx0Hhrno8Nb0EDrzO-olegawghpTIhs4eQS-VbA,9075
+cleanse_speech/bin/cn_netease.bin,sha256=xHvbpO4TOmBjpW_Fghz_GBhnG0U75_9hib1x5uR5JDc,92572
+cleanse_speech/bin/cn_politics.bin,sha256=ciNo7EhSFNzuGskHgD3qcsLTAYYgt92RmdGv7nNAKf8,5134
+cleanse_speech/bin/cn_pornographic.bin,sha256=wdAMHAQk7aB3_M948jXdUQlriz9DJcT7EL9aESUf2Yg,4224
+cleanse_speech/bookshelf.py,sha256=Lmy44OdqmZXFmuqyubCklYZ8yZgEE04zu4VGfkmnwCI,1002
+cleanse_speech/dlfa.py,sha256=N9X2Xg_O-2wnewdoAC7fDQSbkAI9TzclHcHoabEht1w,7095
+cleanse_speech-0.1.2.dist-info/RECORD,,
