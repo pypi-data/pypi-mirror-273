@@ -1,0 +1,11 @@
+espy_pdfier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+espy_pdfier/service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+espy_pdfier/service/img_serv.py,sha256=pwryk8FolrizE2Zc7yTjMnliNJpuHpxRomncFCrOGMM,2497
+espy_pdfier/service/service.py,sha256=iZ8aIdcvlNuOvT-pArjN8hmazIAe9MSRzUCZmFAtVUw,2855
+espy_pdfier/util/CONSTANTS.py,sha256=bNXg6oxVhInorxI7DnGrC0RWU0vEaJBptRfbQ_W7T_4,1083
+espy_pdfier/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+espy_pdfier-0.7.dist-info/LICENSE,sha256=cbTw_smyBX7gxXEvS6fS6--y_wN9i-6OqDHN9VY4g1g,1072
+espy_pdfier-0.7.dist-info/METADATA,sha256=quVAYqMTHO5KT40DCqyQyaCbeOT4azt15V3nW1ark94,390
+espy_pdfier-0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+espy_pdfier-0.7.dist-info/top_level.txt,sha256=LOooos1pp4ZBpOeiuE3od54BsgNgbUDNWj7BvYZutZc,12
+espy_pdfier-0.7.dist-info/RECORD,,
