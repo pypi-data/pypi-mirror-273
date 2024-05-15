@@ -1,0 +1,14 @@
+milvus_lite/__init__.py,sha256=Q75emL_IGVR6PqAoRkOkGeNQ_BNbz2Lr5-Ou-rOBAC0,593
+milvus_lite/server.py,sha256=l-F1Og9k2AJlSxFhlSi1VLNjbzqgeQULPKM4erTLBes,4194
+milvus_lite/server_manager.py,sha256=Ui3MBiK15y0Z7KK1hb8ji3-PRW1XKv4bP2HP7NXCFN0,1999
+milvus_lite/lib/libdouble-conversion.3.dylib,sha256=ov127LQdx9TUz9SdQIzgFSilIjxAOkdPfd5hvm1uq54,74976
+milvus_lite/lib/libgflags_nothreads.2.2.dylib,sha256=4kCIoBnKhB3U5NykjSdX9OEdvNxO2ktlgjb-G-CbH-M,139144
+milvus_lite/lib/libglog.1.dylib,sha256=XNJDhOSnJYnwHv7lttgkEoqmj-Zx5uTA3d9GGP5y3nc,201792
+milvus_lite/lib/libknowhere.dylib,sha256=zG-mzZeIvdeMHqB9hBWL3-6w4tMWCxHcOFO8uAoe9Z4,27418216
+milvus_lite/lib/libomp.dylib,sha256=E2o2FVIOO81Av9DhejEPb6jttbmGgDKWtjeJz5C0n0s,680528
+milvus_lite/lib/libtbb.12.dylib,sha256=GyKV2MgXRSvHZkJGVlq7ve5kkZrtu3zLxKB2uLRcWoo,424104
+milvus_lite/lib/milvus,sha256=rjTn2zrra5mNn1spHAAu6bLE9NAJnSTonlYCbwxJ-ZY,56598896
+milvus_lite-2.4.3.dist-info/METADATA,sha256=y8do5orXcrOJ2NVx2f5pNZqfe6LKeZPhyIbbCkI5SQc,3703
+milvus_lite-2.4.3.dist-info/WHEEL,sha256=ZMnwOw8O3u9YiRAglNfYB17Xz16PvHQhWl99wrjStR0,107
+milvus_lite-2.4.3.dist-info/top_level.txt,sha256=bs0lf5xearC9dWbmEUDcsQ-kL3rmBSph7VEZ1QMR7n8,12
+milvus_lite-2.4.3.dist-info/RECORD,,
