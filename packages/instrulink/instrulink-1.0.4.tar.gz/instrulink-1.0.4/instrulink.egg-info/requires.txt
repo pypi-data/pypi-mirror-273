@@ -1,0 +1,6 @@
+numpy
+colorlog
+pyvisa
+pyserial
+matplotlib
+nidaqmx
