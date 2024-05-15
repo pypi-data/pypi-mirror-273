@@ -1,0 +1,10 @@
+algorithms/__init__.py,sha256=NxgxMoQkkMcFpS1KUu-YmIeSQS8CFEnja7ecOvSz5xE,186
+algorithms/deflate.py,sha256=kxXnkFgxUISqRqpZNsHTJB3b-llR_n46qdJ6O_JEN3o,2652
+algorithms/huffman.py,sha256=HmTC1hq6a7Qq4bk0rxQceFnQ_NhSjNA6rAdTOd0I1SM,9278
+algorithms/lz77.py,sha256=QLEZMCmxZWewYJKhB8gZVLXgrqphK8XjiSzWWYc09sA,3793
+algorithms/lz78.py,sha256=jZCUTP46_af2foYMvGQJV8Ll32yPyBQyQuLQwI_FoM4,2370
+algorithms/lzw.py,sha256=fOql7eDQm-hvbEJcermtHycyZfhtTE0tlBNpShnNPmg,2201
+di_compression-0.0.4.dist-info/METADATA,sha256=I-0DTdyPZAi2iRXCKiYUXcAUTu14qReXoli0qekEjXM,842
+di_compression-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+di_compression-0.0.4.dist-info/top_level.txt,sha256=9HJ0g1OC7F63W_PtK4ic-5gfVvhw3r8GfwPrXXII-N0,11
+di_compression-0.0.4.dist-info/RECORD,,
