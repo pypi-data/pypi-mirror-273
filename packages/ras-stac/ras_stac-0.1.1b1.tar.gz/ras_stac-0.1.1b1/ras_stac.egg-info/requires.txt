@@ -1,0 +1,15 @@
+boto3
+botocore
+fsspec
+mypy
+numpy
+papipyplug
+python-dotenv
+pystac
+shapely
+rasterio
+rashdf
+
+[dev]
+pre-commit
+ruff
