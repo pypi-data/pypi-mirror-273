@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+smoid/SignalControl.py
+smoid/__init__.py
+smoid/__main__.py
+smoid.egg-info/PKG-INFO
+smoid.egg-info/SOURCES.txt
+smoid.egg-info/dependency_links.txt
+smoid.egg-info/top_level.txt
