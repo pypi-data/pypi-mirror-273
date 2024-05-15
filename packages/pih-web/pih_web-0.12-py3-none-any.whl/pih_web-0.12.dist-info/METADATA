@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pih-web
+Version: 0.12
+Summary: PIH Web Server service package
+Home-page: https://pacifichosp.com/
+Author: Nikita Karachentsev
+Author-email: it@pacifichosp.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: ipih
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: python-multipart
+Requires-Dist: dicttoxml
+
