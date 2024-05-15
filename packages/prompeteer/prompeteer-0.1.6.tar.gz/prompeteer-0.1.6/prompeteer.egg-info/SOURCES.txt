@@ -1,0 +1,8 @@
+README.md
+prompeteer.py
+setup.py
+prompeteer.egg-info/PKG-INFO
+prompeteer.egg-info/SOURCES.txt
+prompeteer.egg-info/dependency_links.txt
+prompeteer.egg-info/requires.txt
+prompeteer.egg-info/top_level.txt
