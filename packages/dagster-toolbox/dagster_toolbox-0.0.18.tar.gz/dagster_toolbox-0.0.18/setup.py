@@ -1,0 +1,37 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="dagster-toolbox",
+    version="0.0.18",
+    packages=find_packages(),
+    author="Nicolas RAMY",
+    author_email="nicolas.ramy@darkelda.com",
+    license="MIT",
+    description="A set of tools to ease Dagster usage",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    install_requires=[
+        "dagster==1.6.13",
+        "dagster-aws==0.22.13",
+        "dagster-pandas==0.22.13",
+        "dagster-pandera==0.22.13",
+        "dagster-postgres==0.22.13",
+        "google-api-python-client==2.123.0",
+        "hvac==2.1.0",
+        "minio==7.2.5",
+        "oauth2client==4.1.3",
+        "pandas==2.2.1",
+        "python-slugify==8.0.4",
+        "requests==2.31.0",
+        "SQLAlchemy==2.0.29",
+    ],
+    url="https://nicolasramy.github.io/dagster-toolbox/",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3.10",
+        "Topic :: Terminals",
+        "Topic :: Utilities",
+    ],
+)
