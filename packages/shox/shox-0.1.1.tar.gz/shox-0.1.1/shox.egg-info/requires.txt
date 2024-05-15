@@ -1,0 +1,6 @@
+flask
+flasgger
+click
+requests
+beautifulsoup4
+selenium
