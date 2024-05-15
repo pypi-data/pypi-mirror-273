@@ -1,0 +1,3 @@
+[console_scripts]
+tpm-multicast-client=tpm_multicast_client.__main__:tpm_multicast_client
+
