@@ -1,0 +1,8 @@
+setup.py
+fastapiwrapper/__init__.py
+fastapiwrapper/fastapiwrapper.py
+fastapiwrapper.egg-info/PKG-INFO
+fastapiwrapper.egg-info/SOURCES.txt
+fastapiwrapper.egg-info/dependency_links.txt
+fastapiwrapper.egg-info/requires.txt
+fastapiwrapper.egg-info/top_level.txt
