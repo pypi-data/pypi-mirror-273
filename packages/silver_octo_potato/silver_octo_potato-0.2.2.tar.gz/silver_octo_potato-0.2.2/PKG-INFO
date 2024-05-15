@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: silver_octo_potato
+Version: 0.2.2
+Summary: Test Project
+License: Apache-2.0
+Author: Shota Muto
+Author-email: 129914139+MutoShota@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Framework :: Robot Framework
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: netmiko (>=4.3.0,<5.0.0)
+Project-URL: Homepage, https://github.com/MutoShota/silver-octo-potato
+Description-Content-Type: text/markdown
+
+# Silver Octo Potato
+
