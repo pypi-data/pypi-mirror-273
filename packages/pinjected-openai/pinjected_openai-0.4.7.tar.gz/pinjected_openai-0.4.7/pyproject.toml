@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pinjected-openai"
+version = "0.4.7"
+description = ""
+authors = ["proboscis <nameissoap@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pinjected_openai"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^10.2.0"
+loguru = "^0.7.2"
+pinjected = "*"
+openai = "^1.9.0"
+tiktoken = "^0.5.2"
+injected-utils = "^0.1.5"
+pydub = "^0.25.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
