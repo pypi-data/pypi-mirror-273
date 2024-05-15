@@ -1,0 +1,13 @@
+ymodem/CRC.py,sha256=3hku6ZE4mlAvjPaabJdeK20fyQSFvPB9ZXwizfvHwiw,6049
+ymodem/Platform.py,sha256=1s5Dy7gyNkdf9oFwkH9Q_fobr0OuxLfEqncTnv3VM6U,785
+ymodem/Protocol.py,sha256=6S2NEN7unNqUJqFbdBYN2NjIs5U4fhJyzvxUndLa624,12238
+ymodem/Socket.py,sha256=5igfyjc3_IIREXaD0H83AdvLfiCvaWGIMXFPquvjQP8,47658
+ymodem/Version.py,sha256=kuLbOalI6i5ee3E8ALgHQki1RaZiYSmRQrebpjs2hhc,4589
+ymodem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ymodem/__main__.py,sha256=G3zPnGFwy5pG0VjTXP0SP1u0Hh-d8AFyAeFibMmCwXY,4640
+ymodem-1.5.1.dist-info/LICENSE,sha256=L3ZlZMGqh8pFuA6jrJIgvlwma7hiRNZNyqDxW7JPXC0,1065
+ymodem-1.5.1.dist-info/METADATA,sha256=d6FqQ_KQpPhspDEcgfSiiXFbD1Nf4-Vm7nl0XN1h5V8,5592
+ymodem-1.5.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ymodem-1.5.1.dist-info/entry_points.txt,sha256=QjurN9zjVBLlZ_QbG00xQXlOMk1VJZbJhry9akw7dqI,48
+ymodem-1.5.1.dist-info/top_level.txt,sha256=f2RxIjW7UISyBDERMM62aW1QTza_KvjA7Va4RtH_YgE,7
+ymodem-1.5.1.dist-info/RECORD,,
