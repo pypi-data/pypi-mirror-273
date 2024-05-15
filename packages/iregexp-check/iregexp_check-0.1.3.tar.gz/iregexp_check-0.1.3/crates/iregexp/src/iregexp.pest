@@ -1,0 +1,67 @@
+// A reasonably faithful translation of https://datatracker.ietf.org/doc/html/rfc9485#name-i-regexp-syntax.
+// 
+// At this time, I'm mainly focused on checking for valid I-Regepx grammar. Little
+// effort has been made to silence some tokens to make the result pleasant to parse.
+// 
+// TODO: Tag dots outside character classes for future mapping to PCRE.
+
+pattern = { SOI ~ iregexp ~ EOI }
+
+iregexp          = { branch ~ ("|" ~ branch)* }
+branch           = { piece* }
+piece            = { atom ~ quantifier? }
+quantifier       = { ("*" | "+" | "?") | range_quantifier }
+range_quantifier = { "{" ~ ASCII_DIGIT ~ ("," ~ ASCII_DIGIT?)? ~ "}" }
+atom             = { normal_char | char_class | ("(" ~ iregexp ~ ")") }
+
+normal_char = _{
+    '\u{00}'..'\u{27}'
+  | ","
+  | "-"
+  | '\u{2F}'..'\u{3E}'
+  | '\u{40}'..'\u{5A}'
+  | '\u{5E}'..'\u{7A}'
+  | '\u{7E}'..'\u{D7FF}'
+  | '\u{E000}'..'\u{10FFFF}'
+}
+
+char_class = { "." | single_char_esc | char_class_esc | char_class_expr }
+
+single_char_esc = {
+    "\\" ~ ('\u{28}'..'\u{2B}' | "-" | "." | "?" | '\u{5B}'..'\u{5E}' | "n" | "r" | "t" | '\u{7B}'..'\u{7D}')
+}
+
+char_class_esc  =  { cat_esc | compl_esc }
+char_class_expr =  { "[" ~ "^"? ~ ("-" | cce1) ~ cce1* ~ "-"? ~ "]" }
+cce1            = _{ (c_char ~ ("-" ~ c_char)?) | char_class_esc }
+
+c_char = _{
+    ('\u{00}'..'\u{2C}' | '\u{2E}'..'\u{5A}' | '\u{5E}'..'\u{D7FF}' | '\u{E000}'..'\u{10FFFF}')
+  | single_char_esc
+}
+
+cat_esc   =  { "\\p{" ~ char_prop ~ "}" }
+compl_esc =  { "\\P{" ~ char_prop ~ "}" }
+char_prop = _{ is_category }
+
+is_category = _{
+    letters
+  | marks
+  | numbers
+  | punctuation
+  | separators
+  | symbols
+  | others
+}
+
+letters = { "L" ~ ("l" | "m" | "o" | "t" | "u")? }
+marks   = { "M" ~ ("c" | "e" | "n")? }
+numbers = { "N" ~ ("d" | "l" | "o")? }
+
+punctuation = {
+    "P" ~ ('\u{63}'..'\u{66}' | "i" | "o" | "s")?
+}
+
+separators = { "Z" ~ ("l" | "p" | "s")? }
+symbols    = { "S" ~ ("c" | "k" | "m" | "o")? }
+others     = { "C" ~ ("c" | "f" | "n" | "o")? }
