@@ -1,0 +1,10 @@
+audeer>=1.20.0
+
+[:sys_platform == "win32"]
+pywin32
+
+[all]
+dohq-artifactory>=0.10.0
+
+[artifactory]
+dohq-artifactory>=0.10.0
