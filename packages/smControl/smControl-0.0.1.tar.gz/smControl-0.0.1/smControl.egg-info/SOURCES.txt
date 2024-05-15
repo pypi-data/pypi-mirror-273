@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+smControl/SignalControl.py
+smControl/__init__.py
+smControl.egg-info/PKG-INFO
+smControl.egg-info/SOURCES.txt
+smControl.egg-info/dependency_links.txt
+smControl.egg-info/top_level.txt
