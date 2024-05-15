@@ -1,0 +1,15 @@
+socketsecurity/__init__.py,sha256=VwFcI7y-q6P_5EDMwpCK21EirBfu5YizorB_DY0MAV0,49
+socketsecurity/socketcli.py,sha256=H4XEJXnT6du_u6pLvwOLcNV2B8K4A9r0UalEayRHQq4,5457
+socketsecurity/core/__init__.py,sha256=1gNLxoO93s5_vnKb4wl_velrehxkLvgm21337ZDY3LU,25945
+socketsecurity/core/classes.py,sha256=VlIzLOhG9Z5K-95ovblrCR9wDgGBs0N3mFSa6d9qbw8,8606
+socketsecurity/core/exceptions.py,sha256=C7q0D3KlnE3ff4FyTnlY9TxU3G-7xaRZcxpanUPvCzc,626
+socketsecurity/core/github.py,sha256=pvVE6l6qrJ18pw_1BtaPksVomchz1zDzJ09qSDFx5AU,11251
+socketsecurity/core/glitlab.py,sha256=SVfSDIbctTU5pOP_K_-YQAz8lIapZ3soFgkzdIKzajo,11208
+socketsecurity/core/issues.py,sha256=_AsYSTV-Fu4_o0fmxRV7JMZGQKyyaeN8mIvv64szwQ8,67547
+socketsecurity/core/licenses.py,sha256=VIpK01sRmKy_94ulojgWJHS2K8xo9YnW5KoJYhn8aaI,17442610
+socketsecurity/core/messages.py,sha256=O_1ik6vQKcajmio4IPT3saZYMzsuibsxx38Mw_WFFK0,11834
+socketsecurity-0.0.51.dist-info/METADATA,sha256=stgHunNLgu57bUmht5IeuS5uGAkGYdDttyX1mpdGm-g,771
+socketsecurity-0.0.51.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+socketsecurity-0.0.51.dist-info/entry_points.txt,sha256=6RvItr40ejlapwQ9_dS5U5iuaBDvp8lIL2NZOn1xSPM,59
+socketsecurity-0.0.51.dist-info/top_level.txt,sha256=ukMzHpGy5wQ9XCd7OzP2Y2iBz3zd9mB7RtNzj5wf6c4,15
+socketsecurity-0.0.51.dist-info/RECORD,,
