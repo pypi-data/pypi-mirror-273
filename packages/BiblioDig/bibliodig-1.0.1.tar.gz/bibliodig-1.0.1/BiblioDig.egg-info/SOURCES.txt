@@ -1,0 +1,10 @@
+README.md
+setup.py
+BiblioDig.egg-info/PKG-INFO
+BiblioDig.egg-info/SOURCES.txt
+BiblioDig.egg-info/dependency_links.txt
+BiblioDig.egg-info/requires.txt
+BiblioDig.egg-info/top_level.txt
+BiblioDig_Py/__init__.py
+BiblioDig_Py/books.csv
+BiblioDig_Py/buscador_libros.py
