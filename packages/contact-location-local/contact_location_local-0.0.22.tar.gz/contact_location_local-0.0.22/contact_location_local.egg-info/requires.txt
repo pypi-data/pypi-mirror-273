@@ -1,0 +1,8 @@
+pycountry>=23.12.11
+phonenumbers>=8.13.30
+database-mysql-local>=0.0.290
+group-local>=0.0.17
+language-remote>=0.0.20
+location-local>=0.0.104
+logger-local>=0.0.135
+user-context-remote>=0.0.57
