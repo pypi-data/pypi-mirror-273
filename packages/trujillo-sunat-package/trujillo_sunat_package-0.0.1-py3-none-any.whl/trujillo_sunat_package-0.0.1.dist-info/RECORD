@@ -1,0 +1,9 @@
+trujillo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trujillo/sunat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trujillo/sunat/token.py,sha256=6BwgM1_nRTGgYGnnbLvxU3xuf-C0fUNRhSD8XAUlb0g,1446
+trujillo/sunat/validate.py,sha256=m7L1W0CQqqzREIrnkhHWiIQDntHu_i5gxFSFJfEA21Q,1529
+trujillo_sunat_package-0.0.1.dist-info/LICENCE,sha256=xoWC0PAQjwvuGQoVgQr3QKKGWdaIUAuqEqfjFakdWWw,42
+trujillo_sunat_package-0.0.1.dist-info/METADATA,sha256=D42ozkdspJFkebBSevv31LV4xFTdionXKbjgEhML83A,1540
+trujillo_sunat_package-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+trujillo_sunat_package-0.0.1.dist-info/top_level.txt,sha256=2J8v-_RWCboSA4Jjv0OUrh5QZ_vVMZEK5d_6yxGSMEg,9
+trujillo_sunat_package-0.0.1.dist-info/RECORD,,
