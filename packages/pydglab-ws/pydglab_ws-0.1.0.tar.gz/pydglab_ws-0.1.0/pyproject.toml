@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "pydglab-ws"
+version = "0.1.0"
+description = "一个通过 WebSocket 控制郊狼 DG-Lab 的 Python 库"
+authors = ["Ljzd-PRO <ljzd@office.ljzd-pro.asia>"]
+readme = "README.md"
+homepage = "https://pydglab-ws.readthedocs.io"
+repository = "https://github.com/Ljzd-PRO/PyDGLab-WS"
+documentation = "https://pydglab-ws.readthedocs.io"
+
+keywords = ["dg-lab", "dg-lab-v3", "websocket", "library", "os-independent"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pydantic = "^2.7.1"
+websockets = "^12.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.0"
+mkdocs-static-i18n = "^1.2.3"
+mkdocs-material = "^9.5.22"
+mkdocstrings = {version="^0.25.1", extras=["python"]}
+mike = "^2.1.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+pytest-cov = "^5.0.0"
+pytest-order = "^1.2.1"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.test]
+optional = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
