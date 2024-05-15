@@ -1,0 +1,3 @@
+[console_scripts]
+screenshotpath = screenshotpath.screenshotpath:main
+

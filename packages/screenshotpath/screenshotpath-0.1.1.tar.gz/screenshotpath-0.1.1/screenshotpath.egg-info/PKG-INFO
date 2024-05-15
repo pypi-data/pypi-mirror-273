@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: screenshotpath
+Version: 0.1.1
+Summary: A package to change macOS screenshot path
+Home-page: http://github.com/boiwantlearncode/screenshotpath
+Author: Isa Bin Mohamed Yamin
+Author-email: boiwantlearncode@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Screenshotpath
+
+Python package that changes your screenshot path on MacOS.
+
+### Usage
+
+`screenshotpath <PATH>`
+
