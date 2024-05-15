@@ -1,0 +1,2 @@
+[console_scripts]
+vardll = vardll.__main__:main
