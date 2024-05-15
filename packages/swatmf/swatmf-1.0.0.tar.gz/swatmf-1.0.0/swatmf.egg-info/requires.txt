@@ -1,0 +1,11 @@
+pandas
+numpy
+pyemu
+flopy
+scipy
+matplotlib
+openpyxl
+hydroeval
+tqdm
+termcolor
+pyshp
