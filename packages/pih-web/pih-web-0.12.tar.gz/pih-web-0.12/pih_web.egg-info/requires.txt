@@ -1,0 +1,5 @@
+ipih
+fastapi
+uvicorn
+python-multipart
+dicttoxml
