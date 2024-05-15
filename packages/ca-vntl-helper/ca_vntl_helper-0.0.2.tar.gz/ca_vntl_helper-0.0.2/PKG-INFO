@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ca-vntl-helper
+Version: 0.0.2
+Summary: Some useful functions, classes to help work. Create by Van of Techlab CA team.
+Author-email: Bui Ngoc Huy Van <bui_ngoc_huy_van@ca-adv.co.jp>
+Project-URL: Homepage, https://github.com/vanbnh/ca-vntl-helper
+Project-URL: Issues, https://github.com/vanbnh/ca-vntl-helper/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
