@@ -1,0 +1,14 @@
+pigeonsai/__init__.py,sha256=xShkXyfdtdv_XY7JrDOGWWdOd4ru9A34APbgohpFmvs,479
+pigeonsai/_client.py,sha256=a3AdgjQJmECJ2oWXTqvMOdhNed3KZq-I6Jle11wG0Kc,3913
+pigeonsai/_constants.py,sha256=aHJjb2jukX9sTlZxz_Ax0JVfrRxsw0P_CancryHG4vs,48
+pigeonsai/_exceptions.py,sha256=epPXsLiDqAnOJhqlaxlMA00OWVYCsXTKb6ODZCOXi9o,3288
+pigeonsai/_utils/__init__.py,sha256=l_JJqQ-sLdjR3ONiGvGO0XdYsKiZQ8O6QxLUE4VgCIs,39
+pigeonsai/_utils/_utils.py,sha256=4lL9ofOwE9NKdpjr1_ejolxQAVC54oB6zxRP_Da3xXM,136
+pigeonsai/resources/__init__.py,sha256=KW9iicjR3yQYBTkERPLjWDiSTeKEXDgEa8R3ptvDgiE,148
+pigeonsai/resources/anomaly_detector.py,sha256=02urSYCy5Tl0sn8Z1qryMtJROmnm9Cs-2yo5ovV0xck,181
+pigeonsai/resources/data_connector.py,sha256=YHAFLmQ1TkQpbPUdf3V2VsU1DR4E0z_Cmo3sgc8Ke7U,10791
+pigeonsai/resources/recommender.py,sha256=rCOSX7vZuq3OIrT5OWOtAF-w4AQ3LVjdIvyjtAx6qVU,11765
+pigeonsai-1.0.8.dist-info/METADATA,sha256=5Po4tUwzeWzpCutazVJvSswKVHbT0wYDw48VcQWqxh8,1884
+pigeonsai-1.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pigeonsai-1.0.8.dist-info/top_level.txt,sha256=OfW94Hfok8beDWbD2HDjhfM-QF3e4Z2eFxQBbgbaJ5A,10
+pigeonsai-1.0.8.dist-info/RECORD,,
