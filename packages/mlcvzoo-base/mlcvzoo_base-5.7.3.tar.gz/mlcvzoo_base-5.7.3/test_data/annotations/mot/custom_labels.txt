@@ -1,0 +1,10 @@
+Person_Pedestrian
+Person_PersonOnVehicle
+Vehicle_Car
+Vehicle_Bicycle
+Vehicle_Motorbike
+Vehicle_NonMotorVehicle
+Person_Staticperson
+Other_Distractor
+Other_Occluder
+Other_Reflection

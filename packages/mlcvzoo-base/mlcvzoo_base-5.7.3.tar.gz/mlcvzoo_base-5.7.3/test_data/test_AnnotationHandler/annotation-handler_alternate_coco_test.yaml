@@ -1,0 +1,5 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml"]
+
+coco_input_data:
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco_alternate.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"

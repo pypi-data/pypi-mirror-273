@@ -1,0 +1,44 @@
+[[section-system-scope-and-context]]
+
+== System Scope and Context
+
+This section describes the environment and scope of the MLCVZoo.
+It states its users, and which other systems it interacts with.
+It thereby specifies the external interface (domain interfaces and technical interfaces to communication partners).
+The MLCVZoo is a black box here.
+
+=== Business Context
+
+The MLCVZoo, by its nature as a software library and development kit, does not exist in a specific business context as such on its own. Instead, an actual business context is given by the application using or embedding the MLCVZoo.
+
+Generally speaking, the only element of a business context to the MLCVZoo itself is such an application using the MLCVZoo to perform its task, whatever that application might be.
+
+=== Technical Context
+
+In contrast to the more abstract business context, here the technical view is described, e.g. different technical channels, protocols or interfaces used to realize the communication with the objects from the business context.
+Actual instances of building blocks communicate in the technical context.
+
+The following technical interfaces link the MLCVZoo to its environment:
+
+[cols="4",options="header"]
+|===
+|Interface
+|Inputs
+|Outputs
+|Protocol
+
+|Python API
+|Python datastructures
+|Python datastructures
+|API - direct function calls
+
+|Configuration
+|YAML
+|YAML
+|File I/O
+
+|Configuration
+|Key-Value string tuples
+|-
+|Environment variables
+|===

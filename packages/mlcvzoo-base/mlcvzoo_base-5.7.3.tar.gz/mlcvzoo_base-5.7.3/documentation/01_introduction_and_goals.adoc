@@ -1,0 +1,124 @@
+[[section-introduction]]
+
+== Introduction
+
+=== Silicon Economy
+
+****
+In a Silicon Economy, services are executed and used via platforms.
+A Silicon Economy Platform consists of five different kinds of major components, namely one or more SE Services, one or more IDS connectors, a Logistics Broker, an optional IoT Broker and an optional Blockchain Full-Node.
+This platform is the environment of SE Services, its location does not matter (e.g., IT environment of a company, a cloud environment, etc.).
+
+SE Services are professional (logistics) services, consisting of IT and/or physical services.
+They are part of a functional (logistics) process and can be linked and subsequently orchestrated in the sense of that process.
+
+.SE Big Picture
+image::images/01_se_big_picture.png[SE Big Picture]
+
+Furthermore, SE Services can be integrated into existing structures, and must be able to be executed and monitored.
+SE Services are documented.
+SE Services must be able to be booked and accounted for and have a (technical) description that includes all information about the function of the service and the conditions of use.
+Finally, SE Services must be able to be supplied with data and must be able to be called via the IDS.
+****
+
+
+=== Machine Learning Toolbox as a Silicon Economy Platform Component
+Artificial Intelligence and especially Machine Learning (ML) are important technologies for SE Services. They allow to map more complex interrelationships than traditional methods and make use of patterns in data. The ML Toolbox supports the development of ML software by providing tools for frequently occurring tasks in the development process of every ML application. It is structured by process steps of the project (data generation, preprocessing, modeling, postprocessing) as well as the area of ML (e.g., computer vision, natural language processing, time series prediction) the tool supports.
+
+The following diagram shows the structure and components of the ML Toolbox:
+
+.ML Toolbox Big Picture
+image::images/01_ml_toolbox_big_picture.png[ML Toolbox Big Picture]
+
+
+The MLCVZoo (Machine Learning Computer Vision Zoo) is one of the first components to be added to the ML Toolbox. It supports the development of computer vision applications by integrating models from various frameworks via a unifying API. By doing so, it eliminates the effort of integrating frameworks individually with every new computer vision project, and allows to compare and evaluate different models for a computer vision task.
+In the diagram below, the components and internal structure of the MLCVZoo can be seen. It is inspired by the well-known https://www.semanticscholar.org/paper/CRISP-DM-1.0%3A-Step-by-step-data-mining-guide-Chapman-Clinton/54bad20bbc7938991bf34f86dde0babfbd2d5a72[_CRISP-DM - **CR**oss **I**ndustry **S**tandard **P**rocess for **D**ata **M**ining_]. Figure <<mlcvzoo-big-picture-05, 1>> states the main phases of the process and where they align with the MLCVZoo. More details about the structure are given in chapter <<Building Block View, 5>>.
+
+[#mlcvzoo-big-picture-01]
+.MLCVZoo Big Picture
+image::images/05_mlcvzoo-big-picture.jpg[id=mlcvzoo-big-picture-01]
+
+
+
+=== Requirements Overview
+
+From an end users’ point of view, the MLCVZoo component of the ML Toolbox makes the development of computer vision applications simpler and more efficient.
+The requirements for the MLCVZoo as a component of the ML Toolbox are summarized in the following:
+
+. What is the MLCVZoo component of the ML Toolbox?
+.. A tool within the ML Toolbox component of a Silicon Economy Platform to support the development of computer vision SE Services
+.. An SDK for simplifying the usage of various (machine learning driven) computer vision algorithms
+
+. Essential Features
+.. Supporting data preparation, modeling and evaluation of models for the computer vision tasks
+... classification
+... object detection
+... optical character recognition (text detection and text recognition)
+.. Enabling training and inference of models from various frameworks via a consistent API
+.. Allowing to track metrics of training and test runs to compare suitability of models for a computer vision task
+
+. Functional requirements
+.. The MLCVZoo component defines API classes that wrap different computer vision models for the tasks regardless of the framework
+.. The MLCVZoo component understands and generates labels in formats (see: chapter <<Building Blocks - Level 3, 5.4>>)
+
+
+=== Quality Goals
+
+****
+The following table describes the top five quality goals of the MLCVZoo as a component of the ML Toolbox classified by ISO/IEC 9126-1 characteristics.
+The order of goals gives a rough idea of their importance.
+****
+
+[cols="1e,2e",options="header"]
+|===
+|Quality Goal
+|Motivation/Description
+
+|Reliability (Robustness)
+|The MLCVZoo must be able to wrap computer vision algorithms from various frameworks via consistent API classes regardless of their release.
+
+|Efficiency (Scalability)
+|The MLCVZoo must be able to include new computer vision algorithms in the same way that the current ones are.
+
+|Usability (Simplicity)
+|The MLCVZoo must simplify the development of computer vision applications.
+
+|Functionality (Completeness)
+|The MLCVZoo must support a complete process of modeling and evaluating computer vision models from various frameworks.
+
+|Usability (Maintainability)
+|The MLCVZoo must be easily maintainable.
+
+
+|===
+
+
+=== Stakeholders
+
+[role="arc42help"]
+****
+The following table lists the most important stakeholders of the MLCVZoo (person, roles and/or organizations) and their respective expectations, goals and intentions.
+****
+
+[cols="4",options="header"]
+|===
+|Role/Name
+|Contact
+|Expectations
+|Example
+
+|SE Service User
+|An SE Service user, who requires information that can be extracted from images
+|Needs an SE Service that uses computer vision algorithms
+|A warehouse manager needs to track items in the warehouse via cameras in the system.
+
+|SE Service Owner
+|Offers an SE Service that provides information that can be extracted from images
+|Wants the computer vision service to be developed in an efficient and simple way
+|
+
+|Service Developer
+|Develops a computer vision SE Service
+|Needs to evaluate computer vision algorithms from various frameworks in an efficient and simple way, to find the one that works best for the task
+|
+|===

@@ -1,0 +1,4 @@
+artifact_location: "PROJECT_ROOT_DIR/test_output/evaluation/test_mlflow/artifacts"
+
+mlflow_file_config:
+  logging_dir: "PROJECT_ROOT_DIR/test_output/evaluation/test_mlflow/mlflow_logs/"

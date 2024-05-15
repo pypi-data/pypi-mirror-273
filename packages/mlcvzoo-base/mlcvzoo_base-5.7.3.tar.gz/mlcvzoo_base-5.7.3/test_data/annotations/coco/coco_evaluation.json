@@ -1,0 +1,126 @@
+{
+  "licenses": [
+    {
+      "name": "",
+      "id": 0,
+      "url": ""
+    }
+  ],
+  "info": {
+    "contributor": "",
+    "date_created": "",
+    "description": "",
+    "url": "",
+    "version": "",
+    "year": ""
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "person",
+      "supercategory": ""
+    },
+    {
+      "id": 2,
+      "name": "car",
+      "supercategory": ""
+    },
+    {
+      "id": 3,
+      "name": "truck",
+      "supercategory": ""
+    },
+    {
+      "id": 4,
+      "name": "LP",
+      "supercategory": ""
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "width": 500,
+      "height": 375,
+      "file_name": "truck.jpg",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 2,
+      "width": 353,
+      "height": 500,
+      "file_name": "person.jpg",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    },
+    {
+      "id": 3,
+      "width": 500,
+      "height": 406,
+      "file_name": "cars.jpg",
+      "license": 0,
+      "flickr_url": "",
+      "coco_url": "",
+      "date_captured": 0
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 1,
+      "category_id": 1,
+      "segmentation": [],
+      "area": 9898.0,
+      "bbox": [
+        76.65,
+        265.78,
+        148.0,
+        87.5
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "occluded": false,
+        "difficult": true
+      }
+    },
+    {
+      "id": 2,
+      "image_id": 2,
+      "category_id": 2,
+      "segmentation": [],
+      "area": 45.0,
+      "bbox": [
+        159.98,
+        386.58,
+        8.8,
+        5.2
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "content": "test_LP_42",
+        "occluded": false
+      }
+    },
+    {
+      "id": 3,
+      "image_id": 3,
+      "category_id": 3,
+      "segmentation": [],
+      "area": 9906.0,
+      "bbox": [
+        73.99,
+        252.74,
+        148.0,
+        87.5
+      ],
+      "iscrowd": 0,
+      "attributes": {
+        "occluded": false
+      }
+    }
+  ]
+}

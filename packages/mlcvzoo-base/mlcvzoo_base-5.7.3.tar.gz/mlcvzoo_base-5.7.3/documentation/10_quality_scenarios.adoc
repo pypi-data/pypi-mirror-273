@@ -1,0 +1,84 @@
+[[section-quality-scenarios]]
+
+== Quality Requirements
+
+[quote, Software Quality, 'according to link:https://en.wikipedia.org/wiki/ISO/IEC_9126[ISO/IEC 9126; ISO 25010]']
+Quality is the totality of characteristics and values of a software product that relate to its ability to meet stated or implied requirements.
+
+The most important quality goals have already been described in <<Quality Goals>>.
+This section contains all quality requirements as quality tree with scenarios.
+We also capture quality requirements with lesser priority, which will not create high risks when they are not fully achieved.
+The quality scenarios depict the fundamental quality goals as well as other required quality properties.
+They allow the evaluation of decision alternatives.
+
+=== Quality Tree
+
+We use a tabular form of the quality tree.
+The following table lists the classifications (as https://en.wikipedia.org/wiki/ISO/IEC_9126[ISO/IEC
+9126-1] characteristics and sub-characteristics with some _additional terms_) and the methods used to improve and to ensure software quality.
+
+[cols="1,1,1",options="header"]
+|===
+|Quality Goal (ISO 9126-1)
+|Requirement (for Quality Improvement)
+|Test of Requirement (Quality Assurance)
+
+a|*Maintainability*
+
+(Testability, Stability,Analyzability, Changeability)
+a|* The MLCVZoo must be compatible to and support running models in all ML-frameworks it is intended to support
+* The MLCVZoo components are designed and implemented stateless
+* On restart of the application using the MLCVZoo, the current configuration is loaded from file
+a|* Integration tests
+* Test cases specifically for all supported ML-frameworks
+* CI/CD pipeline, automatic compliance testing, code review, merge requests
+
+a|*Efficiency*
+
+(Time behaviour, Resource utilization, _Scalability_)
+a|* All MLCVZoo components can be run multiple times in parallel on the same machine
+* No or negligible overhead versus integrating the supported ML-Frameworks directly
+a|* Load and performance indicators during tests on CI and test machines
+
+a|*Portability*
+
+(Adaptability, Installability, Co-existence, Replaceability)
+a|* Usually, but depending on the ML-Frameworks used, the MLCVZoo has a hard dependency on NVIDIA CUDA
+* The MLCVZoo is intended to be used on a large scale of different devices including embedded systems typically not x86 based
+a|* Integration tests
+* Portability tests - Tests are run in containers which can be executed on different GPU/CPU architectures
+
+a|*Usability*
+
+(Understandability, Learnability, Operability, Attractiveness, _Simplicity_)
+a|* The MLCVZoo is an infrastructure component / software library / SDK that runs without a human user based on the current configuration
+* Complete arc42 compliant software documentation exists
+* Detailed documentation of public interfaces with PyDoc
+* The amount of code and development time needed to integrate and run a specific ML-model in downstream projects is substantially lower versus integrating the framework in question directly
+* MLCVZoo configuration is self-explanatory for domain experts or easy to understand
+a| * Document review
+* API review
+* Integrate solutions and improvements based on findings during downstream project development
+* Configuration items use domain specific terminology
+
+a|*Reliability*
+
+(Maturity, Fault tolerance/_Robustness_, Recoverability)
+a|
+* Appropriate unit tests exist, especially for error cases and boundary values
+* The architecture is designed such that unit tests for specific supported ML-Frameworks can be skipped if necessary
+a|* Unit tests and specific plausibility tests for each support ML-Framework
+* Load and performance tests (over time)
+* Using SonarQube during development and during the build process ensures a code coverage of at least 80%
+
+a|*Functionality*
+
+(Suitability, Accuracy, Interoperability, Security, Completeness)
+a|* All functional requirements are fulfilled and implemented accurately and secure
+* Complete arc42 documentation, Jira tickets,
+* The code is documented completely using PyDoc conventions
+a|* Unit and integration tests
+* High test coverage as a safety net
+* Document Review
+* Code Review
+|===

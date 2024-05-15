@@ -1,0 +1,6 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml"]
+
+label_studio_input_data:
+  - input_image_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task/"
+    input_annotation_dir: "PROJECT_ROOT_DIR/test_data/annotations/label_studio_s3/dummy_task"
+    image_format: ".jpg|.jpeg"

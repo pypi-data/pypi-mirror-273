@@ -1,0 +1,8 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_mot.yaml"]
+
+mot_input_data:
+- annotation_path: "PROJECT_ROOT_DIR/test_data/annotations/mot/mot_predictions_2020.txt"
+  image_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  image_format: ".jpg"
+  mot_format: "mot20"
+  ground_truth: true

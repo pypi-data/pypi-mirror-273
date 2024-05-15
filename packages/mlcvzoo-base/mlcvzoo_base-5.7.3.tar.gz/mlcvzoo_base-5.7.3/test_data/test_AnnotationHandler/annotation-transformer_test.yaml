@@ -1,0 +1,17 @@
+target_format:
+  input_target_format_file: "PROJECT_ROOT_DIR/test_data/annotations/cvat/cvat-for-images-annotations.xml"
+
+
+annotation_handler_config_path: "PROJECT_ROOT_DIR/test_data/test_AnnotationHandler/annotation-handler_cvat_test.yaml"
+
+annotation_handler_config:
+  class_mapping: !join_object [ "class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml" ]
+
+  cvat_input_data:
+    - input_path: "PROJECT_ROOT_DIR/test_data/annotations/cvat/cvat-for-images-annotations.xml"
+      input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+      use_difficult: False
+
+output_data:
+  output_dir: ""
+  output_filename: ""

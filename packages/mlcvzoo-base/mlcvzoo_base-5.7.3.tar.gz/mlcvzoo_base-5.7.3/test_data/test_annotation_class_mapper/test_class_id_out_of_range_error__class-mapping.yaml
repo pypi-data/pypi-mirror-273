@@ -1,0 +1,7 @@
+mapping: []
+
+model_classes:
+  - class_name: "person"
+    class_id: 11
+
+number_model_classes: 10

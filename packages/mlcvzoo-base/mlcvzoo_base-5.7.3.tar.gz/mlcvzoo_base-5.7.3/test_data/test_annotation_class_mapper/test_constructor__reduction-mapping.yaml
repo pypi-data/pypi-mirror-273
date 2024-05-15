@@ -1,0 +1,71 @@
+# NOTES:
+# - output_class_id are freely assignable but have to be unique
+# - output_class_name are freely assignable but have to be unique
+# - model_class_ids and model_class_names are mutually exclusive
+# - null parameter can be omitted
+
+mapping:
+# Implicit from class-mapping
+#- output_class_name: "person"
+#  output_class_id: [0]
+#  model_class_ids: [0]
+
+# Aggregation of truck and car to vehicle
+- output_class_name: "vehicle"
+  output_class_id: 1
+  model_class_ids: [1, 2]
+#  model_class_names: null
+
+# Aggregation of banana and cherry  to fruit
+- output_class_name: "fruit"
+  output_class_id: 10
+#  model_class_ids: null
+  model_class_names: ["banana", "cherry"]
+
+# Redefinition of lion
+- output_class_name: "animal"
+  output_class_id: 15
+  model_class_ids: [3]
+
+# Redefinition of lion
+- output_class_name: "cat"
+  output_class_id: 16
+  model_class_ids: [3]
+
+# ===============================
+# Error Cases:
+#
+## Duplicate reduction for model_class_id 3
+#- output_class_name: "cat"
+#  output_class_id: 25
+#  model_class_ids: [3]
+#
+#
+## Duplicate with output_class_name 'fruit'
+#- output_class_name: "fruit"  #==> output_class_name has to be unique
+#  output_class_id: 4
+#  model_class_ids: [4]
+#
+## Duplicate with output_class_name 'fruit'
+#- output_class_name: "apple"
+#  output_class_id: 10  #==> output_class_id has to be unique
+#  model_class_ids: [4]
+#
+#
+## 'apple' is not part of the class names that are listed in the
+## model_classes attribute of the class_mapping
+#- output_class_name: "fruit"
+#  output_class_id: 10
+#  model_class_ids: [11]
+#
+## Duplicate reduction for model_class_name "lion"
+#- output_class_name: "cat"
+#  output_class_id: 25
+#  model_class_names: ["lion"]
+#
+#
+## 'apple' is not part of the class names that are listed in the
+## model_classes attribute of the class_mapping
+#- output_class_name: "fruit"
+#  output_class_id: 10
+#  model_class_names: ["apple"]

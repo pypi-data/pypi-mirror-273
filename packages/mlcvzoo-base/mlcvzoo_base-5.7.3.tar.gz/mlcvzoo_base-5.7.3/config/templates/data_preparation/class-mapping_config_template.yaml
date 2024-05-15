@@ -1,0 +1,11 @@
+mapping:
+  - input_class_name: "INPUT_CLASS_NAME"
+    output_class_name: "OUTPUT_CLASS_NAME"
+
+model_classes:
+  - class_name: "CLASS_NAME_0"
+    class_id: 0
+  - class_name: "CLASS_NAME_1"
+    class_id: 1
+
+number_model_classes: 2

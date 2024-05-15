@@ -1,0 +1,7 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default.yaml"]
+
+pascal_voc_input_data:
+- input_image_dir: "PROJECT_ROOT_DIR/test_data/images"
+  input_xml_dir: "PROJECT_ROOT_DIR/test_data/annotations/pascal_voc_all_attributes"
+  input_sub_dirs: []
+  image_format: ".jpg"

@@ -1,0 +1,477 @@
+[[section-building-block-view]]
+
+== Building Block View
+
+The building block view is a static and hierarchical decomposition of the system into building blocks and their relationships.
+It is a collection of black box and white box descriptions for all important components.
+Building blocks may be modules, components, subsystems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, etc.
+
+In blackbox view, only the interface of the component is visible, not its internals.
+However, for interface specifications including all method signatures and their descriptions we refer to the PyDoc available on request.
+Only other kinds of interfaces are described here.
+This is a simplification of arc42 (which requires short description of interfaces), to avoid redundancy and inconsistencies, and to reduce documentation efforts.
+
+=== Overview
+
+The MLCVZoo is an SDK for simplifying the usage of various (machine learning driven) computer vision algorithms. This is done by defining API classes that wrap the functionality of a specific algorithm type. For now, the focus mainly lies on the fields:
+
+* (Image) Classification
+* Object Detection
+* Optical Character Recognition (Text Recognition and Text Detection).
+
+The structure of the MLCVZoo is inspired by the well-known https://www.semanticscholar.org/paper/CRISP-DM-1.0%3A-Step-by-step-data-mining-guide-Chapman-Clinton/54bad20bbc7938991bf34f86dde0babfbd2d5a72[_CRISP-DM - **CR**oss **I**ndustry **S**tandard **P**rocess for **D**ata **M**ining_]. Figure <<mlcvzoo-big-picture-05>> states the main phases of the process and where they align with the MLCVZoo. Furthermore, a broad overview of the MLCVZoo components and their connection to external components is given. Details of CRISP-DM can be looked up in the original document that is available https://www.semanticscholar.org/paper/CRISP-DM-1.0%3A-Step-by-step-data-mining-guide-Chapman-Clinton/54bad20bbc7938991bf34f86dde0babfbd2d5a72[here]. As can be seen in the figure, the MLCVZoo mainly focuses on the phases _Data Preparation_, _Modeling_ and _Evaluation_. The main data needed for training the algorithms is provided by an instance of https://github.com/openvinotoolkit/cvat[_CVAT - **C**omputer **V**ision **A**nnotation **T**ool_]. It is a web application for annotating images for any kind of computer vision related task, e.g. tagging or drawing bounding boxes, polygons or keypoints. For more details have a look at their https://openvinotoolkit.github.io/cvat/docs/[documentation]. As stated before, the MLCVZoo wraps existing frameworks, which is demonstrated by the overlapping boxes between the MLCVZoo and the external section. Overall, the MLCVZoo provides an ecosystem of algorithms that can be put together in a pipeline, regardless of the framework that is used for their implementation. To ensure this, every model wrapper implementation (_mlcvzoo__*) uses the base classes and interfaces that are defined in *mlcvzoo_base*
+package.
+
+
+[#mlcvzoo-big-picture-05]
+.MLCVZoo Big Picture
+image::images/05_mlcvzoo-big-picture.jpg[id=mlcvzoo-big-picture-05]
+
+//------------------------------------------------------------------------------
+//Chapman, Pete ; Clinton, Julian ; Kerber, Randy ; Khabaza, Thomas ; Rein-
+//artz, Thomas ; Shearer, Colin ; Wirth, Rudiger: CRISP-DM 1.0 Step-by-step
+//data mining guide / The CRISP-DM consortium. 2000. – Forschungsbericht
+//
+//https://www.semanticscholar.org/paper/CRISP-DM-1.0%3A-Step-by-step-data-mining-guide-Chapman-Clinton/54bad20bbc7938991bf34f86dde0babfbd2d5a72
+//------------------------------------------------------------------------------
+
+=== Building Blocks - Level 1
+
+==== mlcvzoo_base module (Blackbox)
+
+All model wrapper implementations (_mlcvzoo_*) are based on the *mlcvzoo_base* module.
+Besides defining the MLCVZoo API, it includes the handling of data structures and the evaluation /
+calculation of metrics.
+
+=== Building Blocks - Level 2
+
+In level 2, the black boxes of level 1 become white boxes.
+We look into each component in detail.
+
+==== mlcvzoo_base module (Whitebox)
+
+[#mlcvzoo-base-whitebox]
+.Overview of the mlcvzoo_base packages as Whitebox View
+image::images/05_mlcvzoo-base-package-structure.png[image]
+
+There are the following components with its responsibilities:
+
+[cols="2",options="header"]
+|===
+|Name
+|Responsibility / Description
+
+|api
+|Main data structures, abstract classes and interfaces that define the SDK
+
+|configuration
+|Contains all global configuration objects
+
+|data_preparation
+|Contains all components that are responsible for preparing/preprocessing the input and output data for the model inference and training
+
+|evaluation
+|Central package for defining algorithm specific evaluations
+
+|logger
+|Contains all utility classes that are needed for python logging
+
+|metrics
+|Contains packages that enable the ability to log algorithm and runtime specific metrics
+
+|models
+|Component for defining generic model handling (ModelRegistry) and providing simulation models
+
+|third_party
+|Central package to encapsulate code that is taken from third party frameworks
+
+|tools
+|Gathering of command line tools
+
+|utils
+|Central package that holds utility functions that are used across the MLCVZoo
+
+|===
+
+In the following, for each component a brief overview in form of a blackbox view is given. For more details see <<Building Blocks - Level 3, Level 3>> (whitebox views of the components).
+
+===== mlcvzoo_base.api package (Blackbox)
+
+Here the main data structures, abstract classes and interfaces are defined. They form the MLCVZoo api. The api provides:
+
+* Definitions of data structures that are essential to the MLCVZoo and commonly used across MLCVZoo models. These data structures describe, for example, the data that is provided by the predict function of a certain model (algorithm type).
+* Abstract classes that encapsulate the behavior of a certain algorithm type
+* Abstract classes that define the base structure for parsing and writing annotation data
+* Interfaces / abstract classes that define additional features that can be provided by certain algorithm implementations
+
+
+===== mlcvzoo_base.models package (Blackbox)
+
+Central package that holds all wrappers of specific algorithm implementations. As stated before, we focus on the fields:
+
+* (Image) Classification
+* Object Detection
+* OCR (Text Detection / Text Recognition)
+
+We therefore structure the package according to their algorithm type. Furthermore, each algorithm type is represented by an abstract class in the MLCVZoo api. For more details about these classes have a look at section <<mlcvzoo_base.api package (Whitebox)>>.
+
+
+===== mlcvzoo_base.data_preparation package (Blackbox)
+
+Contains all packages that are responsible for preparing/preprocessing the input and output data for the model inference and training. It provides implementations for a variety of annotation formats, that conform to the api definitions. The basis is the _BaseAnnotation_ class of the MLCVZoo api. It is used to store all relevant meta information of an image. We provide classes for:
+
+* Building a single annotation
+* Parsing annotations from a given file / file-tree
+* Writing annotations to a file / file-tree
+
+The parsing and writing of annotations is focused on the annotation formats that can be used in CVAT (see section: <<Overview>>). For more details have a look at the chapter <<mlcvzoo_base.data_preparation.annotation_builder package (Whitebox)>>, <<mlcvzoo_base.data_preparation.annotation_parser package (Whitebox)>> and <<mlcvzoo_base.data_preparation.annotation_writer package (Whitebox)>>.
+
+===== mlcvzoo_base simple packages
+
+Some packages are either currently in a concept stage of development or are simple enough to not warrant a dedicated whitebox view. Therefore this section is used to give a brief overview.
+
+====== mlcvzoo_base.configuration package
+
+Contains all configuration classes that are important to the whole MLCVZoo..
+
+====== mlcvzoo_base.evaluation package
+
+Central package for defining algorithm specific evaluations. For now, we only provide a component that allows to evaluate algorithms from the field of object detection.
+
+====== mlcvzoo_base.metrics package
+
+Contains packages that enable the ability to log algorithm and runtime specific metrics. For now, we focus on using https://mlflow.org/[MLflow]. Nevertheless, https://www.tensorflow.org/tensorboard[TensorBoard] is also used in some parts of the code.
+
+====== mlcvzoo_base.third_party package
+
+Central package to encapsulate code that is taken from third party frameworks. In general, we want to avoid having copy-code in our project. Therefore, we only make use of this, when the alternative is to onboard extra dependencies, which are not needed anywhere else in the MLCVZoo. This is important since dependency management is a crucial step, and they should be kept as limited as possible.
+
+====== mlcvzoo_base.tools package
+
+Gathering of utility command line tools.
+
+====== mlcvzoo_base.utils package
+
+Central package that holds utility functions that are used across the MLCVZoo.
+
+
+
+
+
+
+
+=== Building Blocks - Level 3
+
+In level 3, the black boxes of level 2 become white boxes.
+We look into each component in detail.
+
+==== mlcvzoo_base.api package (Whitebox)
+
+This section describes the api package architecture and implementation.
+
+[#mlcvzoo-base-whitebox-api]
+.Overview of the mlcvzoo_base.api packages as Whitebox View
+image::images/05_mlcvzoo-base-package-structure-api.png[]
+
+|===
+|Component |Description
+
+|data
+|Definition of the main data structures that are consumed and provided by the models living in the MLCVZoo
+
+|configuration
+|Definition of the main configuration classes of the api
+
+|model
+|Definition of the abstract super classes that should be used when writing wrappers for specific algorithm implementations
+
+|interfaces
+|Definition of interfaces / abstract classes that define additional features of mlcvzoo models.
+
+|net
+|Definition of an abstract base class which can be used to provide some overall interface methods that are shared across different types of _neural network_ implementations (e.g. https://www.tensorflow.org/guide/keras/functional[Tensorflow Functional] or https://pytorch.org/docs/stable/generated/torch.nn.Module.html[PyTorch Module])
+
+|structs
+|Module for enumerating options of runtimes a model can potentially be converted to.
+
+|===
+
+
+===== mlcvzoo_base.api.model
+
+[[mlcvzoo-uml-api-models]]
+.mlcvzoo_base API models Overview
+image::images/05_mlcvzoo-uml-api-model.png[]
+
+In the *model* package, the abstract super classes that should be used when writing wrappers for specific algorithm implementations are defined. As stated before, the MLCVZoo focuses on providing wrappers for frameworks of the following computer vision research topics:
+
+- (Image) Classification
+- Object Detection
+- OCR (Text Detection and Text Recognition)
+
+
+Each research field is represented by its own abstract class (model) in the api. These classes should be used as super class when implementing wrapper classes. Figure <<mlcvzoo-uml-api-models>> gives an overview of the classes as UML diagram. Beside the model classes, some extra interfaces / abstract classes are specified. They define additional features that are available for certain types of algorithm implementations.
+
+The key role of a model is to predict an output, given an image (data_item). This is also associated with the term _inference_. The type of output is defined by the research field that is associated with the respective model. There are the following associations:
+
+|===
+^| Algorithm type ^| Description
+
+|Classification
+|A *ClassificationModel* takes an image and predicts a list of classes that are contained in the respective image, limited to the classes that are defined for the respective model
+
+|Object Detection
+|A *ObjectDetectionModel* takes an image and predicts a list of bounding boxes that are contained in the respective image, limited to the bounding boxes that represent one of the predefined classes for the respective model. These bounding boxes are rectangles that wrap the area in an image which is covered by one of the classes that are defined for a certain model.
+
+|Text Detection
+| A Text Detection model takes an image and predicts a list of polygons that are contained in the respective image. These polygons wrap the area in an image that contains any kind of text. Text Detection models are associated with the *SegmentationModel* of the MLCVZoo API.
+
+|Text Recognition
+|A Text Recognition model takes an image and predicts the text that is contained in the respective image. As remark: text recognition models are mainly run on crops of an image. The crop can be produced by utilizing the output of an Object Detection / Text Detection model. Text Recognition models are associated with the *OCRModel* of the MLCVZoo API.
+
+|===
+
+===== mlcvzoo_base.api.interfaces
+
+Besides predicting an output, a model can have additional features. In the following a brief overview of these features is given:
+
+* _Trainable_:
+
+- The term is associated with any model for which the term "training" can be applied and is implemented in the MLCVZoo. This usually means the training of a neural network.
+
+* _NetBased_:
+
+- The term is associated with any model that produces its predictions by utilizing a neural network. Typically, any neural network can store and restore its weights
+
+* _Classifiable_:
+
+- A model that inherits from the Classifiable interface states that its prediction
+  output is representing some kind of class instance. A class in this context means
+  real world instance like person, car, truck, cat, ... etc.
+
+
+[#mlcvzoo-uml-interfaces-models]
+.mlcvzoo_base API interfaces Overview
+image::images/05_mlcvzoo-uml-api-interfaces.png[]
+
+===== mlcvzoo_base.api.data package (Blackbox)
+
+[#mlcvzoo-uml-api-data]
+.MLCVZoo API data Overview
+image::images/05_mlcvzoo-uml-api-data.png[]
+
+In the *data* package, the main data structures that are consumed and provided by the models living in the MLCVZoo are defined. They are associated with the three major fields of algorithms in the MLCVZoo:
+
+- (Image) Classification => Classification
+- Object Detection => BoundingBox
+- Text Detection => Segmentation
+- Text Recognition => OCRPerception
+
+Figure <<mlcvzoo-uml-api-data>> gives an overview of the UML class diagram of these data structures.
+
+Different algorithms are predicting different data structures and therefore need to be trained on different data structures. Nevertheless, for one image several kinds of data structures can be stored. In the MLCVZoo this is associated with an _BaseAnnotation_. One BaseAnnotation object contains all the annotation data for one image. The algorithms themselves are responsible for extracting the data that is needed to train them. To read and write annotations, the builder pattern is used. The MLCVZoo provides several annotation formats that are all based on the abstract classes represented on the right-hand side of Figure <<mlcvzoo-uml-api-data>>. In the following a brief overview of these classes is given:
+
+* AnnotationBuilder
+
+- Responsible to build a single BaseAnnotation object for a given annotation format
+- Mainly utilized during the parsing of a whole annotation dataset
+
+* AnnotationParser
+
+- Responsible for parsing the annotations of a whole dataset
+
+* AnnotationWriter
+- Responsible for writing a given list of BaseAnnotation objects to a target dataset format
+
+As stated earlier, CVAT is used to perform the annotation process. Therefore, the parsing and writing of annotations is focused on the annotation formats that are provided by CVAT. The term dataset in this regard is associated with all images and annotations that are defined for one CVAT task.
+
+One key component is the *AnnotationClassMapper* that provides methods for translating class names of annotation files (CVAT classes) to model IDs and vice versa.
+
+==== mlcvzoo_base.data_preparation (Whitebox)
+
+This section describes the data_preparation package architecture and implementation. It mainly provides the classes that are relevant for handling any kind of (annotation) data that is needed to train the algorithms and process their prediction output.
+
+[#mlcvzoo-base-whitebox-data-preparation]
+.Overview of the mlcvzoo_base.data_preparation packages as Whitebox View
+image::images/05_mlcvzoo-base-package-structure-data-prepartion.png[]
+
+
+|===
+|Component |Description
+
+|annotation_builder
+|Package that stores all implementations of AnnotationBuilder subclasses for the different annotation formats. Provided annotation formats:
+
+- PASCAL VOC
+
+- COCO 1.0
+
+- CVAT XML 1.1
+
+- Custom csv
+
+- MOT
+
+|annotation_parser
+|Package that stores all implementations of AnnotationParser subclasses for the different annotation formats. Provided annotation formats:
+
+- PASCAL VOC (.xml)
+
+- COCO 1.0 (.json)
+
+- CVAT 1.1 (.xml)
+
+- MLCVZoo Custom (.csv)
+
+- MOT
+
+|annotation_writer
+|Package that stores all implementations of AnnotationWriter subclasses for the different annotation formats. Provided annotation formats:
+
+- PASCAL VOC (.xml in progress)
+
+- CVAT 1.1 (.xml)
+
+- Darknet (.txt)
+
+- MLCVZoo Custom (.csv)
+
+|cvat_annotation_handler
+|Packages which handles the up- and downloading of annotation files to CVAT via their commandline interface
+
+|AnnotationHandler
+|Central component that handles the parsing and writing of all implemented annotation formats in the mlcvzoo
+
+|custom_exceptions
+|Module for custom exceptions
+
+|structs
+|Module for enumerating options of formats
+
+|utils
+|Module for different utility operations during data preparation
+
+|===
+
+==== mlcvzoo_base.models (Whitebox)
+
+This section describes the models package architecture and implementation.
+
+[#mlcvzoo-base-whitebox-models]
+.Overview of the mlcvzoo_base.models packages as Whitebox View
+image::images/05_mlcvzoo-base-package-structure-models.png[]
+
+|===
+|Component |Description
+
+| read_from_file
+|Package that stores implementations of models which are simulating a real model by providing the prediction output based on data that has been read from files.
+
+|constants
+|Definition of model related constants.
+
+|model_registry
+|The ModelRegistry provides the possibility to instantiate any model of the MLCVZoo in a generic manner at runtime. It is a collection of all model constructors of the MLCVZoo. The heart is the _ModelConfig_ which is used to define the constructor type and the constructor parameters (as dict). By using the _ModelConfig_ in your application configuration you can configure a pipeline of models or exchange a specific model component just by adapting the configuration file. An example usage ca be found in chapter <<Tutorial>>.
+
+
+|===
+
+===== mlcvzoo_base.models.read_from_file package (Blackbox)
+
+Package that stores implementations of models which are simulating a real model by providing the prediction output based on data that has been read from files. The main functionality is provided by the ReadFromFileModel which can be used as fast Online detector. It takes an "AnnotationHandlerConfig" and parses all annotations based on this config into a datastructure. At prediction step it simply looks up the annotation based on the image-path information. The ReadFromFileModel is only a 'Model'. In order to become a model of a dedicated type like ClassificationModel or ObjectDetectionModel, the Subclasses ReadFromFileClassificationModel, ReadFromFileObjectDetectionModel and ReadFromFileSegmentationModel of the ReadFromFileModel inherit not only from the  ReadFromFileModel but also from the dedicated model class that is associated with the algorithm type.
+
+
+=== Building Blocks - Level 4
+
+We detail the blackbox components occurring on Level 2, which are developed within this project. We mainly focus on stating the implementation in the sub packages of the data_preparation and the models package.
+
+==== mlcvzoo_base.data_preparation.annotation_builder package (Whitebox)
+
+This section describes the data_preparation.annotation_builder package architecture and implementation.
+
+|===
+|Component |Description
+
+|coco_annotation_builder
+|Component that builds a single _BaseAnnotation_ object based on the data that has been parsed from an annotation file in COCO 1.0 format.
+
+|cvat_annotation_builder
+|Component that builds a single _BaseAnnotation_ object based on the data that has been parsed from an annotation file in CVAT 1.1 format.
+
+|pascal_voc_annotation_builder
+|Component that builds a single _BaseAnnotation_ object based on the data that has been parsed from an annotation file in PASCAL VOC format.
+
+|csv_annotation_builder
+|Component that builds a single _BaseAnnotation_ object based on the data that has been parsed from an annotation file in csv format.
+
+|===
+
+
+==== mlcvzoo_base.data_preparation.annotation_parser package (Whitebox)
+
+This section describes the data_preparation.annotation_parser package architecture and implementation.
+
+|===
+|Component |Description
+
+|coco_annotation_parser
+|Component that parses an annotation file in COCO 1.0 format and creates a list of _BaseAnnotations_ that can be built from the parsed content.
+
+|cvat_annotation_parser
+|Component that parses an annotation file in CVAT 1.1 format and creates a list of _BaseAnnotations_ that can be built from the parsed content.
+
+|pascal_voc_annotation_parser
+|Component that parses annotation files in PASCAL VOC format from a given directory and creates a list of _BaseAnnotations_ that can be built from the parsed content.
+
+|csv_annotation_parser
+|Component that parses an annotation file in csv format and creates a list of _BaseAnnotations_ that can be built from the parsed content.
+
+|===
+
+
+==== mlcvzoo_base.data_preparation.annotation_writer package (Whitebox)
+
+This section describes the data_preparation.annotation_writer package architecture and implementation.
+
+|===
+|Component |Description
+
+|cvat_annotation_writer
+|Component that writes a list of _BaseAnnotation_ objects into an annotation file in CVAT 1.1 format.
+
+|csv_annotation_writer
+|Component that writes a list of _BaseAnnotation_ objects into an annotation file in csv format.
+
+|darknet_annotation_writer
+|Component that writes a list of _BaseAnnotation_ objects into an annotation file in txt format that fits to the structure needed for darknet.
+
+|===
+
+==== mlcvzoo_base.data_preparation.cvat_annotation_handler package (Whitebox)
+
+This section describes the data_preparation.cvat_annotation_handler package architecture and implementation.
+
+NOTE: This section is currently in a concept stage of development.
+The details about the described feature/concept may therefore change in the future.
+
+|===
+|Component |Description
+
+|configuration
+|Module for defining all configuration classes that
+are used in the context of the CVATAnnotationHandler
+
+|cvat_annotation_handler
+|Central module for handling the download and upload
+of zip files to CVAT via their commandline interface
+
+|cvat_dumper
+|Module for handling the download of zip files to CVAT via their commandline interface
+
+|cvat_uploader
+|Module for handling the upload of zip files to CVAT via their commandline interface
+
+|utils
+|Module for storing utility functions that are needed for the cvat_annotation_handler package
+
+|===

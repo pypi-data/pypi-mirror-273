@@ -1,0 +1,53 @@
+[[section-concepts]]
+
+== Cross-cutting Concepts
+
+Concepts form the basis for conceptual integrity (consistency, homogeneity) of the architecture.
+Thus, they are an important contribution to achieve inner qualities.
+This section describes general structures and system-wide cross-cutting aspects.
+It also presents various technical solutions.
+
+=== Configuration Driven Approach
+
+Beside that our algorithm implementation mainly relies on the data structure that fits to a certain algorithm type, one key concept is to have separate configuration classes for each component / class that lives in the MLCVZoo. This makes it easy for users to instantiate objects completely based a given configuration. This is either done by handing over a file where the configuration has to be parsed from or an prebuild configuration object. YAML is used as configuration file format. For building configuration classes out of the parsed YAML content, the https://git.openlogisticsfoundation.org/silicon-economy/base/ml-toolbox/config-builder[config-builder] package is utilized. Details can be found in its https://git.openlogisticsfoundation.org/silicon-economy/base/ml-toolbox/config-builder[documentation]. For more details see the classes themselves or the templates in "config/templates".
+
+=== Scaling of Components
+
+Since the MLCVZoo is a wrapper around existing algorithm implementations, we don't do any scaling ourselves. Nevertheless, the most of the implementations provide the possibility to run their computations on different hardware setups. When talking about computations, the model inference and model training are the most relevant. There are a variety of available options, from making use of CPU only execution to running a training in a multi GPU setup. For details, we refer to the original documentation of the implementations.
+
+
+=== MLCVZoo Domain Model
+
+In the following common architectural components of any model wrapper implementation of the MLCVZoo are described. Every model has to define its own configuration class. This follows the approach stated before. There are certain best practices when defining a configuration for a model:
+
+- Beside this configuration, it is often the case, that the implementation (code source) of a model comes with its own configuration file. Therefore, it is common ground that a config path pointing to this configuration file is added to the configuration class definition.
+- Any model that inherits from the _ClassificationModel_ should have a class_mapping config entry of the type _ClassMapping_.
+- The majority of the models can be used for inference as well as are able to be trained. Therefore, parameters that are dedicated to either one of them, get a dedicated section normally defined as _inference_parameters_ and _training_parameters_.
+- Beside custom configuration file, that often ships with a models code source, the implementations of have commandline parameters for their training scripts. In order to have a better overview it is common ground to duplicate these parameters to a dedicated section in the configuration class of the MLCVZoo, normally defined as _argparse_parameters_
+- One central concept that is used across all configurations is the possibility to use string placeholder. These placeholders can be used as a kind of environment variable and are replaced by the config-builder at runtime. Details can be looked up at the https://git.openlogisticsfoundation.org/silicon-economy/base/ml-toolbox/config-builder[config-builder documentation]. In the MLCVZoo these placeholders are also used to define file paths which are valid on any machine. Therefore, a configuration file has to be setup once and can be used across all devices in your ecosystem. To achieve this the _ReplacementConfig_ class (package mlcvzoo.configuration.replacement_config) is used. It defines general placeholders that are used to state the root path to a shared directory or to paths of specific repository directories. This allows that users can decide on their own where they want to put there repositories and data. The placeholders enforce that from the associated root directory, the directory tree underneath it, is the same.
+
+NOTE: The usage of placeholders in your configuration files is optional but highly recommended. Examples can be found in any unit tests
+
+
+=== Cross-cutting Solutions
+
+The following solutions are applied in all components of the MLCVZoo.
+
+==== Error Handling
+
+Runtime errors within the MLCVZoo should, wherever possible, lead to an immediate crash of the respective component whenever the error can not be resolved in a timely fashion by the component itself. Every error is reported via python logging.
+
+==== Logging
+
+We use standard python logging mechanism. Besides, the modules in the tools package, no logging is initialized per default. The logging handlers have to be managed by the application of the user, where the MLCVZoo is used as an SDK.
+
+
+==== Testability
+
+Standard unit testing, which examine the individual classes, are named as the class itself with suffix Test.
+In addition, there are tests that examine the interaction of modules, and in extreme cases the whole system.
+The standard SE testing guidelines apply.
+
+NOTE: Some unittest may be better characterized as "plausibility tests"
+
+Since the majority of the machine learning driven computer vision algorithms utilize the GPU to fasten computations, we have to make sure that this functionality is working accordingly when needed.

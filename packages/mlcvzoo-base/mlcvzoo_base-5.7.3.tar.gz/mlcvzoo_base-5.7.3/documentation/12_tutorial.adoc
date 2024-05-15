@@ -1,0 +1,168 @@
+[[section-tutorial]]
+
+== Tutorial
+In this chapter the installation and main usage scenarios of the MLCVZoo are described. Furthermore, you can find simple best-practice examples of using the MLCVZoo components in the *examples* directory of the repository.
+
+=== Installation
+
+In the following you can find the description how the MLCVZoo how can be added as dependency in your project and how the MLCVZoo projects can be setup up to start developing.
+
+==== MLCVZoo as dependency
+
+The mlcvzoo-* python package is available on pypi and can be installed using any of your preferred way to install
+python packages.
+
+===== Using pip:
+
+-------
+pip install mlcvzoo-*
+-------
+
+==== MLCVZoo dev setup
+
+In the MLCVZoo https://github.com/astral-sh/uv[uv] is used to setup the python environment.
+As mentioned before, the MLCVZoo consists of a base project *mlcvzoo_base* and wrapper implementations *mlcvzoo_**.
+For a dev setup, it is recommended to create one virtual environment per project.
+Since every project is managed with uv, the following command is enough to setup a project:
+
+Pre-Requirement:
+
+- Install uv
+
+===== Install mlcvzoo-* dependencies
+
+-------
+cd mlcvzoo_*
+
+# Optional: Set your requirements-file via the environment variable REQUIREMENTS_FILE, which will be consumed by the build.sh script.
+
+bash build.sh
+
+-------
+
+===== Generate requirements file with uv
+
+-------
+bash scripts/lock-dependencies.sh
+-------
+
+=== Using the config-builder
+
+As stated before the https://git.openlogisticsfoundation.org/silicon-economy/base/ml-toolbox/config-builder[config-builder] is used to parse a content from a YAML file and create a configuration class object from the parsed content. To give you a starting point, a template file for any important configuration class of the MLCVZoo is stored in the following directory:
+
+-------
+config/templates
+-------
+
+
+=== Setup dev environment
+
+As mentioned in Chapter 7.3.1, a key concept is the usage of the _ReplacementConfig_ for defining placeholders that can be used in the configuration files. For the unittests the MLCVZoo takes a device specific ReplacementConfig from the "config/replacement_config.yaml". Therefore, please copy the file "config/templates/replacement_config_template.yaml" to "config/replacement_config.yaml" and insert the relevant information. For details please look in the documentation of the ReplacementConfig config class.
+
+At runtime the content of the ReplacementConfig is parsed from the provided YAML configuration file, which can than be used to replace placeholders in the configuration file. This is realized by handing over the string replacement map to the ConfigBuilder constructor. The method "src.mlcvzoo.configuration.utils.create_configuration" is used to create a configuration for any kind of model in the MLCVZoo. For new Models it is recommended to use this method as well.
+
+
+=== Data handling in the MLCVZoo
+
+The data classes that are defined in the **mlcvzoo_base.api.data **package play an important role in the MLCVZoo, since they represent the data that is predicted by the MLCVZoo models as well as the ground truth data that is read from annotation files (e.g. provided by CVAT). During the training, the *AnnotationHandler* reads in the ground truth data. Therefore, the *AnnotationHandlerConfig* is integrated in each model of the MLCVZoo. Templates of the AnnotationHandlerConfig can be found in:
+
+-------
+config/templates/data_preparation
+-------
+
+More details are documented in the code.
+
+
+=== Model Manual
+
+In the following chapter a brief overview of the main MLCVZoo components is given, illustrated by coding snippets. As stated in Chapter 7.4.3 every model wrapper implementation is tested. Since these unittest may be better characterized as "plausibility tests", they can be used as good usage examples. Therefore, only a few snippets of code are given as a sketch. More details can be found in the directory *tests/unittests*.
+
+
+==== Using the ReplacementConfig
+
+The ReplacementConfig has to be parsed in advance to instantiating a model. The MLCVZoo provides a method that parses the ReplacementConfig
+of your preferred location and returns the according string_replacement_map as well as a ReplacementConfig instance:
+
+-------
+string_replacement_map, replacement_config = get_replacement_map_from_replacement_config(
+    yaml_config_path=YOUR_YAML_REPLACEMENT_CONFIG_PATH,
+)
+-------
+
+You can use the "config/templates/replacement_config_template.yaml" as template for your ReplacementConfig configuration file.
+
+==== Using a Model for prediction
+
+Every model of the MLCVZoo predicts an output given a certain input. Next of you can find an example how to use a YOLOXModel for predicting bounding boxes given an image-path:
+
+-------
+yolox_model = YOLOXModel(
+    from_yaml=os.path.join(
+        "tests/test_data/test_yolox/yolox_x_coco_test.yaml",
+    ),
+    init_for_inference=True,
+    # string_replacement_map=...
+)
+
+test_image_path = "YOUR_IMAGE_PATH"
+
+test_image = cv2.imread(test_image_path)
+
+_, bounding_boxes = yolox_model.predict(data_item=test_image)
+-------
+
+NOTE: The string_replacement_map is an optional parameter which is used to define placeholders that can be used in your yaml configuration
+files. You can define any placeholder, but it is recommended to use the _ReplacementConfig_ of the mlcvzoo.
+
+
+==== Using the ModelRegistry
+
+Next of you can find an example how to use a ModelRegistry to instantiate by a given configuration. This is a more flexible way since you can add the _ModelConfig_ as part of your application configuration.
+
+-------
+model_registry = ModelRegistry()
+
+model_config = ModelConfig(
+    class_type="mmdetection"
+    constructor_parameters={
+        "from_yaml": "YOUR_MODEL_PATH",
+        # ...
+        # constructor-parameters of the model you want to instantiate
+    }
+)
+
+model = model_registry.init_model(
+    model_config=self.config.model_config
+)
+
+# Use Model ...
+
+_, prediction_output = model.predict(data_item=test_image)
+
+-------
+
+
+==== Setup and using CVAT
+
+The MLCVZoo makes use of annotation files that are generated utilizing https://github.com/openvinotoolkit/cvat[CVAT]. To setup a CVAT instance we refer to their https://docs.cvat.ai/docs/administration/basics/installation/[installation guide]. Furthermore, they provide a detailed https://openvinotoolkit.github.io/cvat/docs/manual/[manual] about how tasked can be created and how data can be downloaded and uploaded.
+
+Some insight we want to share is the option of having a "docker-compose.override.yml" file. Every value that is defined here, will be overwritten in their "docker-compose.yml". We used it to setup the possibility of connecting a file-share to the CVAT instance:
+
+---------
+# docker-compose.override.yml:
+
+services:
+  cvat:
+    environment:
+      CVAT_SHARE_URL: 'Mounted from YOUR_DIRECTORY host directory'
+    volumes:
+      - cvat_share:/home/django/share:ro
+
+volumes:
+  cvat_share:
+    driver_opts:
+      type: none
+      device: YOUR_DIRECTORY
+      o: bind
+---------
+

@@ -1,0 +1,22 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default.yaml"]
+
+pascal_voc_input_data:
+- input_image_dir: "PROJECT_ROOT_DIR/test_data/images"
+  input_xml_dir: "PROJECT_ROOT_DIR/test_data/annotations/pascal_voc"
+  input_sub_dirs: []
+  image_format: ".jpg"
+  use_difficult: False
+  ignore_missing_images: True
+
+write_output:
+  use_cross_val: false
+  number_splits: -1
+  split_size: 0.05  # percentage of validation data
+  random_state: 42
+
+  use_difficult: True
+  use_occluded: True
+
+  csv_annotation:
+    csv_dir: "PROJECT_ROOT_DIR/test_output/"
+    csv_base_file_name: "test-task"

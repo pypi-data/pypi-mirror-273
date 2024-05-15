@@ -1,0 +1,59 @@
+class_mapping: &class_mapping
+  mapping:
+    - input_class_name: "pedestrian"
+      output_class_name: "Person_Pedestrian"
+    - input_class_name: "persononvehicle"
+      output_class_name: "Person_PersonOnVehicle"
+    - input_class_name: "car"
+      output_class_name: "Vehicle_Car"
+    - input_class_name: "bicycle"
+      output_class_name: "Vehicle_Bicycle"
+    - input_class_name: "motorbike"
+      output_class_name: "Vehicle_Motorbike"
+    - input_class_name: "nonmotorvehicle"
+      output_class_name: "Vehicle_NonMotorVehicle"
+    - input_class_name: "staticperson"
+      output_class_name: "Person_Staticperson"
+    - input_class_name: "distractor"
+      output_class_name: "Other_Distractor"
+    - input_class_name: "occluder"
+      output_class_name: "Other_Occluder"
+    - input_class_name: "occluderonground"
+      output_class_name: "Other_Occluder"
+    - input_class_name: "occluderfull"
+      output_class_name: "Other_Occluder"
+    - input_class_name: "reflection"
+      output_class_name: "Other_Reflection"
+    - input_class_name: "crowd"
+      output_class_name: "Other_Reflection"
+  model_classes:
+    - class_name: "Person_Pedestrian"
+      class_id: 0
+    - class_name: "Person_PersonOnVehicle"
+      class_id: 1
+    - class_name: "Vehicle_Car"
+      class_id: 2
+    - class_name: "Vehicle_Bicycle"
+      class_id: 3
+    - class_name: "Vehicle_Motorbike"
+      class_id: 4
+    - class_name: "Vehicle_NonMotorVehicle"
+      class_id: 5
+    - class_name: "Person_Staticperson"
+      class_id: 6
+    - class_name: "Other_Distractor"
+      class_id: 7
+    - class_name: "Other_Occluder"
+      class_id: 8
+    - class_name: "Other_Reflection"
+      class_id: 9
+  number_classes: 10
+
+
+mot_input_data:
+- annotation_path: "PROJECT_ROOT_DIR/test_data/annotations/mot/mot_ground-truth_2020.txt"
+  image_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  label_path: "PROJECT_ROOT_DIR/test_data/annotations/mot/custom_labels.txt"
+  image_format: ".jpg"
+  mot_format: "mot20"
+  ground_truth: true

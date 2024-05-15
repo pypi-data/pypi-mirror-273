@@ -1,0 +1,107 @@
+[[section-technical-risks]]
+
+== Risks and Technical Debts
+
+A systematic detection and evaluation of risks and technical debts in the architecture was done.
+It can be used by the management as part of the overall risk analysis and measurement planning.
+Partially measures were suggested to minimize, mitigate or avoid risks or reduce technical debts.
+
+=== Questions on the Delimitation of Risks
+
+The MLCVZoo is a software library and development kit and due to it not being a standalone software component, much of the risk assessment is specific to the context in which the MLCVZoo is being used - i.e. the risks depend on the software component integrating the MLCVZoo.
+
+==== Planned Use
+
+The outcome of the project is planned to be used as
+
+* [x] industrial use
+* [ ] proof-of-concept
+* [ ] prototype
+* [ ] demonstrator
+
+==== Effects of a Failure (Availability Risks)
+
+If the service fails in the field, ...
+
+* [ ] the service is not available
+* [x] other services or IT systems can also no longer be used (information is missing)
+* [ ] consequential damage due to missing or wrong information/decisions
+* [ ] personal injury due to missing or wrong information/decisions
+
+==== Data Processing and confidentiality
+
+The following kind of data is processed:
+
+The MLCVZoo makes no assumptions on the confidentiality of the data that is to be processed and puts no constraints on them - any kind of image data it can process can be used. Therefore this section depends on the software component integrating the MLCVZoo. Depending on the runtime configuration of the MLCVZoo, data may be leaked during logging. However:
+
+Personal data is
+
+* [ ] processed
+* [ ] stored
+
+The data is stored in
+
+* [ ] files
+* [ ] databases
+
+The following regulations or guidelines must be observed:
+
+* [ ] GDPR / DS-GVO
+
+==== Values
+
+The following valuable devices/hardware are managed and/or used:
+
+* 1 or more GPUs
+
+=== Further Risks
+
+==== Authentication
+
+The service is used directly by end users: no
+
+==== State-of-the-Art
+
+* Technologies used: (e.g. Java, certain web servers):
+** Python
+* Frameworks / libraries used:
+** Pytorch
+** Numpy
+
+==== Communication
+
+External systems may influence the availability of the system.
+Receiving/sending sensible data from/to external systems could make these interfaces particularly interesting for potential attackers.
+If interfaces of external systems often changes, the syntax and semantics of the transmitted data could change on short notice, resulting in high adapting efforts.
+
+* External systems connected: none
+* Other partners / companies involved: none
+* Legal contracts need to be signed: none
+
+==== Accessibility
+
+How can the system / component be reached?
+
+* [ ] accessible by graphical user interface (GUI)
+* [ ] accessible via the IDS
+* [ ] accessible via REST
+* [ ] accessible via other ways: device specific protocols and data formats
+
+=== Risk Minimization
+
+There are the following plans for reducing some risks.
+
+==== Complexity / Effort of Implementation
+
+The programming of the MLCVZoo and its components is non-trivial.
+Programming errors can and will happen and software testing can never guarantee the absence of errors in general.
+
+*Eventuality Planning*: If an upgrade introduces errors not detected by unit tests that lead to a non-runnable version deployed to the runtime environment, this could lead to a widespread service downtime with potentially damaging consequences, such as:
+
+* Hindered or delayed SE project development
+
+*Risk Minimization*: The MLCVZoo is, in essence, a software library. Ultimately error handling and risk minimization is up to the software component using the MLCVZoo aswell as its runtime context. However, the MLCVZoo and its test suite try to minimize the risks.
+
+==== Data Consistency
+
+The MLCVZoo does not store or depend on persistent data.

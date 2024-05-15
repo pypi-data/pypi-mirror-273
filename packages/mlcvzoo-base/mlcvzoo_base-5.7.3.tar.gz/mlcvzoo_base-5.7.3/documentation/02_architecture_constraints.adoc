@@ -1,0 +1,185 @@
+[[section-constraints]]
+
+== Architecture Constraints
+
+Various constraints are respected for the design of the MLCVZoo.
+They all affect the solution.
+We list these restrictions and explain their motivations.
+Some constraints go beyond the MLCVZoo and are valid for the whole platform or organization.
+
+
+
+=== Technical Constraints
+
+The following technical constraints apply:
+
+[cols="3",options="header"]
+|===
+|Id
+|Constraint
+|Value/Description
+
+// Does not apply
+|BAP1
+|Basic Architecture Patterns
+|Software Development Kit - SDK
+
+|BAP2
+|Basic Architecture Patterns
+|Software Framework
+
+|BAP3
+|Basic Architecture Patterns
+|Software Library
+
+|BC1
+|Continuous Integration Pipeline constraints
+|Integrated with the GitLab CI Runner
+
+|BC2
+|Project License
+| Open Logistics License 1.0
+
+|BC3
+|Requirements at libraries
+|Only libraries under a Copy-Left free Open Source License can be used.
+Accepted open source licenses are, among others, Apache License 2.0, MIT License, BSD License
+
+|BC4
+|Libraries constraints
+|Frameworks & libraries under an open-source license (such as GPL, LGPL) are restricted by the use of the open source license [TBD]
+
+|BSD1
+|Basic Stack for Development: Application Container
+|Docker
+
+|BSD2
+|Basic Stack for Development: Interfaces/Communication
+|API
+
+|BSD3
+|Basic Stack for Development: Hardware
+|CUDA capable
+
+|BSD4
+|Basic Stack for Development: programming languages
+|Programming Languages: Python
+
+|TE1
+|Target environment
+|Python >= 3.8
+|===
+
+=== Organizational Constraints
+
+The following organizational constraints apply:
+
+[cols="3",options="header"]
+|===
+|Id
+|Constraint
+|Background and / or Motivation
+
+|O1
+|Schedule
+|Milestones:
+
+01/2021 start of development
+
+Next Milestone:
+
+12/2021 completion of Version 1.0 for MLCVZoo
+
+//|O2
+//|Parts
+//
+//|06/2020 start of development for a XXX
+//
+//01/2021 start of development of the XXX
+
+|O2
+|Process model
+|Development, agile/Scrum.
+To describe the architecture arc42 is used.
+
+An architecture documentation structured according to this template is a key project result.
+
+|03
+|Development tools
+|Design with Draw.io.
+
+Work results for architecture documentation collected in Confluence Wiki.
+
+Source code created with PyCharm.
+
+|O4
+|Configuration management
+|Git / GitLab
+
+|O5
+|Test tools and test processes
+|Unit testing as part of a CI/CD Pipeline (stage test)
+
+Python based components: pytest, unittest
+
+|O6
+|Other tools
+|poetry for Build Management
+
+black, isort for code formatting
+
+mypy for type checks
+
+|===
+
+=== Political Constraints
+
+The following political constraints apply:
+
+[cols="3",options="header"]
+|===
+|Id
+|Constraint
+|Background and / or Motivation
+
+|P1
+|Release as Open Source
+|The source code of the solution is made available as open source.
+License: Open Logistics License 1.0
+
+|P2
+|All dependencies are Open Source
+|A complete list of (transitive) dependencies and their Open Source licences are provided
+
+|===
+
+=== Conventions
+
+All conventions are listed in the Silicon Economy Development Guidelines, e.g.
+
+[cols="3",options="header"]
+|===
+|Id
+|Convention
+|Background and / or Motivation
+
+|C1
+|Architecture documentation
+|Terminology and structure according to arc42, version 6.0
+
+|C2
+|Coding guidelines for Python
+|https://www.python.org/dev/peps/pep-0008/[PEP8 - Style Guide for Python Code], checked using SonarQube (pylint, mypy, black, isort)
+
+|C3
+|Language
+|Documentation in English, naming of things (components, interfaces, variables) in diagrams and source code in English
+
+|C4
+|Versioning
+| https://semver.org/lang/de/[Semantic Versioning 2.0.0] in GitLab
+
+|C5
+|Specific file formats
+| YAML, JSON, XML
+|===

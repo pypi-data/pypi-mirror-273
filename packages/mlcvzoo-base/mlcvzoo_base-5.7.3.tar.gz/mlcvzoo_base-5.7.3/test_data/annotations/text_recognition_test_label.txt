@@ -1,0 +1,4 @@
+test_data/images/test_inference_task/test_text-recognition_inference_image.jpg DUcPT501
+test_data/images/test_inference_task/test_text-recognition_inference_image.jpg DUcPT501
+test_data/images/test_inference_task/test_text-recognition_inference_image.jpg DUcPT501
+test_data/images/test_inference_task/test_text-recognition_inference_image.jpg DUcPT501

@@ -1,0 +1,8 @@
+artifact_location: "PROJECT_ROOT_DIR/test_output/evaluation/test_mlflow/artifacts"
+
+mlflow_postgressql_config:
+  database_user: "postgres"
+  database_pw: 12345678
+  database_port: 5432
+  database_name: mlflowdb
+

@@ -1,0 +1,10 @@
+artifact_location: "YOUR_ARTIFACT_PATH"
+
+mlflow_file_config:
+  logging_dir: "YOUR_LOGGING_DIRECTORY"
+
+mlflow_postgressql_config:
+  database_user: "postgres"
+  database_pw: 12345678
+  database_port: 5432
+  database_name: mlflowdb

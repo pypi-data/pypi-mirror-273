@@ -1,0 +1,124 @@
+= Software documentation for the MLCVZoo
+:toc: left
+:toclevels: 3
+:sectnumlevels: 5
+:icons: font
+:copyright: Open Logistics Foundation
+
+[[section-preface]]
+== Preface
+
+
+=== Motivation
+
+The vision of a Silicon Economy (SE) is a data and platform economy, where people, companies, autonomous vehicles and IoT devices interact with each other to achieve logistics goals.
+It uses open, federal structures, AI, autonomous devices, distributed ledger technologies and ensures data sovereignty.
+
+The reference architecture of the Silicon Economy consists of a macro architecture as a common framework in which SE services composed of microservices are loosely embedded.
+The macro architecture essentially consists of an International Data Spaces (IDS) infrastructure as well as three types of brokers.
+
+
+The MLCVZoo is a software library and SDK inside the ML-Toolbox facilitating machine learning developments for the Silicon Economy Platform.
+This documentation contains the description of all MLCVZoo components, their context, interaction, constraints and implementation.
+This document is written to be published under the Open Logistics License 1.0.
+
+=== Documentation Approach
+
+The documentation of the individual projects is in English and is based on the link:https://docs.arc42.org/home/[arc42 template]
+
+Each project maintains the software documentation on the project-related Confluence page according to this template.
+It is important that the risk assessment (see <<Risks and Technical Debts>>) and the quality criteria (see <<Introduction>> and <<Quality Requirements>>) are described before the start of each project.
+
+The link:https://agilemanifesto.org/[Agile Manifesto] says: “Working software over comprehensive documentation”.
+It does not say “no documentation”.
+Even in lean, agile and iterative development approaches, an appropriate amount of documentation will help numerous stakeholders doing a better job. arc42 is completely process-agnostic, and especially well-suited for lean and agile development approaches.
+It is supposed to be used “on demand” - you provide only the type or amount of information required for your specific documentation purpose.
+Documentation shall be part of your Definition-of-Done.
+Therefore, arc42 is automatically included in Scrum processes.
+
+https://docs.gitlab.com/ee/user/asciidoc.html[GitLab Asciidoc] gives an overview about using asciidoc in a GitLab project.
+
+=== Main Authors
+
+[cols="1e,2e",options="header"]
+|===
+
+|Name
+|E-Mail
+
+|Maximilian Otten
+|maximilian.otten@iml.fraunhofer.de
+
+|Christian Hoppe
+|christian.hoppe@iml.fraunhofer.de
+
+|Oliver Urbann
+|oliver.urbann@iml.fraunhofer.de
+
+|Oliver Bredtmann
+|oliver.bredtmann@dbschenker.com
+
+|Thilo Bauer
+|thilo.bauer@dbschenker.com
+
+|Luise Weickhmann
+|luise.weickhmann@iml.fraunhofer.de
+
+|Luca Kotulla
+|luca.kotulla@iml.fraunhofer.de
+
+|===
+
+For a complete list of authors and the document history see the GitLab history being provided automatically.
+
+// Enable section numbering from here on
+:sectnums:
+
+<<<
+// 1. Introduction and Goals
+include::01_introduction_and_goals.adoc[]
+
+<<<
+// 2. Architecture Constraints
+include::02_architecture_constraints.adoc[]
+
+<<<
+// 3. System Scope and Context
+include::03_system_scope_and_context.adoc[]
+
+<<<
+// 4. Solution Strategy
+include::04_solution_strategy.adoc[]
+
+<<<
+// 5. Building Block View
+include::05_building_block_view.adoc[]
+
+<<<
+// 6. Runtime View
+include::06_runtime_view.adoc[]
+
+
+<<<
+// 8. Concepts
+include::08_concepts.adoc[]
+
+<<<
+// 9. Design Decisions
+include::09_design_decisions.adoc[]
+
+<<<
+// 10. Quality Scenarios
+include::10_quality_scenarios.adoc[]
+
+<<<
+// 11. Technical Risks
+include::11_technical_risks.adoc[]
+
+<<<
+// 12. Tutorial
+include::12_tutorial.adoc[]
+
+<<<
+// Glossary
+include::glossary.adoc[]

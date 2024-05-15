@@ -1,0 +1,9 @@
+mapping: []
+
+model_classes:
+  - class_name: "person"
+    class_id: 0
+  - class_name: "car"
+    class_id: 0
+
+number_model_classes: 10

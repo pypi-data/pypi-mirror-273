@@ -1,0 +1,27 @@
+{
+  "id": 2838,
+  "created_username": "",
+  "created_ago": "0\u00a0minutes",
+  "task": {
+    "id": 6174,
+    "data": {
+      "wrong_image": "s3://cars.jpg"
+    },
+    "meta": {},
+    "created_at": "2023-01-23T11:18:51.420572Z",
+    "updated_at": "2023-01-23T11:18:51.420625Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "project": 33,
+    "file_upload": null
+  },
+  "completed_by": null,
+  "result": [],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2023-01-23T11:18:51.862905Z",
+  "updated_at": "2023-01-23T11:18:51.862948Z",
+  "lead_time": null,
+  "parent_prediction": null,
+  "parent_annotation": null
+}

@@ -1,0 +1,35 @@
+class_mapping: &class_mapping
+  mapping:
+    - input_class_name: "INPUT_CLASS_NAME"
+      output_class_name: "OUTPUT_CLASS_NAME"
+
+  model_classes:
+    - class_name: "CLASS_NAME_0"
+      class_id: 0
+    - class_name: "CLASS_NAME_1"
+      class_id: 1
+    - class_name: "OUTPUT_CLASS_NAME"
+      class_id: 2
+
+  number_model_classes: 3
+
+cvat_input_data:
+- input_path: "PATH_TO_CVAT_XML_FILE"
+  input_root_dir: "INPUT_ROOT_DIR"
+  use_difficult: false
+
+write_output:
+  use_cross_val: false
+  number_splits: -1
+  split_size: 0.01  # percentage of validation data
+  random_state: 42
+
+  use_difficult: True
+  use_occluded: True
+
+  csv_annotation:
+    csv_dir: !join_path ["CONFIG_ROOT_DIR", "data", "generated_annotation_files"]
+    csv_split_0_file_name: "train.csv"
+    csv_split_1_file_name: "eval.csv"
+
+

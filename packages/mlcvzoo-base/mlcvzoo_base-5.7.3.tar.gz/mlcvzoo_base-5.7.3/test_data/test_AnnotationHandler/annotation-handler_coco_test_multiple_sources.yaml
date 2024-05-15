@@ -1,0 +1,41 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml"]
+
+coco_input_data:
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+    input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+
+
+write_output:
+  use_cross_val: false
+  number_splits: -1
+  split_size: 0.0 # percentage of validation data
+  random_state: 42
+
+  use_difficult: True
+  use_occluded: True
+
+  csv_annotation:
+    csv_dir: "PROJECT_ROOT_DIR/test_output/"
+    csv_base_file_name: "test-task-multiple-sources"

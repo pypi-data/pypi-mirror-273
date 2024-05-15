@@ -1,0 +1,18 @@
+# NOTES:
+# - output_class_id are freely assignable but have to be unique
+# - output_class_name are freely assignable but have to be unique
+# - model_class_ids and model_class_names are mutually exclusive
+# - null parameter can be omitted
+
+mapping:
+# Aggregation of banana and cherry to fruit
+- output_class_name: "fruit"
+  output_class_id: 10
+  model_class_names: ["banana", "cherry"]
+
+# ===============================
+# Error Case:
+# Duplicate with output_class_name 'fruit'
+- output_class_name: "fruit"  #==> output_class_name has to be unique
+  output_class_id: 4
+  model_class_ids: [4]

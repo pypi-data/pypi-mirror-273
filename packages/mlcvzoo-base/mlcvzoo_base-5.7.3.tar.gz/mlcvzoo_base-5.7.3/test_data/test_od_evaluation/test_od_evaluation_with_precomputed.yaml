@@ -1,0 +1,14 @@
+iou_thresholds: [0.5]
+
+visualization:
+  show_image: False
+
+tensorboard_logging:
+  tensorboard_dir: "PROJECT_ROOT_DIR/test_output/logs/tensorboard/eval_test_precomputed_TIMESTAMP"
+  false_positive_image_size: 1000
+
+mlflow_config:
+  mlflow_file_config:
+    logging_dir: &logging_dir "PROJECT_ROOT_DIR/test_output/logs/mlflow_logs/"
+
+  artifact_location: *logging_dir

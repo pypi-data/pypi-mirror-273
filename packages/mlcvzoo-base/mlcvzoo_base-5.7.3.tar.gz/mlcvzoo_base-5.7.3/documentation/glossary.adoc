@@ -1,0 +1,23 @@
+[[section-glossary]]
+== Glossary
+
+We define the project-specific terms for the MLCVZoo, and additionally refer to the global _Glossary_ of the Silicon Economy.
+
+[cols="1e,2e",options="header"]
+|===
+|Term
+|Definition
+
+|MLToolbox
+|Machine Learning Toolbox, a Silicon Economy project consisting of development tools for machine learning , see the figure in section  <<Introduction, Introduction 1.2>> showing the ML Toolbox Big Picture.
+
+|MLCVZoo
+|Machine Learning Computer Vision Zoo
+
+|SE
+|Silicon Economy
+
+|OCR
+|Optical Character Recognition
+
+|===

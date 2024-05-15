@@ -1,0 +1,48 @@
+[[section-runtime-view]]
+
+== Runtime View
+
+In contrast to the <<Building Block View, static building block view>>, this section visualizes dynamic aspects of the MLCVZoo.
+The runtime view describes concrete behavior and interactions of the system’s building blocks across the architecture, i.e., how instances of building blocks of the MLCVZoo perform their job and communicate at runtime.
+
+=== Base API Operations
+
+NOTE: This section is currently in a concept stage of development.
+The details about the described feature/concept may therefore change in the future.
+
+The MLCVZoo is mainly designed to wrap machine learning driven computer vision algorithms. As described in Chapter 5 we provide an API where the abstract model class is the superclass of every model in the MLCVZoo. Furthermore, we provide abstract superclasses for every algorithmic field. Implementation of algorithms have to inherit from these abstract classes and overwrite the defined API methods. In the following the most important methods are described.
+
+
+==== Model API Operations
+
+The _Model_ class represents the abstract super class for any model in the MLCVZoo. It provides the following functionalities.
+
+===== predict
+
+Method that predicts the output to a given input. It has to be implemented by subclasses. In the field of deep learning this is often associated with the term _inference_.
+
+===== predict_many
+
+Same as for the predict operation, but here multiple inputs are given and therefore also multiple outputs will be predicted. It can be associated with the term _batch-inference_. The API provides a default implementation of this operation, which simply calls the predict operation of a model for each input. If supported, a model can overwrite this operation with a _real_ prediction on a batch.
+
+===== create configuration
+
+Method that creates the configuration for the model. It has to be implemented by subclasses.
+
+===== train
+
+A model not necessarily needs to be able to be trained. Nevertheless, it is an important feature, when a train method is provided. Models that are able to be trained have to inherit from the _Trainable_ interface and implement the train method.
+
+
+=== Configuration Lifecycle
+
+NOTE: This section is currently in a concept stage of development.
+The details about the described feature/concept may therefore change in the future.
+
+
+Models and central computing components of the MLCVZoo are defined by their configuration. Chapter 7.1 states details about this _Configuration Driven Approach_. Every runtime component has to parse/build a valid configuration prior to everything else. Once configured, the main parts of a configuration should not be touched during the execution.
+
+//TODO:
+//
+//- There are only a few scenarios where configuration changes are performed?
+//- do we have scenarios here?

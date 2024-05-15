@@ -1,0 +1,40 @@
+[[section-design-decisions]]
+
+
+== Design Decisions
+
+This section explains fundamental design decisions.
+Stakeholders of the MLCVZoo must be able to comprehend and retrace important architecture decisions and their rationales.
+Different solutions for a problem can be discussed, and why one approach was favored based on given criteria.
+An ADR (architecture decision record) is created for every important decision.
+Also, the list of selected third-party software used and their licences is displayed here.
+
+=== Software Stack
+
+We decided to use python as programming language, since the majority of the machine learning driven computer vision algorithms are implemented using one of the major python frameworks _pytorch_ or _tensorflow_. These frameworks wrap the code that is needed to develop algorithms that make heavy use of GPU utilization (CUDA). This allows the user to focus on the development of the algorithms themselves. This also counts for the frameworks that are wrapped in the MLCVZoo.
+
+=== Typed Datastructures
+
+The development of machine learning driven computer vision algorithms is very volatile. New algorithms evolve in very short intervals. Nowadays, the majority of the algorithms are developed using one of the major python frameworks _pytorch_ or _tensorflow_. However, since python is not a typed programming language, it is often hard to understand how the output of a certain implementation has to be parsed. Therefore, we decided to create data structures that are valid for every superset of algorithm type, e.g. bounding boxes for all object detection algorithms. Furthermore, we use mypy to ensure type definitions all over the MLCVZoo. Overall the type definitions give a better understanding of the code and what is actually done.
+
+=== Isolated ML-Framework Modules
+
+One key concept of the MLCVZoo is the independence of model wrapper implementations. Each wrapper is an isolated module, which can be used by itself. Only the framework specific python dependencies necessary for the framework you want to use have to be installed.
+
+=== Third Party Software
+
+The MLCVZoo documents its third-party software libraries itself in files that can be found in the project repositories.
+For the most part, the contents of these files are generated using component-/programming language-specific tools and contain at least the names of the third-party software libraries, their versions and their respective open-source licenses.
+The MLCVZoo provides the following files in a "third-party-licenses" directory:
+
+* _third-party-licenses.*_ - Contains the licenses used by a component's third-party dependencies.
+The list of third-party dependencies and their licenses can be generated, but the actual content of this file is maintained manually.
+
+* _third-party-licenses-complementary.*_ - Contains entries for third-party dependencies for which the licenses cannot be determined automatically.
+The content of this file is maintained manually.
+
+Furthermore, all the code that has been taken from third party packages and is directly integrated in the MLCVZoo, is put in the two directories:
+
+* src/mlcvzoo/third_party: Third party code that is part of the mlcvzoo package
+
+* tests/test_data/third_party: Third party code/configurations that is/are used in the unittests

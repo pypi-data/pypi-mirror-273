@@ -1,0 +1,39 @@
+class_mapping:
+  mapping: []
+  model_classes:
+    - class_name: "pedestrian"
+      class_id: 1
+    - class_name: "persononvehicle"
+      class_id: 2
+    - class_name: "car"
+      class_id: 3
+    - class_name: "bicycle"
+      class_id: 4
+    - class_name: "motorbike"
+      class_id: 5
+    - class_name: "nonmotorvehicle"
+      class_id: 6
+    - class_name: "staticperson"
+      class_id: 7
+    - class_name: "distractor"
+      class_id: 8
+    - class_name: "occluder"
+      class_id: 9
+    - class_name: "occluderonground"
+      class_id: 10
+    - class_name: "occluderfull"
+      class_id: 11
+    - class_name: "reflection"
+      class_id: 12
+    - class_name: "crowd"
+      class_id: 13
+  number_model_classes: 14
+  ignore_class_names:
+    - "pedestrian"
+
+mot_input_data:
+- annotation_path: "PROJECT_ROOT_DIR/test_data/annotations/mot/mot_ground-truth_2020.txt"
+  image_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+  image_format: ".jpg"
+  mot_format: "mot20"
+  ground_truth: true

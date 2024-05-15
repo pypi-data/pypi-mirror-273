@@ -1,0 +1,4 @@
+# This file contains third-party licenses that cannot be determined automatically by the license tool used in this project.
+# For each dependency and its license a single line is to be added in the format:
+"Name","Version","License","URL"
+"yaml-config-builder","8.3.0","Open Logistics License","https://git.openlogisticsfoundation.org/silicon-economy/base/ml-toolbox/config-builder"

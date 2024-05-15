@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>6</id>
+      <size>4</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2023-11-02 16:01:08.362527+00:00</created>
+      <updated>2023-11-05 11:00:48.409553+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>3</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>6</id>
+          <start>0</start>
+          <stop>3</stop>
+          <url>http://localhost:8080/api/jobs/6</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>motten</username>
+        <email>test@test.de</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>car</name>
+          <color>#2080c0</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>background</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>difficult</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>content</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>person</name>
+          <color>#c06060</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>truck</name>
+          <color>#906080</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2023-11-05 11:01:13.824306+00:00</dumped>
+  </meta>
+  <image id="0" name="cars.jpg" width="375" height="500">
+    <box label="car" source="manual" occluded="0" xtl="28.33" ytl="9.28" xbr="130.62" ybr="78.50" z_order="0">
+      <attribute name="content">car</attribute>
+      <attribute name="background">false</attribute>
+      <attribute name="difficult">false</attribute>
+      <attribute name="occluded">false</attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="32.73" ytl="146.40" xbr="129.30" ybr="211.22" z_order="0">
+      <attribute name="difficult">false</attribute>
+      <attribute name="occluded">false</attribute>
+      <attribute name="background">true</attribute>
+      <attribute name="content"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="34.50" ytl="246.05" xbr="128.41" ybr="325.42" z_order="0">
+      <attribute name="background">false</attribute>
+      <attribute name="difficult">true</attribute>
+      <attribute name="occluded">false</attribute>
+      <attribute name="content"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="0" xtl="30.53" ytl="357.16" xbr="125.77" ybr="433.88" z_order="0">
+      <attribute name="background">false</attribute>
+      <attribute name="difficult">false</attribute>
+      <attribute name="occluded">true</attribute>
+      <attribute name="content"></attribute>
+    </box>
+    <box label="car" source="manual" occluded="1" xtl="199.40" ytl="48.08" xbr="321.54" ybr="145.08" z_order="0">
+      <attribute name="background">true</attribute>
+      <attribute name="difficult">false</attribute>
+      <attribute name="occluded">false</attribute>
+      <attribute name="content"></attribute>
+    </box>
+  </image>
+  <image id="1" name="empty.jpg" width="375" height="500">
+  </image>
+  <image id="2" name="person.jpg" width="375" height="500">
+    <polygon label="car" source="manual" occluded="0" points="115.31,122.73;230.80,136.51;232.77,220.50;126.47,244.78;95.63,175.88" z_order="0">
+      <attribute name="background">false</attribute>
+      <attribute name="difficult">false</attribute>
+      <attribute name="occluded">false</attribute>
+      <attribute name="content"></attribute>
+    </polygon>
+  </image>
+  <image id="3" name="truck.jpg" width="375" height="500">
+    <tag label="car" source="manual">
+      <attribute name="background">false</attribute>
+      <attribute name="difficult">false</attribute>
+      <attribute name="occluded">false</attribute>
+      <attribute name="content">car</attribute>
+    </tag>
+    <tag label="person" source="manual">
+    </tag>
+  </image>
+</annotations>

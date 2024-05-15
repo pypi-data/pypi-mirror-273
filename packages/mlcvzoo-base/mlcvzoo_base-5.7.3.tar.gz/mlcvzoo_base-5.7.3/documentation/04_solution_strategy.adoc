@@ -1,0 +1,48 @@
+[[section-solution-strategy]]
+
+== Solution Strategy
+This chapter gives a short summary and explanation of the fundamental decisions and solution strategies, that shape the architecture of the MLCVZoo.
+They are based on the problem statement, the quality goals and the key constraints from Chapters 1 and 2.
+
+=== Quality
+
+The quality goals as summarized in <<Quality Goals>> and their matching architecture approaches and means for quality assurance are described in detail in <<Quality Requirements>>.
+The key to assure quality is to use quality assurance tools like Sonar and automated tests in the CI/CD Pipeline.
+
+=== Common SE Reference Architecture
+
+All SE components follow a common SE reference architecture.
+
+.SE Reference Architecture
+image::images/04_se_reference_architecture.jpg[alt="SE Reference Architecture"]
+
+This architecture is determined by the following elements:
+
+- A macro-architecture, currently consisting of the IDS infrastructure with its Connectors and the three types of brokers (Logistic, IoT, Blockchain).
+The macro-architecture can be extended by further basic components, e.g. concerning 5G.
+- A micro-architecture for the individual SE services and brokers, developed independently of each other, which plug into the macro-architecture and which themselves consist of microservices.
+These SE services are Self-Contained Systems (SCS) and gradually enrich the SE architecture in conformity with the SE reference architecture.
+
+Roughly, three layers can be identified in and across all SE services and across the SE architecture:
+
+- The user interface (U) is composed of the web UIs and mobile UIs of the individual SE services, which all follow a common style and may refer to each other. The business logic (S) is realized via multi-tier microservices.
+- The services are orchestrated using the most appropriate means, from rigid to AI-driven.
+- The persistence layer (P) is analogously composed of the heterogeneous data stores of the individual SE services, which can also refer to each other.
+
+The MLCVZoo fits into this architecture not by being a standalone service on its own but by providing key functionality to be used by machine learning applications and services not only but including running in the silicon economy context - especially on the service layer - and conforming to its architecture.
+
+=== Decomposition
+
+The fundamental decisions are to compose SE services and brokers from Micro Services, in accordance with the reference architecture.
+Every Micro Service is executed in its own application container, and loose coupling by event-based communication is used whenever appropriate.
+See <<Building Block View>> for details.
+
+=== Technology
+
+As detailed in <<Architecture Constraints>> the MLCVZoo uses Python and various open source frameworks and libraries widely used within the machine learning domain to facilitate support for various machine learning frameworks whilst being compatible with upstream projects using the MLCVZoo by providing commonly used datastructures and types.
+
+=== Organizational
+
+See <<Architecture Constraints>> for organisational constraints and political constraints that apply.
+We use agile development (Scrum) to fulfill these constraints, organised in separate projects for all SE projects and brokers.
+All third-party software used must be open source.

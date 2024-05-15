@@ -1,0 +1,20 @@
+PROJECT_ROOT_DIR: "$PROJECT_ROOT_DIR"         # Root Directory of the current repository
+BASELINE_MODEL_DIR: "$BASELINE_MODEL_DIR"     # Main directory for all checkpoint files of original models (e.g. models trained on the coco dataset)
+
+# External Projects
+MMDETECTION_DIR: "$MMDETECTION_DIR"           # Directory where the project mmdetection has be cloned to.
+MMOCR_DIR: "$MMOCR_DIR"                       # Directory where the project mmocr has be cloned to.
+DARKNET_DIR: "$DARKNET_DIR"                   # Directory where the project darknet has be cloned to.
+YOLOX_DIR: "$YOLOX_DIR"                       # Main directory for training model/checkpoint files
+
+# ===============================================================================================
+# Optional for unittests:
+CONFIG_ROOT_DIR: "$CONFIG_ROOT_DIR"           # Root directory of all configuration files
+
+MEDIA_DIR: "$MEDIA_DIR"                       # Directory where the central media data is stored.
+ANNOTATION_DIR: "$ANNOTATION_DIR"             # Directory where the central annotation data is stored.
+
+INFERENCE_MODEL_DIR: "$INFERENCE_MODEL_DIR"   # Main directory for inference model/checkpoint files
+TRAINING_MODEL_DIR: "$TRAINING_MODEL_DIR"     # Main directory for training model/checkpoint files
+
+MLCVZOO_DIR: "$MLCVZOO_DIR"                   # Placeholder that can be used by external projects to access files that are stored in the mlcvzoo repository
