@@ -1,0 +1,28 @@
+### 0.2.1
+
+Fixed:
+* Handle private profiles with a friendly error message
+
+
+### 0.2.0
+
+Revived by new maintainer ([dgw](https://github.com/dgw)) under a new package
+name (`sopel-modules.trakt` → `sopel-trakt`). Major changes include:
+
+* Config setting `api` renamed to `client_id`
+* Updated coding standards for Sopel 7.1+ and Python 3.8+
+* Dropped [`sopel_modules` namespace][namespace-plugin] in favor of a
+  [`setuptools` entry point][entry-point-plugin]
+
+Much of the work in this release was spent on housekeeping; user-facing
+functionality is essentially unchanged from the last release published on PyPI
+by [sharktamer](https://pypi.org/user/sharktamer/).
+
+
+[entry-point-plugin]: https://sopel.chat/docs/plugin/what.html#entry-point
+[namespace-plugin]: https://sopel.chat/docs/plugin/what.html#namespace-package
+
+
+### 0.1.0
+
+Initial release

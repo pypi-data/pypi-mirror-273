@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=63.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+platforms = ["Linux x86, x86-64"]
+
+[tool.setuptools.packages.find]
+include = ["sopel_trakt", "sopel_trakt.*"]
+namespaces = false
+
+[tool.setuptools.dynamic]
+readme = { file=["README.md", "NEWS"], content-type="text/markdown" }
+
+[project]
+name = "sopel-trakt"
+version = "0.2.1"
+description = "A Sopel plugin to fetch users' recent Trakt plays"
+
+authors = [
+  { name="Shane Donohoe", email="shane@donohoe.cc" },
+]
+
+maintainers = [
+  { name="dgw", email="dgw@technobabbl.es" },
+]
+
+license = { text="EFL-2.0" }
+dynamic = ["readme"]
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: Eiffel Forum License (EFL)",
+    "License :: OSI Approved :: Eiffel Forum License",
+    "Topic :: Communications :: Chat :: Internet Relay Chat",
+]
+keywords = [
+  "sopel",
+  "plugin",
+  "bot",
+  "irc",
+]
+
+requires-python = ">=3.8, <4"
+dependencies = [
+    "sopel>=7.1",
+    # Sopel itself requires requests, but we should be explicit
+    "requests",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dgw/sopel-trakt"
+"Bug Tracker" = "https://github.com/dgw/sopel-trakt/issues"
+
+[project.entry-points."sopel.plugins"]
+"trakt" = "sopel_trakt"
