@@ -1,0 +1,2 @@
+[console_scripts]
+sssimp = sssimp.__main__:main
