@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyDIOPT
+Version: 0.1.0
+Summary: pyDIOPT - Python Wrapper for DIOPT
+Home-page: https://github.com/akmazian/pyDIOPT
+Author: AZ Zhang
+Author-email: azz@berkeley.edu
+License: Apache 2.0
+Keywords: wrapper bioinformatics biology
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: twine
+Requires-Dist: aiohttp
+Requires-Dist: gprofiler-official
+
+# pyDIOPT
+
+This is the unofficial DIOPT python wrapper for the [DIOPT](https://www.flyrnai.org/cgi-bin/DRSC_orthologs.pl) ortholog finder.
+
+## Acknowledgement
+
+-   This repo is boilerplated from [py-package-template](https://github.com/AlexIoannides/py-package-template)

@@ -1,0 +1,6 @@
+numpy
+requests
+pandas
+twine
+aiohttp
+gprofiler-official
