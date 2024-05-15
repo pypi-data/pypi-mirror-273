@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: openECCI
+Version: 0.1.0
+Summary: An open source python package for guiding Electron Channelling Contrast Imaging (ECCI)in Scanning Electron Microscopes (SEM).
+Home-page: https://github.com/IMBalENce/openECCI
+Download-URL: https://pypi.python.org/pypi/open_ecci
+Author: openECCI developers
+Author-email: zhou.xu@monash.edu
+Maintainer: Zhou Xu
+Maintainer-email: zhou.xu@monash.edu
+License: GPLv3+
+Project-URL: Bug Tracker, https://github.com/IMBalENce/openECCI/issues
+Project-URL: Source Code, https://github.com/IMBalENce/openECCI
+Keywords: ECCI,electron channelling contrast imaging,ECP,electron channeling pattern,EBSD,electron backscatter diffraction,RKD,reflected kikuchi diffraction,SEM,scanning electron microscopy,kikuchi pattern,dislocation,defect analsysis
+Platform: "Linux"
+Platform: "MacOS X"
+Platform: "Windows"
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: hyperspy >=1.7.3
+Requires-Dist: h5py >=2.10
+Requires-Dist: matplotlib >=3.5
+Requires-Dist: numpy >=1.21.6
+Requires-Dist: orix >=0.11.1
+Requires-Dist: tqdm >=4.58.0
+Requires-Dist: scipy >=1.7
+Requires-Dist: kikuchipy >=0.8.6
+Requires-Dist: pyqt5-tools >=5.15
+Requires-Dist: opencv-python >=4.5.3
+Requires-Dist: tifffile >=2023.2.2
+Provides-Extra: build-doc
+Requires-Dist: sphinx >=4.3.0 ; extra == 'build-doc'
+Requires-Dist: sphinx-rtd-theme >=0.5.1 ; extra == 'build-doc'
+Requires-Dist: sphinx-toggleprompt ; extra == 'build-doc'
+Provides-Extra: coverage
+Requires-Dist: pytest-cov ; extra == 'coverage'
+Requires-Dist: codecov ; extra == 'coverage'
+Provides-Extra: tests
+Requires-Dist: pytest >=5.0 ; extra == 'tests'
+
+<div align="center">
+  <a href="https://github.com/IMBalENce/openECCI">
+    <img width="60%" src="https://github.com/IMBalENce/openECCI/raw/main/images/logo/banner.png">
+  </a>
+</div>
+<br>
+OpenECCI [open-e-ki] is a Python library for Electron Channelling Contrast Imaging (ECCI) analysis of crystal defects in Scanning Electron Microscope (SEM) by guiding precise stereo-tilt of the specimen to the preferable orientations. 
+<br> 
+
+| Deployment    | ![PyPI - Version](https://img.shields.io/pypi/v/openECCI) | 
+| :- | :- |
+| **Activity**      | Work in progress |
+| **Citation**      | [![DOI](https://zenodo.org/badge/799454158.svg)](https://zenodo.org/doi/10.5281/zenodo.11183729) |
+| **License**       | [![GitHub License](https://img.shields.io/github/license/IMBalENce/openECCI)](https://opensource.org/licenses/GPL-3.0) |
+
+## Documentation
+
+Refer to the included [Jupyter notebook tutorials](https://github.com/IMBalENce/openECCI/tree/main/tutorials) for detailed instruction and applications. Demo datasets can be downloaded from [openECCI-data](https://github.com/IMBalENce/openECCI-data) repository. The [openECCI documentation](https://openecci-tutorials.readthedocs.io/en/latest/#) page is currently under development. Stay tuned for more information. More code examples, and a detailed workflow tutorial paper will be updated soon.
+
+## Installation
+
+Create a new conda environment
+```
+conda update conda
+conda create -n openecci python=3.10 
+conda activate openecci
+``` 
+Install openECCI with `pip`:
+```bash
+pip install openECCI
+```
+
+or you can install from source:
+```
+git clone https://github.com/IMBalENce/openECCI
+cd openECCI
+pip install .
+```
+If you want to create an editable install:
+```
+pip install -e .
+```
+
+## Citing openECCI
+
+If you are using openECCI in your scientific research, please help our scientific
+visibility by citing the Zenodo DOI: https://doi.org/10.5281/zenodo.11183730.
+
+## Contributors
+| | |
+| :- | :- |
+|Zhou Xu |  Monash Centre for Electron Microscopy (MCEM) |
+| HÃ¥kon Wiik Ã…nes | Norwegian University of Science and Technology <br> Xnovo Technology Aps |
+| Sergey Gorelick | Monash Centre for Electron Microscopy (MCEM) <br>  Ramaciotti Centre for Cryo-Electron Microscopy |
+| Xiya Fang | Monash Centre for Electron Microscopy (MCEM) |
+| Peter Miller | Monash Centre for Electron Microscopy (MCEM) |
