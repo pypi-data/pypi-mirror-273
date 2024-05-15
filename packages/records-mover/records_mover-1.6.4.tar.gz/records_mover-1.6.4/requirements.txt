@@ -1,0 +1,9 @@
+# https://github.com/googleapis/google-cloud-python/issues/2990
+setuptools>34.3.0
+wheel
+twine
+build
+flake8
+markupsafe
+google-cloud-storage
+boto3

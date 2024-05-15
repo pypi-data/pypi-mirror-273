@@ -1,0 +1,554 @@
+Metadata-Version: 2.1
+Name: records-mover
+Version: 1.6.4
+Summary: Records mover is a command-line tool and Python library you can use to move relational data from one place to another.
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Repository, https://github.com/bluelabsio/records-mover
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database :: Front-Ends
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: timeout_decorator
+Requires-Dist: PyYAML>=3.10
+Requires-Dist: db-facts>=5
+Requires-Dist: chardet>=3
+Requires-Dist: tenacity>=8.0.1
+Requires-Dist: config-resolver<6,>=5.0.1
+Requires-Dist: typing_inspect
+Requires-Dist: typing-extensions
+Provides-Extra: google-api-client
+Requires-Dist: google-api-python-client>=1.8.0; extra == "google-api-client"
+Requires-Dist: grpcio<2.0dev,>=1.29.0; extra == "google-api-client"
+Provides-Extra: pytest
+Requires-Dist: pytest<8.2; extra == "pytest"
+Requires-Dist: pytest-cov; extra == "pytest"
+Provides-Extra: itest
+Requires-Dist: jsonschema; extra == "itest"
+Requires-Dist: pytz; extra == "itest"
+Requires-Dist: wheel; extra == "itest"
+Requires-Dist: parameterized; extra == "itest"
+Requires-Dist: records-mover[google-api-client,pytest]; extra == "itest"
+Provides-Extra: airflow
+Requires-Dist: apache-airflow>=2; extra == "airflow"
+Requires-Dist: apache-airflow-providers-amazon; extra == "airflow"
+Requires-Dist: apache-airflow-providers-google; extra == "airflow"
+Provides-Extra: db
+Requires-Dist: sqlalchemy<2,>=1.4; extra == "db"
+Requires-Dist: sqlalchemy_privileges>=0.2.0; extra == "db"
+Provides-Extra: smart-open
+Requires-Dist: smart_open>=2; extra == "smart-open"
+Provides-Extra: gcs
+Requires-Dist: google-cloud-storage; extra == "gcs"
+Requires-Dist: records-mover[smart-open]; extra == "gcs"
+Provides-Extra: bigquery
+Requires-Dist: sqlalchemy-bigquery; extra == "bigquery"
+Requires-Dist: records-mover[db,gcs]; extra == "bigquery"
+Provides-Extra: aws
+Requires-Dist: awscli>=1.32.14; extra == "aws"
+Requires-Dist: boto3; extra == "aws"
+Requires-Dist: s3-concat>=0.1.7; extra == "aws"
+Requires-Dist: records-mover[smart-open]; extra == "aws"
+Provides-Extra: gsheets
+Requires-Dist: google; extra == "gsheets"
+Requires-Dist: google_auth_httplib2; extra == "gsheets"
+Requires-Dist: PyOpenSSL; extra == "gsheets"
+Requires-Dist: records-mover[google-api-client]; extra == "gsheets"
+Provides-Extra: parquet
+Requires-Dist: pyarrow; extra == "parquet"
+Provides-Extra: pandas
+Requires-Dist: pandas<2,>=1.3.5; extra == "pandas"
+Provides-Extra: mysql
+Requires-Dist: pymysql; extra == "mysql"
+Requires-Dist: records-mover[db]; extra == "mysql"
+Provides-Extra: redshift-base
+Requires-Dist: sqlalchemy-redshift>=0.7.7; extra == "redshift-base"
+Requires-Dist: records-mover[aws,db]; extra == "redshift-base"
+Provides-Extra: redshift-binary
+Requires-Dist: psycopg2-binary; extra == "redshift-binary"
+Requires-Dist: records-mover[redshift-base]; extra == "redshift-binary"
+Provides-Extra: redshift-source
+Requires-Dist: psycopg2; extra == "redshift-source"
+Requires-Dist: records-mover[redshift-base]; extra == "redshift-source"
+Provides-Extra: postgres-base
+Requires-Dist: records-mover[db]; extra == "postgres-base"
+Provides-Extra: postgres-binary
+Requires-Dist: psycopg2-binary; extra == "postgres-binary"
+Requires-Dist: records-mover[postgres-base]; extra == "postgres-binary"
+Provides-Extra: postgres-source
+Requires-Dist: psycopg2; extra == "postgres-source"
+Requires-Dist: records-mover[postgres-base]; extra == "postgres-source"
+Provides-Extra: cli
+Requires-Dist: odictliteral; extra == "cli"
+Requires-Dist: jsonschema; extra == "cli"
+Requires-Dist: docstring_parser; extra == "cli"
+Requires-Dist: requests; extra == "cli"
+Provides-Extra: vertica
+Requires-Dist: sqlalchemy-vertica-python>=0.5.5; extra == "vertica"
+Requires-Dist: records-mover[db]; extra == "vertica"
+Provides-Extra: alldb
+Requires-Dist: records-mover[bigquery,mysql,postgres-binary,redshift-binary,vertica]; extra == "alldb"
+Provides-Extra: typecheck
+Requires-Dist: mypy>=1.7.1; extra == "typecheck"
+Requires-Dist: lxml; extra == "typecheck"
+Requires-Dist: sqlalchemy-stubs>=0.3; extra == "typecheck"
+Requires-Dist: types-pytz; extra == "typecheck"
+Requires-Dist: types-mock; extra == "typecheck"
+Provides-Extra: unittest
+Requires-Dist: coverage; extra == "unittest"
+Requires-Dist: mock; extra == "unittest"
+Requires-Dist: records-mover[airflow,alldb,aws,cli,gcs,gsheets,pandas,pytest]; extra == "unittest"
+Provides-Extra: docs
+Requires-Dist: sphinx>=5; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1; extra == "docs"
+Requires-Dist: sphinx-argparse; extra == "docs"
+Requires-Dist: readthedocs-sphinx-ext>=2; extra == "docs"
+Requires-Dist: recommonmark; extra == "docs"
+Requires-Dist: records-mover[airflow,aws,cli,db]; extra == "docs"
+
+<img
+ src="https://raw.githubusercontent.com/bluelabsio/records-mover/master/docs/records-mover-horizontal.png"
+ alt="Records Mover">
+
+[![Documentation Status](https://readthedocs.org/projects/records-mover/badge/?version=latest)](https://records-mover.readthedocs.io/en/latest/?badge=latest)
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/bluelabsio/records-mover/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/bluelabsio/records-mover/tree/main)
+
+Records mover is a command-line tool and Python library you can
+use to move relational data from one place to another.
+
+Relational data here means anything roughly "rectangular" - with
+columns and rows.  For example, it supports reading and writing from:
+
+* Databases, including using native high-speed methods of
+  import/export of bulk data.  Redshift, Vertica and PostgreSQL are
+  well-supported, with some support for BigQuery and MySQL.
+* CSV files
+* Parquet files (initial support)
+* Google Sheets
+* Pandas DataFrames
+* Records directories - a structured directory of CSV/Parquet/etc
+  files containing some JSON metadata about their format and origins.
+  Records directories are especially helpful for the ever-ambiguous
+  CSV format, where they solve the problem of 'hey, this may be a
+  CSV - but what's the schema?  What's the format of the CSV itself?
+  How is it escaped?'
+
+Records mover can be exended expand to handle additional databases
+and data file types.  Databases are supported by building on top of
+their [SQLAlchemy](https://www.sqlalchemy.org/) drivers.  Records
+mover is able to auto-negotiate the most efficient way of moving data
+from one to the other.
+
+## CLI use example
+
+Installing:
+
+```sh
+pip3 install 'records_mover[cli,postgres-binary,redshift-binary]'
+```
+
+Loading a CSV into a database:
+
+```sh
+mvrec file2table foo.csv redshiftdb1 myschema1 mytable1
+```
+
+Copying a table from a PostgreSQL to a Redshift database:
+
+```sh
+mvrec --help
+mvrec table2table postgresdb1 myschema1 mytable1 redshiftdb2 myschema2 mytable2
+```
+
+Note records mover will automatically build an appropriate `CREATE
+TABLE` statement on the target end if the table doesn't already exist.
+
+Note that the connection details for the database names here must be
+configured using
+[db-facts](https://github.com/bluelabsio/db-facts/blob/master/CONFIGURATION.md).
+
+For more installation notes, see [INSTALL.md](./docs/INSTALL.md).  To
+understand the security model here, see [SECURITY.md](./docs/SECURITY.md).
+
+## CLI use demo (table creation and loading)
+
+<img src="https://i.imgur.com/PvmMhft.gif">
+
+## Python library use example
+
+First, install records_mover.  We'll also use Pandas, so we'll install
+that, too, as well as a driver for Postgres.
+
+```sh
+pip3 install records_mover[pandas,postgres-source]
+```
+
+Now we can run this code:
+
+```python
+#!/usr/bin/env python3
+
+# Pull in the records-mover library - be sure to run the pip install above first!
+from records_mover import sources, targets, move
+from pandas import DataFrame
+import sqlalchemy
+import os
+
+sqlalchemy_url = f"postgresql+psycopg2://username:{os.environ['DB_PASSWORD']}@hostname/database_name"
+db_engine = sqlalchemy.create_engine(sqlalchemy_url)
+
+df = DataFrame.from_dict([{'a': 1}])  # or make your own!
+
+source = sources.dataframe(df=df)
+target = targets.table(schema_name='myschema',
+                       table_name='mytable',
+                       db_engine=db_engine)
+results = move(source, target)
+```
+
+When moving data, the sources supported can be found
+[here](https://records-mover.readthedocs.io/en/latest/records_mover.records.sources.html),
+and the targets supported can be found
+[here](https://records-mover.readthedocs.io/en/latest/records_mover.records.targets.html).
+
+## Advanced Python library use example
+
+Here's another example, using some additional features:
+
+* Loading from an existing dataframe.
+* Secrets management using
+  [db-facts](https://github.com/bluelabsio/db-facts), which is a way
+  to configure credentials in YAML files or even fetch them
+  dynamically from your secrets store.
+* Logging configuration to show the internal processing steps (helpful
+  in optimizing performance or debugging issues)
+
+you can use this:
+
+```python
+#!/usr/bin/env python3
+
+# Pull in the records-mover library - be sure to run the pip install above first!
+from records_mover import Session
+from pandas import DataFrame
+
+session = Session()
+session.set_stream_logging()
+records = session.records
+
+db_engine = session.get_default_db_engine()
+
+df = DataFrame.from_dict([{'a': 1}])  # or make your own!
+
+source = records.sources.dataframe(df=df)
+target = records.targets.table(schema_name='myschema',
+                               table_name='mytable',
+                               db_engine=db_engine)
+results = records.move(source, target)
+```
+
+## Python library API documentation
+
+You can can find more API documentation
+[here](https://records-mover.readthedocs.io/en/latest/index.html).
+In particular, note:
+
+* [Session() constructor](https://records-mover.readthedocs.io/en/latest/records_mover.html#records_mover.Session.__init__)
+* [sources factory methods](https://records-mover.readthedocs.io/en/latest/records_mover.records.sources.html)
+* [targets factory methods](https://records-mover.readthedocs.io/en/latest/records_mover.records.targets.html)
+* [move() method](https://records-mover.readthedocs.io/en/latest/records_mover.records.html#records_mover.records.move)
+* [BaseRecordsFormat](https://records-mover.readthedocs.io/en/latest/records_mover.records.html#records_mover.records.base_records_format.BaseRecordsFormat)
+
+## Local Development
+
+The included Dockerfile can be used to build a docker image that is
+suitable for local development.
+
+```bash
+docker build Dockerfile.dev -t records-mover:latest .
+```
+
+Or, using docker compose,
+```bash
+docker compose build
+```
+
+The following commands assume the records-mover container has been
+named `records-mover`.
+
+Mount the directory containing your local copy of the repository to
+have it override what's in the container.
+
+```bash
+docker run -it --mount src="$(pwd)/records_mover",target=/records-mover/records_mover,type=bind records-mover
+```
+This will mount your local src overtop of the same directory in the
+container. Mount any additional directories you are working on with
+additional --mount entries
+
+Alternatively, you can launch the container using docker-compose.
+This will start the container with pre-defined mounts.
+```
+docker-compose up -d
+```
+This will build the container image as necessary, launch it, and
+mount the most relevant volumes for local dev.
+The container is hosting a bash shell and will run until you
+manually shut it down.
+
+Note, if you have to add a dependency to requirements.txt and want
+to test it locally, add the line `COPY requirements.txt .` after
+`RUN git clone ...` in the Dockerfile and rebuild the container.
+
+### Working within the container
+
+The container presumes you're still working with python
+virtual environments when working with it. This could possibly
+be considered a "hat on a hat" situation.
+The practical consequence of this is that if you do open a shell
+in the container, ensure you activate the `venv` virtual
+environment. Otherwise, you will not have all the dependencies
+you'll need.
+
+After you've started a shell with the `docker run...` command above,
+you can activate the virtual environment with:
+```
+source venv/bin/activate
+```
+
+### Running unit and type tests
+
+Unit and type tests can be run within the container by running:
+```
+make citest
+make cicoverage
+make typecheck
+make citypecoverage
+```
+
+The tests can be run from outside the container using docker-compose.
+```bash
+docker compose run test
+```
+It's theoretically possible to build sufficient additional
+containers to support running integration tests locally but
+that has not been planned yet.
+
+### In-progress airbyte integration
+
+Currently in progress integration airbyte as an alternative engine for executing
+source <-> destination transfers. This functionality is currently behind a
+feature flag. To enable all airbyte features in your environment, set the
+following environment variable:
+```bash
+export RECORDS_MOVER_AIRBYTE_ENABLED=1
+```
