@@ -1,0 +1,9 @@
+shipyard_fivetran/__init__.py,sha256=3O7tE4AsCXYha-_uXKSbULAEqAcARNG8jZU56ShtlfU,37
+shipyard_fivetran/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipyard_fivetran/cli/authtest.py,sha256=dJg7F5XNzmCffKE6DtCZm6UN0D8MS6-Aa_Ms0i_RCUc,297
+shipyard_fivetran/cli/sync.py,sha256=W6oKxzcgIfHbUAKZBsw_euit-g4M8K4xm9LE4_Emf_U,3231
+shipyard_fivetran/cli/update_connector.py,sha256=GY_c9QB9U_n8-Ieslw3R19S5I4Dw380BGGmUEn23X5c,2418
+shipyard_fivetran/fivetran.py,sha256=4LKdk_pQOXpBhFswfU0ABraXmdM1hse0ChYyYzglFNk,9916
+shipyard_fivetran-0.2.0.dist-info/METADATA,sha256=WzzDJHEmMVB_VNYRZ5aaYsERxxZ3QMTZqz92nDRG84c,641
+shipyard_fivetran-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+shipyard_fivetran-0.2.0.dist-info/RECORD,,
