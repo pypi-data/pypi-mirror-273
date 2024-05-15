@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-xiao"
+authors = [
+    {name = "xiaojinli", email = "553555614@qq.com"},
+]
+description = "langchain extension python package"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["langchain"]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "langchain-core>=0.1.45",
+    "langchain-community>=0.0.34",
+    "pydantic<=1.10.15",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/xiaojinlii/langchain-xiao/blob/main/README.md"
+Source = "https://github.com/xiaojinlii/langchain-xiao"
+
+[tool.setuptools]
+packages = ["langchain_xiao"]
+
+[tool.setuptools.dynamic]
+version = {attr = "langchain_xiao.__version__"}
