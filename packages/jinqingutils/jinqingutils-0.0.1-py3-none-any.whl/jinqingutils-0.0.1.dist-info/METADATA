@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jinqingutils
+Version: 0.0.1
+Summary: 堇青平台调用方法
+Home-page: https://gitee.com/zh19990906/jinqingutils
+Author: HengZhang
+Author-email: zhang19990906@gmail.com
+Requires-Python: >=3.7
+Requires-Dist: requests
+
