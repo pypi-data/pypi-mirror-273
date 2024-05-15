@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: detectools
+Version: 0.1.6
+Summary: Overlay of PyTorch to generalize trainning and inference processes for detection & instance segmentation tasks.
+Author-email: Lucas Bernigaud Samatan <lucas.bernigaud-samatan@inrae.fr>, Jordan Bernigaud Samatan <jordan.bernigaud-samatan@inrae.fr>
+Maintainer-email: Jordan Bernigaud Samatan <jordan.bernigaud-samatan@inrae.fr>
+License: GNU Affero General Public License v3 or later (AGPLv3+) (AGPL-3.0).
+Project-URL: Homepage, https://forgemia.inra.fr/ue-apc/librairies/python/detectools
+Project-URL: Issues, https://forgemia.inra.fr/ue-apc/librairies/python/detectools/-/issues
+Project-URL: Documentation, https://detectools.readthedocs.io/en/latest/
+Project-URL: Repository, https://forgemia.inra.fr/ue-apc/librairies/python/detectools
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: computervisiontools
+Requires-Dist: matplotlib ==3.8.2
+Requires-Dist: torch ==2.1.0
+Requires-Dist: torchvision ==0.16.0
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: tensorboard ==2.15.1
+Requires-Dist: XlsxWriter ==3.1.9
+Requires-Dist: seaborn ==0.13.0
+Requires-Dist: pycocotools ==2.0.7
+Requires-Dist: torchmetrics ==1.3.0
+Requires-Dist: ultralytics ==8.1.7
+Requires-Dist: transformers ==4.39.2
+
+<!--
+<p align="center">
+  <img src="https://github.com///raw/main/docs/source/logo.png" height="150">
+</p>
+-->
+
+<h1 align="center">
+  Detectools
+</h1>
+
+
+Torch overlay for trainning and inference processes for object detection & instance segmentation tasks. 
+
+## 💪 Context
+
+Detectools is developped by INRAE (french National Research Institute for Agriculture, Food and the Environment) for the [PHENOME-EMPHASIS project](https://www.phenome-emphasis.fr/).
+
+## Code access and documentation
+
+Source code  documentation will be accessible soon.
+
+## Installation
+
+```shell
+pip install detectools
+```
