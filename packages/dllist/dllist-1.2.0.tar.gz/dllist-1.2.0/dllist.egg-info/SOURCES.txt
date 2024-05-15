@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+dllist/__init__.py
+dllist/macos.py
+dllist/py.typed
+dllist/unix_like.py
+dllist/windows.py
+dllist.egg-info/PKG-INFO
+dllist.egg-info/SOURCES.txt
+dllist.egg-info/dependency_links.txt
+dllist.egg-info/requires.txt
+dllist.egg-info/top_level.txt
+test/test_linux.py
+test/test_macos.py
+test/test_other.py
+test/test_windows.py
