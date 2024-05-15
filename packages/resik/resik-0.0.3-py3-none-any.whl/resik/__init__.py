@@ -1,0 +1,1 @@
+from resik.imp import imprime
