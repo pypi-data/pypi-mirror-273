@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/jphrase/__init__.py
+src/jphrase/phrase_splitter.py
+src/jphrase.egg-info/PKG-INFO
+src/jphrase.egg-info/SOURCES.txt
+src/jphrase.egg-info/dependency_links.txt
+src/jphrase.egg-info/top_level.txt
