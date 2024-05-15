@@ -1,0 +1,5 @@
+*.pyc
+*.whl
+/build
+/dist
+/xmlstore.egg-info
