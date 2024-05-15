@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pySNOM/__init__.py
+pySNOM/pySNOM.py
+pySNOM/version.py
+pySNOM.egg-info/PKG-INFO
+pySNOM.egg-info/SOURCES.txt
+pySNOM.egg-info/dependency_links.txt
+pySNOM.egg-info/requires.txt
+pySNOM.egg-info/top_level.txt
+pySNOM/tests/__init__.py
+pySNOM/tests/test_NeaSpectrum.py
