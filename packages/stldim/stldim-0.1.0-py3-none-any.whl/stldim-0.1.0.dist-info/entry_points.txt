@@ -1,0 +1,2 @@
+[console_scripts]
+stldim = stldim.__main__:main
