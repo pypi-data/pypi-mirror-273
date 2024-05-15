@@ -1,0 +1,8 @@
+unisender_go_api/__init__.py,sha256=YoXp6sTf6uAnkmMg9ScCmZIl91-pMnwx23ekT3W_YkI,368
+unisender_go_api/api_methods.py,sha256=GnoX6_2a45pcZzpB8MMIntnQXTsq5BbgLUpBJC_-Nmk,4172
+unisender_go_api/api_types.py,sha256=CkMY7ULFRA_VUzfh2cqybgr0QEWx1k9kroSjwKJOHCo,13047
+unisender_go_api/clients.py,sha256=zkifhmSsqKPMqGFQ7M2ELos75DHtCRMRu-sGclsel54,1684
+unisender_go_api/exceptions.py,sha256=41FJHeQL1m3OoKZUhKX9W1T2PC_ZHqM03j2SDcrovcs,3562
+unisender_go_api-0.2.0.dist-info/METADATA,sha256=RAnWd0W7vSwRVnnhG6N2nNkhDCsE_gJ0DvucpL_HorA,4733
+unisender_go_api-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+unisender_go_api-0.2.0.dist-info/RECORD,,
