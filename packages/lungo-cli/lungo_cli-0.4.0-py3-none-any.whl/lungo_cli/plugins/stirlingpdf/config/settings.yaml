@@ -1,0 +1,18 @@
+security:
+  enableLogin: false
+  csrfDisabled: false
+  loginAttemptCount: 5
+  loginResetTimeMinutes : 120
+
+system:
+  defaultLocale: 'en-US'
+  googlevisibility: false
+  enableAlphaFunctionality: false
+  showUpdate: false
+
+endpoints:
+  toRemove: []
+  groupsToRemove: []
+
+metrics:
+  enabled: false
