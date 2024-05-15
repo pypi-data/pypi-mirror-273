@@ -1,0 +1,48 @@
+[build-system]
+    requires = ["setuptools>=61.0"]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name = "python-project-stub"
+    version = "0.0.3"
+    dynamic = ["authors"] # specified in setup.cfg
+    
+    # The value of the "description" field will be displayed:
+    #     * In a banner at the top of "pypi.org/project/python-project-stub".
+    #     * As the value of the "Summary" field when "pip show python-project-stub"
+    #           is executed.
+    #
+    # In multi-line comments in TOML files, a line-ending backslash eats the
+    #    newline character and eats all leading whitespace that had followed the
+    #    newline.
+    #    This differs from the behavior in Python source code where a line-ending
+    #    backslash within a multi-line comment eats the newline but does not touch
+    #    leading whitespace that had followed the newline.
+    description = """\
+        Stub files to use as the basis of a Python project that can be \
+        packaged and uploaded to PyPI\
+        """
+    
+    license = {text = "BSD 3-Clause License"}
+    
+    dependencies = [
+        "numpy>=1.0.0,<2.0.0",
+        "pandas>=2.0.0,<3.0.0"
+    ]
+
+    readme = "README.md"
+    
+[project.scripts]
+    python_project_stub = "python_project_stub.__main__:main"
+
+[project.urls]
+    "Homepage" = "https://github.com/striebel/python-project-stub"
+
+
+# https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+
+[tool.setuptools]
+    include-package-data = true
+
+[tool.setuptools.packages.find]
+    where = ["."]
