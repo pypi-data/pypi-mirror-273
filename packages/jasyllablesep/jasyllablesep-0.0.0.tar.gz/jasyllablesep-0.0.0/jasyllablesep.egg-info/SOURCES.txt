@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+jasyllablesep/__init__.py
+jasyllablesep/core.py
+jasyllablesep.egg-info/PKG-INFO
+jasyllablesep.egg-info/SOURCES.txt
+jasyllablesep.egg-info/dependency_links.txt
+jasyllablesep.egg-info/top_level.txt
+tests/test_core.py
