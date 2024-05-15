@@ -1,0 +1,2 @@
+import{_ as e,o as c,c as n}from"./1.8.0_index.js";const o={};function r(t,s){return c(),n("div",null,"region")}const a=e(o,[["render",r]]);export{a as default};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMS44LjBfcmVnaW9uMy5qcyIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL3NjZW5lcnkvX2V4YW1wbGUvX3N0YXR1cy9yZWdpb24udnVlIl0sInNvdXJjZXNDb250ZW50IjpbIlxuXG5cbjx0ZW1wbGF0ZT5cblx0PGRpdj5yZWdpb248L2Rpdj5cbjwvdGVtcGxhdGU+Il0sIm5hbWVzIjpbIl9zZmNfcmVuZGVyIiwiX2N0eCIsIl9jYWNoZSJdLCJtYXBwaW5ncyI6IjhEQUlDLFNBQUFBLEVBQUFDLEVBQUFDLEVBQUEifQ==
