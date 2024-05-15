@@ -1,0 +1,77 @@
+.readthedocs.yaml
+LICENSE
+MANIFEST.in
+README.md
+README.rst
+environment.yml
+psearch_pyc.pyd
+psearch_pyc.so
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+.ipynb_checkpoints/Old Template Fitter-checkpoint.ipynb
+.ipynb_checkpoints/Old Templet Fitter-checkpoint.ipynb
+.ipynb_checkpoints/RRL Fitter-aug23-checkpoint.ipynb
+.ipynb_checkpoints/RRL Fitter-aug27-checkpoint.ipynb
+.ipynb_checkpoints/RRL Fitter-checkpoint.ipynb
+.ipynb_checkpoints/Templet Fitter-checkpoint.ipynb
+.ipynb_checkpoints/Templet fit-checkpoint.ipynb
+.ipynb_checkpoints/Tmp Fitter-checkpoint.ipynb
+.ipynb_checkpoints/query tests-checkpoint.ipynb
+.ipynb_checkpoints/readfits-checkpoint.ipynb
+.ipynb_checkpoints/temps-checkpoint.ipynb
+.ipynb_checkpoints/test-checkpoint.ipynb
+.ipynb_checkpoints/upsilon-checkpoint.ipynb
+Leavitt.egg-info/PKG-INFO
+Leavitt.egg-info/SOURCES.txt
+Leavitt.egg-info/dependency_links.txt
+Leavitt.egg-info/not-zip-safe
+Leavitt.egg-info/requires.txt
+Leavitt.egg-info/top_level.txt
+__pycache__/RRLfit.cpython-37.pyc
+__pycache__/oldselftmp.cpython-37.pyc
+__pycache__/psearch_py3.cpython-37.pyc
+__pycache__/psearch_py_verbose.cpython-37.pyc
+__pycache__/selftemplate.cpython-37.pyc
+__pycache__/tmpfit.cpython-37.pyc
+__pycache__/utils.cpython-37.pyc
+bin/leavitt
+docs/Makefile
+docs/conf.py
+docs/examples.rst
+docs/gettingstarted.rst
+docs/index.rst
+docs/install.rst
+docs/leavitt.rst
+docs/make.bat
+docs/modules.rst
+docs/requirements.txt
+docs/_static/leavitt.css
+leavitt/__init__.py
+leavitt/psearch_py3.py
+leavitt/rrlfit.py
+leavitt/sampler.py
+leavitt/selftemplate.py
+leavitt/templates.py
+leavitt/timeseries.py
+leavitt/tmpfit.py
+leavitt/utils.py
+leavitt/var.py
+leavitt/__pycache__/psearch_py3.cpython-37.pyc
+leavitt/__pycache__/rrlfit.cpython-37.pyc
+leavitt/__pycache__/selftemplate.cpython-37.pyc
+leavitt/__pycache__/tmpfit.cpython-37.pyc
+leavitt/__pycache__/utils.cpython-37.pyc
+leavitt/data/LaydenTemplates.txt
+leavitt/data/SesarTemplates_g.txt
+leavitt/data/SesarTemplates_i.txt
+leavitt/data/SesarTemplates_r.txt
+leavitt/data/SesarTemplates_u.txt
+leavitt/data/SesarTemplates_z.txt
+leavitt/data/TemplateIDs&Types.txt
+leavitt/data/layden_templates.fits
+samples/all_gold_sample.txt
+samples/golden_RRab.txt
+samples/golden_original.txt
+samples/nsc_dr2_variables.fits.gz
