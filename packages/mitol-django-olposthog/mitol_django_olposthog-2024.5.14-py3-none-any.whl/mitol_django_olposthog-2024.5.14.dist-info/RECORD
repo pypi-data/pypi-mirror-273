@@ -1,0 +1,14 @@
+mitol_django_olposthog-2024.5.14-py3.8-nspkg.pth,sha256=1XVUL3B-_EJMQFAeDbjRTf_p2rBMZfZgZnLohBzFq0M,534
+mitol/olposthog/CHANGELOG.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mitol/olposthog/README.md,sha256=S1pzj9yrhJS9wIo10cRQLJhyjGNZbaITIpvhkUrT-DI,2082
+mitol/olposthog/__init__.py,sha256=XtnlOmIgjWRWRGDcNbo3JImiTb7NwNliaQqJAEBgnjU,153
+mitol/olposthog/apps.py,sha256=oAcYWt_fW1ZQltI8_p8_R0dgm59DnovsgnTH6N9HiAg,322
+mitol/olposthog/features.py,sha256=8KCRKEAWAVFDzxVcyFYa0Dbz38f2LVCGCuudkokxPs0,4125
+mitol/olposthog/settings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mitol/olposthog/settings/olposthog.py,sha256=G7e_C-bbYGK_B7hZH0FTIMDhLDrqIE99SiuMlgOaSJM,858
+mitol_django_olposthog-2024.5.14.dist-info/METADATA,sha256=Yu54RbpeB7zPwc0kiA8WJoWWqEazDh56FZpm9Ng_tSo,2686
+mitol_django_olposthog-2024.5.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mitol_django_olposthog-2024.5.14.dist-info/namespace_packages.txt,sha256=9qMalQulPLLFaSu29n2ga8gU2jGaSr2fwyDQG3-G3OI,6
+mitol_django_olposthog-2024.5.14.dist-info/top_level.txt,sha256=9qMalQulPLLFaSu29n2ga8gU2jGaSr2fwyDQG3-G3OI,6
+mitol_django_olposthog-2024.5.14.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mitol_django_olposthog-2024.5.14.dist-info/RECORD,,
