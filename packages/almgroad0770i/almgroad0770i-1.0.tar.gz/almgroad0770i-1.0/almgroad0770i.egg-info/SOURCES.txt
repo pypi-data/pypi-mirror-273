@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+almgroad0770i.egg-info/PKG-INFO
+almgroad0770i.egg-info/SOURCES.txt
+almgroad0770i.egg-info/dependency_links.txt
+almgroad0770i.egg-info/requires.txt
+almgroad0770i.egg-info/top_level.txt
+code/__init__.py
