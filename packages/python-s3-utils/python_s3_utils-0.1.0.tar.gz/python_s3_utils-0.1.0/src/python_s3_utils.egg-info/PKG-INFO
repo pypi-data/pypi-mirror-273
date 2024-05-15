@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: python-s3-utils
+Version: 0.1.0
+Summary: Some simple wrapper functions around boto3 functionality.
+Author-email: Tim Santor <tsantor@xstudios.com>
+Project-URL: Repository, https://github.com/tsantor/python-s3-utils.git
+Project-URL: Issues, https://github.com/tsantor/python-s3-utils/issues
+Project-URL: Changelog, https://github.com/tsantor/python-s3-utils/blob/master/HISTORY.md
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: moto<6,>=5.0.6; extra == "dev"
+
+# Python S3 Utils
+
+![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+
+## Overview
+
+Wrapper around boto3 functionality for common interactions with S3. It may be a bit overkill, but there are some minor quality of life improvements.
+
+## Installation
+
+Install Python S3 Utils:
+
+```bash
+python3 -m pip install python-s3-utils
+```
+
+## Usage
+```python
+import boto3
+from s3_utils import S3Bucket
+
+session = boto3.session.Session(
+    aws_access_key_id="AWS_ACCESS_KEY_ID",
+    aws_secret_access_key="AWS_SECRET_ACCESS_KEY",
+)
+
+s3bucket = S3Bucket(session, "bucket-name")
+
+# Returns True/False
+s3bucket.file_exists('key-name')
+
+# Returns a generator of all objects in the bucket, does not have a 1000 object limit like `list_objects`
+s3bucket.list_objects_recursive()
+
+# File name becomes the key name if key_name not provided
+s3bucket.upload_file("path/filename.jpg", key_name=None)
+
+# Upload all files in a directory
+s3bucket.upload_files("path/")
+
+# File would be downloaded to target_dir/prefix/filename.jpg
+s3bucket.download_file("prefix/filename.jpg", "target_dir")
+
+# Returns a dict summary of the operation
+s3bucket.delete_files(["path/filename.jpg", "key-name"])
+```
+
+## Development
+To get a list of all commands with descriptions simply run `make`.
+
+```bash
+make env
+make pip_install
+make pip_install_editable
+```
+
+## Testing
+
+```bash
+make pytest
+make coverage
+make open_coverage
+```
+
+## Issues
+
+If you experience any issues, please create an [issue](https://github.com/tsantor/python-s3-utils/issues) on GitHub.
+
+# History
+
+All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
+
+## 0.1.0 (2024-05-14)
+
+- First release

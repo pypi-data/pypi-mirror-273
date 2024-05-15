@@ -1,0 +1,17 @@
+AUTHORS.md
+HISTORY.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/python_s3_utils.egg-info/PKG-INFO
+src/python_s3_utils.egg-info/SOURCES.txt
+src/python_s3_utils.egg-info/dependency_links.txt
+src/python_s3_utils.egg-info/requires.txt
+src/python_s3_utils.egg-info/top_level.txt
+src/s3_utils/__init__.py
+src/s3_utils/core.py
+src/s3_utils/helpers.py
+tests/test_core.py
+tests/test_helpers.py
