@@ -1,0 +1,11 @@
+numpy
+xarray
+netCDF4
+pandas
+toml
+
+[dev]
+ruff
+isort
+black
+pytest
