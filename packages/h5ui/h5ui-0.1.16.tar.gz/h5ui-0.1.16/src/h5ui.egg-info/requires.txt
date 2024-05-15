@@ -1,0 +1,13 @@
+textual
+textual-imageview
+textual-fspicker
+h5py
+pillow
+natsort
+
+[dev]
+textual-dev
+
+[rel]
+build
+twine
