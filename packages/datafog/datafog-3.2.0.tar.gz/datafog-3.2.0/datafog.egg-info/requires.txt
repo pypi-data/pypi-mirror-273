@@ -1,0 +1,12 @@
+pandas
+Requests==2.31.0
+spacy==3.4.4
+en_spacy_pii_fast==0.0.0
+pyspark==3.4.1
+pydantic==1.10.8
+Pillow
+sentencepiece
+protobuf
+pytesseract
+aiohttp
+pytest-asyncio
