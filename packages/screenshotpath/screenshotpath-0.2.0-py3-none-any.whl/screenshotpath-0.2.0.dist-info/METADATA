@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: screenshotpath
+Version: 0.2.0
+Summary: A package to change macOS screenshot path
+Home-page: http://github.com/boiwantlearncode/screenshotpath
+Author: Isa Bin Mohamed Yamin
+Author-email: boiwantlearncode@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: argparse
+
+### Screenshotpath
+
+Utility to get or set the screenshot location on macOS.
+
+### Usage:
+  `screenshotpath [--get | --set <PATH>]`
+
+### Examples
+  1. Retrieve the current screenshot location:
+     `screenshotpath --get`
+
+  2. Set a new screenshot location to /absolute/path:
+     `screenshotpath --set /absolute/path`
+
+
