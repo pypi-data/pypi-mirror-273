@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: BiblioDig
+Version: 1.0.0
+Summary: Biblioteca que busque un libro ya sea por nombre, autor, año o alguna otra caracteristica
+Author: Luz Lizeth Vazquez Garcia
+Author-email: luzlizet35@gmail.com
+Requires-Dist: pandas
+Requires-Dist: twine
+Requires-Dist: wheel
+Requires-Dist: setuptools
