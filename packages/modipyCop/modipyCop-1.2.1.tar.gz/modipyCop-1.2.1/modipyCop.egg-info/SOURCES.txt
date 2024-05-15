@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cop/__init__.py
+cop/cop.py
+modipyCop.egg-info/PKG-INFO
+modipyCop.egg-info/SOURCES.txt
+modipyCop.egg-info/dependency_links.txt
+modipyCop.egg-info/top_level.txt
