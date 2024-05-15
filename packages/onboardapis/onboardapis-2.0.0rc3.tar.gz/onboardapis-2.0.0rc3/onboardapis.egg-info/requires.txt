@@ -1,0 +1,16 @@
+geopy>=2.3.0
+gql[all]>=3.5.0
+restfly>=1.4.7
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+deprecation>=2.1.0
+
+[dev]
+flake8>=7.0.0
+Flake8-pyproject>=1.2.3
+pdoc>=14.4.0
+build>=1.2.1
+pytest>=8.2.0
+pytest-cov>=5.0.0
+testcontainers>=3.7.1
+wiremock[testing]>=2.6.1
