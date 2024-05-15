@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+LearnHowToPackage_hsr/__init__.py
+LearnHowToPackage_hsr/example_module.py
+LearnHowToPackage_hsr.egg-info/PKG-INFO
+LearnHowToPackage_hsr.egg-info/SOURCES.txt
+LearnHowToPackage_hsr.egg-info/dependency_links.txt
+LearnHowToPackage_hsr.egg-info/requires.txt
+LearnHowToPackage_hsr.egg-info/top_level.txt
