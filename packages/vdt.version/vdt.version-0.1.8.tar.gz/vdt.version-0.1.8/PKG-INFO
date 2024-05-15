@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: vdt.version
+Version: 0.1.8
+Summary: Version Increment Tool for GIT
+Home-page: https://github.com/devopsconsulting/vdt.version
+Author: Lars van de Kerkhof
+Author-email: lars@devopsconsulting.nl
+Maintainer: Lars van de Kerkhof
+Maintainer-email: lars@devopsconsulting.nl
+License-File: LICENSE
