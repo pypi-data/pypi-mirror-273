@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: confcls
+Version: 0.0.1
+Summary: Class instance configurator
+Author: Václav Krpec
+Author-email: vencik@razdva.cz
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Requires-Dist: smart-open (>=7.0.4,<8.0.0); extra == "all"
