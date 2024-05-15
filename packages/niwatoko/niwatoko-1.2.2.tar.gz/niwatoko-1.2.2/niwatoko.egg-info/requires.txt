@@ -1,0 +1,7 @@
+streamlit
+gradio
+openai
+anthropic
+opencv-python
+moviepy
+google-cloud-aiplatform
