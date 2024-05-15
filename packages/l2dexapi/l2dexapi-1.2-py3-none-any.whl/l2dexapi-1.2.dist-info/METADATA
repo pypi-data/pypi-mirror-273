@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: l2dexapi
+Version: 1.2
+Summary: 与Live2DViewerEX相互通信
+Home-page: http://www.icedream.space
+Author: Esdrin
+Author-email: esdrin@icedream.space
+License: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: websocket
+
