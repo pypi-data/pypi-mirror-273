@@ -1,0 +1,10 @@
+alphafold3/__init__.py,sha256=bVp09H_D-Uv8s6cm_dOhbrNxADHrtHOwNlCPG3WqIUw,225
+alphafold3/constants.py,sha256=bp1aroH87_NzPYIai-ms5dUJMqGmM6AQqL3d4hbQJgY,4196
+alphafold3/diffusion.py,sha256=AJBbYqkKKmAj0dXVMANNoZUQswxagzB7F7QOH_xiOMU,5449
+alphafold3/model.py,sha256=YvSya0XsCUCB9jqsEMre9SGgioIEiHVeUvh34Nd5hrM,4896
+alphafold3/pairformer.py,sha256=lyCk2ecA_wGv7Lp_P_HndIf7xu0Focq5UkGSuGNGc70,16667
+alphafold3/template_embedder.py,sha256=_ZD4g2QNJ-X6N3ndNNVxdNFGbJZ_y43uRyWpnadO4EU,2751
+alphafold3-0.0.6.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+alphafold3-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+alphafold3-0.0.6.dist-info/METADATA,sha256=onHy3HPFT1mcio4P3LKssZpLtu4Tpi-HuDMTjhSP9D4,9679
+alphafold3-0.0.6.dist-info/RECORD,,
