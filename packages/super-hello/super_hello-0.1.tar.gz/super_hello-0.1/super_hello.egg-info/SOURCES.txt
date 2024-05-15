@@ -1,0 +1,8 @@
+README.md
+setup.py
+super_hello/__init__.py
+super_hello/main.py
+super_hello.egg-info/PKG-INFO
+super_hello.egg-info/SOURCES.txt
+super_hello.egg-info/dependency_links.txt
+super_hello.egg-info/top_level.txt
