@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: kkpyai
+Version: 0.18.1
+Summary: Utility over popular low-level AI API
+Author: Beinan Li
+Author-email: li.beinan@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: expecttest
+Requires-Dist: kkpyutil
+Requires-Dist: matplotlib
+Requires-Dist: mlxtend
+Requires-Dist: psutil
+Requires-Dist: scikit-learn
+Requires-Dist: tensorboard (>=2.16.2,<3.0.0)
+Requires-Dist: torch
+Requires-Dist: torchinfo
+Requires-Dist: torchmetrics
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# kkpyai
+
+AI utility based on popular low-level AI libraries
+
