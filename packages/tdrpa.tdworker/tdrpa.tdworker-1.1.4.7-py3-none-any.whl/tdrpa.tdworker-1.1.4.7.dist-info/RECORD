@@ -1,0 +1,10 @@
+tdrpa/tdworker.cp38-win_amd64.pyd,sha256=5U6Xou_qyKd9ObbdidPLTgjfIRVaDouIAzyOVG78Sto,1181696
+tdrpa/tdworker/__init__.pyi,sha256=shtXcGhKTE0C1_MGmin9uKGT_HVSryEfM5KefQ1gucU,57
+tdrpa/tdworker/winElement.pyi,sha256=B4B-ThcOer6rwlJGfzEhibY9hYnhlamW50xL_feHA5c,16314
+tdrpa/tdworker/winKeyboard.pyi,sha256=veEChbM_Zp_AIBKF33TLp3KTPPhD3U9UYwJihUQFocQ,5063
+tdrpa/tdworker/winMouse.pyi,sha256=ZgNQH4Bab7CzXFPqaU3t8Lwg280wuc2FHsGS0bXaRKg,7386
+tdrpa/tdworker/window.pyi,sha256=tFxdjk9BGqS_d9NWv_3qhLoTmBAs1yIa4eSXII_wqVc,3655
+tdrpa.tdworker-1.1.4.7.dist-info/METADATA,sha256=KrgRUDcBO0XJ57E_YUJeBw1y-dnzZyP3fOgRRHzXh38,663
+tdrpa.tdworker-1.1.4.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tdrpa.tdworker-1.1.4.7.dist-info/top_level.txt,sha256=S9UoqmC_cyGqKbGsBkLQPEeQLbDrWD0SRwbxPpQpyyU,6
+tdrpa.tdworker-1.1.4.7.dist-info/RECORD,,
