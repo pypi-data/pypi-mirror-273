@@ -1,0 +1,14 @@
+click
+openai>=1.0
+pydub
+beautifulsoup4
+requests
+readability-lxml
+lxml[html_clean]
+
+[:sys_platform == "darwin"]
+simpleaudio
+
+[test]
+pytest
+cogapp
