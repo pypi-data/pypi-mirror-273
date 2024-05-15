@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+parasys/__init__.py
+parasys/monitor.py
+parasys.egg-info/PKG-INFO
+parasys.egg-info/SOURCES.txt
+parasys.egg-info/dependency_links.txt
+parasys.egg-info/entry_points.txt
+parasys.egg-info/requires.txt
+parasys.egg-info/top_level.txt
