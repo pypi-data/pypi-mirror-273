@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: xmlstore
+Version: 0.9.13
+Summary: Python package for storing typed data in xml
+Project-URL: Homepage, https://github.com/BoldingBruggeman/xmlstore
+Author-email: Jorn Bruggeman <jorn@bolding-bruggeman.com>
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+xmlstore is a Python package for storing information in XML format
+with extensible support for typing and schema validaton
