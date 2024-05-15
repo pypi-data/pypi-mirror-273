@@ -1,0 +1,12 @@
+exoscraper/__init__.py,sha256=oEHNoI-x8_j-iiY7F8ZIdXrjgpXw5dsfRUNwTSUkxRc,487
+exoscraper/distribution.py,sha256=mnCA3h87m9FJJt5pkqQ4sxFouyA0_xGsWpcTT8oonR4,4735
+exoscraper/planet.py,sha256=guOgJb3X9ncW4foi5nzR9ge1kpocynpzv4_3ypgV-so,15156
+exoscraper/population.py,sha256=svcTa1GDiePyafb752qN8BwDDCKoKolYGHT_XXOOiRw,604
+exoscraper/query.py,sha256=BT6cUxqK4CnE_12JnVNGbLPrX1wMWueP3fE-Nj9BAYg,12188
+exoscraper/star.py,sha256=TCLKPnHnj1Jveum-T8RIlOqIUH-_7tOyqj1xYLVRtek,5325
+exoscraper/system.py,sha256=GNaWkiM29kJYWTRhpsp7_ZV5zn5usl5BitnrBLib3uE,13764
+exoscraper/utils.py,sha256=M2XfxdSdNPsLTZF0iCv3fZ1nEI4CshGK5E0Q4kHiS0M,1491
+exoscraper-0.2.0.dist-info/LICENSE,sha256=p2s8oo1vZ-j4h5fxmOwvSUiLhcZnVPzPTuytUbJ1C3w,1072
+exoscraper-0.2.0.dist-info/METADATA,sha256=h6KjX-RNxLXD9BLV7ytcAlr4OshJ3_M5P3qKyZlkMx0,866
+exoscraper-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+exoscraper-0.2.0.dist-info/RECORD,,
