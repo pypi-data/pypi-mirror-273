@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: datasalad
+Version: 0.0.1rc2
+Summary: something descriptive
+Project-URL: Documentation, https://github.com/datalad/datasalad#readme
+Project-URL: Issues, https://github.com/datalad/datasalad/issues
+Project-URL: Source, https://github.com/datalad/datasalad
+Author-email: Michael Hanke <michael.hanke@gmail.com>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
