@@ -1,0 +1,11 @@
+onecontext/__about__.py,sha256=1SFj-qMOaeO0fOKQaFmYhAKiRwwNda5uWKpYtIcken8,23
+onecontext/__init__.py,sha256=SJzilNeaXEmAhHltRG4fCEsui6b3ys22m_DuPIAH7hk,39
+onecontext/client.py,sha256=IcyATgqiDUdRlhyLhwxad1qIQjKlAcRofLMhrZ5gMZ0,2609
+onecontext/index.py,sha256=c7XL85whPJLwkq2Qyfl9GSKWOOv7aiD7m3Iljy-5pWY,432
+onecontext/knowledgebase.py,sha256=tUdUPkgNeO7yOTsPwd6NwXany1RCbWBXTAuT9Wi9IEk,5271
+onecontext/main.py,sha256=rFDyf5s3bXBeFLPaXwKvxOGL34pvthNxOORnSY76EIw,3908
+onecontext/pipeline.py,sha256=Ob0WdkZgqTg7uV-7rwvcv92UwSucUGgwSKpDMEGThPo,1165
+onecontext-0.0.12.dist-info/METADATA,sha256=g7G7FDbEd07D32qwmGtj5S2ZNY1yjeiLbFpjBcZJnZ8,6763
+onecontext-0.0.12.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+onecontext-0.0.12.dist-info/licenses/LICENSE.txt,sha256=Q6XFAGRY98Bo63uMHuZSbXvkEkvHRYxiii6Hh6bvWqk,1095
+onecontext-0.0.12.dist-info/RECORD,,
