@@ -1,0 +1,11 @@
+chik_rs-0.7.0.dist-info/METADATA,sha256=UkTDzM13-5rVyZ1Y7bLeF9gOO3-UhXWw_3vk1o4VUhI,481
+chik_rs-0.7.0.dist-info/WHEEL,sha256=thWVGQI-HQrMGqeZp3gcIE7HFmAcTYQ1tQTxzJgo3SI,104
+chik_rs/sized_byte_class.py,sha256=Ty-NgTMoRe3hqPAYk1IYNJaBrbNGGXyO5qpTNo1K3GM,2708
+chik_rs/chik_rs.pyi,sha256=hVi2ab2swDL9nvmTTZRac8gBpGZDHsZGj4J6Yg6RMlg,154338
+chik_rs/__init__.py,sha256=G5N1go57WfvoAYKFQVRPSvwPydM7IRJwhPGzm5BXoeY,23
+chik_rs/sized_bytes.py,sha256=3CIXFtjYSQfJPaYpnQSNDs-ZphUmuwKPC0oRJ5DcvMk,385
+chik_rs/struct_stream.py,sha256=-xqtloBq1fup-RljlzZfIC_HBWUWz9DyXO88BfR_2YI,3974
+chik_rs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chik_rs/sized_ints.py,sha256=l1GeP1UIA_wOxaCZt2PL1jUxhVfO13E3i65iqwEMk8I,1629
+chik_rs/chik_rs.cpython-312-darwin.so,sha256=08Ei84TjgyOOvFi7kOIYnJHWq78NIXs6dV1o_jiNu3A,6220272
+chik_rs-0.7.0.dist-info/RECORD,,
