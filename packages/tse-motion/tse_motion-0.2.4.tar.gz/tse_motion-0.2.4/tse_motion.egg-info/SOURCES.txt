@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tse_motion.egg-info/PKG-INFO
+tse_motion.egg-info/SOURCES.txt
+tse_motion.egg-info/dependency_links.txt
+tse_motion.egg-info/entry_points.txt
+tse_motion.egg-info/requires.txt
+tse_motion.egg-info/top_level.txt
+tse_rating/__init__.py
+tse_rating/artifact_rating.py
+tse_rating/rate.py
+tse_rating/weight.pth
