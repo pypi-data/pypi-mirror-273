@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: fytok
+Version: 0.4.1
+Summary: Tokamak integrated modeling and analysis toolkit.
+Author-email: Zhi YU <yuzhi@ipp.ac.cn>
+License: Copyright (c) 2021-present Zhi YU (Institute of Plasma Physics Chinese Academy of Sciences) 
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: spdm
+
+# FyTok
+
+## Description
+
+Tokamak integrated modeling and analysis toolkit.
+
+## NOTICE：
+
+- This project is still under development, and the API may change at any time.
+- IMAS data dictionary is not included in this project, please download it from the official website.
+- TO Developer: 与 dd 相关的 spdm.plugins 放在 project fytok 下
+
+## Software Architecture
+
+Software architecture description
+
+![Image](docs/figures/fytok.svg "FuYun")
+
+## Installation
+
+### Requirements:
+
+### Build dependence
+
+- IMAS data dictionary > 3.38.1 # IMAS DD 源文件
+- fytok_data # 装置相关的映射文件 <fytok_data>/mapping
+
+### Develop Build (inplace)
+
+Create IMAS wrapper
+
+```{bash}
+
+export IMAS_DD_PATH= /home/salmon/workspace/data-dictionary
+export FYTOK_MAPPING_PATH=/home/salmon/workspace/fytok_data/mapping
+
+cd $IMAS_DD_PATH
+patch -s -p0 < <fytok dir>/python/setup_helper/dd_<dd version>.patch
+
+
+cd <fytok dir>/python
+python3 setup.py install_imas_wrapper --prefix=./
+```
+
+### Release Build
+
+TODO:...
+
+```{bash}
+cd <fytok dir>/python
+python3 setup.py bist_
+```
+
+## Instructions
+
+## Contribution
+
+## Feature
