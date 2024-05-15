@@ -1,0 +1,3 @@
+*.egg-info/
+.venv/
+__version__.py
