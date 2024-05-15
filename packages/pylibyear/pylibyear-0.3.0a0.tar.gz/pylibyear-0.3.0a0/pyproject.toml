@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pylibyear"
+dynamic = ["version"]
+description = "A simple measure of software dependency freshness."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Sam Atkins", email = "samatkins@outlook.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "packaging>=24.0",
+    "prettytable>=3.10.0",
+    "python-dateutil>=2.9.0.post0",
+    "typer>=0.12.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-vcr>=1.0.2",
+    "ruff>=0.4.4",
+]
+
+[project.scripts]
+libyear = "libyear.main:app"
+
+[project.urls]
+Documentation = "https://github.com/sam-atkins/pylibyear#readme"
+Issues = "https://github.com/sam-atkins/pylibyear/issues"
+Source = "https://github.com/sam-atkins/pylibyear"
+
+[tool.hatch.version]
+path = "libyear/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/pylibyear tests}"
+
+[tool.coverage.run]
+source_pkgs = ["pylibyear", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/pylibyear/__about__.py",
+]
+
+[tool.coverage.paths]
+pylibyear = ["src/pylibyear", "*/pylibyear/src/pylibyear"]
+tests = ["tests", "*/pylibyear/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["libyear"]
