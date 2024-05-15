@@ -1,0 +1,44 @@
+[tool.poetry.dependencies]
+python = "^3.12"
+netmiko = "^4.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.24.0"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "silver_octo_potato"
+version = "0.1.4"
+description = "Test Project"
+authors = ["Shota Muto <129914139+MutoShota@users.noreply.github.com>"]
+readme = "README.md"
+license= "Apache-2.0"
+classifiers = [
+    "Framework :: Robot Framework",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]
+
+packages = [
+    { include = "silver_octo_potato", from = "src" }
+]
+
+[project]
+name = "silver_octo_potato"
+version = "0.1.4"
+description = "Test Project"
+authors = [ { name = "Shota Muto" } ]
+readme = "README.md"
+license= { file = "LICENSE" }
+
+[tool.poetry.urls]
+Homepage = "https://github.com/MutoShota/silver-octo-potato"
