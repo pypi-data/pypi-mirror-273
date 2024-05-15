@@ -1,0 +1,9 @@
+django_multi_bulk_updater/__init__.py,sha256=-hd3vH5XLTQSRP60ZoCakVCfcDC-lQxNAAbemDP2fz4,55
+django_multi_bulk_updater/parallelExcecutor.py,sha256=iixG3V6dzjJpZ7ai1IxQTMHFERi8MWt6JuvDOim5ZwE,3477
+django_multi_bulk_updater/queryChunking.py,sha256=-I8rac0rHe4dvyv2k_WBycLFr8RVmj6uWcxFVar1OV4,4048
+django_multi_bulk_updater/queryConvertor.py,sha256=-ikQzVUHPHBriW-ZRPAAeoSPElhwm_VwdDVD0b0Zrhw,1822
+django_multi_bulk_updater-1.0.3.dist-info/LICENCE,sha256=X2KOc_eBHBU09PyUqVONzGa_eznkNDRw2uiFWuinG1I,1035
+django_multi_bulk_updater-1.0.3.dist-info/METADATA,sha256=YRSxQks-8UQbofCRNkB0mVON23QpTQJTBlU0HDXkzgA,600
+django_multi_bulk_updater-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_multi_bulk_updater-1.0.3.dist-info/top_level.txt,sha256=2PNbkyz7RyxZuXnrFDtCung8TYY6fHmgfBppn61ADrc,26
+django_multi_bulk_updater-1.0.3.dist-info/RECORD,,
