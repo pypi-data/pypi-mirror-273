@@ -1,0 +1,13 @@
+riversand/__init__.py,sha256=Sc6u7QYUnc3wLpBzfIp7yMUW26efIZVx678w8XSP7aE,739
+riversand/_version.py,sha256=RTmTlAK7CY5b4hTxeedH4SFUjlWqcgU3qGsRl-1ou3k,220
+riversand/calc.py,sha256=l18UG5QOHLJUPJwO-3ya-RqBz9imu6fnZVF2FsVRx3E,35160
+riversand/geospatial.py,sha256=Q515uV5DVqXUDobrbeLFcfKasbQoVPfA3RektyWz1qQ,68799
+riversand/params.py,sha256=bn5NlVhPqJSWikmh-_Biez1InRa3Rb6wHIn6ePfM9Jc,4150
+riversand/plot.py,sha256=cus1-rfD05fgxniE7734PP-04W1YtaSHEufeoStjUSw,11378
+riversand/utils.py,sha256=UG8AeLB9XWvO4PLSlW53PeQU-OeNvf-9h7OClFFJWNE,51865
+riversand/xml.py,sha256=1Vmisw0Pmj10YABEiuPN_-5ELL4FS7nc71IvzlMXoak,16086
+riversand-1.2.7.dist-info/LICENSE,sha256=_OAuu2kcdozeGUr76RuAJf17H0kDHzOZbeskalkm8OI,35150
+riversand-1.2.7.dist-info/METADATA,sha256=n-ocn6QIAT9icAh55TrP-lXC3Q7NBXzdBFlCZ-vLS8Q,3897
+riversand-1.2.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+riversand-1.2.7.dist-info/top_level.txt,sha256=F-UNl1kHEpF-2X8HmAB9B879C1WWIkJNy-ymzX40gXM,10
+riversand-1.2.7.dist-info/RECORD,,
