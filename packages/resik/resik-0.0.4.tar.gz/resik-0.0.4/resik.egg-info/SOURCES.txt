@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+resik/__init__.py
+resik/imp.py
+resik.egg-info/PKG-INFO
+resik.egg-info/SOURCES.txt
+resik.egg-info/dependency_links.txt
+resik.egg-info/top_level.txt
