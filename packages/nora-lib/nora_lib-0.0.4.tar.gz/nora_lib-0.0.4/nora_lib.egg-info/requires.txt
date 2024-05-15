@@ -1,0 +1,8 @@
+pydantic<3,>=2
+requests
+
+[dev]
+mypy
+pytest
+black
+types-requests
