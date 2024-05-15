@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pywebframework_uz
+Version: 0.1.0
+Summary: Python web-framework building for learning purpose
+Home-page: https://github.com/me/myproject
+Author: Madaminov Khojiakbar
+Author-email: hojiakbarmadaminov45@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: parse==1.20.1
+Requires-Dist: requests==2.31.0
+Requires-Dist: requests-wsgi-adapter==0.4.1
+Requires-Dist: WebOb==1.8.7
+Requires-Dist: whitenoise==6.6.0
+
+Python web-framework building for learning purpose
