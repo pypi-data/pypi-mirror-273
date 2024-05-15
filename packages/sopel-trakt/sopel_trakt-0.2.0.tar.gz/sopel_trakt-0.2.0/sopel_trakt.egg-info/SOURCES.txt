@@ -1,0 +1,15 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+dev-requirements.txt
+pyproject.toml
+sopel_trakt/__init__.py
+sopel_trakt.egg-info/PKG-INFO
+sopel_trakt.egg-info/SOURCES.txt
+sopel_trakt.egg-info/dependency_links.txt
+sopel_trakt.egg-info/entry_points.txt
+sopel_trakt.egg-info/requires.txt
+sopel_trakt.egg-info/top_level.txt
+tests/__init__.py
+tests/test_trakt.py
