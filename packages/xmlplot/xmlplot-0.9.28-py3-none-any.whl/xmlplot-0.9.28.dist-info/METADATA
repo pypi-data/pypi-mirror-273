@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: xmlplot
+Version: 0.9.28
+Summary: Python package for coordinate-aware data reading and plotting
+Project-URL: Homepage, https://github.com/BoldingBruggeman/xmlplot
+Author-email: Jorn Bruggeman <jorn@bolding-bruggeman.com>
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: xmlstore>=0.9.13
+Description-Content-Type: text/markdown
+
+xmlplot is a Python package for coordinate-aware reading and plotting of data
+in text and NetCDF format, using xml to store plot settings
