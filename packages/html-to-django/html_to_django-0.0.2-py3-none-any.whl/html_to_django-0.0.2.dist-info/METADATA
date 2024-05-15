@@ -1,0 +1,89 @@
+Metadata-Version: 2.3
+Name: html_to_django
+Version: 0.0.2
+Summary: HTML to Django Converter
+Project-URL: Homepage, https://github.com/truePhilipp/html_to_django
+Project-URL: Issues, https://github.com/truePhilipp/html_to_django/issues
+Author-email: Philipp Mayr <philipp@mayr.software>
+License: MIT License
+        
+        Copyright (c) 2024 Philipp Mayr
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.txt
+Keywords: converter,django,html,static html,tool,web development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: beautifulsoup4==4.12.3
+Provides-Extra: dev
+Requires-Dist: hatch-vcs==0.4.0; extra == 'dev'
+Requires-Dist: hatch==1.10.0; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: mypy==1.9.0; extra == 'test'
+Requires-Dist: pycodestyle==2.11.1; extra == 'test'
+Description-Content-Type: text/markdown
+
+# HTML To Django
+
+![tests workflow](https://github.com/truePhilipp/html_to_django/actions/workflows/tests.yml/badge.svg)
+![stylecheck workflow](https://github.com/truePhilipp/html_to_django/actions/workflows/stylecheck.yml/badge.svg)
+
+Converts HTML files with special attributes to Django templates.
+
+
+# Installation
+```bash
+pip install html-to-django
+```
+
+
+# Usage
+```bash
+html_to_django [-h] [-r] path
+```
+`path` can either be a path to a file or a folder. When a file is passed only the file itself will be converted. When a folder is passed, all files ending in .html will be replaced. This searches through the folder recursivley.
+
+Use `-r` to replace the original files, instead of creating new ones.
+By default, new ones are created in place next to the existing files, with the extension `.n.html`.
+
+You can also use the `html_to_django_r` command if you are unable to pass the `-r` parameter
+(e.g. with the Bootstrap Studio "Export Script" setting).
+
+## Attributes
+To add Django template tags to your HTML files, you need to add special attributes to your HTML tags like this:
+```html
+<div dj-for="user in users">
+    <p>{{ user.name }}</p>
+</div>
+```
+This will be converted to:
+```html
+{% for user in users %}
+<p>{{ user.name }}</p>
+{% endfor %}
+```
+
+A complete list of supported attributes can be found [here](docs/Attributes.md).
+
+
+# Contributing
+To learn how to contribute to this project, please see [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,0 +1,3 @@
+[console_scripts]
+html_to_django = html_to_django.converter:command_entry
+html_to_django_r = html_to_django.converter:command_entry_r
