@@ -1,0 +1,2 @@
+import{_ as e,o as c,c as n}from"./index-4cb0c6e9.js";const o={};function r(t,s){return c(),n("div",null,"region")}const a=e(o,[["render",r]]);export{a as default};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVnaW9uLTAyZjBlNWViLmpzIiwic291cmNlcyI6WyIuLi8uLi9zcmMvc2NlbmVyeS9fZXhhbXBsZS9fc3RhdHVzL3JlZ2lvbi52dWUiXSwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuPHRlbXBsYXRlPlxuXHQ8ZGl2PnJlZ2lvbjwvZGl2PlxuPC90ZW1wbGF0ZT4iXSwibmFtZXMiOlsiX3NmY19yZW5kZXIiLCJfY3R4IiwiX2NhY2hlIl0sIm1hcHBpbmdzIjoiaUVBSUMsU0FBQUEsRUFBQUMsRUFBQUMsRUFBQSJ9
