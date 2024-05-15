@@ -1,0 +1,16 @@
+plotnine>=0.13
+dppd
+
+[doc]
+sphinx
+sphinx-bootstrap-theme
+numpydoc
+recommonmark
+
+[testing]
+pytest
+pytest-cov
+plotnine
+pandas
+flake8
+pre-commit
