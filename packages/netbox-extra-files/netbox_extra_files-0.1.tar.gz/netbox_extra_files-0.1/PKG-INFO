@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: netbox-extra-files
+Version: 0.1
+Summary: Store extra files for objects in Netbox
+Home-page: https://github.com/emjemj/netbox-extra-files
+Author: Eric Lindsjö
+License: Apache 2.0

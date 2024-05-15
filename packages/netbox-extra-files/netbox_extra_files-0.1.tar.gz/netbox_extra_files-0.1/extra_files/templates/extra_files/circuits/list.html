@@ -1,0 +1,26 @@
+<div class="card">
+    <h5 class="card-header">Extra files</h5>
+    <div class="card-body">
+        {% if files %}
+            <table class="table table-hover">
+                <tr>
+                    <th>Name</th>
+                    <th>Created</th>
+                </tr>
+                {% for file in files %}
+                <tr>
+                        <td><a href="{{ file.file.url }}">{{ file.name }}</a></td>
+                    <td>{{ file.created }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <div class="text-muted">None</div>
+        {% endif %}
+    </div>
+    <div class="card-footer text-end noprint">
+	<a href="{% url 'plugins:extra_files:upload' %}?object_id={{ object.pk }}" class="btn btn-primary btn-sm">
+            <i class="mdi mdi-plus-thick" aria-hidden="true"></i>Attach a file
+        </a>
+    </div>
+</div>

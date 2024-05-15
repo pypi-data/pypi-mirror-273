@@ -1,0 +1,33 @@
+{% extends 'base/layout.html' %}
+{% load form_helpers %}
+{% load helpers %}
+
+{% block title %}
+Add new a new extra file
+{% endblock %}
+
+{% block tabs %}
+<ul class="nav nav-tabs px-3">
+	<li class="nav-item" role="presentation">
+		<button class="nav-link active" id="edit-form-tab" data-bs-toggle="tab" data-bs-target="#edit-frorm" type="button" role="tab" aria-controls="edit-form" aria-selected="true">Create</button>
+	</li>
+</ul>
+{% endblock %}
+
+{% block content-wrapper %}
+<div class="tab-content">
+	<div class="tab-pane show active" id="edit-form" role="tabpanel" aria-labelledby="object-list-tab">
+		<form action="" enctype="multipart/form-data" class="form-object-edit" method="post">
+		{% csrf_token %}
+		<div class="field-group my-5">
+			{% render_form form %}
+		</div>
+		<div class=text-end">
+			{% block buttons %}
+			<button type="submit" name="_create" class="btn btn-primary">Upload</button>
+			{% endblock %}
+		</div>
+		</form>
+	</div>
+</div>
+{% endblock %}
