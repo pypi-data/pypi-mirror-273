@@ -1,0 +1,14 @@
+ScriptCollection/Executables.py,sha256=PXXsKmof-Lw4gQcQ8IL0diYiU535FVxJfHRdAY7EntA,19233
+ScriptCollection/GeneralUtilities.py,sha256=Mcp6ghb6AbS1KsOjEnRw3x4a4mBrAZ6DAjV2j8-LZFM,35589
+ScriptCollection/ProgramRunnerBase.py,sha256=W4MaDroJHARRtcvPkBC2AS_qgDSRIqOkMvGyycZjtPk,2371
+ScriptCollection/ProgramRunnerEpew.py,sha256=lx_jR3W8KavBpZo44u2FrOca_EWWgUb3_w_YKGRrAyM,6471
+ScriptCollection/ProgramRunnerPopen.py,sha256=5QFplojwfGS8_WdYrg5nE6__QFB5iaMA0EP8OGfgPoY,3526
+ScriptCollection/ScriptCollectionCore.py,sha256=XZ27_3LwElxYJpbSGt8HKuFJ3nbkdl6iY7MCk4xop7k,99240
+ScriptCollection/TasksForCommonProjectStructure.py,sha256=CDVhsAJfRt_bQr4aYGtg1PD1Dl41EAMHNhD5sdiznWM,175039
+ScriptCollection/UpdateCertificates.py,sha256=3C_E9og5SZec35aD3BFYLchzJtonsg1KR4enFCb5Jzk,7914
+ScriptCollection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ScriptCollection-3.5.3.dist-info/METADATA,sha256=LywbFi47FasPv7OMXGLtKv3kq9YRuozOBanMzEJnF2I,7648
+ScriptCollection-3.5.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ScriptCollection-3.5.3.dist-info/entry_points.txt,sha256=dwvB9HRGvqst5xlYIGmmwuFN7lBKhxvndmnNrQOfu8w,2153
+ScriptCollection-3.5.3.dist-info/top_level.txt,sha256=hY2hOVH0V0Ce51WB76zKkIWTUNwMUdHo4XDkR2vYVwg,17
+ScriptCollection-3.5.3.dist-info/RECORD,,
