@@ -1,0 +1,10 @@
+MeliAPIClient/__init__.py,sha256=-MWwWZTibxeHdWaDiPNgBtXEPS4itojHnkSVey7GC0k,122
+MeliAPIClient/actions.py,sha256=RQXTD5DKpBBAYfobXlPBiAxZEpeicwki-KSeFkBUkaA,1012
+MeliAPIClient/bill.py,sha256=AddPUwAFZKAWQbLfijbs2cdL_UP_hrS6H-j0tR7Q9iY,965
+MeliAPIClient/order.py,sha256=bcfmk7fGHb717iAKPYH4zF_NLoTyCPeVFP_Fp9TUBok,1760
+MeliAPIClient/session.py,sha256=69UnZYD-kXLd_zFaUQEhc6dbAYQpgzlMcuwpyr__Aas,2011
+MeliAPIClient/ship.py,sha256=zYqlfjuEmH1fTAKWywFvzLeMS1ipJYD--hYr4kKLw_0,364
+MeliAPIClient-0.0.1.dist-info/METADATA,sha256=c1b11erqUfPdwONPUZ3xpt80i_dsnHSPvSf3eqBJujc,1733
+MeliAPIClient-0.0.1.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+MeliAPIClient-0.0.1.dist-info/top_level.txt,sha256=s2zCcSYLZCh3Ms7tnho_S9DZI1gmdzj-IyU_Ly4IYKI,14
+MeliAPIClient-0.0.1.dist-info/RECORD,,
