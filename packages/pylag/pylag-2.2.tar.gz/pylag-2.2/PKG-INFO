@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pylag
+Version: 2.2
+Summary: An object-oriented and (hopefully) easy to use X-ray timing analysis package
+Home-page: https://github.com/wilkinsdr/pylag
+Author: Dan Wilkins
+Author-email: dan.wilkins@stanford.edu
+License: MIT
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: astropy
