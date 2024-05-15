@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dj-remove-default>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Page</title>
+</head>
+<body>
+    <div>
+        <h2>Example</h2>
+        <p>This is an example Page</p>
+    </div>
+    <div>
+        <h2>List</h2>
+        <ul>
+            <li dj-for-wrap="i in items" dj-var="i.name" dj-style="background-color;i.bg_color;"></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% load static %}
+{% block content %}
+{% for i in items %}
+<p>
+    {{ i.text }}
+</p>
+{% if i.selectable %}
+<p>
+    Select Me
+</p>
+{% elif i.other %}
+<p>
+    Else if
+</p>
+{% else %}
+<p>
+    Else
+</p>
+<img src="{% static 'images/cool_image.png' %}"/>
+{% endif %}
+{% endfor %}
+{% endblock %}

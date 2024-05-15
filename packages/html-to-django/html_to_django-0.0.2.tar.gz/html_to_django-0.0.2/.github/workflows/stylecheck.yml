@@ -1,0 +1,46 @@
+name: Stylecheck
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+jobs:
+  stylecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install Dependencies
+        run: |
+          pip install ".[test]"
+          mypy html_to_django || true
+          mypy --install-types --non-interactive
+      - name: MyPy
+        run: mypy --strict html_to_django
+      - name: Pycodestyle
+        run: pycodestyle --max-line-length 120 html_to_django
+  stylecheck-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Install Dependencies
+        run: |
+          pip install ".[test]"
+          mypy tests || true
+          mypy --install-types --non-interactive
+      - name: MyPy
+        run: mypy --strict tests
+      - name: Pycodestyle
+        run: pycodestyle --max-line-length 120 tests

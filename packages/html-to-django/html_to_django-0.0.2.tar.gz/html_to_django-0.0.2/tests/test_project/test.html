@@ -1,0 +1,15 @@
+<div dj-block="content">
+    <div dj-for="i in items">
+        <p dj-var="i.text">Test</p>
+        <div dj-if="i.selectable">
+            <p>Select Me</p>
+        </div>
+        <div dj-elif="i.other">
+            <p>Else if</p>
+        </div>
+        <div dj-else>
+            <p>Else</p>
+            <img dj-libs="static" dj-static="src;images/cool_image.png" />
+        </div>
+    </div>
+</div>
