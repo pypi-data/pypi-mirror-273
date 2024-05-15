@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/simple_threaded_tcp.egg-info/PKG-INFO
+src/simple_threaded_tcp.egg-info/SOURCES.txt
+src/simple_threaded_tcp.egg-info/dependency_links.txt
+src/simple_threaded_tcp.egg-info/top_level.txt
+src/sttcp/__init__.py
+src/sttcp/client.py
+src/sttcp/server.py
