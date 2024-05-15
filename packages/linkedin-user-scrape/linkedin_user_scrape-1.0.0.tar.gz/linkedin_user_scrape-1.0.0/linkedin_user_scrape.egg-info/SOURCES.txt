@@ -1,0 +1,5 @@
+setup.py
+linkedin_user_scrape.egg-info/PKG-INFO
+linkedin_user_scrape.egg-info/SOURCES.txt
+linkedin_user_scrape.egg-info/dependency_links.txt
+linkedin_user_scrape.egg-info/top_level.txt
