@@ -1,0 +1,3 @@
+[console_scripts]
+arbi-tr-frontend=src.app:main
+

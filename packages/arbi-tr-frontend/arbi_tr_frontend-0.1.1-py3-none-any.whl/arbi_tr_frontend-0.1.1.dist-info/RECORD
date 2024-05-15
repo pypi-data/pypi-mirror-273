@@ -1,0 +1,8 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/app.py,sha256=QXQwx7B3zpwahpJe_mXVzvO-Dv5bz9lqw5EXODARXfE,632
+src/transcribe_tools.py,sha256=1oR5iYYBxCA14rpq2ryovz9wV31kHa581HT3b2C6tVU,4298
+src/transcribe_ui.py,sha256=E298ndKBTClLH1sY9qwQbM5UY8MICloQNEuDFE5rfQg,6229
+arbi_tr_frontend-0.1.1.dist-info/METADATA,sha256=34frb6A69Wh3eXBogJTdKYijjWzJbRS3lc-nM_8zG0Q,584
+arbi_tr_frontend-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+arbi_tr_frontend-0.1.1.dist-info/entry_points.txt,sha256=rZHqma_2E7ru4EyATcrU826Vd4JHC5_MAaxsowxOER8,49
+arbi_tr_frontend-0.1.1.dist-info/RECORD,,
