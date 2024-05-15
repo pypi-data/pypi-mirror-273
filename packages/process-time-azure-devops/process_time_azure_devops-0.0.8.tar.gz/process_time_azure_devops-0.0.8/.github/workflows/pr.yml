@@ -1,0 +1,92 @@
+name: PR
+
+on:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: 3.12.2
+  
+jobs:
+  test:
+    name: Tests — Unit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .[test]
+      - name: Test
+        run: |
+          pip install .[test]
+          pytest ./tests
+          
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .
+      - name: Build
+        run: |
+          pip install build
+          python -m build .
+
+  test_help:
+    name: Tests — CLI Arguments
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .[test]
+      - name: Test Help -h
+        run: |
+          python src/process_time_azure_devops/__main__.py -h
+      - name: Test Help --help
+        run: |
+          python src/process_time_azure_devops/__main__.py --help
+  
+  test_install_and_use:
+    name: Tests — Install & use CLI Arguments
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .[test]
+      - name: Build
+        run: |
+          pip install build
+          python -m build .
+      - name: Install
+        run: |
+          # Path to the pyproject.toml file
+          file_path="pyproject.toml"
+          # Use grep to find the line with 'version' and then use awk to print the version value
+          version=$(grep 'version =' $file_path | awk -F'"' '{print $2}')
+          # Install the package
+          pip install dist/process_time_azure_devops-$version-py3-none-any.whl
+      - name: Test Help -h
+        run: |
+          pip list
+          python -m process_time_azure_devops -h
