@@ -1,0 +1,11 @@
+[project]
+name = "bc-korea-vector-map"
+version = "0.2.0"
+authors = [{ name = "WooYoung Moon", email = "wymoon@gmail.com" }]
+description = "한국 백터 지도"
+readme = "README.md"
+requires-python = ">=2.3"
+classifiers = [
+  "Programming Language :: Python :: 2",
+  "License :: OSI Approved :: MIT License",
+]
