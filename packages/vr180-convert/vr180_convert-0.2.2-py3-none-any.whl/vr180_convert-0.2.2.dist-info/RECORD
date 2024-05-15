@@ -1,0 +1,12 @@
+vr180_convert/__init__.py,sha256=NTaunsrMEWOKTpsgh6HhB7rqjRROoGPb3U0H8aq6rV0,707
+vr180_convert/__main__.py,sha256=1twlFWar-q8y-Pi24AgQ8oJeIDrsJTor0TcSAaSKBGE,113
+vr180_convert/cli.py,sha256=YtZIuTs6IMNpG1FFsew8-SKB13UZB6S9B4Ql9zYnGxw,12817
+vr180_convert/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vr180_convert/remapper.py,sha256=gGboRMHSXmxFhDmZ1iYbHc2wNxoIgMHEybbzClmZYyw,12090
+vr180_convert/testing.py,sha256=eERIJ-h7QvIzB10Uvo7PO5oNgdgysfqZLXVt8_u607A,1889
+vr180_convert/transformer.py,sha256=qe_c6uennHRi-Q5kBOVuBs-reJKe1Je__GJwXLpco-I,18069
+vr180_convert-0.2.2.dist-info/LICENSE,sha256=HeCAZ1fPcmairDpDIAyovb2K1V4xPI3woVbn-nL9dsY,1061
+vr180_convert-0.2.2.dist-info/METADATA,sha256=-eM2EmPCNzQEWpc8zEhLG0ZzU-RLDirV-s8MCSTuowI,12140
+vr180_convert-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vr180_convert-0.2.2.dist-info/entry_points.txt,sha256=S0Hpnoba7SJ_X4Zrv7qXkTWPxreU23dcHzHKJImwvkI,81
+vr180_convert-0.2.2.dist-info/RECORD,,
