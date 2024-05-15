@@ -1,0 +1,16 @@
+freva_client/__init__.py,sha256=G-ctas9phozvNBeV56A5lIRz5aphHL0hssBjuefvU3Y,804
+freva_client/__main__.py,sha256=JVj12puT4o8JfhKLAggR2-NKCZa3wKwsYGi4HQ61DOQ,149
+freva_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freva_client/query.py,sha256=WE1g51ssTu2lsHVD5WR7w3Be952K0LVQOiYZ_fN-0gY,23388
+freva_client/cli/__init__.py,sha256=NgTqBZGdozmTZtJduJUMrZj-opGw2KoT20tg6sc_xqo,149
+freva_client/cli/cli_app.py,sha256=RUEjGpvZLPQE4lrxfUg9r71NeQ7XtZ2THNPwqhDOLQk,504
+freva_client/cli/cli_utils.py,sha256=9RzwQ51Z4vq6sWcKucUqNXOFWg9GeU5Pjesq3ojOlBs,5471
+freva_client/cli/databrowser_cli.py,sha256=Ldj8OBZ0MWMhJ7-7eu9wKs6CaTrreP8PKoYumKSOxng,15365
+freva_client/utils/__init__.py,sha256=g3-UbSpF5Z-EaDi1xJbOYvLqB1YfDyBvPTHWDIKpMvo,999
+freva_client/utils/databrowser_utils.py,sha256=TBTE1hZ7_wTydKV4fbiIm6A0cBwvYgZgvZdW9dmh6EE,5884
+freva_client/utils/logger.py,sha256=PiYIlW7z7dnrZ6f4DGuWU0Vu7pHg4QBGbpHNmoQX3mw,2462
+freva_client-2404.0.1.data/data/share/freva/freva.toml,sha256=64Rh4qvWc9TaGJMXMi8tZW14FnESt5Z24y17BfD2VyM,736
+freva_client-2404.0.1.dist-info/entry_points.txt,sha256=zGyEwHrH_kAGLsCXv00y7Qnp-WjXkUuIomHkfGMCxtA,53
+freva_client-2404.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+freva_client-2404.0.1.dist-info/METADATA,sha256=-9SIyTizpDiOqhs76viVfAAn7RKUqjODBhHgchSRJEM,2401
+freva_client-2404.0.1.dist-info/RECORD,,
