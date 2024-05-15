@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ATCForm
+Version: 0.1.1
+Summary: ATCFrom - Automatically fill in the collection form 自动化表单填写工具
+Home-page: https://github.com/YKONGCO/ATCForm
+Author: YKONGCO
+Author-email: 1570585752@qq.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/YKONGCO/ATCForm/issues
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: webdriver-manager
+Requires-Dist: selenium >=4.0
+
+## ATCFrom - Automatically fill in the collection form 自动化表单填写工具
+ATCFrom is a tool that automatically fills in the collection form.
+supported: jing data ,tx data
