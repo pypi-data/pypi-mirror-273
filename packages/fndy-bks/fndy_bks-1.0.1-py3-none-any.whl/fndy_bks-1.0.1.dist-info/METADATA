@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fndy_bks
+Version: 1.0.1
+Summary: Es una libreria en la cual podremos encontrar el autor y el nombre del libro que queremos, de pende el que se escriba
+Author: Missael Angel Cardenas 
+Author-email: missael_ac@tesch.edu.mx
+Requires-Dist: pandas
+Requires-Dist: twine
+Requires-Dist: wheel
+Requires-Dist: setuptools
+
