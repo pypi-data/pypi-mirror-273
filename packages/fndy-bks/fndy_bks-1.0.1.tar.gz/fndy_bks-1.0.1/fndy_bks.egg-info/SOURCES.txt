@@ -1,0 +1,10 @@
+README.md
+setup.py
+fndy_bks/Findyou_book.py
+fndy_bks/__init__.py
+fndy_bks/books.csv
+fndy_bks.egg-info/PKG-INFO
+fndy_bks.egg-info/SOURCES.txt
+fndy_bks.egg-info/dependency_links.txt
+fndy_bks.egg-info/requires.txt
+fndy_bks.egg-info/top_level.txt
