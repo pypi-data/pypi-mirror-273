@@ -1,0 +1,43 @@
+# Introducción 
+Este paquete está diseñado específicamente para proporcionar clases que permiten a los usuarios establecer una conexión eficiente con las API SUNAT.
+
+# Empezando
+Este proyecto cuenta con las siguientes clases:
+1.	Generador de token (Clase Token)
+```
+import os
+from dotenv import load_dotenv
+from trujillo.sunat.token import Token
+
+load_dotenv()
+
+args = {
+    'client_id': os.environ["CLIENT_ID"],
+    'client_secret': os.environ["CLIENT_SECRET"]
+}
+
+token = Token(args=args).generate_token()
+```
+2.	Ver el estado del comprobante de pago (Clase ValidateReceip)
+```
+import pandas as pd
+from trujillo.sunat.validate import ValidateReceip
+
+validate = ValidateReceip(token=token, ruc='20609699982')
+
+consult = [{
+    'numRuc': '20609699982'
+    , 'codComp': '03'
+    , 'numeroSerie': 'B040'
+    , 'numero': '00055401'
+    , 'fechaEmision': '01/04/2024'
+    , 'monto': '145.7'
+}]
+
+results = validate.get_records(consult=consult)
+dataset = []
+for result in results:
+    dataset.append(result)
+
+content = pd.DataFrame(dataset)
+```

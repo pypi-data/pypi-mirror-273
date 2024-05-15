@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.cfg
+setup.py
+trujillo/__init__.py
+trujillo/sunat/__init__.py
+trujillo/sunat/token.py
+trujillo/sunat/validate.py
+trujillo_sunat_package.egg-info/PKG-INFO
+trujillo_sunat_package.egg-info/SOURCES.txt
+trujillo_sunat_package.egg-info/dependency_links.txt
+trujillo_sunat_package.egg-info/requires.txt
+trujillo_sunat_package.egg-info/top_level.txt
