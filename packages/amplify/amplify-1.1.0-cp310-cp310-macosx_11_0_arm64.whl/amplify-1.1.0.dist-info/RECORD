@@ -1,0 +1,14 @@
+amplify/__init__.py,sha256=FGKpQMKEqPuge4tlXiQx60d1hus0NoIoppooVyrU1B8,1890
+amplify/__init__.pyi,sha256=ZrqZjf_OqMVVcgnPIdhiHwJSAPJctyjIy2-WFJ25lwI,239714
+amplify/_backward.py,sha256=raEOk7NV1fBGsIIv_56gIrSzEU1-MWvMaLALU-9F_b0,16848
+amplify/amplify.cpython-310-darwin.so,sha256=FSqcnkDB2gMVWxkdB1oTjfyx-8hXo4QpfamAq5e_Rtw,20355306
+amplify/constraint.py,sha256=n66Ttd3rCQJIW2zMuywYZlKP-y0_n8ZkVGZSsJWEUzI,2564
+amplify/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amplify/client/__init__.py,sha256=9Uml9Wkdo-BZBZhnh3PohHJicSwzQ8xJ1GqKf4-iJ4g,4397
+amplify/client/ocean.py,sha256=i6h9Fv4Fp6JTuz8Qi6g_uckuJwDBtmXSleT0YZBotuY,672
+amplify-1.1.0.dist-info/LICENSE.txt,sha256=Np2WJcJrsMr9Yoyt7zoNynJAiM-DNggnaK2mcz12s50,19518
+amplify-1.1.0.dist-info/METADATA,sha256=Or73S5twDy8ZVRdD0q8k6DATsYYDa9o4yyg3NGWouzY,26454
+amplify-1.1.0.dist-info/WHEEL,sha256=E2L8cNry8_qENFWMb8KxRWLe-RhZW94hLc32Xo3HiTg,110
+amplify-1.1.0.dist-info/open_source_license.txt,sha256=SIObizROV2fUOzW5dxFeCbt3Xw61ZVJp6yLOuyDD1fQ,24247
+amplify-1.1.0.dist-info/top_level.txt,sha256=Thv8V_aiMgH7cFEe3_nYCAbxqKPCBEUNiD7m9BPPtg8,8
+amplify-1.1.0.dist-info/RECORD,,
