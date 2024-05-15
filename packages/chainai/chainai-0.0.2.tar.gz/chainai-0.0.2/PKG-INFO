@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: chainai
+Version: 0.0.2
+Summary: Python SDK for ChainAI's integrated AI agent platform.
+License: BSD-3-Clause
+License-File: LICENSE
+Requires-Dist: pydantic~=2.7.0
+Requires-Dist: protobuf~=5.26.1
+Requires-Dist: pyyaml~=6.0.1
