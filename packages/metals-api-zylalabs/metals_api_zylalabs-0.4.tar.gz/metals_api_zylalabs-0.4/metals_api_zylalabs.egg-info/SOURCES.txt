@@ -1,0 +1,8 @@
+README.md
+setup.py
+metals_api_zylalabs/__init__.py
+metals_api_zylalabs/client.py
+metals_api_zylalabs.egg-info/PKG-INFO
+metals_api_zylalabs.egg-info/SOURCES.txt
+metals_api_zylalabs.egg-info/dependency_links.txt
+metals_api_zylalabs.egg-info/top_level.txt
