@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+src/rsDrawioUtils/__init__.py
+src/rsDrawioUtils/drawioPy.py
+src/rsDrawioUtils.egg-info/PKG-INFO
+src/rsDrawioUtils.egg-info/SOURCES.txt
+src/rsDrawioUtils.egg-info/dependency_links.txt
+src/rsDrawioUtils.egg-info/entry_points.txt
+src/rsDrawioUtils.egg-info/requires.txt
+src/rsDrawioUtils.egg-info/top_level.txt
