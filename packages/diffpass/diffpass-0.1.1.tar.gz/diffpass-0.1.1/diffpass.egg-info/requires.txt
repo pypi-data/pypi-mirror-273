@@ -1,0 +1,13 @@
+torch
+numpy
+scipy
+matplotlib
+biopython
+tqdm
+pandas
+
+[dev]
+nbdev
+black
+jupyter
+pre-commit

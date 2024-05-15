@@ -1,0 +1,2 @@
+[nbdev]
+diffpass = diffpass._modidx:d
