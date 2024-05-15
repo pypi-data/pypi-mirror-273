@@ -1,0 +1,10 @@
+LICENSE
+README.MD
+pyproject.toml
+src/__init__.py
+src/pleonasty.py
+src/pleonasty.egg-info/PKG-INFO
+src/pleonasty.egg-info/SOURCES.txt
+src/pleonasty.egg-info/dependency_links.txt
+src/pleonasty.egg-info/requires.txt
+src/pleonasty.egg-info/top_level.txt
