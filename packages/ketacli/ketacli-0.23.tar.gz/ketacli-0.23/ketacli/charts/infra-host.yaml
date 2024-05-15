@@ -1,0 +1,130 @@
+layout:
+  rows: 1
+  columns: 1
+charts:
+  - spl: |
+      search2 repo="infrastructure_monitoring_metrics"
+      | stats latest(host_cpu_user_pct) as cpu_usage_pct,latest(host_memory_used_pct) as mem_usage_pct,latest(host_memory_total_bytes) as mem_total_bytes,latest(host_memory_used_bytes) as mem_used_bytes,latest(host_load1) as load1,latest(host_load5) as load5,latest(host_load15) as load15,latest(_time) as latest_time by metadata.agent.id
+      | eval status=if(now()-latest_time > 300000, "offline","online")
+      | join type="semi" metadata.agent.id [
+          search2 repo="infrastructure_monitoring_metrics" 
+      
+          | stats count() as c by metadata.agent.id
+          | fields - c 
+      ]
+      | join type="left" metadata.agent.id [
+          search2 start="-7d" repo="infrastructure_monitoring_meta"
+          | stats latest(host) as host,latest(host_ip) as host_ip, latest(arr_join(biz_system{}, ",")) as biz_system, latest(metadata.host.kernel) as os,latest(metadata.agent.version) as agent_version,latest(metadata.host.bootTime) as host_uptime,latest(metadata.cpu.cores) as cpu_cores, latest(metadata.cpu.count) as cpu_count  by metadata.agent.id
+          | eval os=if(os=="darwin","macOS",os)
+          | eval host_uptime=toNumber(host_uptime) * 1000,os=concat(upper(substr(os,1,1)),substr(os,2))
+          | eval duration=now() - host_uptime
+      ]
+      | join type="left" metadata.agent.id [
+        search2 repo="infrastructure_monitoring_metrics" AND name="disk"
+        | stats latest(host_disk_used_bytes) as disk_used_bytes, latest(host_disk_total_bytes) as disk_total_bytes by device,metadata.agent.id
+        | stats sum(disk_used_bytes) as disk_used_bytes,sum(disk_total_bytes) as disk_total_bytes by metadata.agent.id
+        | eval disk_used_pct=round(disk_used_bytes/disk_total_bytes, 4)
+      ]
+      | eval docker_deployed = false, k8s_deployed = false,cpu_load_pre_core=load1/(cpu_cores*cpu_count)
+      | rename metadata.agent.id as agent_id 
+      | fields - cpu_cores,cpu_count
+      | sort 1000 by cpu_usage_pct
+    type: table
+    title: 主机列表
+    position: row0-col0
+    columns:
+      agent_id:
+        alias: Agent ID
+        style: bold magenta
+        is_show: false
+      host:
+        alias: 主机名
+        style: bold
+      host_ip:
+        alias: 主机IP
+        style: blue
+      status:
+        alias: 状态
+        enum:
+          online:
+            alias: 在线
+            style: green
+          offline:
+            alias: 离线
+            style: red
+      cpu_usage_pct:
+        alias: CPU使用率
+        suffix: "%"
+        threshold:
+          green: [ 0, 50 ]
+          red: [ 50, 100 ]
+        format: percentage100
+      mem_usage_pct:
+        alias: 内存使用率
+        suffix: "%"
+        threshold:
+          green: [ 0, 60 ]
+          yellow: [ 60, 80 ]
+          red: [ 60, 100 ]
+        format: percentage100
+      mem_total_bytes:
+        alias: 内存总量
+        format: bytes
+      mem_used_bytes:
+        alias: 内存已用
+        format: bytes
+      disk_used_pct:
+        alias: 磁盘使用率
+        suffix: "%"
+        format: percentage
+        threshold:
+          green: [ 0, 0.6 ]
+          yellow: [ 0.6, 0.8 ]
+          red: [ 0.8, 1 ]
+      disk_used_bytes:
+        alias: 磁盘已用
+        format: bytes
+      disk_total_bytes:
+        alias: 磁盘总量
+        format: bytes
+      load1:
+        alias: 1分钟负载
+        format: float
+      load5:
+        alias: 5分钟负载
+        format: float
+      load15:
+        alias: 15分钟负载
+        format: float
+      cpu_load_pre_core:
+        alias: CPU负载/核
+        format: float
+        threshold:
+          green: [ 0, 0.5 ]
+          yellow: [ 0.5, 1 ]
+          red: [ 1, 100 ]
+      biz_system:
+        alias: 业务系统
+        is_show: false
+      os:
+        alias: 操作系统
+      agent_version:
+        alias: Agent版本
+        is_show: false
+      host_uptime:
+        alias: 启动时间
+        format: timestamp_ms
+      duration:
+        alias: 运行时长
+        format: duration_ms
+      docker_deployed:
+        alias: 是否部署Docker
+        is_show: false
+      k8s_deployed:
+        alias: 是否部署K8S
+        is_show: false
+      latest_time:
+        is_show: false
+
+
+
