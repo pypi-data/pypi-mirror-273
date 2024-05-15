@@ -1,0 +1,8 @@
+Books_pkg/__init__.py,sha256=6zVQHIeepcxgJVgAt-jfDispZfd5g4hWtdjQEpe9n_Q,37
+Books_pkg/books.csv,sha256=nTqNdx1E5hlhTUp8ysZEgvYReT97Z5eoMoMffcrb8fM,12151
+Books_pkg/buscar_books.py,sha256=rxprtknFAnHUQ4v4sT8jx4WE-wdJMLylpAlvKudcpPU,1235
+Books_pkg/random_books.py,sha256=uA5xhkwsG0Y-nZWZbNYW8f9WDOgO5ab74MC0VVZkVsk,1284
+Books_pkg-1.0.3.dist-info/METADATA,sha256=VASJtVDpAb-1fBQqI7VjNRbQXoeNfX90mJP7gDfuml0,336
+Books_pkg-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Books_pkg-1.0.3.dist-info/top_level.txt,sha256=QaZir9BtVMKvUy8Kre7DuMJZeoJ8r1Uc8iTdIjisH6Q,10
+Books_pkg-1.0.3.dist-info/RECORD,,
