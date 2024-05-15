@@ -1,0 +1,6 @@
+database-infrastructure-local>=0.0.24
+database-mysql-local>=0.0.290
+email-address-local>=0.0.40
+language-remote>=0.0.20
+logger-local>=0.0.135
+user-context-remote>=0.0.75
