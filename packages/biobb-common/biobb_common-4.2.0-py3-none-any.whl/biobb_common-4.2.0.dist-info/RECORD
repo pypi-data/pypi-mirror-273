@@ -1,0 +1,16 @@
+biobb_common/__init__.py,sha256=ATN5IQML3dwgPR0cJOrhiqVi0QlfDRvNBHjOTDrsySE,44
+biobb_common/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_common/command_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_common/command_wrapper/cmd_wrapper.py,sha256=0cmeFnM-q-YqHB6UtrgAg1hIDZTe69klFf1_Ddc2AV4,2184
+biobb_common/configuration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_common/configuration/settings.py,sha256=hKrDVwaTE105K307AKsf5_EuVaA3h3O_AUrjgSR44sg,15977
+biobb_common/generic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_common/generic/biobb_object.py,sha256=l9CGjbbpyozkQLPD4bdYQRItsQfAdFQahCDjZxkfV0U,18901
+biobb_common/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_common/tools/file_utils.py,sha256=M5aP40o4T_FURCBHOZc6pIXiCLunemgYtKkxnpuxWvg,28096
+biobb_common/tools/test_fixtures.py,sha256=Pp7JddSXH0l4DRxGtisptwFZJQHQSz1k_FD5pJKDe3Y,11881
+biobb_common-4.2.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+biobb_common-4.2.0.dist-info/METADATA,sha256=xYYvjIEXu6tuj0-i17tMaBPv6rhNfz37KvSBWeRUyOU,4390
+biobb_common-4.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+biobb_common-4.2.0.dist-info/top_level.txt,sha256=4-T8yEB9bIr01XlLalB9REBLD4U84F4HK4eLNrH7Ri8,13
+biobb_common-4.2.0.dist-info/RECORD,,
