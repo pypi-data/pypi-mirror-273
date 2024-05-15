@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "supercollect"
+version = "1.0.0"
+description = "Supercharge collectstatic for remote storages"
+authors = ["mdd <martin.diehl@terreon.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = ">=4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
