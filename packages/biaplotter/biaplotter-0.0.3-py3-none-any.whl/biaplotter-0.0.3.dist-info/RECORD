@@ -1,0 +1,15 @@
+biaplotter/__init__.py,sha256=Kj8uHGXEIFXg8N7JZO_gsJ2RAhLKEJmZuWrE6BK4lvU,354
+biaplotter/artists.py,sha256=9p3_fbsYEUPdbZRwDK0WbGfMIcXbPRa0OPSqSKCTxHo,17302
+biaplotter/napari.yaml,sha256=PxPmdID3yVIVuOOlAR7N0GfBdm0Y6PdyxRFFZFsoE1k,505
+biaplotter/plotter.py,sha256=T-CVZAvsLLHvJGkPbBm9N8fFkqGaPw_WLpiwNRkQVSE,10621
+biaplotter/selectors.py,sha256=t54N2dpcU0LJ5oQtm28NcP94G9RJo5laZRXVCnibKXM,18420
+biaplotter/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biaplotter/_tests/test_artists.py,sha256=wOyimAWa6BZNbTpDSUaOWYZW7XtxFPgXQeJtCLBijUc,3767
+biaplotter/_tests/test_selectors.py,sha256=fHnT1eKjXMCxgzLJFvsJohViJIeU36ukT3YYwbPg-D8,4212
+biaplotter/_tests/test_widget.py,sha256=iq2i6mZQsB071_kLrEnMc-R-nQWh6M24qt_fFbCQNnI,395
+biaplotter-0.0.3.dist-info/LICENSE,sha256=PJjPJjsQIGmDhU3jPO6vGts4-Z0hWOc3O4PUHdLqRFw,1554
+biaplotter-0.0.3.dist-info/METADATA,sha256=qCUYrW_5KPHyuTxNA4thzDzSr2yA5M4WLTjivXN4DxY,4906
+biaplotter-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+biaplotter-0.0.3.dist-info/entry_points.txt,sha256=mMQuE5QNDBS1YtKvqrbYZ7gwAeZKhIZuziBWQ_Noo0c,54
+biaplotter-0.0.3.dist-info/top_level.txt,sha256=Jue8NeiXfxgRk8qb_aYAjwz8b2etIFzxN-ZLaS32_Oo,11
+biaplotter-0.0.3.dist-info/RECORD,,
