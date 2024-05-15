@@ -1,0 +1,10 @@
+py-color-log>=1.0.4
+requests>=2.22.0
+openai==0.27.2
+tencentcloud-sdk-python==3.0.681
+
+[dev]
+check-manifest
+
+[test]
+coverage
