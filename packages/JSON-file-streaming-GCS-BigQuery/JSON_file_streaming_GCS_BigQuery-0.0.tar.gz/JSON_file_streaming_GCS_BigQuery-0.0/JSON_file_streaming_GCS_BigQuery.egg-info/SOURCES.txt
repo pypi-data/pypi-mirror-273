@@ -1,0 +1,9 @@
+README.md
+setup.py
+JSON_file_streaming_GCS_BigQuery/__init__.py
+JSON_file_streaming_GCS_BigQuery/main.py
+JSON_file_streaming_GCS_BigQuery.egg-info/PKG-INFO
+JSON_file_streaming_GCS_BigQuery.egg-info/SOURCES.txt
+JSON_file_streaming_GCS_BigQuery.egg-info/dependency_links.txt
+JSON_file_streaming_GCS_BigQuery.egg-info/entry_points.txt
+JSON_file_streaming_GCS_BigQuery.egg-info/top_level.txt

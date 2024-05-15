@@ -1,0 +1,68 @@
+Python Library, which facilitates the processing of JSON files stored in Google Cloud Storage, transforming and loading them into Google BigQuery. This README includes an overview, installation instructions, dependencies, example usage, and additional details to help users get started.
+
+**Features:**
+1. Batch process JSON files from GCS.
+2. Optionally add record entry timestamps and original file names to the dataset.
+3. Move processed files to a new folder within the same GCS bucket.
+4. Load transformed data into Google BigQuery in manageable chunks.
+
+
+*Installation*
+
+Install the package via pip:
+
+```Bash
+pip install JSON_file_streaming_GCS_BigQuery
+```
+
+**Dependencies**
+1. google-cloud-storage: To interact with Google Cloud Storage.
+2. google-cloud-bigquery: For operations related to Google BigQuery.
+3. pandas: For data manipulation and transformation.
+4. json: To parse JSON files.
+5. os: For operating system dependent functionality.
+
+
+Ensure these dependencies are installed using:
+
+
+```Bash
+pip install google-cloud-storage google-cloud-bigquery pandas
+```
+
+**Usage**
+
+Example: Processing JSON Files from GCS and Loading into BigQuery
+
+```Python
+from your_library import process_json_file_streaming
+
+process_json_file_streaming(
+    dataset_id='your_dataset_id',
+    table_name='your_table_name',
+    project_id='your_project_id',
+    bucket_name='your_bucket_name',
+    source_folder_name='source_folder',
+    destination_folder_name='destination_folder',
+    chunk_size=10000,
+    add_record_entry_time=True,
+    add_file_name=True
+)
+```
+
+**Parameters:**
+1. dataset_id (str): The BigQuery dataset ID.
+2. table_name (str): The BigQuery table name where data will be loaded.
+3. project_id (str): The Google Cloud project ID.
+4. bucket_name (str): The GCS bucket containing the source JSON files.
+5. source_folder_name (str): Folder in GCS bucket where source JSON files are stored.
+6. destination_folder_name (str): Folder to which processed JSON files are moved.
+7. chunk_size (int, optional): Number of records per batch to be loaded into BigQuery.
+8. add_record_entry_time (bool, optional): If True, adds a timestamp column to the dataset.
+9. add_file_name (bool, optional): If True, adds the original file name as a column in the dataset.
+
+
+*Configuration*
+Ensure you have configured credentials for Google Cloud:
+
+For interacting with Google Cloud services, ensure your environment is set up with the appropriate credentials (using Google Cloud SDK or setting the GOOGLE_APPLICATION_CREDENTIALS environment variable to your service account key file).
