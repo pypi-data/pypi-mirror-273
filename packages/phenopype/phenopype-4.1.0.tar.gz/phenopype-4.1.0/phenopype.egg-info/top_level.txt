@@ -1,0 +1,7 @@
+_temp
+assets
+dist
+docs_source
+htmlcov
+phenopype
+tests
