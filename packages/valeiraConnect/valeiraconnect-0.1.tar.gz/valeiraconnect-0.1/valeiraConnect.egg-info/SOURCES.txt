@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+valeiraConnect/__init__.py
+valeiraConnect/llm.py
+valeiraConnect.egg-info/PKG-INFO
+valeiraConnect.egg-info/SOURCES.txt
+valeiraConnect.egg-info/dependency_links.txt
+valeiraConnect.egg-info/requires.txt
+valeiraConnect.egg-info/top_level.txt
