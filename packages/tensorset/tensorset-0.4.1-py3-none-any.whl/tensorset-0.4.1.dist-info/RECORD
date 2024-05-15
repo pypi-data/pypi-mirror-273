@@ -1,0 +1,8 @@
+tensorset/__init__.py,sha256=N17suQCre-cbQx3H5EBpWze4rav3Vlk_VmpG1KYIxDo,55
+tensorset/tensorset.py,sha256=FeqLCS7_4E-f270E1vw4f-uCC02HS8MWZ1WYQqrw5KI,6930
+tensorset/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorset/tests/test_tensorset.py,sha256=zDOzZe7Mhn-4xU44pXiP_-o5BJgxoAbtnhlHBPDjetk,6098
+tensorset-0.4.1.dist-info/METADATA,sha256=RKuzceuy7qttJiQ49C8uu5X8m-gyh6hJxvo7_VGa82I,4488
+tensorset-0.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tensorset-0.4.1.dist-info/top_level.txt,sha256=Eojvwz2KOFeXX0VNfS6ynSx7s_31cHcf32EAy7hcBWg,10
+tensorset-0.4.1.dist-info/RECORD,,
