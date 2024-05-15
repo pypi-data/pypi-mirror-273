@@ -1,0 +1,5 @@
+astropy
+coverage
+numpy
+pytest
+rms-tabulation
