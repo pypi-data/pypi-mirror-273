@@ -1,0 +1,2 @@
+PythonVuetifyMarkdown
+python_vuetify_markdown
