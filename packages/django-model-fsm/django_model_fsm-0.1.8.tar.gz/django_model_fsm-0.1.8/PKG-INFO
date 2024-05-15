@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: django-model-fsm
+Version: 0.1.8
+Summary: A package to use transitions with a Django model.
+Home-page: https://bitbucket.org/hespul/django-model-fsm/
+License: GPL-3.0-or-later
+Author: Alexandre Norman
+Author-email: norman@xael.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=4)
+Requires-Dist: transitions (>=0.9,<0.10)
+Project-URL: Repository, https://bitbucket.org/hespul/django-model-fsm/
+Description-Content-Type: text/markdown
+
+# django-model-fsm
+
+A package to use transitions with a Django model.
+
+
+## Usage 
+
+``` python
+from django.db import models
+
+from django_model_fsm.dataclasses import StateData, TriggerData, WorkflowData
+from django_model_fsm.models import TransitionsMixin
+
+# States
+# fmt: off
+S_CREATED = StateData(
+    id="created",
+    label="Created",
+)
+S_PUBLISHED = StateData(
+    id="published",
+    label="Published",
+)
+S_ARCHIVED = StateData(
+    id="archived",
+    label="Archived",
+)
+# fmt: on
+
+# Triggers
+# fmt: off
+T_PUBLISHED_CHALLENGE_MODEL = TriggerData(
+    id="published_challenge_model",
+    label="Publish",
+    order=150,
+    need_confirmation=False,
+)
+T_UNPUBLISHED_CHALLENGE_MODEL = TriggerData(
+    id="unpublished_challenge_model",
+    label="Unpublish",
+    order=175,
+    need_confirmation=True,
+)
+T_ARCHIVE_CHALLENGE_MODEL = TriggerData(
+    id="archive_challenge_model",
+    label="Archive",
+    order=350,
+    need_confirmation=True,
+)
+# fmt: on
+
+challenge_model_workflow = WorkflowData(
+    initial_state=S_CREATED,
+    transitions_data=[
+        # fmt: off
+        {"trigger": T_PUBLISHED_CHALLENGE_MODEL, "source": S_CREATED, "dest": S_PUBLISHED},
+        {"trigger": T_UNPUBLISHED_CHALLENGE_MODEL, "source": S_PUBLISHED, "dest": S_CREATED},
+        {"trigger": T_ARCHIVE_CHALLENGE_MODEL, "source": S_PUBLISHED, "dest": S_ARCHIVED},
+        # fmt: on
+    ],
+)
+
+
+class MyModel(models.Model, TransitionsMixin):
+    workflow_data = challenge_model_workflow
+    workflow_callbacks = []
+
+```
+
