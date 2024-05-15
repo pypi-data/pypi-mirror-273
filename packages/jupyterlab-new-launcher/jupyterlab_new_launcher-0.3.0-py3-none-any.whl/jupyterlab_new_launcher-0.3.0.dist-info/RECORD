@@ -1,0 +1,15 @@
+jupyterlab_new_launcher/__init__.py,sha256=mT2jYQnU9D7S48G2F1Java7CTbpxtQf33CdjnTIyMhs,604
+jupyterlab_new_launcher/_version.py,sha256=W6DIaBZh3c4iERseQh1LSFmmsS5lqkkAwTOt20QcsZg,171
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/package.json,sha256=LzNQGASJ-LigMlgJIRw17PFb0DxaAaV1WTGCNMa_huA,6118
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/schemas/jupyterlab-new-launcher/package.json.orig,sha256=zkzpqJMKQP1ra0ee9Tf96mDouvqaR7nE-6UFRfebY4I,6908
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/schemas/jupyterlab-new-launcher/plugin.json,sha256=w6uUsX-9w5z3bu0eJHUrfg6XJxZbkGY5zIPGR2xBZpE,2348
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/static/728.5be4ee0b94a07decd5f8.js,sha256=W-TuC5SgfezV-FsKFlc_SNIfzNOQSCTwfNSUKUtUvaU,11071
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/static/787.d3e306a9eb8983db2644.js,sha256=0-MGqeuJg9smRON0rAibdAek5D6rCnz7dO1HoUEJg1U,28571
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/static/remoteEntry.697e41989e560bf8e1db.js,sha256=aX5BmJ5WC_jh21W72VAHYhfyCLUu5ww0BGZjORO2bBM,7174
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/static/style.js,sha256=MOlT50FsMyOVLmGeMohgiOv4h6RSA1qiWrKtEgqQjc0,166
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jupyterlab_new_launcher-0.3.0.data/data/share/jupyter/labextensions/jupyterlab-new-launcher/install.json,sha256=cn5ga5GcuxAOLyIc0qDsRVG4uLEHqoZXVyeU3OuXg00,207
+jupyterlab_new_launcher-0.3.0.dist-info/METADATA,sha256=dk5HBExCxI_zHdazoLjy9-9mt6ri-BoaYvsudognS_I,6392
+jupyterlab_new_launcher-0.3.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+jupyterlab_new_launcher-0.3.0.dist-info/licenses/LICENSE,sha256=B5ULvZbyna9TCFJHUkQDtAbR6pAdfqEvejIpYxqHvtM,1531
+jupyterlab_new_launcher-0.3.0.dist-info/RECORD,,
