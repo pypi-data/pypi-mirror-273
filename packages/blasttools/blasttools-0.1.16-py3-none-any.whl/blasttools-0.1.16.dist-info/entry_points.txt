@@ -1,0 +1,3 @@
+[console_scripts]
+blasttools=blasttools.__main__:blast
+
