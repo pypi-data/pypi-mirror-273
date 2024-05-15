@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mowaki"
+dynamic = ["version"]
+authors = [
+  { name="Sam Santi", email="samuele@samuelesanti.com" },
+]
+description = "Utilities for MoWaKi (and other) apps"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dependencies = [
+
+]
+
+[project.urls]
+Homepage = "https://www.mowaki.org"
+Repository = "https://github.com/rshk/mowaki-py"
+Issues = "https://github.com/rshk/mowaki-py/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+]
