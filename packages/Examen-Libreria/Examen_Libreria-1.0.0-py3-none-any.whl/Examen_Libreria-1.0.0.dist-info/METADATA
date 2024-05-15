@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Examen_Libreria
+Version: 1.0.0
+Summary: Proporciona una forma estructurada y eficiente de gestionar una colección de libros.
+Author: PABLO URIEL FRANCO CONTRERAS
+Author-email: 202227011_franco@tesch.edu.mx
+Requires-Dist: pandas
+
