@@ -1,0 +1,1 @@
+from .get_date_last_friday import f as get_last_friday
