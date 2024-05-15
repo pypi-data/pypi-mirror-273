@@ -1,0 +1,11 @@
+{
+  "required": {
+    "header-row": false,
+    "escape": "\\",
+    "quoting": null
+  },
+  "initial_hints": {
+    "escape": "\\"
+  },
+  "notes": "Escaping is not currently sniffed."
+}
