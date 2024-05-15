@@ -1,0 +1,10 @@
+tse_rating/__init__.py,sha256=rgIoviAXs-Pqg3eBpgCw8C8-Wwbq6z4Rhefx6w00L-o,34
+tse_rating/artifact_rating.py,sha256=xdQdgagb1b5N7idSE2jI_6qDMMI-G8lpXaP-Si-HBWY,1976
+tse_rating/rate.py,sha256=ioV3AXaYNAY5aZ6jZzMcjX9yl8PnGN0jZdI6ezKLhk8,1171
+tse_rating/weight.pth,sha256=Q08leypk3SC5NgXINqNZWFyQYVnOakwbQHi1x2hTeTg,28427589
+tse_motion-0.2.4.dist-info/LICENSE,sha256=-40OTxXQ24Ekzse1OUtyCGbJ97yasSFSBawQiPsiiss,1068
+tse_motion-0.2.4.dist-info/METADATA,sha256=7jH6GJ6Roc5iAB3-lnylMjBrEx8ZMmsJ0LmeumOWVpI,906
+tse_motion-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tse_motion-0.2.4.dist-info/entry_points.txt,sha256=QeNoXPmB43sunUKJs6WPIZNi7VjAqmtJwaUNGcTZe2A,53
+tse_motion-0.2.4.dist-info/top_level.txt,sha256=PNGanh3xjXnFGGEyRclUU80t8AEIa_PobJyqlq8Ddco,11
+tse_motion-0.2.4.dist-info/RECORD,,
