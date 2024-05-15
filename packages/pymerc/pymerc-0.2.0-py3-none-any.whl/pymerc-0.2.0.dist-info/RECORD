@@ -1,0 +1,15 @@
+pymerc/api/base.py,sha256=cA6JD8M25WWEGtTalXyqD2ZkRVZiZfEhlGf7Mu3QKqc,381
+pymerc/api/map.py,sha256=P198NdHNlbooKxxcJjtSHQHiw2LQAypjUP-jJLHN_IM,571
+pymerc/api/models/common.py,sha256=QJsxj7tL8MCxum1eyOZPuIyFTU9OPw9_iKNvnNHe9k8,264
+pymerc/api/models/map.py,sha256=J9k_ix_uDz4AuKPr4eMX8e3Jk7X56kCAg5QT0QbwgNI,594
+pymerc/api/models/player.py,sha256=yBy_h0G6WjsaNANBUEHxzE0dOXHDUpb8W7VBdf9B6fI,2003
+pymerc/api/models/static.py,sha256=xVeUnR7RnUIQsWYRIQXSXxKo33Ae9bmIqz6guNDhPT4,2466
+pymerc/api/models/towns.py,sha256=zEEqqfDcPEFQYLB7R7SmoNNCPOkIfPvDIAaFOKFGXyQ,3325
+pymerc/api/player.py,sha256=RDYiBFluHZYzaknwPFWE89pcAoQJrjgGdnjRMUGqwTA,481
+pymerc/api/static.py,sha256=t6Rb3IEKKg41j20XtTYoOgs1r05D9R-vK9p9yuAZ7qQ,2207
+pymerc/api/towns.py,sha256=U54ID6sLVqAR4ZhBeT1vxNM3lDwmbTFT5I8YModdSfM,1828
+pymerc/client.py,sha256=yg6jCiG_QQ2JUrCVIiAuF6dvkd6RkybPYyZEozCgAQg,1282
+pymerc/util/towns.py,sha256=QZ9Rvw6udyNZQ-gRwHHDNcU9EyRO1bmPF0OBOfUSsxI,834
+pymerc-0.2.0.dist-info/METADATA,sha256=2kqc1sHaITGpiU4VbpWn4qKiQ_I5CAm1lqWRtlDgShY,1825
+pymerc-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pymerc-0.2.0.dist-info/RECORD,,
