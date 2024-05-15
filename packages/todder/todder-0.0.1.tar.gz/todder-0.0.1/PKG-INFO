@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: todder
+Version: 0.0.1
+Summary: Beamline optimization with machine learning
+Project-URL: Homepage, https://github.com/thomaswmorris/todder
+Project-URL: Bug Reports, https://github.com/thomaswmorris/todder/issues
+Author-email: "Thomas W. Morris" <thomas.w.morris@yale.edu>
+Maintainer-email: "Thomas W. Morris" <thomas.w.morris@yale.edu>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.9
+Requires-Dist: dask
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: furo; extra == 'dev'
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: jupyter; extra == 'dev'
+Requires-Dist: matplotlib; extra == 'dev'
+Requires-Dist: nbsphinx; extra == 'dev'
+Requires-Dist: nbstripout; extra == 'dev'
+Requires-Dist: numpydoc; extra == 'dev'
+Requires-Dist: pandoc; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pre-commit-hooks; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-codecov; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: sphinx-copybutton; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
