@@ -1,0 +1,61 @@
+---
+name: Test and Release to PyPi
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - run: pip install -r requirements.txt
+    - run: pytest
+
+  update_version_publish:
+    name: Increment Version and Publish
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: reecetech/version-increment@2024.4.3
+      id: version
+      with:
+        scheme: conventional_commits
+        increment: patch
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.version.outputs.v-version }}
+        release_name: Release ${{ steps.version.outputs.version }}
+        body: |
+          See https://pypi.org/project/astrosampler/${{ steps.version.outputs.version }}/
+        draft: false
+        prerelease: false
+    - name: Update Version in File
+      id: update_version
+      run: |
+        sed -i "s/{{VERSION_NUMBER}}/${{ steps.version.outputs.version }}/" pyproject.toml
+    - name: Build Project
+      id: build
+      run: |
+        python3 -m pip install --upgrade build
+        python3 -m build
+    - name: Publish to PyPi
+      id: publish_pypi
+      uses: pypa/gh-action-pypi-publish@release/v1
