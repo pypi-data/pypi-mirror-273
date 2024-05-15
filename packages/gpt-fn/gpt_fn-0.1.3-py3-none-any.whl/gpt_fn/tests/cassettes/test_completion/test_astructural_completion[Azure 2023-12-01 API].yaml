@@ -1,0 +1,87 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Give me a sample email."}], "model": "gpt35", "frequency_penalty":
+      0.0, "presence_penalty": 0.0, "temperature": 1.0, "tool_choice": {"type": "function",
+      "function": {"name": "structural_response"}}, "tools": [{"type": "function",
+      "function": {"name": "structural_response", "description": "Response to user
+      in a structural way.", "parameters": {"title": "Email", "type": "object", "properties":
+      {"subject": {"title": "Subject", "description": "the subject of email", "type":
+      "string"}, "body": {"title": "Body", "description": "the body of email", "type":
+      "string"}}, "required": ["subject", "body"]}}}], "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '736'
+      content-type:
+      - application/json
+      host:
+      - gstudio.openai.azure.com
+      user-agent:
+      - AsyncAzureOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - async:asyncio
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://gstudio.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-12-01-preview
+  response:
+    content: '{"choices":[{"content_filter_results":{},"finish_reason":"stop","index":0,"message":{"content":null,"role":"assistant","tool_calls":[{"function":{"arguments":"{\n  \"subject\":
+      \"Sample Email\",\n  \"body\": \"Dear [Recipient],\\n\\nI hope this email finds
+      you well. I am writing to inform you about [subject]. [Include any necessary
+      details or information].\\n\\n[If applicable, provide any additional information
+      or updates].\\n\\n[Conclude the email with a closing remark].\\n\\nThank you
+      for your attention to this matter.\\n\\nSincerely,\\n[Your Name]\"\n}","name":"structural_response"},"id":"call_PVpfCnQC4YXcbAKeZQ5xt2AW","type":"function"}]}}],"created":1715589606,"id":"chatcmpl-9OLW2wW15damM1MaAei60TpCEn75w","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":null,"usage":{"completion_tokens":97,"prompt_tokens":82,"total_tokens":179}}
+
+      '
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Length:
+      - '1131'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:40:06 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      access-control-allow-origin:
+      - '*'
+      apim-request-id:
+      - d49908f8-18fe-4447-b1d0-18cbd79230fc
+      azureml-model-session:
+      - turbo-0613-7bacf2d7
+      x-accel-buffering:
+      - 'no'
+      x-content-type-options:
+      - nosniff
+      x-ms-client-request-id:
+      - d49908f8-18fe-4447-b1d0-18cbd79230fc
+      x-ms-rai-invoked:
+      - 'true'
+      x-ms-region:
+      - East US
+      x-ratelimit-remaining-requests:
+      - '237'
+      x-ratelimit-remaining-tokens:
+      - '239820'
+      x-request-id:
+      - 328d659c-62d9-484e-9422-9dee664c3397
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
