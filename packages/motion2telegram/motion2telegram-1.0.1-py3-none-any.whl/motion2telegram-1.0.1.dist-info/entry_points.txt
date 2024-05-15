@@ -1,0 +1,2 @@
+[console_scripts]
+motion2telegram = motion2telegram.cli:cli
