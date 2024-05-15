@@ -1,0 +1,12 @@
+csulb_mock_dataset/__init__.py,sha256=Tz8D3kcusATvYEEWtixBXrwG-MnWkgCZKMERHlUHrYk,28
+csulb_mock_dataset/cmp1.csv,sha256=tYJrKBbOnv7qv-qMbEn2fTKupT1j_WeMr8Bz2fjPYtE,3335723
+csulb_mock_dataset/data.py,sha256=hNOqPx_3aXhcgS60z__lCpvQ6WVtolEs8EbNa7z-0g8,160
+csulb_mock_student_dataset/__init__.py,sha256=PkHLpcP0VrvsZoJHV_9m6hQA3AewGX9wBaVC7AJ_Ay8,111
+csulb_mock_student_dataset/cmp1.csv,sha256=tYJrKBbOnv7qv-qMbEn2fTKupT1j_WeMr8Bz2fjPYtE,3335723
+csulb_mock_student_dataset/data.py,sha256=XLAnYIC8m_y-dS4PsCd_DvIXgJtk6LaBMgs1kETmluo,550
+files/__init__.py,sha256=gUYuX0Mk0LbRgadV1XqF9bk3b8N0RDcDHcuoWE7tCPo,27
+files/data.py,sha256=oFpyd2a-1m5EhzIHhWVuYf5aX-t4rDlLnyedi08SMB8,157
+HE_Dataset-0.1.dist-info/METADATA,sha256=t9FNPsYV3l0Pcau8UXJu5LWZMiszgwaL3Qxzo3x0TIQ,273
+HE_Dataset-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+HE_Dataset-0.1.dist-info/top_level.txt,sha256=ZeF0qTeLYn68wmsJMPM-O7_seO8GKnAhm5bsv9f2zcA,27
+HE_Dataset-0.1.dist-info/RECORD,,
