@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setuptools_reproducible.py
+setuptools_reproducible.egg-info/PKG-INFO
+setuptools_reproducible.egg-info/SOURCES.txt
+setuptools_reproducible.egg-info/dependency_links.txt
+setuptools_reproducible.egg-info/requires.txt
+setuptools_reproducible.egg-info/top_level.txt
+tests/test_reproducibility.py
