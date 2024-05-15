@@ -1,0 +1,14 @@
+dill==0.3.8
+lmdb==1.4.1
+tqdm==4.64.1
+numpy==1.24.4
+pandas==2.0.3
+protobuf==3.19.6
+albumentations==1.4.2
+opencv-python==4.8.1.78
+opencv-python-headless==4.9.0.80
+torch==1.13.1+cu116
+torchvision==0.14.1+cu116
+torchaudio==0.13.1
+torchsummary==1.5.1
+tensorboard==2.14.0
