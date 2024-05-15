@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+osmtoroadgraph/__init__.py
+osmtoroadgraph/main.py
+osmtoroadgraph.egg-info/PKG-INFO
+osmtoroadgraph.egg-info/SOURCES.txt
+osmtoroadgraph.egg-info/dependency_links.txt
+osmtoroadgraph.egg-info/requires.txt
+osmtoroadgraph.egg-info/top_level.txt
