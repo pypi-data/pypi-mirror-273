@@ -1,0 +1,3 @@
+include requirements.txt
+include cellxgene_schema/gencode_files/*.gz
+include cellxgene_schema/schema_definitions/*.yaml
