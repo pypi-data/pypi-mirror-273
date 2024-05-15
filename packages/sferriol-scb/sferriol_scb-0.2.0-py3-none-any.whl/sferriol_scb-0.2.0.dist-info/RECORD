@@ -1,0 +1,10 @@
+sferriol/scb/__init__.py,sha256=oc4DKLKYI82X_52g0eFVgLx2N2XYOK4oyxXI9abirYo,116
+sferriol/scb/asyncio_shared_circular_buffer.py,sha256=9kNUil1h07rA8Y8vJIeEgS4tF82AtC0Q1s2nAZSTKlU,1339
+sferriol/scb/file_lock.py,sha256=eDJpC1KENbAjcdf3IYxksxdJT1b-pmX3s4KrA_eX8Us,1293
+sferriol/scb/shared_circular_buffer.py,sha256=ioQ0wyRAvZH-C376Ts1bTiIb2L459WPHdndHa_UbBfI,9948
+sferriol/scb/shared_memory.py,sha256=EBAoQIKRKVC7bNgD8kqSgrR9ETVicZXrAoDr3PuMwwM,3442
+sferriol_scb-0.2.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+sferriol_scb-0.2.0.dist-info/METADATA,sha256=50jzhBsVU06SRbEOBp_DJKknnanIYD8JJtaLRhk4RBQ,1185
+sferriol_scb-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sferriol_scb-0.2.0.dist-info/top_level.txt,sha256=OZwPBarx0XWpgPVyXyHb5Aoe-RjU5Q0vkqE9AwXNxtM,9
+sferriol_scb-0.2.0.dist-info/RECORD,,

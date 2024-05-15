@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: sferriol-scb
+Version: 0.2.0
+Summary: Circular buffer storing numpy arrays that can be shared between one writer and several readers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncinotify
+Requires-Dist: numpy
+Requires-Dist: posix-ipc
+Requires-Dist: sferriol-python
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-doctestplus ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# sferriol-scb
+
+sferriol-scb is a module to create Numpy Shared Cyclic Buffer
+
+## Installation
+
+	pip install sferriol-scb
+
+## Usage
+
+### Writer
+
+
+    from sferriol import scb
+
+    with scb.Writer(
+        name = 'toto',   # name of the shared cyclic buffer
+        capacity=100000, # number of arrays allocated
+        shape=(1, ),     # shape of the arrays
+        dtype=np.uint32  # dtype of the arrays
+        ) as writer:
+
+        writer.put(np.asarray(1234)) # put one array in the buffer
+
+
+### Async_Reader
+
+    from sferriol import scb
+
+    with scb.Async_Reader(name='toto', timeout=10) as reader:
+    	 data = await reader.get()
