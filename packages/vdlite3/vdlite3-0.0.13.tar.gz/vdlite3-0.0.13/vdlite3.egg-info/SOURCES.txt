@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+vdlite3.egg-info/PKG-INFO
+vdlite3.egg-info/SOURCES.txt
+vdlite3.egg-info/dependency_links.txt
+vdlite3.egg-info/requires.txt
+vdlite3.egg-info/top_level.txt
+vidstream/__init__.py
+vidstream/audio.py
+vidstream/streaming.py
