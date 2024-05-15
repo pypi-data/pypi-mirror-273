@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tdlm-python
+Version: 0.1
+Summary: TDLM implementation for Python
+Home-page: http://github.com/skjerns/TDLM-Python
+Author: skjerns
+Author-email: nomail@nomail.com
+License: GPLv4
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Temporally delayed linear modelling is a way to quantify sequential occurences of events in time series and biosignals such as EEG or MEG
