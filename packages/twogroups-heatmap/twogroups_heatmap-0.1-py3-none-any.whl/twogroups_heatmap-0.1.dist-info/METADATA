@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: twogroups_heatmap
+Version: 0.1
+Summary: Create a heatmap of representing intersection between two groups
+Home-page: https://github.com/HTGenomeAnalysisUnit/sc_2g_heatmap.git
+Author: Giuditta Clerici
+Author-email: Giuditta Clerici <giuditta.clerici@external.fht.org>, Edoardo Giacopuzzi <edoardo.giacopuzzi@external.fht.org>
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/HTGenomeAnalysisUnit/sc_2g_heatmap.git
+Project-URL: Issues, https://github.com/HTGenomeAnalysisUnit/sc_2g_heatmap/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# Two groups heatmap
+
+Generate an heatmap comparing overlaps between 2 set of labels in a pandas dataframe. This is useful in single-cell to compare the overlap between two clustering methods or 2 sets of cell type labels.
+
+## Installation
+
+```bash
+pip install twogroups_heatmap
+```
+
+## Usage
+
+```python
+from twogroups_heatmap import intersection_heatmap
+
+
+df = pandas.DataFrame(
+    {
+        "cluster1": ["A", "A", "B", "B", "C", "C"],
+        "cluster2": ["A", "B", "B", "C", "C", "D"],
+    }
+)
+
+intersection_heatmap(df, xcol="cluster1", ycol="cluster2")
+```
