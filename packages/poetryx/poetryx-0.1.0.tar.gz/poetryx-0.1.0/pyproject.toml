@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "poetryx"
+version = "0.1.0"
+description = "CLI wrapper built on-top of Poetry enabling common utilities and application scaffolding for enhanced productivity."
+license = "Apache License 2.0"
+repository = "https://github.com/nachatz/poetryx"
+readme = "README.md"
+authors = ["Nikolas Achatz"]
+include = ["LICENSE"]
+exclude = ["tests"]
+packages = [{ include = "poetryx", from = "src" }]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+poetryx = "poetryx.cli:cli"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+bump = true
+style = "semver"
+
+[tool.black]
+target-version = ["py310", "py311", "py312"]
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+follow_imports = "skip"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.3"
+typer = "^0.12.3"
+toml = "^0.10.2"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.0"
+twine = "^5.0.0"
+types-toml = "^0.10.8.20240310"
+setuptools = "*" 
+black = "*"
+coverage = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+types-requests = "*" 
