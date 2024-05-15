@@ -1,0 +1,7 @@
+groq
+openai
+tiktoken
+packaging
+faiss-cpu
+ollama
+anthropic
