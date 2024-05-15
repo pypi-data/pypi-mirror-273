@@ -1,0 +1,6 @@
+setup.py
+BartePaySDK.egg-info/PKG-INFO
+BartePaySDK.egg-info/SOURCES.txt
+BartePaySDK.egg-info/dependency_links.txt
+BartePaySDK.egg-info/requires.txt
+BartePaySDK.egg-info/top_level.txt
