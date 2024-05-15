@@ -1,0 +1,15 @@
+stacchip/__init__.py,sha256=OyT72VOU3OjP8AdiBDO9htAojdlymOtecF4tiiC6yoU,41
+stacchip/chipper.py,sha256=148VtoGRlF_U_wpz_1WOt8fHC4Im_mWrySIdU22QHvQ,4106
+stacchip/indexer.py,sha256=B6zUjUHDixW6_neozDVEd_TUO9Ho1lMLbY6J9JyTW0Y,10175
+stacchip/processors/landsat_processor.py,sha256=mpujTTQdgXkiepPV-QrKVtPgvnx-HCCZVG00cO-5hyQ,4710
+stacchip/processors/linz_processor.py,sha256=OXO_55FPjImF8AJ8URky2zGhEBoWu-BaFbdhohroWhw,5944
+stacchip/processors/naip_processor.py,sha256=vQwAOx4WfbhAy7isYyHOzh2eqBejnMgncES7Nv8LXKs,5099
+stacchip/processors/prechip.py,sha256=VyMYeE0lrvs47xEpRMrCf-I1q2zQTldlFcyzcYoFc_Y,6875
+stacchip/processors/sentinel_1_processor.py,sha256=lfRmdOhk47Uuw9sLBt_ZRfr3GfiIxIdoYaYGTEi4Ttk,4843
+stacchip/processors/sentinel_2_processor.py,sha256=KiSFreOA7J0Fu2eZTX2I6dcHWARJZCfLckRjCBcA_B0,4022
+stacchip/processors/stats.py,sha256=UoTLWJK5-5KP34mP9bI1x0keYZG4NWWUtvPSoOrFmog,2892
+stacchip-0.1.30.dist-info/METADATA,sha256=IwNLdwZo6On09Sv1nWDoM_LGY5skMZ14Z9L6xFAdcXE,12172
+stacchip-0.1.30.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+stacchip-0.1.30.dist-info/entry_points.txt,sha256=AD1zOwRU_206SGE7_FwvQFeLTTGL3suvTj4dG9wGCIw,449
+stacchip-0.1.30.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+stacchip-0.1.30.dist-info/RECORD,,
