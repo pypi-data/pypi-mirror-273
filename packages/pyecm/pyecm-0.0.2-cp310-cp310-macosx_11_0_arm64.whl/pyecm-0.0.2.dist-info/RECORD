@@ -1,0 +1,10 @@
+pyecm/soem_ext.cpp,sha256=HCmYFNDYYEkxLkldmDjc3rvwCl8Y1aX9fDanuv3G5nc,19048
+pyecm/__init__.py,sha256=km99P8uJyxZPlkqo4JhyRv25E45A4b5RbhHhp3V3mrY,19
+pyecm/soem/soem_ext.cpython-310-darwin.so,sha256=sIzFwSJodef_mUOwZ9H6SSOgYeSAF0mVdY6N7hctVk4,308800
+pyecm/soem/soem_ext.pyi,sha256=aV57rhgpuIJuiZOSbmkQ6YwoBY0Y0APygSBQdCxfH0A,20147
+pyecm/soem/__init__.py,sha256=Tt4UYxswA8fHoTw08M-FwJPM5ui-T995q4A40JtRv6s,50
+pyecm/soem/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyecm-0.0.2.dist-info/RECORD,,
+pyecm-0.0.2.dist-info/WHEEL,sha256=DYF2zCG33VkiL6C-svUgvjL430aZ6PyYog0xSHqAfZ0,113
+pyecm-0.0.2.dist-info/METADATA,sha256=2cjy0KkQ3F7Sm29tboXCecORVv9D9L4yDvlA6xZRUUw,3321
+pyecm-0.0.2.dist-info/licenses/LICENSE,sha256=nNApz6ygUMsLyFCNxWq7idsr2DTMeO_o_llXw1FruBs,1063
