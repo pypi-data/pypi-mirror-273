@@ -1,0 +1,13 @@
+pandas
+scipy
+statsmodels
+numpy==1.23.5
+scikit-learn
+xgboost
+matplotlib
+joblib
+snakemake
+Boruta
+shap
+seaborn
+plotnine

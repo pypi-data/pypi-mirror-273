@@ -1,0 +1,2 @@
+from bacGWAStatLearn.TreeTune import ClassTuning
+from bacGWAStatLearn.FeatureSelect import ClassFeatureSelection
