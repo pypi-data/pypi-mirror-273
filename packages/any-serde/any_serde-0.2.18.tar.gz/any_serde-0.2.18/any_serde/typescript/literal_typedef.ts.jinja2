@@ -1,0 +1,20 @@
+export type {{value_type_name}} =
+  {%- for literal_value_str in literal_value_strs %}
+  | {{literal_value_str}}{% if loop.last %};{% endif %}
+  {%- endfor %}
+
+export type {{data_type_name}} = {{value_type_name}};
+
+export function {{to_data_name}}(value: {{value_type_name}}): {{data_type_name}} {
+  return value;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function {{from_data_name}}(data: any): {{value_type_name}} {
+  {%- for literal_value_str in literal_value_strs %}
+  if (data === {{literal_value_str}}) {
+    return data;
+  }
+  {%- endfor %}
+  {{RAISE_DESERIALIZATION_ERROR}};
+}

@@ -1,0 +1,47 @@
+export type {{value_type_name}} = {
+  {%- for field_name, field_typedef in field_typedefs %}
+  {{field_name}}: {{field_typedef.value_type_name}};
+  {%- endfor %}
+};
+
+export type {{data_type_name}} = {
+  {%- for field_name, field_typedef in field_typedefs %}
+  {{field_name}}: {{field_typedef.data_type_name}};
+  {%- endfor %}
+};
+
+export function {{to_data_name}}(value: {{value_type_name}}): {{data_type_name}} {
+  return {
+    {%- for field_name, field_typedef in field_typedefs %}
+    {{field_name}}: {{field_typedef.to_data_name}}(value.{{field_name}}),
+    {%- endfor %}
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function {{from_data_name}}(data: any): {{value_type_name}} {
+  if (
+    typeof data !== "object"
+    || Array.isArray(data)
+    || data === null
+  ) {
+    {{RAISE_DESERIALIZATION_ERROR}};
+  }
+  const dataObj: object = data;
+
+  {%- for field_name, field_typedef in field_typedefs %}
+
+  if (!Object.hasOwn(dataObj, "{{field_name}}")) {
+    {{RAISE_DESERIALIZATION_ERROR}};
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const fieldData__{{field_name}} = (dataObj as {{"{"}}{{field_name}}: any})["{{field_name}}"];
+  const fieldValue__{{field_name}} = {{field_typedef.from_data_name}}(fieldData__{{field_name}});
+  {%- endfor %}
+
+  return {
+    {%- for field_name, field_typedef in field_typedefs %}
+    {{field_name}}: fieldValue__{{field_name}},
+    {%- endfor %}
+  };
+}
