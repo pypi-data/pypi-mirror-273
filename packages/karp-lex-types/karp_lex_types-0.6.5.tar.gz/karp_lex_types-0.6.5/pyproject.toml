@@ -1,0 +1,44 @@
+[project]
+authors = [
+    { name = "Språkbanken Text", email = "sb-info@svenska.gu.se" },
+    { name = "Kristoffer Andersson", email = "kristoffer.andersson@gu.se" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.5.3", "ulid-py>=1.1.0"]
+name = "karp-lex-types"
+version = "0.6.5"
+description = "The types of karp-lex"
+readme = "README.md"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/spraakbanken/karp-lex-types/issues"
+homepage = "https://spraakbanken.gu.se"
+repository = "https://github.com/spraakbanken/karp-lex-types"
+documentation = "https://github.com/spraakbanken/karp-lex-types"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/.github", "/docs"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/karp_lex_types"]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-cov>=5.0.0",
+    "mypy>=1.10.0",
+    "ruff>=0.4.4",
+    "bump-my-version>=0.21.0",
+]
+
+[tool.pdm.build]
+includes = ["src/karp_lex_types"]
