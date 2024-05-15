@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+winterdrb_pytorch.ipynb
+.github/workflows/continuous_integration.yml
+models/winterrb_v1_0_0_weights.pth
+winterrb/classifications.py
+winterrb/model.py
+winterrb/paths.py
+winterrb/pick_alerts.py
+winterrb/utils.py
+winterrb.egg-info/PKG-INFO
+winterrb.egg-info/SOURCES.txt
+winterrb.egg-info/dependency_links.txt
+winterrb.egg-info/requires.txt
+winterrb.egg-info/top_level.txt
