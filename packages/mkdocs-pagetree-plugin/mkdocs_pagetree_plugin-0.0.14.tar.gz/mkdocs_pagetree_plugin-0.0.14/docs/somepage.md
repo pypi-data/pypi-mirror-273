@@ -1,0 +1,5 @@
+---
+status: deprecated
+---
+
+# Some page
