@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nomadic
+Version: 0.0.0
+Summary: Coming soon
+Author-email: Nomadic <withnomadic@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
