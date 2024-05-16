@@ -1,0 +1,14 @@
+brukeropusreader
+h5py
+lmfit
+matplotlib
+numpy
+pandas
+pydantic==1.*
+emd
+renishawWiRE
+scikit-learn
+scipy>=1.8.0
+spc-io~=0.0.2
+statsmodels
+uncertainties
