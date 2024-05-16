@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: promptmage
+Version: 0.0.1
+Summary: 
+License: MIT
+Author: Tobias Sterbak
+Author-email: github@tobiassterbak.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
