@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flask_project_restful
+Version: 0.0.7
+Summary: flask projects系列的restful自定义扩展
+Home-page: https://github.com/ababbabbb/flask_project_extends
+Author: bichuantao
+Author-email: 17826066203@163.com
+License: MIT
+Keywords: python,flask project,extends,flask_project_restful
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: flask-restful
+Requires-Dist: flask-p
+
+flask projects系列的第三方扩展-flask_project_restful
