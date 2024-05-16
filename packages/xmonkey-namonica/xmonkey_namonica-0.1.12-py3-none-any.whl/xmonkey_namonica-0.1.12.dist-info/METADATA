@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xmonkey_namonica
+Version: 0.1.12
+Home-page: https://github.com/Xpertians/xmonkey-namonica
+Author: Oscar Valenzuela
+Author-email: oscar.valenzuela.b@gmail.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: spacy
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: urllib3
+Requires-Dist: python-magic
+Requires-Dist: beautifulsoup4
+Requires-Dist: oslili
+
