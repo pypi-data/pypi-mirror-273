@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+qnn/__init__.py
+qnn.egg-info/PKG-INFO
+qnn.egg-info/SOURCES.txt
+qnn.egg-info/dependency_links.txt
+qnn.egg-info/top_level.txt

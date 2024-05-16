@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: qnn
+Version: 0.0.0a0
+Summary: Quantize Neural Network
+Home-page: https://github.com/JiauZhang/qnn
+Author: JiauZhang
+Author-email: jiauzhang@163.com
+License: MIT
+Keywords: Deep Learning,Quantize Neural Network,Artificial Intelligence
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
