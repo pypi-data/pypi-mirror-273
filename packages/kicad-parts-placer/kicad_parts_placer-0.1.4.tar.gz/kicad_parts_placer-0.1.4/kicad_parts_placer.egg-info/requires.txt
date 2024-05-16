@@ -1,0 +1,4 @@
+click>=7.0
+pandas
+numpy
+spreadsheet_wrangler>=0.1.3
