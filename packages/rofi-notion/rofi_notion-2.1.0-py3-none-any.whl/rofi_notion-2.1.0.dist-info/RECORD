@@ -1,0 +1,13 @@
+rofi_notion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rofi_notion/__main__.py,sha256=x0IvPuVQqqE6NOR2cwbbcQCv-8EH6pcXrKqceSN9fBw,1326
+rofi_notion/config.py,sha256=5O9S8sK1k9lK6j_Vy4TtFeahBXunKUcZvABwQTQLtkg,1159
+rofi_notion/main.py,sha256=1BmYT4bs0jOvOPV9PtYu-We68imcGmNP6OOQFqzcKxs,2786
+rofi_notion/manage.py,sha256=rE_w8c7EqJ-bVlDM1FtpU_tzlu_Mc1WpuZ0dJRCGagY,3020
+rofi_notion/settings.py,sha256=6CWQORc3BQiyx4yRsvHb9j3uHVTmr5lJmfkaR9XgOos,191
+rofi_notion/transcoders.py,sha256=xwdfQMBq7aBtEZ1gD4JClNceJd6PWXZK4mwl9vT0pNc,3813
+rofi_notion-2.1.0.dist-info/LICENSE,sha256=nfiHaiiEwHpVWeL95QKjxvi4cAkPO6wahPprsN-S8q0,1073
+rofi_notion-2.1.0.dist-info/METADATA,sha256=Lcx9Cthv8qK2jUWLvo763wwxeHEfJkQMTepCdYwcDsg,4402
+rofi_notion-2.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rofi_notion-2.1.0.dist-info/entry_points.txt,sha256=eiEculgC1SFPX3RxTZrvfQ7b-UEHryhNmUlCHpvlImw,58
+rofi_notion-2.1.0.dist-info/top_level.txt,sha256=bcY5OtSltuTAcfQjISQ1r7FXam0uTIgclyPCWqpBf78,12
+rofi_notion-2.1.0.dist-info/RECORD,,
