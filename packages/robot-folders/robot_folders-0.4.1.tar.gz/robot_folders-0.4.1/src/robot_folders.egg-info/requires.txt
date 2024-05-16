@@ -1,0 +1,5 @@
+Click>=8.0
+gitpython
+inquirer
+PyYaml
+vcstool
