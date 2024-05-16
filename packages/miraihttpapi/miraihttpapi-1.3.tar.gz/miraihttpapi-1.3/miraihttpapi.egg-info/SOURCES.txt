@@ -1,0 +1,12 @@
+README.md
+setup.py
+miraihttpapi/Configer.py
+miraihttpapi/MessageChain.py
+miraihttpapi/MiraiCore.py
+miraihttpapi/__init__.py
+miraihttpapi.egg-info/PKG-INFO
+miraihttpapi.egg-info/SOURCES.txt
+miraihttpapi.egg-info/dependency_links.txt
+miraihttpapi.egg-info/not-zip-safe
+miraihttpapi.egg-info/requires.txt
+miraihttpapi.egg-info/top_level.txt
