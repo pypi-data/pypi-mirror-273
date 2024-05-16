@@ -1,0 +1,11 @@
+jsepp/__init__.py,sha256=eHeE3qC5Sh-sf-enNq1wihQnmsZIdvWqQElYNJEmRlo,14
+jsepp/config.py,sha256=v9SiCy2bzP7dWZ0woFP1ceS40adT8M1lXrOJ4t9KOMA,1016
+jsepp/data.py,sha256=LqrLexlBmMGzV9-Ogy7-5Nrkf099DQnlwA5fa6YGo8c,3082
+jsepp/dbutils.py,sha256=Bo88e1bWZhda0KT7OJpWdWL7Gx4-CfOkx3caNee-E98,2475
+jsepp/ml.py,sha256=LbT7G5BnqcYNidwJHDLowyL-VElm9eiLCSufokZo_7g,571
+jsepp/visualize.py,sha256=NLhU3HiETfC7Ih2i_VTI4teSNth-nuKRArWX4V3UEBo,4102
+jsepp/water.py,sha256=5YVkVroELBHvz691yvb0YQ4TKhoaA7ss2i3_1-WRpNI,2248
+jsepp-0.1.8.dist-info/METADATA,sha256=AuWzH9YOmTHTErhmRHDD6uDxXq9W0yeSu7hjuoNFXgc,804
+jsepp-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+jsepp-0.1.8.dist-info/top_level.txt,sha256=xi9YKwxbVgR0OpcimvTuKpAiOZh4V-icv2MkJseuV_Y,6
+jsepp-0.1.8.dist-info/RECORD,,
