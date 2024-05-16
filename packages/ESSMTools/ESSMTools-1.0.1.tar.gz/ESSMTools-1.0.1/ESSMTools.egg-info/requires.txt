@@ -1,0 +1,4 @@
+tqdm
+numpy
+pandas
+geopandas>=0.14.0
