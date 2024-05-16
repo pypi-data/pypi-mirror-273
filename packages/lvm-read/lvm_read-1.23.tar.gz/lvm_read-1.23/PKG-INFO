@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: lvm_read
+Version: 1.23
+Summary: LabView Measurement file reader
+Project-URL: homepage, https://github.com/ladisk/lvm_read
+Project-URL: source, https://github.com/ladisk/lvm_read
+Author-email: "Janko Slavič et al." <janko.slavic@fs.uni-lj.si>
+Maintainer-email: "Janko Slavič et al." <janko.slavic@fs.uni-lj.si>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: LabView,lvm
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: sphinx; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: wheel; extra == 'dev'
+Description-Content-Type: text/x-rst
+
+lvm_read
+========
+
+LabView Measurement file reader
+-------------------------------
+
+|pytest|
+
+|binder| to test the *Showcase lvm_read.ipynb*. 
+
+.. |binder| image:: http://mybinder.org/badge.svg 
+   :target: http://mybinder.org:/repo/ladisk/lvm_read
+.. |pytest| image:: https://github.com/ladisk/lvm_read/actions/workflows/python-package.yml/badge.svg
+    :target: https://github.com/ladisk/lvm_read/actions
+
+See also `Specifications <http://www.ni.com/tutorial/4139/en/>`_.
+
