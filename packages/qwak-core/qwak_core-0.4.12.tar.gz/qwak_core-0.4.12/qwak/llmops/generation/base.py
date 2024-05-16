@@ -1,0 +1,8 @@
+from abc import ABC
+
+
+class ModelResponse(ABC):
+    pass
+
+
+ModelResponseType = type(ModelResponse)
