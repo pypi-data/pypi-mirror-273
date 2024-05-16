@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dottable_dict/__init__.py
+src/dottable_dict/dottable_dict.py
+src/dottable_dict.egg-info/PKG-INFO
+src/dottable_dict.egg-info/SOURCES.txt
+src/dottable_dict.egg-info/dependency_links.txt
+src/dottable_dict.egg-info/top_level.txt
