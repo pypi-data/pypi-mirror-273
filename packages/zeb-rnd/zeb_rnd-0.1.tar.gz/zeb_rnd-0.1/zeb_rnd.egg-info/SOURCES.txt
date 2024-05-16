@@ -1,0 +1,7 @@
+LICENSE
+setup.cfg
+setup.py
+zeb_rnd.egg-info/PKG-INFO
+zeb_rnd.egg-info/SOURCES.txt
+zeb_rnd.egg-info/dependency_links.txt
+zeb_rnd.egg-info/top_level.txt
