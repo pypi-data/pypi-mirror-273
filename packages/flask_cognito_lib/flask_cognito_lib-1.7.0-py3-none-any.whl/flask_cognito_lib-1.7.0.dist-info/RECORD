@@ -1,0 +1,13 @@
+flask_cognito_lib/__init__.py,sha256=GRSh57ADCyo4XYAwE1a6NhX4TfFnabQQIJqHy-HjfsI,82
+flask_cognito_lib/config.py,sha256=ITevXDqOgjwWFCsIY0M9MDCm1Y-O4-lEJxO-Ni_MbII,6668
+flask_cognito_lib/decorators.py,sha256=VNw1x4cxDBz6ZyyjtAVRmVPnruMl9JTWjrqOKc5Y25U,9618
+flask_cognito_lib/exceptions.py,sha256=sEKcM7hevr4dKe1mud7NjHQx5X9lf7ldwSzoF5HdYbM,384
+flask_cognito_lib/plugin.py,sha256=OXt3w6weSjRUaOvrtWi1eQ5ieJRVdnk-t1cSFBv6VC8,7330
+flask_cognito_lib/services/__init__.py,sha256=eUICD-6ALIH-oHp-5ktPP0F_gMOxWyTY5RQonDRNwaw,326
+flask_cognito_lib/services/cognito_svc.py,sha256=WxJVcsPfbEkZyzYCfB97DDccHlWBpl6xHLRMML5WpI8,7013
+flask_cognito_lib/services/token_svc.py,sha256=dDwrlXoHgcFa7DRZwU8hejSiGQhwHNZRRGyeTbRRMEg,7235
+flask_cognito_lib/utils.py,sha256=H5XpwFQqrhzYzHB1lqbJssJvEXXaVlCzNVhb4ARQcX8,1124
+flask_cognito_lib-1.7.0.dist-info/LICENSE,sha256=NbY002uJ-chCjxk1jd2One3GSbGIY0jykWLEUeeALsY,1072
+flask_cognito_lib-1.7.0.dist-info/METADATA,sha256=Z44S3W9e2YaDVSPIgONmJPSM152sDFC4K17Ia6Yp6Ik,10715
+flask_cognito_lib-1.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flask_cognito_lib-1.7.0.dist-info/RECORD,,
