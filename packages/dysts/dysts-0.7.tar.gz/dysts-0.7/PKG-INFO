@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dysts
+Version: 0.7
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Provides-Extra: full
+Requires-Dist: tsfresh; extra == "full"
+Requires-Dist: nolds; extra == "full"
+Requires-Dist: numpy; extra == "full"
+Requires-Dist: sdeint; extra == "full"
