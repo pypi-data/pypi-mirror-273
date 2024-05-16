@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+avarnd.egg-info/PKG-INFO
+avarnd.egg-info/SOURCES.txt
+avarnd.egg-info/dependency_links.txt
+avarnd.egg-info/top_level.txt
