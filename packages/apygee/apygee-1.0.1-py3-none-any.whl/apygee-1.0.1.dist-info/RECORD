@@ -1,0 +1,11 @@
+apygee/__init__.py,sha256=MMeU8siNZtPgHIhe6Q0bB1cFqVPT92JyZXXk7sD823M,555
+apygee/constants.py,sha256=VIhkv0BRbI5I0gCswb328H9INc91T_ljJcdakGe3WDU,4014
+apygee/kepler.py,sha256=SxcrozX8APqWH0zU_yjzPiyK8pw_R9NhZhmUF5tzv8M,10159
+apygee/nb.py,sha256=kAOW4yGjGX80bZQTIwi30RdJD7_ECTRGwEyfG6Fy_bg,2863
+apygee/orbit.py,sha256=tESgnk-CqgxHP2f5LqBg1tBGDdQwUuUBI3Hc5JUpkc4,37115
+apygee/plot.py,sha256=QdMGOUweZNnIaUpDOsRgOt6aUnhjF3lQz41iaN-hsB8,19124
+apygee/utils.py,sha256=0RjhRLogrE1KNzvjcCqgchfuR5ACSq0h3NSyvG7KdnY,6234
+apygee-1.0.1.dist-info/LICENSE.md,sha256=JfdE935PaZZ11mgCoXAxh4xZpN9xqOGPO9wayIVX8Ho,1060
+apygee-1.0.1.dist-info/METADATA,sha256=2Kpnb8KKSa46oFy4y0XyrcBi0lPGkx652SiDhSu_6Js,1598
+apygee-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+apygee-1.0.1.dist-info/RECORD,,
