@@ -1,0 +1,45 @@
+[project]
+version = '0.0.2'
+name = 'pytest_pt'
+description = 'pytest plugin to use *.pt files as tests'
+readme = 'README.md'
+authors = [ { name = 'Curt J. Sampson', email = 'cjs@cynic.net' }, ]
+
+requires-python = '>=3.6'
+dependencies = ['pytest']
+license = { file = 'LICENSE' }
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Framework :: Pytest',
+    'Topic :: Software Development :: Testing',
+    'Programming Language :: Python :: 3 :: Only',
+    'License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
+]
+
+[project.urls]
+homepage = 'https://github.com/cynic-net/pytest_pt'
+source = 'https://github.com/cynic-net/pytest_pt'
+tracker = 'https://github.com/cynic-net/pytest_pt/issues'
+
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools.packages]
+find = { where = ['src'] }
+
+[tool.setuptools]
+#   The packages.find specification above, for whatever reason, ignores all
+#   top-level modules (i.e., `*.py` files that can be imported). We work
+#   around this by explicitly adding our top-level module to py-modules.
+#   (Note that this must be a Python module name, not a filename.) This
+#   configuration directive is mentioned but not documented, but it seems
+#   to add additional modules to the list that `packages.find` comes up with.
+py-modules = ['pytest_pt']
+
+#   This is used by pytest ≥6.0. Pytest 5.x does not read pyproject.toml
+#   files, and so is configured separately in tox.ini.
+[tool.pytest.ini_options]
+addopts   = ['-p pytest_pt']
+testpaths = ['tsrc']
