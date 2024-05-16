@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: llmage
+Version: 0.0.1
+Summary: A framework for simplifying the development of AI systems based on LLMs.
+Home-page: https://github.com/tsterbak/llmage
+License: MIT
+Author: Tobias Sterbak
+Author-email: github@tobiassterbak.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://github.com/tsterbak/llmage
+Project-URL: Repository, https://github.com/tsterbak/llmage
+Description-Content-Type: text/markdown
+
+
