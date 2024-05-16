@@ -1,0 +1,2 @@
+scnx_soar_integration_sdk
+template

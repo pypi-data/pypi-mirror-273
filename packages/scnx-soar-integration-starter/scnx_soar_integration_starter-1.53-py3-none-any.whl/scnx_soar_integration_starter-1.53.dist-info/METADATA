@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: scnx-soar-integration-starter
+Version: 1.53
+Summary: A command-line utility that creates Python package project template.This newly created project will have boiler plate code for integrations.
+Home-page: https://bitbucket.org/securonixsnypr/scnx-soar-integration-sdk/src/develop/
+Author: Ashish Gupta
+Author-email: ashishkrgupta@hotmail.com
+License: BSD
+Project-URL: Documentation, https://securonix.atlassian.net/wiki/spaces/S6R/pages/3587407928/Integration+Project+Generator+CLI+Design
+Project-URL: Issues, https://securonix.atlassian.net/browse/SOAR-9659
+Keywords: scnx-soar-integration-sdk,scnx-soar-integration-starter,Python,projects,project templates,project directory,package,packaging
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: binaryornot (>=0.4.4)
+Requires-Dist: Jinja2 (<4.0.0,>=2.7)
+Requires-Dist: click (<9.0.0,>=7.0)
+Requires-Dist: pyyaml (>=5.3.1)
+Requires-Dist: python-slugify (>=4.0.0)
+Requires-Dist: requests (>=2.23.0)
+Requires-Dist: arrow
+Requires-Dist: rich
+Requires-Dist: cookiecutter
+Requires-Dist: jsonmerge
+Requires-Dist: astunparse
+
+# scnx-soar-integration-sdk
+a python package to create new python started project
+
+To build the package, run below command
+
+`python3 -m build`
+
+To publish python package to PyPi, run below command
+
+`python3 -m twine upload --verbose --repository pypi dist/*`
+
+To install this package, run below cmd
+
+`pip install <path to package>`
+
+To Use CLI, run below cmd
+
+`scnx_soar_integration_sdk`
+

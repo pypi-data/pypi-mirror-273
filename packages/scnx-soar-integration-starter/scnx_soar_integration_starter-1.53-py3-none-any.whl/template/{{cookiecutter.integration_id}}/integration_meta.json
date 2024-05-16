@@ -1,0 +1,16 @@
+{
+    "name": "{{cookiecutter.integration_id}}",
+    "type": "python",
+    "clazz": "",
+    "label": "{{cookiecutter.integration_name}}",
+    "native": false,
+    "testUrl": "",
+    "category": "Data Enrichment and Threat Intelligence",
+    "functions": [],
+    "isLicensed": true,
+    "pathToLogo": "",
+    "encodedLogo": "",
+    "connectionParameters": [],
+    "isMultiAuthentication": false,
+    "desc": ""
+}
