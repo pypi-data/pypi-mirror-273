@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: midea-local
+Version: 1.0.0
+Summary: Control your Midea M-Smart appliances via local area network
+Home-page: https://github.com/rokam/midea-local
+Author: rokam
+Author-email: lucas@mindello.com.br
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: ifaddr
+Requires-Dist: pycryptodome
+
+# Midea-local python lib
+
+Control your Midea M-Smart appliances via local area network.
+
+This library is part of https://github.com/georgezhao2010/midea_ac_lan code. It was separated to segregate responsabilities.
+
+⭐If this component is helpful for you, please star it, it encourages me a lot.
