@@ -1,0 +1,3 @@
+[console_scripts]
+djangowiz=djangowiz.cli:app
+

@@ -1,0 +1,12 @@
+from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.permissions import IsAuthenticated
+from {{ app_name }}.models import {{ model_name }}
+from {{ app_name }}.serializers import {{ model_name }}Serializer
+
+class {{ model_name }}ListCreateAPIView(generics.ListCreateAPIView):
+    queryset = {{ model_name }}.objects.all()
+    serializer_class = {{ model_name }}Serializer
+
+class {{ model_name }}RetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = {{ model_name }}.objects.all()
+    serializer_class = {{ model_name }}Serializer
