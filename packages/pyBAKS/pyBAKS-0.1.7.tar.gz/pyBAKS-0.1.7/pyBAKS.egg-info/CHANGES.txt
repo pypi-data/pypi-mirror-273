@@ -1,0 +1,26 @@
+v0.1.7 (2024-05-15)
+----------------------------
+skipped dist?
+
+v0.1.5 (2024-05-15)
+----------------------------
+- fixing issues with LL and MISE calculation
+
+v0.1.4 (2023-12-8)
+----------------------------
+-fixed overflow error
+-added dt option to BAKS() function to adjust for time arrays not in seconds
+
+v0.1.3 (2023-11-07)
+----------------------------
+-made some edits to optimize_alpha_MLE() to better handle different data types, especially numpy ndarrays
+
+v0.1.2 (2023-11-06)
+----------------------------
+-another debug for BAKS() function
+
+v0.1.1 (2023-11-06)
+----------------------------
+-added dataframe processing
+-debugging
+-fixed bug where arrays with no spikes would cause in error in BAKS()
