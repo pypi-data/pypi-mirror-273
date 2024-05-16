@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+    "setuptools", 
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dreamcoat"
+description = "The joyful oceanographic seagoing expedition planning helper"
+readme = "README.md"
+dependencies = [
+    "fsspec",
+    "geographiclib",
+    "great_circle_calculator",
+    "matplotlib",
+    "numpy",
+    "scipy",
+    "shapely",
+    "vptree",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "dreamcoat.meta.version_number"}

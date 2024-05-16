@@ -1,0 +1,8 @@
+fsspec
+geographiclib
+great_circle_calculator
+matplotlib
+numpy
+scipy
+shapely
+vptree
