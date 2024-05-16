@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/shared_storage_client/__init__.py
+src/shared_storage_client/storage_client.py
+src/shared_storage_client_5.egg-info/PKG-INFO
+src/shared_storage_client_5.egg-info/SOURCES.txt
+src/shared_storage_client_5.egg-info/dependency_links.txt
+src/shared_storage_client_5.egg-info/requires.txt
+src/shared_storage_client_5.egg-info/top_level.txt
