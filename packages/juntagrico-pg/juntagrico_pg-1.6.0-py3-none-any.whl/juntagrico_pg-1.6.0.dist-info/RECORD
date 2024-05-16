@@ -1,0 +1,17 @@
+juntagrico_pg/__init__.py,sha256=bYN93DTWr8alkTnO3wj31CU5gqTshxIcsbXUcJcUAc8,22
+juntagrico_pg/apps.py,sha256=GFfGUo3CcjftrKm9JJcLnY8iNCp59_XWWMj_1x4dTEg,270
+juntagrico_pg/models.py,sha256=WJvMCuQNsvqQ5dBtx2uOdK5F6V-GbZx9ZlCgMNaYFPw,249
+juntagrico_pg/urls.py,sha256=L3I2jsOXHIr8yX48JQcWfV7ZdOWpoytVz3gNaS8r2tE,196
+juntagrico_pg/views.py,sha256=nvhJCmENgHi_UJj-l5wOfnSIhetnr8dVFS2Awp0i8Zw,965
+juntagrico_pg/migrations/0001_initial.py,sha256=Rm8DhRh6xKc5BsLZl2HI9cC07lMETTVk_tAyG8UQE20,538
+juntagrico_pg/migrations/0002_auto_20191007_1031.py,sha256=EqgZyjQ17CI0Dq8DAjwwW74ZUXWJ1DdQ1U63lhrXNNU,377
+juntagrico_pg/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+juntagrico_pg/templates/jpg/home.html,sha256=WTzyAKblvTqDzTmGXpreejtotIUqgtrHSKxfGRDUwbI,1558
+juntagrico_pg/templates/juntagrico/menu/admin.html,sha256=aVntpoq692M18wJty7ztAb2N3ubbGqtvGTeub9RVa_M,281
+juntagrico_pg/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+juntagrico_pg/util/output.py,sha256=c_mwgzgvqjwWJaSU3tIi_4o5pRYbPgGAH8Pv0WFh7YM,534
+juntagrico_pg-1.6.0.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+juntagrico_pg-1.6.0.dist-info/METADATA,sha256=3Qbk_ilqTujgDgcGGf_G3Yu1GuIuk4goa6HvmtaOzSo,12077
+juntagrico_pg-1.6.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+juntagrico_pg-1.6.0.dist-info/top_level.txt,sha256=Tsdn6s39Zfjsof32Go9Y9O1HPTS0ebilbywArv4v0iw,14
+juntagrico_pg-1.6.0.dist-info/RECORD,,
