@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-tsugu-bangdream-bot
+Version: 0.1.0
+Summary: Koishi-Plugin-Tsugu-BanGDream-Bot 的 NoneBot2 实现
+Author-Email: WindowsSov8forUs <qwertyuiop2333@hotmail.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: nonebot2>=2.2.1
+Requires-Dist: nonebot-plugin-alconna>=0.42.4
+Requires-Dist: tsugu-api-python>=1.1.7
+Requires-Dist: nonebot-plugin-userinfo>=0.2.4
+Description-Content-Type: text/markdown
