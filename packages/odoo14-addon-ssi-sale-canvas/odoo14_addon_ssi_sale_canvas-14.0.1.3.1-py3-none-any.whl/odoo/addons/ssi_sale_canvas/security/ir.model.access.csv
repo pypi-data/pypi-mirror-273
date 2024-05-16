@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_canvas_type_configurator,sale_canvas_type - configurator,model_sale_canvas_type,sale_canvas_type_group,1,1,1,1
+access_sale_canvas_type_all,sale_canvas_type - all,model_sale_canvas_type,,1,0,0,0
+access_sale_canvas_all,sale_canvas - all,model_sale_canvas,,1,0,0,0
+access_sale_canvas_viewer,sale_canvas - viewer,model_sale_canvas,sale_canvas_viewer_group,1,0,0,0
+access_sale_canvas_user,sale_canvas - user,model_sale_canvas,sale_canvas_user_group,1,1,1,1
+access_sale_canvas_line_all,sale_canvas_line - all,model_sale_canvas_line,,1,0,0,0
+access_sale_canvas_line_viewer,sale_canvas_line - viewer,model_sale_canvas_line,sale_canvas_viewer_group,1,0,0,0
+access_sale_canvas_line_user,sale_canvas_line - user,model_sale_canvas_line,sale_canvas_user_group,1,1,1,1
+access_sale_canvas_realization_line_all,sale_canvas_realization_line - all,model_sale_canvas_realization_line,,1,0,0,0
+access_sale_canvas_realization_line_viewer,sale_canvas_realization_line - viewer,model_sale_canvas_realization_line,sale_canvas_viewer_group,1,0,0,0
+access_sale_canvas_realization_line_user,sale_canvas_realization_line - user,model_sale_canvas_realization_line,sale_canvas_user_group,1,1,1,1
+access_sale_canvas_realization_header_all,sale_canvas_realization_header - all,model_sale_canvas_realization_header,,1,0,0,0
+access_sale_canvas_realization_header_viewer,sale_canvas_realization_header - viewer,model_sale_canvas_realization_header,sale_canvas_viewer_group,1,0,0,0
+access_sale_canvas_realization_header_user,sale_canvas_realization_header - user,model_sale_canvas_realization_header,sale_canvas_user_group,1,1,1,1
