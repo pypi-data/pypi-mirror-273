@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: python_myfatoorah
+Version: 0.2.0
+Summary: A package that provides utility functions to send payment requests to MyFatoorah payment gateway
+Project-URL: Homepage, https://github.com/Tauhid-UAP/python-myfatoorah
+Author-email: Kamruzzaman Tauhid <tmakpk@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Requires-Dist: requests>2
+Description-Content-Type: text/markdown
+
+# MyFatoorah
+
+A package that provides utility functions to send payment requests to MyFatoorah payment gateway
+
+MyFatoorah documentation: https://docs.myfatoorah.com/docs/overview
