@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sarcharts {{ hostname }}</title>
+    <link rel="stylesheet" href="html/css/sarcharts.css" />
+    <link rel="stylesheet" href="html/css/ul-select.css" />
+    <script src="html/js/jquery.js"></script>
+    <script src="html/js/hammer.min.js"></script>
+    <script src="html/js/ul-select.js"></script>
+    <script src="html/js/chart.umd.js"></script>
+    <script src="html/js/chartjs-plugin-zoom.min.js"></script>
+    <script src="html/js/chartjs-plugin-annotation.min.js"></script>
+    <script src="html/js/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+</head>
+<body>
+<section class="container">
+  {% include "header.html" %}
+  <div class="activities">
+    <ul>
+  {% for item in details['datasets'].keys() %}
+    {% if item != "" %}
+      <li class="i_inactive"><a href='#'>{{ item }}</a></li>
+    {% endif %}
+  {% endfor %}
+    </ul>
+  </div>
+</section>
+    <div class="chart">
+      <canvas id="chartcanvas"></canvas>
+    </div>
+<script>
+$('.i_inactive').click(function() {
+  $(".i_active").attr("class","i_inactive");
+  $(this).attr("class","i_active");
+  showChart($(this).text());
+});
+
+
+{% for i in range(restarts|length) %}
+const restart{{ i }} = {
+  type: 'line',
+  enter: function({element}) {
+    element.label.options.color = 'rgba(255, 0, 0)',
+    element.label.options.font.size = 13;
+    element.label.options.content = 'restarted at {{ restarts[i] }}';
+    return true;
+  },
+  leave: function({element}) {
+    element.label.options.color = 'rgba(255, 0, 0, 0.4)',
+    element.label.options.font.size = 10;
+    element.label.options.content = 'restarted';
+    return true;
+  },
+  borderColor: 'rgba(255, 0, 0, 0.4)',
+  borderWidth: 1,
+  display: (ctx) => ctx.chart.isDatasetVisible(1),
+  label: {
+    display: true,
+    position: 'start',
+    content: 'restart',
+    backgroundColor: 'transparent',
+    opacity: 0,
+    rotation: 90,
+    xAdjust: 5,
+    font: { size: 10 },
+    color: 'rgba(255, 0, 0, 0.4)'
+  },
+  scaleID: 'x',
+  value: '{{ restarts[i] }}'
+};
+{% endfor %}
+
+function showChart(name) {
+  myChart.destroy();
+  myChart = new Chart(ctx, {
+    type: 'line',
+      data: {
+        labels: myCharts[name]['labels'],
+        datasets: myCharts[name]['datasets']
+      },
+    options: {
+      maintainAspectRatio: false,
+      responsive: true,
+      scales: {
+        x: {
+          type: 'time',
+          time: {
+            tooltipFormat: 'yyyy:LL:dd HH:mm:ss',
+            displayFormats: { // https://github.com/moment/luxon/blob/master/docs/formatting.md
+              'millisecond': 'yyyy:LL:dd HH:mm:ss SSS',
+              'second': 'yyyy:LL:dd HH:mm:ss',
+              'minute': 'yyyy:LL:dd HH:mm:ss',
+              'hour': 'yyyy:LL:dd HH:mm:ss',
+              'day': 'yyyy:LL:dd HH:mm:ss',
+              'week': 'yyyy:LL:dd HH:mm:ss',
+              'month': 'yyyy:LL:dd HH:mm:ss',
+              'quarter': 'yyyy LL:dd HH:mm:ss',
+              'year': 'yyyy:LL:dd HH:mm:ss'
+            }
+          }
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'value'
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          position: 'top'
+        },
+        annotation: {
+          annotations: {
+            {% for i in range(restarts|length) %}
+              restart{{ i }}{{ ", " if not loop.last else "" }}
+            {% endfor %}
+          }
+        },
+        zoom: {
+          limits: {
+            x: { min:'original', max:'original' }
+          },
+          zoom: {
+            drag: {
+              enabled: true
+            },
+            wheel: {
+              enabled: true,
+            },
+            pinch: {
+              enabled: true
+            },
+            mode: 'x',
+          }
+        }
+      }
+    }
+  });
+}
+
+var myCharts = {
+  {% for item, data in details['datasets'].items() %}
+  '{{ item }}': {
+    // 'labels': {{ xlabels }},
+    'datasets': [
+    {% for i in range(data|length) %}
+      {
+      {{ "hidden: true," if data[i]['label'] in details['hidden'] else "" }}
+      label: '{{ data[i]['label'] }}',
+      data: {{ data[i]['values'] }},
+      borderColor: 'rgb({{ colors[i] }} 0.3)',
+      backgroundColor: 'rgb({{ colors[i] }})'
+      }{{ ", " if not loop.last else "" }}
+    {% endfor %}
+    ]
+  }{{ ", " if not loop.last else "" }}
+  {% endfor %}
+}
+
+var ctx = document.getElementById('chartcanvas').getContext('2d');
+var myChart = new Chart(ctx);
+
+$(document).ready(function () {
+  showChart($('.i_inactive').first().text());
+  $('.i_inactive').first().attr("class", "i_active");
+
+  selhost="{{ hostname }}"
+  $('#hostlist').ulSelect(function(elem) {
+    if (selhost != $(elem).text()) {
+      selhost=$(elem).text().replace(/\s+/g, "");
+      window.location = selhost+"_{{ pages[0] }}.html";
+    }
+  });
+  selchart="{{ chart }}"
+  $('#chartlist').ulSelect(function(elem) {
+      selchart=$(elem).text().replace(/\s+/g, "");
+      window.location = selhost+"_"+selchart+".html"
+  });
+
+});
+
+</script>
+</body>
+</html>

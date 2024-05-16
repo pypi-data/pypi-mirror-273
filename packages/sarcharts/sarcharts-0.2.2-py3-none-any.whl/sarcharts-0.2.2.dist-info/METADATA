@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: sarcharts
+Version: 0.2.2
+Summary: SarCharts gets sysstat files from provided sarfilespaths and generates dynamic HTML Charts
+Home-page: https://github.com/pafernanr/sarcharts
+Author: Pablo Fernández Rodríguez
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pbr >=4.0.0
+Requires-Dist: Jinja2 >=3.1.3
+
+### SarCharts
+SarCharts gets [sysstat](https://sysstat.github.io/) files from provided `sarfilespaths` and generates dynamic HTML Charts.
+
+### Requirements
+`sadf` command is needed to read sar files. Hence [sysstat](https://sysstat.github.io/) package is required.
+
+### Installation
+`pip install sarcharts`
+
+### Usage
+~~~
+usage: sarcharts.py [-h] [-d {D,I,W,E}] [-f FROMDATE] [-o OUTPUTPATH] [-t TODATE] [sarfilespaths ...]
+
+SarCharts gets "sysstat" files from provided `sarfilespaths` and generates dynamic HTML Charts.
+
+positional arguments:
+  sarfilespaths         `sa` file/s to parse. Default: `./sa??`.
+
+options:
+  -h, --help            show this help message and exit
+  -d {D,I,W,E}, --debug {D,I,W,E}
+                        Set debug level. Default `W`.
+  -f FROMDATE, --fromdate FROMDATE
+                        Read metric starting on this date.
+  -o OUTPUTPATH, --outputpath OUTPUTPATH
+                        Path to put output files. Default `./sarcharts`.
+  -t TODATE, --todate TODATE
+                        Discard metrics after this date.
+~~~
+
+| Example Chart |
+| --- |
+| ![](/doc/sarcharts.png) |
+
