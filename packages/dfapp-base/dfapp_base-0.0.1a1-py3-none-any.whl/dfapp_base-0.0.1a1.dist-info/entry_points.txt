@@ -1,0 +1,3 @@
+[console_scripts]
+dfapp-base=dfapp.__main__:main
+
