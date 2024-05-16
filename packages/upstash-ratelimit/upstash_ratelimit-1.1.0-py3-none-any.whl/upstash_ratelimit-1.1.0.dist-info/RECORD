@@ -1,0 +1,12 @@
+upstash_ratelimit/__init__.py,sha256=djEefqZtPFkoxYqNEpZEjRKCUXja8W5TSGs3kT78wDQ,268
+upstash_ratelimit/asyncio/__init__.py,sha256=cxEIPEHym5lWOX7U4S9MijFUnfE0tuYMwhpJjPuhUJk,253
+upstash_ratelimit/asyncio/ratelimit.py,sha256=i4cMlCs_qAFYPxr1XhoNEFaMohrQJydUF7ao3gCXdj4,4718
+upstash_ratelimit/limiter.py,sha256=TWOEvsClRdFwx5wYWEfHJakFmSOQ-j1DXwdGZ-Bv1q0,15472
+upstash_ratelimit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upstash_ratelimit/ratelimit.py,sha256=rU_BCLKRMD3YepXMksET_yL5-w1p1Qnw6Nn8YBQLhzo,4481
+upstash_ratelimit/typing.py,sha256=EQwuafpWpm7JlFvZbeFIb2m_OF8uSx0rJHptT_TYx8s,138
+upstash_ratelimit/utils.py,sha256=q3PGjrWcwDUJRVUrf0OpWDAn24v31-pO7uF3DdAaxhs,1123
+upstash_ratelimit-1.1.0.dist-info/LICENSE,sha256=M1Z1TQtcpWB-mVUmAb-LzY_xDGmNVOLFG11KUEADjWc,1072
+upstash_ratelimit-1.1.0.dist-info/METADATA,sha256=wYL0em4rU3lbfbJJwL1kOPJxjCnGDsKTJAtQgTkg9RY,10047
+upstash_ratelimit-1.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+upstash_ratelimit-1.1.0.dist-info/RECORD,,
