@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: local_broadcast
+Version: 0.0.1
+Summary: A python library to send message to all instances of the current running program on local LAN
+Author-email: Roberto Gambuzzi <gambuzzi@gmail.com>
+Project-URL: Homepage, https://github.com/gambuzzi/local-broadcast
+Project-URL: Issues, https://github.com/gambuzzi/local-broadcast/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zmq
+Requires-Dist: zeroconf
+
+# local-broadcast
+
+A python library to send message to all instances of the current running program on local LAN
+
+## WIP
+
+Work in progress, not ready for use yet.
