@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+recursive-include bigcode *.py
+recursive-include bigcode/templates *
+recursive-include bigcode/locale *
+recursive-include bigcode/static *
