@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ADViewpy
+Version: 0.0.2
+Summary: pip package to visually compare phylogenetic trees, utilizing Aggregated Dendrogram for phylogenetic tree visualization. 
+Author: Ng Weng Shan
+Author-email: 
+Keywords: python,phylogenetic tree,aggregrated dendrogram,tree comparison
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+pip package to visually compare phylogenetic trees, utilizing Aggregated Dendrogram for phylogenetic tree visualization. 
