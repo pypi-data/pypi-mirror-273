@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "Hydata"
+version = "0.1.1"
+description = ""
+authors = ["Caio Wingeter <castilhocaio1164@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = "^4.9.0.80"
+h5py = "^3.11.0"
+setuptools = "^69.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
