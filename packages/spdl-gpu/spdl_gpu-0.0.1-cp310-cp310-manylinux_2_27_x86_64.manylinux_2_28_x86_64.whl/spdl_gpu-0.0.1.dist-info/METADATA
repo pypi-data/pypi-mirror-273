@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: spdl-gpu
+Version: 0.0.1
+Summary: SPDL: Scalable and Performant Data Loading.
+Author: Moto Hira
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy >=1.21
+
+Fast multimedia data loading and processing.
