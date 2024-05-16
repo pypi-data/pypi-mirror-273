@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nvidia-tao-client
+Version: 5.3.1.dev0
+Summary: NVIDIA's package for using TAO-REST-API via TAO-Client.
+Author: Varun Praveen, Steve Masson
+Author-email: vpraveen@nvidia.com, smasson@nvidia.com
+License: NVIDIA Proprietary Software
+Keywords: nvidia,tao,api
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: click >=8.0.4
+Requires-Dist: requests >=2.27.1
+Requires-Dist: configparser >=6.0.0
+
