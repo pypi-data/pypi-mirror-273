@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: nothingpy
+Version: 0.1
+Summary: A None alternative for Python that reduces the need for None checks.
+Project-URL: Homepage, https://github.com/llmonpy/nothingpy
+Project-URL: Issues, https://github.com/llmonpy/nothingpy/issues
+Author-email: Tom Burns <public@llmonpy.ai>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+# nothingpy
+Nothing is a replacement for None that eliminates the need for many if statements
