@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+PythonVuetifyMarkdown.egg-info/PKG-INFO
+PythonVuetifyMarkdown.egg-info/SOURCES.txt
+PythonVuetifyMarkdown.egg-info/dependency_links.txt
+PythonVuetifyMarkdown.egg-info/requires.txt
+PythonVuetifyMarkdown.egg-info/top_level.txt
+python_vuetify_markdown/__init__.py

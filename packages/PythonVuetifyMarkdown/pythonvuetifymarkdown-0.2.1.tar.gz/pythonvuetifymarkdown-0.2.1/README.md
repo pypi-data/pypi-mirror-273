@@ -1,0 +1,51 @@
+# Python Vuetify Markdown
+
+This is an extension for [Python-Markdown](https://github.com/Python-Markdown/markdown/) created for those who combine Python, Markdown, Vue, and Vuetify. I've been using this combination in several projects, and finally came across a need to process Markdown code, and keep it styled with Vuetify. Rather than McGuyver some solution in, I settled on a simple extension to do the heavy lifting.
+
+The code is dead simple, and can be modified or extended to fit your needs. 
+
+# Installation
+<code>pip install PythonVuetifyMarkdown</code>
+
+# Usage
+Here's a quick example of usage within a Django project. We have a Page model for custom pages, and a function to return the content parsed through Markdown.
+
+```python
+from django.db import models
+from django.utils.html import mark_safe
+import markdown
+from python_vuetify_markdown import PythonVuetifyMarkdown
+
+
+class Page(models.Model):
+    title = models.CharField(max_length=200)
+    body = models.TextField()
+
+    def get_body_as_markdown(self):
+        return mark_safe(markdown.markdown(self.body, extensions=[PythonVuetifyMarkdown()]))
+```
+
+With this, you can create a Page object, and when displaying the body, you can use `Page.get_body_as_markdown()` to pass in the Markdown-formatted code.
+
+# Features
+Currently, this extension modifies several tags, and adds spoiler text functionality. The styles can be found on the [Vuetify Typography page](https://vuetifyjs.com/en/styles/typography).
+* **&lt;h1&gt;** &rarr; &lt;h1 class="text-h1"&gt;
+* **&lt;h2&gt;** &rarr; &lt;h2 class="text-h2"&gt;
+* **&lt;h3&gt;** &rarr; &lt;h3 class="text-h3"&gt;
+* **&lt;h4&gt;** &rarr; &lt;h4 class="text-h4"&gt;
+* **&lt;h5&gt;** &rarr; &lt;h5 class="text-h5"&gt;
+* **&lt;h6&gt;** &rarr; &lt;h6 class="text-h6"&gt;
+* **&lt;p&gt;** &rarr; &lt;p class="text-body-1"&gt;
+* **&lt;a&gt;** &rarr; &lt;a class="text-no-decoration"&gt;
+* **&ast;text&ast;** &rarr; &lt;span class="font-weight-medium"&gt;text&lt;/span&gt;
+* **&ast;&ast;text&ast;&ast;** &rarr; &lt;span class="font-weight-bold"&gt;text&lt;/span&gt;
+* **&ast;&ast;&ast;text&ast;&ast;&ast;** &rarr; &lt;span class="font-weight-black"&gt;text&lt;/span&gt;
+* **!!text!!** &rarr; &lt;span class="font-weight-thin"&gt;text&lt;/span&gt;
+* **!text!** &rarr; &lt;span class="font-weight-light"&gt;text&lt;/span&gt;
+* **&lowbar;text&lowbar;** &rarr; &lt;span class="font-italic"&gt;text&lt;/span&gt;
+* **&lowbar;&lowbar;text&lowbar;&lowbar;** &rarr; &lt;span class="font-decoration-underline"&gt;text&lt;/span&gt;
+* **--text--** &rarr; &lt;span class="font-decoration-line-through"&gt;text&lt;/span&gt;
+* **||text||** &rarr; "▒▒▒▒" normally, "text" on hover
+
+# Support
+There is none. This is a small side project, like 30 minutes of research and work went into it. Good luck.
