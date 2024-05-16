@@ -1,0 +1,13 @@
+setup.py
+prmllab/Bagging.ipynb
+prmllab/Regression.ipynb
+prmllab/__init__.py
+prmllab/functions.py
+prmllab/kmeans.ipynb
+prmllab/mlp.ipynb
+prmllab/naive.ipynb
+prmllab/prml.zip
+prmllab.egg-info/PKG-INFO
+prmllab.egg-info/SOURCES.txt
+prmllab.egg-info/dependency_links.txt
+prmllab.egg-info/top_level.txt
