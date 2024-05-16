@@ -1,0 +1,16 @@
+#!python
+
+import fire
+from subfunctions.owncloud import Owncloud
+from subfunctions.configuration import Configuration
+from subfunctions.fileSystem import FileSystem
+
+
+
+
+if __name__ == '__main__':
+  fire.Fire({
+     "owncloud":Owncloud,
+     "config":Configuration,
+     "fs": FileSystem,
+  })

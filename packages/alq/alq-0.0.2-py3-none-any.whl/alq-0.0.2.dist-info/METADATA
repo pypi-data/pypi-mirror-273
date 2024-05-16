@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: alq
+Version: 0.0.2
+Summary: interal tool
+License: LICENSE.md
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: fire (==0.6.0)
+Requires-Dist: pyocclient (==0.6)
+
