@@ -1,0 +1,14 @@
+monteprediction/__init__.py,sha256=eOF2i5kxhlDi4ojTusnqxyq_347a2rfWHN17YIBoTjk,236
+monteprediction/api.py,sha256=8K_NC_UokNRXB2JtNPyjj8UDOjehJ6cMziN_9OFD6qc,1507
+monteprediction/calendarutil.py,sha256=zUU0oW6ukq-vXvONduOxI_6daX7bzh83_ZB0w21HOvA,505
+monteprediction/optionsutil.py,sha256=UlH-ASFzne56rdwSyXeJGs0ax2amVNqFb4GJYzgIKSM,3542
+monteprediction/scoring.py,sha256=Rethgb3uVUQHfpo1e1vcfuzXfOGg1r3Xi9a5va9Mmuk,1079
+monteprediction/submission.py,sha256=-puOAUvDfSjvASajvIi5p8DeejUPMJyc3P-i-nMWUBM,1699
+monteprediction/truth.py,sha256=uXki-I8ssi6jqqzRN_FYcCuorNwf4Wh8iFzDTYmXAOU,650
+monteprediction/verification.py,sha256=SG8KcYcaBMFoazdMY92HuvKli7s_AomxWR48DZ11kMo,1061
+monteprediction-1.0.15.dist-info/LICENSE,sha256=QsqlNxVmQOHupGGvcQvLccNGoa-CXsTX1qMEOhUjSLw,1069
+monteprediction-1.0.15.dist-info/METADATA,sha256=sVrZq5L-CSneeJybJGG8mhEbbzlJHj4LSrdwLjzq-PM,618
+monteprediction-1.0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+monteprediction-1.0.15.dist-info/entry_points.txt,sha256=yD95ASmzb8cLxw9uBnS_F-OSqEYbT9ULlQVZZ67szqY,66
+monteprediction-1.0.15.dist-info/top_level.txt,sha256=kwjC7H3_LBd23QZcqMDf6eMVr-uMWYABliIW716xy70,16
+monteprediction-1.0.15.dist-info/RECORD,,
