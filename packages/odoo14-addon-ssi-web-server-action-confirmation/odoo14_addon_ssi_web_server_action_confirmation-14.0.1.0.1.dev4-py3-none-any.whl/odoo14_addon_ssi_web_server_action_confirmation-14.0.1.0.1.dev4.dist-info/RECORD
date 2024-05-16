@@ -1,0 +1,10 @@
+odoo/addons/ssi_web_server_action_confirmation/README.rst,sha256=GNa61UQLyOLmYYlFJ0lukkaYPF-SaBBeT_W7qATfFts,1206
+odoo/addons/ssi_web_server_action_confirmation/__init__.py,sha256=on3zlCD3VLTne3bO7qktCgQtbePgOrrs_i5AaCiFbGc,150
+odoo/addons/ssi_web_server_action_confirmation/__manifest__.py,sha256=WAmSKqebgMSoCC5vDSChHED5xS5rgTajBYMJOItD9mo,566
+odoo/addons/ssi_web_server_action_confirmation/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo/addons/ssi_web_server_action_confirmation/static/src/js/action_manager.js,sha256=SPJQwPrEOqO2uDxt7OTUT9M3pD7hPuUhS20Fr6gI2HU,1019
+odoo/addons/ssi_web_server_action_confirmation/views/assets.xml,sha256=AgD9g0UtEEyDhyujILv3YCA7l4-ESkgvaEh-dnDhzJw,602
+odoo14_addon_ssi_web_server_action_confirmation-14.0.1.0.1.dev4.dist-info/METADATA,sha256=b_96NGMT9erm_v7p8Lai4bctf-l51xA8AVLRzH2KjPI,1739
+odoo14_addon_ssi_web_server_action_confirmation-14.0.1.0.1.dev4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odoo14_addon_ssi_web_server_action_confirmation-14.0.1.0.1.dev4.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_web_server_action_confirmation-14.0.1.0.1.dev4.dist-info/RECORD,,
