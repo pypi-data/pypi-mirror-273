@@ -1,0 +1,83 @@
+[
+  {
+    "position": [
+      1047,
+      571,
+      370,
+      290
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      1214,
+      212,
+      95,
+      63
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      279,
+      522,
+      553,
+      384
+    ],
+    "text": "hand"
+  },
+  {
+    "position": [
+      724,
+      328,
+      47,
+      101
+    ],
+    "text": "bottle"
+  },
+  {
+    "position": [
+      876,
+      361,
+      794,
+      372
+    ],
+    "text": "dining table"
+  },
+  {
+    "position": [
+      930,
+      172,
+      64,
+      30
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      730,
+      30,
+      225,
+      60
+    ],
+    "text": "tv"
+  },
+  {
+    "position": [
+      663,
+      201,
+      94,
+      35
+    ],
+    "text": "chair"
+  },
+  {
+    "position": [
+      826,
+      229,
+      100,
+      41
+    ],
+    "text": "book"
+  }
+]
