@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "aiohttp-zip-response"
+version = "1.0.1"
+description = "A AIOHTTP response class streaming a directory as ZIP archive"
+authors = ["Jonathan Ehwald <github@ehwald.info>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/DoctorJohn/aiohttp-zip-response"
+repository = "https://github.com/DoctorJohn/aiohttp-zip-response"
+documentation = "https://github.com/DoctorJohn/aiohttp-zip-response"
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.9.5"
+stream-zip = "^0.0.71"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+pytest = "^8.2.0"
+pytest-cov = "^5.0.0"
+pytest-asyncio = "^0.23.6"
+pytest-aiohttp = "^1.0.5"
+ruff = "^0.4.4"
+mypy = "^1.10.0"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
