@@ -1,0 +1,2 @@
+[console_scripts]
+postgres-connection-exporter = postgres_connection_exporter.__main__:main
