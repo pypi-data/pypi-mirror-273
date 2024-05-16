@@ -1,0 +1,60 @@
+# Package Overview
+package_name: classification_model
+
+# Data Files
+#training_data_file: train_titanic.csv
+#test_data_file: test_titanic.csv
+titanic_data: titanic_data.csv
+
+# Pipeline config
+pipeline_name: classification_model
+pipeline_save_file: classification_model_output_v
+feature_importance_save: feature_importance_model_output
+
+# Variables
+NUMERICAL_VARIABLES:
+  - age
+  - fare
+  - pclass
+  - sibsp
+  - parch
+
+CATEGORICAL_VARIABLES:
+  - sex
+  - cabin
+  - embarked
+  - title
+
+CABIN: cabin
+
+# The variable we are attempting to predict (survived)
+target: survived
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 0
+
+features:
+  - pclass
+  - sex
+  - age
+  - sibsp
+  - parch
+  - fare
+  - cabin
+  - embarked
+  - title
+# C variable for logistic model
+C: 0.0005
+
+# Drop useless features
+unused_fields :
+- name
+- ticket
+- boat
+- body
+- home.dest
+
+rare_perc: 0.05
