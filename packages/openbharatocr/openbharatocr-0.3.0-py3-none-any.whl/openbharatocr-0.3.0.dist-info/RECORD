@@ -1,0 +1,16 @@
+openbharatocr/__init__.py,sha256=107KALGnKRhmehwxokKALckXwI5mYZQLZrzsierZAiQ,499
+openbharatocr/ocr/__init__.py,sha256=Os0UXxzgaB0XjD-gLjQT63nkbQBM5Xze_3KIxxtn-II,71
+openbharatocr/ocr/aadhaar.py,sha256=wkEDAwCTgAHB-7T34TYgpbhUQQZ1x_D7j-pK2ZVGWFc,2547
+openbharatocr/ocr/api.py,sha256=FVek2Tn8_HRMZT9KNORxgkpIvvgHKqWsXwv7_wtstDw,407
+openbharatocr/ocr/common.py,sha256=NhYJuiRvcBaVaYaLBiqAELC7cForYvT-a2d-756cQyQ,72
+openbharatocr/ocr/driving_licence.py,sha256=RmRBrl_mlVeSk0TtxXTBb4o2s8TIeFrlGiNqAd25JXI,5982
+openbharatocr/ocr/pan.py,sha256=MnpYWj0leMt8Hm5SISc5sYGGAr5mYXB3Mn3t5uXsFrc,2123
+openbharatocr/ocr/passport.py,sha256=FSBWSfg9rDVRiGgnCw1pNzssVxZCUGPiKm52QSFk8kc,3985
+openbharatocr/ocr/vehicle_registration.py,sha256=rFjx4WVxL2OCQq1BMNz-sj9ohjnZUCZsfVUld5A5_i0,4037
+openbharatocr/ocr/voter_id.py,sha256=mw1gOjlF0pSGQvG3X-aepJEpEX8Koh7GeWXgITWdiwk,7079
+openbharatocr/ocr/water_bill.py,sha256=bsw83EoZ_w34dEbgLLmUIz9yAN8hGlIqSFYwUCr0MeQ,3009
+openbharatocr-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openbharatocr-0.3.0.dist-info/METADATA,sha256=RKmmxwN7qsSRCRWuVR8b8dfYwCtxuw85Je0-1KXCKRs,3653
+openbharatocr-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+openbharatocr-0.3.0.dist-info/top_level.txt,sha256=whmmV-CuzLgiRhS5fwe9GA4593c7RHDNmaD7PucnQHc,14
+openbharatocr-0.3.0.dist-info/RECORD,,
