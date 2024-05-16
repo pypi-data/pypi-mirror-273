@@ -1,0 +1,13 @@
+pyphenotyper/data/data_processing.py,sha256=apsUVpN-17Fll8IJTw7FB0JvyjSDWyZEcqkh2nHaLtE,4516
+pyphenotyper/features/features.py,sha256=qQ5rkA7mImxRYLSgI8zoM4BrKmGtaVw9B7J7wVmRhhY,19533
+pyphenotyper/features/roots_segmentation.py,sha256=yukyityBzPyPmnuXnoyqIEZaI-LXgGwmJ3s0xxGClCQ,45301
+pyphenotyper/main.ipynb,sha256=nWd3HYnGCpTfEYiAdH2coN5vojYfCFiGsAWmPffKCwA,12418
+pyphenotyper/model/borislav_preprocessing.py,sha256=t_CR1qrfIMETgAc1FDvD7Ag5Wk2cgf6CFsfUQ20ISrQ,82
+pyphenotyper/model_refrence/occlusion_rs_1_256.h5,sha256=x0mI2-c4V21u_J5nYd1rkN2VE6D8pok961hSAHgiMs8,23502496
+pyphenotyper/model_refrence/root_4_ss.h5,sha256=q24h5fAXuRXS97QTwSBYqBfi8tdZ_o765dxtmK5Lqps,23517080
+pyphenotyper/model_refrence/shoot_exp_1.h5,sha256=4a0bP5gAPUwTz08jspivz5MBURefUOPCveRj-ckqYxk,23517080
+pyphenotyper/utils/helpers.py,sha256=vm1TW4w805CTy5xM4xPpMg-ZAjpDJXOM-hpXkuM9tuE,3384
+pyphenotyper/utils/metrics.py,sha256=WDEyLzfuT2PNkDslfmkz0Xg6SbTjWfN8XUT9QrF3hH4,1802
+pyphenotyper-0.1.1.dist-info/METADATA,sha256=pzpmeqZPwmP9Slpnq20DmNZuWjefUP77SbViXu3nypY,1383
+pyphenotyper-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyphenotyper-0.1.1.dist-info/RECORD,,

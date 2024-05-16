@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyphenotyper
+Version: 0.1.1
+Summary: NPEC pipeline
+Author: Borislav Nachev
+Author-email: 220472@buas.nl
+Requires-Python: >=3.10.0,<=3.10.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: coverage (>=7.5.1,<8.0.0)
+Requires-Dist: matplotlib (>=3.8.4,<4.0.0)
+Requires-Dist: networkx (>=3.3,<4.0)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: opencv-python (>=4.9.0.80,<5.0.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: patchify (>=0.2.3,<0.3.0)
+Requires-Dist: pytest (>=8.2.0,<9.0.0)
+Requires-Dist: pytest-mock (>=3.14.0,<4.0.0)
+Requires-Dist: scikit-image (>=0.23.2,<0.24.0)
+Requires-Dist: skan (>=0.11.1,<0.12.0)
+Requires-Dist: sphinx (>=7.3.7,<8.0.0)
+Requires-Dist: sphinx_rtd_theme (==2.0.0)
+Requires-Dist: tensorflow (==2.10.0) ; sys_platform == "linux" or sys_platform == "win32"
+Requires-Dist: tensorflow-intel (==2.10.0) ; sys_platform == "win32"
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.30.0) ; sys_platform == "linux" or sys_platform == "win32"
+Requires-Dist: tensorflow-macos (==2.10.0) ; sys_platform == "darwin"
+Description-Content-Type: text/markdown
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/N8yudTb1)
+
