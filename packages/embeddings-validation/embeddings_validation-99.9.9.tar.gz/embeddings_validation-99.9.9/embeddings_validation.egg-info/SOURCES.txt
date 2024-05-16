@@ -1,0 +1,6 @@
+setup.py
+embeddings_validation.egg-info/PKG-INFO
+embeddings_validation.egg-info/SOURCES.txt
+embeddings_validation.egg-info/dependency_links.txt
+embeddings_validation.egg-info/not-zip-safe
+embeddings_validation.egg-info/top_level.txt
