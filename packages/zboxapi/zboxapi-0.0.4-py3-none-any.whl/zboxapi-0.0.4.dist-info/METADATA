@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: zboxapi
+Version: 0.0.4
+Summary: 
+Author: Kelby Valenti
+Author-email: kelby.valenti@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (==0.111.0)
+Requires-Dist: ipython (>=8.24.0,<9.0.0)
+Requires-Dist: uvicorn (==0.29.0)
+Description-Content-Type: text/markdown
+
+# zBoxApi
+
+zPodFactory zBox Api
+
+## Installation
+
+Complete the following steps to set up zBox Api:
+
+1. Install pipx
+
+    ```bash
+    # Install and configure pipx
+    apt update
+    apt install -y pipx
+    pipx ensurepath
+
+    # Reload your profile
+    source ~/.zshrc
+    ```
+
+1. Install zBoxApi:
+
+    ```bash
+    pipx install zboxapi
+    ```
+
+1. Set up and start zboxapi.service
+
+    ```bash
+    cp zboxapi.service /etc/systemd/system
+    systemctl daemon-reload
+    systemctl enable zboxapi.service
+    systemctl start zboxapi.service
+    ```
+
