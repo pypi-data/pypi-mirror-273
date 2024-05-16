@@ -1,0 +1,10 @@
+apytypes/_apytypes.cpython-311-i386-linux-musl.so,sha256=ed3FDmPbU1PCLt2qAWTJqH-rwWGP6p_qnajhFXhCeA0,1208745
+apytypes/__init__.py,sha256=5tMbdaO64wUqDta98EThNSVqEuYui11qoz--Oaa7Ff4,3338
+apytypes/_apytypes.pyi,sha256=mcEnOmylzNtcTy6o_GU0Oyz1VgZ7nXLT9qyQqYUNQOs,47906
+apytypes/__init__.pyi,sha256=f_HM0dkMdAwqslaq43ve_ZUAO0M5ICNBT2jG2kNuWrk,1240
+apytypes/_version.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+apytypes.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+apytypes.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+apytypes-0.1.0.dist-info/METADATA,sha256=Kb92zBIsTsALpLJcnx31lcxasXQipXXVBXsKYHyq_qI,3318
+apytypes-0.1.0.dist-info/RECORD,,
+apytypes-0.1.0.dist-info/WHEEL,sha256=yibTU1xbbIIPjlNqAGq8E86WxhpxA1gILZiUzpce6E0,96
