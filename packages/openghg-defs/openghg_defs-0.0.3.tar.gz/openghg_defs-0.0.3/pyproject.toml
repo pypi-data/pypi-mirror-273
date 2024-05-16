@@ -1,0 +1,24 @@
+[project]
+name = "openghg_defs"
+version = "0.0.3"
+description = "Supplementary definition data for OpenGHG"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT License"}
+
+[project.urls]
+"Homepage" = "https://github.com/openghg/openghg_defs"
+"Bug Tracker" = "https://github.com/openghg/openghg_defs/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+"openghg_defs" = ["*"]
+"openghg_defs.data" = ["*"]
+"openghg_defs.data.domain" = ["*"]
+
