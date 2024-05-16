@@ -1,0 +1,5 @@
+{% if aux.pip.use_uv and not opts.base -%}
+RUN pip install uv --no-cache
+RUN uv venv --seed
+ENV PATH=/home/container/.venv/bin:$PATH
+{% endif-%}
