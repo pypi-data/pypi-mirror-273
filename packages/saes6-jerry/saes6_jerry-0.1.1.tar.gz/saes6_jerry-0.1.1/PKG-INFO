@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: saes6-jerry
+Version: 0.1.1
+Summary: SAE S6 Equipe 2 - jerry.
+Home-page: https://gitlab.com/LennyGonzales/saes6-equipe2-jerry
+Author: GANASSI-GONZALES-SAADI-SAUVA
+Author-email: lenny.gonzales@etu.univ-amu.fr
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
