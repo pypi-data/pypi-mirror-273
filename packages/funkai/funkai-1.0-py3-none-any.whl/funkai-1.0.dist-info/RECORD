@@ -1,0 +1,10 @@
+funkai/__init__.py,sha256=QHQoEUFoXBrpT5GUYJDuvyIwFfWM2yRaLDByDPZYsTI,61
+funkai/claude.py,sha256=MHXL3TWnrKCOvZTOAK9NtKrCRo8HgB-tJMb23HcyBcY,199
+funkai/examples.py,sha256=H5j1ikJ8wfN0Eo8IjeF0iG17NtVPjBHXDHrKUisTZao,10838
+funkai/funk.py,sha256=KnmgXcfr34xwr7EbYFN-2o7pHQTAcPLiAu85wwQjd_U,6471
+funkai/manager.py,sha256=d9_Exs6lpd-UyNKQ1WK54efRg1j6EWfsptadxz1oMkw,1639
+funkai/openai.py,sha256=ihdDERn8MpODgmnAfmVaeDh7J-iQkSDh_27CV1KbtmQ,190
+funkai-1.0.dist-info/METADATA,sha256=Ywq3EDsAPoc4iHhQqck-jWVgRg2H4qff7tgoy7_3ito,4901
+funkai-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+funkai-1.0.dist-info/top_level.txt,sha256=5oodDQd2r5z3qXtyiPZ7jTMcXQfK_-4r2SzH9w6kgjs,7
+funkai-1.0.dist-info/RECORD,,
