@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load juntagrico.config %}
+{% load jgo.config %}
+{% load i18n %}
+{% block page_title %}
+    <h3>Gotte &amp; Götti</h3>
+{% endblock %}
+
+{% block content %}
+    <div class="row mb-3">
+        <div class="col-md-12">
+            {% config "organisation_name" as c_organization_name %}
+            {% jgo_config "contact" as c_contact %}
+            {% block introduction %}
+                    <p>
+                        {% blocktrans %}
+                            Damit neue Mitglieder sich rasch bei {{ c_organization_name }} zuhause fühlen,
+                            betreiben wir als Genossenschaft ein Patenschaftssystem.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Im Rahmen dieses Systems verabreden sich Mitglieder, die bereits mindestens
+                            ein Jahr dabei sind mit Neumitgliedern zu einem ersten gemeinsamen Arbeitseinsatz.
+                            Während diesem Einsatz beantworten sie Fragen und führen die Neumitglieder in den Alltag
+                            des solidarischen Landwirtschaftsbetriebs und in die Community ein.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% if request.user|can_be_godparent and request.user|can_be_godparent %}
+                            {% blocktrans %}
+                                Unten hast du die Möglichkeit, dich als Gotte/Götti anzumelden bzw. eine
+                                Einführung als Neumitglied zu beantragen.
+                            {% endblocktrans %}
+                        {% elif request.user|can_be_godparent %}
+                            {% blocktrans %}
+                                Unten hast du die Möglichkeit, dich als Gotte/Götti anzumelden.
+                            {% endblocktrans %}
+                        {% else %}
+                            {% blocktrans %}
+                                Unten hast du die Möglichkeit eine Einführung als Neumitglied zu beantragen.
+                            {% endblocktrans %}
+                        {% endif %}
+                        {% blocktrans %}
+                            Die Patenschaftskoordination (<a href="mailto:{{ c_contact }}">{{ c_contact }}</a>)
+                            wird dich dann mit einem möglichst passenden Pendant vernetzen,
+                            mit dem du dich zu einem ersten gemeinsamen Einsatz verabredet kannst.
+                        {% endblocktrans %}
+                    </p>
+                    <p>
+                        {% blocktrans %}
+                            Hast du Fragen oder Anregungen zum Patenschaftssystem? Dann melde dich bei
+                            <a href="mailto:{{ c_contact }}">{{ c_contact }}</a>.
+                        {% endblocktrans %}
+                    </p>
+            {% endblock %}
+        </div>
+    </div>
+    <div class="row mb-3">
+        {% if request.user|can_be_godparent %}
+            <div class="col-md-6">
+                <a href="{% url 'jgo:godparent' %}" class="btn btn-primary">
+                    <h4>{% trans "Ich möchte Gotte/Götti für ein Neumitglied sein" %}</h4>
+                </a>
+            </div>
+        {% endif %}
+        {% if request.user|can_be_godchild %}
+            <div class="col-md-6">
+                <a href="{% url 'jgo:godchild' %}" class="btn btn-primary">
+                    <h4>{% trans "Ich bin Neumitglied und Suche Gotte/Götti" %}</h4>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
