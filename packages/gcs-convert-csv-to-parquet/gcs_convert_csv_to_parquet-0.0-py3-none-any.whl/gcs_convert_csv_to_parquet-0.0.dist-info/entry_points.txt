@@ -1,0 +1,2 @@
+[console_scripts]
+gcs_convert_csv_to_parquet = gcs_convert_csv_to_parquet:gcs_convert_csv_to_parquet

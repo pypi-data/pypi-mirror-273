@@ -1,0 +1,7 @@
+gcs_convert_csv_to_parquet/__init__.py,sha256=Nuatrl7TFwtzyyc_3OPcpQsjXpbzWPaprSk6TnmImhA,45
+gcs_convert_csv_to_parquet/main.py,sha256=mpEp0gOP3jbB1G1fEy2T63i1htfNUA3qYauOZHWU3DE,1507
+gcs_convert_csv_to_parquet-0.0.dist-info/METADATA,sha256=aoXuis0xTZiC6gKcIMDBIn-YGakUnS6UIs4d8UX87tk,2301
+gcs_convert_csv_to_parquet-0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gcs_convert_csv_to_parquet-0.0.dist-info/entry_points.txt,sha256=2oyUnDpYWtYa7W4ojiY91rZe_SRXzsu61w6QN7UUXz0,101
+gcs_convert_csv_to_parquet-0.0.dist-info/top_level.txt,sha256=N-zmm5qZIcPCCGrIniZPAeSy7G65zTvF41Lt5RjfM7s,27
+gcs_convert_csv_to_parquet-0.0.dist-info/RECORD,,
