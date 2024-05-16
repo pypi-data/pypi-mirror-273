@@ -1,0 +1,6 @@
+model_config:
+  # read from file
+  class_type: "read_from_file_object_detection"
+  constructor_parameters: {
+    "from_yaml": "PROJECT_ROOT_DIR/test_data/test_ReadFromFileObjectDetectionModel/read-from-file_pascal-voc_test.yaml",
+  }

@@ -1,0 +1,19 @@
+test_image_path: "PROJECT_ROOT_DIR/test_data/images/dummy_task/cars.jpg"
+number_of_runs: 10
+
+device_query:
+  device_index: 0
+  query_type: "NVIDIA_SMI"
+
+model_config:
+  # read from file
+  class_type: "read_from_file_object_detection"
+  constructor_parameters: {
+    "from_yaml": "PROJECT_ROOT_DIR/test_data/test_ReadFromFileObjectDetectionModel/read-from-file_coco_test.yaml",
+  }
+
+mlflow_config:
+  mlflow_file_config:
+    logging_dir: &logging_dir "PROJECT_ROOT_DIR/test_output/logs/mlflow_logs/"
+
+  artifact_location: *logging_dir

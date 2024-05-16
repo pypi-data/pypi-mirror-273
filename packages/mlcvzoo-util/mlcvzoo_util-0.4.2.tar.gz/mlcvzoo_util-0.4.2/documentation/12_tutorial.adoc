@@ -1,0 +1,20 @@
+[[section-tutorial]]
+
+== Tutorial
+
+Refer to the link:https://gitlab.cc-asp.fraunhofer.de/silicon-economy/base/ml-toolbox/mlcvzoo-base/-/tree/main/documentation[MLCVZoo Base documentation] for more information.
+
+=== Installation
+
+==== mlcvzoo-util as dependency
+
+Install with pip:
+
+-------
+pip install mlcvzoo-util
+-------
+
+==== mlcvzoo-util dev setup
+
+The dev setup follows the same principles as in mlcvzoo-base, the documentation can be found
+https://git.openlogisticsfoundation.org/silicon-economy/base/ml-toolbox/mlcvzoo-base/-/tree/main/documentation?ref_type=heads#user-content-mlcvzoo-dev-setup[here].

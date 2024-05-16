@@ -1,0 +1,10 @@
+[
+    {
+        "file_upload": "test_video.mp4",
+        "annotations": [
+            {
+                "foo": "bar"
+            }
+        ]
+    }
+]

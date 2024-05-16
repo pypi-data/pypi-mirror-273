@@ -1,0 +1,6 @@
+cvat_cli_config:
+  cli_path: "PATH_TO_CVAT_REPOSITORY/utils/cli/cli.py"   # path for CVAT version v1.1.0
+  server_host: "localhost"
+  server_port: 8080
+  auth: "YOUR_ACCOUNT_NAME:YOUR_ACCOUNT_PASSWORD"
+  password_path: None

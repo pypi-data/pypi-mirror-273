@@ -1,0 +1,42 @@
+model_config:
+  class_type: "read_from_file_object_detection"
+  constructor_parameters:
+    from_yaml: "PROJECT_ROOT_DIR/test_data/test_ReadFromFileObjectDetectionModel/read-from-file_pascal-voc_test.yaml"
+
+root_image_dir: "PROJECT_ROOT_DIR/test_data/"
+input_image_type: ".jpg"
+output_xml_dir: &output_xml_dir "PROJECT_ROOT_DIR/test_output/pre_annotation_tool/generated_xml_files/"
+
+generate_annotations: True
+overwrite_existing_annotations: True
+
+show_predictions: True
+
+cvat_annotation_handler_config:
+  cvat_cli_config:
+    cli_path: "CVAT_DIR/utils/cli/cli.py"   # path for CVAT version v1.1.0
+    server_host: "http://localhost"
+    server_port: 8080
+    disable_ssl_verify: False
+    auth: "USERNAME:PASSWORD"
+    password_path: "PROJECT_ROOT_DIR/test_data/test_cvat_annotation_handler/cvat_password.txt"
+
+  dump_task_configs:
+    - task_info:
+        task_ID: 3  # id of your test-task
+      target_zip_path: &download_zip_path "PROJECT_ROOT_DIR/test_output/pre_annotation_tool/mlcvzoo-test_download.zip"
+      extract_data: False
+      # dataset_dir:                  does not need to be provided
+      overwrite_existing_zip: False  # overwrite file in order to trigger correct test behavior
+      clean_up_dump_data: False      # clean up data after test
+
+  upload_task_configs:
+    - task_info:
+        task_ID: 3  # id of your test-task
+      execute_upload: True
+      source_zip_path: *download_zip_path
+      use_prediction_data: True
+      prediction_data_dir: *output_xml_dir
+      target_zip_path: "PROJECT_ROOT_DIR/test_output/pre_annotation_tool/mlcvzoo-test_upload.zip"
+      clean_up_dump_data: False
+      clean_up_upload_data: False

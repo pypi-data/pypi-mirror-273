@@ -1,0 +1,12 @@
+[[section-glossary]]
+== Glossary
+
+We define the project-specific terms for the MLCVZoo, and additionally refer to the global _Glossary_ of the Silicon Economy.
+
+[cols="1e,2e",options="header"]
+|===
+|Term
+|Definition
+
+
+|===

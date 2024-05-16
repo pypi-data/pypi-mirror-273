@@ -1,0 +1,17 @@
+cvat_cli_config:
+  cli_path: "CVAT_DIR/utils/cli/cli.py"   # path for CVAT version v1.1.0
+  server_host: "http://localhost"
+  server_port: 8080
+  disable_ssl_verify: False
+  auth: "USERNAME:PASSWORD"
+  password_path: "PROJECT_ROOT_DIR/test_data/test_cvat_annotation_handler/cvat_password.txt"
+
+dump_task_configs:
+  - task_info:
+      task_ID: 1  # id of your test-task
+    target_zip_path: "PROJECT_ROOT_DIR/test_output/test_cvat_annotation_handler/test-task-download.zip"
+    extract_data: False
+    # dataset_dir:                  does not need to be provided
+    overwrite_existing_zip: True  # overwrite file in order to trigger correct test behavior
+    clean_up_dump_data: False      # clean up data after test
+    move_extracted_data_to_dataset_dir: True

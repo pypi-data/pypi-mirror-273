@@ -1,0 +1,19 @@
+iou_thresholds: [0.5]
+
+model_config:
+  class_type: "read_from_file_segmentation"
+  constructor_parameters: {
+      "from_yaml": "PROJECT_ROOT_DIR/test_data/test_ReadFromFileObjectDetectionModel/read-from-file_pascal_voc_clean.yaml",
+  }
+
+checkpoint_config:
+  checkpoint_dir: "/home/motten/data/MLCVZoo/models/yolox/yolox_coco/yolox_tiny"
+  checkpoint_filename_suffix: ".pth"
+
+annotation_handler_config:
+  class_mapping: !join_object [ "class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml" ]
+  pascal_voc_input_data:
+    - input_image_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+      input_xml_dir: "PROJECT_ROOT_DIR/test_data/annotations/pascal_voc_clean_predictions/dummy_task"
+      input_sub_dirs: [ ]
+      image_format: ".jpg"

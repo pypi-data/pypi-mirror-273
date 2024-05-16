@@ -1,0 +1,104 @@
+= Software documentation for the MLCVZoo
+:toc: left
+:toclevels: 3
+:sectnumlevels: 5
+:icons: font
+:copyright: Open Logistics Foundation
+
+[NOTE]
+.Before reading this documentation
+====
+This documentation _complements_ the arc42 documentation of MLCVZoo Base.
+Therefore, sections that are already described in general in the arc42 documentation of MLCVZoo Base are not described here.
+However, to conform to the general structure of MLCVZoo Base's arc42 documentation, the main sections are retained, even though there may not necessarily be corresponding content here for all of them.
+This documentation therefore only contains content and descriptions for components that are specific to this project.
+For detailed information on sections not described in this documentation and for general information about MLCVZoo Base, please refer to the link:https://gitlab.cc-asp.fraunhofer.de/silicon-economy/base/ml-toolbox/mlcvzoo-base/-/tree/main/documentation/index.adoc[MLCVZoo Base's arc42 documentation].
+====
+
+[[section-preface]]
+== Preface
+
+=== Main Authors
+
+[cols="1e,2e",options="header"]
+|===
+
+|Name
+|E-Mail
+
+|Maximilian Otten
+|maximilian.otten@iml.fraunhofer.de
+
+|Christian Hoppe
+|christian.hoppe@iml.fraunhofer.de
+
+|Oliver Urbann
+|oliver.urbann@iml.fraunhofer.de
+
+|Oliver Bredtmann
+|oliver.bredtmann@dbschenker.com
+
+|Thilo Bauer
+|thilo.bauer@dbschenker.com
+
+|Luise Weickhmann
+|luise.weickhmann@iml.fraunhofer.de
+
+|Luca Kotulla
+|luca.kotulla@iml.fraunhofer.de
+
+|===
+
+For a complete list of authors and the document history see the GitLab history being provided automatically.
+
+// Enable section numbering from here on
+:sectnums:
+
+<<<
+// 1. Introduction and Goals
+include::01_introduction_and_goals.adoc[]
+
+<<<
+// 2. Architecture Constraints
+include::02_architecture_constraints.adoc[]
+
+<<<
+// 3. System Scope and Context
+include::03_system_scope_and_context.adoc[]
+
+<<<
+// 4. Solution Strategy
+include::04_solution_strategy.adoc[]
+
+<<<
+// 5. Building Block View
+include::05_building_block_view.adoc[]
+
+<<<
+// 6. Runtime View
+include::06_runtime_view.adoc[]
+
+
+<<<
+// 8. Concepts
+include::08_concepts.adoc[]
+
+<<<
+// 9. Design Decisions
+include::09_design_decisions.adoc[]
+
+<<<
+// 10. Quality Scenarios
+include::10_quality_scenarios.adoc[]
+
+<<<
+// 11. Technical Risks
+include::11_technical_risks.adoc[]
+
+<<<
+// 12. Tutorial
+include::12_tutorial.adoc[]
+
+<<<
+// Glossary
+include::glossary.adoc[]

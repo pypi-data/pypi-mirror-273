@@ -1,0 +1,19 @@
+[
+    {
+        "file_upload": "test_video.mp4",
+        "annotations": [
+            {
+                "result": [
+                    {
+                        "value": {
+                            "framesCount": 10,
+                            "labels": [
+                                "LabelA"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

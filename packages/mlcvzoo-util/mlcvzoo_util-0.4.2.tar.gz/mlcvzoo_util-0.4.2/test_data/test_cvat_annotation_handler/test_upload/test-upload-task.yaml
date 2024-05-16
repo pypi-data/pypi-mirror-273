@@ -1,0 +1,17 @@
+cvat_cli_config:
+  cli_path: "CVAT_DIR/utils/cli/cli.py"
+  server_host: "localhost"
+  server_port: 8080
+  auth: "cvat-upload"
+  password_path: "PROJECT_ROOT_DIR/test_data/test_cvat_annotation_handler/cvat_password.txt"
+
+upload_task_configs:
+  - task_info:
+      task_ID: 3  # id of your test-task
+    execute_upload: True
+    source_zip_path: "PROJECT_ROOT_DIR/test_data/test_cvat_annotation_handler/test_upload/mlcvzoo-test.zip"  # same as from the dumped task
+    use_prediction_data: False
+    prediction_data_dir: ""
+    target_zip_path: "PROJECT_ROOT_DIR/test_output/test_cvat_annotation_handler/test-task-upload.zip"
+    clean_up_dump_data: False
+    clean_up_upload_data: False

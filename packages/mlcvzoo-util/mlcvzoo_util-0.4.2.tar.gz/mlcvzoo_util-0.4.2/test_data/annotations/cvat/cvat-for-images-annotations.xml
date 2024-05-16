@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>3</id>
+      <name>test-2</name>
+      <size>3</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2021-02-18 17:32:52.623506+00:00</created>
+      <updated>2021-03-19 13:15:59.250015+00:00</updated>
+      <start_frame>0</start_frame>
+      <stop_frame>2</stop_frame>
+      <frame_filter></frame_filter>
+      <labels>
+        <label>
+          <name>person</name>
+          <color>#c06060</color>
+          <attributes>
+            <attribute>
+              <name>difficult</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>car</name>
+          <color>#2080c0</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>truck</name>
+          <color>#906080</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>LP</name>
+          <color>#224f66</color>
+          <attributes>
+            <attribute>
+              <name>content</name>
+              <mutable>False</mutable>
+              <input_type>text</input_type>
+              <default_value></default_value>
+              <values></values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+      <segments>
+        <segment>
+          <id>3</id>
+          <start>0</start>
+          <stop>2</stop>
+          <url>http://localhost:8080/?id=3</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>motten</username>
+        <email></email>
+      </owner>
+      <assignee></assignee>
+    </task>
+    <dumped>2021-03-19 13:16:19.691574+00:00</dumped>
+  </meta>
+  <image id="2" name="truck.jpg" width="500" height="375">
+    <polygon label="person" occluded="0" source="manual" points="76.65,265.78;224.65,271.78;197.05,353.28;109.55,352.78" z_order="0">
+      <attribute name="difficult">true</attribute>
+    </polygon>
+    <polygon label="LP" occluded="0" source="manual" points="240.73,249.25;240.73,244.45;249.43,244.15;249.53,249.35" z_order="0">
+      <attribute name="content">test_LP_42</attribute>
+    </polygon>
+    <box label="truck" occluded="0" source="manual" xtl="204.87" ytl="121.75" xbr="355.52" ybr="254.55" z_order="0">
+      <attribute name="difficult">true</attribute>
+    </box>
+  </image>
+  <image id="1" name="person.jpg" width="353" height="500">
+    <polygon label="LP" occluded="0" source="manual" points="159.98,391.68;159.98,386.88;168.68,386.58;168.78,391.78" z_order="0">
+      <attribute name="content">test_LP_42</attribute>
+    </polygon>
+    <polygon label="person" occluded="0" source="manual" points="73.99,252.74;221.99,258.74;194.39,340.24;106.89,339.74" z_order="0">
+      <attribute name="difficult">false</attribute>
+    </polygon>
+    <box label="person" occluded="0" source="manual" xtl="23.25" ytl="7.36" xbr="337.53" ybr="474.03" z_order="0">
+      <attribute name="difficult">false</attribute>
+    </box>
+  </image>
+  <image id="0" name="cars.jpg" width="500" height="406">
+    <polygon label="person" occluded="0" source="manual" points="139.30,267.80;287.30,273.80;259.70,355.30;172.20,354.80" z_order="0">
+      <attribute name="difficult">false</attribute>
+    </polygon>
+    <box label="car" occluded="0" source="manual" xtl="16.24" ytl="313.17" xbr="80.92" ybr="364.87" z_order="0">
+    </box>
+    <polygon label="LP" occluded="0" source="manual" points="309.80,353.20;309.80,348.40;318.50,348.10;318.60,353.30" z_order="0">
+      <attribute name="content">test_LP_42</attribute>
+    </polygon>
+    <tag label="person" source="manual">
+      <attribute name="difficult">false</attribute>
+    </tag>
+  </image>
+</annotations>

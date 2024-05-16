@@ -1,0 +1,82 @@
+{
+  "id": 2836,
+  "created_username": "",
+  "created_ago": "0\u00a0minutes",
+  "task": {
+    "id": 6177,
+    "data": {
+      "image": "s3://truck.jpg"
+    },
+    "meta": {},
+    "created_at": "2023-01-23T11:18:51.458435Z",
+    "updated_at": "2023-01-23T11:18:51.458495Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "project": 33,
+    "file_upload": null
+  },
+  "completed_by": null,
+  "result": [
+    {
+      "type": "rectanglelabels",
+      "value": {
+        "x": 15.330000000000002,
+        "y": 70.87466666666667,
+        "width": 29.599999999999998,
+        "height": 23.333333333333332,
+        "rotation": 0,
+        "rectanglelabels": [
+          "person"
+        ]
+      },
+      "to_name": "image",
+      "from_name": "label",
+      "image_rotation": 0,
+      "original_width": 500,
+      "original_height": 375
+    },
+    {
+      "type": "rectanglelabels",
+      "value": {
+        "x": 48.146,
+        "y": 65.10666666666667,
+        "width": 1.76,
+        "height": 1.3866666666666667,
+        "rotation": 0,
+        "rectanglelabels": [
+          "LP"
+        ]
+      },
+      "to_name": "image",
+      "from_name": "label",
+      "image_rotation": 0,
+      "original_width": 500,
+      "original_height": 375
+    },
+    {
+      "type": "rectanglelabels",
+      "value": {
+        "x": 40.974,
+        "y": 32.46666666666667,
+        "width": 30.130000000000003,
+        "height": 35.413333333333334,
+        "rotation": 0,
+        "rectanglelabels": [
+          "truck"
+        ]
+      },
+      "to_name": "image",
+      "from_name": "label",
+      "image_rotation": 0,
+      "original_width": 500,
+      "original_height": 375
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2023-01-23T11:18:51.684292Z",
+  "updated_at": "2023-01-23T11:18:51.684351Z",
+  "lead_time": null,
+  "parent_prediction": null,
+  "parent_annotation": null
+}

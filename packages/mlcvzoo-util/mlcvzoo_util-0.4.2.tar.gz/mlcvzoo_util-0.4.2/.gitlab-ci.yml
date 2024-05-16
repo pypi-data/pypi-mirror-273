@@ -1,0 +1,101 @@
+stages:
+  - prepare
+  - check
+  - test
+  - qa
+  - build
+  - archive
+
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS'
+      when: never
+    - if: '$CI_COMMIT_BRANCH'
+
+include:
+  - project: 'silicon-economy/base/ml-toolbox/mlcvzoo-ci'
+    ref: main
+    file:
+      - '.gitlab/ci_cd_templates/CI-Container.gitlab-ci.yml'
+      - '.gitlab/ci_cd_templates/Python.ci_template.yml'
+
+variables:
+  IMAGE_NAME: "sele/ml-toolbox/cicd/mlcvzoo-util"
+  SOURCE_FILES_DIR: "mlcvzoo_util/"
+
+ci-container:
+  stage: prepare
+  extends: .ci-container
+
+code-style:
+  stage: check
+  extends: .black
+  needs:
+    - job: ci-container
+
+imports:
+  stage: check
+  extends: .isort
+  needs:
+    - job: ci-container
+
+lint:
+  stage: check
+  extends: .pylint
+  needs:
+    - job: ci-container
+
+type-checks:
+  stage: check
+  extends: .type-checks-mypy
+  needs:
+    - job: ci-container
+
+third-party-license-check:
+  stage: check
+  extends: .third-party-license-check
+  needs:
+    - job: ci-container
+
+unit-tests:
+  stage: test
+  extends: .unit-tests
+  needs:
+    - job: ci-container
+
+sonarqube-check:
+  stage: qa
+  extends: .sonarqube-check
+  variables:
+    SONAR_PROJECT_NAME: "mlcvzoo-util"
+    SONAR_PROJECT_KEY: "ml-toolbox.mlcvzoo-util"
+  needs:
+    - job: type-checks
+      artifacts: true
+    - job: lint
+      artifacts: true
+    - job: unit-tests
+      artifacts: true
+
+build:
+  stage: build
+  extends: .build-uv
+  needs:
+    - job: ci-container
+
+archive-internal:
+  stage: archive
+  extends: .archive-internal
+  needs:
+    - job: build
+      artifacts: true
+
+archive-pypi:
+  stage: archive
+  extends: .archive-pypi
+  needs:
+    - job: build
+      artifacts: true
+    - job: third-party-license-check
+      artifacts: false

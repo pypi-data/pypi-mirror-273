@@ -1,0 +1,16 @@
+class_mapping:
+  mapping: []
+  model_classes:
+    - class_name: "person"
+      class_id: 0
+    - class_name: "car"
+      class_id: 2
+    - class_name: "truck"
+      class_id: 7
+    - class_name: "cup"
+      class_id: 41
+    - class_name: "knife"
+      class_id: 43
+    - class_name: "diningtable"
+      class_id: 60
+  number_classes: 80

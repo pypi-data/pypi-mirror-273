@@ -1,0 +1,5 @@
+[[section-introduction]]
+
+== Introduction
+
+*mlcvzoo_util* includes everything that is not intended to be extended by mlcvzoo packages. This mainly concerns generic components, which provide an overall functionality, like: Generic model training or evaluation.

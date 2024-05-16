@@ -1,0 +1,8 @@
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml"]
+
+annotation_handler_config:
+  coco_input_data:
+    - input_path: "PROJECT_ROOT_DIR/test_data/annotations/coco/coco.json"
+      input_root_dir: "PROJECT_ROOT_DIR/test_data/images/dummy_task"
+
+unique_name: "read-from-file_coco_test"

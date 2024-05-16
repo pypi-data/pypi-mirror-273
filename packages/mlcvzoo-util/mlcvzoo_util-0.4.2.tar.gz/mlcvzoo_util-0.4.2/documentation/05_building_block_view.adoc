@@ -1,0 +1,71 @@
+[[section-building-block-view]]
+
+== Building Block View
+
+=== Overview
+
+==== mlcvzoo_util module (Blackbox)
+
+The *mlcvzoo_util* module includes everything that is not intended to be extended by mlcvzoo packages. This mainly concerns
+generic components, which provide an overall functionality, like: Generic model training or evaluation.
+
+=== Building Blocks - Level 2
+
+==== mlcvzoo_utils package (Whitebox)
+
+There are the following components with its responsibilities:
+
+[cols="2",options="header"]
+|===
+|Name
+
+|Responsibility / Description
+
+|cvat_annotation_handler
+
+| Module for handling the download and upload
+of zip files to CVAT via their commandline interface
+
+|logger
+
+|Module for handling python logging
+
+|model_evaluator
+
+|Module for evaluating mlcvzoo models
+
+|model_timer
+
+|Module that provides a generic component for measuring runtimes of mlcvzoo models
+
+|model_trainer
+
+|Module for handling the training of mlcvzoo models
+
+|pre_annotation_tool
+
+|Module for handling the generation and uploading of annotations to CVAT, which realizes that
+the feature of pre-annotating annotation tasks
+
+|tracking_task_converter
+
+|Module for handling the conversion of a Label Studio tracking data set to a detection data
+set. Separate images are extracted from a video and the corresponding annotations are
+converted.
+
+|video_image_creator
+
+|Module for extracting frames from videos. In the context of the mlcvzoo, this
+is used to build training datasets.
+
+|image_io_utils
+
+|Module for different utility operations regarding image (picture) objects
+
+|mlcvzoo_cli_tool
+
+|Module for the definition of a super class for any mlcvzoo module that is
+providing a commandline interface.
+
+
+|===

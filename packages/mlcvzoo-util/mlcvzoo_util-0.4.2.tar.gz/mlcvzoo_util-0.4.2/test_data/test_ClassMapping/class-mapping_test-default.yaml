@@ -1,0 +1,22 @@
+class_mapping:
+  mapping:
+    - input_class_name: "person"
+      output_class_name: "person"
+    - input_class_name: "Person"
+      output_class_name: "person"
+    - input_class_name: "truck"
+      output_class_name: "truck"
+    - input_class_name: "LKW"
+      output_class_name: "truck"
+    - input_class_name: "PKW"
+      output_class_name: "car"
+    - input_class_name: "car"
+      output_class_name: "car"
+  model_classes:
+    - class_name: "person"
+      class_id: 0
+    - class_name: "truck"
+      class_id: 1
+    - class_name: "car"
+      class_id: 2
+  number_classes: 3

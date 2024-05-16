@@ -1,0 +1,82 @@
+{
+  "id": 2837,
+  "created_username": "",
+  "created_ago": "0\u00a0minutes",
+  "task": {
+    "id": 6176,
+    "data": {
+      "image": "s3://person.jpg"
+    },
+    "meta": {},
+    "created_at": "2023-01-23T11:18:51.445931Z",
+    "updated_at": "2023-01-23T11:18:51.445963Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "project": 33,
+    "file_upload": null
+  },
+  "completed_by": null,
+  "result": [
+    {
+      "type": "rectanglelabels",
+      "value": {
+        "x": 45.32011331444759,
+        "y": 77.316,
+        "width": 2.492917847025496,
+        "height": 1.04,
+        "rotation": 0,
+        "rectanglelabels": [
+          "LP"
+        ]
+      },
+      "to_name": "image",
+      "from_name": "label",
+      "image_rotation": 0,
+      "original_width": 353,
+      "original_height": 500
+    },
+    {
+      "type": "rectanglelabels",
+      "value": {
+        "x": 20.960339943342774,
+        "y": 50.548,
+        "width": 41.92634560906516,
+        "height": 17.5,
+        "rotation": 0,
+        "rectanglelabels": [
+          "person"
+        ]
+      },
+      "to_name": "image",
+      "from_name": "label",
+      "image_rotation": 0,
+      "original_width": 353,
+      "original_height": 500
+    },
+    {
+      "type": "rectanglelabels",
+      "value": {
+        "x": 6.586402266288951,
+        "y": 1.472,
+        "width": 89.03116147308782,
+        "height": 93.334,
+        "rotation": 0,
+        "rectanglelabels": [
+          "person"
+        ]
+      },
+      "to_name": "image",
+      "from_name": "label",
+      "image_rotation": 0,
+      "original_width": 353,
+      "original_height": 500
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2023-01-23T11:18:51.775308Z",
+  "updated_at": "2023-01-23T11:18:51.775359Z",
+  "lead_time": null,
+  "parent_prediction": null,
+  "parent_annotation": null
+}

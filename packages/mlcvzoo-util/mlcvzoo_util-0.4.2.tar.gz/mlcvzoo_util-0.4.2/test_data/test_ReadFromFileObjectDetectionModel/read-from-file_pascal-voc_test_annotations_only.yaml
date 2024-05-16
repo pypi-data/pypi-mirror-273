@@ -1,0 +1,12 @@
+use_image_name_hash: True
+class_mapping: !join_object ["class_mapping", "PROJECT_ROOT_DIR/test_data/test_ClassMapping/class-mapping_test-default-lp.yaml"]
+
+annotation_handler_config:
+  pascal_voc_input_data:
+    - input_image_dir: ""
+      input_xml_dir: "PROJECT_ROOT_DIR/test_data/annotations/pascal_voc_read_from_file/dummy_task"
+      input_sub_dirs: []
+      image_format: ".jpg"
+      ignore_missing_images: True
+
+unique_name: "read-from-file_pascal-voc_test_annotation"
