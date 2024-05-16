@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+kaconv.egg-info/PKG-INFO
+kaconv.egg-info/SOURCES.txt
+kaconv.egg-info/dependency_links.txt
+kaconv.egg-info/requires.txt
+kaconv.egg-info/top_level.txt
