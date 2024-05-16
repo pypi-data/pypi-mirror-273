@@ -1,0 +1,7 @@
+README.md
+setup.py
+PIaaS.egg-info/PKG-INFO
+PIaaS.egg-info/SOURCES.txt
+PIaaS.egg-info/dependency_links.txt
+PIaaS.egg-info/requires.txt
+PIaaS.egg-info/top_level.txt
