@@ -1,0 +1,16 @@
+megatechai/__init__.py,sha256=s3UoGdGdCl1eQTE0H9cp8olbZbDLYMGcNjxEG-h25sI,278
+megatechai/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megatechai/megatechai/examples/model_api_example.cpython-312-x86_64-linux-gnu.so,sha256=JTwcYNVlteX_OHRJCR8K1sJfyo7TO8qZ6FbAa2VSzdM,63392
+megatechai/megatechai/model_api/api.cpython-312-x86_64-linux-gnu.so,sha256=3bVOlTMA2q9p107tuPpFugiQ9oxkpurOKt5pRxpYLmw,99720
+megatechai/megatechai/model_api/mega_params.cpython-312-x86_64-linux-gnu.so,sha256=p1Zi8tnynBYLfS-X7NMtLNzjMrGmDSr3Pzd9w-F_jJU,34088
+megatechai/megatechai/model_api/params.cpython-312-x86_64-linux-gnu.so,sha256=3x4VRhlyM-j9JG0VciofjyWCGfR_t8S9PlyREy--vKg,59192
+megatechai/megatechai/utils/http_client.cpython-312-x86_64-linux-gnu.so,sha256=wzlYRPxj-g2oxNLIzm-0IVMjFQPCi47Z-M0ZFcVsh_o,96976
+megatechai/megatechai/utils/jwt_token.cpython-312-x86_64-linux-gnu.so,sha256=IzsQSzlM3B0z0oXgSrmDuFkPqmWLuwgQj0e2lYRSogw,68168
+megatechai/megatechai/utils/sse_client.cpython-312-x86_64-linux-gnu.so,sha256=q6b--jqKv9EDLlcmc9X4avHv97TAeCX1g__YAOc8Kw8,139952
+megatechai/model_api/__init__.py,sha256=BqZUZU1bKTlhRsNOiPqYOc_tzn-STGq9-NaKX7bIKM8,79
+megatechai/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+megatechai-2.1.1.dist-info/LICENSE,sha256=xUuugrIAGkHwJWFpa7ar3DqS0UzJ03wXVZ0mUv-2DNQ,1067
+megatechai-2.1.1.dist-info/METADATA,sha256=rMGIWMVvrRePoKtv-u0rmkwr6LM2W5_zMKwMj4TVIKI,331
+megatechai-2.1.1.dist-info/WHEEL,sha256=FBfdoN5bNDi3Ojk8YjVMcJGnQC7U-p7gCiGOxJJPrzw,101
+megatechai-2.1.1.dist-info/top_level.txt,sha256=BLXNl5tHvchAPXlM5o61CjuEGuTraG2ASHFe-9ivBbs,11
+megatechai-2.1.1.dist-info/RECORD,,
