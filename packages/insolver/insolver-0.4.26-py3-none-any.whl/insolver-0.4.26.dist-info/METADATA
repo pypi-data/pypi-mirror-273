@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: insolver
+Version: 0.4.26
+Summary: Insolver is low-code machine learning library, initially created for the insurance industry.
+Home-page: http://insolver.io/
+License: MIT
+Keywords: insurance,machine learning
+Author: Mindset Team
+Author-email: request@mind-set.ru
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: full
+Requires-Dist: Django (>=4.2.11)
+Requires-Dist: Flask (>=2.3.2)
+Requires-Dist: Jinja2 (>=3.1.3)
+Requires-Dist: alibi ; extra == "full"
+Requires-Dist: catboost (>=1.0.0)
+Requires-Dist: dice-ml ; extra == "full"
+Requires-Dist: dill (>=0.3.4)
+Requires-Dist: djangorestframework (>=3.13.1)
+Requires-Dist: fastapi (>=0.109.1)
+Requires-Dist: gunicorn (>=20.0.4)
+Requires-Dist: h2o (>=3.46.0.1)
+Requires-Dist: hyperopt (>=0.2.5)
+Requires-Dist: lightgbm (>=3.2.0)
+Requires-Dist: lime (>=0.2.0.1)
+Requires-Dist: matplotlib (>=3.4.3)
+Requires-Dist: numba (>=0.58.0)
+Requires-Dist: numpy (>=1.22.0)
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: plotly (>=5.3.1)
+Requires-Dist: psycopg2-binary (>=2.9.3)
+Requires-Dist: pydantic (>=2)
+Requires-Dist: scikit-learn (>=1.3.2)
+Requires-Dist: scipy (>=1.10.0)
+Requires-Dist: seaborn (>=0.12.2)
+Requires-Dist: shap (>=0.39.0)
+Requires-Dist: statsmodels (>=0.13.1)
+Requires-Dist: sympy (==1.9)
+Requires-Dist: uvicorn[standard] (>=0.27)
+Requires-Dist: xgboost (>=1.6.1)
+Requires-Dist: ydata-profiling (>=4.7.0)
+Project-URL: Bug Tracker, https://github.com/MindSetLib/Insolver/issues
+Project-URL: Documentation, https://insolver.readthedocs.io/en/stable/
+Project-URL: Repository, https://github.com/MindSetLib/Insolver
+Project-URL: Source Code, https://github.com/MindSetLib/Insolver
+Description-Content-Type: text/markdown
+
+# Insolver
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/insolver)
+[![PyPI](https://img.shields.io/pypi/v/insolver?style=flat)](https://pypi.org/project/insolver/)
+[![Documentation Status](https://readthedocs.org/projects/insolver/badge/?version=latest)](https://insolver.readthedocs.io/en/latest/?badge=latest)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/MindSetLib/Insolver/insolver-tests.yaml)](https://github.com/MindSetLib/Insolver/actions)
+[![Coverage](https://codecov.io/github/MindSetLib/Insolver/coverage.svg?branch=master)](https://codecov.io/github/MindSetLib/Insolver)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Downloads](https://pepy.tech/badge/insolver/week)](https://pepy.tech/project/insolver)
+
+Insolver is a low-code machine learning library, originally created for the insurance industry, but can be used in any other. You can find a more detailed overview [here](https://insolver.readthedocs.io/en/latest/source/overview.html).
+
+## Installation:
+
+Insolver can be installed via pip from PyPI. There are several installation options available:
+
+| Description                                | Command                       |
+|--------------------------------------------|-------------------------------|
+| Regular installation                       | `pip install insolver`        |
+| Installation with all heavy requirements   | `pip install insolver[full]`  |
+| Installation with development requirements | `pip install insolver[dev]`   |
+
+
+### Insolver is already installed in the easy access cloud via the GitHub login. Try https://mset.space with a familiar notebook-style environment.
+
+## Examples:
+
+- [Binary Classification Example - Rain in Australia Prediction](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Binary%20Classification%20Example%20-%20Rain%20in%20Australia%20Prediction.ipynb)
+This tutorial demonstrates how to create **classification models** for the [`weatherAUS`](https://www.kaggle.com/jsphyg/weather-dataset-rattle-package) dataset: getting and preprocessing data, transformations, creating models, plotting SHAP values and comparing models.
+
+- [Data Preprocessing Example I - New York City Airbnb](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Data%20Preprocessing%20Example%20I%20-%20New%20York%20City%20Airbnb.ipynb)
+This tutorial demonstrates how to use the [`feature_engineering`](https://github.com/MindSetLib/Insolver/tree/master/insolver/feature_engineering) module and all the **main features of each class**. For this, the [`AB_NYC_2019`](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data) dataset is used.
+
+- [Data Preprocessing Example II - New York City Airbnb](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Data%20Preprocessing%20Example%20II%20-%20New%20York%20City%20Airbnb.ipynb)
+This tutorial also demonstrates how to use the [`feature_engineering`](https://github.com/MindSetLib/Insolver/tree/master/insolver/feature_engineering) module, but it covers the **automated data preprossesing** class and all of its features. For this, the [`AB_NYC_2019`](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data) dataset is used.
+
+- [Gradient Boosting Example - Lending Club](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Gradient%20Boosting%20Example%20-%20Lending%20Club.ipynb)
+This tutorial demonstrates how to create **classification models** for the [`Lending Club`](https://www.kaggle.com/wordsforthewise/lending-club) dataset using the **Gradient Boosting libraries** and the `InsolverGBMWrapper` class.
+
+- [Transforms Inference Example](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Transforms%20Inference%20Example.ipynb)
+This tutorial demonstrates how to load `InsolverTransform` transforms from a file using the `load_transforms` function.
+
+- [InsolverDataFrame and InsolverTransform Example](https://github.com/MindSetLib/Insolver/blob/master/tutorials/InsolverDataFrame%20and%20InsolverTransform%20Example.ipynb)
+This tutorial demonstrates main features of the `InsolverDataFrame` class and the `InsolverTransform` class.
+
+- [Regression Example - FreeMLP](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Regression%20Example%20-%20FreeMLP.ipynb)
+This tutorial demonstrates how to create **regression models** for the `freMPL-R` dataset: getting and preprocessing data, transformations, creating models, plotting SHAP values and comparing models.
+
+- [Regression Example - US Accidents](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Regression%20Example%20-%20FreeMLP.ipynb)
+This tutorial demonstrates how to create **regression models** for the [`US Traffic Accident`](https://smoosavi.org/datasets/us_accidents) dataset: getting and preprocessing data, transformations, creating models, plotting SHAP values and comparing models.
+
+- [Report Example](https://github.com/MindSetLib/Insolver/blob/master/tutorials/Report%20Example.ipynb)
+This tutorial demonstrates how to create a **HTML report** with different models using the `Report` class.
+
+## Documentation:
+
+Available [here](https://insolver.readthedocs.io/)
+
+## Supported libraries:
+
+| GLM                 | Boosting models                           | Serving (REST-API)                 | Model interpretation |
+|---------------------|-------------------------------------------|------------------------------------|----------------------|
+| - sklearn<br/>- h2o | - XGBoost<br/> - LightGBM<br/> - CatBoost | - Flask<br/>- FastAPI<br/>- Django | - shap plots         |
+
+### Run tests:
+```shell
+python -m pytest
+```
+
+tests with coverage:
+```shell
+python -m pytest . --cov=insolver --cov-report html
+```
+
+
+## Contributing to Insolver:
+
+Please, feel free to open an issue or/and suggest PR, if you find any bugs or any enhancements.
+
+## Demo
+### Example of creating models using the Insolver
+![](https://github.com/MindSetLib/Insolver/releases/download/v0.4.6/InsolverDemo.gif)
+
+### Example of a model production service
+![](https://github.com/MindSetLib/Insolver/releases/download/v0.4.6/InsolverImplementation.gif)
+
+### Example of an elyra pipeline built with the Insolver inside
+![](https://github.com/MindSetLib/Insolver/releases/download/v0.4.6/InsolverElyraPipeline.gif)
+
+## Contacts
+frank@mind-set.ru
++79263790123
+
