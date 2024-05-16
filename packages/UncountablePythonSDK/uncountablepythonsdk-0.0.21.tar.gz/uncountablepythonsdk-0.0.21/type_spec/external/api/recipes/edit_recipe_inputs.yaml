@@ -1,0 +1,88 @@
+$endpoint:
+    is_sdk: true
+    is_beta: true
+    async_batch_path: edit_recipe_inputs
+    method: post
+    path: ${external}/recipes/edit_recipe_inputs
+    function: main.site.app.external.recipes.edit_recipe_inputs.edit_recipe_inputs
+    desc: Clear, update, or add inputs on a recipe
+
+RecipeInputEditType:
+    type: StringEnum
+    values:
+        - clear_inputs
+        - upsert_input
+        - add_input
+
+RecipeInputEditBase:
+    type: Object
+    properties:
+        type:
+            type: RecipeInputEditType
+
+RecipeInputEditClearInputs:
+    type: RecipeInputEditBase
+    desc: "Clears all inputs and steps from recipe workflow step to start from scratch"
+    properties:
+        type:
+            type: Literal<RecipeInputEditType.clear_inputs>
+
+RecipeInputEditInputBase:
+    type: RecipeInputEditBase
+    properties:
+        ingredient_key:
+            type: identifier.IdentifierKey
+        quantity_basis:
+            type: recipe_inputs.QuantityBasis
+            desc: "The basis to set for this edit.  Normally this should be mass for ingredients and arbitrary for process parameters"
+            default: mass
+        input_value_type:
+            type: recipe_inputs.InputValueType
+            default: value
+        value_numeric?:
+            type: Decimal
+        value_str?:
+            type: String
+        calculation_key?:
+            type: identifier.IdentifierKey
+            desc: The basis calculation to set
+
+RecipeInputEditUpsertInput:
+    type: RecipeInputEditInputBase
+    desc: "If the input is already present in the recipe, modifies it otherwise adds a new one"
+    properties:
+        type:
+            type: Literal<RecipeInputEditType.upsert_input>
+        clear_first:
+            type: Boolean
+            desc: whether to clear the current value first or modify in place
+
+RecipeInputEditAddInput:
+    type: RecipeInputEditInputBase
+    desc: "Add the input into the recipe.  If it's already present and the recipe is not a mixorder, this call will fail"
+    properties:
+        type:
+            type: Literal<RecipeInputEditType.add_input>
+
+
+RecipeInputEdit:
+    type: Alias
+    alias: Union<RecipeInputEditClearInputs, RecipeInputEditUpsertInput, RecipeInputEditAddInput>
+    discriminator: type
+
+Arguments:
+    type: Object
+    properties:
+        recipe_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe"
+        recipe_workflow_step_identifier:
+            type: recipe_workflow_steps.RecipeWorkflowStepIdentifierType
+        edits:
+            type: List<RecipeInputEdit>
+
+Data:
+  type: Object
+  properties:
+    result_id:
+      type: ObjectId

@@ -1,0 +1,44 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/entity/transition_entity_phase
+    function: main.site.app.external.entity.transition_entity_phase.transition_entity_phase
+    desc: "Transitions an entity from one phase to another"
+
+
+TransitionIdentifierPhases:
+    type: Object
+    properties:
+        type:
+            type: Literal<'phases'>
+        phase_from_key:
+            type: identifier.IdentifierKey
+        phase_to_key:
+            type: identifier.IdentifierKey
+
+TransitionIdentifierTransition:
+    type: Object
+    properties:
+        type:
+            type: Literal<'transition'>
+        transition_key:
+            type: identifier.IdentifierKey
+
+
+TransitionIdentifier:
+    type: Alias
+    alias: |
+        Union<TransitionIdentifierPhases, TransitionIdentifierTransition>
+
+
+Arguments:
+    type: Object
+    properties:
+        entity:
+            type: entity.Entity
+        transition:
+            type: TransitionIdentifier
+
+Data:
+    type: response.Response
+    properties:

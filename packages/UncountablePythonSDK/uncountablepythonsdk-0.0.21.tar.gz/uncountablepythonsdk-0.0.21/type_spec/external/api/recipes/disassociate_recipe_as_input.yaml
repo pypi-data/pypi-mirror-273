@@ -1,0 +1,16 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipes/disassociate_recipe_as_input
+    function: main.site.app.external.recipes.disassociate_recipe_as_input.disassociate_recipe_as_input
+    desc: Remove any association between a recipe and ingredients
+
+Arguments:
+    type: Object
+    properties:
+        recipe_key:
+            type: identifier.IdentifierKey
+            desc: "Identifier for the recipe"
+
+Data:
+  type: async_batch.AsyncBatchActionReturn

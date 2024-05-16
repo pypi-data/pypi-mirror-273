@@ -1,0 +1,62 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/recipes/set_recipe_tags
+    function: main.site.app.external.recipes.set_recipe_tags.set_recipe_tags
+    desc: Modifies recipes tags for a recipe
+
+RecipeTagUpdateType:
+    type: StringEnum
+    values:
+        - append
+        - override
+        - remove
+
+RecipeTagUpdateBase:
+    type: Object
+    properties:
+        type:
+            type: RecipeTagUpdateType
+
+RecipeTagAppend:
+    type: RecipeTagUpdateBase
+    properties:
+        type:
+            type: Literal<RecipeTagUpdateType.append>
+        recipe_tag_ids:
+            type: List<ObjectId>
+
+RecipeTagRemove:
+    type: RecipeTagUpdateBase
+    properties:
+        type:
+            type: Literal<RecipeTagUpdateType.remove>
+        recipe_tag_ids:
+            type: List<ObjectId>
+
+RecipeTagOverride:
+    type: RecipeTagUpdateBase
+    properties:
+        type:
+            type: Literal<RecipeTagUpdateType.override>
+        recipe_tag_ids:
+            type: List<ObjectId>
+
+
+RecipeTagUpdate:
+    type: Alias
+    alias: Union<RecipeTagAppend, RecipeTagRemove, RecipeTagOverride>
+
+
+Arguments:
+    type: Object
+    properties:
+        recipe_key:
+            type: identifier.IdentifierKey
+            desc: Identifier for the recipe
+        recipe_tag_update:
+            type: RecipeTagUpdate
+            desc: The update to perform on the recipe tags
+
+Data:
+  type: Object
