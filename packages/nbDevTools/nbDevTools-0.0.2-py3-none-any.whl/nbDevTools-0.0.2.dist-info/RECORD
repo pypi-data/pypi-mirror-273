@@ -1,0 +1,16 @@
+nbDevTools/__init__.py,sha256=QBIR4zYDqrrndeKc3gLH6fpE2SMI3BRuYCnip2_F32A,1299
+nbDevTools/cmd_shell.py,sha256=truZ1F_6rg2t3c9T7JeEJlZNJj83VUab_9FrJKFCKyg,11848
+nbDevTools/dev.py,sha256=OvUOa7lIL58sTWz993lj3Erz-T_bsWlEARqSfg0wthM,1242
+nbDevTools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbDevTools/nbCom/__init__.py,sha256=2heAI8YbsZEsgjbBlrlhgerEXcoJV7-wO9Piqm4Aawk,665
+nbDevTools/nbFlask/__init__.py,sha256=qhfttuHBRo6lHl3QseA3Om1v9jQUMd2LeJ0IpOoKx8A,10986
+nbDevTools/nbFlask/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbDevTools/pyClosure/__init__.py,sha256=4X7AbGx0kHMfSIfvObwX_T9F_CYugSdzxi6bebiOEKs,348
+nbDevTools/pyClosure/examples.py,sha256=IgLsMcWR_XAa9m89ol-sQz2hlyQUsNMkksTjfRAWZbM,6874
+nbDevTools/pyClosure/flask_app.py,sha256=Ce2X13xdgxHosukuGJyzVMEN5g2qLCZs4DPh3cGabSY,1661
+nbDevTools/pyClosure/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nbDevTools/pyClosure/tools.py,sha256=j5t98F4OGN72Mi5wifcInPXqttex7jW2hvZ0IH9FY-M,1795
+nbDevTools-0.0.2.dist-info/METADATA,sha256=RyaiuPCwXE0qkwHpMaTr0fxayxmTOweOWFfPMn29c2w,366
+nbDevTools-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nbDevTools-0.0.2.dist-info/top_level.txt,sha256=2eQIfB3QO_hpDtaR8ax2AjG0Snr4WytGj11O4jsVtUo,11
+nbDevTools-0.0.2.dist-info/RECORD,,
