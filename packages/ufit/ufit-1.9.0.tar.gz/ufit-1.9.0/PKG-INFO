@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ufit
+Version: 1.9.0
+Summary: Universal scattering data fitting tool
+Home-page: https://forge.frm2.tum.de/review/plugins/gitiles/mlz/general/ufit
+Author: Georg Brandl
+Author-email: g.brandl@fz-juelich.de
+License: BSD-2-Clause
+Provides-Extra: repl
+Provides-Extra: minuit
+Provides-Extra: cluster
+License-File: LICENSE
