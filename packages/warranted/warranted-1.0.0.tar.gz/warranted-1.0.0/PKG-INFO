@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: warranted
+Version: 1.0.0
+Summary: A Warranted helper library
+Home-page: https://github.com/warranted-io/warranted-python
+Author: API Team <api@warranted.io>
+Author-email: api@warranted.io
+License: MIT
+Keywords: warranted api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.0.0
+
+# warranted-python
+A helper library for using the Warranted.io API.
+
+## Installation
+`pip install warranted`
+
+### Test your installation
+To make sure the installation was successful, try hitting the `/api/v1/me` API, like this:
+```python
+import os
+from warranted import Client
+
+# Get your Account Id and Auth Token from https://app.warranted.io/settings/webhook
+account_id = os.environ['WARRANTED_ACCOUNT_ID']
+auth_token = os.environ['WARRANTED_AUTH_TOKEN']
+warranted_client = Client(account_id, auth_token)
+
+# Fetch and print the response object
+response = warranted_client.me.get()
+print(response)
+```
+
+## Usage
+Check out [our docs](https://app.warranted.io/docs) for more details.
