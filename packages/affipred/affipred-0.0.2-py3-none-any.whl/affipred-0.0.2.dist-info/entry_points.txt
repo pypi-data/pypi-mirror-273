@@ -1,0 +1,3 @@
+[console_scripts]
+affipred_pred = AFFIPred_cli.cli:main
+
