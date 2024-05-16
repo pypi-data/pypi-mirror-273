@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "satsure-sip-367805",
+    "private_key_id": "6f77f6d13c94d43fcde52ebf3d2e2b116402e90d",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZXERYbxugHZkd\n6Woh129DAkkyLxKvGTbbRmzR/uu4BFd8xkLB03Pq0rMUn1C60Yjugbb7GeOd3tgd\n0Q9+3I9YiUJlNf+ERAQevTjwfjB8eZfq04cZPGDskGEreRUKri+lh/FtB9RyaPVf\nbibdYf/facX96/FS4MIOxR7DDF+5Ydo5d7PI6vGqoVGvMK7gouDSV5a+/gR7tIHB\nbBW5VUOiM+s4wDPmmkcZ4SGpw3y1m5ZtrLL4GvM0+QDMuTVhRsUgbOA+4d/LaEJs\n2c/EYw6rx4syrOH06Dml1mbgMb34ndIh+1hL49YBHkXqNim5csZwsWtsbtHmo88N\nTdQKcSDLAgMBAAECggEAFSesRTknJKnMzcL6f+myXAC8dARt2pnnI2dSzwtzELln\ndG7tb2TvqsKwCElLN6uOGryIPR8zbpmSSjCfQ/cegnz1d9lOEab3CbDb+lglyu+g\nsAu/Yd7lBhE1S+BggmYaoA8/mZ+B91Ks0wlrAe/4Udu/F+wfVDQo3vwjdtNc+7NS\n+R4D05mUwdrn9uCCZ7B6NChrsRAoQMwRSt2KzOinnEq9nxz1lZUOtpJUNi2zAAMM\nYbn7xULA4/6Dm8VWcyvQZhN0wcadJHmeaQFHxQWQuDEQgCmzLMpSoB8MQl3UQHQc\nqGNBwsblnyH3msSeffTVgdrnhvN0GR8H3IcUID6LTQKBgQDt9NXWiz8VvN18Mxb7\nQvy5yxv5C2uvTLo/3Od1fIsDQuSgN6vNcZ1XwulndA+KbRtg/+GnLFEzLU+3v6aY\nmQOYLub+xiMhmenqQyF6iXjdCQJQ+BHm67lYl9WizZllYbD4d0tO9MPelQqXVu3J\n89nU6UI7wiJfoVF66wk/neZrBQKBgQDp16BmzGT8meBqy4c9AmmIeF4yvic4Y3sq\nt6yNrVR0eC3iW8f5wAjSssY/9XNcwJ9WaJ8ErrB6qsDCloQ+zmR277kE6+WoLQIN\nKoPdncDirihFwjFfUCliT6gXwdcct5SRuZ8IjmygyjrIp00PN95HIQiqn8OVqq1L\ngKW4T8dFjwKBgQDc+nq/A48xI7RXy6Yy7lF+RLWUgNue7tUjy4STIXaDL9LbSvfc\nEP96acKRVUG9XneHi/lFYy2BJjoavPr8SVUCNcREo0IqySFmcLMddZ7tPZmOEeGm\nHhCAyngV+XLTqHZNN5OTHlDrWmN8ibjHzBHl3Dyq/C0pu8jMKorrLjq19QKBgC7j\naqlSMKmp3SLs3pgwJKMVp6W7FTgsUmUVYUcjSzzzYBf0WVvN0rcU28W1XMVrZke4\nQLJ6qK5gELiz356MWf6zQMEo3+rh43hqXviQCj4pt6+NKcM32qR43natCooakXLK\n6oWXsVZoVnMngL8db7eJeyhjUp9vEsKB8DjN3mInAoGAdQHfFizdaIkcrPrU+qPS\nEYCPSqO7KeOtkoA+852g6idZjxxPeKc3/LMst+oTD3c0luDgFef+Sxnt6TETyPpK\nnQON7GfIrx0p3HFearH1o8K8cpMwxMiIVNyBkZHwTTkPKxMPTvwv2s3JmobK1VsH\nnuC0fePcy2BCABgBJs/Xryc=\n-----END PRIVATE KEY-----\n",
+    "client_email": "satsure-sip-sa@satsure-sip-367805.iam.gserviceaccount.com",
+    "client_id": "105382595273701073402",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/satsure-sip-sa%40satsure-sip-367805.iam.gserviceaccount.com"
+  }
+  
