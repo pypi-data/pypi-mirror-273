@@ -1,0 +1,209 @@
+syntax            = "proto3";
+option go_package = "./pb";
+package forwarder;
+
+import "google/protobuf/empty.proto";
+
+service TradeInterface {
+    rpc CancelOrder(OrderID) returns (TradeResult) {}
+    rpc BuyStock(StockOrderDetail) returns (TradeResult) {}
+    rpc SellStock(StockOrderDetail) returns (TradeResult) {}
+    rpc BuyOddStock(OddStockOrderDetail) returns (TradeResult) {}
+    rpc SellOddStock(OddStockOrderDetail) returns (TradeResult) {}
+    rpc SellFirstStock(StockOrderDetail) returns (TradeResult) {}
+    rpc BuyFuture(FutureOrderDetail) returns (TradeResult) {}
+    rpc SellFuture(FutureOrderDetail) returns (TradeResult) {}
+    rpc SellFirstFuture(FutureOrderDetail) returns (TradeResult) {}
+    rpc BuyOption(OptionOrderDetail) returns (TradeResult) {}
+    rpc SellOption(OptionOrderDetail) returns (TradeResult) {}
+    rpc SellFirstOption(OptionOrderDetail) returns (TradeResult) {}
+    rpc GetLocalOrderStatusArr(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+    rpc GetSimulateOrderStatusArr(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+    rpc GetFuturePosition(google.protobuf.Empty) returns (FuturePositionArr) {}
+    rpc GetStockPosition(google.protobuf.Empty) returns (StockPositionArr) {}
+    rpc GetSettlement(google.protobuf.Empty) returns (SettlementList) {}
+    rpc GetAccountBalance(google.protobuf.Empty) returns (AccountBalance) {}
+    rpc GetMargin(google.protobuf.Empty) returns (Margin) {}
+}
+
+message FuturePosition {
+    string code       = 1;
+    string direction  = 2;
+    int32 quantity    = 3;
+    double price      = 4;
+    double last_price = 5;
+    double pnl        = 6;
+}
+
+message FuturePositionArr {
+    repeated FuturePosition position_arr = 1;
+}
+
+// id (int): position id
+// code (str): contract id
+// direction (Action): action {Buy, Sell}
+// quantity (int): quantity
+// price (float): the average price
+// last_price (float): last price
+// pnl (float): unrealized profit
+// yd_quantity (int): yesterday
+// cond (StockOrderCond): Default Cash {Cash(現股), Netting(餘額交割),
+// MarginTrading(融資),ShortSelling(融券), Emerging(興櫃)}
+// margin_purchase_amount (int): margin_purchase_amount
+// collateral (int): collateral
+// short_sale_margin (int): short_sale_margin
+// interest (int): interest
+// StockPosition(id = 0, code = '2344', direction = <Action.Buy: 'Buy'>,
+// quantity = 10, price = 28.3, last_price = 27.1, pnl = -15.0, yd_quantity =
+// 10, margin_purchase_amount = 0, collateral = 0, short_sale_margin = 0,
+// interest = 0)
+message StockPosition {
+    int32 id                                = 1;
+    string code                             = 2;
+    string direction                        = 3;
+    int32 quantity                          = 4;
+    double price                            = 5;
+    double last_price                       = 6;
+    double pnl                              = 7;
+    int32 yd_quantity                       = 8;
+    string cond                             = 9;
+    int32 margin_purchase_amount            = 10;
+    int32 collateral                        = 11;
+    int32 short_sale_margin                 = 12;
+    int32 interest                          = 13;
+    repeated StockPositionDetail detail_arr = 14;
+}
+
+message StockPositionArr {
+    repeated StockPosition position_arr = 1;
+}
+
+// StockPositionDetail(date = '2024-01-04', code = '2344', quantity = 0, price =
+// 147.0, last_price = 134.0, dseq = 'IC320', direction = <Action.Buy: 'Buy'>,
+// pnl = -13.0, currency = <Currency.TWD: 'TWD'>, fee = 1.0)
+message StockPositionDetail {
+    string date       = 1;
+    string code       = 2;
+    int32 quantity    = 3;
+    double price      = 4;
+    double last_price = 5;
+    string dseq       = 6;
+    string direction  = 7;
+    double pnl        = 8;
+    string currency   = 9;
+    double fee        = 10;
+}
+
+message StockOrderDetail {
+    string stock_num = 1;
+    double price     = 2;
+    int64 quantity   = 3;
+    bool simulate    = 4;
+}
+
+message OddStockOrderDetail {
+    string stock_num = 1;
+    double price     = 2;
+    int64 share      = 3;
+}
+
+message FutureOrderDetail {
+    string code    = 1;
+    double price   = 2;
+    int64 quantity = 3;
+    bool simulate  = 4;
+}
+
+message OptionOrderDetail {
+    string code    = 1;
+    double price   = 2;
+    int64 quantity = 3;
+    bool simulate  = 4;
+}
+
+message TradeResult {
+    string order_id = 1;
+    string status   = 2;
+    string error    = 3;
+}
+
+message OrderID {
+    string order_id = 1;
+    bool simulate   = 2;
+}
+
+// status(FetchStatus): 資料回傳狀態
+// yesterday_balance(float): 前日餘額
+// today_balance(float): 今日餘額
+// deposit_withdrawal(float): 存提
+// fee(float): 手續費
+// tax(float): 期交稅
+// initial_margin(float): 原始保證金
+// maintenance_margin(float): 維持保證金
+// margin_call(float): 追繳保證金
+// risk_indicator(float): 風險指標
+// royalty_revenue_expenditure(float): 權利金收入與支出
+// equity(float): 權益數
+// equity_amount(float): 權益總值
+// option_openbuy_market_value(float): 未沖銷買方選擇權市值
+// option_opensell_market_value(float): 未沖銷賣方選擇權市值
+// option_open_position(float): 參考未平倉選擇權損益
+// option_settle_profitloss(float): 參考選擇權平倉損益
+// future_open_position(float): 未沖銷期貨浮動損益
+// today_future_open_position(float): 參考當日未沖銷期貨浮動損益
+// future_settle_profitloss(float): 期貨平倉損益
+// available_margin(float): 可動用(出金) 保證金
+// plus_margin(float): 依「加收保證金指標」所加收之保證金
+// plus_margin_indicator(float): 加收保證金指標
+// security_collateral_amount(float): 有價證券抵繳總額
+// order_margin_premium(float): 委託保證金及委託權利金
+// collateral_amount(float): 有價品額
+message Margin {
+    string status                       = 1;
+    double yesterday_balance            = 2;
+    double today_balance                = 3;
+    double deposit_withdrawal           = 4;
+    double fee                          = 5;
+    double tax                          = 6;
+    double initial_margin               = 7;
+    double maintenance_margin           = 8;
+    double margin_call                  = 9;
+    double risk_indicator               = 10;
+    double royalty_revenue_expenditure  = 11;
+    double equity                       = 12;
+    double equity_amount                = 13;
+    double option_openbuy_market_value  = 14;
+    double option_opensell_market_value = 15;
+    double option_open_position         = 16;
+    double option_settle_profitloss     = 17;
+    double future_open_position         = 18;
+    double today_future_open_position   = 19;
+    double future_settle_profitloss     = 20;
+    double available_margin             = 21;
+    double plus_margin                  = 22;
+    double plus_margin_indicator        = 23;
+    double security_collateral_amount   = 24;
+    double order_margin_premium         = 25;
+    double collateral_amount            = 26;
+}
+
+// status(FetchStatus): 資料回傳狀態
+// acc_balance(float): 餘額
+// date(str): 查詢日期
+// errmsg(str): 錯誤訊息
+message AccountBalance {
+    string date    = 1;
+    double balance = 2;
+}
+
+// date(datetime.date): 交割日期
+// amount(float): 交割金額
+// T(int): Tday
+message Settlement {
+    string date   = 1;
+    double amount = 2;
+}
+
+message SettlementList {
+    repeated Settlement settlement = 1;
+}

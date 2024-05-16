@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: toc-trade-pb
+Version: 0.0.1
+Summary: Pre-compiled Python protobuf files for ToC Trade
+Project-URL: Homepage, https://github.com/ToC-Taiwan/toc-trade-protobuf
+Project-URL: Issues, https://github.com/ToC-Taiwan/toc-trade-protobuf/issues
+Author-email: Tim Hsu <maochindada@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# TOC TRADE PROTOBUF
+
+## VScode setting
+
+- cp settings.template.json .vscode/settings.json
+
+## VScode settings
+
+```json
+protoc_path=$(which protoc)
+echo '{
+    "protoc": {
+        "path": "'$protoc_path'",
+        "compile_on_save": false,
+        "options": [
+            "--proto_path=protos/v3",
+            "--python_out=src/python",
+            "--go_out=src/go"
+        ]
+    }
+}' > .vscode/settings.json
+```
