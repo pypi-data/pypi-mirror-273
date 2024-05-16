@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "remla24-team8-lib-ml"
+version = "0.1.2"
+description = ""
+authors = ["Tip ten Brink <T.M.tenBrink@student.tudelft.nl>"]
+readme = "README.md"
+packages = [
+    { include = "lib_ml", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+joblib = "^1.4.2"
+scikit-learn = "^1.4.2"
+tensorflow = "^2.16.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
