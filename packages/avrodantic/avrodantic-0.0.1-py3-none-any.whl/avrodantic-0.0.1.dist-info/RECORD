@@ -1,0 +1,11 @@
+avrodantic/__about__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+avrodantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avrodantic/cli.py,sha256=Y0Kim4oJu9cupMtXEvYLo8By6RsfwxyVzKmexCxlnn4,1520
+avrodantic/helper.py,sha256=0A_worSsvh7_nV3zCpjEjP2i6704z_GjT-iiZ2hL5jM,301
+avrodantic/parser.py,sha256=X1lo6tduOEOl7zN8VvX5LT-fE2r2l7gCoaIulbbotow,3144
+avrodantic/schemas.py,sha256=GtCcCddVIOBgaAnlgxRPSg__-uODXQKq-T_H3jc_sSc,14140
+avrodantic-0.0.1.dist-info/METADATA,sha256=6ksdTVFEnIeGnWlyhatHOuXZvCdT49EPis_YZnbiHms,1217
+avrodantic-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+avrodantic-0.0.1.dist-info/entry_points.txt,sha256=MNEZwoqCCShpLzE9f1wsyxX4SCDo8jEPjH2jJgyCOPM,50
+avrodantic-0.0.1.dist-info/licenses/LICENSE,sha256=EUAv9T4LyH8e4ulCcZF-T8wq67pZmAc_QV160rEQIrg,1068
+avrodantic-0.0.1.dist-info/RECORD,,

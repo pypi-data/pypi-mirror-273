@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: avrodantic
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/kevinanker/avrodantic#readme
+Project-URL: Issues, https://github.com/kevinanker/avrodantic/issues
+Project-URL: Source, https://github.com/kevinanker/avrodantic
+Author-email: Kevin Anker <34544392+kevinanker@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: fastavro==1.*
+Requires-Dist: typer==0.*
+Description-Content-Type: text/markdown
+
+# avrodantic
+
+CLI tool to parse AVRO schemas into pydantic models.
+
+## Installation
+
+```console
+pip install avrodantic
+```
+
+## License
+
+`avrodantic` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
