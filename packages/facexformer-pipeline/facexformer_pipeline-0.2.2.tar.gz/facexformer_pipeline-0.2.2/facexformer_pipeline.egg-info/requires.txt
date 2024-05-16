@@ -1,0 +1,7 @@
+numpy
+opencv-python
+image_input_handler
+torchvision
+facenet_pytorch
+huggingface_hub
+torch
