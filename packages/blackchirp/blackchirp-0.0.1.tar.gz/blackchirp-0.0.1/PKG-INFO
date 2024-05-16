@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: blackchirp
+Version: 0.0.1
+Summary: Python module for blackchirp: data acquisition software for CP-FTMW spectroscopy
+Author-email: Kyle Crabtree <kncrabtree@ucdavis.edu>
+License: MIT License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+# Blackchirp Python Package
+
+Blackchirp is an open-source data acquisition program for chirped-pulse Fourier transform microwave spectroscopy. This package contains classes for reading Blackchirp data from disk and performing common processing tasks (Fourier transforms, etc). For more information, see the [Blackchirp GitHub repository](https://github.com/kncrabtree/blackchirp) and the [documentation](https://blackchirp.readthedocs.io/en/latest/).
