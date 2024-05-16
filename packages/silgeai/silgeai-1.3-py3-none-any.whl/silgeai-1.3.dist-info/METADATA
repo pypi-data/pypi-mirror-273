@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: silgeai
+Version: 1.3
+Summary: 洞墟科技有限公司AI产品SDK
+Home-page: http://github.com/yourusername/my_package
+Author: WhiteCome
+Author-email: waitKey1@outlook.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 功能
+洞墟科技有限公司产品SDK
