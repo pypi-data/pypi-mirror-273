@@ -1,0 +1,6 @@
+{
+  "integration_name": "{{cookiecutter.integration_name}}",
+  "integration_id": "{{cookiecutter.integration_name.replace(' ','_').lower()}}",
+  "classname":"{{cookiecutter.classname}}",
+  "classfile":"{{cookiecutter.integration_id}}"
+}

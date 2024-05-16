@@ -1,0 +1,4 @@
+[console_scripts]
+scnx_soar_integration_reload = scnx_soar_integration_sdk.__main__:reload
+scnx_soar_integration_sdk = scnx_soar_integration_sdk.__main__:main
+

@@ -1,0 +1,48 @@
+{
+    "connectionParameters": [
+        {
+            "label": "<Label value, it will be displayed to user>",
+            "name": "<name of the parameter>",
+            "desc": "description about this parameter",
+            "type": "<type of parameter i.e. List/String/Number>",
+            "values": [],
+            "isSecret": false,
+            "optional": false,
+            "encrypted": false
+        }
+    ],
+    "functions": [
+        {
+            "desc": "<action label>",
+            "label": "<Label of action>",
+            "name": "<action name>",
+            "type": "Investigate",
+            "sampleOutput": "",
+            "inParameters": [
+                {
+                    "label": "<Label value, it will be displayed to user>",
+                    "name": "<name of the parameter>",
+                    "desc": "description about this parameter",
+                    "type": "<type of parameter i.e. List/String/Number>",
+                    "values": [],
+                    "isSecret": false,
+                    "optional": false,
+                    "encrypted": false
+                }
+            ],
+            "outParameters": [
+                {
+                    "label": "<Label value, it will be displayed to user>",
+                    "name": "<name of the parameter>",
+                    "desc": "description about this parameter",
+                    "type": "<type of parameter i.e. List/String/Number>",
+                    "values": [],
+                    "isSecret": false,
+                    "optional": false,
+                    "encrypted": false
+                }
+            ]
+        }
+    ]
+
+}

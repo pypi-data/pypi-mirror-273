@@ -1,0 +1,27 @@
+
+include template/__init__.py
+include template/cookiecutter.json
+
+include template/hooks/post_gen_project.py
+include template/
+
+
+include template/{{cookiecutter.integration_id}}/integration_meta.json
+include template/{{cookiecutter.integration_id}}/integration_meta_schema.json
+include template/{{cookiecutter.integration_id}}/integration_definition.json
+
+include template/{{cookiecutter.integration_id}}/__init__.py
+include template/{{cookiecutter.integration_id}}/logo.svg
+include template/{{cookiecutter.integration_id}}/.coveragerc
+include template/{{cookiecutter.integration_id}}/requirements.txt
+include template/{{cookiecutter.integration_id}}/setup.py
+include template/{{cookiecutter.integration_id}}/app/{{cookiecutter.integration_id}}.py
+include template/{{cookiecutter.integration_id}}/app/__init__.py
+
+include template/{{cookiecutter.integration_id}}/app/model/request_body.py
+include template/{{cookiecutter.integration_id}}/app/model/response_body.py
+
+
+include template/{{cookiecutter.integration_id}}/tests/test_{{cookiecutter.integration_id}}.py
+include template/{{cookiecutter.integration_id}}/tests/__init__.py
+
