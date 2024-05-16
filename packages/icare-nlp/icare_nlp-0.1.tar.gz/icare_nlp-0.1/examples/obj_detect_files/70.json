@@ -1,0 +1,47 @@
+[
+  {
+    "position": [
+      1046,
+      496,
+      466,
+      432
+    ],
+    "text": "laptop"
+  },
+  {
+    "position": [
+      154,
+      380,
+      308,
+      376
+    ],
+    "text": "cell phone"
+  },
+  {
+    "position": [
+      1084,
+      620,
+      368,
+      183
+    ],
+    "text": "keyboard"
+  },
+  {
+    "position": [
+      645,
+      243,
+      172,
+      231
+    ],
+    "text": "cup"
+  },
+  {
+    "position": [
+      482,
+      395,
+      80,
+      88
+    ],
+    "text": "mouse"
+  }
+]

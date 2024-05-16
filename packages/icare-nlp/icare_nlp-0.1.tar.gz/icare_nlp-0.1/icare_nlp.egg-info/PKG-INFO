@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: icare-nlp
+Version: 0.1
+Summary: From CV detection to answer questions
+Author-email: 23037086r@connect.polyu.hk
+Keywords: icare,language
+Description-Content-Type: text/markdown
+
+#### 1. 安装
+##### (1). 方法1：使用pip安装
+~~~
+pip install icare-nlp
+Pypi链接: https://pypi.org/project/icare-nlp/
+~~~
+##### (2). 方法2： 使用Source Codes安装
+~~~
+git clone https://github.com/YiyiyiZhao/icare_nlp_tools.git
+cd icare_nlp_tools
+pip install -e .
+pip install -r requirements.txt
+~~~
+
+#### 2. 使用
+##### Quick Start
+~~~
+cd ./examples/scripts
+python run.py
+~~~
+##### 2.0 Task_Disp: 输入User query, 输出对应下列四种的Task类型
+###### (1). Commands
+~~~
+from icare_nlp.task_disp import TaskDisp
+
+task_disp=TaskDisp()
+task_disp.disp_start()
+~~~
+~~~
+#Intent classification
+task_disp=TaskDisp()
+user_query="可以確認下有冇糖不甩？"
+task_disp.intent_classify(user_query)
+#SYSTEM： 我會幫你完成呢個收據問答嘅任務。
+~~~
+###### (2). Demo
+***Object Description and QA***
+![](./examples/figs/object.jpg)
+![](./examples/figs/object_desc_qa_0513.gif)
+***Receipt Description and QA***
+![](./examples/figs/receipt.jpg)
+![](./examples/figs/receipt_desc_qa_0513.gif)
+##### 2.1 Object_Desc: 输入object detection list, 输出场景播报
+~~~
+import json
+from icare_nlp.object_desc import ObjectDesc
+obj_desc=ObjectDesc()
+
+with open("./obj_detect_files/59.json", "r") as f:
+    obj_detect=json.load(f)
+print(obj_detect)
+#[{'position': [1149, 580, 258, 270], 'text': 'chair'}, {'position': [958, 186, 235, 171], 'text': 'tv'}, {'position': [1130, 399, 211, 132], 'text': 'chair'}, {'position': [198, 388, 153, 52], 'text': 'chair'}, {'position': [664, 609, 259, 211], 'text': 'chair'}, {'position': [869, 384, 123, 164], 'text': 'chair'}, {'position': [162, 508, 94, 163], 'text': 'bottle'}, {'position': [785, 309, 56, 36], 'text': 'chair'}, {'position': [620, 341, 152, 177], 'text': 'suitcase'}, {'position': [577, 608, 436, 210], 'text': 'chair'}, {'position': [357, 336, 83, 72], 'text': 'chair'}, {'position': [417, 508, 830, 404], 'text': 'dining table'}, {'position': [862, 545, 121, 178], 'text': 'handbag'}, {'position': [862, 545, 122, 177], 'text': 'backpack'}, {'position': [791, 389, 91, 184], 'text': 'chair'}]
+
+obj_desc_res=obj_desc.form_response(obj_detect)
+print(obj_desc_res)
+
+#而家眼前嘅景象有9把椅, 1台電視, 1瓶樽, 1個行李箱, 1張飯枱, 1個手袋, 1個書包.視線左上角嘅場景入面有1個行李箱.視線左上角嘅場景入面有1把椅.視線右上角嘅場景入面有1台電視.視線右上角嘅場景入面有1把椅.視線左下角嘅場景入面有2把椅.視線左下角嘅場景入面有1瓶樽.視線左下角嘅場景入面有1張飯枱.視線右下角嘅場景入面有5把椅.視線右下角嘅場景入面有1個手袋.視線右下角嘅場景入面有1個書包.
+~~~
+
+##### 2.2 Object_QA: 输入object detection list 和 Question, 输出场景有关的Answer
+~~~
+import json
+from icare_nlp.object_qa import ObjectQA
+obj_qa=ObjectQA()
+with open("./obj_detect_files/24.json", "r") as f:
+    obj_detect=json.load(f)
+print(obj_detect)
+#[{'position': [999, 349, 213, 254], 'text': 'chair'}, {'position': [221, 64, 427, 125], 'text': 'tv'}, {'position': [72, 325, 144, 58], 'text': 'chair'}, {'position': [873, 221, 78, 49], 'text': 'chair'}, {'position': [101, 535, 177, 267], 'text': 'cup'}, {'position': [1013, 589, 211, 253], 'text': 'handbag'}, {'position': [663, 289, 242, 324], 'text': 'suitcase'}, {'position': [1231, 535, 96, 303], 'text': 'chair'}]
+
+
+question="我點樣可以攞到椅子？"
+obj_desc_res=obj_qa.form_response(question,obj_detect)
+print(obj_desc_res)
+#chair喺中心點嘅右上方. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+
+question="手袋喺我手嘅邊個方向？"
+obj_desc_res=obj_qa.form_response(question,obj_detect)
+print(obj_desc_res)
+#handbag喺中心點嘅右上方. 手袋嘅大小各異，由軟皮革至硬合成材料製成。
+
+question="椅子附近有冇其他物體？"
+obj_desc_res=obj_qa.form_response(question,obj_detect)
+print(obj_desc_res)
+#chair最近嘅物件系 chair,handbag,chair.chair喺chair嘅左上方.handbag喺chair嘅右下方.chair喺chair嘅右下方.. 椅子有一個堅硬嘅框架，通常由木頭或金屬製成，座位和背部軟。
+~~~
+
+##### 2.3 Receipt_Desc: 输入Receipt的OCR识别文本, 输出Receipt描述
+~~~
+import json
+from icare_nlp.receipt_desc import ReceiptDesc
+receipt_desc=ReceiptDesc()
+
+
+with open("./ocr_detect_files/ocr_azure.json", "r") as f:
+        ocr_data = json.load(f)
+ocr_text = ""
+for item in ocr_data:
+    ocr_text += item["text"] + '\n'
+
+
+rec_desc_res=receipt_desc.form_response(ocr_text)
+print(rec_desc_res)
+#呢张收据主要嘅信息包括外賣, 點餐時間, 收據號碼, 新加坡海南雞, 點餐號碼, 優惠碼, 当久於, 腸仔猪扒雞扒飯, 秘製燒汁, 白飯, 少鹽, 概沟, 小計, 折扣, 總金額, 付款資料, 付款方式, 扣除金額, 餘額, 卡號, 機號, 發票號碼, 交易時間, 绿联, 深圳市绿联科技股份有限公司, 地址深圳市龙华区龙观西路龙城工业区绿联办公大楼, 电话, 官网, 执行标准
+~~~
+
+##### 2.4 Receipt_QA: 输入Receipt的OCR识别文本 和 Question, 输出Answer [GPT-3.5 assisted]
+~~~
+#!/bin/bash
+export OPEN_API_KEY="your_api_key_here"
+~~~
+~~~
+import json
+from icare_nlp.receipt_qa import ReceiptQA
+receipt_qa=ReceiptQA()
+
+
+with open("./ocr_detect_files/ocr_azure.json", "r") as f:
+        ocr_data = json.load(f)
+ocr_text = ""
+for item in ocr_data:
+    ocr_text += item["text"] + '\n'
+
+question="我總共花咗幾多錢？"
+rec_desc_res=receipt_qa.form_response(ocr_text, question)
+print(rec_desc_res)
+#51.0.
+~~~
+#### 3. Structure and Other Information
+The core structure is: 
+~~~
+├── __init__.py
+├── object_desc.py
+├── object_qa.py
+├── receipt_desc.py
+├── receipt_qa.py
+├── resources
+├── task_disp.py
+└── utils.py
+~~~
+There are some files for you to have a try:
+If you want to try the object description and question answering functions:
+~~~
+./examples/obj_detect_files
+~~~
+If you want to try the receipt description and question answering functions:
+~~~
+./examples/ocr_detect_files
+~~~
