@@ -1,0 +1,2 @@
+[console_scripts]
+eurmlsdk = eurmlsdk.__main__:main
