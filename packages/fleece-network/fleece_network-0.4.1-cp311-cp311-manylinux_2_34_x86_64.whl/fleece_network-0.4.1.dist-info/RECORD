@@ -1,0 +1,8 @@
+fleece_network-0.4.1.dist-info/METADATA,sha256=b_J06rrCXgBejGh1kSySmK4buzF0jyFuwLjxe2hnw5U,318
+fleece_network-0.4.1.dist-info/WHEEL,sha256=-uS3zuN2doHqZEYNDtrODwIpS2TbPVj8Gzsk549lbFo,108
+fleece_network/peer.py,sha256=CWa6Wh5JoYd1-UbBhhQ0_sQl3PjvXGa_k7351-PaaTg,1788
+fleece_network/__init__.py,sha256=iNPSJvqllUvTOxzcaGCzvs8ZjrBLSswCeb3_pqon40U,55
+fleece_network/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fleece_network/serde.py,sha256=vl8v8nIYkX35ajJ1rl1o1ioHdp0WmVjtYQDbq2ShGYk,640
+fleece_network/fleece_network_rust.cpython-311-x86_64-linux-gnu.so,sha256=uHn0Wougd2eDSi5uxVOnDMOs0HjGq2FUdunUuKm0OZU,21694800
+fleece_network-0.4.1.dist-info/RECORD,,
