@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torchsense"
+dynamic = ["version"]
+authors = [
+    {name = "Xingwei Wang", email = "wxwjkl123@gmail.com"},
+]
+description = "Torchsense is a library for sensor data processing with PyTorch"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy","torch","lightning"
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/xibrer/torchsense"
+
+# explicitly list the packages in modules
+#[tool.setuptools]
+#packages = ["torchsense"]
+
+[tool.setuptools_scm]
+
