@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: cryptmoji
+Version: 2.1.2
+Summary: Encrypt Text using emojis!
+Home-page: https://github.com/Siddhesh-Agarwal/cryptmoji
+License: MIT
+Keywords: encryption,emoji,cipher,cryptography,cryptmoji
+Author: Siddhesh Agarwal
+Author-email: siddhesh.agarwal@gmail.com
+Requires-Python: >=3.7.0,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Project-URL: Documentation, https://github.com/Siddhesh-Agarwal/cryptmoji/wiki
+Project-URL: Repository, https://github.com/Siddhesh-Agarwal/cryptmoji
+Description-Content-Type: text/markdown
+
+# 🥷 Cryptmoji
+
+A simple emoji-based encryption-decryption library.
+
+![Downloads](https://static.pepy.tech/personalized-badge/cryptmoji?period=total&units=international_system&left_color=grey&right_color=green&left_text=Downloads)
+_______________________
+
+## 📥 Installation
+
+You can use the [pip](https://pypi.org/project/pip/) package manager to install the library.
+
+```sh
+pip install cryptmoji
+```
+
+or use [poetry](https://python-poetry.org/):
+
+```sh
+poetry add cryptmoji
+```
+
+> Check the [Documentation](https://siddhesh-agarwal.github.io/cryptmoji/)
+
+## 📝 Usage
+
+```python
+from cryptmoji import encrypt, decrypt
+
+text = "Hello, world!"
+key = "random_key" # makes the encryption stronger (optional)
+
+# The encrypt and decrypt functions return the value
+decrypted = decrypt(encrypted, key=key)
+print(decrypted)
+# '🎽🏉🏭🏣🏴🎐🍵🐀🏧🐉🏴🏈🎆'
+
+# The encrypt and decrypt functions change the value in-place too
+decrypted = decrypt(encrypted, key=key)
+print(decrypted)
+# 'Hello, world!'
+```
+
+## Command line tool
+
+### Usage
+
+```sh
+$ cryptmoji encrypt "Hello World" --key "test"
+🎿🏑🏸🏹🐁🍻🏑🐁🐄🏤🏪
+
+$ cryptmoji decrypt "🎿🏑🏸🏹🐁🍻🏑🐁🐄🏤🏪" --key "test"
+Hello World
+```
+
+> **NOTE**: key is an optional parameter. If not provided, the value defaults to `None`.
+
