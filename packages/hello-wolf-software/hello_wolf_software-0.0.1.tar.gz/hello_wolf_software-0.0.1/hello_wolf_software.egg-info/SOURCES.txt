@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+hello_wolf_software.egg-info/PKG-INFO
+hello_wolf_software.egg-info/SOURCES.txt
+hello_wolf_software.egg-info/dependency_links.txt
+hello_wolf_software.egg-info/entry_points.txt
+hello_wolf_software.egg-info/top_level.txt
