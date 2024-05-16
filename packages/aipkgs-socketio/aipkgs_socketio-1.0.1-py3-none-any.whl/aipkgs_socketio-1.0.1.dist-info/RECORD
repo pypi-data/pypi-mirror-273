@@ -1,0 +1,7 @@
+aipkgs_socketio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipkgs_socketio/core.py,sha256=MMm3hSA9TxuY1qG-_P1rw0KfnkuholE7tHWTmHJiUsQ,1096
+aipkgs_socketio/helpers.py,sha256=J-vP830iPMO514ZN2x7MatqXV5NQJ23xgjG4ZypqJpo,5179
+aipkgs_socketio-1.0.1.dist-info/LICENSE.md,sha256=NcfSfhNAiflyILPqbNUsJyBbqmT4nstXkDHRPq8Y70o,1058
+aipkgs_socketio-1.0.1.dist-info/METADATA,sha256=oXvKLzKEGC6k9OkUqvVKe2GhahEmzj-5BmiTY5R8IR0,600
+aipkgs_socketio-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aipkgs_socketio-1.0.1.dist-info/RECORD,,
