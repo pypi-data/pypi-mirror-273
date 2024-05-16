@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: BioTEMPy
+Version: 2.2.0a2
+Summary: TEMPy: a Python Library for Assessment of 3D Electron Microscopy Density Fits
+Home-page: http://tempy.ismb.lon.ac.uk/
+Author: Maya Topf, Daven Vasishtan, Arun Prasad Pandurangan, Irene Farabella, Agnel-Praveen Joseph, Harpal Sahota
+Author-email: tempy-help@cryst.bbk.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+
+UNKNOWN
+

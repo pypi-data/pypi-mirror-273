@@ -1,0 +1,7 @@
+[console_scripts]
+TEMPy.gamma = TEMPy.script.gamma:main
+TEMPy.loqfit = TEMPy.script.loqfit:main
+TEMPy.sccc = TEMPy.script.sccc:main
+TEMPy.scores = TEMPy.script.scores:main
+TEMPy.smoc = TEMPy.script.smoc:main
+
