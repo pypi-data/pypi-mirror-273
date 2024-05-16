@@ -1,0 +1,72 @@
+# https://peps.python.org/pep-0517/
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+# https://peps.python.org/pep-0621/
+[project]
+name = "tracktour"
+description = "Network flow based tracker with guided error correction"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "BSD 3-Clause License" }
+authors = [
+    { email = "ddoncila@gmail.com", name = "Draga Doncila Pop" },
+]
+dynamic = ["version"]
+dependencies = [
+    "gurobipy",
+    "imagecodecs",
+    "networkx",
+    "numpy",
+    "pandas",
+    "pydantic",
+    "scikit-image",
+    "scipy",
+    "tifffile", # maybe should be optional?
+    "typer",
+    "tqdm",
+]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  # "Framework :: napari",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Scientific/Engineering :: Visualization",
+  "Topic :: Scientific/Engineering",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["src"]
+sources = ["src"]
+
+# extras
+# https://peps.python.org/pep-0621/#dependencies-optional-dependencies
+[project.optional-dependencies]
+napari = [
+    "arboretum",
+    "napari",
+    "napari-graph",
+]
+test = ["pytest>=6.0"]
+dev = ["pre-commit"]
+
+[project.urls]
+homepage = "https://github.com/DragaDoncila/tracktour"
+repository = "https://github.com/DragaDoncila/tracktour"
+
+[project.entry-points."napari.manifest"]
+napari-tracktour = "tracktour:napari.yaml"
+
+[project.scripts]
+tracktour = "tracktour.cli:main"
