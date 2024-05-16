@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: proteobench
+Version: 0.2.7b0
+Summary: ProteoBench
+Keywords: proteomics,peptides,retention time,mass spectrometry
+Author-email: Robbin Bouwmeester <robbin.bouwmeester@ugent.be>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: streamlit_extras
+Requires-Dist: streamlit-plotly-events
+Requires-Dist: matplotlib
+Requires-Dist: importlib-metadata; python_version < '3.8'
+Requires-Dist: toml
+Requires-Dist: PyGithub
+Requires-Dist: GitPython
+Requires-Dist: st-pages
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Requires-Dist: sphinx-autobuild ; extra == "docs"
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: pydata-sphinx-theme ; extra == "docs"
+Requires-Dist: streamlit>1.27 ; extra == "web"
+Requires-Dist: scipy ; extra == "web"
+Project-URL: Bug Tracker, https://github.com/ProteoBench/ProteoBench/issues/
+Project-URL: Homepage, https://github.com/ProteoBench
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: web
+
+# ProteoBench
+
+![PyPI - Version](https://img.shields.io/pypi/v/proteobench)
+
+Website: https://proteobench.cubimed.rub.de/
+
+PyPI: https://pypi.org/project/proteobench/
+
+Learn about the ProteoBench project on [proteobench.readthedocs.io](https://proteobench.readthedocs.io/en/latest/).
+
+See [here](https://proteobench.readthedocs.io/en/latest/developer-guide/development-setup/) for how to use ProteoBench locally, and how to contribute.
+

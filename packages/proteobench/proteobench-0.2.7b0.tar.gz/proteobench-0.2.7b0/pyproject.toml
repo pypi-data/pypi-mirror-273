@@ -1,0 +1,56 @@
+[project]
+authors = [
+  {name = "Robbin Bouwmeester", email = "robbin.bouwmeester@ugent.be"},
+] # TODO: Add others
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Development Status :: 4 - Beta",
+]
+
+keywords = ['proteomics', 'peptides', 'retention time', 'mass spectrometry']
+requires-python = ">=3.8"
+dynamic = ["version", "description"]
+dependencies = [
+  "pandas",
+  "openpyxl",
+  "numpy",
+  "plotly",
+  "streamlit_extras",
+  "streamlit-plotly-events",
+  "matplotlib",
+  "importlib-metadata; python_version < '3.8'", # ? can be removed?
+  "toml",
+  "PyGithub",
+  "GitPython",
+  "st-pages",
+]
+license = {file = "LICENSE"}
+name = "proteobench"
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = ["black"]
+docs = ["sphinx", "sphinx-rtd-theme", "sphinx-autobuild", "myst-parser", "pydata-sphinx-theme"]
+web = ["streamlit>1.27", "scipy"]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/ProteoBench/ProteoBench/issues/"
+"Homepage" = "https://github.com/ProteoBench"
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.flake8]
+max-line-length = 120

@@ -1,0 +1,81 @@
+name: Automated Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install build tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+
+    - name: Build wheel
+      run: |
+        python -m build --wheel
+
+    - name: Upload wheel to artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: dist/*.whl
+
+    - name: Create GitHub Release
+      uses: docker://antonyurchenko/git-release:v4
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DRAFT_RELEASE: "false"
+        PRE_RELEASE: "false"
+        CHANGELOG_FILE: "CHANGELOG.md"
+      with:
+        args: |
+          dist/*.whl
+  
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Flit
+      run: python -m pip install flit
+
+    - name: Publish to PyPI
+      env:
+        FLIT_USERNAME: __token__
+        FLIT_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: flit publish --repository pypi
+  
+  update-server:
+    name: Update ProteoBench on server
+    needs: [build-and-release, publish]
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing update script on server
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        port: ${{ secrets.SERVER_PORT }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        key: ${{ secrets.SERVER_KEY }}
+        script_stop: true
+        script: |
+          sudo ~/callupdate.sh
