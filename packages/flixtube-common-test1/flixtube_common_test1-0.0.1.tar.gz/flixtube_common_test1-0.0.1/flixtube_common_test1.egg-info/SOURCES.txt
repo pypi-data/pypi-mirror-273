@@ -1,0 +1,8 @@
+setup.py
+cosmosdb/__init__.py
+cosmosdb/db.py
+flixtube_common_test1.egg-info/PKG-INFO
+flixtube_common_test1.egg-info/SOURCES.txt
+flixtube_common_test1.egg-info/dependency_links.txt
+flixtube_common_test1.egg-info/requires.txt
+flixtube_common_test1.egg-info/top_level.txt
