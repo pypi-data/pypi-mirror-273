@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: PyTcgpr
+Version: 1.3.1
+Summary: Tree-Classifier for gaussian process model (TCGPR) is a data preprocessing algorithm based on the Gaussian correlation among data.
+Home-page: https://github.com/Bin-Cao/TCGPR
+Author: CaoBin
+Author-email: bcao@shu.edu.com
+Maintainer: CaoBin
+Maintainer-email: 17734910905@163.com
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: pandas
+
+Algorithm name: Tree classifier for gaussian process regression
+Tasks : Dataset Partition & Outliers Identification & Features Selection
+Author: Bin CAO <binjacobcao@gmail.com> 
+Guangzhou Municipal Key Laboratory of Materials Informatics, Advanced Materials Thrust,
+Hong Kong University of Science and Technology (Guangzhou), Guangzhou 511400, Guangdong, China
+
+Please feel free to open issues in the Github :
+https://github.com/Bin-Cao/TCGPR
+or 
+contact Mr.Bin Cao (bcao@shu.edu.cn)
+in case of any problems/comments/suggestions in using the code. 
+
