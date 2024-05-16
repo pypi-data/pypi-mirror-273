@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ELSholdings
+Version: 2.2.1
+Summary: Kenwoo project of ELS indexing
+Author-email: HST <ye0077@naver.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+공모 ELS를 자료를 바탕으로 ELS 정보를 분석해 줍니다
