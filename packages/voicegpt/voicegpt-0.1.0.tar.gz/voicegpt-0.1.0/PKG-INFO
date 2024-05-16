@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: voicegpt
+Version: 0.1.0
+Summary: voice cloning with GPT
+Home-page: https://huoyijie.cn
+License: MIT
+Keywords: voice clone,gpt
+Author: huoyijie
+Author-email: yijie.huo@foxmail.com
+Requires-Python: >=3.11.9,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/huoyijie/voicegpt
+Description-Content-Type: text/markdown
+
+# voicegpt

@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "voicegpt"
+version = "0.1.0"
+description = "voice cloning with GPT"
+keywords = ["voice clone", "gpt"]
+authors = ["huoyijie <yijie.huo@foxmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://huoyijie.cn"
+repository = "https://github.com/huoyijie/voicegpt"
+
+[tool.poetry.dependencies]
+python = "^3.11.9"
+
+[tool.poetry.group.dev.dependencies]
+packaging = "^24.0"
+flake8 = "^7.0.0"
+yapf = "^0.40.2"
+pytest = "^8.2.0"
+
+[tool.yapfignore]
+ignore_patterns = [
+  ".conda",
+  ".vscode",
+  "dist",
+  ".git",
+  "__pycache__"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
