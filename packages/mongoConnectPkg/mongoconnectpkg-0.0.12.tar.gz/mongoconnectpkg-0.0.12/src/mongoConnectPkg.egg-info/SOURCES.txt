@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/database_automation/__init__.py
+src/database_automation/mongo_crud.py
+src/mongoConnectPkg.egg-info/PKG-INFO
+src/mongoConnectPkg.egg-info/SOURCES.txt
+src/mongoConnectPkg.egg-info/dependency_links.txt
+src/mongoConnectPkg.egg-info/requires.txt
+src/mongoConnectPkg.egg-info/top_level.txt
+src/mongodb_connect/__init__.py
+src/mongodb_connect/mongo_crud.py
