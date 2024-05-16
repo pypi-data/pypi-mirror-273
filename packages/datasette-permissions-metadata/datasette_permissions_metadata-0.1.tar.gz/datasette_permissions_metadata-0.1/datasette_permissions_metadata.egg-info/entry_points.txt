@@ -1,0 +1,2 @@
+[datasette]
+permissions_metadata = datasette_permissions_metadata

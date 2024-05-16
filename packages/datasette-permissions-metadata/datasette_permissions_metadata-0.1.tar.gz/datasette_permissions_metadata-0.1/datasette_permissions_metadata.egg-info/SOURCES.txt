@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_permissions_metadata/__init__.py
+datasette_permissions_metadata.egg-info/PKG-INFO
+datasette_permissions_metadata.egg-info/SOURCES.txt
+datasette_permissions_metadata.egg-info/dependency_links.txt
+datasette_permissions_metadata.egg-info/entry_points.txt
+datasette_permissions_metadata.egg-info/requires.txt
+datasette_permissions_metadata.egg-info/top_level.txt
+tests/test_permissions_metadata.py
