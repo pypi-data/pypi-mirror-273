@@ -1,0 +1,7 @@
+setup.py
+Gradient/__init__.py
+Gradient/main.py
+simpleGradient.egg-info/PKG-INFO
+simpleGradient.egg-info/SOURCES.txt
+simpleGradient.egg-info/dependency_links.txt
+simpleGradient.egg-info/top_level.txt
