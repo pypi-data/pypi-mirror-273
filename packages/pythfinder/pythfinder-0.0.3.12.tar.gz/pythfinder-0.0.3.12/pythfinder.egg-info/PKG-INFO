@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pythfinder
+Version: 0.0.3.12
+Summary: Motion Planning library designed for FLL teams
+Author: Contraș Adrian
+Author-email: omegacoresincai@gmail.com
+License: MIT
+Keywords: motion-planning,mobile-robots,robotics,first-lego-league,first-robotics,fll
+License-File: LICENSE.txt
