@@ -1,0 +1,7 @@
+taskiq_redis/__init__.py,sha256=aUnGc4tCpKNDHGSBIzkDzqMhOpgdtRY-3kzijUK0k58,67
+taskiq_redis/broker.py,sha256=Rv1rzV9gyKxxuI4RqKGUeU-DA86R5LvxrQlVnrw7Ytk,4163
+taskiq_sqs-0.0.1.dist-info/LICENSE,sha256=wKVouzimXmZeaCj3f48Vua0vk91U4vjrrt2Ax0u3qBs,11342
+taskiq_sqs-0.0.1.dist-info/METADATA,sha256=7gEhcNIkEchTolXFh_KmDaRP8auAjMfHCqb9ggmuxV8,14552
+taskiq_sqs-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+taskiq_sqs-0.0.1.dist-info/top_level.txt,sha256=coGWaRDGRCUhOrhGA467COF-z_L-cMDlossLgE-dxpc,13
+taskiq_sqs-0.0.1.dist-info/RECORD,,
