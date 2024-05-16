@@ -1,0 +1,1 @@
+import aipkgs_notifications.ns as ai_notifications
