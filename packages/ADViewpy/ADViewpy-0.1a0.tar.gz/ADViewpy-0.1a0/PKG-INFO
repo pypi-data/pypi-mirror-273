@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ADViewpy
+Version: 0.1a0
+Summary: ADViewpy is Python Library to visually compare phylogenetic trees
+Author: Ng Weng Shan
+Author-email: ngwengshan025@hotmail.com
+Project-URL: Homepage, https://github.com/Coralnws/ADViewpy-alpha.git
+Keywords: python,phylogenetic tree,aggregrated dendrogram,tree comparison
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+# ADViewpy
+
+ADViewpy is pip package to visually compare phylogenetic trees, utilizing Aggregated Dendrogram for phylogenetic tree 
+visualization. 
+
+## Contributors
+
+### [`Wengshan NG`](https://github.com/Coralnws)
+
+## Installation
+To install ADViewpy, simply do the following command in terminal window:
+
+```powershell
+pip install ADViewpy
+```
+
+## How to start
+
+To start, use the simple import and call init() function.
+
+```powerhsell
+import ADViewpy
+
+ADViewpy.init(treefile=...)
+```
