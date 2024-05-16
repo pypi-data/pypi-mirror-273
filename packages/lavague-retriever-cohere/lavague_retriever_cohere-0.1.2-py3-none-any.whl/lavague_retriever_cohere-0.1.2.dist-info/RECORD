@@ -1,0 +1,5 @@
+lavague/retrievers/cohere/__init__.py,sha256=y0QZEgY3kiRx33C0pLEAkLX2pcH9PWqJbrhQk5cCJzo,59
+lavague/retrievers/cohere/base.py,sha256=8AXuHunZDBbuRu2YVSHZPu5mSBa4owb7pq3nDEqOAN0,1677
+lavague_retriever_cohere-0.1.2.dist-info/METADATA,sha256=-8BiR7kbATBoPYNt5HvyYKWkLMkAGwrrZcCbR3R3Zzk,1132
+lavague_retriever_cohere-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lavague_retriever_cohere-0.1.2.dist-info/RECORD,,
