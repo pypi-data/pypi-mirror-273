@@ -1,0 +1,15 @@
+cnparser/__init__.py,sha256=STi7kvvvbF7l6mRszUxtJ3qyWy1ok7-eL9OIhoi0T8g,241
+cnparser/enrich.py,sha256=AaT9GXwewAFUoLwLPetsFCBHQZD9Z-mSQslBEfRr4fE,3307
+cnparser/load.py,sha256=_vmriGvJjtEGUxacNlIXuiAPIVhqoHKi1SKIOzKY9bM,8112
+cnparser/utility.py,sha256=7soqQo6hrUY7aQlNL1duvvd49lHAtz121uYs3CSXnqY,1138
+cnparser/config/eng_kana.json,sha256=zgWzRomkd0Rm13p1qo5t42D2dpYBACqICykF67jqcg0,1754761
+cnparser/config/file_id.json,sha256=-U-uQ1FfJ8XMeaH1_DDWn0rVViGsKC-jrkDi3r5DVJU,1146
+cnparser/config/header.json,sha256=R3USAzg0N9loOQY5goSQbXHB3okxL5l6f_luw2fxcuk,605
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_enrich.py,sha256=R9Q86W86xRuIyYWpAKRRkGquqrJLLqg99u0hwsTbQFo,3026
+test/test_load.py,sha256=XhkRSQ_xv_MVVKnYJgZkZeo4M4_NVlaxAllAdp4pJJM,3914
+cnparser-1.4.12.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+cnparser-1.4.12.dist-info/METADATA,sha256=jSZniQnctWybkG2UmaU2u8A5d5CHco3e2OtJLtJAg7I,3970
+cnparser-1.4.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cnparser-1.4.12.dist-info/top_level.txt,sha256=NxOXc0Xgw9EGKMYGkI_eqzEVpL-EcqZFocKGF_unEAw,14
+cnparser-1.4.12.dist-info/RECORD,,
