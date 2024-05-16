@@ -1,0 +1,2 @@
+class OverfastException(Exception):
+    pass
