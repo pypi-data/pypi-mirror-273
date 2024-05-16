@@ -1,0 +1,8 @@
+selenium
+webdriver-manager
+pydantic
+requests
+pytest
+playwright
+playwright-stealth
+undetected_chromedriver
