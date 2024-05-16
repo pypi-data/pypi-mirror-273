@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: langchain-xiao
+Version: 0.0.4
+Summary: langchain extension python package
+Author-email: xiaojinli <553555614@qq.com>
+License: MIT
+Project-URL: Documentation, https://github.com/xiaojinlii/langchain-xiao/blob/main/README.md
+Project-URL: Source, https://github.com/xiaojinlii/langchain-xiao
+Keywords: langchain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain-core >=0.1.45
+Requires-Dist: langchain-community >=0.0.34
+Requires-Dist: pydantic <=1.10.15
+
+# langchain-xiao
+langchain扩展包
+
+## 安装
+```
+pip install langchain-xiao
+```
