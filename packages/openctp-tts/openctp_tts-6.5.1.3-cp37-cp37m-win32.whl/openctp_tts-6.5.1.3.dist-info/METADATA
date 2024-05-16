@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: openctp-tts
+Version: 6.5.1.3
+Summary: A package for OPENCTP TTS
+Home-page: https://github.com/openctp/openctp-tts-python
+Author: Jedore
+Author-email: jedorefight@gmail.com
+License: BSD-3-Clause
+Keywords: openctp,tts,ctpapi,trading,investment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openctp-tts
+
+[![PyPI - Python Version](https://badgen.net/badge/python/3.7|3.8|3.9|3.10|3.11|3.12/blue)](https://pypi.org/project/openctp-tts)
+
+-----
+
+## Installation
+
+```console
+pip install openctp-tts==6.3.15.*
+pip install openctp-tts==6.3.19.*
+pip install openctp-tts==6.5.1.*
+pip install openctp-tts==6.6.1.*
+pip install openctp-tts==6.6.7.*
+pip install openctp-tts==6.6.9.*
+pip install openctp-tts==6.7.0.*
+pip install openctp-tts==6.7.1.*
+pip install openctp-tts==6.7.2.*
+```
+
+## Example
+
+[Demo](https://github.com/openctp/openctp-tts-python/tree/main/demo)
+
+```python
+from openctp_tts import mdapi, tdapi
+
+md_api = mdapi.CThostFtdcMdApi.CreateFtdcMdApi("market")
+td_api = tdapi.CThostFtdcTraderApi.CreateFtdcTraderApi('user_id')
+```
+
+## License
+
+`openctp-tts` is distributed under the terms of
+the [BSD-3-Clause](https://github.com/openctp/openctp-tts-python/blob/main/LICENSE) license.
+
