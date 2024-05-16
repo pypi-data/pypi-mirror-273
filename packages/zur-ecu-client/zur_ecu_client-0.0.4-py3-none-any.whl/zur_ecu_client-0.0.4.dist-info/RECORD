@@ -1,0 +1,15 @@
+zur_ecu_client/__init__.py,sha256=-M1Oc3A5aWQ5dozvGlBLB_ur2qdPWTtFW1F7epIB278,149
+zur_ecu_client/ecu_client.py,sha256=6R7u7qIa68tLsta4cwAljfF4g9L__-ZYZpXD46Ztehc,4017
+zur_ecu_client/ecu_server.py,sha256=jaeRDYPMdSG0mgPe_FB3-Z2-4Uy3RGKXPcstbg2R6z0,3607
+zur_ecu_client/messages.py,sha256=VgIv2qkVeOovbsnQGzTmwfJvxJD2gmyo0jVXOIkmxKE,12822
+zur_ecu_client/senml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zur_ecu_client/senml/senml_base.py,sha256=EC2GboXlq0lYj_Mcn1fHb9v2Wb9S0e7FlXVMIfRS804,1498
+zur_ecu_client/senml/senml_pack.py,sha256=yNRkoyPU2kB9tFhWbmEFRpccRmFVKxJFZTnxzCCu9oE,10020
+zur_ecu_client/senml/senml_record.py,sha256=_bVQCxrkpjYncY6mrt4lwJgAJ1lODp_6KssUX9KxgO8,9445
+zur_ecu_client/senml/senml_unit.py,sha256=mZp80-uOzU0L06l3v-wPj0D5T44cJD0RNadnTkeiaAM,2143
+zur_ecu_client/senml/senml_zur_names.py,sha256=gca7ciLn0sRUZGJYYqLBd2d1IYFQ7zhEPfDnpD0e1ag,1421
+zur_ecu_client-0.0.4.dist-info/METADATA,sha256=d4Q-jeDpIprZsk-4dYb8CJplN4yM_DJDm_X_zusWZxU,2759
+zur_ecu_client-0.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+zur_ecu_client-0.0.4.dist-info/entry_points.txt,sha256=xPp6vFitqG85D-kOcIEWjIZmvD2l53YiMbrwjZFpjZw,39
+zur_ecu_client-0.0.4.dist-info/licenses/LICENSE.txt,sha256=wg2Q9C8VgIVmt_bARNMIbgJ6o5JvtaR3Ku1xGXc2LKw,1070
+zur_ecu_client-0.0.4.dist-info/RECORD,,
