@@ -1,0 +1,3 @@
+[console_scripts]
+ddpaw=ddpaw.cli:cli
+
