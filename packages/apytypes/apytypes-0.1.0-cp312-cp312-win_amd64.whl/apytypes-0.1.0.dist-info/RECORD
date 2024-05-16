@@ -1,0 +1,9 @@
+apytypes-0.1.0.dist-info/METADATA,sha256=Kb92zBIsTsALpLJcnx31lcxasXQipXXVBXsKYHyq_qI,3318
+apytypes-0.1.0.dist-info/WHEEL,sha256=50PeAbplA6PkI0hYOYoeacB9US1R6EguyfOnsccH0WU,85
+apytypes/_apytypes.cp312-win_amd64.pyd,sha256=FPd3KCmu6HPZXnsaFWSBLWAMJG3K3mR87ssEP69Cs-Q,626688
+apytypes/_apytypes.cp312-win_amd64.lib,sha256=jt7Awk7KY0uNRqNfFTMLD6kkq9oRlLFrgTF-FtLFuqc,9312
+apytypes/__init__.py,sha256=tQhOmTJGkMQv9QDjNy7t0vkO_agU13fEca8jzXOnC3I,3443
+apytypes/__init__.pyi,sha256=sMkNv6G6xs0nMNzBpE2msm4bPNgzP-et-9ITj0TOEQI,1274
+apytypes/_apytypes.pyi,sha256=koVWZUW6icWC0Z-G2sdqoGhsti0gU-CB1gw8pgNrImM,49449
+apytypes/_version.py,sha256=ZwnKKsXvMjXcGiq1ZLxYK5dqEeQLvaFuB_XDxPxP0MM,19
+apytypes-0.1.0.dist-info/RECORD,,
