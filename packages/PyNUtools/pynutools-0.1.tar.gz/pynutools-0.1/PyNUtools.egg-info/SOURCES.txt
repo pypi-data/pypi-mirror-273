@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+PyNUtools/__init__.py
+PyNUtools.egg-info/PKG-INFO
+PyNUtools.egg-info/SOURCES.txt
+PyNUtools.egg-info/dependency_links.txt
+PyNUtools.egg-info/top_level.txt
