@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: extractcode-libarchive-system-provided
+Version: 32.0.0
+Summary: A ScanCode path provider plugin to provide a system package provided libarchive shared library.
+Home-page: https://github.com/nexB/scancode-plugins
+Author: nexB
+Author-email: info@aboutcode.org
+License: apache-2.0 AND bsd-simplified
+Keywords: open source,extractcode,libarchive
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+License-File: LICENSE.txt
+License-File: README.rst
+License-File: apache-2.0.LICENSE
+
+A ScanCode path provider plugin to provide a system package provided libarchive shared library.
