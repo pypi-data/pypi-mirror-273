@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fastapi-ext-pkg
+Version: 0.1.0
+Summary: A well-tailored utility set for FastAPI.
+Author-email: Dotz Developers <devs-dotz@dotz.com>
+Project-URL: Repository, https://github.com/DotzInc/fastapi-ext-pkg
+Keywords: fastapi,utilities
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+
+# FastAPI Extension Package
+
+![Tests](https://github.com/DotzInc/fastapi-ext-pkg/actions/workflows/tests.yml/badge.svg?event=push)
+![PyPI - Version](https://img.shields.io/pypi/v/fastapi-ext-pkg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fastapi-ext-pkg)
+
+A well-tailored utility set for FastAPI.
+
+## Requirements
+
+* Python 3.8+
+
+## Installation
+
+To install FastAPI Extension Package, use pip:
+
+```sh
+pip install fastapi-ext-pkg
+```
