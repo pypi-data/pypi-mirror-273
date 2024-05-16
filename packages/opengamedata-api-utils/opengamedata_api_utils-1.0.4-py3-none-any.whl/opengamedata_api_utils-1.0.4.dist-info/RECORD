@@ -1,0 +1,12 @@
+ogd/apis/__init__.py,sha256=qWHztapao434BP-4LMQRCt7MFUnmHnDgidlstfqCBFs,77
+ogd/apis/schemas/ServerConfigSchema.py,sha256=mTbwfc1ex5mrQzxbyX5PzF-SujtTOqrPY8cydm3WQ9E,3197
+ogd/apis/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ogd/apis/utils/APIResponse.py,sha256=eBS_yuGN1ytZ5_4pIGpbFuGi5kpwYQbQlcb2-shmrFQ,4649
+ogd/apis/utils/APIUtils.py,sha256=X8yldR3AUR9LMc1ZkmdPz9o3oibIFGGhxMUe9DvuLpI,3846
+ogd/apis/utils/HelloAPI.py,sha256=rj4dx-oIEBjRkgkvP57VvL8ekJ4cYHQS5bz-IoFVWPA,2888
+ogd/apis/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opengamedata_api_utils-1.0.4.dist-info/LICENSE,sha256=p2QynzEe2KMyQLBKHb41p2oZxK4toaGcc8ZrnBnHIL4,1069
+opengamedata_api_utils-1.0.4.dist-info/METADATA,sha256=bK0LuhdYBTrZpRL18tF_vPtybrudqA_fTryMjFtrflw,2264
+opengamedata_api_utils-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+opengamedata_api_utils-1.0.4.dist-info/top_level.txt,sha256=gZVrF-aGvxT8hZEtduJabH2L6PQtUEL5BzMiz3sw5R4,4
+opengamedata_api_utils-1.0.4.dist-info/RECORD,,
