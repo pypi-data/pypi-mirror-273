@@ -1,0 +1,8 @@
+korean_regex-0.2.0.dist-info/METADATA,sha256=Lz9zMAgoTHLF7DSiOACdlCcFepjuKUOQSXQTimO5n2c,8165
+korean_regex-0.2.0.dist-info/WHEEL,sha256=mmu2E0mKgwj7RU_goBCp9zGID39rD2A9DEmV3gS8Cpw,129
+korean_regex-0.2.0.dist-info/license_files/LICENSE,sha256=9KqHW6WsddYU3LZAJWdcoup6yqzeYALHYmKOWll14as,1068
+kre/_regex.py,sha256=UHjguAIKin4oxsniTFkdWhAg0_Bgb2x-8PqQi2lLzsk,4776
+kre/__init__.py,sha256=xUZXye5GPZ8ieyqEp8JDWYRrAI9M-tsxc-cSUH-EM0A,1047
+kre/_core.pyi,sha256=9dXadYUOSg5c8C6-ztn2sEL48qInXiZfMIDxJi-Dj88,256
+kre/_core.cpython-312-x86_64-linux-gnu.so,sha256=1Eu6vfiaeHFjLoKY0YDEE9eMEX6I9eb9f7t5C6c6VHQ,6231208
+korean_regex-0.2.0.dist-info/RECORD,,
