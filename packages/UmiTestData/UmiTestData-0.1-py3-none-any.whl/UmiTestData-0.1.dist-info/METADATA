@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: UmiTestData
+Version: 0.1
+Summary: A simple tool to generate random test data
+Home-page: https://github.com/kazuya-2006-26
+Author: UmiCore - Kazuya
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: random
+Requires-Dist: time
+Requires-Dist: json
+Requires-Dist: string
+Requires-Dist: datetime
+
