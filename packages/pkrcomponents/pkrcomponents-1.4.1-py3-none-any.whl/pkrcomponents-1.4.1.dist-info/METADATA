@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pkrcomponents
+Version: 1.4.1
+Summary: A Poker Package
+Home-page: https://github.com/manggy94/PokerComponents
+Author: Alexandre MANGWA
+Author-email: alex.mangwa@gmail.com
+License: MIT
+Keywords: poker pkrcomponents pkr
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Board Games
+License-File: LICENSE.txt
+Requires-Dist: cached-property
+Requires-Dist: coverage
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: parsedatetime
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+
+UNKNOWN
+
