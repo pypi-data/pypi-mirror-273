@@ -1,0 +1,10 @@
+README.md
+setup.py
+base_package_velsis.egg-info/PKG-INFO
+base_package_velsis.egg-info/SOURCES.txt
+base_package_velsis.egg-info/dependency_links.txt
+base_package_velsis.egg-info/requires.txt
+base_package_velsis.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/connector.py
