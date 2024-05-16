@@ -1,0 +1,12 @@
+six
+xsdata
+
+[test]
+beautifulsoup4
+brazilfiscalreport
+erpbrasil.assinatura
+pytest
+pytest-cov
+requests
+tox
+xmldiff
