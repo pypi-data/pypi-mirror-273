@@ -1,0 +1,337 @@
+from typing import Iterable, Literal
+
+source_label_dict = {
+    "gmwnews": "Enlightenment Daily",
+    "sina_news": "Sina News",
+    "xueqiu": "Xueqiu (Snowball Finance)",
+    "peoplenews": "People's Daily",
+    "qnb": "China Youth Daily",
+    "dagongdaily": "Ta Kung Pao",
+    "xianggangwenhuidaily": "Wen Wei Po",
+    "xinhuameiridaily": "Xinhua Daily",
+    "local": "Local News",  # what is this
+    "dazhongdaily": "Dazhong Daily",
+    "yicai": "Yicai",
+    "guizhoudaily": "Guizhou Daily",
+    "hainandaily": "Hainan Daily",
+    "fujiandaily": "Fujian Daily",
+    "hubeidaily": "Hubei Daily",
+    "zhongguoribaodaily": "China Daily",
+    "hunandaily": "Hunan Daily",
+    "guangmingdaily": "Enlightenment Daily",
+    "ben": "Beijing Evening News",
+    "xinmin": "Xinmin Evening News",
+    "rmzxb": "CPPCC Daily",
+    "zejiangdaily": "Zhejiang Daily",
+    "gongrenribaodaily": "Workers' Daily",
+    "jiangxidaily": "Jiangxi Daily",
+    "sszn": "Shenzhen Special Zone Daily",
+    "neimenggudaily": "Inner Mongolia Daily",
+    "anhuidaily": "Anhui Daily",
+    "sichuandaily": "Sichuan Daily",
+    "jcrb": "Procuratorate Daily",
+    "zhongguoqingniandaily": "China Youth News",
+    "nongmindaily": "Farmers' Daily",
+    "henandaily": "Henan Daily",
+    "xinhuanet": "Xinhua News",
+    "rmrbhwb": "People's Daily Overseas Edition",
+    "bjd": "Beijing Daily",
+    "szsb": "Shenzhen Economic Daily",
+    "tianjindaily": "Tianjin Daily",
+    "stdaily": "Science & Technology Daily",
+    "xinjiangdaily": "Xinjiang Daily",
+    "zhongguojiaoyudaily": "China Education Daily",
+    "jfjbmap": "PLA Daily",
+    "jilindaily": "Jilin Daily",
+    "zhongguoxinxidaily": "China Information Daily",
+    "OfficeOfTheCentralCyberspaceAffairsCommision": "Central Cyberspace Affairs Commission",
+    "jjckb": "Economic Information Daily",
+    "cicn": "China Market Regulation News",
+    "renmingongandaily": "China Police Daily",
+    "zhongguoshehuidaily": "China Society Daily",
+    "zgshbnews": "China Society Daily",
+    "cnfood": "China Food News",
+    "central": "Central News",
+    "laoningdaily": "Liaoning Daily",
+    "ctn": "China Tourism News",
+    "xinhuadaily": "Xinhua Daily",
+    "ynetnews": "Beijing Youth Post",
+    "xfrb": "Consumption Daily",
+    "cpdnews": "China Police Daily",
+    "comnews": "International Business Daily",
+    "StateOwnedAssetsSupervisionAndAdministrationCommision": "State-Owned Assets Supervision and Administration Commission",
+    "guangxidaily": "Guangxi Daily",
+    "zhongguoxiaofeizhedaily": "China Consumer Journal",
+    "heilongjiangdaily": "Heilongjiang Daily",
+    "pcn": "People's Court Daily",
+    "jingji": "21st Century Business Herald",
+    "jiaotonganquanzhoukandaily": "Traffic Safety Weekly",
+    "CommunistPartyOfChina": "Communist Party of China",
+    "MinistryOfCultureAndTourism": "Ministry of Culture and Tourism",
+    "cnii": "People's Post & Telecom",
+    "bbtnews": "Beijing Business Today",
+    "MinistryOfAgricultureAndRuralAffairs": "Ministry of Agriculture and Rural Affairs",
+    "shfzb": "Shanghai Law Journal",
+    "wenyibaodaily": "Literature and Art Newspaper",
+    "StateCouncil": "State Council",
+    "zhongguotiedaodaily": "People's Railway Post",
+    "xizangdaily": "Tibet Daily",
+    "zhongguoyingjiguanlidaily": "China Emergency Management News",
+    "jiefangdaily": "Liberation Daily",
+    "chongqingdaily": "Chongqing Daily",
+    "cctv": "CCTV",
+    "cb": "China Business Journal",
+    "sciencenet": "China Science Daily",
+    "zhongguoguofangdaily": "China National Defense News",
+    "InstituteOfPartyHistoryAndLiterature": "Institute of Party History and Literature",
+    "ceh": "China Economic Herald",
+    "ctdnews": "China Trade News",
+    "ChinaPostGroupCompanyLimited": "China Post",
+    "zhongguohuanjingdaily": "China Environment News",
+    "PowerConstructionCorporationOfChinaLTD": "Power Construction Corporation of China",
+    "zgshb": "China Petrochemical News",
+    "MinistryOfCivilAffairs": "China Ministry of Civil Affairs",
+    "MinistryOfCommerce": "China Ministry of Commerce",
+    "CentralCommissionForDisciplineInspection": "China Central Commission for Discipline Inspection",
+    "zzyzb": "China Post News",
+    "chinahightech": "China High-Tech Industry Herald",
+    "zhongguoyiyaodaily": "China Pharmaceutical News",
+    "StateAdministrationOfTraditionalChineseMedicine": "State Administration of Traditional Chinese Medicine",
+    "gansudaily": "Gansu Daily",
+    "MinistryOfVeternalAffaires": "Ministry of Veteran Affairs",
+    "zhongguohangkongdaily": "China Aviation News",
+    "MinistryOfFinance": "China Ministry of Finance",
+    "NationalEthnicsAffairsCommission": "National Ethnics Affairs Commission of China",
+    "MinistryOfIndustryAndInformationTechnology": "China Ministry of Industry and Information Technology",
+    "NationalDevelopmentAndReformCommission": "National Development and Reform Commission of China",
+    "MinistryOfForeignAffairs": "China Ministry of Foreign Affairs",
+    "MinistryOfHumanResourcesAndSocialSecurity": "China Ministry of Human Resources and Social Security",
+    "MinistryOfDefense": "China Ministry of Defense",
+    "gongyishibao": "China Philanthropy News",
+    "jjrb": "China Economic Daily",
+    "shanxi2daily": "Shaanxi Daily",
+    "zzdzb": "China Electronic News",
+    "MinistryOfEcologyAndEnvironment": "China Ministry of Ecology and Environment",
+    "InternationalDepartment": "International Department of CPC",
+    "caacmedia": "CAAS News",
+    "NationalEnergyAdministration": "National Energy Administration of China",
+    "ChinaInspectionandCertificationGroup": "China Inspection and Certification Group",
+    "StateAdministrationForMarketRegulation": "State Administration for Market Regulation of China",
+    "ChinaAerospaceScienceAndTechnologyCorporation": "China Aerospace Science and Technology Corporation",
+    "routeryun": "Labor Daily",
+    "ChinaCivilizationNetwork": "China Civilization Network",
+    "ChinaInternationalDevelopmentCooperationAgency": "China International Development Cooperation Agency",
+    "zycg": "China Government Procurement Platform",
+    "StateAdministrationOfForeignExchange": "China State Administration of Foreign Exchange",
+    "TaiwanWorkOffice": "China Taiwan Work Office",
+    "NationalIntellectualPropertyAdministration": "National Intellectual Property Administration of China",
+    "MinistryOfEmergencyManagement": "China Ministry of Emergency Management",
+    "AgriculturalDevelopmentBankofChina": "Agricultural Development Bank of China",
+    "MinistryOfEducation": "China Ministry of Education",
+    "CommissionForPoliticalAndLegalAffairs": "China Commission for Political and Legal Affairs",
+    "zhongguojiaoshidaily": "China Teacher News",
+    "StateAdministrationOfTaxation": "China State Administration of Taxation",
+    "NationalNuclearSafetyAdministration": "National Nuclear Safety Administration of China",
+    "zzzzrsb": "China Organization and Human Resources Post",
+    "MinistryOfScienceAndTechnology": "China Ministry of Science and Technology",
+    "NationalFoodAndStrategicReserveAdminstration": "National Food and Strategic Reserve Administration of China",
+    "ChinaBuildingMaterialsGroupCoLtd": "China Building Materials Group",
+    "ningxiadaily": "Ningxia Daily",
+    "AluminumCorporationOfChinaLtd": "Aluminum Corporation of China",
+    "ChinaPublishingGroupCoLTD": "China Publishing Group",
+    "zzqyb": "China Enterprise Newspaper",
+    "ChinaTelecom": "China Telecom",
+    "zhongguokuangyedaily": "China Mining News",
+    "NationalCultureHeritageAdministration": "National Culture Heritage Administration of China",
+    "ChinaCoalGeologyAdministration": "China Coal Geology Administration",
+    "zgqxb": "China Meteorological News",
+    "ChinaNorthIndustriesGroupCorporationLimited": "China North Industries Group Corporation",
+    "ChinaStateConstructionGroupCoLtd": "China State Construction Group",
+    "DongfengMotorGroupCoLtd": "Dongfeng Motor Group",
+    "CentralCommitteeOfTheCommunistPartyOfChina": "Central Committee of the Communist Party of China",
+    "NationalEnergyGroup": "National Energy Group of China",
+    "StateArchivesBureau": "State Archives Bureau of China",
+    "ChinaEnergyConservationEnvironmentalProtectionGroupCoLtd": "China Energy Conservation Environmental Protection Group",
+    "ChinaHuanengGroupCorporation": "China Huaneng Group Corporation",
+    "HongKongAndMacauAffairsOffice": "Hong Kong and Macau Affairs Office of China",
+    "ChinaChengtongHoldingGroupCoLtd": "China Chengtong Holding Group",
+    "ChinaNationalRailwayGroupCorporationLTD": "China National Railway Group Corporation",
+    "ChinaNationalOffshoreOilCorporationLTD": "China National Offshore Oil Corporation",
+    "HarbinElectricGroupCoLtd": "Harbin Electric Group",
+    "ChinaNanguangGroupCoLTD": "China Nanguang Group",
+    "ChinaHuarongAssetManagementCoLtd": "China Huarong Asset Management",
+    "ChinaInternationalTechnicalIntelligenceCoLTD": "China International Technical Intelligence",
+    "BankofChinaCorporationLimited": "Bank of China",
+    "MinistryOfNaturalResources": "China Ministry of Natural Resources",
+    "ChinaGeneralNuclearPowerCorporationLtd": "China General Nuclear Power Corporation",
+    "ChinaSaltIndustryGroupCoLtd": "China Salt Industry Group",
+    "ChinaNationalPharmaceuticalGroupCoLtd": "China National Pharmaceutical Group",
+    "CentralPeopleGovernmentOfThePeopleRepublicOfChina": "Central People's Government of China",
+    "YouyanTechnologyGroupCoLtd": "Youyan Technology Group",
+    "zhongguoshangbaodaily": "China Business Herald",
+    "ChinaFirstHeavyGroupCoLtd": "China First Heavy Group",
+    "ChinaDevelopmentBank": "China Development Bank",
+    "BankingAndInsuranceRegulatoryCommission": "China Banking and Insurance Regulatory Commission",
+    "CommercialAircraftCorporationChinaLtd": "Commercial Aircraft Corporation",
+    "ChinaResourcesGroupCoLtd": "China Resources Group",
+    "MinistryOfWaterResources": "China Ministry of Water Resources",
+    "AuditOffice": "Audit Office of China",
+    "TheUnitedFrontWorkDepartment": "United Front Work Department",
+    "COFCOGroupCoLtd": "COFCO Group",
+    "ChinaMerchantsGroup": "China Merchants Group",
+    "cien": "China Industrial Economy News",
+    "zhongguominzhudaily": "China Ethnic Affairs Post",
+    "ChinaSecuritiesRegulatoryCommission": "China Securities Regulatory Commission",
+    "GeneralAdministrationMetallurgicalGeologyChina": "China Metallurgical Geology Bureau",
+    "MinistryOfTransport": "China Ministry of Transport",
+    "OverseasChineseTownGroupCoLtd": "Overseas Chinese Town Group",
+    "ChinaRailwaySignalCommunicationGroupCoLtd": "China Railway Signal Communication Group",
+    "NationalGovernmentOfficesAdmin": "National Government Offices Administration of China",
+    "PipelineChina": "National Pipeline Group",
+    "StateSecrecyBureau": "National Administration of State Secrets Protection of China",
+    "BankofCommunicationsCoLtd": "Bank of Communications",
+    "ChinaTaipingInsuranceGroupCo": "China Taiping Insurance Group",
+    "ChinaStateShipbuildingCorporation": "China State Shipbuilding Corporation",
+    "StateAdministrationBureau": "China National Government Offices Administration",
+    "ChinaGoldGroupCoLtd": "China Gold Group",
+    "ChinaFAWGroupCoLtd": "China FAW Group",
+    "zhongguohangtiandaily": "China Space News",
+    "ChinaDevelopmentInvestmentGroupCoLtd": "China Development Investment Group",
+    "ChinaNationalAviationGroupCoLTD": "China Natinal Aviation Group",
+    "ChinaOceanShippingGroupCoLTD": "China Ocean Shipping Group",
+    "ChinaLifeInsuranceGroupCorporation": "China Life Insurance Group",
+    "ChinaGrainReservesManagementGroupCoLTD": "China Grain Reserves Management Group",
+    "ChinaConstructionTechnologyCoLtd": "China Construction Technology",
+    "AnshanIronSteelGroupCoLtd": "Anshan Iron Steel Group",
+    "CentralGovernmentBondRegistrationClearingCoLtd": "China Central Depository & Clearing",
+    "ChinaCoalTechnologyIndustryGroupCoLTD": "China Coal Technology & Engineering Group",
+    "CounsellorOfficeAndCentralInstitueForCultureAndHistory": "China Counsellors' Office of the State Council",
+    "ChinaPolyGroupCoLtd": "China Poly Group",
+    "Pkulaw": "Peking University Law School",
+    "ChinaOrientAssetManagementCoLtd": "China Orient Asset Management",
+    "ChinaSinochemGroupCoLtd": "China Sinochem Group",
+    "ChinaConstructionBankLTD": "China Construction Bank",
+    "zhonghuadushudaily": "China Reading Weekly",
+    "ChinaForestryGroupCoLtd": "China Forestry Group",
+    "NationalImmigrationAdministration": "China National Immigration Administration",
+    "xsdb": "Student Herald",
+    "NationalPublicComplaintsAndProposalsAdministration": "National Public Complaints and Proposals Administration",
+    "AgriculturalBankofChinaCoLtd": "Agricultural Bank of China",
+    "ChinaRailwayRollingStockCorporationLtd": "China Railway Rolling Stock Corporation",
+    "ChinaNationalTobaccoCorporation": "China National Tobacco Corporation",
+    "NationalHealthcareSecurityAdministration": "China National Healthcare Security Administration",
+    "ChinaTobacco": "China Tobacco",
+    "cqnnews": "China Quality Daily",
+    "ChinaCommunicationsConstructionGroupCoLtd": "China Communications Construction Group",
+    "ChinaGreatWallAssetManagementCoLtd": "China Great Wall Asset Management",
+    "StatePostBureau": "China State Post Bureau",
+    "NationalCryptographyAdministration": "China National Cryptography Administration",
+    "ChinaExportCreditInsuranceCorporation": "China Export Credit Insurance Corporation",
+    "zhongguowenhuadaily": "China Culture Daily",
+    "ChinaUnitedNetworkCommunicationsGroupCoLtd": "China United Network Communications Group",
+    "ChinaGalaxyInvestmentManagementCoLtd": "China Galaxy Investment Management",
+    "ChinaJianyinInvestmentcoLTD2": "China Jianyin Investment",
+    "ChinaRailwayMaterialsGroupCoLtd": "China Railway Materials",
+    "ChinaEverbrightGroupCorporation": "China Everbright Group",
+    "ChinaDongfangElectricGroupCoLtd": "Dongfang Electric Corporation",
+    "SinosteelGroupCoLTD": "Sinosteel",
+    "ChinaInvestmentCorporationLimited": "China Investment Corporation",
+    "ChinaCivilAviationInformationGroupCoLtd": "Civil Aviation Administration of China",
+    "ChinaAeroEngineCorporation": "Aero Engine Corporation of China",
+    "ChinaXDGroupCoLtd": "China XD Group",
+    "StateForestryAndGrasslandAdministration": "State Forestry and Grassland Administration",
+    "ChinaHuadianGroupCorporation": "China Huadian Corporation",
+    "MiningMetallurgyTechnologyGroupCoLtd": "Mining Metallurgy Technology Group",
+    "zhongguocaijingdaily": "China Financial and Economic News",
+    "PeopleBankOfChina": "People's Bank of China",
+    "ChinaCindaAssetManagementCoLtd": "China Cinda Asset Management",
+    "ChinaNationalCoalGroupCoLTD": "China National Coal Group",
+    "ChinaNationalMachineryIndustryGroupCoLtd": "China National Machinery Industry Group",
+    "ChinaHualuGroupCoLTD": "China Hualu Group",
+    "ChinaguoxinholdingcoLTD": "China Reform Holdings",
+    "ChinaGalaxyFinancialHoldingCoLtd": "China Galaxy Financial Holding",
+    "ChinaForeignCultureGroupCoLTD": "China Foreign Culture Group",
+    "ChinaMinmetalsCorporationLTD": "China Minmetals Corporation",
+    "CoalMineSafetySupervisionBureau": "Coal Mine Safety Supervision Bureau",
+    "zhongguodianshidaily": "China Television News",
+    "ChinaGeneralTechnologyCoLTD": "China General Technology",
+    "nfrb": "Southern Daily",
+    "StateAdministrationOfRadioAndTelevision": "State Administration of Radio and Television",
+    "ChinaTourismGroupCoLtd": "China Tourism Group",
+    "GeneralAdministrationOfSport": "General Administration of Sport",
+    "MinistryOfJustice": "Ministry of Justice",
+    "NationalRailwayAdministration": "National Railway Administration",
+    "fzbnews": "Textiles Post",
+    "zqrb": "Securities Daily",
+    "cbmd": "China Building Materials News",
+    "zhongguoshuiwu": "China Tax Newspaper",
+}
+
+
+def get_source_labels(
+    sources: str | Iterable[str],
+    *,
+    when_not_found: Literal["preserve", "set_none", "set_unknown", "raise_error"] = "preserve",
+    source_label_dict: dict = source_label_dict,
+):
+    """Get source labels for a source or list of source.
+
+    Args:
+        `source`: The list of inputs to get source labels for.
+        `when_not_found`: The action to take when a source label is not found.
+            - `"preserve"`: Preserve the source name as the source label.
+            - `"set_none"`: Set the source label to None.
+            - `"set_unknown"`: Set the source label to "unknown".
+            - `"raise_error"`: Raise an error if a source label is not found.
+        `source_label_dict`: A dictionary mapping source names to source labels.
+        Set this value to override the default source label dictionary.
+
+    Returns:
+        A string or list of strings of source labels for the sources.
+
+    Raises:
+        ValueError: If the when_not_found value is not recognized.
+        ValueError: If the source(s) are not a string or a string iterable.
+        ValueError: If when_not_found is set to "raise_error" and a source label is not found.
+    """
+
+    if when_not_found not in [
+        "preserve",
+        "set_none",
+        "set_unknown",
+        "raise_error",
+    ]:
+        raise ValueError(f"Unknown label_when_not_found value: {when_not_found}")
+
+    if not isinstance(sources, Iterable) and not isinstance(sources, str):
+        raise TypeError(
+            f"source(s) must be a string or string iterable but instead got: {type(sources).__name__}"
+        )
+
+    is_single_input = isinstance(sources, str)
+
+    if is_single_input:
+        sources = [sources]
+
+    source_labels = []
+    for source in sources:
+        if source in source_label_dict:
+            source_labels.append(source_label_dict[source])
+
+        else:
+            if when_not_found == "preserve":
+                source_labels.append(source)
+
+            elif when_not_found == "set_none":
+                source_labels.append(None)
+
+            elif when_not_found == "set_unknown":
+                source_labels.append("unknown")
+
+            elif when_not_found == "raise_error":
+                raise ValueError(f"key '{source}' not found in dict")
+
+    if is_single_input:
+        return source_labels[0]
+
+    return source_labels
