@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+mertpdf.egg-info/PKG-INFO
+mertpdf.egg-info/SOURCES.txt
+mertpdf.egg-info/dependency_links.txt
+mertpdf.egg-info/top_level.txt
