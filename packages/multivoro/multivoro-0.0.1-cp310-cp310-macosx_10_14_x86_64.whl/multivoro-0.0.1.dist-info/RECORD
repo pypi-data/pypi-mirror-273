@@ -1,0 +1,7 @@
+multivoro-0.0.1.dist-info/RECORD,,
+multivoro-0.0.1.dist-info/WHEEL,sha256=V9LLVA1aV-KeDiweCUU2CjSnqnj3IUr_wuWt5NsUcxY,115
+multivoro-0.0.1.dist-info/METADATA,sha256=NwCGJKwTFVJmG2NSoHMZc5DqlLZjin1-EoTnsJvYb9k,4302
+multivoro-0.0.1.dist-info/licenses/LICENSE,sha256=SIMKihh8W0xwLZWPtxVRwE3n_YZyuLlUEnRzNT4Oenc,2402
+multivoro/_multivoro.cpython-310-darwin.so,sha256=1v9CpDwPlc93Rp9F4eRbiMky5CYRiGk-KUvCE4MQof8,192696
+multivoro/__init__.py,sha256=vOIIUNaNkO3_6XUjpagheLk5uQ5-7hTEYlXSyUhJ8Gs,2801
+multivoro/exceptions.py,sha256=wl8U5UnaHY9O_lBpJSQkgMsXv4wJ8GBviBdgVmy56QQ,99
