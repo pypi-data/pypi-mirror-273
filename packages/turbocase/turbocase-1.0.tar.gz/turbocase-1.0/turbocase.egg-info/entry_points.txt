@@ -1,0 +1,2 @@
+[console_scripts]
+turbocase = turbocase.__main__:main
