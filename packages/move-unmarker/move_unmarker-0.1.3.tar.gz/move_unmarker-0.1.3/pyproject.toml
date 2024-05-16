@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "move-unmarker"
+version = "0.1.3"
+description = "CLI utility to remove PII watermarks from pdfs downloaded from Move USP/ESALQ"
+authors = ["João Fauvel <jmmfauvel@gmail.com>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/joaofauvel/move-unmarker"
+keywords = ["pdf", "watermark", "manipulation", "cli", "USP", "ESALQ"]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pymupdf = "^1.24.3"
+
+[tool.poetry.scripts]
+unmarker = 'move_unmarker.unmarker:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
