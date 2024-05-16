@@ -1,0 +1,4 @@
+[sourmash.cli_script]
+classify_command = sourmash_plugin_pangenomics:Command_Classify
+createdb_command = sourmash_plugin_pangenomics:Command_CreateDB
+ranktable_command = sourmash_plugin_pangenomics:Command_RankTable
