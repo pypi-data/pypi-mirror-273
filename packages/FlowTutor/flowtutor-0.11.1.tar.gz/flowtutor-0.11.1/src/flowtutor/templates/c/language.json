@@ -1,0 +1,35 @@
+{
+    "lang_id": "c",
+    "name": "C",
+    "is_compiled": true,
+    "debugger": "gdb",
+    "file_ext": ".c",
+    "import": "#include <{{IMPORT}}>",
+    "standard_imports": [
+        "assert.h",
+        "ctype.h",
+        "errno.h",
+        "error.h",
+        "float.h",
+        "signal.h",
+        "stdio.h",
+        "stdlib.h",
+        "string.h",
+        "math.h"
+    ],
+    "types": [
+        "char",
+        "unsigned char",
+        "short",
+        "unsigned short",
+        "int",
+        "unsigned int",
+        "long",
+        "unsigned long",
+        "float",
+        "double",
+        "long double"
+    ],
+    "comment_specifier": "//",
+    "function_declaration": "{{RETURN_TYPE}} {{FUN_NAME}}({% for p in PARAMETERS %}{{p.type}} {{p.name}}{{ \", \" if not loop.last else \"\" }}{% endfor %});"
+}
