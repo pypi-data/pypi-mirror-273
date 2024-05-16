@@ -1,0 +1,67 @@
+name: Publish Python Distribution to PyPI
+# adapted from
+# https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
+
+on:
+  push:
+    # trigger the workflow on push events to main branch
+    branches:
+      # - main
+      - publish-to-pypi
+
+jobs:
+  build:
+    name: Build distribution
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install pypa/build
+        run: >-
+          python3 -m
+          pip install
+          build bump2version
+          --user
+
+      - name: Set up Git identity
+        run: |
+          git config --global user.name "chenhuifei01"
+          git config --global user.email "chenhui1@uchicago.edu"
+
+      - name: Bump minor version
+        # haven't settip the cfg yet
+        run: bump2version minor --config-file .bumpversion.cfg
+
+      - name: Build a binary wheel and a source tarball
+        run: python3 -m build
+
+      - name: Store the distribution packages
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+  publish-to-pypi:
+    name: PublishPython distribution to PyPI
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/dsi-cocoa
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+      - name: Publish distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
