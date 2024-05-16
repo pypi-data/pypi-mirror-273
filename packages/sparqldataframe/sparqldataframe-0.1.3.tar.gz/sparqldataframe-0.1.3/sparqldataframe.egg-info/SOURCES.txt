@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sparqldataframe/__init__.py
+sparqldataframe.egg-info/PKG-INFO
+sparqldataframe.egg-info/SOURCES.txt
+sparqldataframe.egg-info/dependency_links.txt
+sparqldataframe.egg-info/requires.txt
+sparqldataframe.egg-info/top_level.txt
