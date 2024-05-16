@@ -1,0 +1,16 @@
+sparrowTools/__init__.py,sha256=Dus8Tcl0dFvTAOptx4lbu0-Lq1PdTG5bcN7BTBQcizk,835
+sparrowTools/error.py,sha256=bQM5sztAonO8E8LqFcMUSFT9kzAcRIqVAWIplCdrdzI,574
+sparrowTools/data_transform/__init__.py,sha256=_pTcRkw5YVwCxNTgc0fYW_zPVsxOqjL0kGQiexHeaSM,447
+sparrowTools/data_transform/to_class.py,sha256=vQq36tgeWysWpFfdJbDupj5UrENEjNR6I-CjmcG7bZY,3660
+sparrowTools/digital_to_chinese/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparrowTools/digital_to_chinese/digital_to_chinese.py,sha256=mumUrZiXTNS6dCS9TX90MKrcAMMK9tBcbAmfmHwl3fI,2863
+sparrowTools/string_split/__init__.py,sha256=Ol9X7X8WzzI6PneVPKrpJ87HmOwEUZUbJM0mlkZzQgM,63
+sparrowTools/string_split/string_split.py,sha256=JPbAxp-b1zDyQqmzymlIxzyNCsHmf9ZW0rslBt2MMjg,663
+sparrowTools/system_transform/__init__.py,sha256=P7DOS2WG8hobcDyEhDeNP0rtIyq6OHuRfEauiA4dSPo,389
+sparrowTools/system_transform/system_and_char.py,sha256=_xm6cAHwTLZG0w__S8e2Bo-V_ZWEYFbraQi9ZvnuKh0,1660
+sparrowTools/system_transform/system_and_string.py,sha256=w8BnP5SJ9C_xhdwYAaTMLPqrxyY1UiQ_k8WzBxkuBZQ,1656
+sparrowTools/system_transform/system_to_new_system.py,sha256=GhnMwKKFsT7CfIdMkwEuaI-KYoe5uHW2BEIhq-2tuLM,1032
+sparrowTools-0.1.dist-info/METADATA,sha256=qXfGoiiSO8A5LKpAk1qoUx_H3heV9ifiOmeHFIqwe88,113
+sparrowTools-0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+sparrowTools-0.1.dist-info/top_level.txt,sha256=qfJ4Xwq9t2RsBrqBNNSwKUtspMLPSxHSERUuu8iCbAA,13
+sparrowTools-0.1.dist-info/RECORD,,
