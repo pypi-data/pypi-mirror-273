@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dde-agent-lib
+Version: 0.1
+Summary: geogpt agent library
+Home-page: 
+Author: geogpt
+Author-email: zhuquezhitu@zhejianglab.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+geogpt agent library
+
