@@ -1,0 +1,13 @@
+stldim/__init__.py,sha256=N-YGAVhJvx26s9ArvBMTD0QzHWekc79pFVTJk5na2q8,2232
+stldim/__main__.py,sha256=NZH2VrodngS_lM1mvRfXGsnpwsKkoE_xeeRN5y7Dyko,3608
+stldim/version.py,sha256=KCO9czOk1fSRjpRPo1_iASZGt-WZYkCZkehsnZySUEA,245
+stldim/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stldim/tests/test_find_mins_maxs.py,sha256=OZgYeLckR_DUNQw-HOWqrjsDq3O1VsGbkDTSS19hSbQ,456
+stldim/tests/test_get_stl_dimensions.py,sha256=UiWsH7dBNsUSdEER2rJx-7opff8cnN3ELGb0IbJ9SvU,492
+stldim/tests/test_get_varname.py,sha256=_hLF9_mSYvqeKXf-avJfLUq6KGVLy7hK56RbjGmV7-0,273
+stldim/tests/test_sanitize_filename.py,sha256=mvNVRf1Xevh4nu-7HSQk7PsRsbNqlXSQQeg7u5AZDkM,683
+stldim-0.1.1.dist-info/METADATA,sha256=W3I23sc4W-ckpNmK_ZkKHPzMtQ3Qu83UI9yZxU6bpGY,3910
+stldim-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+stldim-0.1.1.dist-info/entry_points.txt,sha256=OwB7BCcBlCh1wOY4bcoipyXJEcYrivDUGlNh8jn3BQw,48
+stldim-0.1.1.dist-info/licenses/LICENSE.md,sha256=x3m-o5QzE7RUEbpQqk2pAPdJTTiJAnFyM621rMWFWJU,1072
+stldim-0.1.1.dist-info/RECORD,,
