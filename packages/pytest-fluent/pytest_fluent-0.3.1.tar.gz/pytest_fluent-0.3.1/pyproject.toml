@@ -1,0 +1,82 @@
+[project]
+dependencies = [
+    "pytest>=7.0.0",
+    "msgpack",
+    "six",
+    "fluent-logger",
+    "jsonschema",
+    "ruamel.yaml",
+]
+name = "pytest-fluent"
+authors = [
+    { name = "Rohde & Schwarz GmbH & Co. KG", email = "info@rohde-schwarz.com" },
+]
+maintainers = [
+    { name = "Carsten Sauerbrey", email = "carsten.sauerbrey@rohde-schwarz.com" },
+    { name = "Nicola Lambiase", email = "nicola.lambiase@rohde-schwarz.com" },
+]
+description = "A pytest plugin in order to provide logs via fluentd"
+readme = "README.md"
+keywords = ["pytest", "logging", "fluent"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Pytest",
+]
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[project.urls]
+project = "https://github.com/Rohde-Schwarz/pytest-fluent"
+
+[project.optional-dependencies]
+docs = ["sphinx", "sphinx-rtd-theme", "myst-parser"]
+test = [
+    "pytest",
+    "coverage[toml]",
+    "pytest-cov",
+    "pytest-xdist[psutil]",
+    "six",
+    "importlib-resources; python_version<='3.8'",
+]
+
+[build-system]
+requires = ["setuptools>=45.2", "wheel", "setuptools_scm[toml]>=3.4"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "tests"]
+
+[tool.coverage.run]
+source = ["pytest_fluent"]
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.setuptools_scm]
+fallback_version = "0.0.0"
+
+[tool.pytest.ini_options]
+addopts = "-p no:fluent-logging -p pytester"
+log_level = "INFO"
+log_cli = false
+
+[tool.mypy]
+ignore_missing_imports = true
