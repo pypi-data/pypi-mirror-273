@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/starrydata/__init__.py
+src/starrydata/dataset.py
+src/starrydata/test_dataset.py
+src/starrydata.egg-info/PKG-INFO
+src/starrydata.egg-info/SOURCES.txt
+src/starrydata.egg-info/dependency_links.txt
+src/starrydata.egg-info/requires.txt
+src/starrydata.egg-info/top_level.txt
