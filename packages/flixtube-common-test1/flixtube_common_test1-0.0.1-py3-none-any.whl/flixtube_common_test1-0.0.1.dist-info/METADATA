@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: flixtube_common_test1
+Version: 0.0.1
+Summary: Common code for the FlixTube application
+Author: me
+Requires-Python: >=3.6
+Requires-Dist: motor ==3.4.0
+
