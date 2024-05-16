@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include setup.py
+recursive-include cython_helpers *
+recursive-include kmat_tools *
+recursive-include cython_helpers/km_tools_wrappers *
