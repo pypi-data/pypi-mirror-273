@@ -1,0 +1,37 @@
+## Description
+Python library writed by Blues Liu.
+
+### Install
+```
+// first installation 
+pip install blues-lib==1.1.1
+
+// upgrade to the newest version
+pip install --upgrade blues-lib
+```
+
+### sele
+#### BluesDebugChrome
+
+##### reliant env variables
+1. `$env:CHROME_EXE` : the chrome's .exe file path - * required
+2. `$env:CHROME_DRIVER_EXE` : the chromedriver's .exe file path - * recommended
+
+##### input
+```py
+config = {
+  'url':'http://deepbluenet.com',
+}
+arguments = {
+  '--user-data-dir':'"c:/sele/test3"',
+  '--remote-debugging-address':'localhost:8003',
+}
+```
+
+
+### util
+```py
+from util.BluesFiler import BluesFiler
+
+print(BluesFiler.exists('dir'))
+```
