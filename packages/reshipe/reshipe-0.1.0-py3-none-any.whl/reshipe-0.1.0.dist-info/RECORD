@@ -1,0 +1,9 @@
+reshipe/__init__.py,sha256=CwCcYT1TGwAn1xBnQK21t0kWk4SX_WKDC8JNSQrvI3o,92
+reshipe/types.py,sha256=MANV0L2PZ2JfFRkKNlxxD7VnL8P5f4BdrhGgb3s7foQ,121
+reshipe/parser/__init__.py,sha256=UngdFYXZaq1Ltjn4OhK8Z9aP_2dHtoF2zuZQOotKel4,48
+reshipe/parser/recipe.py,sha256=Hy-eNn4YonTeHx7eN_WJur2eMCHIUQKrXFUHwRcpzrk,4969
+reshipe/resource/__init__.py,sha256=qmc0Rr4q6sMmvmYcQi6rrrK8ShhhuLLKkZkQ1-M7LEo,67
+reshipe-0.1.0.dist-info/METADATA,sha256=y0IZ2wDHVbFVnfQn9pDNM0jDOy8C-YZCWWFq7tWAPjo,2157
+reshipe-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+reshipe-0.1.0.dist-info/licenses/LICENSE,sha256=frECEyYUGwcFX9m5vTsXC2Um4riUFItuBLJH-Ot1gFk,1062
+reshipe-0.1.0.dist-info/RECORD,,
