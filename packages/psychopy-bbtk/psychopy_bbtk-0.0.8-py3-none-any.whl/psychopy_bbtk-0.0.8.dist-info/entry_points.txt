@@ -1,0 +1,9 @@
+[psychopy.experiment.components]
+TPadButtonBoxBackend = psychopy_bbtk.components.tpad:TPadButtonBoxBackend
+
+[psychopy.hardware.bbtk]
+BBTKForcePad = psychopy_bbtk.forcePad:BBTKForcePad
+TPad = psychopy_bbtk.tpad:TPad
+TPadButtonGroup = psychopy_bbtk.tpad:TPadButtonGroup
+TPadPhotodiodeGroup = psychopy_bbtk.tpad:TPadPhotodiodeGroup
+TPadVoiceKey = psychopy_bbtk.tpad:TPadVoiceKey
