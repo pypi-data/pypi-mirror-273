@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: avarnd
+Version: 0.2
+Summary: Sample package that conssists of addition and subtraction methods.
+Home-page: https://github.com/user/reponame
+Download-URL: https://github.com/Shriyokesh-Thangavel/zeb-rnd/archive/refs/tags/v_0.2.tar.gz
+Author: Shriyokesh
+Author-email: shriyokesh.t@avasoft.com
+License: MIT
+Keywords: SOME,MEANINGFUL,KEYWORDS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
