@@ -1,0 +1,8 @@
+dynatrace_extension_models/__init__.py,sha256=rIhN-vn7QYsFwWCKCrojSkjA2Uy9aUb4hNC3eV4KoFg,286
+dynatrace_extension_models/metric_base_model.py,sha256=rracOPl3LUaWpWWoAkjJnC3MI1pO3oK9mS9p-OBwOBY,4680
+dynatrace_extension_models/metric_info.py,sha256=bVJKmjqa7v0l8BZ3aPnIOzXMTRCoM-NoBP51UUo3F_A,732
+dynatrace_extension_models/pydantic_interop.py,sha256=Rgn2nRaelBfH0-lc8oMyXooyrYAAXklMYV92WnMInt8,8769
+dt_extensions_models-0.0.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dt_extensions_models-0.0.12.dist-info/METADATA,sha256=S4JDwiusDaQoSpfN_yxj_jPAaxNH1QNnBPSY8L86RmQ,1591
+dt_extensions_models-0.0.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dt_extensions_models-0.0.12.dist-info/RECORD,,
