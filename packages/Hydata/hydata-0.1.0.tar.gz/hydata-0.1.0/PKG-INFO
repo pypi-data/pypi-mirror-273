@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Hydata
+Version: 0.1.0
+Summary: 
+Author: Caio Wingeter
+Author-email: castilhocaio1164@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: h5py (>=3.11.0,<4.0.0)
+Requires-Dist: opencv-python (>=4.9.0.80,<5.0.0.0)
+Description-Content-Type: text/markdown
+
+
