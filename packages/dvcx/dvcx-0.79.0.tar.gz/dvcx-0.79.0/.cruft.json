@@ -1,0 +1,23 @@
+{
+  "template": "https://github.com/iterative/py-template",
+  "commit": "12bb835c5034be9af72028ae9c5bd06cf571b9d1",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "dvcx",
+      "package_name": "dvcx",
+      "friendly_name": "DVCx",
+      "author": "Dmitry Petrov",
+      "email": "support@dvc.org",
+      "github_user": "iterative",
+      "version": "0.0.0",
+      "copyright_year": "2022",
+      "license": "Apache-2.0",
+      "docs": "False",
+      "short_description": "",
+      "development_status": "Development Status :: 2 - Pre-Alpha",
+      "_template": "https://github.com/iterative/py-template"
+    }
+  },
+  "directory": null
+}
