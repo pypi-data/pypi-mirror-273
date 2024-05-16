@@ -1,0 +1,71 @@
+[build-system]
+requires      = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "fmrib-unpack"
+dynamic         = ["version"]
+description     = "The FMRIB UKBiobank Normalisation, Parsing And Cleaning Kit"
+readme          = {file = "README.rst", content-type="text/x-rst"}
+license         = {text = "Apache License Version 2.0"}
+requires-python = ">=3.8"
+authors         = [{name = "Paul McCarthy",  email = "paul.mccarthy@ndcn.ox.ac.uk"},
+                   {name = "Thomas Nichols", email = "tom.nichols@bdi.ox.ac.uk"},
+                   {name = "Jessie Liu",     email = "Zhangdaihong.Liu@warwick.ac.uk"},
+                   {name = "Steve Smith",    email = "steve@fmrib.ox.ac.uk"}]
+
+dependencies = [
+  "fmrib-unpack-fmrib-config",
+  "h5py",
+  "numpy",
+  "pandas >=0.24",
+  "pyparsing",
+  "tables",
+  "threadpoolctl",
+  "typing-extensions"
+]
+
+[project.optional-dependencies]
+demo = [
+  "bash_kernel",
+  "jupyter",
+  "nbclassic",
+  "notebook",
+  "pygments"
+]
+
+test = [
+  "coverage",
+  "pytest",
+  "pytest-cov",
+  "jinja2",
+  "jupyter_server",
+  "notedown",
+  "nbconvert",
+  "sphinx",
+  "sphinx_rtd_theme",
+  "nbsphinx",
+  "pylint",
+  "flake8"
+]
+
+[project.scripts]
+fmrib_unpack      = "funpack.main:main"
+fmrib_unpack_demo = "funpack.scripts.demo:main"
+
+[project.urls]
+"Repository"    = "https://git.fmrib.ox.ac.uk/fsl/funpack.git"
+"Documentation" = "https://open.win.ox.ac.uk/pages/fsl/funpack/"
+
+[tool.setuptools.dynamic]
+version = {attr = "funpack.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["funpack*"]
+
+[tool.pytest.ini_options]
+testpaths      = ["funpack/tests"]
+addopts        = "-v --cov=funpack --showlocals"
+filterwarnings = [
+  "ignore::pandas.errors.ParserWarning"
+]
