@@ -1,0 +1,15 @@
+cdbclerk/__init__.py,sha256=7LL0OZnP6UE1N0A9GSwUvwJm_JMssauUMYdzVpuwGvk,159
+cdbclerk/__main__.py,sha256=A9KZtcOU9-8xSX39Q-VfEEkN1lSByeucBuo698r_gsk,850
+cdbclerk/_version.py,sha256=YBifiUSjjM5ZWUSjO1hem2sGZyNbR5H2mHzR9drvyrs,18450
+cdbclerk/ioc_io.py,sha256=Rdt8iY5NR_M-5KcURhY2Had7nSNr-DdYDbdgb_Bu6Rc,1084
+cdbclerk/store_fields.py,sha256=C7HWvkiXK22Kx0MWYTSe_-l8REgydnGitINbQeRJ4CI,431
+cdbclerk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdbclerk/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdbclerk/tests/test_read_pvs.py,sha256=JqfA9oK_Ar4PEza_QWZLQM6SUhS0UsJsbSfDErKaAaY,470
+cdbclerk-0.1.dist-info/AUTHORS.rst,sha256=djIpxZBSy3p2_HTahT9hTVozigbEyKlhLBzT4Nhast8,143
+cdbclerk-0.1.dist-info/LICENSE,sha256=I-lB8ymX-_zoMrPQslxUtzqABTO3Kf-omI9l94pL4zA,1872
+cdbclerk-0.1.dist-info/METADATA,sha256=53dR17SC3XgJyISkgC8Ch-9gdTyAlwf1yoM3qAvhoAM,2159
+cdbclerk-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cdbclerk-0.1.dist-info/entry_points.txt,sha256=epZFQuqy7yAQXmY7mAi9c3J_lJJRYGdU0NsoW24bTxI,52
+cdbclerk-0.1.dist-info/top_level.txt,sha256=e_icyW5FWiDPEm8txuUwgauDfRqUWvdiRueVJWcmKxw,9
+cdbclerk-0.1.dist-info/RECORD,,
