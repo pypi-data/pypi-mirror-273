@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ohmslaw
+Version: 1.0rc2
+Summary: python3 library for Ohms law.
+Author-email: Juan Bindez <juanbindez780@gmail.com>
+License: GPLv2 license
+Project-URL: Homepage, https://github.com/juanbindez/ohmslaw
+Project-URL: Bug Reports, https://github.com/juanbindez/ohmslaw/issues
+Project-URL: Read the Docs, http://ohmslaw.readthedocs.io/
+Keywords: eletric,ohms,calc,tools
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ohmslaw
+ohms law calc
