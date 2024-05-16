@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyprop8/__init__.py
+src/pyprop8/_core.py
+src/pyprop8/_propagators.py
+src/pyprop8/_scaledmatrix.py
+src/pyprop8/tests.py
+src/pyprop8/utils.py
+src/pyprop8.egg-info/PKG-INFO
+src/pyprop8.egg-info/SOURCES.txt
+src/pyprop8.egg-info/dependency_links.txt
+src/pyprop8.egg-info/requires.txt
+src/pyprop8.egg-info/top_level.txt
