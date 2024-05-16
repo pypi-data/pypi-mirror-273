@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: django-apis
+Version: 0.1.1
+Summary: Django简易json api接口封装。
+Author: Xie DongCong
+Maintainer: Xie DongCong
+License: MIT
+Keywords: django apis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: zenutils
+
+# django-apis
+
+Django简易json api接口框架。使用Django Form做接口参数验证。
+
+
+## 安装
+
+```
+pip install django-apis
+```
+
+## 使用
+
+### 简单的接口开发
+
+- 所有视图参数按django标准，添加request或其它路径参数。
+- 可以定义Form来完成请求参数的校验。在检验不通过的情况下，抛出`django_apis.exceptions.ValidationError`。`django_apis.exceptions.ValidationError`会把django的异常信息转化为文本格式。
+- `apiview`中`methods`参数表示允许的HTTP请求类型。可以是字符串，也可以是字符串数组。
+
+```
+from django.forms import Form
+from django.forms.fields import CharField
+
+
+from django_apis.views import get_apiview
+from django_apis.views import get_json_payload
+from django_apis.exceptions import ValidationError
+
+
+apiview = get_apiview()
+
+
+@apiview(methods="GET")
+def ping(request):
+    return "pong"
+
+
+class EchoInput(Form):
+    msg = CharField(max_length=16, required=True)
+
+
+@apiview(methods="POST")
+def echo(request):
+    payload = get_json_payload(request)
+    form = EchoInput(payload)
+    if form.is_valid():
+        return form.cleaned_data["msg"]
+    else:
+        raise ValidationError(form)
+
+
+@apiview(methods="GET")
+def getRequestInfo(request):
+    result = {}
+    for key, value in request.META.items():
+        if isinstance(value, str):
+            result[key] = value
+    return result
+
+```
+
+## 配置项
+
+- DJANGO_APIS_ALLOWED_METHODS
+- DJANGO_APIS_APIVIEW
+- DJANGO_APIS_ENABLE_REQUEST_LOG
+- DJANGO_APIS_REQUEST_LOG_NAME
+
+## 版本记录
+
+### v0.1.1
+
+- 版本首发。
+
