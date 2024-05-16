@@ -1,0 +1,2 @@
+[dask_cli]
+databricks = dask_databricks.cli:main
