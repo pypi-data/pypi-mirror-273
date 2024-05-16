@@ -1,0 +1,8 @@
+pymysql
+pymongo
+numpy
+pandas
+openpyxl
+scipy
+statsmodels
+haversine
