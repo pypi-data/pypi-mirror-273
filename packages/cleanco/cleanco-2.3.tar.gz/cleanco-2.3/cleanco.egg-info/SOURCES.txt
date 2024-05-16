@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cleanco/__init__.py
+cleanco/classify.py
+cleanco/clean.py
+cleanco/clean_old.py
+cleanco/non_nfkd_map.py
+cleanco/termdata.py
+cleanco.egg-info/PKG-INFO
+cleanco.egg-info/SOURCES.txt
+cleanco.egg-info/dependency_links.txt
+cleanco.egg-info/top_level.txt
+tests/test_cleanname.py
