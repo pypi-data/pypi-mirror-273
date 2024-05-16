@@ -1,0 +1,12 @@
+LICENSE,sha256=t1aXXjpYuVvqYm0Qm1ulA8BooxU1sGIqUupmMMqZQJs,1068
+oauth2_cli_auth/__init__.py,sha256=EqQH4x99Vf4EA0chF1ako6I3r1fXi7YK-xnzkbaPb7w,338
+oauth2_cli_auth/_timeout.py,sha256=jMXepN5PoYYTxfq710C5WJFy0YiWGZ6oRviN_eePoUM,495
+oauth2_cli_auth/_urllib_util.py,sha256=J28LAAFznkML01-9GcKM0HEr2BgSh6Wp34QD5XU6f-Y,769
+oauth2_cli_auth/code_grant.py,sha256=XKlIvJ2GqfiSHCXt_16q1wyfH3S-ebu90Zi8UmaUMj8,4080
+oauth2_cli_auth/conftest.py,sha256=axknyOpAxKf7q2uS3zTnxS-EklHjDz5_5GK-rkNgQjc,221
+oauth2_cli_auth/http_server.py,sha256=l-rwTkXuJV7bF9ZhIU6fupf-FIqFtn0E4hpFHi8UwF0,7512
+oauth2_cli_auth/simplified_flow.py,sha256=nyoi5jopBenLU0zJecTddQRTHFipCnUewXL4or0Ere8,985
+oauth2_cli_auth-1.3.0.dist-info/LICENSE,sha256=t1aXXjpYuVvqYm0Qm1ulA8BooxU1sGIqUupmMMqZQJs,1068
+oauth2_cli_auth-1.3.0.dist-info/METADATA,sha256=pXRsIgx4-GUfPHVhxh4_cA_eRIQjRW5_6gVx0VrbV6s,8605
+oauth2_cli_auth-1.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oauth2_cli_auth-1.3.0.dist-info/RECORD,,
