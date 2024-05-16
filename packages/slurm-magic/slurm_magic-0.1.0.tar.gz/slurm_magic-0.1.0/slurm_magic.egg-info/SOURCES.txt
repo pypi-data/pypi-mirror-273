@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+slurm_magic.py
+slurm_magic.egg-info/PKG-INFO
+slurm_magic.egg-info/SOURCES.txt
+slurm_magic.egg-info/dependency_links.txt
+slurm_magic.egg-info/requires.txt
+slurm_magic.egg-info/top_level.txt
