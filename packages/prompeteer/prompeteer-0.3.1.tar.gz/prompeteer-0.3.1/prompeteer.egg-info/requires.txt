@@ -1,0 +1,5 @@
+pyyaml
+openai==1.28.1
+azure-identity
+boto3
+tenacity
