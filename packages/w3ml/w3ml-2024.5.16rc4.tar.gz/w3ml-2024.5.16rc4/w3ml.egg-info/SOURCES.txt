@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+w3ml/__init__.py
+w3ml.egg-info/PKG-INFO
+w3ml.egg-info/SOURCES.txt
+w3ml.egg-info/dependency_links.txt
+w3ml.egg-info/requires.txt
+w3ml.egg-info/top_level.txt
+w3ml/models/__init__.py
+w3ml/models/contrib/__init__.py
+w3ml/models/contrib/automl_binary.py
+w3ml/models/contrib/automl_multiclass.py
+w3ml/models/contrib/automl_multilabel.py
+w3ml/utils/__init__.py
