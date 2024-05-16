@@ -1,0 +1,11 @@
+payrex/__init__.py,sha256=sFTKHmjoYjI2OrkX-s_-ch01t5Madgb5tg3AzA4AIts,1676
+payrex/api_resource.py,sha256=XcOQdF74HyFICdVfYerOA3JUZR-0w29GBYjolW6TpnU,82
+payrex/client.py,sha256=ze_DuOug3JVlFOPAPoAQQDPapCybcQNZNjdymRli7w4,363
+payrex/config.py,sha256=6O8XR88BsX_kg3yWyRlndc304Z1JgeXhKJxjZYcxf10,171
+payrex/error.py,sha256=NFLwYqwxR1Bstdxl9Re5_0bTOq8qaDI2Y2KmLOFcH58,172
+payrex/http_client.py,sha256=h0yn2Maq9gsc_gE2sYoGovR-IOKgiC6Aey7QQSEyTy4,2191
+payrex_python-0.1.0.dist-info/LICENSE,sha256=D2u8aAyW7ANg0dWTyPnBcJX1_3zAlnskYOyONZ3Jeww,1099
+payrex_python-0.1.0.dist-info/METADATA,sha256=cYdWqY-jwgoj8rAUJVxS11rnbkLMkJey1-xAYm7_knk,2487
+payrex_python-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+payrex_python-0.1.0.dist-info/top_level.txt,sha256=dd4RklAV7AIV9-puyriCF1CW2j9ndidUw1u_HdRkJvw,7
+payrex_python-0.1.0.dist-info/RECORD,,
