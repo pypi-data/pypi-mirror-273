@@ -1,0 +1,11 @@
+chatgpt_md_converter/__init__.py,sha256=AfkikySkXsJ8HKQcSlU7B1KBHz54QCGJ7MO5Ka9oWRM,79
+chatgpt_md_converter/converters.py,sha256=nfbKCcYCAYBk_0RQntCVQFQgAlEUWrGtLWULE1wETmU,657
+chatgpt_md_converter/extractors.py,sha256=RNwo57_6jCe-HoX5eCvvZcjSTc2uPax-6QEtXqXA5QQ,1880
+chatgpt_md_converter/formatters.py,sha256=gG_SavtZI0BVl7SqkwGZ_usCB89ZPpAQWofpDUd9DzU,878
+chatgpt_md_converter/helpers.py,sha256=9CtBeMzKYrymECNPl0MXsW0Vscp4A02a64a5z0sVWqE,261
+chatgpt_md_converter/telegram_formatter.py,sha256=3XSNWda_5LKRShjZlkO-D7c1Uq77pfvUGlhqliEO0eU,2007
+chatgpt_md_converter-0.1.2.dist-info/LICENSE,sha256=SDr2jeP-s2g4vf17-jdLXrrqA4_mU7L_RtSJlv4Y2mk,1077
+chatgpt_md_converter-0.1.2.dist-info/METADATA,sha256=roSPyHowfr_bCIlyWkja5ozrq3j8zjAQI1cI_0Iqodo,3086
+chatgpt_md_converter-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chatgpt_md_converter-0.1.2.dist-info/top_level.txt,sha256=T2o7csVtZgr-Pwm83aSUkZn0humJmDFNqW38tRSsNqw,21
+chatgpt_md_converter-0.1.2.dist-info/RECORD,,
