@@ -1,0 +1,9 @@
+QComboBox#drop-down-menu {
+    outline: none;
+    padding: 2px;
+    padding-left: 5px
+}
+
+QComboBox#drop-down-menu::down-arrow {
+    width: 10px;
+}
