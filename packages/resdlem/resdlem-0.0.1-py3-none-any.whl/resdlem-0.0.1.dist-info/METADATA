@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: resdlem
+Version: 0.0.1
+Summary: A package to calulate equilibrium function for dlem
+Author-email: Thomas Ott <Thomas.ott@dri.edu>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# resdlem
+
+## Description
+The resdlem python package provides a simple means of incorporating the
+Daily Lake Evaporation Model (DLEM) equilibrium function into python code.
+
+It simply performs the calculation given the inputs. There is no unit 
+support or other fluf. See below for inputs of the function and the units.
+
+## Code Example
+
+```
+from resdlem import equilibrium
+
+devap = equilibrium.dlemEvap(
+    lat=40,
+    depth=20,
+    elev=1000,
+    solrad=270,
+    ta=10,
+    vpd=1,
+    pres=89651.51985730644,
+    ut=5,
+    tw0=10,
+    fch=1000,
+    mth=5,
+    tds=15_000)
+
+evap_hs = devap.evap_hs
+tw = devap.tw
+
+```
+
+### Function inputs
+| variable             | Description                                | Units         |
+|----------------------|--------------------------------------------|---------------|
+| lat                  | Latitude                                   | degrees       |  
+| depth                | Average depth of reservoir (capacity/area) | meter         |
+| elev                 | Elevation of water surface                 | meter         |         
+| solrad               | Incoming surface shortwave solar radiation | W m-2 per day |         
+| ta                   | Daily average temperature                  | Celsius       |         
+| vpd                  | Vapor pressure deficit                     | kPa           |         
+| pres                 | Atmospheric Pressure                       | Pa            |         
+| ut                   | Wind speed at 2m                           | m s-1         |         
+| tw0                  | Water temp from previous timestep (tw)     | Celsius       |         
+| fch                  | Fetch length                               | m             |         
+| mth                  | Month of interest                          | NA            |         
+| tds                  | Total dissolved solids                     | ppm           |         
+
+### Function outputs
+| variable    | Description                                                       | Units        |
+|-------------|-------------------------------------------------------------------|--------------|
+| evap_hs     | Evaporation with Heat Storage                                     | mm/day       |
+| evap_hs_adj | Evaporation with Heat Storage adjusted for total dissolved solids | mm/day       |
+| evap_nohs   | Evaporation no Heat Storage (Penman Evaporation)                  | mm/day       |
+| te          | Equilibrium Temperature                                           | Celcius      |
+| tw          | Water column temperature at end of timestep                       | Celcius      |
+| rn          | Net solar radiation                                               | W m-2 per day |
+| ierr        | Calculation code error (See Error Table)                          |              |
+
+## Error Table (ierr)
+| value | Description                                                     |
+|-------|-----------------------------------------------------------------|
+| 0     | Timestep is good                                                |
+| 2     | Depth is less than or equal to 0                                |
+| 3     | Air temperature is less than wet bulb temperature               |
+| 4     | Downloading solar radiation is less than 0                     |
+| 5     | Wind speed is less than 0.01m/s                                 |
+| 6     | Vapor Pressure Deficit is less than or euqal to 0               |
+| 7     | Vapor pressure deficit is greater than saturated vapor pressure |
+
+
+Citation
+Zhao, B., Huntington, J., Pearson, C., Zhao, G., Ott, T., Zhu, J.,
+Weinberg, A., Holman, K. D., Zhang, S.,Anderson,
+R., Strickler, M., Cotter, J., Fernando, N., Nowak, K.,
+& Gao, H. (2024).Developing a general Daily Lake Evaporation
+Model and demonstrating its application inthe state of Texas.
+Water Resources Research, 60(3), e2023WR036181.
+Available at https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023WR036181
