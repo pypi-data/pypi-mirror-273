@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+{% include "partials/head.html.j2" %}
+
+{# {% include "partials/header.html" %} #}
+
+<body class="sb-nav-fixed">
+    relative_path_to_root = {{relative_path_to_root}}
+
+    {% include "partials/top_nav.html.j2" %}
+    <div id="layoutSidenav">
+        {% include "partials/side_nav.html.j2" %}
+        <div id="layoutSidenav_content">
+            <main>
+                {% block content %}
+                {{content}}
+                {% endblock %}
+            </main>
+        </div>
+    </div>
+    {% include "partials/footer.html.j2" %}
+
+    {% include "partials/scripts.html.j2" %}
+</body>
+
+</html>

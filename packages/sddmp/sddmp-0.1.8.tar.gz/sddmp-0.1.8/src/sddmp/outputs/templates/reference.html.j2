@@ -1,0 +1,143 @@
+{% extends "partials/layout.html.j2" %}
+
+{% from "components/topbar/nav_alert.html.j2" import nav_item%}
+
+{% from "components/body/heading.html.j2" import heading %}
+{% from "components/body/small_card.html.j2" import small_card %}
+{% from "components/body/person_card.html.j2" import person_card %}
+{% from "components/body/large_card.html.j2" import large_card, as_code_block %}
+{% from "components/body/plot_div.html.j2" import plot_div %}
+{% from "components/body/table.html.j2" import table %}
+
+{% block content %}
+
+{# Content for the cards #}
+
+{% macro example_readme() %}
+<pre>
+# This is the readme for the example project. As this file is located in the root folder of the
+# project, it is the main readme for the project. All metadata contained in this file will be
+# inherited by all subfolders and files. The metadata of the subfolders can be overwritten by
+# adding a README.yaml file to the respective folder.
+
+# ---
+
+# This readme is a yaml file that is intended to be used with the
+# Self Documenting Data Management Plan (SDDMP) tool.
+DigitalDocument:
+  name: Self Documenting Data Management Plan
+  # The individual responsible for the content of this document
+  maintainer:
+    - name: &lt;name1&gt;
+      email: &lt;email1&gt;
+      description: "Responsible for the content and maintenance of the automated data management plan"
+
+# This Section describes the project and is the minimum that should be provided
+ResearchProject:
+  # The name of the project (required)
+  name: &lt;title&gt;
+  # Project members are listed here. The roleName field is free text and can be  used to describe
+  # the role of individuals in the project.
+  member:
+    - name: &lt;name1&gt;
+      email: &lt;email1&gt;
+      jobTitle: Principal Investigator
+    - name: &lt;name2&gt;
+      email: &lt;email2&gt;
+      jobTitle: Maintainer
+  # The following section is optional and can be used to describe the funding
+  # of the project.
+  funder:
+    - name: EU-Horizon
+      identifier: &lt;number1&gt;
+      url: &lt;url&gt;
+      member:
+        - "@type": Person
+          email: &lt;email1&gt;
+          jobTitle: Principal Funder
+    - "@type": Organization
+      name: DFG
+      identifier: &lt;number2&gt;
+  # A description of the project
+  description: "Root folder for Example Project"
+
+# The following section relates to the data contained in the project
+Dataset:
+  # A short description of the dataset
+  description: |
+    This is the readme for the example project and this is the abstract for the dataset.
+  # How access to the data is regulated
+  conditionsOfAccess: "public"
+  # The license of the data
+  license: "CC-BY-4.0"
+  # The version of the dataset
+  version: "1.0"
+</pre>
+
+{% endmacro %}
+
+{% macro potential_actions() %}
+<h2>Include / Exclude / Redact files from a report</h2>
+
+<p>Including the following under the "Dataset" key in a README will adjust if/how files are included
+    in the final report:</p>
+
+<pre>
+Dataset:
+  potentialAction:
+    - name: "exclude"
+</pre>
+
+<ul>
+    <li><code>exclude</code>: Files in this directory will not be included in the report.</li>
+    <li><code>redact</code>: Files will be included, but filenames will be obscured.</li>
+    <li><code>include</code>: Files will be included in the report (default).</li>
+</ul>
+{% endmacro %}
+
+{# Card Layout #}
+
+<div id="content-wrapper" class="d-flex flex-column">
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Topbar -->
+        <nav
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top topbar justify-content-between shadow sticky-top">
+            <!-- Nav Item - Directory Title -->
+            <div class="d-flex">
+                <h1 class="directory-title">SDDMP Reference</h1>
+            </div>
+
+        </nav>
+        <!-- Begin Page Content -->
+        <div id="page-content" class="container-fluid">
+            <!-- Content Details -->
+            <div id="content-details" class="container-fluid">
+                {{ heading("Writing README files")}}
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        {{ large_card("fa-solid", "Example README File", example_readme()) }}
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                        {{ large_card("fa-solid", "Potential Actions", potential_actions()) }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Techinical Details -->
+            <div id="techincal-details" class="container-fluid">
+                {{ heading("Technical Details")}}
+
+                <div class="row">
+                    <div class="col-12">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

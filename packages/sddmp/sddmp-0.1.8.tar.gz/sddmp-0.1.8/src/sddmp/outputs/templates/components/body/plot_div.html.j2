@@ -1,0 +1,18 @@
+{% macro plot_div(json_data, div_id, no_plot_message=none) %}
+<div>
+    {% if json_data %}
+    <div id="{{ div_id }}"></div>
+    {% else %}
+    <p>{{ no_plot_message }}</p>
+    {% endif %}
+</div>
+<script>
+    window.addEventListener('load', function () {
+        {% if json_data %}
+        var plot = JSON.parse({{ json_data| safe }});
+    console.log(plot);
+    Plotly.newPlot('{{ div_id }}', plot.data, plot.layout);
+    {% endif %}
+    });
+</script>
+{% endmacro %}

@@ -1,0 +1,113 @@
+{% extends "partials/layout.html.j2" %}
+
+{% from "components/topbar/nav_alert.html.j2" import nav_item%}
+
+{% from "components/body/heading.html.j2" import heading %}
+{% from "components/body/small_card.html.j2" import small_card %}
+{% from "components/body/person_card.html.j2" import person_card %}
+{% from "components/body/large_card.html.j2" import large_card, as_code_block %}
+{% from "components/body/plot_div.html.j2" import plot_div %}
+{% from "components/body/table.html.j2" import table %}
+
+{% block content %}
+
+{% macro get_num_files() %}
+{{ num_files }}{% if num_excluded_files > 0 %} ({{ num_excluded_files }} Excluded) {% endif %}
+{% endmacro %}
+
+<div id="content-wrapper" class="d-flex flex-column">
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Topbar -->
+        <nav
+            class="navbar navbar-expand navbar-light topbar mb-4 static-top topbar justify-content-between shadow sticky-top">
+            <!-- Nav Item - Directory Title -->
+            <div class="d-flex">
+                <h1 class="directory-title">{{ my_path }}</h1>
+            </div>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav">
+                <!-- Nav Item - Alerts -->
+                {{ nav_item('fa-solid fa-triangle-exclamation', 'bg-danger', '9+') }}
+                <!-- Nav Item - Messages -->
+                {{ nav_item('fa-solid fa-circle-exclamation', 'bg-warning', '7') }}
+            </ul>
+        </nav>
+        <!-- Begin Page Content -->
+        <div id="page-content" class="container-fluid">
+            <!-- Quick Details -->
+            <div id="quick-details" class="container-fluid">
+                {{ heading("Quick Details")}}
+
+                <div class="row">
+                    {{ small_card("fa-solid fa-user", "Users", num_excluded_files, "primary") }}
+                    {{ small_card("fa-solid fa-file", "Files", get_num_files(), "success") }}
+                    {{ small_card("fa-solid fa-folder", "Folders", num_directories, "warning") }}
+                    {{ small_card("fa-solid fa-chart-bar", "Analytics", "123", "danger") }}
+                </div>
+            </div>
+
+            <!-- Metadata Details -->
+            <div id="metadata-details" class="container-fluid">
+                {{ heading("Metadata Details")}}
+
+                <div class="row">
+                    {% for field, metadata_text in metadata.items() %}
+                    <div class="col-lg-4 col-md-6 col-12">
+                        {{ large_card("fa-solid fa-chart-bar", field, as_code_block(metadata_text)) }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- People Details -->
+            <div id="people-details" class="container-fluid">
+                {{ heading("Responsible Individuals")}}
+
+                <div class="row">
+                    {% for person in people %}
+                    {% if person %}
+                    {{ person_card(person) }}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Content Details -->
+            <div id="content-details" class="container-fluid">
+                {{ heading("Content Details")}}
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                        {{ large_card("fa-solid fa-chart-bar", "Directory Tree", as_code_block(filetree)) }}
+                    </div>
+
+                    {% for title, plot in plots.items() %}
+                    <div class="col-lg-6 col-md-6 col-12 mb-3">
+                        {{ large_card("fa-solid fa-chart-pie", field, plot_div(plot|tojson|safe, title)) }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Techinical Details -->
+            <div id="techincal-details" class="container-fluid">
+                {{ heading("Technical Details")}}
+
+                <div class="row">
+                    <div class="col-12">
+                        {{ large_card("fa-solid fa-table", "File Details", table("file_details", file_records_df)) }}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Errors and Warnings -->
+            <div id="errors-warnings" class="container-fluid">
+                {{ heading("Errors and Warnings")}}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

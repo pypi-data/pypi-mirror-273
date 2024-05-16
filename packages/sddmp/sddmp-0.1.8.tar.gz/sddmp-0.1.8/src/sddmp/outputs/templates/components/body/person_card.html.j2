@@ -1,0 +1,38 @@
+{% macro person_card(person) %}
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card shadow h-100 py-2 small-card {{ highlight_color }}">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center h-100">
+                <div class="col-auto">
+                    <i class="fa-solid fa-user fa-2x text-gray-300"></i>
+                </div>
+                <div class="col mr-2">
+                    {% if person.full_name %}
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">{{ person.full_name }}</div>
+                    {% endif %}
+
+                    {% if person.jobTitle %}
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                        {{ person.jobTitle }}
+                    </div>
+                    {% endif %}
+
+                    {% if person.description %}
+                    <div class="card border mb-1">
+                        <p class="card-text font-italic p-1" style="font-size: 0.8rem;">
+                            {{ person.description }}
+                        </p>
+                    </div>
+                    {% endif %}
+
+                    {% if person.email %}
+                    <div class="h6 mb-0 font-weight-bold text-gray-800">
+                        <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
