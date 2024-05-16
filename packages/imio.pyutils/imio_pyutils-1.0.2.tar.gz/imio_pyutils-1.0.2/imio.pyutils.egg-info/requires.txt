@@ -1,0 +1,3 @@
+setuptools
+future
+six>=1.16.0
