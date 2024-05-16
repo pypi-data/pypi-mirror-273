@@ -1,0 +1,11 @@
+chaparralapi/__init__.py,sha256=GzrY_byvC5LT4Zmk62cmCkVhJbAFaA6vwziAonyQvjI,45
+chaparralapi/api.py,sha256=SPw47YxiawQ5pYXFnztlkjlesqXBBB3Ct7AkdLzqapc,5473
+chaparralapi/fasta.py,sha256=8-iFUaficEpxjZAJbR6lIHanIlOTBaENA6HxbxyKHSc,2676
+chaparralapi/organization.py,sha256=rJ7RKiWjThQQbHMV8pv5HYnqCxPfeKtIuQaGDU232oQ,1833
+chaparralapi/projects.py,sha256=LfGxiJtDdoSmbytG1whkL0kcgwL9WocBa-Adj99Fyvc,2511
+chaparralapi/search_results.py,sha256=BPxLCUpLNN8yMC5OOZuyw0xCmFiAyTk9imQcszwwh60,7689
+chaparralapi/util.py,sha256=JJn7DWR_asP7O1DyQ1z-tTbVUxrT-2hZVI8j6pc0SYY,139
+chaparralapi-0.0.1.dist-info/METADATA,sha256=A-7zuC1YDtKiHlaF85GmWsEtlmqx_rPWSxaoMdVEIDY,1130
+chaparralapi-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chaparralapi-0.0.1.dist-info/top_level.txt,sha256=o7oZmDHQpmqc2Kbp9ZbCAw7BEiWklbYua_uFTEQCZHs,13
+chaparralapi-0.0.1.dist-info/RECORD,,
