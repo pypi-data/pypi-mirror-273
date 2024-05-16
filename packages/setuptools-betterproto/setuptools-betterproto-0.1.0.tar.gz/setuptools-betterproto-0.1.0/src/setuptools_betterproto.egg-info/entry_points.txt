@@ -1,0 +1,2 @@
+[distutils.commands]
+build_betterproto = setuptools_betterproto:CompileProto
