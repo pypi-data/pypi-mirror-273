@@ -1,0 +1,15 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/libreflow/__init__.py
+src/libreflow.extensions.playback.mrviewer.egg-info/PKG-INFO
+src/libreflow.extensions.playback.mrviewer.egg-info/SOURCES.txt
+src/libreflow.extensions.playback.mrviewer.egg-info/dependency_links.txt
+src/libreflow.extensions.playback.mrviewer.egg-info/top_level.txt
+src/libreflow/extensions/__init__.py
+src/libreflow/extensions/playback/__init__.py
+src/libreflow/extensions/playback/mrviewer/__init__.py
+src/libreflow/extensions/playback/mrviewer/_version.py
