@@ -1,0 +1,3 @@
+[console_scripts]
+optician=optician.cli.commands:cli
+
