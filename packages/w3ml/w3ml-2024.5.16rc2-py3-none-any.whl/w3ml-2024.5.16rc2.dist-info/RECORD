@@ -1,0 +1,12 @@
+w3ml/__init__.py,sha256=LJhwfHQdJGgLueG9JPZwDhYqpu1oN5p8Se5T6KilwQw,44
+w3ml/models/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+w3ml/models/contrib/__init__.py,sha256=wwSXS3eqz4LK648XY50mGz5D55xoB1bUks2kaSniREU,255
+w3ml/models/contrib/automl_binary.py,sha256=sNuCI2-lJk0x3w1t3Vxip7sH1lfjQnwZ1kmqbl8PRmw,10188
+w3ml/models/contrib/automl_multiclass.py,sha256=7tXC0juZ2ukqLt_MmlxrmdkmX1J1Z7HDkLFrpIptPyM,9527
+w3ml/models/contrib/automl_multilabel.py,sha256=8Sq1I72kE7bTNKXubG07dO5xTfZHK-ZiHbHfrnQ9KF0,6220
+w3ml/utils/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+w3ml-2024.5.16rc2.dist-info/LICENSE,sha256=vdT2wz3vcUa07iz-xvyBizrJOCi-cqLtNW1jjxqd37Y,1089
+w3ml-2024.5.16rc2.dist-info/METADATA,sha256=NzbxIFg0QVLWsDZtiRFtOTWybyB40mC8kkP6yyfy9pA,601
+w3ml-2024.5.16rc2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+w3ml-2024.5.16rc2.dist-info/top_level.txt,sha256=cZ-TrvjT1F_n6f1WplVLbDwWDWa8lP13_3XZ0T6Ju5w,5
+w3ml-2024.5.16rc2.dist-info/RECORD,,
