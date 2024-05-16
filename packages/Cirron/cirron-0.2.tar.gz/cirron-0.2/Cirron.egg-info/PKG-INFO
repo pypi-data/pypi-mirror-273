@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Cirron
+Version: 0.2
+Summary: Cirron measures how many CPU instructions and system calls a piece of Python code executes.
+Home-page: https://github.com/s7nfo/Cirron
+Author: Matt Stuchlik
+Author-email: matej.stuchlik@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
