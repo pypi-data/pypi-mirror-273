@@ -1,0 +1,3 @@
+[console_scripts]
+py_calculator_new = src.main:main
+
