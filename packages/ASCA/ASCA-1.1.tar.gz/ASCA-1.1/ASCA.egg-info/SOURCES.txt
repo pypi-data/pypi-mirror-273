@@ -1,0 +1,16 @@
+.gitignore
+.travis.yml
+CITATION.cff
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ASCA/ASCA.py
+ASCA/__init__.py
+ASCA.egg-info/PKG-INFO
+ASCA.egg-info/SOURCES.txt
+ASCA.egg-info/dependency_links.txt
+ASCA.egg-info/requires.txt
+ASCA.egg-info/top_level.txt
+examples/ASCA_Example.ipynb
