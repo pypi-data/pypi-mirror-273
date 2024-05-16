@@ -1,0 +1,10 @@
+spdx3merge/__init__.py,sha256=WnsIZV9hUt6HjYChs26x7VdJXinH2WMu8-wRgpEuWMc,80
+spdx3merge/__main__.py,sha256=xWmYOo4S8cDiXgIQFhBg1fdHi1ANIbviMSrbx4LXOAw,173
+spdx3merge/main.py,sha256=0dZKtSfDGUrprUkWv18PTQ8b1Nm3IPbCKKRUkRA3QMM,5815
+spdx3merge/spdx3.py,sha256=JzDjKF-4c1By5s-s3wN3XukfQj5scPdrcsafuHwV-SY,249528
+spdx3merge/version.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+spdx3merge-0.0.1.dist-info/METADATA,sha256=nGuL4vAubqDPckQnuNWlywae4nHa-KiudInqPFnGRO8,2361
+spdx3merge-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+spdx3merge-0.0.1.dist-info/entry_points.txt,sha256=Ywc93fyARP63GalQ5wIgYdqY8i6YnhWxEoNpc3NkImU,47
+spdx3merge-0.0.1.dist-info/licenses/LICENSE,sha256=npUT32k_O0lU4UHJ8ZZ2_Ti0GR1oSbNGRzID9lSWkxs,1068
+spdx3merge-0.0.1.dist-info/RECORD,,
