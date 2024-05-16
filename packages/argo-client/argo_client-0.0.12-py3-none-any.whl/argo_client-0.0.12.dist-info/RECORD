@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=Oz33ZOi8w1QhI77NJvS0CjYJBIGZ0jSqbOd1VC-Eu2c,1586
+LICENSE,sha256=Whr3-BviA9XZw7G2MrDsvn1zgg10TFgw6JZpVBYO8wE,1457
+argo_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+argo_client/connection.py,sha256=KyBSZ0SCy3zJIJXJfLG0WiGStVlG3Ueq2HbwPaOAohk,17386
+argo_client/interaction.py,sha256=f3b3RiOThXz0iTE78Q09sQiQjMq8rFgchmhnr0QIN2I,9239
+argo_client/netstring.py,sha256=w-N6v0yMcJuy_0gsfRkLHqfdN8FWSsIDzv1w8eCs5R0,1189
+argo_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy.ini,sha256=HAKlzSgAuvMC3TVgM5iYoy4q2s5zuRdc0Qn4CnrsKX0,305
+argo_client-0.0.12.dist-info/LICENSE,sha256=Whr3-BviA9XZw7G2MrDsvn1zgg10TFgw6JZpVBYO8wE,1457
+argo_client-0.0.12.dist-info/METADATA,sha256=nsVJUJWIut9h_0RztrL97D8z9r7kMFFm7e9wS-HPbq0,1157
+argo_client-0.0.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+argo_client-0.0.12.dist-info/RECORD,,
