@@ -1,0 +1,6 @@
+[console_scripts]
+gh_mirror=git_mirror.__main__:main_github
+git_mirror=git_mirror.__main__:main
+gl_mirror=git_mirror.__main__:main_gitlab
+sh_mirror=git_mirror.__main__:main_selfhosted
+
