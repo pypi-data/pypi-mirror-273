@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+plingenn.egg-info/PKG-INFO
+plingenn.egg-info/SOURCES.txt
+plingenn.egg-info/dependency_links.txt
+plingenn.egg-info/top_level.txt
