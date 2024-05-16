@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: L2dvEXApi
+Version: 1.1
+Summary: API for Live2DViewerEX
+Home-page: http://www.icedream.space
+Author: Esdrin
+Author-email: esdrin@icedream.space
+License: MIT License
+Keywords: live2d,api
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client
+
+# 快速上手
+
+正常情况（可以参考websocket.WebSocket的传参)
+
+```python
+import L2dvExApi
+api =  L2dvExApi.WebSocket()
+api.connect("ws://127.0.0.1:8888/api")
+api.ShowTextBubble(0, "Hello, World!")
+api.close()
+```
+
+使用`wit ... as ...`自动开启/关闭链接(推荐)
+
+```python
+import L2dvExApi
+with L2dvExApi.WebSocket("ws://127.0.0.1:8888/api") as api:
+    api.ShowTextBubble(0, "Hello, World!")
+```
+
+# API列表
+
+```python
+import L2dvExApi
+print(L2dvExApi.ApiList.Msg_name_to_code.keys())
+```
