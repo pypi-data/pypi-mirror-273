@@ -1,0 +1,6 @@
+aipkgs_sentry/__init__.py,sha256=Iw-vnOmWolf0MLZMkGA3Xz69tJvC8MkeSVBw3OkKPbo,42
+aipkgs_sentry/helpers.py,sha256=XtdkgxXuKJzbRa0UJmqFPMS3M1B0b2xEy5aSWsJarg0,870
+aipkgs_sentry-1.0.1.dist-info/LICENSE.md,sha256=oo2hmWWp-h0KgkfEZN9Pjlfll5kxOuK396Ud8WQfyHA,1058
+aipkgs_sentry-1.0.1.dist-info/METADATA,sha256=_eoChTVPqQUFtAK1sTmlHwSh5t3XrSWNjsVFxn9ILl0,621
+aipkgs_sentry-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aipkgs_sentry-1.0.1.dist-info/RECORD,,
