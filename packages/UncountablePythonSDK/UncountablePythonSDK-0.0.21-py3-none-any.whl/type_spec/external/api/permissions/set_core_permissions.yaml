@@ -1,0 +1,69 @@
+$endpoint:
+    is_sdk: true
+    method: post
+    path: ${external}/permissions/external_set_core_permissions
+    function: main.site.app.external.permissions.set_core_permissions.set_core_permissions
+    desc: "Sets recipe related permissions"
+
+
+PermissionsScopeProject:
+  type: Object
+  properties:
+      type:
+          type: Literal<'project'>
+      project_key:
+          type: identifier.IdentifierKey
+
+PermissionsScopeRecipe:
+  type: Object
+  properties:
+    type:
+        type: Literal<'recipe'>
+    recipe_key:
+        type: identifier.IdentifierKey
+
+PermissionsScopeMaterialFamily:
+  type: Object
+  properties:
+    type:
+        type: Literal<'material_family'>
+    material_family_key:
+        type: identifier.IdentifierKey
+
+PermissionsScopeAllMaterialFamilies:
+  type: Object
+  properties:
+    type:
+        type: Literal<'all_material_families'>
+
+
+PermissionsScope:
+  type: Alias
+  alias: |
+    Union<
+      PermissionsScopeProject,
+      PermissionsScopeRecipe,
+      PermissionsScopeMaterialFamily,
+      PermissionsScopeAllMaterialFamilies
+    >
+
+Arguments:
+    type: Object
+    properties:
+        scope:
+            type: PermissionsScope
+            desc: Scope of permissions to change
+        user_group_ids?:
+            type: List<Integer>
+            desc: User group ids to grant permission to
+        user_ids?:
+            type: List<Integer>
+            desc: User ids to grant permission to
+        permissions_types:
+            type: List<permissions.CorePermissionType>
+        update_type:
+            type: post_base.UpdateType
+            desc: The type of update to perform
+
+Data:
+  type: Object
