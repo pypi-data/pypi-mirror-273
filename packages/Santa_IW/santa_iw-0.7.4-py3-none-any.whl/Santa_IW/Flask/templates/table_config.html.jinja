@@ -1,0 +1,32 @@
+{# define table_cap and table_subs before including #}
+{% if table_subs %}
+<br/>
+<caption class="caption">{{ table_cap }}</caption>
+<table style="width:1200px" class="table table-striped table-bordered">
+    <thead class="table-dark">
+    <tr style="background-color:#0000c0;color:white;">
+        <th style="width:20%">Name</th>
+        <th style="width:70%">Value</th>
+        <th style="width:10%">Depth</th>
+    </tr>
+    </thead>
+    {% for name,val,depth in table_subs %}
+    {% set rowcol = 'white' %}
+    <tr style="background-color:{{ rowcol }}">
+        <td>
+            {{ name }}
+        </td>
+        <td>
+            {% autoescape false %}
+            {{ webgui.escape(val) }}
+            {% endautoescape %}
+        </td>
+        <td>
+            {{ depth }}
+        </td>
+
+    </tr>
+    {% endfor %}
+</table>
+<br/>
+{% endif %}

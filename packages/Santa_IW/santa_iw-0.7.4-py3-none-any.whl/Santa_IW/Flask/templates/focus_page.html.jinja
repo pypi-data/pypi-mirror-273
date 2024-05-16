@@ -1,0 +1,73 @@
+{% extends'BoostrapBase.html.jinja' %}
+{% block header_insert %}
+    {% if refresh_interval %}
+        <meta http-equiv="refresh" content="{{ refresh_interval }}">
+    {% endif %}
+    <title>{{ title }}</title>
+    <style>
+        body {
+            background-color: #d0d0d0;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+{% endblock %}
+{% block body_insert %}
+    <h1 style="color: {{ focus.latest_status().html_color() }};background-color:black">{{ title }}</h1>
+    {% include "NavigationBar.html.jinja" %}
+
+    {% set table_subs = trail %}
+    {% set table_cap = "Subsystem Focused on " + focus.name() %}
+    {% include "table_subsystems.html.jinja" %}
+
+    {% set table_subs = suspects %}
+    {% set table_cap = "Nodes and Tests Flagged for Attention" %}
+    {% include "table_subsystems.html.jinja" %}
+
+    {% set table_subs = child_nodes %}
+    {% set table_cap = "Children of " + focus.name() %}
+    {% include "table_subsystems.html.jinja" %}
+
+    {% set table_subs = child_tests %}
+    {% set table_cap = "Tests for " + focus.name() %}
+    {% include "table_subsystems.html.jinja" %}
+
+    {% set table_subs = istats %}
+    {% set table_cap = "Internal Status for " + focus.name() %}
+    {% include "table_internal_status.html.jinja" %}
+
+    {% set table_subs = dstats %}
+    {% set table_cap = "Discrete Statistics for " + focus.name() %}
+    {% include "table_discrete_stats.html.jinja" %}
+
+    {% set table_subs = astats %}
+    {% set table_cap = "Analog Statistics for " + focus.name() %}
+    {% include "table_analog_stats.html.jinja" %}
+
+    {% if image %}
+        <h1>Image: {{ image }}</h1>
+        <img src="{{ image }}" alt="data plot"/>
+    {% endif %}
+
+    {% set table_subs = focus_config_list %}
+    {% set table_cap = "Configuration Data for  " + focus.name() %}
+    {% include "table_config.html.jinja" %}
+
+
+    {% if body %}
+        <pre>{{ body }}</pre>
+        <br/>
+    {% endif %}
+
+{% include "page_footer.html.jinja" %}
+{% endblock %}

@@ -1,0 +1,68 @@
+<div class="container text-left">
+    <div class="row">
+        <div class="col col-sm-1"><a class="nav-link active" href="{{ url_for('jump',token="home") }}">
+            <img
+                    src="{{ url_for('static', filename='images/santa_button.jpg') }}"
+                    class="image" style="width:100px;height:100px;" alt="Santa is watching"
+            /></a>
+        </div>
+        <div class="col-lg-11">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('jump',token="home") }}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('jump',token="naughty") }}">{{ webgui.config().get_item('tree_attention_char') }}Naughty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('jump',token="test_types") }}">Test Types</a>
+                </li>
+                {% if stepparent %}
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{{ url_for("focus_page", ssname=stepparent.name()) }}">{{ focus._nominal_class }}</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link disabled"
+                           href="{{ url_for("focus_page", ssname=focus.name()) }}">{{ focus._nominal_class }}</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">Actions</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                               href="{{ url_for("ack_page", ssname=focus.name()) }}">Ack {{ webgui.config().get_item('tree_attention_char') }}</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{{ url_for("reset_page", ssname=focus.name()) }}">Reset
+                            Stats</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for("run_page", ssname=focus.name()) }}">Run Tests</a>
+                        </li>
+                        {% if focus.subsystem_is_enabled() %}
+                            <li><a class="dropdown-item"
+                                   href="{{ url_for("disable_page", ssname=focus.name()) }}">ENABLED->DISABLED</a></li>
+                        {% else %}
+                            <li><a class="dropdown-item"
+                                   href="{{ url_for("enable_page", ssname=focus.name()) }}">DISABLED->ENABLED</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="{{ url_for('control') }}">Control SIW</a></li>
+                    </ul>
+                </li>
+                {#  <li>{{ current_time_txt }}<br/>on {{ localhost }} for {{ elapsed_time_txt }}</li>  #}
+            </ul>
+            <ul class="nav">
+                <li>
+                    <pre>   {{ current_time_txt }}  </pre>
+                </li>
+                <li><pre> {{ version }} </pre></li>
+                <li>
+                    <pre>  Running on {{ localhost }} for {{ elapsed_time_txt }}  </pre>
+                </li>
+                <li class="nav-item">
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

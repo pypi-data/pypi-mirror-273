@@ -1,0 +1,5 @@
+[console_scripts]
+SantaSetup=SantaSetup:main
+SantaSetupInner=SantaSetupInner:main
+Santa_IW_service_run=Santa_IW.Main:main
+

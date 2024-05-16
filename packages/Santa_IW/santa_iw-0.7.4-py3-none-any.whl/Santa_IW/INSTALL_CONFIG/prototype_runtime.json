@@ -1,0 +1,17 @@
+{
+    "node_dirs": [
+        "{{__USER_NODES_DIR__}}","{{__DISCOVERY_NODES_DIR__}}","{{__INSTALL_NODES_DIR__}}"
+    ],
+    "template_dirs": [
+        "{{__USER_TEMPLATES_DIR__}}","{{__DISCOVERY_TEMPLATES_DIR__}}","{{__INSTALL_TEMPLATES_DIR__}}"
+    ],
+    "plugin_modules_dirs": [
+        "{{__USER_PLUGIN_MODULES_DIR__}}","{{__INSTALL_PLUGIN_MODULES_DIR__}}"
+    ],
+    "plugin_config_dirs": [
+        "{{__USER_PLUGIN_CONFIG_DIR__}}","{{__DISCOVERY_PLUGIN_CONFIG_DIR__}}","{{__INSTALL_PLUGIN_CONFIG_DIR__}}"
+    ],
+    "test_modules_dirs": [
+        "{{__USER_TEST_MODULES_DIR__}}","{{__INSTALL_TEST_MODULES_DIR__}}"
+    ]
+}
