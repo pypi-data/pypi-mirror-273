@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: py_music_editer
+Version: 0.1.0a24051001
+Summary: 提供主流音乐文件数据与属性管理，读取与修改，以及工具集的Python库。
+Home-page: https://gitee.com/CooooldWind/PyMusicEditer
+Author: CooooldWind_
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: CD Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+
