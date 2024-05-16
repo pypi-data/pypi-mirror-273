@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rlign
+Version: 1.0
+Summary: Beat normalization for ecg data.
+Author: Lucas Bickmann, Lucas Plagwitz
+Requires-Python: >=3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: neurokit2>=0.2.7
+Requires-Dist: numpy>=1.24.2
+Requires-Dist: scipy>=1.12.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: scikit-learn>=1.4.0
+Requires-Dist: sphinx ; extra == "docs"
+Provides-Extra: docs
