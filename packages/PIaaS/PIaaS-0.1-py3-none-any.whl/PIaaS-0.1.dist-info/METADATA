@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PIaaS
+Version: 0.1
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+
+# sg300-webpwr
+Web-application to control poe power on a Cisco sg300-10mpp switch
