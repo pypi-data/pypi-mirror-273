@@ -1,0 +1,9 @@
+cargo_lambda_cdk/__init__.py,sha256=QfRSBepw89bQHsx1_cGYXtYAi7X3IuZkBUUu-JWzbok,110659
+cargo_lambda_cdk/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cargo_lambda_cdk/_jsii/__init__.py,sha256=7l021oASPRU2YDN5fItT5ip4okSxCPi0_Smg_ELtvEY,401
+cargo_lambda_cdk/_jsii/cargo-lambda-cdk@0.0.22.jsii.tgz,sha256=IsINa7u7Lr54IsFfRW8_HEFRa5HaKFimonUNddzvQrU,12132777
+cargo_lambda_cdk-0.0.22.dist-info/LICENSE,sha256=1tSood5nT5Bds80jbX20zcqao9MBstsLE7bW7gGIO38,1058
+cargo_lambda_cdk-0.0.22.dist-info/METADATA,sha256=qel5M8vxOY6gkBW1bD3pMBGvKpbIiJ4SpXIJTfH-w_Q,7807
+cargo_lambda_cdk-0.0.22.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cargo_lambda_cdk-0.0.22.dist-info/top_level.txt,sha256=szbi-ejAzkUR38cR7eq0zLOxHOk7N0Xbt9VWrOjqM7I,17
+cargo_lambda_cdk-0.0.22.dist-info/RECORD,,
