@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "maat-machine"
+version = "0.1.1b1"
+description = "Yet another package designed to simplify coding for data science and machine learning"
+authors = ["Dmitry Vlasov <dmitry.v.vlasov@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "maat_machine"}]
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+numpy = "1.26.4"
+tensorflow = "2.16.1"
+scikit-learn = "^1.4.2"
+pandas = "^2.2.2"
+matplotlib = "^3.8.4"
+opencv-python = "^4.9.0.80"
+pillow = "^10.3.0"
+tqdm = "^4.66.4"
+ipython = "^8.24.0"
+
+[tool.isort]
+line_length = 120
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
