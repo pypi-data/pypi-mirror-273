@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: bec_widgets
+Version: 0.53.3
+Summary: BEC Widgets
+Project-URL: Bug Tracker, https://gitlab.psi.ch/bec/bec_widgets/issues
+Project-URL: Homepage, https://gitlab.psi.ch/bec/bec_widgets
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Requires-Dist: bec-lib
+Requires-Dist: black
+Requires-Dist: h5py
+Requires-Dist: jedi
+Requires-Dist: pydantic
+Requires-Dist: pyqtdarktheme
+Requires-Dist: pyqtgraph
+Requires-Dist: qtconsole
+Requires-Dist: qtpy
+Requires-Dist: zmq
+Provides-Extra: dev
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: fakeredis; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-qt; extra == 'dev'
+Requires-Dist: pytest-random-order; extra == 'dev'
+Requires-Dist: pytest-timeout; extra == 'dev'
+Provides-Extra: pyqt5
+Requires-Dist: pyqt5>=5.9; extra == 'pyqt5'
+Provides-Extra: pyqt6
+Requires-Dist: pyqt6>=6.7; extra == 'pyqt6'
