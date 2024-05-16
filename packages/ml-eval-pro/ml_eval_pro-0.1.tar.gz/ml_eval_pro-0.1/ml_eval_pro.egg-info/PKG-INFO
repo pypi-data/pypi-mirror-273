@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ml_eval_pro
+Version: 0.1
+Summary: A Comprehensive Platform for Automated Testing and Analysis For Supervised Machine Learning Tasks.
+Author-email: Reem Ayman <reemayman5299@gmail.com>, Sondos Akram <sondosakramm@gmail.com>, Omar Marie <omarhamed440@gmail.com>, Mohamed Maher <m.maher525@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# ML-EvalPro
+Advancing ML Model Evaluation: A Comprehensive Platform for Automated Testing and Analysis For Supervised Machine Learning Tasks
