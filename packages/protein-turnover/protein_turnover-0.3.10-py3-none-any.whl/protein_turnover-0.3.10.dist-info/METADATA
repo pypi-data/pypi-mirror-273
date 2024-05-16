@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: protein-turnover
+Version: 0.3.10
+Summary: protein turnover pipeline
+Home-page: https://github.com/arabidopsis/protein_turnover.git
+License: MIT
+Author: Ian Castleden
+Author-email: ian.castleden@uwa.edu.au
+Requires-Python: >=3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Provides-Extra: unidecode
+Requires-Dist: SQLAlchemy (>=2.0.20,<3.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: lxml (>=4.9.0,<5.0.0)
+Requires-Dist: matplotlib (>=3.5.2,<4.0.0)
+Requires-Dist: more-itertools (>=8.13.0,<9.0.0)
+Requires-Dist: pandas (>=2.0.3,<3.0.0)
+Requires-Dist: pyarrow (>=15.0.0,<16.0.0)
+Requires-Dist: pymzml (>=2.5.2,<3.0.0)
+Requires-Dist: pyteomics (>=4.5.3,<5.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: tomli-w (>=1.0.0,<2.0.0)
+Requires-Dist: unidecode (>=1.3.8,<2.0.0) ; extra == "unidecode"
+Project-URL: Repository, https://github.com/arabidopsis/protein_turnover.git
+Description-Content-Type: text/markdown
+
+# Protein Turnover Pipeline
+
+More documentation soon.
+
