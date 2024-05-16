@@ -1,0 +1,13 @@
+requests
+numpy
+pandas
+pathlib
+gemmi
+scipy
+scikit-learn
+seaborn
+matplotlib
+argparse
+
+[test]
+pytest
