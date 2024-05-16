@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: http-uploader-cli
+Version: 0.1.4
+Summary: Simple HTTP CLI json data uploader
+Home-page: https://github.com/rafailmdzdv/http-uploader-cli
+Author: rafailmdzdv
+Author-email: rafayt323@xmail.ru
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: aiohttp (>=3.9.5,<4.0.0)
+Requires-Dist: aiomultiprocess (>=0.9.1,<0.10.0)
+Requires-Dist: prettytable (>=3.10.0,<4.0.0)
+Project-URL: Repository, https://github.com/rafailmdzdv/http-uploader-cli
+Description-Content-Type: text/markdown
+
+### Http Uploader CLI
+
+#### Dependencies
+- aiohttp
+- aiofiles
+- aiomultiprocess
+
+|Parameter|Description|
+|:--------|-----------|
+|--input-file [path-to-file]|Path to txt file to read|
+|--url [url]|Service url to send POST|
+|--filter [a.b.c == [value]]|Filter to handle JSONs (default: None)|
+|--n-lines [num]|Number of lines to send (default: all)|
+|--cpus [num]|Processes to use for reading file (default: 4)|
+|--coroutines [num]|Requests amount to send (default: send all from 1 request)|
+
+#### Example
+```shell
+$ python -m http_uploader --input-file ./tests/integration/data/test_jsons.txt --filter 'd == "ddd"' --url https://httpbin.org/post
++------------+------------+---------------+---------------+
+| Sent lines | Sent bytes | Skipped lines | Skipped bytes |
++------------+------------+---------------+---------------+
+|     4      |    204     |       0       |       0       |
++------------+------------+---------------+---------------+
+```
+
