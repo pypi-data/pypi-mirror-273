@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+stepai/__info__.py
+stepai/__init__.py
+stepai.egg-info/PKG-INFO
+stepai.egg-info/SOURCES.txt
+stepai.egg-info/dependency_links.txt
+stepai.egg-info/requires.txt
+stepai.egg-info/top_level.txt
