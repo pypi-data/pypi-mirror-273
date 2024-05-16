@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pandoc_recap.py
+pyproject.toml
+pandoc_recap.egg-info/PKG-INFO
+pandoc_recap.egg-info/SOURCES.txt
+pandoc_recap.egg-info/dependency_links.txt
+pandoc_recap.egg-info/entry_points.txt
+pandoc_recap.egg-info/requires.txt
+pandoc_recap.egg-info/top_level.txt
