@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sourcebin
+Version: 1.0.1
+Summary: Sourcebin API wrapper for Python
+Home-page: https://github.com/elijahgives/sourcebin.py
+Author: author
+Author-email: hi@elijah.rip
+License: LICENSE
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+# Sourcebin.py
+Sourcebin.py is a simple Python API wrapper for https://sourceb.in/.
+
+
+# Installation
+```
+pip install sourcebin
+```
+
+# Examples
+
+### Creating a paste
+```py
+import asyncio
+import sourcebin
+
+async def main():
+    code = "console.log('Hello World')"
+    paste = await sourcebin.create(
+        name="example.js", 
+        code=code, 
+        title="Example Paste"
+    )
+    print(paste)  # https://sourceb.in/ooPp0TSrpv
+
+asyncio.run(main())
+```
