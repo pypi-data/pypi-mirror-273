@@ -1,0 +1,5 @@
+torch>=2.1
+numpy>=1.26.4
+sophia-opt>=0.2.2
+gymnasium>=0.29.1
+jax>=0.4.28
