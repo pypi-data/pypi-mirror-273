@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/petabunit/__init__.py
+src/petabunit/console.py
+src/petabunit/example.py
+src/petabunit/log.py
+src/petabunit/py.typed
+src/petabunit.egg-info/PKG-INFO
+src/petabunit.egg-info/SOURCES.txt
+src/petabunit.egg-info/dependency_links.txt
+src/petabunit.egg-info/requires.txt
+src/petabunit.egg-info/top_level.txt
+src/petabunit.egg-info/zip-safe
+tests/test_example.py
