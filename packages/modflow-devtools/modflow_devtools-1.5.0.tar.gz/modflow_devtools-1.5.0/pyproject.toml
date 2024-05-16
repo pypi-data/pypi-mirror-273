@@ -1,0 +1,102 @@
+[build-system]
+# Minimum requirements for the build system to execute
+requires = [
+    "setuptools>=61",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modflow-devtools"
+description = "Python tools for MODFLOW development"
+authors = [
+    {name = "Joseph D. Hughes", email = "modflow@usgs.gov"},
+    {name = "Michael Reno", email = "mreno@ucar.edu"},
+    {name = "Mike Taves", email = "mwtoews@gmail.com"},
+    {name = "Wes Bonelli", email = "wbonelli@ucar.edu"},
+]
+maintainers = [
+    {name = "Joseph D. Hughes", email = "modflow@usgs.gov"},
+]
+keywords = [
+    "MODFLOW",
+    "development",
+    "utilities",
+    "groundwater",
+    "hydrogeology"
+]
+readme = "README.md"
+license = {text = "CC0"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Hydrology"
+]
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+[project.optional-dependencies]
+lint = [
+    "ruff"
+]
+test = [
+    "modflow-devtools[lint]",
+    "coverage",
+    "flaky",
+    "filelock",
+    "meson!=0.63.0",
+    "ninja",
+    "numpy",
+    "pandas",
+    "pytest!=8.1.0",
+    "pytest-cov",
+    "pytest-dotenv",
+    "pytest-xdist",
+    "PyYaml",
+    "syrupy"
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "myst-parser"
+]
+
+[project.urls]
+"Documentation" = "https://modflow-devtools.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://github.com/MODFLOW-USGS/modflow-devtools/issues"
+"Source Code" = "https://github.com/MODFLOW-USGS/modflow-devtools"
+
+[tool.ruff]
+target-version = "py38"
+include = [
+    "pyproject.toml",
+    "modflow_devtools/**/*.py",
+    "autotest/**/*.py",
+    "docs/**/*.py",
+    "scripts/**/*.py",
+    ".github/**/*.py",
+]
+
+[tool.ruff.lint]
+select = ["F", "E", "I001"]
+
+[tool.setuptools]
+packages = ["modflow_devtools"]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = {file = "version.txt"}
+
+[tool.setuptools_scm]
+fallback_version = "999"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
