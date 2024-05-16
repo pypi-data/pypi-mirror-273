@@ -1,0 +1,2 @@
+[console_scripts]
+sonus = sonus:main.main

@@ -1,0 +1,11 @@
+sonus/__init__.py,sha256=hWRK2Zb1M9bC5W9lL65zcCPn2pTag3zUGC-fQHy1aD8,44
+sonus/__main__.py,sha256=C9ohrmO73piGZ1ox9EVST0M7yTT9OjajyKshzstOEWM,67
+sonus/chapterizer.py,sha256=3_YTR6LbNyGF9i8rYt9TwwHqzqy8W2H0lkiWwa1oS-8,8450
+sonus/downloader.py,sha256=Q6WdxcoWfaAubmFW8A_Qu6Bn0FMu2szIxCWxtUMvfc8,11549
+sonus/main.py,sha256=wkAI051tR1GZs6SFyartwTgdFR0v8LNI1tzLkYU9wZ8,5225
+sonus-0.6.4.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+sonus-0.6.4.dist-info/METADATA,sha256=aQUH7WFxNpcfls_HdnBAG0Q55r3jJtjHA_F0PTN5LCg,2967
+sonus-0.6.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sonus-0.6.4.dist-info/entry_points.txt,sha256=UBIyY_pPcT-acGkpc0fP0g3OffoWRiRHpb_zbuvJyOk,42
+sonus-0.6.4.dist-info/top_level.txt,sha256=EAFlUBxMnQTQOSqkx36YXplrg4Xm_25d6aQ6mvvYjXs,6
+sonus-0.6.4.dist-info/RECORD,,
