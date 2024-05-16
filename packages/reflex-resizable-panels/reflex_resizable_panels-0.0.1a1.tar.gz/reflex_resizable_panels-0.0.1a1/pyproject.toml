@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reflex-resizable-panels"
+version = "0.0.1a1"
+description = "Reflex custom component resizable-panels"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.8"
+authors = [{ name = "", email = "contact@lendemor.dev" }]
+keywords = ["reflex","reflex-custom-components"]
+
+dependencies = ["reflex>=0.5.0"]
+
+classifiers = ["Development Status :: 4 - Beta"]
+
+[project.urls]
+Repository = "https://github.com/Lendemor/reflex-resizable-panels"
+
+[project.optional-dependencies]
+dev = ["build", "twine"]
+
+[tool.setuptools.packages.find]
+where = ["custom_components"]
