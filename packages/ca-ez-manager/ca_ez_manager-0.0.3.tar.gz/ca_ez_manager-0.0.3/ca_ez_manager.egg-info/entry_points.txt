@@ -1,0 +1,2 @@
+[console_scripts]
+ca-ez-manager = ca_ez_manager.__main__:main
