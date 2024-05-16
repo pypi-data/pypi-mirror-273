@@ -1,0 +1,22 @@
+<select id="select-all-fields" class="form-select" data-placeholder="You can filter network here...">
+    <option value="ALL,ALL,ALL">All values</option>
+    {% if pyvisjs["edge_filtering_lookup"] %}
+    {% for field in pyvisjs["edge_filtering_lookup"] %}
+    <optgroup label="edge.{{field}}">
+    {% for val in pyvisjs["edge_filtering_lookup"][field] -%}
+        <option value="edge,{{ field }},{{ val }}">{{ val }}</option>
+    {% endfor %}
+    </optgroup>
+    {% endfor %}
+    {% endif %}
+
+    {% if pyvisjs["node_filtering_lookup"] %}
+    {% for field in pyvisjs["node_filtering_lookup"] %}
+    <optgroup label="node.{{field}}">
+    {% for val in pyvisjs["node_filtering_lookup"][field] -%}
+        <option value="node,{{ field }},{{ val }}">{{ val }}</option>
+    {% endfor %}
+    </optgroup>
+    {% endfor %}
+    {% endif %}
+</select>
