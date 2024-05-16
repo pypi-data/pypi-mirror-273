@@ -1,0 +1,17 @@
+abstract_pandas/__init__.py,sha256=DyFiTwKfFqxwu5bTvjAG2ueMOCT7RHWHxOJaMaM7V0Y,29
+abstract_pandas/abstractLandManager.py,sha256=iIEkqPXHI74AHwQPEoQ1JTPFqm7uaLVzj78y9xoc-lk,5943
+abstract_pandas/depriciated.py,sha256=-btP-vcVW4ikfS10GmLM1ZGJzXxyeZlVwQ8kB27ATSU,7395
+abstract_pandas/excel_classes.py,sha256=4pkC8iZSfGlxe0PNxFBCPZwEtQ1CsBro5VvYhiH69yY,6290
+abstract_pandas/excel_gui.py,sha256=JFUEmN21pmM-t1DomPmmktIjVraaLh67OS-cYAdxnWI,20476
+abstract_pandas/excel_module.py,sha256=Hso73aO6bVJD1W2veMPTUyVVPAWj1CDLUVPFzMWCVJQ,13418
+abstract_pandas/file_utils.py,sha256=EgSmBlAwxyc0yG3ndZk1_1s6hQe5TNxI0tPZbpaOnV4,14778
+abstract_pandas/functions.py,sha256=veRNHyINTUShOgVcOoGGPGR8pLjdpnGpHObsOfi0Ouo,8233
+abstract_pandas/general_functions.py,sha256=b18k5Bm47pY3xbVAqknJeF9gSMxp8PxMCfUWBbddq_M,7459
+abstract_pandas/landManager.py,sha256=ME9mRcLDBCkU19lW0EL207XxG0uSVK5EOby6gq8CvoU,3803
+abstract_pandas/location_functions.py,sha256=cZZXHhDaeUiH5ZlfjaefcfcGYr7S-a8zvBg-FuOLxz8,1745
+abstract_pandas/proj_tools.py,sha256=DWORHOy0xgAJFXc9Oo9Rp549FaERvqSvucTu7RxzEkU,2851
+abstract_pandas/query_tools.py,sha256=dabetYUdxFV9kbPlVcPKwSZzHyd1Sp4seCEDOtVf19Y,8552
+abstract_pandas-0.0.0.89.dist-info/METADATA,sha256=vdOWneiGVjdvhdovIOuqi5Lm7F3s_nPPDc4HQx_va_o,732
+abstract_pandas-0.0.0.89.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+abstract_pandas-0.0.0.89.dist-info/top_level.txt,sha256=57uPfGqAyTX0wg5DQyywFh47gRKF6-5PPnzWNBlBIKo,16
+abstract_pandas-0.0.0.89.dist-info/RECORD,,
