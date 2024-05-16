@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "advanced_navigation"
+version = "0.1.74"
+description = ""
+authors = ["Charles Balderstone <charles.balderstone@advancednavigation.com>"]
+readme = "README.md"
+packages = [
+    { include = "advanced_navigation" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastcrc = "^0.3.0"
+pyserial = "^3.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
