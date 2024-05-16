@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+postmark_template_translate/__init__.py
+postmark_template_translate.egg-info/PKG-INFO
+postmark_template_translate.egg-info/SOURCES.txt
+postmark_template_translate.egg-info/dependency_links.txt
+postmark_template_translate.egg-info/requires.txt
+postmark_template_translate.egg-info/top_level.txt
+postmark_template_translate/postmark/__init__.py
+postmark_template_translate/postmark/config.py
+postmark_template_translate/translate/__init__.py
+postmark_template_translate/translate/translate.py
