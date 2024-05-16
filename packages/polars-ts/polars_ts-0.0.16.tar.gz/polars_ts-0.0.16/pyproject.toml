@@ -1,0 +1,33 @@
+[project]
+name = "polars-ts"
+requires-python = ">=3.8"
+dependencies = [
+  'polars >= 0.20.26',
+  'polars-xdt',
+  'hvplot',
+  'pyarrow',
+  'scipy',
+  'plotly',
+  'nbformat',
+  'ipython'
+]
+
+[project.optional-dependencies]
+dev=[
+  'hvplot',
+  'pyarrow',
+  'plotly',
+  'nbformat',
+  'ipython'
+]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0", "polars>=0.20.26"]
+build-backend = "maturin"
+
+
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
