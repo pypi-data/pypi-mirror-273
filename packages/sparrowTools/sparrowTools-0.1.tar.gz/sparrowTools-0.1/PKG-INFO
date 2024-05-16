@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: sparrowTools
+Version: 0.1
+Summary: Python的工具箱
+Requires-Python: >=3.11
