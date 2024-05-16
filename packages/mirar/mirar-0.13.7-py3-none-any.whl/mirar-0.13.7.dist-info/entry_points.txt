@@ -1,0 +1,4 @@
+[console_scripts]
+mirar-run=mirar.__main__:main
+winter-stack=mirar.pipelines.winter.run:run_stack_of_stacks
+
