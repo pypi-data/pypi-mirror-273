@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: okta-expression-parser
+Version: 0.3.0
+Summary: Returns a boolean by passing Okta profile data to an Okta Expression using Okta Expression Language
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: sly (>=0.5,<0.6)
+Description-Content-Type: text/markdown
+
+# Okta expression parser
+
