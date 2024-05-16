@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: turtle-tetris
+Version: 1.0
+Summary: Another TETRIS but use the turtle.
+Author-email: yoyoliyang <yoyoliyang@hotmail.com>
+Project-URL: Homepage, https://github.com/yuedouzi/turtle-tetris/
+Project-URL: Issues, https://github.com/yuedouzi/turtle-tetris/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 使用海龟库编写的俄罗斯方块游戏
+
+
+操作比较简单，安装python即可玩耍，space变形，方向键移动.
+
+作品仅供教学使用.
