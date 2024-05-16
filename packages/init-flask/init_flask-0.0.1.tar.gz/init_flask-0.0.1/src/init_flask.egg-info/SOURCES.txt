@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+src/init_flask/__init__.py
+src/init_flask/init-flask.py
+src/init_flask.egg-info/PKG-INFO
+src/init_flask.egg-info/SOURCES.txt
+src/init_flask.egg-info/dependency_links.txt
+src/init_flask.egg-info/requires.txt
+src/init_flask.egg-info/top_level.txt
+tests/test.py

@@ -1,0 +1,19 @@
+[project]
+name = "init-flask"
+version = "0.0.1"
+authors = [
+  { name="Sam", email="samuelayodeji2478@gmail.com" },
+]
+description = "A python package to easily setup a flak development environment"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ['click', 'requests']
+
+[project.urls]
+Homepage = "https://github.com/olascoWorks/init-flask"
+Issues = "https://github.com/olascoWorks/init-flask/issues"
