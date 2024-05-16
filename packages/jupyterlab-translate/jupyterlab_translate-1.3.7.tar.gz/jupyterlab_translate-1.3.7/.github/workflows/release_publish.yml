@@ -1,0 +1,46 @@
+name: Create Release and publish package
+
+on:
+  push:
+    tags:
+    - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      # IMPORTANT: this permission is mandatory for the release-action
+      contents: write
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade twine build
+    - name: Build release
+      run: |
+        python -m build
+        python -m twine check dist/*
+    - name: Create Release
+      id: create_release
+      uses: ncipollo/release-action@4f8867fa5eec0b3f59ead8f69aeba316c24907b3
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag: ${{ env.GITHUB_REF }}
+        name: ${{ env.GITHUB_REF }}
+        artifacts: 'dist/*'
+        body: Release ${{ env.GITHUB_REF }}
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+
