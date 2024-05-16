@@ -1,0 +1,5 @@
+behave
+pillow>=10.0.0
+customtkinter
+tkinter-tooltip
+xmlschema
