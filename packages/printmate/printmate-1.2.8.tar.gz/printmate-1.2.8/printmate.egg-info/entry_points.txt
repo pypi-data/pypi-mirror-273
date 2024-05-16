@@ -1,0 +1,2 @@
+[console_scripts]
+printmate = printmate.__main__:main
