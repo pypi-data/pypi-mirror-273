@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: printmate
+Version: 1.2.6
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+License-File: license
+Requires-Dist: colorama
+
