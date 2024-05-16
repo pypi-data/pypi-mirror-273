@@ -1,0 +1,37 @@
+[project]
+name = "nbDevTools"
+description = "Local Script Tools"
+authors = [{ name = "Christoph Chester Cury", email = "cury.grupos@gmail.com" }]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+requires-python = ">=3.6"
+#version = '1.0'
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+
+[tool.setuptools]
+#include-package-data = true
+#package-data={ 'ploft'= ['jsc/*.js'] }
+#long_description = "Data Visualization"
+
+
+[tool.setuptools.dynamic]
+version = {attr = "nbDevTools.__version__"}
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+strict = true
+mypy_path = "mypy_stubs"
