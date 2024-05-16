@@ -1,0 +1,3 @@
+[console_scripts]
+txt2udp = txt2udp.main:main
+txt2udp-cli = txt2udp.cli:app
