@@ -1,0 +1,4 @@
+requests
+typing_extensions
+pydot==2.0.0
+graphviz==0.20.3
