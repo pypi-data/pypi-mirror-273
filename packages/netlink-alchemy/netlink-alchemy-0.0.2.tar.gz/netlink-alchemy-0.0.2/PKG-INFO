@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: netlink-alchemy
+Version: 0.0.2
+Summary: Extensions for SQL Alchemy
+Home-page: https://gitlab.com/netlink_python/netlink-sharepoint
+License: MIT
+Keywords: SQL SQLAlchemy Alchemy MySQL MariaDB
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.8,<=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: SQLAlchemy (>=2.0.30)
+Project-URL: Repository, https://gitlab.com/netlink_python/netlink-sharepoint
+Description-Content-Type: text/markdown
+
+# netlink-alchemy
+
+Extensions for SQL Alchemy
+
+Additional Types (implemented for MySQL and MariaDB):
+
+- `TinyInteger`
+- `UnsignedTinyInteger`
+
+- `UnsignedSmallInteger`
+
+- `MediumInteger`
+- `UnsignedMediumInteger`
+
+- `UnsignedInteger`
+
+- `UnsignedBigInteger`
+
