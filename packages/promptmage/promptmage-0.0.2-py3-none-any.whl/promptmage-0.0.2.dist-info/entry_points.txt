@@ -1,0 +1,3 @@
+[console_scripts]
+promptmage=promptmage.cli:serve
+
