@@ -1,0 +1,9 @@
+character_encoding_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+character_encoding_utils/big5.py,sha256=MPYeGr_WSE8cn6t0bnXBDPDivzmuH0UC4r1cWYTLVfo,5323
+character_encoding_utils/gb2312.py,sha256=kpcVOky_93_s2VyelXY5GITNtlNhFFo1Y3JvsX0FDuE,4096
+character_encoding_utils/ksx1001.py,sha256=roclOaHteG33JmEXWwiFB9-LJSoN5V4-khYM88c3foQ,4911
+character_encoding_utils/shiftjis.py,sha256=UVARErztgnJu4ZMaJB5tM-uKzyOwrVcMn-noDCKmWdw,7158
+character_encoding_utils-0.0.8.dist-info/METADATA,sha256=8D0sTWGnqVLMtkG88so3x5qWoOmWtN5aJLB8izrt4pA,1923
+character_encoding_utils-0.0.8.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+character_encoding_utils-0.0.8.dist-info/licenses/LICENSE,sha256=KtEAp6PdkHpy5KNgBAdtRUvP6-KffM4uJ1Smx1GF6S8,1064
+character_encoding_utils-0.0.8.dist-info/RECORD,,
