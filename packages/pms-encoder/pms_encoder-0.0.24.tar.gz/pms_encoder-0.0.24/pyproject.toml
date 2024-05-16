@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pms-encoder"
+version = "0.0.24"
+description = ""
+authors = ["heeyong.kwon <heeyong.kwon@4by4inc.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+ffmpeg-python = "^0.2.0"
+loguru = "^0.7.2"
+numpy = "^1.26.4"
+python-dotenv = "^1.0.1"
+redis = "^5.0.4"
+pymysql = "^1.1.0"
+opencv-python = "^4.9.0.80"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
