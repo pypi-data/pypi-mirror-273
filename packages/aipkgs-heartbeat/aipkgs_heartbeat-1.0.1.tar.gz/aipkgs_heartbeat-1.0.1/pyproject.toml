@@ -1,0 +1,27 @@
+[build-system]
+requires = ["poetry-core>=1.0.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "aipkgs-heartbeat"
+version = "1.0.1"
+description = "A simple heartbeat service for aipy packages"
+authors = ["Alexy <alexy.ib@outlook.com>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://gitlab.com/aipy/public/packages.git"
+repository = "https://gitlab.com/aipy/public/packages.git"
+keywords = ["ai"]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11.4"
+APScheduler = "^3.10.4"
+Flask-APScheduler = "^1.13.1"
+
+[tool.poetry.extras]
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
