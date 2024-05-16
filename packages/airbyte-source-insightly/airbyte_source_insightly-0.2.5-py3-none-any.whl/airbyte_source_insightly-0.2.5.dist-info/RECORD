@@ -1,0 +1,8 @@
+source_insightly/__init__.py,sha256=DY5l2n6dhjdksfum-Dtiju356UP6W853kQZgkpc0zlQ,130
+source_insightly/manifest.yaml,sha256=msGOTojzqiklSXpJyVTXStnVxSTeN9yagVk4cFlgdm4,137166
+source_insightly/run.py,sha256=X4rX3OGPw0TU_5bzO6VgiM_H7wOM_acibQuxpzAqOY0,239
+source_insightly/source.py,sha256=DIFYLw162fqmmxyLj-EjQyer2uOTc-1bkcvR-U9kT64,478
+airbyte_source_insightly-0.2.5.dist-info/METADATA,sha256=8hqgpKxJbxaM8TEOayDPkI9r77oseZ-3x9wUA67dKNc,5273
+airbyte_source_insightly-0.2.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_insightly-0.2.5.dist-info/entry_points.txt,sha256=iYlWGrgdrXR6IP0J8-DvlODFxaPXD3l-ez2xfkyDCBs,61
+airbyte_source_insightly-0.2.5.dist-info/RECORD,,
