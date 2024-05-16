@@ -1,0 +1,11 @@
+pyprop8/__init__.py,sha256=s--u5DTkAEOcoERRwS8AISyLOdnchehtx9_v_0ptTgM,1288
+pyprop8/_core.py,sha256=ciB4sFYPoova2RzGbuY4ejQDiYlX3QsGcseaOJ9j8iQ,85860
+pyprop8/_propagators.py,sha256=KnshXPt-1xycX6xQqT2si-DXIQi1Dy_jDqWOGxuG3JM,46867
+pyprop8/_scaledmatrix.py,sha256=-U9nRX_180cShHN2WNzqStkQTAA9WYVlLLCNSjmPlfg,14345
+pyprop8/tests.py,sha256=TJLjJqr8VJlVPVha6aKIaxbntxYeG7D7sMQE9F6LHFU,5748
+pyprop8/utils.py,sha256=phldLB-dOpiTIoNHDEv6gCweXlfehM1sI4iCr2GmaRE,9977
+pyprop8-1.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyprop8-1.1.5.dist-info/METADATA,sha256=Wk438GESg_P1RdE9_frvauq3D9TlCdAWHjwlYjYglG8,4597
+pyprop8-1.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyprop8-1.1.5.dist-info/top_level.txt,sha256=0sxKYQXExkZcmVHp3_RKP4hA367nW_J29R3HxX6kPqg,8
+pyprop8-1.1.5.dist-info/RECORD,,
