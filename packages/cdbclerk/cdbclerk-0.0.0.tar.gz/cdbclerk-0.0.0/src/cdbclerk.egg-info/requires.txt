@@ -1,0 +1,10 @@
+pyepics
+caproto
+
+[dev]
+black
+pytest
+flake8
+isort
+pytest-asyncio
+build

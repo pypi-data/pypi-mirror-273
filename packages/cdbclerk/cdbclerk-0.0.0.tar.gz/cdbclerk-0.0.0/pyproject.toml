@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cdbclerk"
+version = "0.0.0"
+authors = [
+  { name="Mark Wolfman", email="wolfman@anl.gov" },
+]
+description = "A tool for updating CA/PVA PVs from the components database."
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Hardware",
+]
+keywords = []
+dependencies = ["pyepics", "caproto"]
+
+[project.optional-dependencies]
+dev = ["black", "pytest", "flake8", "isort", "pytest-asyncio", "build"]
+
+[project.urls]
+Homepage = "https://github.com/spc-group/cdbclerk"
+
+[project.scripts]
+cdbclerk = "cdbclerk.__main__:main"
