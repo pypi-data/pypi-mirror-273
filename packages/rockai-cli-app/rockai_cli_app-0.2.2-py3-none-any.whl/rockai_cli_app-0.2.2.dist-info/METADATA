@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rockai-cli-app
+Version: 0.2.2
+Summary: For inference and training
+Author: Rocky
+Author-email: some_developer@example.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp-sse-client (==0.2.1)
+Requires-Dist: aiosseclient (>=0.1.3,<0.2.0)
+Requires-Dist: fastapi (>=0.109.2,<0.110.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: httpx-sse (==0.1.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: sseclient (>=0.0.27,<0.0.28)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: uvicorn[standard] (>=0.27.0.post1,<0.28.0)
+Description-Content-Type: text/markdown
+
+# setup
+python 3.11.5, use this version when developing
+```
+# clean docker space
+docker system prune --all --force --volumes
+```
