@@ -1,0 +1,10 @@
+flamel/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+flamel/base.py,sha256=ehj0SZ3XI2DtF2S86cOMJnaEcZZx3STpEmKZvI8fsM4,2487
+flamel/column.py,sha256=KWC08hTQnuC2I1YJp-KZVAG4iWDX2zu2NvP_FV5O4ac,4371
+flamel/dialect.py,sha256=5dDHaEgQ-Iv6snDfqUtUrv-Tx2jmjmR_pODXrexDZSY,1690
+flamel/query.py,sha256=-nHNwJhTCgWnJvxFZrOnv-fVg4c5Y4SBaBVNjbISyF0,3024
+flamel_orm-0.0.1.dist-info/LICENSE,sha256=gUzej8IFeP2VUZWuBbgS8g4bRb11Cf6sPeILfspYaAU,1061
+flamel_orm-0.0.1.dist-info/METADATA,sha256=eXtnc8sZw2Xixw-IJB1Ny-Z1B_XZGaNuYiZhKKfOQEk,3038
+flamel_orm-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flamel_orm-0.0.1.dist-info/top_level.txt,sha256=OSPmQww8ZVwg_Nso6UKjvgaoezWntR-mVvDFpAwJzro,7
+flamel_orm-0.0.1.dist-info/RECORD,,
