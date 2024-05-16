@@ -1,0 +1,15 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/libreflow/__init__.py
+src/libreflow.extensions.anpo.kitsu.egg-info/PKG-INFO
+src/libreflow.extensions.anpo.kitsu.egg-info/SOURCES.txt
+src/libreflow.extensions.anpo.kitsu.egg-info/dependency_links.txt
+src/libreflow.extensions.anpo.kitsu.egg-info/top_level.txt
+src/libreflow/extensions/__init__.py
+src/libreflow/extensions/anpo/__init__.py
+src/libreflow/extensions/anpo/kitsu/__init__.py
+src/libreflow/extensions/anpo/kitsu/_version.py
