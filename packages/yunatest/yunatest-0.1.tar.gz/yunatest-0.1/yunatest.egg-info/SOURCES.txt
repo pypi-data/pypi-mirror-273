@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+yunatest.egg-info/PKG-INFO
+yunatest.egg-info/SOURCES.txt
+yunatest.egg-info/dependency_links.txt
+yunatest.egg-info/top_level.txt
