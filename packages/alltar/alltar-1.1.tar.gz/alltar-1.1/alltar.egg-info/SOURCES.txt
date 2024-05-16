@@ -1,0 +1,7 @@
+README.rst
+alltar
+setup.py
+alltar.egg-info/PKG-INFO
+alltar.egg-info/SOURCES.txt
+alltar.egg-info/dependency_links.txt
+alltar.egg-info/top_level.txt
