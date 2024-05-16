@@ -1,0 +1,13 @@
+streamlit_datatables_net/__init__.py,sha256=U-Scf_e_yUdO9uLg-OUw6SSyP2ttOWhoSHbVcMxJwiE,13295
+streamlit_datatables_net/streamlit_callback.py,sha256=iPnuAghVsfjPUDGDGlWKimuD9A9NSg-w1g5xMhpYgNk,2176
+streamlit_datatables_net/frontend/build/asset-manifest.json,sha256=PAeA_fezQzV-53Y54gShTlZjmRD5ln7ntGZNhkhNsaA,374
+streamlit_datatables_net/frontend/build/index.html,sha256=y4fHbQoz2d5AyjQwy0hpwH3juc4D3kDFHlb5yutYtBs,521
+streamlit_datatables_net/frontend/build/static/css/main.7cdd006b.css,sha256=6Mh2TajVmR6bWdtr3nnbxvg03PIzCSzZrH-2lt7GrEI,23791
+streamlit_datatables_net/frontend/build/static/css/main.7cdd006b.css.map,sha256=zbvlyIMi4EeiobsDb1fFIaM2OPFqmpR2Jot8mGZGCWs,34601
+streamlit_datatables_net/frontend/build/static/js/main.67c16e16.js,sha256=GKk7oG2Rv4XGbGQCZn_RvLj-nYpR3Pa5Oh6vTD5_f08,570961
+streamlit_datatables_net/frontend/build/static/js/main.67c16e16.js.LICENSE.txt,sha256=pRbcqvnhn081e_95uA9ubvTSK41C_rhAzUeiXkCOK30,2014
+streamlit_datatables_net/frontend/build/static/js/main.67c16e16.js.map,sha256=l-mv6KoAsmqj1Xq7FV9i5weS_5YnkZFktX3StqsNpJs,2484484
+streamlit_datatables_net-0.0.21.dist-info/METADATA,sha256=xGH6K3R-zDs5TMJVKb44Q6eGh-mHzdczLatvyxAODIA,744
+streamlit_datatables_net-0.0.21.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+streamlit_datatables_net-0.0.21.dist-info/top_level.txt,sha256=Juuw4Qlrxc1-5dsiE0hd5oJipjTUgbBY7WriIvID17A,25
+streamlit_datatables_net-0.0.21.dist-info/RECORD,,
