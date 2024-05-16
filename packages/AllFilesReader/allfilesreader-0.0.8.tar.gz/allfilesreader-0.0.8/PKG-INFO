@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: AllFilesReader
+Version: 0.0.8
+Summary: A python package to read all kinds of file with just one click
+Home-page: https://github.com/iamdoublea/AllFilesReaderPythonLibrary
+Author: iamdoublea
+Author-email: contact@aadityaseal.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/iamdoublea/AllFilesReaderPythonLibrary/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ensure==1.0.2
+Provides-Extra: testing
+Requires-Dist: pytest>=7.1.3; extra == "testing"
+Requires-Dist: mypy>=0.971; extra == "testing"
+Requires-Dist: flake8>=5.0.4; extra == "testing"
+Requires-Dist: tox>=3.25.1; extra == "testing"
+Requires-Dist: black>=22.8.0; extra == "testing"
+
+Sure, here's a concise and informative project description for your Python library:
+
+---
+
+## AllFilesReaderPythonLibrary
+
+The **AllFilesReaderPythonLibrary** is a versatile Python library designed to simplify the process of reading various types of files with just one click. Whether you need to read CSV, Excel, JSON, MAT, HDF5, Pickle, or JPG images, this library has got you covered.
+
+### Key Features:
+
+- **Wide File Format Support:** Supports reading CSV, Excel, JSON, MAT, HDF5, Pickle, and JPG images, providing a unified interface for accessing data from different file types.
+  
+- **Graceful Encoding Handling:** Handles potential encoding issues gracefully, ensuring seamless reading of files with automatic detection of encoding or fallback to a default encoding if necessary.
+  
+- **Error Handling:** Provides detailed error messages and custom exceptions to help troubleshoot issues encountered during the file reading process.
+  
+- **Simplified Usage:** Offers a straightforward API, making it easy for developers to integrate file reading functionality into their Python projects with minimal effort.
+
+### Installation:
+
+```bash
+pip install AllFilesReaderPythonLibrary
+```
+
+### Usage:
+
+```python
+from AllFilesReaderPythonLibrary import DataReader
+
+# Example usage
+reader = DataReader("path/to/your/file.csv")
+data = reader.read()
+print(data)
+```
+
+### Getting Started:
+
+Get started with the **AllFilesReaderPythonLibrary** today and streamline your file reading tasks in Python.
+
+---
+
+Feel free to customize the project description further to highlight any additional features or unique aspects of your library!
