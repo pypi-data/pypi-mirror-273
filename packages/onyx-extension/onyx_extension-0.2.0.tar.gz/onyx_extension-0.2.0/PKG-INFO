@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: onyx_extension
+Version: 0.2.0
+Dynamic: Keywords
+Summary: A minimal JupyterLab extension with backend and frontend parts.
+Project-URL: Homepage, https://github.com/jupyterlab/extension-onyx_extension
+Project-URL: Bug Tracker, https://github.com/jupyterlab/extension-onyx_extension/issues
+Project-URL: Repository, https://github.com/jupyterlab/extension-onyx_extension.git
+Author: Project Jupyter Contributors
+License: MIT
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: jupyter-server<3,>=2.0.1
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-jupyter[server]>=0.6.0; extra == 'test'
