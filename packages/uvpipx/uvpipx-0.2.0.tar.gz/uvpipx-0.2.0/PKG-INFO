@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: uvpipx
+Version: 0.2.0
+Summary: A small tool like pipx using uv behind the scene. Fast, Small ...
+Home-page: https://gitlab.com/pytgaen-group/uvpipx
+License: GPL
+Author: Pytgaen
+Author-email: 32298455+pytgaen@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: uv (>=0.1.44,<0.2.0)
+Project-URL: Repository, https://gitlab.com/pytgaen-group/uvpipx
+Description-Content-Type: text/markdown
+
+# uvpipx
+
+![unpipx logo](https://gitlab.com/pytgaen-group/uvpipx/-/raw/main/uvpipx_logo.jpg)
+_A small tool like __pipx__ using __uv__ behind the scene._ ___Fast, Small ...___
+
+The first intention is to use it in a container or CI, (so with unix) and ⭕ dependency except uv
+
+## Install the tool (himself 🎉)
+
+```bash
+pip install uvpipx
+```
+
+## Install a package
+
+To install package [jc](https://pypi.org/project/jc/)
+
+```bash
+uvpipx install jc
+```
+
+Maybe you should check the path with the command `ensurepath`
+
+```bash
+uvpipx ensurepath
+```
+
+Now let use the program
+
+```bash
+wc README.md | jc --wc
+[{"filename":"README.md","lines":30,"words":56,"characters":357}]
+```
+
+## List all package
+
+```bash
+uvpipx list
+```
+
+## Uninstall a package
+
+To uninstall package [jc](https://pypi.org/project/jc/)
+
+```bash
+uvpipx uninstall jc
+```
+
+## Info on a package
+
+To uninstall package [jc](https://pypi.org/project/jc/)
+
+```bash
+uvpipx info jc
+```
+
+or to get the venv path
+
+```bash
+uvpipx info jc --get-venv
+```
+
+## Run a package in venv
+
+```bash
+wc README.md | uvpipx venv jc -- jc --wc 
+```
