@@ -1,0 +1,5 @@
+hurst_estimators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hurst_estimators/wavelet_estimator.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hurst_estimators-0.0.2.dist-info/METADATA,sha256=yituK1OgghpUT4M4lyQhOTdVZVS_vI2YSL0VQ5TlLL8,614
+hurst_estimators-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hurst_estimators-0.0.2.dist-info/RECORD,,
