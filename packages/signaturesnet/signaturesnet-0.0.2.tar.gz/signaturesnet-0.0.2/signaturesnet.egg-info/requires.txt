@@ -1,0 +1,14 @@
+torch==1.11
+scipy
+numpy==1.23.3
+matplotlib==3.3.4
+pandas
+seaborn==0.11.1
+scikit_optimize==0.8.1
+tqdm==4.59.0
+pyparsing==2.4.7
+PyYAML==6.0
+scikit_learn
+openpyxl
+tensorboard
+wandb
