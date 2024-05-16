@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: dbt_duckdb_kedro_datasets
+Version: 0.1.0
+Summary: Combine duckdb-dbt and Kedro Dataset to easily read Kedro Dataset configs (yaml), enabling conversion of Kedro projects to dbt.
+Author: Conrad
+Author-email: conradbez1@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dbt-duckdb (>=1.8.0,<2.0.0)
+Requires-Dist: fastparquet (>=2024.2.0,<2025.0.0)
+Requires-Dist: kedro-datasets[pandas] (>=3.0.0,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+Combine duckdb-dbt and Kedro Dataset to easily read Kedro Dataset configs (yaml), enabling conversion of Kedro projects to dbt.
+
+## Demo
+
+You can add your existing Kedro definitions to your dbt sources like so:
+
+`pip install dbt_duckdb_kedro_datasets`
+
+```
+version: 2
+
+sources:
+  - name: my_source # can call this anything
+    schema: main
+    meta:
+      plugin: dbt_duckdb_kedro_datasets # this library
+    tables:
+      - name: my_table # can call this anything
+        description: "A dbt_duckdb_kedro_datasets test"
+        meta:
+          type: pandas.CSVDataset
+          filepath: ./data/1_raw/bikes.csv # file to ingest
+          load_args:
+            sep: ','
+```
+
+Now we can access this CSV in dbt
+
+```
+select *
+from {{ source('my_source', 'my_table') }}
+```
+
+For a more complete example look at [this](example/example_dbt)
+
+## Todo
+
+-[x] plugin backbone
+-[x] initial install
+-[x] initial execution
+-[x] one config passed from yaml
+
