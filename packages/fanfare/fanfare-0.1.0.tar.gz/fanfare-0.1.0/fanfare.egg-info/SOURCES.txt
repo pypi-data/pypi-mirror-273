@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+fanfare/__init__.py
+fanfare.egg-info/PKG-INFO
+fanfare.egg-info/SOURCES.txt
+fanfare.egg-info/dependency_links.txt
+fanfare.egg-info/top_level.txt

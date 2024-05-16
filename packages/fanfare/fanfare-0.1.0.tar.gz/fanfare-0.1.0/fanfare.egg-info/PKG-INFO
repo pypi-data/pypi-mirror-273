@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fanfare
+Version: 0.1.0
+Summary: Stylish and fancy console effects to add some hype to a project.
+Author-email: Alex Stevovich <alex.stevovich@gmail.com>
+License: Copyright (c) 2016 Alex Stevovich
+        
+        **License**
+        All rights reserved. This software, its documentation, and all associated materials including, but not limited to, artwork and graphics are the property of Alex Stevovich. Permission is granted to use this software and associated materials for personal and internal business purposes only. No other rights to use, modify, distribute, or create derivative works of this software, its documentation, or any associated materials are granted. Use of this software constitutes acceptance of these terms.
+        
+        **Disclaimer of Warranty**
+        THE SOFTWARE AND ASSOCIATED MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        
+        **Limitation of Liability**
+        IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE, ITS DOCUMENTATION, OR ANY OTHER ASSOCIATED MATERIALS OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Stylish and fancy console effects to add some hype to a project.

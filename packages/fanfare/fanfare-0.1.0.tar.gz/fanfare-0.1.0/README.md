@@ -1,0 +1,1 @@
+Stylish and fancy console effects to add some hype to a project.
