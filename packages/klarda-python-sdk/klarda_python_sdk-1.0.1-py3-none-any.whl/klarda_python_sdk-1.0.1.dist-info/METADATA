@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: klarda-python-sdk
+Version: 1.0.1
+Summary: Refined Python library for interaction with Klarda's APIs.
+Home-page: https://klarda.com/
+License: MIT
+Keywords: klarda,sdk,blockchain,token
+Author: Thinh Q.D. Pham
+Author-email: thinh.pham@klarda.com> <pqducthinhbka@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: eth-typing (>=4.0.0,<5.0.0)
+Requires-Dist: pydantic (>=2.0.8,<3.0.0)
+Requires-Dist: pyhumps (>=3.8.0,<4.0.0)
+Requires-Dist: typing-extensions (>=4.6.2,<5.0.0)
+Requires-Dist: urllib3 (>=2.0.0,<3.0.0)
+Requires-Dist: web3 (>=6.4.0,<7.0.0)
+Project-URL: Repository, https://github.com/klardaofficial/klarda-python-sdk
+Description-Content-Type: text/markdown
+
+# Klarda Python SDK
+
+Refined Python library for interaction with Klarda's APIs [Klarda APIs](https://docs.klarda.com/reference/klarda-market-api-quickstart)
+
+# Klarda API Quickstart
+
+#### 1. Install Klarda Python SDK from PyPi using pip
+
+```bash
+pip install klarda-python-sdk
+```
+
+#### 2. Initilize the SDK using our API key
+
+_Note: In order to use our API, you have to get you API key from Klarda's Dashboard._
+
+Get your API key here https://dashboard.klarda.com/account-setting/api and provide it to the `KlardaAPICollection` class.
+
+```python3
+from klarda import KlardaAPICollection
+
+klarda_api = KlardaAPICollection("YOUR_API_KEY")
+```
+
+#### 3. Use the python sdk and call our api collection.
+
+_Note: More information about the available APIs can be seen in our documentation [Klarda APIs Docs](https://docs.klarda.com/reference/klarda-market-api-quickstart)._
+
+#### Klarda Market/Token API
+
+```python3
+from klarda import KlardaAPICollection
+from klarda.types import GetTokenListRequest
+
+klarda_api = KlardaAPICollection("YOUR_API_KEY")
+
+response = klarda_api.get_token_list(
+    params = GetTokenListRequest(
+        page = 1,
+        limit = 10,
+        sort_by = "volume",
+        sort_order = "desc"
+    )
+)
+
+print(response)
+```
+
+More APIs description will be added in the future in this Readme
+
+
+
