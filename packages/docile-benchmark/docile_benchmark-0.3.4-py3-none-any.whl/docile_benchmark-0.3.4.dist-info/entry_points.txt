@@ -1,0 +1,4 @@
+[console_scripts]
+docile_evaluate=docile.cli.evaluate:evaluate
+docile_print_evaluation_report=docile.cli.evaluate:print_evaluation_report
+
