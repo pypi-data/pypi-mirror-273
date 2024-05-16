@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "llmage"
+version = "0.0.1"
+description = "A framework for simplifying the development of AI systems based on LLMs."
+authors = ["Tobias Sterbak <github@tobiassterbak.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/tsterbak/llmage"
+repository = "https://github.com/tsterbak/llmage"
+documentation = "https://github.com/tsterbak/llmage"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
