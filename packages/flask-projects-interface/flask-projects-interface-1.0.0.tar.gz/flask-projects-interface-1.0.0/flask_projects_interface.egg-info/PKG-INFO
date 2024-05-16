@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flask-projects-interface
+Version: 1.0.0
+Summary: flask projects系列的接口集
+Home-page: https://github.com/ababbabbb/flask_project_interface
+Author: bichuantao
+Author-email: 17826066203@163.com
+License: MIT
+Keywords: python,flask,interface,Rapid development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+flask projects系列的接口文件

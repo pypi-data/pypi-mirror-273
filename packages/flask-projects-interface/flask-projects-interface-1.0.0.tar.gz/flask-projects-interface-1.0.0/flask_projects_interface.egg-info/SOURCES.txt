@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+flask_projects/__init__.py
+flask_projects/interface/__init__.py
+flask_projects/interface/base.py
+flask_projects/interface/container.py
+flask_projects/interface/factory.py
+flask_projects/interface/logic.py
+flask_projects/interface/order.py
+flask_projects/interface/scanner.py
+flask_projects_interface.egg-info/PKG-INFO
+flask_projects_interface.egg-info/SOURCES.txt
+flask_projects_interface.egg-info/dependency_links.txt
+flask_projects_interface.egg-info/top_level.txt
