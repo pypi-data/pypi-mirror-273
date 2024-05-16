@@ -1,0 +1,8 @@
+README.md
+setup.py
+proxynorm/__init__.py
+proxynorm.egg-info/PKG-INFO
+proxynorm.egg-info/SOURCES.txt
+proxynorm.egg-info/dependency_links.txt
+proxynorm.egg-info/requires.txt
+proxynorm.egg-info/top_level.txt
