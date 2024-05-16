@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "hurst-estimators"
+version = "0.0.1"
+description = "Library for Hurst estimation methods"
+authors = ["Aras Edeş <edesaras@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
