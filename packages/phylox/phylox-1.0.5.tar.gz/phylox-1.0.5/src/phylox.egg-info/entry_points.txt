@@ -1,0 +1,2 @@
+[console_scripts]
+phylox-generator-heath = phylox.generators.heath.heath_cli:main

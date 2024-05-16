@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phylox"
+version = "1.0.5"
+authors = [
+  { name="Remie Janssen", email="remiejanssen92@gmail.com" },
+]
+description = "A package with tools for constructing, manipulating, and analyzing phylogenetic networks."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "networkx>=2.6",
+  "numpy>=1.21.6",
+  "scipy>=1.7.3",
+  "matplotlib>=3.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
+addopts = "--cov --cov-report term-missing --doctest-modules"
+
+[project.urls]
+"Homepage" = "https://github.com/RemieJanssen/PhyloX"
+"Bug Tracker" = "https://github.com/RemieJanssen/PhyloX/issues"
+
+[project.scripts]
+phylox-generator-heath = "phylox.generators.heath.heath_cli:main"
