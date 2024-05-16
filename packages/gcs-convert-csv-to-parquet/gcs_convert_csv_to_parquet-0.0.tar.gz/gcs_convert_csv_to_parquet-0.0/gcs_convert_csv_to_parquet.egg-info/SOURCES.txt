@@ -1,0 +1,9 @@
+README.md
+setup.py
+gcs_convert_csv_to_parquet/__init__.py
+gcs_convert_csv_to_parquet/main.py
+gcs_convert_csv_to_parquet.egg-info/PKG-INFO
+gcs_convert_csv_to_parquet.egg-info/SOURCES.txt
+gcs_convert_csv_to_parquet.egg-info/dependency_links.txt
+gcs_convert_csv_to_parquet.egg-info/entry_points.txt
+gcs_convert_csv_to_parquet.egg-info/top_level.txt
