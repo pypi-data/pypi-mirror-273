@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyBAKS
+Version: 0.1.7
+Summary: python implementation of Bayesian Adaptive Kernel Smoothing
+Home-page: https://github.com/danielsvedberg/pyBAKS
+Author: Daniel Svedberg
+Author-email: dan.ake.svedberg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+UNKNOWN
+
