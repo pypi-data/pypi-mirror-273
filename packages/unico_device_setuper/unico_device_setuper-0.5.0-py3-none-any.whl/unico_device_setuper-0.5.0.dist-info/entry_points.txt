@@ -1,0 +1,3 @@
+[console_scripts]
+device_setup=unico_device_setuper.cli.main:APP
+
