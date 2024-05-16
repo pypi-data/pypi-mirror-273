@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cloud_run_flask_template/__init__.py
+cloud_run_flask_template/generator.py
+cloud_run_flask_template.egg-info/PKG-INFO
+cloud_run_flask_template.egg-info/SOURCES.txt
+cloud_run_flask_template.egg-info/dependency_links.txt
+cloud_run_flask_template.egg-info/entry_points.txt
+cloud_run_flask_template.egg-info/requires.txt
+cloud_run_flask_template.egg-info/top_level.txt
