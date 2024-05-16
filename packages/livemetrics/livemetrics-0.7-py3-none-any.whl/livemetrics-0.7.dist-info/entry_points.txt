@@ -1,0 +1,2 @@
+[console_scripts]
+livemetrics-dashboard = livemetrics.dashboard.dashboard:main
