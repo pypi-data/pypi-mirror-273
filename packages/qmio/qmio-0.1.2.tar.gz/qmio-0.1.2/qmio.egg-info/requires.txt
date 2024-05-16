@@ -1,0 +1,4 @@
+pyzmq
+
+[test]
+pytest
