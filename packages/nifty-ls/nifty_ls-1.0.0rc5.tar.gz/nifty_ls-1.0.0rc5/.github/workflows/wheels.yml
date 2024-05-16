@@ -1,0 +1,101 @@
+name: Build
+
+# Build, test, and upload wheels for every version tag. Note that PyPI will
+# automatically label versions with modifiers like 1.0.0a1 or 1.0.0rc1 as pre-releases.
+# For a real release, tag the version, check that this action succeeded, then make a
+# GitHub release.
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build_wheels:
+    name: Build ${{ matrix.label }} wheels
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: "linux-target-x86_64"
+            os: ubuntu-latest
+          - label: "macos-target-x86_64"
+            os: macos-13
+            env:
+              MACOSX_DEPLOYMENT_TARGET: "10.15"
+              CIBW_ARCHS_MACOS: "x86_64"
+          - os: macos-14
+            label: "macos-target-arm64"
+            env:
+              MACOSX_DEPLOYMENT_TARGET: "11.0"
+              CIBW_ARCHS_MACOS: "arm64"
+              CMAKE_ARGS: "-DNIFTY_LS_OPENMP=OFF"
+
+    env:
+      MACOSX_DEPLOYMENT_TARGET: ${{ matrix.env.MACOSX_DEPLOYMENT_TARGET }}
+      CIBW_ARCHS_MACOS: ${{ matrix.env.CIBW_ARCHS_MACOS }}
+      CIBW_CONFIG_SETTINGS: "cmake.verbose=true"
+      CIBW_BUILD_VERBOSITY: 1
+      CMAKE_ARGS: ${{ matrix.env.CMAKE_ARGS }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set OpenMP env for macos x86_64
+        if: matrix.label == 'macos-target-x86_64'
+        run: |
+          brew install libomp
+          prefix=$(brew --prefix libomp)
+          echo "LDFLAGS=$LDFLAGS -L$prefix/lib" >> $GITHUB_ENV
+          echo "CXXFLAGS=$CXXFLAGS -I$prefix/include" >> $GITHUB_ENV
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.17.0
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cibw-wheels-${{ matrix.label }}
+          path: ./wheelhouse/*.whl
+
+      # - name: Setup tmate session
+      #   if: ${{ failure() }}
+      #   uses: mxschmitt/action-tmate@v3
+      #   with:
+      #     limit-access-to-actor: true
+
+  make_sdist:
+    name: Make SDist
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Build SDist
+      run: |
+        pip install -U build
+        python -m build --sdist
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: cibw-sdist
+        path: dist/*.tar.gz
+
+  upload_all:
+    needs: [build_wheels, make_sdist]
+    environment: pypi
+
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        pattern: cibw-*
+        path: dist
+        merge-multiple: true
+
+    - uses: pypa/gh-action-pypi-publish@release/v1
