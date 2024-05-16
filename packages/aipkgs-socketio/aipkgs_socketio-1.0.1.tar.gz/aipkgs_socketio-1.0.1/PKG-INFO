@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aipkgs-socketio
+Version: 1.0.1
+Summary: SocketIO package
+Home-page: https://gitlab.com/aipy/public/packages.git
+License: MIT
+Keywords: ai
+Author: Alexy
+Author-email: alexy.ib@outlook.com
+Requires-Python: >=3.11.4,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aipkgs-core (>=1.0.8,<2.0.0)
+Requires-Dist: flask-socketio (>=5.3.6,<6.0.0)
+Project-URL: Repository, https://gitlab.com/aipy/public/packages.git
+Description-Content-Type: text/markdown
+
+
