@@ -1,0 +1,5 @@
+lavague/contexts/huggingface/__init__.py,sha256=k93C2UPlM9dgPRSiHRd0UnGxBdCMpcAgpoJHfX5e0rI,65
+lavague/contexts/huggingface/base.py,sha256=6Xvk8xrGwsHTYiLovJcNeB2QBXhYdNkbmj3iwvr_0kc,1024
+lavague_contexts_huggingface-0.1.0.dist-info/METADATA,sha256=YoiuOzR89HEINgsHJmu53TJ8DKQuIyrTMFxD_c7zB5o,1190
+lavague_contexts_huggingface-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+lavague_contexts_huggingface-0.1.0.dist-info/RECORD,,
