@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+filehero/__init__.py
+filehero.egg-info/PKG-INFO
+filehero.egg-info/SOURCES.txt
+filehero.egg-info/dependency_links.txt
+filehero.egg-info/top_level.txt
