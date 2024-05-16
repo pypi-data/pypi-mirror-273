@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "guibbon"
+version = "0.2.0"
+description = "Very high level GUI with an API similar to the HighGUI of OpenCV"
+authors = ["Manu Gira <manu.gira@outlook.com>"]
+readme = "docs/index.md"
+repository = "https://github.com/ManuGira/Guibbon.git"
+keywords = ["GUI", "Tkinter", "OpenCV"]
+
+[tool.poetry.urls]
+"Bug Report" = "https://github.com/ManuGira/Guibbon/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.5.4.60"
+Pillow = "^9.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+ruff = "^0.1.5"
+mypy = "^1.4.1"
+mkdocs = "^1.5.3"
+mkdocstrings = {extras = ["python"], version = "^0.24.3"}
+
+
+[tool.pytest.ini_options]
+addopts = "--cov-report=term --cov-report=html:build/pytest_coverage_html --cov=guibbon"
+testpaths = ["tests"]
+cache_dir = "build/.pytest_cache"
+
+[tool.coverage.run]
+data_file="build/.coverage"
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_also = [
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self\\.debug",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if __name__ == .__main__.:",
+
+    # Don't complain about abstract methods, they aren't run:
+    "@(abc\\.)?abstractmethod",
+    ]
+
+[tool.ruff]
+line-length = 160
+cache-dir = "build/.ruff_cache"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+implicit_reexport = true
+pretty = true
+cache_dir = "build/.mypy_cache"
+exclude = "build/"
