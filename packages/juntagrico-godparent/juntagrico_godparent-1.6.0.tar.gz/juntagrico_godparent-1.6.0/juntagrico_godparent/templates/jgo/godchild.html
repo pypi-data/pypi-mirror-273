@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load juntagrico.config %}
+{% load i18n %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block page_title %}
+    {% if exists %}
+        <h3>Dein Profil als Neumitglied</h3>
+    {% else %}
+        <h3>Melde dich als Neumitglied an</h3>
+    {% endif %}
+{% endblock %}
+{% block styles %}
+    {{ block.super }}
+    <link href="{% static 'jgo/css/registration.css' %}" rel="stylesheet"/>
+{% endblock %}
+{% block content %}
+    {% if exists %}
+        <div class="row mb-3">
+            <div class="col-md-12 alert alert-success">
+                {% block godparent %}
+                    {% if form.instance.godparent %}
+                        <h4>{% trans "Deine Gotte oder dein Götti" %}</h4>
+                        {% with godparent=form.instance.godparent godchild=form.instance  %}
+                            <p>
+                                <strong>{{ godparent }}</strong>:
+                                <a href="mailto:{{ godparent.member.email }}">{{ godparent.member.email }}</a>,
+                                {{ godparent.member.mobile_phone|default:godparent.member.phone }}<br>
+                                {% trans "Gemeinsame Sprachen:" %} {{ godchild.matching_languages|default:'Keine' }}<br>
+                                {% trans "Gemeinsame Zeitfenster:" %} {{ godchild.matching_slots|default:'Keine' }}<br>
+                                {% trans "Status:" %} {{ godchild.get_progress_display }}<br>
+                                {% if godchild.progress == godchild.OPEN %}
+                                    <p>Diese Person wird sich demnächst bei dir melden.</p>
+                                    <a href="{% url "jgo:arranged" godchild.pk %}" class="btn btn-primary">
+                                        {% blocktrans %}
+                                            {{ godparent }} hat mich kontaktiert
+                                        {% endblocktrans %}
+                                    </a>
+                                {% elif godchild.progress == godchild.ARRANGED %}
+                                    <a href="{% url "jgo:done" godchild.pk %}" class="btn btn-warning"
+                                        onclick="return confirm('{% trans "Hiermit bestätigst du, dass diese Patenschaft wie abgemacht durchgeführt wurde." %}')">
+                                        {% blocktrans %}
+                                            Patenschaft mit {{ godparent }} abschliessen
+                                        {% endblocktrans %}
+                                    </a>
+                                {% endif %}
+                            </p>
+                        {% endwith %}
+                    {% else %}
+                        <h4>{% trans "Die Vermittlung läuft" %}</h4>
+                        <p>
+                            {% blocktrans %}
+                                Die Patenschaftskoordination sucht derzeit eine passende Gotte oder einen passenden Götti für dich.
+                                Dies kann einige Zeit in Anspruch nehmen. Du wirst per E-Mail informiert.
+                            {% endblocktrans %}
+                        </p>
+                    {% endif %}
+                {% endblock %}
+            </div>
+        </div>
+    {% else %}
+        <div class="row mb-3">
+            <div class="col-md-12">
+                {% block godchild_info %}
+                    <h4>Informationen zur Patenschaft</h4>
+                    <p>Sobald du dich mit dem Formular unten als Neumitglied registriert hast, sucht die Patenschaftskoordination
+                        für dich eine passende Gotte bzw. einen passenden Götti.<br>
+                        Dies kann einige Zeit in Anspruch nehmen. Du wirst per E-Mail informiert.</p>
+                {% endblock %}
+            </div>
+        </div>
+    {% endif %}
+    {% if not form.instance.godparent %}
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <h4>
+                    {% trans "Deine Kriterien" %}
+                </h4>
+                <p>
+                    {% blocktrans %}
+                        Damit du mit einer Person vernetzt werden kannst, die möglichst gut zu dir und deinen
+                        Bedürfnissen passt, kannst du unten deine Wünsche angeben.<br>
+                        Die Patenschaftskoordination versucht diese nach Möglichkeit zu berücksichtigen.
+                    {% endblocktrans %}
+                </p>
+            </div>
+        </div>
+        {% include "jgo/snippets/depot_info.html" %}
+        {% crispy form %}
+        {% if exists %}
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h4>
+                        {% trans "Austragen" %}
+                    </h4>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <p>
+                        {% trans "Hierdurch werden deine Angaben oben gelöscht." %}
+                    </p>
+                    <a href="{% url 'jgo:leave' %}" class="btn btn-danger">
+                        {% trans "Suche nach Gotte/Götti zurückziehen" %}
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}
