@@ -1,0 +1,29 @@
+[project]
+name = "empm"
+version = "0.0.7"
+authors = [{ name = "paopaozhi", email = "paopaozhi@hotmail.com" }]
+dependencies = ["typer","toml","requests"]
+description = "embedded pack manage"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3.9",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+cepack = "empm.main:run"
+
+[build-system]
+# requires = ["setuptools>=61.0"]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/paopaozhi/cepack"
+"Bug Tracker" = "https://github.com/paopaozhi/cepack/issues"
+
+[tool.setuptools]
+# ...
+package-dir = {"" = "."}
