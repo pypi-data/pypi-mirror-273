@@ -1,0 +1,17 @@
+orthority/__init__.py,sha256=YJSZp9Itu4kyz1kWSpPBiRqesIAsj08HqfSgf-uZy80,1487
+orthority/camera.py,sha256=NkyK73OZ_U5tZFQ8z_mQt-yTh1uh3N_uGzVlEchKt5Y,64105
+orthority/cli.py,sha256=BDFBqRoo_zESHUZMYufge_U8DopSO_Dt4j6Clmnl4wM,41098
+orthority/enums.py,sha256=C5vSfyYtOx-7SNfwace9rXlAPdWmu3G-QfDJ4Xkd1WM,4549
+orthority/errors.py,sha256=H-QckX2xKsHykckhOF5wnpEqtTr5Qiam4UPi07QcY0g,1253
+orthority/exif.py,sha256=J5cSO0FEt5DvA2VxPeemQolzP6FV7zfQUrh1AQGnCg4,14178
+orthority/factory.py,sha256=4pdXmPYAPTxGIL_oM7mGg-1vQd1Qzb-e9cytS1Q_srI,13001
+orthority/ortho.py,sha256=LLfrTevRYMEMHo8_4Y0YgOUEk7pRMU1FSW23lTYi8WA,30979
+orthority/param_io.py,sha256=jcGU3KfQX0seNjjXvmlbBU1xU-b5endpN0pz7MATGGo,49629
+orthority/utils.py,sha256=r-ih0ZopO__GeBhnXCpBnNf2Mv1JxvenjJSfsmFms4E,14436
+orthority/version.py,sha256=L2sL_9ojm9vgD1thjidJeE1eE2h1R_UzQ5GUCMffJb4,743
+orthority-0.4.0.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+orthority-0.4.0.dist-info/METADATA,sha256=o2UgtPiBVyUPVDL_6-_eLo4VC43pWBB_uJr1NevQuaw,7613
+orthority-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+orthority-0.4.0.dist-info/entry_points.txt,sha256=P6dNO2OeP11Vi7IXcqaeu-fN34NQbiakUChXCnvQxQ4,84
+orthority-0.4.0.dist-info/top_level.txt,sha256=c0bszy3zv7NpY-4Ig_kok57i4Ai4KV6opoScGZvv06g,10
+orthority-0.4.0.dist-info/RECORD,,
