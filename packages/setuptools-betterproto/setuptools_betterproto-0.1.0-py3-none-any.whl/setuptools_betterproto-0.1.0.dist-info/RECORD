@@ -1,0 +1,11 @@
+setuptools_betterproto/__init__.py,sha256=AL18QTVfh7hll-z11jJ6-1gpgCQY5ZfdMMI9qusUjNo,293
+setuptools_betterproto/_command.py,sha256=Q-ZSMXVvbZqHck3artdQ6auiyYwcU4wHD0bu8jn0Y8s,3688
+setuptools_betterproto/_config.py,sha256=0E6Pnc7-4T4m_DiHJbvElPOJHTiehdkiBt8xBuNsMVc,2677
+setuptools_betterproto/conftest.py,sha256=kxmvkzTdvGfh7SiDINIFX0FG9PU0EoKROl9YY75zN8w,409
+setuptools_betterproto/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+setuptools_betterproto-0.1.0.dist-info/LICENSE,sha256=zt0sW1KvE_KWE2ILOabrQYlfOoP0zUZXC3xCLrzGpIA,1089
+setuptools_betterproto-0.1.0.dist-info/METADATA,sha256=xDX19kbhc4CVFsQ2BumQ4cWnQEQezZ9ctnlan8rG-n0,7162
+setuptools_betterproto-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+setuptools_betterproto-0.1.0.dist-info/entry_points.txt,sha256=EicmtGc7BZeZGp7b3-9uDLaKau9dMYKB8lpYnXAB3KY,77
+setuptools_betterproto-0.1.0.dist-info/top_level.txt,sha256=BCunD_nJTclu8RFjP2uY-1t-vCY5NbSKRZlyjWvFVcM,23
+setuptools_betterproto-0.1.0.dist-info/RECORD,,
