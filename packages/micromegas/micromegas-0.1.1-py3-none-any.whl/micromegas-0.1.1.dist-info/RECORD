@@ -1,0 +1,6 @@
+micromegas/__init__.py,sha256=UXvwqJy81hhlwDNlKb2zXjLSR5ZuFBPc_L4BckBPwoM,43
+micromegas/client.py,sha256=ahADQ2JthBHGPdL0aQMvRLhnD1bE-lHIBLvzDN1RY5c,1613
+micromegas/request.py,sha256=u6nqXV5iQjLdXjVrzDqrDV1yoqUbeJ9qjiVgz87-uN8,512
+micromegas-0.1.1.dist-info/METADATA,sha256=eibjoy0EEgb3Net-NTH0joEgJ90yaktUAFIKaLqk_WM,761
+micromegas-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+micromegas-0.1.1.dist-info/RECORD,,
