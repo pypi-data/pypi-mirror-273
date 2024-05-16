@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: monkey-plugintoolbox
+Version: 0.4.0
+Summary: Miscellaneous convenience utilities for Monkey Plugins code
+Home-page: https://github.com/guardicode/plugintoolbox
+License: GPLv3
+Author: Ilija Lazoroski
+Author-email: ilija.lazoroski@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/guardicode/plugintoolbox
+Description-Content-Type: text/markdown
+
+# plugintoolbox
+
+This project contains a collection of convenience functions, classes, and
+utilities written in Python. It is used by the `Plugins` in [Infection
+Monkey](https://github.com/guardicore/monkey).
+
+## Installation
+`pip install plugintoolbox`
+
+## Running tests
+```
+$> poetry install
+$> poetry run pytest
+```
+
