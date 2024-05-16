@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: talk_to_lollms
+Version: 0.1.0
+Summary: A client for Lollms that allows audio to audio full interaction with Lollms
+Author-email: ParisNeo <parisneoai@gmail.com>
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: lollms_client>=0.5.9

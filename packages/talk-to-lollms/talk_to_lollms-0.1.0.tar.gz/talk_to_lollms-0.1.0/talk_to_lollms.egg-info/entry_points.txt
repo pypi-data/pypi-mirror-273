@@ -1,0 +1,2 @@
+[console_scripts]
+talk_to_lollms = talk_to_lollms:main

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+talk_to_lollms/__init__.py
+talk_to_lollms/main.py
+talk_to_lollms.egg-info/PKG-INFO
+talk_to_lollms.egg-info/SOURCES.txt
+talk_to_lollms.egg-info/dependency_links.txt
+talk_to_lollms.egg-info/entry_points.txt
+talk_to_lollms.egg-info/requires.txt
+talk_to_lollms.egg-info/top_level.txt
