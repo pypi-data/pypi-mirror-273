@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: lenscharm
+Version: 0.4.1
+Summary: A Charming, Bayesian, Strong Lensing Framework
+Home-page: https://gitlab.mpcdf.mpg.de/ift/lenscharm
+Author: Matteo Guardiani
+Author-email: matteo.guardiani@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: typing-extensions
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: astropy
+
+# LensCharm
+
+Welcome to LensCharm, the first Charming, Bayesian, Strong Lensing package!
+
+## Example Notebooks
+Below you find a list of example notebooks.
+
+- [Basic example and overview](examples/basic_example.ipynb)
+- [Advanced example: Setting the model parameters](examples/advanced_example.ipynb)
+
+## Documentation
+- [User Guide](docs/user_guide.md)
+
+
+## Installation
+### Manual installation 
+To install LensCharm:
+- Install [nifty8](https://ift.pages.mpcdf.de/nifty/user/installation.html)
+- Install the package via
+```pip install --user lenscharm```.
+
+### Requirements
+The [requirements.txt](requirements.txt) file contains the dependencies for the LensCharm package.
+
+
+## Citation
+If you make use of the LensCharm package, remember to cite:
+```
+@article{lenscharm,
+	author = {{Rüstig, Julian} and {Guardiani, Matteo} and {Roth, Jakob} and {Frank, Philipp} and {Enßlin, Torsten}},
+	title = {Introducing LensCharm - A charming Bayesian strong lensing reconstruction framework},
+	DOI= "10.1051/0004-6361/202348256",
+	url= "https://doi.org/10.1051/0004-6361/202348256",
+	journal = {A&A},
+	year = 2024,
+	volume = 682,
+	pages = "A146",
+}
+```
