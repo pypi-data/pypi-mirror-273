@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+ontolog/__init__.py
+ontolog.egg-info/PKG-INFO
+ontolog.egg-info/SOURCES.txt
+ontolog.egg-info/dependency_links.txt
+ontolog.egg-info/requires.txt
+ontolog.egg-info/top_level.txt
+ontolog/util/__init__.py
+ontolog/util/generic.py
