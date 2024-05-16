@@ -1,0 +1,6 @@
+aipkgs_sendgrid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipkgs_sendgrid/helpers.py,sha256=KdGnZqtozZPGUlu_WnDjwJsxyIWSgaV12Rk_a9gwCrE,2425
+aipkgs_sendgrid-1.0.1.dist-info/LICENSE.md,sha256=NcfSfhNAiflyILPqbNUsJyBbqmT4nstXkDHRPq8Y70o,1058
+aipkgs_sendgrid-1.0.1.dist-info/METADATA,sha256=3PcSt39vmHaaZ1R634Q7rVezkqQMrNxhYVgiNGa5KT8,554
+aipkgs_sendgrid-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aipkgs_sendgrid-1.0.1.dist-info/RECORD,,
