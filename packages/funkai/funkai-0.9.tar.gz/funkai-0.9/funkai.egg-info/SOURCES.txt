@@ -1,0 +1,13 @@
+README.md
+setup.py
+funkai/__init__.py
+funkai/claude.py
+funkai/examples.py
+funkai/funk.py
+funkai/manager.py
+funkai/openai.py
+funkai.egg-info/PKG-INFO
+funkai.egg-info/SOURCES.txt
+funkai.egg-info/dependency_links.txt
+funkai.egg-info/requires.txt
+funkai.egg-info/top_level.txt
