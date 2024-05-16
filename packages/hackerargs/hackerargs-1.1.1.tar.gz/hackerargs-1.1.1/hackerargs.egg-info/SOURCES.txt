@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+hackerargs/__init__.py
+hackerargs/argparse_access.py
+hackerargs/args.py
+hackerargs/strict_bool_yaml.py
+hackerargs.egg-info/PKG-INFO
+hackerargs.egg-info/SOURCES.txt
+hackerargs.egg-info/dependency_links.txt
+hackerargs.egg-info/requires.txt
+hackerargs.egg-info/top_level.txt
+tests/test_access.py
+tests/test_argv_string.py
+tests/test_positional.py
+tests/test_priority.py
