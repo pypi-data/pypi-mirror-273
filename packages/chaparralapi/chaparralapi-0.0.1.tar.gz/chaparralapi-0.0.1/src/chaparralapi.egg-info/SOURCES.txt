@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+src/chaparralapi/__init__.py
+src/chaparralapi/api.py
+src/chaparralapi/fasta.py
+src/chaparralapi/organization.py
+src/chaparralapi/projects.py
+src/chaparralapi/search_results.py
+src/chaparralapi/util.py
+src/chaparralapi.egg-info/PKG-INFO
+src/chaparralapi.egg-info/SOURCES.txt
+src/chaparralapi.egg-info/dependency_links.txt
+src/chaparralapi.egg-info/top_level.txt
