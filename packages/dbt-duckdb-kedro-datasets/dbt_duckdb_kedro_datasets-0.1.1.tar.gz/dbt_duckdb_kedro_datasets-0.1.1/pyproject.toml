@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "dbt_duckdb_kedro_datasets"
+version = "0.1.1"
+description = "Combine duckdb-dbt and Kedro Dataset to easily read Kedro Dataset configs (yaml), enabling conversion of Kedro projects to dbt."
+authors = ["Conrad <conradbez1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dbt_duckdb_kedro_datasets"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dbt-duckdb = "^1.8.0"
+kedro-datasets = {extras = ["pandas"], version = "^3.0.0"}
+pandas = "^2.2.2"
+fastparquet = "^2024.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+twine = "^5.0.0"
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
