@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ava_llm
+Version: 0.0.27
+Summary: A simple llm package.
+Keywords: python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: groq
+Requires-Dist: python-dotenv
