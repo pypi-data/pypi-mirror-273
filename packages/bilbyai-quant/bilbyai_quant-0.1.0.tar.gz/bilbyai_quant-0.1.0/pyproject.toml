@@ -1,0 +1,43 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bilbyai-quant"
+version = "0.1.0"
+readme = "README.md"
+description = "A Python package for quant research."
+authors = [
+    "David Lee <leetdavidu@gmail.com>",
+    "Muhammad Usman Farooq <usmanfarooqmunara@gmail.com>",
+]
+packages = [
+  { include = "bilbyai" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+pandas = "2.2.2"
+pyarrow = "16.0.0"
+numpy = "1.26.4"
+joblib = "1.4.2"
+elasticsearch = "8.13.1"
+pydantic = "2.7.1"
+torch = "2.3.0"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.2"
+pyright = "^1.1.360"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[tool.ruff]
+line-length = 99

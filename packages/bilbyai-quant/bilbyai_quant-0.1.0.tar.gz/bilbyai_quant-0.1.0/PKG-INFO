@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: bilbyai-quant
+Version: 0.1.0
+Summary: A Python package for quant research.
+Author: David Lee
+Author-email: leetdavidu@gmail.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: elasticsearch (==8.13.1)
+Requires-Dist: joblib (==1.4.2)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: pandas (==2.2.2)
+Requires-Dist: pyarrow (==16.0.0)
+Requires-Dist: pydantic (==2.7.1)
+Requires-Dist: torch (==2.3.0)
+Description-Content-Type: text/markdown
+
+# quant
+
+A Python package for quant research.
+
+The project owner is [@leetdavid](https://github.com/leetdavid).
+
+## Development
+
+If not already in a virtual environement, create and use one.
+Read about it in the Python documentation: [venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html).
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the pinned pip version:
+
+```
+pip install -r $(git rev-parse --show-toplevel)/pip-requirements.txt
+```
+
+Finally, install the dependencies:
+
+```
+pip install -r $(git rev-parse --show-toplevel)/dev-requirements.txt -r requirements.txt
+```
+
+## Testing
+
+Execute tests from the library's folder (after having loaded the virtual environment,
+see above) as follows:
+
+```
+python3 -m pytest tests/
+```
+
+Execute the library's CI locally with [act](https://github.com/nektos/act) as follows:
+
+```
+act -j ci-libs-quant
+```
+
