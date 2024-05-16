@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: polars-ts
+Version: 0.0.16
+Requires-Dist: polars >=0.20.26
+Requires-Dist: polars-xdt
+Requires-Dist: hvplot
+Requires-Dist: pyarrow
+Requires-Dist: scipy
+Requires-Dist: plotly
+Requires-Dist: nbformat
+Requires-Dist: ipython
+Requires-Dist: hvplot ; extra == 'dev'
+Requires-Dist: pyarrow ; extra == 'dev'
+Requires-Dist: plotly ; extra == 'dev'
+Requires-Dist: nbformat ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Provides-Extra: dev
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# polars-ts
+
+## Plan
+
+- everything is a lazyframe
+
