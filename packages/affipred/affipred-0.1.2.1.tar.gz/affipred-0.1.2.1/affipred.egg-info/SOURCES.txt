@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+AFFIPred_cli/__init__.py
+AFFIPred_cli/affipred.py
+AFFIPred_cli/cli.py
+affipred.egg-info/PKG-INFO
+affipred.egg-info/SOURCES.txt
+affipred.egg-info/dependency_links.txt
+affipred.egg-info/entry_points.txt
+affipred.egg-info/requires.txt
+affipred.egg-info/top_level.txt
