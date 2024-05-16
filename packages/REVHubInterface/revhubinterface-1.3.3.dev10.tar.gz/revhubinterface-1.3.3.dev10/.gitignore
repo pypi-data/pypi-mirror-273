@@ -1,0 +1,9 @@
+__pycache__/
+
+/dist/
+/build/
+/flatpak/.flatpak-builder/
+/flatpak/build/
+/.idea/
+/flatpak/repo/
+/REVHubInterface/_version.py
