@@ -1,0 +1,6 @@
+README.md
+setup.py
+my_demo_pkg87958795.egg-info/PKG-INFO
+my_demo_pkg87958795.egg-info/SOURCES.txt
+my_demo_pkg87958795.egg-info/dependency_links.txt
+my_demo_pkg87958795.egg-info/top_level.txt
