@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+argument_parsing/__init__.py
+argument_parsing.egg-info/PKG-INFO
+argument_parsing.egg-info/SOURCES.txt
+argument_parsing.egg-info/dependency_links.txt
+argument_parsing.egg-info/not-zip-safe
+argument_parsing.egg-info/top_level.txt
