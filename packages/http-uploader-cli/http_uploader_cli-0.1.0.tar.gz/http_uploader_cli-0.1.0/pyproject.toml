@@ -1,0 +1,81 @@
+[tool.poetry]
+name = "http-uploader-cli"
+version = "0.1.0"
+description = "Simple HTTP CLI json data uploader"
+repository = "https://github.com/rafailmdzdv/http-uploader-cli"
+authors = ["rafailmdzdv <rafayt323@xmail.ru>"]
+readme = "README.md"
+packages = [ {include = "http_uploader"} ]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiofiles = "^23.2.1"
+aiomultiprocess = "^0.9.1"
+prettytable = "^3.10.0"
+
+
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.4.4"
+mypy = "^1.10.0"
+pre-commit = "^3.7.1"
+flake8-pytest = "^1.4"
+flake8-aaa = "^0.17.0"
+flake8-pyproject = "^1.2.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+pytest-datadir = "^1.5.0"
+pytest-aiohttp = "^1.0.5"
+pytest-coverage = "^0.0"
+
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN102",
+    "D1",
+    "D203",
+    "D213",
+    "ANN101",
+    "FA100",
+    "FA102",
+    "FIX002",
+    "PLR2004"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "D100", "D103", "PT023", "A001"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+
+[tool.mypy]
+exclude = [
+    "^tests/"
+]
+disable_error_code = "import-untyped"
+
+
+[tool.flake8]
+max-line-length = 90
+exclude = [
+    "tests/unit/filter/test_compare_filter.py",
+    "tests/unit/filter/test_extented_compare_filter.py"
+]
+extend-ignore = ["E701"]
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
