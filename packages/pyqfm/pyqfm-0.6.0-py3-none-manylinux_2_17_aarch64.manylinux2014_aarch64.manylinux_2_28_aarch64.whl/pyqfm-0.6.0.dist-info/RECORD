@@ -1,0 +1,14 @@
+pyqfm/pylibQFM_SDK.py,sha256=W9R0FocpFniBc89kfT4HhoGxjjRLAHkPUTzFLWpQV90,81341
+pyqfm/qfmui.py,sha256=qJMmiQfV6mByZAtKRW1xpBrieU2TUGRl_RwByxfRZrg,51031
+pyqfm/qfmtool.py,sha256=kf7kPDP4LEYFG9-ZyxymwAhQUF2HMw6wk970GGWxEuo,17237
+pyqfm/uiprovider.py,sha256=2DRJFqhNtzaQn_d8s2USM9uGKBjZ06rE6uI5M4Kng-E,22620
+pyqfm/__init__.py,sha256=A-gCOBPiHbgfWEXXMXY1ot7r1ZKU7DejcGoTX0kZKts,20
+pyqfm/pyqfm.py,sha256=EMBymnMPxVexb508FjGHIepTZKTJcw2MVxwx560k6B0,30970
+pyqfm/lib/arm64/release/libQFM_SDK.so.0,sha256=zSi_lTeV2GQSW8_YTiMirwLAXQX9JEaW2aIlLmgITu0,168000
+pyqfm/lib/arm64/release/libQFM_SDK.so.0.6.0,sha256=zSi_lTeV2GQSW8_YTiMirwLAXQX9JEaW2aIlLmgITu0,168000
+pyqfm/lib/arm64/release/libQFM_SDK.so,sha256=zSi_lTeV2GQSW8_YTiMirwLAXQX9JEaW2aIlLmgITu0,168000
+pyqfm-0.6.0.dist-info/WHEEL,sha256=xaQtKH-KLUTxyIbS_69At56PX23CH5Ws3vMgX2dasyQ,207
+pyqfm-0.6.0.dist-info/METADATA,sha256=GEeh9bsatw2giVaMogGDlX_1Qh_C2MNg52vSrkgz5Qw,193
+pyqfm-0.6.0.dist-info/RECORD,,
+pyqfm-0.6.0.dist-info/top_level.txt,sha256=BP4Iv_yJplJrhFhGkF8wSCA_6H1UoxSom4qU_Zzp58U,6
+pyqfm-0.6.0.dist-info/entry_points.txt,sha256=3BzQFnPHEjBcJhQUpfMPIVdJDR9QYKVPJyHP4Iyh2Ik,73

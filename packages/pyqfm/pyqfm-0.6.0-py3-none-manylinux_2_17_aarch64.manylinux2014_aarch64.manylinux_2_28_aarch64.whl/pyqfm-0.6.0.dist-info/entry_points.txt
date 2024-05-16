@@ -1,0 +1,4 @@
+[console_scripts]
+qfmtool = pyqfm.qfmtool:main
+qfmui = pyqfm.qfmui:main
+
