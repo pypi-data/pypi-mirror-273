@@ -1,0 +1,16 @@
+numpy>=1.16
+scipy>=1.2
+matplotlib>=3.7
+wxpython>=4.0
+pandas
+pymzml
+natsort
+networkx
+h5py
+pypubsub
+multiplierz
+pyimzml
+pythonnet
+pyteomics
+lxml
+lxml_html_clean
