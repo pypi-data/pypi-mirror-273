@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: lanpartydb
+Version: 0.3.0
+Summary: Python library for the OrgaTalk LAN Party Database
+Project-URL: Repository, https://github.com/orgatalk/lanpartydb-lib-python
+Author-email: Jochen Kupperschmidt <homework@nwsnet.de>
+License: MIT
+License-File: LICENSE
+Keywords: lanparty
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Python library for the OrgaTalk LAN Party Database
+
+
+## Installation
+
+```sh
+$ pip install lanpartydb
+```
+
+
+## License
+
+MIT
+
+
+## Author
+
+Jochen Kupperschmidt
