@@ -1,0 +1,12 @@
+dumang_ctrl/__init__.py,sha256=8BuSMUMzT_JTLZJtWqaydH2wvykParTpvo5v2SJgR4s,269
+dumang_ctrl/dumang/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dumang_ctrl/dumang/common.py,sha256=QxqwYXpZ_1t2F0V2YD5h8kqdsOjDnndwFWVwlENlIgo,36432
+dumang_ctrl/dumang/gui.py,sha256=6QBociwED9dihyKAGP5zJwd8g26vfdCB9Nv9gGM2ROY,6347
+dumang_ctrl/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dumang_ctrl/tools/config.py,sha256=6TS0JM4WnamEHdRZsw4L7kTnvDhKt3nIKA_pH77MLhg,10056
+dumang_ctrl/tools/sync.py,sha256=IW3s66pY1ZFkAtxYFgDqikbH_Jxesc1s9h808w3fjbM,4828
+dumang_ctrl-1.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dumang_ctrl-1.0.5.dist-info/METADATA,sha256=JWNj5UgRfMYR3SyqzIVamdB3AcVyuXdyTESGwNrPp4k,2438
+dumang_ctrl-1.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dumang_ctrl-1.0.5.dist-info/entry_points.txt,sha256=owmfW0GXf6sYz4Omg2NM6d2dPa9hFea97Izl4aw0WXw,101
+dumang_ctrl-1.0.5.dist-info/RECORD,,
