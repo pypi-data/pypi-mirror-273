@@ -1,0 +1,2 @@
+[console_scripts]
+piqueserver = piqueserver.run:main
