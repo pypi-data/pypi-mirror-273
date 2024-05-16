@@ -1,0 +1,2 @@
+[console_scripts]
+spdx3merge = spdx3merge:main
