@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PITpip"
+version = "1.4.1"
+authors = [
+  { name="Jukka-Pekka Haapaniemi", email="jp.haapaniemi@riverit.fi" },
+]
+description = "A small test package for testing package versioning"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/JPHaapaniemi/package-import-test-pip"
