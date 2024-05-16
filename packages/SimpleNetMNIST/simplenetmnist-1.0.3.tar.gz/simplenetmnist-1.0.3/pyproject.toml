@@ -1,0 +1,25 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SimpleNetMNIST"
+version = "1.0.3"
+description = "SimpleNetMNIST.  Based off an implementation of a simple neural network for MNIST classification in PyTorch. Created by Edward Ji (https://github.com/Edward-Ji)."
+authors = [ {name="Edward Ji", email="jiziao6@gmail.com"} , {name="Daniel Elliott", email="danelliottster@gmail.com"} ]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["pytorch", "mnist", "neural network"]
+license = { file="LICENSE" }
+readme = "README.md"
+dependencies = [
+    "torch>=2.0"
+]
+requires-python = ">=3.9"
+
+[project.urls]
+homepage = "https://github.com/danelliottster/SimpleNetMNIST"
