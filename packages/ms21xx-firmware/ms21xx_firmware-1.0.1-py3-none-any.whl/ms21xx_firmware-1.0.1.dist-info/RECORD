@@ -1,0 +1,11 @@
+ms21xx_firmware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ms21xx_firmware/generate.py,sha256=p6iPLmOpT8E5Vfk2K5al8kilIgz6ECT3aY7tQgbJAck,5788
+ms21xx_firmware/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ms21xx_firmware/firmwares/ms2109.bin,sha256=k3uNuo5z885pA68hxFT_p2knBIZDTaEHKCX9vJfyzRA,1776
+ms21xx_firmware/firmwares/ms2130.bin,sha256=uaCX8R2xlvuovKNsSn0InnHeR8UO3qaRwyYc5BktX3o,64468
+ms21xx_firmware-1.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ms21xx_firmware-1.0.1.dist-info/METADATA,sha256=p0YBh6xhlaPy0UfloaOZpwK3NCInBPdLBqoTx3S9b9I,4162
+ms21xx_firmware-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ms21xx_firmware-1.0.1.dist-info/entry_points.txt,sha256=zkPMTmQvaaYqW2NhFhAKZhi1NlneV15d5P2rmgAcNGU,66
+ms21xx_firmware-1.0.1.dist-info/top_level.txt,sha256=KsYNbCdCoyieqhI4Un60L0NmofKrTCS66YunwNkc9-k,16
+ms21xx_firmware-1.0.1.dist-info/RECORD,,
