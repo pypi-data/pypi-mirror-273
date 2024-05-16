@@ -1,0 +1,4 @@
+[console_scripts]
+bystro-save-worker=bystro.search.save.listener:main
+bystro-index-worker=bystro.search.index.listener:main
+bystro-api=bystro.cli.cli:main
