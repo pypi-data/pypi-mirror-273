@@ -1,0 +1,8 @@
+test_project_ci_cd/__init__.py,sha256=R8yPsmuPAXmD88St6siXqSXBguTOrrHh2B8Ze7Oedsc,993
+test_project_ci_cd/__main__.py,sha256=l7_mcEaKZA6-PiWAIE3qUJ8n23Ch-GwMCKYjDstywjg,232
+test_project_ci_cd/calc.py,sha256=t_OmSZjUlzEtBVl5lIcefkyntQkfrFUTwigpAWOYOAg,414
+test_project_ci_cd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_project_ci_cd-0.7.19.dist-info/METADATA,sha256=U2O9n3FpUUNJS_WIt6nra1V_NUje93gx60s7NTElLXY,675
+test_project_ci_cd-0.7.19.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+test_project_ci_cd-0.7.19.dist-info/entry_points.txt,sha256=soMVPIdybcVjUxrLwDXBPsgpDmSWgwTWIAX_VqfY18k,65
+test_project_ci_cd-0.7.19.dist-info/RECORD,,
