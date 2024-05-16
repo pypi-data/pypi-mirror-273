@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: script-house
+Version: 0.1.4
+Summary: a python script house containing handy functions for daily use
+Home-page: https://github.com/gustaavv/script-house
+Author: Gustav
+Author-email: gustaavv.git@yahoo.com
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic ==2.5.3
+Requires-Dist: bson ==0.5.10
+Requires-Dist: pymongo ==4.6.1
+Requires-Dist: send2trash ==1.8.2
+
+# script-house
+
+该仓库是一个方便我日常使用的 python 模块 —— [`script-house`](https://pypi.org/project/script-house/) 。预计我的大部分 python 项目都会依赖这个基础模块。
+
+`script-house` 主要包括两个包：
+- `utils`：用于开发的工具类。
+- `ops`：用于日常使用的工具类（脚本）。
+
+# 使用 
+安装：
+```shell
+pip install script-house
+```
+
+保持最新版本：
+```shell
+pip install --upgrade script-house
+```
+
+
+
+
+
+
+# 开发者用
+> （提醒我自己如何用）
+ 
+ 
+## 如何构建
+
+```shell
+python.exe .\setup.py bdist_wheel sdist
+```
+
+
+## 如何上传到 pypi
+1. 拿 `api_token`
+
+2. 创建 .pypirc 文件，放到 `$HOME` 目录（Windows 的话，放到 `C:\Users\用户名` 下）
+   .pypirc 格式：
+
+    ```ini
+    [pypi]
+      username = __token__
+      password = <api_token>
+    ```
+
+3. `pip install wine`
+
+4. 上传：`twine upload dist/script_house-x.y.z-py3-none-any.whl`
+
