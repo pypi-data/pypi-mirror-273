@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/resdlem/__init__.py
+src/resdlem/equilibrium.py
+src/resdlem.egg-info/PKG-INFO
+src/resdlem.egg-info/SOURCES.txt
+src/resdlem.egg-info/dependency_links.txt
+src/resdlem.egg-info/top_level.txt
