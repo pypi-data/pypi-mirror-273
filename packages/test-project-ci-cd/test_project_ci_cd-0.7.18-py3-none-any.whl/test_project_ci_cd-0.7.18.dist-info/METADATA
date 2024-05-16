@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: test-project-ci-cd
+Version: 0.7.18
+Summary: test project for github actions
+License: MIT
+Author: Daryl Stark
+Author-email: daryl@dstark.nl
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (==0.111.0)
+Requires-Dist: pydantic (==2.7.1)
+Description-Content-Type: text/markdown
+
+# Test Project for CI/CD
+
+Test project for GitHub Action Workflows.
