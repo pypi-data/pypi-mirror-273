@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: procedure-data-tool
+Version: 0.0.6
+Summary: Reference tool for DST Waste Transfer Procedures Based on automatically generated route
+Author: Josue Estrada
+Author-email: jramiroem@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt

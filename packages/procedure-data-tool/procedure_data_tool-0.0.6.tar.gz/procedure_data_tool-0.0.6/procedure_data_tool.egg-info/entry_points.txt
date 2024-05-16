@@ -1,0 +1,2 @@
+[console_scripts]
+transfer_tool = procedure_data_tool.main:main
