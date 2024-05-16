@@ -1,0 +1,5 @@
+"""!@package database
+Classes implementing MQTT pub-sub networks used for data transmission between IoT nodes. 
+These classes must be derived trom base.MQtt base class.
+
+"""
