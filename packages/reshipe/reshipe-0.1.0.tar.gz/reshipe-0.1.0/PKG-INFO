@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: reshipe
+Version: 0.1.0
+Summary: re(sh)ipe is a versatile Python module designed for efficient data transformation and validation.
+Project-URL: Homepage, https://dvm-shlee.github.io
+Author-email: SungHo Lee <shlee@unc.edu>
+Maintainer-email: SungHo Lee <shlee@unc.edu>
+License: MIT
+License-File: LICENSE
+Keywords: metadata,parser,recipe,reshape,yalm
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: pyyaml>=6.0.1
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# re(sh)ipe
+
+### **Introducing re(sh)ipe: Streamlined Data Transformation and Validation**
+
+re(sh)ipe is a sophisticated Python module designed to integrate data reshaping with recipe-driven processing. Developed primarily for parsing metadata from MRI raw data to ensure BIDS compliance, re(sh)ipe leverages a YAML-based configuration that simplifies handling complex data structures, making it highly suitable for researchers and developers in neuroimaging.
+
+**Core Features:**
+
+- **Detailed Data Specifications:** (WIP) Utilize YAML files to define data types and constraints rigorously. This feature includes regex-aware type restrictions that are essential for adhering to BIDS standards.
+- **Flexible Parsing Mechanisms:** The module's recipe-based approach allows for the dynamic parsing of metadata from Python objects. It includes options for conditional parsing paths and the integration of pre-processing scripts to enhance data workflow efficiency.
+
+Explore the capabilities of re(sh)ipe, where sophisticated data processing is seamlessly combined with precision and adaptability for neuroimaging data management.
