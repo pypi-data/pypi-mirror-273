@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: UserAgenter
+Version: 1.0.3
+Summary: Generated User Agent and Scrap Proxy [http, socka4, socka5](Auto update)
+Home-page: https://github.com/UserAgenter
+Author: Mmdrza
+Author-email: PyMmdrza@Gmail.com
+License: MIT
+Keywords: user-agent,fake-user-agent,user agent generator,free proxy,proxy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Generated User Agent and Scrap Proxy [http, socka4, socka5](Auto update)

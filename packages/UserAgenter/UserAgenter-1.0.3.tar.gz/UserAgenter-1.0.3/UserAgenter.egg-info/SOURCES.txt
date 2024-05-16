@@ -1,0 +1,9 @@
+setup.py
+UserAgenter/__init__.py
+UserAgenter/user_agent.py
+UserAgenter/utils.py
+UserAgenter.egg-info/PKG-INFO
+UserAgenter.egg-info/SOURCES.txt
+UserAgenter.egg-info/dependency_links.txt
+UserAgenter.egg-info/requires.txt
+UserAgenter.egg-info/top_level.txt
