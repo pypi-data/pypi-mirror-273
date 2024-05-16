@@ -1,0 +1,8 @@
+numpy
+einops
+rasterio
+tqdm
+torch
+scikit-image
+pytorch-lightning
+requests
