@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: hello-wolf-software
+Version: 0.0.3
+Summary: A simple hello world test
+Home-page: https://github.com/DevelopersToolbox/hello-wolf-software
+Author: Wolf Software
+Author-email: pypi@wolfsoftware.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+<!-- markdownlint-disable -->
+<p align="center">
+    <a href="https://github.com/DevelopersToolbox/">
+        <img src="https://cdn.wolfsoftware.com/assets/images/github/organisations/developerstoolbox/black-and-white-circle-256.png" alt="DevelopersToolbox logo" />
+    </a>
+    <br />
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/actions/workflows/cicd.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/DevelopersToolbox/hello-wolf-software/cicd.yml?branch=master&label=build%20status&style=for-the-badge" alt="Github Build Status" />
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/blob/master/LICENSE.md">
+        <img src="https://img.shields.io/github/license/DevelopersToolbox/hello-wolf-software?color=blue&label=License&style=for-the-badge" alt="License">
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software">
+        <img src="https://img.shields.io/github/created-at/DevelopersToolbox/hello-wolf-software?color=blue&label=Created&style=for-the-badge" alt="Created">
+    </a>
+    <br />
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/releases/latest">
+        <img src="https://img.shields.io/github/v/release/DevelopersToolbox/hello-wolf-software?color=blue&label=Latest%20Release&style=for-the-badge" alt="Release">
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/releases/latest">
+        <img src="https://img.shields.io/github/release-date/DevelopersToolbox/hello-wolf-software?color=blue&label=Released&style=for-the-badge" alt="Released">
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/releases/latest">
+        <img src="https://img.shields.io/github/commits-since/DevelopersToolbox/hello-wolf-software/latest.svg?color=blue&style=for-the-badge" alt="Commits since release">
+    </a>
+    <br />
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/blob/master/.github/CODE_OF_CONDUCT.md">
+        <img src="https://img.shields.io/badge/Code%20of%20Conduct-blue?style=for-the-badge" />
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/blob/master/.github/CONTRIBUTING.md">
+        <img src="https://img.shields.io/badge/Contributing-blue?style=for-the-badge" />
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/blob/master/.github/SECURITY.md">
+        <img src="https://img.shields.io/badge/Report%20Security%20Concern-blue?style=for-the-badge" />
+    </a>
+    <a href="https://github.com/DevelopersToolbox/hello-wolf-software/issues">
+        <img src="https://img.shields.io/badge/Get%20Support-blue?style=for-the-badge" />
+    </a>
+</p>
+
+## Overview
+
+<br />
+<p align="right"><a href="https://wolfsoftware.com/"><img src="https://img.shields.io/badge/Created%20by%20Wolf%20on%20behalf%20of%20Wolf%20Software-blue?style=for-the-badge" /></a></p>
