@@ -1,0 +1,9 @@
+simple_archive-0.2.1.dist-info/METADATA,sha256=uq-JA11O8m8bVTvTtx4KvSr_mmM-yWz6FeLqyYWTV3A,3249
+simple_archive-0.2.1.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+simple_archive-0.2.1.dist-info/entry_points.txt,sha256=WGWjAh2Tjzu-EHOXceuyhQvzXZ5wpqmeUEyw_0JTpw0,50
+simple_archive-0.2.1.dist-info/licenses/LICENSE,sha256=pbtgqRK6_qh-GjXD4znH_dQMqZdbHuwg8HYDVrgpgO0,1077
+simple_archive/__init__.py,sha256=f9Z_cYMmBG57t22ijiqGR1G0jyfjWC6dBkssgB3oaVk,148
+simple_archive/cli.py,sha256=3iJo2aZtUDww_4ntc1v-sQd7V5yNGLLE80_F6pGw6I4,598
+simple_archive/simple_archive.py,sha256=OK4lCrhpW9xKSFov3YBhQuHl3SK5-6CTTeba0itptXE,6968
+simple_archive/use_cases.py,sha256=fb4D05mqyEI1bvEyJXwjrahivD4qlrLmrVBz9nqmFU4,2594
+simple_archive-0.2.1.dist-info/RECORD,,

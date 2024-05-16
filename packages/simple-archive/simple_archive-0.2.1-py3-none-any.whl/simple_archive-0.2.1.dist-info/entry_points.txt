@@ -1,0 +1,3 @@
+[console_scripts]
+safar = simple_archive.cli:app
+
