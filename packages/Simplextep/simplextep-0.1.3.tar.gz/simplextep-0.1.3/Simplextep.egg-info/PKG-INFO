@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Simplextep
+Version: 0.1.3
+Summary: Simplex implementation with steps.
+Home-page: https://github.com/KeivanJamali/simplextep
+Author: Keivan Jamali
+Author-email: K1Jamali01@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tabulate
+Requires-Dist: matplotlib
