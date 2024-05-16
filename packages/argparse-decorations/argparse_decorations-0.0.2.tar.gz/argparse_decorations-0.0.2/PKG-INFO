@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: argparse_decorations
+Version: 0.0.2
+Summary: argparse wrapper around decorations
+Home-page: https://bitbucket.org/rmonico/argparse_decorations
+Author: Rafael Monico
+Author-email: rmonico1@gmail.com
+License: GPL3
