@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xposer
+Version: 1.0.1
+Summary: Xpose your functions as microservices over arbitrary channels using standardized logging and configuration
+Home-page: https://github.com/barocsi/xposer
+Author: Aron Barocsi
+Author-email: aron.barocsi@gmail.com
+License: Private
+Keywords: microservice,function wrapper,function exposer
+Platform: UNKNOWN
+
+UNKNOWN
+
