@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: malin
+Version: 0.2.1
+Summary: 
+Author: Yassine Damiri
+Author-email: yassine.damiri@epita.fr
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Malin
+
+<p align="center">
+<img src="./imgs/logo.svg" width="300"/>
+</p>
+
+## Description
+Paquet Python permettant de créer facilement de nouveaux moteurs antiviraux à intégrer dans l'environnement Malin.
+
+## Introduction
+### Pourquoi ce paquet ?
+Malin a initialement été développé en Golang. Cependant, ce langage peut être assez niche et présenter une courbe d'apprentissage élevée. Il m'a semblé naturel de créer un paquet Python pour faciliter le développement pour les consultants, les analystes SOC, et les équipes CERT. Ce paquet a été conçu pour être le plus simple possible à utiliser.
+
+### A qui est dédié ce paquet ?
+Si vous ne connaissez pas Malin, ce paquet n'est probablement pas pour vous :)
+En effet, il n'est pas destiné à un usage grand public. En effet, sans l'environnement Malin comprenant l'ordonnanceur, les workers, etc., ce paquet ne sera pas très utile, car il a été développé pour un usage très spécifique.
+
+## Usage
+Comme j'aime bien les exemples et que je pense que c'est plus sympa d'apprendre avec des exemples, je vais vous décrire l'utilisation du paquet pas à pas.
+
+### Quick Start
+#### Installation
+Avant de plonger dans le code, il faut d'abord installer le paquet. Rien de plus simple :
+```bash
+pip install malin
+```
+
+Une fois cela fait, vous avez accompli la partie la plus difficile ;)
+
+#### Boilerplate Code
+Concernant le code, voici le code de base à utiliser :
+
+```python
+from malin import Malin, ScanSummary
+
+def parser(engineResult) -> ScanSummary:
+    # Parser le résultat de l'engine et le convertir en ScanSummary
+
+def engine(filename: str) -> str:
+    # Lancer l'engine avec le nom de fichier reçu depuis le worker
+    # Renvoyer le résultat pour qu'il soit passé au parser
+
+malinEngine = Malin(engine, parser)
+malinEngine.run(hots="0.0.0.0", port=5000) # On peut specifier les champs host et port
+```
+
+La classe `Malin` expose une API avec les bons endpoints et méthodes pour que le worker puisse envoyer et recevoir les rapports d'analyse. La seule partie non générique est :
+
+- Comment lancer et récupérer le résultat d'un moteur
+- Comment parser la reponse de l'engine
+
+En effet, les éditeurs d'antivirus n'ont pas uniformisé l'usage de leurs moteurs ni leurs sorties :| Cela dépend donc de chaque moteur. C'est pourquoi il est demandé de coder deux fonctions :
+- `engine`: Cette fonction lance l'analyse avec le moteur, récupère la sortie et la retourne pour qu'elle soit envoyée au parser.
+- `parser`: Cette fonction parse la sortie de la fonction `engine` et la convertit en `ScanSummary`
+
+La class `ScanSummary` est definie comme suit:
+```python
+@dataclass
+class ScanSummary:
+    engine: str
+    message: str
+    detected: bool
+    malware: List[str]
+```
+
+#### Error handling
+Parfois, les choses ne se passent pas comme prévu (mdr, tout le temps). Il est possible de renvoyer des erreurs prédéfinies telles que :
+- `InvalidOutput` : Peut être levée dans la fonction `parser` quand les règles de parsing ne sont pas respectées. Par exemple, si le binaire lancé n'est pas le bon ou qu'il y a une erreur dans le rapport fourni.
+
+## Exemple concret:
+Maintenant que vous êtes devenus des pros (eh oui, on n'a pas de temps à perdre ici), nous allons voir comment implémenter un moteur antiviral peu connu, "Windows Defender" :)
+
+Pour interagir avec "Windows Defender", on peut appeler le binaire `MpCmdRun.exe` avec les bonnes options. Comme ce tutoriel vise à vous familiariser avec le paquet malin et non à expliquer comment utiliser "MpCmdRun.exe", nous allons utiliser un wrapper pour "Windows Defender" appelé `pyrattle` (petite promo). Vous pourriez aussi l'implémenter différemment (avec `os.system` par exemple), c'est vous qui voyez ;)
+
+### Engine
+Commençons par la partie `engine`. Il suffit de lancer l'analyse du fichier donné en paramètre (`filename`) et de retourner le résultat obtenu. 
+**À noter** : Le type de la valeur de retour n'est pas très important. Tant que la fonction `parser` gère le type retourné, ça fonctionne. Dans notre cas, nous retournons une instance de `ScanResult`, mais nous aurions très bien pu retourner un str :
+
+```python
+from pyrattle import PyDefender
+from pyrattle.pyrattle import ScanType, ScanResult
+
+from malin import Malin
+#...
+def defenderEngine(filename: str) :
+    scanner = PyDefender()
+    result : ScanResult = scanner.scan(scan_type=ScanType.CUSTOM ,file=filename, disable_remediation=True)
+    return result
+```
+
+## Parser
+Maintenant, la partie la plus difficile (c'est faux XD). Puisque l'engine retourne un `ScanResult`, la fonction parser doit prendre en argument un `ScanResult`. Tout ce qu'on fait ici, c'est convertir le résultat en `ScanSummary` et adapter le `message`.
+
+```python
+from malin import Malin, ScanSummary
+
+# ...
+
+def defenderParser(output: ScanResult) -> ScanSummary:
+    message: str = "Malware Detected"
+    if (not output.is_threat):
+       message = "Malware not Detected" 
+
+    result = ScanSummary(engine="Windows Defender", message=message, detected=output.is_threat, malware=[output.threat])
+    
+    return result 
+```
+
+## Code final
+En réunissant les fonctions précédentes, on obtient le code final :
+
+```python
+from pyrattle import PyDefender
+from pyrattle.pyrattle import ScanType, ScanResult
+
+from malin import Malin, ScanSummary
+
+def defenderParser(output: ScanResult) -> ScanSummary:
+    message: str = "Malware Detected"
+    if (not output.is_threat):
+       message = "Malware not Detected" 
+
+    result = ScanSummary(engine="Windows Defender", message=message, detected=output.is_threat, malware=[output.threat])
+    
+    return result 
+
+def defenderEngine(filename: str) :
+    scanner = PyDefender()
+    result : ScanResult = scanner.scan(scan_type=ScanType.CUSTOM ,file=filename, disable_remediation=True)
+    return result
+
+malinDefender = Malin(defenderEngine, defenderParser)
+malinDefender.run(host="0.0.0.0")
+```
+
+## Licence
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
+
+## Author
+Yassine Damiri
+https://damiri.fr
+https://github.com/Yasha-ops
+
