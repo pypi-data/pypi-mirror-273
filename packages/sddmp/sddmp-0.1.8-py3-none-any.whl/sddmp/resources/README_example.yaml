@@ -1,0 +1,59 @@
+# This is the readme for the example project. As this file is located in the root folder of the
+# project, it is the main readme for the project. All metadata contained in this file will be
+# inherited by all subfolders and files. The metadata of the subfolders can be overwritten by
+# adding a README.yaml file to the respective folder.
+
+# The "sddmp" field is required. It is used to identify this portion of the file as metadata for
+# the self documenting data management plan (sddmp) tool. The sddmp tool will ignore all other
+# fields in this file.
+
+# This readme is a yaml file that is intended to be used with the
+# Self Documenting Data Management Plan (SDDMP) tool.
+DigitalDocument:
+  name: Self Documenting Data Management Plan
+  # The individual responsible for the content of this document
+  maintainer:
+    - name: <name1>
+      email: <email1>
+      description: "Responsible for the content and maintenance of the automated data management plan"
+
+# This Section describes the project and is the minimum that should be provided
+ResearchProject:
+  # The name of the project (required)
+  name: <title>
+  # Project members are listed here. The roleName field is free text and can be  used to describe
+  # the role of individuals in the project.
+  member:
+    - name: <name1>
+      email: <email1>
+      jobTitle: Principal Investigator
+    - name: <name2>
+      email: <email2>
+      jobTitle: Maintainer
+  # The following section is optional and can be used to describe the funding
+  # of the project.
+  funder:
+    - name: EU-Horizon
+      identifier: <number1>
+      url: <url>
+      member:
+        - "@type": Person
+          email: <email1>
+          jobTitle: Principal Funder
+    - "@type": Organization
+      name: DFG
+      identifier: <number2>
+  # A description of the project
+  description: "Root folder for Example Project"
+
+# The following section relates to the data contained in the project
+Dataset:
+  # A short description of the dataset
+  description: |
+    This is the readme for the example project and this is the abstract for the dataset.
+  # How access to the data is regulated
+  conditionsOfAccess: "public"
+  # The license of the data
+  license: "CC-BY-4.0"
+  # The version of the dataset
+  version: "1.0"

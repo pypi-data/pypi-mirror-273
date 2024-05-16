@@ -1,0 +1,93 @@
+.navbar {
+    height: 60px;
+    padding-right: 1rem;
+    background-color: var(--bs-white);
+}
+
+.hidden {
+    display: none;
+}
+
+.alert-icon {
+    color: var(--bs-gray-500);
+    font-size: 2rem;
+}
+
+.topbar {
+    top: 60px;
+}
+
+.topbar li.nav-item {
+    padding-left: 0.75rem;
+}
+
+.topbar h1 {
+    padding-left: 2rem;
+    color: var(--bs-gray-800);
+}
+
+#page-content {
+    padding-left: 2rem;
+}
+
+/* Styles For Small Cards */
+
+.small-card {
+    border-left-width: 0.75rem;
+    border-left-style: solid;
+}
+
+.small-card.primary {
+    border-left-color: var(--bs-primary);
+}
+
+.small-card.secondary {
+    border-left-color: var(--bs-secondary);
+}
+
+.small-card.success {
+    border-left-color: var(--bs-success);
+}
+
+.small-card.danger {
+    border-left-color: var(--bs-danger);
+}
+
+.small-card.warning {
+    border-left-color: var(--bs-warning);
+}
+
+.small-card.info {
+    border-left-color: var(--bs-info);
+}
+
+/* Styles For Large Cards */
+
+.large-card .card-text {
+    height: 500px;
+    overflow-y: auto;
+}
+
+/* Styles For Nav Links */
+
+.nav-link.first-level {
+    font-size: 0.9rem;
+}
+
+.nav-link.second-level {
+    font-size: 0.8rem;
+}
+
+.nav-link.third-level {
+    font-size: 0.8rem;
+}
+
+.sb-sidenav .sb-sidenav-menu .nav .sb-sidenav-menu-heading {
+    text-transform: none;
+    padding: 0.25rem 0.25rem 0.75rem
+}
+
+thead tr:nth-child(2) th input,
+thead tr:nth-child(2) th select {
+    width: 100%;
+}

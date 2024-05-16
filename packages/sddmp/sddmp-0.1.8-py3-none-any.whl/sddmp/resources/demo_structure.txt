@@ -1,0 +1,11 @@
+10-19 Administration
+   11 Meetings
+      11.01 10.01-bi_weekly_jour_fixe_meeting_minutes
+      11.02 10.02-weekly_ap3&4_meeting_minutes
+   12 Reports
+      12.01 report_due_dates
+      12.02 project_design_report
+20-29 Communication
+   21 Internal
+      21.01 Project Directory
+   22 External

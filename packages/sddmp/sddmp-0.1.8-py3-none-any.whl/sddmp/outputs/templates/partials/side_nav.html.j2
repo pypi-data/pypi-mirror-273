@@ -1,0 +1,118 @@
+<div id="layoutSidenav_nav">
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="sb-sidenav-menu-heading">
+                    <a class="nav-link collapsed first-level"
+                        href="{% for i in range(depth-1) %}../{% endfor %}index.html">
+                        Root Directory
+                    </a>
+                </div>
+
+                {% for root_directory in directory_structure %}
+                {% set root_index = loop.index %}
+                <div class="sb-sidenav-menu-heading">
+                    <a class="nav-link collapsed first-level"
+                        href="{% for i in range(depth-1) %}../{% endfor %}{{root_directory.name }}/index.html"
+                        data-bs-target="#collapse{{ root_index }}">
+                        {{ root_directory.name }}
+                    </a>
+                    <div id="collapse{{ root_index }}" class="collapse">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            {% for sub_directory1 in root_directory.children %}
+                            {% set sub_index1 = loop.index %}
+                            <a class="nav-link collapsed second-level"
+                                href="{% for i in range(depth-1) %}../{% endfor %}{{root_directory.name }}/{{ sub_directory1.name }}/index.html"
+                                data-bs-target="#collapse{{ root_index }}-{{ sub_index1 }}">
+                                {{ sub_directory1.name }}
+                            </a>
+                            <div id="collapse{{ root_index }}-{{ sub_index1 }}" class="collapse">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    {% for sub_directory2 in sub_directory1.children %}
+                                    <a class="nav-link collapsed third-level"
+                                        href="{% for i in range(depth-1) %}../{% endfor %}{{root_directory.name }}/{{ sub_directory1.name }}/{{ sub_directory2.name }}/index.html"
+                                        data-bs-target="#collapse{{ root_index }}-{{ sub_index1 }}-{{ loop.index }}">
+                                        {{ sub_directory2.name }}
+                                    </a>
+                                    {% endfor %}
+                                </nav>
+                            </div>
+                            {% endfor %}
+                        </nav>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="sb-sidenav-footer">
+            <div class="small">Version {{ version }}</div>
+        </div>
+    </nav>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var timer;
+        $('.nav-link').hover(
+            function () { // mouse enter
+                clearTimeout(timer);
+                var target = $(this).data('bs-target');
+                $(target).collapse('show');
+
+                if ($(this).hasClass('first-level')) {
+                    // Close all other first-level navs
+                    $('.first-level').not(this).each(function () {
+                        var target = $(this).data('bs-target');
+                        $(target).collapse('hide');
+                    });
+                }
+
+                if ($(this).hasClass('second-level')) {
+                    // Close all other second-level navs
+                    $('.second-level').not(this).each(function () {
+                        var target = $(this).data('bs-target');
+                        $(target).collapse('hide');
+                    });
+                }
+            },
+            function () { // mouse leave
+                var target = $(this).data('bs-target');
+                timer = setTimeout(function () {
+                    $(target).collapse('hide');
+                }, 300); // delay in milliseconds
+            }
+        );
+
+        $('.collapse').hover(
+            function () { // mouse enter
+                clearTimeout(timer);
+            },
+            function () { // mouse leave
+                var target = $(this).attr('id');
+                timer = setTimeout(function () {
+                    $('#' + target).collapse('hide');
+                }, 300); // delay in milliseconds
+            }
+        );
+    });
+
+    /*!
+    * Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
+    * Copyright 2013-2023 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
+    */
+    window.addEventListener('DOMContentLoaded', event => {
+
+        // Toggle the side navigation
+        const sidebarToggle = document.body.querySelector('#sidebarToggle');
+        if (sidebarToggle) {
+            sidebarToggle.addEventListener('click', event => {
+                event.preventDefault();
+                document.body.classList.toggle('sb-sidenav-toggled');
+                localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
+            });
+        }
+
+    });
+</script>
