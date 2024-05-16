@@ -1,0 +1,2 @@
+[console_scripts]
+pih-mark = MarkService.__main__:start

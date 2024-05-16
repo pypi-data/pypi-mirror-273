@@ -1,0 +1,14 @@
+MarkService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MarkService/__main__.py,sha256=uaYGI5KAxNENaBwo4BEH9sYYysSMH7c8k6v0Z7Bo5SQ,146
+MarkService/api.py,sha256=zxbw3Sk7KOrGaw3zWONgsMcQaME-ONwOZrjAgmatpFE,38590
+MarkService/api_test.py,sha256=VE3gY_3WjKFKKXYlNH5NLAIPianEk6aDJeZ6zVnpZM4,1626
+MarkService/checkAndModify.py,sha256=t2Nvlq1-z-lPu47l7RPzybxZYo1jebYKpTgpEPszq4w,7014
+MarkService/const.py,sha256=3bVaM5KsSrx8DLcpcY6X-tYHuETlTi2OW4wI9PSdXuE,1815
+MarkService/createEmptyPerson.py,sha256=L7jZKlUxS9Zz8JWxQEdGZmkc1bvpjZ9KNhAzfUNtquw,839
+MarkService/markChange.py,sha256=_LAfgt4d3pym3vf7AC0UDQboq922ozHTAn6mi659FmQ,2309
+MarkService/service.py,sha256=r1PU3vRz9ikBNjgO91_KtZVrRdyE6Z025Qo0A2gDCxM,6242
+pih_mark-0.15.dist-info/METADATA,sha256=YYeIgbyQPvSm4mhnfuzxYTuG095hPqvixzObHUyvBSY,317
+pih_mark-0.15.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pih_mark-0.15.dist-info/entry_points.txt,sha256=jRdoClbTShQsVPg1y_MWNuGy34TfIY74mp4Ap2cjZlA,56
+pih_mark-0.15.dist-info/top_level.txt,sha256=NCtmxdsJ73nJIkGPAYJp4zTeep_7Q_NLgSG9R-hArFs,12
+pih_mark-0.15.dist-info/RECORD,,
