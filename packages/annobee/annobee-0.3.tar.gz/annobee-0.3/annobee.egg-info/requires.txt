@@ -1,0 +1,11 @@
+numpy
+pandas
+tqdm
+dnspython
+pymongo
+requests
+six
+tzdata
+python-dateutil
+pytz
+pool
