@@ -1,0 +1,3 @@
+[console_scripts]
+dashboard05=examples.dashboard05.main:start
+
