@@ -1,0 +1,4 @@
+torch>=1.7.1
+tensorflow-macos
+spacy>=3
+transformers<=4.30.0,>=4.11.3
