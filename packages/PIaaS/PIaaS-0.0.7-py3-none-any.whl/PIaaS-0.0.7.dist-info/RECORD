@@ -1,0 +1,11 @@
+PIaaS/__init__.py,sha256=_vy1ddS0ngb6TlbBScXg_MC0lA21OGahNDJ99ahWsN0,1926
+PIaaS/config.py,sha256=ZiWZYGZahUSN5U4AbMNUqlQPqN-VIoL-eeZQ7TB1hok,100
+PIaaS/views.py,sha256=ENlvj7R18kh4loARgZQ82nxQV_Z6JKoVWcqNcOmHUVM,1774
+PIaaS/static/ethernet-port-icon-20.jpeg,sha256=zlHpoBSyVj3B7VVRFADiZNrLnWPKKNHBI1n05pYYiTw,1229
+PIaaS/static/css/style.css,sha256=zhGWG5b-wAuGlo-abJfWxb3KnQ-gYUG5kCEOOIPqmZg,96
+PIaaS/templates/base.html,sha256=Sa0GCYfGNQEn78EyoOLwyz8qiIOM363bYSHymvWTgoY,4480
+PIaaS/templates/index.html,sha256=ALHHBpwfd_CxPFx_5qnvMKJ6jOfgdcXPWwg8LwZZd1k,814
+PIaaS-0.0.7.dist-info/METADATA,sha256=a28rJidwdwsqjEehYkygTkzQbqUZGAsF-7arbZE6aCc,247
+PIaaS-0.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+PIaaS-0.0.7.dist-info/top_level.txt,sha256=YNztjDHU4mUxbsI0L0c2EVUsy3IAoPF9xaA6L5XPngo,6
+PIaaS-0.0.7.dist-info/RECORD,,

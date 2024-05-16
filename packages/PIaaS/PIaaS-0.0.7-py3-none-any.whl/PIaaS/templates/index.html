@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to WebPWR{% endblock %}</h1>
+    <table>
+      <tr>
+      {% for pwr_port in pwr_ports%}
+        <th>
+          <h2>{{ pwr_port['port_num'] }}</h2>
+        </th>
+      {% endfor %}
+      </tr>
+      <tr>
+      {% for pwr_port in pwr_ports%}
+        <td>
+          <image src="/static/ethernet-port-icon-20.jpeg" width="64"></image>
+        </td>
+      {% endfor %}
+      </tr>
+      <tr>
+      {% for pwr_port in pwr_ports%}
+        <td>
+          <label class="switch">
+            <input type="checkbox" onchange="do_ajax({{ pwr_port['id'] }}, this);" {{'checked' if pwr_port['state']  == 'an' }}>
+            <span class="slider"></span>
+          </label>
+        </td>
+      {% endfor %}
+      </tr>
+    </table>
+{% endblock %}
