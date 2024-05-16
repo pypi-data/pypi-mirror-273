@@ -1,0 +1,2 @@
+[console_scripts]
+rob_folders = robot_folders.main:cli
