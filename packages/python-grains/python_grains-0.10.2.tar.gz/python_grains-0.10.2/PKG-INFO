@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: python_grains
+Version: 0.10.2
+Summary: Grains of Python
+Author: Jacob Noordmans
+Author-email: jacob@graindataconsultants.com
+License: MIT
+Keywords: Grain,Python
+License-File: license.txt
+Requires-Dist: redis
+Requires-Dist: pytz
+Requires-Dist: requests
