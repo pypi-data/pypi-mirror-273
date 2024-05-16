@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: srcignore
+Version: 0.0.2
+Summary: Generates a list of files that matches .gitignore-like files
+Home-page: https://calian.com/
+License: MIT
+Author: Calian AT
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gitignore-parser (>=0.1.11,<0.2.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Project-URL: Repository, https://gitlab.com/brayden.willenborg/srcignore
+Description-Content-Type: text/plain
+
+= srcignore
+
+Takes 2 arguments: the path to a file in the .gitignore format and a project root directory.
+Prints all files in that directory that match the .gitignore-like file.
+
