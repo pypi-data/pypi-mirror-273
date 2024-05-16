@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: tc66c2mqtt
+Version: 0.1.0
+Summary: Sen MQTT events from TC66C device
+Author-email: Jens Diemer <github@jensdiemer.de>
+License: GPL-3.0-or-later
+Project-URL: Documentation, https://github.com/jedie/tc66c2mqtt
+Project-URL: Source, https://github.com/jedie/tc66c2mqtt
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: ha-services >=2.5.0
+Requires-Dist: pycryptodome
+Requires-Dist: bleak
+Requires-Dist: cli-base-utilities >=0.8.0
+Requires-Dist: bx-py-utils
+Requires-Dist: click
+Requires-Dist: rich-click
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: manageprojects ; extra == 'dev'
+Requires-Dist: urllib3 ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: pyupgrade ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: pyflakes ; extra == 'dev'
+Requires-Dist: codespell ; extra == 'dev'
+Requires-Dist: EditorConfig ; extra == 'dev'
+Requires-Dist: safety ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: typeguard ; extra == 'dev'
+Requires-Dist: darker[color,flynt,isort] ; extra == 'dev'
+Requires-Dist: tomli ; extra == 'dev'
+
+# tc66c2mqtt
+
+[![tests](https://github.com/jedie/tc66c2mqtt/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jedie/tc66c2mqtt/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/github/jedie/tc66c2mqtt/branch/main/graph/badge.svg)](https://app.codecov.io/github/jedie/tc66c2mqtt)
+[![tc66c2mqtt @ PyPi](https://img.shields.io/pypi/v/tc66c2mqtt?label=tc66c2mqtt%20%40%20PyPi)](https://pypi.org/project/tc66c2mqtt/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/tc66c2mqtt)](https://github.com/jedie/tc66c2mqtt/blob/main/pyproject.toml)
+[![License GPL-3.0-or-later](https://img.shields.io/pypi/l/tc66c2mqtt)](https://github.com/jedie/tc66c2mqtt/blob/main/LICENSE)
+
+Send MQTT events from RDTech TC66C device
+
+**under heavy development**
+
+
+Tested with [Joy-IT TC66C](https://joy-it.net/de/products/JT-TC66C).
+
+
+RDTech TC66C hardware info at sigrok:
+
+ * https://sigrok.org/wiki/RDTech_TC66C
+
+test print data in terminal looks like:
+
+![2024-05-07_20-08_print_data.png](https://raw.githubusercontent.com/jedie/jedie.github.io/master/screenshots/tc66c2mqtt/2024-05-07_20-08_print_data.png "2024-05-07_20-08_print_data.png")
