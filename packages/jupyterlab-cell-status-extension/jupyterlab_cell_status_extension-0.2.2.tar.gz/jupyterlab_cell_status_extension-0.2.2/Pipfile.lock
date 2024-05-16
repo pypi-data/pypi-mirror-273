@@ -1,0 +1,40 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "9fd1dbbd1bc1e179bbbbf26769b3b5b91180ea932e51159b95983b72ed4bbeb6"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.11"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "jupyterlab-celltagsclasses": {
+            "hashes": [
+                "sha256:0fafe7ab4833a6b0dd603ff40b2b888a60420a2f771270cdcdba65c3879ae44a",
+                "sha256:3718e60706e58a6515bc5a19de4fecbfa222d3f4b0723f156062b1239c24dd75"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.5.1"
+        }
+    },
+    "develop": {
+        "jupyterlab-celltagsclasses": {
+            "hashes": [
+                "sha256:0fafe7ab4833a6b0dd603ff40b2b888a60420a2f771270cdcdba65c3879ae44a",
+                "sha256:3718e60706e58a6515bc5a19de4fecbfa222d3f4b0723f156062b1239c24dd75"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==0.5.1"
+        }
+    }
+}
