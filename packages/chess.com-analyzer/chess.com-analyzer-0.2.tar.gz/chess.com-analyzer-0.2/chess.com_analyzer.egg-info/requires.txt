@@ -1,0 +1,4 @@
+chessdotcom
+requests
+websockets
+fake_useragent
