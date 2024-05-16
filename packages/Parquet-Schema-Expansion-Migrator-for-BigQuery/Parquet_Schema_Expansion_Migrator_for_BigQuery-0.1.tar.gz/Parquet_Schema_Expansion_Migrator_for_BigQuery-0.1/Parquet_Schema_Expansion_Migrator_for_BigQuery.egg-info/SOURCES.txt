@@ -1,0 +1,9 @@
+README.md
+setup.py
+Parquet Schema Expansion Migrator for BigQuery/__init__.py
+Parquet Schema Expansion Migrator for BigQuery/main.py
+Parquet_Schema_Expansion_Migrator_for_BigQuery.egg-info/PKG-INFO
+Parquet_Schema_Expansion_Migrator_for_BigQuery.egg-info/SOURCES.txt
+Parquet_Schema_Expansion_Migrator_for_BigQuery.egg-info/dependency_links.txt
+Parquet_Schema_Expansion_Migrator_for_BigQuery.egg-info/entry_points.txt
+Parquet_Schema_Expansion_Migrator_for_BigQuery.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+Parquet_Schema_Expansion_Migrator_for_BigQuery = Parquet_Schema_Expansion_Migrator_for_BigQuery:Parquet_Schema_Expansion_Migrator_for_BigQuery

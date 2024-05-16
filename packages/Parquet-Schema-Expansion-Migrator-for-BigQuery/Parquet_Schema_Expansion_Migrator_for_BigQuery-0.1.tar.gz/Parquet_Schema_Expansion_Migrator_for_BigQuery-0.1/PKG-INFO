@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: Parquet_Schema_Expansion_Migrator_for_BigQuery
+Version: 0.1
+Description-Content-Type: text/markdown
+
+This Python library facilitates the migration of column data from Parquet files to BigQuery tables,
+with the capability to expand the BigQuery table schema by adding missing columns from the
+Parquet file. It effectively handles scenarios where the BigQuery table schema might not initially
+contain all columns present in the Parquet data.
+
+**Functionality**
+
+1. Seamless transfer of column data from Parquet files to BigQuery tables.
+2. Automatic schema expansion in BigQuery by adding missing columns detected in the
+Parquet file.
+3. Leverages pandas DataFrames for efficient data manipulation.
+4. Supports interaction with Google Cloud Storage (GCS) for retrieving Parquet files.
+
+
+*Installation*
+Install the library using pip:
+
+```Bash
+pip install Parquet_Schema_Expansion_Migrator_for_BigQuery
+```
+
+*Usage*
+The library provides a function column_transfer_to_bigquery that takes the following arguments:
+1. bucket_name (str): Name of the GCS bucket containing the Parquet file.
+2. parquet_file_path (str): Path to the Parquet file within the bucket.
+3. project_id (str): GCP project ID where the BigQuery dataset resides.
+4. dataset_id (str): ID of the BigQuery dataset containing the target table.
+5. table_id (str): ID of the BigQuery table to which data will be transferred.
+
+
+**Example**
+
+```Python
+
+from Parquet_Schema_Expansion_Migrator_for_BigQuery import Parquet_Schema_Expansion_Migrator_for_BigQuery
+
+bucket_name = "your_bucket_name"
+parquet_file_path = "path/to/your/file.parquet"
+project_id = "your_project_id"
+dataset_id = "your_dataset_id"
+table_id = "your_table_id"
+
+Parquet_Schema_Expansion_Migrator_for_BigQuery(bucket_name, parquet_file_path,
+project_id, dataset_id, table_id)
+
+```
+
+
+**Dependencies**
+
+The library relies on the following external libraries:
+1. pandas
+2. pyarrow
+3. google-cloud-storage
+4. google-cloud-bigquery
+
+Ensure these dependencies are installed before using the library.
+
+
+**Additional Notes**
+1. The alter_schema and ExecuteBqQuery functions are assumed to exist and need to be
+implemented for a complete solution.
+2. Consider replacing the assumption of STRING data type for missing columns with a more
+robust logic for data type conversion.
