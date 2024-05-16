@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+screenshotpath/__init__.py
+screenshotpath/screenshotpath.py
+screenshotpath.egg-info/PKG-INFO
+screenshotpath.egg-info/SOURCES.txt
+screenshotpath.egg-info/dependency_links.txt
+screenshotpath.egg-info/entry_points.txt
+screenshotpath.egg-info/requires.txt
+screenshotpath.egg-info/top_level.txt
