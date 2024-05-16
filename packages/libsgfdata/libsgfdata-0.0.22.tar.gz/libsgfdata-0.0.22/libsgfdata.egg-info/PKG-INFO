@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: libsgfdata
+Version: 0.0.22
+Summary: Parser for Swedish Geotechnical Society data format
+Home-page: https://github.com/emerald-geomodelling/libsgfdata
+Author: Egil Moeller
+Author-email: em@emrld.no
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-slugify
+Requires-Dist: python-dateutil
+Requires-Dist: charset-normalizer
+Provides-Extra: cmd
+Requires-Dist: click; extra == "cmd"
+Provides-Extra: dtm
+Requires-Dist: pyproj; extra == "dtm"
+Requires-Dist: rasterio; extra == "dtm"
+Requires-Dist: geopandas; extra == "dtm"
+Requires-Dist: terrainy; extra == "dtm"
+
+Parser for data from geotechnical field
+    investigations in the data format specified in Report 3:2012E from
+    the Swedish Geotechnical Society, see
+    http://www.sgf.net/web/page.aspx?refid=2678 for how to download
+    this report.
