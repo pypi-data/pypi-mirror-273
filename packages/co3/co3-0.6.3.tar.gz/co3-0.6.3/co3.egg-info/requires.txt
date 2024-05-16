@@ -1,0 +1,15 @@
+tqdm
+wcmatch
+numpy
+sqlalchemy
+colorama
+
+[docs]
+sphinx
+sphinx-togglebutton
+sphinx-autodoc-typehints
+furo
+myst-parser
+
+[tests]
+pytest
