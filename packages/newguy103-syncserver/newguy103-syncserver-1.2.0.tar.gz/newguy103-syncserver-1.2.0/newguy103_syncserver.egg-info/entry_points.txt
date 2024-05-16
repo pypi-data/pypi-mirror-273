@@ -1,0 +1,3 @@
+[console_scripts]
+syncserver-server = syncserver.server.__main__:main
+syncserver-server.db = syncserver.server._db:run_cli

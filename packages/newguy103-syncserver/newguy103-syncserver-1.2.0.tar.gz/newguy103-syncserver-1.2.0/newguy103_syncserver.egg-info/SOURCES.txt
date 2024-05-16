@@ -1,0 +1,17 @@
+README.md
+setup.py
+newguy103_syncserver.egg-info/PKG-INFO
+newguy103_syncserver.egg-info/SOURCES.txt
+newguy103_syncserver.egg-info/dependency_links.txt
+newguy103_syncserver.egg-info/entry_points.txt
+newguy103_syncserver.egg-info/requires.txt
+newguy103_syncserver.egg-info/top_level.txt
+syncserver/__init__.py
+syncserver/client/__init__.py
+syncserver/client/cui.py
+syncserver/client/gui.py
+syncserver/client/interface.py
+syncserver/server/__init__.py
+syncserver/server/__main__.py
+syncserver/server/_db.py
+syncserver/server/_server.py

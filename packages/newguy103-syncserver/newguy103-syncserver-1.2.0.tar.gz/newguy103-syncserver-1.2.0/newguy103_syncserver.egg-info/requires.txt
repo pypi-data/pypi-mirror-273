@@ -1,0 +1,6 @@
+cryptography
+newguy103-pycrypter
+requests
+flask
+argon2-cffi
+msgpack
