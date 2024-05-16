@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dwd_global_radiation/__init__.py
+dwd_global_radiation/global_radiation.py
+dwd_global_radiation/utils.py
+dwd_global_radiation.egg-info/PKG-INFO
+dwd_global_radiation.egg-info/SOURCES.txt
+dwd_global_radiation.egg-info/dependency_links.txt
+dwd_global_radiation.egg-info/requires.txt
+dwd_global_radiation.egg-info/top_level.txt
