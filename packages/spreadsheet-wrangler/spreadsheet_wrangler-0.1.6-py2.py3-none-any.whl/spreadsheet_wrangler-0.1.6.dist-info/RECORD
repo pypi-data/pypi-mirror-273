@@ -1,0 +1,13 @@
+spreadsheet_wrangler/.editorconfig,sha256=p2BjiE5oHZHvATqSC-EXb2KR97Emp5hEMBHg-EJSjzU,292
+spreadsheet_wrangler/.gitignore,sha256=vmDRHGeESYckUdUztsPr7u6ZNfBYMCVR3GE3AJCBnsY,1204
+spreadsheet_wrangler/.travis.yml,sha256=jNC7Bzw7c6VrtPlr2xA0N9LF9UGjYlheFxfqTdlDWeE,696
+spreadsheet_wrangler/__init__.py,sha256=hk7f7UQ2-f1uijASxzdMWkSJ6FNWnpaaQl6sEOmo0C0,1330
+spreadsheet_wrangler/cli.py,sha256=JeK9tMmuTOiGPpGqMfYFvQkcx5CpRUQEUDORVyUpAcM,12154
+spreadsheet_wrangler/spreadsheet_wrangler.py,sha256=fp0iC6kJFEV54GvYpkVxOb6V7KCnFMdWiNfia2yhzX4,9368
+spreadsheet_wrangler/.github/ISSUE_TEMPLATE.md,sha256=TUR92Z8ZAqUaZ9FEeZEWh2FJMSqZFOichE9m67zH0xo,331
+spreadsheet_wrangler-0.1.6.dist-info/LICENSE,sha256=iJdvanL4gZ9oBMonYrcPvejD1wLNqmmaucEJ3vSEsaE,1069
+spreadsheet_wrangler-0.1.6.dist-info/METADATA,sha256=JlRT7OPhPwkSNkWUCUdE0dKTUwld7BYo6tZ4Wd61s9Q,6126
+spreadsheet_wrangler-0.1.6.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+spreadsheet_wrangler-0.1.6.dist-info/entry_points.txt,sha256=ZLEDl_-bFfE145TPKHWj3zaLMK9VzVfXs7IqBvbSZfc,71
+spreadsheet_wrangler-0.1.6.dist-info/top_level.txt,sha256=4xyFVJ259IPHjWZh4sv39g6mMgDk7iGLJ24oO52MhtQ,21
+spreadsheet_wrangler-0.1.6.dist-info/RECORD,,
