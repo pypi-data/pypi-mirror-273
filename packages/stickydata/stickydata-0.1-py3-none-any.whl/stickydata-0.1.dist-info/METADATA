@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: stickydata
+Version: 0.1
+Summary: package for correcting partitioning delays using deconvolution
+Home-page: https://github.com/dpagonis/stickydata
+Author: Demetrios Pagonis
+Author-email: demetriospagonis@weber.edu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: numba
+
+# stickydata
+A package for correcting partitioning delays using deconvolution
+
+Manuscript *in prep* for Environmental Science and Technology Air
+
+## Installation
+
+`pip install stickydata`
+
+## Getting Started
+
+The package currently supports deconvolution of single and double-exponential instrument response function. The relevant functions in the package are:
+- Deconvolve_SingleExp
+- Deconvolve_DblExp
+- Deconvolve_DblExp_VariableIRF 
+
+## Future Updates
+Please contact demetriospagonis@weber.edu to discuss future updates
