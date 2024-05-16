@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apkpatcher"
+dynamic = ["version", "readme"]
+dependencies = [
+  'sty',
+  'pyaxml==0.0.8',
+  'androguard==4.1.1',
+]
+requires-python = ">=3.5"
+authors = [
+  {name = "Benoit Forgette (MadSquirrel)", email = "benoit.forgette@ci-yow.com"},
+]
+maintainers = [
+  {name = "Benoit Forgette (MadSquirrel)", email = "benoit.forgette@ci-yow.com"},
+]
+description = "Tool use as library or in cli to patch an APK, inject some libraries inside the APK or add a custom certificate"
+license = {file = "LICENSE"}
+keywords = []
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.entry-points.console_scripts]
+apkpatcher = "apkpatcher.cli:main"
+
+#[project.scripts]
+#apkpatcher = "apkpatcher=apkpatcher:main"
+
+
+[tool.setuptools.dynamic]
+version = {attr = "apkpatcher.conf.VERSION"}
+readme = {file = ["README.md"]}
+
+[project.urls]
+Homepage = "https://ci-yow.com"
+Repository = "https://gitlab.com/MadSquirrels/mobile/apkpatcher"
+
+
