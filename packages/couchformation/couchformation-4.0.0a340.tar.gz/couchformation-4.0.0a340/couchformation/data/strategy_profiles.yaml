@@ -1,0 +1,17 @@
+---
+cbs:
+  deployer: node
+sgw:
+  deployer: node
+generic:
+  deployer: node
+database:
+  deployer: node
+windev:
+  deployer: node
+winsql:
+  deployer: node
+container:
+  deployer: node
+capella:
+  deployer: saas
