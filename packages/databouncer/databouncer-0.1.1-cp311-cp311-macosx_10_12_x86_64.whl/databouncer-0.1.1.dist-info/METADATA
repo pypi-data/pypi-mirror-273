@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: databouncer
+Version: 0.1.1
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pillow
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: ruff-lsp ; extra == 'lsp'
+Requires-Dist: pylsp-mypy ; extra == 'lsp'
+Provides-Extra: dev
+Provides-Extra: lsp
+Summary: DataBouncer Python bindings
+Keywords: computer vision,data curation,data filtering,data selection,dataset analysis,image processing,similarity search
+Author: Lightly Inc.
+Author-email: team@lightly.ai
+License: CC BY-NC-ND 4.0 DEED
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/lightly-ai/databouncer-python
+Project-URL: documentation, https://docs.lightly.ai/databouncer
+Project-URL: repository, https://github.com/lightly-ai/databouncer-python
+
+# DataBouncer
+
+Python bindings for DataBouncer - a tool to identify your most important image data.
+
+Visit the [DataBouncer Python GitHub repository](https://github.com/lightly-ai/databouncer-python)
+for more information.
+
