@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aipkgs-database
+Version: 1.0.3
+Summary: Database
+Author: Alexy
+Author-email: alexy.ib@outlook.com
+Requires-Python: >=3.11.4,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aipkgs-core (>=1.0.3,<2.0.0)
+Requires-Dist: flask-sqlalchemy (>=3.1.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+
