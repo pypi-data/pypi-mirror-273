@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: aws-tag-tools
+Version: 0.1.1
+Summary: A bulk management tool for the tags of AWS resources
+Home-page: https://github.com/anyions/aws-tag-tools
+License: MIT
+Author: AnyIons
+Author-email: anyions@hotmail.com
+Maintainer: AnyIons
+Maintainer-email: anyions@hotmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Provides-Extra: cli
+Requires-Dist: boto3 (>=1.34.104,<2.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0) ; extra == "cli"
+Project-URL: Repository, https://github.com/anyions/aws-tag-tools
+Description-Content-Type: text/markdown
+
+# AWS-Tag-Tools
+
+![PyPI - Version](https://img.shields.io/pypi/v/aws-tag-tools?color=a1b858&label=)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aws-tag-tools)
+![PYPI License](https://img.shields.io/pypi/l/aws-tag-tools)
+![Static Badge](https://img.shields.io/badge/author-AnyIons-violet)
+
+**A bulk management tool for the tags of AWS resources**
+
+- Support multiple services/resources
+- Faster operations using multiple processes
+
+## Usage
+
+### Install
+
+```bash
+pip install -U aws-tag-tools
+```
+
+### Command
+
+```shell
+# tag resources use tag 'tag-key':'tag-value', ignore if 'tag-key' is existed in resource tags
+awstt --key tag-key --value tag-value
+# tag resources use tag 'tag-key':'tag-value', overwrite the tag value with 'tag-value' if 'tag-key' is existed
+awstt --key tag-key --value tag-value --overwrite
+# tag resources in regions 'us-east-1' and 'us-west-1'
+awstt --key tag-key --value tag-value --regions us-east-1,us-west-1
+# use credentials profile 'tagger' to execute
+awstt --key tag-key --value tag-value --profile tagger
+# tag resources in AWS China Regions ('aws-cn')
+awstt --key tag-key --value tag-value --partition aws-cn
+# list all supported resources
+awstt --list-services
+# show help
+awstt --help
+```
+
+#### Options
+
+| option                              | description                                                               |
+|-------------------------------------|---------------------------------------------------------------------------|
+| -h, --help                          | show this help message and exit                                           |
+| --key KEY                           | the key of tag will be tagged to resources                                |
+| --value VALUE                       | the value of tag will be tagged to resources                              |
+| --overwrite                         | whether to overwrite exists tag when key is existed<br>default to `False` |
+| --regions REGIONS                   | the AWS regions to execute actions<br>will auto detect if not set         |
+| --profile PROFILE                   | the name of AWS credentials profile to use                                |
+| --partition {aws,aws-cn,aws-us-gov} | the partition to execute actions<br/>default to `'aws'`                   |
+| --list-services                     | list all supported services by this tool and exit                         |
+
+> [!NOTE]
+> use `awstt --help` to get more details
+
+## TODO
+
+- [] Support for Untagging Resources
+- [] Deploying to Lambda with CloudFormation
+- [] Tag or untag resources with specified type(s）
+- [] Tag or untag resources with specified ARN(s)
+
+## License
+
+[MIT](./LICENSE) License © 2020 [AnyIons](https://github.com/anyions)
+
