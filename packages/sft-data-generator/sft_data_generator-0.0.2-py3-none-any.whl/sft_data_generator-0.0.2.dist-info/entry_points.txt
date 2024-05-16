@@ -1,0 +1,2 @@
+[console_scripts]
+sft-data-generator = sft_data_generator.main:main
