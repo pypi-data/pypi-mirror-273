@@ -1,0 +1,7 @@
+setup.py
+ffre/__init__.py
+ffre/core.py
+ffre.egg-info/PKG-INFO
+ffre.egg-info/SOURCES.txt
+ffre.egg-info/dependency_links.txt
+ffre.egg-info/top_level.txt

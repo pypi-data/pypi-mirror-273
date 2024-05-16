@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ffre
+Version: 0.1.0
+Summary: Fpath Finder with re
+Author-email: 2229066748@qq.com
+Maintainer: Eagle'sBaby
+Maintainer-email: 2229066748@qq.com
+License: Apache Licence 2.0
+Keywords: python
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+
+Find file by filename with re.
