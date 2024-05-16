@@ -1,0 +1,14 @@
+aipkgs_firebase/__init__.py,sha256=9zFXeWuv2s8PIv3-TB-MewsZpP8lG-yN18bnNHEIjuA,88
+aipkgs_firebase/actions/core.py,sha256=YhK_GyvMoeaL38UNO2Z1_8Icf5jqRfYupc3BJw-_QfY,1737
+aipkgs_firebase/helpers.py,sha256=-0P_EMwi5kl_hhCWfFXMi6lAZy0FIR42PAPM8GNCWjs,2390
+aipkgs_firebase/messaging/core.py,sha256=ZSpfx8_yPTFBwQ0sLjJQrMbeNv9ObEFHr963W0JgIQ4,5948
+aipkgs_firebase/messaging/enums.py,sha256=f4oHokRECuJ_T0O3f8beV9fCk10jQ_n5JgB9bkdc6yg,132
+aipkgs_firebase/messaging/helpers.py,sha256=MIX2uhk16fIcq5x705Dols-tDg3YYB_b-PSem-uLWNM,3079
+aipkgs_firebase/storage/core.py,sha256=2Xb9M4ZUpt6hy787JcwUjuCoPDw1xsQZBmS5UF62z6o,7029
+aipkgs_firebase/storage/helpers.py,sha256=7I-2U0-WcaeEMWaJuNs2TmxfqPTk5XGxP7USEStqQ3o,3644
+aipkgs_firebase/storage/root.py,sha256=43YmspBN59V4W4hl1ul9TMlKF_99g0O6NFZuJ6FxkMc,3577
+aipkgs_firebase/user/core.py,sha256=R1GKCgxsBzUgmp9BCCAS2EM4wwvTWMMN6lH6HKJif-4,5347
+aipkgs_firebase-1.0.19.dist-info/LICENSE.md,sha256=NcfSfhNAiflyILPqbNUsJyBbqmT4nstXkDHRPq8Y70o,1058
+aipkgs_firebase-1.0.19.dist-info/METADATA,sha256=aRpth3_bLhDPpwqZ1PX-7e-EqIk92_omneRVdhKXavk,711
+aipkgs_firebase-1.0.19.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aipkgs_firebase-1.0.19.dist-info/RECORD,,
