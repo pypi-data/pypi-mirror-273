@@ -1,0 +1,4 @@
+[console_scripts]
+ldm=ldm.__main__:cli
+loose-dependency-manager=ldm.__main__:cli
+
