@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simple_switch.egg-info/PKG-INFO
+simple_switch.egg-info/SOURCES.txt
+simple_switch.egg-info/dependency_links.txt
+simple_switch.egg-info/top_level.txt
+switch/__init__.py
+switch/switch.py
