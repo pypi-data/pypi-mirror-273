@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: climweb-wdqms
+Version: 0.0.5
+Summary: National level WDQMS Summary tool
+Home-page: https://github.com/wmo-raf/climweb-wdqms
+Author: Grace Amondi
+Author-email: miswa.grace@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: wagtail>=4.2.2
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: djangorestframework
+Requires-Dist: django-filter
+Requires-Dist: adm-boundary-manager
