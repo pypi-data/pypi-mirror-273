@@ -1,0 +1,12 @@
+libyear/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libyear/main.py,sha256=j_er485meQPgHH_AmEPXZ7LQoJr1ubdktmV_DDIgiXI,1329
+libyear/pypi.py,sha256=PRcAY3YtOTKKwa3rPGEchKrxsr9HLMV89cIM11BDP60,3194
+libyear/results.py,sha256=_N6bzQJ7M23BIE4-7TWOzfDT42U5CD7AO7PFqBBmZzI,988
+libyear/toml.py,sha256=pYMbmtM3Sqc2IQI9ICFO7BnRf4kwoFtF-f7EZ-vdQGE,2470
+libyear/utils.py,sha256=ddSCkTHThjq2VMhs0xfWKCNOwNuovhLT8cCbjOwK_PM,1651
+pylibyear-0.3.0a2.dist-info/LICENSE,sha256=0SNOJYZEbyDMSSNx3zx_aV4WOnIZF4DutaP8oCiDKuU,1067
+pylibyear-0.3.0a2.dist-info/METADATA,sha256=xnqS4hWBA1IunKZw-ftm5Srjo3VyZ9692UwP-rl4vrI,6461
+pylibyear-0.3.0a2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pylibyear-0.3.0a2.dist-info/entry_points.txt,sha256=ImtcA0VU0UT5hmuLAhTOHnQZWMOla2BrCUWMvmTIdB4,45
+pylibyear-0.3.0a2.dist-info/top_level.txt,sha256=6YALL1crKTx80lVGRCzdJmmna8tBEVEyDGHR7030f7A,8
+pylibyear-0.3.0a2.dist-info/RECORD,,
