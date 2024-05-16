@@ -1,0 +1,27 @@
+# Changes here will be overwritten by Copier
+
+_commit: 0.1.57
+_src_path: git@bbpgitlab.epfl.ch:neuromath/python-template.git
+author_email: ''
+author_name: Blue Brain Project, EPFL
+copyright_license: Apache License 2.0
+copyright_year: '2022'
+distribution_name: diameter-synthesis
+download_url: https://github.com/BlueBrain/diameter-synthesis
+init_git: false
+maintainer: Alexis Arnaudon (@arnaudon)
+package_name: diameter_synthesis
+project_description: Diametrize cells.
+project_name: diameter-synthesis
+project_url: https://diameter-synthesis.readthedocs.io
+repository_name: diameter-synthesis
+repository_namespace: BlueBrain
+repository_provider: github
+setup_codeql: false
+ssh_url: git@github.com:BlueBrain/diameter-synthesis.git
+team_name: ''
+tracker_url: https://github.com/BlueBrain/diameter-synthesis/issues
+use_pyproject_toml: false
+version: 0.5.1
+
+# End of Copier answers
