@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ltm_misc
+Version: 2.1
+Summary: Tools for ltm input files process
+Author: z
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+Requires-Dist: opencv-contrib-python
+Requires-Dist: torch
+Requires-Dist: numpy
+
+This is a private project for ltm input files process
