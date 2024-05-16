@@ -1,0 +1,37 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core"]
+
+[project]
+name = 'pyistp'
+version = "0.5.0"
+description = "An easy to use ISTP loader package."
+keywords= ["satellite", "plasma-physics", "nasa-data", "amda", "cdpp", "CDF"]
+authors = [
+  {name = "Alexis Jeandet", email = "alexis.jeandet@member.fsf.org" }
+]
+
+maintainers = [
+  {name = "Alexis Jeandet", email = "alexis.jeandet@member.fsf.org" }
+]
+
+requires-python=">=3.8"
+license = {file="COPYING"}
+readme = "README.rst"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = ['pycdfpp>=0.6.0']
+[project.urls]
+homepage = "https://github.com/SciQLop/PyISTP"
+repository = "https://github.com/SciQLop/PyISTP"
+documentation = "https://pyistp.readthedocs.io/en/latest/"
