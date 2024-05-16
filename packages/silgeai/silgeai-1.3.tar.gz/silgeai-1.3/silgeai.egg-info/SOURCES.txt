@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+silgeai/__init__.py
+silgeai/demo.py
+silgeai/dictPrint.py
+silgeai/folderAnalysis.py
+silgeai.egg-info/PKG-INFO
+silgeai.egg-info/SOURCES.txt
+silgeai.egg-info/dependency_links.txt
+silgeai.egg-info/top_level.txt
