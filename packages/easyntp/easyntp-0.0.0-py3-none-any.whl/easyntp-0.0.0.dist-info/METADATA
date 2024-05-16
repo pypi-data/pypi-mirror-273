@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: easyntp
+Version: 0.0.0
+Summary: Easy NTP library
+Home-page: https://github.com/lang-library/py-easyntp
+Author: JavaCommons Technologies
+Author-email: javacommmons@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ntplib
+
+# py-easyntp
+
+
+
+```
+
+from easyntp import *
+
+
+
+ntp_client = EasyNTPClient()
+
+print(ntp_client.now())
+
+print(ntp_client.format_now('%Y/%m/%d'))
+
+
+
+"""
+
+2024-05-16 18:03:10
+
+2024/05/16
+
+"""
+
+```
