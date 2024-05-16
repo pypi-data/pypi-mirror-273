@@ -1,0 +1,61 @@
+text
+
+# nfinance
+```
+nfinance/
+│
+├── nfinance/
+│   ├── __init__.py
+│   └── nfinance.py
+│
+├── tests/
+│   ├── __init__.py
+│   └── test_nfinance.py
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── requirements.txt
+└── setup.py
+```
+
+## 1. 설명
+`nfinance`는 네이버 파이낸스의 데이터를 가져오는 Python 라이브러리입니다.
+
+## 2. 설치 방법
+pip install nfinance
+
+## 3. 사용 예제
+```python
+from nfinance import nfinance
+data = nfinance.download(ticker="005930", start_date="2022-01-01", end_date="2022-01-31", interval='day')
+print(data)
+```
+
+## 4. LICENSE
+
+MIT 라이선스를 예로 듭니다. 실제로 사용하려면 올바른 라이선스를 선택해야 합니다.
+
+```plaintext
+MIT License
+
+Copyright (c) 2024 lega001
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
