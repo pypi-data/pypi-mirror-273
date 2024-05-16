@@ -1,0 +1,13 @@
+rtde_receive.cpython-38-x86_64-linux-gnu.so,sha256=S4bOkY7tW7GQHYAGqH4-hF2WWENHU7pW4QKYMeaHQh8,1692320
+librtde.so,sha256=ByG-9UtPdm5JR8D1fENe3tK0VBOVs-bPHJLaFclcHQ4,1677744
+rtde_io.cpython-38-x86_64-linux-gnu.so,sha256=BKVF3cEp62XGlfXB3XMBAfB7LK_SlQwD5-XSNinHw2A,1692320
+rtde_control.cpython-38-x86_64-linux-gnu.so,sha256=3xmZf9mcuwoV_DIY7TLoa2R-g_8WBER9HOy3xwT36C0,1692320
+librtde.so.1.5.8,sha256=ByG-9UtPdm5JR8D1fENe3tK0VBOVs-bPHJLaFclcHQ4,1677744
+script_client.cpython-38-x86_64-linux-gnu.so,sha256=kgAkh5KpshLXji4eChfEjk2weuaEVFGbOeADuYQyY18,1692320
+librtde.so.1.5,sha256=ByG-9UtPdm5JR8D1fENe3tK0VBOVs-bPHJLaFclcHQ4,1677744
+dashboard_client.cpython-38-x86_64-linux-gnu.so,sha256=hnMx13xSNeBmtl2N_9_QqWMhHJVRAugbwORsyV6C9IQ,1692320
+ur_rtde-1.5.8.dist-info/LICENSE,sha256=gooae8StnqJIk9OJp5hScHYblseeg9IFDRiAVN3N8jc,1092
+ur_rtde-1.5.8.dist-info/top_level.txt,sha256=cQHKhzqRqcreja5_610bk4zuPL8gRTlbyD9EqDEkiy8,8
+ur_rtde-1.5.8.dist-info/WHEEL,sha256=-ijGDuALlPxm3HbhKntps0QzHsi-DPlXqgerYTTJkFE,148
+ur_rtde-1.5.8.dist-info/METADATA,sha256=KdsFlzcz9u0BAHEzo3xaICINuww50iOInuKarkKrEUA,5605
+ur_rtde-1.5.8.dist-info/RECORD,,
