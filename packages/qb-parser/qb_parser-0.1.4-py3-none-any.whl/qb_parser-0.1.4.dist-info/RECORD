@@ -1,0 +1,7 @@
+qb_parser/__init__.py,sha256=lLgaw34oT5iGoW-xRoHDFImfVzS2gMspnJaTzix3FbE,130
+qb_parser/answerline_parser.py,sha256=hlLAZcjBzxImnWNf96dJjBe6G4p1y_zSnM_Bp_X9EM4,8244
+qb_parser/clue_tokenizer.py,sha256=19P0YfarzNwndt64thqCwZikb7kuv45q2Dzg0CGK5Ks,3430
+qb_parser/util.py,sha256=5iFXH_H6P3koROBPpB3DUNd5wKfwXahfEcgL8hVGk_c,2920
+qb_parser-0.1.4.dist-info/METADATA,sha256=ZqcQbK0uL_I0xxW7dZvO8Dd4AATEvS7HdgimhV3q_kI,3366
+qb_parser-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+qb_parser-0.1.4.dist-info/RECORD,,
