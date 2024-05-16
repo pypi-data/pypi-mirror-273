@@ -1,0 +1,15 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - opt_einsum
+  - numpy
+  - scipy
+  - matplotlib
+  - networkx
+  - pytest
+  - pytest-cov
+  - coverage
+  - pip
+  - pip:
+    - tensorflow

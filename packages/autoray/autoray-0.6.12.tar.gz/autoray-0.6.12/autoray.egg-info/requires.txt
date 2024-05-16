@@ -1,0 +1,16 @@
+
+[docs]
+sphinx>=2.0
+sphinx-autoapi
+astroid<3
+sphinx-copybutton
+myst-nb
+furo
+setuptools_scm
+ipython!=8.7.0
+
+[tests]
+numpy
+coverage
+pytest
+pytest-cov
