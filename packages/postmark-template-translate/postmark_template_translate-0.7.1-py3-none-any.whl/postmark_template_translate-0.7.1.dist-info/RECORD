@@ -1,0 +1,9 @@
+postmark_template_translate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postmark_template_translate/postmark/__init__.py,sha256=V1aqQKaNOsM49rZ-zbi3yUrJuvxcaWxU4ex66C5CHM8,31
+postmark_template_translate/postmark/config.py,sha256=YiPMdZ6fYyVdjnTXk4DIcUKueJ0TleRrGXIf7tx-oFI,1627
+postmark_template_translate/translate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postmark_template_translate/translate/translate.py,sha256=_BduBhYAf83Q_9KGSfD_ir3lg8LFIlxVzALLeZDcXts,885
+postmark_template_translate-0.7.1.dist-info/METADATA,sha256=KUF8dkgx4hm2eRgZIahf3jTN0Y55CfPNv3814QHJWtg,825
+postmark_template_translate-0.7.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+postmark_template_translate-0.7.1.dist-info/top_level.txt,sha256=MxCOjVGUI6mVbUBROKcxNeI5kWeoGOAGSBYkNdtvP0w,28
+postmark_template_translate-0.7.1.dist-info/RECORD,,
