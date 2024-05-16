@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+azure_sql_vector_search/__init__.py
+azure_sql_vector_search/classic_vector_search.py
+azure_sql_vector_search/models.py
+azure_sql_vector_search/native_vector_search.py
+azure_sql_vector_search/vector_search_base.py
+azure_sql_vector_search.egg-info/PKG-INFO
+azure_sql_vector_search.egg-info/SOURCES.txt
+azure_sql_vector_search.egg-info/dependency_links.txt
+azure_sql_vector_search.egg-info/requires.txt
+azure_sql_vector_search.egg-info/top_level.txt
