@@ -1,0 +1,49 @@
+@startuml
+
+package collections.abc {
+    class Mapping
+}
+
+class Site {
+    # _url
+    # _client_id
+    # _client_secret
+    + __init__([url][, client_id][, client_secret])
+    + get_list(name)
+    + url <<ro>>
+    + get_lists([hidden: bool])
+    + get_list_items(name)
+    + commit()
+    + get_list_columns(name[, hidden: bool])
+    + users: [] <<ro>>
+}
+
+class List {
+    # _title
+    # _map: {}
+    # _upper_case: []
+    # _required = None
+    + title <<ro>>
+    + __init__(sharepoint_site[ ,lazy: bool][, title][, map: {}][, upper_case: []][, required: []])
+    + load()
+    + rollback()
+    + get(item[, buffered: bool])
+    + commit()
+    + python_map: {} <<ro>>
+    + sharepoint_map: {} <<ro>>
+    + normalize()
+    + validate()
+    + add_item()
+    + append()
+}
+
+Mapping <|-- List
+
+
+class Item {
+    + __init__(*args, **kwargs)
+    + commit([lazy: bool])
+}
+
+
+@enduml
