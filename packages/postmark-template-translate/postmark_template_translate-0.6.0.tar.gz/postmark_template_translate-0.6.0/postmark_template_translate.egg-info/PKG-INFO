@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: postmark_template_translate
+Version: 0.6.0
+Summary: A library to send Postmark templates with translated content
+Home-page: https://github.com/DanielDls-exe/postmark_template_translate
+Author: Daniel Alvarado
+Author-email: danieldls.ucv@gmail.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: postmarker
+Requires-Dist: beautifulsoup4
+Requires-Dist: googletrans==4.0.0-rc1
+Requires-Dist: python-dotenv
+
+# postmark_template_translate
+
+A library to send Postmark templates with translated content.
+
+## Installation
+
+```bash
+pip install postmark-template-translate
