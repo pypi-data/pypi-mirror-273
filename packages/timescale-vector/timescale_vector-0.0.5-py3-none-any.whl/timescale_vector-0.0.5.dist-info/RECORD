@@ -1,0 +1,11 @@
+timescale_vector/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+timescale_vector/_modidx.py,sha256=lkExmH2Zm0MhS1DK-kpiUVJ1n2tbUJSyvD1xY39OQmc,23933
+timescale_vector/client.py,sha256=reWtjxsIahx5EQ55yXazaixAqKyBD32xBLxv5_r4pw0,51080
+timescale_vector/pgvectorizer.py,sha256=T_fmrx45elT7PDNlx3wgpz5Epu-YTYVhGn6U8ruQsNs,5310
+timescale_vector-0.0.5.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+timescale_vector-0.0.5.dist-info/METADATA,sha256=gJ0RgOhHcv_WSABRb5UbctaJ6k2qmZ72TJ1admAzU5Q,38377
+timescale_vector-0.0.5.dist-info/NOTICE,sha256=UbsKkBrs6hz2aEgUNL8XblHhQRiypVk0l5FujQnRFb8,639
+timescale_vector-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+timescale_vector-0.0.5.dist-info/entry_points.txt,sha256=a3ZwbMX8epq9-tPGYAdHKqxPq_0EvvzUgspC-HZee5s,54
+timescale_vector-0.0.5.dist-info/top_level.txt,sha256=ly7EfWcx9UAtMZUsIuiAa4RPajin3wviGP5E-7_hp4U,17
+timescale_vector-0.0.5.dist-info/RECORD,,
