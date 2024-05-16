@@ -1,0 +1,16 @@
+clipShare/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+clipShare/__main__.py,sha256=qeWKf4XajlkTT1RhvtWUVD_7-jcJLA18-TkTaqwoCjU,80
+clipShare/clipShare.py,sha256=FFqiwras4wYEHU1gC9FQYumi6rC4-ZYp4RrOh1IRGNQ,36163
+clipShare/web-interface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clipShare/web-interface/static/images/clipShare.jpeg,sha256=PHF7ionQQNQqK9xRy0cDLezLc8UnENF-wSlMMxAdA6c,73502
+clipShare/web-interface/static/images/help.png,sha256=f3x9birhDa4dnIC58Le-S1vRPwOUXS8yZI84BOgdr9Y,2767
+clipShare/web-interface/static/js/crypto-js.min.js,sha256=jjsBF_TfS-RSwLavW48KCs-dSt4j0I1V1-MSryIHd2I,48316
+clipShare/web-interface/static/js/main.js,sha256=_UA890zwnXgjMFTFphbjkeg9_iKYk9geXJeDXDadueQ,6847
+clipShare/web-interface/static/js/socket.io.js,sha256=33tyzeMhUrC0bXlRWueP11I5t-K1cORhxnS4WTiMSSU,185790
+clipShare/web-interface/templates/index.html,sha256=tmJTBBvOXrWebEEDVqHwivSpAhk2rXWtURu8-ywB0Gg,7091
+clipShare-0.1.5.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+clipShare-0.1.5.dist-info/METADATA,sha256=6MTrS_0qkcfJ_Ck2iLLNImyiOxWmFDhTPef-WYtzBT4,4511
+clipShare-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+clipShare-0.1.5.dist-info/entry_points.txt,sha256=KDTHNvyUotK0QWrtPV1onEKA3FpaSF6YuBGr6UtlLQU,55
+clipShare-0.1.5.dist-info/top_level.txt,sha256=om9uR0PI5B_pofqprhpuGF5_-i-cMGx5DqTIWsqYZsY,10
+clipShare-0.1.5.dist-info/RECORD,,
