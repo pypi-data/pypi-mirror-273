@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyktlib
+Version: 0.1.1
+Summary: python lib for knowledge tracing model
+Home-page: https://github.com/AI-for-Education-free/pyktlib
+Author: ZhijieXiong
+Author-email: xzjdream@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytorch>=1.0.0
