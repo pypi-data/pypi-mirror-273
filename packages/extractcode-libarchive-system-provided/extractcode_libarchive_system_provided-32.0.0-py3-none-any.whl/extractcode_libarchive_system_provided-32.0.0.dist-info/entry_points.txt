@@ -1,0 +1,2 @@
+[scancode_location_provider]
+extractcode_libarchive = extractcode_libarchive:LibarchivePaths
