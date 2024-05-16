@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: miraihttpapi
+Version: 1.3
+Summary: Use mirai-api-http(v2+) http polling to interconnect the interface
+Home-page: http://www.icedream.space
+Author: Esdrin
+Author-email: esdrin@icedream.space
+License: MIT LICENSE
+Keywords: mirai,api
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: requests
+
+# 快速上手
+
+```python
+from miraihttpapi import MiraiCore
+from miraihttpapi import MessageChain
+with MiraiCore(server_url, verifykey, qqid) as mirai:
+    mirai.sendFriendMessage(123456789,MessageChain().plain("Hello"))
+```
+
+# 配置文件创建和导入
+
+使用`miraihttpapi.Configer.create(path)`创建一个新的配置文件
+
+使用`miraihttpapi.Configer.load(path)`加载一个配置文件并返回一个未连接的miraihttpapi.MiraiCore(支持使用with进行管理)
