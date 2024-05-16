@@ -1,0 +1,15 @@
+nifty_ls-1.0.0rc5.dist-info/WHEEL,sha256=ZSZNt7G3xM5O8EO7ZOZax0MZG1P1h12Dsok1awCZLkM,155
+nifty_ls-1.0.0rc5.dist-info/RECORD,,
+nifty_ls-1.0.0rc5.dist-info/METADATA,sha256=U67aPW8t_j0fLpXDs5t_-lKOXVv8r2XZKQY8Q99b7LM,31976
+nifty_ls-1.0.0rc5.dist-info/licenses/LICENSE,sha256=METW8MuFs7q7s6GqLjuPti3IgefQwMQ-S5WmEwAnM5g,11348
+nifty_ls/cpu_helpers.cpython-310-x86_64-linux-gnu.so,sha256=6q3k839A8IOS1ahkFTOlIIdQQK2MjxdtG3es2mKnrn4,264801
+nifty_ls/__init__.py,sha256=4lSk2bmo5QSraThtQf1BgWWApqyKl9QrcRKM-sJ6lMg,536
+nifty_ls/finufft.py,sha256=4N6SnYnG5QJKula5CA70cYRsvwNPyYvnGg_IHGgp4n0,9811
+nifty_ls/backends.py,sha256=nQwTDJwkldKmIMIeRrFoGU0JMdLelvYnkudWEyTqduM,808
+nifty_ls/cpu_helpers.cpp,sha256=R-jkRzGopKHPjeE_bm1X5Z3O67jqVDPFDKnMBmFRXxY,14474
+nifty_ls/utils.py,sha256=41XDC6sl4H66wfPVxzLt44nS_-Q3a7uUYgmJ5oO5Htg,1177
+nifty_ls/cufinufft.py,sha256=NPdXG6AYExzzimhh6WAjYelMCXcdCC9FO6eVzf58W20,7380
+nifty_ls/astropy.py,sha256=5pvfTWcJGtAGbQNTDpQRV8gHY6YVXxP-Dj6liDMNF8g,901
+nifty_ls/core.py,sha256=K4RISZDEBNTFvWuPkIXtERWUXzELabsqEnp3jyuiqbA,4917
+nifty_ls/test_helpers/utils.py,sha256=o1ybdbXZHjgA9oUkUFAyEoEVamY17veW43WSSOgGdoI,1112
+nifty_ls.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
