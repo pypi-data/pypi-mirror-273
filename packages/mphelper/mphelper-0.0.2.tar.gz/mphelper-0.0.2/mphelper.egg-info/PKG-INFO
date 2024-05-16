@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mphelper
+Version: 0.0.2
+Summary: A python package for simple multi-processing support
+Home-page: https://github.com/aldenleung/mphelper/
+Author: Alden Leung
+Author-email: alden.leung@gmail.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+# mphelper
+A python package for simple multi-processing support
