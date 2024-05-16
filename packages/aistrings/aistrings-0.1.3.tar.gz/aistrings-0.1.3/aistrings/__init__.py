@@ -1,0 +1,1 @@
+from .astr import AiStrings
