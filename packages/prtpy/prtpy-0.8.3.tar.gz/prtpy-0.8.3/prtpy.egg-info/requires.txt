@@ -1,0 +1,6 @@
+numpy>=1.21.3
+scipy>=1.6.1
+mip>=1.13.0
+
+[simulations]
+experiments_csv[plotting]>=0.5.0

@@ -1,0 +1,104 @@
+# Optimization objectives
+
+Most algorithms allow you to choose the optimization objective.
+The following example is based on:
+    Walter (2013), 'Comparing the minimum completion times of two longest-first scheduling-heuristics'.
+With these numbers, each objective yields a different partition.
+
+```python
+items = [46, 39, 27, 26, 16, 13, 10]
+
+import prtpy
+from prtpy.outputtypes import PartitionAndSums
+from prtpy.objectives import MaximizeSmallestSum, MinimizeLargestSum, MinimizeDifference, Objective
+dp = prtpy.partitioning.dynamic_programming
+```
+
+
+
+MinimizeLargestSum:
+
+```python
+print(prtpy.partition(algorithm=dp, numbins=3, items=items, outputtype=PartitionAndSums, objective=MinimizeLargestSum))
+```
+
+```
+(array([62., 62., 53.]), [[46, 16], [39, 13, 10], [27, 26]])
+```
+
+
+
+MaximizeSmallestSum:
+
+```python
+print(prtpy.partition(algorithm=dp, numbins=3, items=items, outputtype=PartitionAndSums, objective=MaximizeSmallestSum))
+```
+
+```
+(array([56., 56., 65.]), [[46, 10], [27, 16, 13], [39, 26]])
+```
+
+
+
+MinimizeDifference:
+
+```python
+print(prtpy.partition(algorithm=dp, numbins=3, items=items, outputtype=PartitionAndSums, objective=MinimizeDifference))
+```
+
+```
+(array([55., 59., 63.]), [[39, 16], [46, 13], [27, 26, 10]])
+```
+
+
+
+To define a custom objective, create an Objective object with a lamdba function, 
+   describing the expression that should be *minimized*.
+
+```python
+class MinimizeTheSmallestSum(Objective):
+    def value_to_minimize(self, sums:list, are_sums_in_ascending_order:bool=False)->float:
+        return sums[0] if are_sums_in_ascending_order else min(sums)
+MinimizeSmallestSum = MinimizeTheSmallestSum()
+print(prtpy.partition(algorithm=dp, numbins=3, items=items, outputtype=PartitionAndSums, objective=MinimizeSmallestSum))
+```
+
+```
+(array([  0.,  49., 128.]), [[], [26, 13, 10], [46, 39, 27, 16]])
+```
+
+
+
+Some other useful objectives are:
+
+```python
+from prtpy.objectives import MaximizeKSmallestSums, MinimizeKLargestSums
+```
+
+
+
+MaximizeKSmallestSums:
+
+```python
+print(prtpy.partition(algorithm=dp, numbins=3, items=items, objective=MaximizeKSmallestSums(2), outputtype=PartitionAndSums))
+```
+
+```
+(array([62., 62., 53.]), [[46, 16], [39, 13, 10], [27, 26]])
+```
+
+
+
+MinimizeKLargestSums:
+
+```python
+print(prtpy.partition(algorithm=dp, numbins=3, items=items, objective=MinimizeKLargestSums(2), outputtype=PartitionAndSums))
+```
+
+```
+(array([56., 56., 65.]), [[46, 10], [27, 16, 13], [39, 26]])
+```
+
+
+---
+Markdown generated automatically from [objectives.py](objectives.py) using [Pweave](http://mpastell.com/pweave) 0.30.3 on 2022-07-11.
