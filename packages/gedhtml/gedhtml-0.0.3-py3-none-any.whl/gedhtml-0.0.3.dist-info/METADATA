@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gedhtml
+Version: 0.0.3
+Summary: Converting GED files to static web pages.
+Home-page: https://github.com/edovanveen/gedhtml
+License: MIT
+Keywords: genealogy,GED,GEDCOM,website,HTML
+Author: Edo van Veen
+Author-email: edo@vanveen.io
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Sociology :: Genealogy
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Dist: ged4py (>=0.4.4,<0.5.0)
+Requires-Dist: yattag (>=1.15.2,<2.0.0)
+Project-URL: Repository, https://github.com/edovanveen/gedhtml
+Description-Content-Type: text/markdown
+
+# GED-HTML
+
+Converting GED files to static web pages.
+
+Example:
+
+[https://genealogie.vanveen.io](https://genealogie.vanveen.io)
+
+Usage:
+
+```bash
+python -m gedhtml tests/data/kennedies.ged -o tests/output/kennedies -t "Kennedy Genealogy" -d "Genealogy of the Kennedy family." -l EN
+```
+
+For help:
+
+```bash
+python -m gedhtml --help
+```
+
+CSS layout taken from:
+
+[Pure CSS](https://github.com/pure-css/pure/tree/master/site/static/layouts/side-menu)
+
