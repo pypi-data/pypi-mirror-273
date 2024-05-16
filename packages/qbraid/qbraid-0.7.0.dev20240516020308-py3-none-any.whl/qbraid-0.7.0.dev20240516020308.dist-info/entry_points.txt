@@ -1,0 +1,9 @@
+[qbraid.programs]
+braket = qbraid.programs.libs.braket:BraketCircuit
+cirq = qbraid.programs.libs.cirq:CirqCircuit
+pennylane = qbraid.programs.libs.pennylane:PennylaneTape
+pyquil = qbraid.programs.libs.pyquil:PyQuilProgram
+pytket = qbraid.programs.libs.pytket:PytketCircuit
+qasm2 = qbraid.programs.libs.qasm2:OpenQasm2Program
+qasm3 = qbraid.programs.libs.qasm3:OpenQasm3Program
+qiskit = qbraid.programs.libs.qiskit:QiskitCircuit
