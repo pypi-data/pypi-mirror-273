@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sourcebin
+Version: 1.0.0
+Summary: Sourcebin API wrapper for Python
+Home-page: https://github.com/elijahgives/sourcebin.py
+Author: author
+Author-email: hi@elijah.rip
+License: LICENSE
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Sourcebin.py
+Sourcebin.py is a simple Python API wrapper for https://sourceb.in/.

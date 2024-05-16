@@ -1,0 +1,8 @@
+README.md
+setup.py
+sourcebin/__init__.py
+sourcebin.egg-info/PKG-INFO
+sourcebin.egg-info/SOURCES.txt
+sourcebin.egg-info/dependency_links.txt
+sourcebin.egg-info/requires.txt
+sourcebin.egg-info/top_level.txt
