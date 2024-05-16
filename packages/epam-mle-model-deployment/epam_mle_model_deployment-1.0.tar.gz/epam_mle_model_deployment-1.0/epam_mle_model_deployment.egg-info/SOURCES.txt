@@ -1,0 +1,12 @@
+README.md
+setup.py
+app/__init__.py
+app/batch/__init__.py
+app/batch/predict.py
+app/online/__init__.py
+app/online/flask_app.py
+epam_mle_model_deployment.egg-info/PKG-INFO
+epam_mle_model_deployment.egg-info/SOURCES.txt
+epam_mle_model_deployment.egg-info/dependency_links.txt
+epam_mle_model_deployment.egg-info/requires.txt
+epam_mle_model_deployment.egg-info/top_level.txt
