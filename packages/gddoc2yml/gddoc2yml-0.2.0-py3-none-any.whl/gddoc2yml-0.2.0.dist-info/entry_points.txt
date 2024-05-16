@@ -1,0 +1,3 @@
+[console_scripts]
+gdxml2xrefmap = gddoc2yml.gdxml2xrefmap:main
+gdxml2yml = gddoc2yml.gdxml2yml:main
