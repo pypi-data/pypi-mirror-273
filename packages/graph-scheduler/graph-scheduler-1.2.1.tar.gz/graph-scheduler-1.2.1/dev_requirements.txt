@@ -1,0 +1,7 @@
+pydot
+pytest
+pytest-cov
+pytest-helpers-namespace
+pytest-pycodestyle
+pytest-pydocstyle
+pytest-xdist
