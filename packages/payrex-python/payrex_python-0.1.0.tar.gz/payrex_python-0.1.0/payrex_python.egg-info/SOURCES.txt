@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+payrex/__init__.py
+payrex/api_resource.py
+payrex/client.py
+payrex/config.py
+payrex/error.py
+payrex/http_client.py
+payrex/services/service_factory.py
+payrex_python.egg-info/PKG-INFO
+payrex_python.egg-info/SOURCES.txt
+payrex_python.egg-info/dependency_links.txt
+payrex_python.egg-info/requires.txt
+payrex_python.egg-info/top_level.txt
