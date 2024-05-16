@@ -1,0 +1,18 @@
+[build-system]
+    requires      = ["setuptools>=61.0.0"]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name         = "python-project-stub"
+    version      = "0.0.9"
+    dynamic      = ["authors"] # specified in setup.cfg
+    description  = "Stub files to use as the basis of a Python project that can be packaged and uploaded to PyPI"
+    license      = {text = "MIT"}
+    dependencies = [] # TODO
+    readme = "README.md"
+
+[project.scripts]
+    python_project_stub = "python_project_stub.__main__:main"
+
+[project.urls]
+    "Homepage" = "https://github.com/striebel/python-project-stub"
