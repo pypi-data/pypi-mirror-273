@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+ELSholdings.egg-info/PKG-INFO
+ELSholdings.egg-info/SOURCES.txt
+ELSholdings.egg-info/dependency_links.txt
+ELSholdings.egg-info/top_level.txt
+ELSholdings/kenwoo/xls2ppt.py
+ELSholdings/kenwoo/xls2ppt_pc.py
