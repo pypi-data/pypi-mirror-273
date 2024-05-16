@@ -1,0 +1,5 @@
+[console_scripts]
+deploy-freva=freva_deployment.ui.deployment_tui:tui
+deploy-freva-cmd=freva_deployment.cli:deploy
+freva-migrate=freva_deployment.cli:migrate
+
