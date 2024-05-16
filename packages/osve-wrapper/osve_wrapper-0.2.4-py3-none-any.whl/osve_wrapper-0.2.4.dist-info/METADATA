@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: osve-wrapper
+Version: 0.2.4
+Summary: Python package for OSVE wrapping
+Home-page: https://juigitlab.esac.esa.int/core-system/uplink/osve_wrapper
+Author: JUICE SOC team
+Author-email: juice_soc@cosmos.esa.int
+License: UNKNOWN
+Keywords: esa,JUICE,EPS,planetary,space,metrics,trajectory,assessment,crema
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: esac-juice-pyutils >=0.3.0
+Requires-Dist: osve >=2.0.0
+
+# osve_wrapper Package
+
+## 1. Getting Started
+
+This Python package provides a simple wrapper for the Operation Simulations and Validation Engine (OSVE) build the osve_template 
+to run osve on the fly.
+
+The OSVE call is done using osve python package https://pypi.org/project/osve/
+
+### 1.1 Installation
+
+#### 1.1.1 Prerequisites
+ 
+If needed, install Python 3.7+
+
+#### 1.1.2 Setup
+
+##### 1.1.2.1 Package installation 
+
+From command line install the following packages using pip:
+
+    pip install osve_wrapper
+
