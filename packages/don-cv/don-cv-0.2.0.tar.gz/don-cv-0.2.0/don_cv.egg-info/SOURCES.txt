@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+config/resume_config.json
+don_cv/__init__.py
+don_cv/cli.py
+don_cv.egg-info/PKG-INFO
+don_cv.egg-info/SOURCES.txt
+don_cv.egg-info/dependency_links.txt
+don_cv.egg-info/entry_points.txt
+don_cv.egg-info/requires.txt
+don_cv.egg-info/top_level.txt
