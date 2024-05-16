@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: affipred
+Version: 0.1.2
+Summary: AlphaFold based Functional Impact Prediction of Missense Variations
+Home-page: https://github.com/mustafapir/affipred
+Author: Mustafa S. Pir
+Author-email: mustafapir29@gmail.com
+Project-URL: Bug Tracker, https://github.com/mustafapir/affipred/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pysam>=0.22.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: biopython>=1.81
+Requires-Dist: numpy>=1.24.0
+
+# AFFIPred: AlphaFold based Functional Impact Prediction of Missense Variations
+
+## Usage:
+First, install the tool using pip.
+```
+pip install affipred
+```
+
+Provide input and output files with relative or absolute path:
+```
+affipred variants.vcf -o affipred_results.csv
+```
+The input should be a `.vcf` file while the output file name extension should be `.csv`. 
+
+The output file will contain all the features used to predict the impact of the variants alongside the AFFIPred scores and the prediction of functional impact of the variants.
