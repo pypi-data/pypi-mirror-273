@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "apygee"
+version = "1.0.1"
+description = "A package for creating, manipulating and visualizing Kepler orbits"
+authors = ["Jelmar Gerritsen <jelmargerritsen@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+matplotlib = "^3.8.3"
+numpy = "^1.26.4"
+plotly = "^5.20.0"
+ipywidgets = "^8.1.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+ipykernel = "^6.29.2"
+ruff = "^0.3.2"
+ipympl = "^0.9.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 120
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore:.*datetime.* is deprecated:DeprecationWarning"]
