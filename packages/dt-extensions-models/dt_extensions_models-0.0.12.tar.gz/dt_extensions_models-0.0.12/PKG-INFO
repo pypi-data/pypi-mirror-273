@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dt-extensions-models
+Version: 0.0.12
+Summary: Helper library implementing best practices for strongly typed models and reporting metrics
+Home-page: https://github.com/dynatrace-extensions/dt-extensions-models
+License: Apache-2.0
+Keywords: dynatrace,extensions
+Author: Vagiz Duseev
+Author-email: vagiz.duseev@dynatrace.com
+Maintainer: Vagiz Duseev
+Maintainer-email: vagiz.duseev@dynatrace.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dt-extensions-sdk (>=1.1,<2.0)
+Requires-Dist: pydantic (>=2.7,<3.0)
+Project-URL: Documentation, https://github.com/dynatrace-extensions/dt-extensions-python-models
+Project-URL: Repository, https://github.com/dynatrace-extensions/dt-extensions-python-models
+Description-Content-Type: text/markdown
+
+# dt-extensions-models
+
+<p>
+  <a href="https://pypi.org/pypi/dt-extensions-models"><img alt="Package version" src="https://img.shields.io/pypi/v/dt-extensions-models?logo=python&logoColor=white&color=blue"></a>
+  <a href="https://pypi.org/pypi/dt-extensions-models"><img alt="Supported python versions" src="https://img.shields.io/pypi/pyversions/dt-extensions-models?logo=python&logoColor=white"></a>
+</p>
+
+Helper library implementing best practices for strongly typed models and reporting metrics.
+
+## Installation
+
+```shell
+pip install dt-extensions-models
+```
+
