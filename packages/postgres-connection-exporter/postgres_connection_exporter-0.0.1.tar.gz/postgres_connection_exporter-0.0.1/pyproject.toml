@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "postgres-connection-exporter"
+version = "0.0.1"
+authors = [
+  { name="Kumi Mitterer", email="postgres-connection-exporter@kumi.email" },
+]
+description = "A Prometheus exporter for PostgreSQL connection metrics"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "prometheus-client",
+    "psycopg2-binary",
+    "pyyaml",
+]
+
+[project.scripts]
+postgres-connection-exporter = "postgres_connection_exporter.__main__:main"
+
+[project.urls]
+"Homepage" = "https://git.private.coffee/kumi/postgres-connection-exporter"
+"Bug Tracker" = "https://git.private.coffee/kumi/postgres-connection-exporter/issues"
+"Source Code" = "https://git.private.coffee/kumi/postgres-connection-exporter"

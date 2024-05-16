@@ -1,0 +1,8 @@
+hosts: # List of database hosts
+  # Each host must have a user, password, host, and optionally port
+  - user: "user1"
+    password: "password1"
+    host: "host1"
+    port: "5432"
+exporter:
+  port: 8989 # Port on which the exporter will listen
