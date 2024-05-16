@@ -1,0 +1,9 @@
+LICENSE
+README.md
+clean.py
+pyproject.toml
+iclean.egg-info/PKG-INFO
+iclean.egg-info/SOURCES.txt
+iclean.egg-info/dependency_links.txt
+iclean.egg-info/entry_points.txt
+iclean.egg-info/top_level.txt

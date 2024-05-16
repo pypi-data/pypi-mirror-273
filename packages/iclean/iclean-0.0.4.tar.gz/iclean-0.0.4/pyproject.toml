@@ -1,0 +1,19 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=68.2.0", "wheel"]
+
+[project]
+authors = [{name = "kaliv0"}]
+description = "Unused imports cleaner"
+name = "iclean"
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ["version"]
+
+requires-python = ">=3.10"
+
+[tool.setuptools.dynamic]
+version = {attr = "clean.__version__"}
+
+[project.scripts]
+iclean = "clean:main"
