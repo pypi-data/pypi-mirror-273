@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pytest_pt.py
+src/pytest_pt.egg-info/PKG-INFO
+src/pytest_pt.egg-info/SOURCES.txt
+src/pytest_pt.egg-info/dependency_links.txt
+src/pytest_pt.egg-info/requires.txt
+src/pytest_pt.egg-info/top_level.txt
