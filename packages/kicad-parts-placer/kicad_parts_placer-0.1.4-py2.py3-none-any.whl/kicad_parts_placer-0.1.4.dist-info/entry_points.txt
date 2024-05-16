@@ -1,0 +1,2 @@
+[console_scripts]
+kicad_parts_placer = kicad_parts_placer.cli:main
