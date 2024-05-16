@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pbi-vizdata
+Version: 0.1
+Author: Nitin Satish
+Requires-Dist: os
+Requires-Dist: time
+Requires-Dist: pandas
+Requires-Dist: shutil
+Requires-Dist: re
+Requires-Dist: powerbiclient
+
