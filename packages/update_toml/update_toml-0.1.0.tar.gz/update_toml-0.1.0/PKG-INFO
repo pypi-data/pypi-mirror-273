@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: update_toml
+Version: 0.1.0
+Summary: Update a toml value from a CLI
+License: MIT
+Keywords: toml,requirements,update
+Author: Jake Cyr
+Author-email: cyrjake@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: tomlkit (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+# Update TOML
+
+Simple CLI to update a value in a TOML file.
+
+## Installation
+
+Install with pip:
+
+```bash
+pip install update-toml
+```
+
+## Usage
+
+Run the following command, passing in a path and value to update in the specified .toml file:
+
+```bash
+update-toml --path project.version --value 0.0.1 --file pyproject.toml
+```
+
