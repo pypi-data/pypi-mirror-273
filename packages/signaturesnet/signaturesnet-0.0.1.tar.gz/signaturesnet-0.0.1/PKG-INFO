@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: signaturesnet
+Version: 0.0.1
+Summary: Package to manipulate mutational processes.
+Home-page: https://github.com/weghornlab/SigNet
+License-File: LICENSE
