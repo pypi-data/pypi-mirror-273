@@ -1,0 +1,16 @@
+.gitignore
+CITATION.cff
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+.github/workflows/test_and_deploy.yml
+brainglobe_space/__init__.py
+brainglobe_space/core.py
+brainglobe_space/functions.py
+brainglobe_space/utils.py
+brainglobe_space.egg-info/PKG-INFO
+brainglobe_space.egg-info/SOURCES.txt
+brainglobe_space.egg-info/dependency_links.txt
+brainglobe_space.egg-info/requires.txt
+brainglobe_space.egg-info/top_level.txt
