@@ -1,0 +1,9 @@
+numpy
+autoD
+scipy
+trimesh
+medImgProc
+nfft
+
+[dev]
+modulus
