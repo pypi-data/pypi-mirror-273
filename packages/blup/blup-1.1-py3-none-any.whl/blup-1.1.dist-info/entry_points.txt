@@ -1,0 +1,2 @@
+[console_scripts]
+blup = blup.__main__:main
