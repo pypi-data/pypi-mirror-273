@@ -1,0 +1,28 @@
+{# define table_cap and table_subs before including #}
+{% if table_subs %}
+    <br/>
+
+    <caption class="caption">{{ table_cap }}</caption>
+    <table style="width:1200px" class="table table-striped table-bordered">
+        <thead class="table-dark">
+        <tr style="background-color:#0000c0;color:white;">
+            <th>Status</th>
+            <th>Remark</th>
+        </tr>
+        </thead>
+        {% for txt,stat in table_subs.items() %}
+            {% set col = stat.html_color() %}
+            {% set rowcol = 'white' %}
+            <tr style="background-color:{{ rowcol }}">
+                <td style="color:{{ col }};background-color:black;width:8%;text-align:center">
+                    {{ stat.emoji() }} {{ stat.name }}
+                </td>
+                <td style="font-family:monospace;width:92%">
+                    {{ txt }}
+                </td>
+
+            </tr>
+        {% endfor %}
+    </table>
+    <br/>
+{% endif %}

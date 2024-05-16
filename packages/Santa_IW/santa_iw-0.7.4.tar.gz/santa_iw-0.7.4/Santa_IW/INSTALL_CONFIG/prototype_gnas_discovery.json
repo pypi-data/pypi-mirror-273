@@ -1,0 +1,73 @@
+{
+  "nuke_old_hosts": true,
+  "nuke_user_config": true,
+  "groups": {
+    "HOSTS": {},
+    "IOT": {"propagate_child_status_in_overall": false},
+    "MOBILE": {"propagate_child_status_in_overall": false},
+    "NONESSENTIAL": {"propagate_child_status_in_overall": false},
+    "NETWORK": {}
+  },
+  "scan_defaults": {
+    "unknown": "IOT",
+    "Linux": "HOSTS",
+    "Darwin": "MOBILE",
+    "overwrite": true
+  },
+  "scans": [
+    {
+      "first_ip": "10.0.0.1",
+      "last_ip": "10.0.0.1",
+      "unknown": "NETWORK",
+      "Linux": "NETWORK"
+    },
+    {
+      "first_ip": "10.0.1.0",
+      "last_ip": "10.0.1.50",
+      "unknown": "NETWORK",
+      "Linux": "NETWORK"
+    },
+    {
+      "first_ip": "10.0.4.0",
+      "last_ip": "10.0.4.127",
+      "unknown": "MOBILE",
+      "Linux": "HOSTS"
+    },
+    {
+      "first_ip": "10.0.4.128",
+      "last_ip": "10.0.4.255",
+      "unknown": "IOT",
+      "Linux": "MOBILE",
+      "Darwin": "MOBILE"
+    }
+  ],
+  "explicit_group_assignments": {
+    "pihole0w": "!wifi",
+    "pihole1w": "!wifi",
+    "nas0b": "!dual home",
+    "mbp13": "MOBILE",
+    "mbp14": "MOBILE",
+    "mbp14vm": "!MOBILE",
+    "mbp15": "MOBILE",
+    "mbp15vm": "!MOBILE",
+    "iphone-5": "MOBILE",
+    "68:37:E9": "!drop amazon",
+    "38:F7:3D": "!drop amazon",
+    "steves-12": "!drop phone",
+    "E2:13:B7" : "!randomized mac?",
+    "tivo-br": "NONESSENTIAL",
+    "tivo-lr": "NONESSENTIAL",
+    "tivo-k": "NONESSENTIAL"
+  },
+  "additional_per_node": {
+    "nas0": {
+      "tests": [
+      ],
+      "templates": [
+      ]
+    }
+  },
+  "additional_santa_config": {
+    "additional_item": 42
+  }
+}

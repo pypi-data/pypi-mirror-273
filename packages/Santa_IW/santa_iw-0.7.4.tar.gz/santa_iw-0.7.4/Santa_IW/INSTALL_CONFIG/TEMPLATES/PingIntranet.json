@@ -1,0 +1,9 @@
+{
+   "tests": [
+      {
+         "test_type": "PingTest_A",
+         "instance_name": "nhg",
+         "period": 60
+      }
+   ]
+}

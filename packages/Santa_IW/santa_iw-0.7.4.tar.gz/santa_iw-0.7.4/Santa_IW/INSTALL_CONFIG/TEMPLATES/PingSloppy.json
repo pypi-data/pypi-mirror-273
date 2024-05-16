@@ -1,0 +1,11 @@
+{
+   "tests": [
+      {
+         "test_type": "PingTest_D",
+         "period": 60
+      }
+   ],
+   "templates": [
+
+   ]
+}

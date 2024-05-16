@@ -1,0 +1,47 @@
+{# define table_cap and table_subs before including #}
+{% if table_subs %}
+    <br/>
+
+    <caption class="caption">{{ table_cap }}</caption>
+    <table style="width:1200px" class="table-bordered">
+        <thead class="table-dark">
+        <tr style="background-color:#0000c0;color:white;" class="">
+            <th style="width:25%">Name</th>
+            <th style="width:12%">Latest</th>
+            <th style="width:12%">Min</th>
+            <th style="width:12%">Mean</th>
+            <th style="width:12%">Max</th>
+            <th style="width:12%">SDev</th>
+            <th style="width:12%">Count</th>
+        </tr>
+        </thead>
+        {% set fmt="{val:.8g}" %}
+        {% for stat in table_subs %}
+            {% set rowcol = 'white' %}
+            <tr style="background-color:{{ rowcol }}">
+
+                <td><a href="{{ url_for('focus_page',ssname=focus.name(),astat=stat.name()) }}">{{ stat.name() }}</a></td>
+                <td>
+                    {{ webgui.format_8g(val=stat.last_sample()) }}
+                </td>
+                <td>
+                    {{ webgui.format_8g(val=stat.min_sample()) }}
+                </td>
+                <td>
+                    {{ webgui.format_8g(val=stat.mean()) }}
+                </td>
+                <td>
+                    {{ webgui.format_8g(val=stat.max_sample()) }}
+                </td>
+                <td>
+                    {{ webgui.format_8g(val=stat.sd()) }}
+                </td>
+                <td>
+                    {{ webgui.format_8g(val=stat.count()) }}
+                </td>
+
+            </tr>
+        {% endfor %}
+    </table>
+    <br/>
+{% endif %}

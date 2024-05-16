@@ -1,0 +1,32 @@
+{# define table_cap and table_subs before including #}
+{% if table_subs %}
+<br/>
+
+<caption class="caption">{{ table_cap }}</caption>
+<table style="width:1200px" class="table table-striped table-bordered">
+    <thead class="table-dark">
+    <tr style="background-color:#0000c0;color:white;">
+        <th style="width:20%">Name</th>
+        <th style="width:65%">Counts</th>
+        <th style="width:15%">Count</th>
+    </tr>
+    </thead>
+    {% set fmt="{val:.8g}" %}
+    {% for stat in table_subs %}
+    {% set rowcol = 'white' %}
+    <tr style="background-color:{{ rowcol }}">
+        <td>{{ stat.name() }}</td>
+        <td>
+            {% autoescape false %}
+            {{ webgui.escape(stat.most_common_as_str(5)) }}
+            {% endautoescape %}
+        </td>
+        <td>
+            {{ fmt.format(val=stat.count()) }}
+        </td>
+
+    </tr>
+    {% endfor %}
+</table>
+<br/>
+{% endif %}

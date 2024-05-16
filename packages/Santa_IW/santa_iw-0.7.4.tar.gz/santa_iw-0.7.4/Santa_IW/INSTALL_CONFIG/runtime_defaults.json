@@ -1,0 +1,22 @@
+{
+  "secrets_file": "{{__SANTA_SECRETS_DIR__}}/santa_secrets.json",
+  "data_recording_db": "{{__SANTA_DB_DIR__}}/santa.db",
+  "data_recording_purge_interval": 300,
+  "data_recording_interval_sec": 5,
+  "data_recording_keep_days": 4.0,
+  "gui_port": 4242,
+  "gui_host": "0.0.0.0",
+  "gui_debug": false,
+  "gui_page_refresh_interval": 60,
+  "propagate_child_status_in_overall": true,
+  "tree_root_name": "sys",
+  "tree_name_separator":  "﹫",
+  "tree_app_name": "Santas_Helpers",
+  "tree_test_separator":  "߸",
+  "tree_attention_char": "\uD83D\uDEA9",
+  "tree_changing_char":"\uD83D\uDEA6",
+  "tree_child_issue_char": "\uD83D\uDEB8",
+  "tree_child_data_char": "\uD83D\uDD17",
+  "max_concurrent_tests_on_node": 2,
+  "pull_up_child_annotation": false
+}

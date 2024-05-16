@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "test_type": "CockpitTest",
+      "instance_name": "cockpit",
+      "period": 600
+    }
+  ],
+  "templates": [
+  ]
+}
