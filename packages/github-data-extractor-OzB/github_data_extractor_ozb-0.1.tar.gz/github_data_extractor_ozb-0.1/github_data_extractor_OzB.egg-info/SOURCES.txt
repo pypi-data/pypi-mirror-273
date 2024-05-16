@@ -1,0 +1,7 @@
+README.md
+setup.py
+github_data_extractor_OzB.egg-info/PKG-INFO
+github_data_extractor_OzB.egg-info/SOURCES.txt
+github_data_extractor_OzB.egg-info/dependency_links.txt
+github_data_extractor_OzB.egg-info/requires.txt
+github_data_extractor_OzB.egg-info/top_level.txt
