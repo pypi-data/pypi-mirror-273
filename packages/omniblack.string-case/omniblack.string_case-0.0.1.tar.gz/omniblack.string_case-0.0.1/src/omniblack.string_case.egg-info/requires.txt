@@ -1,0 +1,4 @@
+omniblack.utils
+
+[unicode]
+regex

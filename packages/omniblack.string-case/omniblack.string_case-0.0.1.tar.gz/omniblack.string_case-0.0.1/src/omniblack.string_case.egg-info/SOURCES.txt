@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+package_config.yaml
+pyproject.toml
+src/omniblack.string_case.egg-info/PKG-INFO
+src/omniblack.string_case.egg-info/SOURCES.txt
+src/omniblack.string_case.egg-info/dependency_links.txt
+src/omniblack.string_case.egg-info/omniblack_package.json
+src/omniblack.string_case.egg-info/omniblack_package.yaml
+src/omniblack.string_case.egg-info/requires.txt
+src/omniblack.string_case.egg-info/top_level.txt
+src/omniblack/string_case/__init__.py
+test/test_string_case.py
