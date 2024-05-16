@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "test-project-ci-cd"
+version = "0.7.18"
+description = "test project for github actions"
+authors = ["Daryl Stark <daryl@dstark.nl>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "test_project_ci_cd", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "2.7.1"
+fastapi = "0.111.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+ruff = "^0.4.0"
+mypy = "^1.9.0"
+bumpver = "^2023.1129"
+pytest-cov = "^5.0.0"
+pytest-sugar = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "0.7.18"
+version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
+commit_message = "Version {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"sonar-project.properties" = [
+    'sonar.projectVersion={version}'
+]
+
+[tool.pytest.ini_options]
+addopts = ['--cov=test_project_ci_cd', '--cov-report=html', '--cov-report=lcov', '--cov-report=xml', '--cov-branch']
+
+[tool.coverage.run]
+relative_files = true
+
+[tool.poetry.scripts]
+test_project = 'test_project_ci_cd.__main__:main'
