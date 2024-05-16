@@ -1,0 +1,298 @@
+Metadata-Version: 2.1
+Name: prefect-duckdb
+Version: 0.1.0a1
+Summary: Prefect intergrations with DuckDB.
+Home-page: https://github.com/PrefectHQ/prefect-duckdb
+Author: Prefect Technologies, Inc.
+Author-email: help@prefect.io
+License: Apache License 2.0
+Keywords: prefect
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiosqlite ==0.20.0
+Requires-Dist: alembic ==1.13.1
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==3.7.1
+Requires-Dist: apprise ==1.7.6
+Requires-Dist: arrow ==1.3.0
+Requires-Dist: asgi-lifespan ==2.1.0
+Requires-Dist: async-timeout ==4.0.3
+Requires-Dist: asyncpg ==0.29.0
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: babel ==2.14.0
+Requires-Dist: black ==24.4.0
+Requires-Dist: cachetools ==5.3.3
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: cfgv ==3.4.0
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: cloudpickle ==3.0.0
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: coolname ==2.2.0
+Requires-Dist: coverage ==7.4.4
+Requires-Dist: croniter ==2.0.3
+Requires-Dist: cryptography ==42.0.5
+Requires-Dist: dateparser ==1.2.0
+Requires-Dist: distlib ==0.3.8
+Requires-Dist: dnspython ==2.6.1
+Requires-Dist: docker ==6.1.3
+Requires-Dist: duckdb ==0.10.1
+Requires-Dist: email-validator ==2.1.1
+Requires-Dist: filelock ==3.13.4
+Requires-Dist: flake8 ==7.0.0
+Requires-Dist: fsspec ==2024.3.1
+Requires-Dist: ghp-import ==2.1.0
+Requires-Dist: google-auth ==2.29.0
+Requires-Dist: graphviz ==0.20.3
+Requires-Dist: greenlet ==3.0.3
+Requires-Dist: griffe ==0.42.2
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: h2 ==4.1.0
+Requires-Dist: hpack ==4.0.0
+Requires-Dist: httpcore ==1.0.5
+Requires-Dist: httpx ==0.27.0
+Requires-Dist: humanize ==4.9.0
+Requires-Dist: hyperframe ==6.0.1
+Requires-Dist: identify ==2.5.35
+Requires-Dist: idna ==3.7
+Requires-Dist: importlib-resources ==6.1.3
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: interrogate ==1.7.0
+Requires-Dist: isort ==5.13.2
+Requires-Dist: itsdangerous ==2.1.2
+Requires-Dist: jinja2 ==3.1.3
+Requires-Dist: jinja2-humanize-extension ==0.4.0
+Requires-Dist: jsonpatch ==1.33
+Requires-Dist: jsonpointer ==2.4
+Requires-Dist: jsonschema ==4.21.1
+Requires-Dist: jsonschema-specifications ==2023.12.1
+Requires-Dist: kubernetes ==29.0.0
+Requires-Dist: mako ==1.3.3
+Requires-Dist: markdown ==3.6
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: markupsafe ==2.1.5
+Requires-Dist: mccabe ==0.7.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: mergedeep ==1.3.4
+Requires-Dist: mkdocs ==1.5.3
+Requires-Dist: mkdocs-autorefs ==1.0.1
+Requires-Dist: mkdocs-gen-files ==0.5.0
+Requires-Dist: mkdocs-material ==9.5.18
+Requires-Dist: mkdocs-material-extensions ==1.3.1
+Requires-Dist: mkdocstrings ==0.24.3
+Requires-Dist: mkdocstrings-python ==1.9.2
+Requires-Dist: mypy ==1.9.0
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: nodeenv ==1.8.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: oauthlib ==3.2.2
+Requires-Dist: orjson ==3.10.0
+Requires-Dist: packaging ==24.0
+Requires-Dist: paginate ==0.5.6
+Requires-Dist: pandas ==2.2.2
+Requires-Dist: pathspec ==0.12.1
+Requires-Dist: pendulum ==2.1.2
+Requires-Dist: pillow ==10.3.0
+Requires-Dist: platformdirs ==4.2.0
+Requires-Dist: pluggy ==1.4.0
+Requires-Dist: pre-commit ==3.7.0
+Requires-Dist: prefect ==2.17.1
+Requires-Dist: py ==1.11.0
+Requires-Dist: pyarrow ==16.1.0
+Requires-Dist: pyasn1 ==0.6.0
+Requires-Dist: pyasn1-modules ==0.4.0
+Requires-Dist: pycodestyle ==2.11.1
+Requires-Dist: pycparser ==2.22
+Requires-Dist: pydantic ==2.7.0
+Requires-Dist: pydantic-core ==2.18.1
+Requires-Dist: pyflakes ==3.2.0
+Requires-Dist: pygments ==2.17.2
+Requires-Dist: pymdown-extensions ==10.7.1
+Requires-Dist: pytest ==8.1.1
+Requires-Dist: pytest-asyncio ==0.23.6
+Requires-Dist: python-dateutil ==2.9.0.post0
+Requires-Dist: python-multipart ==0.0.9
+Requires-Dist: python-slugify ==8.0.4
+Requires-Dist: pytz ==2024.1
+Requires-Dist: pytzdata ==2020.1
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: pyyaml-env-tag ==0.1
+Requires-Dist: readchar ==4.0.6
+Requires-Dist: referencing ==0.34.0
+Requires-Dist: regex ==2023.12.25
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-oauthlib ==2.0.0
+Requires-Dist: rfc3339-validator ==0.1.4
+Requires-Dist: rich ==13.7.1
+Requires-Dist: rpds-py ==0.18.0
+Requires-Dist: rsa ==4.9
+Requires-Dist: ruamel-yaml ==0.18.6
+Requires-Dist: ruamel-yaml-clib ==0.2.8
+Requires-Dist: setuptools ==69.5.1
+Requires-Dist: shellingham ==1.5.4
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.1
+Requires-Dist: sqlalchemy ==2.0.29
+Requires-Dist: tabulate ==0.9.0
+Requires-Dist: text-unidecode ==1.3
+Requires-Dist: toml ==0.10.2
+Requires-Dist: typer ==0.12.3
+Requires-Dist: typing-extensions ==4.11.0
+Requires-Dist: tzdata ==2024.1
+Requires-Dist: tzlocal ==5.2
+Requires-Dist: ujson ==5.9.0
+Requires-Dist: urllib3 ==2.2.1
+Requires-Dist: uvicorn ==0.28.1
+Requires-Dist: virtualenv ==20.25.1
+Requires-Dist: watchdog ==4.0.0
+Requires-Dist: websocket-client ==1.7.0
+Requires-Dist: websockets ==12.0
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: mkdocs ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+Requires-Dist: mkdocstrings[python] ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: mkdocs-gen-files ; extra == 'dev'
+Requires-Dist: interrogate ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pillow ; extra == 'dev'
+Requires-Dist: mock ; (python_version < "3.9") and extra == 'dev'
+
+# prefect-duckdb
+
+<p align="center">
+    <!--- Insert a cover image here -->
+    <!--- <br> -->
+    <a href="https://pypi.python.org/pypi/prefect-duckdb/" alt="PyPI version">
+        <img alt="PyPI" src="https://img.shields.io/pypi/v/prefect-duckdb?color=0052FF&labelColor=090422"></a>
+    <a href="https://github.com/PrefectHQ/prefect-duckdb/" alt="Stars">
+        <img src="https://img.shields.io/github/stars/PrefectHQ/prefect-duckdb?color=0052FF&labelColor=090422" /></a>
+    <a href="https://pypistats.org/packages/prefect-duckdb/" alt="Downloads">
+        <img src="https://img.shields.io/pypi/dm/prefect-duckdb?color=0052FF&labelColor=090422" /></a>
+    <a href="https://github.com/PrefectHQ/prefect-duckdb/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/PrefectHQ/prefect-duckdb?color=0052FF&labelColor=090422" /></a>
+    <br>
+    <a href="https://prefect-community.slack.com" alt="Slack">
+        <img src="https://img.shields.io/badge/slack-join_community-red.svg?color=0052FF&labelColor=090422&logo=slack" /></a>
+    <a href="https://discourse.prefect.io/" alt="Discourse">
+        <img src="https://img.shields.io/badge/discourse-browse_forum-red.svg?color=0052FF&labelColor=090422&logo=discourse" /></a>
+</p>
+
+Visit the full docs [here](https://PrefectHQ.github.io/prefect-duckdb) to see additional examples and the API reference.
+
+Prefect intergrations with DuckDB.
+
+
+<!--- ### Add a real-world example of how to use this Collection here
+
+Offer some motivation on why this helps.
+
+After installing `prefect-duckdb` and [saving the credentials](#saving-credentials-to-block), you can easily use it within your flows to help you achieve the aforementioned benefits!
+
+```python
+from prefect import flow, get_run_logger
+```
+
+--->
+
+## Resources
+
+For more tips on how to use tasks and flows in a Collection, check out [Using Collections](https://docs.prefect.io/collections/usage/)!
+
+### Installation
+
+Install `prefect-duckdb` with `pip`:
+
+```bash
+pip install prefect-duckdb
+```
+
+Requires an installation of Python 3.8+.
+
+We recommend using a Python virtual environment manager such as pipenv, conda or virtualenv.
+
+These tasks are designed to work with Prefect 2.0. For more information about how to use Prefect, please refer to the [Prefect documentation](https://docs.prefect.io/).
+
+<!--- ### Saving credentials to block
+
+Note, to use the `load` method on Blocks, you must already have a block document [saved through code](https://docs.prefect.io/concepts/blocks/#saving-blocks) or [saved through the UI](https://docs.prefect.io/ui/blocks/).
+
+Below is a walkthrough on saving block documents through code.
+
+1. Head over to <SERVICE_URL>.
+2. Login to your <SERVICE> account.
+3. Click "+ Create new secret key".
+4. Copy the generated API key.
+5. Create a short script, replacing the placeholders (or do so in the UI).
+
+```python
+from prefect_duckdb import Block
+Block(api_key="API_KEY_PLACEHOLDER").save("BLOCK_NAME_PLACEHOLDER")
+```
+
+Congrats! You can now easily load the saved block, which holds your credentials:
+
+```python
+from prefect_duckdb import Block
+Block.load("BLOCK_NAME_PLACEHOLDER")
+```
+
+!!! info "Registering blocks"
+
+    Register blocks in this module to
+    [view and edit them](https://docs.prefect.io/ui/blocks/)
+    on Prefect Cloud:
+
+    ```bash
+    prefect block register -m prefect_duckdb
+    ```
+
+A list of available blocks in `prefect-duckdb` and their setup instructions can be found [here](https://PrefectHQ.github.io/prefect-duckdb/blocks_catalog).
+
+--->
+
+### Feedback
+
+If you encounter any bugs while using `prefect-duckdb`, feel free to open an issue in the [prefect-duckdb](https://github.com/PrefectHQ/prefect-duckdb) repository.
+
+If you have any questions or issues while using `prefect-duckdb`, you can find help in either the [Prefect Discourse forum](https://discourse.prefect.io/) or the [Prefect Slack community](https://prefect.io/slack).
+
+Feel free to star or watch [`prefect-duckdb`](https://github.com/PrefectHQ/prefect-duckdb) for updates too!
+
+### Contributing
+
+If you'd like to help contribute to fix an issue or add a feature to `prefect-duckdb`, please [propose changes through a pull request from a fork of the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
+
+Here are the steps:
+
+1. [Fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)
+2. [Clone the forked repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository)
+3. Install the repository and its dependencies:
+```
+pip install -e ".[dev]"
+```
+4. Make desired changes
+5. Add tests
+6. Insert an entry to [CHANGELOG.md](https://github.com/PrefectHQ/prefect-duckdb/blob/main/CHANGELOG.md)
+7. Install `pre-commit` to perform quality checks prior to commit:
+```
+pre-commit install
+```
+8. `git commit`, `git push`, and create a pull request

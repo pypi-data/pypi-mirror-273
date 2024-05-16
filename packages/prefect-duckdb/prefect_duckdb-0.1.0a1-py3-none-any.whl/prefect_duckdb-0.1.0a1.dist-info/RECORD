@@ -1,0 +1,9 @@
+prefect_duckdb/__init__.py,sha256=ppCy3uFQ7bQ6ZeUiu6_S3dhFdclbU6wiGRrTbZ0qGAM,134
+prefect_duckdb/_version.py,sha256=m_x_8YEe91syWSbqNVjQo1x7oMLeeoWnKlsPvr8JwNY,505
+prefect_duckdb/database.py,sha256=5vdfUGtaeDpAKkDyb52O9wEgrrhh_tK5a5KprPjSRAA,23649
+prefect_duckdb-0.1.0a1.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_duckdb-0.1.0a1.dist-info/METADATA,sha256=fSkM45io-qFz1nlFbxcAj_VeKrPEr7q1yMd-pvEtbt8,11186
+prefect_duckdb-0.1.0a1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+prefect_duckdb-0.1.0a1.dist-info/entry_points.txt,sha256=aR-GBAS1tOnyczmdlCscWO6EbgKEIieHK02AN3yyL6w,54
+prefect_duckdb-0.1.0a1.dist-info/top_level.txt,sha256=i27Kh-yQV3LREX3vRgb-RiQQHVKqVQT-GG-2Uy_vMso,15
+prefect_duckdb-0.1.0a1.dist-info/RECORD,,
