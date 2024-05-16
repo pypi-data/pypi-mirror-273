@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cepack
+Version: 0.0.6
+Summary: embedded pack manage
+Author-email: paopaozhi <paopaozhi@hotmail.com>
+Project-URL: Homepage, https://github.com/paopaozhi/cepack
+Project-URL: Bug Tracker, https://github.com/paopaozhi/cepack/issues
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer
+Requires-Dist: toml
+Requires-Dist: requests
+
+# cepack
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cepack?logo=python)
+![PyPI - Version](https://img.shields.io/pypi/v/cepack?logo=pypi)
+![Codecov](https://img.shields.io/codecov/c/github/paopaozhi/cepack?logo=codecov)
+![PyPI - License](https://img.shields.io/pypi/l/cepack?logo=gnu)
+
+嵌入式包管理器
+
+## 支持命令
+
+|命令|描述|
+|---|---|
+|install|读取toml文件，安装库|
+|add|添加库|
+|remove|删除库|
