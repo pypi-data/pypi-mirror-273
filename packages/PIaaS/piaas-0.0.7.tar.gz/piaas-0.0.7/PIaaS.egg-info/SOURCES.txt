@@ -1,0 +1,17 @@
+.gitignore
+README.md
+pyproject.toml
+source.me
+.github/workflows/release.yml
+PIaaS/__init__.py
+PIaaS/config.py
+PIaaS/views.py
+PIaaS.egg-info/PKG-INFO
+PIaaS.egg-info/SOURCES.txt
+PIaaS.egg-info/dependency_links.txt
+PIaaS.egg-info/requires.txt
+PIaaS.egg-info/top_level.txt
+PIaaS/static/ethernet-port-icon-20.jpeg
+PIaaS/static/css/style.css
+PIaaS/templates/base.html
+PIaaS/templates/index.html
