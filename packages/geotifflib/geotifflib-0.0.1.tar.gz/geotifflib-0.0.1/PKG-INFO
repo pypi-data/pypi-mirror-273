@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: geotifflib
+Version: 0.0.1
+Summary: A Python GeoTiff kit based on GDAL
+Home-page: https://github.com/Flemyng1999/geotifflib
+Author: flemyng feng
+Author-email: flemyng1999@outlook.com
+Keywords: python,tiff,geotiff,windows,mac,linux
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# geotifflib
+
+GeoTiffLib primarily offers a set of utility functions for reading, saving, and processing GeoTIFF image files.
+
+## Install
+
+由于使用pip安装GDAL报错，因此安装此包之前需要使用conda安装GDAL：
+
+```sh
+conda install GDAL
+```
+
+安装GDAL完成之后再安装本包：
+
+```sh
+pip install geotifflib
+```

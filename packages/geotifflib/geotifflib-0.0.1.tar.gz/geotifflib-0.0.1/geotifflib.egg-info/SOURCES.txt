@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+geotifflib/__init__.py
+geotifflib/io.py
+geotifflib.egg-info/PKG-INFO
+geotifflib.egg-info/SOURCES.txt
+geotifflib.egg-info/dependency_links.txt
+geotifflib.egg-info/entry_points.txt
+geotifflib.egg-info/requires.txt
+geotifflib.egg-info/top_level.txt
