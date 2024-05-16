@@ -1,0 +1,7 @@
+requests
+google-cloud-pubsub
+google-cloud-monitoring
+google-cloud-run
+gunicorn
+pytz
+psutil
