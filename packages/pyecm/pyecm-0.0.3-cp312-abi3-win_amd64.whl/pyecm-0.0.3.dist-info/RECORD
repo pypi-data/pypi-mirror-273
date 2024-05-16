@@ -1,0 +1,10 @@
+pyecm/__init__.py,sha256=z0_mEx4AwyCIuiY7a_9yEbVg_PIfFuMIC2yeFyJq4cs,20
+pyecm/soem/__init__.py,sha256=KfhFdwKLLn1en-giMpymR0LeuD5Q9RzFwjqG_J83Jrs,52
+pyecm/soem/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyecm/soem/soem_ext.pyd,sha256=qBT7UD9muOtINmPkSFFh1CVp6pkl9sm6vFGrg3QNU9Q,268800
+pyecm/soem/soem_ext.pyi,sha256=FN8EXIblfXvTyMbpIShiXjFTpsiW2p_xaaFisXrSm7s,20345
+pyecm/soem_ext.cpp,sha256=aYzaA3YXqpTYgbA6aMZHh-l1ySa_SmioF-BoXXJ6B-4,20203
+pyecm-0.0.3.dist-info/METADATA,sha256=_EVEspbBIC1CnkOVF7O0FFY_-O2bFnzqGaJOxW83WHE,3321
+pyecm-0.0.3.dist-info/WHEEL,sha256=CIzjSx80ay7L2Laql17yxdVJd1TfUg4Ghtja6UBBmZ0,104
+pyecm-0.0.3.dist-info/licenses/LICENSE,sha256=ZAncZkefiGj73g2n4tkaBQL7gXkMOTEFhu1KdOvvPak,1084
+pyecm-0.0.3.dist-info/RECORD,,
