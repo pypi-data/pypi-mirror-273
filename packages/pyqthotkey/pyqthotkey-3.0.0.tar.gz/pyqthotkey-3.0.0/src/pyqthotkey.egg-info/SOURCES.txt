@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/pyqthotkey/__init__.py
+src/pyqthotkey/hotkey_picker.py
+src/pyqthotkey.egg-info/PKG-INFO
+src/pyqthotkey.egg-info/SOURCES.txt
+src/pyqthotkey.egg-info/dependency_links.txt
+src/pyqthotkey.egg-info/requires.txt
+src/pyqthotkey.egg-info/top_level.txt
