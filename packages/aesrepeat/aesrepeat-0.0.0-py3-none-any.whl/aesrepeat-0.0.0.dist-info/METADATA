@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aesrepeat
+Version: 0.0.0
+Summary: Multiple encryption library
+Home-page: https://github.com/lang-library/py-aesrepeat
+Author: JavaCommons Technologies
+Author-email: javacommmons@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyCryptoDome
+
+# py-multicrypto
