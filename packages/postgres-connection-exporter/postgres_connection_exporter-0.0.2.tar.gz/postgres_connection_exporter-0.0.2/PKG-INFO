@@ -1,0 +1,99 @@
+Metadata-Version: 2.3
+Name: postgres-connection-exporter
+Version: 0.0.2
+Summary: A Prometheus exporter for PostgreSQL connection metrics
+Project-URL: Homepage, https://git.private.coffee/kumi/postgres-connection-exporter
+Project-URL: Bug Tracker, https://git.private.coffee/kumi/postgres-connection-exporter/issues
+Project-URL: Source Code, https://git.private.coffee/kumi/postgres-connection-exporter
+Author-email: Kumi Mitterer <postgres-connection-exporter@kumi.email>
+License: Copyright (c) 2024 Kumi Mitterer <postgres-connection-exporter@kumi.email>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: prometheus-client
+Requires-Dist: psycopg2-binary
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# PostgreSQL Connection Exporter for Prometheus
+
+This is a simple server that exports PostgreSQL connection metrics in a format that can be scraped by Prometheus.
+
+It outputs the following metrics:
+
+- The number of connections per database
+- The number of connections per user
+- The number of connections per client address
+- The number of connections per state
+
+## Installation
+
+You can install the exporter from PyPI. Within a virtual environment, run:
+
+```bash
+pip install postgres-connection-exporter
+```
+
+## Configuration
+
+The exporter is configured using a `config.yaml`. You can create a default configuration file in the current working directory with:
+
+```bash
+postgres-connection-exporter --create-config
+```
+
+Now, edit the `config.yaml` file to match your PostgreSQL connection settings. Here is an example configuration:
+
+```yaml
+hosts:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+```
+
+The user must have the `pg_monitor` role to access the `pg_stat_activity` view.
+
+## Usage
+
+After you have created your `config.yaml`, you can start the exporter with:
+
+```bash
+postgres-connection-exporter
+```
+
+By default, the exporter listens on `localhost:8989`. You can change the address in the `config.yaml` file, or using the `--host` and `--port` flags:
+
+```bash
+postgres-connection-exporter --host 0.0.0.0 --port 9898
+```
+
+You can also specify a different configuration file with the `--config` flag:
+
+```bash
+postgres-connection-exporter --config /path/to/config.yaml
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
