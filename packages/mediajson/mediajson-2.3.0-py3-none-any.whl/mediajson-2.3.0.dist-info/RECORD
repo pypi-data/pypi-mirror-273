@@ -1,0 +1,13 @@
+mediajson/__init__.py,sha256=V693kia4phmCqJN3W386-ietlV8JtzF1N87-fZ88IEw,1414
+mediajson/_version.py,sha256=N2rnp72f3kbj7e6why1TkinApuU3hGoZKohueMcLK8Q,98
+mediajson/decode.py,sha256=HDCb5ir6R4Qg-tFG9UbAXc36bKOt-ctHKLRmszSat5Y,3677
+mediajson/encode.py,sha256=SyL-vuXOd_VggKto2WgkFcdNW5RyObjEWCe8NaAyPz4,3567
+mediajson/immutable.py,sha256=n5G4NfmpMbQJTFsx9erKVPM7zE9Nhz0UWXSv17IIYlA,1151
+mediajson/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediajson/typing.py,sha256=G8VznYhEUcYgBaJXLsfrVS0HsOP6XgBKWEKh30DYzt4,3644
+mediajson-2.3.0.dist-info/LICENSE.md,sha256=NlWNm5dnBlSuj09xIExTRPPIs_Q9O0T7lZlatuxNh5c,557
+mediajson-2.3.0.dist-info/METADATA,sha256=qkYJ70M957Z_psaRiEQ9UNWLX9JYyjzZGTXpbbbzw48,561
+mediajson-2.3.0.dist-info/NOTICE.md,sha256=Gl4m9hlZEbs4wP8vqsq4u00DgtOH5RJl23a1QkVtEgw,602
+mediajson-2.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mediajson-2.3.0.dist-info/top_level.txt,sha256=dyUOYRgdIvEK3xkP9kw1j5U2-rMq7bxELf4jjiMTM30,10
+mediajson-2.3.0.dist-info/RECORD,,
