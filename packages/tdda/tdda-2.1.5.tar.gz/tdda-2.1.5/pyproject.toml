@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.8"
+name = "tdda"
+authors = [
+    { name = "Nick Radcliffe", email = "njr@stochasticsolutions.com" },
+    { name = "Simon Brown" },
+]
+dynamic=["version", "scripts", "dependencies", "keywords", "license", "readme"]
+
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "tdda"
+]
+
+testpaths = [
+    "serial",
+]
+

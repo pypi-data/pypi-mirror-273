@@ -1,0 +1,2 @@
+Column check failed.
+Wrong column type b (float64, expected int64)
