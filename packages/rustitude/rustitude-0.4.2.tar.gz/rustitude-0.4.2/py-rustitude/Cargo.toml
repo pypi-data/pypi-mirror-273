@@ -1,0 +1,20 @@
+[package]
+name = "py-rustitude"
+version = "0.4.1"
+edition = "2021"
+readme = { workspace = true }
+license-file = { workspace = true }
+
+[lib]
+name = "rustitude"
+crate-type = ["cdylib"]
+
+[dependencies]
+rayon = { workspace = true }
+rustitude = { workspace = true, default-features = true }
+rustitude-core = { workspace = true }
+rustitude-gluex = { workspace = true }
+
+[dependencies.pyo3]
+version = "0.21.2"
+features = ["abi3-py37"]
