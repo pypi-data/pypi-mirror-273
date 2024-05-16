@@ -1,0 +1,15 @@
+.flake8
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/dom_tokenizers/__init__.py
+src/dom_tokenizers/train.py
+src/dom_tokenizers.egg-info/PKG-INFO
+src/dom_tokenizers.egg-info/SOURCES.txt
+src/dom_tokenizers.egg-info/dependency_links.txt
+src/dom_tokenizers.egg-info/entry_points.txt
+src/dom_tokenizers.egg-info/requires.txt
+src/dom_tokenizers.egg-info/top_level.txt
+src/dom_tokenizers/pre_tokenizers/__init__.py
+src/dom_tokenizers/pre_tokenizers/dom_snapshot.py

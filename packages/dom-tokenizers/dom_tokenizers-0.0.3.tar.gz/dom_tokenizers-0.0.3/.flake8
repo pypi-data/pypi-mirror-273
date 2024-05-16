@@ -1,0 +1,9 @@
+[flake8]
+exclude = .git,__pycache__,venv*,.venv*,build,dist,.local,.#*,#*,*~
+per-file-ignores =
+    # imported but unused
+    src/dom_tokenizers/**/__init__.py: F401
+    # line too long
+    src/dom_tokenizers/pre_tokenizers/dom_snapshot.py: E501
+    # module level import not at top of file
+    src/dom_tokenizers/train.py: E402
