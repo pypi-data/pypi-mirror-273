@@ -1,0 +1,21 @@
+bcrypt
+inotify_simple
+jsonschema
+lock_file
+netaddr
+passlib
+pytz
+setuptools
+slapos.core
+zc.buildout
+zc.recipe.egg
+
+[:python_version < "3.4"]
+enum34
+
+[test]
+jsonschema
+mock
+psycopg2
+requests
+testfixtures
