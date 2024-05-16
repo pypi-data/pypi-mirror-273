@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "patternProperties": {
+        "all|pytest_sessionfinish|pytest_sessionstart|pytest_runtest_logstart|pytest_runtest_logreport|pytest_runtest_logfinish|logging": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/AdditionalProperties"
+                },
+                {
+                    "$ref": "#/definitions/LogFormatter"
+                }
+            ]
+        }
+    },
+    "anyOf": [
+        {
+            "type": "object",
+            "patternProperties": {
+                "all": {
+                    "$ref": "#/definitions/AdditionalProperties",
+                    "required": [
+                        "tag",
+                        "label"
+                    ]
+                }
+            }
+        },
+        {
+            "type": "object",
+            "patternProperties": {
+                "logging": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/AdditionalProperties"
+                        },
+                        {
+                            "$ref": "#/definitions/LogFormatter"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "object",
+            "patternProperties": {
+                "pytest_sessionfinish|pytest_sessionstart|pytest_runtest_logstart|pytest_runtest_logreport|pytest_runtest_logfinish": {
+                    "$ref": "#/definitions/AdditionalProperties"
+                }
+            }
+        }
+    ],
+    "additionalProperties": false,
+    "definitions": {
+        "RegexString": {
+            "type": "string",
+            "regex": "(\\$)?([<\\{])?[\\w_.-]+([>\\}])?"
+        },
+        "AdditionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tag": {
+                    "$ref": "#/definitions/RegexString",
+                    "default": "<fluentd-tag>"
+                },
+                "label": {
+                    "$ref": "#/definitions/RegexString",
+                    "default": "<fluentd-label>"
+                },
+                "replace": {
+                    "keys": {
+                        "type": "object",
+                        "patternProperties": {
+                            "status|stage|sessionId|testId|name|when|duration": {
+                                "$ref": "#/definitions/RegexString"
+                            }
+                        }
+                    },
+                    "values": {
+                        "type": "object",
+                        "patternProperties": {
+                            "passed|failed|skipped|error|start|finish|session|testcase": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "add": {
+                    "type": "object"
+                },
+                "drop": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "LogFormatter": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "recordFormatter": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "module": {
+                            "type": "string",
+                            "regex": "^([a-z_][a-z0-9_]*)+(\\.[a-z_][a-z0-9_]*)*$"
+                        },
+                        "filePath": {
+                            "type": "string"
+                        },
+                        "className": {
+                            "type": "string"
+                        }
+                    },
+                    "oneOf": [
+                        {
+                            "module": {
+                                "type": "string",
+                                "regex": "^([a-z_][a-z0-9_]*)+(\\.[a-z_][a-z0-9_]*)*$"
+                            },
+                            "required": [
+                                "module",
+                                "className"
+                            ]
+                        },
+                        {
+                            "filePath": {
+                                "type": "string"
+                            },
+                            "required": [
+                                "filePath",
+                                "className"
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "className"
+                    ]
+                }
+            },
+            "required": [
+                "recordFormatter"
+            ]
+        }
+    },
+    "required": [
+        "all"
+    ]
+}
