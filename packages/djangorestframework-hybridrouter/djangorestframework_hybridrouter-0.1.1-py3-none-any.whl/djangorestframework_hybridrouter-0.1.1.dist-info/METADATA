@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: djangorestframework-hybridrouter
+Version: 0.1.1
+Summary: A package to regsiter viewsets and views in the same router
+Home-page: https://github.com/enzofrnt/djangorestframework-hybridrouter
+Author: Made by enzo_frnt from a 
+Keywords: Django,Django REST Framework,viewsets,views,router,view,viewset
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django
+Requires-Dist: djangorestframework
+
+# djangorestframework-hybridrouter
+A router for ViewSets and View ! And with better browsable API !
+
+***Inspired by [this topic](https://stackoverflow.com/questions/18817988/using-django-rest-frameworks-browsable-api-with-apiviews/78459183#78459183
+).***
