@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: socketsecurity
+Version: 0.0.60
+Summary: Socket Security CLI for CI/CD
+Author-email: Douglas Coburn <douglas@socket.dev>
+Maintainer-email: Douglas Coburn <douglas@socket.dev>
+Project-URL: Homepage, https://socket.dev
+Keywords: socketsecurity,socket.dev,sca,oss,security
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: mdutils
+Requires-Dist: prettytable
+Requires-Dist: argparse
+
+# Socket Security CLI
