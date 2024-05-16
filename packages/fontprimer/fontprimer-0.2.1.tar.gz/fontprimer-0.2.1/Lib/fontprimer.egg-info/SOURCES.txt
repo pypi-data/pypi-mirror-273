@@ -1,0 +1,9 @@
+pyproject.toml
+Lib/fontprimer/__init__.py
+Lib/fontprimer/colrguidelines.py
+Lib/fontprimer/guidelines.py
+Lib/fontprimer.egg-info/PKG-INFO
+Lib/fontprimer.egg-info/SOURCES.txt
+Lib/fontprimer.egg-info/dependency_links.txt
+Lib/fontprimer.egg-info/requires.txt
+Lib/fontprimer.egg-info/top_level.txt

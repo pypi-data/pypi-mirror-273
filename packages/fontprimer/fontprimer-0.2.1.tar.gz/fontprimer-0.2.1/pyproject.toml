@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fontprimer"
+description = "A gftools-builder recipe provider for handwriting fonts"
+readme = "README.md"
+dynamic = ["version"]
+authors = [
+  { name = "Simon Cozens", email = "simon@simon-cozens.org" }
+]
+dependencies = [
+  "paintcompiler>=0.3.0",
+  "babelfont>=3.0.5",
+]
+[tool.setuptools.packages.find]
+where = ["Lib"]
+
+[tool.setuptools_scm]
+git_describe_command = "git describe --match 'v*'"

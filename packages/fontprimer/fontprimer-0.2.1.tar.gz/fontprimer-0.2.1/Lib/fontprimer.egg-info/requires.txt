@@ -1,0 +1,2 @@
+paintcompiler>=0.3.0
+babelfont>=3.0.5

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fontprimer
+Version: 0.2.1
+Summary: A gftools-builder recipe provider for handwriting fonts
+Author-email: Simon Cozens <simon@simon-cozens.org>
+Description-Content-Type: text/markdown
+Requires-Dist: paintcompiler>=0.3.0
+Requires-Dist: babelfont>=3.0.5
