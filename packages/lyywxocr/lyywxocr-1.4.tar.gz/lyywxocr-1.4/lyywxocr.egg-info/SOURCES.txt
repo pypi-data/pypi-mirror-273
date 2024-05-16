@@ -1,0 +1,8 @@
+LICENSE
+README.md
+lyywxocr.py
+setup.py
+lyywxocr.egg-info/PKG-INFO
+lyywxocr.egg-info/SOURCES.txt
+lyywxocr.egg-info/dependency_links.txt
+lyywxocr.egg-info/top_level.txt
