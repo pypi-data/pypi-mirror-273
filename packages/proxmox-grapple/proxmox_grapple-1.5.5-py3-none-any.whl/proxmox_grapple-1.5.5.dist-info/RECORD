@@ -1,0 +1,11 @@
+proxmox_grapple/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proxmox_grapple/_version.py,sha256=xsDT6ryShhQQK24Bw1uqyQ-iWYEMz5nJFNa-x4pSQzY,411
+proxmox_grapple/config.py,sha256=BOshpJYaZ7i8dQNhHzvn4Ji8FJ9WaqCsKfk8H8dFENQ,1316
+proxmox_grapple/vma_extractor.py,sha256=FZfTE45BO2hKlSqWVtshQaVTSGzF6EYUfX8M5TwWW3Y,3688
+proxmox_grapple/vzdump_hook_script.py,sha256=ENdG0DlajZeokI4tqhnOSeEXy-I4IXz7nZhENjFG4lg,5209
+proxmox_grapple-1.5.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+proxmox_grapple-1.5.5.dist-info/METADATA,sha256=tUKxZiriv9Zsvg_av3OPS4xr4UE9weVmOGv8ubfer9c,6568
+proxmox_grapple-1.5.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+proxmox_grapple-1.5.5.dist-info/entry_points.txt,sha256=DLpdYCQkqgH9pEMebyRNjq1lwUnuCf85AnGRAX44icA,76
+proxmox_grapple-1.5.5.dist-info/top_level.txt,sha256=LdQJoauc1ELUM4NVDof8h9R4OOZioih3LGbWrf9uYno,16
+proxmox_grapple-1.5.5.dist-info/RECORD,,
