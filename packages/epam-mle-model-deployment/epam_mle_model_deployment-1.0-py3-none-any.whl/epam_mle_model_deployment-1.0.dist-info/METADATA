@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: epam_mle_model_deployment
+Version: 1.0
+Summary: Code for deploy model
+Home-page: https://github.com/ValeriiZghurovskyi/EPAM-MLE-lab/tree/main/Module%205.%20Model%20deployment
+Author: Valerii Zghurovskyi
+Author-email: valerii_zghurovskyi@epam.com
+Requires-Dist: flask
+Requires-Dist: torch
+Requires-Dist: pandas
+

@@ -1,0 +1,9 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/batch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/batch/predict.py,sha256=AsPpdCEN36srrjpq_Z8mI-siVFhJh1BZS9Ob5j6-1qA,2178
+app/online/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/online/flask_app.py,sha256=RDudy06GVU7BuElFy84kbU-u3XzoqOYcZiQJlshpxcY,2015
+epam_mle_model_deployment-1.0.dist-info/METADATA,sha256=4CuToF35V-A2S5Uhx3boDiLlQxhkkcKWPXNhrYMHM6k,339
+epam_mle_model_deployment-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+epam_mle_model_deployment-1.0.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+epam_mle_model_deployment-1.0.dist-info/RECORD,,
