@@ -1,0 +1,6 @@
+ensure_packages/__init__.py,sha256=WGVwD5PnEMClHSqZVAZrYzCK3vnRS6dj5Ynzjlvh-_M,44
+ensure_packages/ensure_package.py,sha256=Rsdw-1UxO_wxGLAyjJwIhrZTFCOIHJ_-cceY1quwVgs,1203
+ensure_packages-0.1.2.dist-info/METADATA,sha256=gp_8mFx1e9A2mkYNU8oFfToVsFIQrX1l5qc9mtyQCZ4,578
+ensure_packages-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ensure_packages-0.1.2.dist-info/top_level.txt,sha256=TJqjGztMe15SHNWNGeeTJITzo80V1sY6-WS-y-GstwE,16
+ensure_packages-0.1.2.dist-info/RECORD,,
