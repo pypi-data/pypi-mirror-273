@@ -1,0 +1,2 @@
+[console_scripts]
+cloud_run_flask_template = cloud_run_flask_template.generator:generate_project
