@@ -1,0 +1,3 @@
+[console_scripts]
+unmarker=move_unmarker.unmarker:main
+
