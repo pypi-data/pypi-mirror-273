@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ctcontour
+Version: 1.2
+Summary: Fully automated patient abdomino-pelvic contouring for CT images. https://doi.org/10.1016/j.ejmp.2022.10.027.
+Home-page: https://github.com/ericpace/ct_contour
+Author: Eric Pace
+Author-email: ericpace@pm.me
+License: GNU GPLv3
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: pydicom==2.1.2
+Requires-Dist: numba==0.52.0
+Requires-Dist: scipy==1.4.1
+Requires-Dist: scikit-image==0.18.2
+Requires-Dist: pandas==1.2.1
+Requires-Dist: matplotlib==3.3.4
+Requires-Dist: seaborn==0.11.1
+Requires-Dist: PyPDF2==1.26.0
+Requires-Dist: numpy==1.23.4
+
+Fully automated patient abdomino-pelvic contouring for CT images. https://doi.org/10.1016/j.ejmp.2022.10.027.

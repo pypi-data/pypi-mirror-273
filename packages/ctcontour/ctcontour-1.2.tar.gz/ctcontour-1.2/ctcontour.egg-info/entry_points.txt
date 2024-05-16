@@ -1,0 +1,2 @@
+[console_scripts]
+ctc = ctcontour.__main__:contour
