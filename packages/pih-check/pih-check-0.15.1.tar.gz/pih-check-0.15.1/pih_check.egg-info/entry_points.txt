@@ -1,0 +1,2 @@
+[console_scripts]
+pih-check = CheckerService.__main__:start
