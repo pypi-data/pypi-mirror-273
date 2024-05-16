@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+sphinx_inventory_builder/__init__.py
+sphinx_inventory_builder.egg-info/PKG-INFO
+sphinx_inventory_builder.egg-info/SOURCES.txt
+sphinx_inventory_builder.egg-info/dependency_links.txt
+sphinx_inventory_builder.egg-info/not-zip-safe
+sphinx_inventory_builder.egg-info/requires.txt
+sphinx_inventory_builder.egg-info/top_level.txt

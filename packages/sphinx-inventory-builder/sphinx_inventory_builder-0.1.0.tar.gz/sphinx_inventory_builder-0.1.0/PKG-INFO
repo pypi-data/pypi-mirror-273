@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sphinx-inventory-builder
+Version: 0.1.0
+Summary: Adds a custom inventory builder to Sphinx
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: sphinx>=4.0
