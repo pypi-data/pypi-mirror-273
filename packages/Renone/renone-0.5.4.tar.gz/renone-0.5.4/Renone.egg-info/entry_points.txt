@@ -1,0 +1,2 @@
+[console_scripts]
+Renone = renone.__main__:main
