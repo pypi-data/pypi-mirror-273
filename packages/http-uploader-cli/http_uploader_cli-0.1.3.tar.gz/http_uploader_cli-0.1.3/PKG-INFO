@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: http-uploader-cli
+Version: 0.1.3
+Summary: Simple HTTP CLI json data uploader
+Home-page: https://github.com/rafailmdzdv/http-uploader-cli
+Author: rafailmdzdv
+Author-email: rafayt323@xmail.ru
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=23.2.1,<24.0.0)
+Requires-Dist: aiohttp (>=3.9.5,<4.0.0)
+Requires-Dist: aiomultiprocess (>=0.9.1,<0.10.0)
+Requires-Dist: prettytable (>=3.10.0,<4.0.0)
+Project-URL: Repository, https://github.com/rafailmdzdv/http-uploader-cli
+Description-Content-Type: text/markdown
+
+### Http Uploader CLI
+
+#### Dependencies
+- aiohttp
+- aiofiles
+- aiomultiprocess
+
+> [!WARNING]
+> Check this
+> [click](https://tinyurl.com/ycx35xxs "warning")
+
