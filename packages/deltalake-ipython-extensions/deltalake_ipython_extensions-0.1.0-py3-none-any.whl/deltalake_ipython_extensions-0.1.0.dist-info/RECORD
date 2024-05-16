@@ -1,0 +1,5 @@
+deltalake_ipython_extensions/__init__.py,sha256=LkQMtNhE4q7O8Ryfu4NaJpDH1sW539ge_y89FDJ--VM,166
+deltalake_ipython_extensions/duckdb_extensions.py,sha256=w8O_OwWoR8mSUPxirUEiBYz8HEWvKqxF2xP2t4FnL44,1849
+deltalake_ipython_extensions-0.1.0.dist-info/METADATA,sha256=XjonEP7EWuIwVg_AhHZiDrYDPPUtgmC7t_v_ww4e58U,511
+deltalake_ipython_extensions-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+deltalake_ipython_extensions-0.1.0.dist-info/RECORD,,
