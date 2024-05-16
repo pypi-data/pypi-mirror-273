@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/fuzzquery/__init__.py
+src/fuzzquery/main.py
+src/fuzzquery.egg-info/PKG-INFO
+src/fuzzquery.egg-info/SOURCES.txt
+src/fuzzquery.egg-info/dependency_links.txt
+src/fuzzquery.egg-info/requires.txt
+src/fuzzquery.egg-info/top_level.txt
