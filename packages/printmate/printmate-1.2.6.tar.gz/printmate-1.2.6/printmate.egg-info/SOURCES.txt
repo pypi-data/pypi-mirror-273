@@ -1,0 +1,8 @@
+license
+setup.py
+printmate.egg-info/PKG-INFO
+printmate.egg-info/SOURCES.txt
+printmate.egg-info/dependency_links.txt
+printmate.egg-info/entry_points.txt
+printmate.egg-info/requires.txt
+printmate.egg-info/top_level.txt
