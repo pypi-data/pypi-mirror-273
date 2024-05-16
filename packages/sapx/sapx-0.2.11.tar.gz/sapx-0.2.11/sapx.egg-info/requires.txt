@@ -1,0 +1,13 @@
+aioamqp~=0.15
+httpx~=0.26
+redis~=5.0
+celery~=5.3
+pydantic~=2.5
+PyJWT~=2.8
+fastAPI~=0.105
+itsdangerous~=2.1
+beanie~=1.23
+passlib~=1.7
+motor~=3.3
+typing-extensions~=4.9
+PyYAML~=6.0
