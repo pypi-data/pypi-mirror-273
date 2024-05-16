@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+counterfusion/counterfusion.egg-info/PKG-INFO
+counterfusion/counterfusion.egg-info/SOURCES.txt
+counterfusion/counterfusion.egg-info/dependency_links.txt
+counterfusion/counterfusion.egg-info/requires.txt
+counterfusion/counterfusion.egg-info/top_level.txt
