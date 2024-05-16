@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry-core>=1.0.19"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "aipkgs-firebase"
+version = "1.0.19"
+description = "A utility package for interacting with Firebase, specifically Firestore, in a more streamlined and efficient manner."
+authors = ["Alexy <alexy.ib@outlook.com>"]
+# New attributes
+license = "MIT"
+readme = "README.rst"
+homepage = "https://gitlab.com/aipy/public/packages.git"
+repository = "https://gitlab.com/aipy/public/packages.git"
+keywords = ["ai"]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11.4"
+firebase-admin = "^6.5.0"
+aipkgs-core = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
