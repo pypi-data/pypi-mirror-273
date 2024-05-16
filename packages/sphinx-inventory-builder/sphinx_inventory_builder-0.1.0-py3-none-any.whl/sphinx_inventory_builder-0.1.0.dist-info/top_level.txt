@@ -1,0 +1,1 @@
+sphinx_inventory_builder
