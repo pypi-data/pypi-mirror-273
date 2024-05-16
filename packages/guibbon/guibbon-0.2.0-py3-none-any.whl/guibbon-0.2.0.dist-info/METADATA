@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: guibbon
+Version: 0.2.0
+Summary: Very high level GUI with an API similar to the HighGUI of OpenCV
+Home-page: https://github.com/ManuGira/Guibbon.git
+Keywords: GUI,Tkinter,OpenCV
+Author: Manu Gira
+Author-email: manu.gira@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Pillow (>=9.1.0,<10.0.0)
+Requires-Dist: opencv-python (>=4.5.4.60,<5.0.0.0)
+Project-URL: Bug Report, https://github.com/ManuGira/Guibbon/issues
+Project-URL: Repository, https://github.com/ManuGira/Guibbon.git
+Description-Content-Type: text/markdown
+
+# ![icon](images/icon32.png) Guibbon with U ![icon](images/icon32.png) 
+![Tests](https://github.com/ManuGira/Guibbon/actions/workflows/tests.yml/badge.svg)
+
+### High-level GUI with an API similar to the HighGUI of OpenCV. 
+**If you know how to use the GUI of OpenCV, then you already know how to use Guibbon.**
+
+It allows to display an image and add GUI controllers such as:
+
+ - Sliders (trackbar)
+ - Buttons
+ - Radio buttons
+ - Check boxes
+ - Color picker
+ - Draggable points and polygons on the displayed image
+ - Any custom widget that you write in Tkinter
+
+### Reasons why you want to use Guibbon:
+
+ - It's fast to learn and fast to code.
+ - It's using Tkinter which is natively installed in most python distributions
+ - Beside Tkinter, it only has 3 dependencies: numpy, opencv-python and pillow
+ - It's less than 200 KB
+ - You can create your own custom widget.
+ 
+### Links
+
+* Source code hosted on [GitHub](https://github.com/ManuGira/Guibbon)
+* Package hosted on [PyPl](https://pypi.org/project/guibbon)
+* Documentation hosted on [Github Pages](https://manugira.github.io/Guibbon/)
+
