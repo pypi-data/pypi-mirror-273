@@ -1,0 +1,7 @@
+postgres_connection_exporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres_connection_exporter/__main__.py,sha256=mr-1opYWWhL0B4pTIbiW6cIRlgBrP93o0iHqaGqY9Jg,4631
+postgres_connection_exporter-0.0.1.dist-info/METADATA,sha256=D2zpcU3NJ_aBbdUNDBYT3SO-iY3HjEgw-lSnvtCqVpA,2902
+postgres_connection_exporter-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+postgres_connection_exporter-0.0.1.dist-info/entry_points.txt,sha256=QllreADeNPsCwe1KtJcUE1pchgGacHkCefPtZqjz008,92
+postgres_connection_exporter-0.0.1.dist-info/licenses/LICENSE,sha256=qScyaC_yXFpeNNXqiu7nrCn0sgMP3HkcvtbMGLa1xXg,1099
+postgres_connection_exporter-0.0.1.dist-info/RECORD,,
