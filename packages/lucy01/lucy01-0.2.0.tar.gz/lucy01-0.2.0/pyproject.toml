@@ -1,0 +1,48 @@
+[project]
+name = "lucy01"
+version = "0.2.0"
+description = "CLI companion for CP."
+readme = "README.md"
+dependencies = [
+    "bs4",
+    "click",
+    "dropbox",
+    "lxml",
+    "python-dotenv",
+    "requests",
+    "selenium",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+lint = ["mypy", "pylint", "pylint[spelling]", "yapf"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+lucy = "lucy.main:cli"
+
+[tool.mypy]
+non_interactive = true
+install_types = true
+strict = true
+exclude = "build|venv"
+
+[tool.pylint]
+ignore = ["venv", "build"]
+[tool.pylint.'MESSAGES CONTROL']
+disable = "missing-module-docstring,missing-function-docstring,missing-class-docstring,missing-function-docstring"
+[tool.pylint.'SPELLING']
+spelling-dict = 'en_US'
+spelling-private-dict-file = 'private-dictionary.txt'
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 100
+[tool.yapfignore]
+ignore_patterns = ["venv/**"]
+
+# [tool.pytest.ini_options]
+# pythonpath = "."
