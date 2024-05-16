@@ -1,0 +1,15 @@
+[
+    {
+      "model": "digital_signatures.digitalsignaturemethod",
+      "pk": "325b4041-4a90-4e92-9a56-023a5335abac",
+      "fields": {
+        "name": "OpenSign",
+        "code": "OS-001",
+        "provider": "opensign",
+        "type": "ses",
+        "supports_bulk_signing": "True",
+        "sequence": 2
+      }
+    }
+  ]
+  
