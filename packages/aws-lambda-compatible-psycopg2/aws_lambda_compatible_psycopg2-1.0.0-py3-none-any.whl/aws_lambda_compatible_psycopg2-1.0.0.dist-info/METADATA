@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aws_lambda_compatible_psycopg2
+Version: 1.0.0
+Summary: PostgreSQL database adapter for the Python programming language.
+Author: Abinaya Subba
+Author-email: abinaya.subba@anko.com
+Keywords: python,first package
+
+PostgreSQL database adapter for the Python programming language.
