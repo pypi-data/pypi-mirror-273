@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: counterfusion
+Version: 0.1.0
+Author-email: Lixian Wang <lixianphys@gmail.com>
+License-File: LICENSE
+Requires-Dist: numpy ==1.21.0
+Requires-Dist: pandas ==1.3.0
+Requires-Dist: matplotlib >=3.6.0
+
