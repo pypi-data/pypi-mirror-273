@@ -1,0 +1,2 @@
+[console_scripts]
+libyear = libyear.main:app
