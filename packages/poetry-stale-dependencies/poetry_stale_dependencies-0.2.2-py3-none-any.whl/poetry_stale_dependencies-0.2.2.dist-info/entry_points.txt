@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+stale_dependencies=poetry_stale_dependencies.plugin:StaleDependenciesPlugin
+
