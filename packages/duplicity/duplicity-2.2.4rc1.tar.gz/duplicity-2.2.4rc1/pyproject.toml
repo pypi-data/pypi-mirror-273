@@ -1,0 +1,134 @@
+[project]
+name = "duplicity"
+version = "2.2.4rc1"
+dynamic = ["dependencies"]
+
+
+[build-system]
+requires = [
+    "build>=1.1",
+    "pip>=24.0",
+    "pipx>=1.5",
+    "packaging>=20.0",
+    "setuptools>=60.0",
+    "wheel>=0.42.0",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project.scripts]
+duplicity = "duplicity.__main__:dup_run"
+
+
+[tools.setuptools]
+description = "Encrypted backup using rsync algorithm"
+long_description = {file = "README.md"}
+long_description_content_type = "text/markdown"
+readme = "README.md"
+author = "Ben Escoto"
+author_email = "ben at emrose dot org"
+maintainer = "Kenneth Loafman"
+maintainer_email = "kenneth at loafman dot com"
+url = "http://duplicity.us"
+python_requires = ">= 3.8, <3.13"
+platforms = [
+    "any"
+]
+install_requires = [
+    "fasteners",
+]
+tests_require = [
+    "fasteners",
+    "pexpect",
+    "pytest",
+    "pytest-runner",
+]
+test_suite = [
+    "testing.test_code.py",
+    "testing/unit",
+    "testing/functional",
+]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Archiving :: Backup",
+]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+[tool.setuptools.packages.find]
+where = [
+    ".",
+]
+include = [
+    "duplicity",
+    "duplicity.backends",
+    "duplicity.backends.pyrax_identity",
+]
+exclude = [
+    ".*",
+    "Makefile",
+    "crowdin.yml",
+    "debian*",
+    "docs*",
+    "readthedocs.yaml",
+    "snap*",
+    "testing*",
+    "tools*",
+    "venv*",
+]
+
+
+[tool.black]
+line-length = 120
+target-version = [
+    "py38",
+    "py39",
+    "py310",
+    "py311",
+    "py312",
+]
+
+
+[tool.pytest.ini_options]
+addopts = [
+    "--capture=fd",
+    "--failed-first",
+    "--showlocals",
+]
+markers = [
+    "slow: test runs >= 10 secs",
+]
+testpaths = [
+    "testing/unit",
+    "testing/functional",
+]
+
+
+[tool.cibuildwheel]
+archs = [
+    "x86_64",
+]
+build = [
+    "cp{38,39,310,311,312}-manylinux_x86_64",
+]
+before-build = [
+    # WARNING: wheel builds are Centos based, not Debian.
+    "yum install -y gcc gcc-c++ make git intltool lftp librsync-devel",
+    "yum install -y libffi-devel openssl-devel openssl par2cmdline rdiff-backup tzdata",
+    "python -m pip install -r requirements.txt",
+    "python ./setup.py build_ext",
+]

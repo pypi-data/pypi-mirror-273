@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+# -*- Mode:Makefile; indent-tabs-mode:t; tab-width:4; encoding:utf-8 -*-
+
+# Uncomment these to turn on verbose mode.
+#export DH_VERBOSE=1
+#export PYBUILD_VERBOSE=1
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_python3:
+	mkdir -p $(CURDIR)/debian/duplicity/usr/bin
+	mv -f $(CURDIR)/debian/duplicity.sh $(CURDIR)/debian/duplicity/usr/bin/duplicity
+	dh_python3
+
+override_dh_auto_test:
+	./setup.py test
+
+execute_after_dh_auto_install:
+	rm -r debian/duplicity/usr/share/doc/duplicity-*
+
+override_dh_installdocs:
+	dh_installdocs README.md README-LOG.md README-REPO.md README-SNAP.md README-TESTING.md

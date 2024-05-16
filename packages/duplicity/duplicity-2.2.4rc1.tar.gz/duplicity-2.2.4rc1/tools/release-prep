@@ -1,0 +1,78 @@
+#!/bin/bash
+# -*- Mode:Shell; indent-tabs-mode:nil; tab-width -*-
+#
+# Copyright 2022 Kenneth Loafman <kenneth@loafman.com>
+#
+# This file is part of duplicity.
+#
+# Duplicity is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 2 of the License, or (at your
+# option) any later version.
+#
+# Duplicity is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with duplicity; if not, write to the Free Software Foundation,
+# Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+if [ "$1" != "" ]; then
+    REL=$1
+else
+    echo "usage: $0 version"
+    exit 1
+fi
+
+echo "Prepping for release ${REL}"
+
+while true; do
+    read -n 1 -p "Is ${REL} the correct version (y/n)?" yn
+    case $yn in
+        [Yy]* ) echo; break;;
+        [Nn]* ) echo; exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+# find out if repo is clean
+CNT=`git status --porcelain | tee /dev/stderr | wc -l`
+if [ "$CNT" -eq 0 ]; then
+    echo "Repo is clean.  Proceeding."
+else
+    echo "Repo is dirty.  Stopping."
+    exit 1
+fi
+
+# add release tag and push it
+git tag -f rel.${REL}
+git push --tags -f -o ci.skip
+
+# put in correct version
+export DUP_VERSION=${REL}
+./setup.py setversion
+git commit -m"chg:pkg: Prep for ${REL}" \
+    duplicity/__init__.py \
+    man/duplicity.1 \
+    pyproject.toml \
+    setup.py \
+    snap/snapcraft.yaml
+
+# move release tag and push it
+git tag -f rel.${REL}
+git push --tags -f -o ci.skip
+
+# make CHANGELOG.md
+tools/makechangelog
+git commit -m"chg:pkg: Update changelog." CHANGELOG.md
+git push -o ci.skip
+
+# move release tag and push it
+git tag -f rel.${REL}
+git push --tags -f -o ci.skip
+
+# make and sign the release
+python3 ./setup.py -q sdist
+gpg --use-agent -b dist/duplicity-${REL}.tar.gz
