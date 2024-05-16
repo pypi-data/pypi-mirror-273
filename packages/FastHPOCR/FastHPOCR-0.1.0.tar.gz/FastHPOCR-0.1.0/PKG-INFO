@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: FastHPOCR
+Version: 0.1.0
+Summary: FastHPOCR is a phenotype concept recognition package using the Human Phenotype Ontology to extract concepts from free text.
+Author: Tudor Groza
