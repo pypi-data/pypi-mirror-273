@@ -1,0 +1,11 @@
+certbot_dns_mydnsjp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_mydnsjp/cert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_mydnsjp/cert/client.py,sha256=eINFj39Rf0nCzNKtbSsWoVhLj0-kByU81MrXemSHxmg,4796
+certbot_dns_mydnsjp/mydnsjp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_mydnsjp/mydnsjp/client.py,sha256=e-uZWgYnbAKL2ZF3i91H8g2-DzD7DYoEsmXN5-6JsU8,19582
+certbot_dns_mydnsjp-1.0.1.dist-info/LICENSE,sha256=Y16gyXVzTqyErap5fttA4wTH_3x8uKQmdHFm9Ij1L28,1069
+certbot_dns_mydnsjp-1.0.1.dist-info/METADATA,sha256=HEE1vUijG34M5U2pC2I6lKktKzHVu9d6jt3fZAiPJk8,15478
+certbot_dns_mydnsjp-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+certbot_dns_mydnsjp-1.0.1.dist-info/entry_points.txt,sha256=fD6_mZ9PVAsIx1eh2tNahKnsM44g_2WBumdsQJf7unY,78
+certbot_dns_mydnsjp-1.0.1.dist-info/top_level.txt,sha256=A61EnQ9mXG5zIGY15-OQGMxcbSw0n_58qWCzvEXs5cY,20
+certbot_dns_mydnsjp-1.0.1.dist-info/RECORD,,
