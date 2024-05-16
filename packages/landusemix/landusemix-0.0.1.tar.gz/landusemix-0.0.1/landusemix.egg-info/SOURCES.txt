@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+landusemix.egg-info/PKG-INFO
+landusemix.egg-info/SOURCES.txt
+landusemix.egg-info/dependency_links.txt
+landusemix.egg-info/requires.txt
+landusemix.egg-info/top_level.txt
+tests/__init__.py
+tests/test_landusemix.py
