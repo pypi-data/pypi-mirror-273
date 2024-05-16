@@ -1,0 +1,12 @@
+beats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beats/filtering.py,sha256=tfGvOwObzgJ1eeuaIXPlnMW5VMVxjJtvdIkdWk18JRQ,1215
+beats/types.py,sha256=F3JcauVEMLIT45U4OYQWP--6f1U7CySiWXwW4_e3e7s,409
+beats/estimators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beats/estimators/api.py,sha256=KtS1Y-G5eWC5-O8KpcUgkV9HisxieI4f1iaSXbsIvRQ,561
+beats/estimators/librosa.py,sha256=QoGf5T-VZILgfKYnpdyOYKDmu9EvJT3NU2d9ie7tm0k,1929
+beats/estimators/trivial.py,sha256=lhK7x3kPHndrOlJn3Uj-34YhZh1-aWxZVmd9rsvp8yU,381
+beats/estimators/utils.py,sha256=LCG0nu_COYWlqH8m1dg_I6H9KarjJM_rYwSrFLszojk,903
+beats_swing-0.0.1.dist-info/METADATA,sha256=xjy3Swbfwd-94M1XUJYg0LlG-SxGjE10o56rLDgQ7Ps,1692
+beats_swing-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+beats_swing-0.0.1.dist-info/licenses/LICENSE.txt,sha256=qcAKozo8qur1eO29E_PSeJs_OOLZb2rY4M7BLJx-9Ng,1059
+beats_swing-0.0.1.dist-info/RECORD,,
