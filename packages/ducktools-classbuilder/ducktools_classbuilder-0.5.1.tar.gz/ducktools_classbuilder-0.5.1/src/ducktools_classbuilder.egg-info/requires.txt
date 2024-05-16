@@ -1,0 +1,13 @@
+
+[docs]
+sphinx
+myst-parser
+sphinx_rtd_theme
+
+[testing]
+pytest
+pytest-cov
+mypy
+
+[testing:python_version < "3.10"]
+typing_extensions
