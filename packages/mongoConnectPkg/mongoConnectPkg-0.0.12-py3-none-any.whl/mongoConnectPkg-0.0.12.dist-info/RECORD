@@ -1,0 +1,8 @@
+database_automation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+database_automation/mongo_crud.py,sha256=XcNP3RcFoVehxINKKwxa1kJE63ACiJKaKWJweYv4aTU,2464
+mongodb_connect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongodb_connect/mongo_crud.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongoConnectPkg-0.0.12.dist-info/METADATA,sha256=djNAspwTE2eRZAc2vtdgdfVjhucJyUzlIFiZTLeL10c,2404
+mongoConnectPkg-0.0.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mongoConnectPkg-0.0.12.dist-info/top_level.txt,sha256=GQOi5Kn9twup0OlG-HhqM4RnrHMyJEbdOmOEfj2dMaQ,36
+mongoConnectPkg-0.0.12.dist-info/RECORD,,
