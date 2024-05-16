@@ -1,0 +1,13 @@
+tqdm
+SoccerNet
+matplotlib
+scikit-learn
+mmengine
+torch
+torchvision
+pytorch-lightning
+numpy
+opencv-python
+moviepy
+tabulate
+timm
