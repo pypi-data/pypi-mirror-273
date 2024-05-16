@@ -1,0 +1,15 @@
+Pillow
+requests
+colored
+packaging
+tornado
+simple_tornado>=0.2.2
+retry
+simplejson
+tabulate
+logzero
+deprecation
+
+[openssl]
+pyOpenSSL
+pyasn1

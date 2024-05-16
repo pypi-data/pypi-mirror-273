@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+0.12.10
+-------
+
+* remove tool.appetizer since the mirror proxy closed
+* req.set\_version(0), close #377
+* fix tests to run print error
+* fix back
+* wrap socket error to tidevice.SocketError
