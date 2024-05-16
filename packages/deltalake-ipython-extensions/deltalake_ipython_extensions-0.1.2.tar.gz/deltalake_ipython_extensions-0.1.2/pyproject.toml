@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "deltalake-ipython-extensions"
+version = "0.1.2"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+deltalake = ">=0.17.3"
+duckdb = ">=0.10.2"
+sqlparse = ">=0.5.0"
+ipython = ">=8.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
