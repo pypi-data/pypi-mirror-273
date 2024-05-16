@@ -1,0 +1,8 @@
+README.md
+setup.py
+metals_api/__init__.py
+metals_api/client.py
+metals_api.egg-info/PKG-INFO
+metals_api.egg-info/SOURCES.txt
+metals_api.egg-info/dependency_links.txt
+metals_api.egg-info/top_level.txt
