@@ -1,0 +1,2 @@
+recursive-include ebilab/data *
+include ebilab/icon.ico
