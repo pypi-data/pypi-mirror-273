@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ImageDimensionCheck
+Version: 1.4.0
+Summary: Checking dimension of many images during Image processing
+Author: Anurupa Karmakar
+Author-email: anurupakarmakar.dgp18@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+License-File: License.txt
+
