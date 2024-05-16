@@ -1,0 +1,3 @@
+[console_scripts]
+hstream=hstream.cli:cli
+
