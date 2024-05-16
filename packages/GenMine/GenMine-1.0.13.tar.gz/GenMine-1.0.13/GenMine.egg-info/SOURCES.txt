@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+GenMine/GenMine.py
+GenMine/__init__.py
+GenMine/command.py
+GenMine/main.py
+GenMine.egg-info/PKG-INFO
+GenMine.egg-info/SOURCES.txt
+GenMine.egg-info/dependency_links.txt
+GenMine.egg-info/entry_points.txt
+GenMine.egg-info/not-zip-safe
+GenMine.egg-info/requires.txt
+GenMine.egg-info/top_level.txt
