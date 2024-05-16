@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+stickydata/__init__.py
+stickydata/stickydata.py
+stickydata.egg-info/PKG-INFO
+stickydata.egg-info/SOURCES.txt
+stickydata.egg-info/dependency_links.txt
+stickydata.egg-info/requires.txt
+stickydata.egg-info/top_level.txt
