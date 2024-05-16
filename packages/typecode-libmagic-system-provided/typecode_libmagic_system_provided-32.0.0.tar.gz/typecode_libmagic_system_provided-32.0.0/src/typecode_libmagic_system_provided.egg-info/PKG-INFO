@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: typecode-libmagic-system-provided
+Version: 32.0.0
+Summary: A ScanCode path provider plugin to provide a system package provided libmagic binary and database.
+Home-page: https://github.com/nexB/scancode-plugins
+Author: nexB
+Author-email: info@aboutcode.org
+License: apache-2.0 AND bsd-simplified-darwin AND (bsd-simplified AND public-domain AND bsd-new AND isc AND (bsd-new OR gpl-1.0-plus) AND bsd-original)
+Keywords: open source,typecode,libmagic
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+License-File: bsd-new.LICENSE
+License-File: bsd-original.LICENSE
+License-File: bsd-simplified.LICENSE
+License-File: bsd-simplified-darwin.LICENSE
+License-File: gpl-1.0.LICENSE
+License-File: gpl-1.0-plus.LICENSE
+License-File: isc.LICENSE
+License-File: libmagic.ABOUT
+License-File: libmagic.NOTICE
+License-File: public-domain.LICENSE
+License-File: README.rst
+License-File: typecode-libmagic.ABOUT
+
+A ScanCode path provider plugin to provide a system package provided libmagic binary and database.
