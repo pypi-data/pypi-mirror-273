@@ -1,0 +1,3 @@
+[console_scripts]
+obs-waykey=obs_waykey:ignite
+

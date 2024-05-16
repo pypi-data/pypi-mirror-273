@@ -1,0 +1,8 @@
+obs_waykey/__init__.py,sha256=pxmMdumdtz7bkP4KpwM87SKJz8oTkoM3iLQfsQEd2RA,193
+obs_waykey/toggles_ignition.py,sha256=OuwzZEgPMFcNajqlGpVA0L37-f4WuwPWvAfYGtQ9fXY,394
+obs_waykey/toggles_logic.py,sha256=DlyXa9Yblh9pfwBHdnlqmD0kyVulyeRgltILf9YETp8,994
+obs_waykey-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+obs_waykey-0.2.0.dist-info/METADATA,sha256=HkWmE0rwlK_0Zjcihp78474ew0GJ15o68-pfEHBn7Y4,2190
+obs_waykey-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+obs_waykey-0.2.0.dist-info/entry_points.txt,sha256=UxkSnM30jrXUNgqSJv1aF3jXqNjL6QIwk7o8OOytfWM,48
+obs_waykey-0.2.0.dist-info/RECORD,,
