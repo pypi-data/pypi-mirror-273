@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "approck-fastapi-utils"
+version = "0.1.4"
+description = ""
+authors = ["Aleksey Dalekin <ald@approck.pro>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+fastapi = "^0.109.2"
+pydantic = ">=2.4.1"
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+mypy = "^1.10.0"
+pre-commit = "^3.7.1"
+pytest = "^8.2.0"
+ruff = "^0.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
