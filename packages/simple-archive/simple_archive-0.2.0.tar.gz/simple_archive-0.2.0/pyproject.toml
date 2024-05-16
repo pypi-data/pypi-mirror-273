@@ -1,0 +1,40 @@
+[project]
+name = "simple-archive"
+version = "0.2.0"
+description = "CLI and library for working with Simple Archive Format"
+authors = [
+    { name = "Språkbanken Text", email = "sb-info@svenska.gu.se" },
+    { name = "Kristoffer Andersson", email = "kristoffer.andersson@gu.se" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "typer<1.0.0,>=0.7.0",
+    "pydantic>=2",
+]
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+safar = "simple_archive.cli:app"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy>=1.10.0",
+    "pytest>=8.2.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.4.4",
+    "bump-my-version>=0.10.0",
+]
+
+[tool.pdm.build]
+includes = [
+    "simple_archive",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
