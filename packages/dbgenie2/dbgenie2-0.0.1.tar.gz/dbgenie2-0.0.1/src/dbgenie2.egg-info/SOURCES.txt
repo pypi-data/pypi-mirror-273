@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/dbgenie/__init__.py
+src/dbgenie/mongodb/__init__.py
+src/dbgenie/mongodb/mongocrud.py
+src/dbgenie/mysql/__init__.py
+src/dbgenie/mysql/mysqlcrud.py
+src/dbgenie/postgresql/__init__.py
+src/dbgenie/postgresql/postgrescrud.py
+src/dbgenie2.egg-info/PKG-INFO
+src/dbgenie2.egg-info/SOURCES.txt
+src/dbgenie2.egg-info/dependency_links.txt
+src/dbgenie2.egg-info/requires.txt
+src/dbgenie2.egg-info/top_level.txt
