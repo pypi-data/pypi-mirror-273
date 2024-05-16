@@ -1,0 +1,2 @@
+[console_scripts]
+wata.yanhua = wtao.console:fireworks
