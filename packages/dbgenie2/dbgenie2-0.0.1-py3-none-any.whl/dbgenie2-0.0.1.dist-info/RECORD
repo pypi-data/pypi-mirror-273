@@ -1,0 +1,11 @@
+dbgenie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbgenie/mongodb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbgenie/mongodb/mongocrud.py,sha256=TJ67ruoCQz3rJz2lWyuoJI-FQ29SdppUm9BC1hUT3UE,2797
+dbgenie/mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbgenie/mysql/mysqlcrud.py,sha256=-JUBZzaZ6X1QrmkG4cP-a3p1_JYohW9pxIwwddCXqI0,4876
+dbgenie/postgresql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbgenie/postgresql/postgrescrud.py,sha256=ymdL7kXUV1MPqcKaqIAkK4ehumjXnMD0TcWgcMsDDso,5340
+dbgenie2-0.0.1.dist-info/METADATA,sha256=aBLpc2j44eMcvhqMUQNjuYTJAglYIrhqgh1QajK5Xyc,5435
+dbgenie2-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dbgenie2-0.0.1.dist-info/top_level.txt,sha256=sY05dM2YAdOnQEMZugQtp2ndKiwKPNH_G7IiEYzBWxc,8
+dbgenie2-0.0.1.dist-info/RECORD,,
