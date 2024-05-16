@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/nomadic/__init__.py
+src/nomadic.egg-info/PKG-INFO
+src/nomadic.egg-info/SOURCES.txt
+src/nomadic.egg-info/dependency_links.txt
+src/nomadic.egg-info/top_level.txt

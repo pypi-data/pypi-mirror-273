@@ -1,0 +1,14 @@
+[project]
+name = "nomadic"
+version = "0.0.0"
+authors = [
+  { name="Nomadic", email="withnomadic@gmail.com" },
+]
+description = "Coming soon"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "Operating System :: OS Independent",
+]
