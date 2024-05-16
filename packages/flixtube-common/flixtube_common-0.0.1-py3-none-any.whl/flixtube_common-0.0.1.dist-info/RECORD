@@ -1,0 +1,7 @@
+flixtube_common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flixtube_common/cosmosdb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flixtube_common/cosmosdb/db_operations.py,sha256=4bx9AE2Ad9yIlGE91j8T6yf3rtkpx6EEEmBOZ0f2gaM,1064
+flixtube_common-0.0.1.dist-info/METADATA,sha256=yFZ1yH65oCVzARvWcP3pihW8xW6QSABzWNK--X2lUX8,173
+flixtube_common-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flixtube_common-0.0.1.dist-info/top_level.txt,sha256=FWSUQDJzkJjcb3S7RMpGj6DPDs3zA5e-JhJzLdtnF-s,16
+flixtube_common-0.0.1.dist-info/RECORD,,
