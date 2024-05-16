@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: proxynorm
+Version: 0.1.0
+Summary: Implementation of Proxy Normalization in PyTorch
+Home-page: https://github.com/Khochawongwat/ProxyNorm-Pytorch
+Author: Khochawongwat Kongpana
+Author-email: khochawongwat.kongpana@gmail.com
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: scipy
+
