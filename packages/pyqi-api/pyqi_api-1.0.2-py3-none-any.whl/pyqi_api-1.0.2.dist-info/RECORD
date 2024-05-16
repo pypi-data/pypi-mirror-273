@@ -1,0 +1,9 @@
+pyQi/__init__.py,sha256=ZxwDm66WrdALnrqvvEd1I53sUROJVzcN0UUV7oJl1Lo,420
+pyQi/pyQi_api.py,sha256=NAdxLvOCY19m-zLJc_0jclG4K8NBu-NmQstmXyQH5a8,9761
+pyQi/pyQi_async.py,sha256=fPi693OJc-WLNVOASQSUWjmWKBc3vG1kq8p2psJubUo,10952
+pyQi/xltojson.py,sha256=ten3kklnKzFn8c8kOTyRBZRMlsAzE-2xeGNuELWU_k0,3627
+pyqi_api-1.0.2.dist-info/LICENSE.md,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+pyqi_api-1.0.2.dist-info/METADATA,sha256=wpy_uRLjk63u_Ii3LxUBrPN4F18BYydeIL9CrgDgzqg,554
+pyqi_api-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyqi_api-1.0.2.dist-info/top_level.txt,sha256=I7pHpJmD7JOIAjMRmB2FYTzqULGxnT3ENF90HBdydZU,5
+pyqi_api-1.0.2.dist-info/RECORD,,
