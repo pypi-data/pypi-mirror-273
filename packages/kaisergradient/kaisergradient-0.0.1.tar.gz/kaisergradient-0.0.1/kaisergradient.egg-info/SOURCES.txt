@@ -1,0 +1,7 @@
+setup.py
+kaisergradient/__init__.py
+kaisergradient/gradient.py
+kaisergradient.egg-info/PKG-INFO
+kaisergradient.egg-info/SOURCES.txt
+kaisergradient.egg-info/dependency_links.txt
+kaisergradient.egg-info/top_level.txt

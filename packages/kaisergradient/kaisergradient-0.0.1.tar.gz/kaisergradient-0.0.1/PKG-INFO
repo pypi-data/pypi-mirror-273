@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kaisergradient
+Version: 0.0.1
+Summary: A simple package to create Gradients
+Author: Kaiser Fechner
+Author-email: <coolpotatorocks@gmail.com>
+Keywords: python,gradients,colors
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
