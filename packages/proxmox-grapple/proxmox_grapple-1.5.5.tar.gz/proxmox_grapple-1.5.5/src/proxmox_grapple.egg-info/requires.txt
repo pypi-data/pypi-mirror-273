@@ -1,0 +1,6 @@
+click
+daiquiri
+humanize
+psutil
+pyyaml
+dynaconf

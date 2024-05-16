@@ -1,0 +1,2 @@
+[console_scripts]
+proxmox-grapple = proxmox_grapple.vzdump_hook_script:main
