@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hurst-estimators
+Version: 0.0.2
+Summary: Library for Hurst estimation methods
+License: MIT
+Author: Aras Edeş
+Author-email: edesaras@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: pywavelets (>=1.2.0,<2.0.0)
+Requires-Dist: scipy (>=1.7.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
