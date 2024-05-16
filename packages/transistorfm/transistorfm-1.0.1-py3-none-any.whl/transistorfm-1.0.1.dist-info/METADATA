@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: transistorfm
+Version: 1.0.1
+Summary: A Python client for the Transistor.fm API
+Author: Josh Griffiths
+Author-email: josh@hakuna.co.uk
+License: MIT
+Requires: requests
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TransistorFM
+
+A Python client for interacting with the Transistor.fm API.
+
+## Features
+
+- Client with basic API endpoints.
+- API Object typing.
+
+## Installation
+
+Install using pip:
+
+```bash
+pip install transistorfm
