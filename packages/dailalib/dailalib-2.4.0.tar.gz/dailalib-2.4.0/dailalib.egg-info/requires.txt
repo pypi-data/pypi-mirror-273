@@ -1,0 +1,4 @@
+openai>=1.0.0
+libbs>=0.25.1
+tiktoken
+varbert>=2.1.0
