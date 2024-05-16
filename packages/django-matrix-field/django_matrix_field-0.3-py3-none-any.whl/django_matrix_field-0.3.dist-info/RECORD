@@ -1,0 +1,11 @@
+matrix_field/__init__.py,sha256=lJFIgngdyxFos6H0eimN9-Th7I9Lj_0rE3iDTmoJY6Q,81
+matrix_field/fields.py,sha256=hkDJvBcNErcA7fpQNBYQHLAIiHRuF1HlPt1fGPOqMts,2871
+matrix_field/forms.py,sha256=dRiAMoHaG-FncyHHKuzYOP6x5oiiEDsV2mqBIWo5hII,574
+matrix_field/models.py,sha256=CSrbSp2YYxHTxlX7R0nT3RpH7EloB1wIvo7YOA7QWy8,28
+matrix_field/test_settings.py,sha256=MR-1uG_pkxhELug2QBUzri5rI0-eUg_LmnbfZcficAM,5254
+matrix_field/tests.py,sha256=V-5X70ytFk2p56VsLNi-2e3FVr7_m6a9X-Ta-psYS0k,5473
+matrix_field/validators.py,sha256=P1fkNDkLEnBqAVg6hChHZusKswEEWAEE5LLZ3j3ftqY,1694
+django_matrix_field-0.3.dist-info/METADATA,sha256=bTTtGJUcqtNoUm-8f08K0yJfYS4wzFtK0_sw9jwhwjY,2218
+django_matrix_field-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_matrix_field-0.3.dist-info/top_level.txt,sha256=pO2_k7CSwVd57SgO2GheLB9ogUypd0QpV1FKE2O7L4M,13
+django_matrix_field-0.3.dist-info/RECORD,,
