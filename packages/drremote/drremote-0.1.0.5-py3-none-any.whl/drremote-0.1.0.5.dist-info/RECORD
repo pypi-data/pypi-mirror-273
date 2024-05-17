@@ -1,0 +1,12 @@
+drremote/__init__.py,sha256=O8cPcv3J4f4qlmIZI4gHn9bHetCGO3Aq1-d7SHb7qjU,143
+drremote/__main__.py,sha256=K2lLAheYrIz09HABhROJ5qsUNU6P7jvIRff5YvUbmrg,114
+drremote/drremote.py,sha256=4oIj-LStd17MimB_jp90zlbY-_hdQgTjSMottw4RqAA,5709
+drremote/get_resolve.py,sha256=KPyZFipIvtDm3qnp33PezGPtEI99XrJsl8v-gk_AzzE,1649
+drremote/output.py,sha256=E3kFnm9Uw-ygWjeexswjk-ZJXJ1K1T1rCPDFZj941Fo,644
+drremote/parse.py,sha256=_b5QEHuvWRnjZbXZCKolPJsc5cCgFanf8J29xv5t5OM,2539
+drremote-0.1.0.5.dist-info/LICENSE,sha256=bjUSipICrx1gmVLozUkkrFvzF1_qxfoCEvFJhqrev84,1075
+drremote-0.1.0.5.dist-info/METADATA,sha256=Fc5sMBJUXYmWyCSg1FJwihAuCvbGk2ffffjcfAOPZhc,4135
+drremote-0.1.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+drremote-0.1.0.5.dist-info/entry_points.txt,sha256=nu1nGlFQVHASzQlsyJbhZemdsL6AeSqit6AoRj-0p74,47
+drremote-0.1.0.5.dist-info/top_level.txt,sha256=1CTTxGRxLh_tH6howG6MTpfr7aDaJ3G2skSffuqKGaw,9
+drremote-0.1.0.5.dist-info/RECORD,,
