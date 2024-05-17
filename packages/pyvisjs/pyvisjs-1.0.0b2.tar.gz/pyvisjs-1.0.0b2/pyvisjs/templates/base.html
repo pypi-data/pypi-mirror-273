@@ -1,0 +1,33 @@
+<html>
+  <head>
+    {% block head -%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head_scripts -%}
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    {%- endblock %}
+    <style type="text/css">
+      {% block head_style -%}
+      body {
+        font-family: 'JetBrains Mono';font-size: 22px;
+      }
+      #visjsnet {
+          width: {{width}};
+          height: {{height}};
+          border: 1px solid lightgray;
+      }
+      {%- endblock %}
+    </style>
+  {%- endblock %}
+  </head>
+  <body>
+    {% block content -%}{%- endblock %}
+    <script type="text/javascript">
+    {% block javascript %}
+    {% include "create_network.js" %}
+    {% endblock %}
+    </script>
+  </body>
+</html>
