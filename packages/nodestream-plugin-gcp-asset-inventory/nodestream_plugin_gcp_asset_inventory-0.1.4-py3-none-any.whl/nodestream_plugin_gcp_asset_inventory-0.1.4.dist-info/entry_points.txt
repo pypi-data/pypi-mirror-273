@@ -1,0 +1,3 @@
+[nodestream.plugins]
+projects=nodestream_plugin_gcp_asset_inventory.plugin
+

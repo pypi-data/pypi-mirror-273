@@ -1,0 +1,14 @@
+- implementation: nodestream_plugin_gcp_asset_inventory.gcp_asset:GcpAssetExtractor
+  arguments:
+    project_id: !config 'project_id'
+
+- implementation: nodestream.interpreting:Interpreter
+  arguments:
+    interpretations:
+      - type: source_node
+        node_type: Resource
+        key:
+          name: !jmespath 'name'
+        properties:
+          type: !jmespath 'asset_type'
+
