@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+clean_alchemy/clean_alchemy.egg-info/PKG-INFO
+clean_alchemy/clean_alchemy.egg-info/SOURCES.txt
+clean_alchemy/clean_alchemy.egg-info/dependency_links.txt
+clean_alchemy/clean_alchemy.egg-info/requires.txt
+clean_alchemy/clean_alchemy.egg-info/top_level.txt
