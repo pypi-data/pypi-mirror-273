@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aily_code_sdk_core"
+version = "0.1.0-beta.2"
+authors = [
+  { name="sunlei.h", email="sunlei.h@bytedance.com" },
+  { name="zhaolizi.milo", email="zhaolizi.milo@bytedance.com" },
+]
+description = "Aily Code SDK"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+  "requests >= 2.31.0,<3.0.0",
+]
