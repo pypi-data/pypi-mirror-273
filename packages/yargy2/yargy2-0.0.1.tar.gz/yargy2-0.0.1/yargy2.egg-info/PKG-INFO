@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: yargy2
+Version: 0.0.1
+Summary: This is a yargy library, but now it interacts well with pymorphy3.
+Home-page: https://github.com/mininakar/yargy2
+Author: Karina
+Author-email: minyailo.karina@gmail.com
+Project-URL: GitHub, https://github.com/mininakar
+Keywords: files yargy pymorphy3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
