@@ -1,0 +1,9 @@
+messengercli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+messengercli/command_line.py,sha256=cizkYkF9s9OGcUmYVvrxS4sL9cqhnmC2aqvMpfV02nc,120
+messengercli/messenger.py,sha256=r7drVO_AH7cE6P0unS7HWVIlKpRaoODlVDDM2lWdNxU,16638
+messengercli/updater.py,sha256=MmLWe7Sa_Lu0cBdp4Hrjg1UqEgF_qrHZB1PTcMaLDJ8,1090
+elm_messenger-0.3.5.dist-info/METADATA,sha256=jLBZK_1Nqxl2OGZEnmvBp8zJJ7787y3hKMCmXQxGqg8,1159
+elm_messenger-0.3.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+elm_messenger-0.3.5.dist-info/entry_points.txt,sha256=ZgaQstE4zEWJAIT1UTBoA2GaEJwOnYzPZF0yQTtsB9c,61
+elm_messenger-0.3.5.dist-info/top_level.txt,sha256=HaYASUaxOJEn4BVKT_QdbntGIcPXGcHqZbAU7V2srrc,13
+elm_messenger-0.3.5.dist-info/RECORD,,
