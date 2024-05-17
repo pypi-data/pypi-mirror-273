@@ -1,0 +1,13 @@
+python-magic
+tokenizers
+transformers
+
+[dev]
+build
+datasets
+flake8
+pytest
+
+[train]
+datasets
+pillow
