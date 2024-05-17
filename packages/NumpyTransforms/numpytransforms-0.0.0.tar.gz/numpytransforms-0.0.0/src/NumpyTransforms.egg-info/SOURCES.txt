@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+src/__init__.py
+src/NumpyTransforms/Affine.py
+src/NumpyTransforms/Bezier.py
+src/NumpyTransforms/__init__.py
+src/NumpyTransforms.egg-info/PKG-INFO
+src/NumpyTransforms.egg-info/SOURCES.txt
+src/NumpyTransforms.egg-info/dependency_links.txt
+src/NumpyTransforms.egg-info/top_level.txt

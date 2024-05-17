@@ -1,0 +1,15 @@
+[project]
+name = "NumpyTransforms"
+version = "0.0.0"
+authors = [
+    { name = "Carter Bodinger", email = "carterallenbodinger@yahoo.com" },
+]
+description = "Library of helpful transformations for numpy arrays"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+]
