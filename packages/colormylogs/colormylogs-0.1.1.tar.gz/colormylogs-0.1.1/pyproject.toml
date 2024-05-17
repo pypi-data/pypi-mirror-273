@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "colormylogs"
+description = "Color my logs"
+version = "0.1.1"
+authors = ["Your Name <nalepae@gmail.com>"]
+
+[tool.poetry.scripts]
+colo = "colormylogs.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = "^0.12.3"
+rich = "^13.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
