@@ -1,0 +1,12 @@
+tensorflow
+keras
+numpy
+pandas
+anndata
+
+[docs]
+nbsphinx
+
+[test]
+pytest
+pytest-cov
