@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "remla24-team8-lib-version"
+version = "0.3.0"
+description = ""
+authors = [
+    "Tip ten Brink <T.M.tenBrink@student.tudelft.nl>", 
+    "Felipe Bononi Bello <bello2001felipe@gmail.com>", 
+    "Dielof van Loon <d.i.vanloon@student.tudelft.nl>", 
+    "Sayf El Kaddouri <sayfgmaul@gmail.com>"
+]
+readme = "README.md"
+packages = [
+    { include = "lib_version", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+importlib-resources = "^6.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
