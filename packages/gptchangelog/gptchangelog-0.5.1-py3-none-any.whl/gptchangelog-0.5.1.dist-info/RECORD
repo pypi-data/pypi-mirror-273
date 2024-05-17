@@ -1,0 +1,11 @@
+gptchangelog/__init__.py,sha256=6TRq9G1VprNpIdfFrytKcU-sFmZXU7LSFIsojDYheGI,7889
+gptchangelog/templates/changelog_prompt.txt,sha256=5WA2WdxBEBoBHdXND1Mcm8MRsVXxqkpwwaJUeKe3IKM,1495
+gptchangelog/templates/commits_prompt.txt,sha256=fAXNui_NKeH2zzlJ_KDKNNQyuaHV3HggBQ83lTIrVpc,1512
+gptchangelog/templates/identify_features_prompt.txt,sha256=bYqrp0AxdUK3c7dTdEG-3fWay52x2UqVNcDlbSqTc0U,475
+gptchangelog/templates/version_prompt.txt,sha256=-KzAswcwStvDbHFXKNzi1KU8P_wUbUrbKVuocthczOA,630
+gptchangelog-0.5.1.dist-info/LICENSE,sha256=Cw2iSu-Hh34OvP-uIq7ioCAx4IX-4n1pCMk880ND7EI,1089
+gptchangelog-0.5.1.dist-info/METADATA,sha256=hJFsW5xqlTrYTm870AKI5dZZNzrAKLsQHarV6BASFU4,2891
+gptchangelog-0.5.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gptchangelog-0.5.1.dist-info/entry_points.txt,sha256=7CFYQAi_OyDmQlhU3M_MbusmmrTZwK0QnmiFD2YAMfs,51
+gptchangelog-0.5.1.dist-info/top_level.txt,sha256=Agto3UhVNWyWfy5Mkqc9_kJT3aDV4iMUR2g9Va9tvIk,13
+gptchangelog-0.5.1.dist-info/RECORD,,
