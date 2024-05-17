@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: CTG-Utils
+Version: 1.1.5
+Summary: A toolbox for ctg statistics analysis
+Home-page: https://github.com/Bertin-fap/CTG_Utils 
+Author: f. bertin
+Author-email: francois.bertin7@wanadoo.fr
+License: MIT
+Keywords: ffvelo,ctg
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openpyxl ==3.0.9
+Requires-Dist: pandas ==1.3.5
+Requires-Dist: plotly ==5.4.0
+Requires-Dist: folium
+Requires-Dist: matplotlib
+Requires-Dist: screeninfo
+Requires-Dist: pyyaml
+
+# BiblioAnalysis_Utils
+
