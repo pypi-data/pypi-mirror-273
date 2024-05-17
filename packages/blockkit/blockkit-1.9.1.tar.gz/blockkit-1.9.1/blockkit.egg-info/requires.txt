@@ -1,0 +1,4 @@
+pydantic[email]<3,>=2
+
+[gen]
+black
