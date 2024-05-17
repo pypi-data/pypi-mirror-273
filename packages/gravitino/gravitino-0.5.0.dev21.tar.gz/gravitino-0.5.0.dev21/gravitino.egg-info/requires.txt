@@ -1,0 +1,9 @@
+requests
+dataclasses-json
+
+[dev]
+requests
+dataclasses-json
+pylint
+black
+twine
