@@ -1,0 +1,10 @@
+README.md
+setup.py
+dcinside_scraper/__init__.py
+dcinside_scraper/scraper.py
+dcinside_scraper.egg-info/PKG-INFO
+dcinside_scraper.egg-info/SOURCES.txt
+dcinside_scraper.egg-info/dependency_links.txt
+dcinside_scraper.egg-info/entry_points.txt
+dcinside_scraper.egg-info/requires.txt
+dcinside_scraper.egg-info/top_level.txt
