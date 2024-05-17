@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: my_demo_pkg87958795
+Version: 0.3.0
+Summary: A short description of your package
+Home-page: UNKNOWN
+Author: Dhileep Kumar Munige
+Author-email: dmunige@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
