@@ -1,0 +1,18 @@
+[project]
+name = "oj-tools"
+version = "0.0.6"
+authors = [
+  { name="hepheir", email="hepheir@gmail.com" },
+]
+description = "tools for Online Judge management"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://https://github.com/hepheir/oj-tools"
+Issues = "https://https://github.com/hepheir/oj-tools/issues"
