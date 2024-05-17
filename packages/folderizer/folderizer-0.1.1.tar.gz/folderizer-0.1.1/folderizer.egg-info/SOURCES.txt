@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+folderizer/__init__.py
+folderizer.egg-info/PKG-INFO
+folderizer.egg-info/SOURCES.txt
+folderizer.egg-info/dependency_links.txt
+folderizer.egg-info/requires.txt
+folderizer.egg-info/top_level.txt
+tests/test_folderizer.py
