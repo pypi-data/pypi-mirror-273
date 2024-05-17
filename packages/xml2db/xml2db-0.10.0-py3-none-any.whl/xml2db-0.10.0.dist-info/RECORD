@@ -1,0 +1,17 @@
+xml2db/__init__.py,sha256=dv6E8o3KPvIEyTAmfyfogNxhV7Am8ZoPsakTj34alfo,451
+xml2db/document.py,sha256=oLqrjijsr_Um4rrEzoJZA8w05gxLw_wKNwKZcwRpd3U,27840
+xml2db/exceptions.py,sha256=Q-4grF2A9Bl5JUtTpDsuiXJhphXVmg85nQpaRpYols8,133
+xml2db/model.py,sha256=LbJtKpdMy2YDtly5flkcVFpOsEtn5Hg6YYzQwRP1wHg,27773
+xml2db/xml_converter.py,sha256=pDcnxLTENwTtQRMGko32f3MWRnkA6PLlYgSnWhZJ9Vg,11402
+xml2db/table/__init__.py,sha256=LB2p2xhq1d1xktn9vndNr-cxdhS_PG2OiZqLhgCWBxQ,234
+xml2db/table/column.py,sha256=T7GQPChM0An0acmWJmpBoehOiPUMHhW1DBa6NHWSMDg,8304
+xml2db/table/duplicated_table.py,sha256=A7YOhdXA-quSIMJd__NxhgEO6rPiWcDsKMd2_wY3TzE,7206
+xml2db/table/relations.py,sha256=mm0FA9Be5dXeDtKuAqERDGheMMQPclVYb4qBKPrqkGY,9283
+xml2db/table/reused_table.py,sha256=28CX7zn4PanZsX2xoUO4Yq8dnYQgZzCn-WLKjJOlQWI,6486
+xml2db/table/table.py,sha256=OWquU8DKd5nSRhhbHqNxpd0yYDOik8OU0D63KorcWBQ,14388
+xml2db/table/transformed_table.py,sha256=XLLpU9HqInsmpn_8RFeaQ4m4jDYUxAssKKuiVNEqd_w,13300
+xml2db-0.10.0.dist-info/LICENSE,sha256=cgnri6774CSYcCdV36ozf_ME1FsL9AJ_fUtZQ0BUJBQ,1082
+xml2db-0.10.0.dist-info/METADATA,sha256=JqOIH80q1ZQL8UsNqHt8MF-0nfdvkbxKBmwlGCtAaoQ,3635
+xml2db-0.10.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xml2db-0.10.0.dist-info/top_level.txt,sha256=GNo5U2vNXkcW0dPMdH4-yss0gb5fiIr46tUY4u3ohGg,7
+xml2db-0.10.0.dist-info/RECORD,,
