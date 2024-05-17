@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+badger/__init__.py
+badger/cli.py
+badger_cli.egg-info/PKG-INFO
+badger_cli.egg-info/SOURCES.txt
+badger_cli.egg-info/dependency_links.txt
+badger_cli.egg-info/entry_points.txt
+badger_cli.egg-info/top_level.txt
