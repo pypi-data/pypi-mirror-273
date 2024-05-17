@@ -1,0 +1,23 @@
+ragtime/__init__.py,sha256=rqhHWsK2alQabc2nSfA7Q31ETNaB2OjjuyZXUh89XcQ,765
+ragtime/api.py,sha256=Q07dhMQzOVhRc93kLuKtEOXQfBKAQS4obv0kCnMIqMo,1522
+ragtime/config.py,sha256=L26p2ylN5YTZJjr-vTdhpo9rtT7kKDM-8LEs1NksV1I,8789
+ragtime/expe.py,sha256=k1jFi6CIUypaOxD4kdgfJICkLA1EsSCRRD3U0BKI2_M,21163
+ragtime/generators.py,sha256=fm4FAetHPRdQkGIqHaxtDmNHqllyGVazb1L3SDfd-Wo,43142
+ragtime/base_folder/.gitignore,sha256=Xmqwjt3L-0gj_HU9XjWLBiVYqvWBzXZgiXaln3rzqD4,752
+ragtime/base_folder/LICENSE,sha256=2hZm7EVurTktmjzzkNSjg2_4gBPGqSPUXupSju2n9RU,1098
+ragtime/base_folder/README.md,sha256=5WZg2D7gQsIFxbNbPwLn9fijTI0YdtL_34tbyrb92CQ,26
+ragtime/base_folder/classes.py,sha256=NEvqsQzaDIxorotu99elADDWjZosJH9avcWkYxjoons,2439
+ragtime/base_folder/main.py,sha256=nx_yornVhLM9tGEEaFvFt1ykzzXyD3E_Slh3K5ciJqg,890
+ragtime/base_folder/expe/01. Questions/json_helper.xlsx,sha256=V6yKsOY21CD_Mr-mKZXtM9D1TfNyjpSqNJgYJ7_SxIA,15410
+ragtime/base_folder/res/html_templates/basic_template.jinja,sha256=W4-Kv7qFwuVi1gjC116EaDLwHvIHHA8pjrGNnVKiC_o,4329
+ragtime/base_folder/res/spreadsheet_templates/MCQ.xlsx,sha256=woiFk9LqZ02mTGiXUOdaz-V9FOZ0qpFYZ5H3VVQs7Lg,91060
+ragtime/base_folder/res/spreadsheet_templates/first_questions.xlsx,sha256=QzZYOPWTar2RsOttNOpGtOd5qQ3b1XWUWM-96T33Drk,9987
+ragtime/base_folder/res/spreadsheet_templates/test_facts.xlsx,sha256=TZPVcoK5WKrReC4_2HJokL05Ewh66v4xsUpGh8LW-NE,21761
+ragtime/base_folder/res/spreadsheet_templates/with_retriever.xlsx,sha256=IlWJIkjf6Xr1KDZmenIkhUvWC_JnBS9oGYLDdp3H89c,33574
+ragtime/base_folder/res/spreadsheet_templates/without_retriever.xlsx,sha256=AORuWf9CfYdOZHafPvk2VlAdSYxgBx9IZVaYMUqeNf4,27639
+ragtime/base_folder/res/spreadsheet_templates/old/basic_template_old.xlsx,sha256=9XgjWb67pRBxFnJCdfk4owkIF4VoHcjLlMIYnhMiotk,29959
+ragtime/base_folder/res/spreadsheet_templates/old/spreadsheet_rich_template.xlsx,sha256=RMLZC9WMJ5EizwsugG872_QeDmw6TkkQTZGHeD13x4Y,33387
+ragtime-0.0.34.dist-info/METADATA,sha256=QxnJWgx98Zr9h-nDRoFb3UOUq6Fd_xiLHDM0bYV57OQ,7473
+ragtime-0.0.34.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ragtime-0.0.34.dist-info/licenses/LICENSE,sha256=gNc6I3mUVnUswMZhnhJ2Dju-zN0vAulIMCm49y35YBk,1083
+ragtime-0.0.34.dist-info/RECORD,,
