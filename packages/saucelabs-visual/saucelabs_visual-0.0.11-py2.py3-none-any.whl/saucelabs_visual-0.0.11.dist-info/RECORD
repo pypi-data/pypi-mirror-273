@@ -1,0 +1,10 @@
+saucelabs_visual/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saucelabs_visual/client.py,sha256=9zT4-_dvZzJJEd59oWtijR41OvXhyYlFLmwKp_tvbkU,12000
+saucelabs_visual/regions.py,sha256=yW--had6kSuCILXBxr6pyEsbFmCJI3-HHlbIopa0nRM,2107
+saucelabs_visual/typing.py,sha256=rfO6IU3IEo8QqrxDvi-fN5UeCBlcy88of1Mjq8AgDls,3071
+saucelabs_visual/utils.py,sha256=C1_9N-GiYbpFGF_Cu9XWG6EBfGRN2qNSWcDUuEmPN0M,2701
+saucelabs_visual/frameworks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saucelabs_visual/frameworks/robot.py,sha256=rt3VGJBGCDG2NWg1N9WvVeNDUdRMAmAJuVY9dSh6FOE,11735
+saucelabs_visual-0.0.11.dist-info/METADATA,sha256=6Hiaq-GpY03Ds5HUtdbm7FVGFEuC1X0JQrDghtoavfc,700
+saucelabs_visual-0.0.11.dist-info/WHEEL,sha256=cDcbFFSNXOE-241I5PFuLkIYfR_FM7WTlPEi33njInY,105
+saucelabs_visual-0.0.11.dist-info/RECORD,,
