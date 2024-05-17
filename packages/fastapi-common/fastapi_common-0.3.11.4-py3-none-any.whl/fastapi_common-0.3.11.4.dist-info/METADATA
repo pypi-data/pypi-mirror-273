@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fastapi-common
+Version: 0.3.11.4
+Summary: Custom Fastapi library and tools
+Home-page: https://github.com/xshaffter/fastapi-common
+Author: Alfredo Martinez
+Author-email: xshaffter@gmail.com
+Maintainer: Alfredo Martínez
+Maintainer-email: xshaffter@gmail.com
+License: GNU GPL 3.0
+Requires-Python: >=3.8.0
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: requests
+Requires-Dist: SQLAlchemy
+Requires-Dist: uvicorn
+Requires-Dist: pytest
+Requires-Dist: pydantic
+Requires-Dist: boto3
+
