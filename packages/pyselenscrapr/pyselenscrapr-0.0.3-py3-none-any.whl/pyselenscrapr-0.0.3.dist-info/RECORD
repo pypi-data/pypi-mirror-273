@@ -1,0 +1,14 @@
+pyselenscrapr/ScrapingBackend.py,sha256=djbjUIl6YTTkqdnPzlw_lJBDh-XDS6BSwR5GMcdifcc,1198
+pyselenscrapr/ScrapingBot.py,sha256=zVJca_Gso5IDFr5_hnoL-KXJI2_Uawgoew7-JaCL7gU,13217
+pyselenscrapr/ScrapingLogic.py,sha256=8-2fOQykxa5avmb0klgkg3tnvQhmZg02LAI5uBpqvcY,12269
+pyselenscrapr/ScrapingStep.py,sha256=Rm7ol4Zr61Z17SSUfe3DylFnGfi3bigvkF8chAN8lx0,4620
+pyselenscrapr/ScrapingStepGroup.py,sha256=x9NYg8pP6uN0jvDo-q8zwoh3AIwVUtyFvzgxwjnsRRU,335
+pyselenscrapr/ScrapingStepLoop.py,sha256=ZxV1GzWfUfGOZGD_LOt5wKRHmph9bF5JC6MilGC2piQ,1462
+pyselenscrapr/ScrapingStepPagination.py,sha256=5AWBQfXY6T5HD8H6Q2tRMl07POLSmASZNLrLsy9mqmI,3099
+pyselenscrapr/ValidationError.py,sha256=P5_WU_Jbe-D-focQIykpuBt9jQ3nqgIdkZcOo9RMKAU,307
+pyselenscrapr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyselenscrapr-0.0.3.dist-info/LICENSE,sha256=H-82qKG2WyF8xN1-s3O84FkKUxjrjuxSMCE-GvADu8Q,1076
+pyselenscrapr-0.0.3.dist-info/METADATA,sha256=aQssvyuDrdoWnndypWwJm5uGQORtEZLvVScVyS7d5so,2489
+pyselenscrapr-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyselenscrapr-0.0.3.dist-info/top_level.txt,sha256=qbHgx-_BQ20ntTPXyqkKBFTIX9MchsmAdaLljjSvsU4,14
+pyselenscrapr-0.0.3.dist-info/RECORD,,
