@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: robustintelligence
+Version: 0.1.0rc11
+Summary: Robust Intelligence REST API SDK
+Home-page: UNKNOWN
+Author: Robust Intelligence
+Author-email: dev@robustintelligence.com
+License: OSI Approved :: Apache Software License
+Keywords: OpenAPI,OpenAPI-Generator,Robust Intelligence REST API SDK,Robust Intelligence SDK
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    API methods for Robust Intelligence. Users must authenticate using the 'rime-api-key' or 'X-Firewall-Api-Key' header.
+    
+
