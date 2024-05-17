@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: llama_tools
+Version: 0.1.18
+Summary: Llama Tools: A collection of utilities for handling function calls with local llama.cpp models.
+Home-page: https://yourpackage.example.com
+License: MIT
+Keywords: llama, function-call
+Author: Yingbei Tong
+Author-email: yingbei@acorn.io
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pythonmonkey
+
+# llama-tools
+
+## build and publish
+1. install flit
+```
+pip install flit
+```
+
+2. build the dist
+```
+flit build
+```
+
+3. push the dist, you might need to change the version number in __init__.py. 
+You would also need pypi account and api token ready.
+```
+flit publish
+```
+
+this might help --
+create `~/.pypirc` with:
+```
+[pypi]
+repository = https://upload.pypi.org/legacy/
+username = __token__
+password = <your-api-token-starts-with-pypi->
+```
