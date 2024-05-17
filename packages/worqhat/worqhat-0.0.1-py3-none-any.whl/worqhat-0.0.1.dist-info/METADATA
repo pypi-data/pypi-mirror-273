@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: worqhat
+Version: 0.0.1
+Summary: A package with all the APIs available from worqHat
+Home-page: https://github.com/Ayush-Kul/worqhat-python
+Author: WorqHat
+Author-email: support@worqhat.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest >=7.0 ; extra == 'dev'
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+
