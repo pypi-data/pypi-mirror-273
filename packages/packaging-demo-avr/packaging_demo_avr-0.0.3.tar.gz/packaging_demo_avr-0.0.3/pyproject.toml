@@ -1,0 +1,102 @@
+[build-system]
+# Minimum requirements for the build system to execute
+requires = ["setuptools>=61.0.0", "wheel"]
+# default value of build-backend is "setuptools.build_meta"
+build-backend = "setuptools.build_meta"
+
+# include-package-data defaults to true, not needed to add in toml file
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+packaging_demo = ["**/*.json", "**/*png"]
+
+[project]
+name = "packaging-demo-avr"
+authors = [{ name = "Amit Vikram Raj", email = "avr13405@gmail.com" }]
+description = "Demo for Python Packaging"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["one", "two"]
+license = { text = "MIT" }
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = ["numpy", "fastapi", 'importlib-metadata; python_version<"3.10"']
+# dynamic = ["version"]
+version = "0.0.3"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+release = ["build", "twine"]
+static-code-qa = ["pre-commit"]
+# for developement
+dev = ["ruff", "mypy", "black", "packaging-demo[test, release, static-code-qa]"]
+# plugin based architecture
+colors = ["rich"]
+# install all dependencies
+all = ["packaging-demo[dev, colors]"]
+
+
+# Adding ruff.toml to pyproject.toml
+[tool.ruff]
+line-length = 119
+
+[tool.ruff.lint]
+# 1. Enable flake8-bugbear (`B`) rules, in addition to the defaults.
+select = ["E", "F", "B", "ERA"]
+
+# 2. Avoid enforcing line-length violations (`E501`)
+ignore = ["E501"]
+
+# 3. Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = ["B"]
+
+# 4. Ignore `E402` (import violations) in all `__init__.py` files, and in select subdirectories.
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+"**/{tests,docs,tools}/*" = ["E402"]
+
+
+# copying isort configurations from .isort.cfg to pyproject.toml
+[tool.isort]
+profile = "black"
+multi_line_output = "VERTICAL_HANGING_INDENT"
+force_grid_wrap = 2
+line_length = 119
+
+# copying balck config from .black.toml to pyproject.toml
+[tool.black]
+line-length = 119
+exclude = ".venv"
+
+# copying flake8 config from .flake8 to pyproject.toml
+[tool.flake8]
+docstring-convention = "all"
+extend-ignore = [
+    "D107",
+    "D212",
+    "E501",
+    "W503",
+    "W605",
+    "D203",
+    "D100",
+    "E305",
+    "E701",
+    "DAR101",
+    "DAR201",]
+exclude = [".venv"]
+max-line-length = 119
+
+# radon
+radon-max-cc = 10
+
+
+# copying pylint config from .pylintrc to pyproject.toml
+[tool.pylint."messages control"]
+disable = [
+    "line-too-long",
+    "trailing-whitespace",
+    "missing-function-docstring",
+    "consider-using-f-string",
+    "import-error",
+    "too-few-public-methods",
+    "redefined-outer-name",]
