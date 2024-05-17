@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/test_mapper.py
+tqdm_multiprocessing/__init__.py
+tqdm_multiprocessing/mapper.py
+tqdm_multiprocessing/version.py
+tqdm_multiprocessing.egg-info/PKG-INFO
+tqdm_multiprocessing.egg-info/SOURCES.txt
+tqdm_multiprocessing.egg-info/dependency_links.txt
+tqdm_multiprocessing.egg-info/requires.txt
+tqdm_multiprocessing.egg-info/top_level.txt
