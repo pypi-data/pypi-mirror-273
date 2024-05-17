@@ -1,0 +1,6 @@
+sms_message_aws_sns_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sms_message_aws_sns_local/sms_message_aws_sns.py,sha256=P1s3rWe05mTwkUp5_Z7rrjZjyZOFStp5b_Hx6buYjqY,10034
+sms_message_aws_sns_local-0.0.39.dist-info/METADATA,sha256=_wVywdixIpxznpTbsdXtcD-IR1ldTqgh6dEwecCUbe4,740
+sms_message_aws_sns_local-0.0.39.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sms_message_aws_sns_local-0.0.39.dist-info/top_level.txt,sha256=4ApIGBGx0896LxwYH2MAHcwApk0gkzBlbaSYlTWI2cc,26
+sms_message_aws_sns_local-0.0.39.dist-info/RECORD,,
