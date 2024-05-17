@@ -1,0 +1,17 @@
+README.md
+license.txt
+pyproject.toml
+setup.py
+NicePy/Adherence.py
+NicePy/Agents.py
+NicePy/Config.py
+NicePy/Connection.py
+NicePy/Contacts.py
+NicePy/Dispositions.py
+NicePy/Funcs.py
+NicePy/__init__.py
+NicePy.egg-info/PKG-INFO
+NicePy.egg-info/SOURCES.txt
+NicePy.egg-info/dependency_links.txt
+NicePy.egg-info/requires.txt
+NicePy.egg-info/top_level.txt

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NicePy"
+version = "1.0.00"
+description = "An API library for NICE CXOne"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "license.txt" }
+keywords = ["CXOne", "inContact", "NICE"]
+authors = [
+  {name = "Jim Weiler", email="jim@vaelek.com" }
+]
+maintainers = [
+  {name = "Jim Weiler", email="jim@vaelek.com" }
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License", 
+  "Programming Language :: Python :: 3.8"  
+]
+
+dependencies = [
+  "requests",
+  "requests-oauthlib",
+  "oauthlib",
+  "python-dateutil",
+  "pydub",
+  "joblib",
+  "tzlocal",
+  "debugpy"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Vaelek/NicePy"
+"Bug Reports" = "https://github.com/Vaelek/NicePy/issues"
+"Source" = "https://github.com/Vaelek/NicePy"

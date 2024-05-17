@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: NicePy
+Version: 1.0.0
+Summary: An API library for NICE CXOne
+Author: Jim Weiler
+Author-email: Jim Weiler <jim@vaelek.com>
+Maintainer-email: Jim Weiler <jim@vaelek.com>
+License: MIT License
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/Vaelek/NicePy
+Project-URL: Bug Reports, https://github.com/Vaelek/NicePy/issues
+Project-URL: Source, https://github.com/Vaelek/NicePy
+Keywords: CXOne,inContact,NICE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: requests
+Requires-Dist: requests-oauthlib
+Requires-Dist: oauthlib
+Requires-Dist: python-dateutil
+Requires-Dist: pydub
+Requires-Dist: joblib
+Requires-Dist: tzlocal
+Requires-Dist: debugpy
+
+# NicePy
+
+A python package for the CXOnce NICE/inContact API
+
+This is a work in progress and currently far from complete in terms of endpoints. More will be added over time.
+
+# Installation
+You can either install the package
+
+`pip install nicepy`
+
+or if you download the code, from the folder containing the `setup.py`, you can enter
+
+`pip install .`
+
+Functions that involve media may require one or both of `ffprobe` and `ffmpeg` to be in the system path. If you receive a file not found error this is likely the reason.
+
+# Configuration
+* In your project folder, create a file `nicepy_config.json` containing the following:
+
+```json
+{
+  "client_id" : "APP_ID",
+  "client_secret" : "APP_SECRET",
+  "username" : "USER_ID",
+  "password" : "USER_SECRET",
+  "APIVersion" : "28.0"
+}
+```
+
+`client_id` and `client_secret` are the keys provided when registering an API app with NICE. `username` and `password` are the keys generated on a user account within NICE.
+
+`APIVersion` if not set will default to v28.0. All endpoints with versioning (will) allow passing a version in the call.
+
+## Implemented Functions
+
+- Agents
+  - GetAgents
+  - GetAgentSkillAssignments
+  - GetAgentStates
+  - GetInactiveAgents
+  - AgentByUUID
+  - AgentByLogin
+
+- Contacts
+  - GetContactDetails
+  - GetMultiContactDetails
+  - Fetch_Recording
+  - Fetch_Recording_AudioSegment (Threaded)
+  - AudioSegment_To
+  - GetRecordingURL
+  - GetContactStates
+  - GetMultiContactStateHistory (Threaded)
+  - GetCompletedContacts
+  - IsFinalContact
+
+- Adherence
+  - GetAdherenceData
+- Dispositions
+  - GetDispositions
+
+
+
+## Usage Examples
+To come

@@ -1,0 +1,8 @@
+requests
+requests-oauthlib
+oauthlib
+python-dateutil
+pydub
+joblib
+tzlocal
+debugpy
