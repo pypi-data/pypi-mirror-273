@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+aochagavia_example_lib/__init__.py
+aochagavia_example_lib/example.py
+aochagavia_example_lib.egg-info/PKG-INFO
+aochagavia_example_lib.egg-info/SOURCES.txt
+aochagavia_example_lib.egg-info/dependency_links.txt
+aochagavia_example_lib.egg-info/top_level.txt
