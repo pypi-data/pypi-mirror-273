@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pandoc_jinja.py
+pyproject.toml
+pandoc_jinja.egg-info/PKG-INFO
+pandoc_jinja.egg-info/SOURCES.txt
+pandoc_jinja.egg-info/dependency_links.txt
+pandoc_jinja.egg-info/entry_points.txt
+pandoc_jinja.egg-info/requires.txt
+pandoc_jinja.egg-info/top_level.txt
