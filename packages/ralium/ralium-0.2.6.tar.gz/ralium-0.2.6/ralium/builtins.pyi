@@ -1,0 +1,16 @@
+from ralium.element import HTMLElement
+from ralium.window import Window
+from ralium._util import FunctionType, Callable, _RT
+
+__registry__: list[FunctionType]
+
+def _builtin(function: FunctionType) -> Callable[..., _RT]: ...
+
+@_builtin
+def redirect(window: Window, url: str) -> None: ...
+@_builtin
+def shutdown(window: Window) -> None: ...
+@_builtin
+def get_window_port(window: Window, element: HTMLElement | None = None) -> int: ...
+@_builtin
+def get_window_path(window: Window, element: HTMLElement | None = None) -> int: ...
