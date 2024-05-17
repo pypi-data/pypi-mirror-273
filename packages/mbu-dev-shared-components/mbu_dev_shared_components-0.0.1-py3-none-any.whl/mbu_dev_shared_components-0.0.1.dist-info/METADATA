@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mbu_dev_shared_components
+Version: 0.0.1
+Summary: Shared components to use in RPA projects
+Author-email: MBU <rpa@mbu.aarhus.dk>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Office365-REST-Python-Client >=2.5.9
+
+# mub-dev-shared-components
+
+## Installation
+
+```
+pip install mbu-dev-shared-components
+```
+
+## Intro
+
+This python library contains helper modules for RPA development.
+It's based on the need of MBU, but it has been
+generalized to be useful for others as well.
+
+## Integrations
+
+### SharePoint
+
+Helper functions for using SharePoint api. A few examples include:
+
+- Authentication.
+- Get list of files from a specified folder.
+- Get file from folder.
+- Get files from folder.

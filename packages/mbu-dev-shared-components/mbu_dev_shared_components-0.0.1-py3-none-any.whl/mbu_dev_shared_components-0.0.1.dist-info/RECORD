@@ -1,0 +1,9 @@
+mbu_dev_shared_components/office365_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mbu_dev_shared_components/office365_api/sharepoint_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mbu_dev_shared_components/office365_api/sharepoint_api/sharepoint_files.py,sha256=h6_GEiKYeWaOSXiXjhNdWXrk_xmT6Gn4yk6RbcBhR3U,8970
+mbu_dev_shared_components/os2forms_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mbu_dev_shared_components-0.0.1.dist-info/LICENSE,sha256=ydFap-ADCP8QudMju_Rv5HMXk2zJzXL5sZPcg8LRLy4,1085
+mbu_dev_shared_components-0.0.1.dist-info/METADATA,sha256=ALG4vJZM2yuFNKnMJ4BBfGUWKvpfj4gkbqEITgaxSc8,958
+mbu_dev_shared_components-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mbu_dev_shared_components-0.0.1.dist-info/top_level.txt,sha256=J5CJfaH8G21tqUlFTjPdr7UpDH-bcbFTNADV1Axnzkk,26
+mbu_dev_shared_components-0.0.1.dist-info/RECORD,,
