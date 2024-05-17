@@ -1,0 +1,2 @@
+[console_scripts]
+audio_downloader = AudioDownloader.audio_downloader:main
