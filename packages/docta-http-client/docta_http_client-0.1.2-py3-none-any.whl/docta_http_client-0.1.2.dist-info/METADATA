@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: docta-http-client
+Version: 0.1.2
+Summary: A simple HTTP client for the Docta API.
+Home-page: https://github.com/docta/docta-http-client
+Author: Tongzhou Jiang @ docta.ai
+Author-email: tojiang@docta.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# docta-http-client
