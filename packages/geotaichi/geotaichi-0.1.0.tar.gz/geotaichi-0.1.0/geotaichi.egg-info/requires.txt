@@ -1,0 +1,8 @@
+taichi==1.6.0
+numpy==1.23.5
+psutil
+pynvml
+scipy==1.10.1
+trimesh==3.20.1
+shapely==1.8.0
+rtree
