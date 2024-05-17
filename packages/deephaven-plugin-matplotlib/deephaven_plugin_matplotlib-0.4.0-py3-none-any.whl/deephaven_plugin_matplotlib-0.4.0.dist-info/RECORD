@@ -1,0 +1,15 @@
+deephaven/plugin/matplotlib/__init__.py,sha256=LUnXtkJBU9GeI5qf1EGoRKyAimFrzs8y__-bJRTEnNw,4778
+deephaven/plugin/matplotlib/_js_plugin.py,sha256=JtUq-S4B8BaCcq8cd4mtb-sl0cdWpLb7PcjnzzdjRVs,613
+deephaven/plugin/matplotlib/_register.py,sha256=C5FZUkvTXOeZhAT4LkWSZATuly5hacv8TzsesRAeGNE,1406
+deephaven/plugin/matplotlib/deephaven.mplstyle,sha256=eQQnW8X8WVckKPLIasoPHzMyjisT41u7rwzf7wewzak,298
+deephaven/plugin/matplotlib/figure_type.py,sha256=Qt5osjQ-tIIZZwFFKY_4y5LtM78nu79ZUw6W_UPZKUI,3699
+deephaven/plugin/matplotlib/_js/LICENSE,sha256=Rq5fDcLgahjN6LBr20Wr6gtuKNFp5u_yBpU2eAMEz24,9793
+deephaven/plugin/matplotlib/_js/README.md,sha256=mfP7Kd1Fhye_iKV48Apd5cHDmSeWNkX8OnaMeSNyyhw,290
+deephaven/plugin/matplotlib/_js/package.json,sha256=wOifVhLteEd-QMphb8ivE6jw5JZ9YqdtzM2Z3Ggf02M,1372
+deephaven/plugin/matplotlib/_js/dist/index.js,sha256=4kwkg7iugxZd_m-IpqLRjVNBeU8xrXneLy57i-gC4bo,6157
+deephaven_plugin_matplotlib-0.4.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+deephaven_plugin_matplotlib-0.4.0.dist-info/METADATA,sha256=7G1_JRvnj29HrnMZgHFyN_YlPErdx9fgHAMFntl08cE,5423
+deephaven_plugin_matplotlib-0.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+deephaven_plugin_matplotlib-0.4.0.dist-info/entry_points.txt,sha256=DaxDTwbEEHskkIvEd22KvxljLlKdrxd4rpLFVPKTHM8,99
+deephaven_plugin_matplotlib-0.4.0.dist-info/top_level.txt,sha256=yKrv3PBHQAlw61FAN5t-AlBfFqQeuRWEFHFY0G8e_TY,13
+deephaven_plugin_matplotlib-0.4.0.dist-info/RECORD,,
