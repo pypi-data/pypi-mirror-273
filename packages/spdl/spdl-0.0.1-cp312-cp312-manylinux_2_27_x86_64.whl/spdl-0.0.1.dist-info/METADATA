@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: spdl
+Version: 0.0.1
+Summary: SPDL: Scalable and Performant Data Loading.
+Author: Moto Hira
+Requires-Python: >=3.10
+Requires-Dist: numpy >=1.21
+
+Fast multimedia data loading and processing.
