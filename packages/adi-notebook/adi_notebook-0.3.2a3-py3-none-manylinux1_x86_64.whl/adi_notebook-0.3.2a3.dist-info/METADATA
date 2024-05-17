@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: adi-notebook
+Version: 0.3.2a3
+Summary: adi-notebook, use ADI-backboned method in a notebook.
+Home-page: https://code.arm.gov/kefeimo/adi-notebook
+Author: Kefei Mo
+Author-email: kefei.mo@pnnl.gov
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: arm-adi
+Requires-Dist: wurlitzer
+Requires-Dist: mock
+Requires-Dist: tqdm
+Requires-Dist: tabulate
+
+# adi-notebook
+
+## About adi-notebook
+
+Introducing adi_runner: A Comprehensive Python Package for Seamless Integration with PCM and ADI Systems.
+
+adi_runner is a versatile Python package designed to offer an intuitive API that simplifies interactions with PCM (Processing Configuration Manager) and ADI (ARM Data Integrator) technologies. This powerful tool empowers users to navigate ARM (Advanced RISC Machine) data, implement the VAPs (Value-added products) algorithm, and develop comprehensive VAPs workflows with ease.
+
+Whether you're operating directly from the command line, embedding adi_runner within scripts, or leveraging it in an interactive development environment like Jupyter Notebook, this package is engineered to enhance your productivity and streamline your projects. adi_runner is especially beneficial for scientists and developers alike:
+
+For Scientists: Integrate the results from PCM configurations and ADI algorithms seamlessly into your familiar research environments. adi_runner makes it easier to incorporate advanced computational techniques into your experimental analysis, fostering innovation and discovery.
+
+For Developers: Transition scientific code into production-ready VAPs ADI pipelines effortlessly. adi_runner bridges the gap between research and real-world application, allowing for the smooth transfer of valuable insights into operational systems.
+
+With adi_runner, both scientists and developers can unlock the full potential of their data and algorithms, paving the way for groundbreaking advancements in their respective fields. Welcome to a world of enhanced efficiency, precision, and versatility in PCM and ADI interactions.
+
+## Install
+
+Requires-python >=3.8. Using pip.
+
+```shell
+pip install adi-notebook
+```
+
+> **_NOTE:_**  The package is still in active development, when required, please include the version number for reproducibility.
+
+## Explore the package
+
+The adi-notebook package provides intuitive APIs to run adi workflow in Jupyter Notebook environment interactively. In order to run the notebook and explore the features we recommend you explore in a conda environment. Follow the steps to create a reproducible conda environment.
+> **_NOTE:_**   If you have mamba installed, replace the "conda" command with "mamba" to increase the speed.
+
+1. Clone this repo
+
+    ```shell
+    git clone https://code.arm.gov/kefeimo/adi-notebook.git
+    ```
+
+1. (Navigate to the repo path) Create a conda environment from file, with
+
+   ```shell
+   conda env create -f environment.yml
+   ```
+
+   or 
+   
+   ```shell
+   conda env create -f environment.yml --solver=libmamba
+   ```
+
+   > **_Note:_** mamba solver is much faster than conda, and it is preferable. For jade, use `--solver=libmamba` sub-command to enable mamba solver.
+
+1. (After the environment is properly installed, which might take a while) activate the environment with the following command.
+    ```shell
+    conda activate adi_notebook
+    ```
+
+1. Verify the installation by running the command line utility "pcm-overview".
+    
+    The "pcm-overview" utility takes a valid process name as argument and review its retrieval rule dataset(s), coordinate(s), variable(s) and output datastream(s). You can find its usage with "-h" (or "--help") command option.
+    ```shell
+    (adi_notebook) [kefeimo@dev-proc2 adi-notebook]$ pcm-overview -h
+    usage: pcm-overview [-h] process_name
+
+    Overview Processing Configuration Manager (PCM). EXAMPLE: pcm-overview <process_name>
+
+    positional arguments:
+    process_name  <process_name>
+
+    options:
+    -h, --help    show this help message and exit
+    ```
+    Here is an example using the "adi_demo_0" process.
+    ```shell
+    (adi_notebook) [kefeimo@dev-proc2 adi-notebook]$ pcm-overview adi_demo_0
+    ╒══════════════════════╤═════════════════════╤═════════════════╤═══════════════════════╕
+    │ retrieval_rule_set   │ coordinate_system   │ variable        │ output_datastream     │
+    ╞══════════════════════╪═════════════════════╪═════════════════╪═══════════════════════╡
+    │ met_b1               │ half_min_grid       │ alt             │ ['adiregulargrid.c1'] │
+    │ met_b1               │ half_min_grid       │ lat             │ ['adiregulargrid.c1'] │
+    │ met_b1               │ half_min_grid       │ lon             │ ['adiregulargrid.c1'] │
+    │ met_b1               │ half_min_grid       │ met_temperature │ ['adiregulargrid.c1'] │
+    ╘══════════════════════╧═════════════════════╧═════════════════╧═══════════════════════╛
+    ```
+
+
+1. (Optional) Start a Jupyter Notebook server and explore the library in notebooks.
+    ```
+    jupyter notebook
+    ```
+    After running the command, open a browser with the url and navigate to the path that stores the notebook. For people new to adi-notebook, we recommend you start with the notebook [Introducing_AdiRunner_1_quick-start.ipynb](examples/Introducing_AdiRunner_1_quick-start.ipynb).
+
+
