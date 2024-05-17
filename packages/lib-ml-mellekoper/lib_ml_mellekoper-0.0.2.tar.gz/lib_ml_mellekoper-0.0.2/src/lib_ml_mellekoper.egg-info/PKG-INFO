@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lib-ml-mellekoper
+Version: 0.0.2
+Summary: A small preprocessing package
+Author-email: Melle Koper <melle.koper@gmail.com>
+Project-URL: Homepage, https://github.com/remla24-team7/lib-ml
+Project-URL: Issues, https://github.com/remla24-team7/lib-ml/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# lib-ml
+Data preprocessing library
+can be installed through:
+
+```
+pip install remla24-team7-libversion
+```
