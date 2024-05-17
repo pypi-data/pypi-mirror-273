@@ -1,0 +1,6 @@
+click
+opencv-python
+tk
+tqdm
+loguru
+imagededup
