@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pynnacle_uno/__init__.py
+pynnacle_uno/main.py
+pynnacle_uno.egg-info/PKG-INFO
+pynnacle_uno.egg-info/SOURCES.txt
+pynnacle_uno.egg-info/dependency_links.txt
+pynnacle_uno.egg-info/requires.txt
+pynnacle_uno.egg-info/top_level.txt
