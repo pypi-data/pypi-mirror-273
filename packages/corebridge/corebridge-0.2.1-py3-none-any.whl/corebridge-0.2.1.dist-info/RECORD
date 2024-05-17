@@ -1,0 +1,10 @@
+corebridge/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+corebridge/_modidx.py,sha256=a2T3zXjGTByjFgmWsfy4pITdKkdSR0dfDHJPPdrrjuI,2865
+corebridge/aicorebridge.py,sha256=5tuksJvaBzP3w6n6jOkOXMRp5B8Bm8kTgjHnVx13z-s,4659
+corebridge/core.py,sha256=tbA_kjjLSCR3MzDz74X9TMu5htDK3J5B5vofwBVYpqA,4464
+corebridge-0.2.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+corebridge-0.2.1.dist-info/METADATA,sha256=qS1vrvPkNvK7TbZIwd6SeE45u68SJrOMW-ylKnUjlKw,3618
+corebridge-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+corebridge-0.2.1.dist-info/entry_points.txt,sha256=UY5H-eh-TDxLiXHyqQEcwm2Ci9FMiNHC_QJyrv3cqYQ,42
+corebridge-0.2.1.dist-info/top_level.txt,sha256=ymWZu_KP-0tjq3MRzIN1YLMlgZ9B2dUgY5tPK_e1jbY,11
+corebridge-0.2.1.dist-info/RECORD,,
