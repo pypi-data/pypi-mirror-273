@@ -1,0 +1,12 @@
+README.md
+setup.py
+picture2pixel/__init__.py
+picture2pixel/image_processing.py
+picture2pixel/main.py
+picture2pixel/verilog_generator.py
+picture2pixel.egg-info/PKG-INFO
+picture2pixel.egg-info/SOURCES.txt
+picture2pixel.egg-info/dependency_links.txt
+picture2pixel.egg-info/requires.txt
+picture2pixel.egg-info/top_level.txt
+tests/test_picture2pixel.py
