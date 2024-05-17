@@ -1,0 +1,14 @@
+numpy<=1.26.4,>=1.24.1
+pandas<=2.2.2,>=2.0.3
+numba<=0.59.1,>=0.57.1
+scipy<=1.13.0,>=1.8.0
+importlib-metadata<=7.1.0,>=6.8.0
+
+[dev]
+pytest
+pylint
+flake8
+
+[plot]
+matplotlib<=3.7.5,>=3.5.3
+plotly<=5.22.0,>=5.16.1
