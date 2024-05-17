@@ -1,0 +1,10 @@
+sequence_align-0.1.1.dist-info/METADATA,sha256=NUkXPf4LKZ4o8QoZ6f1XDBTjD8YNY2zbX6lN9nod_JI,7495
+sequence_align-0.1.1.dist-info/WHEEL,sha256=6OJYZIM2Dk4eAjI82h1dKfIeHAb4_0-YRQodIDqhP8I,90
+sequence_align-0.1.1.dist-info/license_files/LICENSE,sha256=j9q0KoZXpK8fT1GXnUEV0DfgbGQv8XIn35OREXVn920,11566
+sequence_align-0.1.1.dist-info/license_files/LICENSE,sha256=j9q0KoZXpK8fT1GXnUEV0DfgbGQv8XIn35OREXVn920,11566
+sequence_align-0.1.1.dist-info/license_files/AUTHORS.md,sha256=zgfGnnTADSip5x0UBLZc4zlz8y5MHAa7c40hrPBddqE,59
+sequence_align/pairwise.py,sha256=Mji0Easoy3nQpWD5BAwOwHnnlRu95SLjy9Cvb2IMV98,6792
+sequence_align/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_align/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_align/sequence_align.pyd,sha256=nfYD9dgKf-XYOTxDIoXDriobuqRf7gpAwy3c4YCF80g,173056
+sequence_align-0.1.1.dist-info/RECORD,,
