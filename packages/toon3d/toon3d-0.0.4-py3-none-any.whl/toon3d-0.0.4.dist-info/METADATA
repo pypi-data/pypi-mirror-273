@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: toon3d
+Version: 0.0.4
+Summary: toon3d package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7.3
+Requires-Dist: black
+Requires-Dist: h5py
+Requires-Dist: mediapy
+Requires-Dist: ipykernel
+Requires-Dist: kmeans-pytorch
+Requires-Dist: kornia >=0.7.0
+Requires-Dist: rich >=12.5.1
+Requires-Dist: scikit-learn
+Requires-Dist: torchtyping
+Requires-Dist: transformers ==4.35.2
+Requires-Dist: tyro >=0.4.0
+Requires-Dist: opencv-python
+Requires-Dist: colour-science
+Requires-Dist: tqdm
+Requires-Dist: scikit-image
+Requires-Dist: ffmpeg
+Requires-Dist: pycocotools
+Requires-Dist: matplotlib
+Requires-Dist: onnxruntime
+Requires-Dist: onnx
+Requires-Dist: gdown ==5.0.0
+Requires-Dist: diffusers >=0.25.1
+Requires-Dist: wandb >=0.16.2
+Requires-Dist: peft >=0.6.0
+Requires-Dist: viser
+Requires-Dist: jaxtyping >=0.2.15
+Requires-Dist: nerfstudio
+
