@@ -1,0 +1,13 @@
+ddir/__init__.py,sha256=hhcbMVrBNnaITOn7qp9LtkF6cXaZcwIxGh9ew2IKgsA,4924
+ddir/__main__.py,sha256=oV1gLrsOBY4j91BquC-W3m6CDSTJ-dXpICrZrjKQMgk,4445
+ddir/__version__.py,sha256=I_Yi3h702ANpgAIAp7MxgB9Vd10cnwlnVUSyVbU0f80,156
+ddir/diff.py,sha256=6a-v1Hw8RUyhzsf8KJmvdVsH3pUelWBBj4_6gq2IJjk,12671
+ddir/initialize.py,sha256=XbgoD4YBxEsLfP5zabvuGIcOd2hAzHAYuBaPgeCY260,673
+ddir/legacy.py,sha256=shoCl9H9ZEO7Z_hh6urAyrUWzWnfgpygJsE7NIiBfGo,2600
+ddir/target.py,sha256=DK4riv1VBpjkomsulZeoc6JjPPcVL4Gp731y_ey9Oqo,5828
+ddir-3.1.1.dist-info/LICENSE,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+ddir-3.1.1.dist-info/METADATA,sha256=nOLx4x_JtC5_X_4MR2CAj8k5ZCPx4SALefg1FxlZeKs,4541
+ddir-3.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ddir-3.1.1.dist-info/entry_points.txt,sha256=uEQJqxm8H6cL_TYsi1-Vd7vdRnesOSVPbnr4noyXnwE,44
+ddir-3.1.1.dist-info/top_level.txt,sha256=F7NGOmHjOI4UseDtkAR3bTsbwIxLi4Gy8KaMMpIl6Ws,5
+ddir-3.1.1.dist-info/RECORD,,
