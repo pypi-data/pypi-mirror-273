@@ -1,0 +1,15 @@
+__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+inferent/__init__.py,sha256=T284-81eeedyRNoTAhb-sJZ3Ut37c36p9ulKYjb350w,38
+inferent/base_scraper.py,sha256=ZcqoB2StSZ_il4FAaoRXBYPcK0oCNh8cJqwLJY52WUg,3188
+inferent/utils/__init__.py,sha256=q-5VHCAxV0zn3GlY4uS_ZT45lkV0hyKZ0BCPeiUX2fA,66
+inferent/utils/betting.py,sha256=yFex7kvvwyP_eZreER-zT-wzKctQ0l_4jbik1Hq3vFk,2901
+inferent/utils/math.py,sha256=OUXsM5hDAV_HLFhusBNH_fs7qHrtGz6SoVO_s2vAFOs,2044
+inferent/utils/strings.py,sha256=ghnAVvLwt2Ki-xlHp1PJwTvwWo93UCzi23sqvVHFOoU,387
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_training.py,sha256=1rfuX5AyEebWoHzGNULiP2kT5ogYNeIByjTNlinpofY,646
+tests/test_utils.py,sha256=E0XbTfHczgRP0aN-Gy3eNgOab5Ymc9mJLtlSHDya0Mg,612
+inferent-0.0.21.dist-info/LICENSE,sha256=dgCtF2YDy_Rdq4y8Iz906JHeTx9AFrwFay3BbPaFls8,1065
+inferent-0.0.21.dist-info/METADATA,sha256=iyVgRpLlZuyoTNBE2-giOgB_o2a7rJ1BSLtX_2IqVhU,627
+inferent-0.0.21.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+inferent-0.0.21.dist-info/top_level.txt,sha256=cL7s-R7FuHmRMZE7-EWdwOgXYB9mLqSSuNYHOGCAoPk,24
+inferent-0.0.21.dist-info/RECORD,,
