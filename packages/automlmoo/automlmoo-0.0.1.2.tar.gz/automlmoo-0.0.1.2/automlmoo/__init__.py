@@ -1,0 +1,1 @@
+from automlmoo.version import __version__

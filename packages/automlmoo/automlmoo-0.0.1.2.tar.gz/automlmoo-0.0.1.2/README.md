@@ -1,0 +1,2 @@
+# Automated Machine Learning and Multi-Objective Optimization
+This package allows to automatically create data-driven models for each output of a dataset and ,then, also automatically, use them as objective functions in a predefined multi-objective optimization problem to find out optimal values for the inputs.
