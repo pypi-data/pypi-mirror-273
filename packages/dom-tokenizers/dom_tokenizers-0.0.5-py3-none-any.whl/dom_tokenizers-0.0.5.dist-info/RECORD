@@ -1,0 +1,12 @@
+dom_tokenizers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dom_tokenizers/train.py,sha256=1-5IB9RCJaLMa_6IlkZSyuihhgyqqqiHR5_-zAICPlA,6010
+dom_tokenizers/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dom_tokenizers/internal/transformers.py,sha256=Z7lkwJV55Afjyz8mVNdP-AzXKU2H1kSg3hGrLhYl8hM,589
+dom_tokenizers/pre_tokenizers/__init__.py,sha256=o2HCII8oWjL0s0C81abj8wG61nrCwgOe8hKnYSr1swM,50
+dom_tokenizers/pre_tokenizers/dom_snapshot.py,sha256=HBbIS8dSmI_8tflIzAEwJu-o9G46GCFsHXufNDGxRRg,9570
+dom_tokenizers-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dom_tokenizers-0.0.5.dist-info/METADATA,sha256=5ezO4ieuCgA65VjmUciFslmnLVAdznzKNrKEkE-FN9c,2699
+dom_tokenizers-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dom_tokenizers-0.0.5.dist-info/entry_points.txt,sha256=ZapsTyKqhWRrTkmYnHcHlc7MtsmHt1fWMez_GIcytlg,62
+dom_tokenizers-0.0.5.dist-info/top_level.txt,sha256=X-UAu4PqdfJbKTG9mxU_38NYLpVn4BTBmEVpDsKvI64,15
+dom_tokenizers-0.0.5.dist-info/RECORD,,
