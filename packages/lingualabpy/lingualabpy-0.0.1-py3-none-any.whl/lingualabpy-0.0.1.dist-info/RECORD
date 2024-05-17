@@ -1,0 +1,12 @@
+lingualabpy/__init__.py,sha256=-5fQO2ZhfDAr85KzxnQpb9xbOLheHZZdPPaLh5eQI2c,352
+lingualabpy/hello_world.py,sha256=GogXmyYRJHKBlKpMM1oNmSob2l4itrJITtVIcjv2pCc,650
+lingualabpy/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lingualabpy/cli/docx2json.py,sha256=l9h79H3wwz5Tpw8jG0rPxKsbTxLCIHvpYGy-NZWqnCU,513
+lingualabpy/cli/jsons2csv.py,sha256=SSTPoX96d6OExliThHMv4L9OmxfRWAe6ef6IYLBZEMw,586
+lingualabpy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lingualabpy/utils/utils.py,sha256=lQhnuE2v3HEqAjaqzxjfgGvHukwN6zQo-kJ6Jxrmt2Y,1938
+lingualabpy-0.0.1.dist-info/entry_points.txt,sha256=-VcNYlfe_30hHX_PCSG4_MTtc84zqiZdLKYEeoHXsZ4,125
+lingualabpy-0.0.1.dist-info/LICENSE,sha256=c-I54KLO-TBc3-uz1_w3ru3Mf6RSEHnU5cbiIEuCRzw,1074
+lingualabpy-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+lingualabpy-0.0.1.dist-info/METADATA,sha256=pm9VcQMOPbZFibZv48zRTEF3zPACC0ZLiOShxMbh7Tc,16407
+lingualabpy-0.0.1.dist-info/RECORD,,

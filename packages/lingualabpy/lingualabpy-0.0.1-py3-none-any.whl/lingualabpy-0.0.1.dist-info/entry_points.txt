@@ -1,0 +1,4 @@
+[console_scripts]
+lingualabpy_docx2json=lingualabpy.cli.docx2json:main
+lingualabpy_jsons2csv=lingualabpy.cli.jsons2csv:main
+
