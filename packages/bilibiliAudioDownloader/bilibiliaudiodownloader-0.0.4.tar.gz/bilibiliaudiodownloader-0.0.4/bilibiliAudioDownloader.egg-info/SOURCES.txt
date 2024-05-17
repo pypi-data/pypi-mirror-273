@@ -1,0 +1,12 @@
+README.md
+setup.py
+BilibiliAudioDownloader/__init__.py
+BilibiliAudioDownloader/audio_downloader.py
+BilibiliAudioDownloader/bvid_search.py
+BilibiliAudioDownloader/up_uid_search.py
+bilibiliAudioDownloader.egg-info/PKG-INFO
+bilibiliAudioDownloader.egg-info/SOURCES.txt
+bilibiliAudioDownloader.egg-info/dependency_links.txt
+bilibiliAudioDownloader.egg-info/entry_points.txt
+bilibiliAudioDownloader.egg-info/requires.txt
+bilibiliAudioDownloader.egg-info/top_level.txt
