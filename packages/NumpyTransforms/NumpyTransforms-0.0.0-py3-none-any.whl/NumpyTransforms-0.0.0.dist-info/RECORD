@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NumpyTransforms/Affine.py,sha256=3wz2eGhFQCW7x3C-7E6r66oYFW9VYnMF1AwQTdv_RuM,1838
+NumpyTransforms/Bezier.py,sha256=yxd3salgXmA6G0u7N5CY-mYkrSS8Rr60bxQVP_6TJHQ,1375
+NumpyTransforms/__init__.py,sha256=vG73aYublCA0-RCHQRqT4Ii6BJhWX6NZ-4cFcC8U1GY,69
+NumpyTransforms-0.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+NumpyTransforms-0.0.0.dist-info/METADATA,sha256=moFF39Ko9lpK4s7UfcbUj-dMxP7IriLMsjgaBFTEdcU,41658
+NumpyTransforms-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+NumpyTransforms-0.0.0.dist-info/top_level.txt,sha256=gqo4JEvsEI7jvPeRH4VJJVhOyGG_uELeH1LUU0Mdlw8,25
+NumpyTransforms-0.0.0.dist-info/RECORD,,
