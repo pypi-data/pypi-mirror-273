@@ -1,0 +1,4 @@
+arrow>=1.0.0
+mosaik-api-v3
+importlib-metadata<5.0
+pandas
