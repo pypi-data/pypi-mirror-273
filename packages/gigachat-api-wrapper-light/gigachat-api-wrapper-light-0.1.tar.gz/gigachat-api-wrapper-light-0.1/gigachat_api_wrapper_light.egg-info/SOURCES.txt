@@ -1,0 +1,7 @@
+README.md
+setup.py
+gigachat_api_wrapper_light.egg-info/PKG-INFO
+gigachat_api_wrapper_light.egg-info/SOURCES.txt
+gigachat_api_wrapper_light.egg-info/dependency_links.txt
+gigachat_api_wrapper_light.egg-info/requires.txt
+gigachat_api_wrapper_light.egg-info/top_level.txt
