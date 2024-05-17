@@ -1,0 +1,5 @@
+setup.py
+SDKPythonTestingPanda.egg-info/PKG-INFO
+SDKPythonTestingPanda.egg-info/SOURCES.txt
+SDKPythonTestingPanda.egg-info/dependency_links.txt
+SDKPythonTestingPanda.egg-info/top_level.txt
