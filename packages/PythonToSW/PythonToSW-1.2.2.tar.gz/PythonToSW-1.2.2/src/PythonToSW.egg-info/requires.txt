@@ -1,0 +1,7 @@
+pyperclip
+requests
+urllib3
+uuid
+xmltodict
+flask
+colorama
