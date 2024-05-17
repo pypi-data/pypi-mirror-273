@@ -1,0 +1,7 @@
+jiter-0.1.0.dist-info/METADATA,sha256=P_d4PNfFzjDMAwiuigRZu-P4SM55gkZfBQ26wB_jUow,1418
+jiter-0.1.0.dist-info/WHEEL,sha256=9RmYUj-esIKQx6TApE6-yhBl_9k8cOHeP1-5vFYOkbg,91
+jiter/__init__.py,sha256=Fp9HkOixiYYDSiC_80vmiJ_sCoCGT8OAh48yltm0lP0,103
+jiter/__init__.pyi,sha256=v8CqIvygexiThts8VGgRSgXnYmJmstqcROK6JiWR61w,335
+jiter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jiter/jiter.cp310-win32.pyd,sha256=AnhBA3xADUUSKTTVmzYhk8NwpwnNB6y-bE-mjDP6t_M,335872
+jiter-0.1.0.dist-info/RECORD,,
