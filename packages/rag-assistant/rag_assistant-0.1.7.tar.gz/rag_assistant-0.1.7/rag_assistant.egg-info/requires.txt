@@ -1,0 +1,2 @@
+gradio
+swarmauri[full]==0.1.127

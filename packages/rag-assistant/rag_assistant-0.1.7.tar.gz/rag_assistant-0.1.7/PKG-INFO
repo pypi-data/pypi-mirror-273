@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rag_assistant
+Version: 0.1.7
+Summary: The Swarmauri Rag Assistant is part of the swarmaURI framework.
+Home-page: http://github.com/swarmauri/rag_assistant
+Author: Jacob Stewart
+Author-email: corporate@swarmauri.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: gradio
+Requires-Dist: swarmauri[full]==0.1.127
+
+# Swarmauri Rag Assistant
+
+## Overview
+The Swarmauri Rag Assistant
+
+## Installation
+```bash
+pip install rag_assistant==0.1.7 --user
+```
+
+## Execution
+```bash
+! rag_assistant --api_key "YOUR API KEY" --db_path "E:\swarmauri_github/prompt_responses.db" --system_context "You are a helpful assistant."
+```
