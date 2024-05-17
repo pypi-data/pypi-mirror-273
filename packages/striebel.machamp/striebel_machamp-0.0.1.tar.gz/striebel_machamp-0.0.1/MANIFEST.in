@@ -1,0 +1,2 @@
+include striebel/machamp/meta.sh
+include striebel/machamp/data/quote.txt

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+striebel.machamp.egg-info/PKG-INFO
+striebel.machamp.egg-info/SOURCES.txt
+striebel.machamp.egg-info/dependency_links.txt
+striebel.machamp.egg-info/entry_points.txt
+striebel.machamp.egg-info/top_level.txt
+striebel/machamp/__init__.py
+striebel/machamp/__main__.py
+striebel/machamp/meta.py
+striebel/machamp/meta.sh
+striebel/machamp/data/__init__.py
+striebel/machamp/data/quote.txt
