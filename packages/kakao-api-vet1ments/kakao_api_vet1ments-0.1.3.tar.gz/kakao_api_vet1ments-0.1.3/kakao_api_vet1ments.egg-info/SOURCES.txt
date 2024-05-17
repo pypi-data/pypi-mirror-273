@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+kakao_api/__init__.py
+kakao_api/exceptions.py
+kakao_api/kakao_api.py
+kakao_api/types.py
+kakao_api/urls.py
+kakao_api/utils/__init__.py
+kakao_api/utils/singleton.py
+kakao_api_vet1ments.egg-info/PKG-INFO
+kakao_api_vet1ments.egg-info/SOURCES.txt
+kakao_api_vet1ments.egg-info/dependency_links.txt
+kakao_api_vet1ments.egg-info/requires.txt
+kakao_api_vet1ments.egg-info/top_level.txt
