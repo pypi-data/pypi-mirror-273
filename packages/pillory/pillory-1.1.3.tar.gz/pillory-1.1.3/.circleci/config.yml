@@ -1,0 +1,42 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@2.1.1
+
+jobs:
+  test:
+    executor:
+        name: python/default
+        tag: "3.10"
+    steps:
+      - checkout
+      - run:
+          name: unit tests
+          command: python test_pillory.py -v
+      - run:
+          name: example tests
+          command: python test_example.py -v
+
+  publish:
+    executor:
+        name: python/default
+        tag: "3.10"
+    steps:
+      - checkout
+      - python/install-packages:
+          pip-dependency-file: dev-requirements.txt
+          pkg-manager: pip
+      - run:
+          name: flit publish
+          command: flit publish
+
+workflows:
+  test-and-publish:
+    jobs:
+      - test
+      - publish:
+          requires:
+            - test
+          filters:
+            branches:
+              only: main
