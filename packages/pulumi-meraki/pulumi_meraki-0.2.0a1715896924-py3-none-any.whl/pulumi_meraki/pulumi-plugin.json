@@ -1,0 +1,6 @@
+{
+  "resource": true,
+  "name": "meraki",
+  "version": "0.2.0-alpha.1715896924",
+  "server": "github://api.github.com/pulumi/pulumi-meraki"
+}
