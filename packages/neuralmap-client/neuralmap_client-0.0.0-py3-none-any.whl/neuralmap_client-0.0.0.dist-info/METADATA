@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: neuralmap-client
+Version: 0.0.0
+Summary: Search and recommandation engines.
+Home-page: https://docs.neuralmap.io
+Author: Tensor AI
+Author-email: tensorai221@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp >=3.9.5
+Requires-Dist: bson >=0.5.10
+Provides-Extra: dev
+Requires-Dist: pytest >=7.0 ; extra == 'dev'
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+
+# Neuralmap API
+
+Neuralmap is designed by Tensor AI to streamline and enhance every aspect of search and recommandation engines.
+
+## Getting started
+
+To get started with the Neuralmap API client, you'll need to sign up for an API key on the Neuralmap platform. Once you have your API key, you can initialize the API client in your application and start making requests to the Neuralmap API.
+
+### Install the API Client
+You can install the Neuralmap API client for Python using the following pip command:
+
+```bash
+pip install neuralmap-client
+```
+
+This command will download and install the Neuralmap API client along with its dependencies from the Python Package Index (PyPI). Once installed, you can start using the API client to interact with the Neuralmap API and process candidate data programmatically.
+
+### Test your installation
+To ensure that the installation of the Neuralmap API client for Python was successful, you can perform a simple test to verify its functionality. Here's a basic example of how you can test the installation:
+
+```python
+from neuralmap import BaseClient
+
+client = BaseClient(api_key='your_api_key_here')
+client.hello()
+```
+
+The full and official documentation can be found [here](https://docs.neuralmap.io).
