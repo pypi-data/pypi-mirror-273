@@ -1,0 +1,10 @@
+meerkat/__init__.py,sha256=rndhxK7xHoEu1HzMQs4Uuq0fp0EqSCYjgu5STknP0bM,3402
+meerkat/api.py,sha256=223GLTKlGtDqonJPqnggLp3tF7liRZcNH3w1IFc3GFc,1053
+meerkat/cli.py,sha256=CDtrGbbtinPCGvP1POBm7Cg2QVSkWM0TQxVzQnDN-Y0,2418
+meerkat/ping_sounds/default_ping.wav,sha256=GooHgJyaUrRpLJy1qpRqjtAL3FaOW6-4TLpXn5J5ab0,223252
+meerkatio-1.20.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+meerkatio-1.20.dist-info/METADATA,sha256=Wpg6N8MtQNoRKoZ0h_D-GmlevDcbiP49MeqdV2SsSKM,44132
+meerkatio-1.20.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+meerkatio-1.20.dist-info/entry_points.txt,sha256=pMf2QAds0gE43q3w6m2aG_Zb_mMZlposNwM-MPHcjQo,48
+meerkatio-1.20.dist-info/top_level.txt,sha256=2sqjY0jwQS6YR9XcZ5lXQpu3AsE6oJuxmYxKbRosPrw,8
+meerkatio-1.20.dist-info/RECORD,,
