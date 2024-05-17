@@ -1,0 +1,12 @@
+langchain
+langchain-core
+langchain-openai
+langchain-community
+prompt_toolkit
+sentence_transformers
+PyYAML
+pydantic
+rich
+grpcio
+protobuf
+flask
