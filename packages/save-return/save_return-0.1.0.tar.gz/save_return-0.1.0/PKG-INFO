@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: save-return
+Version: 0.1.0
+Summary: Save the return value of the decorated function to a versioned pickle file
+Project-URL: Homepage, https://github.com/qwfy/save_return
+Project-URL: Documentation, https://github.com/qwfy/save_return
+Project-URL: Repository, https://github.com/qwfy/save_return
+Author-email: incomplete <incomplete@aixon.co>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# save-return
+
+Save the return value of the decorated function to a versioned pickle file.
+
+## Save
+
+```python
+import save_return
+
+@save_return.save('value_of_pi')
+def calc_pi():
+    return 4
+
+pi = calc_pi()
+```
+
+This will `pickle.save` `pi` to `./autosave/value_of_pi/yyyymmdd_HHMMSS_MS_00000.pkl`
+
+If used inside a Jupyter notebook named `x.ipynb`, 
+it will instead save to `./x.ipynb.autosave/value_of_pi/yyyymmdd_HHMMSS_MS_00000.pkl`
+
+Use `@save_return.save(..., save_dir="some-dir")` to customize the save location.
+
+```python
+pi = calc_pi()
+```
+
+Call it again will save `pi` to `./autosave/value_of_pi/yyyymmdd_HHMMSS_MS_00001.pkl`
+
+## Load
+
+The `load` function is just a wrapper around `pickle`:
+
+```python
+pi = save_return.load('./autosave/value_of_pi/yyyymmdd_HHMMSS_MS_00000.pkl')
+```
