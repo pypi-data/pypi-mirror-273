@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: addecli
+Version: 0.6.0
+Summary: Default template for PDM package
+Author-Email: Victor <victordeonroyale@gmail.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: typer>=0.12.3
+Description-Content-Type: text/markdown
+
+# addecli
