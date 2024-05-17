@@ -1,0 +1,14 @@
+framegrab/__init__.py,sha256=QQSdtRTt3jjF_rac2p-3aNTzDrUdtAt4wrA4TkfVPMw,512
+framegrab/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+framegrab/cli/autodiscover.py,sha256=DDoYadELu9FimbZTEEWdN414VAoacqnZpZENpX47uVc,1600
+framegrab/cli/clitools.py,sha256=qJ9MibA1N20t4DpN1e86X7-LjzMYJndxgQj6CnWNUV8,2102
+framegrab/cli/main.py,sha256=RM_7J2Knwr8Qr6_eSFfBQFSqGG5Kk9aES9z_6YRc81E,297
+framegrab/cli/preview.py,sha256=uDCg6gHK5jJipQsr7vIpQFHTVnu79rXpvTQbmnWHsng,1843
+framegrab/grabber.py,sha256=R5Nr0HpNmERDog17hGdX3OEVmLgdiRROC6qwTAyil3s,42610
+framegrab/motion.py,sha256=ZmzSj20xjxdde_1piVd3PTB3z95OjVY4-iB5RuDaBZQ,2533
+framegrab/unavailable_module.py,sha256=2lFNhvMzc-SauWAgxfqK2qPYfK0xaD4XV33vikHQCTs,698
+framegrab-0.5.1.dist-info/LICENSE.txt,sha256=sktvZLOrXHlIqpr9OtT1ynCbiirjE62rjVkO4IXnlwk,1071
+framegrab-0.5.1.dist-info/METADATA,sha256=IgkNkYo5tu8lm67FZX6tUcRsKS0BL9vmbHY1wAk5PFE,10177
+framegrab-0.5.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+framegrab-0.5.1.dist-info/entry_points.txt,sha256=FnjO9UOQ_VgiJBhEfwteCV4VbJQEN3sLY0KapEX1oVA,56
+framegrab-0.5.1.dist-info/RECORD,,
