@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: zorch
+Version: 0.0.7
+Summary: A brief description of the package
+Author: zwhy
+Author-email: zwhy2025@gmail.com
+Requires-Python: >=3.9
