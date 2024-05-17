@@ -1,0 +1,15 @@
+markdownfeedgenerator/BaseFeed.py,sha256=sruE9ZdvLEur7SOu9NXi-uPwUuaWoHxZo_f0objnDCI,6889
+markdownfeedgenerator/Gatherer.py,sha256=w7__0GROnfoPkKjiIjJDYdXut20DGrTWrtz3njCyUkM,657
+markdownfeedgenerator/MarkdownFile.py,sha256=BElPGpOouxOgpP6NJ_MhhYFpO01G5TQZB5JbAhbCoWE,5140
+markdownfeedgenerator/__init__.py,sha256=FuWwof0zZS6NjLrnEPjjHe6EXeViwD1KYQZkTuFbMWc,1207
+markdownfeedgenerator/Exceptions/__init__.py,sha256=D1XJBiMmaOxZbQt--f_E9wVgniupUipBLor9Svq7yMY,341
+markdownfeedgenerator/Feeders/Html/HtmlFeed.py,sha256=ZJwPLoy5vJn3OMSzvLCPDFkSb7jglfH3m90TjLZQqu4,3494
+markdownfeedgenerator/Feeders/Html/Properties.py,sha256=mwj87V3xKxlvshJV6n3xbVWgqRtb4VSISuHWm2y5LNQ,1158
+markdownfeedgenerator/Feeders/Html/template.html,sha256=XwzC8DPAHKCLCh1FAPsyAlIFkbo8wvtH4O0zkt_Xd08,2753
+markdownfeedgenerator/Feeders/Json/Feed.py,sha256=KZ1yRVoqxLMvvS3WU7kBn2yFQbKL0OhLGX6omcy8Jxs,4512
+markdownfeedgenerator/Feeders/Json/Properties.py,sha256=fpLXOuitDUPrUb9bOvn1aRte_3BMiqZlRx4ooImpS-Q,7330
+markdownfeedgenerator-1.0.0.dist-info/LICENSE,sha256=uFG9Hrb3ZP-vG6brINYojO6GXRyhN78y_JIJkvJzlRc,1072
+markdownfeedgenerator-1.0.0.dist-info/METADATA,sha256=xAghcqCBmO_CiByd5AU8fkLyWFNfFNVaETlJtKpG6s8,3065
+markdownfeedgenerator-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+markdownfeedgenerator-1.0.0.dist-info/top_level.txt,sha256=MMX9sVjr5zwKRifuaJNujXQY-_IpC_Frmil_mHsj6_c,22
+markdownfeedgenerator-1.0.0.dist-info/RECORD,,
