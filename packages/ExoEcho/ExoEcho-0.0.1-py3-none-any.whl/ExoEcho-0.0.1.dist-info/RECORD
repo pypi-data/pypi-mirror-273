@@ -1,0 +1,41 @@
+ExoEcho/.gitignore,sha256=ffabCo303lGqV1D5UnkLGaXJW0AKftWisDVTRnvr_1I,12
+ExoEcho/EclipseSim.ipynb,sha256=H8em_Ej8r3nF6a7DrS5-_naQmTd9yhbmPk-Ij3QoM54,120018
+ExoEcho/Functions.py,sha256=Cg61ryriPp7pmRxjIXac219-K-6PUCJUBF6I6pjhy2Q,11152
+ExoEcho/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ExoEcho/addTelescopes.ipynb,sha256=KJlg0e5armChLdgNo4huvFxO7vdcpVdpx4FowyXL4yc,752090
+ExoEcho/addTelescopes.py,sha256=t8eeqt_b409GWT8FQEnrv5fxsg2ToVQDVq6sA6rmcak,6429
+"ExoEcho/Noise Estimate Plots/Noise Estimates at Various Wavelengths Ariel AIRS-CH0, 1.95-3.9 microns, R=100).png",sha256=_E9Dsr768w94chEvHiPrQ1OAkXiMcL8NmL4gjMSY7i4,209624
+"ExoEcho/Noise Estimate Plots/Noise Estimates at Various Wavelengths Ariel AIRS-CH1, 3.9-7.8 microns, R=100).png",sha256=ERlHDDPNGEiZH8Fqvwl3Sd4NYuvEtxbyuRH-tP8PNGQ,189457
+"ExoEcho/Noise Estimate Plots/Noise Estimates at Various Wavelengths Ariel NIRSpec, 1.1-1.95 microns, R=15).png",sha256=8KR4J3lqv-liygicwwIRi4QP7PAof2xHl_dypJDcCB4,185591
+"ExoEcho/Noise Estimate Plots/Noise Estimates at Various Wavelengths JWST NIRISS SOSS, 0.6-2.8 microns, R=700).png",sha256=_is0NHZbZz4XGQoTxMm2zglbzPr1gBO49d2KwfuuLus,159928
+"ExoEcho/Noise Estimate Plots/Noise Estimates at Various Wavelengths JWST NIRSpec G395H, 0.6-5.3 microns, R=100).png",sha256=5KUfpatHccskCIPYf5gp2YKtObahpg4HnlSvLGfnXzw,151558
+"ExoEcho/Noise Estimate Plots/Noise Estimates at Various Wavelengths JWST NIRSpec, 0.6-5.3 microns, R=100).png",sha256=Hm7E_fvcdNu6NxPq2inUFjThPvST-5O85rLYUCvvVZ4,150419
+ExoEcho/Noise Estimate Plots/Noise Estimates for Various Ariel Instruments (R15 and R100).png,sha256=efNRigM2m94R2H8EXnRPdO5oMLDU2HZzq75NRxjAOfs,203321
+ExoEcho/Noise Estimate Plots/Noise Estimates for Various Ariel Instruments (R15 and R30).png,sha256=6pjFGbE8pHyLUfQnEMnT510D4re5t23th950Pvt9Aq0,175934
+ExoEcho/TelescopeNoiseEstimates.egg-info/PKG-INFO,sha256=Js6eYtApfemkdt0smGuTIN-jNvx3A0itzl-a5TN0eRA,1614
+ExoEcho/TelescopeNoiseEstimates.egg-info/SOURCES.txt,sha256=_2_146bjoEEnw47whck9svnG2-mzQZqvjiViZOFVqQE,2063
+ExoEcho/TelescopeNoiseEstimates.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ExoEcho/TelescopeNoiseEstimates.egg-info/requires.txt,sha256=vZjC-8WOY4MedMfLFigqbr2q6Gc7cvJCWtoBdD38x5w,64
+ExoEcho/TelescopeNoiseEstimates.egg-info/top_level.txt,sha256=cpQjBZRoxhTRUC0rGWRWnAslRiyE_yf9gYLpn32Ak3U,90
+ExoEcho/Telescopes/Ariel AIRS-CH0 1.95-3.9um R=100.csv,sha256=Gj13lI0GnSKQrHHfSaY1Rjx9FkI_lLxuv60SSoMlHD4,2608286
+ExoEcho/Telescopes/Ariel AIRS-CH0 1.95-3.9um R=30.csv,sha256=QcqLV55JxEdUKFgLRKgJxKbAN66axEPtbKfawQHV8lo,1521185
+ExoEcho/Telescopes/Ariel AIRS-CH1 3.9-7.8um R=100.csv,sha256=n1D_OhkGQ-HBjmo36jMsDVDA-ALMfpVAkx1ji3f3yCs,2593914
+ExoEcho/Telescopes/Ariel AIRS-CH1 3.9-7.8um R=30.csv,sha256=AOhZalT8AfSpJkH_juGVq_KOEvg_WH7OG-PMJDU4TcE,1518521
+ExoEcho/Telescopes/Ariel FGS1 0.6-0.8um R=1.csv,sha256=bgvmzkU41lrQjAFlvgipLuXY2QhPFq1PtmQhdX2S6fw,1066819
+ExoEcho/Telescopes/Ariel FGS2 0.8-1.1um R=1.csv,sha256=l-4f7Sw_xb9P-PMoljasS-399CBuxa-5jzLsspuaZiY,1066886
+ExoEcho/Telescopes/Ariel NIRSpec 1.1-1.95um R=15.csv,sha256=yKwSNU5efDEd_xwE5Ey5E40JVXcW9K_fDDy4od19omc,1285590
+ExoEcho/Telescopes/Ariel VISPhot 0.5-0.6um R=1.csv,sha256=rLrBt21fWRTRoJdCPyeM6E5KCZ7Tyrfh9R1AJbc7PM0,1066816
+ExoEcho/Telescopes/JWST MIRI LRS 5.0-12.0um R=100.csv,sha256=SWBeHeIEONLRzuHo52DZd81yTziL-KCYc89fHAPamKw,2616107
+ExoEcho/Telescopes/JWST MIRI MRS 4.9-28.8um R=1500.csv,sha256=bat-2cdVdOtKlImPJbKeWYTCWr4BDnMStB17OIZiZW4,24199075
+ExoEcho/Telescopes/JWST NIRISS SOSS 0.6-2.8um R=700.csv,sha256=ocSIABZ_SlM9A9F0fs8uBpx1xFC45zNIvEk9CPEKQqU,11976915
+ExoEcho/Telescopes/JWST NIRSpec 0.6-5.3um R=100.csv,sha256=3FcnctWXlBYWjHInqE8JfUfHcZAj7_XIVQ-m1rmLO_E,2613713
+ExoEcho/Telescopes/JWST NIRSpec 0.6-5.3um R=1000.csv,sha256=ofAnMb5eXc_9bbixtJlI-waVnYSOOZnaODXABpmaJOM,16682283
+ExoEcho/Telescopes/JWST NIRSpec 0.6-5.3um R=2700.csv,sha256=wAWr_G8UAZbaFKnOuinmt9Nh90_YXOnKk8HyuU-JmNc,43283532
+ExoEcho/Telescopes/JWST NIRSpec G395H 0.6-5.3um R=100.csv,sha256=YKpA0nwRn_QMHrqi8G4T1jthCdliHwfk8z8whnOEnRs,2613707
+ExoEcho/target_lists/Ariel_MCS_Known_2024-03-27.csv,sha256=GTgAuiALBI2Oyykvv96Y7Aem0vrMt859ShuuBBBb3FE,1032976
+ExoEcho/target_lists/Ariel_MCS_TPCs_2024-03-27.csv,sha256=ciFeow35JUGoQ8UPMpPIUQP9thh5Q9SOYIw-8fuklsk,1650618
+ExoEcho-0.0.1.dist-info/LICENSE,sha256=K-t5zlGiBhPDr9mlajW_s__ttZrQJxIc5sZ7DD0pZTA,738
+ExoEcho-0.0.1.dist-info/METADATA,sha256=7--gqp7BS06OJLtAABmuKnxAWfLYoS4OnjvUhHGYchU,1587
+ExoEcho-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ExoEcho-0.0.1.dist-info/top_level.txt,sha256=CauB3iLkgQFV90hKPhwMLS_dOCmLaRNy-kA21EFfI7E,8
+ExoEcho-0.0.1.dist-info/RECORD,,
