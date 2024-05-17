@@ -1,0 +1,7 @@
+.DS_STORE
+.cache
+build
+dist
+_skbuild
+MANIFEST.in
+simevopy.*
