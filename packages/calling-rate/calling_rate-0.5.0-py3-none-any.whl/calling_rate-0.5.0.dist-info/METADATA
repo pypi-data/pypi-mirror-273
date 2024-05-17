@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: calling_rate
+Version: 0.5.0
+Summary: Calculate population size from calling rate of seabirds
+Home-page: https://github.com/IslasGECI/calling_rate
+Author: Ciencia de Datos • GECI
+Author-email: ciencia.datos@islas.org.mx
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: pandas-stubs
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: typer[all]
+Requires-Dist: utm
+
+<a href="https://www.islas.org.mx/"><img src="https://www.islas.org.mx/img/logo.svg" align="right" width="256" /></a>
+# Calling Rate
+[![codecov](https://codecov.io/gh/IslasGECI/calling_rate/graph/badge.svg?token=ZRhomhz7XH)](https://codecov.io/gh/IslasGECI/calling_rate)
+![example branch
+parameter](https://github.com/IslasGECI/population_trend/actions/workflows/actions.yml/badge.svg)
+![licencia](https://img.shields.io/github/license/IslasGECI/population_trend)
+![languages](https://img.shields.io/github/languages/top/IslasGECI/population_trend)
+![commits](https://img.shields.io/github/commit-activity/y/IslasGECI/population_trend)
+![GitHub contributors](https://img.shields.io/github/contributors/IslasGECI/population_trend)
+
+Este repositorio lo usamos para calcular la densidad de individuos usando las tasas de vocalización.
+

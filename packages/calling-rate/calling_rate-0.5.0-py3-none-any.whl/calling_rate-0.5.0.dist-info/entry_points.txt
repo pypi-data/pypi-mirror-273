@@ -1,0 +1,4 @@
+[console_scripts]
+calling-rate=calling_rate.cli:cli
+calling-rates-curator=calling_rate.curator:curator
+
