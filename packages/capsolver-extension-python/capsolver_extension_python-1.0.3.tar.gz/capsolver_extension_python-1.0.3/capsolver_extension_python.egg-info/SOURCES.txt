@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+capsolver_extension_python/__init__.py
+capsolver_extension_python/extension.py
+capsolver_extension_python/perform_capsolver_file_updates.py
+capsolver_extension_python.egg-info/PKG-INFO
+capsolver_extension_python.egg-info/SOURCES.txt
+capsolver_extension_python.egg-info/dependency_links.txt
+capsolver_extension_python.egg-info/requires.txt
+capsolver_extension_python.egg-info/top_level.txt
