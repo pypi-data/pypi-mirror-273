@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ffprint
+Version: 0.0.1
+Summary: self print
+Author: eric.gao
+Author-email: 18655035787@163.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.license
+
+修改自带print函数，在打印内容前加上时间戳和详细函数定位
