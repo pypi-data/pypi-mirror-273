@@ -1,0 +1,128 @@
+{% extends "package/read.html" %}
+
+{%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
+
+{% block package_notes %}
+    {%- if not dataset_type -%}
+        <p>
+            dataset_type not passed to template. your version of CKAN
+            might not be compatible with ckanext-scheming
+        </p>
+    {%- endif -%}
+    {% if pkg.notes%}
+        <div class="notes embedded-content">
+            {{ h.render_markdown(h.get_translated(pkg, 'notes')) }}
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block package_resources %}
+    {% snippet "package/snippets/resources_list.html", pkg=pkg, resources=pkg.resources,
+      can_edit=h.check_access('package_update', {'id':pkg.id }) %}
+{% endblock %}
+
+{% block package_additional_info %}
+    {% snippet "scheming/package/snippets/additional_info.html",
+    pkg_dict=pkg, dataset_type=dataset_type, schema=schema %}
+{% endblock %}
+
+{% block title %}Available contracts for this remote {{ dataset_type }} - {{
+super() }}{% endblock %}
+
+{% block content_action %}
+{% endblock %}
+
+{% block content_primary_nav %}
+{% endblock %}
+
+{% block secondary_content %}
+    <section class="module module-narrow module-shallow">
+        <h2 class="module-heading"><i
+                class="icon-info-sign fa fa-info-circle"></i>{% trans %}This
+            is a list of the available contracts for this external resource.{%
+            endtrans %}</h2>
+        <div class="module-content">
+            <p>
+                See the contracts for this resource
+            </p>
+        </div>
+    </section>
+    {% if "trusts_recommender" in g.plugins %}
+        {% block recomm_entity_sidebar %}
+            {% snippet 'package/snippets/recomm_entity_sidebar.html', entity=g.pkg_dict, count=3 %}
+        {% endblock %}
+    {% endif %}
+{% endblock %}
+
+
+{% block primary_content_inner %}
+    {{ super() }}
+   {% if 'local_artifacts' in g %}
+       {% snippet "package/snippets/agreements_table.html", local_artifacts=g.local_artifacts, agreements=g.agreements %}
+       {#<section id="dataset-artifacts" class="contracts">
+           These artifacts are now available for you to consume:
+           <ul>
+           {% for artifact in g.local_artifacts %}
+               <li>
+                   <p><b> {{ artifact["title"] }} </b> </p>
+                   <p><b> {{ artifact["description"] }} </b> </p>
+                   <a class="heading" href="{{ artifact["url"] }}" title="{{ artifact["url"] }}">
+                       <p><b> {{ artifact["url"] }} </b> </p>
+                   </a>
+               </li>
+
+           {% endfor %}
+           </ul>
+           {% if dataset_type=="service" %}
+             <button onclick="triggerWorkflow(1, 2 )">{% trans %} Execute Workflow {% endtrans %}</button>
+           {% endif %}#}
+   {% else %}
+       You have not acquired this resource so far. If you want to access its
+       artifacts, please select a contract from below.
+   {% endif %}
+
+   <section id="dataset-contracts" class="contracts">
+    {% block contract_list %}
+        {% snippet "package/snippets/contracts_list.html", data=g.pkg_dict, contracts=g.contracts %}
+    {% endblock %}
+</section>
+
+
+<script>
+    function triggerWorkflow(triggerArtifactId, agreementId) {
+        var data = {
+            agreementId: agreementId,
+            workflowTriggerArtifactId: triggerArtifactId
+        }
+        sendTriggerData(data)
+    }
+
+    function sendTriggerData( data ) {
+        const XHR = new XMLHttpRequest(),
+            FD  = new FormData();
+
+        // Push our data into our FormData object
+        for( name in data ) {
+            FD.append( name, data[ name ] );
+        }
+
+        // Define what happens on successful data submission
+        XHR.addEventListener( 'load', function( event ) {
+            console.debug( 'Workflow was triggered succesfully', event );
+            window.location.reload()
+        } );
+
+        // Define what happens in case of error
+        XHR.addEventListener(' error', function( event ) {
+            console.debug( 'Oops! Something went wrong. Workflow execution failed.' );
+        } );
+
+        // Set up our request
+        XHR.open( 'POST', '/ids/actions/trigger_workflow' );
+
+        // Send our FormData object; HTTP headers are set automatically
+        XHR.send( FD );
+    }
+</script>
+
+{% endblock %}
