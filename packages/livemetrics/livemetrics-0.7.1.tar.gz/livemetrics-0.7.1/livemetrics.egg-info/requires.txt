@@ -1,0 +1,14 @@
+
+[aiohttp]
+aiohttp
+
+[dashboard]
+jinja2
+PyYAML
+aiohttp
+
+[django]
+django
+
+[flask]
+flask

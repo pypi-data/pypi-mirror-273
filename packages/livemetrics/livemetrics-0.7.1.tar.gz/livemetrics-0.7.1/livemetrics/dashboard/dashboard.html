@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard {{config.title}}</title>
+  <meta name="description" content="Dashboard {{config.title}}">
+
+  <!-- https://code.jquery.com/ -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+
+  <!-- https://apexcharts.com/ -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<body>
+  <style>
+
+#title {
+  text-align: center;
+}
+
+/* For status */
+.status_ok {
+  color: green;
+  font-size: 300%;
+}
+
+.status_ko {
+  color: red;
+  font-size: 300%;
+}
+
+.row-label {
+  font-size: 170%;
+}
+
+td h4 {
+  text-align: center;
+  font-size: 110%;
+}
+
+/* For simple values */
+.value-value {
+  font-family: sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+td {
+  vertical-align: top;
+  padding: 3px;
+  }
+
+.tile {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px;
+  margin-bottom: 0px;
+}
+
+  </style>
+  <script type="text/javascript">
+  
+  $( function(){
+
+    {% for R in config.rows %}
+      {% for C in R.cells %}
+        init_{{C.id}}();
+      {% endfor %}
+    {% endfor %}
+
+    {% for R in config.rows %}
+    refresh_values_{{R.id}}();
+    {% endfor %}
+
+    // adjust frequency based on the number of charts in the dashboard
+    {% for R in config.rows %}
+    setInterval(refresh_values_{{R.id}},{{timeout}});
+    {% endfor %}
+
+  });
+  
+  var $mpoints_max = 50;
+  {% for R in config.rows %}
+  function refresh_values_{{R.id}}() {
+      {% for C in R.cells %}
+        {% if C.type == 'label' %}
+        {% elif C.type =='empty' %}
+        {% else %}
+          $.get("all", {server: {{C.server|server_to_list}} }, function(stats,status) {
+            update_{{C.id}}(stats,status);
+          }).fail(function() {
+            update_{{C.id}}(null,false);
+          });
+        {% endif %}
+      {% endfor %}
+  }
+  {% endfor %}
+
+  function conv(val,factor) {
+    if (factor.slice(0,1)=='*') {
+      return val * factor.slice(1);
+    }
+    if (factor.slice(0,1)=='/') {
+      return val / factor.slice(1);
+    }
+  }
+
+  function reduce(vals,ope) {
+    if (!Array.isArray(vals)) {
+      return vals;
+    }
+
+    s = 0;
+    m = NaN;
+    M = NaN;
+    for (val of vals) {
+      s += val;
+      if (val>M || isNaN(M)) {
+        M = val;
+      }
+      if (val<m || isNaN(m)) {
+        m = val;
+      }
+    }
+    if (ope=="average") {
+      return s / vals.length;
+    }
+    if (ope=="sum") {
+      return s;
+    }
+    if (ope=="min") {
+      return m;
+    }
+    if (ope=="max") {
+      return M;
+    }
+    return 0;
+  }
+
+  /* Init and update function */
+  {% for R in config.rows %}
+    {% for C in R.cells %}
+
+      /* Global vars */
+      {% if C.type == 'status' %}
+      {% elif C.type == 'value' %}
+      {% elif C.type == 'gauge' %}
+
+        var ${{C.id}}_gauge = null;
+        var ${{C.id}}_line_gauge = null;
+        var $mpoints_{{C.id}}_gauge = [null,null,null,null,null,null,null,null,null,null,
+          null,null,null,null,null,null,null,null,null,null,
+          null,null,null,null,null,null,null,null,null,null,
+          null,null,null,null,null,null,null,null,null,null,
+          null,null,null,null,null,null,null,null,null,null];
+
+      {% elif C.type == 'histogram' %}
+        var ${{C.id}}_histo = null;
+      {% endif %}
+
+      /* Init function */
+      function init_{{C.id}}() {
+        {% if C.type == 'status' %}
+        {% elif C.type == 'value' %}
+        {% elif C.type == 'gauge' %}
+          var options = {
+            series: [0],
+            chart: {
+              height: 130,
+              width: 100,
+              type: 'radialBar',
+              offsetY: 0,
+              animations: {
+                enabled: false
+              }
+            },
+            grid: {
+              show: false,
+              padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: -10
+              }
+            },
+            plotOptions: {
+              radialBar: {
+                startAngle: -125.0,
+                endAngle: 125.0,
+                offsetY: -23,
+                track: {
+                  background: "#f7f7f7",
+                  strokeWidth: '97%',
+                  margin: 0, // margin is in pixels
+                  dropShadow: {
+                    enabled: true,
+                    top: 2,
+                    left: 0,
+                    color: '#999',
+                    opacity: 1,
+                    blur: 2
+                  }
+                },
+                hollow: {
+                  size: '40',
+                },
+                dataLabels: {
+                  name: {
+                    show: false,
+                  },
+                  value: {
+                    offsetY: 35,
+                    fontSize: '14px',
+                    color: 'black',
+                    formatter: function (val) {
+                      return (val/100*{{C.max|default(25000)}}).toFixed(0);
+                    }
+                  }
+                }
+              }
+            },
+            fill: {
+              type: 'gradient',
+              gradient: {
+                shade: 'dark',
+                shadeIntensity: 0.15,
+                inverseColors: false,
+                opacityFrom: 1,
+                opacityTo: 1,
+                colorStops: [ [ {
+                    offset: 0,
+                    color: '{{C.gauge_color|default("blue")}}',
+                    opacity: 1
+                    },
+                  ]
+                ],
+              },
+            },
+          };
+
+          ${{C.id}}_gauge = new ApexCharts(document.querySelector("#canvas-{{C.id}}-gauge"), options);
+          ${{C.id}}_gauge.render();
+
+          // The sparkline below the gauge
+          var options = {
+            series: [{
+              name: "{{C.label}}",
+              data: $mpoints_{{C.id}}_gauge
+            }],
+            chart: {
+              type: 'area',
+              width: $mpoints_max*2,
+              height: 30,
+              offsetY: 0,
+              sparkline: {
+                enabled: true
+              },
+              animations: {
+                enabled: false
+              }
+            },
+            grid: {
+              show: false,
+              padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+              }
+            },
+            stroke: {
+              curve: 'smooth',
+              width: 2
+            },
+            fill: {
+              type: 'gradient',
+              gradient: {
+                opacityFrom: 0.6,
+                opacityTo: 0.2,
+              }
+            },
+            yaxis: {
+              show: false,
+              min: 0
+            },
+            xaxis: {
+              show: false,
+            },
+            colors: ["{{C.color|default('#C0D0F0')}}"],
+          };
+
+
+          ${{C.id}}_line_gauge = new ApexCharts(document.querySelector("#line-{{C.id}}-gauge"), options);
+          ${{C.id}}_line_gauge.render();
+
+        {% elif C.type == 'histogram' %}
+
+          var options = {
+            series: [
+            {
+              type: 'boxPlot',
+              data: [
+                {
+                  x: '',
+                  y: [54, 66, 69, 75, 88]
+                }
+                ]
+              }
+            ],
+            chart: {
+              type: 'boxPlot',
+              height: 102,  // TODO: remove empty vertical space
+              width: 100,
+              animations: {
+                enabled: false
+              },
+              toolbar: {show:false},
+            },
+            title: {
+              show:false,
+            },
+            plotOptions: {
+              boxPlot: {
+                colors: {
+                  lower: '{{C.median_color|default("rgba(255,0,0,0.5)")}}',
+                  upper: '{{C.color|default("rgba(0,0,255,0.5)")}}'
+                }
+              }
+            },
+            yaxis: {
+              show: true,
+              forceNiceScale: true,
+              decimalsInFloat: 0,
+              labels: {
+                style: {
+                  fontSize: "6pt"
+                }
+              },
+              labels: {
+                offsetX: -10,
+              },
+              tooltip: {
+                  enabled: false,
+              },
+            },
+            xaxis: {
+              show: false,
+              tooltip: {
+                  enabled: false,
+              },
+              title: {
+                show:false
+              }
+            },
+            legend: {show: false},
+            grid: {
+              padding: {
+              left: -10,
+              right: 2,
+              top: -10,
+              bottom: -20
+              }
+            }            
+          };
+
+          ${{C.id}}_histo = new ApexCharts(document.querySelector("#chart-{{C.id}}-histo"), options);
+          ${{C.id}}_histo.render();
+
+        {% endif %}
+      }
+
+      /* Update function */
+      function update_{{C.id}}(stats,status) {
+        {% if C.type == 'status' %}
+          var obj = document.getElementById("status-{{C.id}}");
+          if (status==true || status=='success') {
+            obj.className = "far fa-thumbs-up status_ok";
+          } else {
+            obj.className = "far fa-thumbs-down status_ko";
+          }
+        {% elif C.type == 'value' %}
+          // Provide default values if metric does not exist yet
+          if (stats==null) {
+            stats = 0;
+          }
+
+          var V = reduce(stats,"{{C.operator|default("sum")}}");
+          V = conv(V,"{{C.factor|default("*1")}}");
+          {% if C.precision is defined %}
+            if(!isNaN(V)) {
+              V = V.toFixed({{C.precision}});
+            }
+          {% endif %}
+          const obj_{{C.id}} = document.getElementById("value-{{C.id}}");
+          obj_{{C.id}}.innerHTML = V;
+        {% elif C.type == 'gauge' %}
+
+          var value = conv(reduce(stats,"{{C.operator|default("sum")}}"),"{{C.factor|default("*1")}}").toFixed(0);
+          $mpoints_{{C.id}}_gauge.push(value);
+          if ($mpoints_{{C.id}}_gauge.length > $mpoints_max) {
+            $mpoints_{{C.id}}_gauge.splice(0,1);
+          }
+
+          ${{C.id}}_line_gauge.updateSeries([{
+              data: $mpoints_{{C.id}}_gauge
+            }]);
+
+          ${{C.id}}_gauge.updateSeries([Math.min(value*100/{{C.max|default(25000)}}, 100)]);
+        {% elif C.type == 'histogram' %}
+          // Provide default values if histograms does not exist yet
+          if (stats==null) {
+            stats = {"quantiles": {"0.05": 0.0, "0.25": 0.0, "0.75": 0.0, "0.95": 0.0, "0.5": 0.0}};
+          }
+
+          var y = null;
+          try {
+            y = [
+                    conv(stats.quantiles[0.05],"{{C.factor|default("*1")}}").toFixed(0),
+                    conv(stats.quantiles[0.25],"{{C.factor|default("*1")}}").toFixed(0),
+                    conv(stats.quantiles[0.5],"{{C.factor|default("*1")}}").toFixed(0),
+                    conv(stats.quantiles[0.75],"{{C.factor|default("*1")}}").toFixed(0),
+                    conv(stats.quantiles[0.95],"{{C.factor|default("*1")}}").toFixed(0)
+                ];
+          } catch (exc) {
+            y = [0, 0, 0, 0, 0]
+          }
+          ${{C.id}}_histo.updateSeries( [
+            {
+              type: 'boxPlot',
+              data: [
+                {
+                  x: '',
+                  y: y
+                }
+                ]
+              }
+            ]);
+
+        {% endif %}
+      }
+    {% endfor %}
+  {% endfor %}
+
+  </script>
+
+<h2 id="title">{{config.title}}</h2>
+
+<table>
+
+  {% for R in config.rows %}
+
+  <tr>
+
+    {% for C in R.cells %}
+      <td>
+        <span style="display: inline-block;">
+
+          {% if C.type == 'empty' %}
+
+          <div class="">
+            <div style="height: 120px; width: 30px;">
+              <span class="row-label">&nbsp;</span>
+            </div>
+            <h4>&nbsp;</h4>
+          </div>
+  
+          {% elif C.type == 'label' %}
+
+          <div class="tile">
+            <div style="height: 120px; width: 100px;line-height:120px;">
+              <span class="row-label">{{C.label}}</span>
+            </div>
+            <h4>&nbsp;</h4>
+          </div>
+
+        {% elif C.type == 'status' %}
+
+        <div class="tile">
+          <div style="height: 117px; width: 100px;line-height:120px;">
+            <i id="status-{{C.id}}" class="far fa-thumbs-down status_ko"></i>
+            </div>
+          <h4 title="{{C.label}}">{{C.label|truncate(10, True, "+", 0)}}</h4>
+        </div>
+
+        {% elif C.type == 'value' %}
+
+            <div class="tile" >
+              <div class="value-value" style="height: 117px; width: 100px;line-height:120px;">
+                <span id="value-{{C.id}}" style="color: {{C.color}}"></span><span style="color: {{C.color}}">&nbsp;{{C.unit}}</span>
+              </div>
+              <h4 title="{{C.label}}">{{C.label|truncate(10, True, "+", 0)}}</h4>
+            </div>
+        
+        {% elif C.type == 'gauge' %}
+
+            <div class="tile">
+              <div id="canvas-{{C.id}}-gauge">Loading...</div>
+              <div id="line-{{C.id}}-gauge" style="width: 100px;">Loading..</div>
+              <h4 title="{{C.label}}">{{C.label|truncate(10, True, "+", 0)}}</h4>
+            </div>
+      
+        {% elif C.type == 'histogram' %}
+
+            <div class="tile">
+              <div id="chart-{{C.id}}-histo" style="min-height: 117px; width: 100px;"></div>
+              <h4 title="{{C.label}}">{{C.label|truncate(10, True, "+", 0)}}</h4>
+            </div>
+
+        {% endif %}
+
+      </td>
+
+      {% endfor %}
+    
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
+  

@@ -1,0 +1,10 @@
+include docs/*
+include docs/_static/*
+include tests/*
+include tests/publishers/*
+include tests/dashboard/*
+include livemetrics/*.py
+include livemetrics/dashboard/*.py
+include livemetrics/dashboard/*.html
+include livemetrics/publishers/*.py
+include README.rst
