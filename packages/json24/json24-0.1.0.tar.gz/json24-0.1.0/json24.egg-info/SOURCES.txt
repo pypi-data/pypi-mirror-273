@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+json24/__init__.py
+json24/parser.py
+json24.egg-info/PKG-INFO
+json24.egg-info/SOURCES.txt
+json24.egg-info/dependency_links.txt
+json24.egg-info/top_level.txt
+tests/test_parser.py
