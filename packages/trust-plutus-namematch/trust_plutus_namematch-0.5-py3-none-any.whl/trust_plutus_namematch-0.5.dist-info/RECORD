@@ -1,0 +1,8 @@
+trust_plutus_namematch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trust_plutus_namematch/match.py,sha256=g0wC1E1JqJG4NpEfd3pPzi-b8_vu4t9NP9nd8zuolNM,1515
+trust_plutus_namematch/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trust_plutus_namematch/utils/logs.py,sha256=KEgiYYUeiC2WfVEEXfTc7WHtqGouJ4mSNZx-XKifuoc,425
+trust_plutus_namematch-0.5.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+trust_plutus_namematch-0.5.dist-info/METADATA,sha256=Avpb8N8IaWIxYDiWjhq4uhvzx3zYu2MPkr-x5tWol_Y,1055
+trust_plutus_namematch-0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+trust_plutus_namematch-0.5.dist-info/RECORD,,
