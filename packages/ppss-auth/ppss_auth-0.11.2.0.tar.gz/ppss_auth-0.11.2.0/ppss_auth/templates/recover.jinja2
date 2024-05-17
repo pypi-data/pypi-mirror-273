@@ -1,0 +1,34 @@
+{% extends logintpl %}
+
+{% block body %}
+<div class="row">
+    <div class="{{bc['xs']}}12">
+
+        <div class="d-flex mt-1">
+            <div class="m-auto text-center">
+                <h1 class="h3 mb-3 font-weight-normal">{{_("Recover password",domain='ppss_auth')}}</h1>
+                <p>{{_("Please fill with your email to recover password",domain='ppss_auth')}}</p>
+                <br>
+
+                <form method="POST" class="loginform ppssauthform">
+                    <input type="hidden" value="{{get_csrf_token()}}" name="csrf_token">
+
+                    <label for="reset-email">Email</label>
+                    <input id="reset-email" class="form-control" type="email" name="email"
+                        placeholder="{{_('email', domain='ppss_auth')}}" required>
+                    </br>
+
+                    <div class="text-center">
+                        <input class="btn btn-success" type="submit" name="submit"
+                            value="{{_('Recover', domain='ppss_auth')}}" />
+                    </div>
+                    </br>
+                    <p class="text-danger">
+                        {{msg}}
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

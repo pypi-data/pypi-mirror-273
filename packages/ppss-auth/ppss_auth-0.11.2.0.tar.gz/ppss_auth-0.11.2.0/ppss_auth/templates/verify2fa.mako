@@ -1,0 +1,22 @@
+<%inherit file="${context['logintpl']}" />
+
+<div class="container">
+    <div class="row text-center">
+        <div class="${bc['xs']}12 col-md-4 offset-md-4">
+            <form class="my-5" method="POST" class="loginform">
+                <input type="hidden" value="${get_csrf_token()}" name="csrf_token">
+                <h1 class="h3 mb-3 font-weight-normal">${_("Verify OTP",domain='ppss_auth')}</h1>
+                <input class="form-control mb-3" placeholder="OTP" inputMode="numeric"  type="number" name="otp">
+
+                
+                <div class="text-center">
+                    <input class="btn btn-success" type="submit" name="submit" value='${_("Verify",domain='ppss_auth')}'/>
+                    
+                </div>
+                </br>
+                <p class="text-danger">${msg |safe}</p>
+            </form>
+        </div>
+    </div>
+</div>
+

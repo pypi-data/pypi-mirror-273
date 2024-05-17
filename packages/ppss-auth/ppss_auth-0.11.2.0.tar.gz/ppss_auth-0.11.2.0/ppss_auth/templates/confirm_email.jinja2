@@ -1,0 +1,16 @@
+{% extends midtpl %}
+
+{% block ppssauth_content %}
+<div class="row">
+    <div class="{{bc['xs']}}12">
+        {{msg}}
+        {% if login_url %}
+            <a href="{{login_url}}">Login</a>
+        {% endif %}
+        {% if register_url %}
+            <a href="{{register_url}}">Register</a>
+        {% endif %}
+
+    </div>
+</div>
+{% endblock ppssauth_content %}
