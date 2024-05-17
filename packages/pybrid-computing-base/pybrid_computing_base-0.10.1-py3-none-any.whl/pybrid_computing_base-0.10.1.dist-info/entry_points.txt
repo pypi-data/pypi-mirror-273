@@ -1,0 +1,3 @@
+[console_scripts]
+pybrid=pybrid.cli.base:entrypoint
+
