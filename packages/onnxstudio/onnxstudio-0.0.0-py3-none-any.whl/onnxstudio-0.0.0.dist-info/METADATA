@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: onnxstudio
+Version: 0.0.0
+Summary: OnnxStudio: Conveys a comprehensive suite of tools for working with ONNX models.
+Home-page: https://github.com/inisis/OnnxStudio
+Author: inisis
+Author-email: desmond.yao@buaa.edu.cn
+License: MIT
+Project-URL: Bug Tracker, https://github.com/inisis/OnnxStudio/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
