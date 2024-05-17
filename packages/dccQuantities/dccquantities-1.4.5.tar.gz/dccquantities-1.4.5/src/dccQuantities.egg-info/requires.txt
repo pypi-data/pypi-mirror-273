@@ -1,0 +1,17 @@
+numpy
+scipy
+uncertainties
+requests
+pylatexenc
+odfpy
+openpyxl
+pandas
+dsiUnits
+dccXMLJSONConv
+
+[dccQuantitiesPlot]
+bokeh
+
+[testing]
+pytest==7.4.1
+pytest-cov==4.1.0

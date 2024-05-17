@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/__init__.py
+src/dccQuantities.py
+src/dccQuantitiesConfiguration.py
+src/dccQuantitiesPlot.py
+src/dccQuantities.egg-info/PKG-INFO
+src/dccQuantities.egg-info/SOURCES.txt
+src/dccQuantities.egg-info/dependency_links.txt
+src/dccQuantities.egg-info/requires.txt
+src/dccQuantities.egg-info/top_level.txt
+tests/test_dccQuantsAndTabs.py
+tests/test_tollerance.py
