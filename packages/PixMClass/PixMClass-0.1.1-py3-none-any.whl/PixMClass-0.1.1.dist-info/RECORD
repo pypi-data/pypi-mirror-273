@@ -1,0 +1,11 @@
+pix_mclass/__init__.py,sha256=f0WfrViNx9CJSC215UvllZbsy1cQ_jUm57LNCKjoekk,69
+pix_mclass/callbacks.py,sha256=NjpQ-NBviP2Wrzlf_nMVDyiqcRFIdK-yyk_4gaZzqHc,2626
+pix_mclass/losses.py,sha256=Of7Olwn9WWkQHmn_uy6wwN3OEfHHa0ugE3dwr1X6l9A,2513
+pix_mclass/training.py,sha256=U7oCF_mLonGuuUyliP6l80cn48pkuSFRmN07_6PSoR0,3964
+pix_mclass/unet.py,sha256=4Maxd0nkifS127z1390c1MwYTfXocOqvV-lO6iZ6x2Q,4483
+pix_mclass/utils.py,sha256=8aLgBCdZnQYFNJ3Seo76OM5Rnm3u0OGTj7JsABcEvf4,469
+PixMClass-0.1.1.dist-info/LICENSE.txt,sha256=GguevP4BVa2PSLBeElNcJGNjaioNwa3mmnN5P1Fhjv0,9227
+PixMClass-0.1.1.dist-info/METADATA,sha256=MGR2aU7oMxO86QzbFe5rlbb0o48KNZ78-RVU-y2fu9I,1561
+PixMClass-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+PixMClass-0.1.1.dist-info/top_level.txt,sha256=gz79SMkJTxeYEPJh_keshqxDLQOLUKAMPjty_NlXrTg,11
+PixMClass-0.1.1.dist-info/RECORD,,
