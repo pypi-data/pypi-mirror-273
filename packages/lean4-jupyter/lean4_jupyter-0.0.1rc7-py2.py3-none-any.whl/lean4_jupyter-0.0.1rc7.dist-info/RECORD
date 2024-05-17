@@ -1,0 +1,12 @@
+lean4_jupyter/__init__.py,sha256=UauSFGeeVriKz9Y5BJCPAFUqCykfmd399Iwy68CwH0I,91
+lean4_jupyter/__main__.py,sha256=UfQd1fiVDVTaUcRYtfJwry2atz1YXYrH9grEufquc3A,129
+lean4_jupyter/display.py,sha256=GMu6ul4fGQSjMfHSPFsPX9vUUC_HFRkLKnTrqFMfyaE,9058
+lean4_jupyter/install.py,sha256=7KuTPXIf9XHooDYXXqP0QrZZbB3ONDYg-SWrHL-ZuaM,2134
+lean4_jupyter/kernel.py,sha256=11sEG1CNIi2aVf46rNm2HsF7RKU2gxyIWP_lCPpzyPo,3251
+lean4_jupyter/repl.py,sha256=yUWnxLDJud9zYUjk_hmhJff1GzeMXW6tMSrXDIyhNEk,7359
+lean4_jupyter/resources/__init__.py,sha256=OCvz6WHZADwMaxoYTK97L02WPs3JqFXmahkavK8QffQ,86
+lean4_jupyter/resources/lean_logo.svg,sha256=BHxM6nLVi3F-ytPrEc4ClAEpu6fUvplCWHrfIzVOjCA,11263
+lean4_jupyter-0.0.1rc7.dist-info/LICENSE,sha256=EKDTNZG7nuaqBZsxMviLxdqnXxatjgrljYozXE17tuw,1069
+lean4_jupyter-0.0.1rc7.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+lean4_jupyter-0.0.1rc7.dist-info/METADATA,sha256=zhALc6wI0xhspLfekMMyG58ZEF_HzblExGrSuaUGlT0,5650
+lean4_jupyter-0.0.1rc7.dist-info/RECORD,,
