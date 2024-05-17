@@ -1,0 +1,10 @@
+sequence_align-0.1.1.dist-info/METADATA,sha256=NNUGvXVB6c892blxzZL9bRZRHgFIdLCRL-ACtx6FcpA,7392
+sequence_align-0.1.1.dist-info/WHEEL,sha256=HVMZ41d-nftsJ3eqLfgSxUYZ-FDCNjiWnMxUyUASNHM,127
+sequence_align-0.1.1.dist-info/license_files/LICENSE,sha256=KGoiyN7iKIcgCpwJmnMYn383EDyHDbK30tftOpV3wDc,11364
+sequence_align-0.1.1.dist-info/license_files/LICENSE,sha256=KGoiyN7iKIcgCpwJmnMYn383EDyHDbK30tftOpV3wDc,11364
+sequence_align-0.1.1.dist-info/license_files/AUTHORS.md,sha256=dAcY7T9ufKSIMGQhAY3OWNkHGcKSTxXO-VR8lsyJ5Eo,56
+sequence_align/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_align/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sequence_align/pairwise.py,sha256=p7SLZ7aTeaAoTQfo5mz5bICXRTdf5lFm1hwLOEiG0Is,6637
+sequence_align/sequence_align.abi3.so,sha256=3zdB--svSECDGmGxEhsbEKi08BxeSNWMxElNindJneE,1790140
+sequence_align-0.1.1.dist-info/RECORD,,
