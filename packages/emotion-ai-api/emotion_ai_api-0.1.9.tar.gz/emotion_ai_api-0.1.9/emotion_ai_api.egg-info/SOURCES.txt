@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+emotion_ai_api/__init__.py
+emotion_ai_api/client.py
+emotion_ai_api.egg-info/PKG-INFO
+emotion_ai_api.egg-info/SOURCES.txt
+emotion_ai_api.egg-info/dependency_links.txt
+emotion_ai_api.egg-info/requires.txt
+emotion_ai_api.egg-info/top_level.txt
