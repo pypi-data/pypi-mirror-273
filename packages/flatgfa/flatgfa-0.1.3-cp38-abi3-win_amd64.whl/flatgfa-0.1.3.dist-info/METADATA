@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: flatgfa
+Version: 0.1.3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pytest ; extra == 'test'
+Provides-Extra: test
+Summary: efficient processing of pangenomes in Graphical Fragment Assembly (GFA) format
+Keywords: genomics,pangenomics,gfa
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/cucapra/pollen
+Project-URL: documentation, https://cucapra.github.io/pollen/flatgfa/
+
+# Python Bindings for FlatGFA
+
+This is a Python wrapper for the FlatGFA library.
+Read [the API documentation][flatgfa-py-docs] for details about what it can do so far.
+
+To build it, first install [Maturin][]:
+
+    pipx install maturin
+
+Next, we'll build and install the Python library in our virtualenv.
+Starting from the repository root:
+
+    uv venv  # Unless you already created the virtualenv.
+    uv pip install pip  # Maturin depends on pip.
+    source .venv/bin/activate
+    cd flatgfa-py
+    maturin develop
+
+Now the `flatgfa` module is available to Python programs.
+Try our example:
+
+    python example.py
+
+Or run the tests:
+
+    uv pip install pytest
+    pytest
+
+[maturin]: https://www.maturin.rs
+[flatgfa-py-docs]: https://cucapra.github.io/pollen/flatgfa/
+
