@@ -1,0 +1,11 @@
+fastapi_redis/__init__.py,sha256=5uP2f9tG1PIUYI_8l9NsReFFQtipU0qhOx8NVPFS3so,73
+fastapi_redis/fastapi_redis.py,sha256=8Npr9IFzxjdpMhsgKodwoQcMINMRo0RKMXWF8gYf0BA,8702
+fastapi_redis/types.py,sha256=IzQXlweGUZ3HR3KM0OL3qH02TkhsuQkJ2kA7JL3SH1I,244
+fastapi_redis/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_redis/tests/test.py,sha256=scuTRsUgRLutbU6hfn9Mh7W_B5szG3WQBH3ewuNuF2E,747
+fastapi_redis/utils/__init__.py,sha256=89iUC4PrX5SSKMgd29fJGmmSBpfAkx-rVDSusdM1bmk,50
+fastapi_redis/utils/singleton.py,sha256=-1VrOsg4FbzPcSTI-DuOtLHaKvU8ozvCMxJROUs98Jk,937
+fastapi_redis_vet1ments-0.2.1.dist-info/METADATA,sha256=ID7CzurWO2bC0ORiaIASJRMceoY5dKobqrLulEjUh5Q,1394
+fastapi_redis_vet1ments-0.2.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+fastapi_redis_vet1ments-0.2.1.dist-info/top_level.txt,sha256=cq2Kotp7d4Ky5cRtl-VV5cY746PG_EoWvz_wsMAv60Q,14
+fastapi_redis_vet1ments-0.2.1.dist-info/RECORD,,
