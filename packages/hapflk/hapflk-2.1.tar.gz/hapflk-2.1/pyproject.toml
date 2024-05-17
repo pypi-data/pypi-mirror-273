@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hapflk"
+dynamic = ["version"]
+authors = [
+   { name = "Bertrand Servin", email = "bertrand.servin@inrae.fr" }
+   ]
+description = "Software to infer selection from multiple population data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "GPL v3"}
+dependencies = ['numpy', 'scipy', 'fastphase>=2.0.2', "Pgenlib>=0.90.1"]
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Topic :: Scientific/Engineering"
+        ]
+
+[project.urls]
+ "Homepage" = "https://forgemia.inra.fr/bertrand.servin/hapflk"
+
+[tool.black]
+line-length = 100
+
+[project.scripts]
+hapflk = "hapflk.hapflk:run_hapflk" 
+hapflkadapt = "hapflk.hapflkadapt:run_hapflkadapt"
+poolflkadapt = "hapflk.poolflkadapt:main"
+flkpoptree = "hapflk.flkpoptree:main"
+flkfreq = "hapflk.flkfreq:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "hapflk.VERSION"}

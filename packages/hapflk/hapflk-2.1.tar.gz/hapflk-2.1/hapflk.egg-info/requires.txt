@@ -1,0 +1,4 @@
+numpy
+scipy
+fastphase>=2.0.2
+Pgenlib>=0.90.1
