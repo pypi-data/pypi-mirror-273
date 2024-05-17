@@ -1,0 +1,2 @@
+[console_scripts]
+pypkg = testmypixipkg.__main__:say_hello
