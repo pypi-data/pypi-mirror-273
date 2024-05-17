@@ -1,0 +1,6 @@
+pandas
+numpy
+backoff
+openai
+litellm
+tqdm
