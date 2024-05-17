@@ -1,0 +1,10 @@
+
+[version]
+path = "src/testmypixipkg/__init__.py"
+
+[build]
+directory = "dist"
+
+[build.targets]
+wheel = { packages = ["src/testmypixipkg"] }
+
