@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "MASSIVEChem"
+version = "3.2"
+description = "MASSIVEChem is a pip-installable package for analytical chemistry. It simulates molecule mass spectra and graphically displays them. It includes tools like a functional group finder and unsaturation calculator to aid chemical analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = [
+  "Mass spectroscopy",
+  "unsaturation",
+  "functional group",
+  "spectroscopy",
+  "spectrometry",
+  "chemistry",
+  "cheminformatics",
+  "chemical-engineering",
+  "chemistry-lab",
+  "chemical-property-prediction"
+ ]
+authors = [
+  { name = "Thomas Viking Christiansson", email = "thomas.christiansson@epfl.ch" },
+  { name = "Igor Gonteri", email = "igor.gonteri@epfl.ch" },
+  { name = "Arthur Humery", email = "arthur.humery@epfl.ch" }
+]
+dependencies = [
+  "rdkit",
+  "pandas",
+  "matplotlib",
+  "bokeh",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/ThomasCsson/MASSIVEChem.git"
+GitHub_Thomas_Christiansson = "https://github.com/ThomasCsson"
+GitHub_Igor_Gonteri = "https://github.com/igorgonteri"
+GitHub_Arthur_Humery = "https://github.com/Arthurhmy"
