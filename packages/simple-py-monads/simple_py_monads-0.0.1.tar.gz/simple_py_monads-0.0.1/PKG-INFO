@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: simple-py-monads
+Version: 0.0.1
+Summary: "Pure Python implementations of Algebraic Data Types.
+Keywords: Monad,Optional,Result
+Author-email: Dylan Baker <dylan@pnwbakers.com>
+Requires-Python: >=3.10
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Requires-Dist: pylint ; extra == "test"
+Provides-Extra: test
