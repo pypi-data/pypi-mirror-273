@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-xlsx-serializer
+Version: 0.1.0
+Summary: Load/dump Django models from/to Excel 2003+ workbooks
+Author-email: Kamil Paduszyński <92403542+paduszyk@users.noreply.github.com>
+Project-URL: Repository, https://github.com/paduszyk/django-xlsx-serializer
+Project-URL: Documentation, https://github.com/paduszyk/django-xlsx-serializer#readme
+Project-URL: Issue tracker, https://github.com/paduszyk/django-xlsx-serializer/issues
+Keywords: django,django-application,excel,excel-export,excel-import,openpyxl,xlsx
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+
+# django-xlsx-serializer
+
+[![PyPI: Version](https://img.shields.io/pypi/v/django-xlsx-serializer?style=flat-square&logo=pypi&label=PyPI)][pypi]
+[![PyPI: Python](https://img.shields.io/pypi/pyversions/django-xlsx-serializer?style=flat-square&logo=python)][pypi]
+[![PyPI: License](https://img.shields.io/pypi/l/django-xlsx-serializer?style=flat-square)][pypi]
+
+[![Prettier](https://img.shields.io/badge/code%20style-prettier-1E2B33?style=flat-square&logo=Prettier)][prettier]
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-fa6673.svg?style=flat-square&logo=conventional-commits)][conventional-commits]
+
+## Authors
+
+Created and maintained by Kamil Paduszyński ([@paduszyk][paduszyk]).
+
+## License
+
+Released under the [MIT license][license].
+
+[conventional-commits]: https://www.conventionalcommits.org/en/v1.0.0/
+[license]: https://github.com/paduszyk/django-xlsx-serializer/blob/main/LICENSE
+[paduszyk]: https://github.com/paduszyk
+[prettier]: https://prettier.io
+[pypi]: https://pypi.org/project/django-xlsx-serializer/

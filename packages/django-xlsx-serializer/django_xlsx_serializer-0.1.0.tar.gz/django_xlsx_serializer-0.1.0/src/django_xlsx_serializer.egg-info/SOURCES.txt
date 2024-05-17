@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_xlsx_serializer.egg-info/PKG-INFO
+src/django_xlsx_serializer.egg-info/SOURCES.txt
+src/django_xlsx_serializer.egg-info/dependency_links.txt
+src/django_xlsx_serializer.egg-info/requires.txt
+src/django_xlsx_serializer.egg-info/top_level.txt
+src/xlsx_serializer/__init__.py
