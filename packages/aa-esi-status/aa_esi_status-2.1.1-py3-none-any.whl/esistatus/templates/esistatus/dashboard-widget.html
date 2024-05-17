@@ -1,0 +1,10 @@
+<div id="esi-status-dashboard-panel" class="col-12 align-self-stretch py-2 collapse"></div>
+
+<script>
+    const esistatusSettings = {
+        dashboardWidget: {
+            ajaxUrl: '{% url "esistatus:ajax_esi_status" %}',
+        }
+    }
+</script>
+{% include "esistatus/bundles/esistatus-dashboard-widget-js.html" %}
