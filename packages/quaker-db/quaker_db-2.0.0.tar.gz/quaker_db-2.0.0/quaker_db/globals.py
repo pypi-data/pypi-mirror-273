@@ -1,0 +1,9 @@
+BASE_URL = "https://earthquake.usgs.gov/fdsnws/event/1/query"
+
+RESPONSE_BAD_REQUEST = 400
+RESPONSE_NO_CONTENT = 204
+RESPONSE_NOT_FOUND = 404
+RESPONSE_OK = 200
+
+NUM_WORKERS = 6
+MAX_ATTEMPTS = 5

@@ -1,0 +1,164 @@
+# Quaker
+Lightweight python API to USGS earthquake dataset.
+[API Docs are located here](https://earthquake.usgs.gov/fdsnws/event/1/)
+
+## Installation
+Clone the repo to your system and install
+
+```bash
+$ git clone https://github.com/BlakeJC94/quaker.git
+$ cd quaker
+$ pip install .
+```
+
+## Quickstart
+This package comes equipped with a batteries-included CLI interface for downloading the latest
+earthquake event data in CSV, GeoJSON, and plain text format from the USGS database.
+```
+usage: quaker [-h] [--format FORMAT] [--endtime ENDTIME] [--starttime STARTTIME] [--updatedafter UPDATEDAFTER]
+              [--minlatitude MINLATITUDE] [--minlongitude MINLONGITUDE] [--maxlatitude MAXLATITUDE]
+              [--maxlongitude MAXLONGITUDE] [--latitude LATITUDE] [--longitude LONGITUDE] [--maxradius MAXRADIUS]
+              [--maxradiuskm MAXRADIUSKM] [--catalog CATALOG] [--contributor CONTRIBUTOR] [--eventid EVENTID]
+              [--includeallmagnitudes] [--includeallorigins] [--includedeleted] [--includesuperseded]
+              [--maxmagnitude MAXMAGNITUDE] [--mindepth MINDEPTH] [--minmagnitude MINMAGNITUDE] [--orderby ORDERBY]
+              [argfile]
+
+positional arguments:
+  argfile               Optional comma separated file with API arguments
+
+options:
+  -h, --help            show this help message and exit
+
+Formats arguments:
+  --format FORMAT       (default: quakeml) Specify the output format, one of csv, geojson, kml, quakeml, csv, text,
+                        xml
+
+Time arguments:
+  --endtime ENDTIME     (default: present time) Limit to events on or before the specified end time. NOTE: All times
+                        use ISO8601 Date/Time format. Unless a timezone is specified, UTC is assumed
+  --starttime STARTTIME
+                        (default: NOW - 30 days) Limit to events on or after the specified start time. NOTE: All
+                        times use ISO8601 Date/Time format. Unless a timezone is specified, UTC is assumed
+  --updatedafter UPDATEDAFTER
+                        (default: null) Limit to events updated after the specified time. NOTE: All times use
+                        ISO8601 Date/Time format. Unless a timezone is specified, UTC is assumed
+
+Location (rectangle) arguments:
+  --minlatitude MINLATITUDE
+                        (default: -90) [-90,90] degrees, Limit to events with a latitude larger than the specified
+                        minimum. NOTE: min values must be less than max values
+  --minlongitude MINLONGITUDE
+                        (default: -180) [-360,360] degrees, Limit to events with a longitude larger than the
+                        specified minimum. NOTE: rectangles may cross the date line by using a minlongitude < -180
+                        or maxlongitude > 180. NOTE: min values must be less than max values
+  --maxlatitude MAXLATITUDE
+                        (default: 90) [-90,90] degrees, Limit to events with a latitude smaller than the specified
+                        maximum. NOTE: min values must be less than max values
+  --maxlongitude MAXLONGITUDE
+                        (default: 180) [-360,360] degrees, Limit to events with a longitude smaller than the
+                        specified maximum. NOTE: rectangles may cross the date line by using a minlongitude < -180
+                        or maxlongitude > 180. NOTE: min values must be less than max values
+
+Location (circle) arguments:
+  --latitude LATITUDE   (default: null) [-90,90] degrees, Specify the latitude to be used for a radius search
+  --longitude LONGITUDE
+                        (default: null) [-180,180] degrees, Specify the longitude to be used for a radius search
+  --maxradius MAXRADIUS
+                        (default: 180) [0, 180] degrees, Limit to events within the specified maximum number of
+                        degrees from the geographic point defined by the latitude and longitude parameters. NOTE:
+                        This option is mutually exclusive with maxradiuskm and specifying both will result in an
+                        error
+  --maxradiuskm MAXRADIUSKM
+                        (default: 20001.6) [0, 20001.6] km, Limit to events within the specified maximum number of
+                        kilometers from the geographic point defined by the latitude and longitude parameters. NOTE:
+                        This option is mutually exclusive with maxradius and specifying both will result in an error
+
+Other arguments:
+  --catalog CATALOG     (default: null) Limit to events from a specified catalog. Use the Catalogs Method to find
+                        available catalogs. NOTE: when catalog and contributor are omitted, the most preferred
+                        information from any catalog or contributor for the event is returned
+  --contributor CONTRIBUTOR
+                        (default: null) Limit to events contributed by a specified contributor. Use the Contributors
+                        Method to find available contributors. NOTE: when catalog and contributor are omitted, the
+                        most preferred information from any catalog or contributor for the event is returned
+  --eventid EVENTID     (default: null) Select a specific event by ID; event identifiers are data center specific.
+                        NOTE: Selecting a specific event implies includeallorigins, includeallmagnitudes, and,
+                        additionally, associated moment tensor and focal-mechanisms are included
+  --includeallmagnitudes
+                        (default: false) Specify if all magnitudes for the event should be included, default is data
+                        center dependent but is suggested to be the preferred magnitude only. NOTE: because
+                        magnitudes and origins are strongly associated, this parameter is interchangeable with
+                        includeallmagnitude
+  --includeallorigins   (default: false) Specify if all origins for the event should be included, default is data
+                        center dependent but is suggested to be the preferred origin only. NOTE: because magnitudes
+                        and origins are strongly associated, this parameter is interchangable with
+                        includeallmagnitude
+  --includedeleted      (default: false) Specify if deleted products and events should be included. The value only
+                        returns only deleted events. Deleted events otherwise return the HTTP status 409 Conflict.
+                        NOTE: Only supported by the csv and geojson formats, which include status
+  --includesuperseded   (default: false) Specify if superseded products should be included. This also includes all
+                        deleted products, and is mutually exclusive to the includedeleted parameter. NOTE: Only
+                        works when specifying eventid parameter
+  --maxmagnitude MAXMAGNITUDE
+                        (default: null) Limit to events with a magnitude smaller than the specified maximum
+  --mindepth MINDEPTH   (default: -100) [-100, 1000] km Limit to events with depth more than the specified minimum
+  --minmagnitude MINMAGNITUDE
+                        (default: null) Limit to events with a magnitude larger than the specified minimum
+  --orderby ORDERBY     Order the results. The allowed values are: time, time-asc, magnitude, magnitude-asc
+```
+
+Run `quaker download` and specify the parameters as keyword arguments and pipe the output to any
+location:
+```bash
+$ quaker download --format csv --starttime 2022-08-01 --endtime 2022-09-01 > earthquake_data.csv
+```
+
+For more details on the available query parameters, use `quaker --help` or view the
+[USGS documentation](https://earthquake.usgs.gov/fdsnws/event/1/).
+
+Using the python API is also fairly straight-forward:
+```python
+>>> import io
+>>> import pandas as pd
+>>> from quaker_db import Client
+>>> client = Client()
+# An empty query defaults to all events in the last 30 days
+>>> recent_events = client.execute(format="csv")
+>>> df = pd.read_csv(io.StringIO(recent_events))
+# Large multi-page queries can also be handled
+>>> events_from_last_5_months = client.execute(
+...     format="csv",
+...     starttime="2022-05-01",
+...     endtime="2022-10-01",
+... )
+>>> df = pd.read_csv(io.StringIO(events_from_last_5_months))
+# You can filter results by location using the API
+>>> events_in_august_in_120km_within_tokyo_above_mag_3 = client.execute(
+...     forma="csv",
+...     starttime="2022-08-01",
+...     endtime="2022-09-01",
+...     latitude=35.652832,
+...     longitude=139.839478,
+...     maxradiuskm=120.0,
+...     minmagnitude=3.0,
+... }
+# See `help(quaker_db.Query)` and https://earthquake.usgs.gov/fdsnws/event/1/ for more details
+```
+
+## Contributing
+This is a small personal project, but pull requests are most welcome!
+
+* Code is styled using `[black](https://github.com/psf/black)` (`pip install black`)
+* Code is linted with `ruff` (`pip install ruff`)
+* Requirements are managed using `poetry`
+* [Semantic versioning](https://semver.org) is used in this repo
+    * Major version: rare, substantial changes that break backward compatibility
+    * Minor version: most changes - new features, models or improvements
+    * Patch version: small bug fixes and documentation-only changes
+
+Virtual environment handling by `poetry` is preferred:
+```bash
+# in the project directory
+$ poetry install
+$ poetry shell
+```
