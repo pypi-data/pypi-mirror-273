@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: WSPP-Projectppchem
+Version: 0.1
+Author: Cossard Lucas and Venancio Enzo
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: rdkit
+Requires-Dist: tqdm
+Requires-Dist: lightgbm
+Requires-Dist: requests
+
