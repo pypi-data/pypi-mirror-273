@@ -1,0 +1,2 @@
+[console_scripts]
+epubgrep = epubgrep:main
