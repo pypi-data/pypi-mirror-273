@@ -1,0 +1,3 @@
+[console_scripts]
+cli = dspawpy.cli.cli:main
+ecli = dspawpy.cli.cli_en:main
