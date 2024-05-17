@@ -1,0 +1,14 @@
+telegram-notifier-bot>=1.0.0
+
+[dev]
+bumpver>=2023.1126
+motion2telegram[lint]
+motion2telegram[package]
+
+[lint]
+mypy>=1.9.0
+ruff>=0.3.4
+
+[package]
+build==0.10.0
+twine>=4.0.2
