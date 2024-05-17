@@ -1,0 +1,14 @@
+setup.py,sha256=5sQ8To3WilrSzxDU2lY9J8Pnfdx6pQwThxCgQDCHH2M,637
+ai_server/__init__.py,sha256=8gHAjQFsZogUik-ODpCxns5gN3ZNktnuv67_D4Qhkis,1468
+ai_server/py_client/gaas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_server/py_client/gaas/database.py,sha256=OTFabpVDCljYtpN0ukrMeiTWh4woZ35R0vWD1ph5tDY,5877
+ai_server/py_client/gaas/model.py,sha256=tZluTc2Oymx6Me-dBqtiuZjkhuBrjdXtg8zguMzlxIw,11454
+ai_server/py_client/gaas/storage.py,sha256=ZT3nk11uPxtS65XMwKRJQez2AGW_DgFG8xQgeJXEM3E,3843
+ai_server/py_client/gaas/vector.py,sha256=cD6tqZg9ZwzyB_S-0j2DUiuaTRaX6N5X8qRp6v23gs0,6884
+ai_server/server_resources/server_client.py,sha256=NxeI4N86vlyiImbb-1z0vmr4f57O4xRmphK5-jV30jM,17193
+ai_server/server_resources/server_proxy.py,sha256=Cu1TQFkSoh9_8TOYxqdSJSwel5e-nGFo4smVqob_1kw,9619
+ai_server_sdk-0.0.16.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+ai_server_sdk-0.0.16.dist-info/METADATA,sha256=e5abkAEy01Cx5l7Ts1XHPi1gADajIkO677wv2n8We6E,7576
+ai_server_sdk-0.0.16.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ai_server_sdk-0.0.16.dist-info/top_level.txt,sha256=wEtAqUGttRPjkqivLt3C0OcL0d-sk88O8kHGKiSed4w,16
+ai_server_sdk-0.0.16.dist-info/RECORD,,
