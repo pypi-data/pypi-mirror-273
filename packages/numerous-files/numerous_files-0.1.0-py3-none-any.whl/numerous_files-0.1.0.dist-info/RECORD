@@ -1,0 +1,11 @@
+numerous/files/__init__.py,sha256=p2L5xwZeDr8Qzz0PVJE7xfZWBzfQPbIs1zIanM4UWYg,2850
+numerous/files/aws_s3.py,sha256=Slw6jmF1t1wyAHTF1a1JN4fIGQ_W21tNw3KVSedsk9g,6884
+numerous/files/file_manager.py,sha256=2hJ46SCbINDMTv4odm_Bic_W3GTW8ucJFnyBSUFqT84,2131
+numerous/files/local.py,sha256=koUWuDDWZFR50al5MIqI2aPS1osaBaZF_pwWNYFsYE4,4417
+numerous/files/memory.py,sha256=bYY3Iq51Iswb58WPcrqkI1CF6dZxRYxQ8O1APwYfEmo,3932
+numerous/files/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numerous_files-0.1.0.dist-info/LICENSE.md,sha256=i4sYMvVYdUpS8bvbKkUQZ42waxIrJmCJzUIgQm7w2K8,1069
+numerous_files-0.1.0.dist-info/METADATA,sha256=yTMoBRGP3UWLzLGfDoYvrj2f3q-CxQDmpGb-VWUPFZ8,1009
+numerous_files-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+numerous_files-0.1.0.dist-info/top_level.txt,sha256=1GjAtjZ5GuaIsDI4orwN0DN9tV0rzUbgsnrIc5z5hIo,9
+numerous_files-0.1.0.dist-info/RECORD,,
