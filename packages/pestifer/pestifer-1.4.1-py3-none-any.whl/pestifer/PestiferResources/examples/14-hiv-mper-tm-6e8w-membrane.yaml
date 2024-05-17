@@ -1,0 +1,87 @@
+# Author: Cameron F. Abrams, <cfa22@drexel.edu>
+#
+# pestifer input script
+# 
+# Membrane-embedded build of HIV-1 gp41 MPER-TM trimer (6e8w)
+#
+# Notes:
+#   - packmol-memgen is used, so you must have a conda environment available
+#     in which to run it.  This environment must have a numpy version less 
+#     than 1.20 (until the packmol-memgen developers patch it).  You need not
+#     have this environment active when you invoke pestifer; pestifer will
+#     activate it only when it needs to run packmol-memgen.
+#
+title: 6e8w
+charmmff:
+  standard:
+    topologies:
+      - stream/lipid/toppar_all36_lipid_cholesterol.str
+    parameters:
+      - stream/lipid/toppar_all36_lipid_cholesterol.str
+tasks:
+  - psfgen:
+      source:
+        id: 6e8w
+        model: 15 # last frame
+  - md:
+      ensemble: minimize
+  - packmol_memgen:
+      embed:
+        z_head_group: "protein and resid 667"
+        z_tail_group: "protein and resid 710"
+        z_ref_group: 
+          text: "protein and resid 696"
+          z_value: 0.0
+      command_options:
+        dist: 18
+        lipids: POPC:CHL1
+        ratio: 0.67:0.33
+        nloop: 200
+        nloop_all: 200
+        random: true
+  - md:
+      ensemble: minimize
+      minimize: 5000
+      other_parameters:
+        wrapall: on
+  - md:
+      ensemble: NVT
+  - md:
+      ensemble: NPT
+      nsteps: 200
+  - md:
+      ensemble: NPT
+      nsteps: 400
+  - md:
+      ensemble: NPT
+      nsteps: 800
+  - md:
+      ensemble: NPT
+      nsteps: 1600
+  - md:
+      ensemble: NPT
+      nsteps: 3200
+  - md:
+      ensemble: NPT
+      nsteps: 6400
+  - md:
+      ensemble: NPT
+      nsteps: 12800
+  - md:
+      ensemble: NPT
+      nsteps: 25600
+  - md:
+      ensemble: NPT
+      nsteps: 51200
+  - mdplot:
+      savedata: solvated.csv
+      traces:
+        - density
+      units:
+        density: g_per_cc
+      basename: solvated
+  - terminate:
+      basename: my_6e8w
+      package:
+        ensemble: NPT
+        basename: prod_6e8w
