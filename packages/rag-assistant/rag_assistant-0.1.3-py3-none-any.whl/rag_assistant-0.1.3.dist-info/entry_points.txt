@@ -1,0 +1,2 @@
+[console_scripts]
+rag_assistant = rag_assistant.RagAssistant:main
