@@ -1,0 +1,3 @@
+[console_scripts]
+specification_curve=specification_curve.__main__:main
+
