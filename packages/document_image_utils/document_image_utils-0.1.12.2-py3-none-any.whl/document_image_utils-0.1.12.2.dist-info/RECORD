@@ -1,0 +1,11 @@
+document_image_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+document_image_utils/box.py,sha256=DBZqd-4uzxRK0UD1p-Xgl1KiauuOe4Bh7UmHtBE8rSc,11098
+document_image_utils/image.py,sha256=eL8f_LcowmvtNqLCoAvF-U7zO0GZFJTLyLKzvViwEIs,28073
+document_image_utils/leptonica_lib/adjust_rotate_ubuntu,sha256=Nsg1Smh45LjpcC3KNyTlL5nPr9MAVT4X49gg86AijRQ,16528
+document_image_utils/leptonica_lib/adjust_rotation.c,sha256=D_pbWgGyK9N3ODXZ4-2_FxxsAFsB1Dc-owFS2H3SOHk,515
+document_image_utils/leptonica_lib/install.sh,sha256=TM1ofd9Q3g065nYzCyBLjGNeRvPC9sPWqxYQaRTlHKs,525
+document_image_utils/leptonica_lib/rotated.jpg,sha256=RuXtL9EIvkvj92_SnBFBbulUObwHBajvR2VvG1xmY-g,538608
+document_image_utils/leptonica_lib/tempCodeRunnerFile.sh,sha256=t3NJvx-psm1F1UXX1k2tlnN-nPuzy7X10Q-3ew_MRK0,3
+document_image_utils-0.1.12.2.dist-info/METADATA,sha256=kEuO1MUJLveYptj2busWBvQ5xGADMFX7B858SjAKiT0,1354
+document_image_utils-0.1.12.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+document_image_utils-0.1.12.2.dist-info/RECORD,,
