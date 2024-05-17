@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pyVHL"
+version = "0.1.4"
+description = ""
+authors = ["problemxl <email@github.com>"]
+readme = "README.md"
+packages = [{include = "pyvhl"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "*"
+loguru = "*"
+retry = "*"
+youtube-dl = "*"
+beautifulsoup4 = "*"
+requests-toolbelt = "*"
+pydantic = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# flake8 config
+[tool.flake8]
+max-line-length = 120
