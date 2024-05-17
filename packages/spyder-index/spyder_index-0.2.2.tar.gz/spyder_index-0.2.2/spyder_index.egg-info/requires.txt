@@ -1,0 +1,15 @@
+langchain-core~=0.1.48
+langchain-community~=0.0.36
+langchain-text-splitters~=0.0.1
+langchain-experimental~=0.0.57
+sentence-transformers~=2.7.0
+pydantic~=2.7.1
+pypdf~=4.2.0
+torch==2.1.0
+elasticsearch~=8.13.0
+ibm-cos-sdk~=2.13.2
+jq~=1.7.0
+docx2txt~=0.8
+
+[docs]
+furo~=2024.5.6
