@@ -1,0 +1,8 @@
+spacyrerank/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+spacyrerank/rerank.py,sha256=60gJZDSqxr0CLpN300KLENBCImrqDXAzLMdd1UDcSiE,1141
+spacyrerank/spacy_pipeline.py,sha256=ZBY5YhKcjY-QZ8yzCLuzzYfXXii6ar77AYOEkDPxbEU,825
+spacyrerank-0.0.1.dist-info/LICENSE,sha256=mepM6UmyiwvT-S4lBbrlR4OnJSEkm561IAigbVEAICM,1074
+spacyrerank-0.0.1.dist-info/METADATA,sha256=zIz84s3YfMr2N6bnu54sCaQpBlR7Qp_Hsirym0OaxH4,929
+spacyrerank-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+spacyrerank-0.0.1.dist-info/top_level.txt,sha256=-6vvMiRtdtM6QnIIu0bhWpUPTIinPffZkgqPAXCYgMo,12
+spacyrerank-0.0.1.dist-info/RECORD,,
