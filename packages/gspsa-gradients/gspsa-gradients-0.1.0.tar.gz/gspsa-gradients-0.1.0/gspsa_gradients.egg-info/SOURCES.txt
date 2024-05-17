@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+gspsa_gradients/__init__.py
+gspsa_gradients.egg-info/PKG-INFO
+gspsa_gradients.egg-info/SOURCES.txt
+gspsa_gradients.egg-info/dependency_links.txt
+gspsa_gradients.egg-info/requires.txt
+gspsa_gradients.egg-info/top_level.txt
+gspsa_gradients/qiskit_gradient/__init__.py
+gspsa_gradients/qiskit_gradient/gspsa.py
+gspsa_gradients/tfq_gradient/__init__.py
+gspsa_gradients/tfq_gradient/gspsa.py

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gspsa-gradients
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: tfq
+Requires-Dist: tensorflow-quantum; extra == "tfq"
+Requires-Dist: tensorflow; extra == "tfq"
+Provides-Extra: qiskit
+Requires-Dist: qiskit; extra == "qiskit"
+Requires-Dist: qiskit-algorithms; extra == "qiskit"

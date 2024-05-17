@@ -1,0 +1,9 @@
+numpy
+
+[qiskit]
+qiskit
+qiskit-algorithms
+
+[tfq]
+tensorflow-quantum
+tensorflow
