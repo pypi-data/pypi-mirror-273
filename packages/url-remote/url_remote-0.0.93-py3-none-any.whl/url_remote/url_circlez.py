@@ -1,0 +1,1 @@
+from .our_url import OurUrl  # noqa: backward compatibility
