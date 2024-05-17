@@ -1,0 +1,4 @@
+[console_scripts]
+mbrs-decode=mbrs.cli.decode:cli_main
+mbrs-generate=mbrs.cli.generate:cli_main
+
