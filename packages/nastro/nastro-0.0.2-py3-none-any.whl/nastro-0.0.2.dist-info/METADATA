@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nastro
+Version: 0.0.2
+Summary: Numerical astrodynamics
+Author-email: Alfonso Sánchez Rodríguez <alfonso.sr.trabajo@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: matplotlib >=3.8
+Requires-Dist: scipy >=1.11
+Requires-Dist: sympy >=1.12
+Provides-Extra: dev
+Requires-Dist: pybind11 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: numpydoc ; extra == 'dev'
+Requires-Dist: sphinx-design ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme ; extra == 'dev'
+Requires-Dist: sphinx-favicon ; extra == 'dev'
+
