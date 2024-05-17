@@ -1,0 +1,31 @@
+[project]
+name = "epubgrep"
+description = "Grep through EPub files"
+version = "0.10.0"
+authors = [
+    { name = "Matěj Cepl", email = "mcepl@cepl.eu" }
+]
+license = { file="LICENSE" }
+readme = "README.md"
+dependencies = [
+    "epub_meta",
+]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.scripts]
+epubgrep = "epubgrep:main"
+
+[project.urls]
+homepage = "https://git.cepl.eu/cgit/toys/epubgrep/"
+repository = "https://git.cepl.eu/git/toys/epubgrep"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

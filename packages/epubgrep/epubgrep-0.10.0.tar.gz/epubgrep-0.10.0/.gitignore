@@ -1,0 +1,12 @@
+*.egg-info
+*.pyc
+*.pyo
+build/
+dist/
+__pycache__/
+MANIFEST
+.tox/
+.coverage
+.vscode/
+.ropeproject/
+*.whl
