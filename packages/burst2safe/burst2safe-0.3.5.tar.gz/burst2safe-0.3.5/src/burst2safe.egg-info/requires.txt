@@ -1,0 +1,9 @@
+gdal
+shapely>=2
+numpy
+lxml
+tifffile
+asf_search
+
+[develop]
+pytest
