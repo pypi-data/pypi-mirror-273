@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+loggram/__init__.py
+loggram/loggram.py
+loggram.egg-info/PKG-INFO
+loggram.egg-info/SOURCES.txt
+loggram.egg-info/dependency_links.txt
+loggram.egg-info/requires.txt
+loggram.egg-info/top_level.txt
