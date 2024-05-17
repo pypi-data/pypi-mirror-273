@@ -1,0 +1,12 @@
+treasury_gov_pandas/__init__.py,sha256=C9m0gBcIuQEXRWw3GLfqneibUjU_qY6LQ97N03nMKG0,30
+treasury_gov_pandas/load.py,sha256=f-_MMr6GKXG7UEj-HuzMS0QbDQqudu6P_f0FOoxOjeU,3906
+treasury_gov_pandas/datasets/auctions_query/load.py,sha256=6oLQvxda5UFlqElCXMRm734yODEL8Pa1H7D6bi2Y0KE,329
+treasury_gov_pandas/datasets/auctions_query/update.py,sha256=F8p9PAQLxU7plHaXEIuusE7PzKOExvL3Pouiskopqqg,383
+treasury_gov_pandas/datasets/deposits_withdrawals_operating_cash/load.py,sha256=zIff1OdW-qgheqgAzEe2-pSjvAFoM7CxMWtzoIH5zSY,351
+treasury_gov_pandas/datasets/deposits_withdrawals_operating_cash/update.py,sha256=-6kR1AdffI2eSeeffAddO7-7848sgI2Ne1jLgIEZ8Ik,412
+treasury_gov_pandas/datasets/mts/mts_table_4/load.py,sha256=RUTDJhD-mOb_-NWUOUlxLxRglXLM2-bV36phQYZ8DSQ,213
+treasury_gov_pandas/datasets/mts/mts_table_4/update.py,sha256=02Q8FGjEbmRotphFt3rbl63PQXzavxng-f8o0cfjyfY,274
+treasury_gov_pandas-0.0.6.dist-info/METADATA,sha256=l5qQdB8UiksUm1-d9hZaURgClEpXryyvCuStjvbUfjg,948
+treasury_gov_pandas-0.0.6.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+treasury_gov_pandas-0.0.6.dist-info/licenses/LICENSE,sha256=lhn5KDEY7LRaB5s6KRGLNx3mtTuv-ZOYq79t-B_6Wzw,1071
+treasury_gov_pandas-0.0.6.dist-info/RECORD,,
