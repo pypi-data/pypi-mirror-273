@@ -1,0 +1,12 @@
+magvit2_pytorch/__init__.py,sha256=AL-L4dW3sXQu_MmcIZbaOhk_UlHURNfdvhTrmh4bjxg,147
+magvit2_pytorch/attend.py,sha256=XY_GM2Gp5aP5WENAajwSxs3af3V06eB0uRiuDaTtX3M,7195
+magvit2_pytorch/data.py,sha256=wAxgvSaMqNND2acBnh19ISWCfLwoVJxY58DpXLMxIYQ,8412
+magvit2_pytorch/magvit2_pytorch.py,sha256=xPcxRGdk0IGKSrnA1ghIApvmnSWqTS2XNKISl_7coNk,56521
+magvit2_pytorch/optimizer.py,sha256=2QUBocmLzzN0Tz2w-8uT4X_Mhkgx0-ZCrbY_C8r2uGk,1014
+magvit2_pytorch/trainer.py,sha256=Xim9raC7qbq_iE52STBHyVFCO8a0Ez5o-iCOX0Yurgw,16943
+magvit2_pytorch/version.py,sha256=jMc7UM2pASY9F8z0XMALQbSXxGCAxWPyeXQlarwD0VI,22
+magvit2_pytorch-0.4.5.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+magvit2_pytorch-0.4.5.dist-info/METADATA,sha256=OTvOoqN1h0F5Q2rhhHMAbvNvhr8Ta07YfyTNQ0P7D5Q,1152
+magvit2_pytorch-0.4.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+magvit2_pytorch-0.4.5.dist-info/top_level.txt,sha256=Sez4adVPGtQoMn2CTc4XXTtCLIzQ6MrZSBPOKPhIVfo,16
+magvit2_pytorch-0.4.5.dist-info/RECORD,,
