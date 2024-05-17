@@ -1,0 +1,6 @@
+README.md
+setup.py
+MCM3000.egg-info/PKG-INFO
+MCM3000.egg-info/SOURCES.txt
+MCM3000.egg-info/dependency_links.txt
+MCM3000.egg-info/top_level.txt
