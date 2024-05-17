@@ -1,0 +1,10 @@
+PROJECT_NAME: postgres
+DATABASE_TYPE: postgres
+BRONZE_SCHEMA: staging
+SILVER_SCHEMA: intermediate
+SILVER_SCHEMA_PREFIX: int
+GOLD_LAYER_NAME: marts
+DATA_ARCHITECTURE: marts
+ENABLE_LUMA_INTEGRATION: true
+MACROS_PATH: dbt_packages/nesso_macros/macros
+DEFAULT_ENV: dev
