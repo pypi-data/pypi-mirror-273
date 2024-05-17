@@ -1,0 +1,2 @@
+[console_scripts]
+printer = printer.main:main
