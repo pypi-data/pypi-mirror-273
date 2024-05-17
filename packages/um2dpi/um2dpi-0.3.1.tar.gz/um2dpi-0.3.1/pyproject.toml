@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "um2dpi"
+version = "0.3.1"
+description = "Convert drop-spacing in micrometers to DPI."
+authors = [{ name = "Fabio Terranova" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.11"
+
+[project.scripts]
+um2dpi = "um2dpi:cli"
+
+[tool.hatch.envs.default]
+dependencies = ["pre-commit"]
+
+[tool.hatch.envs.test]
+dependencies = ["pytest", "pytest-cov"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
