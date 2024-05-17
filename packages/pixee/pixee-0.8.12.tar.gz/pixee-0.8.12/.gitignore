@@ -1,0 +1,12 @@
+*.egg-info
+
+src/pixee/_version.py
+
+*.json
+*.sarif
+*.codetf
+
+dist/
+build/
+
+.env
