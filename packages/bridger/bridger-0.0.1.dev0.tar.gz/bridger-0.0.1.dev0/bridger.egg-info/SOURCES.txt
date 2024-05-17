@@ -1,0 +1,7 @@
+README.md
+setup.py
+bridger/__init__.py
+bridger.egg-info/PKG-INFO
+bridger.egg-info/SOURCES.txt
+bridger.egg-info/dependency_links.txt
+bridger.egg-info/top_level.txt
