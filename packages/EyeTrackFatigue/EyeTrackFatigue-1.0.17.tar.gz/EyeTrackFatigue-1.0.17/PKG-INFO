@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: EyeTrackFatigue
+Version: 1.0.17
+Summary: проект FAEyeTON - Библиотека открытого кода для оценки функционального состояния утомления оператора на основе динамической активности взгляда и головы. Проект Код-ИИ-2022.
+Home-page: https://github.com/AI-group-72/FAEyeTON
+Author: Кашевник А.М. Кузнецов В.В. Брак И.В. Мамонов А.А. Коваленко С.Д.
+Author-email: anton.mamonov.golohvastogo@mail.ru
+License: GNU LGPL
+Project-URL: GitHub Project, https://github.com/AI-group-72/FAEyeTON
+Project-URL: Issue Tracker, https://github.com/AI-group-72/FAEyeTON/Meta/issues
+Keywords: EyeTrackFatigue
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+https://github.com/AI-group-72/FAEyeTON/blob/main/README.md
+
