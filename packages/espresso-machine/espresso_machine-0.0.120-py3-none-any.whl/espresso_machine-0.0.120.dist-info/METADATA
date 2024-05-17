@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: espresso-machine
+Version: 0.0.120
+Summary: Quantum Espresso automation tool
+Project-URL: Homepage, https://github.com/susyexstsi/espresso-machine
+Author-email: Susy Exists <susy@selectron.me>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: ase
+Requires-Dist: flask
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: qcelemental
+Requires-Dist: qe-tools
+Requires-Dist: scipy
+Requires-Dist: seekpath
+Requires-Dist: tools-barebone
+Requires-Dist: untangle
+Description-Content-Type: text/markdown
+
+# Espresso Machine
+Automation library for Quantum Espresso via python
+
+# Start by executing adiabatic.sh
+Edit parameters in the file for local environment. Such as HPC parameters, python, MPI, Quantum Espresso directories
+## Input parameter
+input.json file is supported in Example foldeer
+## Calculation type
+vc-relax, relax, scf, band
+## Degauss parameter
+Fermi-Dirac smearing width in Ry
+## K points
+nx ny nz type mesh grid or k space path
+## Initial guess or poscar
+Read from vc-relax or poscar file
