@@ -1,0 +1,21 @@
+- implementation: nodestream_plugin_gcp_asset_inventory.gcp_policy:GcpPolicyExtractor
+  arguments:
+    project_id: !config 'project_id'
+
+- implementation: nodestream.interpreting:Interpreter
+  arguments:
+    interpretations:
+      - type: source_node
+        node_type: Principal
+        key:
+          name: !jmespath 'member_name'
+        properties:
+          tag: !jmespath 'tag'
+      - type: relationship
+        node_type: Resource
+        relationship_type: HAS_BINDING
+        node_key: 
+          name: !jmespath 'asset_name'
+        relationship_properties:
+          role: !jmespath 'role'
+

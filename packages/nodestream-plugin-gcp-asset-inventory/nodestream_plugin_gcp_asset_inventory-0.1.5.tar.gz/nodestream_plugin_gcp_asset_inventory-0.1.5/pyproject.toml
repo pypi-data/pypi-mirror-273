@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nodestream-plugin-gcp-asset-inventory"
+version = "0.1.5"
+description = "nodestream plugin for GCP Asset Inventory"
+authors = ["Aaron Wasserman <aaron.wasserman@neo4j.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nodestream = "^0.12.2"
+google-cloud-asset = "^3.26.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.plugins."nodestream.plugins"]
+projects = "nodestream_plugin_gcp_asset_inventory.plugin"
