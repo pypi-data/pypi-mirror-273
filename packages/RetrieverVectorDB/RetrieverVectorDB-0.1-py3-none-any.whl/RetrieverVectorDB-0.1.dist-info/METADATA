@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: RetrieverVectorDB
+Version: 0.1
+Summary: A simple Python library for retreiving documents from vectorDB.
+Author: Nitya Shah
+
