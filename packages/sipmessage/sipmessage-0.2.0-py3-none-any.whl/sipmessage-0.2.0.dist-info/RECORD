@@ -1,0 +1,10 @@
+sipmessage/__init__.py,sha256=C3KDQDgnRTXrx6u1H4PpUm0pv-hX554gKL5oIic_DQM,290
+sipmessage/address.py,sha256=Kb0ykAwCbJiW728qCfTs7ia_jQVXcYF7q5UyYTyfBTg,2031
+sipmessage/parameters.py,sha256=7dSL97V1ZXRHsnSh5eN8BZQKUAX7GkQ3YZvzwmWAfE8,725
+sipmessage/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+sipmessage/uri.py,sha256=vQb1D9Rhd_Z7OFEXsO6y0BKj81N3xc7W8LIILU00bco,2740
+sipmessage-0.2.0.dist-info/LICENSE,sha256=DD5LT_ZPvYNHlVtngdMvFLLM9BGMXkXOi511xl2C_Oo,1295
+sipmessage-0.2.0.dist-info/METADATA,sha256=8KE-pcNR8enW0CTOM1z4KPnAhVYKQjVMw4UP_E6Nra4,2219
+sipmessage-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sipmessage-0.2.0.dist-info/top_level.txt,sha256=BYw0OcqRwUIAgRyDF3GmyU7-QGh83otmI4tmamhCc8E,11
+sipmessage-0.2.0.dist-info/RECORD,,
