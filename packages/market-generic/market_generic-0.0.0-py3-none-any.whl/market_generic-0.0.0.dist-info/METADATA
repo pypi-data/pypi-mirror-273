@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: market-generic
+Version: 0.0.0
+Summary: A Generic Python Package for Stock Market Analysis and Trading
+Home-page: https://github.com/sharmasourab93/market-generic
+Author: Sourab S Sharma
+Author-email: sharmasourab93@gmail.com
+Keywords: Market,Trade,Analysis
+Description-Content-Type: text/markdown
+Requires-Dist: black ==24.4.2
+Requires-Dist: isort ==5.13.2
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: pandas ==2.2.2
+Requires-Dist: dateutils ==0.6.12
+Requires-Dist: gspread ==6.1.0
+Requires-Dist: python-telegram-bot ==21.1.1
+Requires-Dist: yfinance ==0.2.38
+Requires-Dist: requests ~=2.31.0
+Requires-Dist: pytz ~=2024.1
+Requires-Dist: setuptools ~=69.5.1
+
+# market-generic - A Generic Python Package for Stock Market Analysis and Trading
+
+### Overview
+
+`market-generic` is a powerful and flexible Python library designed to simplify the process of working with stock market data. It provides a comprehensive set of tools and utilities to handle, analyze, and visualize stock data, enabling developers and analysts to build dynamic stock scanners, trading strategies, and other financial applications with ease.
+
+
+### Key Features
+- <b>Data Handling</b>: Seamless integration with popular data sources (e.g., Yahoo Finance, NSE APIs) to fetch and manage stock data.
+- <b>Technical Indicators</b>: A wide range of technical indicators (e.g., Moving Averages, Pivot Points, RSI, MACD) for in-depth market analysis.
+- <b>Generic Strategy Abstractions</b>: Tools to dynamically create trading strategies on the fly based on user-defined parameters.
+- <b>Extensibility</b>: Modular design allows for easy integration with other Python libraries and frameworks.
+
+
+### Installation
+To install the AlgoTrade package, use pip:
+
+```
+pip install market-generic
+```
+
+### Usage
+
+Here's a simple example of how to use the Trade package to fetch and analyze stock data:
+python
+
+`Coming Soon`
+
+
+### Documentation
+
+For detailed documentation, examples, and API reference, please visit the [Trade GitHub repository](https://github.com/sharmasourab93/Trade).
