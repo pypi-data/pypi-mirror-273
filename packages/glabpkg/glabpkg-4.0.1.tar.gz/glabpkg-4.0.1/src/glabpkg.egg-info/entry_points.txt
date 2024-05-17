@@ -1,0 +1,6 @@
+[pkglts]
+glabbase = glabpkg.base.option:OptionGlabBase
+glabdata = glabpkg.data.option:OptionGlabData
+glabpkg = glabpkg.pkg.option:OptionGlabPkg
+glabpkg_dev = glabpkg.pkg_dev.option:OptionGlabPkgDev
+glabreport = glabpkg.report.option:OptionGlabReport

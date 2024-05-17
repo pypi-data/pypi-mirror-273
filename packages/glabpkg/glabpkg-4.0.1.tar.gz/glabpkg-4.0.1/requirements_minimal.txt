@@ -1,0 +1,5 @@
+# {# pkglts, reqs
+
+pkglts>=7, <8
+
+# #}
