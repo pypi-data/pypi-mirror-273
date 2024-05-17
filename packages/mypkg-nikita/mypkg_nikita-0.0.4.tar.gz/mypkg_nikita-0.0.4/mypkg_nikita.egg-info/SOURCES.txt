@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+version.txt
+mypkg/__init__.py
+mypkg/states_info.py
+mypkg/subpackage/__init__.py
+mypkg_nikita.egg-info/PKG-INFO
+mypkg_nikita.egg-info/SOURCES.txt
+mypkg_nikita.egg-info/dependency_links.txt
+mypkg_nikita.egg-info/requires.txt
+mypkg_nikita.egg-info/top_level.txt

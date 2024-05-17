@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+mypkg = ["*.jsons"]
+
+[project]
+name = "mypkg-nikita"
+dependencies = []
+requires-python = ">=3.8"
+authors = [{ name = "Nikita Turkmen", email = "newpronik@gmail.com" }]
+maintainers = [{ name = "Nikita Turkmen", email = "newpronik@gmail.com" }]
+description = "My first python package"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["packaging", "example"]
+classifiers = ["Programming Language :: Python"]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = { file = "version.txt" }
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+release = ["build", "twine"]
+static-code-qa = ["pre-commit"]
+dev = ["mypkg-nikita[test,release,static-code-qa]"]
