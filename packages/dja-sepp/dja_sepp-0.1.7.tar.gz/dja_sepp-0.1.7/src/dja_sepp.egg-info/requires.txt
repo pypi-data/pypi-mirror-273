@@ -1,0 +1,6 @@
+awscli
+boto3
+numpy
+matplotlib
+astropy
+scikit-learn
