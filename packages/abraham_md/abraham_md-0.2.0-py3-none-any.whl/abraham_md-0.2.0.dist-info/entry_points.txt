@@ -1,0 +1,3 @@
+[console_scripts]
+abraham_md=abraham_md.main:main
+
