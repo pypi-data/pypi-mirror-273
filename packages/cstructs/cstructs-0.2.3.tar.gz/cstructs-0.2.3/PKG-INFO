@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: cstructs
+Version: 0.2.3
+Summary: Powerful decorator allowing the parsing of binary data into a dataclass and serializing back into raw data.
+Project-URL: Documentation, https://github.com/yntha/cstructs#readme
+Project-URL: Issues, https://github.com/yntha/cstructs/issues
+Project-URL: Source, https://github.com/yntha/cstructs
+Author-email: yntha <bguznvjk@gmail.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# cstructs
+
+[![PyPI - Version](https://img.shields.io/pypi/v/cstructs.svg)](https://pypi.org/project/cstructs)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cstructs.svg)](https://pypi.org/project/cstructs)
+[![PyPI - License](https://img.shields.io/pypi/l/cstructs.svg)](https://pypi.org/project/cstructs)
+[![status](https://github.com/yntha/cstructs/actions/workflows/run-tests.yml/badge.svg?branch=feature%2Fread-binary-data)](https://github.com/yntha/cstructs/actions/workflows/run-tests.yml)
+
+-----
+***Note:*** *This version supercedes the original [cstruct](https://github.com/yntha/cstruct) package. This is my first attempt at a test driven development cycle, so I apologize in advance if the things that I do don't make sense.*
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+pip install -U cstructs
+```
+
+## Usage
+For full usage examples, see the files in the tests folder.
+
+### Reading
+*from [test_read.py](tests/test_read.py):*
+```python
+    @datastruct(byteorder="big")
+    class Test(metaclass=DataStruct):
+        a: NativeTypes.uint16
+        b: NativeTypes.uint32
+        c: NativeTypes.i32
+        d: NativeTypes.uint64
+        e: Annotated[bytes, NativeTypes.bytestring(4)]
+        f: Annotated[str, NativeTypes.char(12)]
+        g: Annotated[str, NativeTypes.char(1, encoding="latin1")]
+
+        def on_read(self):
+            assert self.f == "Hello World!"
+
+    stream = io.BytesIO()
+
+    stream.write(bytes.fromhex("0001"))
+    stream.write(bytes.fromhex("00000002"))
+    stream.write(bytes.fromhex("fffffffd"))
+    stream.write(bytes.fromhex("0000000000000004"))
+    stream.write(bytes.fromhex("01020304"))
+    stream.write(b"Hello World!")
+    stream.write(bytes.fromhex("BF"))
+
+    stream.seek(0)
+
+    test = Test.read(stream)
+
+    assert test.a == 1
+    assert test.b == 2
+    assert test.c == -3
+    assert test.d == 4
+    assert test.e == b"\x01\x02\x03\x04"
+    assert test.f == "Hello World!"
+    assert test.g == "¿"
+```
+
+### Serializing
+*from [test_write.py](tests/test_write.py):*
+```python
+    @datastruct(byteorder="big")
+    class Test(metaclass=DataStruct):
+        a: NativeTypes.uint32
+        b: NativeTypes.i8
+        c: NativeTypes.char
+        d: Annotated[str, NativeTypes.char(6, enforce_length=True)]
+        e: Annotated[bytes, NativeTypes.bytestring(8)]
+
+        def on_write(self, data: bytearray):
+            pass
+
+    test = Test.init_empty()
+
+    test.a = 1
+
+    # ensure all None values get properly encoded to 0(null)
+    # fmt: off
+    assert test.serialize() == bytes.fromhex(
+        "00 00 00 01"
+        "00"
+        "00"
+        "00 00 00 00 00 00"
+        "00 00 00 00 00 00 00 00"
+    )
+    # fmt: on
+
+    test.a = 0xFFFFFFFF
+    test.b = 0xFF
+    test.c = "!"
+    test.d = "Anthy!"
+    test.e = b"\x00\x01\x02\x03\x04\x05\x06\x07"
+
+    # fmt: off
+    assert test.serialize() == bytes.fromhex(
+        "FF FF FF FF"
+        "FF"
+        "21"
+        "41 6E 74 68 79 21"
+        "00 01 02 03 04 05 06 07"
+    )
+    # fmt: on
+```
+
+## License
+
+`cstructs` is distributed under the terms of the [GNU GPL v3](https://spdx.org/licenses/GPL-3.0-or-later.html) license.

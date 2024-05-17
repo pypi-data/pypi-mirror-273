@@ -1,0 +1,20 @@
+Index: tests/test_write.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># --------------------------------------------------------------------------------------\r\n#  Copyright(C) 2023 yntha                                                             -\r\n#                                                                                      -\r\n#  This program is free software: you can redistribute it and/or modify it under       -\r\n#  the terms of the GNU General Public License as published by the Free Software       -\r\n#  Foundation, either version 3 of the License, or (at your option) any later          -\r\n#  version.                                                                            -\r\n#                                                                                      -\r\n#  This program is distributed in the hope that it will be useful, but WITHOUT ANY     -\r\n#  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A     -\r\n#  PARTICULAR PURPOSE. See the GNU General Public License for more details.            -\r\n#                                                                                      -\r\n#  You should have received a copy of the GNU General Public License along with        -\r\n#  this program. If not, see <http://www.gnu.org/licenses/>.                           -\r\n# --------------------------------------------------------------------------------------\r\nimport pytest\r\n\r\nfrom cstructs import datastruct, NativeTypes, DataStruct\r\nfrom cstructs.exc import ByteStringLengthMismatch\r\nfrom typing import Annotated\r\n\r\n\r\ndef test_write_basic():\r\n    @datastruct(byteorder=\"big\")\r\n    class Test(metaclass=DataStruct):\r\n        a: NativeTypes.u8\r\n        b: NativeTypes.i8\r\n\r\n    # datastructs must be usable even without initial data\r\n    test = Test.init_empty()\r\n\r\n    test.a = 1\r\n\r\n    # ensure values are appropiately scaled to their typedef's width\r\n    test.b = 0xFFFF\r\n    hexstr = test.serialize().hex()\r\n\r\n    assert hexstr == bytes.fromhex(\"01FF\").hex()\r\n\r\n    test.b = 0xFF\r\n    hexstr = test.serialize().hex()\r\n\r\n    assert hexstr == bytes.fromhex(\"01FF\").hex()\r\n\r\n\r\ndef test_write_complex():\r\n    @datastruct(byteorder=\"big\")\r\n    class Test(metaclass=DataStruct):\r\n        a: NativeTypes.uint32\r\n        b: NativeTypes.i8\r\n        c: NativeTypes.char\r\n        d: Annotated[str, NativeTypes.char(6, enforce_length=True)]\r\n        e: Annotated[bytes, NativeTypes.bytestring(8)]\r\n\r\n    test = Test.init_empty()\r\n\r\n    test.a = 1\r\n\r\n    # ensure all None values get properly encoded to 0(null)\r\n    # fmt: off\r\n    assert test.serialize() == bytes.fromhex(\r\n        \"00 00 00 01\"\r\n        \"00\"\r\n        \"00\"\r\n        \"00 00 00 00 00 00\"\r\n        \"00 00 00 00 00 00 00 00\"\r\n    )\r\n    # fmt: on\r\n\r\n    test.a = 0xFFFFFFFF\r\n    test.b = 0xFF\r\n    test.c = \"!\"\r\n    test.d = \"Anthy!\"\r\n    test.e = b\"\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\"\r\n\r\n    # fmt: off\r\n    assert test.serialize() == bytes.fromhex(\r\n        \"FF FF FF FF\"\r\n        \"FF\"\r\n        \"21\"\r\n        \"41 6E 74 68 79 21\"\r\n        \"00 01 02 03 04 05 06 07\"\r\n    )\r\n    # fmt: on\r\n\r\n    # ensure that mismatching lengths are reported\r\n    with pytest.raises(ByteStringLengthMismatch):\r\n        test.d = \"Anthy!!!\"\r\n\r\n        test.serialize()\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/test_write.py b/tests/test_write.py
+--- a/tests/test_write.py	(revision 0e9f7b1c6169b84ea2e91330a1f4f7f7b75bffd3)
++++ b/tests/test_write.py	(date 1715885042908)
+@@ -26,6 +26,9 @@
+         a: NativeTypes.u8
+         b: NativeTypes.i8
+ 
++        def on_write(self, data: bytes):
++            assert data.hex() == bytes.fromhex("01FF").hex()
++
+     # datastructs must be usable even without initial data
+     test = Test.init_empty()
+ 
