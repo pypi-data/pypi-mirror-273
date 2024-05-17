@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: kokojson
+Version: 0.1.2
+Summary: A module for safe JSON handling in Python
+Home-page: https://github.com/your_username/kokojson
+Author: kokofixcomputers
+Author-email: kokocanfixit@kokofixcomputers.serv00.net
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## A module for safe JSON handling in Python
+
+### Example Usage:
+data.json:
+```json
+{
+  "person": {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York"
+  },
+  "company": {
+    "name": "Acme Inc.",
+    "employees": 500
+  }
+}
+```
+```python
+import kokojson as json1
+
+# Load the JSON data from the file
+with open("data.json", "r") as file:
+    data = file.read()
+
+# Parse the JSON data using kokojson
+json_data = json1.load(data)
+
+# Access existing keys
+print(json_data.get("person").get("name"))  # Output: John Doe
+print(json_data.get("company").get("employees"))  # Output: 500
+
+# Access non-existing keys (returns None instead of raising an exception)
+print(json_data.get("person").get("email"))  # Output: None
+print(json_data.get("company").get("website"))  # Output: None
+
+# Provide a default value for non-existing keys
+print(json_data.get("person").get("email", "No email found"))  # Output: No email found
+print(json_data.get("company").get("website", "https://example.com"))  # Output: https://example.com
+```
