@@ -1,0 +1,53 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "ourmind_audio"
+authors = [{ name = "OurMind BV", email = "git@orsinium.dev" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+dynamic = ["version", "description"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+]
+keywords = []
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+lint = ["ruff", "mypy"]
+
+[project.urls]
+Source = "https://github.com/ourmindbv/ourmind-audio"
+
+[tool.mypy]
+files = ["ourmind_audio"]
+python_version = "3.8"
+ignore_missing_imports = true
+# follow_imports = "silent"
+show_error_codes = true
+strict = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=ourmind_audio",
+    "--cov-report=html",
+    "--cov-report=term-missing:skip-covered",
+    "--cov-fail-under=85",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING",
+    "    pass",
+    "except ImportError:",
+]
+
+[tool.coverage.run]
+branch = true
