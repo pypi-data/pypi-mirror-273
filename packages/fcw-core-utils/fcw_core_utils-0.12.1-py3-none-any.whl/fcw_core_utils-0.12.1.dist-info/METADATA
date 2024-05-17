@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fcw-core-utils
+Version: 0.12.1
+Summary: Early collision warning Network Application for Transportation use case - core utils part
+Home-page: https://github.com/5G-ERA/CollisionWarningService
+Author: Petr Kleparnik
+Author-email: p.kleparnik@cognitechna.cz
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: filterpy (>=1.4.5)
+Requires-Dist: matplotlib (>=3.7.5)
+Requires-Dist: opencv-python (>=4.8)
+Requires-Dist: shapely (>=2.0.4)
+Project-URL: Repository, https://github.com/5G-ERA/CollisionWarningService
+Description-Content-Type: text/markdown
+
+# Forward Collision Warning - core utils part
+
+Early collision warning Network Application for Transportation use case - core utils part.
+This package is used within fcw-core, fcw-client and fcw-service packages. It contains 
+utils for rate timing, camera and geometry processing, and forward collision guard. The 
+utils they do not require high system memory and are not dependent on other modules within fcw.
+
+
