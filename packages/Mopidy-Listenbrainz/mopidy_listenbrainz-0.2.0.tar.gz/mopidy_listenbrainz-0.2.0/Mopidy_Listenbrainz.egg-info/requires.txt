@@ -1,0 +1,11 @@
+Mopidy>=3.0.0
+Pykka>=2.0.1
+setuptools
+
+[lint]
+black
+check-manifest
+flake8
+flake8-black
+flake8-bugbear
+flake8-import-order
