@@ -1,0 +1,14 @@
+django<5.1,>=3.2
+typing-extensions<5
+
+[dev]
+django-stubs[compatible-mypy]<6
+commitizen<4
+pre-commit<4
+pytest<9
+pytest-cov<6
+pytest-django<5
+pytest-custom-exit-code<1
+psycopg2-binary<3
+python-dotenv<2
+ruff<1

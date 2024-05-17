@@ -1,0 +1,196 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# Project metadata
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/
+
+[project]
+name = "django-xlsx-serializer"
+dependencies = [
+  "django >= 3.2, < 5.1",
+  "typing-extensions < 5",
+]
+requires-python = ">= 3.9"
+authors = [
+  { name = "Kamil Paduszyński", email = "92403542+paduszyk@users.noreply.github.com" },
+]
+description = "Load/dump Django models from/to Excel 2003+ workbooks"
+readme = "README.md"
+keywords = [
+  "django",
+  "django-application",
+  "excel",
+  "excel-export",
+  "excel-import",
+  "openpyxl",
+  "xlsx",
+]
+classifiers = [
+  "Environment :: Web Environment",
+  "Framework :: Django",
+  "Framework :: Django :: 3.2",
+  "Framework :: Django :: 4.0",
+  "Framework :: Django :: 4.1",
+  "Framework :: Django :: 4.2",
+  "Framework :: Django :: 5.0",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Repository" = "https://github.com/paduszyk/django-xlsx-serializer"
+"Documentation" = "https://github.com/paduszyk/django-xlsx-serializer#readme"
+"Issue tracker" = "https://github.com/paduszyk/django-xlsx-serializer/issues"
+
+[project.optional-dependencies]
+dev = [
+  "django-stubs[compatible-mypy] < 6",
+  "commitizen < 4",
+  "pre-commit < 4",
+  "pytest < 9",
+  "pytest-cov < 6",
+  "pytest-django < 5",
+  "pytest-custom-exit-code < 1",
+  "psycopg2-binary < 3",
+  "python-dotenv < 2",
+  "ruff < 1",
+]
+
+# Setuptools
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[tool.setuptools.dynamic]
+version = { attr = "xlsx_serializer.__version__" }
+
+# Commitizen
+# https://commitizen-tools.github.io/commitizen/config/
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version_provider = "scm"
+version_scheme = "pep440"
+version_files = [
+  "src/xlsx_serializer/__init__.py:__version__",
+]
+tag_format = "v$version"
+annotated_tag = true
+bump_message = "chore(release): $current_version → $new_version"
+
+# Ruff
+# https://docs.astral.sh/ruff/configuration/
+# https://docs.astral.sh/ruff/rules/
+# https://docs.astral.sh/ruff/settings/
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["ANN", "D"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["ARG", "DJ", "E501", "FBT", "PLR2004", "S101"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["xlsx_serializer"]
+section-order = [
+  "future",
+  "standard-library",
+  "third-party",
+  "django",
+  "first-party",
+  "tests",
+  "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+"django" = ["django"]
+"tests" = ["tests"]
+
+[tool.ruff.lint.flake8-self]
+extend-ignore-names = [
+  "_default_manager",
+  "_meta",
+]
+
+# Mypy
+# https://mypy.readthedocs.io/en/stable/config_file.html
+
+[tool.mypy]
+mypy_path = "src/"
+exclude = [
+  "^build/",
+]
+strict = true
+plugins = [
+  "mypy_django_plugin.main",
+]
+
+[[tool.mypy.overrides]]
+module = [
+  "pytest",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+  "tests.*",
+]
+disallow_untyped_decorators = false
+
+# Django-stubs
+# https://github.com/typeddjango/django-stubs
+
+[tool.django-stubs]
+django_settings_module = "tests.settings"
+strict_settings = false
+
+# Pytest
+# https://docs.pytest.org/en/latest/reference/reference.html#configuration-options
+
+[tool.pytest.ini_options]
+addopts = [
+  # pytest-cov
+  # https://pytest-cov.readthedocs.io/en/latest/config.html#reference
+  "--cov",
+  "--cov-append",
+  "--cov-branch",
+  "--cov-report=term-missing:skip-covered",
+  "--cov-report=xml",
+  # pytest-custom-exit-code
+  # https://github.com/yashtodi94/pytest-custom_exit_code?tab=readme-ov-file#usage
+  "--suppress-no-test-exit-code",
+  # pytest-django
+  # https://pytest-django.readthedocs.io/en/latest/usage.html#usage-and-invocations
+  "--ds=tests.settings",
+]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+pythonpath = [".", "src/"]
+testpaths = ["tests/"]
+
+# Coverage.py
+# https://coverage.readthedocs.io/en/latest/config.html
+
+[tool.coverage.run]
+source = ["src/"]
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "raise NotImplementedError",
+]
+
+[tool.coverage.xml]
+output = "coverage.xml"
