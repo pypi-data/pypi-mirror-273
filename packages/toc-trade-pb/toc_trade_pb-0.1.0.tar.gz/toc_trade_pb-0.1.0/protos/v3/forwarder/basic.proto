@@ -1,0 +1,80 @@
+syntax            = "proto3";
+option go_package = "./pb";
+package forwarder;
+
+import "google/protobuf/empty.proto";
+
+service BasicDataInterface {
+    rpc CreateLongConnection(stream google.protobuf.Empty) returns (google.protobuf.Empty);
+    rpc CheckUsage(google.protobuf.Empty) returns (ShioajiUsage) {}
+    rpc Login(google.protobuf.Empty) returns (google.protobuf.Empty) {}
+    rpc GetAllStockDetail(google.protobuf.Empty) returns (StockDetailResponse) {}
+    rpc GetAllFutureDetail(google.protobuf.Empty) returns (FutureDetailResponse) {}
+    rpc GetAllOptionDetail(google.protobuf.Empty) returns (OptionDetailResponse) {}
+}
+
+message BeatMessage {
+    string message = 1;
+    string error   = 2;
+}
+
+message ShioajiUsage {
+    int64 connections     = 1;
+    int64 bytes           = 2;
+    int64 limit_bytes     = 3;
+    int64 remaining_bytes = 4;
+}
+
+message StockDetailResponse {
+    repeated StockDetailMessage stock = 1;
+}
+
+message FutureDetailResponse {
+    repeated FutureDetailMessage future = 1;
+}
+
+message OptionDetailResponse {
+    repeated OptionDetailMessage option = 1;
+}
+
+message StockDetailMessage {
+    string exchange    = 1;
+    string category    = 2;
+    string code        = 3;
+    string name        = 4;
+    double reference   = 5;
+    string update_date = 6;
+    string day_trade   = 7;
+}
+
+message FutureDetailMessage {
+    string code            = 1;
+    string symbol          = 2;
+    string name            = 3;
+    string category        = 4;
+    string delivery_month  = 5;
+    string delivery_date   = 6;
+    string underlying_kind = 7;
+    int64 unit             = 8;
+    double limit_up        = 9;
+    double limit_down      = 10;
+    double reference       = 11;
+    string update_date     = 12;
+}
+
+message OptionDetailMessage {
+    string code            = 1;
+    string symbol          = 2;
+    string name            = 3;
+    string category        = 4;
+    string delivery_month  = 5;
+    string delivery_date   = 6;
+    double strike_price    = 7;
+    string option_right    = 8;
+    string underlying_kind = 9;
+    int64 unit             = 10;
+    double limit_up        = 11;
+    double limit_down      = 12;
+    double reference       = 13;
+    string update_date     = 14;
+}
