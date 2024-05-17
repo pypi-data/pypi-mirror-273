@@ -1,0 +1,8 @@
+[console_scripts]
+caramel_autosign = caramel.scripts.autosign:main
+caramel_ca = caramel.scripts.generate_ca:main
+caramel_initialize_db = caramel.scripts.initializedb:main
+caramel_tool = caramel.scripts.tool:main
+
+[paste.app_factory]
+main = caramel:main
