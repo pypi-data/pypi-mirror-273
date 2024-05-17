@@ -1,0 +1,2 @@
+[console_scripts]
+fguard = fguard.cli:main
