@@ -1,0 +1,182 @@
+% DMT
+% Copyright (C) from 2022  SemiMod
+% Copyright (C) until 2021  Markus Müller, Mario Krattenmacher and Pascal Kuthe
+% <https://gitlab.com/dmt-development/dmt-extraction>
+%
+% This file is part of DMT-extraction.
+%
+% DMT-extraction is free software: you can redistribute it and/or modify it under the terms of
+% the GNU General Public License as published by the Free Software Foundation,
+% either version 3 of the License, or (at your option) any later version.
+
+% DMT-extraction is distributed in the hope that it will be useful, but WITHOUT ANY
+% WARRANTY; without even the implied warranty of MERCHANTABILITY or
+% FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+% more details.
+
+% You should have received a copy of the GNU General Public License along with DMT-extraction.
+% If not, see <https://www.gnu.org/licenses/>.
+
+% This Tex file sets the documentclass and packages for the DMT autodoc template.
+
+\documentclass[english, cd=nocolor, cdfont=off]{tudscrartcl}
+\renewcommand{\autodot}{}
+%\usepackage{selinput} \SelectInputMappings{adieresis={ä},germandbls={ß}}
+
+% font types:
+% times new roman: with serifs
+\usepackage{times}
+%\usepackage{mathptmx}
+\fontfamily{ptm}
+\fontsize{12pt}{15pt}
+\selectfont
+% official TUD font: opensans:
+%\usepackage[default]{opensans}
+
+% Line breaks and more
+\usepackage[activate]{microtype}
+
+% Distance between text lines
+\usepackage{setspace}
+\onehalfspacing
+%\setstretch{1.25}
+
+\usepackage[toc,page]{appendix}
+
+% Localization
+\usepackage[english]{babel}
+
+% Slashboxes in tables
+\usepackage{diagbox}
+
+% German quotes ""
+\usepackage[babel]{csquotes}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{\base/fig/}
+\usepackage{subfiles}
+% Mathematical text symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+\numberwithin{equation}{section}
+\renewcommand{\theequation}{\thesection-\arabic{equation}}
+\usepackage[integrals]{wasysym} % fuer gerades Integralzeichen
+\usepackage{mathtools}
+\usepackage{enumitem}
+% Fractions in text
+\usepackage{nicefrac}
+\DeclareMathOperator{\sign}{sign}
+% Colors
+\usepackage[dvipsnames]{xcolor}
+
+% Links to Figures and not to captions
+\usepackage[hypcap]{caption}
+
+% for placing figures side by side
+\usepackage{subcaption}
+%\usepackage{subfigure}
+
+% for SI units locale=EN,
+\usepackage{siunitx}
+\sisetup{range-units=repeat, list-units=repeat, binary-units, exponent-product = \cdot}
+\usepackage{textcomp} % for having the right \micro symbol in siunitx
+\DeclareSIUnit[number-unit-product = {}] \spezOhm{\SIUnitSymbolOhm\metre} % ohm meter
+\DeclareSIUnit[number-unit-product = {}] \degC{\degreeCelsius} % degree celsius
+\DeclareSIUnit[number-unit-product = {}] \degC{\degree_Celsius} % degree celsius
+
+\DeclareSIUnit\sq{\ensuremath{\Box}}
+
+% for nice tables:
+\usepackage{booktabs}
+\usepackage{collcell}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% For drawing circuits
+\usepackage[european, siunitx]{circuitikz}
+\usetikzlibrary{circuits.ee.IEC} % zeichne elektrische Schaltungen nach ee IEC
+
+\usepackage{tikz}
+\usetikzlibrary{external} % lagere Tikz-Bilder nach dem erstellen aus und verwende sie wieder
+\tikzexternalize[prefix=figures/, mode=list and make] % activate with path figures/
+% \tikzexternalize[prefix=figures/] % activate with path figures/
+%using multi core to build pictures
+%https://tex.stackexchange.com/questions/136658/how-to-make-pdflatex-multithreaded-when-shell-escape-is-enabled
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{shapes.geometric}
+%% the following commands are needed for some matlab2tikz features
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+\usepackage{grffile}
+\pgfplotsset{plot coordinates/math parser=false}
+\newlength\figureheight
+\newlength\figurewidth
+\usepackage{tikzscale}
+\usepackage{scrhack}
+\usepackage[export]{adjustbox}
+\usepackage[normalem]{ulem}
+% to insert source code ( hier inp.file)
+
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{8} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{8}  % for normal
+\usepackage{listings}
+
+% Floatbarrier, floats do not randomly goe over sections
+\usepackage[section]{placeins}
+
+% for bibtex
+\usepackage[sorting=none , backend=bibtex, style=ieee, doi=false, url=false]{biblatex}
+\addbibresource{bib.bib}
+
+%path to images
+\graphicspath{{images/}{fig/}}
+
+\usepackage{stackengine}
+% the PDF settings
+%\PassOptionsToPackage{hyphens}{url}
+\usepackage[
+	pdfauthor={_author},
+	pdfpagemode=UseOutlines, % while opening show contents
+	pdflang=eng, % language of documents
+]{hyperref}
+\usepackage{cleveref}
+\crefname{equation}{Equ.}{Equs.}
+\crefname{figure}{Fig.}{Figs.}
+\let\oldref\ref
+\renewcommand{\ref}[1]{(\oldref{#1})}
+
+% just one latex run to get new contents
+\usepackage{bookmark}
+
+% Abbreviations and Glossaries
+\usepackage[nomain, section=section, toc]{glossaries} %
+\usepackage{glossary-longbooktabs}
+
+\newglossary[pml]{parameterlist}{slr}{pmn}{List of extracted paramters}
+\setglossarystyle{long3col-booktabs}
+
+\makeglossaries
+
+% Hurenkinder und Schusterjungen verhindern (German)
+% http://projekte.dante.de/DanteFAQ/Silbentrennung
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+% (Color-)settings for links in PDF
+\hypersetup{%
+	colorlinks= true, 			 
+	linkcolor = black, %cddarkblue!100,
+	citecolor = black, %cddarkblue!100,
+	filecolor = black, %cddarkblue!100,
+	menucolor = black, %cddarkblue!100,
+	urlcolor  = black, %cddarkblue!100,
+	bookmarksnumbered=true 
+}
