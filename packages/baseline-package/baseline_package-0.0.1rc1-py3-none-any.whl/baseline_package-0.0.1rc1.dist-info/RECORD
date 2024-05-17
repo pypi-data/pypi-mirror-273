@@ -1,0 +1,14 @@
+baseline_package/__init__.py,sha256=GZZ-nKcynG1biHX0DIlQCeUSdobyg9aEA4Wz6NywAdQ,254
+baseline_package/cli.py,sha256=_CvhG8AiWPhTtIGHrjMGE07Xt05w0ioPHkOYYfnrVVU,2996
+baseline_package/config.py,sha256=0ipn3FSCE27dEMl3NVFwitXQancLJk_B-uPhiguNl_4,847
+baseline_package/constants.py,sha256=lC3W_4fBuuNqrqVCo6el3pwT0in_6bW7I8UhMm1FOQE,533
+baseline_package/exceptions.py,sha256=0KLURdRcizlvmL_fuLj4Az-DbglxPvnpaoHHLc-gZ_k,461
+baseline_package/globals.py,sha256=3QbSjUNPLa7CL8416kH_bOGhq2QHioHaI7wN_N30Po0,518
+baseline_package/main.py,sha256=6aMFaKmM0ODLDCMSJVG8lp5g6r1_3ohHlQT-f2XVJnw,925
+baseline_package/notify.py,sha256=DxjgYWgNVLndqWeAGZrXiUKO8LvBrcnRvIyhZxGlS4U,1411
+baseline_package-0.0.1rc1.dist-info/LICENSE.md,sha256=lGeU8YsP7-Ty2Mf5d_qmyYrdhBahKio3jhRcsKkW3nw,1118
+baseline_package-0.0.1rc1.dist-info/METADATA,sha256=GtRxlM9pgXeTdhM7s7kixjmrO2S1Je9B-Y3y3iQCEuY,3844
+baseline_package-0.0.1rc1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+baseline_package-0.0.1rc1.dist-info/entry_points.txt,sha256=sdwVyzKt7V60LQ2jC_vU8cACnBcC7GpO6s1K3qo7fkU,64
+baseline_package-0.0.1rc1.dist-info/top_level.txt,sha256=RhKvnvrlkhhx8GIoruqIv3IP1dGdvP83JWTxj-FkhKY,17
+baseline_package-0.0.1rc1.dist-info/RECORD,,
