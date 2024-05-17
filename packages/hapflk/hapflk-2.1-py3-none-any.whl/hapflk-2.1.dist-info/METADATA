@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hapflk
+Version: 2.1
+Summary: Software to infer selection from multiple population data
+Author-email: Bertrand Servin <bertrand.servin@inrae.fr>
+License: GPL v3
+Project-URL: Homepage, https://forgemia.inra.fr/bertrand.servin/hapflk
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: COPYING.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: fastphase >=2.0.2
+Requires-Dist: Pgenlib >=0.90.1
+

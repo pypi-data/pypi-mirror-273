@@ -1,0 +1,6 @@
+[console_scripts]
+flkfreq = hapflk.flkfreq:main
+flkpoptree = hapflk.flkpoptree:main
+hapflk = hapflk.hapflk:run_hapflk
+hapflkadapt = hapflk.hapflkadapt:run_hapflkadapt
+poolflkadapt = hapflk.poolflkadapt:main
