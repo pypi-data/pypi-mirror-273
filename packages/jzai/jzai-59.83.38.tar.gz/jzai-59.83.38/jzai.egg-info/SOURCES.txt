@@ -1,0 +1,13 @@
+README.md
+setup.py
+jzai/__init__.py
+jzai/bot.py
+jzai/cli.py
+jzai/db.py
+jzai/utils.py
+jzai.egg-info/PKG-INFO
+jzai.egg-info/SOURCES.txt
+jzai.egg-info/dependency_links.txt
+jzai.egg-info/entry_points.txt
+jzai.egg-info/requires.txt
+jzai.egg-info/top_level.txt
