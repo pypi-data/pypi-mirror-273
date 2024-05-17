@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: outsystems-pipeline
+Version: 0.9.0
+Summary: Python package to accelerate the integration of OutSystems with third-party CI/CD tools
+Home-page: https://github.com/OutSystems/outsystems-pipeline
+Author: OutSystems
+Author-email: cicd.integrations@outsystems.com
+License: Apache License 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Acceptance
+Classifier: Topic :: Software Development :: Testing :: BDD
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Topic :: System :: Software Distribution
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: NOTICE.md
+
+The outsystems-pipeline Python package provides functions to support the creation of OutSystems CI/CD pipelines using your DevOps automation tool of choice.
+
+Visit the `project repository <https://github.com/OutSystems/outsystems-pipeline>`_ on GitHub for instructions on how to build example OutSystems CI/CD pipelines with common DevOps automation tools, as well as documentation that will help you adapt the examples to your particular scenarios.
+
+
+What's new
+==========
+
+**Download Application Source Code**
+
+ A new script was added to download platform-generated source code:
+
+ * `fetch_apps_source_code.py`
+
+ Use the following parameters to generate more human-readable outputs and facilitate the compilation of the source code:
+
+ * --friendly_package_names: source code packages with user-friendly names.
+ * --include_all_refs: adds to .csproj file all assemblies in the bin folder as references.
+ * --remove_resources_files: removes references to embedded resources files from the.csproj file.
+
+**Solution Download and Deploy**
+
+ Added new functions to leverage the recently released/improved APIs to download and deploy outsystems packages:
+
+ * `fetch_lifetime_solution_from_manifest.py` - downloads a solution file based on manifest data.
+ * `deploy_package_to_target_env.py` - deploys an outsystems package (solution or application) to a target environment.
+ * `deploy_package_to_target_env_with_osptool.py` - deploys an outsystems package (solution or application) using OSP Tool.
+
+**Improved OSPTool Operations**
+
+ OSPTool command line calls now have live output callback and catalog mapping support.
+
+**Updated Package Dependencies**
+
+ * Updated python-dateutil dependency to version 2.9.0.post0
+ * Updated python-dotenv dependency to version 1.0.1
+
+Installing and upgrading
+========================
+
+Install or upgrade outsystems-pipeline to the latest available version as follows:
+::
+
+    pip install -U outsystems-pipeline
+
