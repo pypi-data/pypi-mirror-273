@@ -1,0 +1,2 @@
+[console_scripts]
+cookieplone = cookieplone.__main__:main
