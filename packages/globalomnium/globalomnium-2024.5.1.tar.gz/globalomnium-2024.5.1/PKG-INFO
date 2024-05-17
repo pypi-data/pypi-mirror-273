@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: globalomnium
+Version: 2024.5.1
+Summary: Interface to globalomnium.com water data
+Home-page: https://github.com/carlos-48/globalomnium
+Author: carlos-48
+Author-email: karloselmaster@gmail.com
+Project-URL: Bug Tracker, https://github.com/carlos-48/globalomnium/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp<4,>=3.8.0
+Provides-Extra: mqtt
+Requires-Dist: paho-mqtt<2,>=1.6.1; extra == "mqtt"
+
+# FORK IN PROGRESS
+
+Hi all, I'm a newbie trying to make my first Home Assistant Custom Component and my first Python work.
+This repo is a modified fork from [ldotlopez/ideenergy](https://github.com/ldotlopez/ideenergy) but I'm trying to adapt it to get water consumption from GlobalOmnium / Emivasa / Aguas de Valencia.
+
+# globalomnium
+
+<!-- Code and releases -->
+![GitHub Release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/carlos-48/globalomnium?include_prereleases)
+[![CodeQL](https://github.com/carlos-48/globalomnium/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/carlos-48/globalomnium/actions/workflows/codeql-analysis.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+Programmatic access to water consumption from [https://www.globalomnium.com/](https://www.globalomnium.com/) (Spanish water distributor)
+
+## Useful links
+
+* [Related globalomnium Home-Assistant component](https://github.com/carlos-48/ha-globalomnium)
+* [Original ideenergy Python API](https://github.com/ldotlopez/ha-ideenergy)
+* [Original ideenergy Home-Assistant component](https://github.com/ldotlopez/ha-ideenergy)
+  
