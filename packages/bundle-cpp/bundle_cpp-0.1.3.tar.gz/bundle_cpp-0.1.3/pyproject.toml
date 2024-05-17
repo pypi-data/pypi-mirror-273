@@ -1,0 +1,47 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bundle-cpp"
+version = "0.1.3"
+description = "expand includes and create a single file"
+authors = ["kagemeka <kagemeka1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "bundle_cpp" }]
+# exclude = ["tests"]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.2.0"
+ruff = "0.4.4"
+
+[tool.poetry.scripts]
+bundle = "bundle_cpp.__main__:cli"
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/stable/reference/customize.html
+# https://docs.pytest.org/en/stable/reference/reference.html#ini-options-ref
+
+python_files = ["*.py"]
+# by default only test_*.py supported.
+
+python_functions = ["_test*", "test*"]
+# global _test*, and _Tests.test*
+# plz use test* only in private-to-user modules.
+
+# python_classes = ["_Tests", "Tests"]
+# classes inheriting unittest.TestCase are also tested by default
+# but if use unittest.TestCase, python_functions are neglected.
+# that is, only 'test*' methods are tested by default
+# plz use Tests only in private-to-user modules.
+
+python_classes = ["_Tests*", "Tests*"]
+# e.g. _Tests_a_func
+
+
+addopts = "--doctest-modules -v"
