@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sis-extras
+Version: 0.1.0
+Summary: Python package to make it easy to develop beautiful, performant streamlit-in-snowflake apps
+Author-Email: Zachary Blackwood <zblackwo@gmail.com>
+License: MIT
+Requires-Python: ==3.8.*
+Requires-Dist: streamlit==1.26.0
+Requires-Dist: snowflake-snowpark-python>=1.13.0
+Requires-Dist: plotly>=5.20.0
+Description-Content-Type: text/markdown
+
+# sis-extras
