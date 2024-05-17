@@ -1,0 +1,12 @@
+logfunc/__init__.py,sha256=Nm8ngflXqbMZRV6JJj0V8TGKzNFNP3VYjg5Ft7Nn9Eo,56
+logfunc/config.py,sha256=nkE3aGDCWRQSFomPaHxVbHp-qZ6ZVp-JwZVU1qB7fPg,2822
+logfunc/defaults.py,sha256=2yQkCcaVNlkfqlLNHatJ5ALLlys9wrsg9l6C0Fmwd14,44
+logfunc/main.py,sha256=hjqskp846AADLrF-4_a7jyAvMC6NZ4RI0pEMajEiO0I,6656
+logfunc/msgs.py,sha256=SWXbrxVbknl76f2VoU16k56sx8hijG7WWpcp8gTvjuY,673
+logfunc/utils.py,sha256=opxTFqAvRNEUvTOPamotT5mb5Ha1rp1udYGkz4JgU6Q,3238
+logfunc/version.py,sha256=eMEROmoPfgRMi7QS7X1B64dDjCFvnLbp3s1HN9YqZt4,22
+logfunc-2.6.2.dist-info/LICENSE,sha256=kueM_nETMsh1_GesVNNmMJdyG9mLbdpCRLBvS7Q0Sro,1068
+logfunc-2.6.2.dist-info/METADATA,sha256=d06Ac1o68ypRpPii5M098Lqs06eDZNXDUQX2UgToDYQ,8257
+logfunc-2.6.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+logfunc-2.6.2.dist-info/top_level.txt,sha256=Tj2tYgiZxKaMka9ZNH2YLLthRYv6NHgnO3ykPumOCpg,8
+logfunc-2.6.2.dist-info/RECORD,,
