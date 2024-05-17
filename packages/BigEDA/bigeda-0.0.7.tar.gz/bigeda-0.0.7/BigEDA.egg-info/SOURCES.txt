@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+BigEDA/__init__.py
+BigEDA/descriptive.py
+BigEDA/plots.py
+BigEDA/preprocessing.py
+BigEDA.egg-info/PKG-INFO
+BigEDA.egg-info/SOURCES.txt
+BigEDA.egg-info/dependency_links.txt
+BigEDA.egg-info/requires.txt
+BigEDA.egg-info/top_level.txt
