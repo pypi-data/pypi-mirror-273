@@ -1,0 +1,49 @@
+v0.2.6
+
+• add binres.py.
+• fix compatibility w/ python 3.13 ZipInfo .compress_level changes.
+
+v0.2.5
+
+• add fix-pg-map-id.py.
+
+v0.2.4
+
+• add rm-files.py & fix-files.py.
+• add zipalign.py (w/ -P/--page-size support).
+• inplace-fix.py: --page-align, --page-size; use zipalign.py (fallback & --internal).
+• diff-zip-meta.py: diff extra time [#17], show CRC etc. as hex, show byte diff sizes.
+• zipinfo.py: add --sort-by-offset.
+• list-compresslevel.py: add patterns.
+• add negation to fnmatch-style patterns.
+• various fixes and improvements.
+
+v0.2.3
+
+• add zipinfo.py.
+• repro-apk cli: catch zipfile.BadZipFile.
+• update README & description.
+
+v0.2.2
+
+• add dump-axml.py.
+• inplace-fix: find zipalign via $ANDROID_HOME when not on $PATH.
+• inplace-fix: blocklist build-tools w/ broken zipalign.
+
+v0.2.1
+
+• add inplace-fix.py/repro-apk-inplace-fix (w/ --zipalign).
+• README: add gradle integration examples.
+
+v0.2.0
+
+• use basic argparse for non-click clis.
+• use proper typechecking.
+• _realign_zip_entry(): use extra field from LH, not CD.
+• sort-apk: add --reset-lh-extra.
+• add dump-arsc.py.
+• add fix-compresslevel.py & list-compresslevel.py.
+• add dump-baseline.py & sort-baseline.py.
+• add diff-zip-meta.py.
+• check actual compressed data [closes #8].
+• add proper tests [closes #1].
