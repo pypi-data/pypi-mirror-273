@@ -1,0 +1,8 @@
+cpimerge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cpimerge/__main__.py,sha256=6hoPkQIwXgLxKsWKzAGrY2XKW7XlbiW5FxOYCLnJMsE,6
+cpimerge/cpimerge.py,sha256=MNhFTOjvDjbN_96Kd9uxBjySdbj2SRpI4Ky_TKxWsoI,15454
+cpimerge-0.0.9.dist-info/METADATA,sha256=MJ-U1P1y8vmF5Uv0IkYnud4CAvtoq6BBz0kFqWtUXDE,446
+cpimerge-0.0.9.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+cpimerge-0.0.9.dist-info/entry_points.txt,sha256=WdIfbbUE4HOHVM-LVrL8miYOlk3IlfaCDM9o1j6pxjQ,52
+cpimerge-0.0.9.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+cpimerge-0.0.9.dist-info/RECORD,,
