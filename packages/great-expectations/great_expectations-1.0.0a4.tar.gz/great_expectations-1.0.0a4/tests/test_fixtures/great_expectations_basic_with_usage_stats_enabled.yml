@@ -1,0 +1,37 @@
+# This is a basic configuration for testing.
+# It has comments that should be preserved.
+config_version: 2
+# Here's a comment between the config version and the datassources
+
+config_variables_file_path: uncommitted/config_variables.yml
+
+plugins_directory: plugins/
+suite_parameter_store_name: suite_parameter_store
+expectations_store_name: expectations_store
+validation_results_store_name: validation_results_store
+
+data_docs_sites:
+  local_site:
+    class_name: SiteBuilder
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: uncommitted/data_docs/local_site/
+    site_index_builder:
+      class_name: DefaultSiteIndexBuilder
+      show_cta_footer: true
+
+stores:
+  expectations_store:
+    class_name: ExpectationsStore
+    store_backend:
+      class_name: TupleFilesystemStoreBackend
+      base_directory: expectations/
+  suite_parameter_store:
+    module_name: great_expectations.data_context.store
+    class_name: SuiteParameterStore
+
+  validation_results_store:
+    class_name: ValidationResultsStore
+
+data_context_id: 7f76b3c9-330c-4307-b882-7ad9186adf0c
+analytics_enabled: true
