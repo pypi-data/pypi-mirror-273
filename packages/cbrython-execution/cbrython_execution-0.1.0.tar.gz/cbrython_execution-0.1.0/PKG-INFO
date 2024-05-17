@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cbrython-execution
+Version: 0.1.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: brython (>=3.11.1,<4.0.0)
+Requires-Dist: javascript (>=1!1.0.1,<1!2.0.0)
+Description-Content-Type: text/markdown
+
+
