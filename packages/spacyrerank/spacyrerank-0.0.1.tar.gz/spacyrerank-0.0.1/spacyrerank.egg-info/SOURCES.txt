@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spacyrerank/__init__.py
+spacyrerank/rerank.py
+spacyrerank/spacy_pipeline.py
+spacyrerank.egg-info/PKG-INFO
+spacyrerank.egg-info/SOURCES.txt
+spacyrerank.egg-info/dependency_links.txt
+spacyrerank.egg-info/not-zip-safe
+spacyrerank.egg-info/requires.txt
+spacyrerank.egg-info/top_level.txt
