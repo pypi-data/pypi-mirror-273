@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+g4f_xn/__init__.py
+g4f_xn/gpt.py
+g4f_xn/misc.py
+g4f_xn/output.py
+g4f_xn/sound.py
+g4f_xn/test_providers.py
+g4f_xn.egg-info/PKG-INFO
+g4f_xn.egg-info/SOURCES.txt
+g4f_xn.egg-info/dependency_links.txt
+g4f_xn.egg-info/requires.txt
+g4f_xn.egg-info/top_level.txt
+g4f_xn/sound/__init__.py
