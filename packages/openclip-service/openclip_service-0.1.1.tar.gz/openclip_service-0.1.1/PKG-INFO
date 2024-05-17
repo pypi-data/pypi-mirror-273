@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: openclip-service
+Version: 0.1.1
+Summary: CLIP Service Network Application - service part
+Home-page: https://github.com/5G-ERA/CLIPService
+Author: Petr Kleparnik
+Author-email: p.kleparnik@cognitechna.cz
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: era-5g-interface (>=0.10.0,<0.11.0)
+Requires-Dist: era-5g-server (>=0.4.0,<0.5.0)
+Requires-Dist: open-clip-torch (<=2.24.0)
+Requires-Dist: opencv-python (>=4.8)
+Requires-Dist: pillow (>=10.2.0)
+Requires-Dist: pyyaml (>=6.0.1)
+Requires-Dist: torch (>=2.1.0)
+Requires-Dist: torchaudio (>=2.1.0)
+Requires-Dist: torchvision (>=0.16.0)
+Project-URL: Repository, https://github.com/5G-ERA/CLIPService
+Description-Content-Type: text/markdown
+
+# CLIP Service - service part
+
+CLIP Service Network Application - service part.
+The package contains core modules for CLIP Service Network Application for 5G-ERA.
+
+
+
