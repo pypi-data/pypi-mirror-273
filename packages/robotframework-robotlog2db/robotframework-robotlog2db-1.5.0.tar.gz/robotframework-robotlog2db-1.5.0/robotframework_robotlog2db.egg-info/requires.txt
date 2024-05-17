@@ -1,0 +1,4 @@
+colorama
+robotframework
+lxml
+TestResultDBAccess
