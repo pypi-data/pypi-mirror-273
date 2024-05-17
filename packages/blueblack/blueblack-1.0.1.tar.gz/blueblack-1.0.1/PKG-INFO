@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: blueblack
+Version: 1.0.1
+Summary: Automatic light/dark mode transitions based on location
+Author: Stefanos Mitropoulos
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: certifi (==2024.2.2)
+Requires-Dist: charset-normalizer (==3.3.2)
+Requires-Dist: idna (==3.7)
+Requires-Dist: iniconfig (==2.0.0)
+Requires-Dist: jsonschema (>=4.22.0,<5.0.0)
+Requires-Dist: packaging (==24.0)
+Requires-Dist: pluggy (==1.5.0)
+Requires-Dist: pyyaml (==6.0.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: urllib3 (==2.2.1)
+Requires-Dist: xdg-base-dirs (==6.0.1)
+Description-Content-Type: text/markdown
+
+# Blueblack
+
+Automatically change to light and dark mode depending on your location.
+
+Set up a simple `config.yaml` under your `$XDG_CONFIG_HOME/blueblack` file with
+
+```
+# Get your lattitude and longtitude through e.g. gmaps (https://support.google.com/maps/answer/18539?hl=en&co=GENIE.Platform%3DDesktop)
+"lat": 23.2003
+"lng": 31.1233
+"update_days": 1
+```
+
+and change the update_days to something appropriate (e.g. 10 days).
+
+When it's slightly past sunrise or sunset time (around 5 seconds), executable scripts inside `XDG_CONFIG_HOME/blueblack/{dark,light}_mode` will run automatically.
+Some examples are provided in [the source code page](https://github.com/smitropoulos/blueblack/tree/main/configs)
+
+Internally, Blueblack will use [the Sunrise-sunset API](https://sunrise-sunset.org/api) which is currently free. Please use this responsibly so we can have free things.
+
