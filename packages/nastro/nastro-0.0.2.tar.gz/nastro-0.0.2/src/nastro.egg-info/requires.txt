@@ -1,0 +1,13 @@
+numpy>=1.26.4
+matplotlib>=3.8
+scipy>=1.11
+sympy>=1.12
+
+[dev]
+pybind11
+pytest
+sphinx
+numpydoc
+sphinx_design
+pydata-sphinx-theme
+sphinx-favicon
