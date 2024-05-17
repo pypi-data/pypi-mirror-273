@@ -1,0 +1,11 @@
+pegen>=0.3.0
+
+[dev]
+build
+pre-commit
+black
+flake8
+mypy
+
+[publish]
+twine
