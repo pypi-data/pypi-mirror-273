@@ -1,0 +1,4 @@
+[console_scripts]
+predict=prediction_prophet.main:predict
+research=prediction_prophet.main:research
+
