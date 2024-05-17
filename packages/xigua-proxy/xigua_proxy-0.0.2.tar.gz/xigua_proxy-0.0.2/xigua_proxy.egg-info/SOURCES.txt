@@ -1,0 +1,9 @@
+README.txt
+license.txt
+setup.py
+xigua_proxy/__init__.py
+xigua_proxy/xigua_porxy.py
+xigua_proxy.egg-info/PKG-INFO
+xigua_proxy.egg-info/SOURCES.txt
+xigua_proxy.egg-info/dependency_links.txt
+xigua_proxy.egg-info/top_level.txt
