@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rid-ant
+Version: 0.1.0
+Summary: Python package for data analysis both quantitative and qualitative
+Home-page: https://github.com/Mbishu2002/rid
+Author: Mbishu Fabrice
+Author-email: fmbishu@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=1.8.0
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: altair>=4.0.0
+Requires-Dist: scipy>=1.4.0
+
+# rid
+methods package context for ant
