@@ -1,0 +1,11 @@
+README.md
+setup.py
+StatAssist/__init__.py
+StatAssist/algebra.py
+StatAssist/stats.py
+StatAssist/utils.py
+StatAssist.egg-info/PKG-INFO
+StatAssist.egg-info/SOURCES.txt
+StatAssist.egg-info/dependency_links.txt
+StatAssist.egg-info/requires.txt
+StatAssist.egg-info/top_level.txt
