@@ -1,0 +1,8 @@
+bibt/qualys/__init__.py,sha256=oHT9F2HcRRf1wjon1KUDF_rTyPcoDFJDpxOwzs1HguQ,98
+bibt/qualys/classes.py,sha256=e60M1GsUM5yN5Tx5PPWsLESNLvjFJiHlOEeAWnue6aI,22596
+bibt/qualys/params.py,sha256=5J81aTbWL0nwkuSFiarKTLRNSoWkqK9oiUiFXWBpJSk,545
+bibt/qualys/version.py,sha256=XJ5NZRv5ahaSlYm7_PUNTixULma76xIxwxi2Yy6Eb8w,23
+bibt_qualys-0.0.27.dist-info/METADATA,sha256=BJPpzc5zJdmLqv7LNUPYwpNo-OOOhIomPnro30COsw0,2268
+bibt_qualys-0.0.27.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+bibt_qualys-0.0.27.dist-info/licenses/LICENSE,sha256=TDV6yQwODf_uwPkwskEh6wKRZ1gN2dzn22Dv6Gl0VsE,1054
+bibt_qualys-0.0.27.dist-info/RECORD,,
