@@ -1,0 +1,16 @@
+mfu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mfu/__main__.py,sha256=Tdc0-8CwOnF7AIj36y9kpvLHgMyUl8azidSa5TO8K_M,61
+mfu/main.py,sha256=MDsqqSr7aRB-2tmGG7kATDI14kUG0YHJJxVA_wvrgnc,324
+mfu/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mfu/scripts/cluster.py,sha256=VStWPp6cZ_zEaC7yoZeM4F-LbFydKdQMSmnXbjUAZ9I,4159
+mfu/scripts/config.py,sha256=-PEaEOr3YYv7YELVj-4LSCmCmaHxQ-lIDD4Xj_oiSxI,1199
+mfu/scripts/doctor.py,sha256=ZrRz8mlrL_FCEjJFdSa99H7-VXpDG27YE224YV87MqQ,3748
+mfu/scripts/sync.py,sha256=Ulz2LsQterKhPFI-PYnG3jMF61kZ_Ns_fJU13YeMKE4,3706
+mfu/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mfu/utils/forcelink.py,sha256=kpwBQgMoIVuIudU6URBlXYjfLV4MdjuK1hrpWsRNWic,2841
+mfu/utils/general.py,sha256=TTsXG3_WhIL_wHIxzgI067BXanGLhgCAE9a63tuNKIs,3176
+mfu-0.0.9.dist-info/METADATA,sha256=006JU_74c1k9hAipQ0gvYGtkorzGtPu6-tn8v4BoIic,901
+mfu-0.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mfu-0.0.9.dist-info/entry_points.txt,sha256=HVBgwaVy7wTXbSTvVTrZhR-6gk9J-ynQRsImo0SAqVY,37
+mfu-0.0.9.dist-info/top_level.txt,sha256=lHRi8t4kb62XeykdBmf2Sj1fOWVhi6ozJi4bAE9qpj4,4
+mfu-0.0.9.dist-info/RECORD,,
