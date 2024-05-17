@@ -1,0 +1,3 @@
+[console_scripts]
+colo=colormylogs.main:app
+
