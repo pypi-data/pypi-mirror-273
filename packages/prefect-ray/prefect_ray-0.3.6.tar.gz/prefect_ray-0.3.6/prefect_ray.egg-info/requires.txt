@@ -1,0 +1,21 @@
+prefect<3.0.0,>=2.14.10
+ray[default]>=2.0.0
+
+[dev]
+aiohttp
+coverage
+interrogate
+mkdocs-gen-files
+mkdocs-material
+mkdocs
+mkdocstrings[python]
+mypy
+pillow
+pre-commit
+pytest-asyncio
+pytest
+pytest-asyncio!=0.22.0,<0.23.0,>=0.18.2
+pytest-xdist
+
+[dev:python_version < "3.8"]
+mock
