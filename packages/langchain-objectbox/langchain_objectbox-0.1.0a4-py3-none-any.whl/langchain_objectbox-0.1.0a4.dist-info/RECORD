@@ -1,0 +1,6 @@
+langchain_objectbox/__init__.py,sha256=seuEkRATTLQk4bZGGhxsAZbXYuRKcuARyJi6jfd2YLQ,86
+langchain_objectbox/vectorstores.py,sha256=nJvE91Cq6ouTeqS3k6TK1JwLLqquyVzN8oQ6ztVqI5M,9651
+langchain_objectbox-0.1.0a4.dist-info/LICENSE,sha256=maq1p9-eAWh5X2nsNUgx8-wINByQuVvRxqf9_cg3dFg,1071
+langchain_objectbox-0.1.0a4.dist-info/METADATA,sha256=niBCxT0fck9rnoDr14dXvCZq3oJQRpjBvJd6AjGx5Ho,4545
+langchain_objectbox-0.1.0a4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+langchain_objectbox-0.1.0a4.dist-info/RECORD,,
