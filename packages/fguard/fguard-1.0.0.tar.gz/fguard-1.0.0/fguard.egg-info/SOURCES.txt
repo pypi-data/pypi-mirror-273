@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fguard/__init__.py
+fguard/cli.py
+fguard.egg-info/PKG-INFO
+fguard.egg-info/SOURCES.txt
+fguard.egg-info/dependency_links.txt
+fguard.egg-info/entry_points.txt
+fguard.egg-info/requires.txt
+fguard.egg-info/top_level.txt
