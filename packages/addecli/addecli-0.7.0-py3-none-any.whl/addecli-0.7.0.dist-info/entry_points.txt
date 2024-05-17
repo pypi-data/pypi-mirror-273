@@ -1,0 +1,3 @@
+[console_scripts]
+addecli = addecli.__main__:app
+
