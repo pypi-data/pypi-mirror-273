@@ -1,0 +1,3 @@
+[console_scripts]
+mpd-now-playable = mpd_now_playable.cli:main
+
