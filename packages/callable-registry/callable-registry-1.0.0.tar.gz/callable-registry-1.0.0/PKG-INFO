@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: callable-registry
+Version: 1.0.0
+License: Apache
+Author-email: Scott Chase Waggener <tidalpaladin@protonmail.com>,Tim Cogan <tim@cogan.dev>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Callable Registry
+
+Implementation of a callable registry modeled after [lightning-flash](https://github.com/PyTorchLightning/lightning-flash/flash/core/registry.py).
+
