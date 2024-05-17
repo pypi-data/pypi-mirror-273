@@ -1,0 +1,8 @@
+reportXlsx/__init__.py,sha256=q1pHLpc-nVkJBh4bntYeCrrWgNweuSMRaLBMiBOTHeg,166
+reportXlsx/to_excel.py,sha256=-94m1MgnMof4cSjGP7YQQBSqo5-PIjiauof9C1BW4zY,21020
+reportXlsx/resources/Spire.XLS.dll,sha256=ZAwU6ex_N7uJcJaJpj4LiEy8WnkyoqGkixKS3zZl8a8,22812400
+reportXlsx/resources/Spire.XLS.xml,sha256=QdUCw1OSQKxrzW3v24CpY2vvGbqxVPMv8Ij31F2Wwr8,2232860
+reportXlsx-0.2.2.dist-info/METADATA,sha256=dpOEvJgBezjSsNCeL_1HvEOoVE-p2IvRyhykV79QFh8,363
+reportXlsx-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+reportXlsx-0.2.2.dist-info/top_level.txt,sha256=4lw7fcUx6gOWhajHDaWq6p2Dq0oLYi5-9RqavyDP0HU,11
+reportXlsx-0.2.2.dist-info/RECORD,,
