@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cpimerge"
+version = "0.0.8"
+description = "A tool to merge iCalendar files with exclusions."
+authors = ["Kirk Coombs"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+icalendar = "^4.0.9"
+#tkinter = {version = "*", optional = true}
+appdirs = "^1.4.4"
+
+[tool.poetry.scripts]
+cpimerge = "cpimerge.__main__:mainloop"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
