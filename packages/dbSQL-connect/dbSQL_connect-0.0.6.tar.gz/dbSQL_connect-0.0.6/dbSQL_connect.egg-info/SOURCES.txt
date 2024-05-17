@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+dbSQL_connect/__init__.py
+dbSQL_connect/_entry_points.py
+dbSQL_connect/_imp.py
+dbSQL_connect/requires.py
+dbSQL_connect.egg-info/PKG-INFO
+dbSQL_connect.egg-info/SOURCES.txt
+dbSQL_connect.egg-info/dependency_links.txt
+dbSQL_connect.egg-info/requires.txt
+dbSQL_connect.egg-info/top_level.txt
