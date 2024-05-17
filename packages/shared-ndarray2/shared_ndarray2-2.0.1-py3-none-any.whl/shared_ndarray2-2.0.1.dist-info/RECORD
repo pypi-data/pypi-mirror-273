@@ -1,0 +1,9 @@
+LICENSE,sha256=JqXbFJJKPouBjWUzSNoVdSmR2R-oecQXD2f5jqVFQYo,1097
+shared_ndarray2/__init__.py,sha256=KE0JEkeF7b9-k9JrC9yg5P2J_rFTaY8fo3Tjyw_gczM,315
+shared_ndarray2/py.typed,sha256=wwLHParXFImaCgWPm8UBxVw4fawrHc_YOXisS3LXB5M,53
+shared_ndarray2/shared_ndarray.py,sha256=mlyncgw6TjY2q_HKEnmlBsVTWcrXUBBqmi53XVxoSZ8,10934
+shared_ndarray2/version.py,sha256=2OAz0ivSTEUh3E1RgT0vPpk7lSZYkgZhf6tWyWyDUt0,166
+shared_ndarray2-2.0.1.dist-info/LICENSE,sha256=JqXbFJJKPouBjWUzSNoVdSmR2R-oecQXD2f5jqVFQYo,1097
+shared_ndarray2-2.0.1.dist-info/METADATA,sha256=_xk0VOumsZEwHyUydC2gbBgDPkIU-YG_YLLD_RuysxM,7094
+shared_ndarray2-2.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+shared_ndarray2-2.0.1.dist-info/RECORD,,
