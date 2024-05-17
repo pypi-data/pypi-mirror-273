@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+premath/__init__.py
+premath/linearr.py
+premath.egg-info/PKG-INFO
+premath.egg-info/SOURCES.txt
+premath.egg-info/dependency_links.txt
+premath.egg-info/requires.txt
+premath.egg-info/top_level.txt

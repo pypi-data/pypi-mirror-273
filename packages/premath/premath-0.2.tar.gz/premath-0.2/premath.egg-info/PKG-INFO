@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: premath
+Version: 0.2
+Summary: This is a library for predictive math.
+Home-page: https://github.com/inakisalcedo/premath
+Download-URL: https://github.com/inakisalcedo/premath/archive/refs/tags/v_02.tar.gz
+Author: Iñaki Salcedo
+Author-email: isalcedodurston@gmail.com
+License: MIT
+Keywords: MATH,REGRESSION,PREDICTION
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+Easy library for Linear Regression, made specially for stadistic students.
