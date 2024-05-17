@@ -1,0 +1,11 @@
+bridgernadesigner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bridgernadesigner/classes.py,sha256=R3fgebMhot36LUk-uHDS-lfMkCxhfpvrE6-iomaen5A,7827
+bridgernadesigner/errors.py,sha256=uriPLUrT-BXI1Pq_aMLWUfcSgLClEny4F414A-hqbQw,1413
+bridgernadesigner/main.py,sha256=WfrdUt0Bt8w9IsXSdCnGRPLDhLQ6wPTREy4i8jEg2pY,2952
+bridgernadesigner/run.py,sha256=PwHqlga-1CXCnGoZK5ml25-hVR8yGrJq6Aa6hjfxpZM,563
+bridgernadesigner-0.0.1.dist-info/LICENSE,sha256=lNwKKuHW4HYg-QRuWwZaB0OUNlZrREyrvrln9ba-jP0,1060
+bridgernadesigner-0.0.1.dist-info/METADATA,sha256=B-ckJqW9KCU8gNCb2NDzg0ZlEaHVYmMJ6OfFOnRANgs,4043
+bridgernadesigner-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bridgernadesigner-0.0.1.dist-info/entry_points.txt,sha256=RjIus6YgpRS7fgpOFCp6DeiCMhkzFOI58QN-2kUvr6g,60
+bridgernadesigner-0.0.1.dist-info/top_level.txt,sha256=4LR_sR_GtzMF6RqAv0HcABNPtF3-UBMnLi45aiwzzzg,18
+bridgernadesigner-0.0.1.dist-info/RECORD,,
