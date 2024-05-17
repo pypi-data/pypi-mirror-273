@@ -1,0 +1,2 @@
+django>=4.0
+temporalio>=1.5.1
