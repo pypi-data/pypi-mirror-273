@@ -1,0 +1,96 @@
+# {# pkglts, pyproject.build
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]  # , "setuptools-scm"]  # PEP 508 specifications.
+build-backend = "setuptools.build_meta"  # we don't know if we need it
+# #}
+
+# {# pkglts, pyproject.project
+[project]  # https://packaging.python.org/en/latest/specifications/pyproject-toml/
+name = "glabpkg"
+version = "4.1.0"
+description = "template for python packages hosted on gitlab"
+readme = "README.rst"
+requires-python = ">= 3.7"
+license = {text = "cc_by_nc"}
+authors = [
+    {name = "revesansparole", email = "revesansparole@gmail.com"},
+]
+maintainers = [
+    {name = "revesansparole", email = "revesansparole@gmail.com"},
+    {name = "Jerome Chopard", email = "revesansparole@gmail.com"},
+    {name = "jchopard", email = "jerome.chopard@itk.fr"},
+]
+keywords = [
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "pkglts>=7, <8", 
+]
+
+[project.optional-dependencies]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+]
+dvlpt = [
+    "twine",
+]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+]
+
+
+[project.urls]
+repository = "https://gitlab.com/revesansparole/glabpkg"
+pip = "https://pypi.org/project/glabpkg/4.1.0/"
+conda = "https://anaconda.org/revesansparole/glabpkg"
+doc = "https://revesansparole.gitlab.io/glabpkg/"
+pypi = "https://badge.fury.io/py/glabpkg"
+
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ['*', '*.bat', '*.cfg', '*.json', '*.md', '*.in', '*.ini', '*.png', '*.ps1', '*.rst', '*.sh', '*.svg', '*.tpl', '*.txt', '*.yaml', '*.yml', ]
+
+# #}
+# {# pkglts, test, after pyproject.project
+[tool.pytest.ini_options]
+addopts = "--maxfail=2 -rf --cov=glabpkg"
+# #}
+
+# {# pkglts, pyproject.scripts
+[project.scripts]
+# #}
+
+# {# pkglts, pyproject.gui_scripts
+[project.gui-scripts]
+# #}
+
+[project.entry-points."pkglts"]
+glabbase = "glabpkg.base.option:OptionGlabBase"
+glabpkg_dev = "glabpkg.pkg_dev.option:OptionGlabPkgDev"
+glabpkg = "glabpkg.pkg.option:OptionGlabPkg"
+glabdata = "glabpkg.data.option:OptionGlabData"
+glabreport = "glabpkg.report.option:OptionGlabReport"
