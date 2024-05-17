@@ -1,0 +1,8 @@
+picture2pixel/__init__.py,sha256=OOR6G1WyiIAYUb4j_fMXcrZEEn8Bo0I0VzFdYbtRdCw,132
+picture2pixel/image_processing.py,sha256=kCoU5AyIB9sfYYjXzs23iOu29srv2-dhfxU-FKQOGLM,2095
+picture2pixel/main.py,sha256=holK4hr9LI16Li8gGuthxMXbT5RNl7gkmHUMUa_7auA,1085
+picture2pixel/verilog_generator.py,sha256=yGHRuZQfMI-VL6ObUuwg3pXkEc52wAPON0mwnyNLiWw,2851
+picture2pixel-0.1.0.dist-info/METADATA,sha256=-5kYPG5P2Sk7DybGrzC5rO70fIrQ85JpWvp-T_eRgmQ,1297
+picture2pixel-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+picture2pixel-0.1.0.dist-info/top_level.txt,sha256=vft9-pZ4gMio3RI389uV6OWbXDFOUtvpVhv9UqRjVhE,14
+picture2pixel-0.1.0.dist-info/RECORD,,
