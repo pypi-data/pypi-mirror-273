@@ -1,0 +1,11 @@
+iudex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iudex/instrumentation/README.md,sha256=Lj3-Imtib9wHXORYkGg8xz1l2N6xd7fEG3t-CrtsmHA,1502
+iudex/instrumentation/__init__.py,sha256=Qowpogp5tT_LHfoyrABgzZ4GqOfo9VAod4V6XMOacdI,106
+iudex/instrumentation/attributes.py,sha256=sQuZMYSOpXBPJpl27hxyAso-GjfU6BBznYiUCeQIjkw,2821
+iudex/instrumentation/fastapi.py,sha256=pdnQHbGUGn8veCuN-aPFs2HmOJukynVd4OjHREC47PI,1974
+iudex/instrumentation/instrumentation.py,sha256=6KWlbHuSbqQiyVvDnZn7COTPMu3oRQeqzFtQ5z3iZIQ,6043
+iudex/instrumentation/lambda.py,sha256=YUeZNiVH5M7uAvnYoFH0RKMD0WSeU3gozmKC28S4VlI,1517
+iudex-0.5.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+iudex-0.5.1.dist-info/METADATA,sha256=uwcnyNHuZtvrrwiRsmn6a6Cm2HSB6udBP7NyhOew5Yo,2125
+iudex-0.5.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+iudex-0.5.1.dist-info/RECORD,,
