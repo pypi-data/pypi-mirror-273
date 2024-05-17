@@ -1,0 +1,2 @@
+[console_scripts]
+asidrenderer = vesselasid.asidrenderer:main
