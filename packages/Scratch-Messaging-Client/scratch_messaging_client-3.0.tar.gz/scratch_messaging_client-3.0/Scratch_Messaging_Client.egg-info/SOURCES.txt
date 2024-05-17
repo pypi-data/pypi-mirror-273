@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+SMC/__init__.py
+SMC/main.py
+Scratch_Messaging_Client.egg-info/PKG-INFO
+Scratch_Messaging_Client.egg-info/SOURCES.txt
+Scratch_Messaging_Client.egg-info/dependency_links.txt
+Scratch_Messaging_Client.egg-info/entry_points.txt
+Scratch_Messaging_Client.egg-info/requires.txt
+Scratch_Messaging_Client.egg-info/top_level.txt
