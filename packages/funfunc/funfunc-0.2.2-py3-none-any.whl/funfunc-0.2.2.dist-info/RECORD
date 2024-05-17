@@ -1,0 +1,12 @@
+funfunc/__init__.py,sha256=eeZ7ovC1XB9UJWx71SZffTzyjZD1KUYFLfZm3wmLjCk,342
+funfunc/cv.py,sha256=T1kMz0Ncxqru-09ceVBfZApbEmsuY8Rzw8Wvzc_LG5Q,4668
+funfunc/dl.py,sha256=uQFbFvPm7kEwsHqlrJmrbpe7A-Rh1KDcuG0RCGJpt3c,291
+funfunc/ml.py,sha256=Ej1l3Y7IXvUmpfVsBzMEEFcl5NtC9hynDDermcf1LJQ,1147
+funfunc/nlp.py,sha256=j0YBjNJHFPdqJq2zTuWHkUoTdMm1llFwwY-5vA5Fseo,1211
+funfunc/tool.py,sha256=1sABXF-n_-QhEBl6Qcn26-_Ucmh-NoaYwLxmzadfHP8,13268
+funfunc/tornado_helper.py,sha256=9Z5UTXPG9w178e5pAakELH1OhKBbyzrgsVHHiHDd_A8,654
+funfunc-0.2.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+funfunc-0.2.2.dist-info/METADATA,sha256=UoKnQsJkaimKdP5mzZYkLSWgGM64veyTWUt4_ldCBy4,989
+funfunc-0.2.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+funfunc-0.2.2.dist-info/top_level.txt,sha256=f6nsChRaX291SWgZ9THDgZo1EqdlzJDGbiHP_36FsKo,8
+funfunc-0.2.2.dist-info/RECORD,,
