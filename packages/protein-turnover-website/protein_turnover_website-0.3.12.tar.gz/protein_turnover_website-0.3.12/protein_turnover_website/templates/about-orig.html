@@ -1,0 +1,314 @@
+{% extends "raw.html" %}
+
+{% block title %}About::{{config.APP_NAME}}{% endblock %}
+
+{% block css %}
+{{super()}}
+{{ include_css("print.css") }}
+{% endblock css %}
+
+{% macro colorbox(col, opacity=1.0, border='0px') -%}
+<span
+    style="background-color:{{col}}; width:1em; height: 1em; display:inline-block; opacity:{{opacity}}; border:{{border}}"></span>
+{%- endmacro %}
+
+{% macro image(img) %}
+<img src="{{url_for('static', filename='img/about/' + img)}}" class="mx-auto w-75 d-block rounded" />
+{% endmacro %}
+
+{% macro eqn() -%}
+$$\begin{equation}
+{{caller()}}
+\end{equation}$$
+{%- endmacro %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+
+    <div class="w-75 mx-auto about">
+        <section>
+            <a id="calculations"></a>
+            <h2 class="text-center">Calculations</h2>
+            <p>
+                We are hunting for peptides that may have taken up heavy atom isotopes such
+                as <code><sup>15</sup>N</code>. Since there can be anywhere from <code>0</code> to
+                <code>maxIso</code> uptake of heavy atoms we need to search for a range
+                of <code>mz</code>'s for each peptide.
+
+                {{ image('eics.png') }}
+
+
+                We try and fit a gaussian to the intensities of the peptide <i>without</i> isotopic enrichment
+
+                {% call eqn() %}
+                \text{monoFitParams} \equiv \text{minimize}[\mu,\sigma, k, b]
+                = \sum_i(k \times e^{-(\text{retention_time}_i - \mu)^2/2 \sigma^2}+ b - \text{intensity}^{o}_i)^2
+                {% endcall %}
+
+                where \(\text{intensity}^{o}_{i}\) are the intensities found for the peptide with no isotopic
+                enrichment. (Actually we fit to a smoothed version of the intensities)
+
+                We use quadrature to estimate the area under this curve.
+
+                {% call eqn() %}
+                A_{\text{o}} = \int_{l_b=\max(\mu_{opt} - 2 * \sigma_{opt} , rt_0)}^{u_b=\min(\mu_{opt} + 2 *
+                \sigma_{opt} ,
+                rt_n)} d\text{rt} \left( k_{opt} \times e^{-(\text{rt} - \mu_{opt})^2/2 \sigma_{opt}^2}+ b_{opt} \right)
+                {% endcall %}
+
+                which we can do analytically as:
+                {% call eqn() %}
+                A_o = \text{b}_\text{opt} \times (u_b - l_b) + k_\text{opt} \times \sigma_\text{opt}\times
+                \sqrt{\frac{\pi}{2}} \left[\text{erf}\left(\frac{1}{\sqrt{2}}\frac{u_b -
+                \mu_\text{opt}}{\sigma_\text{opt}}\right) - \text{erf}\left(\frac{1}{\sqrt{2}}\frac{l_b -
+                \mu_\text{opt}}{\sigma_\text{opt}}\right) \right]
+                {% endcall %}
+
+                \(A_o\) is stored as <code>monoPeakArea</code>.
+            </p>
+            <p>
+            <h4>Estimating intensities of EICs</h4>
+            We now linearly fit the scatter plots of the heavy peptides with the base peptide.
+
+            {% call eqn() %}
+            I^{\text{[eic]}}_{rt} \sim \alpha^{\text{[eic]}} + \beta^{\text{[eic]}} I^{\text{mono}}_{rt}
+            {% endcall %}
+
+            {{ image('isotopeEnvelopes.png') }}
+
+            Note that the <i>first</i> value of <code>isotopeEnvelopes</code> is based on an mz that
+            has <i>negative</i> enrichment (at least theorectically!) as a check. (See
+            the blue {{colorbox("#1E90FF")}} line in the plot at top.)
+            {# {% call eqn() %}
+            \text{isotopeEnvelopes} = I^{\text{exp}}_i = A_{\text{o}} \times \max(0, \text{slope}_i)
+            {% endcall %} #}
+
+            If we integrate this relationship on both sides over the retention time range
+            we get an intensity relationship:
+
+            {% call eqn() %}
+            \text{isotopeEnvelopes[eic]} = A^{\text{[eic]}} = \max(0, \alpha^{\text{[eic]}} \times( u_b - l_b) +
+            A_{\text{o}} \times \beta^{\text{[eic]}})
+            {% endcall %}
+
+            </p>
+            <p>
+                \(\alpha\) is probably small due to the fact that there will be
+                zero intensities on both sides at the margins.
+
+            </p>
+            <hr />
+            <h3 class="text-center">Isotopic Abundance</h3>
+            <p>
+                There is of course a natural isotopic abundance for any peptide from all atom types
+                (not just the one we are interested in). The calculation of this is ingenious.
+                Since we can't measure which (say Carbon) atom in a peptide has a heavy atom, we
+                have a combinatorial problem. With \(a_j^{[C_n]}\) as the abundance fraction
+                of isotope <code>j</code> on (Carbon) atom <code>n</code> we calculate the abundance
+                profile for <i>all</i> (Carbon) atoms on the peptide as (we assume zeros
+                outside the isotopic abundance range):
+
+                {% call eqn() %}
+                \begin{split}
+                \text{a}^{[C]}_i =& \sum_{i=j+k+l+\cdots+z} a^{[\text{C}_1]}_{j} a^{[\text{C}_2]}_k a^{[\text{C}_3]}_l
+                \times \cdots \times a^{[\text{C}_N]}_z \\
+                \equiv& \sum_{k,l,\cdots,z} a^{[\text{C}_1]}_{i-k+l+\cdots+z} a^{[\text{C}_2]}_k a^{[\text{C}_3]}_l
+                \times \cdots \times a^{[\text{C}_N]}_z
+                \end{split}
+                {% endcall %}
+
+                (The abundances of each isotope of an element must sum to 1).
+
+                But this is a discrete convolution which, when (discrete) fourier transformed, becomes
+                a "simple" product.
+
+                {% call eqn() %}
+                \implies \mathcal{FFT}\{\text{a}^{[C]}\}_k = \left[\sum_j a_j^{[C]} e^{-\frac{2\pi i j k}{M}}\right]^N
+                {% endcall %}
+
+                So the full abundance profile (which we call <code>ndist</code>) is the inverse FFT of this:
+
+                {% call eqn() %}
+                \text{ndist}_i \approx \sum_{i=k+l+m+n+\dots} a^{[\text{C}]}_k a^{[\text{N}]}_l a^{[\text{S}]}_m
+                a^{[\text{P}]}_n\dots
+                {% endcall %}
+
+                We use this <i>a lot</i> since we need to calculate it with
+                elevated abundance levels for the isotope we are using in our experiment.
+                We use the notation \(ndist_i^{E}\) to identify the abundances found if
+                the environmental abundance (of our heavy isotope is E).
+            </p>
+            <hr />
+            {#
+            <p>
+                {% call eqn() %}
+                \text{heavyDistribution} = \max(0,I^{\text{exp}}_i - A_{\text{o}} \times \text{ndist}_i/\text{ndist}_0)
+                {% endcall %}
+
+                {% call eqn() %}
+                \text{heavyFitParams} \equiv \text{minimize}[\mu,\sigma, k] = \sum_i (k \times e^{-(\text{i} - \mu)^2/2
+                \sigma^2} - \text{heavyDistribution}_i)^2
+                {% endcall %}
+
+                Actually \(\text{heavyFitParams}\) is an array of \([\mu, \sigma, k, R^2, R^2_\text{adj}]\).
+                These values are currently not used except for \(R^2_\text{adj}\) which is used as a filter parameter.
+
+            </p>
+            <hr />
+            #}
+            <p>
+                We calculate isotopic abundance from natural abundance to (user specified) maximum
+                labelled abundance
+
+                {% call eqn() %}
+                a_i^\text{iso} = \text{natural_abundance} + \frac{i}{N}\times(\text{maximumLabelEnrichment} -
+                \text{natural_abundance}) \quad\forall\; i \in [0,N]
+                {% endcall %}
+
+                Then we adjust abundances of the labelled element (so they always sum to 1!)
+
+                {% call eqn() %}
+                \text{adjustedAbundance}_{k}
+                = \left\{ \begin{array}{ll} (1-a^\text{iso}) \times \frac{\text{Abundance}_k}{\sum_{l\ne \text{iso}}
+                \text{Abundance}_l} & \text{if}\; \text{iso} \ne k \\ a^\text{iso}\; & \text{if}\; \text{iso} =
+                k\end{array}\right.
+                {% endcall %}
+
+                for each of these values we recalulate the <code>ndist</code> array with these new abundances.
+
+                {% call eqn() %}
+                \begin{array}{cc} &
+                \begin{array}{ccc} \quad a_o & a_1 & \cdots & a_N \\
+                \end{array}
+                \\
+                \begin{array}{r c c}
+                \text{iso}_0 \\
+                \text{iso}_1 \\
+                \text{iso}_2 \\
+                \cdots \\
+                \text{iso}_{\text{isoMax}}
+                \end{array}
+                &
+                \left[
+                \begin{array}{c c c}
+                \left[\begin{array}{c} \color{red}{n} \\ \color{red}{d} \\ \color{red}{i} \\ \color{red}{s} \\
+                \color{red}{t} \end{array} \right]
+                \left[\begin{array}{c} \color{green}{n} \\ \color{green}{d} \\ \color{green}{i} \\ \color{green}{s} \\
+                \color{green}{t} \end{array} \right] \;\cdots\;
+                \left[\begin{array}{c} \color{blue}{n} \\ \color{blue}{d} \\ \color{blue}{i} \\ \color{blue}{s} \\
+                \color{blue}{t} \end{array} \right]
+                \end{array}
+                \right]
+                \end{array} \begin{array} \; \\ \times \mathbf{w} \end{array}
+                \begin{array} \; \\ \quad = \end{array}
+                \begin{array} \; \\ \quad \mathbf{A} \times \mathbf{w} \end{array}
+                \begin{array} \; \\ \quad \sim \end{array}
+                \begin{array} \; \\ \quad \mathbf{I}^{exp} \end{array}
+                {% endcall %}
+
+                With \(\mathbf{w} \ge 0 \) and \(\text{labelledEnvelopes} \equiv \mathbf{w}\)
+
+                {{ image('labelledEnvelope.png') }}
+            </p>
+            <p>
+                If we turn the positive weights \(\mathbf{\hat{w}}\) into fractions
+                \(f_i = \frac{w_i}{\sum_{i=0}^N w_i}\) then
+                <code>LPF</code> \(\equiv \text{relativeIsotopeAbundance}\) (an estimate of the fraction of
+                <i>this peptide</i> that include some/any heavy atoms)
+                {% call eqn() %}
+                \text{relativeIsotopeAbundance} = 1 - f_0 = \sum_{i=1}^N f_i
+                {% endcall %}
+
+                <code>enrichment</code> is an estimate/average of the fraction of
+                heavy atoms (of the labelled type) in the peptide:
+
+                {% call eqn() %}
+                \text{enrichment} = \langle a_i^{iso} \rangle = \sum_{i=0}^N f_i
+                a_i^{iso} \ge 0
+                {% endcall %}
+                or...
+                {% call eqn() %}
+                \text{enrichment} = (1-\lambda) \times \text{natural abundance} + \lambda \times
+                \text{maximumLabelEnrichment} \quad \text{where}\; \lambda = \langle \frac{i}{N} \rangle \in [0,1]
+                {% endcall %}
+                {#
+
+                <strong>This is the current calculation!!!!</strong><br />
+                {% call eqn() %}
+                \text{enrichment} = \frac{\sum_{i=1}^N i \times w_i}{\sum_{i=1}^N N \times w_i} \times
+                \text{maximumLabelEnrichment} = \frac{1}{1- f_0}
+                \langle \frac{i}{N} \rangle \times \text{maximumLabelEnrichment}
+                {% endcall %}
+                #}
+
+                where \(N\) is the labelled element count of the peptide. With this
+
+                \(\text{enrichment}\) we recalulate \(\text{ndist[enrichment]}\) using this abundance of
+                the isotope. Then we calculate the Pearson correlation coefficient:
+                with \(x = \text{heavyDistribution}\) and \(y = \text{ndist[enrichment]} \equiv \text{ndist}^E\)
+
+                {% call eqn() %}
+                \text{heavyCor} = r = \frac{\sum (x - \bar{x}) (y - \bar{y})}
+                {\sqrt{\sum (x - \bar{x})^2 \sum (y - \bar{y})^2}}
+                {% endcall %}
+
+                \(\text{heavyDistribution}\) is just a "normalized" version of
+                \(\text{isotopeEnvelopes}\):
+                {% call eqn() %}
+                \text{heavyDistribution} = \max(0, \text{isotopeEnvelopes} - A_o \frac{\text{ndist}}{\text{ndist[0]}})
+                {% endcall %}
+            </p>
+
+            <a id="fitted-envelopes-plot"></a>
+            <h4 class="text-center">Fitted Envelopes Plot</h4>
+            <p>
+                With E as <code>enrichment</code> and <code>relativeIsotopeAbundance</code> as <code>LPF</code> we
+                calculate:
+                {# {% call eqn() %}
+                \begin{split}
+                \text{naturalDist} =& A_0\times \text{ndist}^0 \times
+                \frac{(1-{\color{rgb(214,51,132)}\text{LPF}})}{\text{ndist}^0[0](1-{\color{rgb(214,51,132)}\text{LPF}})+
+                \text{ndist}^E[0]{\color{rgb(214,51,132)}\text{LPF}}} \\
+                \text{theoreticalDist} =& A_0 \times \text{ndist}^E \times \frac{
+                {\color{rgb(214,51,132)}\text{LPF}}}{\text{ndist}^0[0](1-{\color{rgb(214,51,132)}\text{LPF}})+
+                \text{ndist}^E[0]{\color{rgb(214,51,132)}\text{LPF}}}
+                \end{split}
+                {% endcall %} #}
+                {% call eqn() %}
+                \text{theoreticalDist} = \mathbf{A} \times \mathbf{\hat{w}}
+                {% endcall %}
+
+            <ul>
+                <li><code>naturalDist</code> \(A_o \times \text{ndist}\) is plotted as orange {{colorbox('orange')}}
+                    vertical dashed lines.</li>
+                <li><code>theoreticalDist</code> is mirrored on the x-axis and plotted <i>inverted</i> as
+                    {{colorbox("#98F5FF", opacity=0.3)}}.</li>
+                <li>\(\text{heavyDistribution} = \max(0, \text{isotopeEnvelopes} - \text{naturalDist}) \)
+                    is plotted as {{colorbox("#2c9cde", opacity=1)}}</li>
+                <li><code>isotopeEnvelopes</code> is plotted as {{colorbox("turquoise", opacity=0.4, border="1px solid
+                    black")}}</li>
+                <li>the negative enrichment value {{colorbox('red', opacity=0.4)}} is used to filter hits
+                    \(\frac{\text{isotopeEnvelopes}[0]}{\text{isotopeEnvelopes}[-1]} \ge \text{monoMinus1MinRatio}\)
+                </li>
+            </ul>
+            {{ image('plotFittedEnvelopes.png') }}
+
+            </p>
+        </section>
+    </div>
+
+</div>
+{% endblock content %}
+
+{% block js %}
+{{super()}}
+
+<script>
+    window.MathJax = {
+        tex: {
+            tags: 'ams'
+        }
+    };
+</script>
+{{cdn_js('mathjax')}}
+{% endblock %}
