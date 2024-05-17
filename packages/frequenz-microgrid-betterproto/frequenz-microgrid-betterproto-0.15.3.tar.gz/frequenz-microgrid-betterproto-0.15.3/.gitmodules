@@ -1,0 +1,3 @@
+[submodule "frequenz-api-microgrid"]
+	path = frequenz-api-microgrid
+	url = https://github.com/frequenz-floss/frequenz-api-microgrid
