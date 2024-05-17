@@ -1,0 +1,70 @@
+Metadata-Version: 2.3
+Name: matter-persistence
+Version: 1.1.0
+Summary: Matter persistance library.
+Project-URL: Documentation, https://github.com/Matter-Tech/matter-persistence#readme
+Project-URL: Issues, https://github.com/Matter-Tech/matter-persistence/issues
+Project-URL: Source, https://github.com/Matter-Tech/matter-persistence
+Author-email: Rômulo Jales <romulo@thisismatter.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: async,orm,pydantic,redis,sql
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: matter-exceptions~=2.0
+Requires-Dist: pydantic~=2.7.0
+Requires-Dist: redis~=5.0.3
+Requires-Dist: sqlalchemy-utils~=0.41.2
+Requires-Dist: sqlalchemy[asyncio]~=2.0.29
+Provides-Extra: examples
+Requires-Dist: notebook; extra == 'examples'
+Description-Content-Type: text/markdown
+
+# matter-persistence
+
+[![PyPI - Version](https://img.shields.io/pypi/v/matter-persistence.svg)](https://pypi.org/project/matter-persistence)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/matter-persistence.svg)](https://pypi.org/project/matter-persistence)
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install matter-persistence
+```
+
+## Usage
+
+**CacheManager** and **DatabaseManager** are the two central objects in matter_persistence.
+
+**CacheManager** encapsulates a connection pool to Redis, and exposes methods to save, retrieve, and delete values from Redis.
+
+*Check usage example for redis* **CacheManager** *in [examples/redis](./examples/redis.ipynb).*
+
+**DatabaseManager** encapsulates a Sqlalchemy connection pool to a relational database (e.g. Postgresql),
+and exposes methods to obtain
+a [Connection](https://docs.sqlalchemy.org/en/20/core/connections.html#sqlalchemy.engine.Connection) or
+a [Session](https://docs.sqlalchemy.org/en/20/orm/session_api.html#sqlalchemy.orm.Session).
+
+Furthermore, there is a **CustomBase** in matter_persistence/sql/base.py, which is a convenient Base class for Sqlalchemy
+ORM classes. It has an "id" primary key field, which is of type UUID, a "created", "updated" field that is inherited
+from sqlalchemy_utils' Timestamp, and a "deleted" field, which is of type nullable timezone aware DateTime.
+
+The **get** and **find** functions in matter_persistence/sql/utils.py
+assume a deleted field!
+
+*Check usage example for* **DatabaseManager** *and some of the utility functions in [examples/sql](./examples/sql.ipynb).*
+
+## Contributing
+
+for contributions, check the [CONTRIBUTING.md](CONTRIBUTING.md) file
+
