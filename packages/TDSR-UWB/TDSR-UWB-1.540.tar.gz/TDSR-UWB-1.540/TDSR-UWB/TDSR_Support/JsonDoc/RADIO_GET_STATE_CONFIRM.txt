@@ -1,0 +1,1 @@
+{"RADIO_GET_STATE_CONFIRM": {"msgId": 1, "state": "RADIO_STATE_RANGING", "configId": 0, "flags": "", "persistFlag": 1}}

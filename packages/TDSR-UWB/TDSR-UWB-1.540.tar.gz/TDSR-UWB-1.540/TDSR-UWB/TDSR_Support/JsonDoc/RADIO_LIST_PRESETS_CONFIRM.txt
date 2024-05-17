@@ -1,0 +1,1 @@
+{"RADIO_LIST_PRESETS_CONFIRM":{"msgId": 100,"presetNames": ["6.8 Mbps Omni Antenna","6.8 Mbps Directional Antenna","850 Kbps Omni Antenna","850 Kbps Directional Antenna"]}}
