@@ -1,0 +1,77 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Hello, who are you?"}], "model": "gpt35", "frequency_penalty":
+      0.0, "max_tokens": 1, "presence_penalty": 0.0, "stop": null, "temperature":
+      1.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '275'
+      content-type:
+      - application/json
+      host:
+      - gstudio.openai.azure.com
+      user-agent:
+      - AzureOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://gstudio.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-12-01-preview
+  response:
+    content: '{"choices":[{"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}},"finish_reason":"length","index":0,"message":{"content":"Hello","role":"assistant"}}],"created":1715589620,"id":"chatcmpl-9OLWGx9O3TFjL2v5mT1owqcdDhDCj","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":null,"usage":{"completion_tokens":1,"prompt_tokens":23,"total_tokens":24}}
+
+      '
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Length:
+      - '789'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:40:20 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      access-control-allow-origin:
+      - '*'
+      apim-request-id:
+      - 852e7c47-3c25-4790-aae9-ac01ac9cdbb3
+      azureml-model-session:
+      - turbo-0613-30580e30
+      x-accel-buffering:
+      - 'no'
+      x-content-type-options:
+      - nosniff
+      x-ms-client-request-id:
+      - 852e7c47-3c25-4790-aae9-ac01ac9cdbb3
+      x-ms-rai-invoked:
+      - 'true'
+      x-ms-region:
+      - East US
+      x-ratelimit-remaining-requests:
+      - '234'
+      x-ratelimit-remaining-tokens:
+      - '239734'
+      x-request-id:
+      - 995e088f-0838-4dde-b7e3-ba67c34cba03
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

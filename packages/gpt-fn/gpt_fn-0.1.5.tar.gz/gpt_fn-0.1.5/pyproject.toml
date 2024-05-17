@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "gpt-fn"
+version = "0.1.5"
+description = ""
+authors = ["lucemia <lucemia@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "gpt_fn", from = "src" }]
+include = ["fn/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = ">=1.0.0"
+pydantic = ">=1,<2"
+jinja2 = "*"
+docstring-parser = "*"
+fuzy-jon = "*"
+
+[tool.poetry.group.test.dependencies]
+syrupy = "^4.0.2"
+pytest-cov = "^4.1.0"
+coveralls = "^3.3.1"
+pytest-datadir = "^1.4.1"
+pytest-asyncio = ">=0.21.1,<0.24.0"
+pytest-recording = ">=0.12.2,<0.14.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+mkdocs-material = "^9.1.15"
+mkdocstrings = { extras = ["python"], version = ">=0.22,<0.25" }
+mypy = "^1.4.1"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+pattern = "default-unprefixed"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
