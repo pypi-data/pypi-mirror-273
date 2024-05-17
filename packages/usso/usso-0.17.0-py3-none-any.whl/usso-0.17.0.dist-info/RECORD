@@ -1,0 +1,14 @@
+usso/__init__.py,sha256=-H-krZLJU9SzeeczVOu0N97iPJ7y-Q6diFdtDsl767Q,97
+usso/api.py,sha256=RL13XwcnmbH4LVbjojwiwp8L9eioL_GKOkCyLaU0b7w,3263
+usso/b64tools.py,sha256=6YCBx2lLaYFdk36f064VNZ1RejJTHtmgxqq0eT1sCwQ,518
+usso/core.py,sha256=tkwvnDmDnB6SS8QqSv_eC1I_wwR7ld5BXeahldAa5EA,3023
+usso/exceptions.py,sha256=hawOAuVbvQtjgRfwp1KFZ4SmV7fh720y5Gom9JVA8W8,504
+usso/package_data.dat,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usso/fastapi/__init__.py,sha256=6oGexGnnxkosRxnJ-pkGu1R2rjtjZ8iMikvB_eOQV3I,129
+usso/fastapi/integration.py,sha256=9Q10dfy8UagOkmG49-Ar0mj6PPsiKS8ioLFgBIREpWQ,1823
+usso-0.17.0.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+usso-0.17.0.dist-info/METADATA,sha256=5rA4ox1itsn65exIAuy-Q7_9F-ltvJWZWH1C-8ayEiA,4334
+usso-0.17.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+usso-0.17.0.dist-info/entry_points.txt,sha256=4Zgpm5ELaAWPf0jPGJFz1_X69H7un8ycT3WdGoJ0Vvk,35
+usso-0.17.0.dist-info/top_level.txt,sha256=g9Jf6h1Oyidh0vPiFni7UHInTJjSvu6cUalpLTIvthg,5
+usso-0.17.0.dist-info/RECORD,,
