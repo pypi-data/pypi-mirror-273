@@ -1,0 +1,13 @@
+controller_params:
+  name: diffik
+  physics_dt: ${physics_dt}
+  control_dt: ${control_dt}
+  convergence:
+    position_threshold: 5e-3
+    orientation_threshold: 30e-3
+
+controller:
+  _target_: mujoco_controllers.diffik.DiffIK
+  _partial_: true
+  controller_config: ${robots.arm.controller_config.controller_params}
+
