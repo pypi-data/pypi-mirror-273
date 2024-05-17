@@ -1,0 +1,12 @@
+torch
+pytest
+
+[dev]
+flake8
+numpy
+
+[release]
+build
+twine
+sphinx
+sphinx-rtd-theme

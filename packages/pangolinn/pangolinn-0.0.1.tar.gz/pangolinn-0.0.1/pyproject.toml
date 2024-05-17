@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pangolinn"
+version = "0.0.1"
+authors = [
+  { name="Marco Gaido", email="mgaido@fbk.eu" },
+  { name="Sara Papi", email="spapi@fbk.eu" }
+]
+description = "Helper library with tests that check common issues in neural network models."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Testing :: Unit"
+]
+dependencies = [
+    "torch",
+    "pytest"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hlt-mt/pangolinn"
+"Bug Tracker" = "https://github.com/hlt-mt/pangolinn/issues"
+
+[project.optional-dependencies]
+# numpy avoid warnings when using torch convolutions in tests
+dev = ["flake8", "numpy"]
+release = ["build", "twine", "sphinx", "sphinx-rtd-theme"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
