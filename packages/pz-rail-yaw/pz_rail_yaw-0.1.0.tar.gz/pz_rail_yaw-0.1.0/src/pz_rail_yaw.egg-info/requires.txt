@@ -1,0 +1,14 @@
+numpy
+h5py
+pz-rail-base
+qp-prob
+yet_another_wizz
+
+[dev]
+pytest
+pytest-cov
+pytest-skip-slow
+pre-commit
+pylint
+black
+nbconvert
