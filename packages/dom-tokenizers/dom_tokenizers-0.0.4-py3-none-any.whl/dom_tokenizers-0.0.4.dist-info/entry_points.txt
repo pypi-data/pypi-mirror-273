@@ -1,0 +1,2 @@
+[console_scripts]
+train-tokenizer = dom_tokenizers.train:main
