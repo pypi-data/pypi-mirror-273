@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fasthtml/__init__.py
+fasthtml/_modidx.py
+fasthtml/core.py
+python_fasthtml.egg-info/PKG-INFO
+python_fasthtml.egg-info/SOURCES.txt
+python_fasthtml.egg-info/dependency_links.txt
+python_fasthtml.egg-info/entry_points.txt
+python_fasthtml.egg-info/not-zip-safe
+python_fasthtml.egg-info/requires.txt
+python_fasthtml.egg-info/top_level.txt

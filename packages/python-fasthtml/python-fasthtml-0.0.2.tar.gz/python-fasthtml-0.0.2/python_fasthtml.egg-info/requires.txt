@@ -1,0 +1,7 @@
+fastcore
+python-dateutil
+starlette
+
+[dev]
+httpx
+ipython
