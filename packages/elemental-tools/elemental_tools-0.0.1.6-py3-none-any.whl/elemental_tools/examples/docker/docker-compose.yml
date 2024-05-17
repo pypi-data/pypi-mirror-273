@@ -1,0 +1,26 @@
+services:
+  $app_name_pc_friendly-integrations:
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      TZ: America/Sao_Paulo
+    build:
+      context: $destination_path
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - $user_folder_path:/home/seluser
+    command: ["start_task_monitor"]
+
+  $app_name_pc_friendly-api:
+    cap_add:
+      - SYS_ADMIN
+    build:
+      context: $destination_path
+    environment:
+      TZ: America/Sao_Paulo
+    volumes:
+      - $user_folder_path:/home/seluser
+    ports:
+      - 3001:3001
+    command: ["start"]
