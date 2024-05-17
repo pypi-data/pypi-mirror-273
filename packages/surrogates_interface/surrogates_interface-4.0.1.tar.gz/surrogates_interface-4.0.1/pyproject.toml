@@ -1,0 +1,132 @@
+[tool.poetry]
+name = "surrogates_interface"
+version = "4.0.1"
+description = "Interface for surrogate models."
+authors = ["DTU Wind and Energy Systems"]
+maintainers = [
+    "Riccardo Riva <ricriv@dtu.dk>",
+	"Mads Mølgaard Pedersen <mmpe@dtu.dk>",
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://gitlab.windenergy.dtu.dk/surrogate-models/surrogate-models-interface"
+
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.dependencies]
+
+python = ">=3.9,<3.12"
+numpy = ">=1.10.0"
+h5py = "*"
+black = {version="*", optional=true}
+flake8 = {version="*", optional=true}
+isort = {version="*", optional=true}
+codespell = {version="*", optional=true}
+pytest = {version="*", optional=true}
+pytest-cov = {version="*", optional=true}
+pytest-testmon = {version="*", optional=true}
+tomli = {version="^2.0.1", python="<3.11", optional=true}
+sphinx = {version="*", optional=true}
+pydata-sphinx-theme = {version="*", optional=true}
+sphinx-copybutton = {version="*", optional=true}
+sphinx-sitemap = {version="*", optional=true}
+numpydoc = {version="*", optional=true}
+matplotlib = {version="*", optional=true}
+scikit-learn = {version="*", optional=true}
+# Issue between poetry and tensorflow metadata since >=2.11
+# This is a temporary workaround
+# related to https://github.com/python-poetry/poetry/issues/8271
+# Inspired from https://github.com/tensorflow/tensorflow/blob/adb39b04e9cb116df4659a7e2de9eea27e62f25c/tensorflow/tools/pip_package/setup.py#L148-L162
+tensorflow = [
+	{version = ">=2.10.0, <2.11", markers = "platform_system == 'Windows'", optional=true },
+    {version = "^2.10.0", markers = "platform_system != 'Windows'", optional=true },
+]
+tensorflow-macos = { version = "^2.10.0", platform = "darwin", markers = "platform_machine=='arm64'", optional=true }
+tensorflow-intel = { version = "^2.10.0", platform = "win32", optional=true }
+tensorflow-cpu = [
+    { version = "^2.10.0", platform = "linux", markers = "platform_machine!='arm64' and platform_machine!='aarch64'", optional=true },
+    { version = "^2.10.0", platform = "darwin", markers = "platform_machine!='arm64' and platform_machine!='aarch64'", optional=true },]
+tensorflow-cpu-aws = { version = "^2.10.0", platform = "linux", markers = "platform_machine=='arm64' or platform_machine=='aarch64'" }
+# https://github.com/tensorflow/tensorflow/blob/adb39b04e9cb116df4659a7e2de9eea27e62f25c/tensorflow/tools/pip_package/setup.py#L107-L108
+# https://github.com/python-poetry/poetry/issues/8271#issuecomment-1697740447
+tensorflow-io-gcs-filesystem = [
+    { version = ">= 0.23.1", markers = "platform_machine!='arm64' or platform_system!='Darwin'", optional=true },
+    { version = "< 0.32.0", markers = "platform_system == 'Windows'", optional=true }
+]
+smt = {version="^2.0.1", optional=true}
+openmdao = {version="^3.25", optional=true}
+
+[tool.poetry.extras]
+all = ["black",
+       "flake8",
+	   "isort",
+	   "codespell",
+	   "pytest",
+	   "pytest-cov",
+	   "pytest-testmon",
+	   "tomli",
+	   "sphinx",
+	   "pydata-sphinx-theme",
+	   "sphinx-copybutton",
+	   "sphinx-sitemap",
+	   "numpydoc",
+	   "matplotlib",
+	   "scikit-learn",
+	   "smt",
+	   "tensorflow",
+	   "openmdao",
+	   ]
+
+docs = ["sphinx",
+	    "pydata-sphinx-theme",
+		"sphinx-copybutton",
+	    "sphinx-sitemap",
+	    "numpydoc",
+		"openmdao",
+	    ]
+
+code_style = ["black",
+              "flake8",
+	          "isort",
+	          "codespell",
+			  ]
+
+test = ["matplotlib",  # Needed by SMT.
+	    "pytest",
+	    "pytest-cov",
+	    "pytest-testmon",
+	    "tomli",
+	    "scikit-learn",
+	    "smt",
+	    "tensorflow",
+	    "openmdao",
+	    ]
+
+smt = ["matplotlib",  # Needed by SMT.
+       "scikit-learn",
+       "smt",
+	   ]
+
+tf = ["scikit-learn",
+	  "tensorflow",
+	  ]
+
+om = ["openmdao"]
+
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core", "numpy"]
+
+[tool.coverage.run]
+omit = ["surrogates_interface/test/*", ]
+
+[tool.coverage.report]
+fail_under = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.codespell]
+ignore-words-list = "coo"
