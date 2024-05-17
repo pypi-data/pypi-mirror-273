@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: substool
+Version: 2.0
+Summary: Tool to handle and fix subtitles general issues.
+Home-page: https://github.com/facundobatista/substool
+Author: Facundo Batista
+Author-email: facundo@taniquetil.com.ar
+License: Apace-v2
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE
+
+# substool
+
+Tool to handle and fix subtitles general issues.
+
+
+
+
