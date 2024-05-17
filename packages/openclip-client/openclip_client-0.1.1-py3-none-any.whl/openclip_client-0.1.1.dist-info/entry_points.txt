@@ -1,0 +1,4 @@
+[console_scripts]
+openclip_client_python=openclip_client_python.client_python:main
+openclip_client_python_middleware=openclip_client_python.client_python_middleware:main
+
