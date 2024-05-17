@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fcw-service
+Version: 0.12.1
+Summary: Early collision warning Network Application for Transportation use case - service part
+Home-page: https://github.com/5G-ERA/CollisionWarningService
+Author: Petr Kleparnik
+Author-email: p.kleparnik@cognitechna.cz
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: era-5g-interface (>=0.10.0,<0.11.0)
+Requires-Dist: era-5g-server (>=0.4.0,<0.5.0)
+Requires-Dist: fcw-core (>=0.12.1,<0.13.0)
+Requires-Dist: fcw-core-utils (>=0.12.1,<0.13.0)
+Requires-Dist: opencv-python (>=4.8)
+Requires-Dist: pyzmq (>=25.1.2)
+Project-URL: Repository, https://github.com/5G-ERA/CollisionWarningService
+Description-Content-Type: text/markdown
+
+# Forward Collision Warning - service part
+
+Early collision warning Network Application for Transportation use case - service part.
+The package contains core modules for Forward Collision Warning Network Application for 5G-ERA.
+
+
+

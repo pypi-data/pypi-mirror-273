@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fcw-service"
+version = "0.12.1"
+description = "Early collision warning Network Application for Transportation use case - service part"
+authors = ["Petr Kleparnik <p.kleparnik@cognitechna.cz>", "Roman Juranek <r.juranek@cognitechna.cz>"]
+readme = "README.md"
+repository = "https://github.com/5G-ERA/CollisionWarningService"
+packages = [{include = "fcw_service"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+opencv-python = ">=4.8"
+pyzmq = ">=25.1.2"
+era-5g-interface = "^0.10.0"
+era-5g-server = "^0.4.0"
+fcw-core-utils = "^0.12.1"
+fcw-core = "^0.12.1"
+
+[tool.poetry.scripts]
+fcw_service = "fcw_service.interface:main"
+fcw_visualization = "fcw_service.visualization:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
