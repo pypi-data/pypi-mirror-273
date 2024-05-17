@@ -1,0 +1,5 @@
+setup.py
+neverlib.egg-info/PKG-INFO
+neverlib.egg-info/SOURCES.txt
+neverlib.egg-info/dependency_links.txt
+neverlib.egg-info/top_level.txt
