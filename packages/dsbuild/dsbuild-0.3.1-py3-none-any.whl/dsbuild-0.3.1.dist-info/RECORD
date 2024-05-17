@@ -1,0 +1,9 @@
+dsbuild/.version,sha256=9PyVbsYbGHzRh5DAsKb6XR06MN5KVJPjJ3RgSF7RiPI,5
+dsbuild/__init__.py,sha256=kFCbC9sLEVVj-QXVyaecPCQ7cNOTahuIQ31JSCQxEAI,310
+dsbuild/__main__.py,sha256=t8CoU8V9GHtxEJ4Y1_JKwNK31aPf1XySuphfe1NbmUQ,24264
+dsbuild/version.py,sha256=O8W4CsNxJTu89f-P9Hx9u0YwNrYn2rGFFQgbY3jMUUw,4680
+dsbuild-0.3.1.dist-info/METADATA,sha256=GaLUloEXr8luWlDn7y-HYyGtgfVyVbKnsuPjFxBI40o,224
+dsbuild-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dsbuild-0.3.1.dist-info/entry_points.txt,sha256=BCMHYiRBHLDseJpTSSn_jqVNFgT6lYfz6MZr-vl_CPQ,50
+dsbuild-0.3.1.dist-info/top_level.txt,sha256=m7NGs9TlyFx57DWlgMoVB2jMbg_IADa2DufwmfosSNo,8
+dsbuild-0.3.1.dist-info/RECORD,,
