@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"]}
+
+[project]
+name = "clodo_py_tools"
+version = "0.0.1"
+description = ""
+authors = [
+    {name = "Clodomir Vianna", email = "clodolinus@gmail.com"},
+]
+readme = "README.rst"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 3 - Alpha"
+]
+dependencies = [
+    "matplotlib",
+    "psutil",
+]
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/me/spam.git"
+Issues = "https://github.com/me/spam/issues"
+Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+# Creation of terminal commands:
+[project.scripts]
+trace_performance = "performance_tracing:trace_performance"

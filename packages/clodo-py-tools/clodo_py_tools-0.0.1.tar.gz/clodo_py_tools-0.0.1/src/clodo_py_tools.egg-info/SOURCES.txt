@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/__init__.py
+src/performance_tracing.py
+src/timer.py
+src/clodo_py_tools.egg-info/PKG-INFO
+src/clodo_py_tools.egg-info/SOURCES.txt
+src/clodo_py_tools.egg-info/dependency_links.txt
+src/clodo_py_tools.egg-info/entry_points.txt
+src/clodo_py_tools.egg-info/requires.txt
+src/clodo_py_tools.egg-info/top_level.txt
