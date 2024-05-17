@@ -1,0 +1,5 @@
+lavague/contexts/gemini/__init__.py,sha256=gbdDXJsSfoKe7sJPxItkJ6xZGrKTFNlAbb8VB34JftI,55
+lavague/contexts/gemini/base.py,sha256=DQfbKRoVqnCH4xniemGtTzClKTQOvpGqIJ9zzqfkT54,1723
+lavague_contexts_gemini-0.1.1.dist-info/METADATA,sha256=tQp3OrgW4jjbWYNzkuX63cMMAk5LPsfd4_B4ADA2SI8,1334
+lavague_contexts_gemini-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lavague_contexts_gemini-0.1.1.dist-info/RECORD,,
