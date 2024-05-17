@@ -1,0 +1,14 @@
+psutil
+
+[admin]
+prometheus_client
+
+[dev]
+black
+
+[monitor]
+prometheus_client
+
+[ray]
+ray
+pynvml
