@@ -1,0 +1,5 @@
+WSPProjectppchem.egg-info/PKG-INFO
+WSPProjectppchem.egg-info/SOURCES.txt
+WSPProjectppchem.egg-info/dependency_links.txt
+WSPProjectppchem.egg-info/requires.txt
+WSPProjectppchem.egg-info/top_level.txt

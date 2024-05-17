@@ -1,0 +1,6 @@
+pandas
+numpy
+rdkit
+tqdm
+lightgbm
+requests

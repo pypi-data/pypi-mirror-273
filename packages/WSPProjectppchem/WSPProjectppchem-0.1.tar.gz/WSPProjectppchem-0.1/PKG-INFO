@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: WSPProjectppchem
+Version: 0.1
+Summary: water solubility prediction project
+Home-page: https://github.com/Nohalyan/WSPP_Projectppchem
+Author: Cossard Lucas and Venancio Enzo
+Requires-Python: >=3.8
+
+README.md
