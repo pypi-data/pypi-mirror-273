@@ -1,0 +1,11 @@
+cdbt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdbt/build_dbt_docs_ai.py,sha256=8v1X_unCyLUN5-50p9iS8Fyvy8yUcgYM59njQmdD1OQ,6103
+cdbt/build_unit_test_data_ai.py,sha256=byP7TOMARF4Nf1cGw2JHTXE7nf1Z1pXmTvbmBOFdNFc,7330
+cdbt/cmdline.py,sha256=y9BJNzb87EzLnwwVuU8sPaxNij5OqXys09WIrF-DzWU,5669
+cdbt/main.py,sha256=bW6UxIFIdagNZye3a01daIbB2T3ztpkZtxhzfBD8T7c,16656
+cdbt/prompts.py,sha256=R1wZnGeMHouNYWlfmd3hBeWn2LC3-9klsaHcn9DA0_Q,17490
+cdbt-0.2.1.dist-info/METADATA,sha256=cxam_slnKhBMOCZwIgjj69eU6i2JTCaxUSArgcHnlro,467
+cdbt-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cdbt-0.2.1.dist-info/entry_points.txt,sha256=WJr91uJeTIIrtH9e_iyd5nEAJorpx3TvZGGHXV3W9oQ,43
+cdbt-0.2.1.dist-info/top_level.txt,sha256=2tvFgKzgU2jA_KjlOSTr7pnOiLwoDpK5ExxJPZCFUww,5
+cdbt-0.2.1.dist-info/RECORD,,
