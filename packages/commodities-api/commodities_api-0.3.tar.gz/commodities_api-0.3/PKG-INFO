@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: commodities_api
+Version: 0.3
+Summary: A Python package to get the latest commodities from the Commodities-API
+Home-page: https://github.com/Zyla-Labs/pypi-commodities-api
+Author: Commodities-API
+Author-email: hello@commodities-api.com
+Keywords: commodities-api,precious Commodities api,Commodities api,Commodities,precious Commodities,gold,silver,Platinum,Palladium,Ruthenium,Rhodium,forex data,rates,money,usd,eur,btc,forex api,gbp to usd,gbp to eur,eur to usd,api,currency api,exchange rate api,get currency rates api,currency rates php,usd to eur api,copper,nickel,aluminium,TIN,Zinc
+Description-Content-Type: text/markdown
+
+# Commodities-API
+
+[![Commodities-API](https://www.commodities-api.com/img/logo_metals.png)](https://commodities-api.com)
+
+<!--start: description-->
+
+**Commodities-API** - The ultimate API for accessing comprehensive and accurate real-time and historical rates on various commodities effortlessly. Commodities-API supports 350+ symbols with updates every 60 seconds. Try the Start 7-Day Free Trial. Cancel anytime at your convenience.
+
+<!--end: description-->
+
+<!--start: docs-->
+
+## Key Features:
+
+- **Built for Developers:** Tailored for developers, ensuring ease of use and seamless integration.
+- **Robust JSON API:** A powerful JSON API designed for accurate and efficient data retrieval.
+- **Top-Tier Security:** Trust Commodities-API with advanced security measures to protect your data.
+- **Reliable Data Sources:** Benefit from reliable and accurate data from trusted sources.
+- **Flexible Integration:** Easily integrate Commodities-API into any language for diverse applications.
+- **Historical Data Access:** Dive into historical data for comprehensive analysis and informed decision-making.
+- **Exceptional Accuracy:** Rely on Commodities-API for spot-on accuracy in real-time and historical data.
+- **User-Friendly Documentation:** Navigate through our comprehensive documentation for a smooth integration process.
+- **Specialized Support:** Count on our dedicated support team for assistance tailored to your specific needs.
+
+## Supported Commodities
+
+Explore a wide range of supported commodities, including precious metals, energy resources, agricultural products, and more. From coffee to electricity, we cover it all. [View Supported Commodities](https://www.commodities-api.com/symbols)
+
+## Documentation
+
+For detailed information on API endpoints, usage, and integration guidelines, check our [API Documentation](https://www.commodities-api.com/documentation).
+
+Start using Commodities-API today for unparalleled access to commodities data. Visit [Commodities-API.com](https://commodities-api.com) and integrate in just minutes!
+
+
+## Installation
+
+You can install Commodities-API Python SDK with pip.
+
+```bash
+pip commodities-api
+```
+
+## Usage
+
+The Commodities-API Python SDK is a wrapper around the [requests](https://docs.python-requests.org/en/master/) library. Commodities-API supports a GET request for now.
+
+Sign-up to Commodities-API to [get your API key](https://commodities-api.com/register) and some credits to get started.
+
+### Making the GET request
+
+```python
+>>> from commodities_api import CommoditiesApiClient
+
+>>> client = CommoditiesApiClient(access_key='REPLACE-WITH-YOUR-ACCESS-KEY')
+
+>>> response = client.get_latest("base", ["symbols"])
+```
+
+### Request Example
+
+```python
+>>> from commodities_api import CommoditiesApiClient
+
+>>> client = CommoditiesApiClient(access_key='REPLACE-WITH-YOUR-ACCESS-KEY')
+
+>>> response = client.get_latest("USD", ["RICE", "WHEAT", "SUGAR"])
+```
+
+### Response Example
+
+```json
+{
+    "data": {
+        "success": true,
+        "timestamp": 1715796300,
+        "date": "2024-05-15",
+        "base": "USD",
+        "rates": {
+            "RICE": 0.052356020942408,
+            "SUGAR": 5.3676865271068,
+            "USD": 1,
+            "WHEAT": 0.0036618232950551,
+            "USDRICE": 19.100000000000136,
+            "USDSUGAR": 0.1863000000000006,
+            "USDWHEAT": 273.08799999999803
+        },
+        "unit": {
+            "RICE": "per cwt",
+            "WHEAT": "per metric ton",
+            "SUGAR": "per lb"
+        }
+    }
+}
+```
+
+### AVAILABLE METHODS
+
+```python
+>>> get_latest(base: str, symbols: List[str])
+```
+
+```python
+>>> get_historical(date:str, base:str, symbols: List[str])
+```
+
+```python
+>>> get_time_series(start_date: str, end_date: str, symbol: str)
+```
