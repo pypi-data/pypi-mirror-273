@@ -1,0 +1,2 @@
+[console_scripts]
+pcm-overview = adi_notebook.pcm_overview:main
