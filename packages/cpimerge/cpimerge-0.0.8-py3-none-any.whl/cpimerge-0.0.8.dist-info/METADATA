@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cpimerge
+Version: 0.0.8
+Summary: A tool to merge iCalendar files with exclusions.
+Author: Kirk Coombs
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: icalendar (>=4.0.9,<5.0.0)
