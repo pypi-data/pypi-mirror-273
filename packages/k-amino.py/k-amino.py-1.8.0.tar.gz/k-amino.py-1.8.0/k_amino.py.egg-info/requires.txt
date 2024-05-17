@@ -1,0 +1,10 @@
+colorama
+types-colorama
+ujson
+types-ujson
+easy_events<=3.0.0
+json_minify
+python-socks[asyncio]>=2.4.0
+httpx[socks]>=0.23.0
+typing-extensions>=4.7.0
+websockets>=12.0
