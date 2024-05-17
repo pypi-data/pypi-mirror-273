@@ -1,0 +1,11 @@
+docopt_sh/__init__.py,sha256=WqXe3JSTM6uYAO0Y__Bs_d9bUSLRmRtKqSwj_BLjAbE,602
+docopt_sh/__main__.py,sha256=Xj6NejrLpLry6Ng5STMdLpAKnhylI_B3dNhyMsrnp_8,3590
+docopt_sh/bash.py,sha256=79udMHaumDVKp7hc03ZLB3AOLnvP50vh1dHKsQeOZaE,4011
+docopt_sh/docopt.sh,sha256=YJPhY0Ly9wIQw3IQtcK2sHxF6zRjh7gmA8yWvZAwOVw,17767
+docopt_sh/parser.py,sha256=F5EU54p1JpptfPZnp4XOaIMgCdbBkEWa1pNhd_CxAKw,10651
+docopt_sh/script.py,sha256=yHYAwNoPKjxMV4qJLMGRWQ8MlibzLpLX7upPvJhyx8s,9063
+docopt_sh-2.0.0a4.dist-info/LICENSE,sha256=aM0aKiRtlLrrXulVU610qmgD4rODIp3_ZHLkx8BC_Bc,1059
+docopt_sh-2.0.0a4.dist-info/METADATA,sha256=hRn1RgzXzMRiJ5CRrUVHSLFWVuOzrLCxnSOmYGfWzVw,1100
+docopt_sh-2.0.0a4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+docopt_sh-2.0.0a4.dist-info/entry_points.txt,sha256=1QzFUKExhgb8RK_uBF41rihfFeCKfViT1C0yYAA9LPE,53
+docopt_sh-2.0.0a4.dist-info/RECORD,,
