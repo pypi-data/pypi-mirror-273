@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+tokarip/__init__.py
+tokarip.egg-info/PKG-INFO
+tokarip.egg-info/SOURCES.txt
+tokarip.egg-info/dependency_links.txt
+tokarip.egg-info/top_level.txt

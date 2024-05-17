@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokarip"
+description = "tokarip"
+version = "0.0.0"
+readme = "README.md"
+requires-python = ">=3.9"
