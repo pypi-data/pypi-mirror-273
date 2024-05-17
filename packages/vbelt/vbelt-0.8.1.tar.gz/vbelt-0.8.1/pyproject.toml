@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vbelt"
+dynamic = ["version"]
+description = "The VASP user's tool belt."
+readme = "README.md"
+license = "EUPL-1.2"
+authors = [
+    { name = "Théo Cavignac", email = "theo.cavignac@gmail.com" },
+]
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.7",
+]
+dependencies = [
+    "numpy >=1.16",
+]
+
+[project.optional-dependencies]
+gencalc = [
+    "ase >= 3.22",
+    "chevron >= 0.14.0",
+    "tc-pysh>=0.2.0",
+]
+symmetry = [
+    "pymatgen",
+]
+
+[project.scripts]
+ckcoherence = "vbelt.wrapper:check_coherence"
+ckconv = "vbelt.wrapper:check_conv"
+ckend = "vbelt.wrapper:check_end"
+ckforces = "vbelt.wrapper:check_forces"
+jobtool = "vbelt.jobtool:jobtool"
+chgtool = "vbelt.chargetool:chargetool"
+poscartool = "vbelt.poscartool:poscartool"
+report = "vbelt.wrapper:report"
+termdos = "vbelt.wrapper:termdos"
+
+[project.urls]
+Homepage = "https://git.sr.ht/~lattay/vbelt"
+
+[tool.hatch.version]
+path = "vbelt/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/vbelt",
+]
