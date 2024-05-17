@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: g4f_xn
+Version: 0.0.5
+Summary: library for easy access to GPT models based on g4f
+Author: Xandr0v
+Author-email: <olegalexandrov468@gmail.com>
+Keywords: python,g4f,gpt
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: g4f
+Requires-Dist: pyaudio
+Requires-Dist: pydub
+Requires-Dist: colorama
+Requires-Dist: ffmpeg-downloader
+
+long description. Will change in the future
