@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ranktools
+Version: 0.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.15.0
+
+# ranktools
+## A bunch of handy functions for sorting and ranking elements in a Python list or NumPy array
+
+Some functions available include:
+1. get_ranks_inplace : Takes a list/array of values and returns the corresponding rank of each element in its 'place'.
