@@ -1,0 +1,7 @@
+p4adev_tools/__init__.py,sha256=v-0M-SUCaXawea-Rrzf182jrtUQSS_nOHGRgbS9kmzI,122
+p4adev_tools/ftp_server.py,sha256=omGo-kVOyv_MVWWJBGcDIWgAiFhSRWaTYggs6xzdhw8,1867
+p4adev_tools/ipykernel_threaded.py,sha256=RRXSxxsbt_CuRrnSzNzaM1hDzX8dP909_j2-38Umxew,6778
+p4adev_tools-0.0.3.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+p4adev_tools-0.0.3.dist-info/METADATA,sha256=5GfCShyUcc0PZPbDjOLHWINKmTUFFBWdlPCRXY5KMYU,1024
+p4adev_tools-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+p4adev_tools-0.0.3.dist-info/RECORD,,
