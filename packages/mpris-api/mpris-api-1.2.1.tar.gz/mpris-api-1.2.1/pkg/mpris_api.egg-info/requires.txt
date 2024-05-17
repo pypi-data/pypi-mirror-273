@@ -1,0 +1,3 @@
+dbus-next~=0.2
+unidecode~=1.3
+tunit~=1.7
