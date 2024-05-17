@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: DMT-extraction
+Version: 1.0.0
+Summary: Device Modeling Toolkit extraction submodule
+Home-page: https://gitlab.com/dmt-development/dmt_extraction
+Author: SemiMod
+Author-email: mario.krattenmacher@semimod.de
+License: DMT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Description-Content-Type: text/markdown
+Provides-Extra: batch_mode
+Provides-Extra: pyside2
+Provides-Extra: pyside6
+License-File: LICENSE
+
+[![pyversion](https://img.shields.io/badge/python->3.6-blue?logo=python)](https://docs.python.org/3.8/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# DMT-extraction
+
+Device-Modeling Toolkit (DMT) is a Python framework used for compact model parameter extraction. 
+DMT-core is the main module that provides various routines useful for semiconductor device engineers that 
+want to automate their infrastructure. 
+DMT-extraction is an extension to DMT-core. 
+DMT-extraction enables highly efficient compact model parameter extraction based on automated circuit simulation, 
+evaluation of Verilog-A model equations and codes, and also a simple - yet powerful - GUI. 
+DMT was featured at an Analog-Working-Group meeting in 2023, you can find the [Youtube video here](https://youtu.be/DAXjT2C0vsY?t=1024).
+
+This project is funded by [NLnet](https://nlnet.nl/project/DMT-Core/) under the [NGI Zero Entrust fund](https://nlnet.nl/entrust/).
+
+<img src="pictures/banner_nlnet.svg" width="325"/>
+
+<img src="pictures/extraction.png" width="625"/> <img src="pictures/ft_plot.png" width="625"/> 
+
+# Installation
+
+Please make sure you have Python >3.8 installed. It is recommended to work in a virtual environment. 
+
+## DMT-core and DMT-extraction
+
+For using DMT-extraction, you must first install DMT-core and its dependencies. 
+The installation is detailed [here](https://gitlab.com/dmt-development/dmt-core).
+
+Once DMT-core is installed, you can use pip to install DMT-extraction, preferably in editor mode:
+
+```
+cd DMT_extraction
+pip install -e .
+```
+
+## Ngspice Circuit Simulator
+
+DMT-extraction uses ngspice as its circuit simulator, though interfaces to other circuit simulators are also implemented. 
+Install ngspice as described on [its homepage](https://sourceforge.net/projects/ngspice/). 
+Afterward, you should be able to call 
+
+```
+ngspice
+```
+
+from the terminal. DMT-core will then be able to find the simulator. 
+
+## Parameter Extraction GUI 
+
+To run the parameter extraction GUI, a few dependencies that are not automatically installed with DMT-extraction are required. 
+Those dependencies are:
+
+- PySide2 or 6
+- A working Texlive installation
+
+The GUI window is defined by two files:
+- The file main_window.ui was created with pyqt5-tools designer.
+- The file main_window.py was created with the tool pyside2-uic from main_window.ui. 
+
+# Test and Usage
+
+The test cases in the test/ folder can be used to understand the purpose of DMT-extraction, but also to 
+test the installation of DMT-extraction on your machine. 
+Currently, we are working to implement a MOSFET model parameter extraction for the IHP open-source PDK, 
+which will soon be available as a useful example for parameter extraction with DMT. 
+
+# IHP Modeling example
+
+We will use the [IHP SG13G2](https://www.ihp-microelectronics.com/events-1/detail/openpdk-opentooling-and-open-source-design-an-initiative-to-push-development) process as a reference.
+
+Here we will soon link to IHP SG13G2 PSP modeling example project.
+
+# Support
+
+For support contact Markus or Mario:
+
+    -Markus Müller | markus.mueller@semimod.de
+    -Mario Krattenmacher | mario.krattenmacher@semimod.de
+
+For commercial requests, contact [SemiMod GmbH](https://semimod.de/). 
+
+# PSP Compact Model for MOSFETs
+
+DMT-extraction acknowledges the PSP model and its authors, which is supported for MOSFET compact modeling. 
+The PSP model was by NXP Semiconductors, Delft University of Technology, and CEA Leti.
+
+# PSP Model Parameter Extraction Literature
+
+MOSFET parameter extraction is an involved topic, for which quite a bit of literature has been released. 
+Below, a list of useful literature is given that is referenced in the code of this repository.
+
+    - [1] G.D.J. Smith et al., "PSP 103.5", technical note, 2017.
+    - [2] N. Arora, "MOSFET Modeling for VLSI Simulation", World Scientific, 2007.
+    - [3] J. Robinson, "A GENERAL FOUR-TERMINAL CHARGING-CURRENT MODEL FOR THE INSULATED-GATE FIELD-EFFECT TRANSISTOR - I", Solid State Electronics, vol. 23, pp. 405-410, 1980.
+    - [4] H. Iwal et. al., "A Scaleable Technique for the Measurement of Intrinsic MOS Capacitance with Atto-Farad Resolution", IEEE Journal of Solid State Devices, 1985.
+
+# License
+
+This repository is licensed under the GPL, see the file LICENSE.
+
+
