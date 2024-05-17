@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_file_find.py,sha256=C58Ga8jCESkhfc-vTU1UZGwasig_F-jauLolepfCuGU,610
+tests/test_file_op.py,sha256=Rya-_G7G75Cpr5CeCO8OdRBiwULgv1NuJUFyw0UDinw,839
+way3/__init__.py,sha256=E7DQsHPSjUm4SJZ9qNihGgPXTlEoyrH79M5G8tVju8o,669
+way3/file_find/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+way3/file_find/current_dir.py,sha256=nu8jtUwns4mEXyz5WKA2MrF08vySNryd-FSY2V2wjeI,106
+way3/file_find/traverse_files_from_folder.py,sha256=swoVi13aVg9zkFmL4Q_JYZWzPYua2Z2uWER6UWWzhAc,2349
+way3/file_op/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+way3/file_op/create_file.py,sha256=AoqXxaNzIibqpWrXeDOlSPNBxdHYSkV_vPMr3GNP5AM,1735
+way3-0.0.21.dist-info/LICENSE,sha256=Z_K5J2fFjfDUIcakppJGxl-kgFYcYiknJlXwUFCum7M,1063
+way3-0.0.21.dist-info/METADATA,sha256=UngUDEYiJPuz8GN6oJr45PZJhqaRg_Cn3buINMrRCiU,3977
+way3-0.0.21.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+way3-0.0.21.dist-info/top_level.txt,sha256=UtVqGTzksYWMLiiqydzOoTqzKTK3rAhadKub_3UGDro,11
+way3-0.0.21.dist-info/RECORD,,
