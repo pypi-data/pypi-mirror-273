@@ -1,0 +1,1 @@
+{"NETWORKING_SET_SLOT_MAP_CONFIRM":{"msgId":101,"status":"ok"}}

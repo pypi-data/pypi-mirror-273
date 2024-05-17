@@ -1,0 +1,1 @@
+{"NET_DATA_QUEUE_STATUS_REQUEST":{"msgId":101,"slot":2,"netQueueReqType":"NET_QUEUE_COUNT"}}
