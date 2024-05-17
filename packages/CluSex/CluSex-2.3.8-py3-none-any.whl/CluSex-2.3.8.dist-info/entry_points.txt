@@ -1,0 +1,10 @@
+[console_scripts]
+clusex = clusex.pysex:main
+compsky = clusex.run.console:compsky
+guiclass = clusex.run.console:guiclass
+joincat = clusex.run.console:joincat
+makemask = clusex.run.console:makemask
+makeobjimg = clusex.run.console:makeobjimg
+makestamps = clusex.run.console:makestamps
+remellmask = clusex.run.console:remellmask
+sex2ds9 = clusex.run.console:sex2ds9
