@@ -1,0 +1,3 @@
+[console_scripts]
+splitpdf = splitpdf_pro:main.main
+splitpdf-pro = splitpdf_pro:cli.main
