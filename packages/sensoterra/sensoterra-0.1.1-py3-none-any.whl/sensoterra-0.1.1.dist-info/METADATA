@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: sensoterra
+Version: 0.1.1
+Summary: Query Sensoterra probes using the Customer API
+Author-email: Mark Ruys <mark.ruys@sensoterra.com>
+Project-URL: Homepage, https://gitlab.com/sensoterra/public/python
+Project-URL: Issues, https://gitlab.com/sensoterra/public/python/-/issues
+Project-URL: Repository, https://gitlab.com/sensoterra/public/python.git
+Project-URL: Changelog, https://gitlab.com/sensoterra/public/python/-/blob/main/CHANGELOG.md
+Keywords: Sensoterra,soil moisture,probe,sensor
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.27.1
+
+# Sensoterra
+
+Package with a module to load Sensoterra probe data by polling the Sensoterra Customer API.
+
+## Example code
+
+```python
+import time
+from sensoterra.customerapi import CustomerApi
+
+email = "me@example.com"
+password = "secret"
+
+api = CustomerApi(email, password)
+api.set_language("en")
+
+while True:
+    api.poll()
+
+    for probe in api.probes():
+        print(probe)
+        for sensor in probe.sensors():
+            print(sensor)
+        print()
+
+    time.sleep(900)
+    print('-' * 70)
+```
+
+## Changelog
+
+[CHANGELOG](CHANGELOG.md)
+
