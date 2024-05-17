@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+html2object/__init__.py
+html2object/html2object.py
+html2object/html_element.py
+html2object.egg-info/PKG-INFO
+html2object.egg-info/SOURCES.txt
+html2object.egg-info/dependency_links.txt
+html2object.egg-info/top_level.txt
+tests/__init__.py
+tests/test_html2object.py
+tests/test_html_element.py
