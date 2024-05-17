@@ -1,0 +1,11 @@
+{
+  "compentent": "MODULE",
+  "stage": "MODULE/WIREBONDING",
+  "frontside_goldenmodule_path": "golden_module/ITKPIX_MODULE__WIREBONDING",
+  "checklist": {
+    "front": {
+      "Yellow": [],
+      "Red": ["Wirebonding Failure"]
+    }
+  }
+}
