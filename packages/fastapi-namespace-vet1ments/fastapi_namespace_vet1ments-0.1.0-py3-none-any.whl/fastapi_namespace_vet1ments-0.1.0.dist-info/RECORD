@@ -1,0 +1,13 @@
+fastapi_namespace/__init__.py,sha256=UIsiU9pq-M5yuTyYkotpntZeIcjztW2vF5T1gE0q58Q,63
+fastapi_namespace/namespace.py,sha256=xf9Sl5-D1Ic2oiYmdz8hwt4r2NazpCNMS1sINaRMPqk,12436
+fastapi_namespace/resource.py,sha256=AqaHe_oOTr_TZFaQJxZyjaerkhLjqxKQAhz4-RAnkpI,72
+fastapi_namespace/types.py,sha256=DyRV37xtmBfiu21wachh62LnLC2gG8Ey2G4b0nvAAhg,1338
+fastapi_namespace/utils.py,sha256=BVW1m0lmqgfFSIcj634ztcj0ukh6mJIcblkB_4-91Ts,93
+fastapi_namespace/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_namespace/tests/test.py,sha256=hjLRV1rQcwssz0g9Adhw2DaLEiFdpIp_a0qFjW7DKSs,880
+fastapi_namespace/tests/test2.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_namespace_vet1ments-0.1.0.dist-info/LICENSE,sha256=Ufl8h-ngibMHJVULl1YUBIQ8E2bgrVxoc0JasqMf4a8,1066
+fastapi_namespace_vet1ments-0.1.0.dist-info/METADATA,sha256=FAZmuePsH3cg2b767W0kbmSV1M-3wNtppMeF4MT7nXI,944
+fastapi_namespace_vet1ments-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fastapi_namespace_vet1ments-0.1.0.dist-info/top_level.txt,sha256=whs6Hc_VLMy2FS6jE2R8zXnlA-F4gopywvPu6kboXa4,18
+fastapi_namespace_vet1ments-0.1.0.dist-info/RECORD,,
