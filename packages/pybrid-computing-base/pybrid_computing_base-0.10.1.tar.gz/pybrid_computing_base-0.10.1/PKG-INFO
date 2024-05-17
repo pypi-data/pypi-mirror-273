@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pybrid-computing-base
+Version: 0.10.1
+Summary: pybrid-computing base analog and hybrid abstractions
+Home-page: https://anabrid.com/
+License: MIT OR GPL-2.0-or-later
+Author: Michael Steck
+Author-email: pybrid-code@anabrid.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Terminals :: Serial
+Requires-Dist: anyio (>=3.6.1,<4.0.0)
+Requires-Dist: asyncclick (>=8.1.3.2,<9.0.0.0)
+Requires-Dist: packaging (>=22.0,<23.0)
+Requires-Dist: prompt-toolkit (>=3.0.39,<4.0.0)
+Requires-Dist: pyserial-asyncio (>=0.6,<0.7)
+Description-Content-Type: text/markdown
+
+# pybrid-computing-base: The python hybrid computing code basics
+
+*pybrid* is a code that provides an interface to configure and control analog computers,
+in particular the network-enabled LUCIDAC/REDAC analog-digital hybrid computers made by
+[anabrid](https://anabrid.com/).
+
+The `pybrid-computing-base` package contains the common base abstractions for analog and hybrid
+functionality, entities, algorithms and similar constructs.
+
+These are used as bases for the concrete implementations in the platform-specific
+packages to provide an interface for other shared abstractions.
+
+This package/repository is not supposed to be used directly.
+See [pybrid-computing](https://pypi.org/project/pybrid-computing/) for the high level package
+and in particular for the README how to use, install and edit this code.
+
