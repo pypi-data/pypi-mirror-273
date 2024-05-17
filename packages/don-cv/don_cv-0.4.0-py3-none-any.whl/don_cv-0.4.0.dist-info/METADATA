@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: don-cv
+Version: 0.4.0
+Summary: A terminal GUI displaying a configurable resume
+Home-page: https://github.com/copyleftdev/don
+Author: Don Johnson
+Author-email: dj@codetestcode.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Requires-Dist: PyYAML
+
+# Don
+
+Don is a Python package that, when installed and run, displays a configurable resume in a terminal GUI.
+
+## Installation
+
+```bash
+pip install don-cv
+```
