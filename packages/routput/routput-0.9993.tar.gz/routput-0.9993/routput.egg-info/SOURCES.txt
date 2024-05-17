@@ -1,0 +1,10 @@
+LICENCE
+README.md
+_README.py
+_pickled.py
+setup.py
+templated_setup.py
+routput.egg-info/PKG-INFO
+routput.egg-info/SOURCES.txt
+routput.egg-info/dependency_links.txt
+routput.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+_README
+_pickled
+templated_setup
