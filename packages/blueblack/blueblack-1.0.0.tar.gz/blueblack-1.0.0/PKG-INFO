@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: blueblack
+Version: 1.0.0
+Summary: Automatic light/dark mode transitions based on location
+Author: Stefanos Mitropoulos
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: certifi (==2024.2.2)
+Requires-Dist: charset-normalizer (==3.3.2)
+Requires-Dist: idna (==3.7)
+Requires-Dist: iniconfig (==2.0.0)
+Requires-Dist: jsonschema (>=4.22.0,<5.0.0)
+Requires-Dist: packaging (==24.0)
+Requires-Dist: pluggy (==1.5.0)
+Requires-Dist: pyyaml (==6.0.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: urllib3 (==2.2.1)
+Requires-Dist: xdg-base-dirs (==6.0.1)
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
