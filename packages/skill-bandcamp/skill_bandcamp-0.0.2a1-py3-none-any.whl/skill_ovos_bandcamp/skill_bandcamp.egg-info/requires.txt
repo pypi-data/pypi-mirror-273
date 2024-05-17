@@ -1,0 +1,4 @@
+py_bandcamp>=0.7.0
+ovos-utils>=0.0.28a4,~=0.0
+ovos_workshop>=0.0.11a4,~=0.0
+ovos_plugin_common_play
