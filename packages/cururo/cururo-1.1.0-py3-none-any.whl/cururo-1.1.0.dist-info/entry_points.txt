@@ -1,0 +1,2 @@
+[console_scripts]
+cururo = cururo.cli:main
