@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neorl2
+Version: 0.0.1
+Home-page: https://agit.ai/Polixir/NeoRL2
+Author: Polixir Technologies Co., Ltd.
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: gymnasium[all] ==0.29.1
+Requires-Dist: onnxruntime
+Requires-Dist: matplotlib
+Provides-Extra: mujoco
+Requires-Dist: mujoco-py ; extra == 'mujoco'
+
