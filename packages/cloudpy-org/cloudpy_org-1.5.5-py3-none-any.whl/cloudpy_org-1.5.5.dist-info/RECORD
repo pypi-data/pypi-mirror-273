@@ -1,0 +1,12 @@
+cloudpy_org/__init__.py,sha256=NSVVqXKnj1m_WshCXAaGCxiXSIQn9tepxbFUtr19JsY,3240
+cloudpy_org/aws.py,sha256=qMhSr3AvxMBFslLD56hAfSiOppl9GAEVUwKZALcgttI,32752
+cloudpy_org/client_usage.py,sha256=6plEsDdtFnOII1KrhWav9mcoZA9oa0G8FWxT3oLOZPs,81879
+cloudpy_org/docs.py,sha256=xFhIxt9gAhTuKvFam2xsUG5SC9l6t5oLKiTXbNuGh5M,13614
+cloudpy_org/imgedit.py,sha256=WRezmeTwPxi6XRxfE4SsJPPmfQdCrIgACcp9duAXVwk,3924
+cloudpy_org/tools.py,sha256=5wq0vj_rDrlZHyzP90k_WMf97aQzF7KYvy28nPxRnZQ,51895
+cloudpy_org/web.py,sha256=cxT2lKuM61GzbPkH2T3Aq_037li88iq74wz2rlgTHZg,4998
+cloudpy_org/web_client_usage.py,sha256=Phy7HVaa_w6z8kfo1RoC2-2QmI-Pfy-gFP2wjyquu6g,10189
+cloudpy_org-1.5.5.dist-info/METADATA,sha256=6iIssp9KnvYam8-MVX9w5nousUj0yORVtMma7WjCNiQ,1155
+cloudpy_org-1.5.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+cloudpy_org-1.5.5.dist-info/top_level.txt,sha256=5AZwJoZL_haeN1uyUFyoS5AMgeBVZoJp493itoYh0Qo,12
+cloudpy_org-1.5.5.dist-info/RECORD,,
