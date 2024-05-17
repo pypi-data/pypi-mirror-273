@@ -1,0 +1,12 @@
+frequenz/client/common/__init__.py,sha256=77V3FLP0r6asF30IVqsywEQ3-GmE6HSzARBclfaRMno,128
+frequenz/client/common/conftest.py,sha256=NB21GYKVnjam9lHyFyBEYxR8qYjDkvV70f4kuYLzAUY,409
+frequenz/client/common/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz/client/common/metric/__init__.py,sha256=rd99ksWUZ0d1fGe7REf4mIMVRg1H8w-FFGuUt5Z8pSU,6447
+frequenz/client/common/microgrid/__init__.py,sha256=UApl8BGhb60ecuK-2sLkE7RvRwac4_Sw5LbUChdkciU,107
+frequenz/client/common/microgrid/components/__init__.py,sha256=OzdhOhjtQvfIb8RxDeX8OhiroN20JdHnofOyE-u-0Ho,2300
+frequenz/client/common/pagination/__init__.py,sha256=V51_CREQjZZ0lRSBenoOkLq6o0hiAhC0W4OfnLjdDYY,2665
+frequenz_client_common-0.2.0.dist-info/LICENSE,sha256=C3svrUte2N2h2JaK1qfbYQNp5MTaqdaJkFLe-kgUxbU,1089
+frequenz_client_common-0.2.0.dist-info/METADATA,sha256=pdDe5nBMWobwGXLaXdIRdTp-hfYxPUwTPTUdxYUugVA,4341
+frequenz_client_common-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+frequenz_client_common-0.2.0.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_client_common-0.2.0.dist-info/RECORD,,
