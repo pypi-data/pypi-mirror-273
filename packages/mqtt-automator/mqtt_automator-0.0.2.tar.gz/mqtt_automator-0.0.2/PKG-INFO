@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: mqtt-automator
+Version: 0.0.2
+Summary: Simple smart-home automation system. Self-hosted, LAN only.
+Author-email: Oleg Strizhechenko <oleg.strizhechenko@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2015 
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Keywords: mqtt,aiomqtt,vakio,lytko,yeelink,self-hosted
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML~=6.0.1
+Requires-Dist: aiomqtt~=2.1.0
+Requires-Dist: paho-mqtt~=2.1.0
+Provides-Extra: test
+Requires-Dist: pre-commit; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pylint; extra == "test"
+
+## Установка
+
+Тестировалось только на Ubuntu 22.04
+
+``` shell
+git clone https://codeberg.org/strizhechenko/mqtt_automator.git /opt/mqtt/
+apt install python3.11
+python3.11 -m pip install /opt/mqtt/
+cd /opt/mqtt/examples/config_example.yml /opt/mqtt/config.yml  # правим его под себя
+cp -va /opt/mqtt/automator.service /etc/systemd/system/mqtt-automator.service
+systemctl enable --now mqtt-automator
+```
+
+Если планируется делать доработки и делиться ими: лучше использовать pyenv с python3.11, я тестировал только на нём. Внутри virtualenv выполните:
+
+``` shell
+pip install '/opt/mqtt/[test]'
+pre-commit install-hooks
+```
+
+Запуск тестов:
+
+``` shell
+pytest  # параметры он прочитает из pyproject.toml
+```
+
+Запуск линтера:
+
+``` shell
+pylint  # параметры он прочитает из pyproject.toml
+```
+
+## Поддерживаемые устройства
+
+- термостат Lytko 101
+- рекуператоры Vakio Base Smart
+- светильники Yeelink
+
+## Почему не Home Assistant?
+
+- Хотелось поразвлекаться с asyncio и сделать чудо-монолит
+- Хотелось понимать, как управляются устройства под капотом
+- У меня своеобразные хотелки в вопросе приоритета управления устройствами через физические кнопки
+- Хотелось иметь максимально простой формат конфиг-файла, причём один на все устройства
+- Оно потребляет всего 20мб оперативной памяти, разве не стоило велосипедов?
+
+## Архитектура
+
+В **одном потоке** уживаются **несколько** вечных асинхронных **тасок**. Это как треды/потоки, только задачи в терминологии asyncio.  За счёт того что я не строю хайлоад - они прекрасно уживаются и имеют **общее состояние**.  Скорее всего **есть баги конкурентности**, но ничего страшного от них не случится.
+
+Таски:
+
+1. **schedule** - расписание, эдакий cron для управления устройством, но с учётом его текущего состояния - лишние события, которые ничего не изменят, посылаться не будут.
+2. **feedback** - построение изначального состояния устройств за счёт получения его от брокера при подписке на топики + обработка действий с устройством мимо этой системы - через пульты и кнопки, ручками. Ручные действия имеют приоритет над расписанием в течение 4 часов.
+
+В целом проект придерживается **минимализма**. Небольшой файл в 40 строк - лучше, чем дополнительная зависимость на 1мб.
+
+**Персистентного состояния** нет, если демон был перезапущен - он потеряет информацию о ручных действиях. Можно было бы держать эти словари (`devices.base.BaseClient.block`) в sqlite, postgresql или redis, но это кажется излишним усложнением.
+
+## План развития
+
+- [x] Оформить код как **библиотеку**, перенести `automator.py` внутрь неё. Это позволит стороннему пользователю установить её из pypi, импортировать `from $libname.automator import Automator`, `from $libname.devices.base import BaseClient`, реализовать клиент к **своему устройству** и добавить его в `Automator.client_map` между инициализацией и запуском.
+- [ ] В будущем хочу добавить простенький **веб-интерфейс** на aiohttp + jinja2 (в качестве третьей вечной таски), через который можно будет управлять устройствами.
+- [ ] Дописать тесты к [движку правил](mqtt_automator/config/parser.py).
+
+## Происхождение
+
+Изначально форк https://github.com/roppert/mosquitto-python-example.git, но от него не осталось почти ничего.

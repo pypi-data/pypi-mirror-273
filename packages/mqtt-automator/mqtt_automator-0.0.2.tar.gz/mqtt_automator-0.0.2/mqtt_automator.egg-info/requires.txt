@@ -1,0 +1,8 @@
+PyYAML~=6.0.1
+aiomqtt~=2.1.0
+paho-mqtt~=2.1.0
+
+[test]
+pre-commit
+pytest
+pylint
