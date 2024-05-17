@@ -1,0 +1,14 @@
+roche_datachapter_lib/__domain__.py,sha256=MGNobxrFmBTiCb-vkgZOwF2NK8liK9OoRzBuXH1Lsms,6909
+roche_datachapter_lib/__init__.py,sha256=dHL14VoywjK8RxRYUQ6vNL7oIs3iwZJWoZYxFwdX-W8,41
+roche_datachapter_lib/data_transformer.py,sha256=ur9fQINmCCSHHaCwgkgV5rtl-anfpdVaXOwWuXsa-88,3949
+roche_datachapter_lib/db_config.py,sha256=fXdObXndI8sXoHZ5qOIYsnSZExLnm3sH-sNw41yxq3w,7402
+roche_datachapter_lib/google_services.py,sha256=BuJWYH9_umLJe4DXfDRCW4Jte-pk4MlB5p5S3Lmuzvg,10456
+roche_datachapter_lib/google_services_enums.py,sha256=4lyYPr-RWzDMToM9tpItivRCk3sznoWNBKwmIISYs34,463
+roche_datachapter_lib/job_manager.py,sha256=pJPGfPvUipjaZ0mgXXGMp42smXXJtZoxPCLPy4XPNzU,4389
+roche_datachapter_lib/logger.py,sha256=L6Pel3vPtsKJB7faTE-jPuV_Yw_wudaI9Z_5_PteULc,4061
+roche_datachapter_lib/query_manager.py,sha256=1xZwBp1g3X46-sTFhF11rEOWXgrfemtNKXofOtT99vE,1171
+roche_datachapter_lib/result_type.py,sha256=31hvhImSCUtLu3v7lQore20vIwm3OSrz1uz8HOQy0ko,220
+roche_datachapter_lib-0.0.40.dist-info/METADATA,sha256=5ElHfbtuV_5_5mQmwCK6HlYjEfZjZbM55xlr4VUUkzQ,1774
+roche_datachapter_lib-0.0.40.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+roche_datachapter_lib-0.0.40.dist-info/licenses/LICENSE,sha256=gKrM2JuiKs-eyKSzlB-YIhvfYdyVtGEutMteJvCiWxQ,1091
+roche_datachapter_lib-0.0.40.dist-info/RECORD,,
