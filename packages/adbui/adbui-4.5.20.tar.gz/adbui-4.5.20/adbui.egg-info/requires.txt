@@ -1,0 +1,4 @@
+lxml
+requests
+func_timeout
+tencentcloud-sdk-python>=3.0.0
