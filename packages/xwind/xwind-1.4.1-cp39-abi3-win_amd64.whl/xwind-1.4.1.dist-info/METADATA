@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: xwind
+Version: 1.4.1
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Dist: pandas[computation,excel] >=2.0
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: simplekml
+Requires-Dist: pyproj
+Requires-Dist: deprecated
+Requires-Dist: chardet
+Requires-Dist: bottleneck ; extra == 'performance'
+Requires-Dist: numexpr ; extra == 'performance'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: ipykernel ; extra == 'test'
+Provides-Extra: performance
+Provides-Extra: test
+Summary: 风资源工具基础库
+Author-email: HuQin <hu578344563@163.com>
+Maintainer: xwind contributors
+License: BSD-3-Clause
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+本项目为风资源代码工具提供基础能力  
+
+1. 风资源评估标准中的风频、湍流、风向等工具
+2. 地理信息系统中的经纬度、GCJ02等工具、制作kmz
+3. 威布尔分布
+4. WT前处理、后处理
+
+# V1.4.1
+- 发布日期2023-12-14
+- 依赖项优化，减少依赖项，设置extra依赖，可以通过pip install  xwind[performance]安装
