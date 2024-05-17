@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+torch
+gymnasium[all]==0.29.1
+onnxruntime
+matplotlib
+
+[mujoco]
+mujoco-py
