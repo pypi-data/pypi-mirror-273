@@ -1,0 +1,16 @@
+vdg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vdg/core.py,sha256=58V_wpe-2gDq9X7kZYoiYxt-jg6e_ibw4d_8ZKWYcjc,3398
+vdg/main.py,sha256=aqIqNN-Pb8gv2DWjSpkUmqLvzc83a8wLjBwzGW4rzTg,1110
+vdg/utils.py,sha256=Yfk8RWOL7DmUIpUsvTM2o4zb3tHaf4wArTp0Mb0vgrk,1804
+vdg/yaml_preprocess.py,sha256=RszXPOp8psaKI5LGfgLe_ugMuL-EAf9D0Zr6sma9pc8,1186
+vdg/templates/html.template,sha256=05fkz5UL7XPF_JFXg9CSjEvEqNewf_MIFwNZ8ryP_vM,4475
+vdg/templates/main.template,sha256=k0RZ5wyiIIpQ6uKshpdWA04cjSQV_0baFQg6XOX15RA,2008
+vdg/templates/old_page_upd.template,sha256=WRdPZ-m4yUdZK92lTaN4QWWJXriqtPgnJLj4j_GjTMc,416
+vdg/templates/titles.template,sha256=8iGjcBDY6-sa1GNma3CaOB8PuIzN072p2f5_ykrh920,595
+vdg/templates/yaml.template,sha256=jjxiROLjGe_mIHrOMFhsu7hdLnJQTESRe9mQR91bFSU,3271
+vdg-0.2.4.dist-info/LICENSE,sha256=54oHGIhclHmbWtFU3Lo-8QxMOIpnVosyKgUl6628xrM,1065
+vdg-0.2.4.dist-info/METADATA,sha256=q-wNGYVPz8CAYpQPYp3a8oecF1a9d-V44hxsz33oJIU,1610
+vdg-0.2.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vdg-0.2.4.dist-info/entry_points.txt,sha256=tbdPOdjI8pKmNnBY9_geKjap190oIY-TDo5CBDhMchw,38
+vdg-0.2.4.dist-info/top_level.txt,sha256=-TOEpx9cIUHGDArsb3b_nxrzICRVhmpKWzl_BYaqKeU,4
+vdg-0.2.4.dist-info/RECORD,,
