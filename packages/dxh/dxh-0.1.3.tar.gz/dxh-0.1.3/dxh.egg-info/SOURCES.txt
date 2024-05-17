@@ -1,0 +1,10 @@
+README.md
+setup.py
+dxh/__init__.py
+dxh/__version__.py
+dxh/obj_converter.py
+dxh.egg-info/PKG-INFO
+dxh.egg-info/SOURCES.txt
+dxh.egg-info/dependency_links.txt
+dxh.egg-info/requires.txt
+dxh.egg-info/top_level.txt
