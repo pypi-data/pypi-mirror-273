@@ -1,0 +1,16 @@
+appmode_jupyterlab/__init__.py,sha256=sfsItu5OX8B1mF1fZ0naJCw762hLrBB4RO20r9YTf6U,594
+appmode_jupyterlab/_version.py,sha256=Y5SHlIXuXAzscWObrzxD1FAWP3sbr0Gm3wiDKpFPtvs,171
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/package.json,sha256=E9rQcUhrtzQGrmmU0OX4EIP_Pz0O7ZhdZgfdxblG3YA,6130
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/schemas/@osscar/appmode-jupyterlab/package.json.orig,sha256=mWR_l4ef4q4AJiFf7wR9U0cNZrtKocMuzv-T6gwtfAw,5988
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/schemas/@osscar/appmode-jupyterlab/plugin.json,sha256=Y4zz-mSNgoWL7DRukMXCWV9KxS1CeQA7KlB7u4IRWWs,189
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/static/266.6fcbbb1c8abde8870a5f.js,sha256=b8u7HIq96IcKX4GMw4mmwgU77CkgQZZZHkotWf39Fw4,11907
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/static/631.8dd6ec624e0898917cc1.js,sha256=jdbsYk4ImJF8wddDIw3xex2Fb4eoXXG86yjEwskvqa4,7688
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/static/remoteEntry.96fb447ba066217ed59a.js,sha256=lvtEe6BmIX7VmsFNgG--3zQCQs8Ut3L_tQCF8yETEMw,7544
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/static/style.js,sha256=FE21vXwD7H_oP3ExH342Cns15bKwTpSNks6mwOYNCeU,169
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/labextensions/@osscar/appmode-jupyterlab/install.json,sha256=3dqXLoErcriw7rhoPgATVLC4wfToP2HYqVbyRsKIHyg,197
+appmode_jupyterlab-1.0.0.data/data/share/jupyter/lab/schemas/@jupyter-appmode/jupyterlab-preview/plugin.json,sha256=Y4zz-mSNgoWL7DRukMXCWV9KxS1CeQA7KlB7u4IRWWs,189
+appmode_jupyterlab-1.0.0.dist-info/METADATA,sha256=0wYJ-bW1APdeeiwGv9rczeExYTB5PC-Iin8hiU__Zhs,4754
+appmode_jupyterlab-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+appmode_jupyterlab-1.0.0.dist-info/licenses/LICENSE,sha256=xsNwcEECdw49nGR2rMKLJVrrinXYksy0TVx2fM-B77I,1506
+appmode_jupyterlab-1.0.0.dist-info/RECORD,,

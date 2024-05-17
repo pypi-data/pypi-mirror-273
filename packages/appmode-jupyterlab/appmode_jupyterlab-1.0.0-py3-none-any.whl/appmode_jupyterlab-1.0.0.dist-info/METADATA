@@ -1,0 +1,123 @@
+Metadata-Version: 2.3
+Name: appmode-jupyterlab
+Version: 1.0.0
+Dynamic: Keywords
+Summary: A JupyterLab extension for Appmode.
+Project-URL: Homepage, https://github.com/osscar-org/appmode-jupyterlab
+Project-URL: Bug Tracker, https://github.com/osscar-org/appmode-jupyterlab/issues
+Project-URL: Repository, https://github.com/osscar-org/appmode-jupyterlab.git
+Author: Dou Du
+License: BSD 3-Clause License
+        
+        Copyright (c) 2020, Dou Du All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: appmode>=0.10
+Requires-Dist: jupyterlab>=4
+Description-Content-Type: text/markdown
+
+# appmode-jupyterlab
+
+![Github Actions Status](https://github.com/osscar-org/appmode-jupyterlab/workflows/Build/badge.svg)
+
+A JupyterLab extension for Appmode (https://github.com/oschuett/appmode). 
+This extension is created from the modification of the voila JupyterLab extension code
+(https://github.com/voila-dashboards/voila).
+
+
+
+## Requirements
+
+* JupyterLab >= 4.0
+
+## Install
+
+```bash
+pip install appmode-jupyterlab
+```
+
+## Contributing
+
+### Install
+
+The `jlpm` command is JupyterLab's pinned version of
+[yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
+`yarn` or `npm` in lieu of `jlpm` below.
+
+```bash
+# Clone the repo to your local environment
+# Move to appmode-jupyterlab directory
+
+# Install dependencies
+jlpm
+# Build Typescript source
+jlpm build
+# Link your development version of the extension with JupyterLab
+jupyter labextension install .
+# Rebuild Typescript source after making changes
+jlpm build
+# Rebuild JupyterLab after making any changes
+jupyter lab build
+```
+
+You can watch the source directory and run JupyterLab in watch mode to watch for changes in the extension's source and automatically rebuild the extension and application.
+
+```bash
+# Watch the source directory in another terminal tab
+jlpm watch
+# Run jupyterlab in watch mode in one terminal tab
+jupyter lab --watch
+```
+
+Now every change will be built locally and bundled into JupyterLab. Be sure to refresh your browser page after saving file changes to reload the extension (note: you'll need to wait for webpack to finish, which can take 10s+ at times).
+
+### Uninstall
+
+```bash
+
+jupyter labextension uninstall @osscar/appmode-jupyterlab
+```
+
+## Acknowledgements
+
+We acknowledge support from the EPFL Open Science Fund via the [OSSCAR](http://www.osscar.org) project.
+
+<img src='https://www.osscar.org/_images/logos.png' width='700'>
