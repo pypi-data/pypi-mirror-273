@@ -1,0 +1,4 @@
+rich
+lxml
+urllib3
+pycryptodome
