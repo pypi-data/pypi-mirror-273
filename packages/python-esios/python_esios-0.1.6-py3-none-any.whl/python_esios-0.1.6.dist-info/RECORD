@@ -1,0 +1,12 @@
+esios/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esios/api_client.py,sha256=PIYGY0kJE-7ZERL_Zr20KgpdwmrV5DfxYp3D40ws74g,855
+esios/endpoints/__init__.py,sha256=uVbuoeoRAd0Haq62wWNY7ZY6ktOCnoQXUmD5lMjkqhQ,103
+esios/endpoints/archives/__init__.py,sha256=X7tLvEFUCAc9fiIbvZqvT8AYHwFZC5l2AZPdXu6IZds,2300
+esios/endpoints/archives/utils.py,sha256=6WX2VBY8FzwFrikBd9_CGIcbOZk4Cum8-XFL0VFs818,1305
+esios/endpoints/archives/preprocessing/__init__.py,sha256=FDm48Mn4r6lDdi9d3Y0X387HWpc4Dow9dlxA9berXUs,398
+esios/endpoints/indicators/__init__.py,sha256=j4010Bq0J8FM6S_ralOXUgIae4bCvZJdOIkrAYsPCss,5093
+python_esios-0.1.6.dist-info/LICENSE,sha256=HNz79CRjUwPnqpeTkHwoxKQTulV-wU4TUd9iiYnXHyY,1070
+python_esios-0.1.6.dist-info/METADATA,sha256=o2ONlnc5BnpC-iznwA8s6Oo6i4cixg8WeaDIEbz7KZk,995
+python_esios-0.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+python_esios-0.1.6.dist-info/top_level.txt,sha256=73ob1QLIeSFvhLPrdMM7880xfv9FfWLkq2ZlxRRA9vs,6
+python_esios-0.1.6.dist-info/RECORD,,
