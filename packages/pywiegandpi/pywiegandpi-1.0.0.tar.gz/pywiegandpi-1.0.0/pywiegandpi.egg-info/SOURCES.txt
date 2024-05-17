@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pywiegandpi/__init__.py
+pywiegandpi.egg-info/PKG-INFO
+pywiegandpi.egg-info/SOURCES.txt
+pywiegandpi.egg-info/dependency_links.txt
+pywiegandpi.egg-info/requires.txt
+pywiegandpi.egg-info/top_level.txt

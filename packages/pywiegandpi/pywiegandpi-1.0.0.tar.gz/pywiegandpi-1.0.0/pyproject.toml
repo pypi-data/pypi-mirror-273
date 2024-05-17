@@ -1,0 +1,21 @@
+[project]
+name = "pywiegandpi"
+version = "1.0.0"
+dependencies = [
+    "pigpio >= 1.78",
+]
+authors = [
+  { name="Jaimyn Mayer", email="hello@jaimyn.dev" },
+]
+description = "Automatically decode Wiegand data from Raspberry Pi GPIO pins."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/membermatters/pywiegandpi"
+Issues = "https://github.com/membermatters/pywiegandpi/issues"
