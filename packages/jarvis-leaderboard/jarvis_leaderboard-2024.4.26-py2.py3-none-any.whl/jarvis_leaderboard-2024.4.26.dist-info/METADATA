@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: jarvis_leaderboard
+Version: 2024.4.26
+Summary: jarvis_leaderboard
+Home-page: https://github.com/knc6/jarvis_leaderboard
+Author: Kamal Choudhary
+Author-email: kamal.choudhary@nist.gov
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: numpy >=1.19.5
+Requires-Dist: scipy >=1.6.3
+Requires-Dist: jarvis-tools >=2021.07.19
+Requires-Dist: scikit-learn >=0.24.1
+Requires-Dist: pandas >=1.2.4
+Requires-Dist: rouge >=1.0.1
+Requires-Dist: mkdocs >=1.5.2
+Requires-Dist: mkdocs-material >=9.0.5
+Requires-Dist: pydantic >=2.3.0
+Requires-Dist: markdown >=3.2.1
+Requires-Dist: plotly
+Requires-Dist: absl-py ==1.4.0
+Requires-Dist: nltk ==3.8.1
+
+![Leaderboard actions](https://github.com/usnistgov/jarvis_leaderboard/actions/workflows/test_build.yml/badge.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/usnistgov/jarvis_leaderboard)
+[![name](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/Upload_benchmark_to_jarvis_leaderboard.ipynb)
+[![name](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/Upload_benchmark_to_jarvis_leaderboard.ipynb](https://colab.research.google.com/github/knc6/jarvis-tools-notebooks/blob/master/jarvis-tools-notebooks/alignn_jarvis_leaderboard.ipynb))
+[![Downloads](https://pepy.tech/badge/jarvis_leaderboard)](https://pepy.tech/project/jarvis_leaderboard)
+[![DOI](https://zenodo.org/badge/514340921.svg)](https://zenodo.org/badge/latestdoi/514340921)
+
+
+
+# JARVIS-Leaderboard:
+
+This project provides benchmark-performances of various methods for materials science applications using the datasets available in JARVIS-Tools databases. Some of the methods are: Artificial Intelligence (AI), Electronic Structure (ES), Force-field (FF), Qunatum Computation (QC) and Experiments (EXP). There are a variety of properties included in the benchmark. In addition to prediction results, we attempt to capture the underlyig software, hardware and instrumental frameworks to enhance reproducibility. This project is a part of the NIST-JARVIS infrastructure.
+
+Website: https://pages.nist.gov/jarvis_leaderboard/
+
