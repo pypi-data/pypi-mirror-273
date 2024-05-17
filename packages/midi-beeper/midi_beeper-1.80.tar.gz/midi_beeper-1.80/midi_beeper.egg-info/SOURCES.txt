@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+midi_beeper/__init__.py
+midi_beeper/__main__.py
+midi_beeper.egg-info/PKG-INFO
+midi_beeper.egg-info/SOURCES.txt
+midi_beeper.egg-info/dependency_links.txt
+midi_beeper.egg-info/entry_points.txt
+midi_beeper.egg-info/top_level.txt
