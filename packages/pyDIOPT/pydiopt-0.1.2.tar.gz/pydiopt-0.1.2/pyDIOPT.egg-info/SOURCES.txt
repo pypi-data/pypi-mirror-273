@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pyDIOPT/__init__.py
+pyDIOPT/__version__.py
+pyDIOPT/fetch.py
+pyDIOPT/species.py
+pyDIOPT/utils.py
+pyDIOPT.egg-info/PKG-INFO
+pyDIOPT.egg-info/SOURCES.txt
+pyDIOPT.egg-info/dependency_links.txt
+pyDIOPT.egg-info/not-zip-safe
+pyDIOPT.egg-info/requires.txt
+pyDIOPT.egg-info/top_level.txt
+tests/test_fetch.py
+tests/test_species.py
