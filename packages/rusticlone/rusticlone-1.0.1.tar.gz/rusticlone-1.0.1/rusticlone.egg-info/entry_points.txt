@@ -1,0 +1,2 @@
+[console_scripts]
+rusticlone = rusticlone.cli:main
