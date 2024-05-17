@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: asynctradier
+Version: 0.0.1b13
+Summary: Async api wrapper for [Tradier](https://documentation.tradier.com/).
+Author: Jiakuan Li
+Author-email: jiakuan.li.cs@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: strenum (>=0.4.15,<0.5.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Description-Content-Type: text/markdown
+
+# asynctradier
+
+[![codecov](https://codecov.io/gh/jiak94/asynctradier/graph/badge.svg?token=T66WaJLNDd)](https://codecov.io/gh/jiak94/asynctradier)
+[![PyPI version](https://badge.fury.io/py/asynctradier.svg)](https://badge.fury.io/py/asynctradier)
+![Test](https://github.com/jiak94/asynctradier/actions/workflows/run_test.yaml/badge.svg)
+[![Documentation Status](https://readthedocs.org/projects/asynctradier/badge/?version=latest)](https://asynctradier.readthedocs.io/en/latest/?badge=latest)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/asynctradier)
+
+Async api wrapper for [Tradier](https://documentation.tradier.com/).
+
+This is _NOT_ an official package of Tradier.
+
+## Install
+
+`pip install asynctradier`
+
+if your are using poetry
+
+`poetry add asynctradier`
+
+## Documentation
+
+[Read The Doc](https://asynctradier.readthedocs.io/en/latest/)
+
+## Supported API
+
+### Account
+
+:white_check_mark: Get User Profile
+
+:white_check_mark: Get Balances
+
+:white_check_mark: Get Positions
+
+:white_check_mark: Get History
+
+:white_check_mark: Get Gain/Loss
+
+:white_check_mark: Get Orders
+
+:white_check_mark: Get an Order
+
+### Trading
+
+:white_check_mark: Modify Order
+
+:white_check_mark: Cancel Order
+
+:white_check_mark: Place Equity Order
+
+:white_check_mark: Place Option Order
+
+:white_check_mark: Place Multileg Order
+
+:white_check_mark: Place Combo Order
+
+:white_square_button: Place OTO Order
+
+:white_square_button: Place OCO Order
+
+:white_square_button: Place OTOCO Order
+
+### Market Data
+
+:white_check_mark: Get Quotes
+
+:white_check_mark: Get Option Chains
+
+:white_check_mark: Get Option Strikes
+
+:white_check_mark: Get Option Expirations
+
+:white_check_mark: Lookup Option Symbols
+
+:white_check_mark: Get Historical Quotes
+
+:white_check_mark: Get Time and Sales
+
+:white_check_mark: Get ETB Securities
+
+:white_square_button: Get Clock
+
+:white_check_mark: Get Calendar
+
+:white_check_mark: Search Companies
+
+:white_check_mark: Lookup Symbol
+
+### Streaming
+
+:white_check_mark: Market WebSocket
+
+:white_check_mark: Account WebSocket
+
