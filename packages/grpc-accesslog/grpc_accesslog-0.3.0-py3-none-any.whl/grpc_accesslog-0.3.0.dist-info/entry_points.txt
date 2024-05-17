@@ -1,0 +1,3 @@
+[console_scripts]
+grpc-accesslog=grpc_accesslog.__main__:main
+
