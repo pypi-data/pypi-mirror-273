@@ -1,0 +1,9 @@
+README.md
+README.py
+pickled.py
+setup.py
+templated_setup.py
+plsp.egg-info/PKG-INFO
+plsp.egg-info/SOURCES.txt
+plsp.egg-info/dependency_links.txt
+plsp.egg-info/top_level.txt
