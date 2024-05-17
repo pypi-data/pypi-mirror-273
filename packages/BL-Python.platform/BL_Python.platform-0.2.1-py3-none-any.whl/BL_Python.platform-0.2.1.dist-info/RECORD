@@ -1,0 +1,14 @@
+BL_Python/platform/__init__.py,sha256=bcDAc5leS6J2DXeOMwXgfpz7CdixAgF2qhxoCcw2ViE,27
+BL_Python/platform/dependency_injection.py,sha256=6x-wKJsl_ugPnyLvbnE3vN8pvaiuAln46Qb_c0cP2uI,2538
+BL_Python/platform/feature_flag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BL_Python/platform/feature_flag/db_feature_flag_router.py,sha256=ehPxs2cpg95R0lnnilBixvrmwL14To31eEISF5RdOvg,4605
+BL_Python/platform/feature_flag/feature_flag_router.py,sha256=8i0rNJ4R0crX2RyhDRuB4a-FS5XffOW3KiJvKB6wPmI,2186
+BL_Python/platform/identity/__init__.py,sha256=_WnVFnD51Pwt5Qm50gZhzlT1vJWDJJJOPgyYYLs3Zqk,4237
+BL_Python/platform/identity/user_loader.py,sha256=Yoq29oRAI7sMwh0uRO6sN9vfKWj5ABW0mFwjZn9sINc,6942
+test/unit/feature_flags/test_db_feature_flag_router.py,sha256=tslmzcR-5Wxob1mcWF6HYIwiWqmMmAvEuJe6eb4gNBw,8577
+test/unit/identity/test_loader.py,sha256=6iqwjI8AbJwpDd6fy_ODSaxWBMLWYreZeGQdQRCBt3I,1131
+BL_Python.platform-0.2.1.dist-info/LICENSE.md,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+BL_Python.platform-0.2.1.dist-info/METADATA,sha256=3VGD3UU0jyvzTOpZm14TAGmBc33TiJBWGYycYYTgqb4,1437
+BL_Python.platform-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+BL_Python.platform-0.2.1.dist-info/top_level.txt,sha256=KMwegjDHCijOOzVHpIoLBo7FvB-whCAUCSOE-Z-o_60,15
+BL_Python.platform-0.2.1.dist-info/RECORD,,
