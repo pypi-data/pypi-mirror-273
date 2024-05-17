@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "buzz-client"
+version = "0.9.0"
+description = "A client for Buzz API"
+authors = ["Andrea Mistrali <andrea@mistrali.pw>"]
+license = "GPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+docopt-ng = "^0.9.0"
+scriptonite = "^1.0.3"
+requests = "^2.31.0"
+pyyaml = "^6.0.1"
+
+[tool.poetry.scripts]
+buzz = "buzz_client.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
