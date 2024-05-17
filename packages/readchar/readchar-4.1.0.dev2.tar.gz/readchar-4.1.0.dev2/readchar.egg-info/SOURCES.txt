@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+readchar/__init__.py
+readchar/_base_key.py
+readchar/_config.py
+readchar/_posix_key.py
+readchar/_posix_read.py
+readchar/_win_key.py
+readchar/_win_read.py
+readchar/key.py
+readchar/py.typed
+readchar.egg-info/PKG-INFO
+readchar.egg-info/SOURCES.txt
+readchar.egg-info/dependency_links.txt
+readchar.egg-info/top_level.txt
