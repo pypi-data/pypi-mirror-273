@@ -1,0 +1,13 @@
+proai/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+proai/__init__.py,sha256=vTTD8uZyI6tJsT5ojWM_BvG2NYZqca9AP_US0VHSDyQ,67
+proai/auth.py,sha256=mpO9qjBA45_uK7BvSDKwQjrzrv7lvCQBJGGc51ex9QU,2467
+proai/proai.py,sha256=hub63A1mudGBRworfdLBYrs21e52I2eeIMz_VVCM6JI,2433
+protai/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+protai/__init__.py,sha256=vTTD8uZyI6tJsT5ojWM_BvG2NYZqca9AP_US0VHSDyQ,67
+protai/auth.py,sha256=mpO9qjBA45_uK7BvSDKwQjrzrv7lvCQBJGGc51ex9QU,2467
+protai/protai.py,sha256=hub63A1mudGBRworfdLBYrs21e52I2eeIMz_VVCM6JI,2433
+protai-0.1.0.dist-info/METADATA,sha256=_y1Ludly4VkQeIvan-l8XcRUJLDA0y9Vc-reXsMIiTY,2673
+protai-0.1.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+protai-0.1.0.dist-info/entry_points.txt,sha256=eDas8vHDp0f22lOxZ6T-XKEiGAxqxiLZ3938-RF4rQM,46
+protai-0.1.0.dist-info/top_level.txt,sha256=-zQG3aFfH8_PHt9_S9b_qljxNVdcwpHdDKVQJErDk64,7
+protai-0.1.0.dist-info/RECORD,,
