@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+roamlinks-with-pdf = mkdocs_roamlinks_with_pdf_plugin.plugin:RoamLinksPlugin
