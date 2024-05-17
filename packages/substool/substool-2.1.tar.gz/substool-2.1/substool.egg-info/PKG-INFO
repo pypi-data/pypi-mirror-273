@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: substool
+Version: 2.1
+Summary: Tool to handle and fix subtitles general issues.
+Home-page: https://github.com/facundobatista/substool
+Author: Facundo Batista
+Author-email: facundo@taniquetil.com.ar
+License: Apace-v2
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE
+
+# substool
+
+Tool to handle and fix subtitles general issues.
+
+Main command is `check`, it does several checks on the subtitle file(s).
+
+- it decompress the given files and extract internal files if needed; otherwise just process the subtitle in any format
+
+- convert any encoding to utf-8
+
+- fixes phrases timings if they are clearly wrong (e.g. starting and finishing at the same time, or finishing before starting)
+
+- split parts if lines are too long or there are too many lines in the phrase
+
+- remove some spam
+
+Other commands:
+
+- `shift`: Shift times in a subtitles file
+
+- `rescale-params`: Rescale using parameters delta and speed
+
+- `rescale-points`: Rescale using two points in time
+
+- `rescale-mimic`: Rescale using a source file
+
+- `adjust`: Adjust all .srt times to what .idx presents
+
+

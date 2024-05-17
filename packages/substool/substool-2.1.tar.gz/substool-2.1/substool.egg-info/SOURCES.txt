@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+substool/__main__.py
+substool/command_check.py
+substool/commands_rest.py
+substool/helpers.py
+substool/main.py
+substool/parsers.py
+substool.egg-info/PKG-INFO
+substool.egg-info/SOURCES.txt
+substool.egg-info/dependency_links.txt
+substool.egg-info/entry_points.txt
+substool.egg-info/requires.txt
+substool.egg-info/top_level.txt
