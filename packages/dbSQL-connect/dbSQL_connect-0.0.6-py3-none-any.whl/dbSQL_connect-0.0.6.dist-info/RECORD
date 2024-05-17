@@ -1,0 +1,8 @@
+dbSQL_connect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbSQL_connect/_entry_points.py,sha256=sYkTBch6b7SRPMPE1oj045mrgqxkGjCYogHiB4wMD3g,5963
+dbSQL_connect/_imp.py,sha256=1DoVG81WT_h5eU8s798ENWGIzC_apfJA1lAYpH8yd2Q,10277
+dbSQL_connect/requires.py,sha256=g3sXCQTv8xdGCQGs_cS81IRbPgMZyqm3Iy5QV_KznOQ,36807
+dbSQL_connect-0.0.6.dist-info/METADATA,sha256=IL5GmfkmbmqPzSw1J6yFdzckjf8sxUer0IBWVbnTF-8,461
+dbSQL_connect-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dbSQL_connect-0.0.6.dist-info/top_level.txt,sha256=CoTNUrurMd4-7asM0v5LSWUqoFv76B0Fsg2vFBE4uqU,14
+dbSQL_connect-0.0.6.dist-info/RECORD,,
