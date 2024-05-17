@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+automasi_eub_pnup.egg-info/PKG-INFO
+automasi_eub_pnup.egg-info/SOURCES.txt
+automasi_eub_pnup.egg-info/dependency_links.txt
+automasi_eub_pnup.egg-info/top_level.txt
