@@ -1,0 +1,55 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: check-toml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/pdm-project/pdm
+    rev: 2.15.2
+    hooks:
+      - id: pdm-sync
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        stages: [push]
+        # REMOVE COMMENTARY IF IT DOESN'T WORK WITH .TOML FILES
+        # args: [--profile, black]
+
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        stages: [push]
+
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.3.1
+    hooks:
+      - id: autoflake
+        stages: [push]
+        # REMOVE COMMENTARY IF IT DOESN'T WORK WITH .TOML FILES
+        # args:
+        #   [
+        #     --in-place,
+        #     --remove-all-unused-imports,
+        #     --remove-duplicate-keys,
+        #     --remove-unused-variables
+        #   ]
+
+  # REMOVE COMMENTARY WHEN FLAKE8 UPDATES TO PYTHON 3.12.*
+  # - repo: https://github.com/PyCQA/flake8
+  #   rev: 7.0.0
+  #   hooks:
+  #     - id: flake8
+  #       stages: [push]
+
+  # REMOVE COMMENTARY WHEN MYPY UPDATES TO PYTHON 3.12.*
+  # - repo: https://github.com/pre-commit/mirrors-mypy
+  #   rev: v1.10.0
+  #   hooks:
+  #     - id: mypy
+  #       stages: [push]

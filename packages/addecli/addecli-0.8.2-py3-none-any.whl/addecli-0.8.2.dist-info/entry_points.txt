@@ -1,0 +1,3 @@
+[console_scripts]
+addecli = addecli.cli_commands:app
+
