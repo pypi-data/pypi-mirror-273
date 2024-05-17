@@ -1,0 +1,4 @@
+_README
+_pickled
+plsp
+templated_setup
