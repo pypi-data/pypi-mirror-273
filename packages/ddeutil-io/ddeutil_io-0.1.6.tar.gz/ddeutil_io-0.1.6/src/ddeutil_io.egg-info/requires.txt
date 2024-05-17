@@ -1,0 +1,5 @@
+ddeutil
+fmtutil
+pydantic==2.7.1
+deepdiff==7.0.1
+pyyaml==6.0.1
