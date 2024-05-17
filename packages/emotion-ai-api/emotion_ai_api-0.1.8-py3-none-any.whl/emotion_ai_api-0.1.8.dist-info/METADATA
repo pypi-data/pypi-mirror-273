@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: emotion_ai_api
+Version: 0.1.8
+Summary: A Python client for interfacing with Emotion AI API services.
+Home-page: https://api.emotion-ai.io
+Author: Wes Lagarde
+Author-email: weslagarde@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+pip install emotion_ai_api
+
+emotion_ai = EmotionAI(base_url="https://api.emotion-ai.io", api_key="YOUR_API_KEY")
+
+text = "This is the text to be analyzed."
+user_id = "USER_ID"
+
+response = emotion_ai.analyze_user_text(text, user_id)
+emotion_ai.pretty_print_response(response)
