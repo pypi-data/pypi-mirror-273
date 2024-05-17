@@ -1,0 +1,11 @@
+cifer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cifer/ai.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cifer/app.py,sha256=lRzt3y4X2lgm4B7v5gotF_ubpPIuMnK_JBlpyAi09ck,877
+cifer/circle.py,sha256=_M4E7Yp-rjBlfF8LkxHfy9RWcgz4AkVkCcp_UYY7YYU,70
+cifer/rectangle.py,sha256=tsFMLquwXq5_ofTBEOVllhI60yimhAP9Mi_aRydllRs,73
+cifer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cifer/tests/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cifer-0.0.1.dist-info/METADATA,sha256=-xq3LWnK3ZoUm8GQkup37gpcLutu3HdQjJugyBL_Y2o,392
+cifer-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cifer-0.0.1.dist-info/top_level.txt,sha256=Z97l6obJqnO_j5bK6bthGoGn5wfFuryVLc2SBhkkUMg,6
+cifer-0.0.1.dist-info/RECORD,,
