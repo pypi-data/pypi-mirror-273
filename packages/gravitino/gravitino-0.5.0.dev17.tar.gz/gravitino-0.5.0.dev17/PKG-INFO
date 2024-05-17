@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gravitino
+Version: 0.5.0.dev17
+Summary: Gravitino Python client
+Home-page: https://github.com/datastrato/gravitino
+Author: datastrato
+Author-email: support@datastrato.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: dataclasses-json
+Provides-Extra: dev
+Requires-Dist: requests; extra == "dev"
+Requires-Dist: dataclasses-json; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+Gravitino Python client
