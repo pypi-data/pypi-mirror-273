@@ -1,0 +1,16 @@
+vbimagetotext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vbimagetotext/__main__.py,sha256=6PwEKBDHvVOW0n0pFsKGxtqwHYi8veAV3XQ1s2pYcw8,55
+vbimagetotext/choice_option.py,sha256=0M4rnlTqZBvJPd9KNZ9bwp_b5PCKjLt5be-CMREiP2s,1236
+vbimagetotext/copyprompt.py,sha256=ZhjbhvqiU7a55lL59J4_SPBYbCoAuKyct_VATGH4cOs,1606
+vbimagetotext/functions.py,sha256=SY4cWcF8B0kl149SEwguYdHU_gwVe2suoVJ123frKOI,5696
+vbimagetotext/geminivision.py,sha256=PIG-DWoads6VgXV6uqeSQfuozWnwDyTd85u_gHEERzM,2800
+vbimagetotext/gptloop.py,sha256=oFa-MKuwpI14rWYyBFAPmYa5h5ai-d_ZP3tMUvP-MqI,2102
+vbimagetotext/gptvision.py,sha256=jdIjB0PZNyzNXy5c7WI-eooJNf-6luftMAXM1jlSmH4,2103
+vbimagetotext/main.py,sha256=cYp9QDrN2efOmZPNkLoF6MVemk3CnIf4mWna-ik0uKg,525
+vbimagetotext/prompts.py,sha256=dP7Vjl50flXIc2QUlwrnMvgXv4aRxVyeSxwQQUUkWnI,13786
+vbimagetotext/solution.py,sha256=8LUebenHEoCjCBpxFxX2iyobPggOnjgs60HqmZC7y5Y,1483
+vbimagetotext/token_cost_calculations.py,sha256=yYCx4juQtSRCYXofrpeB3ekSHc2qPM7wIXWMaayuRxc,4178
+vbimagetotext-0.1.31.dist-info/METADATA,sha256=qD3QoeMLWWWdAtc-HOKtF9FAhofSbq_ZBb6qwOwZNk8,727
+vbimagetotext-0.1.31.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vbimagetotext-0.1.31.dist-info/entry_points.txt,sha256=Hzlb2pystBZhOXANtNhQJjLidpzcJl1WUpXJANZRGzE,61
+vbimagetotext-0.1.31.dist-info/RECORD,,
