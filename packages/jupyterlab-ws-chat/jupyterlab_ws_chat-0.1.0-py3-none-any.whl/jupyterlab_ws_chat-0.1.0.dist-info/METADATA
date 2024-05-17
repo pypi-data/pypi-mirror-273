@@ -1,0 +1,163 @@
+Metadata-Version: 2.3
+Name: jupyterlab_ws_chat
+Version: 0.1.0
+Dynamic: Keywords
+Summary: A chat extension for Jupyterlab
+Project-URL: Homepage, https://github.com/jupyterlab/jupyter-chat
+Project-URL: Bug Tracker, https://github.com/jupyterlab/jupyter-chat/issues
+Project-URL: Repository, https://github.com/jupyterlab/jupyter-chat.git
+Author-email: Jupyter Development Team <jupyter@googlegroups.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Jupyter Development Team
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: deepmerge>=1.0
+Requires-Dist: jupyter-server<3,>=2.0.1
+Requires-Dist: jupyterlab~=4.0
+Requires-Dist: langchain
+Requires-Dist: traitlets>=5.0
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-jupyter[server]>=0.6.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# jupyterlab_ws_chat
+
+[![Github Actions Status](https://github.com/jupyterlab/jupyter-chat/workflows/Build/badge.svg)](https://github.com/jupyterlab/jupyter-chat/actions/workflows/build.yml)
+
+A chat extension for Jupyterlab
+
+This package is composed of a Python package named `jupyterlab_ws_chat`
+for the server side and a NPM package named `jupyterlab-ws-chat`
+
+![screenshot](screenshot.png 'WS chat extension')
+
+## Requirements
+
+- JupyterLab >= 4.0.0
+
+## Install
+
+To install the package, execute:
+
+```bash
+pip install jupyterlab_ws_chat
+```
+
+## Uninstall
+
+To remove the package, execute:
+
+```bash
+pip uninstall jupyterlab_ws_chat
+```
+
+## Contributing
+
+### Development install
+
+Note: You will need NodeJS to build the extension package.
+
+The `jlpm` command is JupyterLab's pinned version of
+[yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
+`yarn` or `npm` in lieu of `jlpm` below.
+
+```bash
+# Clone the repo to your local environment
+# Change directory to the jupyter-chat/jupyterlab-ws-chat directory
+# Install package in development mode
+pip install -e ".[test]"
+# Rebuild Typescript source after making changes
+jlpm build
+```
+
+By default, the `jlpm build` command generates the source maps for this package to make it easier to debug using the browser dev tools.
+
+### Development uninstall
+
+```bash
+pip uninstall jupyterlab_ws_chat
+```
+
+### Testing the package
+
+#### Server tests
+
+This extension is using [Pytest](https://docs.pytest.org/) for Python code testing.
+
+Install test dependencies (needed only once):
+
+```sh
+pip install -e ".[test]"
+```
+
+To execute them, run:
+
+```sh
+pytest -vv -r ap --cov jupyterlab_ws_chat
+```
+
+#### Frontend tests
+
+This extension is using [Jest](https://jestjs.io/) for JavaScript code testing.
+
+To execute them, execute:
+
+```sh
+jlpm
+jlpm test
+```
+
+#### Integration tests
+
+This extension uses [Playwright](https://playwright.dev/docs/intro) for the integration tests (aka user level tests).
+More precisely, the JupyterLab helper [Galata](https://github.com/jupyterlab/jupyterlab/tree/master/galata) is used to handle testing the extension in JupyterLab.
+
+More information are provided within the [ui-tests](./ui-tests/README.md) README.
+
+### Packaging the extension
+
+See [RELEASE](RELEASE.md)
