@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: labbench-toolkit
+Version: 0.0.4
+Summary: Toolkit for analysing data from the LabBench software for psychophysical and neuroscience experiments
+Project-URL: Homepage, https://github.com/Inventors-Way/labbench.toolkit
+Project-URL: Issues, https://github.com/Inventors-Way/labbench.toolkit/issues
+Author-email: Kristian Hennings <help@inventors.dk>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# LabBench Toolkit
+
+Toolkit for analysing data recorded with the LabBench software.
+
