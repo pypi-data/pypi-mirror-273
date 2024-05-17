@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+techsparx/__init__.py
+techsparx/techsparx.py
+techsparx.egg-info/PKG-INFO
+techsparx.egg-info/SOURCES.txt
+techsparx.egg-info/dependency_links.txt
+techsparx.egg-info/top_level.txt
