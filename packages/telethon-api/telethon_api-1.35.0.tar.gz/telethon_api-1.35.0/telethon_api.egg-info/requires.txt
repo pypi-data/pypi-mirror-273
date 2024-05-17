@@ -1,0 +1,6 @@
+pyaes
+rsa
+requests
+
+[cryptg]
+cryptg
