@@ -1,0 +1,11 @@
+burial_mounds/__init__.py,sha256=PeVzDx784aYM2UDgpJ1TrzXuBxDZIkPZ9DMu6UEHvfI,53
+burial_mounds/__main__.py,sha256=d8gYjc-8O1DsBmaPAJpqmeIG0ErafxM4icghqxe_ZrM,124
+burial_mounds/cli.py,sha256=ZfrbhcquNXwqR6GdXk0ON9CnRh7YHvRSWoeCMzSU7r8,45
+burial_mounds/finetune.py,sha256=0qX_2JiNXAhdOb5MpjgRmQUzWPja1LuOGn6RSDy0pBo,1299
+burial_mounds/hub.py,sha256=O5VyBcdFyLFEBnTGknmf_nqrZsv33AsIkIto20NyNQI,2157
+burial_mounds/preprocess_mounds.py,sha256=ivpfnlDreO7suC496O3abdX-1fSzErum9adO0Sj34zw,6057
+burial_mounds/preprocess_xview.py,sha256=ceofkfg8_K6-fdp9Cx-6qY9DZ_S4XMjvUmWVcgGuNMY,4114
+burial_mounds-0.1.1.dist-info/LICENSE,sha256=EsfKpDGzPJs8XaDY5e0sjrgcNBjDX_342Ia1COQ6q5A,1071
+burial_mounds-0.1.1.dist-info/METADATA,sha256=ntwvb0R-lPyEaFxBQOnTTZvWJIbLT0ZP1Kt7Fcm3Crg,1028
+burial_mounds-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+burial_mounds-0.1.1.dist-info/RECORD,,
