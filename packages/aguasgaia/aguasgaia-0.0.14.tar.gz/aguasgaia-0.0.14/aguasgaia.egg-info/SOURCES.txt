@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+./aguasgaia/__init__.py
+./aguasgaia/aguasgaia.py
+./aguasgaia/const.py
+./aguasgaia/models/__init__.py
+./aguasgaia/models/consumption.py
+./aguasgaia/models/invoice.py
+./tests/aguasgaia_test.py
+aguasgaia.egg-info/PKG-INFO
+aguasgaia.egg-info/SOURCES.txt
+aguasgaia.egg-info/dependency_links.txt
+aguasgaia.egg-info/requires.txt
+aguasgaia.egg-info/top_level.txt
