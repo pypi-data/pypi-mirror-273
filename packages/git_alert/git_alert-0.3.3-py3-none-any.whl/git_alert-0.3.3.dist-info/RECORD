@@ -1,0 +1,13 @@
+git_alert/__init__.py,sha256=mHkAyBujKwTcHrTvmCq_XN3nsOF4EGrrzRvcCCeg0iE,142
+git_alert/__main__.py,sha256=DPK3u1pkUxK4g5FZ5OGbf4gosbcdL75KHeowRlx5YJY,1341
+git_alert/argument_parser.py,sha256=u_4O6wUBAilKATvJzmMfJDZKPrNUpbFpUebciIBdqis,1348
+git_alert/configuration.py,sha256=yeW3u3des1NaCvGdHykWPHpqA9ctRinKFhixuZo3mrY,1619
+git_alert/display.py,sha256=hMMIskEh5C1KE3ut2EB8PFAzaZL3kmYkqBqSH5qSsLE,2098
+git_alert/repositories.py,sha256=gmp7fEBdhSiFSj3kOjP8bgDRvX8w2b_EALEkLF0bd7U,641
+git_alert/scripts/git_alert.py,sha256=UUTbpxzptfbn95pi9Y7CxSi_Sqv2imdA025m0nw2ZqE,1477
+git_alert/traverse.py,sha256=w58hO9CkrnL9SiEfX5B-uRGpUq8eWupYjCrdDUatxD0,1552
+git_alert-0.3.3.dist-info/LICENSE,sha256=EApLowFZuf2z3IPmhjGJORa8sE9Dnw_a28qxgrfbUPY,1077
+git_alert-0.3.3.dist-info/METADATA,sha256=ZCQ0GjfNsIattJ0-DeD65JyVT5ZB5NKbHPeH5D1jRK4,5431
+git_alert-0.3.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+git_alert-0.3.3.dist-info/entry_points.txt,sha256=aCRuUjWYjI3XVIzLjCEveUtK1IbVPTgE7_jsEMjZAuA,61
+git_alert-0.3.3.dist-info/RECORD,,
