@@ -1,0 +1,19 @@
+prefect<3.0.0,>=2.13.5
+docker>=6.1.1
+
+[dev]
+coverage
+interrogate
+mkdocs-gen-files
+mkdocs-material
+mkdocs
+mkdocstrings[python]
+mypy
+pillow
+pre-commit
+pytest-asyncio
+pytest
+pytest-xdist
+
+[dev:python_version < "3.8"]
+mock
