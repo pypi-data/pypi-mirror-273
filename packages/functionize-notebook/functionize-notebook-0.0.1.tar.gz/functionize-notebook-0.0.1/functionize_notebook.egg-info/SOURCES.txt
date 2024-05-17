@@ -1,0 +1,13 @@
+AUTHORS.md
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+setup.py
+functionize_notebook.egg-info/PKG-INFO
+functionize_notebook.egg-info/SOURCES.txt
+functionize_notebook.egg-info/dependency_links.txt
+functionize_notebook.egg-info/requires.txt
+functionize_notebook.egg-info/top_level.txt
+notebook_wrapper/__init__.py

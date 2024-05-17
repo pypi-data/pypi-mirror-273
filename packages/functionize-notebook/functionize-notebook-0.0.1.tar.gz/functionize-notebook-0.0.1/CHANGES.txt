@@ -1,0 +1,3 @@
+0.0.1
+=====
+- Wrap notebook to run as a function 
