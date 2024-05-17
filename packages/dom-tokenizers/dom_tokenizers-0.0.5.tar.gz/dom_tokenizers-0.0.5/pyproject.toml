@@ -1,0 +1,61 @@
+[project]
+name = "dom-tokenizers"
+version = "0.0.5"
+authors = [{ name = "Gary Benson" }]
+description = "DOM-aware tokenizers for 🤗 Hugging Face language models"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"  # match..case
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+dependencies = [
+    "python-magic",
+    "tokenizers",
+    "transformers",
+]
+
+[project.urls]
+Homepage = "https://github.com/gbenson/dom-tokenizers"
+#Source = "https://github.com/gbenson/dom-tokenizers"
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "datasets",
+    "flake8",
+    "pytest",
+    "pytest-cov",
+]
+train = [
+    "datasets",
+    "pillow",
+]
+
+[project.scripts]
+train-tokenizer = "dom_tokenizers.train:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--cov=dom_tokenizers"
+filterwarnings = [
+    "error",
+    "ignore:`resume_download` is deprecated:FutureWarning",
+]
