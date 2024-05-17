@@ -1,0 +1,11 @@
+metaflow_extensions/snowflake/plugins/constants.py,sha256=tvpCjYn8UF2pfk5N96rv_XDQYHFU1D560d6zIhTliQY,467
+metaflow_extensions/snowflake/plugins/exceptions.py,sha256=1imlXc8DNppeI1Z4suhDe7m7AlKZaQYGckwjHCjqK9c,1265
+metaflow_extensions/snowflake/plugins/mfextinit_snowflake.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metaflow_extensions/snowflake/plugins/snowflake.py,sha256=orObeJSRW1IYL4_U5SKM2UPrpq_BYxz1fRlyLpYe7ss,8152
+metaflow_extensions/snowflake/toplevel/__init__.py,sha256=734_26qpX54cr19iIdpgA-NCVEOd1WFu8GdHJpLhTzI,21
+metaflow_extensions/snowflake/toplevel/toplevel.py,sha256=O0dD_GXApa5N7iARfQtEhmvBiff_PxbCxIKNMf90_80,252
+metaflow_snowflake-0.0.1.dist-info/LICENSE,sha256=0cwFeJiqqJM1hz4Fl8575qK8C2bHbeiTFge1dND2ZUM,11348
+metaflow_snowflake-0.0.1.dist-info/METADATA,sha256=1xrBB2T_PTeNk4sfUv4XoqczQ4fetPlj_Yr3Mhcznms,217
+metaflow_snowflake-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+metaflow_snowflake-0.0.1.dist-info/top_level.txt,sha256=NwG0ukwjygtanDETyp_BUdtYtqIA_lOjzFFh1TsnxvI,20
+metaflow_snowflake-0.0.1.dist-info/RECORD,,
