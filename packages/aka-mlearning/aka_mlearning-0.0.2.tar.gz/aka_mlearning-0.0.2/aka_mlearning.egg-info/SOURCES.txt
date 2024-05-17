@@ -1,0 +1,9 @@
+README.md
+setup.py
+aka_MLearning/__init__.py
+aka_MLearning/aka_ML_finder.py
+aka_mlearning.egg-info/PKG-INFO
+aka_mlearning.egg-info/SOURCES.txt
+aka_mlearning.egg-info/dependency_links.txt
+aka_mlearning.egg-info/requires.txt
+aka_mlearning.egg-info/top_level.txt
