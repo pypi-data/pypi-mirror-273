@@ -1,0 +1,2 @@
+[console_scripts]
+mp4-to-jpg = mp4_to_jpg.script:main
