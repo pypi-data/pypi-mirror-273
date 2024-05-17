@@ -1,0 +1,7 @@
+LICENCE
+README.md
+pyproject.toml
+automated_ml_pipeline_framework_Aadit_Bhargava.egg-info/PKG-INFO
+automated_ml_pipeline_framework_Aadit_Bhargava.egg-info/SOURCES.txt
+automated_ml_pipeline_framework_Aadit_Bhargava.egg-info/dependency_links.txt
+automated_ml_pipeline_framework_Aadit_Bhargava.egg-info/top_level.txt

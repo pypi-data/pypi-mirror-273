@@ -1,0 +1,14 @@
+[project]
+name = "automated-ml-pipeline-framework_Aadit-Bhargava"
+version = "0.0.1"
+authors = [
+  { name="Aadit Bhargava", email="bhargavaaadit@gmail.com" },
+]
+description = "Framework for automated machine learning pipeline"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
