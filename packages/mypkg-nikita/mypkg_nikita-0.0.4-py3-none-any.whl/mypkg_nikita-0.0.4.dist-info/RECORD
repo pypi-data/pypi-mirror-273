@@ -1,0 +1,7 @@
+mypkg/__init__.py,sha256=Iosux-RcEvsVMma60yFDtTpspmxdSQtVlqck2fESXnc,46
+mypkg/states_info.py,sha256=W3y0DNcbgttcKtyMf3Rsc8aPNxpYbxjDC4VmuemzgJ0,378
+mypkg/subpackage/__init__.py,sha256=GQZvRnvbw6nut5k32N_KnWSCSXubCXyk69nE32li4S0,43
+mypkg_nikita-0.0.4.dist-info/METADATA,sha256=JJUMFPOvqCeqXhWOpHhrUW0wToJCZdWxEL3VpqnPLM8,764
+mypkg_nikita-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mypkg_nikita-0.0.4.dist-info/top_level.txt,sha256=Ui0aKppBqGQo0g4aG2GZRiRa1aYqNIiQ8WMKYxa2n2g,6
+mypkg_nikita-0.0.4.dist-info/RECORD,,
