@@ -1,0 +1,11 @@
+ebb_time_series/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ebb_time_series/constants.py,sha256=FADw5NaRhjFgcg-C3v7bqxiAUCujbIaJ_atMSmPqhxk,431
+ebb_time_series/data_schema.py,sha256=4_gzCRP0Zj9q08w-b0hZode-ZmYmBvF6e6M9W8SMImI,233
+ebb_time_series/event_parser_helpers.py,sha256=fpkdOQ2dT7vbZQ9-GY_FdWFMW_a3UBVvxNw4Bmo49Hk,1195
+ebb_time_series/exceptions.py,sha256=JugrZovhJEY5gIrRPwpdaPF5NPx--PGpnRrA0fDLrPY,305
+ebb_time_series/writers/aws_timestream_data_writer.py,sha256=4Po_webGCRWO_EGtcdqLWWHcMSR61NTmFpzBx0J-T1Y,10492
+ebb_time_series/writers/base_data_writer.py,sha256=EXly2IxVpDUzoFkCqHV82zGvnWfRcWOr4seSRH3tAJo,2110
+ebb_time_series-0.2.2.dist-info/LICENSE,sha256=W3P-jb93y5b_p_qe4kmfEFQdbUl9U5QYz03NO_F6xcI,1067
+ebb_time_series-0.2.2.dist-info/METADATA,sha256=RztgGrLG5CF4XUjg7FuV8S_JOiR63mgjWivn-e_8kZI,2791
+ebb_time_series-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ebb_time_series-0.2.2.dist-info/RECORD,,
