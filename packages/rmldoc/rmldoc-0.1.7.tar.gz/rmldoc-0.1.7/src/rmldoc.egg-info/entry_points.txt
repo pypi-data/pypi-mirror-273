@@ -1,0 +1,2 @@
+[console_scripts]
+rmldoc = rmldoc.__main__:main
