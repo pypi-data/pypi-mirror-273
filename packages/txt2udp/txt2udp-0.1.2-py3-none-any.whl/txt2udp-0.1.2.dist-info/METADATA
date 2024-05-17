@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: txt2udp
+Version: 0.1.2
+Summary: A simple tool for forwarding UDP datagrams through a text-only protocol/interface.
+Home-page: https://github.com/mirrorange/TXT2UDP
+Author: Orange
+Author-email: orange@icedeer.net
+License: Apache-2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: loguru
+Provides-Extra: all
+Requires-Dist: mitmproxy ; extra == 'all'
+Requires-Dist: typer ; extra == 'all'
+Provides-Extra: cli
+Requires-Dist: typer ; extra == 'cli'
+Provides-Extra: mitm
+Requires-Dist: mitmproxy ; extra == 'mitm'
+
+# TXT2UDP
+
+TXT2UDP 是一个简单的工具，用于通过文本协议/接口转发 UDP 数据报。
+
+TXT2UDP is a simple tool for forwarding UDP datagrams through a text-only protocol/interface.
+
+## 安装 Install
+
+使用以下命令安装 TXT2UDP：
+
+Install TXT2UDP using the following command:
+
+```sh
+pip install txt2udp
+```
+
+## 使用 Usage
+
+使用以下命令以默认配置启动 TXT2UDP：
+
+Start TXT2UDP with default configuration using the following command:
+
+```sh
+txt2udp
+```
+
+或者，您可以通过以下命令以命令行工具的方式使用 TXT2UDP：
+
+Alternatively, you can use TXT2UDP as a command line tool using the following command:
+
+```sh
+txt2udp-cli --help
+```
+
+## 配置 Configuration
+
+TXT2UDP 可通过环境变量进行配置，并将自动加载`.env`文件中的环境变量。
+
+TXT2UDP can be configured using environment variables, and environment variables in a `.env` file will be automatically loaded.
+
+以下是 TXT2UDP 支持的配置项：
+
+The following are the configuration options supported by TXT2UDP:
+
+```sh
+# 运行模式 Mode
+TXT2UDP_MODE=server # 服务端 Server
+#TXT2UDP_MODE=client # 客户端 Client
+
+# 主机和端口 Host and Port
+TXT2UDP_HOST=127.0.0.1 # Listen Host for Client, Connect Host for Server
+TXT2UDP_PORT=12345 # Listen Port for Client, Connect Port for Server
+
+# 插件及其参数 Plugins and their Arguments
+TXT2UDP_PLUGIN=txt2udp.plugins.stdio # Standard I/O Plugin
+#TXT2UDP_PLUGIN=txt2udp.plugins.mitm # MitmProxy Plugin
+#TXT2UDP_PLUGIN_ARGS="proxy_port=8081" # Arguments for Plugin
+
+# 日志配置 Logging Configuration
+TXT2UDP_LOG_DIR=logs # 日志目录 Logging Directory
+TXT2UDP_LOG_LEVEL=INFO # 日志级别 Logging Level
+```
+
+## 插件 Plugins
+
+目前 TXT2UDP 内置了以下插件：
+
+Currently, TXT2UDP has the following built-in plugins:
+
+- `txt2udp.plugins.stdio`：标准输入输出插件，用于在终端中输入和输出数据。Stdio plugin for input and output data in the terminal.
+
+- `txt2udp.plugins.mitm`：MitmProxy 插件，通过 MitmProxy 截取通过 Websocket 的终端连接。MitmProxy plugin for intercepting terminal connections via Websocket.
