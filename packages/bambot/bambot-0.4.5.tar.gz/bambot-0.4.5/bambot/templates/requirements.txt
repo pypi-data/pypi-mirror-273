@@ -1,0 +1,5 @@
+langchain
+flask
+flask-cors
+colorama
+python-dotenv
