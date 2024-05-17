@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: GroupDocs.Viewer
+Version: 24.5
+Summary: GroupDocs.Viewer for Python via .NET is a robust document viewer API that supports over 180 file types and enables developers to easily render files to various formats, such as PDF, HTML, JPG, or PNG.
+Home-page: https://products.groupdocs.com/viewer
+Author: GroupDocs
+License: Other/Proprietary License
+Keywords: viewer,view,file,render,api,pdf,docx,xlsx,pptx,html,png,word,excel,powerpoint,visio,opendocument,photoshop
+Platform: win_amd64
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Graphics :: Viewers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5,<3.12
+Description-Content-Type: text/markdown
+
+# File Viewer Python API
+
+[![banner](https://raw.githubusercontent.com/groupdocs/groupdocs.github.io/master/img/banners/groupdocs-viewer-python-net-banner.png)](https://releases.groupdocs.com/viewer/python-net/)
+
+[Product Page](https://products.groupdocs.com/viewer/python-net/) | [Docs](https://docs.groupdocs.com/viewer/python-net/) | [Demos](https://products.groupdocs.app/viewer/family) | [API Reference](https://references.groupdocs.com/viewer/) | [Blog](https://blog.groupdocs.com/category/viewer/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/viewer) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
+[GroupDocs.Viewer for Python via .NET](https://products.groupdocs.com/viewer/python-net/) is a powerful on-premise class library for rendering files into PDF, HTML or image formats. With this API, developers and applications are capable to convert / render files without relying on any other third-party software and services. With this API, you can seamlessly render a wide range of file types, including popular OpenDocument and Microsoft Office formats like DOCS, XLSX, and PPTX, as well as specialized CAD and graphic editor files like DWG, DXF, PSD, AI, and CDR.
+
+Without having to install any 3rd party component, you can use GroupDocs.Viewer to build different types applications. For example, GroupDocs, using its own APIs, developed a [free web application](https://products.groupdocs.app/viewer/pdf) that allows people to view their PDF documents online.
+
+>GroupDocs.Viewer for Python requires you to use python programming language. For Node.js, Java and .NET languages, we recommend you get [GroupDocs.Viewer for Node.js](https://products.groupdocs.com/viewer/nodejs-java/), [GroupDocs.Viewer for Java](https://products.groupdocs.com/viewer/java/) and [GroupDocs.Viewer for .NET](https://products.groupdocs.com/viewer/net/), respectively.
+
+## View API Features
+
+GroupDocs.Viewer for Python via .NET provides these popular features:
+- Rendering Documents
+  - Rendering to HTML
+  - Rendering to PNG or JPEG
+  - Rendering to PDF
+- Retrieving File Information
+  - File type, pages count, text with coordinates, etc.
+  - Text extraction
+  - Format specific info like - document printing restrictions for PDF, list of layers and layouts in a CAD document, list of folders contained in an Outlook data file etc.  
+- Processing attachments
+- Output transformation
+- Caching results
+
+
+## Supported File Formats
+
+With GroupDocs.Viewer for Python via .NET, developers and applications can view files of the following categories: 
+
+- CAD and 3D formats
+- Database formats
+- EBook formats
+- Microsoft Outlook and other Email formats
+- Image formats
+- Note-taking formats
+- Outlook data formats
+- PDF and Page Layout formats
+- Microsoft PowerPoint formats
+- Project Management formats
+- Microsoft Excel and other spreadsheet formats
+- Text and programming formats
+- Microsoft Visio formats
+- Web file formats
+- Microsoft Word formats
+
+## Platform Independence
+
+GroupDocs.Viewer for Python via .NET can be used to develop 32-bit and 64-bit applications for different operating systems (such as Windows, Linux and macOS) where Python 3.5 or later is installed. 
+
+## Get Started
+
+Ready to try GroupDocs.Viewer for Python via .NET?
+
+Fetch the package and install **GroupDocs.Viewer**. Run this command: `pip install groupdocs.viewer`
+
+If you already have **GroupDocs.Viewer** installed and want to get the latest version, 
+you have to run `pip install --upgrade groupdocs.viewer` instead. 
+
+Check out GroupDocs.Viewer for Python for .NET [documentation](http://docs.groupdocs.com/viewer/python-net/)).  
+
+## View DOCX as PDF file
+
+```py
+import groupdocs.viewer as gv
+import groupdocs.viewer.options as gvo
+
+# Instantiate a Viewer object and load a DOCX file
+with gv.Viewer("input.docx") as viewer:
+    pdf_options = gvo.PdfViewOptions("output.pdf")
+    # Save the DOCX file as PDF    
+    viewer.view(pdf_options)
+```
+
+## View DOCX as HTML file
+
+```py
+import groupdocs.viewer as gv
+import groupdocs.viewer.options as gvo
+
+# Instantiate a Viewer object and load a DOCX file
+with gv.Viewer("input.docx") as viewer:
+    html_options = gvo.HtmlViewOptions.for_embedded_resources("page_{0}.html")
+    # Save the DOCX file as HTML    
+    viewer.view(html_options)
+```
+
+## View DOCX as PNG file
+
+```py
+import groupdocs.viewer as gv
+import groupdocs.viewer.options as gvo
+
+# Instantiate a Viewer object and load a DOCX file
+with gv.Viewer("input.docx") as viewer:
+    png_options = gvo.PngViewOptions("page_{0}.png")
+    # Save the DOCX file as PNG    
+    viewer.view(png_options)
+```
+
+[Product Page](https://products.groupdocs.com/viewer/python-net/) | [Docs](https://docs.groupdocs.com/viewer/python-net/) | [Demos](https://products.groupdocs.app/viewer/family) | [API Reference](https://references.groupdocs.com/viewer/) | [Blog](https://blog.groupdocs.com/category/viewer/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/viewer) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
