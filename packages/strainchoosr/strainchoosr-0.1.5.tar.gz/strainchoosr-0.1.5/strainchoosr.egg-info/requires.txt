@@ -1,0 +1,3 @@
+pytest
+ete3
+PyQt5==5.15.10
