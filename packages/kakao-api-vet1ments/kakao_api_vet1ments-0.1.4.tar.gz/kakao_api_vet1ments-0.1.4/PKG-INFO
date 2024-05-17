@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kakao_api_vet1ments
+Version: 0.1.4
+Summary: 카카오 로그인 rest api
+Author: no hong seok
+Author-email: vet1ments@naver.com
+Maintainer: no hong seok
+Maintainer-email: vet1ments@naver.com
+License: MIT
+Project-URL: Repository, https://github.com/vet1ments/kakao_api
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# KAKAO API
+
+test
