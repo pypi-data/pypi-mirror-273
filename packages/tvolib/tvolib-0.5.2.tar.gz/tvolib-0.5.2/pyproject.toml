@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "tvolib"
+version = "0.5.2"
+description = "A personal collection of Python and IDL tools for research in Space Plasma Physics"
+authors = ["Tien Vo <tvo.work@proton.me>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+packages = [
+    { include = "tvolib", from = "src" }
+]
+repository = "https://github.com/tien-vo/tvolib"
+classifiers = [
+    "Programming Language :: Python",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+astropy = "^6.1.0"
+scipy = "^1.13.0"
+matplotlib = "^3.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
