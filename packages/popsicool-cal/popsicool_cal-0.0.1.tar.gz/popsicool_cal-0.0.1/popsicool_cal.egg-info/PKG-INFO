@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: popsicool-cal
+Version: 0.0.1
+Summary: Learning how to build a python package
+Home-page: 
+Author: Samson Akinola
+Author-email: popsicool1234@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a very simple calculator being used to learn how to build a python package
+
+Change Log
+==========
+
+0.0.1 (17/05/2024)
+-------------------
+- First Release

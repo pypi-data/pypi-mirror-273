@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+basic_cal/__init__.py
+popsicool_cal.egg-info/PKG-INFO
+popsicool_cal.egg-info/SOURCES.txt
+popsicool_cal.egg-info/dependency_links.txt
+popsicool_cal.egg-info/top_level.txt
