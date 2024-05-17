@@ -1,0 +1,12 @@
+django_markdowns/__init__.py,sha256=rOlghkG3TTBe6Iv4DzIzZ-rDmjmCnjHj85Vjzy4tH_c,1177
+django_markdowns/apps.py,sha256=FABbgKeQG5SI__9KuDQ3eGgb9_rAw4BtFB8_Jq79nw0,1002
+django_markdowns/extensions.py,sha256=XOPjcf8p8O8ak3DA_hPzNJA3ZvfiCtTwclX0RbkrXtI,5273
+django_markdowns/settings.py,sha256=QYH-G3NELSAeA1uW9Sf1kJ74_g2vRZhGezLNzcqAG5c,1384
+django_markdowns/tests.py,sha256=xEKcALLZrSWWoYPWxw5QhDNDyU_aSGq-0kWw7TRMFQM,1537
+django_markdowns/templatetags/__init__.py,sha256=GA709w5Iav5JqdUF6oJN6zNfcPuB4gU_bvpjYD8tfvk,812
+django_markdowns/templatetags/markdowns.py,sha256=jmLJa3yNRbZVV0330gkcF_vc5451opHFyEW0oroGkec,1399
+django_markdowns-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_markdowns-0.2.0.dist-info/METADATA,sha256=wGZwXLMlbgP_jc-nllqxOYf-EH3LXno7qho1Vd66vWU,1995
+django_markdowns-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_markdowns-0.2.0.dist-info/top_level.txt,sha256=16niRNqWoNy8B-WCtLhkyW8JfPJdy03RC6WU8v5ADlU,17
+django_markdowns-0.2.0.dist-info/RECORD,,
