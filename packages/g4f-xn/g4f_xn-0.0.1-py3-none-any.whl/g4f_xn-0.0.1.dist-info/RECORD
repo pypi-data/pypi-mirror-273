@@ -1,0 +1,10 @@
+g4f_xn/__init__.py,sha256=p6ht8seN-3iPexpYINJjlGAO2pTsjqCpld4h8Z7Amss,121
+g4f_xn/gpt.py,sha256=7rlWxJCNo-efvkt3AlTOXsFkWEMeAX2O3iO-vWY6XrY,1280
+g4f_xn/misc.py,sha256=FDtQj9wuhnCIKnuAOotW8MrnFH1L26PshgaGp7Wk2EY,352
+g4f_xn/output.py,sha256=Spymc3MF3VAPt2Eikno6v8dY0MO_K6ZX97z4uJxNSzI,805
+g4f_xn/test_providers.py,sha256=yVdLrYHtBTrE7YMKb5toTSIqT9mgsLCDowAqng4W31Y,3272
+g4f_xn-0.0.1.dist-info/LICENSE,sha256=N-gEs-yF1E2beQTLAQAs07eIlduwLGYVbd3hMkqa_vY,1083
+g4f_xn-0.0.1.dist-info/METADATA,sha256=qrzr5EevRGRy6qcDPHWj-MdzyYoGj8TT5cpf8Miz2ws,652
+g4f_xn-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+g4f_xn-0.0.1.dist-info/top_level.txt,sha256=R3QIc9m_4jmRts40kzDYqgSPN4msAEHDjaT2XNSemd4,7
+g4f_xn-0.0.1.dist-info/RECORD,,
