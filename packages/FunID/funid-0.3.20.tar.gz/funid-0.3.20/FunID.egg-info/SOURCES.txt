@@ -1,0 +1,7 @@
+README.md
+setup.py
+FunID.egg-info/PKG-INFO
+FunID.egg-info/SOURCES.txt
+FunID.egg-info/dependency_links.txt
+FunID.egg-info/requires.txt
+FunID.egg-info/top_level.txt

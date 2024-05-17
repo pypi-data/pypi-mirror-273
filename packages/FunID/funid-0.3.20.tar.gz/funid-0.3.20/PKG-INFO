@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: FunID
+Version: 0.3.20
+Summary: FunID is now FunVIP
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: FunVIP
+
+# FunID is now FunVIP
+
+This package has been renamed. Use `pip install FunVIP` instead.
+
+New package: https://pypi.org/project/FunVIP/
