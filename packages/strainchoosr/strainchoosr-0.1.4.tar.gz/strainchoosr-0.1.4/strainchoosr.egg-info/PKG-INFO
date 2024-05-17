@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: strainchoosr
+Version: 0.1.4
+Home-page: https://github.com/lowandrew/StrainChoosr
+Author: Andrew Low
+Author-email: andrew.low@canada.ca
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: ete3
+Requires-Dist: PyQt5==5.15.10
