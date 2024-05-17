@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+example_package_yeargun.egg-info/PKG-INFO
+example_package_yeargun.egg-info/SOURCES.txt
+example_package_yeargun.egg-info/dependency_links.txt
+example_package_yeargun.egg-info/top_level.txt
+json24/__init__.py
+json24/parser.py
+tests/test_parser.py
