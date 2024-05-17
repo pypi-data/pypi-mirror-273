@@ -1,0 +1,88 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Give me a sample email."}], "model": "gpt35", "frequency_penalty":
+      0.0, "function_call": {"name": "structural_response"}, "functions": [{"name":
+      "structural_response", "description": "Response to user in a structural way.",
+      "parameters": {"title": "Email", "type": "object", "properties": {"subject":
+      {"title": "Subject", "description": "the subject of email", "type": "string"},
+      "body": {"title": "Body", "description": "the body of email", "type": "string"}},
+      "required": ["subject", "body"]}}], "presence_penalty": 0.0, "temperature":
+      1.0, "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '674'
+      content-type:
+      - application/json
+      host:
+      - gstudio.openai.azure.com
+      user-agent:
+      - AzureOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://gstudio.openai.azure.com/openai/deployments/gpt35/chat/completions?api-version=2023-07-01-preview
+  response:
+    content: '{"choices":[{"content_filter_results":{},"finish_reason":"stop","index":0,"message":{"content":null,"function_call":{"arguments":"{\n  \"subject\":
+      \"Sample Email\",\n  \"body\": \"Dear [Recipient],\\n\\nI hope this email finds
+      you well. I wanted to reach out to discuss [topic]. [Provide more information
+      or context].\\n\\nI would appreciate it if we could schedule a meeting to further
+      explore this opportunity. Please let me know your availability and suggested
+      meeting times.\\n\\nThank you for your time and consideration. I look forward
+      to hearing from you soon.\\n\\nBest regards,\\n[Your Name]\"\n}","name":"structural_response"},"role":"assistant"}}],"created":1715589595,"id":"chatcmpl-9OLVrsQPLW7nyn0Y9jmcw9PN26mKA","model":"gpt-35-turbo-16k","object":"chat.completion","prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}],"system_fingerprint":null,"usage":{"completion_tokens":106,"prompt_tokens":82,"total_tokens":188}}
+
+      '
+    headers:
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Length:
+      - '1139'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:39:55 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      access-control-allow-origin:
+      - '*'
+      apim-request-id:
+      - dc2f4109-cda3-4b02-8080-562bd22451c4
+      azureml-model-session:
+      - turbo-0613-27f31441
+      x-accel-buffering:
+      - 'no'
+      x-content-type-options:
+      - nosniff
+      x-ms-client-request-id:
+      - dc2f4109-cda3-4b02-8080-562bd22451c4
+      x-ms-rai-invoked:
+      - 'true'
+      x-ms-region:
+      - East US
+      x-ratelimit-remaining-requests:
+      - '235'
+      x-ratelimit-remaining-tokens:
+      - '239868'
+      x-request-id:
+      - ba03cc8a-abfd-43ae-ba57-4bba84ae7c35
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

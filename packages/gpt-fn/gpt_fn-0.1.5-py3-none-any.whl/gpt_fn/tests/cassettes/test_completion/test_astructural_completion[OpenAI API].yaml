@@ -1,0 +1,112 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": "Give me a sample email."}], "model": "gpt-3.5-turbo-0613",
+      "frequency_penalty": 0.0, "presence_penalty": 0.0, "temperature": 1.0, "tool_choice":
+      {"type": "function", "function": {"name": "structural_response"}}, "tools":
+      [{"type": "function", "function": {"name": "structural_response", "description":
+      "Response to user in a structural way.", "parameters": {"title": "Email", "type":
+      "object", "properties": {"subject": {"title": "Subject", "description": "the
+      subject of email", "type": "string"}, "body": {"title": "Body", "description":
+      "the body of email", "type": "string"}}, "required": ["subject", "body"]}}}],
+      "top_p": 1.0, "user": ""}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '749'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - AsyncOpenAI/Python 1.9.0
+      x-stainless-arch:
+      - x64
+      x-stainless-async:
+      - async:asyncio
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - Linux
+      x-stainless-package-version:
+      - 1.9.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.10.14
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    content: "{\n  \"id\": \"chatcmpl-9OLVwZnvHD6NyZpwyZ6pzekyZ6J8n\",\n  \"object\":
+      \"chat.completion\",\n  \"created\": 1715589600,\n  \"model\": \"gpt-3.5-turbo-0613\",\n
+      \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+      \"assistant\",\n        \"content\": null,\n        \"tool_calls\": [\n          {\n
+      \           \"id\": \"call_nkxgakv1vSNbIDTV3VfmoJCA\",\n            \"type\":
+      \"function\",\n            \"function\": {\n              \"name\": \"structural_response\",\n
+      \             \"arguments\": \"{\\n  \\\"subject\\\": \\\"Meeting Request\\\",\\n
+      \ \\\"body\\\": \\\"Dear [Recipient's Name],\\\\n\\\\nI hope this email finds
+      you well. I am writing to request a meeting with you to discuss [subject/topic].
+      As we continue to work on [project/initiative], it would be beneficial to have
+      your insights and input.\\\\n\\\\nI have checked your availability on the calendar
+      and suggest the following meeting options:\\\\n\\\\nOption 1:\\\\nDate: [Date]\\\\nTime:
+      [Time]\\\\nLocation: [Location]\\\\n\\\\nOption 2:\\\\nDate: [Date]\\\\nTime:
+      [Time]\\\\nLocation: [Location]\\\\n\\\\nPlease let me know which option works
+      best for you, or if you have any alternative suggestions. I look forward to
+      meeting with you and furthering our collaboration.\\\\n\\\\nBest regards,\\\\n[Your
+      Name]\\\"\\n}\"\n            }\n          }\n        ]\n      },\n      \"logprobs\":
+      null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\":
+      82,\n    \"completion_tokens\": 178,\n    \"total_tokens\": 260\n  },\n  \"system_fingerprint\":
+      null\n}\n"
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8831575528f34aa8-TPE
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 May 2024 08:40:02 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=Wsy2u6OAcvRmIaFo.go.vu2fcXHb2vYtMF._V7cA5Qo-1715589602-1.0.1.1-yWx0D1IlGN1pvST3iDpAFVo4iBtA1gobfrMOUxoanx7j4OlcnTZkcPhtMZCwaIrOLJhGyan6PQWm9WAGaBEsGQ;
+        path=/; expires=Mon, 13-May-24 09:10:02 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=mJL.efAEyNJHB5CDiARjCTDt86.iabGvd5aK6Cp6jZM-1715589602508-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-processing-ms:
+      - '2110'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '5000'
+      x-ratelimit-limit-tokens:
+      - '160000'
+      x-ratelimit-remaining-requests:
+      - '4999'
+      x-ratelimit-remaining-tokens:
+      - '159969'
+      x-ratelimit-reset-requests:
+      - 12ms
+      x-ratelimit-reset-tokens:
+      - 11ms
+      x-request-id:
+      - req_6d0947a8176656b6383912c8beb7e977
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1
