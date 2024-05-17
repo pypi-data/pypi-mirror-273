@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "deciphon"
+version = "0.13.8"
+description = "Individually annotate long, error-prone nucleotide sequences into proteins"
+authors = ["Danilo Horta <horta@ebi.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "deciphon" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cffi = "^1.16"
+deciphon-core = "^0.23"
+fasta-reader = "^3.0"
+h3daemon = "^0.14"
+hmmer = "^3.4"
+ijson = "^3.2"
+pydantic = "^2.7"
+typer = "^0.12"
+rich = "^13.7"
+deciphon-snap = "^0.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.poetry.scripts]
+deci = 'deciphon.cli:app'     # deprecated
+deciphon = 'deciphon.cli:app'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
