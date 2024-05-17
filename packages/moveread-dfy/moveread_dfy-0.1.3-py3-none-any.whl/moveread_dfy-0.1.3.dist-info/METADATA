@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: moveread-dfy
+Version: 0.1.3
+Summary: Moveread DFY data models and API
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/moveread-dfy.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: lazy-loader
+Requires-Dist: pydantic
+Requires-Dist: chess-pairings
+Requires-Dist: dslog
+Requires-Dist: kv-api
+Requires-Dist: kv-azure-blob
+Requires-Dist: sqlmodel
+Requires-Dist: sqltypes
+Requires-Dist: chess-utils
+Provides-Extra: client
+Provides-Extra: clientgen
+Requires-Dist: openapi-ts ; extra == 'clientgen'
+Provides-Extra: doer
+Requires-Dist: moveread-pipelines-dfy ; extra == 'doer'
+Provides-Extra: local
+Requires-Dist: kv-fs ; extra == 'local'
+Requires-Dist: python-dotenv ; extra == 'local'
+Provides-Extra: server
+Requires-Dist: pure-cv ; extra == 'server'
+Requires-Dist: fastapi ; extra == 'server'
+Requires-Dist: python-multipart ; extra == 'server'
+Requires-Dist: uvicorn[standard] ; extra == 'server'
+Requires-Dist: kv-azure-blob ; extra == 'server'
+Requires-Dist: psycopg2-binary ; extra == 'server'
+Requires-Dist: dslog ; extra == 'server'
+
+# Moveread DFY
+
+> Moveread DFY data models and API
