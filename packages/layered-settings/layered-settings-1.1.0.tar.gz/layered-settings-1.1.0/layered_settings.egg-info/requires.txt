@@ -1,0 +1,6 @@
+
+[aws]
+boto3
+
+[ssm]
+boto3
