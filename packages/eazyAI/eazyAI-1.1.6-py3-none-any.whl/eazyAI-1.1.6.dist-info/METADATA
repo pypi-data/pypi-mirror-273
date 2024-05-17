@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: eazyAI
+Version: 1.1.6
+Summary: A one function go library for Ski-Kit learn and TensorFlow AI/ML models build-in.
+Home-page: https://github.com/Self-nasu/eazyAI
+Author: Puneet Dhankar , Naman Jain
+Author-email: puneetd2005@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: tensorflow
+
