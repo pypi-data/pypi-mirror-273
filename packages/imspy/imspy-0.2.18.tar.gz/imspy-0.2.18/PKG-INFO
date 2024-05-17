@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: imspy
+Version: 0.2.18
+Summary: 
+Author: theGreatHerrLebert
+Author-email: davidteschner@googlemail.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dlomix (>=0.0.6)
+Requires-Dist: imspy-connector (>=0.2.18)
+Requires-Dist: mendeleev (>=0.7.0)
+Requires-Dist: numba (>=0.53)
+Requires-Dist: numpy (>=1.21)
+Requires-Dist: pandas (>=2.1)
+Requires-Dist: pyarrow (>=13.0)
+Requires-Dist: pyopenms (>=2.6.0)
+Requires-Dist: sagepy (>=0.2.9)
+Requires-Dist: sagepy-connector (>=0.2.9)
+Requires-Dist: scipy (>=1.7.1)
+Requires-Dist: tensorflow (==2.15)
+Requires-Dist: tensorflow-probability (>=0.22.1)
+Requires-Dist: toml (>=0.10.2)
+Requires-Dist: tqdm (>=4.66)
+Requires-Dist: wandb (>=0.12.1)
+Requires-Dist: zstd (>=1.5.0)
+Description-Content-Type: text/markdown
+
+
