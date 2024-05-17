@@ -1,0 +1,7 @@
+pymatgen
+statsmodels
+h5py
+prompt_toolkit
+loguru
+polars
+ruamel.yaml
