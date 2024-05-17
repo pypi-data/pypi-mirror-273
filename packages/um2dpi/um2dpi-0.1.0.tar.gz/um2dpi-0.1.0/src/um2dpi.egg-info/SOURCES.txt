@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/um2dpi/__init__.py
+src/um2dpi.egg-info/PKG-INFO
+src/um2dpi.egg-info/SOURCES.txt
+src/um2dpi.egg-info/dependency_links.txt
+src/um2dpi.egg-info/entry_points.txt
+src/um2dpi.egg-info/top_level.txt
+tests/test_um2dpi.py
