@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mypkg-nikita
+Version: 0.0.3
+Summary: My first python package
+Author-email: Nikita Turkmen <newpronik@gmail.com>
+Maintainer-email: Nikita Turkmen <newpronik@gmail.com>
+License: MIT
+Keywords: packaging,example
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: mypkg-nikita[release,static-code-qa,test] ; extra == 'dev'
+Provides-Extra: release
+Requires-Dist: build ; extra == 'release'
+Requires-Dist: twine ; extra == 'release'
+Provides-Extra: static-code-qa
+Requires-Dist: pre-commit ; extra == 'static-code-qa'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+Oku Beni amk# packaging-demo
