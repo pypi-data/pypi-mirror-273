@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: oxaigen
+Version: 0.0.0.2
+Summary: Oxaigen Python SDK
+Author: Luca Roggeveen Name
+Author-email: luca@oxaigen.com
+Requires-Python: >=3.10.12,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mlflow (>=2.10.2,<3.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.1.0,<3.0.0)
+Requires-Dist: pydantic (==1.10.8)
+Requires-Dist: scikit-learn (>=1.4.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+<div id="top"></div>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+<h1 align="center">Oxaigen Client SDK</h1>
+  <p align="center">
+    "Oxaigen Client SDK"
+    <br />
+  </p>
+</div>
+
+---
+
+README TO FOLLOW!
