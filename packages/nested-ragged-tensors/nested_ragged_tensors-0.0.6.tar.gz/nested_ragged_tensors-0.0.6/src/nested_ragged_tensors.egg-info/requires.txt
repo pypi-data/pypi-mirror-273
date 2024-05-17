@@ -1,0 +1,14 @@
+safetensors
+numpy
+
+[dev]
+pre-commit
+
+[tests]
+pytest
+ml-mixins
+loguru
+torch
+rootutils
+hydra-core
+humanize
