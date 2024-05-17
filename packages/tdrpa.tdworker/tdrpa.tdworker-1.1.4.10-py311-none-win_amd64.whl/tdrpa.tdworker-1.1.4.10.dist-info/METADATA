@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tdrpa.tdworker
+Version: 1.1.4.10
+Summary: tdworker for tdrpa developers. supports python3.8+, windows x64
+Home-page: https://tdrpa.thingswell.cn
+Author: vx:RPA_CREATOR
+Author-email: oldplayerliu@gmail.com
+License: Apache 2.0
+Keywords: RPA,tdRPA,tdworker,rpaworker,worker,uiautomation,uia,creator,windows,python,bot,robot,aigc,ai
+Platform: Windows Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: tdrpa.tdcore
+Requires-Dist: pyperclip
+Requires-Dist: WMI
+Requires-Dist: pycryptodome
+
+tdworker for tdrpa developers. supports python3.8+, windows x64
+
+
