@@ -1,0 +1,9 @@
+congruity/__init__.py,sha256=Pl_zkcY0TfBg0MIiTwqbfrs5nfyH1-hNFBV8hm_C9eM,2146
+congruity/json_conversion.py,sha256=2rRmMqFzozWSgkQsf7xslDlTQt9rkS0Gm53TWDS91NY,1594
+congruity/rdd_adapter.py,sha256=cLx7OgwwAvPmp9blgNHNiawtdziEW93ZrrAkUnaWDgY,8890
+congruity/spark_context_adapter.py,sha256=0q9XI3eluVHZSVwdRLYk7jPNgogEGWzN-rzNIMFOp0U,1544
+spark_congruity-0.0.1rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spark_congruity-0.0.1rc1.dist-info/METADATA,sha256=oYe8we-kuL03QplHUX1xo-FK6ufVHFzLIS8K-tXicLw,15699
+spark_congruity-0.0.1rc1.dist-info/NOTICE,sha256=WhRV3_r2M5_gGQa5fh9C8NL1JyLnvZnaaG3ANRxK7ik,1150
+spark_congruity-0.0.1rc1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+spark_congruity-0.0.1rc1.dist-info/RECORD,,
