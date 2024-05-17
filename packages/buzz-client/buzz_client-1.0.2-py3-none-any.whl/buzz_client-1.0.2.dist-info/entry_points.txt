@@ -1,0 +1,3 @@
+[console_scripts]
+buzz=buzz_client.cli:main
+
