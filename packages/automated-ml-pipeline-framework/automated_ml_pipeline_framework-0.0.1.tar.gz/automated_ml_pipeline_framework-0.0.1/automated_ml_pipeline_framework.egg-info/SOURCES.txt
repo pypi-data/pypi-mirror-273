@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+automated_ml_pipeline_framework/framework.py
+automated_ml_pipeline_framework.egg-info/PKG-INFO
+automated_ml_pipeline_framework.egg-info/SOURCES.txt
+automated_ml_pipeline_framework.egg-info/dependency_links.txt
+automated_ml_pipeline_framework.egg-info/top_level.txt
