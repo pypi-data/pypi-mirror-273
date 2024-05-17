@@ -1,0 +1,6 @@
+README.md
+setup.py
+ddeagentlib.egg-info/PKG-INFO
+ddeagentlib.egg-info/SOURCES.txt
+ddeagentlib.egg-info/dependency_links.txt
+ddeagentlib.egg-info/top_level.txt
