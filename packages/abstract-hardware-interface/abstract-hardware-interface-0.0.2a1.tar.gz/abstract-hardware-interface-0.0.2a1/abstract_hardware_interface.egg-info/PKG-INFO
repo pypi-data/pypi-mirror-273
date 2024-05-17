@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: abstract-hardware-interface
+Version: 0.0.2a1
+Summary: Abstract Hardware Component Classes
+Home-page: https://github.com/NeonGeckoCom/abstract-hardware-interface
+Author: Neongecko
+Author-email: developers@neon.ai
+License: BSD-3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Hardware Components
+Provides Abstract Base Classes for basic hardware types.
+Heavily inspired by and mostly compatible with 
+[Mycroft's Mark 2](https://github.com/MycroftAI/mark-ii-hardware-testing)
+hardware implementation.
