@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "lapidary"
+version = "0.9.0"
+description = "Python async OpenAPI client library"
+authors = ["Raphael Krupinski <rafalkrupinski@users.noreply.github.com>"]
+license = "MIT"
+readme = "Readme.md"
+packages = [{ include = "lapidary", from = "src" }]
+repository = "https://github.com/python-lapidary/lapidary"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = {extras = ["http2"], version = "^0.27"}
+httpx-auth = "^0.22"
+pydantic = {extras = ["email"], version = "^2.5.2"}
+pytest-asyncio = "^0.23.3"
+python-mimeparse = "^1.6.0"
+typing-extensions = { python = "<3.12", version = "^4.9.0" }
+
+[tool.poetry.group.dev.dependencies]
+fastapi = "^0.109.0"
+mypy = "^1.0.1"
+pylint = "^3.0.3"
+pytest = "^7.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    "src",
+    "tests"
+]
+addopts = "--color=yes"
+
+[tool.mypy]
+mypy_path = "src"
+namespace_packages = true
+python_version = "3.9"
+
+[tool.ruff]
+target-version = "py39"
+line-length = 140
+
+[tool.ruff.lint]
+#extend-select = ["E501", "E4", "E7", "E9", "F", "B", 'UP', 'D']
+select = ['F', 'E', 'W', 'C90', 'I', 'UP']
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+known-first-party = ["lapidary.runtime"]
+known-local-folder = ["src"]
