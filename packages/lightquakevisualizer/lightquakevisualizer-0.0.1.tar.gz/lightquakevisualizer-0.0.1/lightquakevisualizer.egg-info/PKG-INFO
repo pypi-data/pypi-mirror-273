@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lightquakevisualizer
+Version: 0.0.1
+Summary: A collection of scripts to visualize SeisSol output using pyvista
+Author: Thomas Ulrich
+License: MIT
+Project-URL: Repository, https://github.com/Thomas-Ulrich/light-quake-visualizer.git
+Keywords: pyvista,SeisSol
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cmasher
+Requires-Dist: cmcrameri
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyvista
+Requires-Dist: seissolxdmf>=0.1.3
+Requires-Dist: vtk
+Requires-Dist: Pillow
+
+light-quake-visualizer
+======================
+A collection of scripts to visualize SeisSol output using pyvista
