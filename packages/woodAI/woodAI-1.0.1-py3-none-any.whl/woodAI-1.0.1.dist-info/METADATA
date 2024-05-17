@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: woodAI
+Version: 1.0.1
+Summary: wood ai
+Home-page: https://codemao.cn/
+Author: codemao
+Author-email: linyifeng@codemao.cn
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: websocket-client
+
