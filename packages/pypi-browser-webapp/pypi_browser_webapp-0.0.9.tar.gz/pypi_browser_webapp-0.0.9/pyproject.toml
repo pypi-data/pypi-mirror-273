@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "pypi-browser-webapp"
+version = "0.0.9"
+description = "PyPI package browsing web application"
+authors = ["Chris Kuehl <ckuehl@ckuehl.me>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "pypi_browser"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+starlette = "*"
+fluffy-code = "*"
+Jinja2 = "*"
+httpx = "*"
+aiofiles = "*"
+identify = "*"
+Pygments = "*"
+MarkupSafe = "*"
+packaging = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "*"
+pre-commit = "*"
+pytest = "*"
+mypy = "*"
+coverage = "*"
+types-aiofiles = "*"
+types-Pygments = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[mypy]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
