@@ -1,0 +1,18 @@
+[build-system]
+    requires      = ["setuptools>=61.0.0"]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name         = "striebel.machamp"
+    version      = "0.0.2"
+    dynamic      = ["authors"] # specified in setup.cfg
+    description  = "Stub files to use as the basis of a Python project that can be packaged and uploaded to PyPI"
+    license      = {text = "MIT"}
+    dependencies = [] # TODO
+    readme = "README.md"
+
+[project.scripts]
+    "striebel.machamp" = "striebel.machamp.__main__:main"
+
+[project.urls]
+    "Homepage" = "https://github.com/striebel/striebel.machamp"

@@ -1,0 +1,2 @@
+[console_scripts]
+striebel.machamp = striebel.machamp.__main__:main
