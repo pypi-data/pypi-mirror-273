@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ghostfolio
+Version: 0.4.0
+Summary: Python API client for Ghostfolio
+Author-email: Marcin Szymanski <ms32035@gmail.com>
+Project-URL: Homepage, https://github.com/ms32035/ghostfolio-py
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: requests
