@@ -1,0 +1,6 @@
+numpy
+pyttsx3
+SpeechRecognition
+nltk
+textblob
+click
