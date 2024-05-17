@@ -1,0 +1,4 @@
+[console_scripts]
+deci=deciphon.cli:app
+deciphon=deciphon.cli:app
+
