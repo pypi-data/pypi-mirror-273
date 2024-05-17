@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: clodo_py_tools
+Version: 0.0.1
+Author-email: Clodomir Vianna <clodolinus@gmail.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/me/spam.git
+Project-URL: Issues, https://github.com/me/spam/issues
+Project-URL: Changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/x-rst
+Requires-Dist: matplotlib
+Requires-Dist: psutil
+
