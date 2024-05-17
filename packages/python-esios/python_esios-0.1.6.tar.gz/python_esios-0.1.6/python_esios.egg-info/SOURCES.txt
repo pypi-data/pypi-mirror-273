@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+esios/__init__.py
+esios/api_client.py
+esios/endpoints/__init__.py
+esios/endpoints/archives/__init__.py
+esios/endpoints/archives/utils.py
+esios/endpoints/archives/preprocessing/__init__.py
+esios/endpoints/indicators/__init__.py
+python_esios.egg-info/PKG-INFO
+python_esios.egg-info/SOURCES.txt
+python_esios.egg-info/dependency_links.txt
+python_esios.egg-info/requires.txt
+python_esios.egg-info/top_level.txt

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: python-esios
+Version: 0.1.6
+Summary: A Python wrapper for the ESIOS API
+Home-page: https://github.com/datons/python-esios
+Author: Jesús López
+Author-email: jesus.lopez@datons.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# ESIOS
+
+ESIOS is a Python library that wraps the ESIOS API and returns preprocessed data as Pandas DataFrames.
+
+## Overview
+
+This library provides a simple interface to interact with the ESIOS API, allowing you to fetch and process indicator data.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install python-esios
+```
+
+## Usage
+
+Visit the [instructions here](https://github.com/datons/python-esios/blob/main/esios/endpoints/indicators/README.ipynb) and learn how to use the library.
