@@ -1,0 +1,10 @@
+torspy/__init__.py,sha256=S24bLkmD3EeDyKmCSFTwIZDdAPfAqCWGDWF-MJXHoEA,78
+torspy/cli.py,sha256=adtpSQFmMt87oAIANbTQDj7dka9D6VCzcdRmZb8x0PM,914
+torspy/scraper.py,sha256=EGu1vr91h59U9kVJ6wvXGW-TbZgsaiVlBZmoQRqMWwk,2630
+torspy/utils.py,sha256=x83ONK_Laj0tcTU8P5rxF1fi-Ybn2Kc66XCn7RiuDuk,102
+torspy-0.2.dist-info/LICENSE,sha256=CmbH9ppfL0wJ5lmyqWyAHdFvcoSQpBDw1sAwuZ_dM1M,1065
+torspy-0.2.dist-info/METADATA,sha256=fW3dDxfw5zH190AXgBa225xa0eIaMqXaxxGP8jyui0k,4322
+torspy-0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+torspy-0.2.dist-info/entry_points.txt,sha256=0GjvtgHGc2-rRHbCnaJiALYdJKRubkS1elP5I0a3Xo8,43
+torspy-0.2.dist-info/top_level.txt,sha256=iY91g4LnwZdmo0xeGCQiV_XpOXKatefLrmeSvBR7pA4,7
+torspy-0.2.dist-info/RECORD,,
