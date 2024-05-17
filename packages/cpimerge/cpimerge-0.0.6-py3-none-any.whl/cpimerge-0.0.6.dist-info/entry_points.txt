@@ -1,0 +1,3 @@
+[console_scripts]
+cpimerge=cpimerge.__main__:main
+
