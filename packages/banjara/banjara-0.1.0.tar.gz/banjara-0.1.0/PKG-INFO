@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: banjara
+Version: 0.1.0
+Summary: A terminal based point of sale for Stripe
+Author: Dev Mukherjee
+Author-email: devraj@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.3,<4.0.0)
+Requires-Dist: coverage (>=7.4.1,<8.0.0)
+Requires-Dist: multidict (>=6.0.5,<7.0.0)
+Requires-Dist: pluggy (>=1.4.0,<2.0.0)
+Requires-Dist: pydantic (>=2.6.0,<3.0.0)
+Requires-Dist: pytz (>=2023.4,<2024.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: stripe (>=8.1.0,<9.0.0)
+Requires-Dist: textual (>=0.48.1,<0.49.0)
+Requires-Dist: textual-datepicker (>=0.2.4,<0.3.0)
+Requires-Dist: textual-select (>=0.3.4,<0.4.0)
+Requires-Dist: tortoise-orm (>=0.20.0,<0.21.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Requires-Dist: urllib3 (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Banjara - TUI Point of Sale
+
+Banjara (terminal) is a text based point of sale system designed for simplicity
+
+## Thesis
+
+## Technology
+
+- Textualize
+- Stripe
+- Tortoise ORM
+
+## Stripe examples
+
+```python
+stripe.PaymentIntent.create(
+  currency="aud",
+  payment_method_types=["card_present"],
+  capture_method="manual",
+  amount=1998,
+)
+```
+
+```python
+stripe.terminal.Reader.process_payment_intent(
+  "tmr_F",
+  payment_intent="pi_3O",
+)
+```
+
+```python
+stripe.terminal.Reader.set_reader_display(
+  "tmr_Fal",
+  type="cart",
+  cart={
+    "line_items": [
+      {"description": "Caramel latte", "amount": 659, "quantity": 1},
+      {"description": "Dozen donuts", "amount": 1239, "quantity": 1},
+    ],
+    "currency": "aud",
+    "tax": 100,
+    "total": 1998,
+  },
+)
+```
+
+## License
+
