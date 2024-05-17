@@ -1,0 +1,4 @@
+[console_scripts]
+clip_worker=openclip_service.clip_worker:main
+openclip_service=openclip_service.service:main
+
