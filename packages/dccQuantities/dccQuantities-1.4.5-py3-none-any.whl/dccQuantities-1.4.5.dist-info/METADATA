@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: dccQuantities
+Version: 1.4.5
+Summary: Python classes for working with DDC calibration data
+Home-page: https://gitlab1.ptb.de/digitaldynamicmeasurement/dccQuantities
+Author: Benedikt Seeger, Vanessa Stehr, Thomas Bruns
+Author-email: benedikt.seeger@ptb.de
+License: LGPL-2.1-or-later
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: uncertainties
+Requires-Dist: requests
+Requires-Dist: pylatexenc
+Requires-Dist: odfpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: dsiUnits
+Requires-Dist: dccXMLJSONConv
+Provides-Extra: dccquantitiesplot
+Requires-Dist: bokeh ; extra == 'dccquantitiesplot'
+Provides-Extra: testing
+Requires-Dist: pytest ==7.4.1 ; extra == 'testing'
+Requires-Dist: pytest-cov ==4.1.0 ; extra == 'testing'
+
+## Content
+This repo contains a collection of tools for working with DSI Quantitys (Vectors [even with only on value]) and list of DSI Quantitys (Tables).
+As well as the tools needed to generate visualisations of the data. Using Bokeh
+# Visualisation
+![Image of DSI Multivectorplot showing Gui Elements to change language, lin/log axis and selected Index](/doc/mvPloter.png)
+
+## Installation
+for usage in your project, you can install the package via pip:
+```bash
+pip install dccQuantities
+```
+
+For development, you can clone the repository and install the package in editable mode:
+```bash
+git clone https://gitlab1.ptb.de/digitaldynamicmeasurement/dccQuantities.git
+cd dccQuantities
+pip install -e .[testing]
+```
+
+## Usage
+See the examples in the `doc` folder for usage of the package.
+1. [Vector and Table Usage](doc/pyDCCToolsExamplesNoteBook.ipynb)
+2. [MultiVector Plot](tests/bokePlotTest.py)
+
+
