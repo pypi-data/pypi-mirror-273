@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+InforeWss/__init__.py
+InforeWss/main.py
+InforeWss.egg-info/PKG-INFO
+InforeWss.egg-info/SOURCES.txt
+InforeWss.egg-info/dependency_links.txt
+InforeWss.egg-info/requires.txt
+InforeWss.egg-info/top_level.txt
