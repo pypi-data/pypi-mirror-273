@@ -1,0 +1,12 @@
+BilibiliAudioDownloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BilibiliAudioDownloader/audio_downloader.py,sha256=cZL2lXrmdCW8inlJrUDOVXq7LFVNKlHHfMcotQ4kCtk,1493
+BilibiliAudioDownloader/bvid_search.py,sha256=1OfMj-Kyzop0sTHoSbZPih1XbFQ7VELj26yAPMNlr3k,2621
+BilibiliAudioDownloader/up_uid_search.py,sha256=Dwwbaj0j43d5B6uW48czGfiCupF7WmIBUca2BwvCLxQ,1584
+bilibiliAudioDownloader-0.0.1.data/scripts/audio_downloader.py,sha256=cZL2lXrmdCW8inlJrUDOVXq7LFVNKlHHfMcotQ4kCtk,1493
+bilibiliAudioDownloader-0.0.1.data/scripts/bvid_search.py,sha256=1OfMj-Kyzop0sTHoSbZPih1XbFQ7VELj26yAPMNlr3k,2621
+bilibiliAudioDownloader-0.0.1.data/scripts/up_uid_search.py,sha256=Dwwbaj0j43d5B6uW48czGfiCupF7WmIBUca2BwvCLxQ,1584
+bilibiliAudioDownloader-0.0.1.dist-info/METADATA,sha256=4sworGl855KMa-y0PsT6KP-RH-8pXPWFV8u1ENQmGPI,1873
+bilibiliAudioDownloader-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bilibiliAudioDownloader-0.0.1.dist-info/entry_points.txt,sha256=jN9iX3F_R31Nx74PbJjqdgc2z9tq_oXOJSDvX-UYZdQ,107
+bilibiliAudioDownloader-0.0.1.dist-info/top_level.txt,sha256=MWh4Z46K3MyX1mVT-fYEnsDVQpxrBLMwdqfdw9xrj_k,24
+bilibiliAudioDownloader-0.0.1.dist-info/RECORD,,
