@@ -1,0 +1,17 @@
+LICENCE
+README.md
+pyproject.toml
+src/rox_septentrio/__init__.py
+src/rox_septentrio/__main__.py
+src/rox_septentrio/config.py
+src/rox_septentrio/converters.py
+src/rox_septentrio/gps_node.py
+src/rox_septentrio/nmea.py
+src/rox_septentrio/version.py
+src/rox_septentrio.egg-info/PKG-INFO
+src/rox_septentrio.egg-info/SOURCES.txt
+src/rox_septentrio.egg-info/dependency_links.txt
+src/rox_septentrio.egg-info/entry_points.txt
+src/rox_septentrio.egg-info/requires.txt
+src/rox_septentrio.egg-info/top_level.txt
+tests/test_smoke.py
