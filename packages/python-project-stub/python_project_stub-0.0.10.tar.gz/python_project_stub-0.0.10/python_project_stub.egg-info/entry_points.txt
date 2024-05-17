@@ -1,0 +1,2 @@
+[console_scripts]
+python_project_stub = python_project_stub.__main__:main
