@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: seatbelt-sdk
+Version: 1.0.0
+Summary: SDK for detecting seatbelt violations in images and videos
+Author: Your Name
+Author-email: your@email.com
+License: MIT
+Requires-Dist: Flask
+Requires-Dist: opencv-python
+Requires-Dist: ultralytics
+Requires-Dist: pymongo
