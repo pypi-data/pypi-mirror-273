@@ -1,0 +1,8 @@
+jupyter_server<2,>=1.6
+requests
+peewee
+jsonschema
+psutil
+rucio-clients>=32.0
+pyjwt
+jupyterlab<4,>=3
