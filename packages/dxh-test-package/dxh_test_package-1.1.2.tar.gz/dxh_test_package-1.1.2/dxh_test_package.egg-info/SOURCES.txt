@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+dxh_test_package.egg-info/PKG-INFO
+dxh_test_package.egg-info/SOURCES.txt
+dxh_test_package.egg-info/dependency_links.txt
+dxh_test_package.egg-info/requires.txt
+dxh_test_package.egg-info/top_level.txt
+src/__init__.py
+src/__version__.py
