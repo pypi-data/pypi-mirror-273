@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+gptchangelog/__init__.py
+gptchangelog.egg-info/PKG-INFO
+gptchangelog.egg-info/SOURCES.txt
+gptchangelog.egg-info/dependency_links.txt
+gptchangelog.egg-info/entry_points.txt
+gptchangelog.egg-info/requires.txt
+gptchangelog.egg-info/top_level.txt
+gptchangelog/templates/changelog_prompt.txt
+gptchangelog/templates/commits_prompt.txt
+gptchangelog/templates/version_prompt.txt
