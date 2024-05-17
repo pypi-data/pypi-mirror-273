@@ -1,0 +1,2 @@
+[console_scripts]
+septentrio_gps = septentrio_gps.__main__:main
