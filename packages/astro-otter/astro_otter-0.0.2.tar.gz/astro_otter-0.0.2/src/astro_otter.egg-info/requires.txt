@@ -1,0 +1,17 @@
+numpy>=1.20
+astropy>=5.2
+pandas
+matplotlib
+plotly
+astroquery
+synphot
+ads
+ruff
+pre-commit
+Sphinx>=3.0.0
+myst_parser>=0.13
+nbsphinx>=0.9.1
+sphinx-book-theme>=0.0.33
+sphinx_copybutton
+autodoc
+ipykernel
