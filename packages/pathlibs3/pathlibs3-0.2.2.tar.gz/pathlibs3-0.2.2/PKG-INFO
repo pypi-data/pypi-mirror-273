@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pathlibs3
+Version: 0.2.2
+Summary: S3 navigation using object, inspired by pathlib.Path
+Author: thibault.blanc
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3
+Requires-Dist: moto (>=4.1.12,<5.0.0)
+Requires-Dist: urllib3 (>=2.2.1,<3.0.0)
