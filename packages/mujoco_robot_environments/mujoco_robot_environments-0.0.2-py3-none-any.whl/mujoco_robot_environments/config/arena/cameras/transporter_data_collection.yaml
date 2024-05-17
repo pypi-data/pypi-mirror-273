@@ -1,0 +1,6 @@
+- name: overhead_camera
+  pos: [0.7, 0.0, 1.3]
+  quat: [0.707, 0.0, 0.0, -0.707]
+  height: 480
+  width: 640
+  fovy: 61 # zed 2i vertical fov
