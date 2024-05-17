@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+reportXlsx/__init__.py
+reportXlsx/to_excel.py
+reportXlsx.egg-info/PKG-INFO
+reportXlsx.egg-info/SOURCES.txt
+reportXlsx.egg-info/dependency_links.txt
+reportXlsx.egg-info/requires.txt
+reportXlsx.egg-info/top_level.txt
+reportXlsx/resources/SkiaSharp.dll
+reportXlsx/resources/Spire.XLS.dll
+reportXlsx/resources/Spire.XLS.xml
