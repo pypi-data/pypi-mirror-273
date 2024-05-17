@@ -1,0 +1,11 @@
+html2object/__init__.py,sha256=3UaynRXqRagWWhfnlm4FEzEZS_5qevfAueS_Vc8YDQ4,65
+html2object/html2object.py,sha256=mS-PpzWVY6N-QcZ6Jw-amvognINDwAsNpp1sd2ZftZk,2750
+html2object/html_element.py,sha256=XxOqCGDp_W1pzq7O19tzS32_cS7wQashmhR31GL-J6I,4524
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_html2object.py,sha256=JZ2RMGNErewZbmRGdFg1NA9DAbrIcclafPXn75h0Py0,1179
+tests/test_html_element.py,sha256=B0ibpUlwtUOkwMFL0mG6oUJvMUnhFF8cja42a9Ch9Co,4332
+html2object-1.1.0.dist-info/LICENSE,sha256=UpO3lVTAoQ8BNr8gkkQ5Gijk8vdLgy-hE7C1uXueYzU,1064
+html2object-1.1.0.dist-info/METADATA,sha256=OwiDkndX1xDc8ere5mProYnFWUZnDdiYpSwt0PTKGwk,3845
+html2object-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+html2object-1.1.0.dist-info/top_level.txt,sha256=FTD5kNVI9Ijd9M0WMsJDJE_8UUv6sbpZyFnji3k_-SQ,18
+html2object-1.1.0.dist-info/RECORD,,
