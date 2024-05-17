@@ -1,0 +1,8 @@
+setup.py
+AutogluonToScikitWrapper.egg-info/PKG-INFO
+AutogluonToScikitWrapper.egg-info/SOURCES.txt
+AutogluonToScikitWrapper.egg-info/dependency_links.txt
+AutogluonToScikitWrapper.egg-info/requires.txt
+AutogluonToScikitWrapper.egg-info/top_level.txt
+agksWrapper/__init__.py
+agksWrapper/agsk_wrapper.py
