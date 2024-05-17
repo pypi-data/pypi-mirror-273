@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: zorch
+Version: 0.0.15
+Summary: pytorch使用过程中封装的常用模块
+Author: zwhy
+Author-email: zwhy2025@gmail.com
+Requires-Python: >=3.9
