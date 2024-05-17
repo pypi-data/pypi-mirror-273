@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: burial-mounds
+Version: 0.1.1
+Summary: Recognizing burial mounds with YOLO
+License: MIT
+Author: Márton Kardos
+Author-email: power.up1163@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: geopandas (>=0.14.3,<0.15.0)
+Requires-Dist: huggingface-hub (>=0.22.2,<0.23.0)
+Requires-Dist: numpy (>=1.26.4,<1.27.0)
+Requires-Dist: pillow (>=10.2.0,<10.3.0)
+Requires-Dist: radicli (>=0.0.25,<0.0.26)
+Requires-Dist: rasterio (>=1.3.9,<1.4.0)
+Requires-Dist: shapely (>=2.0.2,<2.1.0)
+Requires-Dist: tqdm (>=4.66.2,<4.67.0)
+Requires-Dist: ultralytics (>=8.2.0,<8.3.0)
+Description-Content-Type: text/markdown
+
+# burial-mounds-object-recognition
+Finetuning Object recognition models to recognize burial mounds.
+
