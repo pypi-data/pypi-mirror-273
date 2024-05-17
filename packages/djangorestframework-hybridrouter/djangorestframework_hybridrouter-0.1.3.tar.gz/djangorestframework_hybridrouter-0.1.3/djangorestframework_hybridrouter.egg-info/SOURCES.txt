@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+djangorestframework_hybridrouter.egg-info/PKG-INFO
+djangorestframework_hybridrouter.egg-info/SOURCES.txt
+djangorestframework_hybridrouter.egg-info/dependency_links.txt
+djangorestframework_hybridrouter.egg-info/requires.txt
+djangorestframework_hybridrouter.egg-info/top_level.txt
+hybridrouter/__init__.py
+hybridrouter/hybridrouter.py
