@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: ourmind_audio
+Version: 0.1.0
+Summary: OurMind audio processing utils.
+Keywords: 
+Author-email: OurMind BV <git@orsinium.dev>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Dist: numpy
+Requires-Dist: ruff ; extra == "lint"
+Requires-Dist: mypy ; extra == "lint"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Source, https://github.com/ourmindbv/ourmind-audio
+Provides-Extra: lint
+Provides-Extra: test
+
+# ourmind-audio
+
+OurMind audio utilities.
+
+## Installation
+
+```bash
+python3 -m pip install ourmind-audio
+```
+
