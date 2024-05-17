@@ -1,0 +1,8 @@
+README.md
+setup.py
+AudioDownloader.egg-info/PKG-INFO
+AudioDownloader.egg-info/SOURCES.txt
+AudioDownloader.egg-info/dependency_links.txt
+AudioDownloader.egg-info/entry_points.txt
+AudioDownloader.egg-info/requires.txt
+AudioDownloader.egg-info/top_level.txt
