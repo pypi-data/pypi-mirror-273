@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pyclassparser/__init__.py
+pyclassparser.egg-info/PKG-INFO
+pyclassparser.egg-info/SOURCES.txt
+pyclassparser.egg-info/dependency_links.txt
+pyclassparser.egg-info/requires.txt
+pyclassparser.egg-info/top_level.txt
