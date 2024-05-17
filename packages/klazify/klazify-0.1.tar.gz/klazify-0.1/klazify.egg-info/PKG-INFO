@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: klazify
+Version: 0.1
+Summary: The most accurate Content Classification API. All-in-one domain data source
+Home-page: https://github.com/Zyla-Labs/pypi-klazify-api
+Author: Klazify
+Author-email: hello@klazify.com
+Keywords: commodities-api,precious Commodities api,Commodities api,Commodities,precious Commodities,gold,silver,Platinum,Palladium,Ruthenium,Rhodium,forex data,rates,money,usd,eur,btc,forex api,gbp to usd,gbp to eur,eur to usd,api,currency api,exchange rate api,get currency rates api,currency rates php,usd to eur api,copper,nickel,aluminium,TIN,Zinc
+Description-Content-Type: text/markdown
+
+# [![Klazify](https://www.klazify.com/img/new_klazify_logo.png)](https://klazify.com)
+
+**Klazify** - The most accurate Content Classification API.
+All-in-one domain data source. Get Website Logos, Company Data, Categorization and much more from a URL or Email.
+
+## Key Features:
+
+- AI Powered Real-Time Categorization.
+- IAB Categorization.
+- Full Path URL support
+- Batch Enrichement importing a .CSV.
+- Extract Logo from any URL
+- Social Media Links Scraper API.
+- Multi-site license. 
+- Service-level agreement (SLA).
+
+
+## Endpoints availables
+
+The Klazify API comes with multiple endpoints, each providing different functionality. Please note that depending on your subscription plan, certain API endpoints may or may not be available.
+
+1. **Categorization API**
+   - Retrieve the IAB and Klazify category for a specified domain.
+
+2. **Logo API**
+   - Obtain the logo URL associated with a given domain.
+
+3. **Company API**
+   - Provides comprehensive details regarding the categorization of a given domain, with a focus on information related to the identified company and its attributes.
+
+4. **Competitors API**
+   - Retrieves competitor domains.
+    
+5. **Similar Companies API**
+   - Identifies companies similar to the specified domain.
+
+6. **Parked Domain API**
+   - Based on the content of a website, indicates whether a domain is parked or not.
+
+## Documentation
+
+For comprehensive details regarding API endpoints, usage, and integration guidelines, please refer to our [API Documentation](https://www.klazify.com/category#docs).
+
+Begin leveraging Klazify today to classify any domain or email! Visit [Klazify.com](https://klazify.com) and seamlessly integrate within minutes!
+
+## Installation
+
+You can install Klazify Python SDK with pip.
+
+```bash
+pip install klazify
+```
+
+## Usage
+
+The Klazify Python SDK is a wrapper around the [requests](https://docs.python-requests.org/en/master/) library. Klazify supports a GET request for now.
+
+Sign-up to Klazify to [get your API key](https://www.klazify.com/register) and some credits to get started.
+
+### Making the GET request
+
+```python
+>>> from klazify import KlazifyApiClient
+
+>>> client = KlazifyApiClient(access_key='REPLACE-WITH-YOUR-ACCESS-KEY')
+
+>>> response = client.categorize_url("URL")
+```
+
+### Request Example
+
+```python
+>>> from klazify import KlazifyApiClient
+
+>>> client = KlazifyApiClient(access_key='REPLACE-WITH-YOUR-ACCESS-KEY')
+
+>>> response = client.categorize_url("https://www.nike.com.ar")
+```
+
+### Response Example
+
+```json
+{
+  "domain": {
+    "categories": [
+      {
+        "confidence": 1,
+        "name": "/No indexable content"
+      }
+    ],
+    "domain_url": "https://www.nike.com.ar",
+    "full_path_url_mode": true,
+    "full_path_url": "https://www.nike.com.ar"
+  },
+  "success": true
+}
+```
+
+### AVAILABLE METHODS
+
+```python
+>>> categorize_url(url: str)
+```
