@@ -1,0 +1,14 @@
+MSIGen/__init__.py,sha256=8p2KHnhfojhWoSgc3gmfSjLVSxpV6Q56rN531pnQSWo,178
+MSIGen/D.py,sha256=4TlkZdZqKstQKVCkW8z71-PPeYIfYlgywojBSrjORsk,52726
+MSIGen/GUI.py,sha256=vRRm25GQ8ACAB18txpJ0VZmyqS6HEIgRdzK71HkcyCo,51238
+MSIGen/msigen.py,sha256=6QxQ9KowKEnuUnT2m-7uFcecB70b8b7SuuLKpj5VcUg,58278
+MSIGen/mzml.py,sha256=YJ89DnE3UAzd09kfv5RC-y7_p4-xX9j-Ve42XeKd7cQ,33676
+MSIGen/raw.py,sha256=kH2Nz0Ms43wY2uHGf7bPpgI10jWuofu2pkPZBGW36tY,19004
+MSIGen/timsdata.dll,sha256=RzjJ3cryTZVmGF91qlLbpll4b4z2NxRpABn8asjFjWk,12886552
+MSIGen/tsf.py,sha256=0EkTybaEKzehiIJWuSJikFyutGVnBFXJv7mFDwXtAP4,9775
+MSIGen/visualization.py,sha256=wD4-2hYAv22j5Z7Xc468c-vZksDETbL34tUY7lgmeq4,21997
+msigen-0.2.0.dist-info/entry_points.txt,sha256=xCjf8x7aUTxM-NwULQTGgYjxgUQaa8CJaMrJs9zfqsM,50
+msigen-0.2.0.dist-info/LICENSE.txt,sha256=cuEmh6hJpN4sJL5OSXRVmR25HcqN23Wrucgvgxs2tvc,1091
+msigen-0.2.0.dist-info/METADATA,sha256=fkBEvNDDdR7ebltZH04zt5J7ylFRM7BJIWF26UF9OYM,3713
+msigen-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+msigen-0.2.0.dist-info/RECORD,,
