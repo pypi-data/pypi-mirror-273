@@ -1,0 +1,10 @@
+abaqus2py/__init__.py,sha256=em22JhK1fuUAj-HCZ4QZnKDpbB5LwQB7HAIEemKTamo,1049
+abaqus2py/_src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+abaqus2py/_src/_logger.py,sha256=UVW8BSdimfL_dXoeYmKRjkgudhHTczWLjFAGvVtU97g,485
+abaqus2py/_src/abaqus_simulator.py,sha256=tUbRDdn_njFYBLINlxzHVB050jupGxY2UsWlVnkE_y8,12567
+abaqus2py/_src/f3dasm_adapter.py,sha256=fv42Nz37ChYRJoydPVI-D6flhX3Ar8_c8cBdXzrserc,3547
+abaqus2py/_src/io.py,sha256=_IUom1bEfgoKU1gw5kuioI52cOdBG8LHxpgjD4yUFCA,6016
+abaqus2py-1.0.0.dist-info/METADATA,sha256=gSr3C08YbcE6uHS1DGwW7QJlr7Nnu4l6KWFoD7T3U6k,1979
+abaqus2py-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+abaqus2py-1.0.0.dist-info/top_level.txt,sha256=VBCAZYsBjSYX41EYJ7OnOWZJduJJkXLF5hjMh_LRi3s,10
+abaqus2py-1.0.0.dist-info/RECORD,,
