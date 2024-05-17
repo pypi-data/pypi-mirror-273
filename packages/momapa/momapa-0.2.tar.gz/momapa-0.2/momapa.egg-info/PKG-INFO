@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: momapa
+Version: 0.2
+Summary: Simple library to parse and use Minecraft manifests
+Home-page: https://github.com/Spectrum-MC/momapa
+Author: oxodao
+License: GPLv3
+Keywords: Minecraft,Mojang,Manifest,Parser,Spectrum
+License-File: LICENSE.md
