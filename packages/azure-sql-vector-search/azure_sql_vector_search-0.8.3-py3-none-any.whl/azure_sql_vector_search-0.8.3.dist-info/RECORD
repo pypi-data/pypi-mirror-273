@@ -1,0 +1,10 @@
+azure_sql_vector_search/__init__.py,sha256=i9oXxMFrQ5qFUH_fGvFXbDs9mbbruxeLZsIF9ARDX6I,316
+azure_sql_vector_search/classic_vector_search.py,sha256=OiU4dB0uv_PVi8svJTSd55e2TQD7H_LZddqbZz-gJj4,10409
+azure_sql_vector_search/models.py,sha256=Ec_0KmJKIBDdL9HV2VD6wby6QN0X49KhbmV3nzXT8dM,400
+azure_sql_vector_search/native_vector_search.py,sha256=7WsLxMdcVPT7V76kaWjMIopqX7ZnG1Xzq9bbKSpkBDs,8644
+azure_sql_vector_search/vector_search_base.py,sha256=rJ3M3iEok6_GS6nxph-sfAcw1kaf7yyqz0Q5UkVqdco,8752
+azure_sql_vector_search-0.8.3.dist-info/LICENSE,sha256=lk9KyvUrMidXqGRIiajvezO4e6eKvuVik_EccSoQlyk,1078
+azure_sql_vector_search-0.8.3.dist-info/METADATA,sha256=AOIplZD03wFh9bw7x0zM9ALTZxir7dVk7tcq5pZbgzE,16658
+azure_sql_vector_search-0.8.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+azure_sql_vector_search-0.8.3.dist-info/top_level.txt,sha256=pkfvDp0r25GXeB15KmhMakejdhAAm0drY4buPuqJUvI,24
+azure_sql_vector_search-0.8.3.dist-info/RECORD,,
