@@ -1,0 +1,114 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: "true"
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip pytest cmake scikit-build setuptools
+          python3 -m pip install \
+            --verbose \
+            --config-settings cmake.args='-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_CXX_FLAGS=-g3;-DCMAKE_C_FLAGS=-g3' \
+            --config-settings cmake.verbose=true \
+            --config-settings logging.level=INFO \
+            --config-settings install.strip=false \
+            --editable .
+      - name: Test with pytest
+        run: |
+          python -m pytest -s -vvvv
+
+  build-windows:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: "true"
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip pytest cmake scikit-build setuptools
+          python3 -m pip install --verbose --config-settings cmake.args='-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_CXX_FLAGS=-g3;-DCMAKE_C_FLAGS=-g3' --config-settings cmake.verbose=true --config-settings logging.level=INFO --config-settings install.strip=false --editable .
+      - name: Test with pytest
+        run: |
+          python -m pytest -s -vvvv
+
+  build-macos:
+    runs-on: macos-13
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: "true"
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip pytest cmake scikit-build setuptools
+          python3 -m pip install \
+            --verbose \
+            --config-settings cmake.args='-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_CXX_FLAGS=-g3;-DCMAKE_C_FLAGS=-g3' \
+            --config-settings cmake.verbose=true \
+            --config-settings logging.level=INFO \
+            --config-settings install.strip=false \
+            --editable .
+      - name: Test with pytest
+        run: |
+          python -m pytest -s -vvvv
+
+  build-macos-metal:
+    runs-on: macos-13
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: "true"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip pytest cmake scikit-build setuptools
+          python3 -m pip install \
+            --verbose \
+            --config-settings cmake.args='-DCMAKE_BUILD_TYPE=Debug;-DCMAKE_CXX_FLAGS=-g3;-DCMAKE_C_FLAGS=-g3;-DGGML_METAL=On' \
+            --config-settings cmake.verbose=true \
+            --config-settings logging.level=INFO \
+            --config-settings install.strip=false \
+            --editable .
+      - name: Test with pytest
+        run: |
+          python -m pytest -s -vvvv
