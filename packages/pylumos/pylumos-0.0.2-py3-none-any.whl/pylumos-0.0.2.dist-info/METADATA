@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pylumos
+Version: 0.0.2
+Summary: Addressable LED interface tool
+Home-page: https://github.com/redhill-embedded/recom.git
+Author: Adrian Rothenbuhler
+Author-email: adrian@redhill-embedded.com
+License: MIT
+Keywords: LED
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: recom ==0.0.3
+
