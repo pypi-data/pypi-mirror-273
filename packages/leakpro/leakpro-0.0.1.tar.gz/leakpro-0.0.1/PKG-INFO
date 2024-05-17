@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: leakpro
+Version: 0.0.1
+Summary: Test
+Maintainer: Dave Johnson
+Maintainer-email: davejohnson8888818@gmail.com
+License: MIT
+Keywords: test
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Test
