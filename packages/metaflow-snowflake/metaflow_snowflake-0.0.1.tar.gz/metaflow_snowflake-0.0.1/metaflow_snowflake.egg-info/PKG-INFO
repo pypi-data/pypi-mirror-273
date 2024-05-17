@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: metaflow-snowflake
+Version: 0.0.1
+Summary: Utility functions for using common Snowflake actions with Metaflow.
+Author: Outerbounds
+Author-email: hello@outerbounds.co
+License-File: LICENSE
