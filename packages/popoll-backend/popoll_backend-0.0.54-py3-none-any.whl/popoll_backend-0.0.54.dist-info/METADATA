@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: popoll_backend
+Version: 0.0.54
+Summary: A small example package
+Author-email: vivi5421 <pypi@villard.me>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: flask-restful
+Requires-Dist: jsonpickle
+Requires-Dist: werkzeug
+
+# popoll backend
