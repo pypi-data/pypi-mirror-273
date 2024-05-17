@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mypackage20240516wkh
+Version: 0.1
+Summary: a short description of the package
+Home-page: https://github.com/OovessaliusoO/git01
+Author: testpackage@testpacakge.com
+Author-email: testpackage@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+##### TEST PACKAGE README
+
+this is a test

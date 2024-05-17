@@ -1,0 +1,12 @@
+README.md
+setup.py
+mypackage/__init__.py
+mypackage/module1.py
+mypackage/module2.py
+mypackage20240516wkh.egg-info/PKG-INFO
+mypackage20240516wkh.egg-info/SOURCES.txt
+mypackage20240516wkh.egg-info/dependency_links.txt
+mypackage20240516wkh.egg-info/requires.txt
+mypackage20240516wkh.egg-info/top_level.txt
+mypackage/subpackage/__init__.py
+mypackage/subpackage/submodule1.py

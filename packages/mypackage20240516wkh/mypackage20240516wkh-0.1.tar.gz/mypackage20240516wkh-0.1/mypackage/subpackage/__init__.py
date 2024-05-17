@@ -1,0 +1,1 @@
+from .submodule1 import some_function
