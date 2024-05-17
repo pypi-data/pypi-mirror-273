@@ -1,0 +1,42 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "shared-ndarray2"
+version = "2.0.1"
+description = "Interface for NumPy ndarray using multiprocessing SharedMemory"
+authors = ["Randall Pittman <randallpittman@outlook.com>"]
+license = "MIT"
+homepage = "https://gitlab.com/osu-nrsg/shared-ndarray2"
+repository = "https://gitlab.com/osu-nrsg/shared-ndarray2"
+keywords = ["numpy", "shared_memory", "ndarray"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+]
+include = [
+    "LICENSE",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21.1"
+single-version = "^1.5.1"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^7.26.0"
+mypy = "^1.10.0"
+ipdb = "^0.13.9"
+tomli = "^1.2.1"
+pytest = "^6.2.4"
+ruff = "^0.4.4"
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint.extend-per-file-ignores]
+"__init__.py" = ["F401"]
+
