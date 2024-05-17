@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mikoblocks"
+version = "0.1.2"
+description = "Mikoblocks is a minimal library to programmatically generate html."
+authors = [{ name = "Alex Stevovich", email = "alex.stevovich@gmail.com" }]
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10"
+]
+
+[tool.setuptools.packages.find]
+include = ["mikoblocks"]
