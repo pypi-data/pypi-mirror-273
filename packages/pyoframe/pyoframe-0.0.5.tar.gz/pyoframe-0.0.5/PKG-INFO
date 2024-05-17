@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pyoframe
+Version: 0.0.5
+Summary: Blazing fast linear program interface
+Author-email: Bravos Power <dev@bravospower.com>
+Project-URL: Homepage, https://bravos-power.github.io/pyoframe/
+Project-URL: documentation, https://bravos-power.github.io/pyoframe/
+Project-URL: repository, https://github.com/Bravos-Power/pyoframe/
+Project-URL: Issues, https://github.com/Bravos-Power/pyoframe/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: polars
+Requires-Dist: numpy
+Requires-Dist: pyarrow
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pip-tools; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: gurobipy; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs-material==9.*; extra == "docs"
+Requires-Dist: mkdocstrings[python]; extra == "docs"
+Requires-Dist: mkdocs-git-revision-date-localized-plugin; extra == "docs"
+Requires-Dist: mkdocs-git-committers-plugin-2; extra == "docs"
+Requires-Dist: mkdocs-gen-files; extra == "docs"
+Requires-Dist: mkdocs-section-index; extra == "docs"
+Requires-Dist: mkdocs-literate-nav; extra == "docs"
+
+# Pyoframe: Fast and low-memory linear programming models 
+
+[![codecov](https://codecov.io/gh/Bravos-Power/pyoframe/graph/badge.svg?token=8258XESRYQ)](https://codecov.io/gh/Bravos-Power/pyoframe)
+[![Build](https://github.com/Bravos-Power/pyoframe/actions/workflows/ci.yml/badge.svg)](https://github.com/Bravos-Power/pyoframe/actions/workflows/ci.yml)
+[![Docs](https://github.com/Bravos-Power/pyoframe/actions/workflows/publish_doc.yml/badge.svg)](https://Bravos-Power.github.io/pyoframe/reference/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Issues Needing Triage](https://img.shields.io/github/issues-search/Bravos-Power/pyoframe?query=no%3Alabel%20is%3Aopen&label=Needs%20Triage)](https://github.com/Bravos-Power/pyoframe/issues?q=is%3Aopen+is%3Aissue+no%3Alabel)
+[![Open Bugs](https://img.shields.io/github/issues-search/Bravos-Power/pyoframe?query=label%3Abug%20is%3Aopen&label=Open%20Bugs)](https://github.com/Bravos-Power/pyoframe/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
+
+
+A library to rapidly and memory-efficiently formulate large and sparse optimization models using Pandas or Polars dataframes.
+
+## Contribute
+
+Contributions are welcome! See [`CONTRIBUTE.md`](./CONTRIBUTE.md).
+
+## Acknowledgments
+
+Martin Staadecker first created this library while working for [Bravos Power](https://www.bravospower.com/) The library takes inspiration from Linopy and Pyomo, two prior libraries for optimization for which we are thankful.
+
+## Troubleshooting Common Errors
+
+### `datatypes of join keys don't match`
+
+Often, this error indicates that two dataframes in your inputs representing the same dimension have different datatypes (e.g. 16bit integer and 64bit integer). This is not allowed and you should ensure for the same dimensions, datatypes are identical.
