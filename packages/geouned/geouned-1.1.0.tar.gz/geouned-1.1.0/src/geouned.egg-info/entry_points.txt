@@ -1,0 +1,2 @@
+[console_scripts]
+geouned_cadtocsg = geouned.GEOUNED.scripts.geouned_cadtocsg:main
