@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: testmypixipkg
+Version: 0.15.0
+Summary: Add a short description here
+Author-email: Jermiah Joseph <jermiahjoseph98@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: rich
+Requires-Dist: rich-click
+Description-Content-Type: text/markdown
+
+# testmypixipkg
