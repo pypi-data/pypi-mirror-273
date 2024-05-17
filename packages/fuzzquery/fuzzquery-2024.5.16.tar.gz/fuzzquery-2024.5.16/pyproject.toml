@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuzzquery"
+version = "2024.5.16"
+authors = [
+  { name="OneMadGypsy", email="onemadgypsy@gmail.com" },
+]
+description = "A lightwieght package for doing fuzzy matches with a simple query language"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "regex>=2024.5.15",
+]
+
+[project.urls]
+Homepage = "https://github.com/OneMadGypsy/fuzzquery"
+Issues = "https://github.com/OneMadGypsy/fuzzquery/issues"
