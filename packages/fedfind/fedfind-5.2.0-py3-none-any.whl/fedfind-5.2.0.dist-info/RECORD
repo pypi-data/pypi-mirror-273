@@ -1,0 +1,12 @@
+fedfind/__init__.py,sha256=zptIhWUTp1mzBUO5ADbjz9UWMEePzSM-uK72zQYXXTM,934
+fedfind/cli.py,sha256=FgGI0SJw1ZH1ywr8TOy4fd2bsQ-pp6pEOfpm017k7U0,10798
+fedfind/const.py,sha256=wxFp16wk5ybAwsSXy57clZljfVgdvITjhCAQ_6nA2sw,7151
+fedfind/exceptions.py,sha256=Aa2G5N6KHCvI1LkXoHLFKqLxm8RHUb76rDmmHmcvjXc,2502
+fedfind/helpers.py,sha256=bA8wL1UpwZvXQQT14fD9WM2pvdVaQ976tEoab-NhoTo,32015
+fedfind/release.py,sha256=NCyFdqLt0PuSBLNpP0jO-B15U058uRsbHSr0GdgPMzM,100735
+fedfind-5.2.0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+fedfind-5.2.0.dist-info/METADATA,sha256=-RO1ybmA20A_4Dm1KogSx5INbDiLbquU-b8g_bF9ioA,27820
+fedfind-5.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fedfind-5.2.0.dist-info/entry_points.txt,sha256=3-t6icIRsaWHtEIA7_xw3NUwsc8xdtibP8fk63mYlqw,45
+fedfind-5.2.0.dist-info/top_level.txt,sha256=HRezXvAobBL31nXQ_aXLqz-ZPe8KH9yy8nRcqPCV5sM,8
+fedfind-5.2.0.dist-info/RECORD,,
