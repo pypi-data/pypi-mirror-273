@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: addresskr
+Version: 0.1.0
+Summary: 주소 문자열을 받아서 도로명주소의 여러 가지 요소로 쪼개서 사용할 수 있게 한다.
+Author-email: Pak Youngrok <youngrok@finecode.kr>
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: requests
+Requires-Dist: typer
+Requires-Dist: ipython
+Requires-Dist: python-dotenv
+Project-URL: Home, https://github.com/finecodekr/addresskr
