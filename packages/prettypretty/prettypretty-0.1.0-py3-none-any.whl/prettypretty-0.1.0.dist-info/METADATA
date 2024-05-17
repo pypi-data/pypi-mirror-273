@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: prettypretty
+Version: 0.1.0
+Summary: Library support for awesome command line interfaces
+Keywords: awesome terminals
+Author-email: Robert Grimm <rgrimm@alum.mit.edu>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pyright ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinxcontrib-autoprogram ; extra == "doc"
+Requires-Dist: sphinx_design ; extra == "doc"
+Requires-Dist: sphinx-rtd-theme ; extra == "doc"
+Project-URL: repository, https://github.com/apparebit/prettypretty
+Provides-Extra: dev
+Provides-Extra: doc
+
+# prettypretty
+
+Prettypretty is a Python package to help build better terminal user interfaces.
+For starters, prettypretty provides robust color manipulation and conversion,
+including from and to terminal colors.
+
+---
+
+Copyright 2024 Robert Grimm. The code in this repository has been released as
+open source under the [Apache 2.0](LICENSE).
+
