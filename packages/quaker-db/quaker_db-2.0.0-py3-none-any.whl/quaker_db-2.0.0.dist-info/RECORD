@@ -1,0 +1,12 @@
+quaker_db/__init__.py,sha256=QkrvqYOaXysNCoZAF6NRTssUvgz4St3kVKhsNv3LofE,52
+quaker_db/__main__.py,sha256=teeRVqMoxVWxB3VIXsLWG6gbikTDE28V14QoGLNh3fw,7426
+quaker_db/client.py,sha256=4ba70xWAwv6lC2Fq7zeU5kTyvneCasYUThc5MP-cSrU,1988
+quaker_db/file.py,sha256=0pRPtbm9-PTPhw36A20CJ4DfKSnJoqJAOI4B-FIPSO0,2194
+quaker_db/globals.py,sha256=C2XP8NDqnvvSn6QLEj8x_5fWzpOIXsKbE_fqWu0bl9o,193
+quaker_db/query.py,sha256=5eaNCrVGc0JjUpSKodFdk3fZ7Uha2sX-kpkiFZWrlxc,3046
+quaker_db/utils.py,sha256=ibBiUHjVGmgRl92Su4RjagVFpwmnSP4nTosGHg0j6eU,246
+quaker_db-2.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+quaker_db-2.0.0.dist-info/METADATA,sha256=ScbaKj8MQpaHX4FOuFjSbTI5jucZfptLrb5p8nTZOeg,9982
+quaker_db-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+quaker_db-2.0.0.dist-info/entry_points.txt,sha256=-mDTAMzw8dzI2KYsaGTIRE88__kIALVyhie8OKNrIZo,50
+quaker_db-2.0.0.dist-info/RECORD,,

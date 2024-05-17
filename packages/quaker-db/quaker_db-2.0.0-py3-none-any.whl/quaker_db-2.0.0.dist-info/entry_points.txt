@@ -1,0 +1,3 @@
+[console_scripts]
+quaker=quaker_db.__main__:main
+
