@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="astrosampler"
+version="0.2.0"
+authors = [
+    { name="Matthew Whitaker", email="sub6resources@gmail.com" },
+]
+dependencies = [
+    "numpy",
+]
+description="A package for sampling typical distributions in astronomy"
+readme="README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Sub6Resources/astro-sampler"
+"Issues" = "https://github.com/Sub6Resources/astro-sampler/issues"
