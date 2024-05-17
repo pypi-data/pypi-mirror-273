@@ -1,0 +1,2 @@
+[console_scripts]
+slf-extract = sleeplab_format.extractor.cli:run_cli
