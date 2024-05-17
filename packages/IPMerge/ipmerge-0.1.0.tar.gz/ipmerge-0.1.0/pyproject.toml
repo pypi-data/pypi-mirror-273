@@ -1,0 +1,32 @@
+[project]
+name = "IPMerge"
+version = "0.1.0"
+description = "Merge CIDR blocks of IPv4 and IPv6 addresses"
+authors = [
+    { name = "Vojtěch Kursa", email = "it.vojtechkursa@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.2.0",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
