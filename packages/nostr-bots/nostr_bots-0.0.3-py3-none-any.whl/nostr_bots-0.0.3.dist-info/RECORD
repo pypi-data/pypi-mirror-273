@@ -1,0 +1,13 @@
+nostr_bots/__about__.py,sha256=KYz2CLz11FU2T0dQsNSW-GyR1W1gvMuWGADLw5Ew5tc,121
+nostr_bots/__init__.py,sha256=jrIqzN7n4Y2tY7qjL9qaibcZAEWcvQQINeo1nRhXIn0,99
+nostr_bots/acceptors.py,sha256=eoNnaLBRFc-8vBaYLg-wEfdG7-Xu0HxCD4bESVps7SM,1159
+nostr_bots/basic.py,sha256=qLkp3MAZ07_VjXRKXwhtMStjonaVWzVSLGCLuMP6GNg,7733
+nostr_bots/bitcoind.py,sha256=QIulrtp-_jNOYcfgr2UZyOSePr6FnTJz3UsDjdqr4fc,3881
+nostr_bots/run_bitcoin_bot.py,sha256=Pa-OW6OaZ7bOGhiIglBdAJbw_TYaV0kkoNMlJdXhGIc,4708
+nostr_bots/run_echo_bot.py,sha256=txrHsJ_josDlJS0s-zfHVP-Pjjg0Q_Hx14z_goOechc,2682
+nostr_bots/run_ip_bot.py,sha256=V3OnJU4-bqbgdoPbEtOY_BKbjUu3-1nDLystbF8ElRQ,2832
+nostr_bots/util.py,sha256=bKTRodxNSYBO3x7lqd6TIqNy1m3Uk-G-opZml3OwOqo,538
+nostr_bots-0.0.3.dist-info/METADATA,sha256=CySczUrPwMuRQTAO2RrkA3ZWYIziW7x_6CAmbSfRcp4,1708
+nostr_bots-0.0.3.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+nostr_bots-0.0.3.dist-info/licenses/LICENSE.txt,sha256=GAwron95V9jvrRFVdx277ZgNscQWcRdStUY1FA0Fivg,1091
+nostr_bots-0.0.3.dist-info/RECORD,,
