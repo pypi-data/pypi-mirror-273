@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pynamodb_utils/__init__.py
+src/pynamodb_utils/attributes.py
+src/pynamodb_utils/conditions.py
+src/pynamodb_utils/exceptions.py
+src/pynamodb_utils/models.py
+src/pynamodb_utils/parsers.py
+src/pynamodb_utils/serializers.py
+src/pynamodb_utils/utils.py
+src/pynamodb_utils.egg-info/PKG-INFO
+src/pynamodb_utils.egg-info/SOURCES.txt
+src/pynamodb_utils.egg-info/dependency_links.txt
+src/pynamodb_utils.egg-info/requires.txt
+src/pynamodb_utils.egg-info/top_level.txt
