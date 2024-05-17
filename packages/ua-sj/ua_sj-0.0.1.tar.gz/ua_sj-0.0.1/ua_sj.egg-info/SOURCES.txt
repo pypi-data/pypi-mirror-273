@@ -1,0 +1,9 @@
+README.txt
+license.txt
+setup.py
+ua_sj/__init__.py
+ua_sj/ua_sj.py
+ua_sj.egg-info/PKG-INFO
+ua_sj.egg-info/SOURCES.txt
+ua_sj.egg-info/dependency_links.txt
+ua_sj.egg-info/top_level.txt
