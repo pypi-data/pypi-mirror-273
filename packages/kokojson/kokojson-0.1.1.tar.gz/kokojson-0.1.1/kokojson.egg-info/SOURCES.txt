@@ -1,0 +1,7 @@
+setup.py
+kokojson/__init__.py
+kokojson/main.py
+kokojson.egg-info/PKG-INFO
+kokojson.egg-info/SOURCES.txt
+kokojson.egg-info/dependency_links.txt
+kokojson.egg-info/top_level.txt
