@@ -1,0 +1,10 @@
+FasterAPI/__init__.py,sha256=utQNjI9gakH8QFoNdB0WM0fbJWaRFjKL2PLPnfldilk,3258
+FasterAPI/app.py,sha256=aFNuFPN5YeRw20mNf9J3t8d6cD6XnT8JS_VB-7-Wm4w,4295
+FasterAPI/dependencies.py,sha256=IkIAW93r8tWXdtoTalL7IgraU_0gvRz7APT__S5QwYI,3269
+FasterAPI/models.py,sha256=engZy-OWmBM3sBpU4dL2L-gKMRGSGd5X6xEhFn5CEkg,1867
+FasterAPI/router.py,sha256=3sGpyLl2SVU729Bqh4iTyZpZvE7R-pxKbQN9qC0M0d8,8141
+FasterAPI/schemas.py,sha256=fYqMpyATKvlFeMo3w4kqkRrFtv0FnWNmJPqr-OoBu6o,908
+FasterAPI/utils.py,sha256=z_v3w5PbPx42liN1jtJMk6ZRvqKfhsP22RlNa1ljcIE,12969
+fasterapi-0.0.37.dist-info/METADATA,sha256=Pgi5QQ5F-Uvu-cBZDE6h_XOj-30IrfGTnhJTPc0r_cc,4712
+fasterapi-0.0.37.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fasterapi-0.0.37.dist-info/RECORD,,
