@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: InforeWss
+Version: 1.0.1
+Summary: 封装wss服务，可以快速连接，方便调试
+Home-page: https://github.com/leslie110
+Author: wangdashuai
+Author-email: hanchaodaming@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: websockets
+
+# 关于InforeWss简单使用
+    
+## 使用方法
+    安装相关模块后
+    url = ""
+    data = {}
+    ws = InforeWss(url)
+    await ws.connect_to_server()
+    await ws.send_and_recv(data)
+### 简单说明
+    需要异步调用处理 
+
+    
+
+  
