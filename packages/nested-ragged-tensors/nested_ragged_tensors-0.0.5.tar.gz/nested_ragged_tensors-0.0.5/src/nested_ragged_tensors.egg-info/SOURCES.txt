@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/nested_ragged_tensors/__init__.py
+src/nested_ragged_tensors/ragged_numpy.py
+src/nested_ragged_tensors.egg-info/PKG-INFO
+src/nested_ragged_tensors.egg-info/SOURCES.txt
+src/nested_ragged_tensors.egg-info/dependency_links.txt
+src/nested_ragged_tensors.egg-info/requires.txt
+src/nested_ragged_tensors.egg-info/top_level.txt
