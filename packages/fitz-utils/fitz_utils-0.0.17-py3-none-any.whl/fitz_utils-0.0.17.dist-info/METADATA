@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: fitz-utils
+Version: 0.0.17
+Summary: Extra functions for use with pymupdf module
+Author: The Walnut AI
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ftfy (>=6.1.1,<7.0.0)
+Requires-Dist: numpy (>=1.26.1,<2.0.0)
+Requires-Dist: pandas (>=2.1.1,<3.0.0)
+Requires-Dist: pymupdf (>=1.20.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+## Introduction
+
+Add extra functions for use with pymupdf module
+
+## Installation
+
+1. Install dev environment
+
+```
+make install
+```
+
+2. Create wheel of the package
+
+```
+poetry build
+```
+
+3. Install the package
+
+```
+pip install dist/fitz_utils-0.0.13-py3-none-any.whl
+```
+
+OR
+
+```
+poetry add dist/fitz_utils-0.0.13-py3-none-any.whl
+```
+
