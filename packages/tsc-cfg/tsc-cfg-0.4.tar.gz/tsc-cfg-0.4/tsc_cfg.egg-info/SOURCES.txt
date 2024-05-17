@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+tsc_cfg/__init__.py
+tsc_cfg/cfg_utils.py
+tsc_cfg/global_info.py
+tsc_cfg/py_static_cfg.py
+tsc_cfg/test_global_info.py
+tsc_cfg.egg-info/PKG-INFO
+tsc_cfg.egg-info/SOURCES.txt
+tsc_cfg.egg-info/dependency_links.txt
+tsc_cfg.egg-info/requires.txt
+tsc_cfg.egg-info/top_level.txt

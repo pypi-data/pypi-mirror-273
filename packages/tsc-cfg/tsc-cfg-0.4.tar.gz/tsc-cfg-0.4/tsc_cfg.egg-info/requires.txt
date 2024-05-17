@@ -1,0 +1,10 @@
+tsc-base
+watchdog
+redis
+jsonpath-ng
+
+[recommended]
+tsc-base==0.42
+watchdog==3.0.0
+redis==5.0.1
+jsonpath-ng==1.6.0
