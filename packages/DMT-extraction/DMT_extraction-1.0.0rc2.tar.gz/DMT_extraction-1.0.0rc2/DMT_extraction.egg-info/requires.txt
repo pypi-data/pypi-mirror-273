@@ -1,0 +1,13 @@
+DMT-core[latex,pyqtgraph]
+matplotlib
+qtpy
+
+[batch_mode]
+click
+coloredlogs
+
+[pyside2]
+PySide2
+
+[pyside6]
+PySide6

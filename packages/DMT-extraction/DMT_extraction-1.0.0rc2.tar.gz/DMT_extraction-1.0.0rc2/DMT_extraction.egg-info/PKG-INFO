@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: DMT-extraction
+Version: 1.0.0rc2
+Summary: Device Modeling Toolkit extraction submodule
+Home-page: https://gitlab.com/dmt-development/dmt_extraction
+Author: SemiMod
+Author-email: mario.krattenmacher@semimod.de
+License: DMT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Provides-Extra: batch_mode
+Provides-Extra: pyside2
+Provides-Extra: pyside6
+License-File: LICENSE
+
+UNKNOWN
+
