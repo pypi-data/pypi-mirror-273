@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+mergefields.py
+setup.cfg
+setup.py
+docx_mergefields.egg-info/PKG-INFO
+docx_mergefields.egg-info/SOURCES.txt
+docx_mergefields.egg-info/dependency_links.txt
+docx_mergefields.egg-info/not-zip-safe
+docx_mergefields.egg-info/requires.txt
+docx_mergefields.egg-info/top_level.txt
+tests/test_includepicture.py
