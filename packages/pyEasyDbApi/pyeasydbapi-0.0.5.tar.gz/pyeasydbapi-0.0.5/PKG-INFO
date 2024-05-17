@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyEasyDbApi
+Version: 0.0.5
+Summary: Simple DataBase to use
+Home-page: https://t.me/n1grtr33x
+Author: n1grtr33x
+Author-email: dmitroluc7@gmail.com
+Keywords: easy-db
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h2>Hello, is easy use</h2> <h1>DataBase</h1>

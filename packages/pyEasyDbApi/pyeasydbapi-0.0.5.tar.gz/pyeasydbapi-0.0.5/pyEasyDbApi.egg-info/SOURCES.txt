@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+SimpleDB/__init__.py
+SimpleDB/main.py
+pyEasyDbApi.egg-info/PKG-INFO
+pyEasyDbApi.egg-info/SOURCES.txt
+pyEasyDbApi.egg-info/dependency_links.txt
+pyEasyDbApi.egg-info/top_level.txt
