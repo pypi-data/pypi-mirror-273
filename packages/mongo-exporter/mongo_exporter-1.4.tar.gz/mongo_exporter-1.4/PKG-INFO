@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mongo_exporter
+Version: 1.4
+Summary: A tool that supports exporting the database schema from MongoDB.
+Author: Alex Haimov
+Author-email: haimovalex@gmail.com
