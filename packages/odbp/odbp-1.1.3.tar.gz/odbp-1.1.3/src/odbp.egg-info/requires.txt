@@ -1,0 +1,17 @@
+platformdirs
+h5py
+numpy
+pandas
+
+[:platform_system == "Windows"]
+pyreadline3
+
+[all]
+odbp[plot]
+
+[plot]
+polyscope
+scipy
+
+[plot:python_version < "3.11"]
+tomli>=1.1.0
