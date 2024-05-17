@@ -1,0 +1,8 @@
+README.md
+setup.py
+klazify.egg-info/PKG-INFO
+klazify.egg-info/SOURCES.txt
+klazify.egg-info/dependency_links.txt
+klazify.egg-info/top_level.txt
+klazify_api/__init__.py
+klazify_api/client.py
