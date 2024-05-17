@@ -1,0 +1,8 @@
+todoist_auto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+todoist_auto/models.py,sha256=O0TQJH5gajloYu0bwqaMCk7KxFgGVDizbfsFfU8UFjs,2031
+todoist_auto/refresh_day_routine.py,sha256=-XNj5InE6OM4WQvZY9VQh8jkSZujWzBhlWHRTskQ4f4,7094
+todoist_auto/rm_empty_sections.py,sha256=jetG5a77Yx1AeS8n5ROGkMkGz5wY2CgSZLqkdWL6vbA,1200
+todoist_auto/util.py,sha256=lFJmBa4L3ugR_SmvN9oFrdUYLSSSTEbs1yePgjweNRM,1284
+todoist_auto-10.4.0.dist-info/METADATA,sha256=qFLctS8cysbWxVYC4J5_QjYIkg1rmWjBPP4s-TCxzjo,310
+todoist_auto-10.4.0.dist-info/WHEEL,sha256=cDcbFFSNXOE-241I5PFuLkIYfR_FM7WTlPEi33njInY,105
+todoist_auto-10.4.0.dist-info/RECORD,,
