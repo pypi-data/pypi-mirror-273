@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "trust-plutus-namematch"
+version = "0.5"
+description = "Name match for fund names from ICRA and MILES"
+authors = ["Rolf Lobo"]
+license = "OSI Approved :: GNU General Public License v3 (GPLv3)"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+pandas = "2.0.3"
+numpy = "1.25.2"
+rapidfuzz = "3.9.0"
+loga = "^1.0.0"
+openpyxl = "^3.1.2"
+joblib = "^1.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

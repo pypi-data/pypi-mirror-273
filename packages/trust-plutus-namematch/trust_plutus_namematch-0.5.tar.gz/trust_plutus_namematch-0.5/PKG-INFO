@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: trust-plutus-namematch
+Version: 0.5
+Summary: Name match for fund names from ICRA and MILES
+License: OSI Approved :: GNU General Public License v3 (GPLv3)
+Author: Rolf Lobo
+Requires-Python: >=3.10,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: joblib (>=1.4.2,<2.0.0)
+Requires-Dist: loga (>=1.0.0,<2.0.0)
+Requires-Dist: numpy (==1.25.2)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: rapidfuzz (==3.9.0)
+Description-Content-Type: text/markdown
+
+#### Assumptions: 
+1. Column name for Miles and ICRA sheet is "Fund Name"
+2. Input and Output file names don't have spaces
+3. Sheet names are : "Miles Names" and "ICRA Names"
+
+#### Example: 
+
+from trust_plutus_namematch.match import NameMatch
+
+nm = NameMatch()
+
+inputPath = "C:\\Users\\username\\Documents\\SchemeNamesDump.xlsx"
+
+outputPath = "C:\\Users\\username\\Documents\\Result.xlsx"
+
+nm.run(inputPath,outputPath)
+
