@@ -1,0 +1,13 @@
+glasflow
+h5py
+scipy
+matplotlib
+numpy
+torch
+
+[dev]
+corner
+pytest
+
+[plot]
+corner
