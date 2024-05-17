@@ -1,0 +1,6 @@
+pyvpacker
+pydbase
+pycryptodome
+pyvecc
+pyvguicom
+playsound
