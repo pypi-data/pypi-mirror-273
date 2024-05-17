@@ -1,0 +1,2 @@
+[console_scripts]
+subsonar = subsonar.main:cli_script
