@@ -1,0 +1,7 @@
+README.md
+setup.py
+pypinnacle.egg-info/PKG-INFO
+pypinnacle.egg-info/SOURCES.txt
+pypinnacle.egg-info/dependency_links.txt
+pypinnacle.egg-info/requires.txt
+pypinnacle.egg-info/top_level.txt
