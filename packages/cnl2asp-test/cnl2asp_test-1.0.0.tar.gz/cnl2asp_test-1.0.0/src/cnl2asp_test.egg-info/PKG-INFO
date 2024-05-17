@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cnl2asp-test
+Version: 1.0.0
+Summary: Hello
+Home-page: https://github.com/simocaruso/test
+Author: Simone Caruso
+Author-email: simone.caruso@edu.unige.it
+Maintainer: Simone Caruso
+Maintainer-email: simone.caruso@edu.unige.it
+License: Apache License
+Requires-Python: >=3.10
+
+World
