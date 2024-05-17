@@ -1,0 +1,10 @@
+numpy
+elabapi_python
+pandas
+json
+h5py
+ipyparams
+matplotlib
+pathlib
+datetime
+IPython
