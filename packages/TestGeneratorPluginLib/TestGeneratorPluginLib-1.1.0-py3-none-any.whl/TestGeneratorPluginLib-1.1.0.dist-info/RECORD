@@ -1,0 +1,13 @@
+TestGeneratorPluginLib/__init__.py,sha256=7KR0tOZ8Mu_f_sPBGLjDMeVu9pglZGdHhbvvN4QEmWA,350
+TestGeneratorPluginLib/_built_plugin.py,sha256=_SjMHfvRZ33-12ij1munqSHsnVdrQyU0jYrdvDX8jrw,2357
+TestGeneratorPluginLib/_config.py,sha256=g1rpzTkqYUrI00FueYE1Ksid7HQTAfM1zdv7LH33qdA,19
+TestGeneratorPluginLib/_language.py,sha256=_0TROdRY_bHXsu9nIPW2umYq9oV6MLaEV39RUSVnvZo,1780
+TestGeneratorPluginLib/_managers.py,sha256=ulSt91wyxg11ZU7N_Bt-r6TB6KYj1kRwZdMNyrdHR4w,1219
+TestGeneratorPluginLib/_plugin.py,sha256=cmZ_hYIKDuxb2mhwrmecOGB3zKP3CrcS4ta85XdJuIM,533
+TestGeneratorPluginLib/_plugin_setup.py,sha256=1ctY62jaezLT-TihRkpCRdpGe_8kznrEQcyLGFAHYmE,2834
+TestGeneratorPluginLib/_widgets.py,sha256=XeGOXPSVKJIB9F7JcG5PwAGVIPKlsXeGT4JQz5CfNXY,3344
+TestGeneratorPluginLib-1.1.0.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+TestGeneratorPluginLib-1.1.0.dist-info/METADATA,sha256=y_VzkrikMojRRh0770fa8NTNzRMCWbd3_cqdu0zzGFI,1667
+TestGeneratorPluginLib-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+TestGeneratorPluginLib-1.1.0.dist-info/top_level.txt,sha256=JbcYd5DBzLlErhNtRn6WtIv9TD_6Kg5WsitSt9ZOmwE,23
+TestGeneratorPluginLib-1.1.0.dist-info/RECORD,,
