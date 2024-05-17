@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Shellper
+Version: 0.3
+Summary: A Python Library for create shell apps.
+Home-page: https://gitee.com/ShawnMerry/Shellper
+Author: ShawnMerry
+Author-email: merrybili@163.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Shellper
+
+A Python Library about shells.
+<br>It can help you create the better shell apps..
+
+#### [PyPI](https://pypi.org/project/Shellper)
+
+#### [Gitee](https://gitee.com/ShawnMerry/Shellper)
+
+### Update Log:<br>
+
+v0.3 24/05/16 20:29: Update CMD Functions,Add Variable Supports,Add E_Type.<br>
+v0.2.1 24/05/12 15:45: Add CMD Functions.<br>
+v0.2 24/05/12 15:31: Removed Colorama Require.<br>
+v0.1 24/05/11: Initial Update.
