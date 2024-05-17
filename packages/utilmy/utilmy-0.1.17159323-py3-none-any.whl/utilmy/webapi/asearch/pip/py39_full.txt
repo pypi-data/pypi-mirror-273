@@ -1,0 +1,27 @@
+qdrant-client
+fastembed 
+tantivy
+ranx
+fire
+python-box
+kaggle 
+loguru
+datasets
+accelerate 
+sentence-transformers
+utilmy
+faker
+
+### LLM
+openai
+dspy
+
+### NER
+gliner
+
+
+#### MacOS ARM install for ranx
+### brew install pcre    pip install ranx
+
+
+
