@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+article_to_podcast/__init__.py
+article_to_podcast/__main__.py
+article_to_podcast/article.py
+article_to_podcast/chunks.py
+article_to_podcast/cli.py
+article_to_podcast/filename.py
+article_to_podcast/main.py
+article_to_podcast.egg-info/PKG-INFO
+article_to_podcast.egg-info/SOURCES.txt
+article_to_podcast.egg-info/dependency_links.txt
+article_to_podcast.egg-info/entry_points.txt
+article_to_podcast.egg-info/requires.txt
+article_to_podcast.egg-info/top_level.txt
+tests/test_main.py
