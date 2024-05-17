@@ -1,0 +1,11 @@
+rtorrent_rpc/__init__.py,sha256=XHvylvUvf_8MS6y89JPS4RMqqOzIL3GhDxUhQi4axzE,29843
+rtorrent_rpc/_jsonrpc/__init__.py,sha256=kVan5IwNCSSN54eV1NEz9x5GRwDAyEjdGjUppdDEehI,2458
+rtorrent_rpc/_jsonrpc/transport.py,sha256=S-hzozw9QXvjxGgE7vJmEUh56yLeRbgW8UTEYH-LfwM,3050
+rtorrent_rpc/_scgi.py,sha256=rF86kbkmjqQjHt9blOGiznPCQHfVeXaYYiQOI3Lagvk,1235
+rtorrent_rpc/_transport.py,sha256=lCHMVxFfQ-VHjyW3awAo5agQX4lLRmrrxM5bR4b_6BY,803
+rtorrent_rpc/helper.py,sha256=8k2CJTHfF8m3Jf4rsJKFRsisoFEY6lfx9xGIjht6KP0,3920
+rtorrent_rpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rtorrent_rpc-0.6.5.dist-info/LICENSE,sha256=LMdMbV_P2B7oib3E5xlgsrHZj7CBvXaCTghvU_wib34,1084
+rtorrent_rpc-0.6.5.dist-info/METADATA,sha256=wlsNJb6u8AV7dHoIPsQfbZy5CM05yu3OSEqd8GSisRc,2713
+rtorrent_rpc-0.6.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+rtorrent_rpc-0.6.5.dist-info/RECORD,,
