@@ -1,0 +1,8 @@
+
+[qiskit]
+qiskit
+qiskit_algorithms
+
+[tfq]
+tensorflow_quantum
+tensorflow
