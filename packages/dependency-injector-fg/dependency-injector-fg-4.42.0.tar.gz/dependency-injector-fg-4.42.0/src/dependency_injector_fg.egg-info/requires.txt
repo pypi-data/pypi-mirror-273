@@ -1,0 +1,16 @@
+six<=1.16.0,>=1.7.0
+
+[aiohttp]
+aiohttp
+
+[flask]
+flask
+
+[pydantic]
+pydantic
+
+[pydantic-settings]
+pydantic-settings
+
+[yaml]
+pyyaml
