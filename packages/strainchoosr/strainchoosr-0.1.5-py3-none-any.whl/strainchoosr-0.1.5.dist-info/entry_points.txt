@@ -1,0 +1,4 @@
+[console_scripts]
+strainchoosr = strainchoosr.strainchoosr:main
+strainchoosr_drawimage = strainchoosr.strainchoosr_gui:                 draw_image_wrapper
+strainchoosr_gui = strainchoosr.strainchoosr_gui:main
