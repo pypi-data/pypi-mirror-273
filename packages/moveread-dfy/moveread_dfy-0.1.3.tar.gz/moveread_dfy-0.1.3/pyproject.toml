@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moveread-dfy"
+version = "0.1.3"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Moveread DFY data models and API"
+dependencies = [
+  "lazy-loader", "pydantic",
+  "chess-pairings", "dslog",
+  "kv-api", "kv-azure-blob",
+  "sqlmodel", "sqltypes",
+  "chess-utils"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/moveread/moveread-dfy.git"
+
+[project.optional-dependencies]
+server = ["pure-cv", "fastapi", "python-multipart", "uvicorn[standard]", "kv-azure-blob", "psycopg2-binary", "dslog"]
+local = ["kv-fs", "python-dotenv", "kv-fs"]
+doer = ["moveread-pipelines-dfy"]
+client = []
+clientgen = ["openapi-ts"]
+
+[project.scripts]
+dfy-api = "moveread.dfy.scripts.api_cli:main"
+dfy-clientgen = "moveread.dfy.scripts.clientgen_cli:main"
+dfy-connect = "moveread.dfy.scripts.connect_cli:main"
+dfy-doer = "moveread.dfy.scripts.doer_cli:main"
