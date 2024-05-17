@@ -1,0 +1,12 @@
+feather_extract/__init__.py,sha256=OckDNGshPOxpBt3lXL_nXeaQzMHUIGoat27SAkOzbSI,167
+feather_extract/excel_writer.py,sha256=OQ_UBuswJaoyzoajU2qofkA_8Gw-8mUdUsYkM1rRg3E,391
+feather_extract/extract_text.py,sha256=IZ7QKPZyRNaIYqrUrIAG9vD6AI6ZIYT9HVCqgegrbrw,703
+feather_extract/format_text.py,sha256=YWIhfpTU8eqdOlUrUO4TErvKOlhgGTor6ifkIUq7HyM,1100
+feather_extract/forms.py,sha256=YI7ud3J-Lqd1Nx6G_h4L2SEyQGPnIpJ4sm6gHv3fZgQ,988
+feather_extract/utils.py,sha256=tyiGcKMO5Mnsvwl1GHr2nj2Bafpcsz4vplXHyQnOGdg,185
+feather_extract/data/standard-form-filled-out.pdf,sha256=VO_SkaTubyhQhTvP6aWuTrzWeVNnZaSIUZxWcLsaO20,257204
+feather_extract/data/standard_form.pdf,sha256=O-f_5dXcX4D3UpNh1SLPtYg5loqG_qC-8t6SK2KDIoc,911064
+feather_extract-0.1.13.dist-info/METADATA,sha256=Ba7OXdd3DINZsdcXBjlk8k4NL1YNB_Lizfy1pJ11TmM,3322
+feather_extract-0.1.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+feather_extract-0.1.13.dist-info/top_level.txt,sha256=wc9URnZQtJFP0bP57Q6EzNGPT1Empf_-7dUWccPHgks,16
+feather_extract-0.1.13.dist-info/RECORD,,
