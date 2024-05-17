@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fasta-reader"
+version = "3.0.3"
+description = "FASTA file reader/writer."
+authors = ["Danilo Horta <fdanilo.horta@pm.me>"]
+repository = "https://github.com/EBI-Metagenomics/fasta-reader"
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "fasta_reader" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fsspec = ">=2024.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+pytest-datafiles = "^3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
