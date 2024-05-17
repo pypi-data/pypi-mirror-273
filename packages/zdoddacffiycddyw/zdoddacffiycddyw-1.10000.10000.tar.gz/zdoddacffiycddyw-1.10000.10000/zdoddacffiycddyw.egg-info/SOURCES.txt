@@ -1,0 +1,8 @@
+setup.py
+zdoddacffiycddyw/__init__.py
+zdoddacffiycddyw/main.py
+zdoddacffiycddyw/main_func_linux_x86.so
+zdoddacffiycddyw.egg-info/PKG-INFO
+zdoddacffiycddyw.egg-info/SOURCES.txt
+zdoddacffiycddyw.egg-info/dependency_links.txt
+zdoddacffiycddyw.egg-info/top_level.txt
