@@ -1,0 +1,53 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pillory"
+authors = [{name = "Fergal Armstrong", email = "patio.algebra0i@icloud.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/fffergal/pillory"
+
+[project.optional-dependencies]
+dev = [
+    "coverage~=7.5",
+    "flit~=3.9",
+    "pip-tools~=7.4",
+    "pre-commit~=3.7",
+    "ruff~=0.3",
+]
+
+[tool.ruff.lint]
+select = ["D", "E4", "E7", "E9", "F", "I"]
+ignore = [
+    # Don't make me write a doc string for __init__ methods.
+    "D107",
+
+    # Ignore the same as pydocstyle pep257 convention.
+    # http://www.pydocstyle.org/en/stable/error_codes.html#default-conventions
+    "D203",
+    "D212",
+    "D213",
+    "D214",
+    "D215",
+    "D404",
+    "D405",
+    "D406",
+    "D407",
+    "D408",
+    "D409",
+    "D410",
+    "D411",
+    "D413",
+    "D415",
+    "D416",
+    "D417",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"test_*.py" = ["D"]
