@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+Shellper.egg-info/PKG-INFO
+Shellper.egg-info/SOURCES.txt
+Shellper.egg-info/dependency_links.txt
+Shellper.egg-info/top_level.txt
+shellper/__init__.py
+shellper/datas.py
+shellper/inputs.py
+shellper/log.py
+shellper/style.py
