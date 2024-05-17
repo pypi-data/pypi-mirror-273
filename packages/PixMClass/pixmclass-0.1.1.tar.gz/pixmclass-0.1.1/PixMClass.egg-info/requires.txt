@@ -1,0 +1,5 @@
+numpy
+scipy
+tensorflow>=2.7.1
+dataset_iterator>=0.4.0
+elasticdeform
