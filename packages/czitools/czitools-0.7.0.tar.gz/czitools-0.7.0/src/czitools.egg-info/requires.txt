@@ -1,0 +1,17 @@
+pylibCZIrw>=4.1.0
+aicspylibczi>=3.1.2
+tqdm
+pandas
+ome-zarr
+zarr
+dask
+python-dateutil
+python-box[all]
+czifile
+
+[all]
+napari[all]
+seaborn
+plotly
+pyqtgraph
+colormap
