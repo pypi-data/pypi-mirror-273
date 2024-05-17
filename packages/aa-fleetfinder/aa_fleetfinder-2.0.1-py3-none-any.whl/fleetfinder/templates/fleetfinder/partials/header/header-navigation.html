@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark mb-3 rounded">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'fleetfinder:dashboard' %}">
+            {% translate "Available fleets" as navigation_item %}
+            {{ navigation_item|title }}
+        </a>
+
+        <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#fleetfinder-header-navbar"
+            aria-controls="fleetfinder-header-navbar"
+            aria-expanded="false"
+            aria-label="{% translate 'Toggle navigation' %}"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="fleetfinder-header-navbar">
+            <ul class="navbar-nav">
+                {% if perms.fleetfinder.manage_fleets %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'fleetfinder:create_fleet' %}">
+                            {% translate "Create fleet" as navigation_item %}
+                            {{ navigation_item|title }}
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
