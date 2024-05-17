@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/inferent-deep/__init__.py
+src/inferent-deep/training/__init__.py
+src/inferent-deep/training/datamanager.py
+src/inferent-deep/training/predictor.py
+src/inferent-deep/training/preprocessor.py
+src/inferent-deep/training/pytorch.py
+src/inferent_deep.egg-info/PKG-INFO
+src/inferent_deep.egg-info/SOURCES.txt
+src/inferent_deep.egg-info/dependency_links.txt
+src/inferent_deep.egg-info/requires.txt
+src/inferent_deep.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_training.py
