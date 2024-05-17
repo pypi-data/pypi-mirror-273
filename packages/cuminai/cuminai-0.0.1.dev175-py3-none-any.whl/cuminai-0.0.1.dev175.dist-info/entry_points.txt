@@ -1,0 +1,3 @@
+[console_scripts]
+cuminai=cuminai.creator:executor
+
