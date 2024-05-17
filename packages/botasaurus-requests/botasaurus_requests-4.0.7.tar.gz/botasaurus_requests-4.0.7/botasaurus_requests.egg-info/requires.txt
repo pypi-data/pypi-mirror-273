@@ -1,0 +1,7 @@
+orjson
+httpx
+geventhttpclient
+urllib3
+rich
+click
+gevent
