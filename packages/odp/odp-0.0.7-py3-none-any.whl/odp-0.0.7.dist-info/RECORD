@@ -1,0 +1,13 @@
+odp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odp/__main__.py,sha256=mgJ4uH3pjbF8SJX6vfOoTXGb8gAcbz4uyRCM6_TOFSA,67
+odp/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odp/cli/main.py,sha256=o3SNZ_dkkR_O5wzfgbfMOJ9Z64CcQYAuM15wZL-xGuM,4358
+odp/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odp/core/detect_unused.py,sha256=d2T3Xs7HKnDPLmyME0I_NBrZ6kIJzgacXxvfxsaVrVI,8773
+odp/core/snowflake.py,sha256=eYC9rPheXWnezdq0d8LRJe57VyndV8g4c6eksn-tVNY,3121
+odp/core/types.py,sha256=20-hTFsgEMz1h3TOX-nAIFvcgCuuVA1fSNFHPf3ZSbY,1049
+odp-0.0.7.dist-info/LICENSE,sha256=lYMEVqZ7f3JePD1a4Yhr3bOAq_6gnE85PCedGPEdPGg,582
+odp-0.0.7.dist-info/METADATA,sha256=4m54wQevp2IM9G1TZdtC9Nohv-xRtXADKKWYBLNVVb0,2906
+odp-0.0.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+odp-0.0.7.dist-info/entry_points.txt,sha256=pYmOuk5FKZZLzxU8RAP1u_kCp3lcwtXNhfSuvSiKBn4,40
+odp-0.0.7.dist-info/RECORD,,
