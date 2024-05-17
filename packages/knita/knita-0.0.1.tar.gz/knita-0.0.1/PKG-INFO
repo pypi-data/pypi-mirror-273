@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: knita
+Version: 0.0.1
+Summary: The Knita SDK for Python
+Project-URL: Homepage, https://github.com/knita-io/knita
+Author: Knita
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+Description-Content-Type: text/markdown
+
+See the [Knita documentation on GitHub](https://github.com/knita-io/knita)
