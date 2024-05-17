@@ -1,0 +1,9 @@
+domainiac/__init__.py,sha256=ezC_vpooWhMA-M0M2GxZiF0DFc-KoCeVaNhlR4Ysnfg,65
+domainiac/managers/__init__.py,sha256=ZwpdZMaQ7JxVWOlH2wKAxezy_JNni8qaGzfVFtMkIVo,174
+domainiac/managers/masterdata_manager.py,sha256=h_KRtXLRAniPDy94EkWGC5cB93RYXQe3Zt_r_p4mWe0,1388
+domainiac/managers/metering_manager.py,sha256=NXGHuNjWiAUE08fGIPAfvwbzlKESbKaO5uyxLNyZKC0,995
+domainiac/managers/plant_manager.py,sha256=LW9S_HECpR-lljkopY1IcYpU9XgPDqhQxFH-wPAvQIU,1083
+domainiac/managers/unit_manager.py,sha256=PjtLag75PRDlX57lxbYo6hundkQy37jC170R4YKJw7U,1085
+domainiac-0.1.0.dist-info/METADATA,sha256=qmiB4NB9x1CY9zJMnYiNTPbdPXUVa0HWpX2NvJPpMXM,465
+domainiac-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+domainiac-0.1.0.dist-info/RECORD,,
