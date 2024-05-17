@@ -1,0 +1,6 @@
+requests
+bs4
+pandas
+pykakasi
+kanjize==1.5.0
+normalize-japanese-addresses==0.0.9
