@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "forecastout"
+version = "0.0.2"
+description = ""
+authors = ["alexis-vazquez <alexis.vazquez@adevinta.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+pmdarima = "^2.0.4"
+statsforecast = "^1.7.3"
+prophet = "^1.1.5"
+pyyaml = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version"
+]
+
+branch = "main"
+upload_to_PyPI = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+commit_author = "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+
+
+[tool.semantic_release.commit_parser_options]
+allowed_tags = [
+    "build",
+    "chore",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "perf",
+    "style",
+    "refactor",
+    "test"
+]
+minor_tags = ["feat"]
+patch_tags = ["fix", "perf"]
