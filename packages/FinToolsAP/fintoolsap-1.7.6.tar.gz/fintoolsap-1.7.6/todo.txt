@@ -1,0 +1,3 @@
+1. If dates are not in ISO8601 format then the database breaks
+3. add the ability to query from FF and FRED
+4. update tables ask to update all derivative tables cancels operation (should just not delete og tables)
