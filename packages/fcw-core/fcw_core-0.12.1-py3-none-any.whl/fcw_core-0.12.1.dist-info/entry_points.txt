@@ -1,0 +1,3 @@
+[console_scripts]
+fcw_example=fcw_core.fcw_example:main
+

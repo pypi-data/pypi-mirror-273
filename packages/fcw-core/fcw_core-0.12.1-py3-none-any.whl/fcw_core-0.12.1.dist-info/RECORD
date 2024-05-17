@@ -1,0 +1,14 @@
+fcw_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcw_core/data/UbuntuMono-B.ttf,sha256=EfFcOmu9mYqGlf3vs0dZMcN4mqA111RvLv546Ds1L2s,191400
+fcw_core/data/UbuntuMono-R.ttf,sha256=s13Z0hMdXYOpuH_prSLGKI-j0XaI1DMCwU2imBJBfWM,205748
+fcw_core/data/cog_logo.png,sha256=LSxFTTvAjc4ZgJfG7MHDkineT2AHmKnjURi-n0qE1F4,7541
+fcw_core/data/marker.png,sha256=I-h-WeI4-QKkUHeMaN2vcNrsT5cICDB3IKKgJ3vAhkc,223
+fcw_core/detection.py,sha256=QnRmE4r6k04PqI-5stc75EXwD6k2gFI6ydecgqesa1c,916
+fcw_core/fcw_example.py,sha256=p40tzWbfNmuDm_VSdAW_bETfvc_j8UhuE2PzI0gGjCI,8439
+fcw_core/sort.py,sha256=LP1Wkm3tqK4kRNGPUiZXgGTWXMZA0NJNoLPEGHjlX8M,13673
+fcw_core/vizualization.py,sha256=v3DhzWy921YulWgE8iMe4gpbSGv7SqPnsPbVhoKkQu0,7351
+fcw_core/yolo_detector.py,sha256=TbTS8UBSFUIg1GnhheFAMQDPR1KMQwixcjPI76PWtNw,4252
+fcw_core-0.12.1.dist-info/METADATA,sha256=KHeE5l4dOpZ4tU5D2p3QSKywZBbEum6TEc1U9uwz4yY,1698
+fcw_core-0.12.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fcw_core-0.12.1.dist-info/entry_points.txt,sha256=dvAuhCwCk_hiLGz6FBd5sEE8NL9PEu4WcI1wh0VpGWk,57
+fcw_core-0.12.1.dist-info/RECORD,,
