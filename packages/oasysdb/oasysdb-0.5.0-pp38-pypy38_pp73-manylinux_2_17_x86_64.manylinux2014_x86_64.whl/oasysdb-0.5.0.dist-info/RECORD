@@ -1,0 +1,10 @@
+oasysdb-0.5.0.dist-info/METADATA,sha256=krF8mYUArrZAo3Oq5yFtQ_j1fwHomBAuWjJ9BdoEUg0,11899
+oasysdb-0.5.0.dist-info/WHEEL,sha256=OQEfd1WfxEhAWN3nTLW3-GUvxd9BeOEMAQ6sSJXKD5s,134
+oasysdb/__init__.py,sha256=GQZ8mb7Lf3LX4JS7_FP6tbDq78yAaSpXeUNRLRTWAoQ,43
+oasysdb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oasysdb/prelude.pyi,sha256=BCJHjXPpJavr1-pjpX0kUoa3TEKtkcb_w-C5KMrzqQQ,119
+oasysdb/database.pyi,sha256=ycLo0NSaVaaECshPxOP-BFziCrqINRQLITPz8GjyXYA,1456
+oasysdb/collection.pyi,sha256=kpZ5uRE8BwScXIfl9KlsK0UIoKsHFesLZhQ1aH0ciGo,4790
+oasysdb/vector.pyi,sha256=gr_kupO5Q_Ac3MQVwBycX_2N-ztbfvYFqAokgBc_ZEo,757
+oasysdb/oasysdb.pypy38-pp73-x86_64-linux-gnu.so,sha256=ALHihsH0x9n1GES3gLV5q7mN5zrm-jFz0pys4_CTxQU,3259184
+oasysdb-0.5.0.dist-info/RECORD,,
