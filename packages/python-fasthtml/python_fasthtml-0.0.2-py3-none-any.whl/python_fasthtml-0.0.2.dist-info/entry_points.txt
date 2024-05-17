@@ -1,0 +1,2 @@
+[nbdev]
+fasthtml = fasthtml._modidx:d
