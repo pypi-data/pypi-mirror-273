@@ -1,0 +1,1 @@
+VAYU_URL = "https://connect.withvayu.com"
