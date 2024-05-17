@@ -1,0 +1,3 @@
+[console_scripts]
+dmt_batched = DMT.batchmode.cli:main
+
