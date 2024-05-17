@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: parasys
+Version: 0.2.0
+Summary: A platform-agnostic command-line tool for system monitoring.
+Home-page: https://github.com/avigold/parasys
+Author: Avram Score
+Author-email: ascore@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil
+Requires-Dist: asciimatics
+Provides-Extra: windows
+Requires-Dist: windows-curses; extra == "windows"
+
+# Parasys
+
+`parasys` is a command-line tool designed to monitor and display system performance metrics such as CPU usage and memory consumption in realtime. It offers a lightweight, efficient solution for system administrators, developers, or any user who needs to monitor his or her system's resources.
+
+## Features
+
+- Real-time CPU and memory monitoring
+- Lightweight and user-friendly
+- Supports multiple platforms including Windows, macOS, and Linux
+
+## Installation
+
+Install `parasys` using pip:
+
+```bash
+pip install parasys
+```
+
+## Windows users
+
+```shell
+pip install windows-curses
+```
+
+## Usage
+
+To start monitoring your system, run `parasys`.
