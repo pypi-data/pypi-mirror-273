@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=46.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dq_check"
+version = "0.3.3"
+description = "A data quality check module for Spark"
+authors = [{name = "rohan goel",email = "rohan.goel@databricks.com"}]
+dependencies = ["pyspark","pandas"]
+dynamic = ["readme"]  

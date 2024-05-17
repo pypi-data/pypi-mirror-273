@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/dq_check/__init__.py
+src/dq_check/dq_check.py
+src/dq_check.egg-info/PKG-INFO
+src/dq_check.egg-info/SOURCES.txt
+src/dq_check.egg-info/dependency_links.txt
+src/dq_check.egg-info/requires.txt
+src/dq_check.egg-info/top_level.txt
