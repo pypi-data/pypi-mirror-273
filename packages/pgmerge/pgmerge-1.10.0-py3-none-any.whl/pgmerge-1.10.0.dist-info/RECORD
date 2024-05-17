@@ -1,0 +1,16 @@
+NOTICE,sha256=epzfn4z7-aEAj5gEhBRkyxOVDSP30Tn1F9Yqhua1lOQ,108
+pgmerge/__init__.py,sha256=vsrw_PsSMtHt9cbBhYGnL0uIDtuUzAZgnRfu1ukizaU,144
+pgmerge/db_config.py,sha256=AmD1NJ0K61LqOu5tKyyCAXgboRg-UcYGL5WnM6ruZJQ,9749
+pgmerge/db_export.py,sha256=t-edbKb6OzIeOSUmiUlDHoFXMumtqbgpW3o73ox4-Vg,11730
+pgmerge/db_graph.py,sha256=Oqa6OIQhahhj2au6t6tJ4ud77PeuEgczor0yF9n6LAc,4894
+pgmerge/db_import.py,sha256=ufw8ioNxMssjQWm3PdodAfbbqS8HtqSJhWg52tukeCI,19104
+pgmerge/db_inspect.py,sha256=LzSENce9H9UgYbwYqLy8s_3H_JWMwl0dm02E4h89XKE,7590
+pgmerge/pg_pass.py,sha256=dC6zMwtwaeMjcjztnCaPOLSMdQMbbYhAf5tWgkxyob4,3013
+pgmerge/pgmerge.py,sha256=Z0RI0WS2DFXTFRYjUy9FVMOAa8fiZOIqanI_A-T0W-Q,25848
+pgmerge/tables_config_schema.yml,sha256=8g62rpqKoEWInTVnsvCVQduDj3rOrB-RAOnV_U5fRiY,1651
+pgmerge/utils.py,sha256=cIr6VO5rKsjGAyBOsVuKWhPNfbc-evK66x-Qklk35DA,3440
+pgmerge-1.10.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pgmerge-1.10.0.dist-info/METADATA,sha256=oymsxrggtMCWQnzLTSIZjbQzP6vT1mXLuaQe3Lwq_KE,5857
+pgmerge-1.10.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+pgmerge-1.10.0.dist-info/entry_points.txt,sha256=8GK-WE3kL7E2MRy4Vsu5Tv3A9GQT1GwGb9Z6j5noE9M,51
+pgmerge-1.10.0.dist-info/RECORD,,
