@@ -1,0 +1,10 @@
+gspsa_gradients/__init__.py,sha256=bVZ8BYv2YhBU0ZA4IL3yr5l0KuXjavLboJVAt5Uf7FI,278
+gspsa_gradients/qiskit_gradient/__init__.py,sha256=6udKbXLu8zQKoRWdcSqfxvzN8P7Fzab7LrEKyPcWp7E,41
+gspsa_gradients/qiskit_gradient/gspsa.py,sha256=9zH4euMV43lKtnkI3EBar6_xahZLEpoqwfk_vV1acRU,7037
+gspsa_gradients/tfq_gradient/__init__.py,sha256=DopS2sKvW9phzAaUwPS-eKN8kct715ZGNuiCj4dNHpA,32
+gspsa_gradients/tfq_gradient/gspsa.py,sha256=Jvomo07FlRFEKj0BgDhiANRBXBS0hPtPEQH8X9P8-wI,12397
+gspsa_gradients-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gspsa_gradients-1.0.0.dist-info/METADATA,sha256=fCfWFZTNW-sY34xOaIgsGUN_8vxbC_YoJir7_XTYxcE,4137
+gspsa_gradients-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gspsa_gradients-1.0.0.dist-info/top_level.txt,sha256=nbvVaCk6c5K3WkWmyjp3AtvG47yyYIOzb8mgmuNwKLA,16
+gspsa_gradients-1.0.0.dist-info/RECORD,,
