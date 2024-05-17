@@ -1,0 +1,10 @@
+fcw_client_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcw_client_python/client_python.py,sha256=EEBo1wh48JJYkOeHhDr2wNUahNshZ2JnO2S8HCPyr60,6323
+fcw_client_python/client_python_middleware.py,sha256=ECwcqdFEFRh9pbZUp-Qr2bgmeEouKY88asw55l1MmIk,7192
+fcw_client_python/client_python_simple.py,sha256=ymCPZy-qYHrHgp5E9Z7EbvYchFOKt9Y_C2IF4RYUhAw,4748
+fcw_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fcw_client/client_common.py,sha256=NNYsv54jX5Ir2qlYaA_5iEoyH8vKOWHxAQOOg8wT0FU,14499
+fcw_client-0.12.1.dist-info/METADATA,sha256=nlQVU3si-XhUolPoLBjlUyPxmuK7A9Azq7ojFOaoldA,1159
+fcw_client-0.12.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fcw_client-0.12.1.dist-info/entry_points.txt,sha256=JlDpsk7_e4KNLPBx4VJEhI5KcQ5U0hrKKf0Sn5B98I0,220
+fcw_client-0.12.1.dist-info/RECORD,,
