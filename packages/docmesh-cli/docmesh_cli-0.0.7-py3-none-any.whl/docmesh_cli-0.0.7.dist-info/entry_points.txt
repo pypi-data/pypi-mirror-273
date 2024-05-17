@@ -1,0 +1,3 @@
+[console_scripts]
+docmesh-cli=docmesh_cli:client
+
