@@ -1,0 +1,2 @@
+[console_scripts]
+odin-fastcs = odin_fastcs.__main__:app

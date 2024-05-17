@@ -1,0 +1,12 @@
+odin_fastcs/__init__.py,sha256=v-rRiDOgZ3sQSMQKq0vgUQZvpeOkoHFXissAx6Ktg84,61
+odin_fastcs/__main__.py,sha256=JnmwrYfwkcTAsv6GyIlZDbnlL4mxrQOOUXV3Z998tkc,1561
+odin_fastcs/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+odin_fastcs/http_connection.py,sha256=OzZvDlomDHfJ9BQd69QhkfwnzWK9LJHMtBV2J_JinK8,3163
+odin_fastcs/odin_controller.py,sha256=KqMPbfaiHTSwuwZO_2coNyAIxWbfIvdIQi7zSRVJMZo,7100
+odin_fastcs/util.py,sha256=dmVoEaem88WPgFFrCVUwAkENpIxE0wsJ2M1cBk6maSc,3102
+odin_fastcs-0.1.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+odin_fastcs-0.1.0.dist-info/METADATA,sha256=hGXbq9muLPYokdQnH_KdXI-FQb2hSLxIZsMbygEKpFQ,17302
+odin_fastcs-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odin_fastcs-0.1.0.dist-info/entry_points.txt,sha256=wuygKfkOSKEuSyGdV0L5qSjJ13yVUV0HipHBlyYDqAY,57
+odin_fastcs-0.1.0.dist-info/top_level.txt,sha256=CSnNZXBEIEOpUDbWG65qDDOJkDxNwbf5kH_ddRMA8lM,12
+odin_fastcs-0.1.0.dist-info/RECORD,,
