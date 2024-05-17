@@ -1,0 +1,321 @@
+## Azure SQL Vector Search
+
+This project contains SDKs that allow developers to use Azure SQL Database to build AI applications that need vector search.
+
+### Vectors in SQL Server
+Vectors are ordered arrays of numbers (typically floats) that can represent information about some data. For example, an image can be represented as a vector of pixel values, or a string of text can be represented as a vector or ASCII values. The process to turn data into a vector is called vectorization.
+
+### Embeddings
+Embeddings are vectors that represent important features of data. Embeddings are often learned by using a deep learning model, and machine learning and AI models utilize them as features. Embeddings can also capture semantic similarity between similar concepts. For example, in generating an embedding for the words person and human, we would expect their embeddings (vector representation) to be similar in value since the words are also semantically similar.
+Azure OpenAI features models to create embeddings from text data. The service breaks text out into tokens and generates embeddings using models pretrained by OpenAI. To learn more, see [Creating embeddings with Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/embeddings?tabs=python-new).
+Once embeddings are generated, they can be stored into a SQL Server database. This allows you to store the embeddings alongside the data they represent, and to perform vector search queries to find similar data points.
+
+### Vector Search
+
+Vector search refers to the process of finding all vectors in a dataset that are similar to a specific query vector. Therefore, a query vector for the word **human** searches the entire dataset for similar vectors, and thus similar words: in this example it should find the word **person** as a close match. This closeness, or distance, is measured using a distance metric such as cosine distance. The closer vectors are, the more similar they are. 
+
+Consider a scenario where you run a query over millions of document to find the most similar documents in your data. You can create embeddings for your data and query documents using Azure OpenAI. Then, you can perform a vector search to find the most similar documents from your dataset. However, performing a vector search across a few examples is trivial. Performing this same search across thousands, or millions, of data points becomes challenging. There are also trade-offs between exhaustive search and approximate nearest neighbor (ANN) search methods including latency, throughput, accuracy, and cost, all of which depends on the requirements of your application.
+
+Since Azure SQL Database embeddings can be efficiently stored and queried using to columnstore index support, allowing exact nearest neighbor search with great performance, you don't have to decide between accuracy and speed: you can have both. Storing vector embeddings alongside the data in an integrated solution minimizes the need to manage data synchronization and accelerates your time-to-market for AI application development
+
+Similarity enables applications such as:
+- Search (where items are ranked by relevance to a query string)
+- Clustering (where items are grouped by similarity)
+- Recommendations (where related items are recommended)
+- Anomaly detection (where outliers with little relatedness are identified)
+- Diversity measurement (where similarity distributions are analyzed)
+- Classification (where items are classified by their most similar label)
+
+### Classic and Native Vector Support in Azure SQL Database
+
+Until recently, Azure SQL Database did not have a native vector type, a vector is nothing more than an ordered tuple, and relational databases are great at managing tuples. You can think of a tuple as the formal term for a row in a table.
+
+However, this feature is currently in private preview and would be available in the coming months.
+
+### Native Vector Support in Azure SQL and SQL Server 
+
+The first wave of vector support will introduce specialized vector functions to create vectors from JSON array, as they are the most common way to represent a vector, to calculate Euclidean, Cosine distances as well as calculating the Dot Product between two vectors. 
+
+Vectors are stored in an efficient binary format that also enables usage of dedicated CPU vector processing extensions like SIMD and AVX. 
+
+To have the broadest compatibility with any language and platform in the first wave vectors will take advantage of existing VARBINARY data type to store vector binary format. Specialized functions will allow developers to transform stored vector data back into JSON arrays and to check and mandate vector dimensionality. 
+
+Embeddings can be efficiently stored and queried using to columnstore index support, allowing exact nearest neighbour search with great performance.
+
+### Vector Search Modes within this SDK
+
+There are 2 modes available:
+
+- Classic Vector Search
+- Native Vector Search
+
+The classic vector search allows you to store vectors leveraging the traditional clustered column index that makes it easy to retrieve the vectors and the associated metadata later.
+
+The native vector search uses newly made available built-in functions to store and query the data for faster performance.
+
+The native vector search is currently in private-preview, and you will need access to this feature to use this mode.
+
+### Distance Strategies
+
+There are three distance strategies when comparing the vectors for the records in the table
+- COSINE_SIMILARITY
+- EUCLIDEAN_DISTANCE
+- DOT_PRODUCT
+
+Cosine Similarity, Inner Product (aka Dot Product), and Euclidean Distance are all measures used to analyze and compute relationships between vectors, but they each serve different purposes and are used in different contexts:
+
+### 1. Cosine Similarity
+- **Definition**: Cosine similarity measures the cosine of the angle between two vectors. It is calculated as the dot product of the vectors normalized to both have length 1.
+- **Range**: It ranges from -1 to 1. A value of 1 means the vectors are parallel (same direction), 0 means they are orthogonal (no correlation), and -1 means they are anti-parallel (opposite directions).
+- **Usage**: It is widely used in text analysis and other areas where the magnitude of the vectors is not as important as the orientation. It's especially useful in measuring similarity in high-dimensional spaces.
+
+### 2. Inner Product (Dot Product)
+- **Definition**: The inner product of two vectors is the sum of the products of their corresponding components. This is equivalent to projecting one vector onto another and scaling it by the length of the other vector.
+- **Result Type**: The result is a scalar. Positive values indicate a certain degree of alignment between the vectors, zero suggests orthogonality, and negative values indicate a degree of opposition.
+- **Usage**: Inner product is fundamental in geometry for defining projections, in physics for work calculations, and in machine learning for various linear algebra operations.
+
+When the vectors are normalized (modified so that their magnitude is 1), Cosine Similarity and Inner Product (dot product) computes to the same value, however the inner product is a faster operation and is usually preferred over large datasets.
+
+### 3. Euclidean Distance
+- **Definition**: Euclidean distance is the straight-line distance between two points in Euclidean space, calculated by taking the square root of the sum of the squared differences between corresponding elements of the vectors.
+- **Range**: It ranges from 0 to infinity. A distance of 0 means the points are identical, and larger values indicate points that are further apart.
+- **Usage**: It's commonly used in clustering and classification tasks to measure the actual 'distance' between samples. It's the basis for many algorithms, including K-means clustering and K-nearest neighbors.
+
+### Key Differences
+- **Context of Use**: Cosine similarity is used when the magnitude of the vectors is not important, such as in text similarity calculations. The inner product is often used in contexts where alignment or opposition between vectors is critical, and Euclidean distance is used when the actual spatial distance is needed.
+- **Sensitivity to Magnitude**: The inner product and Euclidean distance are affected by the magnitude (length) of the vectors, whereas cosine similarity only depends on the angle between vectors, making it magnitude-invariant.
+- **Computation**: While both inner product and cosine similarity involve dot products, cosine similarity includes an additional step of normalizing the vectors, and Euclidean distance involves computing the square root of the sum of squared differences.
+
+Each of these metrics applies best to specific situations and can yield very different insights depending on the application.
+
+## Pre-Requisites 
+
+You will need to download the ODBC driver and install the python library via pip to get started
+
+Visit [this page](https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16) for instructions on how to install the ODBC driver for your environment
+
+There are binaries for Windows, Linux and Mac OS X
+
+Once that is done, you will need to set up the connection string as an environment variable. We can use the following environment variable to connect
+
+AZURE_SQL_CONNECTION_STRING
+
+### Linux and Mac OS X
+
+If you are running on Mac OS X or Linux you can set the environment variable as follows:
+
+````bash
+export AZURE_SQL_CONNECTION_STRING='your_connection_string_here'
+````
+### Windows 
+
+````bash
+set AZURE_SQL_CONNECTION_STRING=your_connection_string_here
+````
+
+### Installing the Python SDK via pip
+
+Use the following command to install the python SDK for Azure SQL Vector Search
+
+````bash
+pip install azure-sql-vector-search
+````
+
+## Examples of How to Insert Data using the Vector Search Client
+
+In this section, we are going to cover the following
+
+- How to Insert Data with Classic Client
+- How to Insert Data with Native Vector Client
+
+#### Using AzureSQLClassicVectorSearchClient
+
+````python 
+import os
+from azure_sql_vector_search.classic_vector_search import AzureSQLClassicVectorSearchClient
+
+connection_string = os.environ.get("AZURE_SQL_CONNECTION_STRING")
+
+embeddings: list[list[float]] = [
+    [0.5, 0.5, 0.5, 0.5],
+    [-0.5, -0.5, -0.5, -0.5],
+    [0.5, 0.5, 0.5, 0.5],
+    [1.0, 0.0, 0.0, 0.0],
+    [0.0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [0.8, 0.6, 0, 0],
+    [0, 0, 0.6, 0.8],
+    [0, 0.8, 0.6, 0],
+    [0, 0, 0.8, 0.6],
+    [0.0, 0.0, 0.0, 0.0],
+]
+
+active_options = [True, False]
+code_options = ["python", "typescript", "", None]
+age_options = [40, 50, 60, 65, 75]
+
+vector_search = AzureSQLClassicVectorSearchClient(connection_string, "products")
+
+for i in range(len(embeddings)):
+    embedding = embeddings[i]
+    name = "Izzy {}".format(i)
+    content = "Israel Ekpo {} {}".format(i, embedding)
+    active = active_options[i % 2]
+    code = code_options[i % 4]
+    age = age_options[i % 5]
+
+    # metadata containing integer, float, string, boolean and null types
+    metadata = {"content": content, "name": name, "active": active, "code": code, "age": age, "mass": i / age}
+
+    print("processing id {} embedding -> {}, metadata -> {}".format(i, embedding, metadata))
+    result = vector_search.insert_row(content, metadata, embedding)
+
+````
+
+#### Using AzureSQLNativeVectorSearchClient
+
+````python 
+import os
+from azure_sql_vector_search.native_vector_search import AzureSQLNativeVectorSearchClient
+
+connection_string = os.environ.get("AZURE_SQL_CONNECTION_STRING")
+
+embeddings: list[list[float]] = [
+    [0.5, 0.5, 0.5, 0.5],
+    [-0.5, -0.5, -0.5, -0.5],
+    [0.5, 0.5, 0.5, 0.5],
+    [1.0, 0.0, 0.0, 0.0],
+    [0.0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [0.8, 0.6, 0, 0],
+    [0, 0, 0.6, 0.8],
+    [0, 0.8, 0.6, 0],
+    [0, 0, 0.8, 0.6],
+    [0.0, 0.0, 0.0, 0.0],
+]
+
+active_options = [True, False]
+code_options = ["python", "typescript", "", None]
+age_options = [40, 50, 60, 65, 75]
+
+vector_search = AzureSQLNativeVectorSearchClient(connection_string, "n_products")
+
+for i in range(len(embeddings)):
+    embedding = embeddings[i]
+    name = "Izzy {}".format(i)
+    content = "Israel Ekpo {} {}".format(i, embedding)
+    active = active_options[i % 2]
+    code = code_options[i % 4]
+    age = age_options[i % 5]
+
+    # metadata containing integer, float, string, boolean and null types
+    metadata = {"content": content, "name": name, "active": active, "code": code, "age": age, "mass": i / age}
+    result = vector_search.insert_row(content, metadata, embedding)
+    print(i, "->", embedding)
+
+````
+## Examples of How to Query the Vector Database using the Search Client
+
+In this section, we are going to cover the following examples using the Classic and Native clients
+
+- Query with default values for COSINE, INNER PRODUCT AND EUCLIDEAN
+- Query with k
+- Query with filters
+- Query with k and filters
+- Query with distance strategy method
+
+
+#### Using AzureSQLClassicVectorSearchClient
+
+````python 
+import os
+from azure_sql_vector_search import AzureSQLClassicVectorSearchClient, DistanceMetric
+
+connection_string = os.environ.get("AZURE_SQL_CONNECTION_STRING")
+
+embedding = [0.5, 0.5, 0.5, 0.5]
+k = 40
+filters = {"active": True, "age": 40}
+
+vector_search = AzureSQLClassicVectorSearchClient(connection_string, "products")
+
+# Using custom value for top k results and filters
+print("Cosine Similarity for ", embedding)
+results_1 = vector_search.compute_similarity(embedding, DistanceMetric.COSINE_SIMILARITY, k, filters=filters)
+print(results_1)
+
+# No filters but showing the top 40 results
+print("Inner Product Distance for ", embedding)
+results_2 = vector_search.compute_similarity(embedding, DistanceMetric.DOT_PRODUCT, k)
+print(results_2)
+
+# Using no filters with the default top 4 results for k
+print("Euclidean Distance for ", embedding)
+results_3 = vector_search.compute_similarity(embedding, DistanceMetric.EUCLIDEAN_DISTANCE)
+print(results_3)
+
+print("Cosine Similarity for ", embedding)
+results_4 = vector_search.cosine_similarity(embedding, k=k, filters=filters)
+print(results_4)
+
+print("Inner Product Distance for ", embedding)
+results_5 = vector_search.inner_product(embedding, k=k, filters=filters)
+print(results_5)
+
+print("Euclidean Distance for ", embedding)
+results_6 = vector_search.euclidean_distance(embedding, k=k, filters=filters)
+print(results_6)
+````
+
+#### Using AzureSQLNativeVectorSearchClient
+
+````python 
+
+import os
+from azure_sql_vector_search import AzureSQLNativeVectorSearchClient, DistanceMetric
+
+connection_string = os.environ.get("AZURE_SQL_CONNECTION_STRING")
+
+embedding = [0.5, 0.5, 0.5, 0.5]
+k = 40
+filters = {"active": True, "age": 40}
+
+vector_search = AzureSQLNativeVectorSearchClient(connection_string, "n_products")
+
+# Using custom value for top k results and filters
+print("Cosine Similarity for ", embedding)
+results_1 = vector_search.compute_similarity(embedding, DistanceMetric.COSINE_SIMILARITY, k, filters=filters)
+print(results_1)
+
+# No filters but showing the top 40 results
+print("Inner Product Distance for ", embedding)
+results_2 = vector_search.compute_similarity(embedding, DistanceMetric.DOT_PRODUCT, k)
+print(results_2)
+
+# Using no filters with the default top 4 results for k
+print("Euclidean Distance for ", embedding)
+results_3 = vector_search.compute_similarity(embedding, DistanceMetric.EUCLIDEAN_DISTANCE)
+print(results_3)
+
+# Using filters to pick top 40 matches for Cosine Similarity
+print("Cosine Similarity for ", embedding)
+results_4 = vector_search.cosine_similarity(embedding, k=k, filters=filters)
+print(results_4)
+
+# Using filters to pick top 40 matches for Dot Product
+print("Inner Product Distance for ", embedding)
+results_5 = vector_search.inner_product(embedding, k=k, filters=filters)
+print(results_5)
+
+# Using filters to pick top 40 matches for Euclidean Distance
+print("Euclidean Distance for ", embedding)
+results_6 = vector_search.euclidean_distance(embedding, k=k, filters=filters)
+print(results_6)
+
+
+````
+## How to Reach Out with Questions and Feedback
+
+If you have any questions, please reach out to us at ***vectorsqlintegration at service dot microsoft dot com***
+
+Happy vector search! 
