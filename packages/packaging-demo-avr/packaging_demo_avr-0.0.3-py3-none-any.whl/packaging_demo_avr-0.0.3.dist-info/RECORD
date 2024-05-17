@@ -1,0 +1,17 @@
+packaging_demo/__init__.py,sha256=6J0EgZPkdXwhipWn7eMhkIrhyb91epm_1n3nAdfXVYQ,18
+packaging_demo/cities.json,sha256=6UdDcPFlKqrBr2irCuIet2yuS9u37_ed_WzdEIJYNy8,2282
+packaging_demo/colorized_demo.py,sha256=aBmNWl5cWGt3SNEkXNzFyKuiIZpfMWjLdD4laLfiY1M,134
+packaging_demo/my_file.py,sha256=HW2FrNkCf4Y2kmlgXBhLR6HvTem7cNWVvKGntYq2CAc,281
+packaging_demo/my_other_file.py,sha256=DWP2DMrwOjnUPg6geRcbjD4tOJHhze6mil8i3se9btU,37
+packaging_demo/states_info.py,sha256=Q5mpH-W_haxN9Mklxs6SxghYpmnDdFOYbRJy2L8HKWM,864
+packaging_demo/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/assets/dependency-graph.png,sha256=GN3RshObOrD9vLngQqeMSusBQxtDHsbQxY7ZFhzUa9w,287499
+packaging_demo/my_folder/__init__.py,sha256=Bu289DNhZaJx5lJAJaZDnDyqMkb9B5bxFncieXB6UyU,6
+packaging_demo/my_folder/another-cities.json,sha256=6UdDcPFlKqrBr2irCuIet2yuS9u37_ed_WzdEIJYNy8,2282
+packaging_demo/my_folder/my_nested_file.py,sha256=kp2n6afTaLnnYOBn_Sjs4tK67kNvD4eMQBMfHXlghdQ,196
+packaging_demo/my_folder/my_sub_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/my_folder/my_sub_package/nested_module.py,sha256=XrG6O254-8lq1ENinFNjiy5Xrwhh63VYBvmWefKMI9s,198
+packaging_demo_avr-0.0.3.dist-info/METADATA,sha256=-NihBcRfH-MXXA-JXrednmthmKz96l18gxgEyHbf50U,27109
+packaging_demo_avr-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+packaging_demo_avr-0.0.3.dist-info/top_level.txt,sha256=JQYuoHLSBUdWNZjDus5DYc3ohopasuGzDPZpph3ynKg,15
+packaging_demo_avr-0.0.3.dist-info/RECORD,,
