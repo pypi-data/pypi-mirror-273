@@ -1,0 +1,10 @@
+[console_scripts]
+chgtool = vbelt.chargetool:chargetool
+ckcoherence = vbelt.wrapper:check_coherence
+ckconv = vbelt.wrapper:check_conv
+ckend = vbelt.wrapper:check_end
+ckforces = vbelt.wrapper:check_forces
+jobtool = vbelt.jobtool:jobtool
+poscartool = vbelt.poscartool:poscartool
+report = vbelt.wrapper:report
+termdos = vbelt.wrapper:termdos
