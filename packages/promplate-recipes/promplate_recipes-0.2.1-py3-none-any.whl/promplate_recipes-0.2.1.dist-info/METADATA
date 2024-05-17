@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: promplate-recipes
+Version: 0.2.1
+Author-Email: Muspi Merol <me@promplate.dev>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: promplate~=0.3.4
+Requires-Dist: python-box~=7.1.1
