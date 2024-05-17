@@ -1,0 +1,2 @@
+redis[hiredis]>=5.0.0
+fastapi[all]>=0.111.0
