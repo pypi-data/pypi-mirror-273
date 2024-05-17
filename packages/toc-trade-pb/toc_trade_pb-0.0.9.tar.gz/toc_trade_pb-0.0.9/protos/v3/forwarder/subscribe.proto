@@ -1,0 +1,23 @@
+syntax            = "proto3";
+option go_package = "./pb";
+package forwarder;
+
+import "google/protobuf/empty.proto";
+import "forwarder/entity.proto";
+
+service SubscribeDataInterface {
+    rpc SubscribeStockTick(StockNumArr) returns (SubscribeResponse) {}
+    rpc UnSubscribeStockTick(StockNumArr) returns (SubscribeResponse) {}
+    rpc SubscribeStockBidAsk(StockNumArr) returns (SubscribeResponse) {}
+    rpc UnSubscribeStockBidAsk(StockNumArr) returns (SubscribeResponse) {}
+    rpc SubscribeFutureTick(FutureCodeArr) returns (SubscribeResponse) {}
+    rpc UnSubscribeFutureTick(FutureCodeArr) returns (SubscribeResponse) {}
+    rpc SubscribeFutureBidAsk(FutureCodeArr) returns (SubscribeResponse) {}
+    rpc UnSubscribeFutureBidAsk(FutureCodeArr) returns (SubscribeResponse) {}
+    rpc UnSubscribeAllTick(google.protobuf.Empty) returns (ErrorMessage) {}
+    rpc UnSubscribeAllBidAsk(google.protobuf.Empty) returns (ErrorMessage) {}
+}
+
+message SubscribeResponse {
+    repeated string fail_arr = 1;
+}
