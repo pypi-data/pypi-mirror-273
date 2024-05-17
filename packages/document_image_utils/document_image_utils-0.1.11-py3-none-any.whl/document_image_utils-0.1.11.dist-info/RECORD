@@ -1,0 +1,6 @@
+document_image_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+document_image_utils/box.py,sha256=DBZqd-4uzxRK0UD1p-Xgl1KiauuOe4Bh7UmHtBE8rSc,11098
+document_image_utils/image.py,sha256=fOAfFsIqVoBmkjGx1pVRT4lJFxf3lBBx2OJzM2sAP3c,25442
+document_image_utils-0.1.11.dist-info/METADATA,sha256=QCVgDQFujEF77GD_C7Gyse2Uj0btU8H9kv2A89XaiiE,1352
+document_image_utils-0.1.11.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+document_image_utils-0.1.11.dist-info/RECORD,,
