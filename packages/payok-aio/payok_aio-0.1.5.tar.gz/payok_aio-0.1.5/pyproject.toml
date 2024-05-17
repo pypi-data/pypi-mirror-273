@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "payok-aio"
+version = "0.1.5"
+description = ""
+authors = ["BazZziliuS <bazzzil123@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "payok_aio" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+aiohttp = "^3.9.3"
+pydantic = "^2.6.3"
+certifi = "^2024.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
