@@ -1,0 +1,8 @@
+tqdm
+pydantic
+numpy
+pandas
+requests
+loguru
+openpyxl
+click
