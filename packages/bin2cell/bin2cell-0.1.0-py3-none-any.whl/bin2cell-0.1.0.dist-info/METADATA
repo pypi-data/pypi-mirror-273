@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bin2cell
+Version: 0.1.0
+Summary: Join subcellular Visium HD bins into cells
+Author-email: "Krzysztof Polanski, Nadav Yayon" <kp9@sanger.ac.uk>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: scanpy
+Requires-Dist: stardist
+Requires-Dist: opencv-python
+Requires-Dist: fastparquet
+Project-URL: Documentation, https://bin2cell.readthedocs.io/en/latest/
+Project-URL: Home, https://github.com/Teichlab/bin2cell
