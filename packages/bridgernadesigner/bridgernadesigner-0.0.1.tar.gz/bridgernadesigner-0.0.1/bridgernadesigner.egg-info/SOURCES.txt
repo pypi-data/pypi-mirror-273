@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bridgernadesigner/__init__.py
+bridgernadesigner/classes.py
+bridgernadesigner/errors.py
+bridgernadesigner/main.py
+bridgernadesigner/run.py
+bridgernadesigner.egg-info/PKG-INFO
+bridgernadesigner.egg-info/SOURCES.txt
+bridgernadesigner.egg-info/dependency_links.txt
+bridgernadesigner.egg-info/entry_points.txt
+bridgernadesigner.egg-info/not-zip-safe
+bridgernadesigner.egg-info/requires.txt
+bridgernadesigner.egg-info/top_level.txt
