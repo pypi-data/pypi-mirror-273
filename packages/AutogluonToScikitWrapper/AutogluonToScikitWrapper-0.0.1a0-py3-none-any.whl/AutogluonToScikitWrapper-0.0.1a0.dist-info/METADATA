@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: AutogluonToScikitWrapper
+Version: 0.0.1a0
+Summary: Autogluon to Scikit Wrapper
+Home-page: UNKNOWN
+Author: Arijit Singh
+Author-email: arijit@easydata.ai
+License: UNKNOWN
+Keywords: Autogluon,Scikit-learn,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: autogluon
+
+A wrapper which converts Autogluon models to Scikit-Learn models, thus breaking any limitation faced by user when implementing Scikit-learn methods to Autogluon Models
+
