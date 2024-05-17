@@ -1,0 +1,22 @@
+sqlalchemy<3,>=1.4.31
+prefect<3.0.0,>=2.13.5
+
+[dev]
+aiosqlite
+asyncpg
+coverage
+interrogate
+mkdocs-gen-files
+mkdocs-material
+mkdocs
+mkdocstrings[python]
+mypy
+pillow
+pre-commit
+psycopg2
+pytest-asyncio
+pytest-xdist
+pytest
+
+[dev:python_version < "3.8"]
+mock
