@@ -1,0 +1,16 @@
+numpy>=1.14
+pandas
+tqdm
+matplotlib>=3
+tzlocal
+pytz
+scipy
+PyYAML>=5
+pyarrow
+
+[docs]
+sphinx
+nbsphinx
+recommonmark
+pydata_sphinx_theme
+ipython==8.5.0
