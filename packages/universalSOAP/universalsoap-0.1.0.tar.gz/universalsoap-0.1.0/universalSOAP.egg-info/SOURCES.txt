@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+universalSOAP/__init__.py
+universalSOAP/hypers.py
+universalSOAP.egg-info/PKG-INFO
+universalSOAP.egg-info/SOURCES.txt
+universalSOAP.egg-info/dependency_links.txt
+universalSOAP.egg-info/entry_points.txt
+universalSOAP.egg-info/top_level.txt
