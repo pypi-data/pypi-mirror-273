@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/http_file_streamer.egg-info/PKG-INFO
+src/http_file_streamer.egg-info/SOURCES.txt
+src/http_file_streamer.egg-info/dependency_links.txt
+src/http_file_streamer.egg-info/requires.txt
+src/http_file_streamer.egg-info/top_level.txt
