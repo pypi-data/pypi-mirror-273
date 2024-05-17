@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: oeel
+Version: 0.9.8.8
+Summary: The Open Earth Engine Library Python interface
+Home-page: https://www.open-geocomputing.org/OpenEarthEngineLibrary/
+Author: Mathieu Gravey
+Author-email: research@mgravey.com
+License: GPLv3
+Keywords: Earth Engine,OEEL,Open Earth Engine Library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Scientific/Engineering :: GIS
+License-File: LICENSE
+
+Python interface for the OpenEarthEngineLibrary and JS Earth Engine code.
+
