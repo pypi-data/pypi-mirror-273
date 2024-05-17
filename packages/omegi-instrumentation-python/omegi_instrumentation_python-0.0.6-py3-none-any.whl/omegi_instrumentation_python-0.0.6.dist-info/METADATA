@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: omegi-instrumentation-python
+Version: 0.0.6
+Summary: Python Instrumentation for Automatic Error Logging
+Home-page: https://github.com/TeamOmegi/Instrumentation-Python
+Author: omegi
+Author-email: canon1107@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: anyio ==4.3.0
+Requires-Dist: asgiref ==3.8.1
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: Deprecated ==1.2.14
+Requires-Dist: dnspython ==2.6.1
+Requires-Dist: email-validator ==2.1.1
+Requires-Dist: exceptiongroup ==1.2.1
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==1.0.5
+Requires-Dist: httptools ==0.6.1
+Requires-Dist: httpx ==0.27.0
+Requires-Dist: idna ==3.7
+Requires-Dist: importlib-metadata ==7.0.0
+Requires-Dist: Jinja2 ==3.1.4
+Requires-Dist: kafka-python ==2.0.2
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: MarkupSafe ==2.1.5
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: opentelemetry-api ==1.24.0
+Requires-Dist: opentelemetry-instrumentation ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-asgi ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-dbapi ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-django ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-elasticsearch ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-requests ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-fastapi ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-flask ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-mysql ==0.45b0
+Requires-Dist: opentelemetry-instrumentation-wsgi ==0.45b0
+Requires-Dist: opentelemetry-sdk ==1.24.0
+Requires-Dist: opentelemetry-semantic-conventions ==0.45b0
+Requires-Dist: opentelemetry-util-http ==0.45b0
+Requires-Dist: orjson ==3.10.3
+Requires-Dist: packaging ==24.0
+Requires-Dist: Pygments ==2.18.0
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: rich ==13.7.1
+Requires-Dist: shellingham ==1.5.4
+Requires-Dist: sniffio ==1.3.1
+Requires-Dist: typer ==0.12.3
+Requires-Dist: typing-extensions ==4.11.0
+Requires-Dist: watchfiles ==0.21.0
+Requires-Dist: websockets ==12.0
+Requires-Dist: wrapt ==1.16.0
+Requires-Dist: zipp ==3.18.1
+
+## Omegi Instrumentation for Python
+Opentelemetry Instrumentation을 이용한 파이썬 자동 계측기 라이브러리입니다.  
+Function 단위로 span을 생성하며, 분산 시스템에서의 에러 발생 시 로그 추적을 돕는 기능을 제공합니다.  
+
+자세한 사용 방법 및 설명은 아래 링크에서 확인해주세요.  
+https://github.com/TeamOmegi/Instrumentation-Python
