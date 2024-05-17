@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: openCV_movement_detection
+Version: 1.5
+Summary: A Python library for movement detection with OpenCV.
+Author: Lenson
+Requires-Dist: opencv-python
+Requires-Dist: imageio

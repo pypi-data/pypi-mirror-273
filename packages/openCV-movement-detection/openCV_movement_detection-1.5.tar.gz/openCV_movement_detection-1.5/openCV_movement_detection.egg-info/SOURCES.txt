@@ -1,0 +1,10 @@
+setup.py
+openCV_movement_detection/__init__.py
+openCV_movement_detection/details_movement.py
+openCV_movement_detection/test file.py
+openCV_movement_detection/video_movement_class.py
+openCV_movement_detection.egg-info/PKG-INFO
+openCV_movement_detection.egg-info/SOURCES.txt
+openCV_movement_detection.egg-info/dependency_links.txt
+openCV_movement_detection.egg-info/requires.txt
+openCV_movement_detection.egg-info/top_level.txt
