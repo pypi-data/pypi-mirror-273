@@ -1,0 +1,109 @@
+[project]
+name = "mpd-now-playable"
+dynamic = []
+description = "Expose your MPD server as a 'now playable' app on MacOS"
+authors = [
+    { name = "Danielle McLean", email = "dani@00dani.me" },
+]
+dependencies = [
+    "aiocache>=0.12.2",
+    "attrs>=23.1.0",
+    "pyobjc-framework-MediaPlayer>=10.0",
+    "python-mpd2>=3.1.0",
+]
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Environment :: No Input/Output (Daemon)",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+]
+version = "1.2.0"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+redis = [
+    "aiocache[redis]",
+]
+memcached = [
+    "aiocache[memcached]",
+]
+msgpack = [
+    "ormsgpack>=1.5.0",
+]
+all = [
+    "mpd-now-playable[redis,memcached,msgpack]",
+]
+
+[project.urls]
+Homepage = "https://git.00dani.me/00dani/mpd-now-playable"
+Issues = "https://git.00dani.me/00dani/mpd-now-playable/issues"
+
+[project.scripts]
+mpd-now-playable = "mpd_now_playable.cli:main"
+
+[tool.pdm.scripts]
+lint = "ruff check src/mpd_now_playable"
+typecheck = "mypy -p mpd_now_playable"
+
+[tool.pdm.scripts.start]
+call = "mpd_now_playable.cli:main"
+
+[tool.pdm.scripts.check]
+composite = [
+    "lint",
+    "typecheck",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+excludes = [
+    "**/.mypy_cache",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mypy>=1.7.1",
+    "ruff>=0.1.6",
+]
+
+[tool.mypy]
+mypy_path = "stubs"
+
+[tool.ruff]
+ignore-init-module-imports = true
+select = [
+    "E4",
+    "E7",
+    "E9",
+    "F",
+    "A",
+    "ANN",
+    "ASYNC",
+    "B",
+    "S",
+    "INP",
+    "I",
+    "C90",
+]
+ignore = [
+    "ANN101",
+]
+
+[tool.ruff.lint.flake8-annotations]
+mypy-init-return = true
+
+[tool.ruff.format]
+indent-style = "tab"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
