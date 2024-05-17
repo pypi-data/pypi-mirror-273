@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nodestream-plugin-gcp-asset-inventory
+Version: 0.1.4
+Summary: nodestream plugin for GCP Asset Inventory
+Author: Aaron Wasserman
+Author-email: aaron.wasserman@neo4j.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: google-cloud-asset (>=3.26.1,<4.0.0)
+Requires-Dist: nodestream (>=0.12.2,<0.13.0)
+Description-Content-Type: text/markdown
+
+
