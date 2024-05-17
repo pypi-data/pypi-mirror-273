@@ -1,0 +1,16 @@
+lotgi/__init__.py,sha256=tAfz654lS6dKD2V9B1Xi9ftzROxDhpxirgEJN9R76ww,7141
+lotgi/__main__.py,sha256=cv_-B0wqMZP4NYEJ_iQgvNQiy7NivULDro8sxz7Xwz4,61
+lotgi/_openai.py,sha256=KCZA7VbZaX5ZuW1a-9esotBtPeOOKbzW_ozZdeWnXk0,706
+lotgi/convert_to_seconds.py,sha256=fqA8FzqwpEVp9TgVgrKPwBIebJVnzSvnPF-gTLF1k_Q,736
+lotgi/logging.py,sha256=xXeGt7NB-1LdBiILLWGPt3O9ROahX1rxBVJ9BquG4Qc,383
+lotgi/rest_client.py,sha256=qR3Z9VGq0L9N2mEWW_oZoo5E5vj8Tnq4wZk6IMXo1mE,5584
+lotgi/tokens.py,sha256=E5CiWNuUWO0XPntqo41sc57y9WkOnBsJ1yf7BAjG7SQ,1316
+lotgi/asyncio/rest_client.py,sha256=d25uzEtpkGRSAfVfx3W_SSRd9wxZwP3qFw94ecF2BA4,1015
+lotgi/models/rest.py,sha256=Lgx-ncrOTbWVWpe-ZqOp0MMjKcAxrc10Aq-CiMcYvjQ,1570
+tests/test_basic.py,sha256=ntLxWggN5yuBGNUOiQeIpUC1Vn30e9i6BtmKBOz6G3o,49
+tests/test_convert_to_seconds.py,sha256=eyNtro4qPsZTS3dx7fA6dHoqVyWb-3InAI2IjWBiP78,982
+lotgi-0.0.9.dist-info/METADATA,sha256=k_pM0tePF4iusfzOYGIoiFHIJt-i4tEJbM9Xn6Raej8,483
+lotgi-0.0.9.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+lotgi-0.0.9.dist-info/entry_points.txt,sha256=vh3kMy9SQmhpvPV70n1rZclQQhHdqbF53ugO_i64aLk,36
+lotgi-0.0.9.dist-info/top_level.txt,sha256=w9lwb37Xn2geqFU6zqFMPhd5J30QRy3lJxTv3Zt7AHM,12
+lotgi-0.0.9.dist-info/RECORD,,

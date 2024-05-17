@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lotgi
+Version: 0.0.9
+Summary: For the love of the game
+Author-email: Alex Wu <alexanderwu@berkeley.edu>
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click >=7.0
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: transformers
+Requires-Dist: tomli
+Requires-Dist: shortuuid
+
