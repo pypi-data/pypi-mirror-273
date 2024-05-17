@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "data-transformation-library-paula"
+version = "0.1.1"
+description = "The `data-transformation-library-paula` is a Python package focused on providing essential tools for matrix operations and data transformations. These functions are fundamental for handling and processing data in areas like machine learning, signal processing, and image processing."
+authors = ["Paula <paula.valaityte@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^1.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
