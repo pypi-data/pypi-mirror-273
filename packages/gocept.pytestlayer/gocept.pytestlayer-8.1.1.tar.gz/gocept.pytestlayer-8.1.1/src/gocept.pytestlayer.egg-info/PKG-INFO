@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: gocept.pytestlayer
+Version: 8.1.1
+Summary: Integration of zope.testrunner-style test layers into pytest framework
+Home-page: https://github.com/gocept/gocept.pytestlayer/
+Author: gocept <mail@gocept.com>
+Author-email: mail@gocept.com
+License: ZPL 2.1
+Keywords: pytest zope.testrunner layer fixture
+Classifier: Development Status :: 7 - Inactive
+Classifier: Environment :: Console
+Classifier: Framework :: Pytest
+Classifier: Framework :: Plone
+Classifier: Framework :: Zope :: 3
+Classifier: Framework :: Zope :: 5
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+
+==================
+gocept.pytestlayer
+==================
+
+⚠️ This package is deprecated. Please use `zope.pytestlayer <https://pypi.org/project/gocept.pytestlayer/>`_ instead. ⚠️
+
+
+
+==========
+Change log
+==========
+
+8.1.1 (2024-05-17)
+==================
+
+- Last release forcing to switch to ``zope.pytestlayer``.
