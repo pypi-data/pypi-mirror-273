@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: json24
+Version: 0.0.1
+Summary: Fuzzy json parser
+Project-URL: Homepage, https://github.com/yeargun/json24-python
+Project-URL: Issues, https://github.com/yeargun/json24-python/issues
+Author-email: Ali Argun Sayilgan <yeargun@stuf24.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# json24
+
+A Python library to parse partial JSON strings with optional logging for faulty JSON.
+
+## Installation
+
+```sh
+pip install json24
