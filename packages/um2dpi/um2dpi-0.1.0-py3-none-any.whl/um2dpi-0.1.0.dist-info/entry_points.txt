@@ -1,0 +1,2 @@
+[console_scripts]
+um2dpi = um2dpi:cli
