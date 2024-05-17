@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16013858-735c-47b7-af19-d9e862647562" name="Changes" comment="updates for packaging and running from pip">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_bitcoin_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/run_bitcoin_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_echo_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/run_echo_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_ip_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/run_ip_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bots/__about__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/__about__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bots/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bots/acceptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/acceptors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bots/basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bots/bitcoind.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/bitcoind.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bots/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/nostr_bots/util.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2gYTFJTSH7oIKNzQ79PGDcivX65" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/monty/nostr_bots",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/nostr_bots" />
+      <recent name="$PROJECT_DIR$/run2" />
+      <recent name="$PROJECT_DIR$/run" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16013858-735c-47b7-af19-d9e862647562" name="Changes" comment="" />
+      <created>1715873405818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715873405818</updated>
+      <workItem from="1715873406849" duration="4800000" />
+    </task>
+    <task id="LOCAL-00001" summary="updates for packaging and running from pip">
+      <option name="closed" value="true" />
+      <created>1715878518524</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715878518524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updates for packaging and running from pip" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates for packaging and running from pip" />
+  </component>
+</project>
