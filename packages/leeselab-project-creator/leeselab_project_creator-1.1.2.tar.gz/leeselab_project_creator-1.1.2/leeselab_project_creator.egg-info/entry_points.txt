@@ -1,0 +1,2 @@
+[console_scripts]
+leeselab-project-creator = leeselab_project_creator.__main__:main

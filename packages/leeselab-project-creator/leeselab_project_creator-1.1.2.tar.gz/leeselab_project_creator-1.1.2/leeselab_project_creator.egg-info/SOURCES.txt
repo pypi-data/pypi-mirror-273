@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+leeselab_project_creator/__init__.py
+leeselab_project_creator/__main__.py
+leeselab_project_creator/generate_plate_layout.py
+leeselab_project_creator/generate_worklist.py
+leeselab_project_creator.egg-info/PKG-INFO
+leeselab_project_creator.egg-info/SOURCES.txt
+leeselab_project_creator.egg-info/dependency_links.txt
+leeselab_project_creator.egg-info/entry_points.txt
+leeselab_project_creator.egg-info/requires.txt
+leeselab_project_creator.egg-info/top_level.txt
