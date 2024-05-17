@@ -1,0 +1,32 @@
+from mptradelib.livetrade import LiveTrade
+from mptradelib.broker.session import FyersSession, ShoonyaSession
+from mptradelib.feed import Datas
+from mptradelib.broker.broker import Historical, ShoonyaBroker
+import redis
+import requests
+import os
+from retry import retry
+from .livetrade import {{ strategy_name | to_camel }}
+
+
+def run(symbols: list, timeframe: int, params: dict, live: True):
+    r = redis.Redis(
+        host=os.getenv('REDIS_HOST'),
+        port=os.getenv('REDIS_PORT'),
+        decode_responses=True # <-- this will ensure that binary data is decoded
+    )
+
+    h = Historical(FyersSession())
+    datas = Datas(symbols, r, h, live=live).resample(timeframe)
+    datas.load()
+
+    broker = None
+    if live:
+        broker = ShoonyaBroker(ShoonyaSession())
+    else:
+        broker = MockBroker()
+    
+    l = LiveTrade({{ strategy_name | to_camel }}, broker=broker)
+    l.set_datas(datas)
+    l.run(**params)
+    return broker.orders()
