@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "pgmerge"
+version = "1.10.0"
+description = "PostgreSQL data import/export utility"
+authors = ["Simon Muller <samullers@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/samuller/pgmerge"
+repository = "https://github.com/samuller/pgmerge"
+keywords = ["postgresql", "csv", "import", "export"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Database",
+    "Topic :: Utilities",
+]
+include = ["NOTICE"]
+# Exclude tests from built packages
+exclude = [
+    "pgmerge/tests/"
+]
+
+[tool.poetry.scripts]
+pgmerge = "pgmerge.pgmerge:cli_app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+psycopg2-binary = "*"
+# 2.6 only supports Python 3.7+ and 2.5.1 uses older "decorator" lib
+networkx = "2.5"
+SQLAlchemy = "^1.4.27"
+appdirs = "~1.4.4"
+PyYAML = "6.0.1"
+rxjson = "0.3"
+typer = "~0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+flake8 = "^5.0.0"
+flake8-docstrings = "^1.6.0"
+mypy = "^1.4.0"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "pgmerge/tests"
+]
+# Capture logging and print to stdout while running tests
+log_cli = true
+log_cli_level = "INFO"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
