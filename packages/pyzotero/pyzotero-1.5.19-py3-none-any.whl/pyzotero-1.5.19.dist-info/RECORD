@@ -1,0 +1,9 @@
+_version.py,sha256=DFRbCVOtNypFr9EX2HuujkRvOAgwqVoG22_WiEle6F8,413
+pyzotero/__init__.py,sha256=5QI4Jou9L-YJAf_oN9TgRXVKgt_Unc39oADo2Ch8bLI,243
+pyzotero/zotero.py,sha256=f4wOo8i3bnC7lqqaKm2H7y-vtMHeYM2Y9SYEV_3L9Vk,75788
+pyzotero/zotero_errors.py,sha256=XzjUxKDQUMpRDBEQGTJ-wna0-bVoKIKK7AEDfKgzdfE,3664
+pyzotero-1.5.19.dist-info/AUTHORS,sha256=ZMicxg7lRScOYbxzMPznlzMbmrFIUIHwg-NvljEMbRQ,110
+pyzotero-1.5.19.dist-info/METADATA,sha256=39UO_uHQKBhMXo7xQa28p0YO9qMHPfMh2-GtBUiegQU,6626
+pyzotero-1.5.19.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyzotero-1.5.19.dist-info/top_level.txt,sha256=BOPNkPk5VtNDCy_li7Xftx6k0zG8STGxh-KgckcxLEw,18
+pyzotero-1.5.19.dist-info/RECORD,,
