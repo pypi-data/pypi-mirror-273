@@ -1,0 +1,13 @@
+article_to_podcast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+article_to_podcast/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+article_to_podcast/article.py,sha256=QM8ixdQ4QgG1jEcgvmuRfqyB5lcE1HCDURX58S6Kq_A,2066
+article_to_podcast/chunks.py,sha256=aRH_cTDIMaoOF2MlyonxPcOPgQP6FqnyPOe6gwu_V4Y,435
+article_to_podcast/cli.py,sha256=53ZEBRJmuK_EHZQgzz_ArHZ17mId6SS0kgZ6Jm4d_QA,2815
+article_to_podcast/filename.py,sha256=QtWtYJZY-1cDyOu-1vkSKfPfskJOr4GObPOvMZfdvgs,312
+article_to_podcast/main.py,sha256=0ReapYbGR9ov4sKdmXE0dORCIBaudEN_zK2Y0YKsndQ,1557
+article_to_podcast-0.1.11.dist-info/LICENSE.md,sha256=CVMGcR_ruD4oSJgklfdWcyAWZP_JmGRIfLoVPk6kse0,1102
+article_to_podcast-0.1.11.dist-info/METADATA,sha256=JFNIls911tRa3FudGXlPi7LZdxEfK1YHnXZpSUBXGRU,4999
+article_to_podcast-0.1.11.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+article_to_podcast-0.1.11.dist-info/entry_points.txt,sha256=HvcbMwKqn-t1UUpg_ViV6bV4rHQKl4_MigNfzIVzE4A,66
+article_to_podcast-0.1.11.dist-info/top_level.txt,sha256=9CNt5COVaxluFRxhb01lVaM-nq6Mk-O8OUZyqfxz8Yc,19
+article_to_podcast-0.1.11.dist-info/RECORD,,
