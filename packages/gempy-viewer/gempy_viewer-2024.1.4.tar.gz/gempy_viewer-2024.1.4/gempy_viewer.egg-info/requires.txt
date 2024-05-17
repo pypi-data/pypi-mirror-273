@@ -1,0 +1,12 @@
+gempy~=2024.1.4
+matplotlib
+numpy
+
+[dev]
+pytest
+
+[opt]
+pyvista
+scipy
+pooch
+pandas
