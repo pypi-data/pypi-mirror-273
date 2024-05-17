@@ -1,0 +1,9 @@
+prefect_shell/__init__.py,sha256=orlJ7CJfTxqlsmL0nALJU8LwEefPqNNBRtFyYdlkcig,123
+prefect_shell/_version.py,sha256=8n5F0z2KUdXF-kMA1VxiH6w0elyZUUWXosPRzNz_3I0,411
+prefect_shell/commands.py,sha256=dscKMXTXf0T6-YhRNwqgvyjV9SCTLJ5oYEBw7sCH-hE,15327
+prefect_shell-0.2.5.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_shell-0.2.5.dist-info/METADATA,sha256=DI5e-go-sjtFWHM90lPtiH2XMEH9OLJ9hM_S_ZxfrJA,8603
+prefect_shell-0.2.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+prefect_shell-0.2.5.dist-info/entry_points.txt,sha256=qqaEllc0zxwtNpCPq6TtjG2-WL1gt6icDkhuPZZFzhA,52
+prefect_shell-0.2.5.dist-info/top_level.txt,sha256=8c0FWPanobIxf5JWu84ShrBeRhaA-AJLstZkNfdFm1U,14
+prefect_shell-0.2.5.dist-info/RECORD,,
