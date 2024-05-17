@@ -1,0 +1,21 @@
+This class represents the primitive types seen in languages like C, C++, or Rust. Each type is an instance of `NativeType`, which is a container class that has the following fields:
+* `name`: typedef name
+* `size`: the size of this typedef in bytes
+* `python_type`: the transliterated type of this typedef in python
+* `repeat_length`: the number of times this typedef is sequentially repeated in a piece of data
+
+`repeat_length` receives its value when the user calls the NativeType with a number as its first parameter. Ex:
+```
+@datastruct
+class MyStruct(metaclass=DataStruct):
+    a: NativeTypes.uint32(12)
+```
+will invoke the NativeType's `__call__` function and set the `repeat_length` field to 12, signifying that this field occupies 12 uint32's in the data. The size of this field in the metadata would thus be `NativeTypes.uint32.size * 12`.
+
+Additionally, the `bytestring` NativeType will initially have a size of -1. Byte-strings are variable in length, so their sizes are set by the `repeat_length` field above. So, for example:
+```
+@datastruct
+class MyStruct(metaclass=DataStruct):
+    a: NativeTypes.bytestring(8)
+```
+will produce a field whose metadata `size` is 8, and whose value would be a `bytes` object of 8 bytes.
