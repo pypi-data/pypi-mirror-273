@@ -1,0 +1,14 @@
+websockets
+wampproto>=0.2.1
+aiohttp
+uvloop
+
+[publish]
+twine
+build
+
+[test]
+coverage
+pytest
+pytest-asyncio
+ruff
