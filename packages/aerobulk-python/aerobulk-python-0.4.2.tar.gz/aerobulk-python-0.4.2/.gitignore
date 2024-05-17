@@ -1,0 +1,20 @@
+.ipynb_checkpoints
+# might have to remove this later, if we want to add nbs
+*.ipynb
+
+_version.py
+*.egg-info
+.eggs/
+build/
+__pycache__
+dist/
+
+# files built by f2py
+source/fortran/*f2pywrappers*
+source/fortran/*.c
+source/aerobulk/aerobulk/
+mod_*.so
+
+# should we ignore submodules
+.DS_Store
+.vscode/
