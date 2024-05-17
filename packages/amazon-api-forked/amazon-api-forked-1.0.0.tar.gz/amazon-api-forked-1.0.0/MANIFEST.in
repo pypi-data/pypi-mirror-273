@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include paapi5_python_sdk *
+recursive-include tests *
