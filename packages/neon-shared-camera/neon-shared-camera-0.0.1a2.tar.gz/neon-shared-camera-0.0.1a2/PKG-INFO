@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: neon-shared-camera
+Version: 0.0.1a2
+Summary: inter process camera interface
+Home-page: https://github.com/NeonGeckoCom/shared_camera
+Author: Neongecko
+Author-email: developers@neon.ai
+License: BSD-3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# shared-camera
+Package for exposing a camera feed for consumption by multiple services
