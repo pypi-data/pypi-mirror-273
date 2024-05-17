@@ -1,0 +1,16 @@
+odbp/__init__.py,sha256=jLtExkslqNiWboiKKwvLDrLgR4MHncYph7U3ZJ37Nqk,66
+odbp/data_model.py,sha256=f_iSUHBJb6K2YcFKdOVu98kaxptbs8p07y333C1bTR0,586
+odbp/magic.py,sha256=t5ekCWEIaA9z63EUOCeASfeg-vs6gt5gMEp8Q6YxhKk,381
+odbp/odbp.py,sha256=Z91bgDTKb02cUN8YyHx9fB1aGddrIqW-Yf6tMXkuyk8,39323
+odbp/odbp_settings.py,sha256=zBJr0geRLAvHaYKyHxgCBtyFlX202L-aWT8bgqvAsZM,27454
+odbp/reader.py,sha256=3j0rtuaUPijflwX6bN886GwLeGmd4OklTtP_P9tZ-MY,6389
+odbp/writer.py,sha256=iKpWneBCbEEmAS3Y--0r2B9dGi7Ed5Tu1bREbPPtyEk,14457
+odbp/data/config.toml,sha256=InlP2SXTZD342e_wxHhVTanimk7vgKCuY6hOehfeADE,4808
+odbp/data/odbp_views.toml,sha256=cI8JZKTKmIOPwzSuHBuUSFKdb2-FUFrhh4NFgAnTYS0,49418
+odbp/py2_scripts/converter.py,sha256=nA9VHVY2Brb6SyK-6zzDZoz5-K3WMUJWG7PQkIlQYvg,24893
+odbp/py2_scripts/odb_info_getter.py,sha256=fHRuT1cg0-K9yHlkNSJ-0h_fcquBjjjaL2u_ikrI584,5011
+odbp-1.1.3.dist-info/LICENSE,sha256=xrs3B1_OGik52JHNtYpj_YcYdPke5FCKsAUhfhK34c0,1074
+odbp-1.1.3.dist-info/METADATA,sha256=Xd8T6FqL9f6st5CRNMsMihV86UTVrADDAuh4ANIGn2k,2841
+odbp-1.1.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+odbp-1.1.3.dist-info/top_level.txt,sha256=C4i11u5JX4uybRZH9KLKYa0LyUibWvMKP3SbxbyV9Z0,5
+odbp-1.1.3.dist-info/RECORD,,
