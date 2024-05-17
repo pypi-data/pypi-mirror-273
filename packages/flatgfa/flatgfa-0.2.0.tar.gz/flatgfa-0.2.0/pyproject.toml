@@ -1,0 +1,27 @@
+[project]
+name = "flatgfa"
+version = "0.2.0"
+description = "efficient processing of pangenomes in Graphical Fragment Assembly (GFA) format"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["genomics", "pangenomics", "gfa"]
+classifiers = [
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+repository = "https://github.com/cucapra/pollen"
+documentation = "https://cucapra.github.io/pollen/flatgfa/"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+manifest-path = "flatgfa-py/Cargo.toml"
