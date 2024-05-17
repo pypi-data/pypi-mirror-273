@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ensure-packages
+Version: 0.1.5
+Summary: A package to ensure other packages are installed its created by vinoth cse-B. a laternate for using pip
+Author: vinothjs
+Author-email: jeyashreenarayan@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MyPackage
+
+A Python package to ensure other packages are installed.
+
+## Installation
+
+```bash
+pip install mypackage
