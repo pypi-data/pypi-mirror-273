@@ -1,0 +1,3 @@
+[workspace]
+resolver = "2"
+members = ["psychophysics", "psychophysics-py", "pywrap"]

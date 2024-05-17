@@ -1,0 +1,19 @@
+[package]
+name = "psychophysics-py"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "psychophysics_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+psychophysics = { path = "../psychophysics" }
+pywrap = { path = "../pywrap" }
+send_wrapper = "0.6.0"
+smol = "2.0.0"
+derive-debug = "0.1.2"
+pyo3-log = "0.10.0"
+log = "0.4.21"
+pyo3 = { version = "0.21.2", features = ["multiple-pymethods", "abi3-py38", "extension-module"] }

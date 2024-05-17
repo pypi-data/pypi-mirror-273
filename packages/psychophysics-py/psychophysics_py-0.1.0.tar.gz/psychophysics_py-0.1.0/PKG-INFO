@@ -1,0 +1,10 @@
+Metadata-Version: 2.3
+Name: psychophysics-py
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for the psychophysics Rust library
+Author-email: Marc Pabst <mail@marcpabst.com>
+License: MPL-2.0
+Requires-Python: >=3.8
