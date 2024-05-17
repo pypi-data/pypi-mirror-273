@@ -1,0 +1,10 @@
+dicomanonymizer/__init__.py,sha256=Htunl2vCetcJP0oDQwLzIJkoAOGBRr3Ta-53xc_MmAg,185
+dicomanonymizer/anonymizer.py,sha256=B6f6IvpX0-v7SVvtZrSIRyLjLpelfeQlHhRYpwgp21M,6133
+dicomanonymizer/dicomfields.py,sha256=8x6XSuyDygqukQmu2dDnqQ-G-yjjoTxXbJBJ6Fz_zpI,13206
+dicomanonymizer/simpledicomanonymizer.py,sha256=laOA9yNhvHNOuDxjG0JBAc96CheyREc0C8nu19yrLU0,10930
+dicomanonymizer/version.py,sha256=5vGk-8GWz6jojEu9w36UP5aNA0LuiwgbNSJ8Umn2rLA,23
+dicom_anon-1.0.10.dist-info/entry_points.txt,sha256=iNBcP2-THRl78jPRzkHWmCHKC5NLCNiEQ86HPhldA2s,68
+dicom_anon-1.0.10.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+dicom_anon-1.0.10.dist-info/METADATA,sha256=TiwS8-W7odttVsvzhtmpNqrx_-fi9XNmPlAUHKN4iww,9873
+dicom_anon-1.0.10.dist-info/licenses/LICENSE,sha256=HAtqo2Ih1usG0zGllDXoy8QzCr5Cgad0XnwXjWaSbQ0,1459
+dicom_anon-1.0.10.dist-info/RECORD,,
