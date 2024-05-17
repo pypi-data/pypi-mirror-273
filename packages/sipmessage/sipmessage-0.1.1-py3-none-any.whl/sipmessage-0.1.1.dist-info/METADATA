@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sipmessage
+Version: 0.1.1
+Summary: Pure python parsing of SIP messages and headers
+Author-email: Spacinov Engineering <opensource@spacinov.com>
+License: BSD License
+Project-URL: Homepage, https://sipmessage.readthedocs.io/
+Project-URL: Documentation, https://sipmessage.readthedocs.io/
+Project-URL: Repository, https://github.com/spacinov/sipmessage
+Project-URL: Issues, https://github.com/spacinov/sipmessage/issues
+Keywords: SIP,RFC3261
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications :: Telephony
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pyroma ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+==========
+sipmessage
+==========
+
+
+The ``sipmessage`` project provides a set of Python helpers and structures
+for parsing SIP messages.
