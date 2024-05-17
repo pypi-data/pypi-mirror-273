@@ -1,0 +1,25 @@
+[project]
+name = "ADViewpy"
+version = '0.2.alpha'
+description = "ADViewpy is Python Library to visually compare phylogenetic trees"
+readme = "README.md"
+dependencies=[
+        'dendropy',
+        'ipycanvas',
+        'ipywidgets',
+        'scikit-learn',
+        'numpy',
+        'plotly'
+    ]
+
+[project.urls]
+Homepage = "https://github.com/Coralnws/ADViewpy-alpha.git"
+
+[build-system]
+requires = ['dendropy',
+        'ipycanvas',
+        'ipywidgets',
+        'scikit-learn',
+        'numpy',
+        'plotly']
+

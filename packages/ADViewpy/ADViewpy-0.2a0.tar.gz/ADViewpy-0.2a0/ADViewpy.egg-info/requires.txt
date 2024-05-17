@@ -1,0 +1,6 @@
+dendropy
+ipycanvas
+ipywidgets
+scikit-learn
+numpy
+plotly
