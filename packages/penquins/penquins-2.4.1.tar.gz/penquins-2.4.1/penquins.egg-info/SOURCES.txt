@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+penquins/__init__.py
+penquins/penquins.py
+penquins.egg-info/PKG-INFO
+penquins.egg-info/SOURCES.txt
+penquins.egg-info/dependency_links.txt
+penquins.egg-info/requires.txt
+penquins.egg-info/top_level.txt

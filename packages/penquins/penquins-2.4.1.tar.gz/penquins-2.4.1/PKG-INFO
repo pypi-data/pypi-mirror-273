@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: penquins
+Version: 2.4.1
+Summary: A python client for Kowalski
+Home-page: https://github.com/dmitryduev/penquins
+Author: Dmitry A. Duev
+Author-email: duev@caltech.edu
+License: MIT
+License-File: LICENSE
