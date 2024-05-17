@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: astrosampler
+Version: 0.2.0
+Summary: A package for sampling typical distributions in astronomy
+Project-URL: Homepage, https://github.com/Sub6Resources/astro-sampler
+Project-URL: Issues, https://github.com/Sub6Resources/astro-sampler/issues
+Author-email: Matthew Whitaker <sub6resources@gmail.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# Astro Sampler
+
+Sample from distributions commonly used in astronomy.
+
+## Installation
+
+```bash
+pip install astrosampler
+```
+
+### Dependencies
+
+- `numpy`
+
+## Usage
+
+```python
+from astrosampler import SalpeterIMF
+
+# Sample 1000 stellar masses from the Salpeter (1955) IMF
+imf = SalpeterIMF(mass_range=(0.08, 100))
+masses = imf.sample(1000)
+```
