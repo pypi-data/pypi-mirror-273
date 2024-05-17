@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+author = "Ciencia de Datos • GECI"
+author-email = "ciencia.datos@islas.org.mx"
+classifiers = [ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",]
+description-file = "README.md"
+home-page = "https://github.com/IslasGECI/calling_rate"
+module = "calling_rate"
+requires = [
+    "geopandas",
+    "matplotlib",
+    "pandas-stubs",
+    "pandas",
+    "scipy",
+    "typer[all]",
+    "utm"
+]
+requires-python=">=3.9"
+
+[tool.flit.scripts]
+calling-rates-curator = "calling_rate.curator:curator"
+calling-rate = "calling_rate.cli:cli"
