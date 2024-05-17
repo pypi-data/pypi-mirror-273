@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-PixSeq = napari_pixseq:napari.yaml
