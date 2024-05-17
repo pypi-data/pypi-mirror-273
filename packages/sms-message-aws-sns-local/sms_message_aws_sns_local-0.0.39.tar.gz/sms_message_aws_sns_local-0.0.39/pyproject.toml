@@ -1,0 +1,14 @@
+# https://python-poetry.org/docs/pyproject
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "sms-message-aws-sns-local"
+version = "0.0.30" # https://pypi.org/project/sms-message-aws-sns-local
+description = "sms-message-aws-sns-local Python Package"
+readme = "README.md"
+authors = [
+    "Circlez.ai <info@circlez.ai>",
+]
