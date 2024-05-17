@@ -1,0 +1,17 @@
+sonar-space
+argparse
+srt
+torchaudio
+numpy>=1.21
+torch>=1.9
+tqdm
+fairseq2
+
+[dev]
+flake8
+
+[release]
+build
+twine
+sphinx
+sphinx-rtd-theme
