@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: forecast-in-a-box
+Version: 0.0.1
+Summary: Weather Forecast in a Box
+Author-email: "European Centre for Medium-Range Weather Forecasts (ECMWF)" <software.support@ecmwf.int>
+License: Apache License Version 2.0
+Project-URL: Source code, https://github.com/ecmwf/forecast-in-a-box
+License-File: LICENSE
