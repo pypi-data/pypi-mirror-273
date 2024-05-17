@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+soundbook/__init__.py
+soundbook/soundbook.py
+soundbook.egg-info/PKG-INFO
+soundbook.egg-info/SOURCES.txt
+soundbook.egg-info/dependency_links.txt
+soundbook.egg-info/entry_points.txt
+soundbook.egg-info/requires.txt
+soundbook.egg-info/top_level.txt
+soundbook/core/__init__.py
+soundbook/core/handler.py
+soundbook/core/runner.py
+soundbook/modules/__init__.py
+soundbook/modules/get_book.py
+soundbook/modules/get_url.py

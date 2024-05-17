@@ -1,0 +1,8 @@
+setuptools
+ffmpeg
+mutagen
+eyed3
+pillow
+requests
+sox
+yt_dlp
