@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/drremote/__init__.py
+src/drremote/__main__.py
+src/drremote/drremote.py
+src/drremote/get_resolve.py
+src/drremote/output.py
+src/drremote/parse.py
+src/drremote.egg-info/PKG-INFO
+src/drremote.egg-info/SOURCES.txt
+src/drremote.egg-info/dependency_links.txt
+src/drremote.egg-info/entry_points.txt
+src/drremote.egg-info/top_level.txt
