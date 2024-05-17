@@ -1,0 +1,11 @@
+click>=7.0
+openai
+pandas
+pydantic
+requests
+tabulate
+transformers
+openai
+tomli
+pandas
+shortuuid

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[project]
+name = "lotgi"
+authors = [
+    {name = "Alex Wu", email = "alexanderwu@berkeley.edu"},
+]
+description = "For the love of the game"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = []
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "click >= 7.0",
+  "openai",
+  "pandas",
+  "pydantic",
+  "requests",
+  "tabulate",
+  "transformers",
+  "openai",
+  "tomli",
+  "pandas",
+  "shortuuid",
+]
+version="0.0.9"
+
+
+[tool.setuptools.packages.find]
+where = ["python/"]
+
+[project.scripts]
+lotgi = "lotgi:cli"
