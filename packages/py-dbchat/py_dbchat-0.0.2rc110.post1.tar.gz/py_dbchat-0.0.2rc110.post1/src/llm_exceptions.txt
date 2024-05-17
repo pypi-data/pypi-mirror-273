@@ -1,0 +1,25 @@
+==============================: 
+Exception occured for query: 
+{"table":"track","fields":[{"func":"COUNT","parameters":["*"],"alias":"pop_song_count"}],"filters":[{"field":"genre_id","operator":"eq","value":"9"}],"group_by":[],"sort":null,"limit":null,"offset":null,"joins":{}}
+Exception is: 
+Traceback (most recent call last):
+  File "/workspaces/dbchat/src/api/agents/autogen/react_agents.py", line 49, in sql_executor_tool
+    raise ValueError(validation_errors)
+ValueError: [ValidationError(message='Field * not found in table track')]
+
+==============================: 
+Exception occured for query: 
+{"query": {"table": "genre", "fields": ["genre_id"], "filters": [{"field": "name", "operator": "like", "value": "Pop"}]}}
+Exception is: 
+Traceback (most recent call last):
+  File "/workspaces/dbchat/src/api/agents/autogen/react_agents.py", line 45, in sql_executor_tool
+    query = Query.model_validate(query)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/dbchat/.venv/lib/python3.12/site-packages/pydantic/main.py", line 532, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Query
+table
+  Field required [type=missing, input_value={'query': {'table': 'genr...ike', 'value': 'Pop'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+
