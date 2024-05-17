@@ -1,0 +1,69 @@
+# Puan DB Python Client
+## Install
+```bash
+pip install puan-db-python
+```
+
+# A quick what-is-dis
+A Python library for connecting to a `puan-db` instance. Puan DB is a logical reasoning database which draws conclusions from a model and finds combinations which satisfies a model while minimizing/maximizing some objective function.
+
+There are two types of variables to keep in mind: 
+- <b>Primitives</b>. These are defined by an ID given by you, and a lower and upper bound representing which integer values this variable may take in the future. The bound is a complex number so a boolean variable `x` would be declared with the bound `0+1j`, or just `1j`, as such `model.set_primitive("x", 1j)` 
+- <b>Composites</b>. These are created using one or more other primitives or composites as a connecter between them. For instance, an OR-connector is defined as `model.set_or(["x","y","z"])`.
+
+# Example
+```python
+import puan_db_python
+
+# Connect to back end
+client = puan_db_python.PuanClient(
+    host="localhost",
+    port=50051,
+    ssl=False,
+)
+
+# Select or create a model
+model = client.create(id="test", password="test")
+
+# Set some primitive variables
+model.set_primitives(["x","y","z"])
+
+# And a composite
+id = model.set_atleast(["x","y","z"], 1, alias="A")
+
+# Same one could be set instead by
+other_id = model.set_or(["x","y","z"], alias="A")
+assert id == other_id
+
+# If you forget the id but remember the alias, there's a pointer to it
+forgot_id = model.id_from_alias("A")
+assert (id == forgot_id) and (forgot_id == other_id)
+
+# Now we can do some propagation to verify some values.
+# For instance, if x is 1, then A should be true as well.
+# Note that you must give the ID and not the alias when getting its value
+model.propagate({"x": 1+1j}).get(id) == 1+1j 
+
+# Or maybe we want to find a combination that trying
+# to not include x and even more not y, such that (x or y or z) must be true.
+# Note that we can send in multiple "objectives" and there's one solution returned
+# by each objective
+solutions = model.solve(
+    objectives=[
+        {
+            "x": -1, 
+            "y": -2,
+        }
+    ], 
+    assume={id: 1+1j}, 
+    solver=puan_db_python.Solver.GLPK,
+)
+
+# Modify the model and compute on it's sub system
+# Sub function cuts away the top of the given id's and make them as roots
+# This is a stupid example, since it will just leave the graph as is
+sub_model = model.sub([id])
+
+# ... do something
+sub_model.propagate({"x": 1+1j})
+```

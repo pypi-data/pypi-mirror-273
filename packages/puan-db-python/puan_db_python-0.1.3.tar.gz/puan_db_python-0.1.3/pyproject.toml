@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "puan-db-python"
+version = "0.1.3"
+description = ""
+authors = ["znittzel <rikard@ourstudio.se>"]
+readme = "README.md"
+include = [
+    "**/puan_db_pb2.py",
+    "**/puan_db_pb2.pyi",
+    "**/puan_db_pb2_grpc.py",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+grpcio = "^1.62.2"
+grpcio-tools = "^1.62.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
