@@ -1,0 +1,16 @@
+openclimatedata/__init__.py,sha256=m-hv2AJP1Apy-yrTJj2-pITaf5nZYmaRP2lUb_CpRZk,374
+openclimatedata/_ceds.py,sha256=3f8cedP0DwXsIGX-h0E6ib4KWXor6Uj42iUzciNWNzY,13017
+openclimatedata/_gcb_fossil.py,sha256=NmDf24CTWsesWsyQYKpDzsgQJyH8Pd29RoAOpReRdRY,7470
+openclimatedata/_gcb_national.py,sha256=H8QMUwwGwdSkgR-1dcSOU_eywlMSxr92hy2VdOYMzBQ,4358
+openclimatedata/_global_carbon_budget/__init__.py,sha256=xmt-pPtHQXhtOT8xOgTl3_4RVajL5p1JzanueIvkis4,170
+openclimatedata/_global_carbon_budget/_core.py,sha256=yMqHyJwgG-NUuKpgp1R0S4LCaxQA7gu62wuWwCMFr_c,4638
+openclimatedata/_global_carbon_budget/_gcb2021.py,sha256=xmCfPZwWbl_KRmpYnVwhgr_CksqHQQ6Dj2zHOMtwPUU,4376
+openclimatedata/_global_carbon_budget/_gcb2022.py,sha256=riDF0tEpQniMrOzSgXU5JP0ub00rPNfAQ2fUkEUDm0g,4496
+openclimatedata/_global_carbon_budget/_gcb2023.py,sha256=J3_GqIgNv46z1az28Mxldt7JEp72E37UyAUfilftUpA,4926
+openclimatedata/_primap_hist/__init__.py,sha256=VnuoNGdDEyHrurALKZe8s42sl2KrjFu-NTxPprOne6Y,7268
+openclimatedata/_primap_hist/_core.py,sha256=0oMEvsC8Cwem6qFrUkC9Z3VN8MOC9ze5Mb2jIL0RwL4,3445
+openclimatedata-0.12.dist-info/LICENSE,sha256=ZjlN7Fg2W_QArQDKTeDvx2m6f2BoaICLUIMLzHAKH2s,1271
+openclimatedata-0.12.dist-info/METADATA,sha256=SpyyLiUvsNevrQjVQ8d9FG2fi7GdElcQeeKCSAGQmBQ,924
+openclimatedata-0.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+openclimatedata-0.12.dist-info/top_level.txt,sha256=PdtO6zPf0YNF_WxUT4J68slgnTe0XIPofMt4C5KMWS8,16
+openclimatedata-0.12.dist-info/RECORD,,
