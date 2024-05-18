@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+assegaiz/__init__.py
+assegaiz/main.py
+assegaiz.egg-info/PKG-INFO
+assegaiz.egg-info/SOURCES.txt
+assegaiz.egg-info/dependency_links.txt
+assegaiz.egg-info/requires.txt
+assegaiz.egg-info/top_level.txt
