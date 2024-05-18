@@ -1,0 +1,83 @@
+import typing
+from pathlib import Path
+from typing import Annotated
+from typing import Optional
+
+import typer
+from amsdal.errors import AmsdalCloudError
+from amsdal.manager import AmsdalManager
+from amsdal_utils.config.manager import AmsdalConfigManager
+from rich import print
+from typer import Option
+
+from amsdal_cli.commands.cloud.environments.utils import get_current_env
+from amsdal_cli.commands.cloud.security.allowlist.app import allowlist_sub_app
+from amsdal_cli.utils.cli_config import CliConfig
+
+
+@allowlist_sub_app.command(name='delete, del, d')
+def delete_allowlist_ip_command(
+    ctx: typer.Context,
+    env_name: typing.Annotated[
+        typing.Optional[str],  # noqa: UP007
+        Option('--env', help='Environment name. Default is the current environment from configratuion.'),
+    ] = None,
+    *,
+    ip_address: Annotated[
+        Optional[str],  # noqa: UP007
+        typer.Option(
+            '--ip-address',
+            help=(
+                'IP address, range or combination of both to delete from the allowlist. '
+                'Will delete your IP if not provided.'
+            ),
+        ),
+    ] = None,
+) -> None:
+    """
+    Deletes your IP from the allowlist of the API.
+
+
+    ```shell
+    Examples:
+
+    > amsdal cloud security allowlist delete
+    > amsdal cloud security allowlist delete --ip-address 0.0.0.0
+    > amsdal cloud security allowlist delete --ip-address 0.0.0.0/24
+    > amsdal cloud security allowlist delete --ip-address 0.0.0.0,1.0.0.0/24
+    ```
+    """
+
+    env_name = env_name or get_current_env(ctx)
+    cli_config: CliConfig = ctx.meta['config']
+
+    if cli_config.verbose:
+        print(
+            '[blue]Deleting IP address/range from the allowlist for environment: '
+            f'[dark_cyan]{env_name}[/dark_cyan][/blue]'
+        )
+
+    AmsdalConfigManager().load_config(Path('./config.yml'))
+    manager = AmsdalManager()
+    manager.authenticate()
+
+    try:
+        manager.cloud_actions_manager.delete_allowlist_ip(
+            env_name=env_name,
+            application_uuid=cli_config.application_uuid,
+            application_name=cli_config.application_name,
+            ip_address=ip_address,
+        )
+    except AmsdalCloudError as e:
+        print(f'[red]{e}[/red]')
+        return
+
+    if ip_address:
+        msg = (
+            f'IP address/range [green]{ip_address}[/green] has been deleted from the allowlist. '
+            'Rules should be applied in a few minutes.'
+        )
+    else:
+        msg = 'Your IP address has been deleted from the allowlist. Rules should be applied in a few minutes.'
+
+    print(msg)
