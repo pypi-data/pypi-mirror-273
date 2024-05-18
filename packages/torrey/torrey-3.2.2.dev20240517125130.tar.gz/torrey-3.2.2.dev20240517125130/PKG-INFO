@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: torrey
+Version: 3.2.2.dev20240517125130
+Summary: Torrey client and SDK
+Home-page: https://www.torrey.com
+License: Apache-2.0
+Keywords: Torrey,vector,database,cloud
+Author: Torrey Systems, Inc.
+Author-email: support@torrey.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: grpc
+Requires-Dist: certifi (>=2019.11.17)
+Requires-Dist: googleapis-common-protos (>=1.53.0) ; extra == "grpc"
+Requires-Dist: grpc-gateway-protoc-gen-openapiv2 (==0.1.0) ; extra == "grpc"
+Requires-Dist: grpcio (>=1.44.0) ; (python_version >= "3.8" and python_version < "3.11") and (extra == "grpc")
+Requires-Dist: grpcio (>=1.59.0) ; (python_version >= "3.11" and python_version < "4.0") and (extra == "grpc")
+Requires-Dist: lz4 (>=3.1.3) ; extra == "grpc"
+Requires-Dist: protobuf (>=3.20.0,<3.21.0) ; extra == "grpc"
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: typing-extensions (>=3.7.4)
+Requires-Dist: urllib3 (>=1.26.0) ; python_version >= "3.8" and python_version < "3.12"
+Requires-Dist: urllib3 (>=1.26.5) ; python_version >= "3.12" and python_version < "4.0"
+Project-URL: Documentation, https://torrey.com/docs
+Description-Content-Type: text/markdown
+
+Nothing to see here.
+
