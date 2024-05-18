@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: airtestProject
+Version: 0.1.8
+Author: mortal_sjh
+Author-email: mortal_sjh@qq.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: airtest ==1.3.3
+Requires-Dist: openpyxl ==1.1.0
+Requires-Dist: pocoui ==1.0.94
+Requires-Dist: qrcode ==7.4.2
+Requires-Dist: watchdog ==4.0.0
+Requires-Dist: easyocr ==1.7.1
+Requires-Dist: paddleocr ==2.7.3
+Requires-Dist: loguru ==0.5.3
+Requires-Dist: paddlepaddle ==2.6.1
+Requires-Dist: numpy ==1.22.4
+
+### 测试包体
+
+pip inatsll airtestProject 即可下载安装。
+
+最好用的airtest二次封装。
+
+三七出品必属精品。
+
+使用封装好的auto_setup需要在根目录下创建文件夹log和reports
+
+需要在跟目录文件夹下创建images
