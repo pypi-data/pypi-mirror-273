@@ -1,0 +1,13 @@
+mpackview/__init__.py,sha256=kY48939aj8WwiEuNQ8uN4hSDHXlrrg6QefHdN3b66Do,228
+mpackview/main.py,sha256=GeluZANoq0IjjS_OZ6K30ITuKT5kLgdUQHmWlVEhsa8,2115
+mpackview/mpacklog.ui,sha256=4NxWntCqMsp_pIRolxNILnr3CNYJ1nWmmhYsXQcSlOI,4351
+mpackview/plot_callback.py,sha256=VX2ya7IXh54J9TZhSWOo_5XCcDs0kjd0631OTJ7fRzo,1277
+mpackview/plot_item.py,sha256=eUYU6N-7K5OfteREuF4aKH37tNkWWFvPBrQ9sn0C1a8,2427
+mpackview/plot_widget.py,sha256=DdigglRRAeaqslyU35H3gyqWLbO9CIiRXo6ZPIl23rM,3577
+mpackview/sized_tree_widget.py,sha256=h2H-U9r0YewI1fCa8CcaY0LJIJSZsefJJvy6L_KhAZs,1601
+mpackview/stream_client.py,sha256=851qY7vtPZC4fBiz2cXYzJUz9qnyQ1zFELCLmgttN5Q,1392
+mpackview/window.py,sha256=u2MY6GzJDwG7A5GGUYpZon_WeUzf43_7SrEy5C7EKHE,7107
+mpackview-3.1.0.dist-info/entry_points.txt,sha256=9-5r0KuLIJhlTPloRcF8MOSNJ2svuFWOydQnS5VB2N0,44
+mpackview-3.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+mpackview-3.1.0.dist-info/METADATA,sha256=STp9fwlMNO18M_4pGhGQkfnJ9to0VgSH3aHZ6qJDD8w,1712
+mpackview-3.1.0.dist-info/RECORD,,
