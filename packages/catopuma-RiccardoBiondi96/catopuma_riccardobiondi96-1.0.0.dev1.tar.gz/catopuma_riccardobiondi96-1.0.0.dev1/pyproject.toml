@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catopuma_RiccardoBiondi96"
+version = "1.0.0.dev1"
+authors = [{ name="Riccardo Biondi", email="riccardo.biondi7@unibo.it" }]
+description = "Customizable Advanced Tensorflow Objects to Preprocess, Upload, Model and Augment"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/RiccardoBiondi/Catopuma"
+Issues = "https://github.com/RiccardoBiondi/Catopuma/issues"
