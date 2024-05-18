@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+monoglyceridez/__init__.py
+monoglyceridez/main.py
+monoglyceridez.egg-info/PKG-INFO
+monoglyceridez.egg-info/SOURCES.txt
+monoglyceridez.egg-info/dependency_links.txt
+monoglyceridez.egg-info/requires.txt
+monoglyceridez.egg-info/top_level.txt
