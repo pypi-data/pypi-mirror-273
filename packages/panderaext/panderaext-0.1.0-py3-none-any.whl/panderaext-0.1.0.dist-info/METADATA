@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: panderaext
+Version: 0.1.0
+Summary: Extension of pandera type checking
+Home-page: https://github.com/artoby/panderaext
+License: MIT
+Keywords: pandera,schema,pandas
+Author: Artyom Vorobyov
+Author-email: artyom.vorobyov@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: pandas
+Requires-Dist: pandera (>=0.19.3)
+Requires-Dist: pytest (>=7.4.0)
+Project-URL: Repository, https://github.com/artoby/panderaext
+Description-Content-Type: text/markdown
+
+# panderaext
+
+Extension of pandera type checking
+
+# Installation
+
+```bash
+pip install panderaext
+```
+
+# Usage
+
+```python
+import pandas as pd
+import pandera as pa
+...
+```
+
