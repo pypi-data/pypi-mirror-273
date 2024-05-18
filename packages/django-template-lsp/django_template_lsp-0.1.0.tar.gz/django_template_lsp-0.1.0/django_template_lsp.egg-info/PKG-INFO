@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-template-lsp
+Version: 0.1.0
+Summary: Django template LSP
+Requires-Python: >= 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pygls
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-check; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+# Django template LSP
+
+A simple Django template LSP for completions
+
+
+
+## Install
+
+    pip install django-template-lsp
+
+
+## Editors
+
+### Helix
+
+In your global or project `languages.toml` add the following
+
+```toml
+[language-server.djlsp]
+command = "djlsp"
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "djlsp" ]
+```

@@ -1,0 +1,13 @@
+README.md
+setup.py
+django_template_lsp.egg-info/PKG-INFO
+django_template_lsp.egg-info/SOURCES.txt
+django_template_lsp.egg-info/dependency_links.txt
+django_template_lsp.egg-info/entry_points.txt
+django_template_lsp.egg-info/requires.txt
+django_template_lsp.egg-info/top_level.txt
+djlsp/__init__.py
+djlsp/__main__.py
+djlsp/cli.py
+djlsp/completion.py
+djlsp/server.py

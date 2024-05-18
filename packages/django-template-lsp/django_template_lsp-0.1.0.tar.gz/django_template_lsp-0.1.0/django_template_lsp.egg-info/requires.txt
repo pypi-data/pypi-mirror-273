@@ -1,0 +1,9 @@
+pygls
+
+[dev]
+black
+isort
+flake8
+pytest
+pytest-check
+pytest-cov
