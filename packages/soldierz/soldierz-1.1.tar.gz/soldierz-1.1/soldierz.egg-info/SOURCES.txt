@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+soldierz/__init__.py
+soldierz/main.py
+soldierz.egg-info/PKG-INFO
+soldierz.egg-info/SOURCES.txt
+soldierz.egg-info/dependency_links.txt
+soldierz.egg-info/requires.txt
+soldierz.egg-info/top_level.txt
