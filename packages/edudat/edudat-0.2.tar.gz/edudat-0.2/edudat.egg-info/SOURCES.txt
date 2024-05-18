@@ -1,0 +1,8 @@
+setup.py
+edudat/__init__.py
+edudat/data_loader.py
+edudat.egg-info/PKG-INFO
+edudat.egg-info/SOURCES.txt
+edudat.egg-info/dependency_links.txt
+edudat.egg-info/requires.txt
+edudat.egg-info/top_level.txt
