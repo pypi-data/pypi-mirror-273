@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: igcse
+Version: 0.3
+Summary: A simple Python library for IGCSE Computer Science.
+Home-page: https://github.com/DefinetlyNotAI/IG_Python_Library
+Author: Shahm Najeeb
+Author-email: Nirt_12023@outlook.com
+Keywords: igcse computer science
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: requests>=2.25.1
