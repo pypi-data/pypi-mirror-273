@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: TDSR-UWB
+Version: 1.541
+Summary: Support libraries for TDSR LLC UWB Radios
+Home-page: UNKNOWN
+Author: TDSR-LLC
+Author-email: contact@tdsr-uwb.com
+License: UNKNOWN
+Project-URL: Company:, https://www.tdsr-uwb.com
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.9, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: PyQt6 (>=6.6)
+Requires-Dist: netifaces2 (>=0.0.22)
+Requires-Dist: pyqtgraph (>=0.13.2)
+Requires-Dist: pyserial (>=3.5)
+
+TDSR UWB Radio Support Libraries Version 1.534
+See www.tdsr-uwb.com for details and inquires
+
+

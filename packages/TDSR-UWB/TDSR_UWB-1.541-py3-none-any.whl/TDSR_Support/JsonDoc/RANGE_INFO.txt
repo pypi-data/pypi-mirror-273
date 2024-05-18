@@ -1,0 +1,1 @@
+{"RANGE_INFO":{"msgId":0,"configId":0,"requesterId":0,"responderId":0,"rangeStatus":0,"stopwatchTime":0,"precisionRangeMm":0,"precisionRangeErrEst":0,"responderFpp":0,"firstPathPower":0.0,"rxPower":0.0,"maxNoise":0,"stdNoise":0,"firstPathAmp1":0,"firstPathAmp2":0,"firstPathAmp3":0,"maxGrowthCIR":0,"rxPreamCount":0,"firstPath":0,"timestamp":"0"}}
