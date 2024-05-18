@@ -1,0 +1,6 @@
+PyQt6
+PySide6
+Rx
+typer
+keyboard
+pyinstaller==6.2.0
