@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: rx784
+Version: 1.2.0
+Project-URL: Documentation, https://github.com/dulong-lab/rx784-py#readme
+Project-URL: Issues, https://github.com/dulong-lab/rx784-py/issues
+Project-URL: Source, https://github.com/dulong-lab/rx784-py
+Author-email: dulong-lab <dulong-lab@outlook.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.4
+Requires-Dist: pyserial
+Description-Content-Type: text/markdown
+
+# rx784
+
+[![PyPI - Version](https://img.shields.io/pypi/v/rx784.svg)](https://pypi.org/project/rx784)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rx784.svg)](https://pypi.org/project/rx784)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install rx784
+```
+
+## License
+
+`rx784` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
