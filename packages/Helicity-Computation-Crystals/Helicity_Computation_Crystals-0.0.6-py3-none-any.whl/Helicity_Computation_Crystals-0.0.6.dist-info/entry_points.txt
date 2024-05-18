@@ -1,0 +1,2 @@
+[console_scripts]
+helicity_computation = Helicity_Computation_Crystals:main
