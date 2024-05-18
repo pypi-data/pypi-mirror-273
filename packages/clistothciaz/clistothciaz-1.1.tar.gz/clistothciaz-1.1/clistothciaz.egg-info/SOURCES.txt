@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+clistothciaz/__init__.py
+clistothciaz/main.py
+clistothciaz.egg-info/PKG-INFO
+clistothciaz.egg-info/SOURCES.txt
+clistothciaz.egg-info/dependency_links.txt
+clistothciaz.egg-info/requires.txt
+clistothciaz.egg-info/top_level.txt
