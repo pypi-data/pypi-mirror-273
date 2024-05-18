@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: Helicity_Computation_Crystals
+Version: 0.0.2
+Summary: A script for the computation of handedness in crystalline structures.
+Author-email: "F. Gómez-ortiz" <fgomez@uliege.be>
+License: GPL-3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: matplotlib>=3.4.0
+Provides-Extra: test
+Requires-Dist: pytest>=6.2.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest>=6.2.0; extra == "dev"
+Requires-Dist: black>=21.6b0; extra == "dev"
+Requires-Dist: pre-commit>=2.13.0; extra == "dev"
+Requires-Dist: sphinx>=4.1.2; extra == "dev"
+
+# Helicity Computation
+
+This script is intended for the computation of the helicity of crystalline structures. A full description of the method, including its strengths and weaknesses, and its application to real systems can be found in [TO BE PUBLISHED].
+
+The work was developped at the University of Liège and was funded by the Fonds de la Recherche Scientifique (FNRS) through the PDR project CHRYSALID No.40003544 and the Consortium des Équipements de Calcul Intensif (CÉCI), funded by the F.R.S.-FNRS under Grant No. 2.5020.11
+## Input
+
+The script takes three parameters:
+
+1. **a (int)**: The number of atoms in the home unit cell of the materials.
+2. **b (string)**: The path to a file containing the atomic positions in fractional units of the reference high symmetry structure in the space group of the low symmetry phase.
+3. **c (string)**: The path to a file containing the atomic positions in fractional units of the low symmetry phase, in the same order as the previous file (one-to-one mapping).
+
+## Output
+
+The script returns the value of the helicity for the crystalline phase:
+
+- **float**: The helicity of the structure.
+
+## Usage
+
+To run the script, use the following command:
+
+```bash
+python3 helicity_computation.py 24 EXAMPLES/ref_hs EXAMPLES/chir_aa
+```
+
+Or
+
+```bash
+python3 helicity_computation.py 24 EXAMPLES/ref_hs EXAMPLES/ls_a0
+```
