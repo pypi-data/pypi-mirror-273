@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: clip-for-odlabel
+Version: 1.0.0
+Summary: CLIP package for odlabel
+Home-page: UNKNOWN
+Author: OpenAI
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+UNKNOWN
+
