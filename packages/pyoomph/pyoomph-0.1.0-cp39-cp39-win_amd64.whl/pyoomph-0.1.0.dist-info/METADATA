@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pyoomph
+Version: 0.1.0
+Summary: pyoomph - a multi-physics finite element framework based on oomph-lib and GiNaC
+Home-page: https://gitlab.utwente.nl/pyoomph_group/pyoomph.git
+Author: Christian Diddens and Duarte Rocha
+Author-email: c.diddens@utwente.nl
+License: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: COPYING
+Requires-Dist: meshio
+Requires-Dist: pygmsh
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: mkl
+Requires-Dist: more-itertools
+Requires-Dist: tccbox
+
+pyoomph combines the main features of the C++ finite element library oomph-lib with symbolic differentiation and subsequent code generation powered by GiNaC. Thereby, you can formulate equations in python directly, while still having the full performance and most of the features native oomph-lib has to offer.
+
