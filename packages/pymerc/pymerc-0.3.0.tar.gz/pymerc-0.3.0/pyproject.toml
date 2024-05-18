@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pymerc"
+version = "0.3.0"
+description = "A Python library for interacting with the Mercatorio browser based game"
+authors = ["Joshua Gilman <joshuagilman@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jmgilman/pymerc"
+keywords = ["mercatorio", "python", "library", "game"]
+packages = [{ include = "pymerc" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = { extras = ["http2"], version = "^0.27.0" }
+loguru = "^0.7.2"
+asyncio = "^3.4.3"
+pydantic = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.24.0"
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+python-dotenv = "^1.0.1"
+pytest-subtests = "^0.12.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
