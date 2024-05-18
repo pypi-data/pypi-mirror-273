@@ -1,0 +1,4 @@
+[console_scripts]
+fxcli2console = jgtfx2console.fxcli2console:main
+fxlive = jgtfx2console.LiveChartDataExport:main
+fxliveconf = jgtfx2console.config_generator:main
