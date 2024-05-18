@@ -1,0 +1,7 @@
+ipython
+jupyter
+llm
+
+[test]
+pytest
+pytest-mock

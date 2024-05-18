@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+llm_jupyter/commands.py
+llm_jupyter/magic.py
+llm_jupyter.egg-info/PKG-INFO
+llm_jupyter.egg-info/SOURCES.txt
+llm_jupyter.egg-info/dependency_links.txt
+llm_jupyter.egg-info/entry_points.txt
+llm_jupyter.egg-info/requires.txt
+llm_jupyter.egg-info/top_level.txt
+tests/test_commands.py
+tests/test_magic_functions.py
