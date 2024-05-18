@@ -1,0 +1,16 @@
+pyqualitas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqualitas/checks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqualitas/checks/arbitarychecks.py,sha256=DI-eKkE7wVM3QDSC6DGmh2cr6svjbnX28OS9BIR2LXA,962
+pyqualitas/checks/dualdfchecks.py,sha256=1I7V96-NxFkI9a8ipNgUx24m6ZkodQ5b6TeV5-xJnrU,6063
+pyqualitas/checks/singledfchecks.py,sha256=oujmEKWu4-lK--CxnS9_Zys4PTJaDZlkUgXlLj2p1fM,14799
+pyqualitas/checksuite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqualitas/checksuite/checksuite.py,sha256=1UDBOLgSWEBjnigdKNoGhvK1Xq6ssGtq4n7IzUgeJak,1078
+pyqualitas/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqualitas/utils/helper.py,sha256=FlEIeeEfZfzddBNlBQknAkBlnalZZGLMvXG66_Im7JE,7346
+pyqualitas/utils/logger.py,sha256=vBqt3fBrmNXB21gU8KJFIdT8dnHhCpkRTXysIWAHRq0,1166
+pyqualitas/utils/template/TestResult.html,sha256=Y0hJWcHzayjhnzVoKxLptKekGFtLEfihkGencHfc_2k,2496
+pyQualitas-1.0.9.dist-info/LICENSE,sha256=fFZW39kARHk4OJV8phRfAOba07nO4Twe6i4V4qBosP8,1084
+pyQualitas-1.0.9.dist-info/METADATA,sha256=af8ysTP_Q0WobleTavXutfR2eCkfNgsFgNxkqkor-2w,2228
+pyQualitas-1.0.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyQualitas-1.0.9.dist-info/top_level.txt,sha256=HAAeBUP0sKfPwh7jgvKnH9Nr8GMjq0MDStL3HpZ10NY,68
+pyQualitas-1.0.9.dist-info/RECORD,,
