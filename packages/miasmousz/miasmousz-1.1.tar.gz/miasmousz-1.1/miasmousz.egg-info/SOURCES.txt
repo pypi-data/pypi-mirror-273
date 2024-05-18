@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+miasmousz/__init__.py
+miasmousz/main.py
+miasmousz.egg-info/PKG-INFO
+miasmousz.egg-info/SOURCES.txt
+miasmousz.egg-info/dependency_links.txt
+miasmousz.egg-info/requires.txt
+miasmousz.egg-info/top_level.txt
