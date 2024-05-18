@@ -1,0 +1,12 @@
+  mongo:
+    image: mongo:{mongodb_version}
+    container_name: {mongodb_container_name}
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - $PWD/data/mongodContainer-mkc/mongodata:/mongodata
+    entrypoint: ["mongod","--config","/mongodata/mongod.conf"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example

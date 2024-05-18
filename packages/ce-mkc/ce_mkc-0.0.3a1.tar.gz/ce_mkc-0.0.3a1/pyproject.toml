@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ce-mkc"
+version = "0.0.3a1"
+description = "A command line utility to set up Kafka, MongoDB, and MongoDB Kafka Connector environments."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.9"
+docker = "6.1.3"
+requests = ">=2.26"
+pymongo = "4.5.0"
+typer = "^0.12.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+mkc = 'ce_mkc.cli.cli:run'
