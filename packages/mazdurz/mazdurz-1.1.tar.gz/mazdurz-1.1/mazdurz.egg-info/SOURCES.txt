@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mazdurz/__init__.py
+mazdurz/main.py
+mazdurz.egg-info/PKG-INFO
+mazdurz.egg-info/SOURCES.txt
+mazdurz.egg-info/dependency_links.txt
+mazdurz.egg-info/requires.txt
+mazdurz.egg-info/top_level.txt
