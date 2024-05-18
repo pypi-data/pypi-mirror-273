@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ai_tictactoe
+Version: 0.1.5
+Summary: A Tic-Tac-Toe game with AI opponent
+Home-page: https://github.com/bzm10/ai_tictactoe
+Author: Benjamin M
+Author-email: bzmarkovits@yahoo.com
+Requires-Python: >=3.6
+
+# TicTacToe AI
+ TicTacToe AI is a Python package that lets you play Tic-Tac-Toe against the computer. It's like the classic game, but with a smart computer opponent that makes the game more interesting. Have fun playing and see if you can beat the AI!
