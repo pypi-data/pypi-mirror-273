@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+paramentz/__init__.py
+paramentz/main.py
+paramentz.egg-info/PKG-INFO
+paramentz.egg-info/SOURCES.txt
+paramentz.egg-info/dependency_links.txt
+paramentz.egg-info/requires.txt
+paramentz.egg-info/top_level.txt
