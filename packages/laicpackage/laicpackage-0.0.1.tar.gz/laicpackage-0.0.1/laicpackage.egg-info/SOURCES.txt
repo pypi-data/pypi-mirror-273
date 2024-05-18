@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+laicpackage.egg-info/PKG-INFO
+laicpackage.egg-info/SOURCES.txt
+laicpackage.egg-info/dependency_links.txt
+laicpackage.egg-info/top_level.txt
