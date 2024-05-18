@@ -1,0 +1,13 @@
+bs4
+click
+dropbox
+lxml
+python-dotenv
+requests
+selenium
+
+[lint]
+mypy
+pylint
+pylint[spelling]
+yapf
