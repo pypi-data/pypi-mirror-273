@@ -1,0 +1,9 @@
+README.md
+setup.py
+vectorizer/__init__.py
+vectorizer/text.py
+vectorizer/vectorizer.py
+vectorizer.egg-info/PKG-INFO
+vectorizer.egg-info/SOURCES.txt
+vectorizer.egg-info/dependency_links.txt
+vectorizer.egg-info/top_level.txt
