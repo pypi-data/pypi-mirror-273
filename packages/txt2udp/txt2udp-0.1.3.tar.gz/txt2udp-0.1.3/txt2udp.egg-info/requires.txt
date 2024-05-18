@@ -1,0 +1,13 @@
+pydantic
+pydantic-settings
+loguru
+
+[all]
+mitmproxy
+typer
+
+[cli]
+typer
+
+[mitm]
+mitmproxy
