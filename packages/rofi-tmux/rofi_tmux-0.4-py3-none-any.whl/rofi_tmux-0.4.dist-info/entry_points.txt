@@ -1,0 +1,3 @@
+[console_scripts]
+rft = rft.bin.main:main
+rofi-tmux = rft.bin.main:main
