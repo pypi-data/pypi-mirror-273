@@ -1,0 +1,8 @@
+setup.py
+cskdehpucnbrlamg/__init__.py
+cskdehpucnbrlamg/main.py
+cskdehpucnbrlamg/main_func_linux_x86.so
+cskdehpucnbrlamg.egg-info/PKG-INFO
+cskdehpucnbrlamg.egg-info/SOURCES.txt
+cskdehpucnbrlamg.egg-info/dependency_links.txt
+cskdehpucnbrlamg.egg-info/top_level.txt
