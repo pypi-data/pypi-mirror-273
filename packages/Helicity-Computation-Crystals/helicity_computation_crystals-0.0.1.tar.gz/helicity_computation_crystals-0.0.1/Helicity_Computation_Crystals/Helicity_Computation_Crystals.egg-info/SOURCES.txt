@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+Helicity_Computation_Crystals/Helicity_Computation_Crystals.egg-info/PKG-INFO
+Helicity_Computation_Crystals/Helicity_Computation_Crystals.egg-info/SOURCES.txt
+Helicity_Computation_Crystals/Helicity_Computation_Crystals.egg-info/dependency_links.txt
+Helicity_Computation_Crystals/Helicity_Computation_Crystals.egg-info/requires.txt
+Helicity_Computation_Crystals/Helicity_Computation_Crystals.egg-info/top_level.txt
