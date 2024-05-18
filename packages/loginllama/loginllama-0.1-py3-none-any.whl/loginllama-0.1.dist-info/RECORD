@@ -1,0 +1,10 @@
+loginllama/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loginllama/api.py,sha256=n537DXD7-4-olalMkxgyDp667vEQMNZ20VPZJEm4p_0,674
+loginllama/loginllama.py,sha256=FTmoMgJj4tt3DdIHwrpjZesVbKxRG1eOb07TEYcpV24,2343
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_loginllama.py,sha256=f1Hcue921_pfB1DYLVLSYiBa-8BBOXEgUJttGwKyblU,3215
+loginllama-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+loginllama-0.1.dist-info/METADATA,sha256=y4KE5__qFOFuqxUTFg14Y665iahooj_WxDIH1W7-4TY,5072
+loginllama-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+loginllama-0.1.dist-info/top_level.txt,sha256=OsXI3OoW-tjqCyf5eciVEGZfFYpjD5ygLXomDmyg09s,17
+loginllama-0.1.dist-info/RECORD,,
