@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: cynthion
+Version: 0.0.0
+Summary: Python package and utilities for the Great Scott Gadgets Cynthion USB Test Instrument
+Author-email: Great Scott Gadgets <dev@greatscottgadgets.com>
+License: BSD
+Project-URL: Documentation, https://luna-soc.readthedocs.io
+Project-URL: Repository, https://github.com/greatscottgadgets/luna-soc
+Project-URL: Issues, https://github.com/greatscottgadgets/luna-soc/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Hardware :: Universal Serial Bus (USB)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: future
+Requires-Dist: libusb1
+Requires-Dist: prompt-toolkit
+Requires-Dist: pyfwup >=0.2
+Requires-Dist: pyserial >=3.5
+Requires-Dist: pyusb
+Requires-Dist: tabulate
+Requires-Dist: tomli
+Requires-Dist: tqdm
+Requires-Dist: pygreat
+Requires-Dist: apollo
+Provides-Extra: gateware
+Requires-Dist: amaranth ==0.4.1 ; extra == 'gateware'
+Requires-Dist: luna-usb ~=0.0 ; extra == 'gateware'
+Provides-Extra: gateware-soc
+Requires-Dist: luna-soc ~=0.0 ; extra == 'gateware-soc'
+
+# Cynthion Python Package and Utilities
+
+This software is developed for python3.
+
+## Installing or Updating Software
+
+Unless you are developing software or testing software from git, you can
+install or update Cynthion software with:
+```
+pip3 install --upgrade cynthion
+```
+
+If you want to build any of the cynthion gateware designs you will need
+additional dependencies that can be installed with:
+```
+pip3 install --upgrade cynthion[gateware,gateware-soc]
+```
