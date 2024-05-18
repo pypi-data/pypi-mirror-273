@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ecodemez/__init__.py
+ecodemez/main.py
+ecodemez.egg-info/PKG-INFO
+ecodemez.egg-info/SOURCES.txt
+ecodemez.egg-info/dependency_links.txt
+ecodemez.egg-info/requires.txt
+ecodemez.egg-info/top_level.txt
