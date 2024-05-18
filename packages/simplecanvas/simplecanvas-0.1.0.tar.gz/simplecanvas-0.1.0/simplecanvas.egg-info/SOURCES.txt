@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+simplecanvas.egg-info/PKG-INFO
+simplecanvas.egg-info/SOURCES.txt
+simplecanvas.egg-info/dependency_links.txt
+simplecanvas.egg-info/top_level.txt
