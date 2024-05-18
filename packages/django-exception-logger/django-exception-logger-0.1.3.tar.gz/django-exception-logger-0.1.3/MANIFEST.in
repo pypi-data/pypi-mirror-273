@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+recursive-include exception_logger *.py
+recursive-include exception_logger/static *.js *.css *.map *.png *.ico *.eot *.svg *.ttf *.woff *.woff2
+recursive-include exception_logger/templates *.html *.js
+recursive-include exception_logger/locale *.mo
+global-exclude __pycache__
+global-exclude *.py[co]
