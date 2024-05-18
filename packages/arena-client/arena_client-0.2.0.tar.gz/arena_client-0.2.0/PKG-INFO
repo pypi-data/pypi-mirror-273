@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: arena-client
+Version: 0.2.0
+Summary: A client to use arena AI
+License: Apache-2
+Author: Nicolas Grislain
+Author-email: ng@sarus.tech
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.21,<0.22)
+Requires-Dist: anyio[trio] (>=4.3.0,<5.0.0)
+Requires-Dist: httpx (>=0.25,<0.26)
+Requires-Dist: mistralai (>=0.1,<0.2)
+Requires-Dist: openai (>=1.23,<2.0)
+Description-Content-Type: text/markdown
+
+# Client
+
+## Run tests
+
+Run `poetry install; poetry shell`
+
+Then (e.g.):
+
+`pytest -s tests/test_client.py::test_user_eval`
+
+FAILED tests/test_anthropic.py::test_chat - AttributeError: 'Anthropic' object has no attribute 'chat'
+FAILED tests/test_anthropic.py::test_instrumented_chat - AttributeError: 'Anthropic' object has no attribute 'chat'
+FAILED tests/test_mistral.py::test_chat - AttributeError: 'function' object has no attribute 'completions'
+FAILED tests/test_mistral.py::test_instrumented_chat - AttributeError: 'MistralClient' object has no attribute 'api_key'
