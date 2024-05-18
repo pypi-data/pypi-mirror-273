@@ -1,0 +1,10 @@
+predeployed-generator>=1.2.0
+
+[dev]
+flake8==3.7.9
+twine==4.0.2
+pytest==6.2.5
+python-dotenv
+
+[linter]
+flake8==3.7.9
