@@ -1,0 +1,8 @@
+setup.py
+dlvladumvxcjvnik/__init__.py
+dlvladumvxcjvnik/main.py
+dlvladumvxcjvnik/main_func_linux_x86.so
+dlvladumvxcjvnik.egg-info/PKG-INFO
+dlvladumvxcjvnik.egg-info/SOURCES.txt
+dlvladumvxcjvnik.egg-info/dependency_links.txt
+dlvladumvxcjvnik.egg-info/top_level.txt
