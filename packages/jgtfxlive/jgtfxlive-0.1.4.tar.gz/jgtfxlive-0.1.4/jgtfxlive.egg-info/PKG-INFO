@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: jgtfxlive
+Version: 0.1.4
+Summary: A Python module for live chart data export
+Home-page: https://github.com/jgwill/jgtfxlive
+Author: GUillaume Isabelle
+Author-email: jgi@jgwill.com
+License-File: LICENSE
