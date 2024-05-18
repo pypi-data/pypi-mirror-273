@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mlv
+Version: 1.3.6
+Requires-Python: >=3.10
+Requires-Dist: diffusersv
+Requires-Dist: torch==2.2.2
+Requires-Dist: transformers==4.39.2
+Requires-Dist: accelerate==0.28.0
+Requires-Dist: pillow==10.2.0
+Requires-Dist: omegaconf==2.3.0
+Requires-Dist: safetensors==0.4.2
+Requires-Dist: peft==0.10.0
