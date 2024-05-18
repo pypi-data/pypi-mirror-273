@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+githubinformer/__init__.py
+githubinformer/github_informer.py
+githubinformer.egg-info/PKG-INFO
+githubinformer.egg-info/SOURCES.txt
+githubinformer.egg-info/dependency_links.txt
+githubinformer.egg-info/not-zip-safe
+githubinformer.egg-info/requires.txt
+githubinformer.egg-info/top_level.txt
