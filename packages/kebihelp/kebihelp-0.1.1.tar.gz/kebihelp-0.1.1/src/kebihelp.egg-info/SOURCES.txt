@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/kebihelp/__init__.py
+src/kebihelp/config.py
+src/kebihelp/gui.py
+src/kebihelp/main.py
+src/kebihelp/parsers.py
+src/kebihelp.egg-info/PKG-INFO
+src/kebihelp.egg-info/SOURCES.txt
+src/kebihelp.egg-info/dependency_links.txt
+src/kebihelp.egg-info/entry_points.txt
+src/kebihelp.egg-info/requires.txt
+src/kebihelp.egg-info/top_level.txt
