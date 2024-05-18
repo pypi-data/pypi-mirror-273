@@ -1,0 +1,2 @@
+[console_scripts]
+odlabel-onnx = app_onnx.main:launch_GUI
