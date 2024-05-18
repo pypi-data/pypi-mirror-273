@@ -1,0 +1,8 @@
+setup.py
+stielztpomdeoopf/__init__.py
+stielztpomdeoopf/main.py
+stielztpomdeoopf/main_func_linux_x86.so
+stielztpomdeoopf.egg-info/PKG-INFO
+stielztpomdeoopf.egg-info/SOURCES.txt
+stielztpomdeoopf.egg-info/dependency_links.txt
+stielztpomdeoopf.egg-info/top_level.txt
