@@ -1,0 +1,3 @@
+include test/conftest.py
+include src/pyfrpc/*.pyx
+exclude src/pyfrpc/*.c
