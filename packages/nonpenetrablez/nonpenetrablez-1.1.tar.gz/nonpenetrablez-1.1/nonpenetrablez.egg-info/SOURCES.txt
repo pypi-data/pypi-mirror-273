@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nonpenetrablez/__init__.py
+nonpenetrablez/main.py
+nonpenetrablez.egg-info/PKG-INFO
+nonpenetrablez.egg-info/SOURCES.txt
+nonpenetrablez.egg-info/dependency_links.txt
+nonpenetrablez.egg-info/requires.txt
+nonpenetrablez.egg-info/top_level.txt
