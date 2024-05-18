@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+celery_debug.py
+requirements.txt
+setup.py
+celery_debug.egg-info/PKG-INFO
+celery_debug.egg-info/SOURCES.txt
+celery_debug.egg-info/dependency_links.txt
+celery_debug.egg-info/not-zip-safe
+celery_debug.egg-info/requires.txt
+celery_debug.egg-info/top_level.txt

@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: celery-debug
+Version: 0.1.0
+Summary: celery debug tasks.
+Home-page: UNKNOWN
+Author: Chen YuBo
+Maintainer: Chen YuBo
+License: MIT
+Keywords: celery debug tasks
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# celery-debug
+
+celery debug tasks.
+
+## 安装
+
+```shell
+pip install celery-debug
+```
+
+## 输出的celery调试服务
+
+- debug.ping
+- debug.echo
+
+## 启动
+
+1. 在工作目录下创建`celeryconfig.py`，添加以下内容
+
+    ```python
+    worker_concurrency = 10
+    worker_pool = "threads"
+    broker_url = "redis://redis/0"
+    result_backend = "redis://redis/1"
+    accept_content = ["application/json"]
+    task_serializer = "json"
+    result_accept_content = ["application/json"]
+    result_serializer = "json"
+    timezone = "Asia/Shanghai"
+    broker_connection_retry_on_startup = True
+    task_routes = {}
+    ```
+
+2. 使用以下命令启动celery worker
+
+    ```shell
+    celery -A celery_debug:app worker -Q debug -l DEBUG
+    ```
+
+## 版本记录
+
+### v0.1.0
+
+- 版本首发。
+
+
