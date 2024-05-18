@@ -1,0 +1,16 @@
+sprig_essentials/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprig_essentials/core.py,sha256=m7aXGuWctm--lc5PRCK6lbG1FBJ1ZxvIW7nIsIs3XRQ,789
+sprig_essentials/graphics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprig_essentials/graphics/images.py,sha256=Fav35xniOwoVLD57sbvWKArrym6Xg1lfJY1RbnpRdl8,13
+sprig_essentials/graphics/shapes.py,sha256=Ie9MHIS1uWRPV0IbJSvYVypHB6sSV8ykwiG1RF2No34,72
+sprig_essentials/graphics/text.py,sha256=N0qOiZ7C9aUdFGOoDscvP-rZjgI2HwrhttJsamanN2o,488
+sprig_essentials/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sprig_essentials/io/audio.py,sha256=dv0K9lc7TUq1eUL9eigutfWR4KCEt4dva4H2p9Qx25g,3914
+sprig_essentials/io/buttons.py,sha256=-HV5tUA-UZsbqZPTlVdBCJ9K-BspR6PF3BWYcVuNhps,5147
+sprig_essentials/io/display.py,sha256=uj8QY9IyRWmeBzT3x7LcsQ9FkYirmVVOQDyHn4Y-Xhk,4676
+sprig_essentials/io/led.py,sha256=GRuieimjLy6P-APABc8UeT7KBqpQ8bbddCeGMopVQg4,1442
+sprig_essentials-0.5.0.dist-info/LICENSE,sha256=u4oyAhKcS9iVcIVrMWn4QfWdQv8vMPpht7Yg2xi5V9Y,1075
+sprig_essentials-0.5.0.dist-info/METADATA,sha256=kHUtn3eU6r-pbEh0t7dXVr2vc1z51BPLlZH_hiBP-Q8,18066
+sprig_essentials-0.5.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sprig_essentials-0.5.0.dist-info/top_level.txt,sha256=s_AWVLUn0MyEQPqQ5hJWuW4QPqjSxQ-6VLepM5JiiGA,17
+sprig_essentials-0.5.0.dist-info/RECORD,,
