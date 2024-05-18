@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+archaeologicallyz/__init__.py
+archaeologicallyz/main.py
+archaeologicallyz.egg-info/PKG-INFO
+archaeologicallyz.egg-info/SOURCES.txt
+archaeologicallyz.egg-info/dependency_links.txt
+archaeologicallyz.egg-info/requires.txt
+archaeologicallyz.egg-info/top_level.txt
