@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+JsonsTest.egg-info/PKG-INFO
+JsonsTest.egg-info/SOURCES.txt
+JsonsTest.egg-info/dependency_links.txt
+JsonsTest.egg-info/requires.txt
+JsonsTest.egg-info/top_level.txt
+praktikaJsons/Jsons.py
+praktikaJsons/__init__.py
