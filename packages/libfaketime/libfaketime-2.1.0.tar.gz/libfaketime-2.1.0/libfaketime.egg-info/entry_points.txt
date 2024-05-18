@@ -1,0 +1,2 @@
+[console_scripts]
+python-libfaketime = libfaketime:main
