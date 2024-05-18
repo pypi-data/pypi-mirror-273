@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+burlingz/__init__.py
+burlingz/main.py
+burlingz.egg-info/PKG-INFO
+burlingz.egg-info/SOURCES.txt
+burlingz.egg-info/dependency_links.txt
+burlingz.egg-info/requires.txt
+burlingz.egg-info/top_level.txt
