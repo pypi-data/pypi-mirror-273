@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cacophonyz/__init__.py
+cacophonyz/main.py
+cacophonyz.egg-info/PKG-INFO
+cacophonyz.egg-info/SOURCES.txt
+cacophonyz.egg-info/dependency_links.txt
+cacophonyz.egg-info/requires.txt
+cacophonyz.egg-info/top_level.txt
