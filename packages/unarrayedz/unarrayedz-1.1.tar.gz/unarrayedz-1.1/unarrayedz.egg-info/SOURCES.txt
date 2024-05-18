@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unarrayedz/__init__.py
+unarrayedz/main.py
+unarrayedz.egg-info/PKG-INFO
+unarrayedz.egg-info/SOURCES.txt
+unarrayedz.egg-info/dependency_links.txt
+unarrayedz.egg-info/requires.txt
+unarrayedz.egg-info/top_level.txt
