@@ -1,0 +1,12 @@
+i2cpy/__init__.py,sha256=QnIDOm6fd_jrlvHVr0VzXhbXgnQ5_8RwNaCRmCLwEtA,6642
+i2cpy/_version.py,sha256=MkgmjzYfJdYqTVD9U1ISL_coooPVBwHQz7cEWj3Nzpw,25
+i2cpy/errors.py,sha256=DABjS8xMVBeb0fRPvPd7GlfJGKw6fGCHk_MfcsaBPcI,807
+i2cpy/driver/abc.py,sha256=UGHfGdUK0gprulvwH9lva_aiqjzhqaxUIZHRs0KOV2o,3734
+i2cpy/driver/ch341/__init__.py,sha256=BOlQ08ePXYaV2Ve3tUjHyHrdsEhiiivyqmKu6y20FkM,6347
+i2cpy/driver/ch341/constants.py,sha256=x5wR-5EmpSp2xdz_bTKTy9OuTKitZW2A5gryj8aKPx0,278
+i2cpy/driver/ch341/dll.py,sha256=x73m5Q5LxSLcFJs3keKc_TUGEFnZGyllxagXBECm3ro,1282
+i2cpy-0.1.0b3.dist-info/LICENSE,sha256=Tc6D-D4j9Iaf_CGKg16Kb1RHgZMylwz3yeWbdHG1YEU,1073
+i2cpy-0.1.0b3.dist-info/METADATA,sha256=GxL7VMzsHlFhO6fB26W10fWMkDXKV4LjjXeY09aQzck,8750
+i2cpy-0.1.0b3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+i2cpy-0.1.0b3.dist-info/top_level.txt,sha256=1PiWTfaZpthIUm7DOWOzEDpjnwLku0Uk-T1dyu2stCg,6
+i2cpy-0.1.0b3.dist-info/RECORD,,
