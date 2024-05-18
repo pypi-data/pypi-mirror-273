@@ -1,0 +1,11 @@
+setup.py
+testpackage1290/__init__.py
+testpackage1290/add.py
+testpackage1290/subtract.py
+testpackage1290.egg-info/PKG-INFO
+testpackage1290.egg-info/SOURCES.txt
+testpackage1290.egg-info/dependency_links.txt
+testpackage1290.egg-info/top_level.txt
+testpackage1290/extras/__init__.py
+testpackage1290/extras/divide.py
+testpackage1290/extras/multiply.py
