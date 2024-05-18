@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+afarsz/__init__.py
+afarsz/main.py
+afarsz.egg-info/PKG-INFO
+afarsz.egg-info/SOURCES.txt
+afarsz.egg-info/dependency_links.txt
+afarsz.egg-info/requires.txt
+afarsz.egg-info/top_level.txt
