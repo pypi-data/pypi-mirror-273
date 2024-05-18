@@ -1,0 +1,3 @@
+[gui_scripts]
+bustapeReport = petal_qc:bustapeReport
+coreMetrology = petal_qc:coreMetrology
