@@ -1,0 +1,7 @@
+vectorizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vectorizer/text.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vectorizer/vectorizer.py,sha256=UCn_eMbCCHXE0sOG-pISyRT34owF24XJn-NepJ0Kg1c,2135
+vectorizer-0.3.0.dist-info/METADATA,sha256=44tx2XglN2Uc-EHMY_0LJFqBDFI2bYP7TSkYhqxQpnc,345
+vectorizer-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+vectorizer-0.3.0.dist-info/top_level.txt,sha256=NKDb0cyKVlxXNahJNgUh6w7GT3a1RYUKvz9CQf-CQzA,11
+vectorizer-0.3.0.dist-info/RECORD,,
