@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+led_calibration_plugin/__init__.py
+led_calibration_plugin/calibrated_light_dark_cycle.py
+led_calibration_plugin/led_calibration.py
+led_calibration_plugin/test_led_calibration.py
+led_calibration_plugin.egg-info/PKG-INFO
+led_calibration_plugin.egg-info/SOURCES.txt
+led_calibration_plugin.egg-info/dependency_links.txt
+led_calibration_plugin.egg-info/entry_points.txt
+led_calibration_plugin.egg-info/top_level.txt
+led_calibration_plugin/ui/contrib/automations/led/calibrated_light_dark_cycle.yaml
