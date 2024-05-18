@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+magnetismz/__init__.py
+magnetismz/main.py
+magnetismz.egg-info/PKG-INFO
+magnetismz.egg-info/SOURCES.txt
+magnetismz.egg-info/dependency_links.txt
+magnetismz.egg-info/requires.txt
+magnetismz.egg-info/top_level.txt
