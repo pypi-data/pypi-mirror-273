@@ -1,0 +1,4 @@
+dartmouth-auth
+langchain
+langchain_community
+text_generation
