@@ -1,0 +1,23 @@
+[build-system]
+requires = ['pymorphy2>=0.9.1', 'nltk>=3.8.1', 'hatchling', 'emoji>=2.11.1']
+build-backend = "hatchling.build"
+
+[project]
+name = "ru-text-cleaner"
+version = "1.1.2"
+authors = [
+    { name="Vildan Nasyrov", email="" },
+    { name="Artem Gafarov", email="a.m.gafarov@ya.ru" },
+]
+description = "Prepare russian text for NLTK"
+requires-python = ">=3.10.4"
+readme = "README.md"
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/rvneural/TextCleaner"
+Issues = "https://github.com/rvneural/TextCleaner/issues"
