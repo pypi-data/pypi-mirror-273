@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: intercambio
+Version: 0.1.0
+Summary: Uma biblioteca de exemplo com classes para testes
+Home-page: UNKNOWN
+Author: Alisson
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# minhalib
+
+Uma biblioteca de exemplo com classes para testes
+
+## InstalaÃ§Ã£o
+
+```bash
+pip install intercambio
+
+
