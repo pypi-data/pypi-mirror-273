@@ -1,0 +1,12 @@
+sluyspy
+astroconst==0.0.11
+astroquery==0.4.7
+astrotool==0.0.14
+getch==1.0
+matplotlib
+numpy
+pytz==2024.1
+scipy
+solarenergy==0.1.9
+termcolor==2.4.0
+sphinx-rtd-theme
