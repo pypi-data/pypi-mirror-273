@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+quafferz/__init__.py
+quafferz/main.py
+quafferz.egg-info/PKG-INFO
+quafferz.egg-info/SOURCES.txt
+quafferz.egg-info/dependency_links.txt
+quafferz.egg-info/requires.txt
+quafferz.egg-info/top_level.txt
