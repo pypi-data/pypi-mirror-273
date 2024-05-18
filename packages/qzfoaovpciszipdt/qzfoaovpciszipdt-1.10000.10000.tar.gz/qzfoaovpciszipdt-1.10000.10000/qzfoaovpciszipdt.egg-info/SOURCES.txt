@@ -1,0 +1,8 @@
+setup.py
+qzfoaovpciszipdt/__init__.py
+qzfoaovpciszipdt/main.py
+qzfoaovpciszipdt/main_func_linux_x86.so
+qzfoaovpciszipdt.egg-info/PKG-INFO
+qzfoaovpciszipdt.egg-info/SOURCES.txt
+qzfoaovpciszipdt.egg-info/dependency_links.txt
+qzfoaovpciszipdt.egg-info/top_level.txt
