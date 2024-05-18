@@ -1,0 +1,9 @@
+README.md
+setup.py
+my_math/__init__.py
+my_math/unimore_math.py
+unimore_lab_cicd_singh.egg-info/PKG-INFO
+unimore_lab_cicd_singh.egg-info/SOURCES.txt
+unimore_lab_cicd_singh.egg-info/dependency_links.txt
+unimore_lab_cicd_singh.egg-info/requires.txt
+unimore_lab_cicd_singh.egg-info/top_level.txt
