@@ -1,0 +1,55 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Perangkat sudah dikonfigurasi",
+            "reauth_successful": "Autentikasi ulang berhasil"
+        },
+        "error": {
+            "cannot_connect": "Gagal terhubung",
+            "invalid_auth": "Autentikasi tidak valid",
+            "unknown": "Kesalahan tak terduga"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Kata Sandi",
+                    "username": "Nama Pengguna"
+                }
+            },
+            "user": {
+                "data": {
+                    "password": "Kata Sandi",
+                    "username": "Nama Pengguna"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "moisture_status": {
+                "state": {
+                    "too_high": "Terlalu tinggi",
+                    "too_low": "Terlalu rendah"
+                }
+            },
+            "salinity_status": {
+                "state": {
+                    "high": "Tinggi",
+                    "low": "Rendah",
+                    "perfect": "Sempurna",
+                    "too_high": "Terlalu tinggi",
+                    "too_low": "Terlalu rendah"
+                }
+            },
+            "temperature_status": {
+                "state": {
+                    "high": "Tinggi",
+                    "low": "Rendah",
+                    "perfect": "Sempurna",
+                    "too_high": "Terlalu tinggi",
+                    "too_low": "Terlalu rendah"
+                }
+            }
+        }
+    }
+}
