@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/wsppchem/__init__.py
+src/wsppchem/wspp_functions.py
+src/wsppchem.egg-info/PKG-INFO
+src/wsppchem.egg-info/SOURCES.txt
+src/wsppchem.egg-info/dependency_links.txt
+src/wsppchem.egg-info/requires.txt
+src/wsppchem.egg-info/top_level.txt
