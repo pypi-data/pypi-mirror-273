@@ -1,0 +1,1 @@
+{"RADIO_SET_CONFIG_REQUEST":{"msgId":21,"configId":0,"channel":2,"prf":"DWT_PRF_64M","txPreambleLength":"DWT_PLEN_1024","txRxPreambleCode":9,"power":0,"dataRate":"DWT_BR_110K","configFlags":"","antennaDelay":0,"persistFlag":0}}

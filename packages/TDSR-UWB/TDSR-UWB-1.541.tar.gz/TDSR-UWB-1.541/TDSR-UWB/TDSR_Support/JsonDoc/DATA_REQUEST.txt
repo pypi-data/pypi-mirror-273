@@ -1,0 +1,1 @@
+{"DATA_REQUEST":{"msgId":100,"destinationId":100,"slot":0,"packetType":"PACKET_TYPE_QUEUE","encoding":"ENCODING_BASE64","data":"qgACA/9VZw=="}}
