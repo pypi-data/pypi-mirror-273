@@ -1,0 +1,4 @@
+python-rofi==1.0.1
+libtmux>=0.37.0
+i3ipc>=2.0.1
+click
