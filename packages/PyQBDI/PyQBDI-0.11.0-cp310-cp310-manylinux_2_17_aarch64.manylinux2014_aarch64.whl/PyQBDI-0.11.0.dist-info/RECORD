@@ -1,0 +1,8 @@
+pyqbdipreload.py,sha256=FkavEnds5DCFPnNLoHJ0LJtXVTjSRaWyYJRkcsjPFLc,3505
+pyqbdipreloadlib.cpython-310-aarch64-linux-gnu.so,sha256=N3nTGmGVZNMlmrm3TfMaEQ0Izd-hun9gPfcGinwWnbk,7350744
+pyqbdi.cpython-310-aarch64-linux-gnu.so,sha256=XAWpw6KES08fujQutdlH576mMeg0rP2UnTmIFB_-UTY,7285088
+PyQBDI-0.11.0.dist-info/METADATA,sha256=fPm09oSNOR_cjMiaHya5YeXOOp4O0L1k7UfPLRKjG-0,5210
+PyQBDI-0.11.0.dist-info/WHEEL,sha256=H0QERcJuEKoCcMIutioyRp9n3LaQjdVoB25CT5wQyPk,154
+PyQBDI-0.11.0.dist-info/LICENSE.txt,sha256=J-slihDKKorAhYuNFzflMLU8JARSPYV9wfMZIHWr0qE,12462
+PyQBDI-0.11.0.dist-info/top_level.txt,sha256=vaVfPcyi2OkulsN7QdaZiIKzq2GbFV2q24OujHZlbRc,7
+PyQBDI-0.11.0.dist-info/RECORD,,
