@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/gdtransform/__init__.py
+src/gdtransform/transform.py
+src/gdtransform.egg-info/PKG-INFO
+src/gdtransform.egg-info/SOURCES.txt
+src/gdtransform.egg-info/dependency_links.txt
+src/gdtransform.egg-info/top_level.txt

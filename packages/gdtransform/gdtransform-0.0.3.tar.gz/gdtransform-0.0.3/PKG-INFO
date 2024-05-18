@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gdtransform
+Version: 0.0.3
+Summary: Transformation library to build transformations for Godel Grid data platform
+Author-email: Mayank Bhargava <mbhargava.gd@gmail.com>
+Project-URL: Homepage, https://www.godelgrid.com
+Project-URL: Documentation, https://www.godelgrid.com/docs
+Project-URL: Repository, https://github.com/godelgrid/gdtransform
+Project-URL: Issues, https://github.com/godelgrid/gdtransform/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gdtransform
+Transformation library to build transformations for Godel Grid data platform
