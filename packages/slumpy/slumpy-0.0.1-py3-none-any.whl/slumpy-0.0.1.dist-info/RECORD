@@ -1,0 +1,13 @@
+slumpy/Bool.py,sha256=kZcafWri0l-PSZDYEKFhzbktLxo22n3OftDpkxbZSIQ,817
+slumpy/Dict.py,sha256=s6I7S5GdqJNV8Lm63_C1ameO7U26zFVsITGvZn5OSn0,1142
+slumpy/Int.py,sha256=Pg1V4LMllfPwBEkDm3VtvhpiTt19AIyDmfeUddpJdZI,3264
+slumpy/List.py,sha256=J_MbMXfvw7Y-2RmlSaLKD8ZE2QDZDw062gyRsl9a_q4,1515
+slumpy/Real.py,sha256=BfV520JApdU0ywzo2ECeno_90iMo3xraUVCLIv_Abdk,3753
+slumpy/Str.py,sha256=yqc22JMur6mN7W2-fBuIfYywn6CaQGW7A9qD63A1H98,1397
+slumpy/__init__.py,sha256=zDr350exO14Ii8Pj3TXwPuRxIDrEjrg43CpjYABDqh4,19
+slumpy/general.py,sha256=uQnBjvIKDYyDIzg_YF3zkmAAoNC3Ho1Xxv8ljKUsROA,29
+slumpy/main.py,sha256=l-i8ZUXO_9F4935_bx1OqFfzH51gfipEQY0kh-H8Z6w,117
+slumpy-0.0.1.dist-info/METADATA,sha256=QInkyShfmbgUb_wrxLjyOK7DSt0vkTW_NOR_49oSZhI,187
+slumpy-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+slumpy-0.0.1.dist-info/top_level.txt,sha256=yHAnCrTApUbYMgsXfByMvFx2ovWAagZHxIVhW2tAtZU,7
+slumpy-0.0.1.dist-info/RECORD,,
