@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: streamlit-antd-components-callback-fix
+Version: 0.0.3
+Summary: streamlit customer components of Antd Design and Mantine (this component implements latest callback fix from streamlit latest update 1.34.0)
+Home-page: https://github.com/nicedouble/StreamlitAntdComponents
+Author: jihaoran (original author)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Streamlit-Antd-Components
+
+### This is just a temporary package to fix the callback after streamlit's update to version 1.34.0. To view the original package, visit links below:
+
+[![Open in Streamlit][share_badge]][share_link] 
+[![GitHub][github_badge]][github_link] 
+[![PyPI][pypi_badge]][pypi_link]
+[![download][download_badge]][download_link]
+
+### UPDATE (MAY 2024)
+To use this component, please download the .whl file [![here]][whl_file]
+
+
+
+[share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
+
+[share_link]: https://nicedouble-streamlitantdcomponentsdemo-app-middmy.streamlit.app/
+
+[github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
+
+[github_link]: https://github.com/nicedouble/StreamlitAntdComponents
+
+[pypi_badge]: https://badgen.net/pypi/v/streamlit-antd-components
+
+[pypi_link]: https://pypi.org/project/streamlit-antd-components/
+
+[download_badge]: https://badgen.net/pypi/dm/streamlit-antd-components
+
+[download_link]: https://pypi.org/project/streamlit-antd-components/#files 
+
+[whl_file]: https://discuss.streamlit.io/t/callbacks-on-custom-components-dont-seem-to-be-working-in-latest-streamlit-update/68720/8?u=rushmore
+
