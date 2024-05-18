@@ -1,0 +1,174 @@
+Metadata-Version: 2.1
+Name: TsingPig_Lab
+Version: 0.1.6
+Summary: TsingPig_Lab is a package for algorithm.
+Home-page: https://gitlab.com/tsingpig-code/tsingpig_lab
+Author: TsingPig
+Author-email: 1114196607@qq.com
+License: UNKNOWN
+Description: # TsingPig - Lab
+        
+        ![image.png](https://pic.leetcode.cn/1715846857-WsuYYB-image.png)
+        
+        ## 1. Introduction
+        This is a python package for simple algorithms and data structures which is developed by **tsingpig**.
+        
+        **Version: v0.1.6**
+        
+        Author: TsingPig
+        
+        Repo: https://gitlab.com/tsingpig-code/tsingpig_lab
+        
+        You can connect me by email: 1114196607@qq.com
+        
+        Thanks for your support!
+        
+        
+        
+        ## 2. Functions
+        ### 2.1. DataStructures
+        
+        #### 2.1.1 Sparse Table (ST)
+        
+        A data structure ST table (Sparse Table) that supports interval contribution problem queries.
+        
+        **Usage**
+        
+        | Method                                               | Time Complexity | Description                                                  |
+        | ---------------------------------------------------- | --------------- | ------------------------------------------------------------ |
+        | `__init__(nums: List, opt = lambda a, b: max(a, b))` | $O(n \log n)$   | Initialize the Sparse Table (ST) data structure with the given list of numbers and an optional comparison function. |
+        | `qry(L: int, R: int)`                                | $O(1)$          | Query the opt value within the range [L, R].                 |
+        
+        **Simple**
+        
+        ``` python
+        from tsingpig_lab.DataStructures import ST as ST
+        st = ST([1, 9, 0, 2, 4, 5])
+        print(st.qry(1, 3))	# 9
+        ```
+        
+        You can also customize comparison methods by passing function parameters. In default condition, the maximum value will be returned.
+        
+        ```python
+        from tsingpig_lab.DataStructures import ST as ST
+        st = ST([1, 9, -99, 2, 4, 5], lambda a, b: min(a, b))
+        print(st.qry(1, 4)) # -99
+        ```
+        
+        
+        
+        > Please note that the issue of contribution needs to be met. It means $Opt (x, x)=x$
+        
+        ### 2.2. Algorithms
+        
+        #### 2.2.1 BaseConverter 
+        
+        Using for convert input number with base-a to result number with base-b.
+        
+        **Usage**
+        
+        | Method                     | Time Complexity | Description                                                  |
+        | -------------------------- | --------------- | ------------------------------------------------------------ |
+        | `__init__(a: int, b: int)` | N/A             | Initialize the BaseConverter with base `a` to convert numbers to base `b`. The bases must be within the range [2, 16]. |
+        | `convert(num: str) -> str` | $O(\log n)$     | Convert a number in base `a` (given as a string) to its representation in base `b`. |
+        
+        **Simple**
+        
+        As shown below, you create a base converter from base-10 to base-2.
+        
+        ```python
+        from tsingpig_lab.Algorithms import BaseConverter
+        baseCon = BaseConverter(10, 2)
+        print(baseCon.convert("123"))  # 1111011
+        ```
+        
+        As shown below, you create a base converter from base-16 to base-10.
+        
+        > All of the input and output string should not contain any prefix string or suffix string, for example you should not input like '1BF52H' or '0x1BF52', which may bring wrong results or errors.
+        
+        ```python
+        from tsingpig_lab.Algorithms import BaseConverter
+        baseCon = BaseConverter(16, 10)
+        print(baseCon.convert("1BF52"))  # 114514
+        ```
+        
+        ### 2.2.2 Bin
+        
+        **Usage**
+        
+        | Method                            | Time Complexity | Description                                                  |
+        | --------------------------------- | --------------- | ------------------------------------------------------------ |
+        | `__init__(num: str, b: int = 2) ` | N/A             | Initialize the Bin object with a number string `num` in base `b` (default is binary). If `b` is not 2, it converts the number from base `b` to base 2. |
+        | `grey_to_bin() -> str `           | $O(n)$          | Converts the stored binary string, treated as a Gray code, to its corresponding binary code. $n$ is the length of the binary representation of $num$ . |
+        | `bin_to_grey() -> str`            | $O(n)$          | Converts the stored binary string, treated as a binary code, to its corresponding Gray code. |
+        
+        **Simple**
+        
+        As shown below, you initialize a binary object base on 2.
+        
+        ```python
+        from tsingpig_lab.Algorithms import Bin
+        b = Bin('1111')
+        ```
+        
+        You can also initialize a binary object base on any number.
+        
+        ```python
+        from tsingpig_lab.Algorithms import Bin
+        b = Bin("11", 10) # 1011
+        ```
+        
+        Calculate the binary num string which is treated as a normal binary code to Gray Code as below.
+        
+        ```python
+        from tsingpig_lab.Algorithms import Bin
+        
+        b = Bin("11", 10) # 1011
+        print(b.grey_to_bin())  # 1101
+        ```
+        
+        Calculate the binary num string which is treated as Gray Code code to  normal binary code as below.
+        
+        ```python
+        from tsingpig_lab.Algorithms import Bin
+        
+        b = Bin("1100")
+        print(b.bin_to_grey())  # 1010
+        ```
+        
+        
+        
+        # 3. Note for Pypi
+        
+        **How to upload your own package**
+        
+        Firstly, open your package folder and type this command in its' corresponding cmd:
+        
+        ```
+         python setup.py sdist
+        ```
+        
+        Then:
+        
+        ```
+        twine upload dist/*
+        ```
+        
+        And then it works, users can download your package by this line in conda:
+        
+        ```
+        pip install TsingPig-Lab==0.1.5 -i https://www.pypi.org/simple/
+        ```
+        
+        API
+        
+        ```
+        pypi-AgEIcHlwaS5vcmcCJDMxZTVjYjEwLTI1ZjgtNDkyYy1hYjk5LTIwODhkMmRhOGU4MQACKlszLCI3NDRkODY1Ni02ODE3LTRiNjEtYTliMi1kZThmOTI0YjQ5ZWEiXQAABiA7fW5wFoRjJYg7bF0l9tnQWja3Lo-ag6U96-XcTmKChw
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
