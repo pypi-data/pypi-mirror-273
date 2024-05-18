@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mpackview
+Version: 3.1.0
+Summary: GUI to stream MessagePack log files.
+Keywords: messagepack,serialization,logging,telemetry
+Author-email: Stéphane Caron <stephane.caron@normalesup.org>
+Maintainer-email: Stéphane Caron <stephane.caron@normalesup.org>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: asyncqt >= 0.8
+Requires-Dist: matplotlib >= 3.5
+Requires-Dist: mpacklog >= 3.1.0
+Requires-Dist: PySide2 >= 5.11.0
+Requires-Dist: qtpy >= 2.0.1
+Project-URL: Changelog, https://github.com/upkie/mpacklog.py/blob/master/CHANGELOG.md
+Project-URL: Source, https://github.com/upkie/mpacklog.py
+Project-URL: Tracker, https://github.com/upkie/mpacklog.py/issues
+
+# mpackview
+
+Watch and plot live updates from dictionaries serialized by MessagePack.
+
+## Installation
+
+```console
+$ pip install mpackview
+```
+
+## Usage
+
+```
+mpackview <hostname>
+```
+
+## See also
+
+This application derives from the excellent ``tview`` telemetry GUI distributed
+in [moteus-gui](https://pypi.org/project/moteus-gui/) (the name ``mpackview``
+is itself a reference). Don't hesitate to check out the other tools in the
+[mjbots](https://github.com/mjbots/) software stack.
+
