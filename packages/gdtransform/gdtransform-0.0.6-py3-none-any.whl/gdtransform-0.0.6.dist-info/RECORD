@@ -1,0 +1,9 @@
+gdtransform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdtransform/constants.py,sha256=s1y-3mNVFQsY-r1qV4jusfxc9x0NIGJVHAfXZDIHtq0,107
+gdtransform/introspect.py,sha256=htJtnFf9U3sJRtshjOVb1y-Ih6FRRaYz21Xfq_LsuuY,679
+gdtransform/transform.py,sha256=OO1GQ6JR_778cc3plA5lEtj2TR2Oo-Qf5dfEsPVaxU4,484
+gdtransform-0.0.6.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+gdtransform-0.0.6.dist-info/METADATA,sha256=wQPbo5Tu2DEknvKvWV-rEXFFcYvdPJ0fr7wG58WxqMk,715
+gdtransform-0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gdtransform-0.0.6.dist-info/top_level.txt,sha256=cb41c6bEOdNdb2GG5KpABps7OBnr1VHMpdhyIykkAcE,12
+gdtransform-0.0.6.dist-info/RECORD,,
