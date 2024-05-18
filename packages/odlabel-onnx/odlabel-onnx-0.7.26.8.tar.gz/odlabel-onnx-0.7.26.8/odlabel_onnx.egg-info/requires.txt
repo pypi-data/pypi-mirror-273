@@ -1,0 +1,8 @@
+clip-for-odlabel
+customtkinter
+matplotlib
+numpy
+onnxruntime-gpu
+opencv-python
+torch>=1.7.0
+torchvision>=0.8.0
