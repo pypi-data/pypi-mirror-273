@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+festivalsz/__init__.py
+festivalsz/main.py
+festivalsz.egg-info/PKG-INFO
+festivalsz.egg-info/SOURCES.txt
+festivalsz.egg-info/dependency_links.txt
+festivalsz.egg-info/requires.txt
+festivalsz.egg-info/top_level.txt
