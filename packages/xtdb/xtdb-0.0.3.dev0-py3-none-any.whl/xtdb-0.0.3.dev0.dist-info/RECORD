@@ -1,0 +1,10 @@
+xtdb/__init__.py,sha256=lXmQgjd7XTvx4skqt_i0UJ9ZTh7wumoOHtAQzaFfrgc,13118
+xtdb/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xtdb/test/conftest.py,sha256=bpereRjj36CM3aQE0mXxbKy5rF45czmvNhzH9NBWo68,650
+xtdb/test/test_client.py,sha256=hbw5XIYORltMf_aQJdfbrE4H0Veqb-QOh2ntIo3PPyQ,2616
+xtdb/test/test_db_api.py,sha256=RAzErwSldbVCMkXJIHcXeUw0KjkrBrbQ2XTeVHcpFdI,2514
+xtdb/types.py,sha256=gt4JMZQJA62nBPWv0yyH-LqugIfh-JsG51p75tbr3ks,213
+xtdb/xt_json.py,sha256=syagKpc4skcOOdr19m9ZmGFfnUmdqUyShG7xCf6h8kM,1295
+xtdb-0.0.3.dev0.dist-info/METADATA,sha256=Lk8Uehxqy8EpmS7dfu45oJtqM6hkr0WNM8TzjCUOcYI,1515
+xtdb-0.0.3.dev0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xtdb-0.0.3.dev0.dist-info/RECORD,,
