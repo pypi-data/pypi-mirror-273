@@ -1,0 +1,39 @@
+[project]
+name = "transcoders-slim"
+version = "0.2.0"
+description = "A template for python projects in PDM"
+authors = [
+    { name = "Daniel Tan", email = "dtch1997@users.noreply.github.com" },
+    { name = "Daniel CH Tan", email = "dtch1997@users.noreply.github.com" },
+]
+dependencies = [
+    "huggingface-hub>=0.23.0",
+    "torch>=2.3.0",
+    "transformer-lens>=1.14.0",
+    "einops>=0.7.0",
+    "jaxtyping>=0.2.28",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+test = ["ruff>=0.4.3", "pytest>=8.2.0", "pyright>=1.1.361", "pre-commit>=3.7.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pdm]
+distribution = true
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.semantic_release]
+version_variables = [
+    "transcoders_slim/__init__.py:__version__",
+    "pyproject.toml:version",
+]
+branch = "main"
