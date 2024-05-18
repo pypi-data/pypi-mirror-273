@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ten-drops"
+version = "1.0.0"
+description = "A ten drops game written in pygame-ce."
+authors = ["chyok <chyok@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ten_drops"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pygame-ce = "^2.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ten-drops = "ten_drops.cli:run"
