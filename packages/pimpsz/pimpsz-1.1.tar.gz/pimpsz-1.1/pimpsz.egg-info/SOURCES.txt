@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pimpsz/__init__.py
+pimpsz/main.py
+pimpsz.egg-info/PKG-INFO
+pimpsz.egg-info/SOURCES.txt
+pimpsz.egg-info/dependency_links.txt
+pimpsz.egg-info/requires.txt
+pimpsz.egg-info/top_level.txt
