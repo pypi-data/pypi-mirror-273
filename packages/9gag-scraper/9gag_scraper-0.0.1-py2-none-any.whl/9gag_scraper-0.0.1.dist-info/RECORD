@@ -1,0 +1,10 @@
+9gag_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+9gag_scraper/controller.py,sha256=08JWN4dg308C6dOUmClKjN6EZdRCxVmbjb0L_ShtuBE,2219
+9gag_scraper/gui.py,sha256=Vya6FkStrXqwfZvDpVtz8Rw0HmZwBCkJxZbAZZeY2-U,5167
+9gag_scraper/main.py,sha256=S7yVXTFWoy3TsrOwQfB8XTJg4jhfGxtVQ4LJ39vWpag,808
+9gag_scraper/scraper.py,sha256=hzyBfbfOSQTLA2lJVgCZ-5Bf511WNCt0qwOI64ZgLeY,4706
+9gag_scraper-0.0.1.dist-info/METADATA,sha256=Vn1ifXJ6-LwxkES9fVJyWbNdnXFkO4giHp6PtfS9r6M,4786
+9gag_scraper-0.0.1.dist-info/WHEEL,sha256=cZO_SDE0eebWlOwlfCeRGV5SJrf4PF273gaoxpUzGKU,87
+9gag_scraper-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+9gag_scraper-0.0.1.dist-info/license_files/LICENCE.md,sha256=n1G1sMypH5WyltVrqbgSHNuZ2yfBJJn24AMBya36WB4,1083
+9gag_scraper-0.0.1.dist-info/RECORD,,
