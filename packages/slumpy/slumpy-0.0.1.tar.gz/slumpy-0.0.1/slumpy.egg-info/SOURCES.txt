@@ -1,0 +1,14 @@
+setup.py
+slumpy/Bool.py
+slumpy/Dict.py
+slumpy/Int.py
+slumpy/List.py
+slumpy/Real.py
+slumpy/Str.py
+slumpy/__init__.py
+slumpy/general.py
+slumpy/main.py
+slumpy.egg-info/PKG-INFO
+slumpy.egg-info/SOURCES.txt
+slumpy.egg-info/dependency_links.txt
+slumpy.egg-info/top_level.txt
