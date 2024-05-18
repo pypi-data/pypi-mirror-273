@@ -1,0 +1,10 @@
+LICENSE.license
+README.md
+setup.py
+src/ffprint/__init__.py
+src/ffprint/core.py
+src/ffprint.egg-info/PKG-INFO
+src/ffprint.egg-info/SOURCES.txt
+src/ffprint.egg-info/dependency_links.txt
+src/ffprint.egg-info/requires.txt
+src/ffprint.egg-info/top_level.txt
