@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: torchlure
+Version: 0.2405.3.dev0
+Author-email: fuyutarow <fuyutarow@gmail.com>
+Project-URL: Homepage, https://github.com/fuyutarow/torchlure
+Project-URL: Repository, https://github.com/fuyutarow/torchlure
+Keywords: pytorch
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: torch >=2.1
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: sophia-opt >=0.2.2
+Requires-Dist: gymnasium >=0.29.1
+Requires-Dist: jax >=0.4.28
+Requires-Dist: gdown >=5.2.0
+
+# Torch Lure
+
+
+<a href="https://www.youtube.com/watch?v=wCzCOYCfY9g" target="_blank">
+  <img src="http://img.youtube.com/vi/wCzCOYCfY9g/maxresdefault.jpg" alt="Chandelure" style="width: 100%;">
+</a>
+
+
+# Depndencies
+
+```
+pip install git+https://github.com/Farama-Foundation/Minari.git@19565bd8cd33f2e4a3a9a8e4db372044b01ea8d3
+```
+
+
+```sh
+pip install torch-lure
+```
+
+# Usage
+```py
+import torchlure as lure
+
+# Optimizers
+lure.SophiaG(lr=1e-3, weight_decay=0.2)
+
+# Functions
+lure.tanh_exp(x)
+lure.TanhExp()
+
+lure.quantile_loss(y_pred, y_target, quantile=0.5)
+lure.QuantileLoss(quantile=0.5)
+
+lure.RMSNrom(dim=256, eps=1e-6)
+
+# Noise Scheduler
+lure.LinearNoiseScheduler(beta=1e-4, beta_end=0.02, num_timesteps=1000)
+lure.CosineNoiseScheduler(max_beta=0.999, s=0.008, num_timesteps=1000):
+```
