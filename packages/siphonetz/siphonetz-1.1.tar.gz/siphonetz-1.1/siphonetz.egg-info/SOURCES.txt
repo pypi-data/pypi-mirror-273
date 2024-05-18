@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+siphonetz/__init__.py
+siphonetz/main.py
+siphonetz.egg-info/PKG-INFO
+siphonetz.egg-info/SOURCES.txt
+siphonetz.egg-info/dependency_links.txt
+siphonetz.egg-info/requires.txt
+siphonetz.egg-info/top_level.txt
