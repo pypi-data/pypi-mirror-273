@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+smartchunk/__init__.py
+smartchunk/smartchunking.py
+smartchunk.egg-info/PKG-INFO
+smartchunk.egg-info/SOURCES.txt
+smartchunk.egg-info/dependency_links.txt
+smartchunk.egg-info/requires.txt
+smartchunk.egg-info/top_level.txt
