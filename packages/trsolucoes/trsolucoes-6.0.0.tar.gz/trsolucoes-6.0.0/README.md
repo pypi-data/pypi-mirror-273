@@ -1,0 +1,1 @@
+#Um repositório não oficial de funções de auxilio para Selenium

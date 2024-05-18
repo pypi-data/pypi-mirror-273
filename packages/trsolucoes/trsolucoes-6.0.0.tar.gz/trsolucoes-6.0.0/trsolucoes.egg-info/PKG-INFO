@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: trsolucoes
+Version: 6.0.0
+Summary: Um repositório não oficial de funções de auxilio para Selenium
+Author: Tainan Ramos
+Author-email: tainan@trsolucoes.com.br
+License: MIT License
+Keywords: trsolucoes
+Requires: selenium
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+#Um repositÃ³rio nÃ£o oficial de funÃ§Ãµes de auxilio para Selenium

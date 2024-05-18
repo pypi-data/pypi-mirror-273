@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+selenium_helper/__init__.py
+selenium_helper/selenium_helper.py
+trsolucoes.egg-info/PKG-INFO
+trsolucoes.egg-info/SOURCES.txt
+trsolucoes.egg-info/dependency_links.txt
+trsolucoes.egg-info/top_level.txt
