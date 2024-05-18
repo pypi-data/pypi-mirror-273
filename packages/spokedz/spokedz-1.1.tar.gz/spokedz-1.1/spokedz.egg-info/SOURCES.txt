@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spokedz/__init__.py
+spokedz/main.py
+spokedz.egg-info/PKG-INFO
+spokedz.egg-info/SOURCES.txt
+spokedz.egg-info/dependency_links.txt
+spokedz.egg-info/requires.txt
+spokedz.egg-info/top_level.txt
