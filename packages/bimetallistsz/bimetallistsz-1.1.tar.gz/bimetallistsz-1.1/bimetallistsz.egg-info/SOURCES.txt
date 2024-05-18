@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bimetallistsz/__init__.py
+bimetallistsz/main.py
+bimetallistsz.egg-info/PKG-INFO
+bimetallistsz.egg-info/SOURCES.txt
+bimetallistsz.egg-info/dependency_links.txt
+bimetallistsz.egg-info/requires.txt
+bimetallistsz.egg-info/top_level.txt
