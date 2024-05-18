@@ -1,0 +1,10 @@
+djlsp/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+djlsp/__main__.py,sha256=BWJ6dp1yLfSbxB7M7J0khx2gkX1RH1JERu3gN-2zQsM,35
+djlsp/cli.py,sha256=CJZmXIo-zsNGbIHhT690iqCAP6Fvj5U8CKFG61oeZwk,68
+djlsp/completion.py,sha256=QBfu7jed0qhQj1uM2S7FRLewDd9M176yuicwhtyFqJ4,2793
+djlsp/server.py,sha256=fguPhuY8d6eS_fJsYDk20_RSeoK8VBJNFNvpTB_CQMw,931
+django_template_lsp-0.1.0.dist-info/METADATA,sha256=oXC_PkQRlqCgDKZrXPAcZLMLCWr9QFNJwAY4IHVCidw,790
+django_template_lsp-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_template_lsp-0.1.0.dist-info/entry_points.txt,sha256=aIq9cfn6UHTnw5eLN6XKMDmRmUy2BQ-5g72gi5FOrYg,78
+django_template_lsp-0.1.0.dist-info/top_level.txt,sha256=fm0fLrG3g9NzgTKtzVIunT_y9CH0nyu5Nyt6v0Cp98c,6
+django_template_lsp-0.1.0.dist-info/RECORD,,
