@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nix/gptclient/__init__.py,sha256=67Mvl_ZTiXc8lC3lt-GE5207Osq-O69TP0QeJdJue5M,95
+nix/gptclient/_gpt_client.py,sha256=bbSFQJYzzna-3As1-WiB9Igcy3SqMRPfG_EgFQIixDo,2159
+nix/gptclient/_types.py,sha256=LP2UwwVgHH6amYPYhf0px2YvwnjslYplcKy1DnHADeA,680
+nix/gptclient/_validate.py,sha256=n0x1jhSI_-U2K1liTWdK_MbfWtwtHs37PYE_0WZeI5A,654
+nix_gpt_client-0.1.2.dist-info/LICENCE,sha256=mrJgpBfhNwmft6VBOwJU8nVex0jMfKVN-5REoKwtK08,1063
+nix_gpt_client-0.1.2.dist-info/METADATA,sha256=4qzbwS0pa6mNSEaSiZLDFn4dar5FBHqXWt67HIEykBw,4163
+nix_gpt_client-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+nix_gpt_client-0.1.2.dist-info/top_level.txt,sha256=_e9jy-VfKTm6hSPIde3ScCMfIdDpmzsRjuvIB2hnur0,13
+nix_gpt_client-0.1.2.dist-info/RECORD,,
