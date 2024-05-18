@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: unimore_lab_cicd_singh
+Version: 0.4
+Summary: A sample python package to test ci/cd
+Author: Amanjot Singh
+Author-email: singhamanjot726@gmail.com
+Requires-Dist: pytest
+
+A sample python package to test ci/cd
