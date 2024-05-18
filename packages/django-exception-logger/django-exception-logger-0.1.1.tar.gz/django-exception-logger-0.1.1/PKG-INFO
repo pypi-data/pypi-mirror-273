@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-exception-logger
+Version: 0.1.1
+Summary: Adds error logging to the admin panel
+Home-page: https://github.com/Leonid-T/django-exception-logger/
+Author: Titov Leonid
+Author-email: titov281@yandex.ru
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+# exception_logger
+
