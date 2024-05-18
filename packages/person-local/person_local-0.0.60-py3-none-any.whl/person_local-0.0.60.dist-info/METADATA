@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: person-local
+Version: 0.0.60
+Summary: PyPI Package for Circles person Local Python
+Home-page: https://github.com/circles-zone/person-local-python-package
+Author: Circles
+Author-email: info@circles.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: database-infrastructure-local >=0.0.24
+Requires-Dist: database-mysql-local >=0.0.290
+Requires-Dist: email-address-local >=0.0.40
+Requires-Dist: language-remote >=0.0.20
+Requires-Dist: logger-local >=0.0.135
+Requires-Dist: user-context-remote >=0.0.75
+Requires-Dist: people-local >=0.0.13
+
+This is a package for sharing common XXX function used in different repositories
