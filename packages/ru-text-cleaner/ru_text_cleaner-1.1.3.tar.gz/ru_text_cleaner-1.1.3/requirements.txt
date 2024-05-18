@@ -1,0 +1,3 @@
+pymorphy2>=0.9.1
+nltk>=3.8.1
+emoji>=1.6.1

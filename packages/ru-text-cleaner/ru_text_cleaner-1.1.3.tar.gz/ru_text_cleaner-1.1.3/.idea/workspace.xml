@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e7c1d4a-6db9-4bec-b8db-c44acb60056e" name="Changes" comment="Delete empty unicode symbols">
+      <change beforePath="$PROJECT_DIR$/src/ru_text_cleaner/_punctuation_cleaner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru_text_cleaner/_punctuation_cleaner.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rvneural&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rvneural/TextCleaner.git&quot;,
+    &quot;accountId&quot;: &quot;d76bfbea-fbe2-40e5-99d8-50707aa103fb&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2gabPsOhyrp8dGKBt8dT3UO6PX0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python._clean_stopwords.executor": "Run",
+    "Python._spaces_cleaner.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e7c1d4a-6db9-4bec-b8db-c44acb60056e" name="Changes" comment="" />
+      <created>1715938614641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715938614641</updated>
+    </task>
+    <task id="LOCAL-00001" summary="More functions v1.0">
+      <option name="closed" value="true" />
+      <created>1715940332464</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715940332464</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Support only russian language">
+      <option name="closed" value="true" />
+      <created>1715942202496</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715942202496</updated>
+    </task>
+    <task id="LOCAL-00003" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1715942538929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715942538929</updated>
+    </task>
+    <task id="LOCAL-00004" summary="File configuration">
+      <option name="closed" value="true" />
+      <created>1715942595565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715942595565</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Prepare for downloading to upload">
+      <option name="closed" value="true" />
+      <created>1715944884303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715944884303</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Stable version for uploading">
+      <option name="closed" value="true" />
+      <created>1715947095553</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715947095553</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Mirror update">
+      <option name="closed" value="true" />
+      <created>1715947132626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715947132626</updated>
+    </task>
+    <task id="LOCAL-00008" summary="New README">
+      <option name="closed" value="true" />
+      <created>1715949178203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949178203</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New README">
+      <option name="closed" value="true" />
+      <created>1715949352447</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949352447</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Upload settings">
+      <option name="closed" value="true" />
+      <created>1715949582845</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949582845</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Upload settings">
+      <option name="closed" value="true" />
+      <created>1715950135330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715950135330</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Upload settings">
+      <option name="closed" value="true" />
+      <created>1715950459357</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715950459357</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Upload settings">
+      <option name="closed" value="true" />
+      <created>1715950609233</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715950609233</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Upload settings">
+      <option name="closed" value="true" />
+      <created>1715950877729</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715950877729</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Delete empty unicode symbols">
+      <option name="closed" value="true" />
+      <created>1715956517131</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715956517131</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="More functions v1.0" />
+    <MESSAGE value="Support only russian language" />
+    <MESSAGE value="README.md" />
+    <MESSAGE value="File configuration" />
+    <MESSAGE value="Prepare for downloading to upload" />
+    <MESSAGE value="Stable version for uploading" />
+    <MESSAGE value="Mirror update" />
+    <MESSAGE value="New README" />
+    <MESSAGE value="Upload settings" />
+    <MESSAGE value="Delete empty unicode symbols" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete empty unicode symbols" />
+  </component>
+</project>
