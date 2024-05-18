@@ -1,0 +1,11 @@
+litellm_types/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+litellm_types/completion.py,sha256=6m6e0ompXiCNIw08sjS8KDd8FLn-cY_AlgBP4OYJ1_A,11423
+litellm_types/document.py,sha256=T5rBDoil2COL8aWAmOuiEl-CsOUa9vvwNJifxXmCZHc,134
+litellm_types/messages.py,sha256=O4Vee721rL_jVf4ARzWTvRzCEyWvB4BRYUpix54DOwM,3875
+litellm_types/prompt.py,sha256=iz1hPmGtv5MekMoN_xDyKCkcr7kDQtk9nTnvZJMkdeE,293
+litellm_types/test.py,sha256=NlAwxtkGSA6lXI6Ct0LUSd0gtbBZPmNV_K4X60cVAPk,1324
+litellm_types-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+litellm_types-0.0.6.dist-info/METADATA,sha256=PHgkdycWV1Al9vtcalGJasZbMVw4K1HDI7NRcKCjuWg,151
+litellm_types-0.0.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+litellm_types-0.0.6.dist-info/top_level.txt,sha256=2yfIDI_Z3tLVDvp63xvuaNP22ittQhCARxx02EY15SY,14
+litellm_types-0.0.6.dist-info/RECORD,,
