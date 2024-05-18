@@ -1,0 +1,3 @@
+[console_scripts]
+mkc=ce_mkc.cli.cli:run
+

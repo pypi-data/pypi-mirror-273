@@ -1,0 +1,20 @@
+  akhq:
+    # build:
+    #   context: .
+    image: tchiotludo/akhq:{akhq_version}
+    container_name: {akhq_container_name}
+    restart: always
+    environment:
+      AKHQ_CONFIGURATION: |
+        akhq:
+          connections:
+            broker:
+              properties:
+                bootstrap.servers: "broker:29092"
+              schema-registry:
+                url: "http://schema-registry:8081"
+              connect:
+                - name: "kafka-connect"
+                  url: "http://kafka-connect:8083"
+    ports:
+      - 8082:8080
