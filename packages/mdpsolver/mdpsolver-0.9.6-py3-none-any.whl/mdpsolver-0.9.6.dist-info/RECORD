@@ -1,0 +1,17 @@
+mdpsolver/__init__.py,sha256=XNNskfjRp98435Pz_-fPEY57g9pnJGRDLfn-tyPp0DE,33
+mdpsolver/model.py,sha256=QSEqd0AvmydKL_auwd70fkjOCOMMKlNPGOsaFZdQNKw,4754
+mdpsolver/solvermodule.cp310-win_amd64.pyd,sha256=JxzYjvhhgYI8JF-vmEh9wSJX6mKPFyLY49yGkt265gw,256512
+mdpsolver/solvermodule.cp311-win_amd64.pyd,sha256=g-RzH-24bNdMABAJMiRCp5_9MkWbVgWCuPj4v3JYBMg,258560
+mdpsolver/solvermodule.cp312-win_amd64.pyd,sha256=mTXtVGI_N7O_hUM72GGzWDd1QzrsWNAU8RvxmVbG7Uw,260608
+mdpsolver/solvermodule.cpython-310-x86_64-linux-gnu.so,sha256=j9o44obIDxl4yfNBMb6wkc9liyJiRTy-yPkjvTvoxQY,455592
+mdpsolver/solvermodule.cpython-311-x86_64-linux-gnu.so,sha256=CAm_n6OZwfZGToWj5waEM5Sw8sQNJVoSDBVJuiTt2lU,437312
+mdpsolver/solvermodule.cpython-312-x86_64-linux-gnu.so,sha256=bWCAUlGx7qes6CoJAX6GBtKPAxZx5lmkK_7_5sLyhyM,436736
+mdpsolver/problems/cbmaux.py,sha256=DYhjMnvBhef-jeVV7i9IYT_iDhbWgAOV1T3ecyAiECQ,1371
+mdpsolver/problems/tbmaux.py,sha256=qkZHL7nKGEHRir5vQEvi0zR8-J-kjTDrxHqmmD6XV-I,1366
+mdpsolver/problems/__pycache__/cbmaux.cpython-310.pyc,sha256=B90evf89LHqVvN4g4fuG4bJAENfzgko8uReKplPG80M,1208
+mdpsolver/problems/__pycache__/tbmaux.cpython-310.pyc,sha256=EnaxFioBAz-EYCbHs_Ly5xCg8iVLHr4J3v37SVF7C1U,1208
+mdpsolver-0.9.6.dist-info/LICENSE,sha256=idR6MmkARrzA7Lxiz2TrylVqQRDM9VsWgz8KBX0PC6s,1106
+mdpsolver-0.9.6.dist-info/METADATA,sha256=MKYM-1NlSIIgHKNwJLg-XA_64bF4AUhvGU-5pEfWVWw,4713
+mdpsolver-0.9.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mdpsolver-0.9.6.dist-info/top_level.txt,sha256=oOQECrRiRerD3VsXTB2hQd1MV3y-waG9n_vAdanxIwM,10
+mdpsolver-0.9.6.dist-info/RECORD,,
