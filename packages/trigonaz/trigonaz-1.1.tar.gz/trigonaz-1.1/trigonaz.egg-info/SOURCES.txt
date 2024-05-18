@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+trigonaz/__init__.py
+trigonaz/main.py
+trigonaz.egg-info/PKG-INFO
+trigonaz.egg-info/SOURCES.txt
+trigonaz.egg-info/dependency_links.txt
+trigonaz.egg-info/requires.txt
+trigonaz.egg-info/top_level.txt
