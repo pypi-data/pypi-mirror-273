@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: dggstools
+Version: 0.1.0
+Summary: A Python library and command line tool to manipulate raster and vector GIS data in a DGGS (rHEALPix for now).
+Author-email: Rubén Béjar <rbejar@unizar.es>, Sergio Martin-Segura <segura@unizar.es>, "Francisco J. Lopez-Pellicer" <fjlopez@unizar.es>, Javier Nogueras-Iso <jnog@unizar.es>, "F. Javier Zarazaga-Soria" <javy@unizar.es>
+Project-URL: Homepage, https://github.com/IAAA-Lab/dggstools
+Project-URL: Issues, https://github.com/IAAA-Lab/dggstools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: affine ==2.3.1
+Requires-Dist: attrs ==21.4.0
+Requires-Dist: boto3 ==1.34.37
+Requires-Dist: botocore ==1.34.37
+Requires-Dist: build ==1.0.3
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: click ==8.1.2
+Requires-Dist: click-plugins ==1.1.1
+Requires-Dist: cligj ==0.7.2
+Requires-Dist: cycler ==0.11.0
+Requires-Dist: Fiona ==1.9.4.post1
+Requires-Dist: fonttools ==4.48.1
+Requires-Dist: GeoAlchemy2 ==0.12.5
+Requires-Dist: geopandas ==0.14.0
+Requires-Dist: jmespath ==1.0.0
+Requires-Dist: kiwisolver ==1.4.2
+Requires-Dist: matplotlib ==3.7.2
+Requires-Dist: munch ==2.5.0
+Requires-Dist: networkx ==2.8.7
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: packaging ==21.3
+Requires-Dist: pandas ==1.4.3
+Requires-Dist: Pillow ==10.2.0
+Requires-Dist: psycopg2-binary ==2.9.9
+Requires-Dist: pyarrow ==15.0.0
+Requires-Dist: pyogrio ==0.7.2
+Requires-Dist: pyparsing ==3.0.7
+Requires-Dist: pyproj ==3.6.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pytz ==2022.1
+Requires-Dist: rasterio ==1.3.9
+Requires-Dist: rHEALPixDGGS ==0.5.4
+Requires-Dist: s3transfer ==0.10.0
+Requires-Dist: scipy ==1.12.0
+Requires-Dist: shapely ==2.0.1
+Requires-Dist: six ==1.16.0
+Requires-Dist: snuggs ==1.4.7
+Requires-Dist: SQLAlchemy ==2.0.21
+Requires-Dist: SQLAlchemy-Utils ==0.41.1
+Requires-Dist: typer[all] ==0.9.0
+Requires-Dist: urllib3 ==2.0.7
+
+# DGGSTools
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10659071.svg)](https://doi.org/10.5281/zenodo.10659071)
+
+A python library (see the [latest version API docs](https://www.iaaa.es/dggstools/dggstools.html) and command line tool to manipulate raster and vector GIS data in the spatial framework provided by 
+a DGGS (rHEALPix for now).
+
+**Requirements**
+- Python 3.10 or higher
+- `pip` for installing Python packages
+
+## Install the package and the command line tool
+1. You can download the latest package released on the GitHub Repository if you want the latest, non-stable version:
+
+Get the .whl file from <https://github.com/IAAA-Lab/dggstools/releases/latest>.
+
+2. Install the package and command line tool
+
+```
+pip install ./name-of-the-file-you-have-downloaded.whl
+```
+
+3. Now you can run dggstools in the command line:
+
+```
+dggstools --help
+```
+
+You will see something like this:
+
+```
+Usage: dggstools [OPTIONS] COMMAND [ARGS]...                                                                                                                          
+                                                                                                                                                                       
+╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ --install-completion          Install completion for the current shell.                                                                                             │
+│ --show-completion             Show completion for the current shell, to copy it or customize the installation.                                                      │
+│ --help                        Show this message and exit.                                                                                                           │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ print-ras-rhpx-metadata  Takes a GeoTIFF file produced by dggstools and prints the metadata that dggstools stores in it. This metadata are necessary to store some  │
+│                          rHEALPix system specific information.                                                                                                      │
+│ print-vec-rhpx-metadata  Takes a GeoPackage file produced by dggstools and prints the metadata that dggstools stores in it. This metadata are necessary to store    │
+│                          some rHEALPix system specific information, and some other information that can be useful if you want the original raster file back.        │
+│ ras-rhpx-to-vec-rhpx     Transforms a rHEALPix GeoTIFF dataset produced by dggstools to a vector dataset in the GeoPackage format.                                  │
+│ ras-to-rhpx-ras          Transforms a raster dataset in a common GIS format and reference system to a rHEALPix GeoTIFF. This includes: warping to the rHEALPix      │
+│                          projection, resampling to one of the allowed rHEALPix resolutions (which depend on the rHEALPix system being used) and aligning to that    │
+│                          rHEALPix grid.                                                                                                                             │
+│ vec-ras-area-error       Takes a vector file and a rasterized rHEALPix version (as produced by the vec-to-rhpx-ras command) and:  - measures the area of each       │
+│                          geometry in vector file;  - compares each of these areas with the areas of the cells which correspond to that geometry in the vector file. │
+│                          This is an experimental, not thoroughly tested and barely documented command, and should be used just for testing purposes.                │
+│ vec-rhpx-to-ras-rhpx     Transforms a vector dataset in rHEALPix produced by dggstools with the ras-rhpx-to-vec-rhpx command, to a raster dataset in GeoTIFF which  │
+│                          is very similar to the one that was used as the original input to that operation.                                                          │
+│ vec-to-rhpx-ras          Transforms a vector dataset with polygons in a common GIS format and reference system to a rHEALPix GeoTIFF. This GeoTIFF has a            │
+│                          rasterization of the polygons following the constraints of the rHEALPix system (projection, valid resolution and grid alignment).          │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ 
+```
+
+
+## Installation with Docker
+We provide a Docker file for simplifying deployment and ensuring consistency across different development environments.
+
+Build the image with:
+
+```
+docker build -t dggstools .
+```
+
+Run the tests with:
+
+```
+docker run --rm dggstools python -m unittest discover -s tests -p '*.py'
+```
+
+## Installation from sources 
+
+To install `dggstools`, you can follow these steps right after you clone the Git repository (in its root directory):
+
+1. Update the build tools:
+
+```
+pip install --upgrade pip          
+pip install --upgrade build
+pip install --upgrade wheel
+```
+
+2. Install the dependencies and build the `dggstools` package:
+
+```
+pip install .
+```
+
+3. Run the provided tests to see if everything is working (optional)
+
+The package `dggstools` uses the `unittest` framework for testing. All the necessary data to run the tests are also included in the 
+repository.
+
+```
+python -m unittest discover -s tests/data_tests -p '*.py'
+```
