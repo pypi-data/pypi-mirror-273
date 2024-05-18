@@ -1,0 +1,13 @@
+ru_text_cleaner/TextCleaner.py,sha256=CHpxxSE1MLSyptlXIEtMZ7XL4d7ABTUZVCDQFdlrXok,2214
+ru_text_cleaner/__init__.py,sha256=LJI3UKQyinPLbMiK6mDCo0vKz5YoUQ5-dvES_L8dJ8A,336
+ru_text_cleaner/_clean_stopwords.py,sha256=ugDot-TcbGspFM26d58ilRi6UdsUZLGbGx2PmLuIIlE,772
+ru_text_cleaner/_emoji_cleaner.py,sha256=8scSC2oh4oqFx87GLbYHNtw-c6N-NQDtWyb8oQ664Gs,215
+ru_text_cleaner/_html_cleaner.py,sha256=O0NykQ2xde1kvAdvOpio9yLussUSolLrS0vmXHOH5pM,491
+ru_text_cleaner/_punctuation_cleaner.py,sha256=7Y5R7mPrT2aHxx-jxJUEOWQGcghGFrAPtt1sWX8XYuY,403
+ru_text_cleaner/_spaces_cleaner.py,sha256=9VyQj-FCqDyIDI1yOgYeMxlH0El_sCzR8h4cuKIYVQk,811
+ru_text_cleaner/_to_lower.py,sha256=V6BTOQOfIOskZ1njQvvBZW9DAjeurR4rLZNodPZKAD4,361
+ru_text_cleaner/_to_morpheme.py,sha256=AoKnQEnlnlML9wfUlRsob3_LxT9-K2ljcm8iNpAiRsE,646
+ru_text_cleaner-1.1.1.dist-info/METADATA,sha256=mcg-wDvFtEKa9A72yUfldPLHx2bCOJtkHnxvK_UXJ0w,2740
+ru_text_cleaner-1.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ru_text_cleaner-1.1.1.dist-info/licenses/LICENSE,sha256=1bQxsEUViuOq4JweZs-wRJAgjobqJUHly0AEkYmM7RQ,1053
+ru_text_cleaner-1.1.1.dist-info/RECORD,,
