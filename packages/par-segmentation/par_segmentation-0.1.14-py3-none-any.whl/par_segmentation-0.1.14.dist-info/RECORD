@@ -1,0 +1,16 @@
+par_segmentation/__init__.py,sha256=v0AO6Ek4S5jO7KEpxJGkQGjyRIGwjB1-Gj31BHMT25A,1065
+par_segmentation/_tgf_interpolate.py,sha256=1rv63sjjafK2dUJHhqRF2k3if78r-dhs3ZWtHh87aTw,16696
+par_segmentation/funcs.py,sha256=Xnv9k727ynUy_sWgJrXdtV_5aTjq5ZhnyvgNEwWmERY,19574
+par_segmentation/interactive.py,sha256=MS-SdGP-z_iKHYvNPC9hDqz3l44TRHZxHFsHWTOjWjI,15789
+par_segmentation/legacy.py,sha256=KY03qLzxszsa_52qieuXMusJJz_q0g_6E9frkACdR7c,2012
+par_segmentation/model_base.py,sha256=Ge2yZXPHuh5vE09kvNKvXBwVs67FDFfCHt7REsMuRMo,5929
+par_segmentation/model_de.py,sha256=00H01SLE_MEr-nbrs8_C_-5qfCXQX2y5a9I0P61RcP0,11945
+par_segmentation/model_flexi.py,sha256=bQ6FQFC3rsi6hjpZvlIgvd_5rVC6JrK7TFoHtwmjqFM,18644
+par_segmentation/model_gd.py,sha256=y-HGBTjbC12a4IxkA5Zguqc01v7om5zoQpR9zeB2iHc,16049
+par_segmentation/quantifier.py,sha256=yTFUs0vQzIv8ZQ8hsx8uErcAgCZOA8NKHx4bu1kPSJk,1843
+par_segmentation/roi.py,sha256=fXywX865MywMdyEeuAW1D0y-l5Z3xZ29IFrWG5nlbBQ,3648
+par_segmentation-0.1.14.dist-info/LICENSE,sha256=fnFw486_iKn2DHuEIUGDI8CTBNoa9NXpD02h3ByKJmE,18650
+par_segmentation-0.1.14.dist-info/METADATA,sha256=IWIENOT4XWYdl_OLUvR82EZHfvSJRxy3qmLj6SCup_o,29550
+par_segmentation-0.1.14.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+par_segmentation-0.1.14.dist-info/top_level.txt,sha256=roKduY3J5CdrOg3k9RxYj3lACbWqeK5J19SPF1xCZKU,17
+par_segmentation-0.1.14.dist-info/RECORD,,
