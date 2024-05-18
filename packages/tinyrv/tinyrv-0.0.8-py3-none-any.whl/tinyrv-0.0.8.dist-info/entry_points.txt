@@ -1,0 +1,7 @@
+[console_scripts]
+tinyrv-dump = tinyrv.tinyrv_dump:main
+tinyrv-sim = tinyrv.tinyrv_sim:main
+tinyrv-system-virt = tinyrv.system:run_virt
+tinyrv-vm-linux = tinyrv.vm:run_linux_vm
+tinyrv-vm-riscof = tinyrv.vm:run_riscof_vm
+tinyrv-vm-semihosting = tinyrv.vm:run_semihosting_vm

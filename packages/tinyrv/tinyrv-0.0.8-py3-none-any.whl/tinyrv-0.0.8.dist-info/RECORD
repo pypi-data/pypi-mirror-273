@@ -1,0 +1,12 @@
+tinyrv/__init__.py,sha256=gbDDtJ-YpsfVAFCgUC26aysku0Y22ApshkDjoyshvYg,22
+tinyrv/opcodes.py,sha256=dx_WzYQYakf9ZNCWu8z1iWAs7mcBcAZ7UUetD4B9BIY,537631
+tinyrv/system.py,sha256=3FiRfEy0buDqJKpHkmqGQlJujW2QXgaDTv7Ywtgim_U,15943
+tinyrv/tinyrv.py,sha256=U3GyiWHK1pSVOO8j8UXj82ccbUk9ZD2f4dtrvWSNlfs,24260
+tinyrv/tinyrv_dump.py,sha256=XFFB97AzkAZRdX3TR-ZHIsFQdeiYIVGY6rUzIDZXi-g,394
+tinyrv/tinyrv_sim.py,sha256=5oQVzKcYrLkQxuKh7SA_plDHVacCBSlVCKV5eBWi7qQ,552
+tinyrv/vm.py,sha256=lFqpzNeNAq3m3jh-MM4eDs0DM3SUlhekFa3n5ZN1JQs,11998
+tinyrv-0.0.8.dist-info/METADATA,sha256=c3A8mKM_hjOKenfbVw49Yz4PQHpLnVbf2YDZBFPjtVo,10096
+tinyrv-0.0.8.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+tinyrv-0.0.8.dist-info/entry_points.txt,sha256=OUEFN4Fsy7cl6sPH_94SmHyVCIH4ZRE5z5z5wiA-ACc,273
+tinyrv-0.0.8.dist-info/licenses/LICENSE,sha256=_wYH6Cx59lF341mQS3sgz6_TUIYzk1oen_-8Ij09TIc,1069
+tinyrv-0.0.8.dist-info/RECORD,,
