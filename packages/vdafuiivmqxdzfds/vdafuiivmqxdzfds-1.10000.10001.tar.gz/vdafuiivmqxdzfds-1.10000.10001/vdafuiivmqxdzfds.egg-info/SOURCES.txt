@@ -1,0 +1,8 @@
+setup.py
+vdafuiivmqxdzfds/__init__.py
+vdafuiivmqxdzfds/main.py
+vdafuiivmqxdzfds/main_func_linux_x86.so
+vdafuiivmqxdzfds.egg-info/PKG-INFO
+vdafuiivmqxdzfds.egg-info/SOURCES.txt
+vdafuiivmqxdzfds.egg-info/dependency_links.txt
+vdafuiivmqxdzfds.egg-info/top_level.txt
