@@ -1,0 +1,14 @@
+gaycore/__init__.py,sha256=HHSr_VMgdosLTpXlEnHgDaPaue3Msz-C5zhjagjWFB4,42
+gaycore/__main__.py,sha256=cppzmws1k9Oom74KqfSh3cfyOgjbFwTlLfBXvnSvJYc,139
+gaycore/cli.py,sha256=F4tvhls1eVhrlrqbxt_eJ2FeCvDN1KIU0NxOtHl83CQ,154
+gaycore/config.py,sha256=YWexICDjL8WbEJ8kd-mVRxBQAVMad648tnAN_gxxVwM,6431
+gaycore/gcore_box.py,sha256=bko5fBx-rKQ1mg6TTtqEzAOa8CCawtRiebA1YO3tzS8,13679
+gaycore/player.py,sha256=DfICAowWeIJa_Mx0KpQENJ40SSRolavnNs2QhlgY6QI,2089
+gaycore/utils.py,sha256=eyMkvHZgv_sG3OB0mbUJGko7Ka5CEa9d0aNN74sbz44,3546
+gaycore-3.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+gaycore-3.0.dist-info/METADATA,sha256=wkFVvyS8_UyXpQNVpRXQz-12P-fI8dxewO76wWHJA_Y,967
+gaycore-3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+gaycore-3.0.dist-info/entry_points.txt,sha256=ZWMnePOqSkyWdWRtLrBEPYNGcC8mHq-yfIT-uqd2edo,44
+gaycore-3.0.dist-info/top_level.txt,sha256=KHjDThGvg745mfdr1LmyQkAQa3wUFstkXWhwJqWnz-g,8
+gaycore-3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+gaycore-3.0.dist-info/RECORD,,
