@@ -1,0 +1,119 @@
+[tool.poetry]
+name = "expanse"
+version = "0.1.0"
+description = ""
+authors = ["Sébastien Eustace <sebastien@eustace.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = { version = "^0.23.2", extras = ["standard"] }
+cleo = "^2.0.1"
+jinja2 = "^3.1.2"
+pydantic = "^2.3.0"
+pendulum = "^3.0.0"
+pydantic-settings = "^2.1.0"
+sqlalchemy = "^2.0.25"
+baize = "^0.20.8"
+crashtest = "^0.4.1"
+anyio = "^4.2.0"
+httpx = "^0.26.0"
+async-chain = "^0.1.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+treat = "^0.2.0"
+pytest-asyncio = "^0.21.1"
+aiosqlite = "^0.19.0"
+greenlet = "^3.0.3"
+psycopg2-binary = "^2.9.9"
+psycopg = "^3.1.18"
+asyncpg = "^0.29.0"
+pg8000 = "^1.30.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = ["asynchronous: Mark a test as asynchronous"]
+
+
+[tool.ruff]
+fix = true
+line-length = 88
+target-version = "py310"
+src = ["src"]
+extend-exclude = [
+    # External to the project's coding standards:
+    "docs/*",
+    # ruff disagrees with black when it comes to formatting
+    "*.pyi",
+]
+
+[tool.ruff.lint]
+extend-select = [
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "ERA", # flake8-eradicate/eradicate
+    "I", # isort
+    "N", # pep8-naming
+    "PIE", # flake8-pie
+    "PGH", # pygrep
+    "RUF", # ruff checks
+    "SIM", # flake8-simplify
+    "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "UP", # pyupgrade
+]
+ignore = [
+    "I002",
+    "B904", # use 'raise ... from err'
+    "B905", # use explicit 'strict=' parameter with 'zip()'
+    "N818", #  Exception name should be named with an Error suffix
+    "RUF001",
+]
+unfixable = [
+    "ERA", # do not autoremove commented out code
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+lines-between-types = 1
+lines-after-imports = 2
+known-first-party = ["expanse"]
+known-third-party = []
+
+[tool.mypy]
+files = "src, tests"
+mypy_path = "src"
+show_error_codes = true
+pretty = true
+warn_unused_ignores = true
+exclude = []
+
+
+[tool.coverage.run]
+omit = [
+    "src/expanse/asynchronous/console/_adapters/*",
+    "src/expanse/asynchronous/contracts/*",
+    "src/expanse/asynchronous/types/*",
+    "src/expanse/contracts/*",
+    "src/expanse/types/*",
+    "src/expanse/common/types/*",
+    "src/expanse/common/support/_compat.py",
+    "src/expanse/common/support/_utils.py",
+    "src/expanse/common/support/_utils.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:"
+]
