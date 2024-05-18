@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "robinson_NLP2"
+version = "0.1.0"
+description = ""
+authors = ["SterreWalta220759 <112825711+SterreWalta220759@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+pandas = "^2.2.2"
+spacy = "^3.7.4"
+tensorflow = "2.10.0"
+tensorflow-io-gcs-filesystem = "0.31.0"
+scikit-learn = "^1.4.2"
+nltk = "^3.8.1"
+seaborn = "^0.13.2"
+matplotlib = "^3.8.4"
+transformers = "^4.40.2"
+more-itertools = "^10.2.0"
+toolz = "^0.12.1"
+textblob = "^0.18.0.post0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
