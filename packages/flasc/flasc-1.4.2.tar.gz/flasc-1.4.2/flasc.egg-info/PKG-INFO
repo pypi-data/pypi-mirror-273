@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: flasc
+Version: 1.4.2
+Summary: FLASC provides a rich suite of analysis tools for SCADA data filtering & analysis, wind farm model validation, field experiment design, and field experiment monitoring.
+Home-page: https://github.com/NREL/flasc
+Author: NREL National Wind Technology Center
+Author-email: paul.fleming@nrel.gov
+License: Apache Software License 2.0
+Keywords: flasc
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+License-File: AUTHORS.rst
+Requires-Dist: bokeh>=3.1.1
+Requires-Dist: floris>=3.4
+Requires-Dist: feather-format
+Requires-Dist: ipympl>=0.9.3
+Requires-Dist: matplotlib>=3.6.3
+Requires-Dist: numpy
+Requires-Dist: pandas>=1.5
+Requires-Dist: pyproj
+Requires-Dist: pytest
+Requires-Dist: SALib
+Requires-Dist: scipy
+Requires-Dist: sqlalchemy
+Requires-Dist: streamlit
+Requires-Dist: tkcalendar
+Requires-Dist: seaborn
+Requires-Dist: polars>=0.19.0
+
+FLASC
