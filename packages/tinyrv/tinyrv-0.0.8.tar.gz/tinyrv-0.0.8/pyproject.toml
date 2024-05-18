@@ -1,0 +1,49 @@
+[project]
+name = "tinyrv"
+version = "0.0.8"
+authors = [
+  { name="Stefan Holst", email="mail@s-holst.de" },
+]
+description = "A tiny RISC-V instruction set simulator"
+readme = "README.md"
+requires-python = ">=3.8"
+requires = ["pyyaml"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "readchar",
+  "lief",
+  "dataclasses-struct",
+]
+
+[project.urls]
+Homepage = "https://github.com/s-holst/tinyrv"
+Issues = "https://github.com/s-holst/tinyrv/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "tinyrv",
+  "tinyrv_opcodes_gen.py",
+  "tests/coremark_tinyrv_port",
+  "tests/br2_external_tinyrv",
+  "tests/sail_cSim",
+  "tests/riscof_config32.ini",
+  "tests/riscof_config64.ini",
+  "tests/mini.c",
+  "tests/Makefile",
+]
+
+[project.scripts]
+tinyrv-dump = "tinyrv.tinyrv_dump:main"
+tinyrv-sim = "tinyrv.tinyrv_sim:main"
+tinyrv-vm-linux = "tinyrv.vm:run_linux_vm"
+tinyrv-vm-riscof = "tinyrv.vm:run_riscof_vm"
+tinyrv-vm-semihosting = "tinyrv.vm:run_semihosting_vm"
+tinyrv-system-virt = "tinyrv.system:run_virt"
