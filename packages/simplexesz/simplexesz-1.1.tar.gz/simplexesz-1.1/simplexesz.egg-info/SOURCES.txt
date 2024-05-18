@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simplexesz/__init__.py
+simplexesz/main.py
+simplexesz.egg-info/PKG-INFO
+simplexesz.egg-info/SOURCES.txt
+simplexesz.egg-info/dependency_links.txt
+simplexesz.egg-info/requires.txt
+simplexesz.egg-info/top_level.txt
