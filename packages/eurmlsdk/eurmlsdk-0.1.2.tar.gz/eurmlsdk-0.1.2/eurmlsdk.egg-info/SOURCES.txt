@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+eurmlsdk/__init__.py
+eurmlsdk/__main__.py
+eurmlsdk/eur_sdk.py
+eurmlsdk/pytorch.py
+eurmlsdk/yolo.py
+eurmlsdk.egg-info/PKG-INFO
+eurmlsdk.egg-info/SOURCES.txt
+eurmlsdk.egg-info/dependency_links.txt
+eurmlsdk.egg-info/entry_points.txt
+eurmlsdk.egg-info/requires.txt
+eurmlsdk.egg-info/top_level.txt
