@@ -1,0 +1,10 @@
+COPYRIGHT
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+yc_aws_wrapper.egg-info/PKG-INFO
+yc_aws_wrapper.egg-info/SOURCES.txt
+yc_aws_wrapper.egg-info/dependency_links.txt
+yc_aws_wrapper.egg-info/not-zip-safe
+yc_aws_wrapper.egg-info/top_level.txt

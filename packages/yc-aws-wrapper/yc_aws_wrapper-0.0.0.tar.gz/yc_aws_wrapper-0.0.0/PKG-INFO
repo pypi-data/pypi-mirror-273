@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: yc-aws-wrapper
+Version: 0.0.0
+Summary: yc-aws-wrapper.
+Home-page: https://aws-wrapper.mcode.cc/
+Author: MCode GmbH
+Author-email: aws-wrapper@mcode.cc
+License: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+Keywords: WAMP crossbar beanstalkd boom
+Platform: Any
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: System :: Networking
+License-File: LICENSE
+
+coming soon
