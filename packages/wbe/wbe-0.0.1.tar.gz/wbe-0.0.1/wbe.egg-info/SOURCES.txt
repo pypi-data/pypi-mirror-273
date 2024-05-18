@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+wbe/__init__.py
+wbe/emulator.py
+wbe/version.py
+wbe.egg-info/PKG-INFO
+wbe.egg-info/SOURCES.txt
+wbe.egg-info/dependency_links.txt
+wbe.egg-info/requires.txt
+wbe.egg-info/top_level.txt
