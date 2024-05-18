@@ -1,0 +1,8 @@
+{% extends "deploy_functions_base.sh.j2" %}
+
+{% block backend_functions %}
+deploy_{{ service.name }} () {
+    gcloud container clusters get-credentials --zone {{ environment.collection.region }} {{ environment.collection.instance_name }}
+    kubectl apply -f k8s_templates/
+}
+{% endblock %}
