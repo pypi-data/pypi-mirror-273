@@ -1,0 +1,9 @@
+[project]
+name = "graphster"
+version = "0.0.0a0"
+readme = "README.md"
+description = "High-performance DataGraph Library "
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
