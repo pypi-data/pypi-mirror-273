@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: edudat
+Version: 0.1
+Summary: A package for educational datasets
+Home-page: https://github.com/tensorchiefs/data
+Author: Oliver Dürr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pandas
+Requires-Dist: requests
+
