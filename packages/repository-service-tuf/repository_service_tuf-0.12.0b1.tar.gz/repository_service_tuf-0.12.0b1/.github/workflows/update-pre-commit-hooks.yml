@@ -1,0 +1,40 @@
+name: Update pre-commit hooks
+on:
+  workflow_dispatch:
+  schedule:
+    # Run at 8:00 AM every day
+    - cron: "0 8 * * *"
+jobs:
+  update-pre-commit-hooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@44c2b7a8a4ea60a981eaca3cf939b5f4305c123b
+      - uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d
+        with:
+          python-version: "3.12"
+      - name: Install prerequisites
+        run: |
+          pip install pre-commit tox
+      - name: Update pre-commit hooks
+        run: |
+          pre-commit autoupdate
+      - name: Check for pre-commit config file changes
+        id: git_diff
+        run: |
+          echo "GIT_DIFF=$(git diff --exit-code 1> /dev/null; echo $?)" >> $GITHUB_OUTPUT
+      - name: Run tests
+        if: steps.git_diff.outputs.GIT_DIFF == 1
+        # We want to make sure that the new updates do not affect the code
+        run: |
+          make tests
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@6d6857d36972b65feb161a90e484f2984215f83e
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "build: Update pre-commit hooks"
+          branch: "rstuf-bot/update-pre-commit-hooks"
+          delete-branch: true
+          title: "build: Update pre-commit hooks"
+          body: >
+            The following PR updates the pre-commit hooks (`.pre-commit-config.yaml` file) using `pre-commit autoupdate`.
+          labels: report, automated pr, pre-commit
