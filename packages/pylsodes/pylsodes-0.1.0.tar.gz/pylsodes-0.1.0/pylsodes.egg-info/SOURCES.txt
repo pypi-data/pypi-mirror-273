@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+install.sh
+setup.py
+pylsodes.egg-info/PKG-INFO
+pylsodes.egg-info/SOURCES.txt
+pylsodes.egg-info/dependency_links.txt
+pylsodes.egg-info/requires.txt
+pylsodes.egg-info/top_level.txt
