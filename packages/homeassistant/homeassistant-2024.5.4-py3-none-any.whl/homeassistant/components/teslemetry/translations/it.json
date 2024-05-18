@@ -1,0 +1,93 @@
+{
+    "entity": {
+        "select": {
+            "climate_state_seat_heater_left": {
+                "name": "Riscaldamento sedile anteriore sinistro",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_seat_heater_rear_center": {
+                "name": "Riscaldamento sedile posteriore centrale",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_seat_heater_rear_left": {
+                "name": "Riscaldamento sedile posteriore sinistro",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_seat_heater_rear_right": {
+                "name": "Riscaldamento sedile posteriore destro",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_seat_heater_right": {
+                "name": "Riscaldamento sedile anteriore destro",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_seat_heater_third_row_left": {
+                "name": "Riscaldamento sedili terza fila sinistra",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_seat_heater_third_row_right": {
+                "name": "Riscaldamento sedili terza fila destra",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "medium": "Medio",
+                    "off": "Spento"
+                }
+            },
+            "climate_state_steering_wheel_heat_level": {
+                "name": "Riscaldamento del volante",
+                "state": {
+                    "high": "Alto",
+                    "low": "Basso",
+                    "off": "Spento"
+                }
+            },
+            "components_customer_preferred_export_rule": {
+                "name": "Consenti esportazione",
+                "state": {
+                    "battery_ok": "Batteria",
+                    "never": "Mai",
+                    "pv_only": "Solo solare"
+                }
+            },
+            "default_real_mode": {
+                "name": "Modalit\u00e0 di funzionamento",
+                "state": {
+                    "autonomous": "Autonomo",
+                    "backup": "Backup",
+                    "self_consumption": "Autoconsumo"
+                }
+            }
+        }
+    }
+}
