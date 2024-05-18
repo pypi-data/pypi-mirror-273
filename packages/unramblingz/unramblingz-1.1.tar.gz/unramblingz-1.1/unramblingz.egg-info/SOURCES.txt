@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unramblingz/__init__.py
+unramblingz/main.py
+unramblingz.egg-info/PKG-INFO
+unramblingz.egg-info/SOURCES.txt
+unramblingz.egg-info/dependency_links.txt
+unramblingz.egg-info/requires.txt
+unramblingz.egg-info/top_level.txt
