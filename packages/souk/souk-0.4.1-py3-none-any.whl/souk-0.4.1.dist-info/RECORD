@@ -1,0 +1,14 @@
+LICENSE,sha256=a9RIAGhQGXFbKZWcgQBdJk2vpuGvJtqtxpvkrpinzMc,1533
+README.md,sha256=2t1pb5OtUhLDYEd5sYhQlUdKrlsz6cTg-aO3DZdb_x0,3654
+souk/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+souk/htcondor_helper.py,sha256=RQFYuyx1gnlq9qIy1EMp59Dy726I3Ace17d46HoXcmo,406
+souk/system/arch_info.py,sha256=MDOT_SlUya2rwg00xY_h6C5tOWEyQtW9CU75RYfoABc,10024
+souk/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+souk/util/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+souk/util/cli/arg_string.py,sha256=avy0dhrhOkqDn2OYMug1kwIKPi3lBkUfpMwDZp3aC-o,538
+souk/util/cli/ini_formatter.py,sha256=3vXgl4uO_7xiHGb4ITxtBbE2zxvEwHoWCpxdw5HOIKo,1601
+souk-0.4.1.dist-info/LICENSE,sha256=a9RIAGhQGXFbKZWcgQBdJk2vpuGvJtqtxpvkrpinzMc,1533
+souk-0.4.1.dist-info/METADATA,sha256=uWQXP93m_zY5loNaUFsOTHQTk-FqSgLhzKOKrsiJ5_4,5437
+souk-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+souk-0.4.1.dist-info/entry_points.txt,sha256=gnXMXDTm86I5y4AsTa-KaFmDtHSJXLMv2f2VRmgL6yk,106
+souk-0.4.1.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+[console_scripts]
+ini_formatter=souk.util.cli.ini_formatter:cli
+souk_arch_info=souk.system.arch_info:cli
+
