@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+spiritlikez/__init__.py
+spiritlikez/main.py
+spiritlikez.egg-info/PKG-INFO
+spiritlikez.egg-info/SOURCES.txt
+spiritlikez.egg-info/dependency_links.txt
+spiritlikez.egg-info/requires.txt
+spiritlikez.egg-info/top_level.txt
