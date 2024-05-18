@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+saponifiedz/__init__.py
+saponifiedz/main.py
+saponifiedz.egg-info/PKG-INFO
+saponifiedz.egg-info/SOURCES.txt
+saponifiedz.egg-info/dependency_links.txt
+saponifiedz.egg-info/requires.txt
+saponifiedz.egg-info/top_level.txt
