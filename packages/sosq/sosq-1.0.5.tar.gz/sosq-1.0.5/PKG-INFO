@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sosq
+Version: 1.0.5
+Summary: Building Dataframe from Stack Overflow API with a search query and Saving data to csv file
+Author-email: bakircius <burakbakirci@gmail.com>
+Project-URL: Source, https://github.com/bakircius/sosq
+Project-URL: Issues, https://github.com/bakircius/sosq/issues
+Project-URL: Repository, https://github.com/bakircius/sosq.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: IDLE
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: typing
+
+# stack overflow search queries (sosq)
+
+This project fetches StackOverflow API returns a dataframe
+
+# install
+
+pip install sosq
+
+# for use
+
+1- Get your key and token from stackexchange / follow instructions.
+
+2- sample code below.
+
+```
+import sosq
+sosq.get_result("your_search_query", "your_key", "your_access_token")
+```
+

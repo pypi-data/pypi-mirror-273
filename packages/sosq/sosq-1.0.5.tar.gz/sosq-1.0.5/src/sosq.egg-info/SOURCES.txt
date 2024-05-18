@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sosq/__init__.py
+src/sosq.egg-info/PKG-INFO
+src/sosq.egg-info/SOURCES.txt
+src/sosq.egg-info/dependency_links.txt
+src/sosq.egg-info/requires.txt
+src/sosq.egg-info/top_level.txt
+tests/test_getResults.py
