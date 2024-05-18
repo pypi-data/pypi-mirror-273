@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biophony"
+version = "1.0.0"
+authors = [
+    {name="Pierrick ROGER", email="pierrick.roger@cea.fr"}
+]
+description = "Random generation of genetic files"
+license = {file="LICENSE"}
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: CeCILL-C Free Software License Agreement (CECILL-C)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'Mutation-Simulator'
+]
+keywords = ['genomic', 'gene', 'genetic', 'mutation', 'VCF', 'BED', 'FASTA']
+
+[project.urls]
+"Homepage" = "https://gitlab.com/cnrgh/databases/biophony"
+"Repository" = "https://gitlab.com/cnrgh/databases/biophony"
+"Bug Tracker" = "https://gitlab.com/cnrgh/databases/biophony/issues"
+
+[project.scripts]
+gen-cov = "biophony:covgen_cli"
+gen-fasta = "biophony:fastagen_cli"
+gen-vcf = "biophony:vcfgen_cli"
+
+[project.optional-dependencies]
+tests = [
+    'pytest',
+    'pylint',
+    'mypy',
+    'coverage'
+]
+doc = [
+    'sphinx',
+    'sphinx_rtd_theme'
+]

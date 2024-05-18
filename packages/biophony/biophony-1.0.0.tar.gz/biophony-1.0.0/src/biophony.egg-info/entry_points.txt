@@ -1,0 +1,4 @@
+[console_scripts]
+gen-cov = biophony:covgen_cli
+gen-fasta = biophony:fastagen_cli
+gen-vcf = biophony:vcfgen_cli

@@ -1,0 +1,11 @@
+Mutation-Simulator
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest
+pylint
+mypy
+coverage
