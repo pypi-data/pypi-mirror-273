@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: FirstGame
+Version: 1.0.0
+Author: spx220
+Author-email: eric2173459@gmail.com
+License: MIT
+Keywords: spx,kpop,anime,FirstGame
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pygame==2.5.2
+Requires-Dist: pymysql==1.1.0
+Requires-Dist: pillow==10.2.0
+Requires-Dist: pyyaml==6.0.1
+
+# 人物測驗
+## 利用馬賽克、模糊化
+#### 包含動漫、Kpop
+![GITHUB](https://i.imgur.com/kUAi22v.jpeg "五條悟")   
+
