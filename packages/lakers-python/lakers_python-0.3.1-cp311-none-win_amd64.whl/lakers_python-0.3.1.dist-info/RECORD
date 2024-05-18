@@ -1,0 +1,5 @@
+lakers_python-0.3.1.dist-info/METADATA,sha256=VaZkqIIe4M-EIksUtmKimn7cawU8R7M7Q17meVAVE0k,1282
+lakers_python-0.3.1.dist-info/WHEEL,sha256=88DykRyub23IQeCxphAc1eW7PZo2npnb8m2maKWpwLI,95
+lakers/__init__.py,sha256=Dwz7y_WfDVx_8VvCWV0uuIusgrvL6sNGL1xX4643Tuc,107
+lakers/lakers.cp311-win_amd64.pyd,sha256=84DcqJjR9FKxBiI0jwKpp0_Npqwu4sWuM3VPiTLLcCE,512000
+lakers_python-0.3.1.dist-info/RECORD,,
