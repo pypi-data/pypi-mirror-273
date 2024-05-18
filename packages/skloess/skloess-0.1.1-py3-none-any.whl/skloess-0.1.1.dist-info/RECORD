@@ -1,0 +1,10 @@
+skloess/__init__.py,sha256=hn96lqKIteOmSRHX4xMktVJmfj0OTxfKozrX1nrXNAY,163
+skloess/_version.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+skloess/skloess.py,sha256=_UAi7UxNTnvnHMrZ796r0q8cX6ZpQfY8d_TmaZBItkM,11949
+skloess/tests/__init__.py,sha256=OLs978IP7BWkfydS9GzMQg4oPPAsQl9dEfxS2iQD9nI,67
+skloess/tests/test_LOESS.py,sha256=RsYwjg2amjLyCUBN1lYlbgNlKRcFAGBVLiKtEIDrQKE,5949
+skloess/tests/test_common.py,sha256=w500hOye4TRJIJllH0Xkf-VKReK9Kmz6GWeX_15PhwQ,1164
+skloess-0.1.1.dist-info/LICENSE,sha256=wuDR6xq8_5RFOR_YqmGo6yAIN1HYyK4swJcH---JWyc,1520
+skloess-0.1.1.dist-info/METADATA,sha256=RNsiFD4J32fu9L8-qaScYk4uFs7tAh064xUdUqkYIHA,3780
+skloess-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+skloess-0.1.1.dist-info/RECORD,,
