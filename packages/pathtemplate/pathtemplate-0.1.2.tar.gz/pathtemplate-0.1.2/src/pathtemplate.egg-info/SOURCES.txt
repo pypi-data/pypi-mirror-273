@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/pathtemplate.py
+src/pathtemplate.egg-info/PKG-INFO
+src/pathtemplate.egg-info/SOURCES.txt
+src/pathtemplate.egg-info/dependency_links.txt
+src/pathtemplate.egg-info/top_level.txt
+tests/test_pathtemplate.py
