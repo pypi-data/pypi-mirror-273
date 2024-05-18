@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/uaua.egg-info/PKG-INFO
+src/uaua.egg-info/SOURCES.txt
+src/uaua.egg-info/dependency_links.txt
+src/uaua.egg-info/top_level.txt
