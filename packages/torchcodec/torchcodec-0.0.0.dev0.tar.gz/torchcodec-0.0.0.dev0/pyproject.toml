@@ -1,0 +1,4 @@
+[project]
+name = "torchcodec"
+authors = [{ name = "PyTorch Team", email = "packages@pytorch.org" }]
+version = "0.0.0.dev0"

@@ -1,0 +1,6 @@
+pyproject.toml
+torchcodec/__init__.py
+torchcodec.egg-info/PKG-INFO
+torchcodec.egg-info/SOURCES.txt
+torchcodec.egg-info/dependency_links.txt
+torchcodec.egg-info/top_level.txt
