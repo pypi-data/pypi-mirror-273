@@ -1,0 +1,3 @@
+[console_scripts]
+netconf-console2 = netconf_console.ncc:main
+
