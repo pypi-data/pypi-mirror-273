@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+haggishlyz/__init__.py
+haggishlyz/main.py
+haggishlyz.egg-info/PKG-INFO
+haggishlyz.egg-info/SOURCES.txt
+haggishlyz.egg-info/dependency_links.txt
+haggishlyz.egg-info/requires.txt
+haggishlyz.egg-info/top_level.txt
