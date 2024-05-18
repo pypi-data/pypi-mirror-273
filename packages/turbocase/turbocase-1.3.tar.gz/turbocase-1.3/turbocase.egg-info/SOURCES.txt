@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+turbocase/__init__.py
+turbocase/__main__.py
+turbocase/cases.py
+turbocase/kicad.py
+turbocase/parts.py
+turbocase/scad.py
+turbocase/vector.py
+turbocase.egg-info/PKG-INFO
+turbocase.egg-info/SOURCES.txt
+turbocase.egg-info/dependency_links.txt
+turbocase.egg-info/entry_points.txt
+turbocase.egg-info/requires.txt
+turbocase.egg-info/top_level.txt
