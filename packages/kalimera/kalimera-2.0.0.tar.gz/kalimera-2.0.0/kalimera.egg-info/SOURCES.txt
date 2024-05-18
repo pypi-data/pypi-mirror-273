@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kalimera.egg-info/PKG-INFO
+kalimera.egg-info/SOURCES.txt
+kalimera.egg-info/dependency_links.txt
+kalimera.egg-info/top_level.txt
+libname/__init__.py
+libname/source.py
