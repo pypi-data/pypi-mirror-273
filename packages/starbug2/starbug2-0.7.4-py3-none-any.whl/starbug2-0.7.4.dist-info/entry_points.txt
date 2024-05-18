@@ -1,0 +1,4 @@
+[console_scripts]
+starbug2 = starbug2.bin.main:starbug_mainentry
+starbug2-afs = starbug2.bin.afs:afs_mainentry
+starbug2-match = starbug2.bin.match:match_mainentry
