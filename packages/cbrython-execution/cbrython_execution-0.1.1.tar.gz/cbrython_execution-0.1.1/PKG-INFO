@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cbrython-execution
+Version: 0.1.1
+Summary: 
+Author: Charles Bajeux
+Author-email: charles.bajeux@gmail.com>,Jakub Bures, Slobodan Jovanović <slobodan.jov98@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: brython (>=3.11.1,<4.0.0)
+Requires-Dist: javascript (>=1!1.0.1,<1!2.0.0)
+Description-Content-Type: text/markdown
+
+
+# cbrython-execution
+
+## Overview
+
+`cbrython-execution` is a Python package designed to facilitate interaction between JavaScript and Brython for efficient model execution.
+
+### Features
+
+- **Brython Integration**: Easy setup and execution of Brython code within a Vue.js context.
+- **Model Execution**: Streamlined process for executing and managing models in a web application.
+- **Interactive Data Handling**: Tools for handling user interactions and data changes effectively.
+
