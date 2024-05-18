@@ -1,0 +1,10 @@
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+black
+isort
+flake8
+twine
+build
