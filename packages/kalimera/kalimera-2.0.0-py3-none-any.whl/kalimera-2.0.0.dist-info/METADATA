@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kalimera
+Version: 2.0.0
+Summary: Hello world
+Author: Chris (Christoforos Eseroglou)
+Author-email: chriseseroglou@gmail.com
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hello-from-chris
+
+A simple Python package to demonstrate package creation and publishing to PyPI.
+
+## Description
+
+`kalimera` is a basic Python package designed to showcase how to create and distribute a Python package. 
+
+## Installation
+
+You can install this package using `pip`:
+
+```bash
+pip install kalimera
