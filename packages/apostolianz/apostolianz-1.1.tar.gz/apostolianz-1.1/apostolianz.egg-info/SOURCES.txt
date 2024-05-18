@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+apostolianz/__init__.py
+apostolianz/main.py
+apostolianz.egg-info/PKG-INFO
+apostolianz.egg-info/SOURCES.txt
+apostolianz.egg-info/dependency_links.txt
+apostolianz.egg-info/requires.txt
+apostolianz.egg-info/top_level.txt
