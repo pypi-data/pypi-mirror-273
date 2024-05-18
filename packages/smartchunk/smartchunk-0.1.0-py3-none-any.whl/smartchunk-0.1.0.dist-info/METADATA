@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: smartchunk
+Version: 0.1.0
+Summary: A PDF chunking Library to Smartly Chunk PDF files
+Author: Bishal Bose
+Author-email: bishalbose294@gmail.com
+Keywords: python,llm,pdf,text chunking,semantic chunking,chunks
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMuPDF
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: Unidecode
+
+
+# Smart Chunk
+
+
+
+Under Development! Not ready for use yet! Currently Experimenting and Exploring!
+
+
+
+Developed by Bishal Bose, May 2024
+
+
+
+## Examples of How To Use
+
+
+
+Creating A Server
+
+
+
+```python
+
+from smart_chunking import SmartChunker
+
+
+
+ext = Extractor("Your PDF filepath here.")
+
+ext.run() ## returns the dataframe with extracted headers & section text
+
+
+
+```
