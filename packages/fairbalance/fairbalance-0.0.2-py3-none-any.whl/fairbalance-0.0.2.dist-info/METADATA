@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fairbalance
+Version: 0.0.2
+Summary: bias mitigation by balancing target and/or protected attributes using resampling techniques
+Author: Pierre-Antoine Lequeu @ Fujitsu Luxembourg
+Author-email: pierre-antoine.lequeu@fujitsu.com
+Description-Content-Type: text/markdown
+Requires-Dist: folktables ==0.0.12
+Requires-Dist: imbalanced-learn ==0.9.1
+Requires-Dist: numpy ==1.24.3
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: scikit-learn ==1.3.2
+Requires-Dist: ucimlrepo ==0.0.3
+
+bias mitigation by balancing target and/or protected attributes using resampling techniques 
