@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+iridoplegiaz/__init__.py
+iridoplegiaz/main.py
+iridoplegiaz.egg-info/PKG-INFO
+iridoplegiaz.egg-info/SOURCES.txt
+iridoplegiaz.egg-info/dependency_links.txt
+iridoplegiaz.egg-info/requires.txt
+iridoplegiaz.egg-info/top_level.txt
