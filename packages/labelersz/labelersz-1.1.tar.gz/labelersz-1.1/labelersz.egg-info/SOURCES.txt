@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+labelersz/__init__.py
+labelersz/main.py
+labelersz.egg-info/PKG-INFO
+labelersz.egg-info/SOURCES.txt
+labelersz.egg-info/dependency_links.txt
+labelersz.egg-info/requires.txt
+labelersz.egg-info/top_level.txt
