@@ -1,0 +1,2 @@
+include scripts/installer.sh
+include scripts/installer.bat
