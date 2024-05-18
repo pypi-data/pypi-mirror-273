@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+unmalledz/__init__.py
+unmalledz/main.py
+unmalledz.egg-info/PKG-INFO
+unmalledz.egg-info/SOURCES.txt
+unmalledz.egg-info/dependency_links.txt
+unmalledz.egg-info/requires.txt
+unmalledz.egg-info/top_level.txt
