@@ -1,0 +1,7 @@
+buzz_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buzz_client/cli.py,sha256=llHjdXkRc-U9e1ysBeGd2GgAnGo33aB3p37KgDoA4w8,4172
+buzz_client/client.py,sha256=hp3OICDhvj2vfpzTyFWpNcIRr7Hoiy4wMWGdVfQZOaU,2674
+buzz_client-1.0.3a0.dist-info/METADATA,sha256=SbfvOZw8Lnsgf2hfr1W7PSGLUcnvNbqP_TTHTvzhM58,2821
+buzz_client-1.0.3a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+buzz_client-1.0.3a0.dist-info/entry_points.txt,sha256=QgUdgJUP7HpEfQA46Y4oDCdpBvmrFMmaghDLsmCQha4,45
+buzz_client-1.0.3a0.dist-info/RECORD,,
