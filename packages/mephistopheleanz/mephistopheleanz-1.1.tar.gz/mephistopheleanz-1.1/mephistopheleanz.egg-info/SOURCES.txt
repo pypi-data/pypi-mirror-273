@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mephistopheleanz/__init__.py
+mephistopheleanz/main.py
+mephistopheleanz.egg-info/PKG-INFO
+mephistopheleanz.egg-info/SOURCES.txt
+mephistopheleanz.egg-info/dependency_links.txt
+mephistopheleanz.egg-info/requires.txt
+mephistopheleanz.egg-info/top_level.txt
