@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-python.isort",
+    "ms-python.debugpy",
+    "ms-python.pylint",
+    "ms-python.mypy-type-checker",
+    "ms-python.gather",
+    "ms-toolsai.vscode-jupyter-slideshow",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+    "ms-toolsai.vscode-jupyter-powertoys",
+    "ms-toolsai.datawrangler",
+    "mechatroner.rainbow-csv"
+  ]
+}
