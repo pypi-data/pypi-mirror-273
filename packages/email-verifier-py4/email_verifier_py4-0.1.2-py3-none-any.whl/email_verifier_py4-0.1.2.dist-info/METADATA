@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: email_verifier_py4
+Version: 0.1.2
+Summary: This Python package provides a tool to  validate email addresses by checking their syntax, MX records, whether they belong to disposable email provider domains, catchall status, and if the email exists (is deliverable).
+Author: Om Sing Chandel
+Author-email: omchandel1703@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: charest-normalizer ==3.3.2
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: colorlog ==6.8.2
+Requires-Dist: disposable-email-domains ==0.0.103
+Requires-Dist: dnspython ==2.6.1
+Requires-Dist: docutils ==0.21.1
+Requires-Dist: filelock ==3.14.0
+Requires-Dist: idna ==3.7
+Requires-Dist: importlib-metadata ==7.1.0
+Requires-Dist: jaraco.classes ==3.4.0
+Requires-Dist: jaraco.context ==5.3.0
+Requires-Dist: jaraco.functools ==4.0.0
+Requires-Dist: keyring ==25.1.0
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.2.0
+Requires-Dist: nh3 ==0.2.17
+Requires-Dist: piapy ==0.2.0
+Requires-Dist: pkginfo ==1.10.0
+Requires-Dist: py3-validate-email ==1.0.5.post1
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: pywin32-ctypes ==0.2.2
+Requires-Dist: readme-renderer ==43.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: rfc3986 ==2.0.0
+Requires-Dist: rich ==13.7.1
+Requires-Dist: setuptools ==69.2.0
+Requires-Dist: tqdm ==4.66.2
+Requires-Dist: twine ==5.0.0
+Requires-Dist: ultra-logger ==0.1.2
+Requires-Dist: urllib3 ==2.2.1
+Requires-Dist: wheel ==0.43.0
+Requires-Dist: zipp ==3.18.1
+
+**ðŸ“‹ Email Verifier**
+
+**Introduction**
+
+This project aims to validate email addresses by checking their syntax, MX records, whether they belong to disposable email provider domains, catchall status, and if the email exists (is deliverable). It utilizes various Python packages and scripts to perform these validations.
+
+**Key Features**
+
+- **Syntax and Domain Validation:** Validates email addresses for correct syntax and checks if the domain exists.
+- **MX Records Check:** Ensures the domain can receive emails by checking MX records.
+- **Disposable Email Detection:** Identifies domains belonging to disposable email providers.
+- **Catchall Status Verification:** Determines if the domain accepts all emails.
+- **Deliverability Check:** Verifies if the email exists and can be delivered.
+- **Logging:** Provides logging functionality to track validation processes.
+
+**Technologies Used**
+
+- **Python**
+- **Requests Library:** For making HTTP requests.
+- **BeautifulSoup:** For HTML parsing.
+- **Regular Expressions:** For email extraction.
+- **Scrapy Framework:** For efficient web scraping.
+- **DNSPython:** For DNS-related operations.
+- **Smtplib:** For SMTP operations.
+- **PiaPy:** For VPN connectivity.
+- **Openpyxl:** For reading and manipulating Excel files.
+
+**Setup Instructions**
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone <repository_url>
+   cd <repository_directory>
+   ```
+
+2. **Install Required Packages:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Ensure Python 3 is Installed.**
+
+**Usage**
+
+1. **Prepare Email List:**
+
+   Create a text file (`emails.txt`) containing the email addresses to validate, with one email per line.
+
+2. **Run the Script:**
+
+   Execute the `bulk_verifier.py` script to validate the email addresses and save the results to a CSV file (`emails_validated.csv`).
+
+   ```bash
+   python bulk_verifier.py
+   ```
+
+3. **Review Logs:**
+
+   Optionally, review the log files in the `logs` directory for detailed validation process information.
+
+**Additional Libraries and Frameworks**
+
+- **dns.resolver:** For DNS-related operations.
+- **disposable_email_domains:** For identifying disposable email provider domains.
+- **smtplib:** For SMTP operations.
+- **Openpyxl:** For reading and manipulating Excel files.
+
+**Combined Takeaways and Challenges**
+
+- **Integration of Multiple Packages:** Combining various Python packages to handle different aspects of email validation required careful integration and management.
+- **DNS Lookups and SMTP Connections:** Understanding network protocols and error handling for robust validation.
+- **Logging and Error Handling:** Implementing effective logging and error handling mechanisms.
+- **Scalability and Performance:** Ensuring scalability and performance for processing large volumes of email addresses.
+
+**License**
+
+This project is distributed under the MIT License. See the LICENSE file for details.
