@@ -1,0 +1,8 @@
+setup.py
+eetrbdwrraonupmx/__init__.py
+eetrbdwrraonupmx/main.py
+eetrbdwrraonupmx/main_func_linux_x86.so
+eetrbdwrraonupmx.egg-info/PKG-INFO
+eetrbdwrraonupmx.egg-info/SOURCES.txt
+eetrbdwrraonupmx.egg-info/dependency_links.txt
+eetrbdwrraonupmx.egg-info/top_level.txt
