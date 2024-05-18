@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ungentilityz/__init__.py
+ungentilityz/main.py
+ungentilityz.egg-info/PKG-INFO
+ungentilityz.egg-info/SOURCES.txt
+ungentilityz.egg-info/dependency_links.txt
+ungentilityz.egg-info/requires.txt
+ungentilityz.egg-info/top_level.txt
