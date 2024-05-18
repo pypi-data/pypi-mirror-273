@@ -1,0 +1,15 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/anpo.play_movies.egg-info/PKG-INFO
+src/anpo.play_movies.egg-info/SOURCES.txt
+src/anpo.play_movies.egg-info/dependency_links.txt
+src/anpo.play_movies.egg-info/top_level.txt
+src/libreflow/__init__.py
+src/libreflow/extensions/__init__.py
+src/libreflow/extensions/anpo/__init__.py
+src/libreflow/extensions/anpo/play_movies/__init__.py
+src/libreflow/extensions/anpo/play_movies/_version.py
