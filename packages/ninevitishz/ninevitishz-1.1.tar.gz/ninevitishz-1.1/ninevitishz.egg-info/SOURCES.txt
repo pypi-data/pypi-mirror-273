@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ninevitishz/__init__.py
+ninevitishz/main.py
+ninevitishz.egg-info/PKG-INFO
+ninevitishz.egg-info/SOURCES.txt
+ninevitishz.egg-info/dependency_links.txt
+ninevitishz.egg-info/requires.txt
+ninevitishz.egg-info/top_level.txt
