@@ -1,0 +1,5 @@
+acdh-xml-pyutils<2,>=1.0.0
+acdh-handle-pyutils<4,>=0.3.0
+click>=7.1.2
+tqdm>=4.59.0
+python-slugify>=8.0.1
