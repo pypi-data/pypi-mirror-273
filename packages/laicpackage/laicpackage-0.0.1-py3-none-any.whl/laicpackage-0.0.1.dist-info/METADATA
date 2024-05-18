@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: laicpackage
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/tonutilisateur/monpackage
+Author: Laic Maminiaina
+Author-email: Laic Maminiaina <maminiainalaic@gmail.com>
+Project-URL: Homepage, https://github.com/maminiainalaic/laicpackage
+Project-URL: Issues, https://github.com/maminiainalaic/laicpackage/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# laicpackage
+
+monpackage est un package Python qui affiche le nom en ASCII et les informations de Laic Maminiaina.
+
+## Installation
+
+Vous pouvez installer ce package en utilisant pip :
+
+```sh
+pip install laicpackage
+laicpackage
+
