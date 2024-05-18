@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+euglobulinz/__init__.py
+euglobulinz/main.py
+euglobulinz.egg-info/PKG-INFO
+euglobulinz.egg-info/SOURCES.txt
+euglobulinz.egg-info/dependency_links.txt
+euglobulinz.egg-info/requires.txt
+euglobulinz.egg-info/top_level.txt
